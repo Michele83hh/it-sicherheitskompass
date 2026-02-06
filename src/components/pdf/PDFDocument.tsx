@@ -1,6 +1,11 @@
 import { Document, Page, Text, View } from '@react-pdf/renderer';
-import { styles, COLORS } from '@/lib/pdf/styles';
+import { styles } from '@/lib/pdf/styles';
 import type { PDFPayload } from '@/lib/pdf/types';
+import PDFCoverPage from './PDFCoverPage';
+import PDFCompanyProfile from './PDFCompanyProfile';
+import PDFOverallScore from './PDFOverallScore';
+import PDFScoresTable from './PDFScoresTable';
+import PDFRecommendations from './PDFRecommendations';
 
 interface PDFDocumentProps {
   payload: PDFPayload;
@@ -8,9 +13,19 @@ interface PDFDocumentProps {
 
 const PDFDocument = ({ payload }: PDFDocumentProps) => {
   const { locale, company, overallScore, categories, recommendations, messages } = payload;
+
+  // Format generated date in user's locale
   const generatedDate = new Intl.DateTimeFormat(locale === 'de' ? 'de-DE' : 'en-GB', {
     dateStyle: 'long',
   }).format(new Date());
+
+  // Footer component to reuse
+  const Footer = () => (
+    <View style={styles.footer} fixed>
+      <Text>NIS2-Bereitschaftsprüfung</Text>
+      <Text render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
+    </View>
+  );
 
   return (
     <Document
@@ -18,87 +33,48 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
       author="NIS2-Bereitschaftsprüfung"
       subject="NIS2 Readiness Assessment Report"
     >
-      {/* Page 1: Cover + Disclaimer + Company Profile */}
+      {/* Page 1: Cover + Company Profile + Overall Score */}
       <Page size="A4" style={styles.page}>
-        <Text style={styles.headerTitle}>
-          {messages['pdf.title'] || 'NIS2-Readiness-Report'}
-        </Text>
-        <Text style={styles.headerSubtitle}>
-          {messages['pdf.subtitle'] || 'Ergebnis der NIS2-Bereitschaftsprüfung'}
-        </Text>
+        <PDFCoverPage
+          messages={messages}
+          locale={locale}
+          generatedDate={generatedDate}
+        />
 
-        {/* Disclaimer */}
-        <View style={styles.disclaimerBox}>
-          <Text style={styles.disclaimerText}>
-            {messages['pdf.disclaimer'] || 'Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität.'}
-          </Text>
-        </View>
+        <PDFCompanyProfile
+          company={company}
+          messages={messages}
+          locale={locale}
+        />
 
-        {/* Metadata */}
-        <Text style={styles.metadataText}>
-          Rechtsstand: Januar 2025 (NIS2-Richtlinie (EU) 2022/2555, NIS2UmsG)
-        </Text>
-        <Text style={styles.metadataText}>
-          {messages['pdf.generatedAt'] || 'Erstellt am'}: {generatedDate}
-        </Text>
+        <PDFOverallScore
+          overallScore={overallScore}
+          messages={messages}
+        />
 
-        {/* Company Profile placeholder -- Plan 02 replaces */}
-        <View style={{ marginTop: 20 }}>
-          <Text style={styles.sectionTitle}>
-            {messages['pdf.companyProfile'] || 'Unternehmensprofil'}
-          </Text>
-          <Text>{company.sectorName} - {company.classification}</Text>
-          <Text>{messages['pdf.employees'] || 'Mitarbeiter'}: {company.employees}</Text>
-        </View>
-
-        {/* Overall Score placeholder */}
-        <View style={{ marginTop: 20 }}>
-          <Text style={styles.sectionTitle}>
-            {messages['pdf.overallScore'] || 'Gesamter Reifegrad'}
-          </Text>
-          <Text style={{ fontSize: 24, fontWeight: 700, color: COLORS.primary }}>
-            {overallScore.percentage}%
-          </Text>
-        </View>
-
-        {/* Footer */}
-        <View style={styles.footer} fixed>
-          <Text>NIS2-Bereitschaftsprüfung</Text>
-          <Text render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
-        </View>
+        <Footer />
       </Page>
 
-      {/* Page 2: Categories placeholder -- Plan 02 replaces */}
+      {/* Page 2: Category Scores Table */}
       <Page size="A4" style={styles.page}>
-        <Text style={styles.sectionTitle}>
-          {messages['pdf.categories'] || 'Ergebnisse nach Kategorie'}
-        </Text>
-        {categories.map((cat) => (
-          <View key={cat.categoryId} style={{ marginBottom: 8 }}>
-            <Text>{cat.categoryName}: {cat.percentage}%</Text>
-          </View>
-        ))}
-        <View style={styles.footer} fixed>
-          <Text>NIS2-Bereitschaftsprüfung</Text>
-          <Text render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
-        </View>
+        <PDFScoresTable
+          categories={categories}
+          messages={messages}
+          locale={locale}
+        />
+
+        <Footer />
       </Page>
 
-      {/* Page 3: Recommendations placeholder -- Plan 02 replaces */}
+      {/* Page 3+: Recommendations (with automatic pagination) */}
       <Page size="A4" style={styles.page}>
-        <Text style={styles.sectionTitle}>
-          {messages['pdf.recommendations'] || 'Handlungsempfehlungen'}
-        </Text>
-        {recommendations.slice(0, 10).map((rec, idx) => (
-          <View key={idx} style={{ marginBottom: 6 }}>
-            <Text style={styles.bold}>{rec.title}</Text>
-            <Text style={{ fontSize: 9 }}>{rec.firstStep}</Text>
-          </View>
-        ))}
-        <View style={styles.footer} fixed>
-          <Text>NIS2-Bereitschaftsprüfung</Text>
-          <Text render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
-        </View>
+        <PDFRecommendations
+          recommendations={recommendations}
+          messages={messages}
+          locale={locale}
+        />
+
+        <Footer />
       </Page>
     </Document>
   );
