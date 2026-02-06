@@ -139,8 +139,8 @@
 | AFFECT-04 | Phase 3 | Complete |
 | AFFECT-05 | Phase 3 | Complete |
 | AFFECT-06 | Phase 3 | Complete |
-| GAP-07 | Phase 4 | Pending |
-| GAP-08 | Phase 4 | Pending |
+| GAP-07 | Phase 4 | Complete |
+| GAP-08 | Phase 4 | Complete |
 | SCORE-02 | Phase 5 | Pending |
 | SCORE-03 | Phase 5 | Pending |
 | SCORE-04 | Phase 5 | Pending |
