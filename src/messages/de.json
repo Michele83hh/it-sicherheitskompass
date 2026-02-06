@@ -186,5 +186,467 @@
       "anlage1": "Anlage 1 zum BSIG (Sektoren besonders wichtiger und wichtiger Einrichtungen)",
       "anlage2": "Anlage 2 zum BSIG (Sektoren wichtiger Einrichtungen)"
     }
+  },
+  "maturityLevels": {
+    "level0": "Nicht umgesetzt",
+    "level1": "Teilweise umgesetzt",
+    "level2": "Größtenteils umgesetzt",
+    "level3": "Vollständig umgesetzt"
+  },
+  "categories": {
+    "riskAnalysis": {
+      "name": "Risikoanalyse und Sicherheit der Informationssysteme",
+      "shortName": "Risikoanalyse",
+      "description": "Konzepte in Bezug auf die Risikoanalyse und auf die Sicherheit in der Informationstechnik"
+    },
+    "incidentHandling": {
+      "name": "Bewältigung von Sicherheitsvorfällen",
+      "shortName": "Sicherheitsvorfälle",
+      "description": "Bewältigung von Sicherheitsvorfällen"
+    },
+    "businessContinuity": {
+      "name": "Aufrechterhaltung des Betriebs",
+      "shortName": "Betriebskontinuität",
+      "description": "Aufrechterhaltung des Betriebs, wie Backup-Management und Wiederherstellung nach einem Notfall, und Krisenmanagement"
+    },
+    "supplyChain": {
+      "name": "Sicherheit der Lieferkette",
+      "shortName": "Lieferkette",
+      "description": "Sicherheit der Lieferkette einschließlich sicherheitsbezogener Aspekte der Beziehungen zu unmittelbaren Anbietern oder Diensteanbietern"
+    },
+    "acquisitionDevelopment": {
+      "name": "Sicherheit bei Erwerb, Entwicklung und Wartung",
+      "shortName": "Entwicklung & Wartung",
+      "description": "Sicherheitsmaßnahmen bei Erwerb, Entwicklung und Wartung von informationstechnischen Systemen, Komponenten und Prozessen, einschließlich Management und Offenlegung von Schwachstellen"
+    },
+    "effectivenessAssessment": {
+      "name": "Bewertung der Wirksamkeit von Maßnahmen",
+      "shortName": "Wirksamkeit",
+      "description": "Konzepte und Verfahren zur Bewertung der Wirksamkeit von Risikomanagementmaßnahmen im Bereich der Sicherheit"
+    },
+    "cyberHygiene": {
+      "name": "Cyberhygiene und Schulungen",
+      "shortName": "Schulungen",
+      "description": "Grundlegende Schulungen und Sensibilisierungsmaßnahmen im Bereich der Sicherheit in der Informationstechnik"
+    },
+    "cryptography": {
+      "name": "Kryptografie und Verschlüsselung",
+      "shortName": "Kryptografie",
+      "description": "Konzepte und Prozesse für den Einsatz von kryptographischen Verfahren"
+    },
+    "accessControl": {
+      "name": "Personalsicherheit und Zugriffskontrolle",
+      "shortName": "Zugriffskontrolle",
+      "description": "Erstellung von Konzepten für die Sicherheit des Personals, die Zugriffskontrolle und für die Verwaltung von IKT-Systemen, -Produkten und -Prozessen"
+    },
+    "authenticationCommunication": {
+      "name": "Multi-Faktor-Authentifizierung und gesicherte Kommunikation",
+      "shortName": "MFA & Kommunikation",
+      "description": "Verwendung von Lösungen zur Multi-Faktor-Authentifizierung oder kontinuierlichen Authentifizierung, gesicherte Sprach-, Video- und Textkommunikation sowie gegebenenfalls gesicherte Notfallkommunikationssysteme"
+    }
+  },
+  "questions": {
+    "raQ1": {
+      "title": "Haben Sie eine aktuelle Übersicht über Ihre IT-Risiken (z.B. welche Systeme kritisch sind, wo Schwachstellen liegen)?",
+      "tooltip": "NIS2 fordert regelmäßige Risikoanalysen (Art. 21(2)(a), §30 Abs. 2 Nr. 1 BSIG). Das BSI empfiehlt die Methodik aus BSI-Standard 200-3.",
+      "maturity": {
+        "level0": "Keine Risikoanalyse vorhanden",
+        "level1": "Grobe Einschätzung vorhanden, aber nicht dokumentiert",
+        "level2": "Dokumentierte Risikoanalyse, aber nicht regelmäßig aktualisiert",
+        "level3": "Regelmäßige, dokumentierte Risikoanalyse nach anerkanntem Standard"
+      }
+    },
+    "raQ2": {
+      "title": "Sind Ihre IT-Sicherheitsmaßnahmen schriftlich dokumentiert und werden regelmäßig aktualisiert?",
+      "tooltip": "Dokumentierte Sicherheitskonzepte sind Grundlage für nachweisbare Compliance (§30 Abs. 1 BSIG). Siehe BSI-Baustein ISMS.1.",
+      "maturity": {
+        "level0": "Keine schriftliche Dokumentation",
+        "level1": "Teilweise dokumentiert, aber veraltet",
+        "level2": "Größtenteils dokumentiert, aber nicht regelmäßig aktualisiert",
+        "level3": "Vollständig dokumentiert und mindestens jährlich aktualisiert"
+      }
+    },
+    "raQ3": {
+      "title": "Haben Sie klare Verantwortlichkeiten für IT-Sicherheit festgelegt (z.B. benannte Ansprechperson)?",
+      "tooltip": "NIS2 fordert Geschäftsleitungsverantwortung (§38 BSIG). Klare Zuständigkeiten sind Grundlage für wirksames Sicherheitsmanagement.",
+      "maturity": {
+        "level0": "Keine festgelegten Verantwortlichkeiten",
+        "level1": "Informell zugewiesen, nicht dokumentiert",
+        "level2": "Dokumentiert, aber nicht allen Mitarbeitern bekannt",
+        "level3": "Klar dokumentiert, kommuniziert und mit Vertretungsregelungen"
+      }
+    },
+    "ihQ1": {
+      "title": "Gibt es ein festgelegtes Verfahren, wie Ihr Unternehmen auf Cyberangriffe oder IT-Störungen reagiert?",
+      "tooltip": "NIS2 verlangt dokumentierte Prozesse für die Reaktion auf Sicherheitsvorfälle (Art. 21(2)(b), §30 Abs. 2 Nr. 2 BSIG). Siehe BSI-Baustein DER.2.1.",
+      "maturity": {
+        "level0": "Kein Verfahren vorhanden",
+        "level1": "Reaktion erfolgt ad-hoc ohne festen Ablauf",
+        "level2": "Grundlegendes Verfahren dokumentiert, aber nicht regelmäßig geübt",
+        "level3": "Dokumentiertes Verfahren mit regelmäßigen Übungen und klaren Rollen"
+      }
+    },
+    "ihQ2": {
+      "title": "Haben Sie Kontaktdaten für den Notfall (z.B. BSI-Meldestelle, IT-Dienstleister) griffbereit?",
+      "tooltip": "NIS2 schreibt Meldepflichten vor (§32 BSIG). Schnelle Reaktion erfordert vorbereitete Kontaktlisten und Meldewege.",
+      "maturity": {
+        "level0": "Keine Notfallkontakte vorbereitet",
+        "level1": "Einzelne Kontakte bekannt, aber nicht zentral verfügbar",
+        "level2": "Kontaktliste existiert, aber nicht regelmäßig aktualisiert",
+        "level3": "Aktuelle Kontaktliste zentral verfügbar, inkl. BSI-Meldewege"
+      }
+    },
+    "ihQ3": {
+      "title": "Werden Sicherheitsvorfälle protokolliert und ausgewertet, um daraus zu lernen?",
+      "tooltip": "Aus Vorfällen zu lernen ist essenziell für die Verbesserung der Sicherheit. Siehe BSI-Baustein DER.2.1 und OPS.1.1.5 (Protokollierung).",
+      "maturity": {
+        "level0": "Keine Protokollierung von Vorfällen",
+        "level1": "Vorfälle werden teilweise erfasst, aber nicht systematisch ausgewertet",
+        "level2": "Systematische Erfassung, aber keine regelmäßige Auswertung",
+        "level3": "Vollständige Erfassung, regelmäßige Auswertung und dokumentierte Verbesserungen"
+      }
+    },
+    "bcQ1": {
+      "title": "Erstellen Sie regelmäßig Backups Ihrer wichtigen Daten und testen diese auch?",
+      "tooltip": "NIS2 fordert Backup-Management und Wiederherstellungsfähigkeit (Art. 21(2)(c), §30 Abs. 2 Nr. 3 BSIG). Siehe BSI-Baustein CON.3.",
+      "maturity": {
+        "level0": "Keine regelmäßigen Backups",
+        "level1": "Backups werden erstellt, aber nicht getestet",
+        "level2": "Regelmäßige Backups mit gelegentlichen Wiederherstellungstests",
+        "level3": "Automatisierte Backups mit regelmäßig getesteter Wiederherstellung"
+      }
+    },
+    "bcQ2": {
+      "title": "Können Sie nach einem schweren IT-Ausfall innerhalb von 24-48 Stunden Ihren Betrieb wieder aufnehmen?",
+      "tooltip": "Wiederherstellungsfähigkeit ist ein Kernziel von NIS2. BSI-Standard 200-4 beschreibt Business Continuity Management (BCM).",
+      "maturity": {
+        "level0": "Keine Wiederherstellungsplanung vorhanden",
+        "level1": "Grobe Vorstellung, aber kein dokumentierter Plan",
+        "level2": "Wiederherstellungsplan existiert, aber nicht getestet",
+        "level3": "Dokumentierter und regelmäßig getesteter Wiederherstellungsplan"
+      }
+    },
+    "bcQ3": {
+      "title": "Haben Sie einen schriftlichen Notfallplan für den Fall eines Cyberangriffs oder Systemausfalls?",
+      "tooltip": "Krisenmanagement erfordert vorbereitete Notfallpläne (§30 Abs. 2 Nr. 3 BSIG). Siehe BSI-Baustein DER.4 (Notfallmanagement).",
+      "maturity": {
+        "level0": "Kein Notfallplan vorhanden",
+        "level1": "Informelles Wissen bei einzelnen Personen",
+        "level2": "Schriftlicher Plan vorhanden, aber nicht allen bekannt",
+        "level3": "Dokumentierter Plan, allen bekannt und regelmäßig geübt"
+      }
+    },
+    "scQ1": {
+      "title": "Prüfen Sie die IT-Sicherheit Ihrer wichtigsten Lieferanten und Dienstleister?",
+      "tooltip": "NIS2 verlangt Prüfung der Sicherheit direkter Lieferanten und Dienstleister (Art. 21(2)(d), §30 Abs. 2 Nr. 4 BSIG). Besonders wichtig bei Cloud-Diensten und IT-Outsourcing.",
+      "maturity": {
+        "level0": "Keine Prüfung der Lieferanten-Sicherheit",
+        "level1": "Gelegentliche, informelle Nachfrage",
+        "level2": "Wichtigste Lieferanten werden geprüft, aber nicht systematisch",
+        "level3": "Systematische Prüfung aller kritischen Lieferanten mit dokumentierten Ergebnissen"
+      }
+    },
+    "scQ2": {
+      "title": "Haben Sie vertragliche Vereinbarungen zur IT-Sicherheit mit Ihren IT-Dienstleistern?",
+      "tooltip": "Vertragliche Sicherheitsanforderungen an Dienstleister sind ein wesentlicher Bestandteil der Lieferkettensicherheit nach NIS2.",
+      "maturity": {
+        "level0": "Keine vertraglichen Sicherheitsvereinbarungen",
+        "level1": "Allgemeine AGB, keine spezifischen Sicherheitsklauseln",
+        "level2": "Sicherheitsklauseln bei wichtigen Dienstleistern",
+        "level3": "Standardisierte Sicherheitsanforderungen in allen IT-Dienstleisterverträgen"
+      }
+    },
+    "scQ3": {
+      "title": "Wissen Sie, welche externen Dienstleister Zugriff auf Ihre kritischen Systeme oder Daten haben?",
+      "tooltip": "Transparenz über externe Zugriffe ist Voraussetzung für wirksame Lieferkettensicherheit. Siehe BSI-Baustein ORP.1.",
+      "maturity": {
+        "level0": "Kein Überblick über externe Zugriffe",
+        "level1": "Teilweiser Überblick, nicht dokumentiert",
+        "level2": "Dokumentierte Übersicht, aber nicht regelmäßig aktualisiert",
+        "level3": "Vollständige, aktuelle Übersicht mit regelmäßiger Überprüfung"
+      }
+    },
+    "adQ1": {
+      "title": "Werden Sicherheitsupdates für Ihre IT-Systeme zeitnah eingespielt?",
+      "tooltip": "NIS2 fordert Schwachstellenmanagement (Art. 21(2)(e), §30 Abs. 2 Nr. 5 BSIG). Zeitnahes Patching ist eine der wichtigsten Schutzmaßnahmen. Siehe BSI-Baustein OPS.1.1.3.",
+      "maturity": {
+        "level0": "Updates werden nicht systematisch eingespielt",
+        "level1": "Updates werden gelegentlich eingespielt, ohne festen Prozess",
+        "level2": "Regelmäßige Updates mit festem Zeitplan, aber nicht lückenlos",
+        "level3": "Systematisches Patch-Management mit Priorisierung und Nachverfolgung"
+      }
+    },
+    "adQ2": {
+      "title": "Berücksichtigen Sie IT-Sicherheitsaspekte beim Kauf oder bei der Entwicklung neuer Software?",
+      "tooltip": "NIS2 fordert Security-by-Design (Art. 21(2)(e), §30 Abs. 2 Nr. 5 BSIG). Sicherheit muss von Anfang an mitgedacht werden. Siehe BSI-Baustein CON.8.",
+      "maturity": {
+        "level0": "Sicherheit wird beim Einkauf/Entwicklung nicht berücksichtigt",
+        "level1": "Gelegentlich berücksichtigt, aber kein fester Prozess",
+        "level2": "Sicherheitskriterien bei wichtigen Anschaffungen, aber nicht standardisiert",
+        "level3": "Standardisierte Sicherheitsbewertung bei allen IT-Anschaffungen und -Entwicklungen"
+      }
+    },
+    "adQ3": {
+      "title": "Haben Sie einen Prozess, um Schwachstellen in Ihrer Software zu erkennen und zu beheben?",
+      "tooltip": "Schwachstellenmanagement und -offenlegung sind explizite NIS2-Anforderungen (§30 Abs. 2 Nr. 5 BSIG).",
+      "maturity": {
+        "level0": "Kein Schwachstellenmanagement",
+        "level1": "Schwachstellen werden ad-hoc behandelt",
+        "level2": "Grundlegender Prozess vorhanden, aber nicht alle Systeme abgedeckt",
+        "level3": "Systematisches Schwachstellenmanagement mit Scanning und Priorisierung"
+      }
+    },
+    "eaQ1": {
+      "title": "Überprüfen Sie regelmäßig, ob Ihre Sicherheitsmaßnahmen tatsächlich wirken (z.B. durch Audits)?",
+      "tooltip": "NIS2 verlangt regelmäßige Wirksamkeitsprüfung (Art. 21(2)(f), §30 Abs. 2 Nr. 6 BSIG). Siehe BSI-Baustein ISMS.1.",
+      "maturity": {
+        "level0": "Keine Überprüfung der Wirksamkeit",
+        "level1": "Gelegentliche informelle Überprüfung",
+        "level2": "Regelmäßige Überprüfung einzelner Maßnahmen",
+        "level3": "Systematische Audits aller Sicherheitsmaßnahmen mit dokumentierten Ergebnissen"
+      }
+    },
+    "eaQ2": {
+      "title": "Führen Sie Sicherheitstests durch (z.B. Penetrationstests oder Schwachstellenscans)?",
+      "tooltip": "Technische Tests sind ein wichtiger Teil der Wirksamkeitsprüfung. Sie decken Schwachstellen auf, die in der Theorie nicht sichtbar sind.",
+      "maturity": {
+        "level0": "Keine Sicherheitstests",
+        "level1": "Gelegentliche Tests bei konkretem Anlass",
+        "level2": "Regelmäßige Schwachstellenscans, aber keine Penetrationstests",
+        "level3": "Regelmäßige Penetrationstests und Schwachstellenscans mit Nachverfolgung"
+      }
+    },
+    "eaQ3": {
+      "title": "Werden aus Sicherheitsprüfungen konkrete Verbesserungsmaßnahmen abgeleitet und umgesetzt?",
+      "tooltip": "Der PDCA-Zyklus (Plan-Do-Check-Act) ist Kern des kontinuierlichen Verbesserungsprozesses. Siehe BSI-Baustein ORP.5 (Compliance Management).",
+      "maturity": {
+        "level0": "Keine Ableitung von Verbesserungen",
+        "level1": "Verbesserungen werden identifiziert, aber nicht systematisch umgesetzt",
+        "level2": "Verbesserungen werden dokumentiert und teilweise umgesetzt",
+        "level3": "Systematischer Verbesserungsprozess mit Nachverfolgung und Wirksamkeitskontrolle"
+      }
+    },
+    "chQ1": {
+      "title": "Werden Ihre Mitarbeiter regelmäßig zu IT-Sicherheitsthemen geschult (z.B. Phishing erkennen)?",
+      "tooltip": "NIS2 fordert grundlegende Schulungen (Art. 21(2)(g), §30 Abs. 2 Nr. 7 BSIG). Siehe BSI-Baustein ORP.3.",
+      "maturity": {
+        "level0": "Keine Schulungen zu IT-Sicherheit",
+        "level1": "Einmalige oder gelegentliche Hinweise",
+        "level2": "Jährliche Schulung, aber nicht alle Mitarbeiter erreicht",
+        "level3": "Regelmäßige Schulungen für alle Mitarbeiter mit Erfolgskontrolle"
+      }
+    },
+    "chQ2": {
+      "title": "Gibt es klare Richtlinien für sicheres Verhalten (z.B. Passwortregeln, Umgang mit E-Mails)?",
+      "tooltip": "Cyberhygiene-Richtlinien definieren Mindeststandards für sicheres Arbeiten. Sie sind Grundlage für Schulungen und Sensibilisierung.",
+      "maturity": {
+        "level0": "Keine Richtlinien vorhanden",
+        "level1": "Informelle Regeln, nicht schriftlich",
+        "level2": "Schriftliche Richtlinien vorhanden, aber nicht allen bekannt",
+        "level3": "Aktuelle Richtlinien, allen Mitarbeitern bekannt und regelmäßig überprüft"
+      }
+    },
+    "chQ3": {
+      "title": "Werden neue Mitarbeiter systematisch in IT-Sicherheitsthemen eingewiesen?",
+      "tooltip": "Onboarding mit Sicherheitseinweisung stellt sicher, dass neue Mitarbeiter von Anfang an sicherheitsbewusst handeln. Siehe BSI-Baustein ORP.2.",
+      "maturity": {
+        "level0": "Keine Sicherheitseinweisung bei Eintritt",
+        "level1": "Gelegentliche mündliche Hinweise",
+        "level2": "Standardisierte Einweisung, aber ohne Dokumentation",
+        "level3": "Dokumentierte Sicherheitseinweisung als fester Teil des Onboardings"
+      }
+    },
+    "crQ1": {
+      "title": "Werden vertrauliche Daten verschlüsselt gespeichert und übertragen (z.B. via HTTPS, VPN)?",
+      "tooltip": "NIS2 verlangt den Einsatz kryptographischer Verfahren (Art. 21(2)(h), §30 Abs. 2 Nr. 8 BSIG). Siehe BSI-Baustein CON.1.",
+      "maturity": {
+        "level0": "Keine Verschlüsselung im Einsatz",
+        "level1": "Teilweise Verschlüsselung (z.B. nur HTTPS für Website)",
+        "level2": "Verschlüsselung für die meisten sensiblen Daten, aber Lücken vorhanden",
+        "level3": "Umfassende Verschlüsselung aller sensiblen Daten bei Speicherung und Übertragung"
+      }
+    },
+    "crQ2": {
+      "title": "Haben Sie ein Konzept, welche Daten verschlüsselt werden müssen und mit welchen Verfahren?",
+      "tooltip": "Ein Kryptokonzept legt fest, wo Verschlüsselung eingesetzt wird und welche Algorithmen/Schlüssellängen verwendet werden. Siehe BSI-Baustein CON.1.",
+      "maturity": {
+        "level0": "Kein Kryptokonzept vorhanden",
+        "level1": "Verschlüsselung wird ad-hoc eingesetzt, ohne Konzept",
+        "level2": "Grundlegendes Konzept vorhanden, aber nicht vollständig umgesetzt",
+        "level3": "Dokumentiertes Kryptokonzept mit aktuellen Verfahren und regelmäßiger Überprüfung"
+      }
+    },
+    "crQ3": {
+      "title": "Werden kryptographische Schlüssel sicher verwaltet (z.B. nicht im Klartext gespeichert)?",
+      "tooltip": "Schlüsselmanagement ist kritisch: Kompromittierte Schlüssel machen Verschlüsselung wertlos. Sichere Speicherung und regelmäßiger Wechsel sind essenziell.",
+      "maturity": {
+        "level0": "Keine bewusste Schlüsselverwaltung",
+        "level1": "Schlüssel werden gespeichert, aber ohne besonderen Schutz",
+        "level2": "Grundlegende Schutzmaßnahmen, aber kein systematisches Management",
+        "level3": "Systematisches Schlüsselmanagement mit sicherer Speicherung und Rotation"
+      }
+    },
+    "acQ1": {
+      "title": "Haben nur autorisierte Personen Zugriff auf kritische IT-Systeme und Daten?",
+      "tooltip": "NIS2 fordert Zugriffskontrolle nach dem Prinzip der minimalen Berechtigung (Art. 21(2)(i), §30 Abs. 2 Nr. 9 BSIG). Siehe BSI-Baustein ORP.4.",
+      "maturity": {
+        "level0": "Keine systematische Zugriffskontrolle",
+        "level1": "Grundlegende Zugangsbeschränkungen, aber keine differenzierten Rechte",
+        "level2": "Rollenbasierte Zugriffsrechte für wichtige Systeme",
+        "level3": "Durchgängige Zugriffskontrolle nach Least-Privilege-Prinzip mit regelmäßiger Überprüfung"
+      }
+    },
+    "acQ2": {
+      "title": "Werden Zugriffsrechte regelmäßig überprüft und bei Ausscheiden von Mitarbeitern sofort entzogen?",
+      "tooltip": "Veraltete Zugriffsrechte sind ein häufiges Sicherheitsrisiko. Regelmäßige Überprüfung verhindert unautorisierte Zugriffe.",
+      "maturity": {
+        "level0": "Keine Überprüfung, alte Rechte bleiben bestehen",
+        "level1": "Rechte werden bei Ausscheiden entzogen, aber keine regelmäßige Prüfung",
+        "level2": "Regelmäßige Prüfung, aber nicht alle Systeme abgedeckt",
+        "level3": "Systematische Rechteprüfung aller Systeme mit sofortigem Entzug bei Ausscheiden"
+      }
+    },
+    "acQ3": {
+      "title": "Sind physische Zugangskontrollen zu kritischen IT-Bereichen (z.B. Serverraum) vorhanden?",
+      "tooltip": "Physischer Schutz kritischer IT-Infrastruktur ist Teil der Zugriffskontrolle. Siehe BSI-Bausteine INF.1 (Gebäude) und INF.2 (Rechenzentrum).",
+      "maturity": {
+        "level0": "Kein besonderer physischer Schutz",
+        "level1": "Serverraum abgeschlossen, aber kein Zutrittsprotokoll",
+        "level2": "Zutrittskontrolle mit Schlüssel/Karte, aber keine Protokollierung",
+        "level3": "Elektronische Zutrittskontrolle mit Protokollierung und regelmäßiger Überprüfung"
+      }
+    },
+    "mcQ1": {
+      "title": "Nutzen Sie Multi-Faktor-Authentifizierung (z.B. Authenticator-App, Hardware-Token) für kritische Systeme?",
+      "tooltip": "NIS2 verlangt MFA für privilegierte Zugänge (Art. 21(2)(j), §30 Abs. 2 Nr. 10 BSIG). MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
+      "maturity": {
+        "level0": "Kein MFA im Einsatz",
+        "level1": "MFA für einzelne Systeme (z.B. nur Cloud-E-Mail)",
+        "level2": "MFA für die meisten kritischen Systeme",
+        "level3": "MFA für alle kritischen Systeme und privilegierte Zugänge"
+      }
+    },
+    "mcQ2": {
+      "title": "Wird vertrauliche Kommunikation verschlüsselt (z.B. verschlüsselte E-Mails, sichere Videokonferenzen)?",
+      "tooltip": "Gesicherte Kommunikation schützt vor Abhören und Manipulation. NIS2 fordert gesicherte Sprach-, Video- und Textkommunikation (§30 Abs. 2 Nr. 10 BSIG).",
+      "maturity": {
+        "level0": "Keine verschlüsselte Kommunikation",
+        "level1": "Teilweise verschlüsselt (z.B. nur interne Chats)",
+        "level2": "Verschlüsselte Kommunikation für die meisten sensiblen Themen",
+        "level3": "Durchgängig verschlüsselte Kommunikation für alle vertraulichen Inhalte"
+      }
+    },
+    "mcQ3": {
+      "title": "Haben Sie sichere Kommunikationsmittel für Notfälle (z.B. alternative Kanäle bei IT-Ausfall)?",
+      "tooltip": "Gesicherte Notfallkommunikation stellt sicher, dass Ihr Krisenstab auch bei IT-Ausfall erreichbar bleibt (§30 Abs. 2 Nr. 10 BSIG).",
+      "maturity": {
+        "level0": "Keine Notfallkommunikation vorbereitet",
+        "level1": "Private Handynummern als informeller Notfallkanal",
+        "level2": "Definierter Notfallkanal, aber nicht getestet",
+        "level3": "Getestete Notfallkommunikation mit sicheren, unabhängigen Kanälen"
+      }
+    }
+  },
+  "recommendations": {
+    "ra1": {
+      "title": "IT-Risikoinventar erstellen",
+      "description": "Identifizieren Sie systematisch alle kritischen IT-Systeme, Daten und Prozesse sowie deren Gefährdungen.",
+      "firstStep": "Listen Sie Ihre 5 wichtigsten IT-Systeme auf und bewerten Sie deren Kritikalität für den Geschäftsbetrieb."
+    },
+    "ra2": {
+      "title": "Sicherheitsverantwortlichkeiten festlegen",
+      "description": "Benennen Sie einen IT-Sicherheitsbeauftragten und dokumentieren Sie Verantwortlichkeiten und Berichtslinien.",
+      "firstStep": "Bestimmen Sie eine verantwortliche Person für IT-Sicherheit und kommunizieren Sie dies an alle Mitarbeiter."
+    },
+    "ih1": {
+      "title": "Incident-Response-Plan erstellen",
+      "description": "Erstellen Sie einen dokumentierten Plan zur Reaktion auf Sicherheitsvorfälle mit klaren Rollen und Abläufen.",
+      "firstStep": "Definieren Sie die 3 häufigsten Vorfallsszenarien (z.B. Ransomware, Phishing, Datenverlust) und beschreiben Sie erste Reaktionsschritte."
+    },
+    "ih2": {
+      "title": "Notfallkontakte zusammenstellen",
+      "description": "Erstellen Sie eine aktuelle Kontaktliste mit internen Ansprechpartnern, externen IT-Dienstleistern und BSI-Meldewegen.",
+      "firstStep": "Sammeln Sie die Kontaktdaten Ihres IT-Dienstleisters und informieren Sie sich über die BSI-Meldepflicht (meldestelle@bsi.bund.de)."
+    },
+    "bc1": {
+      "title": "Backup-Strategie einführen",
+      "description": "Implementieren Sie eine 3-2-1-Backup-Strategie: 3 Kopien, 2 Medien, 1 extern. Testen Sie regelmäßig die Wiederherstellung.",
+      "firstStep": "Prüfen Sie, ob für Ihre wichtigsten Daten automatische Backups eingerichtet sind und testen Sie eine Wiederherstellung."
+    },
+    "bc2": {
+      "title": "Notfallplan erstellen",
+      "description": "Erstellen Sie einen IT-Notfallplan mit Wiederanlaufprioritäten, Verantwortlichkeiten und Kommunikationswegen.",
+      "firstStep": "Bestimmen Sie die 5 wichtigsten Geschäftsprozesse und definieren Sie deren maximal tolerierbare Ausfallzeit."
+    },
+    "sc1": {
+      "title": "Lieferantenübersicht erstellen",
+      "description": "Dokumentieren Sie alle externen IT-Dienstleister und deren Zugriff auf Ihre Systeme und Daten.",
+      "firstStep": "Erstellen Sie eine Liste aller externen Dienstleister, die Zugriff auf Ihre IT-Systeme oder Daten haben."
+    },
+    "sc2": {
+      "title": "Sicherheitsklauseln in Verträge aufnehmen",
+      "description": "Ergänzen Sie IT-Dienstleisterverträge um Sicherheitsanforderungen und Audit-Rechte.",
+      "firstStep": "Prüfen Sie Ihren wichtigsten IT-Dienstleistervertrag auf vorhandene Sicherheitsklauseln."
+    },
+    "ad1": {
+      "title": "Patch-Management einführen",
+      "description": "Etablieren Sie einen Prozess für zeitnahes Einspielen von Sicherheitsupdates auf allen Systemen.",
+      "firstStep": "Aktivieren Sie automatische Updates für Betriebssysteme und erstellen Sie eine Liste aller eingesetzten Software."
+    },
+    "ad2": {
+      "title": "Sicherheitsbewertung bei Anschaffungen",
+      "description": "Integrieren Sie Sicherheitskriterien in den Beschaffungsprozess für neue IT-Systeme und Software.",
+      "firstStep": "Erstellen Sie eine Checkliste mit Sicherheitskriterien (Verschlüsselung, Update-Häufigkeit, Herstellersupport) für IT-Beschaffungen."
+    },
+    "ea1": {
+      "title": "Regelmäßige Sicherheitsüberprüfung einführen",
+      "description": "Planen Sie mindestens jährliche Überprüfungen Ihrer Sicherheitsmaßnahmen, intern oder durch externe Auditors.",
+      "firstStep": "Terminieren Sie eine erste Überprüfung Ihrer wichtigsten Sicherheitsmaßnahmen innerhalb der nächsten 3 Monate."
+    },
+    "ea2": {
+      "title": "Schwachstellenscans durchführen",
+      "description": "Führen Sie regelmäßige technische Sicherheitstests durch, um Schwachstellen frühzeitig zu erkennen.",
+      "firstStep": "Informieren Sie sich über kostenlose Schwachstellenscanner (z.B. OpenVAS) oder beauftragen Sie einen externen Penetrationstest."
+    },
+    "ch1": {
+      "title": "Awareness-Schulungsprogramm starten",
+      "description": "Führen Sie regelmäßige IT-Sicherheitsschulungen für alle Mitarbeiter ein, mindestens jährlich.",
+      "firstStep": "Organisieren Sie eine erste Schulung zum Thema Phishing-Erkennung für alle Mitarbeiter."
+    },
+    "ch2": {
+      "title": "Sicherheitsrichtlinien dokumentieren",
+      "description": "Erstellen Sie verständliche Richtlinien für Passwörter, E-Mail-Sicherheit, mobile Geräte und Homeoffice.",
+      "firstStep": "Verfassen Sie eine einseitige Passwortrichtlinie (Mindestlänge, Komplexität, keine Wiederverwendung)."
+    },
+    "cr1": {
+      "title": "Verschlüsselungsstandards umsetzen",
+      "description": "Stellen Sie sicher, dass alle sensiblen Daten bei Speicherung und Übertragung verschlüsselt werden.",
+      "firstStep": "Prüfen Sie, ob Ihre Website HTTPS nutzt und ob E-Mails mit sensiblen Inhalten verschlüsselt versendet werden."
+    },
+    "cr2": {
+      "title": "Kryptokonzept erstellen",
+      "description": "Dokumentieren Sie, wo Verschlüsselung eingesetzt wird, welche Verfahren und Schlüssellängen Sie verwenden.",
+      "firstStep": "Erstellen Sie eine Übersicht aller Stellen, an denen Verschlüsselung eingesetzt wird oder eingesetzt werden sollte."
+    },
+    "ac1": {
+      "title": "Rollenbasierte Zugriffskontrolle einführen",
+      "description": "Implementieren Sie das Prinzip der minimalen Berechtigung: Jeder Mitarbeiter erhält nur die Rechte, die für seine Aufgabe nötig sind.",
+      "firstStep": "Überprüfen Sie die Admin-Rechte: Welche Mitarbeiter haben Administratorzugriff und brauchen sie diesen wirklich?"
+    },
+    "ac2": {
+      "title": "Offboarding-Prozess für IT-Zugänge",
+      "description": "Stellen Sie sicher, dass bei Ausscheiden von Mitarbeitern alle IT-Zugänge sofort deaktiviert werden.",
+      "firstStep": "Erstellen Sie eine Checkliste aller Systeme und Zugänge, die bei Mitarbeiteraustritt deaktiviert werden müssen."
+    },
+    "mc1": {
+      "title": "MFA für kritische Systeme aktivieren",
+      "description": "Aktivieren Sie Multi-Faktor-Authentifizierung für alle kritischen Systeme, beginnend mit E-Mail und VPN.",
+      "firstStep": "Aktivieren Sie MFA für Ihre geschäftliche E-Mail (Microsoft 365, Google Workspace) und dokumentieren Sie die Einrichtung."
+    },
+    "mc2": {
+      "title": "Sichere Kommunikationskanäle einrichten",
+      "description": "Stellen Sie verschlüsselte Kommunikationskanäle für vertrauliche Geschäftsinhalte und Notfälle bereit.",
+      "firstStep": "Richten Sie einen verschlüsselten Messenger (z.B. Signal) als Notfall-Kommunikationskanal ein und teilen Sie die Kontaktdaten im Krisenstab."
+    }
   }
 }
