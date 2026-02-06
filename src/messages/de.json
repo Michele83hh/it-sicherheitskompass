@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "title": "NIS2-Bereitschaftsprüfung",
+    "description": "Finden Sie in 15-20 Minuten heraus, ob Ihr KMU von NIS2 betroffen ist und wo die größten Compliance-Lücken liegen"
+  },
+  "common": {
+    "start": "Prüfung starten",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten"
+  },
+  "landing": {
+    "title": "NIS2-Bereitschaft in 15 Minuten prüfen",
+    "subtitle": "Intelligenter Fragebogen für KMUs – Compliance-Status ermitteln und maßgeschneiderte Handlungsempfehlungen erhalten",
+    "cta": "Kostenlose Prüfung starten",
+    "features": {
+      "fast": {
+        "title": "Schnell",
+        "description": "Nur 15-20 Minuten"
+      },
+      "smart": {
+        "title": "Intelligent",
+        "description": "Adaptive Fragen basierend auf Ihren Antworten"
+      },
+      "actionable": {
+        "title": "Konkret",
+        "description": "Maßgeschneiderte Handlungsempfehlungen"
+      }
+    }
+  }
+}

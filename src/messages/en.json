@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "title": "NIS2 Readiness Check",
+    "description": "Find out in 15-20 minutes if your SME is affected by NIS2 and where the biggest compliance gaps are"
+  },
+  "common": {
+    "start": "Start Check",
+    "continue": "Continue",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "An error occurred"
+  },
+  "landing": {
+    "title": "Check Your NIS2 Readiness in 15 Minutes",
+    "subtitle": "Intelligent questionnaire for SMEs – assess compliance status and receive tailored recommendations",
+    "cta": "Start Free Check",
+    "features": {
+      "fast": {
+        "title": "Fast",
+        "description": "Only 15-20 minutes"
+      },
+      "smart": {
+        "title": "Smart",
+        "description": "Adaptive questions based on your answers"
+      },
+      "actionable": {
+        "title": "Actionable",
+        "description": "Tailored recommendations"
+      }
+    }
+  }
+}
