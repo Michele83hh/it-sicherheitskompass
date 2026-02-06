@@ -599,6 +599,34 @@
       "submit": "Ergebnis anzeigen"
     }
   },
+  "gapAnalysis": {
+    "title": "NIS2 Gap-Analyse",
+    "subtitle": "Bewerten Sie Ihren Umsetzungsstand in den 10 Maßnahmenbereichen nach Art. 21(2) NIS2-Richtlinie",
+    "progress": {
+      "category": "Bereich {current} von {total}",
+      "overall": "Gesamtfortschritt",
+      "detail": "{answered} von {total} Fragen beantwortet",
+      "percentage": "{value}%"
+    },
+    "navigation": {
+      "back": "Zurück",
+      "next": "Weiter",
+      "showResults": "Ergebnisse anzeigen"
+    },
+    "question": {
+      "selectMaturity": "Wählen Sie den aktuellen Umsetzungsstand:",
+      "tooltip": "Erläuterung"
+    },
+    "maturityOptions": {
+      "level0": "Stufe 0: {description}",
+      "level1": "Stufe 1: {description}",
+      "level2": "Stufe 2: {description}",
+      "level3": "Stufe 3: {description}"
+    },
+    "validation": {
+      "required": "Bitte beantworten Sie diese Frage"
+    }
+  },
   "recommendations": {
     "ra1": {
       "title": "IT-Risikoinventar erstellen",

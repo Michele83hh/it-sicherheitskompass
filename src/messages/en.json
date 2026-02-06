@@ -599,6 +599,34 @@
       "submit": "Show Result"
     }
   },
+  "gapAnalysis": {
+    "title": "NIS2 Gap Analysis",
+    "subtitle": "Assess your implementation status across the 10 measure categories per Art. 21(2) NIS2 Directive",
+    "progress": {
+      "category": "Category {current} of {total}",
+      "overall": "Overall progress",
+      "detail": "{answered} of {total} questions answered",
+      "percentage": "{value}%"
+    },
+    "navigation": {
+      "back": "Back",
+      "next": "Next",
+      "showResults": "Show results"
+    },
+    "question": {
+      "selectMaturity": "Select the current implementation level:",
+      "tooltip": "Explanation"
+    },
+    "maturityOptions": {
+      "level0": "Level 0: {description}",
+      "level1": "Level 1: {description}",
+      "level2": "Level 2: {description}",
+      "level3": "Level 3: {description}"
+    },
+    "validation": {
+      "required": "Please answer this question"
+    }
+  },
   "recommendations": {
     "ra1": {
       "title": "Create an IT Risk Inventory",
