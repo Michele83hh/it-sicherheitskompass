@@ -1,21 +1,22 @@
 # Project State: NIS2 Readiness Check
 
-**Last Updated:** 2026-02-06T15:09:38Z
+**Last Updated:** 2026-02-06T16:07:48Z
 
 ---
 
 ## Current Position
 
-**Phase:** 2 of 7 (02-nis2-content-scoring-engine)
-**Plan:** 3 of 3 in phase
-**Status:** ✅ Phase complete
-**Last activity:** 2026-02-06 - Completed 02-03-PLAN.md (scoring engine, vitest tests, methodology)
+**Phase:** 3 of 7 (03-affected-check)
+**Plan:** 1 of 2 in phase
+**Status:** 🏗️ In progress
+**Last activity:** 2026-02-06 - Completed 03-01-PLAN.md (wizard foundation: store, components, translations)
 
-**Progress:** Phase 2 complete, ready for Phase 3
+**Progress:** Phase 3 underway (1/2 plans complete)
 
 ```
 Phase 1: █████████████████████ 100% (2/2) ✅
 Phase 2: █████████████████████ 100% (3/3) ✅
+Phase 3: ██████████░░░░░░░░░░░  50% (1/2) 🏗️
 ```
 
 ---
@@ -33,10 +34,10 @@ Phase 2: █████████████████████ 100% (3
 **Styling:** Tailwind CSS v4
 **UI Components:** shadcn/ui
 **Internationalization:** next-intl (DE/EN)
-**State Management:** zustand
+**State Management:** zustand (with persist middleware)
 **Testing:** vitest ^4.0.18
 **PDF Generation:** @react-pdf/renderer (to be added)
-**Form Management:** react-hook-form + zod (to be added)
+**Form Management:** react-hook-form ^7.71.1 + zod ^4.3.6 + react-number-format ^5.4.4
 
 ---
 
@@ -46,7 +47,7 @@ Phase 2: █████████████████████ 100% (3
 |-------|-------------------------------|-----------------|------------|
 | 1     | Foundation                    | ✅ Complete      | 2/2 (100%) |
 | 2     | NIS2 Content + Scoring Engine | ✅ Complete      | 3/3 (100%) |
-| 3     | Affected Check                | 🔜 Not planned   | 0/?        |
+| 3     | Affected Check                | 🏗️ In progress   | 1/2 (50%)  |
 | 4     | Gap Analysis Wizard           | 🔜 Not planned   | 0/?        |
 | 5     | Results Dashboard             | 🔜 Not planned   | 0/?        |
 | 6     | PDF Report                    | 🔜 Not planned   | 0/?        |
@@ -79,6 +80,10 @@ Phase 2: █████████████████████ 100% (3
 | 02    | 03   | Equal category weighting | All Art. 21(2) measures equally mandatory per directive |
 | 02    | 03   | 1 decimal place rounding | Balances precision with readability |
 | 02    | 03   | SCORING_METHODOLOGY export | Transparent methodology for Results Dashboard |
+| 03    | 01   | Partial<ClassificationInput> for wizard formData | Allows incremental form filling across 3 steps |
+| 03    | 01   | Zustand persist with nis2-wizard-storage key | Prevents data loss on accidental navigation |
+| 03    | 01   | Numbered circles for StepIndicator | Most semantic and accessible for 3-step wizard |
+| 03    | 01   | Top-level check key in translations | Feature-based organization (not nested under wizard.*) |
 
 ---
 
@@ -86,32 +91,33 @@ Phase 2: █████████████████████ 100% (3
 
 | ID | Type | Description | Status | Mitigation |
 |----|------|-------------|--------|------------|
-| C1 | Technical | Zod 4 breaking changes | 🟡 Monitoring | Pin to Zod v3 if needed |
-| C2 | Technical | @react-pdf/renderer compatibility | 🟡 Monitoring | Test integration in Phase 5 |
+| C1 | Technical | Zod 4 breaking changes | ✅ Resolved | Project uses Zod v4.3.6, @hookform/resolvers v5.2.2 supports it |
+| C2 | Technical | @react-pdf/renderer compatibility | 🟡 Monitoring | Test integration in Phase 6 |
 
 **Notes:**
-- Both concerns noted in project state, will be addressed when dependencies are installed
-- Foundation phase complete without encountering these issues
+- C1 resolved: Zod v4 installed and working with react-hook-form
+- C2 deferred to Phase 6 when PDF generation is implemented
 
 ---
 
-## Phase 2 Plan Details
+## Phase 3 Plan Details
 
 | Plan | Wave | What it builds | Dependencies |
 |------|------|----------------|--------------|
-| 02-01 | 1 | Sector data, classification logic, shared types | None |
-| 02-02 | 1 | Question catalog, categories, recommendations, DE/EN translations | None |
-| 02-03 | 2 | Scoring engine (pure functions), vitest tests, methodology | 02-01, 02-02 |
+| 03-01 | 1 | Dependencies, wizard store, shared components, i18n translations | 02-01, 02-02, 02-03 |
+| 03-02 | 1 | 3-step wizard UI (sector selection, company size, classification result) | 03-01 |
+
+**Status:** Plan 03-01 complete (3m10s), ready for 03-02
 
 ---
 
 ## Session Continuity
 
-**Last session:** 2026-02-06T15:09:38Z
-**Stopped at:** Completed 02-03-PLAN.md (scoring engine, vitest tests, methodology)
+**Last session:** 2026-02-06T16:07:48Z
+**Stopped at:** Completed 03-01-PLAN.md (wizard foundation: store, components, translations)
 **Resume file:** None
 
-**Next action:** Plan Phase 3 (Affected Check)
+**Next action:** Execute Plan 03-02 (3-step wizard UI)
 
 ---
 
@@ -130,7 +136,7 @@ Phase 2: █████████████████████ 100% (3
 - `src/messages/en.json` - English translations
 
 **State Management:**
-- `src/stores/wizard-store.ts` - Wizard state (zustand)
+- `src/stores/wizard-store.ts` - Extended wizard state (zustand with persist middleware)
 
 **NIS2 Domain Model:**
 - `src/lib/nis2/types.ts` - All NIS2 domain types
@@ -159,6 +165,16 @@ Phase 2: █████████████████████ 100% (3
 **Design Assets:**
 - `src/app/globals.css` - Design tokens (colors, typography)
 - `public/favicon.svg` - NIS2 shield branding
+
+**Wizard Components (Phase 3):**
+- `src/app/[locale]/check/components/step-indicator.tsx` - 3-step progress indicator
+- `src/app/[locale]/check/components/navigation.tsx` - Back/Next/Submit navigation buttons
+- `src/components/ui/select.tsx` - Grouped dropdown (sector selection)
+- `src/components/ui/input.tsx` - Text input with consistent styling
+- `src/components/ui/label.tsx` - Form labels with htmlFor
+- `src/components/ui/tooltip.tsx` - Contextual help tooltips
+- `src/components/ui/checkbox.tsx` - Accessible checkbox (KRITIS)
+- `src/components/ui/separator.tsx` - Visual dividers
 
 ---
 

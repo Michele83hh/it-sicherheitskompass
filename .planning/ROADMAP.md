@@ -68,7 +68,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01-PLAN.md -- Dependencies, wizard store, shared components, i18n translations
+- [x] 03-01-PLAN.md -- Dependencies, wizard store, shared components, i18n translations
 - [ ] 03-02-PLAN.md -- 3-step wizard UI (sector selection, company size, classification result)
 
 ### Phase 4: Gap Analysis Wizard (Step 2)
@@ -139,7 +139,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 |-------|---------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-02-06 |
 | 2. NIS2 Content + Scoring Engine | 3/3 | Complete | 2026-02-06 |
-| 3. Affected Check | 0/2 | Planning complete | - |
+| 3. Affected Check | 1/2 | In progress | - |
 | 4. Gap Analysis Wizard | 0/1 | Not started | - |
 | 5. Results Dashboard | 0/1 | Not started | - |
 | 6. PDF Report | 0/2 | Not started | - |
@@ -147,4 +147,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-06 (Phase 3 planned)*
+*Last updated: 2026-02-06 (Phase 3 Plan 01 complete)*
