@@ -13,7 +13,7 @@ This roadmap delivers a professional NIS2 readiness check web tool in 7 phases o
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Project setup, design system, state management, i18n infrastructure
-- [ ] **Phase 2: NIS2 Content + Scoring Engine** - Questions, categories, legal references, pure scoring functions
+- [x] **Phase 2: NIS2 Content + Scoring Engine** - Questions, categories, legal references, pure scoring functions
 - [ ] **Phase 3: Affected Check** - Step 1 UI: sector selection, size classification, result display
 - [ ] **Phase 4: Gap Analysis Wizard** - Step 2 UI: multi-step form across 10 NIS2 categories
 - [ ] **Phase 5: Results Dashboard** - Step 3 UI: scores, traffic lights, recommendations
