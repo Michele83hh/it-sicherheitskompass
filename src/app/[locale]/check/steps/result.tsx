@@ -142,7 +142,7 @@ export function ResultStep() {
 
           {showExplanation && (
             <div className="mt-4 space-y-2 text-sm text-gray-700">
-              <p>{tClassification(result.reason)}</p>
+              <p>{tClassification(result.reason.replace('classification.', ''))}</p>
               <p className="font-medium">
                 {t('legalBasis')}: {result.legalReference}
               </p>
