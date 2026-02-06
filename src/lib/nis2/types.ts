@@ -90,10 +90,13 @@ export interface Category {
   questions: Question[];
 }
 
+export type EffortLevel = 'quick' | 'medium' | 'strategic';
+
 export interface Recommendation {
   id: string;
   categoryId: string;
   priority: 'high' | 'medium' | 'low';
+  effortLevel: EffortLevel;
   titleKey: string;
   descriptionKey: string;
   firstStepKey: string;
