@@ -82,7 +82,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 04-01: Gap analysis wizard UI (multi-step form, category navigation, progress indicator, answer persistence)
+- [ ] 04-01-PLAN.md -- Gap analysis wizard UI (store, progress indicator, category step, answer persistence)
 
 ### Phase 5: Results Dashboard (Step 3)
 **Goal**: Users see a comprehensive, visually clear overview of their NIS2 readiness with actionable recommendations prioritized by urgency
@@ -140,11 +140,11 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 | 1. Foundation | 2/2 | Complete | 2026-02-06 |
 | 2. NIS2 Content + Scoring Engine | 3/3 | Complete | 2026-02-06 |
 | 3. Affected Check | 2/2 | Complete | 2026-02-06 |
-| 4. Gap Analysis Wizard | 0/1 | Not started | - |
+| 4. Gap Analysis Wizard | 0/1 | Planned | - |
 | 5. Results Dashboard | 0/1 | Not started | - |
 | 6. PDF Report | 0/2 | Not started | - |
 | 7. Polish + Legal + Deploy | 0/2 | Not started | - |
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-06 (Phase 3 complete)*
+*Last updated: 2026-02-06 (Phase 4 planned)*
