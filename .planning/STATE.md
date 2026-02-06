@@ -1,21 +1,21 @@
 # Project State: NIS2 Readiness Check
 
-**Last Updated:** 2026-02-06T17:15:00Z
+**Last Updated:** 2026-02-06T15:09:38Z
 
 ---
 
 ## Current Position
 
 **Phase:** 2 of 7 (02-nis2-content-scoring-engine)
-**Plan:** 2 of 3 in phase
-**Status:** In progress
-**Last activity:** 2026-02-06 - Completed 02-02-PLAN.md (questions, categories, recommendations)
+**Plan:** 3 of 3 in phase
+**Status:** ✅ Phase complete
+**Last activity:** 2026-02-06 - Completed 02-03-PLAN.md (scoring engine, vitest tests, methodology)
 
-**Progress:** Phase 2 execution in progress
+**Progress:** Phase 2 complete, ready for Phase 3
 
 ```
 Phase 1: █████████████████████ 100% (2/2) ✅
-Phase 2: ██████████████░░░░░░░░ 67% (2/3) — IN PROGRESS
+Phase 2: █████████████████████ 100% (3/3) ✅
 ```
 
 ---
@@ -34,6 +34,7 @@ Phase 2: ██████████████░░░░░░░░ 67% 
 **UI Components:** shadcn/ui
 **Internationalization:** next-intl (DE/EN)
 **State Management:** zustand
+**Testing:** vitest ^4.0.18
 **PDF Generation:** @react-pdf/renderer (to be added)
 **Form Management:** react-hook-form + zod (to be added)
 
@@ -44,7 +45,7 @@ Phase 2: ██████████████░░░░░░░░ 67% 
 | Phase | Name                          | Status          | Plans      |
 |-------|-------------------------------|-----------------|------------|
 | 1     | Foundation                    | ✅ Complete      | 2/2 (100%) |
-| 2     | NIS2 Content + Scoring Engine | 🔄 In Progress   | 1/3 (33%)  |
+| 2     | NIS2 Content + Scoring Engine | ✅ Complete      | 3/3 (100%) |
 | 3     | Affected Check                | 🔜 Not planned   | 0/?        |
 | 4     | Gap Analysis Wizard           | 🔜 Not planned   | 0/?        |
 | 5     | Results Dashboard             | 🔜 Not planned   | 0/?        |
@@ -71,6 +72,13 @@ Phase 2: ██████████████░░░░░░░░ 67% 
 | 02    | 02   | Questions use translation keys | Enables i18n, keeps TypeScript data files language-agnostic |
 | 02    | 02   | Legal references in German format (EN too) | German law (BSIG) is binding; matches I18N-05 requirement |
 | 02    | 02   | Separate CATEGORIES and QUESTIONS arrays | Easier to query by category, avoids data duplication |
+| 02    | 03   | vitest over Jest | Faster execution, simpler config, native ESM support |
+| 02    | 03   | Pure scoring functions (no React) | Easy testing without mocking, worker-compatible |
+| 02    | 03   | (level / 3) × 100 formula | Avoids floating-point errors, exact 100% for level 3 |
+| 02    | 03   | RAG traffic light thresholds | Industry-standard <40/40-69/≥70 maturity ranges |
+| 02    | 03   | Equal category weighting | All Art. 21(2) measures equally mandatory per directive |
+| 02    | 03   | 1 decimal place rounding | Balances precision with readability |
+| 02    | 03   | SCORING_METHODOLOGY export | Transparent methodology for Results Dashboard |
 
 ---
 
@@ -99,11 +107,11 @@ Phase 2: ██████████████░░░░░░░░ 67% 
 
 ## Session Continuity
 
-**Last session:** 2026-02-06T17:15:00Z
-**Stopped at:** Completed 02-02-PLAN.md (gap analysis questions, categories, recommendations)
+**Last session:** 2026-02-06T15:09:38Z
+**Stopped at:** Completed 02-03-PLAN.md (scoring engine, vitest tests, methodology)
 **Resume file:** None
 
-**Next action:** Execute 02-03-PLAN.md (scoring engine)
+**Next action:** Plan Phase 3 (Affected Check)
 
 ---
 
@@ -131,6 +139,13 @@ Phase 2: ██████████████░░░░░░░░ 67% 
 - `src/lib/nis2/categories.ts` - 10 Art. 21(2) measure categories
 - `src/lib/nis2/questions.ts` - 30 gap analysis questions (3 per category)
 - `src/lib/nis2/recommendations.ts` - 20 BSI-referenced recommendations (2 per category)
+
+**Scoring Engine:**
+- `src/lib/scoring/types.ts` - Scoring type re-exports + CategoryQuestionCount
+- `src/lib/scoring/engine.ts` - 5 pure scoring functions
+- `src/lib/scoring/methodology.ts` - SCORING_METHODOLOGY for UI transparency
+- `src/lib/scoring/engine.test.ts` - 39 unit tests (all passing)
+- `vitest.config.ts` - Testing configuration
 
 **Layout Components:**
 - `src/components/layout/header.tsx` - Navigation header with language switcher
