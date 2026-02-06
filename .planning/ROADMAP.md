@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Affected Check** - Step 1 UI: sector selection, size classification, result display
 - [x] **Phase 4: Gap Analysis Wizard** - Step 2 UI: multi-step form across 10 NIS2 categories
 - [x] **Phase 5: Results Dashboard** - Step 3 UI: scores, traffic lights, recommendations
-- [ ] **Phase 6: PDF Report** - Serverless PDF generation with full results and legal references
+- [x] **Phase 6: PDF Report** - Serverless PDF generation with full results and legal references
 - [ ] **Phase 7: Polish + Legal + Deploy** - Responsive fixes, legal pages, disclaimers, production deployment
 
 ## Phase Details
@@ -112,8 +112,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md -- PDF infrastructure: install @react-pdf/renderer, Inter font registration, Pages Router API endpoint, PDF Document skeleton, download button wiring
-- [ ] 06-02-PLAN.md -- PDF content: cover page with disclaimer, company profile, scores table with traffic lights, recommendations with legal refs, i18n translations
+- [x] 06-01-PLAN.md -- PDF infrastructure: install @react-pdf/renderer, Inter font registration, Pages Router API endpoint, PDF Document skeleton, download button wiring
+- [x] 06-02-PLAN.md -- PDF content: cover page with disclaimer, company profile, scores table with traffic lights, recommendations with legal refs, i18n translations
 
 ### Phase 7: Polish + Legal + Deploy
 **Goal**: The tool is production-ready: responsive on all devices, legally compliant with German Telemedienrecht, free of development artifacts, and deployed on Vercel
@@ -143,9 +143,9 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 | 3. Affected Check | 2/2 | Complete | 2026-02-06 |
 | 4. Gap Analysis Wizard | 1/1 | Complete | 2026-02-06 |
 | 5. Results Dashboard | 2/2 | Complete | 2026-02-06 |
-| 6. PDF Report | 0/2 | In progress | - |
+| 6. PDF Report | 2/2 | Complete | 2026-02-07 |
 | 7. Polish + Legal + Deploy | 0/2 | Not started | - |
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-07 (Phase 6 planned)*
+*Last updated: 2026-02-07 (Phase 6 complete)*

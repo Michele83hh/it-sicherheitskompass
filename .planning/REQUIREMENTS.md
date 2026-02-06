@@ -141,18 +141,18 @@
 | AFFECT-06 | Phase 3 | Complete |
 | GAP-07 | Phase 4 | Complete |
 | GAP-08 | Phase 4 | Complete |
-| SCORE-02 | Phase 5 | Pending |
-| SCORE-03 | Phase 5 | Pending |
-| SCORE-04 | Phase 5 | Pending |
-| SCORE-06 | Phase 5 | Pending |
-| PDF-01 | Phase 6 | Pending |
-| PDF-02 | Phase 6 | Pending |
-| PDF-03 | Phase 6 | Pending |
-| PDF-04 | Phase 6 | Pending |
-| PDF-05 | Phase 6 | Pending |
-| PDF-06 | Phase 6 | Pending |
-| I18N-04 | Phase 6 | Pending |
-| I18N-05 | Phase 6 | Pending |
+| SCORE-02 | Phase 5 | Complete |
+| SCORE-03 | Phase 5 | Complete |
+| SCORE-04 | Phase 5 | Complete |
+| SCORE-06 | Phase 5 | Complete |
+| PDF-01 | Phase 6 | Complete |
+| PDF-02 | Phase 6 | Complete |
+| PDF-03 | Phase 6 | Complete |
+| PDF-04 | Phase 6 | Complete |
+| PDF-05 | Phase 6 | Complete |
+| PDF-06 | Phase 6 | Complete |
+| I18N-04 | Phase 6 | Complete |
+| I18N-05 | Phase 6 | Complete |
 | UX-03 | Phase 7 | Pending |
 | UX-04 | Phase 7 | Pending |
 | UX-06 | Phase 7 | Pending |
@@ -171,4 +171,4 @@
 
 ---
 *Requirements defined: 2026-02-06*
-*Last updated: 2026-02-06 after roadmap creation*
+*Last updated: 2026-02-07 after Phase 6 completion*
