@@ -8,7 +8,6 @@ import { useRouter } from 'next/navigation';
 import { Info } from 'lucide-react';
 import { useGapAnalysisStore } from '@/stores/gap-analysis-store';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Label } from '@/components/ui/label';
 import {
   Tooltip,
   TooltipContent,
@@ -104,6 +103,7 @@ export function CategoryStep({
   };
 
   return (
+    <TooltipProvider>
     <form key={categoryId} onSubmit={handleSubmit(onSubmit)} className="mt-8">
       <div className="space-y-8">
         {questions.map((question) => (
@@ -116,7 +116,6 @@ export function CategoryStep({
               <h3 className="text-lg font-semibold text-foreground">
                 {t(question.titleKey)}
               </h3>
-              <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <button
@@ -131,7 +130,6 @@ export function CategoryStep({
                     <p className="text-sm">{t(question.tooltipKey)}</p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
             </div>
 
             {/* Maturity selection label */}
@@ -154,18 +152,16 @@ export function CategoryStep({
                       question.maturityDescriptions[levelKey]
                     );
                     return (
-                      <div
+                      <label
                         key={level}
+                        htmlFor={`${question.id}-${level}`}
                         className="flex cursor-pointer items-start gap-3 rounded-lg border p-4 transition-colors hover:bg-gray-50"
                       >
                         <RadioGroupItem value={String(level)} id={`${question.id}-${level}`} />
-                        <Label
-                          htmlFor={`${question.id}-${level}`}
-                          className="flex-1 cursor-pointer text-sm leading-relaxed"
-                        >
+                        <span className="flex-1 text-sm leading-relaxed">
                           {description}
-                        </Label>
-                      </div>
+                        </span>
+                      </label>
                     );
                   })}
                 </RadioGroup>
@@ -194,5 +190,6 @@ export function CategoryStep({
         />
       </div>
     </form>
+    </TooltipProvider>
   );
 }

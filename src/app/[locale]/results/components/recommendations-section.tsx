@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { ExternalLink, CheckCircle2, AlertTriangle, AlertCircle } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
+import { getBsiUrl } from '@/lib/nis2/bsi-links';
 import type { CategoryScore, Recommendation, EffortLevel } from '@/lib/nis2/types';
 
 interface SortedCategory {
@@ -58,9 +59,6 @@ export function RecommendationsSection({
       className: 'bg-blue-100 text-blue-800 border-blue-200',
     },
   };
-
-  const BSI_KOMPENDIUM_URL =
-    'https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/it-grundschutz-kompendium_node.html';
 
   return (
     <section className="mb-12">
@@ -146,7 +144,7 @@ export function RecommendationsSection({
 
                       {/* BSI reference */}
                       <a
-                        href={BSI_KOMPENDIUM_URL}
+                        href={getBsiUrl(rec.bsiReference)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
