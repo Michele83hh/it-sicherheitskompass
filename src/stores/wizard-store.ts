@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { ClassificationInput } from '@/lib/nis2/types';
+import { ClassificationInput, ClassificationResult } from '@/lib/nis2/types';
 
 interface WizardState {
   // Navigation state
@@ -9,12 +9,14 @@ interface WizardState {
 
   // Form data (persisted to localStorage)
   formData: Partial<ClassificationInput>;
+  classificationResult: ClassificationResult | null;
 
   // Actions
   setStep: (step: number) => void;
   nextStep: () => void;
   prevStep: () => void;
   updateFormData: (data: Partial<ClassificationInput>) => void;
+  setClassificationResult: (result: ClassificationResult) => void;
   reset: () => void;
 }
 
@@ -24,6 +26,7 @@ export const useWizardStore = create<WizardState>()(
       currentStep: 0,
       totalSteps: 3,
       formData: {},
+      classificationResult: null,
 
       setStep: (step) => set({ currentStep: step }),
       nextStep: () =>
@@ -38,13 +41,15 @@ export const useWizardStore = create<WizardState>()(
         set((state) => ({
           formData: { ...state.formData, ...data },
         })),
-      reset: () => set({ currentStep: 0, formData: {} }),
+      setClassificationResult: (result) => set({ classificationResult: result }),
+      reset: () => set({ currentStep: 0, formData: {}, classificationResult: null }),
     }),
     {
       name: 'nis2-wizard-storage', // localStorage key
       partialize: (state) => ({
         formData: state.formData,
         currentStep: state.currentStep,
+        classificationResult: state.classificationResult,
       }), // Only persist these
     }
   )

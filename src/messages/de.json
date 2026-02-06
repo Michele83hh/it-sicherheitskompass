@@ -784,5 +784,43 @@
       "text": "Sie haben die Gap-Analyse noch nicht abgeschlossen. Bitte führen Sie zuerst die Analyse durch.",
       "cta": "Zur Gap-Analyse"
     }
+  },
+  "pdf": {
+    "title": "NIS2-Readiness-Report",
+    "subtitle": "Ergebnis der NIS2-Bereitschaftsprüfung",
+    "disclaimer": "Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität. Jede Maßnahme muss angemessen und wirksam für Ihr spezifisches Risikoprofil umgesetzt sein (§30 Abs. 1 BSIG). Diese Auswertung ersetzt keine Rechtsberatung oder professionelle Sicherheitsbewertung.",
+    "rechtsstand": "Rechtsstand",
+    "rechtstandDatum": "Januar 2025",
+    "generatedAt": "Erstellt am",
+    "companyProfile": "Unternehmensprofil",
+    "sector": "Sektor",
+    "subsector": "Untersektor",
+    "employees": "Mitarbeiter",
+    "annualRevenue": "Jahresumsatz",
+    "classification": "Einstufung",
+    "legalReference": "Rechtsgrundlage",
+    "overallScore": "Gesamter Reifegrad",
+    "completionRate": "Vollständigkeit",
+    "answeredQuestions": "Beantwortete Fragen",
+    "categories": "Ergebnisse nach Kategorie",
+    "categoryTableHeaders": {
+      "nr": "Nr.",
+      "category": "Maßnahmenbereich",
+      "score": "Score",
+      "status": "Status",
+      "legalBasis": "Rechtsgrundlage"
+    },
+    "recommendations": "Handlungsempfehlungen",
+    "priority": {
+      "high": "Hohe Priorität",
+      "medium": "Mittlere Priorität",
+      "low": "Geringe Priorität"
+    },
+    "effortLevel": {
+      "quick": "Schnell",
+      "medium": "Mittel",
+      "strategic": "Langfristig"
+    },
+    "firstStep": "Erster Schritt"
   }
 }

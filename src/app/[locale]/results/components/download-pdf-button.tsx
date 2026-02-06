@@ -28,6 +28,7 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
   const formData = useWizardStore((state) => state.formData);
 
   const t = useTranslations('results');
+  const tPdf = useTranslations('pdf');
   const tSectors = useTranslations('sectors');
   const tCategories = useTranslations('categories');
   const tRec = useTranslations('recommendations');
@@ -107,15 +108,36 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
 
       // Flatten translation messages for PDF
       const messages: Record<string, string> = {
-        'pdf.title': 'NIS2-Readiness-Report',
-        'pdf.subtitle': 'Ergebnis der NIS2-Bereitschaftsprüfung',
-        'pdf.disclaimer': t('disclaimer.text'),
-        'pdf.generatedAt': locale === 'de' ? 'Erstellt am' : 'Generated on',
-        'pdf.companyProfile': locale === 'de' ? 'Unternehmensprofil' : 'Company Profile',
-        'pdf.employees': locale === 'de' ? 'Mitarbeiter' : 'Employees',
-        'pdf.overallScore': t('overallScore.label'),
-        'pdf.categories': locale === 'de' ? 'Ergebnisse nach Kategorie' : 'Results by Category',
-        'pdf.recommendations': t('recommendations.title'),
+        'pdf.title': tPdf('title'),
+        'pdf.subtitle': tPdf('subtitle'),
+        'pdf.disclaimer': tPdf('disclaimer'),
+        'pdf.rechtsstand': tPdf('rechtsstand'),
+        'pdf.rechtstandDatum': tPdf('rechtstandDatum'),
+        'pdf.generatedAt': tPdf('generatedAt'),
+        'pdf.companyProfile': tPdf('companyProfile'),
+        'pdf.sector': tPdf('sector'),
+        'pdf.subsector': tPdf('subsector'),
+        'pdf.employees': tPdf('employees'),
+        'pdf.annualRevenue': tPdf('annualRevenue'),
+        'pdf.classification': tPdf('classification'),
+        'pdf.legalReference': tPdf('legalReference'),
+        'pdf.overallScore': tPdf('overallScore'),
+        'pdf.completionRate': tPdf('completionRate'),
+        'pdf.answeredQuestions': tPdf('answeredQuestions'),
+        'pdf.categories': tPdf('categories'),
+        'pdf.categoryTableHeaders.nr': tPdf('categoryTableHeaders.nr'),
+        'pdf.categoryTableHeaders.category': tPdf('categoryTableHeaders.category'),
+        'pdf.categoryTableHeaders.score': tPdf('categoryTableHeaders.score'),
+        'pdf.categoryTableHeaders.status': tPdf('categoryTableHeaders.status'),
+        'pdf.categoryTableHeaders.legalBasis': tPdf('categoryTableHeaders.legalBasis'),
+        'pdf.recommendations': tPdf('recommendations'),
+        'pdf.priority.high': tPdf('priority.high'),
+        'pdf.priority.medium': tPdf('priority.medium'),
+        'pdf.priority.low': tPdf('priority.low'),
+        'pdf.effortLevel.quick': tPdf('effortLevel.quick'),
+        'pdf.effortLevel.medium': tPdf('effortLevel.medium'),
+        'pdf.effortLevel.strategic': tPdf('effortLevel.strategic'),
+        'pdf.firstStep': tPdf('firstStep'),
       };
 
       // Build payload

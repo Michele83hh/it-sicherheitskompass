@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from '@/lib/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { AlertCircle, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, Info } from 'lucide-react';
@@ -13,7 +13,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 export function ResultStep() {
   const t = useTranslations('check.resultStep');
   const tClassification = useTranslations('classification');
-  const { formData, reset } = useWizardStore();
+  const { formData, reset, setClassificationResult } = useWizardStore();
   const [showExplanation, setShowExplanation] = useState(false);
 
   // Handle "not listed" shortcut
@@ -74,6 +74,11 @@ export function ResultStep() {
   };
 
   const result: ClassificationResult = classifyEntity(classificationInput);
+
+  // Store classification result for PDF generation
+  useEffect(() => {
+    setClassificationResult(result);
+  }, [result.category, result.legalReference, setClassificationResult]);
 
   // Card config by category
   const cardConfig = {

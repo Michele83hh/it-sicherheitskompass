@@ -784,5 +784,43 @@
       "text": "You have not completed the gap analysis yet. Please complete the analysis first.",
       "cta": "Go to gap analysis"
     }
+  },
+  "pdf": {
+    "title": "NIS2 Readiness Report",
+    "subtitle": "Results of NIS2 Readiness Assessment",
+    "disclaimer": "Your responses indicate the following maturity level. A high score does not automatically mean NIS2 conformity. Every measure must be adequately and effectively implemented for your specific risk profile (Section 30(1) BSIG). This assessment does not replace legal advice or a professional security evaluation.",
+    "rechtsstand": "Rechtsstand",
+    "rechtstandDatum": "Januar 2025",
+    "generatedAt": "Generated on",
+    "companyProfile": "Company Profile",
+    "sector": "Sector",
+    "subsector": "Subsector",
+    "employees": "Employees",
+    "annualRevenue": "Annual Revenue",
+    "classification": "Classification",
+    "legalReference": "Legal Basis",
+    "overallScore": "Overall Readiness Level",
+    "completionRate": "Completion Rate",
+    "answeredQuestions": "Answered Questions",
+    "categories": "Results by Category",
+    "categoryTableHeaders": {
+      "nr": "No.",
+      "category": "Measure Category",
+      "score": "Score",
+      "status": "Status",
+      "legalBasis": "Legal Basis"
+    },
+    "recommendations": "Recommendations",
+    "priority": {
+      "high": "High Priority",
+      "medium": "Medium Priority",
+      "low": "Low Priority"
+    },
+    "effortLevel": {
+      "quick": "Quick",
+      "medium": "Medium",
+      "strategic": "Long-term"
+    },
+    "firstStep": "First Step"
   }
 }

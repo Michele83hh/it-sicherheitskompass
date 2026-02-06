@@ -99,4 +99,87 @@ export const styles = StyleSheet.create({
   bold: {
     fontWeight: 700,
   },
+  // Label-value pair
+  labelValue: {
+    flexDirection: 'row',
+    marginBottom: 6,
+  },
+  label: {
+    fontSize: 9,
+    color: COLORS.gray500,
+    width: 120,
+  },
+  value: {
+    fontSize: 9,
+    color: COLORS.gray900,
+    flex: 1,
+  },
+  // Score display
+  scoreDisplay: {
+    fontSize: 32,
+    fontWeight: 700,
+    color: COLORS.primary,
+    marginBottom: 8,
+  },
+  // Traffic light status text
+  statusText: {
+    fontSize: 9,
+    marginLeft: 6,
+  },
+  // Table styles (flex-based)
+  tableHeader: {
+    flexDirection: 'row',
+    backgroundColor: COLORS.gray100,
+    padding: 8,
+    borderBottom: `1 solid ${COLORS.gray300}`,
+    fontWeight: 700,
+    fontSize: 9,
+  },
+  tableRow: {
+    flexDirection: 'row',
+    padding: 8,
+    borderBottom: `1 solid ${COLORS.gray200}`,
+    fontSize: 9,
+  },
+  tableCell: {
+    fontSize: 9,
+  },
+  // Recommendation card
+  recCard: {
+    marginBottom: 12,
+    borderLeft: `3 solid ${COLORS.primary}`,
+    paddingLeft: 8,
+  },
+  recTitle: {
+    fontSize: 11,
+    fontWeight: 700,
+    color: COLORS.gray900,
+    marginBottom: 4,
+  },
+  recDescription: {
+    fontSize: 9,
+    color: COLORS.gray700,
+    marginBottom: 4,
+  },
+  recFirstStep: {
+    fontSize: 9,
+    color: COLORS.gray900,
+    marginBottom: 4,
+  },
+  recBadge: {
+    flexDirection: 'row',
+    gap: 6,
+    marginTop: 4,
+  },
+  badge: {
+    fontSize: 7,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 3,
+  },
+  // Horizontal rule
+  hr: {
+    borderBottom: `1 solid ${COLORS.gray300}`,
+    marginVertical: 12,
+  },
 });
