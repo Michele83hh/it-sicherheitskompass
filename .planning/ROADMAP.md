@@ -112,8 +112,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: PDF template and serverless generation (react-pdf layout, font registration, Umlaut support, Vercel Route Handler)
-- [ ] 06-02: PDF content integration (company profile, scores, recommendations, disclaimers, legal refs, i18n)
+- [ ] 06-01-PLAN.md -- PDF infrastructure: install @react-pdf/renderer, Inter font registration, Pages Router API endpoint, PDF Document skeleton, download button wiring
+- [ ] 06-02-PLAN.md -- PDF content: cover page with disclaimer, company profile, scores table with traffic lights, recommendations with legal refs, i18n translations
 
 ### Phase 7: Polish + Legal + Deploy
 **Goal**: The tool is production-ready: responsive on all devices, legally compliant with German Telemedienrecht, free of development artifacts, and deployed on Vercel
@@ -143,9 +143,9 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 | 3. Affected Check | 2/2 | Complete | 2026-02-06 |
 | 4. Gap Analysis Wizard | 1/1 | Complete | 2026-02-06 |
 | 5. Results Dashboard | 2/2 | Complete | 2026-02-06 |
-| 6. PDF Report | 0/2 | Not started | - |
+| 6. PDF Report | 0/2 | In progress | - |
 | 7. Polish + Legal + Deploy | 0/2 | Not started | - |
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-06 (Phase 5 complete)*
+*Last updated: 2026-02-07 (Phase 6 planned)*
