@@ -547,6 +547,58 @@
       }
     }
   },
+  "check": {
+    "title": "NIS2 Affected Check",
+    "subtitle": "Check in a few steps whether your company is affected by NIS2",
+    "steps": {
+      "sector": "Sector",
+      "companySize": "Company Size",
+      "result": "Result"
+    },
+    "sectorStep": {
+      "title": "In which sector does your company operate?",
+      "sectorLabel": "Sector",
+      "sectorPlaceholder": "Select a sector...",
+      "subsectorLabel": "Subsector",
+      "subsectorPlaceholder": "Select a subsector...",
+      "anlage1Group": "Sectors of High Criticality (Annex 1)",
+      "anlage2Group": "Other Critical Sectors (Annex 2)",
+      "notListed": "My sector is not listed",
+      "sectorRequired": "Please select a sector"
+    },
+    "sizeStep": {
+      "title": "How large is your company?",
+      "employeesLabel": "Number of Employees",
+      "employeesPlaceholder": "e.g. 120",
+      "revenueLabel": "Annual Revenue (EUR)",
+      "revenuePlaceholder": "e.g. 15,000,000",
+      "balanceSheetLabel": "Balance Sheet Total (EUR)",
+      "balanceSheetOptional": "(optional)",
+      "balanceSheetTooltip": "If known, please provide. If not, only revenue will be used for classification.",
+      "balanceSheetPlaceholder": "e.g. 12,000,000",
+      "kritisLabel": "Do you operate critical infrastructure (KRITIS)?",
+      "kritisTooltip": "KRITIS operators are classified as particularly important entities regardless of company size (Sec. 28(1)(1) BSIG). This applies to e.g. energy suppliers, large water utilities, or hospitals.",
+      "employeesRequired": "Please enter the number of employees",
+      "revenueRequired": "Please enter the annual revenue"
+    },
+    "resultStep": {
+      "title": "Your Result",
+      "besondersWichtig": "Particularly Important Entity",
+      "wichtig": "Important Entity",
+      "nichtBetroffen": "Presumably Not Affected by NIS2",
+      "whyTitle": "Why this classification?",
+      "legalBasis": "Legal Basis",
+      "supplyChainTitle": "Supply Chain Security Notice",
+      "supplyChainText": "Even if you are not directly affected by NIS2, your customers or clients as NIS2-regulated entities may impose security requirements on you as a supplier (Art. 21(2)(d), Sec. 30(2)(4) BSIG).",
+      "ctaPrimary": "Check Readiness Level",
+      "ctaSecondary": "Check Again"
+    },
+    "navigation": {
+      "next": "Next",
+      "back": "Back",
+      "submit": "Show Result"
+    }
+  },
   "recommendations": {
     "ra1": {
       "title": "Create an IT Risk Inventory",

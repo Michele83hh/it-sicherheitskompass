@@ -547,6 +547,58 @@
       }
     }
   },
+  "check": {
+    "title": "NIS2-Betroffenheitsprüfung",
+    "subtitle": "Prüfen Sie in wenigen Schritten, ob Ihr Unternehmen von NIS2 betroffen ist",
+    "steps": {
+      "sector": "Sektor",
+      "companySize": "Unternehmensgröße",
+      "result": "Ergebnis"
+    },
+    "sectorStep": {
+      "title": "In welchem Sektor ist Ihr Unternehmen tätig?",
+      "sectorLabel": "Sektor",
+      "sectorPlaceholder": "Sektor auswählen...",
+      "subsectorLabel": "Teilsektor",
+      "subsectorPlaceholder": "Teilsektor auswählen...",
+      "anlage1Group": "Sektoren hoher Kritikalität (Anlage 1)",
+      "anlage2Group": "Sonstige kritische Sektoren (Anlage 2)",
+      "notListed": "Mein Sektor ist nicht aufgeführt",
+      "sectorRequired": "Bitte wählen Sie einen Sektor aus"
+    },
+    "sizeStep": {
+      "title": "Wie groß ist Ihr Unternehmen?",
+      "employeesLabel": "Anzahl Mitarbeiter",
+      "employeesPlaceholder": "z.B. 120",
+      "revenueLabel": "Jahresumsatz (EUR)",
+      "revenuePlaceholder": "z.B. 15.000.000",
+      "balanceSheetLabel": "Bilanzsumme (EUR)",
+      "balanceSheetOptional": "(optional)",
+      "balanceSheetTooltip": "Falls bekannt, bitte angeben. Wenn nicht, wird nur der Umsatz für die Klassifizierung verwendet.",
+      "balanceSheetPlaceholder": "z.B. 12.000.000",
+      "kritisLabel": "Betreiben Sie kritische Infrastruktur (KRITIS)?",
+      "kritisTooltip": "KRITIS-Betreiber sind unabhängig von der Unternehmensgröße als besonders wichtige Einrichtung eingestuft (§ 28 Abs. 1 Nr. 1 BSIG). Betrifft z.B. Energieversorger, große Wasserwerke oder Krankenhäuser.",
+      "employeesRequired": "Bitte geben Sie die Mitarbeiterzahl an",
+      "revenueRequired": "Bitte geben Sie den Jahresumsatz an"
+    },
+    "resultStep": {
+      "title": "Ihr Ergebnis",
+      "besondersWichtig": "Besonders wichtige Einrichtung",
+      "wichtig": "Wichtige Einrichtung",
+      "nichtBetroffen": "Voraussichtlich nicht von NIS2 betroffen",
+      "whyTitle": "Warum diese Einstufung?",
+      "legalBasis": "Rechtsgrundlage",
+      "supplyChainTitle": "Hinweis zur Lieferkettensicherheit",
+      "supplyChainText": "Auch wenn Sie nicht direkt von NIS2 betroffen sind, können Ihre Kunden oder Auftraggeber als NIS2-regulierte Einrichtungen Sicherheitsanforderungen an Sie als Lieferant stellen (Art. 21(2)(d), § 30 Abs. 2 Nr. 4 BSIG).",
+      "ctaPrimary": "Reifegrad prüfen",
+      "ctaSecondary": "Erneut prüfen"
+    },
+    "navigation": {
+      "next": "Weiter",
+      "back": "Zurück",
+      "submit": "Ergebnis anzeigen"
+    }
+  },
   "recommendations": {
     "ra1": {
       "title": "IT-Risikoinventar erstellen",
