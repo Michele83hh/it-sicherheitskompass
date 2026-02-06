@@ -2,7 +2,7 @@
 
 ## Overview
 
-This roadmap delivers a professional NIS2 readiness check web tool in 7 phases over 10 days. The build order follows the architecture's natural dependency chain: foundation and design system first, then the NIS2 content and scoring engine (the brain), followed by the three user-facing steps (Betroffenheitspruefung, Gap Analysis, Results Dashboard), then PDF report generation, and finally polish with legal pages and deployment. Every phase delivers a coherent, testable capability that builds on the previous one.
+This roadmap delivers a professional NIS2 readiness check web tool in 7 phases over 10 days. The build order follows the architecture's natural dependency chain: foundation and design system first, then the NIS2 content and scoring engine (the brain), followed by the three user-facing steps (Betroffenheitspruefung, Gap Analysis, Results Dashboard), then PDF report generation, and finally polish with legal pages and deployment. The critical path runs through Foundation -> Content/Engine -> Gap Analysis Wizard (bottleneck at days 4-7).
 
 ## Phases
 
@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Design system is visibly professional (consistent colors, typography, spacing) -- not a default template or student project
   4. Favicon shows "NIS2 Readiness Check" branding, page title is set, no framework defaults visible
   5. No cookies, no analytics scripts, no auth -- browser DevTools confirms zero tracking
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 01-01: Project scaffolding (Next.js 16, TypeScript, Tailwind, shadcn/ui, next-intl, zustand)
@@ -47,8 +47,8 @@ Plans:
   2. All 10 Art. 21(2) categories exist with 3-4 questions each (30-40 total), each referencing specific EU article and BSIG paragraph
   3. Questions are written in KMU-management-level German (not IT jargon), with tooltip explanations for technical terms
   4. Pure scoring functions calculate per-category percentage and traffic light (Rot/Gelb/Gruen) from answer arrays -- verified by unit tests
-  5. Priorisierte Handlungsempfehlungen exist for each category with concrete first steps, Gesetzesreferenzen, and BSI IT-Grundschutz Baustein references
-**Plans**: TBD
+  5. Prioritized recommendations exist for each category with concrete first steps, legal references, and BSI IT-Grundschutz building block references
+**Plans**: 3 plans
 
 Plans:
 - [ ] 02-01: NIS2 sector data and classification logic (18 sectors, size thresholds, special cases, legal references)
@@ -61,11 +61,11 @@ Plans:
 **Requirements**: AFFECT-01, AFFECT-02, AFFECT-03, AFFECT-04, AFFECT-05, AFFECT-06
 **Success Criteria** (what must be TRUE):
   1. User can select their sector from all 18 NIS2 sectors and enter employee count and annual revenue
-  2. System classifies the company as "besonders wichtige Einrichtung", "wichtige Einrichtung", or "nicht betroffen" -- matching the logic of Paragraph 28 BSIG
+  2. System classifies the company as "besonders wichtige Einrichtung", "wichtige Einrichtung", or "nicht betroffen" -- matching the logic of par. 28 BSIG
   3. Special cases (DNS, TLD, qTSP, Telko) are automatically classified as "besonders wichtig" regardless of size
-  4. Result page shows the classification with a human-readable explanation and specific Gesetzesreferenz (Paragraph 28 Abs. 1 or 2 BSIG)
+  4. Result page shows the classification with a human-readable explanation and specific legal reference (par. 28 Abs. 1 or 2 BSIG)
   5. "Nicht betroffen" result includes a supply chain hint: partners/customers may still impose NIS2 requirements via Art. 21(2)(d)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 03-01: Affected check UI (sector selector, size/revenue inputs, classification result display, supply chain hint)
@@ -78,7 +78,7 @@ Plans:
   1. User progresses through 10 category steps, answering 3-4 questions per category using the 4-level maturity scale
   2. Progress indicator shows current category name, number (e.g., "Bereich 3 von 10"), and overall completion percentage
   3. User can navigate backward and forward between categories without any answers being lost
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 04-01: Gap analysis wizard UI (multi-step form, category navigation, progress indicator, answer persistence)
@@ -90,9 +90,9 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. All 10 categories display as traffic-light cards (Rot/Gelb/Gruen) with percentage score bars
   2. Overall Readiness Score is shown as orientation value with explicit label "Reifegrad" (not "Compliance Score")
-  3. Handlungsempfehlungen are sorted by priority (Rot categories first) with concrete next steps per category
+  3. Recommendations are sorted by priority (Rot categories first) with concrete next steps per category
   4. Visible disclaimer states: a high score does not automatically mean NIS2 conformity -- every measure must be adequately implemented
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
 - [ ] 05-01: Results dashboard UI (category cards, traffic lights, score bars, overall score, recommendations list, disclaimer)
@@ -103,11 +103,11 @@ Plans:
 **Requirements**: PDF-01, PDF-02, PDF-03, PDF-04, PDF-05, PDF-06, I18N-04, I18N-05
 **Success Criteria** (what must be TRUE):
   1. User clicks download and receives a professionally formatted PDF within 10 seconds
-  2. PDF contains: company profile (sector, size, classification), all 10 category scores with traffic lights, Handlungsempfehlungen, and Gesetzesreferenzen
+  2. PDF contains: company profile (sector, size, classification), all 10 category scores with traffic lights, recommendations, and legal references
   3. PDF has legal disclaimer on the first page, plus Rechtsstand-Datum and Erstellungsdatum
   4. German Umlaute render correctly in the PDF
-  5. PDF generates in the user's selected language (German or English), with Gesetzesreferenzen always in German original
-**Plans**: TBD
+  5. PDF generates in the user's selected language (German or English), with legal references always in German original
+**Plans**: 2 plans
 
 Plans:
 - [ ] 06-01: PDF template and serverless generation (react-pdf layout, font registration, Umlaut support, Vercel Route Handler)
@@ -123,7 +123,7 @@ Plans:
   3. Impressum page exists with legally required information; Datenschutzhinweis confirms no personal data is collected
   4. Rechtsstand-Datum is visible in footer and PDF
   5. Production build deploys to Vercel with zero console.log statements, no placeholder texts, and no framework default branding
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
 - [ ] 07-01: Legal pages and disclaimers (Impressum, Datenschutz, pre-assessment disclaimer, results disclaimer, conditional language)
