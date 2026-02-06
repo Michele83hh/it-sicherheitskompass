@@ -7,12 +7,12 @@
 
 ### Betroffenheitspruefung (Step 1)
 
-- [ ] **AFFECT-01**: User kann Unternehmenssektor aus allen 18 NIS2-Sektoren auswaehlen (11 Anlage 1 + 7 Anlage 2 BSIG)
-- [ ] **AFFECT-02**: User gibt Mitarbeiterzahl und Jahresumsatz ein zur Groessenklassifizierung
-- [ ] **AFFECT-03**: System klassifiziert Unternehmen als "besonders wichtige Einrichtung", "wichtige Einrichtung" oder "nicht betroffen" basierend auf Paragraph 28 BSIG
-- [ ] **AFFECT-04**: Sonderfaelle werden korrekt behandelt (DNS, TLD-Registries, qTSP, Telko-Anbieter -- immer "besonders wichtig" unabhaengig von Groesse)
-- [ ] **AFFECT-05**: Ergebnis zeigt Klassifizierung mit nachvollziehbarer Begruendung und Gesetzesreferenz (Paragraph 28 Abs. 1/2 BSIG)
-- [ ] **AFFECT-06**: Bei "nicht betroffen": Hinweis auf Lieferkettensicherheit (Art. 21(2)(d)) -- Kunden/Partner koennten trotzdem NIS2-Anforderungen stellen
+- [x] **AFFECT-01**: User kann Unternehmenssektor aus allen 18 NIS2-Sektoren auswaehlen (11 Anlage 1 + 7 Anlage 2 BSIG)
+- [x] **AFFECT-02**: User gibt Mitarbeiterzahl und Jahresumsatz ein zur Groessenklassifizierung
+- [x] **AFFECT-03**: System klassifiziert Unternehmen als "besonders wichtige Einrichtung", "wichtige Einrichtung" oder "nicht betroffen" basierend auf Paragraph 28 BSIG
+- [x] **AFFECT-04**: Sonderfaelle werden korrekt behandelt (DNS, TLD-Registries, qTSP, Telko-Anbieter -- immer "besonders wichtig" unabhaengig von Groesse)
+- [x] **AFFECT-05**: Ergebnis zeigt Klassifizierung mit nachvollziehbarer Begruendung und Gesetzesreferenz (Paragraph 28 Abs. 1/2 BSIG)
+- [x] **AFFECT-06**: Bei "nicht betroffen": Hinweis auf Lieferkettensicherheit (Art. 21(2)(d)) -- Kunden/Partner koennten trotzdem NIS2-Anforderungen stellen
 
 ### Gap Analysis (Step 2)
 
@@ -133,12 +133,12 @@
 | SCORE-01 | Phase 2 | Complete |
 | SCORE-05 | Phase 2 | Complete |
 | SCORE-07 | Phase 2 | Complete |
-| AFFECT-01 | Phase 3 | Pending |
-| AFFECT-02 | Phase 3 | Pending |
-| AFFECT-03 | Phase 3 | Pending |
-| AFFECT-04 | Phase 3 | Pending |
-| AFFECT-05 | Phase 3 | Pending |
-| AFFECT-06 | Phase 3 | Pending |
+| AFFECT-01 | Phase 3 | Complete |
+| AFFECT-02 | Phase 3 | Complete |
+| AFFECT-03 | Phase 3 | Complete |
+| AFFECT-04 | Phase 3 | Complete |
+| AFFECT-05 | Phase 3 | Complete |
+| AFFECT-06 | Phase 3 | Complete |
 | GAP-07 | Phase 4 | Pending |
 | GAP-08 | Phase 4 | Pending |
 | SCORE-02 | Phase 5 | Pending |

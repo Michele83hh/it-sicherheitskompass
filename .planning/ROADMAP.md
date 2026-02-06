@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Project setup, design system, state management, i18n infrastructure
 - [x] **Phase 2: NIS2 Content + Scoring Engine** - Questions, categories, legal references, pure scoring functions
-- [ ] **Phase 3: Affected Check** - Step 1 UI: sector selection, size classification, result display
+- [x] **Phase 3: Affected Check** - Step 1 UI: sector selection, size classification, result display
 - [ ] **Phase 4: Gap Analysis Wizard** - Step 2 UI: multi-step form across 10 NIS2 categories
 - [ ] **Phase 5: Results Dashboard** - Step 3 UI: scores, traffic lights, recommendations
 - [ ] **Phase 6: PDF Report** - Serverless PDF generation with full results and legal references
@@ -69,7 +69,7 @@ Plans:
 
 Plans:
 - [x] 03-01-PLAN.md -- Dependencies, wizard store, shared components, i18n translations
-- [ ] 03-02-PLAN.md -- 3-step wizard UI (sector selection, company size, classification result)
+- [x] 03-02-PLAN.md -- 3-step wizard UI (sector selection, company size, classification result)
 
 ### Phase 4: Gap Analysis Wizard (Step 2)
 **Goal**: Users can walk through all 10 NIS2 measure categories answering 3-4 questions each, navigating freely between categories without losing answers
@@ -139,7 +139,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 |-------|---------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-02-06 |
 | 2. NIS2 Content + Scoring Engine | 3/3 | Complete | 2026-02-06 |
-| 3. Affected Check | 1/2 | In progress | - |
+| 3. Affected Check | 2/2 | Complete | 2026-02-06 |
 | 4. Gap Analysis Wizard | 0/1 | Not started | - |
 | 5. Results Dashboard | 0/1 | Not started | - |
 | 6. PDF Report | 0/2 | Not started | - |
@@ -147,4 +147,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-06 (Phase 3 Plan 01 complete)*
+*Last updated: 2026-02-06 (Phase 3 complete)*
