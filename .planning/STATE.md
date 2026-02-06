@@ -1,21 +1,21 @@
 # Project State: NIS2 Readiness Check
 
-**Last Updated:** 2026-02-06T14:51:16Z
+**Last Updated:** 2026-02-06T17:15:00Z
 
 ---
 
 ## Current Position
 
 **Phase:** 2 of 7 (02-nis2-content-scoring-engine)
-**Plan:** 1 of 3 in phase
+**Plan:** 2 of 3 in phase
 **Status:** In progress
-**Last activity:** 2026-02-06 - Completed 02-01-PLAN.md (sector data & classification)
+**Last activity:** 2026-02-06 - Completed 02-02-PLAN.md (questions, categories, recommendations)
 
 **Progress:** Phase 2 execution in progress
 
 ```
 Phase 1: █████████████████████ 100% (2/2) ✅
-Phase 2: ███████░░░░░░░░░░░░░░░ 33% (1/3) — IN PROGRESS
+Phase 2: ██████████████░░░░░░░░ 67% (2/3) — IN PROGRESS
 ```
 
 ---
@@ -68,6 +68,9 @@ Phase 2: ███████░░░░░░░░░░░░░░░ 33% 
 | 02    | 01   | Export THRESHOLDS as const | Transparency for audits and easy unit testing |
 | 02    | 01   | Pure classification function | No side effects, deterministic, easy to test |
 | 02    | 01   | Legal references in code | Traceability to §28 BSIG for audit compliance |
+| 02    | 02   | Questions use translation keys | Enables i18n, keeps TypeScript data files language-agnostic |
+| 02    | 02   | Legal references in German format (EN too) | German law (BSIG) is binding; matches I18N-05 requirement |
+| 02    | 02   | Separate CATEGORIES and QUESTIONS arrays | Easier to query by category, avoids data duplication |
 
 ---
 
@@ -96,11 +99,11 @@ Phase 2: ███████░░░░░░░░░░░░░░░ 33% 
 
 ## Session Continuity
 
-**Last session:** 2026-02-06T14:51:16Z
-**Stopped at:** Completed 02-01-PLAN.md (sector data & classification)
+**Last session:** 2026-02-06T17:15:00Z
+**Stopped at:** Completed 02-02-PLAN.md (gap analysis questions, categories, recommendations)
 **Resume file:** None
 
-**Next action:** Execute 02-02-PLAN.md (gap analysis questions)
+**Next action:** Execute 02-03-PLAN.md (scoring engine)
 
 ---
 
@@ -125,6 +128,9 @@ Phase 2: ███████░░░░░░░░░░░░░░░ 33% 
 - `src/lib/nis2/types.ts` - All NIS2 domain types
 - `src/lib/nis2/sectors.ts` - 18-sector catalog with Anlage assignments
 - `src/lib/nis2/classification.ts` - §28 BSIG classification logic
+- `src/lib/nis2/categories.ts` - 10 Art. 21(2) measure categories
+- `src/lib/nis2/questions.ts` - 30 gap analysis questions (3 per category)
+- `src/lib/nis2/recommendations.ts` - 20 BSI-referenced recommendations (2 per category)
 
 **Layout Components:**
 - `src/components/layout/header.tsx` - Navigation header with language switcher
