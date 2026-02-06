@@ -128,8 +128,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 07-01: Legal pages and disclaimers (Impressum, Datenschutz, pre-assessment disclaimer, results disclaimer, conditional language)
-- [ ] 07-02: Responsive polish and animations (mobile/tablet testing, step transitions, production cleanup, Vercel deployment)
+- [ ] 07-01-PLAN.md -- Legal pages (Impressum, Datenschutz), pre-assessment disclaimer, conditional language audit, Rechtsstand update, removeConsole config
+- [ ] 07-02-PLAN.md -- Responsive polish (375px/768px/1280px), step transition animations, production cleanup, deployment prep
 
 ## Progress
 
@@ -148,4 +148,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-07 (Phase 6 complete)*
+*Last updated: 2026-02-07 (Phase 7 planned)*
