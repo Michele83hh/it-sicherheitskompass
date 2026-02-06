@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .shield { fill: #1e40af; }
+      .text { fill: white; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; }
+    </style>
+  </defs>
+
+  <!-- Shield outline -->
+  <path class="shield" d="M16 2 L4 8 L4 16 C4 22 8 28 16 30 C24 28 28 22 28 16 L28 8 Z"/>
+
+  <!-- N2 text -->
+  <text class="text" x="7" y="21">N2</text>
+</svg>

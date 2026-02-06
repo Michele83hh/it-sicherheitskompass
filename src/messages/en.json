@@ -28,5 +28,18 @@
         "description": "Tailored recommendations"
       }
     }
+  },
+  "footer": {
+    "disclaimer": {
+      "title": "Disclaimer",
+      "text": "This assessment serves as initial guidance only and does not replace legal advice. For binding information, please consult a specialized lawyer or IT security consultant."
+    },
+    "legal": {
+      "title": "Legal",
+      "imprint": "Imprint",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "© {year} NIS2 Readiness Check",
+    "legalDate": "Legal status: January 2025"
   }
 }

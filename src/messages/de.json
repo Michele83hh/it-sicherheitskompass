@@ -28,5 +28,18 @@
         "description": "Maßgeschneiderte Handlungsempfehlungen"
       }
     }
+  },
+  "footer": {
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "text": "Diese Prüfung dient nur als erste Orientierung und ersetzt keine Rechtsberatung. Für verbindliche Auskünfte konsultieren Sie bitte einen Fachanwalt oder IT-Sicherheitsberater."
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "imprint": "Impressum",
+      "privacy": "Datenschutz"
+    },
+    "copyright": "© {year} NIS2-Bereitschaftsprüfung",
+    "legalDate": "Stand der Rechtslage: Januar 2025"
   }
 }
