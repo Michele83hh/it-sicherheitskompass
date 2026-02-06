@@ -186,5 +186,467 @@
       "anlage1": "Annex 1 to BSIG (Sectors of Essential and Important Entities)",
       "anlage2": "Annex 2 to BSIG (Sectors of Important Entities)"
     }
+  },
+  "maturityLevels": {
+    "level0": "Not implemented",
+    "level1": "Partially implemented",
+    "level2": "Largely implemented",
+    "level3": "Fully implemented"
+  },
+  "categories": {
+    "riskAnalysis": {
+      "name": "Risk Analysis and Information System Security",
+      "shortName": "Risk Analysis",
+      "description": "Policies on risk analysis and information system security"
+    },
+    "incidentHandling": {
+      "name": "Incident Handling",
+      "shortName": "Incident Handling",
+      "description": "Handling of security incidents"
+    },
+    "businessContinuity": {
+      "name": "Business Continuity",
+      "shortName": "Business Continuity",
+      "description": "Business continuity including backup management and disaster recovery, and crisis management"
+    },
+    "supplyChain": {
+      "name": "Supply Chain Security",
+      "shortName": "Supply Chain",
+      "description": "Supply chain security including security-related aspects of relationships with direct suppliers or service providers"
+    },
+    "acquisitionDevelopment": {
+      "name": "Security in Acquisition, Development and Maintenance",
+      "shortName": "Development & Maintenance",
+      "description": "Security in network and information systems acquisition, development and maintenance, including vulnerability handling and disclosure"
+    },
+    "effectivenessAssessment": {
+      "name": "Effectiveness Assessment of Measures",
+      "shortName": "Effectiveness",
+      "description": "Policies and procedures to assess the effectiveness of cybersecurity risk management measures"
+    },
+    "cyberHygiene": {
+      "name": "Cyber Hygiene and Training",
+      "shortName": "Training",
+      "description": "Basic cyber hygiene practices and cybersecurity training"
+    },
+    "cryptography": {
+      "name": "Cryptography and Encryption",
+      "shortName": "Cryptography",
+      "description": "Policies and procedures regarding the use of cryptography"
+    },
+    "accessControl": {
+      "name": "Personnel Security and Access Control",
+      "shortName": "Access Control",
+      "description": "Human resources security, access control policies and asset management"
+    },
+    "authenticationCommunication": {
+      "name": "Multi-Factor Authentication and Secured Communication",
+      "shortName": "MFA & Communication",
+      "description": "Use of multi-factor authentication or continuous authentication, secured voice, video and text communication, and secured emergency communication systems"
+    }
+  },
+  "questions": {
+    "raQ1": {
+      "title": "Do you have a current overview of your IT risks (e.g., which systems are critical, where vulnerabilities exist)?",
+      "tooltip": "NIS2 requires regular risk analyses (Art. 21(2)(a), §30 Para. 2 No. 1 BSIG). BSI recommends the methodology from BSI Standard 200-3.",
+      "maturity": {
+        "level0": "No risk analysis available",
+        "level1": "Rough assessment available but not documented",
+        "level2": "Documented risk analysis but not regularly updated",
+        "level3": "Regular, documented risk analysis following a recognized standard"
+      }
+    },
+    "raQ2": {
+      "title": "Are your IT security measures documented in writing and regularly updated?",
+      "tooltip": "Documented security concepts are the foundation for demonstrable compliance (§30 Para. 1 BSIG). See BSI building block ISMS.1.",
+      "maturity": {
+        "level0": "No written documentation",
+        "level1": "Partially documented but outdated",
+        "level2": "Largely documented but not regularly updated",
+        "level3": "Fully documented and updated at least annually"
+      }
+    },
+    "raQ3": {
+      "title": "Have you established clear responsibilities for IT security (e.g., designated contact person)?",
+      "tooltip": "NIS2 requires management accountability (§38 BSIG). Clear responsibilities are the foundation for effective security management.",
+      "maturity": {
+        "level0": "No defined responsibilities",
+        "level1": "Informally assigned, not documented",
+        "level2": "Documented but not known to all employees",
+        "level3": "Clearly documented, communicated, with deputy arrangements"
+      }
+    },
+    "ihQ1": {
+      "title": "Is there an established procedure for how your company responds to cyberattacks or IT disruptions?",
+      "tooltip": "NIS2 requires documented incident response processes (Art. 21(2)(b), §30 Para. 2 No. 2 BSIG). See BSI building block DER.2.1.",
+      "maturity": {
+        "level0": "No procedure in place",
+        "level1": "Ad-hoc response without fixed procedure",
+        "level2": "Basic procedure documented but not regularly practiced",
+        "level3": "Documented procedure with regular exercises and clear roles"
+      }
+    },
+    "ihQ2": {
+      "title": "Do you have emergency contact details (e.g., BSI reporting office, IT service providers) readily available?",
+      "tooltip": "NIS2 prescribes reporting obligations (§32 BSIG). Quick response requires prepared contact lists and reporting channels.",
+      "maturity": {
+        "level0": "No emergency contacts prepared",
+        "level1": "Some contacts known but not centrally available",
+        "level2": "Contact list exists but not regularly updated",
+        "level3": "Current contact list centrally available, including BSI reporting channels"
+      }
+    },
+    "ihQ3": {
+      "title": "Are security incidents logged and evaluated to learn from them?",
+      "tooltip": "Learning from incidents is essential for improving security. See BSI building blocks DER.2.1 and OPS.1.1.5 (Logging).",
+      "maturity": {
+        "level0": "No incident logging",
+        "level1": "Incidents partially recorded but not systematically evaluated",
+        "level2": "Systematic recording but no regular evaluation",
+        "level3": "Complete recording, regular evaluation, and documented improvements"
+      }
+    },
+    "bcQ1": {
+      "title": "Do you regularly create backups of your important data and test them?",
+      "tooltip": "NIS2 requires backup management and recovery capability (Art. 21(2)(c), §30 Para. 2 No. 3 BSIG). See BSI building block CON.3.",
+      "maturity": {
+        "level0": "No regular backups",
+        "level1": "Backups created but not tested",
+        "level2": "Regular backups with occasional recovery tests",
+        "level3": "Automated backups with regularly tested recovery"
+      }
+    },
+    "bcQ2": {
+      "title": "Can you resume operations within 24-48 hours after a severe IT outage?",
+      "tooltip": "Recovery capability is a core NIS2 objective. BSI Standard 200-4 describes Business Continuity Management (BCM).",
+      "maturity": {
+        "level0": "No recovery planning in place",
+        "level1": "General idea but no documented plan",
+        "level2": "Recovery plan exists but not tested",
+        "level3": "Documented and regularly tested recovery plan"
+      }
+    },
+    "bcQ3": {
+      "title": "Do you have a written emergency plan for cyberattacks or system failures?",
+      "tooltip": "Crisis management requires prepared emergency plans (§30 Para. 2 No. 3 BSIG). See BSI building block DER.4 (Emergency Management).",
+      "maturity": {
+        "level0": "No emergency plan available",
+        "level1": "Informal knowledge with individual persons",
+        "level2": "Written plan available but not known to all",
+        "level3": "Documented plan, known to all and regularly practiced"
+      }
+    },
+    "scQ1": {
+      "title": "Do you assess the IT security of your most important suppliers and service providers?",
+      "tooltip": "NIS2 requires assessment of direct suppliers' and service providers' security (Art. 21(2)(d), §30 Para. 2 No. 4 BSIG). Particularly important for cloud services and IT outsourcing.",
+      "maturity": {
+        "level0": "No assessment of supplier security",
+        "level1": "Occasional informal inquiry",
+        "level2": "Key suppliers assessed but not systematically",
+        "level3": "Systematic assessment of all critical suppliers with documented results"
+      }
+    },
+    "scQ2": {
+      "title": "Do you have contractual IT security agreements with your IT service providers?",
+      "tooltip": "Contractual security requirements for service providers are an essential part of NIS2 supply chain security.",
+      "maturity": {
+        "level0": "No contractual security agreements",
+        "level1": "General terms, no specific security clauses",
+        "level2": "Security clauses with key service providers",
+        "level3": "Standardized security requirements in all IT service provider contracts"
+      }
+    },
+    "scQ3": {
+      "title": "Do you know which external service providers have access to your critical systems or data?",
+      "tooltip": "Transparency about external access is a prerequisite for effective supply chain security. See BSI building block ORP.1.",
+      "maturity": {
+        "level0": "No overview of external access",
+        "level1": "Partial overview, not documented",
+        "level2": "Documented overview but not regularly updated",
+        "level3": "Complete, current overview with regular review"
+      }
+    },
+    "adQ1": {
+      "title": "Are security updates for your IT systems applied promptly?",
+      "tooltip": "NIS2 requires vulnerability management (Art. 21(2)(e), §30 Para. 2 No. 5 BSIG). Timely patching is one of the most important protective measures. See BSI building block OPS.1.1.3.",
+      "maturity": {
+        "level0": "Updates not systematically applied",
+        "level1": "Updates applied occasionally without fixed process",
+        "level2": "Regular updates on schedule but not comprehensive",
+        "level3": "Systematic patch management with prioritization and tracking"
+      }
+    },
+    "adQ2": {
+      "title": "Do you consider IT security aspects when purchasing or developing new software?",
+      "tooltip": "NIS2 requires security-by-design (Art. 21(2)(e), §30 Para. 2 No. 5 BSIG). Security must be considered from the start. See BSI building block CON.8.",
+      "maturity": {
+        "level0": "Security not considered in procurement/development",
+        "level1": "Occasionally considered but no fixed process",
+        "level2": "Security criteria for major acquisitions but not standardized",
+        "level3": "Standardized security assessment for all IT acquisitions and developments"
+      }
+    },
+    "adQ3": {
+      "title": "Do you have a process to identify and fix vulnerabilities in your software?",
+      "tooltip": "Vulnerability management and disclosure are explicit NIS2 requirements (§30 Para. 2 No. 5 BSIG).",
+      "maturity": {
+        "level0": "No vulnerability management",
+        "level1": "Vulnerabilities handled ad-hoc",
+        "level2": "Basic process in place but not all systems covered",
+        "level3": "Systematic vulnerability management with scanning and prioritization"
+      }
+    },
+    "eaQ1": {
+      "title": "Do you regularly verify whether your security measures actually work (e.g., through audits)?",
+      "tooltip": "NIS2 requires regular effectiveness assessment (Art. 21(2)(f), §30 Para. 2 No. 6 BSIG). See BSI building block ISMS.1.",
+      "maturity": {
+        "level0": "No effectiveness verification",
+        "level1": "Occasional informal review",
+        "level2": "Regular review of individual measures",
+        "level3": "Systematic audits of all security measures with documented results"
+      }
+    },
+    "eaQ2": {
+      "title": "Do you conduct security tests (e.g., penetration tests or vulnerability scans)?",
+      "tooltip": "Technical tests are an important part of effectiveness assessment. They reveal vulnerabilities not visible in theory.",
+      "maturity": {
+        "level0": "No security tests",
+        "level1": "Occasional tests when specific need arises",
+        "level2": "Regular vulnerability scans but no penetration tests",
+        "level3": "Regular penetration tests and vulnerability scans with follow-up"
+      }
+    },
+    "eaQ3": {
+      "title": "Are concrete improvement actions derived and implemented from security reviews?",
+      "tooltip": "The PDCA cycle (Plan-Do-Check-Act) is at the core of continuous improvement. See BSI building block ORP.5 (Compliance Management).",
+      "maturity": {
+        "level0": "No improvement actions derived",
+        "level1": "Improvements identified but not systematically implemented",
+        "level2": "Improvements documented and partially implemented",
+        "level3": "Systematic improvement process with tracking and effectiveness control"
+      }
+    },
+    "chQ1": {
+      "title": "Are your employees regularly trained on IT security topics (e.g., recognizing phishing)?",
+      "tooltip": "NIS2 requires basic training (Art. 21(2)(g), §30 Para. 2 No. 7 BSIG). See BSI building block ORP.3.",
+      "maturity": {
+        "level0": "No IT security training",
+        "level1": "One-time or occasional advice",
+        "level2": "Annual training but not reaching all employees",
+        "level3": "Regular training for all employees with effectiveness verification"
+      }
+    },
+    "chQ2": {
+      "title": "Are there clear guidelines for secure behavior (e.g., password rules, handling emails)?",
+      "tooltip": "Cyber hygiene guidelines define minimum standards for secure work. They form the basis for training and awareness.",
+      "maturity": {
+        "level0": "No guidelines available",
+        "level1": "Informal rules, not written down",
+        "level2": "Written guidelines available but not known to all",
+        "level3": "Current guidelines known to all employees and regularly reviewed"
+      }
+    },
+    "chQ3": {
+      "title": "Are new employees systematically introduced to IT security topics?",
+      "tooltip": "Security onboarding ensures new employees act security-consciously from the start. See BSI building block ORP.2.",
+      "maturity": {
+        "level0": "No security introduction at onboarding",
+        "level1": "Occasional verbal advice",
+        "level2": "Standardized introduction but not documented",
+        "level3": "Documented security introduction as a fixed part of onboarding"
+      }
+    },
+    "crQ1": {
+      "title": "Are confidential data encrypted during storage and transmission (e.g., via HTTPS, VPN)?",
+      "tooltip": "NIS2 requires the use of cryptographic measures (Art. 21(2)(h), §30 Para. 2 No. 8 BSIG). See BSI building block CON.1.",
+      "maturity": {
+        "level0": "No encryption in use",
+        "level1": "Partial encryption (e.g., HTTPS for website only)",
+        "level2": "Encryption for most sensitive data but gaps exist",
+        "level3": "Comprehensive encryption of all sensitive data at rest and in transit"
+      }
+    },
+    "crQ2": {
+      "title": "Do you have a concept for which data must be encrypted and with which methods?",
+      "tooltip": "A cryptography concept defines where encryption is used and which algorithms/key lengths are applied. See BSI building block CON.1.",
+      "maturity": {
+        "level0": "No cryptography concept available",
+        "level1": "Encryption used ad-hoc without concept",
+        "level2": "Basic concept available but not fully implemented",
+        "level3": "Documented cryptography concept with current methods and regular review"
+      }
+    },
+    "crQ3": {
+      "title": "Are cryptographic keys managed securely (e.g., not stored in plain text)?",
+      "tooltip": "Key management is critical: compromised keys render encryption worthless. Secure storage and regular rotation are essential.",
+      "maturity": {
+        "level0": "No conscious key management",
+        "level1": "Keys stored without special protection",
+        "level2": "Basic protection measures but no systematic management",
+        "level3": "Systematic key management with secure storage and rotation"
+      }
+    },
+    "acQ1": {
+      "title": "Do only authorized persons have access to critical IT systems and data?",
+      "tooltip": "NIS2 requires access control following the principle of least privilege (Art. 21(2)(i), §30 Para. 2 No. 9 BSIG). See BSI building block ORP.4.",
+      "maturity": {
+        "level0": "No systematic access control",
+        "level1": "Basic access restrictions but no differentiated rights",
+        "level2": "Role-based access rights for important systems",
+        "level3": "Comprehensive access control with least-privilege principle and regular review"
+      }
+    },
+    "acQ2": {
+      "title": "Are access rights regularly reviewed and immediately revoked when employees leave?",
+      "tooltip": "Outdated access rights are a common security risk. Regular review prevents unauthorized access.",
+      "maturity": {
+        "level0": "No review, old rights remain active",
+        "level1": "Rights revoked on departure but no regular review",
+        "level2": "Regular review but not all systems covered",
+        "level3": "Systematic rights review across all systems with immediate revocation on departure"
+      }
+    },
+    "acQ3": {
+      "title": "Are physical access controls in place for critical IT areas (e.g., server room)?",
+      "tooltip": "Physical protection of critical IT infrastructure is part of access control. See BSI building blocks INF.1 (Building) and INF.2 (Data Center).",
+      "maturity": {
+        "level0": "No special physical protection",
+        "level1": "Server room locked but no access log",
+        "level2": "Access control with key/card but no logging",
+        "level3": "Electronic access control with logging and regular review"
+      }
+    },
+    "mcQ1": {
+      "title": "Do you use multi-factor authentication (e.g., authenticator app, hardware token) for critical systems?",
+      "tooltip": "NIS2 requires MFA for privileged access (Art. 21(2)(j), §30 Para. 2 No. 10 BSIG). MFA protects against password theft and unauthorized access.",
+      "maturity": {
+        "level0": "No MFA in use",
+        "level1": "MFA for individual systems (e.g., cloud email only)",
+        "level2": "MFA for most critical systems",
+        "level3": "MFA for all critical systems and privileged access"
+      }
+    },
+    "mcQ2": {
+      "title": "Is confidential communication encrypted (e.g., encrypted emails, secure video conferences)?",
+      "tooltip": "Secured communication protects against eavesdropping and manipulation. NIS2 requires secured voice, video and text communication (§30 Para. 2 No. 10 BSIG).",
+      "maturity": {
+        "level0": "No encrypted communication",
+        "level1": "Partially encrypted (e.g., internal chats only)",
+        "level2": "Encrypted communication for most sensitive topics",
+        "level3": "Comprehensive encrypted communication for all confidential content"
+      }
+    },
+    "mcQ3": {
+      "title": "Do you have secure communication channels for emergencies (e.g., alternative channels during IT outage)?",
+      "tooltip": "Secured emergency communication ensures your crisis team remains reachable even during IT outages (§30 Para. 2 No. 10 BSIG).",
+      "maturity": {
+        "level0": "No emergency communication prepared",
+        "level1": "Personal phone numbers as informal emergency channel",
+        "level2": "Defined emergency channel but not tested",
+        "level3": "Tested emergency communication with secure, independent channels"
+      }
+    }
+  },
+  "recommendations": {
+    "ra1": {
+      "title": "Create an IT Risk Inventory",
+      "description": "Systematically identify all critical IT systems, data, and processes along with their threats.",
+      "firstStep": "List your 5 most important IT systems and assess their criticality for business operations."
+    },
+    "ra2": {
+      "title": "Define Security Responsibilities",
+      "description": "Appoint an IT security officer and document responsibilities and reporting lines.",
+      "firstStep": "Designate a responsible person for IT security and communicate this to all employees."
+    },
+    "ih1": {
+      "title": "Create an Incident Response Plan",
+      "description": "Create a documented plan for responding to security incidents with clear roles and procedures.",
+      "firstStep": "Define the 3 most common incident scenarios (e.g., ransomware, phishing, data loss) and describe initial response steps."
+    },
+    "ih2": {
+      "title": "Compile Emergency Contacts",
+      "description": "Create a current contact list with internal contacts, external IT service providers, and BSI reporting channels.",
+      "firstStep": "Collect your IT service provider's contact details and learn about the BSI reporting obligation (meldestelle@bsi.bund.de)."
+    },
+    "bc1": {
+      "title": "Implement a Backup Strategy",
+      "description": "Implement a 3-2-1 backup strategy: 3 copies, 2 media types, 1 offsite. Regularly test recovery.",
+      "firstStep": "Check if automatic backups are set up for your most important data and test a recovery."
+    },
+    "bc2": {
+      "title": "Create an Emergency Plan",
+      "description": "Create an IT emergency plan with recovery priorities, responsibilities, and communication channels.",
+      "firstStep": "Identify your 5 most important business processes and define their maximum tolerable downtime."
+    },
+    "sc1": {
+      "title": "Create a Supplier Overview",
+      "description": "Document all external IT service providers and their access to your systems and data.",
+      "firstStep": "Create a list of all external service providers that have access to your IT systems or data."
+    },
+    "sc2": {
+      "title": "Add Security Clauses to Contracts",
+      "description": "Add security requirements and audit rights to IT service provider contracts.",
+      "firstStep": "Review your most important IT service provider contract for existing security clauses."
+    },
+    "ad1": {
+      "title": "Implement Patch Management",
+      "description": "Establish a process for timely application of security updates across all systems.",
+      "firstStep": "Enable automatic OS updates and create a list of all software in use."
+    },
+    "ad2": {
+      "title": "Security Assessment for Acquisitions",
+      "description": "Integrate security criteria into the procurement process for new IT systems and software.",
+      "firstStep": "Create a checklist with security criteria (encryption, update frequency, vendor support) for IT procurements."
+    },
+    "ea1": {
+      "title": "Introduce Regular Security Reviews",
+      "description": "Plan at least annual reviews of your security measures, internally or through external auditors.",
+      "firstStep": "Schedule a first review of your most important security measures within the next 3 months."
+    },
+    "ea2": {
+      "title": "Conduct Vulnerability Scans",
+      "description": "Perform regular technical security tests to identify vulnerabilities early.",
+      "firstStep": "Research free vulnerability scanners (e.g., OpenVAS) or commission an external penetration test."
+    },
+    "ch1": {
+      "title": "Start an Awareness Training Program",
+      "description": "Introduce regular IT security training for all employees, at least annually.",
+      "firstStep": "Organize a first training session on phishing recognition for all employees."
+    },
+    "ch2": {
+      "title": "Document Security Guidelines",
+      "description": "Create understandable guidelines for passwords, email security, mobile devices, and remote work.",
+      "firstStep": "Write a one-page password policy (minimum length, complexity, no reuse)."
+    },
+    "cr1": {
+      "title": "Implement Encryption Standards",
+      "description": "Ensure all sensitive data is encrypted during storage and transmission.",
+      "firstStep": "Check if your website uses HTTPS and if emails with sensitive content are sent encrypted."
+    },
+    "cr2": {
+      "title": "Create a Cryptography Concept",
+      "description": "Document where encryption is used, which methods and key lengths you employ.",
+      "firstStep": "Create an overview of all places where encryption is or should be used."
+    },
+    "ac1": {
+      "title": "Implement Role-Based Access Control",
+      "description": "Implement the principle of least privilege: every employee receives only the rights needed for their role.",
+      "firstStep": "Review admin rights: which employees have administrator access and do they really need it?"
+    },
+    "ac2": {
+      "title": "Offboarding Process for IT Access",
+      "description": "Ensure all IT access is immediately deactivated when employees leave.",
+      "firstStep": "Create a checklist of all systems and access that must be deactivated when an employee departs."
+    },
+    "mc1": {
+      "title": "Activate MFA for Critical Systems",
+      "description": "Enable multi-factor authentication for all critical systems, starting with email and VPN.",
+      "firstStep": "Enable MFA for your business email (Microsoft 365, Google Workspace) and document the setup."
+    },
+    "mc2": {
+      "title": "Set Up Secure Communication Channels",
+      "description": "Provide encrypted communication channels for confidential business content and emergencies.",
+      "firstStep": "Set up an encrypted messenger (e.g., Signal) as emergency communication channel and share contacts with the crisis team."
+    }
   }
 }
