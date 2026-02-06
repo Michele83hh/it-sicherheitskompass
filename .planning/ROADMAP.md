@@ -12,7 +12,7 @@ This roadmap delivers a professional NIS2 readiness check web tool in 7 phases o
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Project setup, design system, state management, i18n infrastructure
+- [x] **Phase 1: Foundation** - Project setup, design system, state management, i18n infrastructure
 - [ ] **Phase 2: NIS2 Content + Scoring Engine** - Questions, categories, legal references, pure scoring functions
 - [ ] **Phase 3: Affected Check** - Step 1 UI: sector selection, size classification, result display
 - [ ] **Phase 4: Gap Analysis Wizard** - Step 2 UI: multi-step form across 10 NIS2 categories
@@ -35,8 +35,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Project scaffolding (Next.js 16, TypeScript, Tailwind, shadcn/ui, next-intl, zustand)
-- [ ] 01-02: Design system and layout (color tokens, typography, navigation shell, language switcher, favicon)
+- [x] 01-01: Project scaffolding (Next.js 16, TypeScript, Tailwind, shadcn/ui, next-intl, zustand)
+- [x] 01-02: Design system and layout (color tokens, typography, navigation shell, language switcher, favicon)
 
 ### Phase 2: NIS2 Content + Scoring Engine
 **Goal**: All NIS2 domain knowledge exists as structured TypeScript data with a pure, testable scoring engine -- the brain of the tool, independent of any UI
@@ -136,7 +136,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
-| 1. Foundation | 0/2 | Not started | - |
+| 1. Foundation | 2/2 | Complete | 2026-02-06 |
 | 2. NIS2 Content + Scoring Engine | 0/3 | Not started | - |
 | 3. Affected Check | 0/1 | Not started | - |
 | 4. Gap Analysis Wizard | 0/1 | Not started | - |
@@ -146,4 +146,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-06*
+*Last updated: 2026-02-06 (Phase 1 complete)*
