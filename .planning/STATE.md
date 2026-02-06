@@ -88,7 +88,7 @@ Phase 5: █████████████████████ 100% (2
 | 05 | 02 | Quick wins: red+quick → yellow+quick | Ensures 3-5 actionable items |
 | 05 | 02 | Progress bar color via className override | Override shadcn default for traffic light colors |
 | 05 | 02 | Traffic light: icon + color + text | WCAG 2.1 Level AA (not relying on color alone) |
-| 05 | 02 | BSI links to Kompendium root | Stable URL, specific pages may move |
+| 05 | 02 | BSI links to specific building blocks | Verified per-block URLs in bsi-links.ts, fallback to overview |
 | 05 | 02 | Route guard client-side only | Avoid SSR/client mismatch |
 
 ---
@@ -115,11 +115,11 @@ Landing page design feedback from user verification:
 
 ## Session Continuity
 
-**Last session:** 2026-02-06T21:51:50Z
-**Stopped at:** Completed 05-02-PLAN.md (Results Dashboard UI) — All 6 components, traffic-light scoring, quick wins, recommendations
+**Last session:** 2026-02-06T23:30:00Z
+**Stopped at:** Phase 5 fully complete — dashboard verified, BSI links fixed, radio click targets fixed, locale routing fixed
 **Resume file:** None
 
-**Next action:** Phase 5 complete. Plan Phase 6 (PDF Report Generation).
+**Next action:** Plan Phase 6 (PDF Report Generation).
 
 ---
 
@@ -146,6 +146,7 @@ Landing page design feedback from user verification:
 - `src/app/[locale]/results/components/category-card.tsx` - Traffic-light category cards
 - `src/app/[locale]/results/components/quick-wins-section.tsx` - Quick wins showcase
 - `src/app/[locale]/results/components/recommendations-section.tsx` - Full recommendations
+- `src/lib/nis2/bsi-links.ts` - BSI building block URL mapping (verified Edition 2023)
 - `src/components/ui/badge.tsx` - shadcn Badge component (effort levels)
 - `src/components/ui/progress.tsx` - shadcn Progress component (score bars)
 - `src/messages/de.json` - Added results section (05-01)

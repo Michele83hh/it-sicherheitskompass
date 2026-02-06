@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: NIS2 Content + Scoring Engine** - Questions, categories, legal references, pure scoring functions
 - [x] **Phase 3: Affected Check** - Step 1 UI: sector selection, size classification, result display
 - [x] **Phase 4: Gap Analysis Wizard** - Step 2 UI: multi-step form across 10 NIS2 categories
-- [ ] **Phase 5: Results Dashboard** - Step 3 UI: scores, traffic lights, recommendations
+- [x] **Phase 5: Results Dashboard** - Step 3 UI: scores, traffic lights, recommendations
 - [ ] **Phase 6: PDF Report** - Serverless PDF generation with full results and legal references
 - [ ] **Phase 7: Polish + Legal + Deploy** - Responsive fixes, legal pages, disclaimers, production deployment
 
@@ -142,10 +142,10 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 | 2. NIS2 Content + Scoring Engine | 3/3 | Complete | 2026-02-06 |
 | 3. Affected Check | 2/2 | Complete | 2026-02-06 |
 | 4. Gap Analysis Wizard | 1/1 | Complete | 2026-02-06 |
-| 5. Results Dashboard | 0/2 | Not started | - |
+| 5. Results Dashboard | 2/2 | Complete | 2026-02-06 |
 | 6. PDF Report | 0/2 | Not started | - |
 | 7. Polish + Legal + Deploy | 0/2 | Not started | - |
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-06 (Phase 5 planned)*
+*Last updated: 2026-02-06 (Phase 5 complete)*
