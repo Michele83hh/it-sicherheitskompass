@@ -14,18 +14,48 @@
     "title": "NIS2-Bereitschaft in 15 Minuten prüfen",
     "subtitle": "Intelligenter Fragebogen für KMUs – Compliance-Status ermitteln und maßgeschneiderte Handlungsempfehlungen erhalten",
     "cta": "Kostenlose Prüfung starten",
-    "features": {
-      "fast": {
-        "title": "Schnell",
-        "description": "Nur 15-20 Minuten"
+    "value": {
+      "anonymous": {
+        "title": "100% Anonym",
+        "description": "Keine Registrierung, keine Cookies, keine Speicherung Ihrer Daten. Ihre Eingaben bleiben vollständig anonym."
       },
-      "smart": {
-        "title": "Intelligent",
-        "description": "Adaptive Fragen basierend auf Ihren Antworten"
+      "legal": {
+        "title": "Rechtlich fundiert",
+        "description": "Basierend auf NIS2UmsG, EU-Richtlinie 2022/2555 und BSI-Grundschutz-Anforderungen."
       },
       "actionable": {
-        "title": "Konkret",
-        "description": "Maßgeschneiderte Handlungsempfehlungen"
+        "title": "Konkrete Handlungsempfehlungen",
+        "description": "Erhalten Sie einen detaillierten Bericht mit priorisierten Maßnahmen und nächsten Schritten."
+      }
+    },
+    "steps": {
+      "title": "So funktioniert's",
+      "step1": {
+        "title": "Fragen beantworten",
+        "description": "15-20 Minuten adaptive Fragen zu Ihrem Unternehmen, IT-Infrastruktur und Sicherheitsmaßnahmen."
+      },
+      "step2": {
+        "title": "Analyse durchführen",
+        "description": "Automatische Auswertung Ihrer Antworten anhand aktueller NIS2-Anforderungen und BSI-Standards."
+      },
+      "step3": {
+        "title": "Bericht erhalten",
+        "description": "Detaillierter PDF-Bericht mit Compliance-Score, Lückenanalyse und priorisierten Handlungsempfehlungen."
+      }
+    },
+    "trust": {
+      "title": "Fundierte Rechtsgrundlagen",
+      "nis2": {
+        "title": "NIS2UmsG",
+        "description": "Deutsches NIS2-Umsetzungsgesetz"
+      },
+      "eu": {
+        "title": "EU 2022/2555",
+        "description": "EU-Richtlinie über Netz- und Informationssysteme"
+      },
+      "bsi": {
+        "title": "BSI Grundschutz",
+        "description": "IT-Grundschutz-Kompendium des BSI"
       }
     }
   },

@@ -14,18 +14,48 @@
     "title": "Check Your NIS2 Readiness in 15 Minutes",
     "subtitle": "Intelligent questionnaire for SMEs – assess compliance status and receive tailored recommendations",
     "cta": "Start Free Check",
-    "features": {
-      "fast": {
-        "title": "Fast",
-        "description": "Only 15-20 minutes"
+    "value": {
+      "anonymous": {
+        "title": "100% Anonymous",
+        "description": "No registration, no cookies, no data storage. Your inputs remain completely anonymous."
       },
-      "smart": {
-        "title": "Smart",
-        "description": "Adaptive questions based on your answers"
+      "legal": {
+        "title": "Legally Founded",
+        "description": "Based on NIS2UmsG, EU Directive 2022/2555, and BSI IT-Grundschutz requirements."
       },
       "actionable": {
-        "title": "Actionable",
-        "description": "Tailored recommendations"
+        "title": "Actionable Recommendations",
+        "description": "Receive a detailed report with prioritized measures and next steps."
+      }
+    },
+    "steps": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Answer Questions",
+        "description": "15-20 minutes of adaptive questions about your company, IT infrastructure, and security measures."
+      },
+      "step2": {
+        "title": "Analysis",
+        "description": "Automatic evaluation of your answers against current NIS2 requirements and BSI standards."
+      },
+      "step3": {
+        "title": "Receive Report",
+        "description": "Detailed PDF report with compliance score, gap analysis, and prioritized action recommendations."
+      }
+    },
+    "trust": {
+      "title": "Solid Legal Foundation",
+      "nis2": {
+        "title": "NIS2UmsG",
+        "description": "German NIS2 Implementation Act"
+      },
+      "eu": {
+        "title": "EU 2022/2555",
+        "description": "EU Directive on Network and Information Systems"
+      },
+      "bsi": {
+        "title": "BSI IT-Grundschutz",
+        "description": "BSI IT-Grundschutz Compendium"
       }
     }
   },
