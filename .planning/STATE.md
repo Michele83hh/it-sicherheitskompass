@@ -1,17 +1,17 @@
 # Project State: NIS2 Readiness Check
 
-**Last Updated:** 2026-02-06T21:51:50Z
+**Last Updated:** 2026-02-06T23:22:24Z
 
 ---
 
 ## Current Position
 
-**Phase:** 5 of 7 (05-results-dashboard)
-**Plan:** 2 of 2 in phase
-**Status:** ✅ Complete
-**Last activity:** 2026-02-06 - Completed 05-02-PLAN.md (Results Dashboard UI)
+**Phase:** 6 of 7 (06-pdf-report)
+**Plan:** 1 of 2 in phase
+**Status:** 🚧 In progress
+**Last activity:** 2026-02-06 - Completed 06-01-PLAN.md (PDF Report Infrastructure)
 
-**Progress:** 100% of Phase 5 complete
+**Progress:** 50% of Phase 6 complete
 
 ```
 Phase 1: █████████████████████ 100% (2/2) ✅
@@ -19,6 +19,7 @@ Phase 2: █████████████████████ 100% (3
 Phase 3: █████████████████████ 100% (2/2) ✅
 Phase 4: █████████████████████ 100% (1/1) ✅
 Phase 5: █████████████████████ 100% (2/2) ✅
+Phase 6: ██████████░░░░░░░░░░░  50% (1/2) 🚧
 ```
 
 ---
@@ -31,14 +32,14 @@ Phase 5: █████████████████████ 100% (2
 
 ## Technology Stack
 
-**Framework:** Next.js 16 (App Router, Turbopack)
+**Framework:** Next.js 16 (App Router + Pages Router, Turbopack)
 **Language:** TypeScript
 **Styling:** Tailwind CSS v4
 **UI Components:** shadcn/ui
 **Internationalization:** next-intl (DE/EN)
 **State Management:** zustand (with persist middleware)
 **Testing:** vitest ^4.0.18
-**PDF Generation:** @react-pdf/renderer (to be added)
+**PDF Generation:** @react-pdf/renderer v4.x + @ag-media/react-pdf-table
 **Form Management:** react-hook-form ^7.71.1 + zod ^4.3.6 + react-number-format ^5.4.4
 
 ---
@@ -52,7 +53,7 @@ Phase 5: █████████████████████ 100% (2
 | 3     | Affected Check                | ✅ Complete      | 2/2 (100%) |
 | 4     | Gap Analysis Wizard           | ✅ Complete      | 1/1 (100%) |
 | 5     | Results Dashboard             | ✅ Complete      | 2/2 (100%) |
-| 6     | PDF Report                    | 🔜 Not planned   | 0/?        |
+| 6     | PDF Report                    | 🚧 In progress   | 1/2 (50%)  |
 | 7     | Polish + Legal + Deploy       | 🔜 Not planned   | 0/?        |
 
 ---
@@ -90,6 +91,10 @@ Phase 5: █████████████████████ 100% (2
 | 05 | 02 | Traffic light: icon + color + text | WCAG 2.1 Level AA (not relying on color alone) |
 | 05 | 02 | BSI links to specific building blocks | Verified per-block URLs in bsi-links.ts, fallback to overview |
 | 05 | 02 | Route guard client-side only | Avoid SSR/client mismatch |
+| 06 | 01 | woff2 fonts from Google Fonts CDN | GitHub TTF download failed, woff2 works with @react-pdf/renderer |
+| 06 | 01 | Pages Router API for PDF generation | Avoids React 19 + App Router "ba.Component is not a constructor" error |
+| 06 | 01 | Side-effect font import pattern | Font.register() must run before renderToBuffer |
+| 06 | 01 | Client flattens translations for PDF | API can't use useTranslations hook |
 
 ---
 
@@ -98,7 +103,7 @@ Phase 5: █████████████████████ 100% (2
 | ID | Type | Description | Status | Mitigation |
 |----|------|-------------|--------|------------|
 | C1 | Technical | Zod 4 breaking changes | ✅ Resolved | Zod v4.3.6 works with @hookform/resolvers v5.2.2 |
-| C2 | Technical | @react-pdf/renderer compatibility | 🟡 Monitoring | Test in Phase 6 |
+| C2 | Technical | @react-pdf/renderer compatibility | ✅ Resolved | Pages Router API avoids React 19 Route Handler issue |
 
 ---
 
@@ -115,11 +120,11 @@ Landing page design feedback from user verification:
 
 ## Session Continuity
 
-**Last session:** 2026-02-06T23:30:00Z
-**Stopped at:** Phase 5 fully complete — dashboard verified, BSI links fixed, radio click targets fixed, locale routing fixed
+**Last session:** 2026-02-06T23:22:24Z
+**Stopped at:** Completed 06-01-PLAN.md — PDF infrastructure ready, download button functional
 **Resume file:** None
 
-**Next action:** Plan Phase 6 (PDF Report Generation).
+**Next action:** Execute 06-02-PLAN.md (PDF Report Content Components).
 
 ---
 
@@ -146,11 +151,21 @@ Landing page design feedback from user verification:
 - `src/app/[locale]/results/components/category-card.tsx` - Traffic-light category cards
 - `src/app/[locale]/results/components/quick-wins-section.tsx` - Quick wins showcase
 - `src/app/[locale]/results/components/recommendations-section.tsx` - Full recommendations
+- `src/app/[locale]/results/components/download-pdf-button.tsx` - PDF download button (06-01)
 - `src/lib/nis2/bsi-links.ts` - BSI building block URL mapping (verified Edition 2023)
 - `src/components/ui/badge.tsx` - shadcn Badge component (effort levels)
 - `src/components/ui/progress.tsx` - shadcn Progress component (score bars)
 - `src/messages/de.json` - Added results section (05-01)
 - `src/messages/en.json` - Added results section (05-01)
+
+**PDF Report Infrastructure (Phase 6):**
+- `src/lib/pdf/fonts.ts` - Inter font registration (woff2), hyphenation disabled
+- `src/lib/pdf/types.ts` - PDFPayload, PDFCompanyProfile, PDFCategoryResult, PDFRecommendation
+- `src/lib/pdf/styles.ts` - Shared StyleSheet with COLORS and traffic light styles
+- `src/pages/api/pdf/download.tsx` - Pages Router API POST endpoint for PDF generation
+- `src/components/pdf/PDFDocument.tsx` - Root PDF Document with 3-page skeleton
+- `public/fonts/Inter-Regular.woff2` - Inter Regular font (21KB)
+- `public/fonts/Inter-Bold.woff2` - Inter Bold font (22KB)
 
 **NIS2 Domain Model:**
 - `src/lib/nis2/types.ts` - All NIS2 domain types + EffortLevel
