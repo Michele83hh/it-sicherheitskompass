@@ -65,10 +65,11 @@ Plans:
   3. Special cases (DNS, TLD, qTSP, Telko) are automatically classified as "besonders wichtig" regardless of size
   4. Result page shows the classification with a human-readable explanation and specific legal reference (par. 28 Abs. 1 or 2 BSIG)
   5. "Nicht betroffen" result includes a supply chain hint: partners/customers may still impose NIS2 requirements via Art. 21(2)(d)
-**Plans**: 1 plan
+**Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: Affected check UI (sector selector, size/revenue inputs, classification result display, supply chain hint)
+- [ ] 03-01-PLAN.md -- Dependencies, wizard store, shared components, i18n translations
+- [ ] 03-02-PLAN.md -- 3-step wizard UI (sector selection, company size, classification result)
 
 ### Phase 4: Gap Analysis Wizard (Step 2)
 **Goal**: Users can walk through all 10 NIS2 measure categories answering 3-4 questions each, navigating freely between categories without losing answers
@@ -137,8 +138,8 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete | 2026-02-06 |
-| 2. NIS2 Content + Scoring Engine | 0/3 | Not started | - |
-| 3. Affected Check | 0/1 | Not started | - |
+| 2. NIS2 Content + Scoring Engine | 3/3 | Complete | 2026-02-06 |
+| 3. Affected Check | 0/2 | Planning complete | - |
 | 4. Gap Analysis Wizard | 0/1 | Not started | - |
 | 5. Results Dashboard | 0/1 | Not started | - |
 | 6. PDF Report | 0/2 | Not started | - |
@@ -146,4 +147,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-06 (Phase 1 complete)*
+*Last updated: 2026-02-06 (Phase 3 planned)*
