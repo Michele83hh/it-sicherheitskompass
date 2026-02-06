@@ -71,5 +71,120 @@
     },
     "copyright": "© {year} NIS2 Readiness Check",
     "legalDate": "Legal status: January 2025"
+  },
+  "sectors": {
+    "energy": {
+      "name": "Energy",
+      "subsectors": {
+        "electricity": "Electricity Supply",
+        "districtHeating": "District Heating and Cooling",
+        "fuel": "Fuel and Heating Oil Supply",
+        "gas": "Gas Supply"
+      }
+    },
+    "transport": {
+      "name": "Transport",
+      "subsectors": {
+        "air": "Air Transport",
+        "rail": "Rail Transport",
+        "maritime": "Maritime Transport",
+        "road": "Road Transport"
+      }
+    },
+    "finance": {
+      "name": "Banking and Financial Markets",
+      "subsectors": {
+        "banking": "Credit Institutions",
+        "financialInfrastructure": "Financial Market Infrastructures"
+      }
+    },
+    "health": {
+      "name": "Health",
+      "subsectors": {
+        "healthServices": "Healthcare Providers"
+      }
+    },
+    "water": {
+      "name": "Water",
+      "subsectors": {
+        "drinkingWater": "Drinking Water Supply",
+        "wastewater": "Wastewater Management"
+      }
+    },
+    "digitalInfrastructure": {
+      "name": "Digital Infrastructure",
+      "subsectors": {
+        "ixp": "Internet Exchange Points (IXPs)",
+        "dns": "DNS Service Providers",
+        "tld": "Top-Level Domain (TLD) Name Registries",
+        "cloud": "Cloud Computing Services",
+        "datacenter": "Data Center Services",
+        "cdn": "Content Delivery Networks (CDN)",
+        "tsp": "Trust Service Providers"
+      }
+    },
+    "space": {
+      "name": "Space",
+      "subsectors": {
+        "groundInfrastructure": "Ground-Based Infrastructure for Space Activities"
+      }
+    },
+    "postal": {
+      "name": "Postal and Courier Services"
+    },
+    "wasteManagement": {
+      "name": "Waste Management"
+    },
+    "chemicals": {
+      "name": "Production, Manufacturing and Distribution of Chemicals"
+    },
+    "food": {
+      "name": "Production, Processing and Distribution of Food"
+    },
+    "manufacturing": {
+      "name": "Manufacturing",
+      "subsectors": {
+        "medicalDevices": "Manufacture of Medical Devices and In Vitro Diagnostics",
+        "electronics": "Manufacture of Computer, Electronic and Optical Products",
+        "electricalEquipment": "Manufacture of Electrical Equipment",
+        "mechanicalEngineering": "Manufacture of Machinery and Equipment",
+        "motorVehicles": "Manufacture of Motor Vehicles, Trailers and Semi-trailers",
+        "otherVehicles": "Manufacture of Other Transport Equipment"
+      }
+    },
+    "digitalServices": {
+      "name": "Digital Service Providers",
+      "subsectors": {
+        "onlineMarketplace": "Online Marketplaces",
+        "searchEngine": "Online Search Engines",
+        "socialNetwork": "Social Networking Service Platforms"
+      }
+    },
+    "research": {
+      "name": "Research",
+      "subsectors": {
+        "researchFacilities": "Research Organizations"
+      }
+    }
+  },
+  "classification": {
+    "categories": {
+      "besondersWichtig": "Essential Entity",
+      "wichtig": "Important Entity",
+      "nichtBetroffen": "Not Affected by NIS2"
+    },
+    "reasons": {
+      "kritis": "As an operator of critical infrastructure (KRITIS), you are classified as an essential entity regardless of company size.",
+      "alwaysQualified": "Your business area (qualified trust service provider, DNS service provider, or TLD registry) falls under essential entities regardless of company size.",
+      "anlage1LargeEntity": "Your company meets the size thresholds for essential entities: at least 250 employees OR annual revenue exceeding €50 million and balance sheet exceeding €43 million.",
+      "standardThreshold": "Your company meets the thresholds for important entities: at least 50 employees OR annual revenue exceeding €10 million and balance sheet exceeding €10 million.",
+      "belowThreshold": "Your company is below the NIS2 thresholds (less than 50 employees AND annual revenue/balance sheet below €10 million). You are likely not directly affected by NIS2.",
+      "sectorNotRegulated": "Your sector is not included in the NIS2-regulated sectors of Annexes 1 and 2 to BSIG."
+    },
+    "supplychainHint": "Note: Even if you are not directly affected by NIS2, your customers or clients may impose security requirements on you as a supplier if they are NIS2-regulated entities (Art. 21(2)(d), §30(2)(4) BSIG).",
+    "anlageLabels": {
+      "anlage1": "Annex 1 to BSIG (Sectors of Essential and Important Entities)",
+      "anlage2": "Annex 2 to BSIG (Sectors of Important Entities)"
+    }
   }
 }

@@ -71,5 +71,120 @@
     },
     "copyright": "© {year} NIS2-Bereitschaftsprüfung",
     "legalDate": "Stand der Rechtslage: Januar 2025"
+  },
+  "sectors": {
+    "energy": {
+      "name": "Energie",
+      "subsectors": {
+        "electricity": "Stromversorgung",
+        "districtHeating": "Fernwärme- und Fernkälteversorgung",
+        "fuel": "Kraftstoff- und Heizölversorgung",
+        "gas": "Gasversorgung"
+      }
+    },
+    "transport": {
+      "name": "Transport und Verkehr",
+      "subsectors": {
+        "air": "Luftverkehr",
+        "rail": "Schienenverkehr",
+        "maritime": "Schifffahrt",
+        "road": "Straßenverkehr"
+      }
+    },
+    "finance": {
+      "name": "Finanz- und Versicherungswesen",
+      "subsectors": {
+        "banking": "Bankwesen",
+        "financialInfrastructure": "Finanzmarktinfrastrukturen"
+      }
+    },
+    "health": {
+      "name": "Gesundheit",
+      "subsectors": {
+        "healthServices": "Gesundheitsdienstleistungen"
+      }
+    },
+    "water": {
+      "name": "Wasser",
+      "subsectors": {
+        "drinkingWater": "Trinkwasserversorgung",
+        "wastewater": "Abwasserbeseitigung"
+      }
+    },
+    "digitalInfrastructure": {
+      "name": "Digitale Infrastruktur",
+      "subsectors": {
+        "ixp": "Internet Exchange Points (IXPs)",
+        "dns": "DNS-Diensteanbieter",
+        "tld": "Top-Level-Domain-Namenregister (TLD)",
+        "cloud": "Cloud-Computing-Dienste",
+        "datacenter": "Rechenzentrumsdienste",
+        "cdn": "Content-Delivery-Netzwerke (CDN)",
+        "tsp": "Vertrauensdiensteanbieter"
+      }
+    },
+    "space": {
+      "name": "Weltraum",
+      "subsectors": {
+        "groundInfrastructure": "Bodeninfrastrukturen für Weltraumaktivitäten"
+      }
+    },
+    "postal": {
+      "name": "Post- und Kurierdienste"
+    },
+    "wasteManagement": {
+      "name": "Abfallbewirtschaftung"
+    },
+    "chemicals": {
+      "name": "Produktion, Herstellung und Handel mit chemischen Stoffen"
+    },
+    "food": {
+      "name": "Produktion, Verarbeitung und Vertrieb von Lebensmitteln"
+    },
+    "manufacturing": {
+      "name": "Verarbeitendes Gewerbe / Herstellung von Waren",
+      "subsectors": {
+        "medicalDevices": "Herstellung von Medizinprodukten und In-vitro-Diagnostika",
+        "electronics": "Herstellung von Datenverarbeitungsgeräten, elektronischen und optischen Erzeugnissen",
+        "electricalEquipment": "Herstellung von elektrischen Ausrüstungen",
+        "mechanicalEngineering": "Maschinenbau",
+        "motorVehicles": "Herstellung von Kraftwagen und Kraftwagenteilen",
+        "otherVehicles": "Sonstiger Fahrzeugbau"
+      }
+    },
+    "digitalServices": {
+      "name": "Anbieter digitaler Dienste",
+      "subsectors": {
+        "onlineMarketplace": "Online-Marktplätze",
+        "searchEngine": "Online-Suchmaschinen",
+        "socialNetwork": "Plattformen für Dienste sozialer Netzwerke"
+      }
+    },
+    "research": {
+      "name": "Forschung",
+      "subsectors": {
+        "researchFacilities": "Forschungseinrichtungen"
+      }
+    }
+  },
+  "classification": {
+    "categories": {
+      "besondersWichtig": "Besonders wichtige Einrichtung",
+      "wichtig": "Wichtige Einrichtung",
+      "nichtBetroffen": "Nicht von NIS2 betroffen"
+    },
+    "reasons": {
+      "kritis": "Als Betreiber kritischer Infrastruktur (KRITIS) sind Sie unabhängig von der Unternehmensgröße als besonders wichtige Einrichtung eingestuft.",
+      "alwaysQualified": "Ihr Tätigkeitsbereich (qualifizierter Vertrauensdiensteanbieter, DNS-Diensteanbieter oder TLD-Namenregister) fällt unabhängig von der Unternehmensgröße unter die besonders wichtigen Einrichtungen.",
+      "anlage1LargeEntity": "Ihr Unternehmen erfüllt die Größenschwellen für besonders wichtige Einrichtungen: mindestens 250 Beschäftigte ODER Jahresumsatz über 50 Mio. EUR und Bilanzsumme über 43 Mio. EUR.",
+      "standardThreshold": "Ihr Unternehmen erfüllt die Schwellenwerte für wichtige Einrichtungen: mindestens 50 Beschäftigte ODER Jahresumsatz über 10 Mio. EUR und Bilanzsumme über 10 Mio. EUR.",
+      "belowThreshold": "Ihr Unternehmen liegt unterhalb der NIS2-Schwellenwerte (weniger als 50 Beschäftigte UND Jahresumsatz/Bilanzsumme unter 10 Mio. EUR). Sie sind voraussichtlich nicht direkt von NIS2 betroffen.",
+      "sectorNotRegulated": "Ihr Sektor fällt nicht unter die NIS2-regulierten Sektoren der Anlagen 1 und 2 zum BSIG."
+    },
+    "supplychainHint": "Hinweis: Auch wenn Sie nicht direkt von NIS2 betroffen sind, können Ihre Kunden oder Auftraggeber als NIS2-regulierte Einrichtungen Sicherheitsanforderungen an Sie als Lieferant stellen (Art. 21(2)(d), §30 Abs. 2 Nr. 4 BSIG).",
+    "anlageLabels": {
+      "anlage1": "Anlage 1 zum BSIG (Sektoren besonders wichtiger und wichtiger Einrichtungen)",
+      "anlage2": "Anlage 2 zum BSIG (Sektoren wichtiger Einrichtungen)"
+    }
   }
 }
