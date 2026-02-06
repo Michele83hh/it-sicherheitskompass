@@ -728,5 +728,61 @@
       "description": "Stellen Sie verschlüsselte Kommunikationskanäle für vertrauliche Geschäftsinhalte und Notfälle bereit.",
       "firstStep": "Richten Sie einen verschlüsselten Messenger (z.B. Signal) als Notfall-Kommunikationskanal ein und teilen Sie die Kontaktdaten im Krisenstab."
     }
+  },
+  "results": {
+    "title": "Ihre NIS2-Readiness-Ergebnisse",
+    "subtitle": "Auswertung Ihrer Gap-Analyse nach Art. 21(2) NIS2-Richtlinie / §30 BSIG",
+    "disclaimer": {
+      "text": "Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität. Jede Maßnahme muss angemessen und wirksam für Ihr spezifisches Risikoprofil umgesetzt sein (§30 Abs. 1 BSIG). Diese Auswertung ersetzt keine Rechtsberatung oder professionelle Sicherheitsbewertung."
+    },
+    "overallScore": {
+      "label": "Gesamter Reifegrad",
+      "completionRate": "{value}% der Fragen beantwortet",
+      "questionsAnswered": "{answered} von {total} Fragen"
+    },
+    "trafficLight": {
+      "red": "Handlungsbedarf",
+      "yellow": "Verbesserung nötig",
+      "green": "Gut umgesetzt"
+    },
+    "verdict": {
+      "red": "Erhebliche Lücken identifiziert — dringender Handlungsbedarf",
+      "yellow": "Teilweise umgesetzt — gezielte Verbesserungen erforderlich",
+      "green": "Solide Basis vorhanden — kontinuierliche Pflege empfohlen"
+    },
+    "categoryCard": {
+      "score": "{value}%",
+      "topRecommendation": "Priorität #1",
+      "legalRef": "Rechtsgrundlage",
+      "bsiRef": "BSI-Grundschutz"
+    },
+    "effortLevel": {
+      "quick": "Schnell umsetzbar",
+      "medium": "Mittelfristig",
+      "strategic": "Strategisch"
+    },
+    "quickWins": {
+      "title": "Quick Wins — sofort umsetzbare Maßnahmen",
+      "subtitle": "Die wirkungsvollsten Maßnahmen, die Sie kurzfristig umsetzen können",
+      "firstStep": "Erster Schritt"
+    },
+    "recommendations": {
+      "title": "Handlungsempfehlungen nach Kategorie",
+      "subtitle": "Sortiert nach Dringlichkeit — Rot-Bereiche zuerst",
+      "firstStep": "Nächster Schritt",
+      "legalReference": "Rechtsgrundlage",
+      "bsiReference": "BSI-Grundschutz"
+    },
+    "actions": {
+      "retake": "Gap-Analyse wiederholen",
+      "downloadPdf": "PDF herunterladen",
+      "pdfComingSoon": "Verfügbar in Kürze"
+    },
+    "bsiLink": "BSI IT-Grundschutz-Kompendium",
+    "noData": {
+      "title": "Keine Ergebnisse verfügbar",
+      "text": "Sie haben die Gap-Analyse noch nicht abgeschlossen. Bitte führen Sie zuerst die Analyse durch.",
+      "cta": "Zur Gap-Analyse"
+    }
   }
 }

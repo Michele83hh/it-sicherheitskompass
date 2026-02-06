@@ -728,5 +728,61 @@
       "description": "Provide encrypted communication channels for confidential business content and emergencies.",
       "firstStep": "Set up an encrypted messenger (e.g., Signal) as emergency communication channel and share contacts with the crisis team."
     }
+  },
+  "results": {
+    "title": "Your NIS2 Readiness Results",
+    "subtitle": "Assessment of your gap analysis per Art. 21(2) NIS2 Directive / Section 30 BSIG",
+    "disclaimer": {
+      "text": "Your responses indicate the following maturity level. A high score does not automatically mean NIS2 conformity. Every measure must be adequately and effectively implemented for your specific risk profile (Section 30(1) BSIG). This assessment does not replace legal advice or a professional security evaluation."
+    },
+    "overallScore": {
+      "label": "Overall Readiness Level",
+      "completionRate": "{value}% of questions answered",
+      "questionsAnswered": "{answered} of {total} questions"
+    },
+    "trafficLight": {
+      "red": "Action required",
+      "yellow": "Improvement needed",
+      "green": "Well implemented"
+    },
+    "verdict": {
+      "red": "Significant gaps identified — urgent action required",
+      "yellow": "Partially implemented — targeted improvements needed",
+      "green": "Solid foundation — continuous maintenance recommended"
+    },
+    "categoryCard": {
+      "score": "{value}%",
+      "topRecommendation": "Priority #1",
+      "legalRef": "Legal basis",
+      "bsiRef": "BSI IT-Grundschutz"
+    },
+    "effortLevel": {
+      "quick": "Quick win",
+      "medium": "Medium-term",
+      "strategic": "Strategic"
+    },
+    "quickWins": {
+      "title": "Quick Wins — immediately actionable measures",
+      "subtitle": "The highest-impact measures you can implement right away",
+      "firstStep": "First step"
+    },
+    "recommendations": {
+      "title": "Recommendations by Category",
+      "subtitle": "Sorted by urgency — red areas first",
+      "firstStep": "Next step",
+      "legalReference": "Legal basis",
+      "bsiReference": "BSI IT-Grundschutz"
+    },
+    "actions": {
+      "retake": "Retake assessment",
+      "downloadPdf": "Download PDF",
+      "pdfComingSoon": "Coming soon"
+    },
+    "bsiLink": "BSI IT-Grundschutz Compendium",
+    "noData": {
+      "title": "No results available",
+      "text": "You have not completed the gap analysis yet. Please complete the analysis first.",
+      "cta": "Go to gap analysis"
+    }
   }
 }
