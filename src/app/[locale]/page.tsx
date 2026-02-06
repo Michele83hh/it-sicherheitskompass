@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import {
@@ -24,8 +25,8 @@ export default function HomePage() {
             {t('subtitle')}
           </p>
           <div className="mt-10">
-            <Button size="lg" className="text-lg px-8 py-6">
-              {t('cta')}
+            <Button size="lg" className="text-lg px-8 py-6" asChild>
+              <Link href="/check">{t('cta')}</Link>
             </Button>
           </div>
         </div>
