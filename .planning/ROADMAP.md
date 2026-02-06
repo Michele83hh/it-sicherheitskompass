@@ -93,10 +93,11 @@ Plans:
   2. Overall Readiness Score is shown as orientation value with explicit label "Reifegrad" (not "Compliance Score")
   3. Recommendations are sorted by priority (Rot categories first) with concrete next steps per category
   4. Visible disclaimer states: a high score does not automatically mean NIS2 conformity -- every measure must be adequately implemented
-**Plans**: 1 plan
+**Plans**: 2 plans
 
 Plans:
-- [ ] 05-01: Results dashboard UI (category cards, traffic lights, score bars, overall score, recommendations list, disclaimer)
+- [ ] 05-01-PLAN.md -- Dependencies, translations, data prep (shadcn Badge+Progress, effortLevel on recommendations, DE/EN i18n)
+- [ ] 05-02-PLAN.md -- Results dashboard UI (category cards, traffic lights, score bars, overall Reifegrad, quick wins, recommendations, disclaimer)
 
 ### Phase 6: PDF Report
 **Goal**: Users can download a professional, complete PDF report of their assessment results in their chosen language
@@ -141,10 +142,10 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
 | 2. NIS2 Content + Scoring Engine | 3/3 | Complete | 2026-02-06 |
 | 3. Affected Check | 2/2 | Complete | 2026-02-06 |
 | 4. Gap Analysis Wizard | 1/1 | Complete | 2026-02-06 |
-| 5. Results Dashboard | 0/1 | Not started | - |
+| 5. Results Dashboard | 0/2 | Not started | - |
 | 6. PDF Report | 0/2 | Not started | - |
 | 7. Polish + Legal + Deploy | 0/2 | Not started | - |
 
 ---
 *Roadmap created: 2026-02-06*
-*Last updated: 2026-02-06 (Phase 4 complete)*
+*Last updated: 2026-02-06 (Phase 5 planned)*
