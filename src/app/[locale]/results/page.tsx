@@ -14,6 +14,7 @@ import { CategoryCard } from './components/category-card';
 import { QuickWinsSection } from './components/quick-wins-section';
 import { RecommendationsSection } from './components/recommendations-section';
 import { Button } from '@/components/ui/button';
+import DownloadPdfButton from './components/download-pdf-button';
 import type { CategoryScore, TrafficLight, Recommendation } from '@/lib/nis2/types';
 
 export default function ResultsPage() {
@@ -22,7 +23,7 @@ export default function ResultsPage() {
   const tRec = useTranslations('recommendations');
   const params = useParams();
   const router = useRouter();
-  const locale = params.locale as string;
+  const locale = params?.locale as string;
 
   const [isClient, setIsClient] = useState(false);
 
@@ -207,10 +208,7 @@ export default function ResultsPage() {
         <Button variant="outline" onClick={handleRetake}>
           {t('actions.retake')}
         </Button>
-        <Button variant="default" disabled className="opacity-50">
-          {t('actions.downloadPdf')}
-          <span className="ml-2 text-xs">({t('actions.pdfComingSoon')})</span>
-        </Button>
+        <DownloadPdfButton overallScore={overallScore} />
       </div>
     </div>
   );

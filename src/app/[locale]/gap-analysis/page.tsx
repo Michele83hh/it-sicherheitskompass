@@ -13,7 +13,7 @@ export default function GapAnalysisPage() {
   const t = useTranslations('gapAnalysis');
   const tCategories = useTranslations('categories');
   const params = useParams();
-  const locale = params.locale as string;
+  const locale = params?.locale as string;
 
   const currentCategoryIndex = useGapAnalysisStore(
     (state) => state.currentCategoryIndex
