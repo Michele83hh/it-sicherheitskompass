@@ -1,12 +1,15 @@
+import path from 'path';
 import { Font } from '@react-pdf/renderer';
 
 // Register Inter font at module load (not inside components)
-// Using local woff2 files from Google Fonts CDN for reliable rendering
+// Must use absolute filesystem paths for server-side PDF rendering
+const fontsDir = path.join(process.cwd(), 'public', 'fonts');
+
 Font.register({
   family: 'Inter',
   fonts: [
-    { src: '/fonts/Inter-Regular.woff2', fontWeight: 400 },
-    { src: '/fonts/Inter-Bold.woff2', fontWeight: 700 },
+    { src: path.join(fontsDir, 'Inter-Regular.ttf'), fontWeight: 400 },
+    { src: path.join(fontsDir, 'Inter-Bold.ttf'), fontWeight: 700 },
   ],
 });
 

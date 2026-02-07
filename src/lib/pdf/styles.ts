@@ -30,7 +30,10 @@ export const styles = StyleSheet.create({
   page: {
     fontFamily: 'Inter',
     fontSize: 10,
-    padding: 40,
+    paddingTop: 40,
+    paddingBottom: 50,
+    paddingLeft: 40,
+    paddingRight: 40,
     color: COLORS.gray900,
   },
   // Header

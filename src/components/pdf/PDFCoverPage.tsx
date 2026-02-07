@@ -33,7 +33,7 @@ const PDFCoverPage = ({ messages, locale, generatedDate }: PDFCoverPageProps) =>
 
       {/* Metadata - Rechtsstand ALWAYS in German */}
       <Text style={styles.metadataText}>
-        Rechtsstand: Januar 2025 (NIS2-Richtlinie (EU) 2022/2555, NIS2UmsG)
+        {messages['pdf.rechtsstand']}: {messages['pdf.rechtstandDatum']} (NIS2-Richtlinie (EU) 2022/2555, NIS2UmsG)
       </Text>
 
       {/* Generated date - locale-aware */}

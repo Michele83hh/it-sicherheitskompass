@@ -221,7 +221,7 @@
       "belowThreshold": "Ihr Unternehmen liegt unterhalb der NIS2-Schwellenwerte (weniger als 50 Beschäftigte UND Jahresumsatz/Bilanzsumme unter 10 Mio. EUR). Sie sind voraussichtlich nicht direkt von NIS2 betroffen.",
       "sectorNotRegulated": "Ihr Sektor fällt nicht unter die NIS2-regulierten Sektoren der Anlagen 1 und 2 zum BSIG."
     },
-    "supplychainHint": "Hinweis: Auch wenn Sie nicht direkt von NIS2 betroffen sind, können Ihre Kunden oder Auftraggeber als NIS2-regulierte Einrichtungen Sicherheitsanforderungen an Sie als Lieferant stellen (Art. 21(2)(d), §30 Abs. 2 Nr. 4 BSIG).",
+    "supplychainHint": "Hinweis: Auch wenn Sie nicht direkt von NIS2 betroffen sind, können Ihre Kunden oder Auftraggeber als NIS2-regulierte Einrichtungen Sicherheitsanforderungen an Sie als Lieferant stellen (Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG).",
     "anlageLabels": {
       "anlage1": "Anlage 1 zum BSIG (Sektoren besonders wichtiger und wichtiger Einrichtungen)",
       "anlage2": "Anlage 2 zum BSIG (Sektoren wichtiger Einrichtungen)"
@@ -288,7 +288,7 @@
   "questions": {
     "raQ1": {
       "title": "Haben Sie eine aktuelle Übersicht über Ihre IT-Risiken (z.B. welche Systeme kritisch sind, wo Schwachstellen liegen)?",
-      "tooltip": "NIS2 fordert regelmäßige Risikoanalysen (Art. 21(2)(a), §30 Abs. 2 Nr. 1 BSIG). Das BSI empfiehlt die Methodik aus BSI-Standard 200-3.",
+      "tooltip": "NIS2 fordert regelmäßige Risikoanalysen (Art. 21 Abs. 2 lit. a NIS2-RL, §30 Abs. 2 Nr. 1 BSIG). Das BSI empfiehlt die Methodik aus BSI-Standard 200-3.",
       "maturity": {
         "level0": "Keine Risikoanalyse vorhanden",
         "level1": "Grobe Einschätzung vorhanden, aber nicht dokumentiert",
@@ -318,7 +318,7 @@
     },
     "ihQ1": {
       "title": "Gibt es ein festgelegtes Verfahren, wie Ihr Unternehmen auf Cyberangriffe oder IT-Störungen reagiert?",
-      "tooltip": "NIS2 verlangt dokumentierte Prozesse für die Reaktion auf Sicherheitsvorfälle (Art. 21(2)(b), §30 Abs. 2 Nr. 2 BSIG). Siehe BSI-Baustein DER.2.1.",
+      "tooltip": "NIS2 verlangt dokumentierte Prozesse für die Reaktion auf Sicherheitsvorfälle (Art. 21 Abs. 2 lit. b NIS2-RL, §30 Abs. 2 Nr. 2 BSIG). Siehe BSI-Baustein DER.2.1.",
       "maturity": {
         "level0": "Kein Verfahren vorhanden",
         "level1": "Reaktion erfolgt ad-hoc ohne festen Ablauf",
@@ -348,7 +348,7 @@
     },
     "bcQ1": {
       "title": "Erstellen Sie regelmäßig Backups Ihrer wichtigen Daten und testen diese auch?",
-      "tooltip": "NIS2 fordert Backup-Management und Wiederherstellungsfähigkeit (Art. 21(2)(c), §30 Abs. 2 Nr. 3 BSIG). Siehe BSI-Baustein CON.3.",
+      "tooltip": "NIS2 fordert Backup-Management und Wiederherstellungsfähigkeit (Art. 21 Abs. 2 lit. c NIS2-RL, §30 Abs. 2 Nr. 3 BSIG). Siehe BSI-Baustein CON.3.",
       "maturity": {
         "level0": "Keine regelmäßigen Backups",
         "level1": "Backups werden erstellt, aber nicht getestet",
@@ -378,7 +378,7 @@
     },
     "scQ1": {
       "title": "Prüfen Sie die IT-Sicherheit Ihrer wichtigsten Lieferanten und Dienstleister?",
-      "tooltip": "NIS2 verlangt Prüfung der Sicherheit direkter Lieferanten und Dienstleister (Art. 21(2)(d), §30 Abs. 2 Nr. 4 BSIG). Besonders wichtig bei Cloud-Diensten und IT-Outsourcing.",
+      "tooltip": "NIS2 verlangt Prüfung der Sicherheit direkter Lieferanten und Dienstleister (Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG). Besonders wichtig bei Cloud-Diensten und IT-Outsourcing.",
       "maturity": {
         "level0": "Keine Prüfung der Lieferanten-Sicherheit",
         "level1": "Gelegentliche, informelle Nachfrage",
@@ -408,7 +408,7 @@
     },
     "adQ1": {
       "title": "Werden Sicherheitsupdates für Ihre IT-Systeme zeitnah eingespielt?",
-      "tooltip": "NIS2 fordert Schwachstellenmanagement (Art. 21(2)(e), §30 Abs. 2 Nr. 5 BSIG). Zeitnahes Patching ist eine der wichtigsten Schutzmaßnahmen. Siehe BSI-Baustein OPS.1.1.3.",
+      "tooltip": "NIS2 fordert Schwachstellenmanagement (Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG). Zeitnahes Patching ist eine der wichtigsten Schutzmaßnahmen. Siehe BSI-Baustein OPS.1.1.3.",
       "maturity": {
         "level0": "Updates werden nicht systematisch eingespielt",
         "level1": "Updates werden gelegentlich eingespielt, ohne festen Prozess",
@@ -418,7 +418,7 @@
     },
     "adQ2": {
       "title": "Berücksichtigen Sie IT-Sicherheitsaspekte beim Kauf oder bei der Entwicklung neuer Software?",
-      "tooltip": "NIS2 fordert Security-by-Design (Art. 21(2)(e), §30 Abs. 2 Nr. 5 BSIG). Sicherheit muss von Anfang an mitgedacht werden. Siehe BSI-Baustein CON.8.",
+      "tooltip": "NIS2 fordert Security-by-Design (Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG). Sicherheit muss von Anfang an mitgedacht werden. Siehe BSI-Baustein CON.8.",
       "maturity": {
         "level0": "Sicherheit wird beim Einkauf/Entwicklung nicht berücksichtigt",
         "level1": "Gelegentlich berücksichtigt, aber kein fester Prozess",
@@ -438,7 +438,7 @@
     },
     "eaQ1": {
       "title": "Überprüfen Sie regelmäßig, ob Ihre Sicherheitsmaßnahmen tatsächlich wirken (z.B. durch Audits)?",
-      "tooltip": "NIS2 verlangt regelmäßige Wirksamkeitsprüfung (Art. 21(2)(f), §30 Abs. 2 Nr. 6 BSIG). Siehe BSI-Baustein ISMS.1.",
+      "tooltip": "NIS2 verlangt regelmäßige Wirksamkeitsprüfung (Art. 21 Abs. 2 lit. f NIS2-RL, §30 Abs. 2 Nr. 6 BSIG). Siehe BSI-Baustein ISMS.1.",
       "maturity": {
         "level0": "Keine Überprüfung der Wirksamkeit",
         "level1": "Gelegentliche informelle Überprüfung",
@@ -468,7 +468,7 @@
     },
     "chQ1": {
       "title": "Werden Ihre Mitarbeiter regelmäßig zu IT-Sicherheitsthemen geschult (z.B. Phishing erkennen)?",
-      "tooltip": "NIS2 fordert grundlegende Schulungen (Art. 21(2)(g), §30 Abs. 2 Nr. 7 BSIG). Siehe BSI-Baustein ORP.3.",
+      "tooltip": "NIS2 fordert grundlegende Schulungen (Art. 21 Abs. 2 lit. g NIS2-RL, §30 Abs. 2 Nr. 7 BSIG). Siehe BSI-Baustein ORP.3.",
       "maturity": {
         "level0": "Keine Schulungen zu IT-Sicherheit",
         "level1": "Einmalige oder gelegentliche Hinweise",
@@ -498,7 +498,7 @@
     },
     "crQ1": {
       "title": "Werden vertrauliche Daten verschlüsselt gespeichert und übertragen (z.B. via HTTPS, VPN)?",
-      "tooltip": "NIS2 verlangt den Einsatz kryptographischer Verfahren (Art. 21(2)(h), §30 Abs. 2 Nr. 8 BSIG). Siehe BSI-Baustein CON.1.",
+      "tooltip": "NIS2 verlangt den Einsatz kryptographischer Verfahren (Art. 21 Abs. 2 lit. h NIS2-RL, §30 Abs. 2 Nr. 8 BSIG). Siehe BSI-Baustein CON.1.",
       "maturity": {
         "level0": "Keine Verschlüsselung im Einsatz",
         "level1": "Teilweise Verschlüsselung (z.B. nur HTTPS für Website)",
@@ -528,7 +528,7 @@
     },
     "acQ1": {
       "title": "Haben nur autorisierte Personen Zugriff auf kritische IT-Systeme und Daten?",
-      "tooltip": "NIS2 fordert Zugriffskontrolle nach dem Prinzip der minimalen Berechtigung (Art. 21(2)(i), §30 Abs. 2 Nr. 9 BSIG). Siehe BSI-Baustein ORP.4.",
+      "tooltip": "NIS2 fordert Zugriffskontrolle nach dem Prinzip der minimalen Berechtigung (Art. 21 Abs. 2 lit. i NIS2-RL, §30 Abs. 2 Nr. 9 BSIG). Siehe BSI-Baustein ORP.4.",
       "maturity": {
         "level0": "Keine systematische Zugriffskontrolle",
         "level1": "Grundlegende Zugangsbeschränkungen, aber keine differenzierten Rechte",
@@ -558,7 +558,7 @@
     },
     "mcQ1": {
       "title": "Nutzen Sie Multi-Faktor-Authentifizierung (z.B. Authenticator-App, Hardware-Token) für kritische Systeme?",
-      "tooltip": "NIS2 verlangt MFA für privilegierte Zugänge (Art. 21(2)(j), §30 Abs. 2 Nr. 10 BSIG). MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
+      "tooltip": "NIS2 verlangt MFA für privilegierte Zugänge (Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG). MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
       "maturity": {
         "level0": "Kein MFA im Einsatz",
         "level1": "MFA für einzelne Systeme (z.B. nur Cloud-E-Mail)",
@@ -629,7 +629,7 @@
       "whyTitle": "Warum diese Einstufung?",
       "legalBasis": "Rechtsgrundlage",
       "supplyChainTitle": "Hinweis zur Lieferkettensicherheit",
-      "supplyChainText": "Auch wenn Sie nicht direkt von NIS2 betroffen sind, können Ihre Kunden oder Auftraggeber als NIS2-regulierte Einrichtungen Sicherheitsanforderungen an Sie als Lieferant stellen (Art. 21(2)(d), § 30 Abs. 2 Nr. 4 BSIG).",
+      "supplyChainText": "Auch wenn Sie nicht direkt von NIS2 betroffen sind, können Ihre Kunden oder Auftraggeber als NIS2-regulierte Einrichtungen Sicherheitsanforderungen an Sie als Lieferant stellen (Art. 21 Abs. 2 lit. d NIS2-RL, § 30 Abs. 2 Nr. 4 BSIG).",
       "ctaPrimary": "Reifegrad prüfen",
       "ctaSecondary": "Erneut prüfen"
     },
@@ -641,7 +641,7 @@
   },
   "gapAnalysis": {
     "title": "NIS2 Gap-Analyse",
-    "subtitle": "Bewerten Sie Ihren Umsetzungsstand in den 10 Maßnahmenbereichen nach Art. 21(2) NIS2-Richtlinie",
+    "subtitle": "Bewerten Sie Ihren Umsetzungsstand in den 10 Maßnahmenbereichen nach Art. 21 Abs. 2 NIS2-RL",
     "progress": {
       "category": "Bereich {current} von {total}",
       "overall": "Gesamtfortschritt",
@@ -771,7 +771,7 @@
   },
   "results": {
     "title": "Ihre NIS2-Readiness-Ergebnisse",
-    "subtitle": "Auswertung Ihrer Gap-Analyse nach Art. 21(2) NIS2-Richtlinie / §30 BSIG",
+    "subtitle": "Auswertung Ihrer Gap-Analyse nach Art. 21 Abs. 2 NIS2-RL / §30 BSIG",
     "disclaimer": {
       "text": "Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität. Jede Maßnahme muss angemessen und wirksam für Ihr spezifisches Risikoprofil umgesetzt sein (§30 Abs. 1 BSIG). Diese Auswertung ersetzt keine Rechtsberatung oder professionelle Sicherheitsbewertung."
     },

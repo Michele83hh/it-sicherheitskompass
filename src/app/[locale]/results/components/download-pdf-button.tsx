@@ -42,8 +42,9 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
       // Build company profile
       const sector = getSectorById(formData.sectorId || '');
       const sectorName = sector ? tSectors(`${sector.id}.name`) : 'Unknown';
-      const subsectorName = formData.subsectorId && sector
-        ? tSectors(`${sector.id}.subsectors.${formData.subsectorId}`)
+      const subsector = sector?.subsectors.find(s => s.id === formData.subsectorId);
+      const subsectorName = subsector
+        ? tSectors(subsector.nameKey.replace('sectors.', ''))
         : undefined;
 
       // Run classification
@@ -56,7 +57,12 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
         isKritis: formData.isKritis || false,
       };
       const classificationResult = classifyEntity(classificationInput);
-      const classification = tClass(`categories.${classificationResult.category}`);
+      const categoryKeyMap: Record<string, string> = {
+        'besonders-wichtig': 'besondersWichtig',
+        'wichtig': 'wichtig',
+        'nicht-betroffen': 'nichtBetroffen',
+      };
+      const classification = tClass(`categories.${categoryKeyMap[classificationResult.category] || classificationResult.category}`);
       const legalReference = classificationResult.legalReference;
 
       // Build category results

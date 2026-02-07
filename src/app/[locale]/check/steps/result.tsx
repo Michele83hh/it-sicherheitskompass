@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link } from '@/lib/i18n/routing';
 import { useTranslations } from 'next-intl';
-import { AlertCircle, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, Info } from 'lucide-react';
+import { AlertCircle, AlertTriangle, CheckCircle, Info } from 'lucide-react';
 import { useWizardStore } from '@/stores/wizard-store';
 import { classifyEntity } from '@/lib/nis2/classification';
 import type { ClassificationInput, ClassificationResult } from '@/lib/nis2/types';
@@ -14,7 +14,6 @@ export function ResultStep() {
   const t = useTranslations('check.resultStep');
   const tClassification = useTranslations('classification');
   const { formData, reset, setClassificationResult } = useWizardStore();
-  const [showExplanation, setShowExplanation] = useState(false);
 
   // Handle "not listed" shortcut
   if (formData.sectorId === 'not-listed') {
@@ -130,29 +129,15 @@ export function ResultStep() {
           </CardDescription>
         </CardHeader>
 
-        {/* Expandable explanation */}
+        {/* Explanation — always visible */}
         <CardContent>
-          <button
-            type="button"
-            onClick={() => setShowExplanation(!showExplanation)}
-            className="flex w-full items-center justify-between text-left font-medium text-gray-900 hover:text-gray-700"
-          >
-            <span>{t('whyTitle')}</span>
-            {showExplanation ? (
-              <ChevronUp className="h-5 w-5" />
-            ) : (
-              <ChevronDown className="h-5 w-5" />
-            )}
-          </button>
-
-          {showExplanation && (
-            <div className="mt-4 space-y-2 text-sm text-gray-700">
-              <p>{tClassification(result.reason.replace('classification.', ''))}</p>
-              <p className="font-medium">
-                {t('legalBasis')}: {result.legalReference}
-              </p>
-            </div>
-          )}
+          <p className="font-medium text-gray-900">{t('whyTitle')}</p>
+          <div className="mt-2 space-y-2 text-sm text-gray-700">
+            <p>{tClassification(result.reason.replace('classification.', ''))}</p>
+            <p className="font-medium">
+              {t('legalBasis')}: {result.legalReference}
+            </p>
+          </div>
         </CardContent>
       </Card>
 

@@ -21,7 +21,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.raQ1.title',
     tooltipKey: 'questions.raQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(a)',
+      euArticle: 'Art. 21 Abs. 2 lit. a NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 1 BSIG',
     },
     maturityDescriptions: {
@@ -37,7 +37,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.raQ2.title',
     tooltipKey: 'questions.raQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(a)',
+      euArticle: 'Art. 21 Abs. 2 lit. a NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 1 BSIG',
     },
     maturityDescriptions: {
@@ -53,7 +53,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.raQ3.title',
     tooltipKey: 'questions.raQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(a)',
+      euArticle: 'Art. 21 Abs. 2 lit. a NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 1 BSIG',
     },
     maturityDescriptions: {
@@ -74,7 +74,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.ihQ1.title',
     tooltipKey: 'questions.ihQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(b)',
+      euArticle: 'Art. 21 Abs. 2 lit. b NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 2 BSIG',
     },
     maturityDescriptions: {
@@ -90,7 +90,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.ihQ2.title',
     tooltipKey: 'questions.ihQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(b)',
+      euArticle: 'Art. 21 Abs. 2 lit. b NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 2 BSIG',
     },
     maturityDescriptions: {
@@ -106,7 +106,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.ihQ3.title',
     tooltipKey: 'questions.ihQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(b)',
+      euArticle: 'Art. 21 Abs. 2 lit. b NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 2 BSIG',
     },
     maturityDescriptions: {
@@ -127,7 +127,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.bcQ1.title',
     tooltipKey: 'questions.bcQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(c)',
+      euArticle: 'Art. 21 Abs. 2 lit. c NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 3 BSIG',
     },
     maturityDescriptions: {
@@ -143,7 +143,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.bcQ2.title',
     tooltipKey: 'questions.bcQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(c)',
+      euArticle: 'Art. 21 Abs. 2 lit. c NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 3 BSIG',
     },
     maturityDescriptions: {
@@ -159,7 +159,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.bcQ3.title',
     tooltipKey: 'questions.bcQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(c)',
+      euArticle: 'Art. 21 Abs. 2 lit. c NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 3 BSIG',
     },
     maturityDescriptions: {
@@ -180,7 +180,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.scQ1.title',
     tooltipKey: 'questions.scQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(d)',
+      euArticle: 'Art. 21 Abs. 2 lit. d NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 4 BSIG',
     },
     maturityDescriptions: {
@@ -196,7 +196,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.scQ2.title',
     tooltipKey: 'questions.scQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(d)',
+      euArticle: 'Art. 21 Abs. 2 lit. d NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 4 BSIG',
     },
     maturityDescriptions: {
@@ -212,7 +212,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.scQ3.title',
     tooltipKey: 'questions.scQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(d)',
+      euArticle: 'Art. 21 Abs. 2 lit. d NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 4 BSIG',
     },
     maturityDescriptions: {
@@ -233,7 +233,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.adQ1.title',
     tooltipKey: 'questions.adQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(e)',
+      euArticle: 'Art. 21 Abs. 2 lit. e NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 5 BSIG',
     },
     maturityDescriptions: {
@@ -249,7 +249,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.adQ2.title',
     tooltipKey: 'questions.adQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(e)',
+      euArticle: 'Art. 21 Abs. 2 lit. e NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 5 BSIG',
     },
     maturityDescriptions: {
@@ -265,7 +265,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.adQ3.title',
     tooltipKey: 'questions.adQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(e)',
+      euArticle: 'Art. 21 Abs. 2 lit. e NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 5 BSIG',
     },
     maturityDescriptions: {
@@ -286,7 +286,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.eaQ1.title',
     tooltipKey: 'questions.eaQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(f)',
+      euArticle: 'Art. 21 Abs. 2 lit. f NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 6 BSIG',
     },
     maturityDescriptions: {
@@ -302,7 +302,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.eaQ2.title',
     tooltipKey: 'questions.eaQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(f)',
+      euArticle: 'Art. 21 Abs. 2 lit. f NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 6 BSIG',
     },
     maturityDescriptions: {
@@ -318,7 +318,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.eaQ3.title',
     tooltipKey: 'questions.eaQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(f)',
+      euArticle: 'Art. 21 Abs. 2 lit. f NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 6 BSIG',
     },
     maturityDescriptions: {
@@ -339,7 +339,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.chQ1.title',
     tooltipKey: 'questions.chQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(g)',
+      euArticle: 'Art. 21 Abs. 2 lit. g NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 7 BSIG',
     },
     maturityDescriptions: {
@@ -355,7 +355,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.chQ2.title',
     tooltipKey: 'questions.chQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(g)',
+      euArticle: 'Art. 21 Abs. 2 lit. g NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 7 BSIG',
     },
     maturityDescriptions: {
@@ -371,7 +371,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.chQ3.title',
     tooltipKey: 'questions.chQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(g)',
+      euArticle: 'Art. 21 Abs. 2 lit. g NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 7 BSIG',
     },
     maturityDescriptions: {
@@ -392,7 +392,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.crQ1.title',
     tooltipKey: 'questions.crQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(h)',
+      euArticle: 'Art. 21 Abs. 2 lit. h NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 8 BSIG',
     },
     maturityDescriptions: {
@@ -408,7 +408,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.crQ2.title',
     tooltipKey: 'questions.crQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(h)',
+      euArticle: 'Art. 21 Abs. 2 lit. h NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 8 BSIG',
     },
     maturityDescriptions: {
@@ -424,7 +424,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.crQ3.title',
     tooltipKey: 'questions.crQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(h)',
+      euArticle: 'Art. 21 Abs. 2 lit. h NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 8 BSIG',
     },
     maturityDescriptions: {
@@ -445,7 +445,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.acQ1.title',
     tooltipKey: 'questions.acQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(i)',
+      euArticle: 'Art. 21 Abs. 2 lit. i NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 9 BSIG',
     },
     maturityDescriptions: {
@@ -461,7 +461,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.acQ2.title',
     tooltipKey: 'questions.acQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(i)',
+      euArticle: 'Art. 21 Abs. 2 lit. i NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 9 BSIG',
     },
     maturityDescriptions: {
@@ -477,7 +477,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.acQ3.title',
     tooltipKey: 'questions.acQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(i)',
+      euArticle: 'Art. 21 Abs. 2 lit. i NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 9 BSIG',
     },
     maturityDescriptions: {
@@ -498,7 +498,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.mcQ1.title',
     tooltipKey: 'questions.mcQ1.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(j)',
+      euArticle: 'Art. 21 Abs. 2 lit. j NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 10 BSIG',
     },
     maturityDescriptions: {
@@ -514,7 +514,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.mcQ2.title',
     tooltipKey: 'questions.mcQ2.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(j)',
+      euArticle: 'Art. 21 Abs. 2 lit. j NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 10 BSIG',
     },
     maturityDescriptions: {
@@ -530,7 +530,7 @@ export const QUESTIONS: Question[] = [
     titleKey: 'questions.mcQ3.title',
     tooltipKey: 'questions.mcQ3.tooltip',
     legalReference: {
-      euArticle: 'Art. 21(2)(j)',
+      euArticle: 'Art. 21 Abs. 2 lit. j NIS2-RL',
       bsigParagraph: '§30 Abs. 2 Nr. 10 BSIG',
     },
     maturityDescriptions: {

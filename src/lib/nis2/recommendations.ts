@@ -20,7 +20,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ra1.title',
     descriptionKey: 'recommendations.ra1.description',
     firstStepKey: 'recommendations.ra1.firstStep',
-    legalReference: 'Art. 21(2)(a), §30 Abs. 2 Nr. 1 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. a NIS2-RL, §30 Abs. 2 Nr. 1 BSIG',
     bsiReference: 'BSI-Standard 200-3, ISMS.1',
   },
   {
@@ -31,7 +31,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ra2.title',
     descriptionKey: 'recommendations.ra2.description',
     firstStepKey: 'recommendations.ra2.firstStep',
-    legalReference: 'Art. 21(2)(a), §30 Abs. 2 Nr. 1 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. a NIS2-RL, §30 Abs. 2 Nr. 1 BSIG',
     bsiReference: 'ORP.1, ISMS.1',
   },
   // Category 2: Sicherheitsvorfälle
@@ -43,7 +43,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ih1.title',
     descriptionKey: 'recommendations.ih1.description',
     firstStepKey: 'recommendations.ih1.firstStep',
-    legalReference: 'Art. 21(2)(b), §30 Abs. 2 Nr. 2 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. b NIS2-RL, §30 Abs. 2 Nr. 2 BSIG',
     bsiReference: 'DER.2.1, BSI-Standard 100-4',
   },
   {
@@ -54,7 +54,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ih2.title',
     descriptionKey: 'recommendations.ih2.description',
     firstStepKey: 'recommendations.ih2.firstStep',
-    legalReference: 'Art. 21(2)(b), §30 Abs. 2 Nr. 2 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. b NIS2-RL, §30 Abs. 2 Nr. 2 BSIG',
     bsiReference: 'DER.2.1, OPS.1.1.5',
   },
   // Category 3: Betriebskontinuität
@@ -66,7 +66,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.bc1.title',
     descriptionKey: 'recommendations.bc1.description',
     firstStepKey: 'recommendations.bc1.firstStep',
-    legalReference: 'Art. 21(2)(c), §30 Abs. 2 Nr. 3 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. c NIS2-RL, §30 Abs. 2 Nr. 3 BSIG',
     bsiReference: 'CON.3, BSI-Standard 200-4',
   },
   {
@@ -77,7 +77,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.bc2.title',
     descriptionKey: 'recommendations.bc2.description',
     firstStepKey: 'recommendations.bc2.firstStep',
-    legalReference: 'Art. 21(2)(c), §30 Abs. 2 Nr. 3 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. c NIS2-RL, §30 Abs. 2 Nr. 3 BSIG',
     bsiReference: 'DER.4, BSI-Standard 200-4',
   },
   // Category 4: Lieferkette
@@ -89,7 +89,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.sc1.title',
     descriptionKey: 'recommendations.sc1.description',
     firstStepKey: 'recommendations.sc1.firstStep',
-    legalReference: 'Art. 21(2)(d), §30 Abs. 2 Nr. 4 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG',
     bsiReference: 'ORP.1',
   },
   {
@@ -100,7 +100,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.sc2.title',
     descriptionKey: 'recommendations.sc2.description',
     firstStepKey: 'recommendations.sc2.firstStep',
-    legalReference: 'Art. 21(2)(d), §30 Abs. 2 Nr. 4 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG',
     bsiReference: 'ORP.1, OPS.1.1.3',
   },
   // Category 5: Erwerb/Entwicklung
@@ -112,7 +112,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ad1.title',
     descriptionKey: 'recommendations.ad1.description',
     firstStepKey: 'recommendations.ad1.firstStep',
-    legalReference: 'Art. 21(2)(e), §30 Abs. 2 Nr. 5 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG',
     bsiReference: 'OPS.1.1.3, CON.8',
   },
   {
@@ -123,7 +123,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ad2.title',
     descriptionKey: 'recommendations.ad2.description',
     firstStepKey: 'recommendations.ad2.firstStep',
-    legalReference: 'Art. 21(2)(e), §30 Abs. 2 Nr. 5 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG',
     bsiReference: 'CON.8, OPS.1.1.6',
   },
   // Category 6: Wirksamkeit
@@ -135,7 +135,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ea1.title',
     descriptionKey: 'recommendations.ea1.description',
     firstStepKey: 'recommendations.ea1.firstStep',
-    legalReference: 'Art. 21(2)(f), §30 Abs. 2 Nr. 6 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. f NIS2-RL, §30 Abs. 2 Nr. 6 BSIG',
     bsiReference: 'ISMS.1, ORP.5',
   },
   {
@@ -146,7 +146,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ea2.title',
     descriptionKey: 'recommendations.ea2.description',
     firstStepKey: 'recommendations.ea2.firstStep',
-    legalReference: 'Art. 21(2)(f), §30 Abs. 2 Nr. 6 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. f NIS2-RL, §30 Abs. 2 Nr. 6 BSIG',
     bsiReference: 'ISMS.1',
   },
   // Category 7: Cyberhygiene
@@ -158,7 +158,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ch1.title',
     descriptionKey: 'recommendations.ch1.description',
     firstStepKey: 'recommendations.ch1.firstStep',
-    legalReference: 'Art. 21(2)(g), §30 Abs. 2 Nr. 7 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. g NIS2-RL, §30 Abs. 2 Nr. 7 BSIG',
     bsiReference: 'ORP.3',
   },
   {
@@ -169,7 +169,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ch2.title',
     descriptionKey: 'recommendations.ch2.description',
     firstStepKey: 'recommendations.ch2.firstStep',
-    legalReference: 'Art. 21(2)(g), §30 Abs. 2 Nr. 7 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. g NIS2-RL, §30 Abs. 2 Nr. 7 BSIG',
     bsiReference: 'ORP.3, ORP.2',
   },
   // Category 8: Kryptografie
@@ -181,7 +181,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.cr1.title',
     descriptionKey: 'recommendations.cr1.description',
     firstStepKey: 'recommendations.cr1.firstStep',
-    legalReference: 'Art. 21(2)(h), §30 Abs. 2 Nr. 8 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. h NIS2-RL, §30 Abs. 2 Nr. 8 BSIG',
     bsiReference: 'CON.1, NET.4.1',
   },
   {
@@ -192,7 +192,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.cr2.title',
     descriptionKey: 'recommendations.cr2.description',
     firstStepKey: 'recommendations.cr2.firstStep',
-    legalReference: 'Art. 21(2)(h), §30 Abs. 2 Nr. 8 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. h NIS2-RL, §30 Abs. 2 Nr. 8 BSIG',
     bsiReference: 'CON.1',
   },
   // Category 9: Zugriffskontrolle
@@ -204,7 +204,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ac1.title',
     descriptionKey: 'recommendations.ac1.description',
     firstStepKey: 'recommendations.ac1.firstStep',
-    legalReference: 'Art. 21(2)(i), §30 Abs. 2 Nr. 9 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. i NIS2-RL, §30 Abs. 2 Nr. 9 BSIG',
     bsiReference: 'ORP.4',
   },
   {
@@ -215,7 +215,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.ac2.title',
     descriptionKey: 'recommendations.ac2.description',
     firstStepKey: 'recommendations.ac2.firstStep',
-    legalReference: 'Art. 21(2)(i), §30 Abs. 2 Nr. 9 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. i NIS2-RL, §30 Abs. 2 Nr. 9 BSIG',
     bsiReference: 'ORP.4, ORP.2',
   },
   // Category 10: MFA/Kommunikation
@@ -227,7 +227,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.mc1.title',
     descriptionKey: 'recommendations.mc1.description',
     firstStepKey: 'recommendations.mc1.firstStep',
-    legalReference: 'Art. 21(2)(j), §30 Abs. 2 Nr. 10 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG',
     bsiReference: 'ORP.4, NET.4.1',
   },
   {
@@ -238,7 +238,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'recommendations.mc2.title',
     descriptionKey: 'recommendations.mc2.description',
     firstStepKey: 'recommendations.mc2.firstStep',
-    legalReference: 'Art. 21(2)(j), §30 Abs. 2 Nr. 10 BSIG',
+    legalReference: 'Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG',
     bsiReference: 'ORP.4, NET.4.2',
   },
 ];

@@ -55,10 +55,10 @@ const PDFRecommendations = ({ recommendations, messages, locale }: PDFRecommenda
 
             {/* First step */}
             <View style={{ flexDirection: 'row', marginBottom: 6 }}>
-              <Text style={[styles.recFirstStep, { fontWeight: 700, marginRight: 4 }]}>
-                {messages['pdf.firstStep'] || 'First Step'}:
+              <Text style={[styles.recFirstStep, { fontWeight: 700 }]}>
+                {messages['pdf.firstStep'] || 'First Step'}:{' '}
               </Text>
-              <Text style={styles.recFirstStep}>{rec.firstStep}</Text>
+              <Text style={[styles.recFirstStep, { flex: 1 }]}>{rec.firstStep}</Text>
             </View>
 
             {/* Badges - Priority and Effort */}
