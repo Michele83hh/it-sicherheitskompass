@@ -71,13 +71,15 @@ export default function GapAnalysisPage() {
         totalQuestions={totalQuestions}
       />
 
-      <CategoryStep
-        key={currentCategory.id}
-        categoryId={currentCategory.id}
-        isFirstCategory={isFirstCategory}
-        isLastCategory={isLastCategory}
-        locale={locale}
-      />
+      <div key={currentCategory.id} className="step-transition">
+        <CategoryStep
+          key={currentCategory.id}
+          categoryId={currentCategory.id}
+          isFirstCategory={isFirstCategory}
+          isLastCategory={isLastCategory}
+          locale={locale}
+        />
+      </div>
     </div>
   );
 }

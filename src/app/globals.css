@@ -135,3 +135,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Step transition animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-transition {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .step-transition {
+    animation: none;
+  }
+}

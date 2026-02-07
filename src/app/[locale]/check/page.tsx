@@ -67,9 +67,11 @@ export default function CheckPage() {
 
       <StepIndicator currentStep={currentStep} steps={steps} />
 
-      {currentStep === 0 && <SectorSelectionStep />}
-      {currentStep === 1 && <CompanySizeStep />}
-      {currentStep === 2 && <ResultStep />}
+      <div key={currentStep} className="step-transition">
+        {currentStep === 0 && <SectorSelectionStep />}
+        {currentStep === 1 && <CompanySizeStep />}
+        {currentStep === 2 && <ResultStep />}
+      </div>
     </div>
   );
 }
