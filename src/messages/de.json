@@ -70,7 +70,47 @@
       "privacy": "Datenschutz"
     },
     "copyright": "© {year} NIS2-Bereitschaftsprüfung",
-    "legalDate": "Stand der Rechtslage: Januar 2025"
+    "legalDate": "Rechtsstand: Februar 2026"
+  },
+  "disclaimers": {
+    "preAssessment": {
+      "title": "Hinweis",
+      "noLegalAdvice": "Diese Prüfung stellt keine Rechtsberatung dar und ersetzt nicht die Beratung durch einen Fachanwalt oder IT-Sicherheitsexperten.",
+      "orientationOnly": "Die Ergebnisse dienen ausschließlich als unverbindliche Orientierungshilfe zur Einschätzung Ihrer NIS2-Betroffenheit und Ihres Umsetzungsstands."
+    }
+  },
+  "legal": {
+    "imprint": {
+      "title": "Impressum",
+      "infoTitle": "Angaben gemäß § 5 DDG",
+      "name": "[Name / Firma]",
+      "address": "[Straße Nr.]\n[PLZ Ort]",
+      "contactTitle": "Kontakt",
+      "email": "E-Mail: [email@example.com]",
+      "phone": "Telefon: [+49 ...]",
+      "responsibleTitle": "Inhaltlich verantwortlich gem. § 18 Abs. 2 MStV",
+      "responsiblePerson": "[Name der verantwortlichen Person]\n[Adresse]",
+      "disclaimerTitle": "Haftungsausschluss",
+      "disclaimerText": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Dieses Tool dient ausschließlich als unverbindliche Orientierungshilfe und stellt keine Rechtsberatung dar.",
+      "copyrightTitle": "Urheberrecht",
+      "copyrightText": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.",
+      "placeholderNotice": "Hinweis: Die mit [eckigen Klammern] gekennzeichneten Angaben müssen vor Veröffentlichung durch die tatsächlichen Daten ersetzt werden."
+    },
+    "privacy": {
+      "title": "Datenschutzhinweis",
+      "introTitle": "Datenschutz auf einen Blick",
+      "introText": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir Sie über den Umgang mit Ihren Daten bei der Nutzung dieser Website.",
+      "noDataTitle": "Keine Erhebung personenbezogener Daten",
+      "noDataText": "Diese Website erhebt, speichert oder verarbeitet keine personenbezogenen Daten. Es werden keine Cookies gesetzt, keine Tracking-Dienste eingesetzt und keine Analyse-Tools verwendet.",
+      "localStorageTitle": "Lokale Datenspeicherung im Browser",
+      "localStorageText": "Ihre Eingaben im Fragebogen werden ausschließlich lokal in Ihrem Browser (Local Storage) gespeichert, um den Fortschritt während der Nutzung zu erhalten. Diese Daten verlassen zu keinem Zeitpunkt Ihren Browser und werden nicht an unsere oder andere Server übermittelt. Sie können diese Daten jederzeit durch Löschen des Browser-Speichers entfernen.",
+      "hostingTitle": "Hosting",
+      "hostingText": "Diese Website wird bei Vercel Inc. gehostet. Beim Aufruf der Website werden automatisch technische Zugriffsdaten (z.B. IP-Adresse, Zeitpunkt des Zugriffs) vom Hosting-Provider verarbeitet. Details finden Sie in der Datenschutzerklärung von Vercel: https://vercel.com/legal/privacy-policy",
+      "rightsTitle": "Ihre Rechte",
+      "rightsText": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Da wir keine personenbezogenen Daten erheben, entfallen diese Rechte im Kontext dieser Website.",
+      "contactTitle": "Kontakt",
+      "contactText": "Bei Fragen zum Datenschutz wenden Sie sich bitte an die im Impressum genannte Kontaktadresse."
+    }
   },
   "sectors": {
     "energy": {
@@ -174,10 +214,10 @@
       "nichtBetroffen": "Nicht von NIS2 betroffen"
     },
     "reasons": {
-      "kritis": "Als Betreiber kritischer Infrastruktur (KRITIS) sind Sie unabhängig von der Unternehmensgröße als besonders wichtige Einrichtung eingestuft.",
-      "alwaysQualified": "Ihr Tätigkeitsbereich (qualifizierter Vertrauensdiensteanbieter, DNS-Diensteanbieter oder TLD-Namenregister) fällt unabhängig von der Unternehmensgröße unter die besonders wichtigen Einrichtungen.",
-      "anlage1LargeEntity": "Ihr Unternehmen erfüllt die Größenschwellen für besonders wichtige Einrichtungen: mindestens 250 Beschäftigte ODER Jahresumsatz über 50 Mio. EUR und Bilanzsumme über 43 Mio. EUR.",
-      "standardThreshold": "Ihr Unternehmen erfüllt die Schwellenwerte für wichtige Einrichtungen: mindestens 50 Beschäftigte ODER Jahresumsatz über 10 Mio. EUR und Bilanzsumme über 10 Mio. EUR.",
+      "kritis": "Als Betreiber kritischer Infrastruktur (KRITIS) deutet dies darauf hin, dass Sie unabhängig von der Unternehmensgröße als besonders wichtige Einrichtung einzustufen sind.",
+      "alwaysQualified": "Ihre Angaben deuten darauf hin, dass Ihr Tätigkeitsbereich (qualifizierter Vertrauensdiensteanbieter, DNS-Diensteanbieter oder TLD-Namenregister) unabhängig von der Unternehmensgröße unter die besonders wichtigen Einrichtungen fällt.",
+      "anlage1LargeEntity": "Ihre Angaben deuten darauf hin, dass Ihr Unternehmen die Größenschwellen für besonders wichtige Einrichtungen erfüllt: mindestens 250 Beschäftigte ODER Jahresumsatz über 50 Mio. EUR und Bilanzsumme über 43 Mio. EUR.",
+      "standardThreshold": "Ihre Angaben deuten darauf hin, dass Ihr Unternehmen die Schwellenwerte für wichtige Einrichtungen erfüllt: mindestens 50 Beschäftigte ODER Jahresumsatz über 10 Mio. EUR und Bilanzsumme über 10 Mio. EUR.",
       "belowThreshold": "Ihr Unternehmen liegt unterhalb der NIS2-Schwellenwerte (weniger als 50 Beschäftigte UND Jahresumsatz/Bilanzsumme unter 10 Mio. EUR). Sie sind voraussichtlich nicht direkt von NIS2 betroffen.",
       "sectorNotRegulated": "Ihr Sektor fällt nicht unter die NIS2-regulierten Sektoren der Anlagen 1 und 2 zum BSIG."
     },
@@ -790,7 +830,7 @@
     "subtitle": "Ergebnis der NIS2-Bereitschaftsprüfung",
     "disclaimer": "Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität. Jede Maßnahme muss angemessen und wirksam für Ihr spezifisches Risikoprofil umgesetzt sein (§30 Abs. 1 BSIG). Diese Auswertung ersetzt keine Rechtsberatung oder professionelle Sicherheitsbewertung.",
     "rechtsstand": "Rechtsstand",
-    "rechtstandDatum": "Januar 2025",
+    "rechtstandDatum": "Februar 2026",
     "generatedAt": "Erstellt am",
     "companyProfile": "Unternehmensprofil",
     "sector": "Sektor",

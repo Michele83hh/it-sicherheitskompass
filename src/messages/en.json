@@ -70,7 +70,47 @@
       "privacy": "Privacy Policy"
     },
     "copyright": "© {year} NIS2 Readiness Check",
-    "legalDate": "Legal status: January 2025"
+    "legalDate": "Legal status: February 2026"
+  },
+  "disclaimers": {
+    "preAssessment": {
+      "title": "Notice",
+      "noLegalAdvice": "This assessment does not constitute legal advice and does not replace consultation with a specialized lawyer or IT security expert.",
+      "orientationOnly": "The results serve exclusively as a non-binding orientation aid for assessing your NIS2 applicability and implementation status."
+    }
+  },
+  "legal": {
+    "imprint": {
+      "title": "Imprint",
+      "infoTitle": "Information according to § 5 DDG",
+      "name": "[Name / Company]",
+      "address": "[Street No.]\n[Postal Code City]",
+      "contactTitle": "Contact",
+      "email": "E-mail: [email@example.com]",
+      "phone": "Phone: [+49 ...]",
+      "responsibleTitle": "Responsible for content according to § 18 para. 2 MStV",
+      "responsiblePerson": "[Name of responsible person]\n[Address]",
+      "disclaimerTitle": "Disclaimer",
+      "disclaimerText": "The content of this website has been created with the greatest care. However, we cannot guarantee the accuracy, completeness and timeliness of the content. This tool serves exclusively as a non-binding orientation aid and does not constitute legal advice.",
+      "copyrightTitle": "Copyright",
+      "copyrightText": "The content and works created by the site operators on these pages are subject to German copyright law.",
+      "placeholderNotice": "Note: The information marked with [square brackets] must be replaced with actual data before publication."
+    },
+    "privacy": {
+      "title": "Privacy Notice",
+      "introTitle": "Privacy at a Glance",
+      "introText": "The protection of your personal data is important to us. Below we inform you about how we handle your data when you use this website.",
+      "noDataTitle": "No Collection of Personal Data",
+      "noDataText": "This website does not collect, store or process any personal data. No cookies are set, no tracking services are used and no analytics tools are employed.",
+      "localStorageTitle": "Local Data Storage in Browser",
+      "localStorageText": "Your inputs in the questionnaire are stored exclusively locally in your browser (Local Storage) to preserve progress during use. This data never leaves your browser and is not transmitted to our or other servers. You can remove this data at any time by clearing your browser storage.",
+      "hostingTitle": "Hosting",
+      "hostingText": "This website is hosted by Vercel Inc. When accessing the website, technical access data (e.g. IP address, time of access) is automatically processed by the hosting provider. Details can be found in Vercel's privacy policy: https://vercel.com/legal/privacy-policy",
+      "rightsTitle": "Your Rights",
+      "rightsText": "You have the right to information, correction, deletion and restriction of the processing of your personal data. Since we do not collect any personal data, these rights do not apply in the context of this website.",
+      "contactTitle": "Contact",
+      "contactText": "If you have any questions about data protection, please contact the address given in the imprint."
+    }
   },
   "sectors": {
     "energy": {
@@ -174,10 +214,10 @@
       "nichtBetroffen": "Not Affected by NIS2"
     },
     "reasons": {
-      "kritis": "As an operator of critical infrastructure (KRITIS), you are classified as an essential entity regardless of company size.",
-      "alwaysQualified": "Your business area (qualified trust service provider, DNS service provider, or TLD registry) falls under essential entities regardless of company size.",
-      "anlage1LargeEntity": "Your company meets the size thresholds for essential entities: at least 250 employees OR annual revenue exceeding €50 million and balance sheet exceeding €43 million.",
-      "standardThreshold": "Your company meets the thresholds for important entities: at least 50 employees OR annual revenue exceeding €10 million and balance sheet exceeding €10 million.",
+      "kritis": "Your information suggests that as an operator of critical infrastructure (KRITIS), you are likely classified as an essential entity regardless of company size.",
+      "alwaysQualified": "Your information suggests that your business area (qualified trust service provider, DNS service provider, or TLD registry) falls under essential entities regardless of company size.",
+      "anlage1LargeEntity": "Your information suggests that your company meets the size thresholds for essential entities: at least 250 employees OR annual revenue exceeding €50 million and balance sheet exceeding €43 million.",
+      "standardThreshold": "Your information suggests that your company meets the thresholds for important entities: at least 50 employees OR annual revenue exceeding €10 million and balance sheet exceeding €10 million.",
       "belowThreshold": "Your company is below the NIS2 thresholds (less than 50 employees AND annual revenue/balance sheet below €10 million). You are likely not directly affected by NIS2.",
       "sectorNotRegulated": "Your sector is not included in the NIS2-regulated sectors of Annexes 1 and 2 to BSIG."
     },
@@ -790,7 +830,7 @@
     "subtitle": "Results of NIS2 Readiness Assessment",
     "disclaimer": "Your responses indicate the following maturity level. A high score does not automatically mean NIS2 conformity. Every measure must be adequately and effectively implemented for your specific risk profile (Section 30(1) BSIG). This assessment does not replace legal advice or a professional security evaluation.",
     "rechtsstand": "Rechtsstand",
-    "rechtstandDatum": "Januar 2025",
+    "rechtstandDatum": "February 2026",
     "generatedAt": "Generated on",
     "companyProfile": "Company Profile",
     "sector": "Sector",
