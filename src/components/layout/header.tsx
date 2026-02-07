@@ -13,7 +13,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <Shield className="h-8 w-8 text-primary" strokeWidth={2} />
-          <span className="text-xl font-semibold text-foreground">
+          <span className="hidden sm:inline text-xl font-semibold text-foreground">
             {t('title')}
           </span>
         </Link>

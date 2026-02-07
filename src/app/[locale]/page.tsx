@@ -25,7 +25,7 @@ export default function HomePage() {
             {t('subtitle')}
           </p>
           <div className="mt-10">
-            <Button size="lg" className="text-lg px-8 py-6" asChild>
+            <Button size="lg" className="text-lg px-6 py-4 sm:px-8 sm:py-6" asChild>
               <Link href="/check">{t('cta')}</Link>
             </Button>
           </div>

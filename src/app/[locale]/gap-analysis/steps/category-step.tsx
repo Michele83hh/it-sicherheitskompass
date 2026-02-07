@@ -109,7 +109,7 @@ export function CategoryStep({
         {questions.map((question) => (
           <div
             key={question.id}
-            className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+            className="rounded-lg border border-gray-200 bg-white p-4 sm:p-6 shadow-sm"
           >
             {/* Question title with tooltip */}
             <div className="mb-4 flex items-start justify-between gap-3">
@@ -155,7 +155,7 @@ export function CategoryStep({
                       <label
                         key={level}
                         htmlFor={`${question.id}-${level}`}
-                        className="flex cursor-pointer items-start gap-3 rounded-lg border p-4 transition-colors hover:bg-gray-50"
+                        className="flex cursor-pointer items-start gap-3 rounded-lg border p-3 sm:p-4 transition-colors hover:bg-gray-50"
                       >
                         <RadioGroupItem value={String(level)} id={`${question.id}-${level}`} />
                         <span className="flex-1 text-sm leading-relaxed">
