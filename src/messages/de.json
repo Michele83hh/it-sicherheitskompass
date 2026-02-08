@@ -133,6 +133,15 @@
     "assessments": {
       "title": "Wählen Sie Ihre Analyse-Tiefe"
     },
+    "targetAudience": {
+      "title": "Für wen eignet sich der Check?",
+      "items": {
+        "sme": "Unternehmen mit 50–250 Mitarbeitenden, die erstmals prüfen wollen, ob NIS2 sie betrifft",
+        "itManagers": "IT-Verantwortliche, die den aktuellen Compliance-Stand systematisch erfassen möchten",
+        "management": "Geschäftsführer, die ihre persönliche Haftung nach §38 BSIG einschätzen wollen",
+        "consultants": "Berater und Dienstleister, die Kunden bei der NIS2-Vorbereitung unterstützen"
+      }
+    },
     "combined": {
       "title": "Was Sie erhalten",
       "subtitle": "Basierend auf NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555 und BSI IT-Grundschutz — Rechtsstand Februar 2026.",
@@ -152,6 +161,11 @@
         "title": "Kostenlos & lokal",
         "desc": "Keine Registrierung, keine Datenübertragung. Alles bleibt in Ihrem Browser."
       }
+    },
+    "identity": {
+      "label": "Ein Projekt von",
+      "name": "[Name]",
+      "role": "Fachinformatiker für Daten- und Prozessanalyse"
     }
   },
   "footer": {

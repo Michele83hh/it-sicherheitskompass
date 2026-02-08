@@ -23,6 +23,8 @@ import {
   ListChecks,
   Scale,
   Map,
+  Users,
+  User,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -40,7 +42,7 @@ export default function HomePage() {
             {t('hero.subtitle')}
           </p>
           <div className="mt-10">
-            <Button size="lg" className="text-lg px-8 py-6" asChild>
+            <Button size="lg" className="text-lg px-6 py-4 sm:px-8 sm:py-6" asChild>
               <Link href="/check">
                 <Shield className="mr-2 size-5" />
                 {t('hero.ctaPrimary')}
@@ -185,6 +187,33 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── FÜR WEN: Zielgruppen-Section ─── */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-8 text-center text-2xl font-bold text-foreground">
+            {t('targetAudience.title')}
+          </h2>
+          <div className="mx-auto max-w-3xl grid gap-4 sm:grid-cols-2">
+            <div className="flex items-start gap-3 rounded-lg border bg-zinc-50 p-4">
+              <Building2 className="mt-0.5 size-5 flex-shrink-0 text-primary" />
+              <p className="text-sm text-muted-foreground">{t('targetAudience.items.sme')}</p>
+            </div>
+            <div className="flex items-start gap-3 rounded-lg border bg-zinc-50 p-4">
+              <Shield className="mt-0.5 size-5 flex-shrink-0 text-primary" />
+              <p className="text-sm text-muted-foreground">{t('targetAudience.items.itManagers')}</p>
+            </div>
+            <div className="flex items-start gap-3 rounded-lg border bg-zinc-50 p-4">
+              <Users className="mt-0.5 size-5 flex-shrink-0 text-primary" />
+              <p className="text-sm text-muted-foreground">{t('targetAudience.items.management')}</p>
+            </div>
+            <div className="flex items-start gap-3 rounded-lg border bg-zinc-50 p-4">
+              <ClipboardCheck className="mt-0.5 size-5 flex-shrink-0 text-primary" />
+              <p className="text-sm text-muted-foreground">{t('targetAudience.items.consultants')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ─── WAS SIE ERHALTEN: Features + Methodik kombiniert ─── */}
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <h2 className="mb-4 text-center text-2xl font-bold text-foreground">
@@ -213,6 +242,19 @@ export default function HomePage() {
             <Lock className="mb-3 size-6 text-primary" />
             <p className="font-semibold">{t('combined.privacy.title')}</p>
             <p className="mt-1 text-sm text-muted-foreground">{t('combined.privacy.desc')}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── IDENTITY: Wer steckt dahinter ─── */}
+      <section className="border-t bg-zinc-50 py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center gap-3 text-sm text-muted-foreground">
+            <User className="size-4" />
+            <span>{t('identity.label')}</span>
+            <span className="font-medium text-foreground">{t('identity.name')}</span>
+            <span className="hidden sm:inline">—</span>
+            <span className="hidden sm:inline">{t('identity.role')}</span>
           </div>
         </div>
       </section>

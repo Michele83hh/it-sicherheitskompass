@@ -249,11 +249,11 @@ const PDFCostSummarySection = ({ costSummary, messages, locale, classificationCa
       {/* Disclaimer */}
       <Text style={styles.noteText}>
         {messages['pdf.cost.disclaimer'] ||
-          'Estimates based on typical NIS2 compliance projects. Actual costs may vary.'}
+          'Die Kostenspannen basieren auf Marktpreisen bei voller externer Vergabe. Tatsächliche Kosten variieren je nach vorhandener Infrastruktur und Eigenleistung.'}
       </Text>
       <Text style={{ fontSize: 7, color: COLORS.gray500, marginTop: 2, lineHeight: 1.4 }}>
         {messages['pdf.cost.disclaimerInternal'] ||
-          'Many measures can be implemented internally with manageable time investment.'}
+          'Viele Maßnahmen lassen sich intern mit überschaubarem Zeitbudget umsetzen — externe Unterstützung ist vor allem bei strategischen Themen sinnvoll.'}
       </Text>
     </View>
   );

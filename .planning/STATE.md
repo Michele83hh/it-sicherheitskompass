@@ -1,17 +1,17 @@
 # Project State: NIS2 Readiness Check
 
-**Last Updated:** 2026-02-06T23:30:10Z
+**Last Updated:** 2026-02-08T18:00:00Z
 
 ---
 
 ## Current Position
 
 **Phase:** 7 of 7 (07-polish-legal-deploy)
-**Plan:** 1 of 3 in phase
+**Plan:** 1 of 3 in phase (GSD-tracked), but significant extra work done outside GSD
 **Status:** In progress
-**Last activity:** 2026-02-07 - Completed 07-01-PLAN.md (Legal Pages)
+**Last activity:** 2026-02-08 - PROJEKTDOKUMENTATION.md erstellt
 
-**Progress:** 33% of Phase 7 complete
+**Progress:** GSD-tracked 33% of Phase 7, but real progress ~90% overall
 
 ```
 Phase 1: █████████████████████ 100% (2/2) ✅
@@ -20,8 +20,17 @@ Phase 3: █████████████████████ 100% (2
 Phase 4: █████████████████████ 100% (1/1) ✅
 Phase 5: █████████████████████ 100% (2/2) ✅
 Phase 6: █████████████████████ 100% (2/2) ✅
-Phase 7: ███████░░░░░░░░░░░░░░  33% (1/3)
+Phase 7: ███████░░░░░░░░░░░░░░  33% (GSD) — real: ~80% (extra work outside GSD)
 ```
+
+### Work done outside GSD tracking (2026-02-07 + 2026-02-08):
+- Schnellcheck + Landing Page Redesign
+- PDF-Überarbeitung (3 Teile: Section-per-Page, Section-Selector, 14 Sector Guidance)
+- UX-Optimierung (9 Features in 3 Wellen)
+- Design-Überarbeitung (5 Seiten: Intro-Pages, Statistiken, FAQs, Trust-Signale)
+- Gestaffelte Gap-Analyse (Core 30 + Advanced 20)
+- Hilfe-Texte und Tooltips
+- PROJEKTDOKUMENTATION.md (transparente Entwicklungsdokumentation)
 
 ---
 
@@ -130,11 +139,21 @@ Landing page design feedback from user verification:
 
 ## Session Continuity
 
-**Last session:** 2026-02-07
-**Stopped at:** Completed 07-01-PLAN.md (Legal Pages) — plan 1 of 3 in Phase 7
+**Last session:** 2026-02-08
+**Stopped at:** PROJEKTDOKUMENTATION.md fertiggestellt, Stand gespeichert
 **Resume file:** None
 
-**Next action:** Phase 7 continues — 07-02-PLAN.md (Landing Page Polish) or 07-03-PLAN.md (Deployment Config)
+**What's open:**
+1. **07-02-PLAN.md** (Responsive Polish + Animations) — geplant, nie ausgeführt. Teile davon (Responsive, Animations) wurden bereits im großen Commit a0ee3ef erledigt. Plan ggf. updaten oder als erledigt markieren.
+2. **07-03-PLAN.md** (Deployment Config) — existiert noch nicht, muss erstellt werden wenn Vercel-Deployment ansteht.
+3. **Firmenprofil + 30 Handlungsempfehlungen-Vorlagen (PDF)** — konzeptionell besprochen (siehe MEMORY.md), kein Plan-File erstellt. User wollte: Firmenprofil (alle Felder optional), PDF-Vorlagen für alle 30 Empfehlungen, neutral vs. firmenspezifischer Toggle.
+4. **2 Pending Todos:** Identity-Section (Wer steckt dahinter?) + Target-Audience-Section (Für wen?) auf Landing Page.
+5. **PROJEKTDOKUMENTATION.md** — fertig, `[Name]` und `[URL]` müssen noch ersetzt werden.
+
+**Empfehlung für nächste Session:**
+- Wenn Deadline-Fokus (16.02.2026): 07-02 prüfen/abschließen, Vercel deployen
+- Wenn Feature-Fokus: Firmenprofil + Handlungsempfehlungen umsetzen
+- Wenn Polish-Fokus: Die 2 Landing-Page-Todos + Identity abarbeiten
 
 ---
 
@@ -177,13 +196,29 @@ Landing page design feedback from user verification:
 - `public/fonts/Inter-Regular.woff2` - Inter Regular font (21KB)
 - `public/fonts/Inter-Bold.woff2` - Inter Bold font (22KB)
 
-**NIS2 Domain Model:**
+**NIS2 Domain Model (3.523 Zeilen):**
 - `src/lib/nis2/types.ts` - All NIS2 domain types + EffortLevel
-- `src/lib/nis2/sectors.ts` - 18-sector catalog
-- `src/lib/nis2/classification.ts` - §28 BSIG classification logic
+- `src/lib/nis2/sectors.ts` - 18-sector catalog (143 lines)
+- `src/lib/nis2/classification.ts` - §28 BSIG classification logic (89 lines)
 - `src/lib/nis2/categories.ts` - 10 Art. 21(2) categories
-- `src/lib/nis2/questions.ts` - 30 gap analysis questions
-- `src/lib/nis2/recommendations.ts` - 20 BSI recommendations
+- `src/lib/nis2/questions.ts` - 50 gap analysis questions, 30 core + 20 advanced (987 lines)
+- `src/lib/nis2/recommendations.ts` - 30 BSI recommendations (369 lines)
+- `src/lib/nis2/cost-estimation.ts` - Kostenschätzung nach Unternehmensgröße (369 lines)
+- `src/lib/nis2/sector-guidance.ts` - Branchenspezifische Hinweise, 14 Sektoren (241 lines)
+- `src/lib/nis2/roadmap.ts` - 3-Phasen-Implementierungsplan (163 lines)
+- `src/lib/nis2/dsgvo-overlap.ts` - DSGVO-NIS2-Überlappung (148 lines)
+- `src/lib/nis2/bussgeld.ts` - Bußgeldberechnung §65 BSIG (122 lines)
+- `src/lib/nis2/quick-check.ts` - 5-Fragen-Schnellcheck (142 lines)
+- `src/lib/nis2/kritis.ts` - KRITIS-Spezialbereich (133 lines)
+- `src/lib/nis2/meldepflichten.ts` - Meldepflichten (115 lines)
+- `src/lib/nis2/iso27001.ts` - ISO 27001 Crosswalk (108 lines)
+- `src/lib/nis2/evidence.ts` - Nachweisführung (109 lines)
+- `src/lib/nis2/din-spec.ts` - DIN SPEC 27076 Referenz (98 lines)
+- `src/lib/nis2/registrierung.ts` - BSI-Registrierungspflicht (94 lines)
+- `src/lib/nis2/geschaeftsleitung.ts` - Geschäftsleitungshaftung (93 lines)
+
+**Dokumentation:**
+- `PROJEKTDOKUMENTATION.md` - Transparente Entwicklungsdokumentation (KI-Führung, nicht selbst gecodet)
 
 **Scoring Engine:**
 - `src/lib/scoring/engine.ts` - 5 pure scoring functions

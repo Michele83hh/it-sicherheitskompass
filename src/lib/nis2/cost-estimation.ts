@@ -147,7 +147,8 @@ export const COST_ESTIMATES: CostEstimate[] = [
   { recommendationId: 'rec-cr-2', internalEffortDays: { min: 5, max: 8 }, externalCostEur: { min: 3900, max: 7800 }, toolCostEurYear: { min: 0, max: 0 }, totalEstimateEur: { min: 6400, max: 11800 } },
   // cr3: Zertifikats-/Schlüsselmanagement — PKI setup (managed preferred for KMU)
   // Source: PKITNEXT Kosten; Security Insider managed PKI; Sectigo €2.9k/yr; GlobalSign
-  { recommendationId: 'rec-cr-3', internalEffortDays: { min: 15, max: 25 }, externalCostEur: { min: 7800, max: 19500 }, toolCostEurYear: { min: 3000, max: 15000 }, totalEstimateEur: { min: 18300, max: 47000 } },
+  // Adjusted: 8-18 PT (managed PKI realistic for KMU), tool min 2k (Sectigo managed)
+  { recommendationId: 'rec-cr-3', internalEffortDays: { min: 8, max: 18 }, externalCostEur: { min: 5200, max: 15600 }, toolCostEurYear: { min: 2000, max: 15000 }, totalEstimateEur: { min: 11200, max: 39600 } },
 
   // ── Category 9: Zugriffskontrolle ──
   // ac1: Berechtigungskonzept RBAC — role definition + initial mapping
@@ -158,7 +159,8 @@ export const COST_ESTIMATES: CostEstimate[] = [
   { recommendationId: 'rec-ac-2', internalEffortDays: { min: 2, max: 3 }, externalCostEur: { min: 0, max: 1300 }, toolCostEurYear: { min: 0, max: 1000 }, totalEstimateEur: { min: 1000, max: 3800 } },
   // ac3: PAM einführen — privileged access management for admin accounts
   // Source: Delinea (14 Mo enterprise); KeeperPAM €85/user/mo; CyberArk ~€30k median KMU
-  { recommendationId: 'rec-ac-3', internalEffortDays: { min: 10, max: 20 }, externalCostEur: { min: 7800, max: 15600 }, toolCostEurYear: { min: 10000, max: 30000 }, totalEstimateEur: { min: 22800, max: 55600 } },
+  // Adjusted: tool min 5k (KeeperPAM/Delinea Secret Server KMU tier)
+  { recommendationId: 'rec-ac-3', internalEffortDays: { min: 10, max: 20 }, externalCostEur: { min: 7800, max: 15600 }, toolCostEurYear: { min: 5000, max: 30000 }, totalEstimateEur: { min: 17800, max: 55600 } },
 
   // ── Category 10: MFA/Kommunikation ──
   // mc1: MFA flächendeckend — rollout with existing M365/Google infrastructure

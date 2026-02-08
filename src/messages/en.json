@@ -133,6 +133,15 @@
     "assessments": {
       "title": "Choose Your Analysis Depth"
     },
+    "targetAudience": {
+      "title": "Who Is This Check For?",
+      "items": {
+        "sme": "Organizations with 50–250 employees checking NIS2 applicability for the first time",
+        "itManagers": "IT managers who want to systematically assess their current compliance status",
+        "management": "Executives who need to evaluate their personal liability under §38 BSIG",
+        "consultants": "Consultants and service providers supporting clients with NIS2 preparation"
+      }
+    },
     "combined": {
       "title": "What You'll Get",
       "subtitle": "Based on NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555, and BSI IT-Grundschutz — as of February 2026.",
@@ -152,6 +161,11 @@
         "title": "Free & Local",
         "desc": "No registration, no data transmission. Everything stays in your browser."
       }
+    },
+    "identity": {
+      "label": "A project by",
+      "name": "[Name]",
+      "role": "IT Specialist for Data and Process Analysis"
     }
   },
   "footer": {
