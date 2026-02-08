@@ -22,6 +22,7 @@ export interface PDFCategoryResult {
 }
 
 export interface PDFRecommendation {
+  categoryId: string;
   categoryName: string;
   title: string;             // Translated
   description: string;       // Translated
@@ -49,17 +50,41 @@ export interface PDFPenalty {
 export interface PDFRoadmapPhase {
   title: string;
   description: string;
+  timeframe: string;
+  itemCount: number;
+  benefitStatement?: string;
   items: Array<{
     title: string;
     urgency: string;
+    days?: string;
+    costRange?: string;
   }>;
 }
 
-export interface PDFCostSummary {
+export interface PDFCostItem {
+  title: string;
+  categoryName: string;
+  effortLevel: EffortLevel;
   internalDays: { min: number; max: number };
   externalCost: { min: number; max: number };
   toolsCost: { min: number; max: number };
   totalCost: { min: number; max: number };
+}
+
+export interface PDFCostSummary {
+  companyEmployees: number;
+  companyRevenue: number;
+  sizeFactor: number;
+  tierTotals: {
+    basisschutz: { min: number; max: number };
+    erweitert: { min: number; max: number };
+    nis2Niveau: { min: number; max: number };
+  };
+  internalDays: { min: number; max: number };
+  externalCost: { min: number; max: number };
+  toolsCost: { min: number; max: number };
+  totalCost: { min: number; max: number };
+  items: PDFCostItem[];
 }
 
 export interface PDFDsgvoMapping {
@@ -84,8 +109,80 @@ export interface PDFIso27001 {
   mappings: PDFIso27001Mapping[];
 }
 
+export interface PDFDinSpecComparison {
+  aspect: string;
+  dinSpec: string;
+  nis2: string;
+}
+
+export interface PDFDinSpecArea {
+  name: string;
+  coverage: string;
+}
+
+export interface PDFDinSpec {
+  comparisons: PDFDinSpecComparison[];
+  areas: PDFDinSpecArea[];
+  beyondItems: string[];
+}
+
+export interface PDFEvidenceItem {
+  text: string;
+  type: string;
+  besondersWichtigOnly: boolean;
+}
+
+export interface PDFEvidenceGroup {
+  categoryName: string;
+  items: PDFEvidenceItem[];
+}
+
+export interface PDFEvidence {
+  classification: string;
+  groups: PDFEvidenceGroup[];
+}
+
+export interface PDFSectorRegulation {
+  name: string;
+  description: string;
+  legalBasis: string;
+}
+
+export interface PDFSectorGuidance {
+  regulations: PDFSectorRegulation[];
+  challenges: string;
+  recommendations: string;
+}
+
+export interface PDFKritis {
+  requirements: Array<{ title: string; description: string }>;
+  comparisons: Array<{ aspect: string; standard: string; kritis: string }>;
+}
+
+export interface PDFProgressItem {
+  title: string;
+  status: 'not-started' | 'in-progress' | 'completed';
+}
+
+export interface PDFProgress {
+  completionPercentage: number;
+  notStarted: number;
+  inProgress: number;
+  completed: number;
+  items: PDFProgressItem[];
+}
+
+export interface PDFExecutiveSummary {
+  percentage: number;
+  trafficLight: TrafficLight;
+  topRisks: Array<{ name: string; percentage: number; trafficLight: TrafficLight }>;
+  quickWins: Array<{ title: string; days: string; cost: string }>;
+  basisschutzTotal: { min: number; max: number };
+}
+
 export interface PDFPayload {
   locale: 'de' | 'en';
+  analysisDepth: 'core' | 'full';
   company: PDFCompanyProfile;
   overallScore: {
     percentage: number;
@@ -97,10 +194,16 @@ export interface PDFPayload {
   categories: PDFCategoryResult[];
   recommendations: PDFRecommendation[];
   messages: PDFMessages;
+  executiveSummary?: PDFExecutiveSummary;
   penalty?: PDFPenalty;
   roadmap?: { phases: PDFRoadmapPhase[] };
   costSummary?: PDFCostSummary;
   dsgvoOverlap?: PDFDsgvoOverlap;
   iso27001?: PDFIso27001;
   isKritis?: boolean;
+  dinSpec?: PDFDinSpec;
+  evidence?: PDFEvidence;
+  sectorGuidance?: PDFSectorGuidance;
+  kpiDetails?: PDFKritis;
+  progress?: PDFProgress;
 }

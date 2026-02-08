@@ -17,6 +17,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. a NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 1 BSIG',
     bsiBuildingBlocks: ['ISMS.1', 'ORP.1', 'DER.1'],
+    icon: 'Shield',
     questions: [], // Populated from QUESTIONS array
   },
   {
@@ -27,6 +28,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. b NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 2 BSIG',
     bsiBuildingBlocks: ['DER.2.1', 'DER.2.2', 'DER.2.3', 'OPS.1.1.5'],
+    icon: 'AlertTriangle',
     questions: [],
   },
   {
@@ -37,6 +39,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. c NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 3 BSIG',
     bsiBuildingBlocks: ['CON.3', 'DER.4', 'DER.2.3', 'OPS.1.2.2'],
+    icon: 'ServerCrash',
     questions: [],
   },
   {
@@ -47,6 +50,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. d NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 4 BSIG',
     bsiBuildingBlocks: ['ORP.1', 'OPS.1.1.3'],
+    icon: 'Link2',
     questions: [],
   },
   {
@@ -57,6 +61,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. e NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 5 BSIG',
     bsiBuildingBlocks: ['CON.8', 'OPS.1.1.6', 'OPS.1.1.3', 'CON.10'],
+    icon: 'Code',
     questions: [],
   },
   {
@@ -67,6 +72,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. f NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 6 BSIG',
     bsiBuildingBlocks: ['ISMS.1', 'OPS.1.1.6', 'ORP.5'],
+    icon: 'ClipboardCheck',
     questions: [],
   },
   {
@@ -77,6 +83,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. g NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 7 BSIG',
     bsiBuildingBlocks: ['ORP.3', 'OPS.1.1.4', 'ORP.2'],
+    icon: 'GraduationCap',
     questions: [],
   },
   {
@@ -87,6 +94,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. h NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 8 BSIG',
     bsiBuildingBlocks: ['CON.1', 'NET.4.1'],
+    icon: 'Lock',
     questions: [],
   },
   {
@@ -97,6 +105,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. i NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 9 BSIG',
     bsiBuildingBlocks: ['ORP.4', 'ORP.2', 'INF.1', 'INF.2'],
+    icon: 'UserCheck',
     questions: [],
   },
   {
@@ -107,6 +116,7 @@ export const CATEGORIES: Category[] = [
     euArticle: 'Art. 21 Abs. 2 lit. j NIS2-RL',
     bsigParagraph: '§30 Abs. 2 Nr. 10 BSIG',
     bsiBuildingBlocks: ['ORP.4', 'NET.4.1', 'NET.4.2'],
+    icon: 'KeyRound',
     questions: [],
   },
 ];

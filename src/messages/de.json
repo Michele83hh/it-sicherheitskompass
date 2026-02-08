@@ -11,51 +11,146 @@
     "error": "Ein Fehler ist aufgetreten"
   },
   "landing": {
-    "title": "NIS2-Bereitschaft in 15 Minuten prüfen",
-    "subtitle": "Intelligenter Fragebogen für KMUs – Compliance-Status ermitteln und maßgeschneiderte Handlungsempfehlungen erhalten",
-    "cta": "Kostenlose Prüfung starten",
-    "value": {
-      "anonymous": {
-        "title": "100% Anonym",
-        "description": "Keine Registrierung, keine Cookies, keine Speicherung Ihrer Daten. Ihre Eingaben bleiben vollständig anonym."
+    "hero": {
+      "title": "Ist Ihr Unternehmen bereit für NIS2?",
+      "subtitle": "Ab 2026 gelten verschärfte Cybersicherheitspflichten für Unternehmen. In 10 Minuten wissen Sie, wo Sie stehen.",
+      "penaltyHook": "Verstöße kosten bis zu 10 Millionen Euro.",
+      "ctaPrimary": "Bin ich betroffen?",
+      "quickCheck": {
+        "badge": "Schnelleinstieg",
+        "title": "Schnellcheck (10 Fragen)",
+        "description": "~2 Min. — erste Einschätzung Ihres NIS2-Reifegrads mit Ja/Nein-Fragen.",
+        "cta": "Schnellcheck starten"
       },
-      "legal": {
-        "title": "Rechtlich fundiert",
-        "description": "Basierend auf NIS2UmsG, EU-Richtlinie 2022/2555 und BSI-Grundschutz-Anforderungen."
+      "coreCheck": {
+        "badge": "Empfohlen",
+        "title": "Kernanalyse (30 Fragen)",
+        "description": "~10 Min. — vollständiger Report mit Scores, Empfehlungen und Roadmap. Reicht für die meisten Unternehmen.",
+        "cta": "Kernanalyse starten"
       },
-      "actionable": {
-        "title": "Konkrete Handlungsempfehlungen",
-        "description": "Erhalten Sie einen detaillierten Bericht mit priorisierten Maßnahmen und nächsten Schritten."
+      "fullCheck": {
+        "badge": "Für Fortgeschrittene",
+        "title": "Vollständige Analyse (50 Fragen)",
+        "description": "~17 Min. — 30 Kernfragen + 20 Vertiefungsfragen für genauere Scores und differenziertere Ergebnisse.",
+        "cta": "Vollständige Analyse starten"
       }
+    },
+    "penalty": {
+      "essential": {
+        "title": "Besonders wichtige Einrichtungen",
+        "amount": "bis zu 10 Mio. € oder 2% des Jahresumsatzes",
+        "legal": "§65 Abs. 2 BSIG"
+      },
+      "important": {
+        "title": "Wichtige Einrichtungen",
+        "amount": "bis zu 7 Mio. € oder 1,4% des Jahresumsatzes",
+        "legal": "§65 Abs. 3 BSIG"
+      },
+      "cta": "Bin ich betroffen?"
     },
     "steps": {
       "title": "So funktioniert's",
       "step1": {
-        "title": "Fragen beantworten",
-        "description": "15-20 Minuten adaptive Fragen zu Ihrem Unternehmen, IT-Infrastruktur und Sicherheitsmaßnahmen."
+        "title": "Betroffenheit prüfen",
+        "description": "Sektor und Unternehmensgröße eingeben — sofort erfahren, ob Sie unter NIS2 fallen und welche Pflichten gelten."
       },
       "step2": {
-        "title": "Analyse durchführen",
-        "description": "Automatische Auswertung Ihrer Antworten anhand aktueller NIS2-Anforderungen und BSI-Standards."
+        "title": "Schnellcheck (2 Min.)",
+        "description": "10 einfache Ja/Nein-Fragen für eine erste Einschätzung Ihres NIS2-Reifegrads."
       },
       "step3": {
-        "title": "Bericht erhalten",
-        "description": "Detaillierter PDF-Bericht mit Compliance-Score, Lückenanalyse und priorisierten Handlungsempfehlungen."
+        "title": "Gap-Analyse (~10 Min.)",
+        "description": "30 Kernfragen für einen vollständigen Report mit Empfehlungen. Optional: 20 Vertiefungsfragen für genauere Ergebnisse."
+      }
+    },
+    "features": {
+      "title": "Ihre Vorteile",
+      "anonymous": {
+        "title": "Kostenlos & anonym",
+        "description": "Keine Registrierung, keine Cookies, keine Datenspeicherung."
+      },
+      "legal": {
+        "title": "Rechtlich fundiert",
+        "description": "Basierend auf NIS2UmsG (BGBl. 2025 I Nr. 301)."
+      },
+      "pdf": {
+        "title": "PDF-Report",
+        "description": "Detaillierter Bericht zum Download und Weitergeben."
+      },
+      "roadmap": {
+        "title": "Umsetzungs-Roadmap",
+        "description": "3-Phasen-Plan mit priorisierten Maßnahmen."
+      },
+      "bilingual": {
+        "title": "DE/EN zweisprachig",
+        "description": "Vollständig in Deutsch und Englisch verfügbar."
+      },
+      "quickCheck": {
+        "title": "2-Minuten-Schnellcheck",
+        "description": "Sofort-Einschätzung mit 10 einfachen Fragen."
       }
     },
     "trust": {
       "title": "Fundierte Rechtsgrundlagen",
       "nis2": {
-        "title": "NIS2UmsG",
-        "description": "Deutsches NIS2-Umsetzungsgesetz"
+        "title": "NIS2UmsG & EU 2022/2555",
+        "description": "Deutsches NIS2-Umsetzungsgesetz und EU-Richtlinie als Basis."
       },
-      "eu": {
-        "title": "EU 2022/2555",
-        "description": "EU-Richtlinie über Netz- und Informationssysteme"
+      "noLogin": {
+        "title": "Keine Anmeldung erforderlich",
+        "description": "Starten Sie sofort — ohne Account oder E-Mail-Adresse."
+      },
+      "privacy": {
+        "title": "Datenschutz",
+        "description": "Alle Daten bleiben lokal in Ihrem Browser. Keine Übertragung an Server."
+      },
+      "foundationBar": {
+        "basis": "Basierend auf BSI IT-Grundschutz · NIS2UmsCG · EU 2022/2555",
+        "local": "Alle Daten bleiben in Ihrem Browser",
+        "free": "Kostenlos & ohne Registrierung"
+      }
+    },
+    "stats": {
+      "title": "NIS2 in Zahlen",
+      "subtitle": "Die NIS2-Richtlinie betrifft deutlich mehr Unternehmen als viele denken — prüfen Sie jetzt, ob Sie dazugehören.",
+      "companies": {
+        "number": "~29.000",
+        "label": "Betroffene Unternehmen in Deutschland"
+      },
+      "sectors": {
+        "number": "18",
+        "label": "Regulierte Wirtschaftssektoren"
+      },
+      "reporting": {
+        "number": "24h",
+        "label": "Erstmeldepflicht bei Sicherheitsvorfällen"
+      },
+      "domains": {
+        "number": "10",
+        "label": "Pflicht-Sicherheitsbereiche nach §30 BSIG"
+      }
+    },
+    "assessments": {
+      "title": "Wählen Sie Ihre Analyse-Tiefe"
+    },
+    "combined": {
+      "title": "Was Sie erhalten",
+      "subtitle": "Basierend auf NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555 und BSI IT-Grundschutz — Rechtsstand Februar 2026.",
+      "pdf": {
+        "title": "PDF-Report",
+        "desc": "Umfassender PDF-Report mit Scores, Empfehlungen, Roadmap und Kostenschätzung — zum Download und Weitergeben."
+      },
+      "roadmap": {
+        "title": "3-Phasen-Roadmap",
+        "desc": "Priorisierter Umsetzungsplan mit Zeitrahmen und Aufwandsstufen für jede Phase."
       },
       "bsi": {
-        "title": "BSI Grundschutz",
-        "description": "IT-Grundschutz-Kompendium des BSI"
+        "title": "BSI-Grundschutz-Referenzen",
+        "desc": "30 Handlungsempfehlungen mit konkreten BSI-Baustein-Referenzen (z. B. ORP.1, CON.1)."
+      },
+      "privacy": {
+        "title": "Kostenlos & lokal",
+        "desc": "Keine Registrierung, keine Datenübertragung. Alles bleibt in Ihrem Browser."
       }
     }
   },
@@ -237,58 +332,69 @@
     "riskAnalysis": {
       "name": "Risikoanalyse und Sicherheit der Informationssysteme",
       "shortName": "Risikoanalyse",
-      "description": "Konzepte in Bezug auf die Risikoanalyse und auf die Sicherheit in der Informationstechnik"
+      "description": "Konzepte in Bezug auf die Risikoanalyse und auf die Sicherheit in der Informationstechnik",
+      "empoweringIntro": "So schützen Sie Ihr Unternehmen: Mit einer strukturierten Risikoanalyse erkennen Sie Bedrohungen frühzeitig und können gezielt gegensteuern."
     },
     "incidentHandling": {
       "name": "Bewältigung von Sicherheitsvorfällen",
       "shortName": "Sicherheitsvorfälle",
-      "description": "Bewältigung von Sicherheitsvorfällen"
+      "description": "Bewältigung von Sicherheitsvorfällen",
+      "empoweringIntro": "Vorbereitung ist der beste Schutz: Klare Prozesse für den Ernstfall verkürzen Reaktionszeiten und minimieren Schäden deutlich."
     },
     "businessContinuity": {
       "name": "Aufrechterhaltung des Betriebs",
       "shortName": "Betriebskontinuität",
-      "description": "Aufrechterhaltung des Betriebs, wie Backup-Management und Wiederherstellung nach einem Notfall, und Krisenmanagement"
+      "description": "Aufrechterhaltung des Betriebs, wie Backup-Management und Wiederherstellung nach einem Notfall, und Krisenmanagement",
+      "empoweringIntro": "Geschäftskontinuität sichern: Mit Backup-Strategien und Notfallplänen stellen Sie sicher, dass Ihr Betrieb auch in Krisen weiterläuft."
     },
     "supplyChain": {
       "name": "Sicherheit der Lieferkette",
       "shortName": "Lieferkette",
-      "description": "Sicherheit der Lieferkette einschließlich sicherheitsbezogener Aspekte der Beziehungen zu unmittelbaren Anbietern oder Diensteanbietern"
+      "description": "Sicherheit der Lieferkette einschließlich sicherheitsbezogener Aspekte der Beziehungen zu unmittelbaren Anbietern oder Diensteanbietern",
+      "empoweringIntro": "Lieferanten im Griff: Durch klare Sicherheitsanforderungen an Ihre Dienstleister schließen Sie eine häufige Einfallstür für Angreifer."
     },
     "acquisitionDevelopment": {
       "name": "Sicherheit bei Erwerb, Entwicklung und Wartung",
       "shortName": "Entwicklung & Wartung",
-      "description": "Sicherheitsmaßnahmen bei Erwerb, Entwicklung und Wartung von informationstechnischen Systemen, Komponenten und Prozessen, einschließlich Management und Offenlegung von Schwachstellen"
+      "description": "Sicherheitsmaßnahmen bei Erwerb, Entwicklung und Wartung von informationstechnischen Systemen, Komponenten und Prozessen, einschließlich Management und Offenlegung von Schwachstellen",
+      "empoweringIntro": "Sicherheit von Anfang an: Wenn Sicherheit bereits bei Beschaffung und Entwicklung berücksichtigt wird, sinken die Kosten für Nachbesserungen erheblich."
     },
     "effectivenessAssessment": {
       "name": "Bewertung der Wirksamkeit von Maßnahmen",
       "shortName": "Wirksamkeit",
-      "description": "Konzepte und Verfahren zur Bewertung der Wirksamkeit von Risikomanagementmaßnahmen im Bereich der Sicherheit"
+      "description": "Konzepte und Verfahren zur Bewertung der Wirksamkeit von Risikomanagementmaßnahmen im Bereich der Sicherheit",
+      "empoweringIntro": "Messen statt vermuten: Regelmäßige Wirksamkeitsprüfungen zeigen Ihnen, welche Maßnahmen greifen und wo nachgesteuert werden muss."
     },
     "cyberHygiene": {
       "name": "Cyberhygiene und Schulungen",
       "shortName": "Schulungen",
-      "description": "Grundlegende Schulungen und Sensibilisierungsmaßnahmen im Bereich der Sicherheit in der Informationstechnik"
+      "description": "Grundlegende Schulungen und Sensibilisierungsmaßnahmen im Bereich der Sicherheit in der Informationstechnik",
+      "empoweringIntro": "Ihr Team als erste Verteidigungslinie: Geschulte Mitarbeitende erkennen Phishing und Social Engineering — der häufigste Angriffsvektor."
     },
     "cryptography": {
       "name": "Kryptografie und Verschlüsselung",
       "shortName": "Kryptografie",
-      "description": "Konzepte und Prozesse für den Einsatz von kryptographischen Verfahren"
+      "description": "Konzepte und Prozesse für den Einsatz von kryptographischen Verfahren",
+      "empoweringIntro": "Daten wirksam schützen: Verschlüsselung ist eine der effektivsten Maßnahmen, um sensible Informationen vor unbefugtem Zugriff zu bewahren."
     },
     "accessControl": {
       "name": "Personalsicherheit und Zugriffskontrolle",
       "shortName": "Zugriffskontrolle",
-      "description": "Erstellung von Konzepten für die Sicherheit des Personals, die Zugriffskontrolle und für die Verwaltung von IKT-Systemen, -Produkten und -Prozessen"
+      "description": "Erstellung von Konzepten für die Sicherheit des Personals, die Zugriffskontrolle und für die Verwaltung von IKT-Systemen, -Produkten und -Prozessen",
+      "empoweringIntro": "Zugang kontrollieren: Das Least-Privilege-Prinzip stellt sicher, dass nur berechtigte Personen auf kritische Systeme zugreifen können."
     },
     "authenticationCommunication": {
       "name": "Multi-Faktor-Authentifizierung und gesicherte Kommunikation",
       "shortName": "MFA & Kommunikation",
-      "description": "Verwendung von Lösungen zur Multi-Faktor-Authentifizierung oder kontinuierlichen Authentifizierung, gesicherte Sprach-, Video- und Textkommunikation sowie gegebenenfalls gesicherte Notfallkommunikationssysteme"
+      "description": "Verwendung von Lösungen zur Multi-Faktor-Authentifizierung oder kontinuierlichen Authentifizierung, gesicherte Sprach-, Video- und Textkommunikation sowie gegebenenfalls gesicherte Notfallkommunikationssysteme",
+      "empoweringIntro": "Identität absichern: Multi-Faktor-Authentifizierung verhindert über 99% aller Kontoübernahmen — eine der wirksamsten Einzelmaßnahmen."
     }
   },
   "questions": {
     "raQ1": {
       "title": "Haben Sie eine aktuelle Übersicht über Ihre IT-Risiken (z.B. welche Systeme kritisch sind, wo Schwachstellen liegen)?",
       "tooltip": "NIS2 fordert regelmäßige Risikoanalysen (Art. 21 Abs. 2 lit. a NIS2-RL, §30 Abs. 2 Nr. 1 BSIG). Das BSI empfiehlt die Methodik aus BSI-Standard 200-3.",
+      "help": "Eine IT-Risikoübersicht listet auf, welche Systeme für Ihr Geschäft besonders wichtig sind und wo Schwachstellen bestehen. Das kann eine einfache Excel-Tabelle sein, z. B.: 'Unser ERP-Server läuft noch auf Windows Server 2012 — kein Herstellersupport mehr, hohes Risiko.' Ohne diese Übersicht wissen Sie nicht, wo Sie zuerst handeln müssen.",
       "maturity": {
         "level0": "Keine Risikoanalyse vorhanden",
         "level1": "Grobe Einschätzung vorhanden, aber nicht dokumentiert",
@@ -299,6 +405,7 @@
     "raQ2": {
       "title": "Sind Ihre IT-Sicherheitsmaßnahmen schriftlich dokumentiert und werden regelmäßig aktualisiert?",
       "tooltip": "Dokumentierte Sicherheitskonzepte sind Grundlage für nachweisbare Compliance (§30 Abs. 1 BSIG). Siehe BSI-Baustein ISMS.1.",
+      "help": "Dokumentierte Sicherheitsmaßnahmen bedeuten: Sie haben aufgeschrieben, WAS Sie zum Schutz Ihrer IT tun, z. B. 'Alle Passwörter müssen mindestens 12 Zeichen haben' oder 'Backups werden täglich um 22 Uhr erstellt.' Ohne schriftliche Dokumentation gehen diese Regeln verloren, wenn ein Mitarbeiter das Unternehmen verlässt.",
       "maturity": {
         "level0": "Keine schriftliche Dokumentation",
         "level1": "Teilweise dokumentiert, aber veraltet",
@@ -309,6 +416,7 @@
     "raQ3": {
       "title": "Haben Sie klare Verantwortlichkeiten für IT-Sicherheit festgelegt (z.B. benannte Ansprechperson)?",
       "tooltip": "NIS2 fordert Geschäftsleitungsverantwortung (§38 BSIG). Klare Zuständigkeiten sind Grundlage für wirksames Sicherheitsmanagement.",
+      "help": "Es muss klar sein, WER für IT-Sicherheit zuständig ist — auch in kleinen Unternehmen. Das kann der Geschäftsführer selbst sein, ein IT-Leiter oder ein externer Dienstleister. Wichtig ist: Jeder im Unternehmen weiß, an wen er sich bei IT-Sicherheitsfragen wendet.",
       "maturity": {
         "level0": "Keine festgelegten Verantwortlichkeiten",
         "level1": "Informell zugewiesen, nicht dokumentiert",
@@ -316,9 +424,32 @@
         "level3": "Klar dokumentiert, kommuniziert und mit Vertretungsregelungen"
       }
     },
+    "raQ4": {
+      "title": "Führen Sie ein aktuelles Inventar aller IT-Systeme und digitalen Assets (z.B. Hardware, Software, Daten)?",
+      "tooltip": "Ein vollständiges Asset-Inventar ist Grundvoraussetzung für wirksame Risikoanalyse. Ohne Überblick über alle Assets können Risiken nicht identifiziert werden. Siehe BSI-Standard 200-2.",
+      "help": "Ein IT-Inventar ist eine vollständige Liste aller Computer, Server, Software und Datenbanken in Ihrem Unternehmen. Ohne diese Liste können Sie nicht wissen, ob alle Geräte aktuelle Updates haben oder ob irgendwo veraltete, unsichere Software läuft. Eine einfache Tabelle mit Gerätename, Standort, Software-Version und Verantwortlichem reicht bereits.",
+      "maturity": {
+        "level0": "Kein IT-Asset-Inventar vorhanden",
+        "level1": "Teilweise Übersicht, aber unvollständig und veraltet",
+        "level2": "Dokumentiertes Inventar der wichtigsten Systeme, aber nicht vollständig",
+        "level3": "Vollständiges, aktuelles Asset-Inventar mit Klassifizierung und Verantwortlichkeiten"
+      }
+    },
+    "raQ5": {
+      "title": "Haben Sie dokumentierte Maßnahmen zur Risikobehandlung für identifizierte Risiken (Vermeiden, Reduzieren, Übertragen, Akzeptieren)?",
+      "tooltip": "Risikobehandlungspläne dokumentieren, wie mit jedem identifizierten Risiko umgegangen wird. Dies ist ein zentraler Bestandteil des Risikomanagements nach BSI-Standard 200-3.",
+      "help": "Für jedes erkannte Risiko sollten Sie festlegen, wie Sie damit umgehen: Vermeiden (z. B. unsichere Software abschalten), Reduzieren (z. B. Firewall einrichten), Übertragen (z. B. Cyberversicherung abschließen) oder bewusst Akzeptieren (z. B. bei sehr geringem Risiko). Diese Entscheidungen sollten dokumentiert sein, damit nachvollziehbar ist, warum Sie was getan haben.",
+      "maturity": {
+        "level0": "Keine dokumentierten Risikobehandlungsmaßnahmen",
+        "level1": "Informelles Verständnis, aber nicht dokumentiert",
+        "level2": "Risikobehandlungspläne für die wichtigsten Risiken vorhanden",
+        "level3": "Formale Risikotoleranz definiert, dokumentierte Behandlungspläne für alle identifizierten Risiken"
+      }
+    },
     "ihQ1": {
       "title": "Gibt es ein festgelegtes Verfahren, wie Ihr Unternehmen auf Cyberangriffe oder IT-Störungen reagiert?",
       "tooltip": "NIS2 verlangt dokumentierte Prozesse für die Reaktion auf Sicherheitsvorfälle (Art. 21 Abs. 2 lit. b NIS2-RL, §30 Abs. 2 Nr. 2 BSIG). Siehe BSI-Baustein DER.2.1.",
+      "help": "Ein Verfahren für Cyberangriffe bedeutet: Wer macht was, wenn es passiert? Zum Beispiel: 'Schritt 1: Betroffenes System vom Netz trennen. Schritt 2: IT-Dienstleister anrufen. Schritt 3: Geschäftsführung informieren.' Ohne einen solchen Plan reagieren Mitarbeiter im Ernstfall panisch oder gar nicht.",
       "maturity": {
         "level0": "Kein Verfahren vorhanden",
         "level1": "Reaktion erfolgt ad-hoc ohne festen Ablauf",
@@ -329,6 +460,7 @@
     "ihQ2": {
       "title": "Haben Sie Kontaktdaten für den Notfall (z.B. BSI-Meldestelle, IT-Dienstleister) griffbereit?",
       "tooltip": "NIS2 schreibt Meldepflichten vor (§32 BSIG). Schnelle Reaktion erfordert vorbereitete Kontaktlisten und Meldewege.",
+      "help": "Im Notfall zählt jede Minute. Wenn Ihr E-Mail-Server gehackt wird, müssen Sie sofort wissen, wen Sie anrufen können — Ihren IT-Dienstleister, Ihren Internetanbieter und das BSI (Bundesamt für Sicherheit in der Informationstechnik). Diese Nummern sollten ausgedruckt und griffbereit sein, nicht nur digital.",
       "maturity": {
         "level0": "Keine Notfallkontakte vorbereitet",
         "level1": "Einzelne Kontakte bekannt, aber nicht zentral verfügbar",
@@ -339,6 +471,7 @@
     "ihQ3": {
       "title": "Werden Sicherheitsvorfälle protokolliert und ausgewertet, um daraus zu lernen?",
       "tooltip": "Aus Vorfällen zu lernen ist essenziell für die Verbesserung der Sicherheit. Siehe BSI-Baustein DER.2.1 und OPS.1.1.5 (Protokollierung).",
+      "help": "Protokollieren heißt: aufschreiben, was passiert ist, wann es passiert ist, was die Ursache war und was Sie dagegen getan haben. Nur so können Sie Muster erkennen — z. B. wenn immer dieselbe Phishing-Mail durchkommt — und gezielt gegensteuern.",
       "maturity": {
         "level0": "Keine Protokollierung von Vorfällen",
         "level1": "Vorfälle werden teilweise erfasst, aber nicht systematisch ausgewertet",
@@ -346,9 +479,32 @@
         "level3": "Vollständige Erfassung, regelmäßige Auswertung und dokumentierte Verbesserungen"
       }
     },
+    "ihQ4": {
+      "title": "Haben Sie klare Kriterien, wann ein IT-Vorfall als 'erheblicher Sicherheitsvorfall' meldepflichtig ist?",
+      "tooltip": "Nach §32 BSIG müssen erhebliche Sicherheitsvorfälle innerhalb von 24 Stunden an das BSI gemeldet werden. Klare Kriterien ermöglichen schnelle Entscheidungen im Ernstfall.",
+      "help": "Nach NIS2 müssen bestimmte Vorfälle innerhalb von 24 Stunden an das BSI gemeldet werden. Meldepflichtig ist z. B. ein Ransomware-Angriff, der Ihre Systeme lahmlegt, oder ein Datenleck mit Kundendaten. Sie brauchen klare Kriterien, damit im Ernstfall nicht erst diskutiert wird, ob gemeldet werden muss.",
+      "maturity": {
+        "level0": "Keine Kriterien für die Einstufung von Vorfällen",
+        "level1": "Grobe Vorstellung, aber keine dokumentierten Kriterien",
+        "level2": "Grundlegende Klassifizierung vorhanden, aber nicht an NIS2-Meldepflichten angepasst",
+        "level3": "Dokumentierte Klassifizierung mit klaren Schwellenwerten und Eskalationsstufen gemäß §32 BSIG"
+      }
+    },
+    "ihQ5": {
+      "title": "Werden bei IT-Sicherheitsvorfällen Beweismittel systematisch gesichert (z.B. Log-Dateien, Netzwerkprotokolle)?",
+      "tooltip": "Forensische Beweissicherung ist essenziell für die Analyse von Vorfällen und ggf. für rechtliche Schritte. Siehe BSI-Baustein DER.2.2 (Vorsorge für die IT-Forensik).",
+      "help": "Beweissicherung bedeutet, dass Sie bei einem Vorfall digitale Spuren sichern, bevor sie verloren gehen — z. B. Log-Dateien (automatische Aufzeichnungen, wer wann was am System gemacht hat), E-Mails oder Screenshots. Diese Beweise können für die Aufklärung, für Versicherungsansprüche oder für eine Strafanzeige wichtig sein.",
+      "maturity": {
+        "level0": "Keine Beweissicherung bei Vorfällen",
+        "level1": "Gelegentliche manuelle Sicherung bei schweren Vorfällen",
+        "level2": "Grundlegende Log-Sicherung vorhanden, aber nicht systematisch",
+        "level3": "Automatisierte Log-Sicherung mit forensischer Bereitschaft und definierten Aufbewahrungsfristen"
+      }
+    },
     "bcQ1": {
       "title": "Erstellen Sie regelmäßig Backups Ihrer wichtigen Daten und testen diese auch?",
       "tooltip": "NIS2 fordert Backup-Management und Wiederherstellungsfähigkeit (Art. 21 Abs. 2 lit. c NIS2-RL, §30 Abs. 2 Nr. 3 BSIG). Siehe BSI-Baustein CON.3.",
+      "help": "Backups sind Sicherungskopien Ihrer wichtigen Daten — Kundendaten, Buchhaltung, E-Mails, Verträge. Entscheidend ist nicht nur, DASS Sie Backups machen, sondern ob Sie diese auch getestet haben: Können Sie die Daten tatsächlich wiederherstellen? Viele Unternehmen stellen erst im Ernstfall fest, dass ihr Backup fehlerhaft war.",
       "maturity": {
         "level0": "Keine regelmäßigen Backups",
         "level1": "Backups werden erstellt, aber nicht getestet",
@@ -359,6 +515,7 @@
     "bcQ2": {
       "title": "Können Sie nach einem schweren IT-Ausfall innerhalb von 24-48 Stunden Ihren Betrieb wieder aufnehmen?",
       "tooltip": "Wiederherstellungsfähigkeit ist ein Kernziel von NIS2. BSI-Standard 200-4 beschreibt Business Continuity Management (BCM).",
+      "help": "Stellen Sie sich vor, Ihre gesamte IT fällt aus — kein E-Mail, kein ERP, keine Buchhaltung. Wie lange können Sie so arbeiten? 24-48 Stunden ist der Zeitrahmen, den NIS2 als Orientierung für die Wiederherstellungsfähigkeit ansetzt. Dafür brauchen Sie einen Plan, wer was in welcher Reihenfolge wieder ans Laufen bringt.",
       "maturity": {
         "level0": "Keine Wiederherstellungsplanung vorhanden",
         "level1": "Grobe Vorstellung, aber kein dokumentierter Plan",
@@ -369,6 +526,7 @@
     "bcQ3": {
       "title": "Haben Sie einen schriftlichen Notfallplan für den Fall eines Cyberangriffs oder Systemausfalls?",
       "tooltip": "Krisenmanagement erfordert vorbereitete Notfallpläne (§30 Abs. 2 Nr. 3 BSIG). Siehe BSI-Baustein DER.4 (Notfallmanagement).",
+      "help": "Ein Notfallplan beschreibt Schritt für Schritt, was bei einem IT-Ausfall oder Cyberangriff zu tun ist: Wer wird informiert? Welche Systeme werden zuerst wiederhergestellt? Wie kommunizieren Sie mit Kunden? Dieser Plan sollte ausgedruckt vorliegen — denn wenn die IT ausgefallen ist, können Sie ihn digital nicht abrufen.",
       "maturity": {
         "level0": "Kein Notfallplan vorhanden",
         "level1": "Informelles Wissen bei einzelnen Personen",
@@ -376,9 +534,32 @@
         "level3": "Dokumentierter Plan, allen bekannt und regelmäßig geübt"
       }
     },
+    "bcQ4": {
+      "title": "Haben Sie eine Business-Impact-Analyse (BIA) durchgeführt, die kritische Geschäftsprozesse und deren maximale Ausfalltoleranz identifiziert?",
+      "tooltip": "Eine BIA identifiziert kritische Geschäftsprozesse und deren IT-Abhängigkeiten. Sie definiert RTO (maximale Ausfallzeit) und RPO (akzeptabler Datenverlust). Siehe BSI-Standard 200-4.",
+      "help": "Eine Business-Impact-Analyse (BIA) beantwortet die Frage: Welche Geschäftsprozesse sind so wichtig, dass ein Ausfall Ihr Unternehmen existenziell gefährden würde? Für ein Logistikunternehmen wäre das z. B. die Tourenplanung, für einen Onlineshop der Webshop. Für jeden kritischen Prozess legen Sie fest, wie lange er maximal ausfallen darf.",
+      "maturity": {
+        "level0": "Keine Business-Impact-Analyse durchgeführt",
+        "level1": "Informelles Wissen über kritische Prozesse, aber nicht dokumentiert",
+        "level2": "Wichtigste Prozesse identifiziert, aber ohne formale Ausfallzeitbewertung",
+        "level3": "Dokumentierte BIA mit RTO/RPO-Werten für alle kritischen Geschäftsprozesse"
+      }
+    },
+    "bcQ5": {
+      "title": "Gibt es einen Krisenkommunikationsplan für den Fall eines schweren IT-Sicherheitsvorfalls?",
+      "tooltip": "Krisenkommunikation regelt, wer intern und extern informiert wird (Mitarbeiter, Kunden, Behörden, Medien). Nach §35 BSIG können auch Empfänger Ihrer Dienste unterrichtet werden müssen.",
+      "help": "Ein Krisenkommunikationsplan regelt, wer im Ernstfall wen informiert: Mitarbeiter, Kunden, Lieferanten, Behörden, ggf. Medien. Ohne Plan entstehen Gerüchte und Vertrauensverlust. Der Plan sollte Textvorlagen, Ansprechpartner und Kommunikationswege enthalten — z. B. 'Kunden werden per E-Mail über den Vorfall informiert durch Frau Müller.'",
+      "maturity": {
+        "level0": "Kein Krisenkommunikationsplan vorhanden",
+        "level1": "Informelle Absprachen, wer wen informiert",
+        "level2": "Grundlegender Plan vorhanden, aber nicht alle Stakeholder berücksichtigt",
+        "level3": "Dokumentierter Plan mit Vorlagen, Kommunikationswegen und Ansprechpartnern für alle Stakeholder"
+      }
+    },
     "scQ1": {
       "title": "Prüfen Sie die IT-Sicherheit Ihrer wichtigsten Lieferanten und Dienstleister?",
       "tooltip": "NIS2 verlangt Prüfung der Sicherheit direkter Lieferanten und Dienstleister (Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG). Besonders wichtig bei Cloud-Diensten und IT-Outsourcing.",
+      "help": "Ihre IT-Sicherheit ist nur so stark wie das schwächste Glied in der Kette. Wenn Ihr Cloud-Anbieter gehackt wird, sind Ihre Daten betroffen. Fragen Sie daher Ihre wichtigsten IT-Dienstleister: Haben Sie ein Sicherheitskonzept? Sind Ihre Daten verschlüsselt? Gibt es regelmäßige Sicherheitsprüfungen?",
       "maturity": {
         "level0": "Keine Prüfung der Lieferanten-Sicherheit",
         "level1": "Gelegentliche, informelle Nachfrage",
@@ -389,6 +570,7 @@
     "scQ2": {
       "title": "Haben Sie vertragliche Vereinbarungen zur IT-Sicherheit mit Ihren IT-Dienstleistern?",
       "tooltip": "Vertragliche Sicherheitsanforderungen an Dienstleister sind ein wesentlicher Bestandteil der Lieferkettensicherheit nach NIS2.",
+      "help": "Vertragliche Sicherheitsvereinbarungen bedeuten: In Ihren Verträgen mit IT-Dienstleistern steht z. B., dass Daten verschlüsselt werden müssen, dass Sicherheitsupdates zeitnah eingespielt werden und dass Sie im Falle eines Vorfalls informiert werden. Ohne solche Klauseln haben Sie im Ernstfall keine Handhabe.",
       "maturity": {
         "level0": "Keine vertraglichen Sicherheitsvereinbarungen",
         "level1": "Allgemeine AGB, keine spezifischen Sicherheitsklauseln",
@@ -399,6 +581,7 @@
     "scQ3": {
       "title": "Wissen Sie, welche externen Dienstleister Zugriff auf Ihre kritischen Systeme oder Daten haben?",
       "tooltip": "Transparenz über externe Zugriffe ist Voraussetzung für wirksame Lieferkettensicherheit. Siehe BSI-Baustein ORP.1.",
+      "help": "Viele Unternehmen wissen nicht genau, welche externen Dienstleister auf ihre Systeme zugreifen können — z. B. der IT-Support, der Drucker-Wartungsdienst oder der Anbieter der Buchhaltungssoftware. Erstellen Sie eine Liste aller externen Zugriffe und prüfen Sie, ob diese noch nötig und sicher sind.",
       "maturity": {
         "level0": "Kein Überblick über externe Zugriffe",
         "level1": "Teilweiser Überblick, nicht dokumentiert",
@@ -406,9 +589,32 @@
         "level3": "Vollständige, aktuelle Übersicht mit regelmäßiger Überprüfung"
       }
     },
+    "scQ4": {
+      "title": "Berücksichtigen Sie bei der Bewertung Ihrer Lieferanten auch deren Unterauftragnehmer und Abhängigkeiten?",
+      "tooltip": "NIS2 fordert die Berücksichtigung der gesamten Lieferkette, nicht nur direkter Lieferanten. Schwachstellen bei Unterauftragnehmern können Ihr Unternehmen gefährden.",
+      "help": "Ihr IT-Dienstleister beauftragt möglicherweise selbst Unterauftragnehmer — z. B. ein Rechenzentrum in einem anderen Land. Wenn dort ein Sicherheitsproblem auftritt, sind auch Ihre Daten betroffen. Fragen Sie Ihre Dienstleister, ob und welche Unterauftragnehmer sie einsetzen.",
+      "maturity": {
+        "level0": "Keine Berücksichtigung von Unterauftragnehmern",
+        "level1": "Bewusstsein vorhanden, aber keine systematische Prüfung",
+        "level2": "Wichtigste Lieferanten werden nach Unterauftragnehmern befragt",
+        "level3": "Systematische Bewertung der gesamten Lieferkette inkl. Unterauftragnehmer und Abhängigkeitsanalyse"
+      }
+    },
+    "scQ5": {
+      "title": "Haben Sie ein Verfahren zur regelmäßigen Neubewertung der IT-Sicherheit Ihrer Dienstleister?",
+      "tooltip": "Die Sicherheitslage von Dienstleistern kann sich ändern. Regelmäßige Neubewertung stellt sicher, dass Ihre Anforderungen dauerhaft erfüllt werden.",
+      "help": "Die IT-Sicherheitslage Ihrer Dienstleister kann sich ändern — z. B. durch Personalwechsel, neue Bedrohungen oder veränderte Geschäftsmodelle. Deshalb sollten Sie mindestens jährlich prüfen, ob Ihre Anforderungen noch erfüllt werden, z. B. durch einen kurzen Fragebogen oder ein Gespräch.",
+      "maturity": {
+        "level0": "Keine regelmäßige Neubewertung der Dienstleister",
+        "level1": "Bewertung nur bei Vertragsverlängerung",
+        "level2": "Jährliche Überprüfung der wichtigsten Dienstleister",
+        "level3": "Regelmäßige, dokumentierte Neubewertung aller kritischen Dienstleister mit Audit-Rechten"
+      }
+    },
     "adQ1": {
       "title": "Werden Sicherheitsupdates für Ihre IT-Systeme zeitnah eingespielt?",
       "tooltip": "NIS2 fordert Schwachstellenmanagement (Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG). Zeitnahes Patching ist eine der wichtigsten Schutzmaßnahmen. Siehe BSI-Baustein OPS.1.1.3.",
+      "help": "Sicherheitsupdates (auch 'Patches' genannt) schließen bekannte Sicherheitslücken in Ihrer Software. Wenn z. B. Microsoft ein Update für Windows veröffentlicht, sollte es innerhalb weniger Tage installiert werden. Jeder Tag Verzögerung ist ein offenes Fenster für Angreifer. Dies betrifft alle Geräte: Server, PCs, Drucker, Router.",
       "maturity": {
         "level0": "Updates werden nicht systematisch eingespielt",
         "level1": "Updates werden gelegentlich eingespielt, ohne festen Prozess",
@@ -419,6 +625,7 @@
     "adQ2": {
       "title": "Berücksichtigen Sie IT-Sicherheitsaspekte beim Kauf oder bei der Entwicklung neuer Software?",
       "tooltip": "NIS2 fordert Security-by-Design (Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG). Sicherheit muss von Anfang an mitgedacht werden. Siehe BSI-Baustein CON.8.",
+      "help": "Wenn Sie neue Software kaufen oder entwickeln lassen, sollten Sie vorher fragen: Ist sie sicher? Gibt es regelmäßige Updates? Werden Daten verschlüsselt? Beispiel: Bevor Sie eine neue Buchhaltungssoftware anschaffen, prüfen Sie, ob der Anbieter Sicherheitsstandards einhält und wie Ihre Daten geschützt werden.",
       "maturity": {
         "level0": "Sicherheit wird beim Einkauf/Entwicklung nicht berücksichtigt",
         "level1": "Gelegentlich berücksichtigt, aber kein fester Prozess",
@@ -429,6 +636,7 @@
     "adQ3": {
       "title": "Haben Sie einen Prozess, um Schwachstellen in Ihrer Software zu erkennen und zu beheben?",
       "tooltip": "Schwachstellenmanagement und -offenlegung sind explizite NIS2-Anforderungen (§30 Abs. 2 Nr. 5 BSIG).",
+      "help": "Schwachstellen sind Fehler oder Lücken in Software, die Angreifer ausnutzen können. Ein Schwachstellenmanagement bedeutet: Sie haben einen Prozess, der diese Lücken erkennt (z. B. durch automatische Scanner) und zeitnah behebt. Ohne diesen Prozess erfahren Sie von Lücken möglicherweise erst, wenn es zu spät ist.",
       "maturity": {
         "level0": "Kein Schwachstellenmanagement",
         "level1": "Schwachstellen werden ad-hoc behandelt",
@@ -436,9 +644,32 @@
         "level3": "Systematisches Schwachstellenmanagement mit Scanning und Priorisierung"
       }
     },
+    "adQ4": {
+      "title": "Ist IT-Sicherheit systematisch in Ihre Softwareentwicklungs- oder Beschaffungsprozesse integriert (Security by Design)?",
+      "tooltip": "Security by Design bedeutet, Sicherheit von Anfang an mitzudenken — nicht erst nachträglich. NIS2 fordert dies explizit in Art. 21 Abs. 2 lit. e. Siehe BSI-Baustein CON.8.",
+      "help": "Security by Design bedeutet, dass IT-Sicherheit von Anfang an bei der Beschaffung oder Entwicklung berücksichtigt wird — nicht erst als nachträglicher Gedanke. Beispiel: Wenn Sie eine neue Kunden-App entwickeln lassen, sollte von Beginn an klar sein, wie Kundendaten geschützt werden, statt das nachher als Extra-Feature hinzuzufügen.",
+      "maturity": {
+        "level0": "Sicherheit wird erst nach Fertigstellung oder Kauf berücksichtigt",
+        "level1": "Gelegentliche Sicherheitsüberlegungen, aber kein fester Prozess",
+        "level2": "Sicherheitsanforderungen in wichtigen Projekten definiert, aber nicht standardisiert",
+        "level3": "Security by Design als integraler Bestandteil aller Entwicklungs- und Beschaffungsprozesse"
+      }
+    },
+    "adQ5": {
+      "title": "Haben Sie einen Überblick über Systeme, deren Herstellersupport oder Sicherheitsupdates ausgelaufen sind (End-of-Life)?",
+      "tooltip": "End-of-Life-Systeme erhalten keine Sicherheitsupdates mehr und stellen ein erhebliches Risiko dar. Ein Lifecycle-Management ist Bestandteil des Schwachstellenmanagements nach §30 Abs. 2 Nr. 5 BSIG.",
+      "help": "End-of-Life (EOL) bedeutet: Der Hersteller liefert keine Sicherheitsupdates mehr. Ein typisches Beispiel ist Windows 10, das im Oktober 2025 EOL erreicht hat. Systeme ohne Updates sind ein offenes Einfallstor für Angreifer. Sie sollten wissen, welche Ihrer Systeme betroffen sind und einen Plan für den Umstieg haben.",
+      "maturity": {
+        "level0": "Kein Überblick über End-of-Life-Systeme",
+        "level1": "Grobes Wissen, aber keine systematische Erfassung",
+        "level2": "Übersicht der wichtigsten Systeme vorhanden, aber nicht vollständig",
+        "level3": "Vollständiges Inventar mit Lifecycle-Status, Migrationsterminen und Kompensationsmaßnahmen"
+      }
+    },
     "eaQ1": {
       "title": "Überprüfen Sie regelmäßig, ob Ihre Sicherheitsmaßnahmen tatsächlich wirken (z.B. durch Audits)?",
       "tooltip": "NIS2 verlangt regelmäßige Wirksamkeitsprüfung (Art. 21 Abs. 2 lit. f NIS2-RL, §30 Abs. 2 Nr. 6 BSIG). Siehe BSI-Baustein ISMS.1.",
+      "help": "Sicherheitsmaßnahmen müssen regelmäßig überprüft werden, ob sie wirklich wirken. Ein Virenscanner, der seit Monaten nicht aktualisiert wurde, schützt nicht mehr. Ein Audit (systematische Prüfung) kann intern durch einen IT-Verantwortlichen oder extern durch einen Dienstleister durchgeführt werden.",
       "maturity": {
         "level0": "Keine Überprüfung der Wirksamkeit",
         "level1": "Gelegentliche informelle Überprüfung",
@@ -449,6 +680,7 @@
     "eaQ2": {
       "title": "Führen Sie Sicherheitstests durch (z.B. Penetrationstests oder Schwachstellenscans)?",
       "tooltip": "Technische Tests sind ein wichtiger Teil der Wirksamkeitsprüfung. Sie decken Schwachstellen auf, die in der Theorie nicht sichtbar sind.",
+      "help": "Ein Penetrationstest (kurz: Pentest) simuliert einen echten Angriff auf Ihre IT, um Schwachstellen zu finden, bevor es Kriminelle tun. Ein Schwachstellenscan prüft automatisiert, ob bekannte Sicherheitslücken existieren. Für KMU gibt es bezahlbare Angebote ab wenigen tausend Euro pro Jahr.",
       "maturity": {
         "level0": "Keine Sicherheitstests",
         "level1": "Gelegentliche Tests bei konkretem Anlass",
@@ -459,6 +691,7 @@
     "eaQ3": {
       "title": "Werden aus Sicherheitsprüfungen konkrete Verbesserungsmaßnahmen abgeleitet und umgesetzt?",
       "tooltip": "Der PDCA-Zyklus (Plan-Do-Check-Act) ist Kern des kontinuierlichen Verbesserungsprozesses. Siehe BSI-Baustein ORP.5 (Compliance Management).",
+      "help": "Es reicht nicht, Sicherheitslücken zu finden — sie müssen auch geschlossen werden. Wenn ein Audit z. B. zeigt, dass Passwörter zu schwach sind, sollte daraus eine konkrete Maßnahme folgen (z. B. Einführung einer Passwortrichtlinie) mit einem Verantwortlichen und einem Termin.",
       "maturity": {
         "level0": "Keine Ableitung von Verbesserungen",
         "level1": "Verbesserungen werden identifiziert, aber nicht systematisch umgesetzt",
@@ -466,9 +699,32 @@
         "level3": "Systematischer Verbesserungsprozess mit Nachverfolgung und Wirksamkeitskontrolle"
       }
     },
+    "eaQ4": {
+      "title": "Werden die Ergebnisse von Sicherheitsüberprüfungen regelmäßig der Geschäftsleitung berichtet?",
+      "tooltip": "Nach §38 BSIG muss die Geschäftsleitung die Umsetzung von Risikomanagementmaßnahmen überwachen. Regelmäßige Berichte sind dafür Voraussetzung.",
+      "help": "Die Geschäftsleitung ist nach NIS2 persönlich verantwortlich für die IT-Sicherheit (§38 BSIG). Deshalb muss sie regelmäßig erfahren, wie es um die Sicherheit steht. Ein einfacher Bericht, z. B. vierteljährlich, mit dem aktuellen Status und den größten Risiken reicht aus.",
+      "maturity": {
+        "level0": "Keine Berichterstattung an die Geschäftsleitung",
+        "level1": "Nur bei schwerwiegenden Vorfällen",
+        "level2": "Gelegentliche Berichte, aber kein fester Rhythmus",
+        "level3": "Regelmäßige, strukturierte Berichterstattung an die Geschäftsleitung mit Handlungsempfehlungen"
+      }
+    },
+    "eaQ5": {
+      "title": "Verwenden Sie messbare Kennzahlen (KPIs) zur Bewertung Ihrer IT-Sicherheitslage?",
+      "tooltip": "Sicherheitskennzahlen wie Patch-Rate, Schulungsquote oder mittlere Reaktionszeit machen den Sicherheitsstand messbar und Verbesserungen nachweisbar.",
+      "help": "KPIs (Key Performance Indicators) sind Kennzahlen, die Ihren Sicherheitsstand messbar machen. Beispiele: Wie viel Prozent der Geräte haben aktuelle Updates? Wie schnell reagieren Sie auf Sicherheitsvorfälle? Wie viele Mitarbeiter haben die Sicherheitsschulung absolviert? Ohne solche Zahlen können Sie Fortschritte nicht nachweisen.",
+      "maturity": {
+        "level0": "Keine Sicherheitskennzahlen definiert",
+        "level1": "Einzelne Ad-hoc-Zahlen (z.B. Anzahl Vorfälle)",
+        "level2": "Grundlegende KPIs definiert, aber nicht regelmäßig erhoben",
+        "level3": "Umfassendes KPI-Set (z.B. MTTD, MTTR, Patch-Rate, Schulungsquote) mit regelmäßiger Auswertung"
+      }
+    },
     "chQ1": {
       "title": "Werden Ihre Mitarbeiter regelmäßig zu IT-Sicherheitsthemen geschult (z.B. Phishing erkennen)?",
       "tooltip": "NIS2 fordert grundlegende Schulungen (Art. 21 Abs. 2 lit. g NIS2-RL, §30 Abs. 2 Nr. 7 BSIG). Siehe BSI-Baustein ORP.3.",
+      "help": "Die meisten erfolgreichen Cyberangriffe nutzen menschliche Fehler aus — z. B. ein Mitarbeiter klickt auf einen Link in einer gefälschten E-Mail (Phishing). Regelmäßige Schulungen (mindestens jährlich) helfen, solche Angriffe zu erkennen. Das kann ein einstündiges Online-Training sein, kein aufwändiges Seminar.",
       "maturity": {
         "level0": "Keine Schulungen zu IT-Sicherheit",
         "level1": "Einmalige oder gelegentliche Hinweise",
@@ -479,6 +735,7 @@
     "chQ2": {
       "title": "Gibt es klare Richtlinien für sicheres Verhalten (z.B. Passwortregeln, Umgang mit E-Mails)?",
       "tooltip": "Cyberhygiene-Richtlinien definieren Mindeststandards für sicheres Arbeiten. Sie sind Grundlage für Schulungen und Sensibilisierung.",
+      "help": "Sicherheitsrichtlinien sind einfache, klare Regeln für alle Mitarbeiter, z. B.: 'Passwörter müssen mindestens 12 Zeichen lang sein und dürfen nicht geteilt werden', 'Unbekannte USB-Sticks werden nicht angeschlossen', 'Verdächtige E-Mails sofort an IT melden.' Diese Regeln sollten schriftlich vorliegen und allen bekannt sein.",
       "maturity": {
         "level0": "Keine Richtlinien vorhanden",
         "level1": "Informelle Regeln, nicht schriftlich",
@@ -489,6 +746,7 @@
     "chQ3": {
       "title": "Werden neue Mitarbeiter systematisch in IT-Sicherheitsthemen eingewiesen?",
       "tooltip": "Onboarding mit Sicherheitseinweisung stellt sicher, dass neue Mitarbeiter von Anfang an sicherheitsbewusst handeln. Siehe BSI-Baustein ORP.2.",
+      "help": "Neue Mitarbeiter sind besonders gefährdet, weil sie die internen Sicherheitsregeln noch nicht kennen. Eine systematische Einweisung am ersten Arbeitstag — z. B. 'So erkennen Sie Phishing-Mails' und 'An wen wenden Sie sich bei IT-Problemen' — reduziert dieses Risiko erheblich.",
       "maturity": {
         "level0": "Keine Sicherheitseinweisung bei Eintritt",
         "level1": "Gelegentliche mündliche Hinweise",
@@ -496,9 +754,32 @@
         "level3": "Dokumentierte Sicherheitseinweisung als fester Teil des Onboardings"
       }
     },
+    "chQ4": {
+      "title": "Führen Sie simulierte Phishing-Tests durch, um die Wachsamkeit Ihrer Mitarbeiter zu prüfen?",
+      "tooltip": "Phishing-Simulationen sind ein wirksames Instrument zur Messung und Verbesserung der Security Awareness. Sie decken Schulungsbedarf gezielt auf.",
+      "help": "Bei einer Phishing-Simulation erhalten Ihre Mitarbeiter eine kontrollierte Test-E-Mail, die wie ein echter Angriff aussieht. So sehen Sie, wer darauf hereinfällt, und können gezielt nachschulen. Dies ist eine der wirksamsten Maßnahmen zur Sensibilisierung und wird von vielen IT-Dienstleistern als Service angeboten.",
+      "maturity": {
+        "level0": "Keine Phishing-Simulationen",
+        "level1": "Einmalig oder gelegentlich getestet",
+        "level2": "Regelmäßige Simulationen, aber ohne individuelle Nachschulung",
+        "level3": "Regelmäßige Phishing-Simulationen mit gezielter Nachschulung bei Fehlverhalten und Trendauswertung"
+      }
+    },
+    "chQ5": {
+      "title": "Werden Ihre Geschäftsleitung und Führungskräfte regelmäßig zu NIS2-Pflichten und Cybersicherheit geschult?",
+      "tooltip": "§38 BSIG verpflichtet die Geschäftsleitung persönlich zur Überwachung der Risikomanagementmaßnahmen und zur regelmäßigen Teilnahme an Schulungen. Diese Pflicht ist nicht delegierbar.",
+      "help": "Nach §38 BSIG müssen Geschäftsführer persönlich an Cybersicherheitsschulungen teilnehmen — diese Pflicht ist nicht delegierbar. Die Schulung muss die NIS2-Pflichten, die persönliche Haftung der Geschäftsleitung und grundlegende Cybersicherheitsthemen abdecken. Dies dient auch dazu, dass die Führungsebene fundierte Entscheidungen über Sicherheitsinvestitionen treffen kann.",
+      "maturity": {
+        "level0": "Keine spezifische Schulung der Geschäftsleitung",
+        "level1": "Einmalige Information über NIS2-Anforderungen",
+        "level2": "Gelegentliche Briefings, aber kein festes Schulungsprogramm",
+        "level3": "Regelmäßige, dokumentierte Schulungen der Geschäftsleitung gemäß §38 BSIG mit Teilnahmenachweisen"
+      }
+    },
     "crQ1": {
       "title": "Werden vertrauliche Daten verschlüsselt gespeichert und übertragen (z.B. via HTTPS, VPN)?",
       "tooltip": "NIS2 verlangt den Einsatz kryptographischer Verfahren (Art. 21 Abs. 2 lit. h NIS2-RL, §30 Abs. 2 Nr. 8 BSIG). Siehe BSI-Baustein CON.1.",
+      "help": "Verschlüsselung macht Daten für Unbefugte unlesbar. HTTPS (das Schloss-Symbol im Browser) verschlüsselt Daten bei der Übertragung im Internet. VPN verschlüsselt die Verbindung zu Ihrem Firmennetzwerk. Auch gespeicherte Daten (z. B. auf Laptops) sollten verschlüsselt sein, damit sie bei Diebstahl nicht ausgelesen werden können.",
       "maturity": {
         "level0": "Keine Verschlüsselung im Einsatz",
         "level1": "Teilweise Verschlüsselung (z.B. nur HTTPS für Website)",
@@ -509,6 +790,7 @@
     "crQ2": {
       "title": "Haben Sie ein Konzept, welche Daten verschlüsselt werden müssen und mit welchen Verfahren?",
       "tooltip": "Ein Kryptokonzept legt fest, wo Verschlüsselung eingesetzt wird und welche Algorithmen/Schlüssellängen verwendet werden. Siehe BSI-Baustein CON.1.",
+      "help": "Ein Kryptokonzept legt fest: Welche Daten müssen verschlüsselt werden (z. B. Kundendaten, Personalakten) und mit welchem Verfahren? Nicht alle Daten müssen gleich stark geschützt werden. Eine Preisliste braucht weniger Schutz als Bankdaten. Dieses Konzept hilft, die richtigen Prioritäten zu setzen.",
       "maturity": {
         "level0": "Kein Kryptokonzept vorhanden",
         "level1": "Verschlüsselung wird ad-hoc eingesetzt, ohne Konzept",
@@ -519,6 +801,7 @@
     "crQ3": {
       "title": "Werden kryptographische Schlüssel sicher verwaltet (z.B. nicht im Klartext gespeichert)?",
       "tooltip": "Schlüsselmanagement ist kritisch: Kompromittierte Schlüssel machen Verschlüsselung wertlos. Sichere Speicherung und regelmäßiger Wechsel sind essenziell.",
+      "help": "Kryptographische Schlüssel sind wie digitale Passwörter für die Verschlüsselung. Wenn ein Schlüssel gestohlen wird, ist die Verschlüsselung wertlos. Schlüssel sollten daher nie im Klartext in Dateien gespeichert werden, sondern in gesicherten Systemen — und regelmäßig gewechselt werden.",
       "maturity": {
         "level0": "Keine bewusste Schlüsselverwaltung",
         "level1": "Schlüssel werden gespeichert, aber ohne besonderen Schutz",
@@ -526,9 +809,32 @@
         "level3": "Systematisches Schlüsselmanagement mit sicherer Speicherung und Rotation"
       }
     },
+    "crQ4": {
+      "title": "Werden Ihre SSL/TLS-Zertifikate und kryptographischen Schlüssel zentral verwaltet und überwacht?",
+      "tooltip": "Abgelaufene oder kompromittierte Zertifikate können zu Ausfällen und Sicherheitslücken führen. Zentrales Monitoring verhindert unbemerkte Ablauftermine.",
+      "help": "SSL/TLS-Zertifikate sichern z. B. Ihre Website (HTTPS) oder E-Mail-Server ab. Wenn ein Zertifikat unbemerkt abläuft, funktioniert Ihre Website plötzlich nicht mehr oder zeigt Sicherheitswarnungen. Eine zentrale Übersicht mit Ablaufdaten verhindert solche Ausfälle.",
+      "maturity": {
+        "level0": "Keine zentrale Zertifikatsverwaltung",
+        "level1": "Zertifikate werden manuell verwaltet, kein Ablauf-Monitoring",
+        "level2": "Übersicht wichtiger Zertifikate vorhanden, aber kein automatisches Monitoring",
+        "level3": "Zentrale Zertifikatsverwaltung mit automatischem Ablauf-Monitoring und Erneuerungsprozess"
+      }
+    },
+    "crQ5": {
+      "title": "Sind Sie auf einen möglichen Wechsel kryptographischer Verfahren vorbereitet (Krypto-Agilität)?",
+      "tooltip": "Krypto-Agilität beschreibt die Fähigkeit, schnell auf neue kryptographische Verfahren umzusteigen — z.B. wenn aktuelle Algorithmen als unsicher eingestuft werden oder Post-Quantum-Kryptografie erforderlich wird.",
+      "help": "Krypto-Agilität bedeutet: Können Sie schnell auf neue Verschlüsselungsverfahren umsteigen, wenn aktuelle als unsicher eingestuft werden? Mit der Entwicklung von Quantencomputern könnten heutige Verfahren in Zukunft geknackt werden. Dafür sollten Sie zumindest wissen, welche Verfahren Sie aktuell einsetzen.",
+      "maturity": {
+        "level0": "Keine Vorbereitung auf Krypto-Migration",
+        "level1": "Bewusstsein vorhanden, aber keine konkreten Maßnahmen",
+        "level2": "Inventar der eingesetzten Verfahren erstellt, aber kein Migrationsplan",
+        "level3": "Krypto-Agilität bewertet, Migrationsplan für veraltete Verfahren erstellt und BSI-Empfehlungen werden verfolgt"
+      }
+    },
     "acQ1": {
       "title": "Haben nur autorisierte Personen Zugriff auf kritische IT-Systeme und Daten?",
       "tooltip": "NIS2 fordert Zugriffskontrolle nach dem Prinzip der minimalen Berechtigung (Art. 21 Abs. 2 lit. i NIS2-RL, §30 Abs. 2 Nr. 9 BSIG). Siehe BSI-Baustein ORP.4.",
+      "help": "Zugriffskontrolle bedeutet: Jeder Mitarbeiter kann nur auf die Daten und Systeme zugreifen, die er für seine Arbeit braucht. Der Azubi in der Buchhaltung braucht keinen Zugriff auf die Personalakten. Das Prinzip heißt 'Least Privilege' (minimale Berechtigung) und ist eine der grundlegendsten Schutzmaßnahmen.",
       "maturity": {
         "level0": "Keine systematische Zugriffskontrolle",
         "level1": "Grundlegende Zugangsbeschränkungen, aber keine differenzierten Rechte",
@@ -539,6 +845,7 @@
     "acQ2": {
       "title": "Werden Zugriffsrechte regelmäßig überprüft und bei Ausscheiden von Mitarbeitern sofort entzogen?",
       "tooltip": "Veraltete Zugriffsrechte sind ein häufiges Sicherheitsrisiko. Regelmäßige Überprüfung verhindert unautorisierte Zugriffe.",
+      "help": "Wenn ein Mitarbeiter das Unternehmen verlässt, müssen SOFORT alle Zugänge gesperrt werden — E-Mail, VPN, Cloud-Dienste, Gebäudezugang. Gleichzeitig sollten bestehende Rechte regelmäßig geprüft werden: Braucht Herr Müller wirklich noch Zugriff auf das Projekt, das vor zwei Jahren abgeschlossen wurde?",
       "maturity": {
         "level0": "Keine Überprüfung, alte Rechte bleiben bestehen",
         "level1": "Rechte werden bei Ausscheiden entzogen, aber keine regelmäßige Prüfung",
@@ -549,6 +856,7 @@
     "acQ3": {
       "title": "Sind physische Zugangskontrollen zu kritischen IT-Bereichen (z.B. Serverraum) vorhanden?",
       "tooltip": "Physischer Schutz kritischer IT-Infrastruktur ist Teil der Zugriffskontrolle. Siehe BSI-Bausteine INF.1 (Gebäude) und INF.2 (Rechenzentrum).",
+      "help": "Physische Zugangskontrollen schützen Ihre IT-Hardware vor unbefugtem Zugriff. Das Minimum: Der Serverraum ist abgeschlossen und nur befugte Personen haben einen Schlüssel. Besser: Elektronische Zutrittskontrolle mit Protokollierung, wer wann den Raum betreten hat.",
       "maturity": {
         "level0": "Kein besonderer physischer Schutz",
         "level1": "Serverraum abgeschlossen, aber kein Zutrittsprotokoll",
@@ -556,9 +864,32 @@
         "level3": "Elektronische Zutrittskontrolle mit Protokollierung und regelmäßiger Überprüfung"
       }
     },
+    "acQ4": {
+      "title": "Werden privilegierte Zugänge (Admin-Accounts) besonders geschützt und überwacht?",
+      "tooltip": "Privilegierte Accounts sind das häufigste Ziel von Angreifern. Besonderer Schutz durch MFA, Protokollierung und regelmäßige Überprüfung ist essenziell. Siehe BSI-Baustein ORP.4.",
+      "help": "Admin-Accounts (Administratorkonten) haben die höchsten Berechtigungen und sind daher das Hauptziel von Angreifern. Sie sollten besonders geschützt sein: eigenes, starkes Passwort, Multi-Faktor-Authentifizierung, und Nutzung nur für administrative Aufgaben — nicht für alltägliches Arbeiten wie E-Mails lesen.",
+      "maturity": {
+        "level0": "Keine besondere Absicherung privilegierter Zugänge",
+        "level1": "Einzelne Maßnahmen (z.B. separates Admin-Passwort), aber nicht systematisch",
+        "level2": "Privilegierte Accounts identifiziert und mit zusätzlichen Maßnahmen gesichert",
+        "level3": "Vollständiges Privileged Access Management mit MFA, Protokollierung und regelmäßiger Überprüfung"
+      }
+    },
+    "acQ5": {
+      "title": "Werden Zugriffsrechte regelmäßig rezertifiziert (d.h. systematisch geprüft, ob bestehende Rechte noch benötigt werden)?",
+      "tooltip": "Rezertifizierung stellt sicher, dass Zugriffsrechte dem Least-Privilege-Prinzip entsprechen. Ohne regelmäßige Prüfung sammeln sich unnötige Rechte an (Privilege Creep).",
+      "help": "Rezertifizierung bedeutet: In regelmäßigen Abständen (z. B. jährlich) wird systematisch geprüft, ob jeder Mitarbeiter noch die Zugriffsrechte braucht, die er hat. Im Laufe der Zeit sammeln sich oft unnötige Rechte an (z. B. durch Abteilungswechsel). Diese 'Rechte-Anhäufung' ist ein häufiges Sicherheitsrisiko.",
+      "maturity": {
+        "level0": "Keine Rezertifizierung von Zugriffsrechten",
+        "level1": "Rechte werden nur bei Auffälligkeiten geprüft",
+        "level2": "Jährliche Prüfung für kritische Systeme",
+        "level3": "Regelmäßige Rezertifizierung aller Zugriffsrechte mit dokumentiertem Freigabeprozess"
+      }
+    },
     "mcQ1": {
       "title": "Nutzen Sie Multi-Faktor-Authentifizierung (z.B. Authenticator-App, Hardware-Token) für kritische Systeme?",
       "tooltip": "NIS2 verlangt MFA für privilegierte Zugänge (Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG). MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
+      "help": "Multi-Faktor-Authentifizierung (MFA) bedeutet: Zum Einloggen brauchen Sie nicht nur ein Passwort, sondern zusätzlich einen zweiten Faktor — z. B. einen Code aus einer App auf Ihrem Smartphone. Selbst wenn jemand Ihr Passwort stiehlt, kann er sich ohne den zweiten Faktor nicht einloggen. MFA blockiert über 99% aller Kontoübernahmen.",
       "maturity": {
         "level0": "Kein MFA im Einsatz",
         "level1": "MFA für einzelne Systeme (z.B. nur Cloud-E-Mail)",
@@ -569,6 +900,7 @@
     "mcQ2": {
       "title": "Wird vertrauliche Kommunikation verschlüsselt (z.B. verschlüsselte E-Mails, sichere Videokonferenzen)?",
       "tooltip": "Gesicherte Kommunikation schützt vor Abhören und Manipulation. NIS2 fordert gesicherte Sprach-, Video- und Textkommunikation (§30 Abs. 2 Nr. 10 BSIG).",
+      "help": "Verschlüsselte Kommunikation bedeutet, dass E-Mails und Videokonferenzen nicht von Dritten mitgelesen werden können. Für E-Mails gibt es z. B. S/MIME oder die Transportverschlüsselung TLS. Für Videokonferenzen bieten Dienste wie Microsoft Teams oder Zoom Ende-zu-Ende-Verschlüsselung an.",
       "maturity": {
         "level0": "Keine verschlüsselte Kommunikation",
         "level1": "Teilweise verschlüsselt (z.B. nur interne Chats)",
@@ -579,15 +911,49 @@
     "mcQ3": {
       "title": "Haben Sie sichere Kommunikationsmittel für Notfälle (z.B. alternative Kanäle bei IT-Ausfall)?",
       "tooltip": "Gesicherte Notfallkommunikation stellt sicher, dass Ihr Krisenstab auch bei IT-Ausfall erreichbar bleibt (§30 Abs. 2 Nr. 10 BSIG).",
+      "help": "Wenn Ihre gesamte IT ausfällt, funktionieren auch E-Mail und Teams nicht mehr. Für diesen Fall brauchen Sie einen Notfallkanal — z. B. eine Telefonliste auf Papier, eine Messenger-Gruppe auf privaten Handys oder einen separaten Dienst. Dieser Kanal muss vorher festgelegt und getestet sein.",
       "maturity": {
         "level0": "Keine Notfallkommunikation vorbereitet",
         "level1": "Private Handynummern als informeller Notfallkanal",
         "level2": "Definierter Notfallkanal, aber nicht getestet",
         "level3": "Getestete Notfallkommunikation mit sicheren, unabhängigen Kanälen"
       }
+    },
+    "mcQ4": {
+      "title": "Nutzen Sie kontextbasierte Zugriffsrichtlinien (z.B. abhängig von Standort, Gerät oder Uhrzeit)?",
+      "tooltip": "Conditional Access erlaubt differenzierte Zugriffsregeln basierend auf dem Kontext der Anmeldung — z.B. strengere Anforderungen bei externem Zugriff oder unbekannten Geräten.",
+      "help": "Kontextbasierte Zugriffsrichtlinien passen die Sicherheitsanforderungen an die Situation an. Beispiel: Ein Mitarbeiter, der sich vom Büro-PC einloggt, braucht nur sein Passwort. Derselbe Mitarbeiter, der sich vom Ausland über ein fremdes WLAN einloggt, muss zusätzlich MFA nutzen. So wird Sicherheit gezielt dort erhöht, wo das Risiko größer ist.",
+      "maturity": {
+        "level0": "Keine kontextbasierten Zugriffsregeln",
+        "level1": "Grundlegende Einschränkungen (z.B. VPN-Pflicht von extern)",
+        "level2": "Kontextbasierte Regeln für kritische Systeme (z.B. IP-Beschränkung, Geräteprüfung)",
+        "level3": "Umfassende Conditional-Access-Richtlinien mit Risikobewertung je nach Kontext"
+      }
+    },
+    "mcQ5": {
+      "title": "Ist die Kommunikation zwischen Ihren Standorten und Außendienstmitarbeitern durchgängig verschlüsselt?",
+      "tooltip": "Standortübergreifende Kommunikation über öffentliche Netze muss verschlüsselt sein. Site-to-Site-VPN und Always-on-VPN für mobile Geräte sind bewährte Maßnahmen.",
+      "help": "Wenn Ihre Mitarbeiter zwischen Standorten oder aus dem Homeoffice kommunizieren, laufen die Daten über das öffentliche Internet. Ohne VPN (Virtual Private Network) können diese Daten theoretisch abgefangen werden. Eine VPN-Verbindung verschlüsselt den gesamten Datenverkehr — wie ein privater Tunnel durch das Internet.",
+      "maturity": {
+        "level0": "Keine standortübergreifende Verschlüsselung",
+        "level1": "VPN vorhanden, aber nicht konsequent genutzt",
+        "level2": "VPN-Pflicht für Fernzugriff, aber nicht alle Verbindungen abgesichert",
+        "level3": "Durchgängige Verschlüsselung aller standortübergreifenden Verbindungen inkl. Always-on-VPN"
+      }
     }
   },
   "check": {
+    "intro": {
+      "title": "NIS2-Betroffenheitsprüfung",
+      "subtitle": "Finden Sie in 3 einfachen Schritten heraus, ob Ihr Unternehmen unter die NIS2-Richtlinie fällt — und welche Pflichten damit verbunden sind.",
+      "howTitle": "So funktioniert's",
+      "step1": "Wählen Sie Ihren Wirtschaftssektor und Teilsektor aus",
+      "step2": "Geben Sie Mitarbeiterzahl und Jahresumsatz an",
+      "step3": "Sofort erfahren: Betroffenheit, Einstufung und Rechtsgrundlage",
+      "duration": "Unter 1 Minute",
+      "anonymous": "Keine Daten werden gespeichert",
+      "cta": "Betroffenheit prüfen"
+    },
     "title": "NIS2-Betroffenheitsprüfung",
     "subtitle": "Prüfen Sie in wenigen Schritten, ob Ihr Unternehmen von NIS2 betroffen ist",
     "steps": {
@@ -640,22 +1006,123 @@
     }
   },
   "gapAnalysis": {
+    "intro": {
+      "title": "NIS2 Gap-Analyse",
+      "subtitle": "Bewerten Sie systematisch Ihren Umsetzungsstand in allen 10 NIS2-Maßnahmenbereichen und erhalten Sie einen individuellen Report mit priorisierten Handlungsempfehlungen.",
+      "timelineTitle": "Ihr Weg zum Report",
+      "timeline": {
+        "core": {
+          "title": "Kernanalyse",
+          "desc": "30 Fragen, ca. 10 Min."
+        },
+        "milestone": {
+          "title": "Zwischenergebnis",
+          "desc": "Score-Vorschau + Report-Zugang"
+        },
+        "results": {
+          "title": "Ergebnis-Dashboard",
+          "desc": "Scores, Empfehlungen, PDF-Report"
+        },
+        "advanced": {
+          "title": "Vertiefung (optional)",
+          "desc": "+20 Fragen für genauere Ergebnisse"
+        }
+      },
+      "featuresTitle": "Was Sie erhalten",
+      "features": {
+        "pdf": {
+          "title": "PDF-Report",
+          "desc": "Umfassender Report mit Deckblatt, Scores, Empfehlungen und Roadmap."
+        },
+        "scores": {
+          "title": "Kategorien-Scores",
+          "desc": "Ampel-Bewertung für alle 10 NIS2-Maßnahmenbereiche."
+        },
+        "roadmap": {
+          "title": "3-Phasen-Roadmap",
+          "desc": "Priorisierter Umsetzungsfahrplan mit Zeitrahmen und Kosten."
+        },
+        "recs": {
+          "title": "30 Handlungsempfehlungen",
+          "desc": "Mit Priorität, Aufwand, erstem Schritt und BSI-Referenz."
+        }
+      },
+      "duration": "Ca. 10 Minuten",
+      "autosave": "Fortschritt wird automatisch gespeichert",
+      "local": "Daten bleiben im Browser",
+      "cta": "Gap-Analyse starten",
+      "faqTitle": "Häufige Fragen",
+      "faq": {
+        "q1": {
+          "question": "Kann ich die Analyse unterbrechen und später fortsetzen?",
+          "answer": "Ja. Ihr Fortschritt wird automatisch in Ihrem Browser gespeichert. Sie können den Tab schließen und jederzeit zurückkehren — Ihre Antworten sind noch da."
+        },
+        "q2": {
+          "question": "Was ist der Unterschied zwischen Kernanalyse und Vertiefung?",
+          "answer": "Die Kernanalyse (30 Fragen, 3 pro Kategorie) deckt die wichtigsten Aspekte ab und reicht für einen vollständigen Report. Die Vertiefung (+20 Fragen) differenziert bei fortgeschrittenen Maßnahmen und liefert genauere Scores."
+        },
+        "q3": {
+          "question": "Werden meine Daten gespeichert oder übertragen?",
+          "answer": "Nein. Alle Daten bleiben ausschließlich in Ihrem Browser (localStorage). Es werden keine Daten an unsere Server übertragen. Beim Löschen der Browserdaten werden auch Ihre Antworten entfernt."
+        },
+        "q4": {
+          "question": "Brauche ich Vorwissen für die Analyse?",
+          "answer": "Nein, kein Fachwissen nötig. Jede Frage bietet eine aufklappbare Hilfe ('Was bedeutet das?'), die den Fachbegriff verständlich erklärt — mit Beispielen aus dem Unternehmensalltag. Die Reifegrad-Stufen (0–3) beschreiben klar, was jeweils gemeint ist."
+        }
+      }
+    },
     "title": "NIS2 Gap-Analyse",
     "subtitle": "Bewerten Sie Ihren Umsetzungsstand in den 10 Maßnahmenbereichen nach Art. 21 Abs. 2 NIS2-RL",
     "progress": {
       "category": "Bereich {current} von {total}",
       "overall": "Gesamtfortschritt",
       "detail": "{answered} von {total} Fragen beantwortet",
-      "percentage": "{value}%"
+      "percentage": "{value}%",
+      "quickCheckBonus": "Ihr Schnellcheck-Ergebnis wurde berücksichtigt — Sie starten mit einem Vorsprung!",
+      "autoSaved": "Ihr Fortschritt wird automatisch in Ihrem Browser gespeichert. Sie können jederzeit unterbrechen und später weitermachen.",
+      "timeRemaining": "Noch ca. {minutes} Min.",
+      "completionHint": {
+        "overHalfway": "Mehr als die Hälfte geschafft — weiter so!",
+        "nearlyFinished": "Fast geschafft — nur noch wenige Fragen!",
+        "almostDone": "Gleich haben Sie es — letzte Fragen!"
+      }
     },
     "navigation": {
       "back": "Zurück",
       "next": "Weiter",
-      "showResults": "Ergebnisse anzeigen"
+      "showResults": "Ergebnisse anzeigen",
+      "coreComplete": "Kernanalyse abschließen"
+    },
+    "phase": {
+      "core": "Kernanalyse",
+      "advanced": "Vertiefungsphase",
+      "advancedSubtitle": "20 zusätzliche Fragen für genauere Scores",
+      "questionsLabel": "Fragen",
+      "advancedIntro": "Diese Fragen verfeinern Ihren Score — sie messen fortgeschrittene Maßnahmen, die Ihren Reifegrad differenzierter abbilden."
+    },
+    "reset": {
+      "phase": "Aktuelle Phase zurücksetzen",
+      "all": "Komplett neu starten",
+      "confirmPhase": "Alle Antworten der Phase \"{phase}\" werden gelöscht. Fortfahren?",
+      "confirmAll": "Alle Antworten werden gelöscht und die Analyse startet von vorne. Fortfahren?"
+    },
+    "milestone": {
+      "title": "Ihre Kernanalyse ist abgeschlossen!",
+      "subtitle": "30 von 50 Fragen beantwortet — das reicht für einen vollständigen Report mit allen Empfehlungen.",
+      "scoreLabel": "Ihr aktueller Reifegrad",
+      "reportButton": "Ergebnisse & Report anzeigen",
+      "deepenButton": "Ergebnisse verfeinern (+20 Fragen, ca. 7 Min.)",
+      "laterNote": "Sie können die Vertiefung auch später nachholen.",
+      "trafficLight": {
+        "red": "Erheblicher Handlungsbedarf",
+        "yellow": "Verbesserungsbedarf",
+        "green": "Gute Umsetzung"
+      }
     },
     "question": {
       "selectMaturity": "Wählen Sie den aktuellen Umsetzungsstand:",
-      "tooltip": "Erläuterung"
+      "tooltip": "Erläuterung",
+      "helpToggle": "Was bedeutet das?"
     },
     "maturityOptions": {
       "level0": "Stufe 0: {description}",
@@ -665,6 +1132,10 @@
     },
     "validation": {
       "required": "Bitte beantworten Sie diese Frage"
+    },
+    "completion": {
+      "title": "Analyse abgeschlossen!",
+      "subtitle": "Ihr persönlicher NIS2-Report wird vorbereitet..."
     }
   },
   "recommendations": {
@@ -767,10 +1238,140 @@
       "title": "Sichere Kommunikationskanäle einrichten",
       "description": "Stellen Sie verschlüsselte Kommunikationskanäle für vertrauliche Geschäftsinhalte und Notfälle bereit.",
       "firstStep": "Richten Sie einen verschlüsselten Messenger (z.B. Signal) als Notfall-Kommunikationskanal ein und teilen Sie die Kontaktdaten im Krisenstab."
+    },
+    "ra3": {
+      "title": "IT-Asset-Register und Risikobehandlungsplan erstellen",
+      "description": "Erstellen Sie ein vollständiges Inventar aller IT-Assets und definieren Sie für jedes identifizierte Risiko einen Behandlungsplan (Vermeiden, Reduzieren, Übertragen, Akzeptieren).",
+      "firstStep": "Erstellen Sie eine Tabelle mit den Spalten: Asset-Name, Typ, Standort, Verantwortlicher, Kritikalität (hoch/mittel/niedrig) und letzte Überprüfung.",
+      "checklist": [
+        "IT-Asset-Inventar erstellen (Hardware, Software, Daten, Netzwerk)",
+        "Kritikalität jedes Assets bewerten",
+        "Risiken pro Asset identifizieren",
+        "Behandlungsstrategie pro Risiko festlegen",
+        "Risikobehandlungspläne dokumentieren",
+        "Regelmäßige Aktualisierung (mind. jährlich) planen"
+      ]
+    },
+    "ih3": {
+      "title": "NIS2-konformen Meldeprozess nach §32 BSIG etablieren",
+      "description": "Etablieren Sie einen dokumentierten Meldeprozess für erhebliche Sicherheitsvorfälle mit den drei gesetzlichen Meldestufen: Erstmeldung (24h), Folgemeldung (72h) und Abschlussbericht (1 Monat).",
+      "firstStep": "Erstellen Sie ein Meldepflicht-Flowchart: Vorfall erkannt → Erheblich? → 24h-Erstmeldung an BSI → 72h-Update → Abschlussbericht innerhalb eines Monats.",
+      "checklist": [
+        "Kriterien für 'erheblichen Sicherheitsvorfall' definieren",
+        "24h-Erstmeldung-Vorlage erstellen",
+        "72h-Folgemeldung-Vorlage erstellen",
+        "Abschlussbericht-Vorlage erstellen",
+        "BSI-Kontaktdaten und Meldewege hinterlegen",
+        "Meldeprozess regelmäßig üben"
+      ]
+    },
+    "bc3": {
+      "title": "Business-Impact-Analyse (BIA) durchführen",
+      "description": "Führen Sie eine strukturierte BIA durch, um kritische Geschäftsprozesse zu identifizieren und deren maximale Ausfalltoleranz (RTO) sowie akzeptablen Datenverlust (RPO) zu bestimmen.",
+      "firstStep": "Identifizieren Sie Ihre 10 wichtigsten Geschäftsprozesse und bewerten Sie für jeden: Auswirkung eines 1-Stunden-, 1-Tages- und 1-Wochen-Ausfalls.",
+      "checklist": [
+        "Geschäftsprozesse vollständig auflisten",
+        "IT-Abhängigkeiten pro Prozess dokumentieren",
+        "RTO-Werte (max. Ausfallzeit) festlegen",
+        "RPO-Werte (max. Datenverlust) festlegen",
+        "Mindestressourcen für Notbetrieb definieren",
+        "Ergebnisse mit Geschäftsleitung abstimmen"
+      ]
+    },
+    "sc3": {
+      "title": "Lieferanten-Sicherheitsbewertung systematisieren",
+      "description": "Implementieren Sie einen standardisierten Prozess zur Bewertung der IT-Sicherheit Ihrer Lieferanten, einschließlich regelmäßiger Überprüfung und vertraglicher Sicherheitsanforderungen.",
+      "firstStep": "Erstellen Sie einen Lieferanten-Sicherheitsfragebogen mit 15-20 Fragen zu Zugriffsschutz, Verschlüsselung, Incident Management und Zertifizierungen.",
+      "checklist": [
+        "Lieferantenverzeichnis mit Kritikalitätsstufen erstellen",
+        "Sicherheitsfragebogen für Lieferanten entwickeln",
+        "Vertragliche Sicherheitsklauseln definieren",
+        "Audit-Rechte in Verträgen vereinbaren",
+        "Jährliche Neubewertung kritischer Lieferanten planen",
+        "Unterauftragnehmer-Klausel in Verträge aufnehmen"
+      ]
+    },
+    "ad3": {
+      "title": "Strukturierten Patch-Management-Prozess einführen",
+      "description": "Implementieren Sie einen Patch-Management-Prozess mit definierten Zeitfenstern: Kritische Patches innerhalb 24-48h, hohe Priorität innerhalb 7 Tagen, mittlere innerhalb 30 Tagen.",
+      "firstStep": "Erstellen Sie eine vollständige Liste aller eingesetzten Software und Betriebssysteme mit deren aktuellen Patch-Ständen.",
+      "checklist": [
+        "Software-Inventar mit Versionsnummern erstellen",
+        "Patch-Prioritäten und Zeitfenster definieren",
+        "Test-Prozess vor Rollout festlegen",
+        "Automatische Updates wo möglich aktivieren",
+        "Ausnahme-Prozess für nicht-patchbare Systeme dokumentieren",
+        "Patch-Compliance regelmäßig prüfen und berichten"
+      ]
+    },
+    "ea3": {
+      "title": "Security-KPIs und Management-Reporting einführen",
+      "description": "Definieren Sie messbare Sicherheitskennzahlen und berichten Sie diese regelmäßig an die Geschäftsleitung. Dies erfüllt gleichzeitig die Geschäftsleitungspflichten nach §38 BSIG.",
+      "firstStep": "Starten Sie mit 5 Basis-KPIs: Anzahl offene Schwachstellen, Patch-Compliance-Rate, Schulungsquote, Backup-Erfolgsrate, Anzahl Sicherheitsvorfälle/Monat.",
+      "checklist": [
+        "KPI-Set definieren (5-10 Kennzahlen)",
+        "Datenquellen und Erhebungsmethoden identifizieren",
+        "Erhebungsrhythmus festlegen (monatlich/quartalsweise)",
+        "Berichtsformat/Dashboard erstellen",
+        "Zielwerte pro KPI festlegen",
+        "Quartalsweise Geschäftsleitungs-Briefings planen"
+      ]
+    },
+    "ch3": {
+      "title": "Geschäftsleitungs-Schulungsprogramm nach §38 BSIG einrichten",
+      "description": "Richten Sie ein regelmäßiges Schulungsprogramm für die Geschäftsleitung ein. Nach §38 BSIG sind Geschäftsleiter persönlich verpflichtet, Risikomanagementmaßnahmen zu genehmigen und deren Umsetzung zu überwachen.",
+      "firstStep": "Organisieren Sie ein erstes NIS2-Briefing für die Geschäftsleitung: Betroffenheit, persönliche Haftung (§38 BSIG), Bußgeldrisiko und nächste Schritte.",
+      "checklist": [
+        "NIS2-Überblick-Briefing für Geschäftsleitung durchführen",
+        "Persönliche Haftungsrisiken nach §38 BSIG erläutern",
+        "Jährlichen Schulungsplan für Geschäftsleitung erstellen",
+        "Pflichtschulung terminieren und durchführen",
+        "Teilnahme dokumentieren und archivieren",
+        "Genehmigungspflichten für Risikomanagement definieren"
+      ]
+    },
+    "cr3": {
+      "title": "Zertifikats- und Schlüsselmanagement einführen",
+      "description": "Implementieren Sie ein zentrales Management für SSL/TLS-Zertifikate und kryptographische Schlüssel mit automatischem Ablauf-Monitoring und dokumentiertem Erneuerungsprozess.",
+      "firstStep": "Erstellen Sie eine Übersicht aller SSL/TLS-Zertifikate mit Ablaufdatum, Aussteller und verantwortlicher Person.",
+      "checklist": [
+        "Zertifikatsinventar erstellen",
+        "Automatisches Ablauf-Monitoring einrichten",
+        "Erneuerungsprozess dokumentieren",
+        "Schlüsselspeicherung absichern (HSM oder Vault)",
+        "Schlüsselrotationsrichtlinie erstellen",
+        "Krypto-Agilität für Algorithmen-Wechsel prüfen"
+      ]
+    },
+    "ac3": {
+      "title": "Privileged Access Management (PAM) einführen",
+      "description": "Implementieren Sie besondere Schutzmaßnahmen für privilegierte Zugänge (Admin-Accounts): MFA, Protokollierung aller Aktivitäten und regelmäßige Rezertifizierung.",
+      "firstStep": "Erstellen Sie eine vollständige Liste aller Admin-Accounts und prüfen Sie, ob jeder einzelne noch benötigt wird und ob MFA aktiviert ist.",
+      "checklist": [
+        "Alle Admin-Accounts inventarisieren",
+        "Unnötige privilegierte Rechte entziehen",
+        "MFA für alle Admin-Accounts aktivieren",
+        "Aktivitätsprotokollierung für Admin-Zugriffe einrichten",
+        "Regelmäßige Rezertifizierung (quartalsweise) planen",
+        "Notfall-Zugangsverfahren (Break-Glass) definieren"
+      ]
+    },
+    "mc3": {
+      "title": "Sichere Standortvernetzung und Mobile-Access umsetzen",
+      "description": "Stellen Sie sicher, dass alle standortübergreifenden Verbindungen und der Fernzugriff von Mitarbeitern durchgängig verschlüsselt sind.",
+      "firstStep": "Prüfen Sie, ob VPN-Verbindungen für alle externen Zugriffe erzwungen werden und ob Standort-zu-Standort-Verbindungen verschlüsselt sind.",
+      "checklist": [
+        "VPN-Nutzung für externen Zugriff erzwingen",
+        "Site-to-Site-VPN für Standortvernetzung einrichten",
+        "Always-on-VPN für mobile Geräte konfigurieren",
+        "Split-Tunneling-Risiken bewerten und ggf. deaktivieren",
+        "VPN-Konfiguration härten (aktuelle Cipher Suites)",
+        "Fallback-Kommunikationskanäle für Notfälle definieren"
+      ]
     }
   },
   "results": {
-    "title": "Ihre NIS2-Readiness-Ergebnisse",
+    "title": "Ihr persönlicher NIS2-Report",
     "subtitle": "Auswertung Ihrer Gap-Analyse nach Art. 21 Abs. 2 NIS2-RL / §30 BSIG",
     "disclaimer": {
       "text": "Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität. Jede Maßnahme muss angemessen und wirksam für Ihr spezifisches Risikoprofil umgesetzt sein (§30 Abs. 1 BSIG). Diese Auswertung ersetzt keine Rechtsberatung oder professionelle Sicherheitsbewertung."
@@ -802,12 +1403,12 @@
       "strategic": "Strategisch"
     },
     "quickWins": {
-      "title": "Quick Wins — sofort umsetzbare Maßnahmen",
+      "title": "Ihre Quick Wins — sofort umsetzbare Maßnahmen",
       "subtitle": "Die wirkungsvollsten Maßnahmen, die Sie kurzfristig umsetzen können",
       "firstStep": "Erster Schritt"
     },
     "recommendations": {
-      "title": "Handlungsempfehlungen nach Kategorie",
+      "title": "Ihre personalisierten Handlungsempfehlungen",
       "subtitle": "Sortiert nach Dringlichkeit — Rot-Bereiche zuerst",
       "firstStep": "Nächster Schritt",
       "legalReference": "Rechtsgrundlage",
@@ -815,19 +1416,71 @@
     },
     "actions": {
       "retake": "Gap-Analyse wiederholen",
-      "downloadPdf": "PDF herunterladen",
+      "downloadPdf": "Ihren persönlichen Maßnahmenplan herunterladen",
       "pdfComingSoon": "Verfügbar in Kürze"
+    },
+    "deepenBanner": {
+      "title": "Ergebnisse verfeinern?",
+      "text": "20 Vertiefungsfragen für genauere Scores und detailliertere Empfehlungen (~7 Min.)",
+      "button": "Jetzt vertiefen"
+    },
+    "analysisDepth": {
+      "core": "Kernanalyse (30 Fragen)",
+      "full": "Vollständige Analyse (50 Fragen)"
     },
     "bsiLink": "BSI IT-Grundschutz-Kompendium",
     "noData": {
       "title": "Keine Ergebnisse verfügbar",
       "text": "Sie haben die Gap-Analyse noch nicht abgeschlossen. Bitte führen Sie zuerst die Analyse durch.",
       "cta": "Zur Gap-Analyse"
+    },
+    "faq": {
+      "title": "Häufige Fragen zu Ihren Ergebnissen",
+      "q1": {
+        "question": "Was bedeuten die Ampelfarben (rot/gelb/grün)?",
+        "answer": "Rot bedeutet erheblicher Handlungsbedarf (unter 40%), Gelb zeigt Verbesserungsbedarf (40–69%), und Grün signalisiert eine gute Umsetzung (ab 70%). Die Schwellenwerte orientieren sich an gängigen Reifegradmodellen."
+      },
+      "q2": {
+        "question": "Bin ich mit einem grünen Score automatisch NIS2-konform?",
+        "answer": "Nein. Ein hoher Score zeigt, dass Ihre Selbsteinschätzung auf eine gute Umsetzung hindeutet. NIS2-Konformität erfordert jedoch eine professionelle Bewertung der Angemessenheit und Wirksamkeit Ihrer Maßnahmen (§30 Abs. 1 BSIG)."
+      },
+      "q3": {
+        "question": "Kann ich den PDF-Report an meinen IT-Dienstleister weiterleiten?",
+        "answer": "Ja, der PDF-Report ist genau dafür gedacht. Er enthält alle Scores, Handlungsempfehlungen und die Roadmap — ideal als Gesprächsgrundlage für IT-Dienstleister, Berater oder die Geschäftsleitung."
+      },
+      "q4": {
+        "question": "Wie kann ich meinen Score verbessern?",
+        "answer": "Beginnen Sie mit den Quick Wins und den rot markierten Kategorien. Jede Handlungsempfehlung enthält einen konkreten ersten Schritt. Die 3-Phasen-Roadmap gibt Ihnen einen priorisierten Umsetzungsfahrplan."
+      },
+      "q5": {
+        "question": "Sind meine Ergebnisse noch gespeichert, wenn ich den Browser schließe?",
+        "answer": "Ja. Ihre Antworten und Ergebnisse werden im localStorage Ihres Browsers gespeichert und sind beim nächsten Besuch wieder verfügbar — bis Sie die Browserdaten löschen oder die Analyse zurücksetzen."
+      }
+    },
+    "consultation": {
+      "title": "Nächste Schritte",
+      "subtitle": "Ihr Report liefert die Grundlage — für die Umsetzung empfehlen wir professionelle Unterstützung.",
+      "email": {
+        "title": "Report teilen",
+        "desc": "PDF-Report an Berater, Geschäftsleitung oder IT-Dienstleister senden."
+      },
+      "audit": {
+        "title": "Gap-Audit beauftragen",
+        "desc": "Professionelle Prüfung durch zertifizierte IT-Sicherheitsberater."
+      },
+      "bsi": {
+        "title": "BSI-Ressourcen",
+        "desc": "BSI IT-Grundschutz-Kompendium und NIS2-Informationsportal nutzen."
+      }
     }
   },
   "pdf": {
     "title": "NIS2-Readiness-Report",
     "subtitle": "Ergebnis der NIS2-Bereitschaftsprüfung",
+    "analysisDepth": {
+      "core": "Kernanalyse (30 Fragen)",
+      "full": "Vollständige Analyse (50 Fragen)"
+    },
     "disclaimer": "Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität. Jede Maßnahme muss angemessen und wirksam für Ihr spezifisches Risikoprofil umgesetzt sein (§30 Abs. 1 BSIG). Diese Auswertung ersetzt keine Rechtsberatung oder professionelle Sicherheitsbewertung.",
     "rechtsstand": "Rechtsstand",
     "rechtstandDatum": "Februar 2026",
@@ -861,6 +1514,1041 @@
       "medium": "Mittel",
       "strategic": "Langfristig"
     },
-    "firstStep": "Erster Schritt"
+    "firstStep": "Erster Schritt",
+    "valueProposition": "Ihr individueller Cyber-Sicherheitsstatus \u2014 verständlich, umsetzbar, praxisnah.",
+    "summary": {
+      "title": "Auf einen Blick"
+    },
+    "cost": {
+      "contextIntro": "Berechnet für Ihr Unternehmensprofil",
+      "contextScaling": "Größenanpassung",
+      "contextNote": "Alle Werte sind Orientierungsgrößen, auf Ihre Unternehmensgröße angepasst.",
+      "tier": {
+        "basisschutz": "Stufe 1: Basisschutz",
+        "basisschutzSub": "Gesetzliches Minimum — sofort umsetzbare Grundmaßnahmen",
+        "erweitert": "Stufe 2: Erweitert",
+        "erweiterSub": "Optional: Solide Compliance — vor allem für Unternehmen mit Kunden-Audits oder Branchenanforderungen",
+        "nis2niveau": "Stufe 3: NIS2-Niveau",
+        "nis2niveauSub": "Strategisch: Vollständiger Schutz — für KRITIS, internationale Kunden oder ISO-27001-Zertifizierung"
+      },
+      "tierRecommended": "Empfohlener Einstieg",
+      "top5Title": "Top 5 Investitionen",
+      "measureLabel": "Maßnahme",
+      "costLabel": "Kosten",
+      "remainingCount": "weitere Maßnahmen (Details in Stufe 1–3 oben)",
+      "entryTitle": "Typisches Einstiegsprojekt",
+      "entrySub": "Quick-Win-Maßnahmen als Startpaket",
+      "entryIncludes": "Enthält u.a.:",
+      "daysLabel": "Tage",
+      "proportionalityTitle": "Gesetzliche Verhältnismäßigkeit",
+      "proportionalityText": "§30 Abs. 1 BSIG verlangt 'angemessene und verhältnismäßige' Maßnahmen. Sie müssen nicht alles auf einmal umsetzen.",
+      "proportionalityHint": "Die meisten KMU starten mit Stufe 1 (Basisschutz) und erreichen damit bereits den Großteil der geforderten Sicherheit.",
+      "roiTitle": "Was kostet Nichtstun?",
+      "downtimeLabel": "3 Tage IT-Ausfall — das kostet Sie:",
+      "disclaimer": "Die Kostenspannen basieren auf Marktpreisen bei voller externer Vergabe. Tatsächliche Kosten variieren je nach vorhandener Infrastruktur und Eigenleistung.",
+      "disclaimerInternal": "Viele Maßnahmen lassen sich intern mit überschaubarem Zeitbudget umsetzen — externe Unterstützung ist vor allem bei strategischen Themen (ISMS-Aufbau, Penetrationstests) sinnvoll.",
+      "revenuePercent": "entspricht ca.",
+      "revenuePercentOf": "des Jahresumsatzes",
+      "perEmployeeMonth": "pro MA/Monat",
+      "diyTitle": "Eigenleistung vs. externe Kosten",
+      "diyText": "Ein Großteil der Maßnahmen (ca. 60%) kann durch interne Arbeitszeit abgedeckt werden — das sind keine zusätzlichen Cash-Ausgaben, sondern Zeitinvestitionen Ihrer bestehenden Mitarbeiter. Nur strategische Themen (ISMS, Penetrationstests, Zertifizierungen) erfordern typischerweise externe Budgets.",
+      "revenueWarning": "Hinweis: Ihre Mitarbeiterzahl ist im Verhältnis zum Umsatz hoch. Die Kostenschätzung skaliert primär nach Mitarbeiterzahl — prüfen Sie im Erstgespräch, ob alle IT-Arbeitsplätze voll ausgestattet werden müssen."
+    },
+    "nonAffected": {
+      "label": "Derzeit nicht gesetzlich verpflichtet",
+      "benefits": "Dennoch empfehlenswert: Lieferkettenanforderungen großer Kunden, günstigere Cyberversicherung, Wettbewerbsvorteil bei Ausschreibungen.",
+      "coverTitle": "Warum dieser Report trotzdem wertvoll ist",
+      "coverPoint1": "Lieferkette: Große Kunden fordern zunehmend NIS2-konforme Zulieferer",
+      "coverPoint2": "Versicherung: Cyber-Versicherer belohnen nachweisbare Sicherheitsmaßnahmen mit besseren Konditionen",
+      "coverPoint3": "Wachstum: Bei Expansion über die Schwellenwerte sind Sie bereits vorbereitet"
+    },
+    "penalty": {
+      "contextTitle": "Was bedeutet das konkret?",
+      "scenario1": "Bei nachweislich umgesetzten Grundmaßnahmen (Stufe 1–2) sinkt das Bußgeldrisiko erheblich — die Behörde berücksichtigt Ihre Compliance-Bemühungen.",
+      "scenario2": "Die Maximalbeträge gelten bei wiederholten, schwerwiegenden Verstößen ohne jegliche Schutzmaßnahmen. Das typische Erstbußgeld für KMU liegt bei einem Bruchteil des Maximalwerts — vergleichbar mit dem DSGVO-Vollzug, wo 80% aller Bußgelder unter 50.000 € lagen.",
+      "scenario3": "Mit der Umsetzungs-Roadmap in diesem Report reduzieren Sie Ihr Haftungsrisiko systematisch — beginnend mit Quick Wins in den ersten 3 Monaten.",
+      "liabilityTitle": "Geschäftsleitungshaftung (§38 BSIG)",
+      "liabilityText": "Geschäftsleiter haften persönlich für die Umsetzung der Risikomanagementmaßnahmen. Diese Pflicht kann nicht auf Dritte delegiert werden.",
+      "liabilityDuty1": "Risikomanagementmaßnahmen genehmigen (§38 Abs. 1 BSIG)",
+      "liabilityDuty2": "Deren Umsetzung überwachen (§38 Abs. 1 BSIG)",
+      "liabilityDuty3": "An Schulungen teilnehmen (§38 Abs. 3 BSIG)",
+      "liabilityProtectiveTitle": "So schützen Sie sich als Geschäftsleiter",
+      "liabilityProtective1": "Dokumentieren Sie Ihre Freigabe der Risikomanagementmaßnahmen",
+      "liabilityProtective2": "Lassen Sie sich regelmäßig über den Umsetzungsstand berichten",
+      "liabilityProtective3": "Nehmen Sie an einer NIS2-Schulung teil (z.B. BSI, IHK)"
+    },
+    "cta": {
+      "title": "Ihr nächster Schritt",
+      "subtitle": "Von der Analyse zur Umsetzung — so geht es weiter.",
+      "option1Title": "Quick Wins sofort umsetzen",
+      "option1Text": "Starten Sie mit den als \"Schnell\" markierten Maßnahmen aus der Roadmap. Viele davon können intern umgesetzt werden — ohne externe Kosten, mit sofortiger Wirkung.",
+      "option2Title": "Ergebnisse mit Experten besprechen",
+      "option2Text": "Vereinbaren Sie ein 30-minütiges Erstgespräch — wir gehen Ihre Top-3-Lücken durch und prüfen, ob die Kostenschätzung für Ihren speziellen Fall reduziert werden kann. Kostenfrei und unverbindlich.",
+      "option3Title": "Begleitete NIS2-Umsetzung starten",
+      "option3Text": "Mit einem strukturierten Umsetzungsprogramm erreichen Sie innerhalb von 6–12 Monaten NIS2-Konformität — aufgeteilt in machbare Etappen, passend zu Ihrem Budget.",
+      "currentLabel": "Heute",
+      "targetLabel": "In 12 Monaten",
+      "urgencyTitle": "NIS2-Umsetzungsgesetz in Kraft",
+      "urgencyText": "Das NIS2-Umsetzungsgesetz ist seit dem 06.12.2025 in Kraft — Aufsichtsmaßnahmen können jederzeit beginnen. Die Behörden erwarten jetzt nachweisbare Schritte.",
+      "starterTitle": "Empfohlen: NIS2-Startcheck",
+      "starterText": "Quick-Win-Maßnahmen aus Stufe 1 umsetzen — intern oder begleitet. Danach wissen Sie: Wo stehen Sie, was fordert die Behörde, und was kostet Phase 2/3 wirklich?",
+      "contactTitle": "Nächster Schritt: Erstgespräch vereinbaren",
+      "contactSubtitle": "30 Minuten, kostenlos: Ihre Top-3-Lücken besprechen, Kostenschätzung prüfen, persönlichen Fahrplan erhalten.",
+      "contactPlaceholder": "Ihr NIS2-Berater: [Name / Firma]",
+      "contactDetails": "[E-Mail] | [Telefon] | [Calendly-Link]",
+      "footerNote": "Dieser Report wurde automatisch auf Basis eines von NIS2-Experten entwickelten Bewertungsmodells generiert. Im optionalen Erstgespräch passen wir die Empfehlungen an Ihre konkrete Situation an. Alle Angaben ohne Gewähr. Keine Rechtsberatung."
+    },
+    "rec": {
+      "benefit": {
+        "risk-analysis": "\u2192 Sie wissen genau, wo Ihre IT verwundbar ist — statt im Blindflug zu hoffen.",
+        "incident-handling": "\u2192 Kein Chaos im Ernstfall — Ihr Team weiß sofort, was zu tun ist.",
+        "business-continuity": "\u2192 Ihre wichtigsten Systeme laufen auch nach einem Angriff weiter.",
+        "supply-chain": "\u2192 Große Kunden vertrauen Ihnen, weil Sie Lieferkettensicherheit nachweisen können.",
+        "acquisition-development": "\u2192 Keine offenen Hintertüren durch veraltete Software oder fehlende Updates.",
+        "effectiveness-assessment": "\u2192 Sie können Ihrer Geschäftsleitung und Aufsicht jederzeit belegen, dass Sie handeln.",
+        "cyber-hygiene": "\u2192 90% weniger Angriffsfläche, weil Ihre Mitarbeiter Phishing erkennen.",
+        "cryptography": "\u2192 Selbst bei einem Datenleck bleiben Ihre sensiblen Daten geschützt.",
+        "access-control": "\u2192 Kein Ex-Mitarbeiter hat noch Zugriff, kein Praktikant sieht die Gehaltsliste.",
+        "authentication-communication": "\u2192 Ein gestohlenes Passwort reicht nicht mehr aus, um in Ihr System einzudringen."
+      },
+      "impact": {
+        "risk-analysis": "Was heißt das? Ohne Risikoanalyse wissen Sie nicht, wo Ihre größten Schwachstellen liegen — und können nicht gezielt investieren.",
+        "incident-handling": "Was heißt das? Ohne Notfallplan verlieren Sie im Ernstfall wertvolle Stunden — jede Minute Verzögerung erhöht den Schaden.",
+        "business-continuity": "Was heißt das? Wenn kritische Systeme ausfallen und kein Plan existiert, steht Ihr Betrieb still — mit direktem Umsatzverlust.",
+        "supply-chain": "Was heißt das? Große Kunden verlangen zunehmend Sicherheitsnachweise von Zulieferern — ohne diese verlieren Sie Aufträge.",
+        "acquisition-development": "Was heißt das? Veraltete Software und fehlende Updates sind das Einfallstor Nr. 1 für Cyberangriffe.",
+        "effectiveness-assessment": "Was heißt das? Ohne regelmäßige Prüfung wissen Sie nicht, ob Ihre Schutzmaßnahmen tatsächlich wirken.",
+        "cyber-hygiene": "Was heißt das? 90% aller Cyberangriffe beginnen mit menschlichem Fehlverhalten — Schulung ist der effektivste Schutz.",
+        "cryptography": "Was heißt das? Unverschlüsselte Daten sind wie offene Briefe — jeder kann mitlesen, der Zugriff erhält.",
+        "access-control": "Was heißt das? Wenn jeder auf alles zugreifen kann, genügt ein kompromittiertes Konto für den Totalschaden.",
+        "authentication-communication": "Was heißt das? Ohne MFA (Zwei-Faktor-Anmeldung) genügt ein gestohlenes Passwort für den Zugriff auf Ihre Systeme."
+      }
+    },
+    "executive": {
+      "title": "Management-Zusammenfassung",
+      "riskTitle": "Größte Lücken",
+      "quickWinTitle": "Sofort starten — ohne externes Budget",
+      "quickWinDays": "Tage",
+      "totalBasisschutz": "Gesamtkosten Basisschutz",
+      "ctaLine": "30-Minuten-Erstgespräch zur Einordnung Ihrer Ergebnisse — kostenfrei und unverbindlich",
+      "startHint": "Die meisten KMU starten mit Stufe 1 und verteilen Investitionen über 12 Monate.",
+      "targetLabel": "Ziel in 12 Monaten: über 80%",
+      "glossaryRef": "Alle Fachbegriffe (ISMS, BIA, MFA u.a.) sind im Glossar am Ende dieses Reports in Alltagssprache erklärt.",
+      "optionA": {
+        "title": "A — Intern starten",
+        "text": "Quick-Wins aus Phase 1 selbst umsetzen — ohne externes Budget"
+      },
+      "optionB": {
+        "title": "B — Erstgespräch buchen",
+        "text": "30 Min. kostenlos — wir prüfen, ob die Kostenschätzung für Ihren Fall reduziert werden kann"
+      },
+      "optionC": {
+        "title": "C — Stufe-1-Projekt anfragen",
+        "text": "Strukturierte Umsetzung in 3–6 Monaten, passend zu Ihrem Budget"
+      }
+    },
+    "miniCta": {
+      "title": "Nächster Schritt",
+      "text": "Starten Sie mit den Quick Wins — ohne externes Budget, ab heute wirksam. Detaillierte Handlungsoptionen finden Sie am Ende dieses Reports."
+    },
+    "appendix": {
+      "note": "Für Datenschutzbeauftragte und Auditoren — optional"
+    },
+    "cover": {
+      "quickWinsTitle": "Sofort umsetzbar",
+      "heroClaimTitle": "Was dieses Ergebnis für Sie bedeutet",
+      "heroClaim1": "Wo stehen Sie? Ihr Reifegrad im Vergleich zu den NIS2-Anforderungen",
+      "heroClaim2": "Was müssen Sie tun? Konkrete Maßnahmen, priorisiert nach Dringlichkeit",
+      "heroClaim3": "Was kostet es? Realistische Kostenschätzung mit Eigenleistungs-Anteil",
+      "trustAnchor": "Bewertungsgrundlage: §30 BSIG (Risikomanagementmaßnahmen) und Art. 21 NIS2-Richtlinie"
+    },
+    "glossary": {
+      "title": "Glossar",
+      "intro": "Sie können diesen Report auch ohne IT-Fachwissen lesen. Die wichtigsten Fachbegriffe sind hier in Alltagssprache erklärt.",
+      "isms": { "term": "ISMS", "def": "Informationssicherheits-Managementsystem — ein systematischer Ansatz, um die Informationssicherheit im Unternehmen zu planen, umzusetzen und kontinuierlich zu verbessern." },
+      "bia": { "term": "BIA", "def": "Business Impact Analysis — ermittelt, welche Geschäftsprozesse bei einem IT-Ausfall am stärksten betroffen sind und wie schnell sie wiederhergestellt werden müssen." },
+      "rto": { "term": "RTO", "def": "Recovery Time Objective — die maximal akzeptable Zeit, bis ein System nach einem Ausfall wieder funktioniert. Beispiel: RTO 4h = E-Mail muss innerhalb von 4 Stunden wieder laufen." },
+      "rpo": { "term": "RPO", "def": "Recovery Point Objective — wie viel Datenverlust akzeptabel ist. Beispiel: RPO 1h = Backups mindestens stündlich, damit maximal 1 Stunde Arbeit verloren geht." },
+      "bcm": { "term": "BCM", "def": "Business Continuity Management — Planung und Maßnahmen, damit Ihr Unternehmen auch bei IT-Ausfällen, Naturkatastrophen oder Cyberangriffen weiterarbeiten kann." },
+      "mfa": { "term": "MFA", "def": "Multi-Faktor-Authentifizierung — Anmeldung mit zwei oder mehr Faktoren (z.B. Passwort + SMS-Code). Schützt Konten, selbst wenn ein Passwort gestohlen wird." },
+      "pam": { "term": "PAM", "def": "Privileged Access Management — besondere Absicherung von Admin-Konten und kritischen Zugängen, die bei Missbrauch den größten Schaden anrichten können." },
+      "siem": { "term": "SIEM", "def": "Security Information and Event Management — Software, die sicherheitsrelevante Ereignisse aus allen IT-Systemen zentral sammelt und bei Auffälligkeiten Alarm schlägt." },
+      "soc": { "term": "SOC", "def": "Security Operations Center — ein Team (intern oder extern), das die IT-Sicherheit rund um die Uhr überwacht und auf Vorfälle reagiert." },
+      "ioc": { "term": "IoC", "def": "Indicator of Compromise — technische Hinweise (z.B. verdächtige IP-Adressen, Dateihashes), die darauf hindeuten, dass ein System kompromittiert wurde." },
+      "patchMgmt": { "term": "Patch Management", "def": "Der systematische Prozess, Sicherheitsupdates zeitnah auf allen Systemen einzuspielen — eine der wirksamsten Schutzmaßnahmen überhaupt." },
+      "zeroTrust": { "term": "Zero Trust", "def": "Sicherheitsansatz, bei dem keinem Nutzer und keinem Gerät automatisch vertraut wird — jeder Zugriff wird einzeln geprüft, auch innerhalb des Firmennetzwerks." },
+      "riskTreatment": { "term": "Risikobehandlungsplan", "def": "Dokument, das für jedes identifizierte Risiko festlegt, ob es vermieden, vermindert, übertragen oder akzeptiert wird — und wer bis wann dafür verantwortlich ist." },
+      "audit": { "term": "Audit", "def": "Systematische Prüfung, ob Ihre IT-Sicherheitsmaßnahmen den Anforderungen (z.B. NIS2, ISO 27001) entsprechen. Kann intern oder durch externe Prüfer erfolgen." },
+      "compliance": { "term": "Compliance", "def": "Die Einhaltung gesetzlicher Vorschriften und regulatorischer Anforderungen — im NIS2-Kontext: nachweisbare Umsetzung der IT-Sicherheitsmaßnahmen nach §30 BSIG." }
+    },
+    "roadmap": {
+      "visionTitle": "Ihr Unternehmen in 12 Monaten",
+      "vision1": "Dokumentierte Risikobewertung und klare Verantwortlichkeiten für IT-Sicherheit",
+      "vision2": "Getesteter Notfallplan — Ihr Team weiß, was bei einem Cyberangriff zu tun ist",
+      "vision3": "Nachweisbare Compliance für Kunden, Versicherer und Aufsichtsbehörden",
+      "vision4": "Weniger Ausfallrisiko, bessere Verhandlungsposition bei Cyberversicherungen",
+      "visionCta": "Von",
+      "visionCtaTo": "auf über 80% — Schritt für Schritt, in Ihrem Tempo."
+    },
+    "sectionSelector": {
+      "title": "PDF-Report konfigurieren",
+      "description": "Wählen Sie die Sektionen für Ihren PDF-Report aus.",
+      "coreSection": "Pflichtbereich",
+      "selectAll": "Alle",
+      "deselectAll": "Keine",
+      "generate": "PDF generieren",
+      "generating": "PDF wird erstellt...",
+      "sections": {
+        "cover": "Firmenprofil & Gesamtergebnis",
+        "categories": "Kategorie-Ergebnisse",
+        "recommendations": "Handlungsempfehlungen",
+        "penalty": "Bußgeldberechnung",
+        "costSummary": "Kostenschätzung",
+        "roadmap": "Umsetzungs-Roadmap",
+        "dsgvoOverlap": "DSGVO-Überlappung",
+        "iso27001": "ISO 27001 Crosswalk",
+        "dinSpec": "DIN SPEC 27076",
+        "evidence": "Nachweismanagement",
+        "sectorGuidance": "Branchenhinweise",
+        "kritis": "KRITIS-Einstufung",
+        "progress": "Umsetzungsfortschritt"
+      },
+      "notAvailable": "Nicht verfügbar"
+    }
+  },
+  "navigation": {
+    "quickCheck": "Schnellcheck",
+    "home": "Startseite",
+    "check": "Betroffenheitsprüfung",
+    "gapAnalysis": "Gap-Analyse",
+    "results": "Ergebnisse",
+    "meldepflichten": "Meldepflichten",
+    "geschaeftsleitung": "Geschäftsleitungsverantwortung",
+    "registrierung": "Registrierungshilfe",
+    "moreInfo": "Weitere Informationen"
+  },
+  "meldepflichten": {
+    "title": "Meldepflichten nach §32 BSIG",
+    "subtitle": "Dreistufiger Meldeprozess für erhebliche Sicherheitsvorfälle",
+    "intro": "Das NIS2-Umsetzungsgesetz verpflichtet betroffene Einrichtungen, erhebliche Sicherheitsvorfälle unverzüglich dem BSI zu melden. Der Meldeprozess umfasst drei Stufen mit festen Fristen.",
+    "stages": {
+      "title": "Die drei Meldestufen",
+      "stage1": {
+        "title": "Erstmeldung (24 Stunden)",
+        "deadline": "Innerhalb von 24 Stunden nach Kenntniserlangung",
+        "description": "Unverzügliche Erstmeldung an das BSI mit grundlegenden Informationen zum Vorfall.",
+        "content": "Erste Einschätzung: Art und Schwere des Vorfalls, vermuteter grenzüberschreitender Bezug, erste Verdachtsmomente zur Ursache.",
+        "legalBasis": "§32 Abs. 2 Nr. 1 BSIG"
+      },
+      "stage2": {
+        "title": "Folgemeldung (72 Stunden)",
+        "deadline": "Innerhalb von 72 Stunden nach Kenntniserlangung",
+        "description": "Aktualisierung der Erstmeldung mit detaillierteren Informationen.",
+        "content": "Aktualisierte Bewertung des Vorfalls: Schwere und Auswirkungen, Kompromittierungsindikatoren (IoCs), ergriffene und geplante Gegenmaßnahmen.",
+        "legalBasis": "§32 Abs. 2 Nr. 2 BSIG"
+      },
+      "stage3": {
+        "title": "Abschlussbericht (1 Monat)",
+        "deadline": "Spätestens einen Monat nach der Erstmeldung",
+        "description": "Umfassender Abschlussbericht über den Vorfall und die ergriffenen Maßnahmen.",
+        "content": "Detaillierte Beschreibung: Ursachenanalyse (Root Cause), Art der Bedrohung, ergriffene Abhilfemaßnahmen, grenzüberschreitende Auswirkungen, Lessons Learned.",
+        "legalBasis": "§32 Abs. 2 Nr. 3 BSIG"
+      }
+    },
+    "criteria": {
+      "title": "Wann liegt ein erheblicher Sicherheitsvorfall vor?",
+      "subtitle": "Ein Sicherheitsvorfall gilt nach §32 Abs. 4 BSIG als erheblich, wenn mindestens eines der folgenden Kriterien erfüllt ist:",
+      "items": {
+        "disruption": "Schwerwiegende Betriebsstörung der Dienste oder finanzielle Verluste für die Einrichtung",
+        "damage": "Erheblicher materieller oder immaterieller Schaden für andere natürliche oder juristische Personen"
+      }
+    },
+    "contacts": {
+      "title": "BSI-Meldewege",
+      "portal": "BSI-Meldeportal (empfohlen)",
+      "portalUrl": "https://meldestelle.bsi.bund.de",
+      "email": "E-Mail-Meldung",
+      "emailAddress": "meldestelle@bsi.bund.de",
+      "phone": "Telefonische Meldung (24/7)",
+      "phoneNumber": "+49 228 99 9582-5500"
+    },
+    "dsgvoComparison": {
+      "title": "Vergleich: NIS2 vs. DSGVO-Meldepflichten",
+      "nis2": "NIS2/BSIG",
+      "dsgvo": "DSGVO",
+      "deadline": "Frist",
+      "nis2Deadline": "24 Stunden (Erstmeldung)",
+      "dsgvoDeadline": "72 Stunden",
+      "authority": "Meldestelle",
+      "nis2Authority": "BSI",
+      "dsgvoAuthority": "Datenschutzaufsichtsbehörde",
+      "scope": "Bezug",
+      "nis2Scope": "Erhebliche Sicherheitsvorfälle",
+      "dsgvoScope": "Verletzung personenbezogener Daten",
+      "parallel": "Hinweis: Bei einem Vorfall, der sowohl NIS2 als auch DSGVO betrifft, müssen beide Meldewege parallel bedient werden."
+    },
+    "legalBasis": "Rechtsgrundlage: §32 BSIG i.V.m. Art. 23 NIS2-RL"
+  },
+  "geschaeftsleitung": {
+    "title": "Geschäftsleitungsverantwortung nach §38 BSIG",
+    "subtitle": "Persönliche Pflichten und Haftungsrisiken der Geschäftsleitung",
+    "intro": "Das NIS2-Umsetzungsgesetz begründet in §38 BSIG eine persönliche Verantwortung der Geschäftsleitung für die IT-Sicherheit. Die Pflichten sind nicht delegierbar und umfassen Genehmigung, Überwachung und Schulung.",
+    "duties": {
+      "title": "Die drei Kernpflichten",
+      "implement": {
+        "title": "Risikomanagementmaßnahmen genehmigen",
+        "description": "Die Geschäftsleitung muss die nach §30 BSIG erforderlichen Risikomanagementmaßnahmen genehmigen.",
+        "legalBasis": "§38 Abs. 1 Satz 1 BSIG"
+      },
+      "monitor": {
+        "title": "Umsetzung überwachen",
+        "description": "Die Geschäftsleitung muss die Umsetzung der genehmigten Maßnahmen überwachen und kann für Verstöße verantwortlich gemacht werden.",
+        "legalBasis": "§38 Abs. 1 Satz 2 BSIG"
+      },
+      "train": {
+        "title": "Regelmäßige Schulungen",
+        "description": "Die Geschäftsleitung muss regelmäßig an Schulungen teilnehmen, um ausreichende Kenntnisse und Fähigkeiten zur Erkennung und Bewertung von Risiken zu erwerben.",
+        "legalBasis": "§38 Abs. 3 BSIG"
+      }
+    },
+    "liability": {
+      "title": "Haftung und Konsequenzen",
+      "personalLiability": {
+        "title": "Persönliche Haftung",
+        "description": "Geschäftsleiter haften der Einrichtung für Schäden, die durch Verletzung ihrer Pflichten nach §38 BSIG entstehen, nach den für die Rechtsform geltenden Regeln."
+      },
+      "noWaiver": {
+        "title": "Kein Haftungsverzicht möglich",
+        "description": "Ein Verzicht auf Schadensersatzansprüche der Einrichtung gegen die Geschäftsleitung ist unwirksam. Vergleiche sind nur zulässig, wenn die Einrichtung zahlungsunfähig ist."
+      },
+      "training": {
+        "title": "Schulungspflicht",
+        "description": "Die Geschäftsleitung muss regelmäßig an Schulungen teilnehmen. Dies kann nicht vollständig an Dritte delegiert werden."
+      }
+    },
+    "checklist": {
+      "title": "Umsetzungs-Checkliste für die Geschäftsleitung",
+      "governance": {
+        "title": "Governance",
+        "items": {
+          "riskApproval": "Risikomanagementmaßnahmen nach §30 BSIG formal genehmigt",
+          "responsibility": "IT-Sicherheitsverantwortlichkeiten dokumentiert und kommuniziert",
+          "budget": "Angemessenes Budget für IT-Sicherheit bereitgestellt"
+        }
+      },
+      "training": {
+        "title": "Schulung",
+        "items": {
+          "schedule": "Jährlicher Schulungsplan für Geschäftsleitung erstellt",
+          "completed": "Aktuelle NIS2/IT-Sicherheitsschulung absolviert",
+          "documented": "Schulungsteilnahme dokumentiert und archiviert"
+        }
+      },
+      "monitoring": {
+        "title": "Überwachung",
+        "items": {
+          "reporting": "Regelmäßiges IT-Sicherheits-Reporting eingerichtet",
+          "kpis": "Sicherheits-KPIs definiert und überwacht",
+          "review": "Mindestens quartalsweise Management-Reviews durchgeführt"
+        }
+      },
+      "legal": {
+        "title": "Rechtliche Absicherung",
+        "items": {
+          "insurance": "D&O-Versicherung auf NIS2-Deckung geprüft",
+          "documentation": "Alle Genehmigungsentscheidungen dokumentiert",
+          "compliance": "Compliance-Management-System implementiert"
+        }
+      }
+    },
+    "legalBasis": "Rechtsgrundlage: §38 BSIG i.V.m. Art. 20 NIS2-RL"
+  },
+  "registrierung": {
+    "title": "Registrierungshilfe nach §§33-34 BSIG",
+    "subtitle": "Schritt-für-Schritt-Anleitung zur BSI-Registrierung",
+    "intro": "Betroffene Einrichtungen müssen sich innerhalb von drei Monaten nach Inkrafttreten des NIS2UmsG beim BSI registrieren. Die Registrierung erfolgt über das BSI-Portal.",
+    "deadline": {
+      "title": "Fristen",
+      "effective": "NIS2UmsG in Kraft seit: 06.01.2026",
+      "registration": "Registrierungsfrist: 06.04.2026",
+      "note": "Die Registrierungspflicht gilt ab dem Zeitpunkt, zu dem die Einrichtung erstmals unter die Regelungen fällt."
+    },
+    "steps": {
+      "title": "Registrierungsschritte",
+      "step1": {
+        "title": "1. Betroffenheit prüfen",
+        "description": "Prüfen Sie anhand der Betroffenheitsprüfung, ob Ihr Unternehmen unter NIS2 fällt und welcher Kategorie es zugeordnet wird."
+      },
+      "step2": {
+        "title": "2. Unternehmenskonto anlegen",
+        "description": "Erstellen Sie ein Unternehmenskonto im Mein Unternehmenskonto (MUK) Portal des Bundes, falls noch nicht vorhanden."
+      },
+      "step3": {
+        "title": "3. BSI-Portal aufrufen",
+        "description": "Rufen Sie das BSI-Registrierungsportal auf und melden Sie sich mit Ihrem Unternehmenskonto an."
+      },
+      "step4": {
+        "title": "4. Angaben erfassen",
+        "description": "Geben Sie alle erforderlichen Daten zu Ihrem Unternehmen ein (siehe Checkliste unten)."
+      },
+      "step5": {
+        "title": "5. Registrierung absenden",
+        "description": "Überprüfen Sie alle Angaben und senden Sie die Registrierung ab."
+      },
+      "step6": {
+        "title": "6. Bestätigung abwarten",
+        "description": "Das BSI bestätigt die Registrierung. Sie erhalten Zugangsdaten für das Melde-Portal."
+      }
+    },
+    "requiredData": {
+      "title": "Erforderliche Angaben",
+      "items": {
+        "companyName": "Name der Einrichtung",
+        "legalForm": "Rechtsform",
+        "address": "Anschrift des Hauptsitzes und ggf. weiterer Niederlassungen in der EU",
+        "contact": "Aktuelle Kontaktdaten (E-Mail, Telefon)",
+        "sector": "Sektor und ggf. Teilsektor gemäß Anlage 1/2 BSIG",
+        "memberStates": "Ggf. betroffene EU-Mitgliedstaaten",
+        "ipRanges": "IP-Adressbereiche (soweit zutreffend)",
+        "responsiblePerson": "Name und Kontaktdaten der verantwortlichen Person",
+        "substituteContact": "Vertretungskontakt"
+      }
+    },
+    "links": {
+      "title": "Wichtige Links",
+      "bsiPortal": "BSI-Registrierungsportal",
+      "bsiPortalUrl": "https://nis2-registrierung.bsi.bund.de",
+      "muk": "Mein Unternehmenskonto (MUK)",
+      "mukUrl": "https://id.bund.de",
+      "bsiInfo": "BSI-Informationsseite zu NIS2",
+      "bsiInfoUrl": "https://www.bsi.bund.de/DE/Themen/Regulierung/NIS-2/nis-2_node.html"
+    },
+    "legalBasis": "Rechtsgrundlage: §§33-34 BSIG i.V.m. Art. 3 Abs. 3, Art. 27 NIS2-RL"
+  },
+  "bussgeld": {
+    "title": "Bußgeld-Kalkulator",
+    "subtitle": "Schätzung des maximalen Bußgeldrisikos nach §65 BSIG",
+    "intro": "Das NIS2UmsG sieht empfindliche Bußgelder vor. Die Höhe richtet sich nach der Einstufung der Einrichtung und dem Jahresumsatz.",
+    "classification": "Einstufung",
+    "besondersWichtig": "Besonders wichtige Einrichtung",
+    "wichtig": "Wichtige Einrichtung",
+    "annualRevenue": "Jahresumsatz (EUR)",
+    "maxPenalty": "Maximales Bußgeld",
+    "fixedMax": "Fester Höchstbetrag",
+    "revenuePercentage": "Umsatzanteil",
+    "applicableMax": "Maßgeblicher Höchstbetrag",
+    "explanation": {
+      "besondersWichtig": "Für besonders wichtige Einrichtungen beträgt das maximale Bußgeld bis zu 10.000.000 EUR oder 2% des weltweiten Jahresumsatzes — je nachdem, welcher Betrag höher ist.",
+      "wichtig": "Für wichtige Einrichtungen beträgt das maximale Bußgeld bis zu 7.000.000 EUR oder 1,4% des weltweiten Jahresumsatzes — je nachdem, welcher Betrag höher ist."
+    },
+    "note": "Hinweis: Die tatsächliche Bußgeldhöhe wird von der zuständigen Behörde im Einzelfall unter Berücksichtigung der Schwere des Verstoßes, eventueller Wiederholungsfälle und der ergriffenen Gegenmaßnahmen festgelegt.",
+    "legalBasis": "Rechtsgrundlage: §65 BSIG"
+  },
+  "roadmap": {
+    "title": "Ihr 3-Phasen-Umsetzungsplan",
+    "subtitle": "Priorisierter Maßnahmenplan basierend auf Ihrer Gap-Analyse",
+    "phase1": {
+      "title": "In 3 Monaten zur Grundsicherheit",
+      "description": "Schnelle Erfolge, die sofort wirken",
+      "benefit": "Ergebnis: Klarheit über Risiken, kein 'alle Passwörter im Kopf' mehr"
+    },
+    "phase2": {
+      "title": "Kernmaßnahmen für stabilen Schutz",
+      "description": "Prozesse und Strukturen aufbauen (Monat 3\u20136)",
+      "benefit": "Ergebnis: Ihr Team übersteht einen Ransomware-Angriff mit deutlich weniger Schaden"
+    },
+    "phase3": {
+      "title": "Strategische Absicherung",
+      "description": "Langfristige Resilienz und Wettbewerbsvorteile (Monat 6\u201312)",
+      "benefit": "Ergebnis: Nachweisbare Compliance, bessere Verhandlungsposition bei Kunden und Versicherern"
+    },
+    "urgency": {
+      "critical": "Kritisch",
+      "high": "Hoch",
+      "medium": "Mittel",
+      "low": "Niedrig"
+    },
+    "totalItems": "Maßnahmen gesamt",
+    "estimatedDuration": "Geschätzte Dauer"
+  },
+  "kritis": {
+    "title": "KRITIS-Zusatzanforderungen",
+    "subtitle": "Erweiterte Pflichten für Betreiber kritischer Infrastrukturen nach §§31, 39 BSIG",
+    "intro": "Betreiber kritischer Infrastrukturen unterliegen über die NIS2-Standardanforderungen hinaus zusätzlichen Pflichten, insbesondere im Bereich Angriffserkennung und Nachweisführung.",
+    "requirements": {
+      "title": "Zusätzliche Anforderungen",
+      "attackDetection": {
+        "title": "Systeme zur Angriffserkennung (§31 BSIG)",
+        "description": "KRITIS-Betreiber müssen Systeme zur Angriffserkennung (SzA) einsetzen, die den Stand der Technik erfüllen."
+      },
+      "continuousMonitoring": {
+        "title": "Kontinuierliche Überwachung",
+        "description": "Die Systeme müssen fortlaufend Bedrohungen identifizieren, auswerten und geeignete Maßnahmen einleiten können."
+      },
+      "evidence": {
+        "title": "Nachweispflicht (§39 BSIG)",
+        "description": "KRITIS-Betreiber müssen die Umsetzung der Anforderungen regelmäßig gegenüber dem BSI nachweisen."
+      },
+      "audits": {
+        "title": "BSI-Prüfungen",
+        "description": "Das BSI kann die Einhaltung der Anforderungen durch Prüfungen vor Ort oder die Anforderung von Nachweisen überprüfen."
+      },
+      "higherPenalties": {
+        "title": "Erhöhte Bußgelder",
+        "description": "Bei Verstößen gegen KRITIS-spezifische Anforderungen gelten die Bußgeldrahmen für besonders wichtige Einrichtungen."
+      }
+    },
+    "comparison": {
+      "title": "Vergleich: Standard-NIS2 vs. KRITIS",
+      "header": {
+        "aspect": "Aspekt",
+        "standardNis2": "Standard-NIS2",
+        "kritis": "KRITIS"
+      },
+      "rows": {
+        "attackDetection": {
+          "aspect": "Angriffserkennung",
+          "standard": "Empfohlen",
+          "kritis": "Verpflichtend (§31 BSIG)"
+        },
+        "evidence": {
+          "aspect": "Nachweis",
+          "standard": "Auf Anfrage",
+          "kritis": "Regelmäßig proaktiv (§39 BSIG)"
+        },
+        "audits": {
+          "aspect": "Prüfungen",
+          "standard": "Stichprobenartig",
+          "kritis": "Regelmäßig durch BSI"
+        },
+        "penalties": {
+          "aspect": "Bußgeldrahmen",
+          "standard": "Bis 7/10 Mio. EUR",
+          "kritis": "Bis 10 Mio. EUR / 2% Umsatz"
+        }
+      }
+    },
+    "legalBasis": "Rechtsgrundlage: §§31, 39 BSIG"
+  },
+  "dsgvoOverlap": {
+    "title": "DSGVO-Überlappungsanalyse",
+    "subtitle": "Synergien zwischen NIS2 und DSGVO-Compliance nutzen",
+    "intro": "Etwa 60% der NIS2-Anforderungen überlappen sich mit bestehenden DSGVO-Maßnahmen. Unternehmen mit bestehender DSGVO-Compliance haben einen Vorsprung bei der NIS2-Umsetzung.",
+    "overallOverlap": "Durchschnittliche Überlappung",
+    "category": "NIS2-Kategorie",
+    "dsgvoArticle": "DSGVO-Bezug",
+    "overlap": "Überlappung",
+    "gapNote": "NIS2 geht darüber hinaus",
+    "mappings": {
+      "riskAssessment": {
+        "nis2": "Risikoanalyse (§30 Abs. 2 Nr. 1)",
+        "dsgvo": "Art. 32 DSGVO (TOM)",
+        "gap": "NIS2 fordert formale Risikoanalyse nach Stand der Technik, nicht nur 'angemessene' Maßnahmen"
+      },
+      "incidentHandling": {
+        "nis2": "Vorfallbehandlung (§30 Abs. 2 Nr. 2)",
+        "dsgvo": "Art. 33-34 DSGVO (Meldepflicht)",
+        "gap": "NIS2: 24h-Frist (vs. 72h DSGVO), BSI als Meldestelle (vs. Datenschutzbehörde)"
+      },
+      "businessContinuity": {
+        "nis2": "Betriebskontinuität (§30 Abs. 2 Nr. 3)",
+        "dsgvo": "Art. 32 Abs. 1 lit. c DSGVO",
+        "gap": "NIS2 fordert umfassendes BCM inkl. Krisenmanagement, nicht nur Wiederherstellung"
+      },
+      "supplyChain": {
+        "nis2": "Lieferkettensicherheit (§30 Abs. 2 Nr. 4)",
+        "dsgvo": "Art. 28 DSGVO (Auftragsverarbeitung)",
+        "gap": "NIS2 fordert IT-Sicherheitsbewertung aller Lieferanten, nicht nur Auftragsverarbeiter"
+      },
+      "securityMeasures": {
+        "nis2": "Beschaffung & Wartung (§30 Abs. 2 Nr. 5)",
+        "dsgvo": "Art. 32 DSGVO (TOM)",
+        "gap": "NIS2 verlangt Schwachstellenmanagement und sichere Beschaffung"
+      },
+      "effectiveness": {
+        "nis2": "Wirksamkeitsprüfung (§30 Abs. 2 Nr. 6)",
+        "dsgvo": "Art. 32 Abs. 1 lit. d DSGVO",
+        "gap": "NIS2 verlangt nachweisbare Wirksamkeitsprüfung (Audits, Pentests)"
+      },
+      "training": {
+        "nis2": "Cyberhygiene & Schulungen (§30 Abs. 2 Nr. 7)",
+        "dsgvo": "Art. 39 Abs. 1 lit. b DSGVO",
+        "gap": "NIS2 fordert verpflichtende Geschäftsleitungsschulung (§38 BSIG)"
+      },
+      "encryption": {
+        "nis2": "Verschlüsselung (§30 Abs. 2 Nr. 8)",
+        "dsgvo": "Art. 32 Abs. 1 lit. a DSGVO",
+        "gap": "NIS2 fordert dokumentiertes Kryptokonzept mit Schlüsselmanagement"
+      },
+      "accessControl": {
+        "nis2": "Zugriffskontrolle (§30 Abs. 2 Nr. 9)",
+        "dsgvo": "Art. 32 DSGVO, Art. 25 DSGVO",
+        "gap": "NIS2 fordert MFA, PAM und regelmäßige Zugriffsrezertifizierung"
+      },
+      "documentation": {
+        "nis2": "Sichere Kommunikation (§30 Abs. 2 Nr. 10)",
+        "dsgvo": "Art. 30 DSGVO (Verarbeitungsverzeichnis)",
+        "gap": "NIS2 verlangt umfassende Dokumentation aller Sicherheitsmaßnahmen"
+      }
+    },
+    "legalBasis": "NIS2-RL Art. 21 / DSGVO Art. 32"
+  },
+  "iso27001": {
+    "title": "ISO 27001:2022 Crosswalk",
+    "subtitle": "Zuordnung von NIS2-Anforderungen zu ISO 27001:2022 Annex A Controls",
+    "intro": "Unternehmen mit bestehender ISO 27001-Zertifizierung haben einen erheblichen Vorsprung bei der NIS2-Umsetzung. Die durchschnittliche Abdeckung liegt bei ca. 72%.",
+    "overallAlignment": "Durchschnittliche Abdeckung",
+    "nis2Category": "NIS2-Kategorie",
+    "isoControls": "ISO 27001:2022 Controls",
+    "alignment": "Abdeckung",
+    "gap": "NIS2-Zusatzanforderungen",
+    "gaps": {
+      "riskAnalysis": "NIS2 fordert explizite Einbeziehung von Lieferketten-Risiken und regulatorischen Anforderungen",
+      "incidentHandling": "NIS2 hat strengere Meldefristen (24h/72h) und spezifische BSI-Meldepflichten",
+      "businessContinuity": "NIS2 fordert explizites Krisenmanagement und kürzere Wiederherstellungszeiten",
+      "supplyChain": "NIS2 geht über ISO hinaus: Cybersecurity-spezifische Lieferantenbewertung verpflichtend",
+      "acquisitionDevelopment": "NIS2 fordert Secure-by-Design und explizites Schwachstellenmanagement",
+      "effectivenessAssessment": "NIS2 verlangt nachweisbare KPIs und regelmäßige Management-Reviews",
+      "cyberHygiene": "NIS2 fordert explizite Geschäftsleitungsschulung (§38 BSIG) — nicht nur allgemeine Awareness",
+      "cryptography": "NIS2 fordert Krypto-Agilität und dokumentiertes Schlüsselmanagement",
+      "accessControl": "NIS2 fordert explizit MFA, PAM und Zero-Trust-Ansätze",
+      "authenticationCommunication": "NIS2 fordert gesicherte Notfallkommunikation und kontinuierliche Authentifizierung"
+    }
+  },
+  "dinSpec": {
+    "title": "DIN SPEC 27076 Vergleich",
+    "subtitle": "CyberRisikoCheck vs. NIS2 — Gemeinsamkeiten und Unterschiede",
+    "intro": "Die DIN SPEC 27076 (CyberRisikoCheck) ist ein standardisierter IT-Sicherheitscheck für KMU bis 50 Mitarbeiter. Sie deckt 27 Anforderungen in 6 Themenbereichen ab und wird über das go-digital-Programm zu 50% gefördert.",
+    "comparison": {
+      "title": "Vergleich",
+      "header": {
+        "aspect": "Aspekt",
+        "dinSpec": "DIN SPEC 27076",
+        "nis2": "NIS2/BSIG"
+      },
+      "targetGroup": {
+        "aspect": "Zielgruppe",
+        "dinSpec": "KMU bis 50 Mitarbeiter",
+        "nis2": "Mittlere und große Einrichtungen in regulierten Sektoren"
+      },
+      "scope": {
+        "aspect": "Umfang",
+        "dinSpec": "27 Anforderungen in 6 Bereichen",
+        "nis2": "10 Maßnahmenbereiche nach Art. 21 Abs. 2"
+      },
+      "mandatory": {
+        "aspect": "Verbindlichkeit",
+        "dinSpec": "Freiwillig (mit Förderung)",
+        "nis2": "Gesetzliche Pflicht"
+      },
+      "subsidy": {
+        "aspect": "Förderung",
+        "dinSpec": "50% über go-digital-Programm",
+        "nis2": "Keine Förderung"
+      }
+    },
+    "areas": {
+      "title": "DIN SPEC 27076 Bereiche → NIS2-Zuordnung",
+      "organization": {
+        "name": "Organisation & Sensibilisierung",
+        "coverage": "Teilweise abgedeckt — NIS2 geht bei Governance und Risikomanagement deutlich weiter"
+      },
+      "awareness": {
+        "name": "Identitäts- und Berechtigungsmanagement",
+        "coverage": "Gut abgedeckt — NIS2 fordert zusätzlich verpflichtende Geschäftsleitungsschulung"
+      },
+      "identityAccess": {
+        "name": "Datensicherung",
+        "coverage": "Grundlegend abgedeckt — NIS2 erfordert zusätzlich MFA und PAM"
+      },
+      "dataBackup": {
+        "name": "Patch-Management",
+        "coverage": "Gut abgedeckt — NIS2 fordert darüber hinaus umfassendes BCM und BIA"
+      },
+      "patchManagement": {
+        "name": "Schutz vor Schadsoftware",
+        "coverage": "Grundlegend abgedeckt — NIS2 definiert strengere Zeitfenster für Patches"
+      },
+      "protection": {
+        "name": "IT-Systeme und Netzwerke",
+        "coverage": "Teilweise abgedeckt — NIS2 fordert dokumentiertes Kryptokonzept und Schlüsselmanagement"
+      }
+    },
+    "beyond": {
+      "title": "NIS2 geht über DIN SPEC 27076 hinaus",
+      "items": {
+        "incidentReporting": "Meldepflichten (24h/72h/1 Monat an BSI)",
+        "supplyChain": "Lieferkettensicherheit und Lieferantenprüfung",
+        "managementLiability": "Persönliche Geschäftsleitungshaftung (§38 BSIG)",
+        "bsiRegistration": "BSI-Registrierungspflicht",
+        "critisRequirements": "KRITIS-spezifische Anforderungen (§§31, 39 BSIG)",
+        "formalRiskAnalysis": "Formale Risikoanalyse nach Stand der Technik",
+        "incidentResponsePlan": "Dokumentierter Incident-Response-Plan",
+        "crisisManagement": "Umfassendes Krisenmanagement"
+      }
+    },
+    "bsiUrl": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/KMU/CyberRisikoCheck/CyberRisikoCheck_node.html"
+  },
+  "evidence": {
+    "title": "Nachweismanagement",
+    "subtitle": "Erforderliche Nachweise für die NIS2-Compliance",
+    "intro": "Betroffene Einrichtungen müssen die Umsetzung der NIS2-Anforderungen nachweisen können. Diese Checkliste zeigt, welche Dokumente, Aufzeichnungen und Nachweise pro Kategorie benötigt werden.",
+    "category": "Kategorie",
+    "type": "Typ",
+    "requiredFor": "Erforderlich für",
+    "besondersWichtig": "Besonders wichtig",
+    "wichtig": "Wichtig",
+    "types": {
+      "document": "Dokument",
+      "record": "Aufzeichnung",
+      "log": "Protokoll",
+      "certificate": "Zertifikat"
+    },
+    "items": {
+      "riskAssessmentReport": "Risikoanalyse-Bericht",
+      "assetInventory": "IT-Asset-Inventar",
+      "riskTreatmentPlan": "Risikobehandlungsplan",
+      "securityPolicy": "Informationssicherheitsleitlinie",
+      "incidentResponsePlan": "Incident-Response-Plan",
+      "incidentLog": "Vorfallsprotokoll",
+      "reportingProcedure": "Meldeverfahren (BSI)",
+      "exerciseRecords": "Übungsprotokoll",
+      "bcpDocument": "Business-Continuity-Plan",
+      "biaReport": "Business-Impact-Analyse",
+      "backupTestRecords": "Backup-Testprotokolle",
+      "drTestResults": "DR-Testergebnisse",
+      "supplierDirectory": "Lieferantenverzeichnis",
+      "securityClauses": "Vertragliche Sicherheitsklauseln",
+      "supplierAssessments": "Lieferantenbewertungen",
+      "patchManagementPolicy": "Patch-Management-Richtlinie",
+      "patchStatusReport": "Patch-Statusbericht",
+      "procurementGuideline": "Beschaffungsrichtlinie IT-Sicherheit",
+      "auditPlan": "Audit-Plan",
+      "auditReports": "Audit-Berichte",
+      "pentestResults": "Penetrationstest-Ergebnisse",
+      "managementReviewMinutes": "Management-Review-Protokolle",
+      "trainingPlan": "Schulungsplan",
+      "trainingRecords": "Schulungsnachweise",
+      "securityGuidelines": "Sicherheitsrichtlinien für Mitarbeiter",
+      "managementTrainingProof": "Geschäftsleitungs-Schulungsnachweis",
+      "cryptoPolicy": "Kryptografie-Richtlinie",
+      "certificateInventory": "Zertifikatsinventar",
+      "keyManagementProcedure": "Schlüsselmanagement-Verfahren",
+      "accessControlPolicy": "Zugriffskontrollrichtlinie",
+      "permissionMatrix": "Berechtigungsmatrix",
+      "accessReviewRecords": "Zugriffs-Review-Protokolle",
+      "offboardingChecklist": "Offboarding-Checkliste",
+      "mfaDeploymentRecord": "MFA-Einführungsnachweis",
+      "communicationPolicy": "Kommunikationsrichtlinie",
+      "vpnConfiguration": "VPN-Konfigurationsdokumentation"
+    },
+    "legalBasis": "Rechtsgrundlage: §39 BSIG (Nachweispflichten)"
+  },
+  "sectorGuidance": {
+    "title": "Branchenspezifische Hinweise",
+    "subtitle": "Zusätzliche Anforderungen und Regulierungen für Ihren Sektor",
+    "noGuidance": "Für Ihren Sektor liegen keine spezifischen Zusatzanforderungen vor.",
+    "additionalRegulations": "Zusätzliche Regulierungen",
+    "challenges": "Branchentypische Herausforderungen",
+    "recommendations": "Branchenspezifische Empfehlungen",
+    "energy": {
+      "regulations": {
+        "enwg": {
+          "name": "Energiewirtschaftsgesetz (EnWG)",
+          "description": "IT-Sicherheitsanforderungen für Energieversorger nach §11 Abs. 1a-1b EnWG"
+        },
+        "bnetza": {
+          "name": "IT-Sicherheitskatalog BNetzA",
+          "description": "Verpflichtender IT-Sicherheitskatalog der Bundesnetzagentur für Strom- und Gasnetzbetreiber"
+        }
+      },
+      "challenges": "Energieversorger müssen OT- und IT-Sicherheit gleichermaßen berücksichtigen. Industrielle Steuerungssysteme (SCADA/ICS) erfordern besondere Schutzmaßnahmen.",
+      "recommendations": "Implementieren Sie eine strikte Netzwerksegmentierung zwischen IT und OT. Berücksichtigen Sie die IEC 62443-Normenreihe für industrielle Automatisierung."
+    },
+    "health": {
+      "regulations": {
+        "sgbv": {
+          "name": "§75c SGB V",
+          "description": "IT-Sicherheitsanforderungen im Gesundheitswesen — nach dem Stand der Technik angemessene Maßnahmen"
+        },
+        "patientdata": {
+          "name": "Schutz von Patientendaten",
+          "description": "Besonderer Schutz von Gesundheitsdaten nach Art. 9 DSGVO und §22 BDSG"
+        }
+      },
+      "challenges": "Im Gesundheitswesen ist die Verfügbarkeit kritischer Systeme lebenswichtig. Medizingeräte haben oft lange Lebenszyklen und können nicht einfach gepatcht werden.",
+      "recommendations": "Priorisieren Sie die Netzwerksegmentierung von Medizingeräten. Erstellen Sie ein separates Inventar für medizinische IT-Systeme mit spezifischen Schutzmaßnahmen."
+    },
+    "digital": {
+      "regulations": {
+        "cir": {
+          "name": "CIR (EU) 2024/2690",
+          "description": "Durchführungsverordnung mit technischen und methodischen Anforderungen für Anbieter digitaler Infrastruktur"
+        },
+        "tkg": {
+          "name": "Telekommunikationsgesetz (TKG)",
+          "description": "Sicherheitsanforderungen für Telekommunikationsanbieter nach §§165-169 TKG"
+        }
+      },
+      "challenges": "Anbieter digitaler Infrastruktur sind oft Ziel gezielter Angriffe und müssen gleichzeitig hohe Verfügbarkeit gewährleisten.",
+      "recommendations": "Implementieren Sie DDoS-Schutz, automatisierte Anomalie-Erkennung und ein mehrstufiges Incident-Response-Verfahren."
+    },
+    "transport": {
+      "regulations": {
+        "cer": {
+          "name": "KRITIS-Dachgesetz (CER-Umsetzung)",
+          "description": "Umsetzung der CER-Richtlinie (EU 2022/2557) für die Resilienz kritischer Einrichtungen im Transportsektor"
+        }
+      },
+      "challenges": "Transportunternehmen verfügen über stark verteilte IT-Infrastrukturen (Telematik-Einheiten, Bordcomputer, Flotten-Tracking-Systeme, Werkstatt-Software) und müssen Echtzeitsysteme absichern. Ein Angriff auf diese Systeme kann den Fuhrpark stilllegen — jeder LKW, der nicht rollt, kostet direkt Umsatz.",
+      "recommendations": "Fokussieren Sie auf die Absicherung von Echtzeitkommunikation (Disposition, Telematik) und stellen Sie sicher, dass Offline-Backup-Prozesse existieren. Prüfen Sie, ob Ihre Werkstatt- und Flottensoftware regelmäßig aktualisiert wird und ob Fernzugriffe auf Fahrzeug-Telematik abgesichert sind."
+    },
+    "manufacturing": {
+      "regulations": {
+        "ics": {
+          "name": "IEC 62443 (Industrielle Cybersicherheit)",
+          "description": "Internationale Normenreihe für die IT-Sicherheit industrieller Automatisierungs- und Steuerungssysteme"
+        }
+      },
+      "challenges": "Fertigungsunternehmen haben oft veraltete OT-Systeme, die nicht einfach aktualisiert werden können und hohe Verfügbarkeitsanforderungen haben.",
+      "recommendations": "Priorisieren Sie die Inventarisierung aller OT-Systeme und implementieren Sie eine strikte IT/OT-Netzwerksegmentierung nach dem Purdue-Modell."
+    },
+    "finance": {
+      "regulations": {
+        "dora": {
+          "name": "DORA (EU) 2022/2554",
+          "description": "Digital Operational Resilience Act — EU-Verordnung für die digitale operationale Resilienz im Finanzsektor"
+        },
+        "bait": {
+          "name": "BAIT (BaFin)",
+          "description": "Bankaufsichtliche Anforderungen an die IT — verbindliche Anforderungen der BaFin"
+        }
+      },
+      "challenges": "Finanzunternehmen unterliegen bereits strengen regulatorischen Anforderungen (BAIT, DORA). NIS2 kommt als zusätzliche Schicht hinzu.",
+      "recommendations": "Nutzen Sie bestehende DORA/BAIT-Compliance als Grundlage. Identifizieren Sie die Delta-Anforderungen von NIS2 gegenüber Ihren bestehenden Maßnahmen."
+    },
+    "water": {
+      "regulations": {
+        "trinkwv": {
+          "name": "Trinkwasserverordnung (TrinkwV)",
+          "description": "Anforderungen an die Sicherheit der Trinkwasserversorgung"
+        }
+      },
+      "challenges": "Wasserversorger betreiben oft weit verteilte Infrastrukturen mit Fernwirktechnik, die besonders geschützt werden muss.",
+      "recommendations": "Fokussieren Sie auf die Absicherung der Fernwirktechnik (SCADA) und stellen Sie sicher, dass physische und digitale Sicherheit integriert betrachtet werden."
+    },
+    "space": {
+      "regulations": {
+        "iris2": {
+          "name": "EU-Verordnung 2023/588 (IRIS²)",
+          "description": "EU-Programm für sichere Konnektivität mit Cybersicherheitsanforderungen für Satelliteninfrastruktur, einschließlich Risiko- und Bedrohungsanalysen für Boden- und Weltraumsegmente"
+        }
+      },
+      "challenges": "Der Weltraumsektor steht vor besonderen Herausforderungen: Satellitensysteme sind schwer zu patchen und werden über lange Zeiträume betrieben. Bodeninfrastrukturen bilden das Zentrum der Compliance-Anforderungen. Die Signalintegrität bei der Fernsteuerung von Satelliten und die Absicherung von Weltraumüberwachungssystemen erfordern spezialisierte Sicherheitskonzepte.",
+      "recommendations": "Implementieren Sie ein umfassendes Sicherheitskonzept nach dem Secure-by-Design-Ansatz, das Boden- und Weltraumsegmente abdeckt. Priorisieren Sie die Absicherung der Bodeninfrastruktur sowie die Lieferkettensicherheit. Berücksichtigen Sie die ENISA-Leitlinien zur Cybersicherheit kommerzieller Satellitenoperationen."
+    },
+    "postal": {
+      "regulations": {
+        "postg": {
+          "name": "Postgesetz 2024 (PostG)",
+          "description": "Modernisiertes Postrecht mit Registrierungspflicht bei der Bundesnetzagentur. Post- und Kurierdienste fallen als wichtige Einrichtungen unter NIS2."
+        }
+      },
+      "challenges": "Post- und Kurierdienste betreiben stark verteilte IT-Infrastrukturen mit Tracking- und Sendungsverfolgungssystemen, mobilen Endgeräten und Sortieranlagen. Die Konvergenz physischer und digitaler Sicherheit stellt eine besondere Herausforderung dar. Auch kleinere KEP-Unternehmen können über Lieferkettenanforderungen mittelbar betroffen sein.",
+      "recommendations": "Sichern Sie Tracking- und Sendungsverfolgungssysteme durch Verschlüsselung und Zugriffskontrollen ab. Implementieren Sie ein zentrales Sicherheitsmonitoring für alle verteilten Standorte und mobilen Endgeräte. Stellen Sie sicher, dass auch Subunternehmer in der Zustellkette die Cybersicherheitsanforderungen einhalten."
+    },
+    "waste": {
+      "regulations": {
+        "krwg": {
+          "name": "Kreislaufwirtschaftsgesetz (KrWG)",
+          "description": "Zentrales Bundesgesetz des Abfallrechts. Siedlungsabfallentsorgung gilt seit 2024 als kritische Dienstleistung unter dem KRITIS-Rahmen."
+        }
+      },
+      "challenges": "Abfallwirtschaftsbetriebe setzen zunehmend auf OT-Systeme (SCADA/ICS) zur Steuerung von Müllverbrennungsanlagen, Sortieranlagen und Umweltüberwachungssystemen. Diese Systeme haben oft Lebenszyklen von 10-25 Jahren und verfügen häufig nicht über moderne Authentifizierung oder Verschlüsselung. Die Konvergenz von Abfalllogistik, Umweltmonitoring und digitaler Steuerungstechnik erfordert integrierte Sicherheitskonzepte.",
+      "recommendations": "Priorisieren Sie die vollständige Inventarisierung aller OT/SCADA-Systeme und implementieren Sie eine strikte Netzwerksegmentierung zwischen IT- und OT-Netzwerken nach dem Purdue-Modell. Führen Sie ein eigenständiges OT-Risikomanagement ein und entwickeln Sie Notfallpläne, die auch bei Ausfall der digitalen Steuerung einen Minimalbetrieb ermöglichen."
+    },
+    "chemicals": {
+      "regulations": {
+        "seveso": {
+          "name": "Störfall-Verordnung (12. BImSchV) / Seveso-III-Richtlinie",
+          "description": "Regelt die Verhinderung schwerer Unfälle mit gefährlichen Stoffen. §2 umfasst auch den Schutz vor unbefugten Eingriffen in IT- und OT-Systeme. Das Merkblatt KAS-44 konkretisiert IT-Security-Anforderungen für Störfallanlagen."
+        }
+      },
+      "challenges": "Chemieanlagen stehen vor der Herausforderung, IT-Sicherheit (Cybersecurity) und Anlagensicherheit (Safety) parallel zu gewährleisten. Cyberangriffe auf ICS/SCADA können gefährliche Reaktionen, Umweltschäden oder Störfälle auslösen. Die Überschneidung von Seveso-III, IEC 62443 und NIS2 erzeugt eine komplexe regulatorische Mehrfachbelastung.",
+      "recommendations": "Erstellen Sie ein vollständiges Inventar aller IT- und OT-Assets gemäß KAS-44 und implementieren Sie konsequente Netzwerksegmentierung zwischen IT und Prozessleittechnik. Nutzen Sie die IEC 62443-Normenreihe als technischen Rahmen. Integrieren Sie Ihre Störfall-Notfallplanung mit dem Cyber-Incident-Response-Plan."
+    },
+    "food": {
+      "regulations": {
+        "foodlaw": {
+          "name": "EU-Lebensmittel-Basisverordnung / LFGB",
+          "description": "VO (EG) 178/2002 verpflichtet zu lückenloser Rückverfolgbarkeit auf allen Stufen der Produktion und des Vertriebs. Mit zunehmender Digitalisierung der Rückverfolgbarkeitssysteme gewinnt deren Cybersicherheit im NIS2-Kontext erheblich an Bedeutung."
+        }
+      },
+      "challenges": "Lebensmittelunternehmen müssen digital vernetzte Rückverfolgbarkeitssysteme, Kühlketten-IT und HACCP-Dokumentationssysteme gegen Cyberangriffe absichern. Ein Angriff auf Temperaturüberwachungssysteme kann direkt die Lebensmittelsicherheit gefährden. Ein Cybersicherheitsvorfall kann gleichzeitig lebensmittelrechtliche und NIS2-Meldepflichten auslösen.",
+      "recommendations": "Nutzen Sie bestehende HACCP- und IFS/BRC-Dokumentationsstrukturen als Basis für das NIS2-Risikomanagement ('Cyber-HACCP'). Sichern Sie Kühlkettenüberwachungssysteme und Rückverfolgbarkeitsdatenbanken durch Zugriffskontrollen und Offline-Backups. Stellen Sie sicher, dass Ihr Incident-Response-Plan sowohl NIS2- als auch lebensmittelrechtliche Meldepflichten berücksichtigt."
+    },
+    "digitalServices": {
+      "regulations": {
+        "dsa": {
+          "name": "Digital Services Act (DSA)",
+          "description": "EU-weite Regeln für Plattformbetreiber, Online-Marktplätze und Suchmaschinen. DSA-Pflichten zu Nutzersicherheit und Plattformintegrität überschneiden sich mit NIS2-Cybersicherheitsanforderungen."
+        },
+        "tdddg": {
+          "name": "TDDDG (vormals TTDSG)",
+          "description": "Regelt Datenschutz und Privatsphäre bei digitalen Diensten in Deutschland, einschließlich Cookie-Einwilligungspflichten und Vertraulichkeit. Überschneidungen mit NIS2 bei technischen Schutzmaßnahmen für Nutzerdaten."
+        }
+      },
+      "challenges": "Anbieter digitaler Dienste unterliegen einem Light-Touch-Aufsichtsregime, müssen aber dennoch alle Risikomanagement- und Meldepflichten erfüllen. Zentrale Herausforderungen sind DDoS-Schutz bei gleichzeitiger Hochverfügbarkeit, der Schutz von Nutzerdaten über multiple Regularien hinweg (DSA, DSGVO, TDDDG, NIS2) sowie die Sicherung der Integrität von Content-Delivery-Systemen und Empfehlungsalgorithmen.",
+      "recommendations": "Implementieren Sie ein integriertes Compliance-Framework für NIS2, DSA und TDDDG. Etablieren Sie robuste DDoS-Schutzmaßnahmen, automatisierte Anomalie-Erkennung und ein mehrstufiges Incident-Response-Verfahren mit 24-Stunden-Meldefähigkeit. Führen Sie regelmäßige Sicherheitsaudits der Plattformarchitektur einschließlich API-Sicherheit durch."
+    },
+    "research": {
+      "regulations": {
+        "dualuse": {
+          "name": "Dual-Use-Verordnung",
+          "description": "Verordnung (EU) 2021/821 regelt die Exportkontrolle für Güter mit doppeltem Verwendungszweck. Forschungsergebnisse mit Dual-Use-Potenzial unterliegen besonderen Sicherheitsanforderungen, die sich mit NIS2-Pflichten überschneiden."
+        },
+        "gdprResearch": {
+          "name": "DSGVO-Forschungsprivileg",
+          "description": "Art. 89 DSGVO gewährt Forschungseinrichtungen besondere Privilegien bei der Datenverarbeitung, verlangt aber angemessene technische Sicherungsmaßnahmen (Pseudonymisierung, Datensparsamkeit), die sich mit NIS2-Anforderungen überschneiden."
+        }
+      },
+      "challenges": "Forschungseinrichtungen müssen geistiges Eigentum und vertrauliche Forschungsdaten schützen und gleichzeitig wissenschaftliche Offenheit und Kooperationsfähigkeit wahren. Dual-Use-Forschungsergebnisse unterliegen besonderen Exportkontroll- und Sicherheitsanforderungen. Internationale Forschungskooperationen und Datenaustausch-Plattformen müssen gegen Industriespionage und staatlich gelenkte Cyberangriffe abgesichert werden.",
+      "recommendations": "Implementieren Sie eine systematische Datenklassifizierung, die zwischen offenen, vertraulichen und exportkontrollpflichtigen (Dual-Use) Daten unterscheidet. Etablieren Sie ein dediziertes ISMS für die Forschungs-IT und verpflichten Sie internationale Kooperationspartner vertraglich auf angemessene Sicherheitsstandards. Schulen Sie wissenschaftliches Personal regelmäßig zu IT-Sicherheit und dem sicheren Umgang mit sensiblen Forschungsdaten."
+    }
+  },
+  "costEstimation": {
+    "title": "Kostenschätzung",
+    "subtitle": "Geschätzter Aufwand für die Umsetzung der Handlungsempfehlungen",
+    "intro": "Die folgenden Schätzungen basieren auf typischen KMU-Erfahrungswerten und dienen als grobe Orientierung. Die tatsächlichen Kosten hängen von der Unternehmensgröße und bestehenden Strukturen ab.",
+    "internalEffort": "Interner Aufwand (Personentage)",
+    "externalCost": "Externe Beratung (EUR)",
+    "toolsCost": "Tools/Lizenzen (EUR/Jahr)",
+    "totalInternal": "Gesamt interner Aufwand",
+    "totalExternal": "Gesamt externe Kosten",
+    "totalTools": "Gesamt Lizenzkosten/Jahr",
+    "measure": "Maßnahme",
+    "adjustedEffort": "Aufwand (firmenspezifisch)",
+    "companySpecific": "Firmenspezifische Schätzung",
+    "scalingInfo": "Angepasst für {employees} Mitarbeitende, Einstufung: {entity}",
+    "entityBesondersWichtig": "Besonders wichtige Einrichtung",
+    "entityWichtig": "Wichtige Einrichtung",
+    "baseValue": "Referenzwert (100 MA)",
+    "note": "Orientierungswerte auf Basis von BSI, ing-ism.de, netxconsult, SoSafe, Delinea u.a. Quellen. Interner Tagessatz ca. 500 €, externer Berater ca. 1.300 €/Tag. Tatsächliche Kosten variieren je nach Branche, IT-Komplexität und vorhandenen Strukturen.",
+    "personDays": "PT",
+    "perYear": "/Jahr"
+  },
+  "progressTracking": {
+    "title": "Fortschritts-Tracking",
+    "subtitle": "Verfolgen Sie den Umsetzungsstand Ihrer Maßnahmen",
+    "status": {
+      "notStarted": "Nicht begonnen",
+      "inProgress": "In Bearbeitung",
+      "completed": "Abgeschlossen"
+    },
+    "overall": "Gesamtfortschritt",
+    "notes": "Notizen",
+    "notesPlaceholder": "Optionale Notizen zum Umsetzungsstand...",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "save": "Speichern"
+  },
+  "quickCheck": {
+    "intro": {
+      "title": "NIS2 Schnellcheck",
+      "subtitle": "Beantworten Sie 10 einfache Fragen und erhalten Sie in unter 2 Minuten eine erste Einschätzung Ihres NIS2-Reifegrads.",
+      "howTitle": "So funktioniert's",
+      "step1": "10 Ja/Teilweise/Nein-Fragen zu den wichtigsten NIS2-Bereichen",
+      "step2": "Sofortige Auswertung mit Reifegrad-Einschätzung pro Kategorie",
+      "step3": "Optional weiter zur detaillierten Gap-Analyse",
+      "duration": "Unter 2 Minuten",
+      "anonymous": "Keine Registrierung",
+      "local": "Daten bleiben im Browser",
+      "cta": "Schnellcheck starten"
+    },
+    "title": "NIS2 Schnellcheck",
+    "subtitle": "10 einfache Fragen — Ergebnis in unter 2 Minuten",
+    "progress": "{answered} von {total} beantwortet",
+    "reset": "Zurücksetzen",
+    "showResult": "Ergebnis anzeigen",
+    "completeAll": "Bitte beantworten Sie alle 10 Fragen, um Ihr Ergebnis zu sehen.",
+    "answers": {
+      "yes": "Ja",
+      "partial": "Teilweise",
+      "no": "Nein"
+    },
+    "questions": {
+      "q1": {
+        "title": "Haben Sie einen aktuellen Überblick über alle IT-Systeme und deren Sicherheitsrisiken?",
+        "description": "Umfasst eine Inventarisierung aller IT-Systeme und eine regelmäßige Bewertung der Risiken."
+      },
+      "q2": {
+        "title": "Gibt es einen klaren Plan, was bei einem IT-Sicherheitsvorfall zu tun ist?",
+        "description": "Ein dokumentierter Incident-Response-Plan mit klaren Verantwortlichkeiten und Eskalationswegen."
+      },
+      "q3": {
+        "title": "Können Sie den Geschäftsbetrieb fortsetzen, wenn wichtige IT-Systeme ausfallen?",
+        "description": "Business-Continuity-Planung inkl. Backups, Notfallpläne und Wiederherstellungstests."
+      },
+      "q4": {
+        "title": "Prüfen Sie die IT-Sicherheit Ihrer wichtigsten Dienstleister und Zulieferer?",
+        "description": "Vertragliche Sicherheitsanforderungen und regelmäßige Überprüfung der Lieferkette."
+      },
+      "q5": {
+        "title": "Werden Sicherheitsupdates zeitnah eingespielt und Software regelmäßig aktualisiert?",
+        "description": "Systematisches Patch-Management und sichere Beschaffungsprozesse für IT-Systeme."
+      },
+      "q6": {
+        "title": "Wird regelmäßig überprüft, ob Ihre Sicherheitsmaßnahmen tatsächlich wirken?",
+        "description": "Audits, Penetrationstests oder Wirksamkeitsprüfungen der implementierten Maßnahmen."
+      },
+      "q7": {
+        "title": "Werden alle Mitarbeitenden regelmäßig zu IT-Sicherheit geschult?",
+        "description": "Awareness-Schulungen, Phishing-Tests und dokumentierte Schulungsnachweise."
+      },
+      "q8": {
+        "title": "Werden sensible Daten verschlüsselt gespeichert und übertragen?",
+        "description": "Verschlüsselung bei Speicherung (at rest) und Übertragung (in transit) sensibler Daten."
+      },
+      "q9": {
+        "title": "Haben nur berechtigte Personen Zugriff auf sensible Systeme und Daten?",
+        "description": "Rollenbasierte Zugriffskontrollen, regelmäßige Berechtigungsreviews und Least-Privilege-Prinzip."
+      },
+      "q10": {
+        "title": "Nutzen Sie Mehrfaktor-Authentifizierung und sichere Kommunikationswege?",
+        "description": "MFA für kritische Systeme, verschlüsselte Kommunikation und sichere Authentifizierungsverfahren."
+      }
+    },
+    "result": {
+      "scoreLabel": "Ihr NIS2-Schnellcheck-Ergebnis",
+      "verdict": {
+        "red": "Erheblicher Handlungsbedarf — viele grundlegende NIS2-Anforderungen sind nicht erfüllt.",
+        "yellow": "Teilweise umgesetzt — es bestehen noch wichtige Lücken in der NIS2-Compliance.",
+        "green": "Gute Ausgangslage — die grundlegenden Maßnahmen sind weitgehend vorhanden."
+      },
+      "penalty": {
+        "title": "Bußgeld-Risiko",
+        "description": "Bei Verstößen gegen NIS2-Anforderungen drohen empfindliche Geldbußen:",
+        "essential": "Besonders wichtige Einrichtungen",
+        "essentialAmount": "bis zu 10 Mio. € oder 2% des Jahresumsatzes",
+        "important": "Wichtige Einrichtungen",
+        "importantAmount": "bis zu 7 Mio. € oder 1,4% des Jahresumsatzes",
+        "legal": "Rechtsgrundlage: §65 BSIG"
+      },
+      "categories": {
+        "title": "Ergebnis nach Kategorie"
+      },
+      "cta": {
+        "fullAnalysis": "Detailanalyse starten — finden Sie Ihre Lücken",
+        "checkAffected": "Betroffenheit prüfen",
+        "share": "Ergebnis teilen",
+        "copied": "Kopiert!",
+        "restart": "Erneut starten"
+      },
+      "shareText": "Mein NIS2-Schnellcheck-Ergebnis: {score}% — Wie bereit ist Ihr Unternehmen?",
+      "incomplete": {
+        "title": "Schnellcheck nicht abgeschlossen",
+        "description": "Bitte beantworten Sie alle 10 Fragen, um Ihr Ergebnis zu sehen.",
+        "cta": "Zum Schnellcheck"
+      }
+    }
   }
 }

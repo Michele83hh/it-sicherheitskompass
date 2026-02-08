@@ -68,8 +68,10 @@ export interface LegalReference {
 export interface Question {
   id: string;
   categoryId: string;
+  tier: 'core' | 'advanced';
   titleKey: string;
   tooltipKey: string;
+  helpKey: string;
   legalReference: LegalReference;
   maturityDescriptions: {
     level0Key: string;
@@ -87,6 +89,7 @@ export interface Category {
   euArticle: string;
   bsigParagraph: string;
   bsiBuildingBlocks: string[];
+  icon: string;
   questions: Question[];
 }
 
@@ -102,6 +105,7 @@ export interface Recommendation {
   firstStepKey: string;
   legalReference: string;
   bsiReference: string;
+  checklistKey?: string; // Translation key for checklist items (template recommendations)
 }
 
 // ============================================================

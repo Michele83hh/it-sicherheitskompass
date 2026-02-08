@@ -1,8 +1,9 @@
 /**
  * NIS2 Recommendations per Category
  *
- * Each category has 2 prioritized recommendations with concrete first steps,
+ * Each category has 3 prioritized recommendations with concrete first steps,
  * legal references, and BSI IT-Grundschutz building block references.
+ * 30 recommendations total (10 categories x 3 recommendations).
  *
  * Legal basis: §30 BSIG (BGBl. 2025 I Nr. 301)
  * BSI references: IT-Grundschutz-Kompendium Edition 2023
@@ -26,13 +27,25 @@ export const RECOMMENDATIONS: Recommendation[] = [
   {
     id: 'rec-ra-2',
     categoryId: 'risk-analysis',
-    priority: 'medium',
+    priority: 'high', // BSI "NIS-2 Was tun?" Step 1; ORP.1 (R1); §38 BSIG personal liability
     effortLevel: 'quick',
     titleKey: 'recommendations.ra2.title',
     descriptionKey: 'recommendations.ra2.description',
     firstStepKey: 'recommendations.ra2.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. a NIS2-RL, §30 Abs. 2 Nr. 1 BSIG',
     bsiReference: 'ORP.1, ISMS.1',
+  },
+  {
+    id: 'rec-ra-3',
+    categoryId: 'risk-analysis',
+    priority: 'medium',
+    effortLevel: 'medium',
+    titleKey: 'recommendations.ra3.title',
+    descriptionKey: 'recommendations.ra3.description',
+    firstStepKey: 'recommendations.ra3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. a NIS2-RL, §30 Abs. 2 Nr. 1 BSIG',
+    bsiReference: 'BSI-Standard 200-2, ISMS.1',
+    checklistKey: 'recommendations.ra3.checklist',
   },
   // Category 2: Sicherheitsvorfälle
   {
@@ -49,13 +62,25 @@ export const RECOMMENDATIONS: Recommendation[] = [
   {
     id: 'rec-ih-2',
     categoryId: 'incident-handling',
-    priority: 'medium',
+    priority: 'high', // 24h BSI reporting deadline requires pre-compiled contacts; quick effort, severe legal consequence
     effortLevel: 'quick',
     titleKey: 'recommendations.ih2.title',
     descriptionKey: 'recommendations.ih2.description',
     firstStepKey: 'recommendations.ih2.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. b NIS2-RL, §30 Abs. 2 Nr. 2 BSIG',
     bsiReference: 'DER.2.1, OPS.1.1.5',
+  },
+  {
+    id: 'rec-ih-3',
+    categoryId: 'incident-handling',
+    priority: 'high',
+    effortLevel: 'medium',
+    titleKey: 'recommendations.ih3.title',
+    descriptionKey: 'recommendations.ih3.description',
+    firstStepKey: 'recommendations.ih3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. b NIS2-RL, §30 Abs. 2 Nr. 2 BSIG, §32 BSIG',
+    bsiReference: 'DER.2.1, DER.2.2',
+    checklistKey: 'recommendations.ih3.checklist',
   },
   // Category 3: Betriebskontinuität
   {
@@ -72,13 +97,25 @@ export const RECOMMENDATIONS: Recommendation[] = [
   {
     id: 'rec-bc-2',
     categoryId: 'business-continuity',
-    priority: 'medium',
+    priority: 'high', // Operational backbone of Art. 21(2)(c); DER.4 Notfallmanagement; enables bc3
     effortLevel: 'medium',
     titleKey: 'recommendations.bc2.title',
     descriptionKey: 'recommendations.bc2.description',
     firstStepKey: 'recommendations.bc2.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. c NIS2-RL, §30 Abs. 2 Nr. 3 BSIG',
     bsiReference: 'DER.4, BSI-Standard 200-4',
+  },
+  {
+    id: 'rec-bc-3',
+    categoryId: 'business-continuity',
+    priority: 'medium', // BIA is deeper maturity step building on bc1/bc2; BSI-Standard 200-4 sequence
+    effortLevel: 'medium',
+    titleKey: 'recommendations.bc3.title',
+    descriptionKey: 'recommendations.bc3.description',
+    firstStepKey: 'recommendations.bc3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. c NIS2-RL, §30 Abs. 2 Nr. 3 BSIG',
+    bsiReference: 'BSI-Standard 200-4, CON.3',
+    checklistKey: 'recommendations.bc3.checklist',
   },
   // Category 4: Lieferkette
   {
@@ -96,12 +133,24 @@ export const RECOMMENDATIONS: Recommendation[] = [
     id: 'rec-sc-2',
     categoryId: 'supply-chain',
     priority: 'medium',
-    effortLevel: 'strategic',
+    effortLevel: 'medium',
     titleKey: 'recommendations.sc2.title',
     descriptionKey: 'recommendations.sc2.description',
     firstStepKey: 'recommendations.sc2.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG',
     bsiReference: 'ORP.1, OPS.1.1.3',
+  },
+  {
+    id: 'rec-sc-3',
+    categoryId: 'supply-chain',
+    priority: 'low', // Advanced maturity measure; sc1+sc2 must be established first
+    effortLevel: 'medium',
+    titleKey: 'recommendations.sc3.title',
+    descriptionKey: 'recommendations.sc3.description',
+    firstStepKey: 'recommendations.sc3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG',
+    bsiReference: 'ORP.1, OPS.1.1.3',
+    checklistKey: 'recommendations.sc3.checklist',
   },
   // Category 5: Erwerb/Entwicklung
   {
@@ -119,18 +168,30 @@ export const RECOMMENDATIONS: Recommendation[] = [
     id: 'rec-ad-2',
     categoryId: 'acquisition-development',
     priority: 'medium',
-    effortLevel: 'medium',
+    effortLevel: 'quick',
     titleKey: 'recommendations.ad2.title',
     descriptionKey: 'recommendations.ad2.description',
     firstStepKey: 'recommendations.ad2.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG',
     bsiReference: 'CON.8, OPS.1.1.6',
   },
+  {
+    id: 'rec-ad-3',
+    categoryId: 'acquisition-development',
+    priority: 'medium', // Formalization of ad1 (basic patching); process maturation, not separate urgent measure
+    effortLevel: 'medium',
+    titleKey: 'recommendations.ad3.title',
+    descriptionKey: 'recommendations.ad3.description',
+    firstStepKey: 'recommendations.ad3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG',
+    bsiReference: 'OPS.1.1.3, CON.8',
+    checklistKey: 'recommendations.ad3.checklist',
+  },
   // Category 6: Wirksamkeit
   {
     id: 'rec-ea-1',
     categoryId: 'effectiveness-assessment',
-    priority: 'high',
+    priority: 'medium', // Verification measure — comes after implementing measures being reviewed
     effortLevel: 'medium',
     titleKey: 'recommendations.ea1.title',
     descriptionKey: 'recommendations.ea1.description',
@@ -148,6 +209,18 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'recommendations.ea2.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. f NIS2-RL, §30 Abs. 2 Nr. 6 BSIG',
     bsiReference: 'ISMS.1',
+  },
+  {
+    id: 'rec-ea-3',
+    categoryId: 'effectiveness-assessment',
+    priority: 'medium',
+    effortLevel: 'medium',
+    titleKey: 'recommendations.ea3.title',
+    descriptionKey: 'recommendations.ea3.description',
+    firstStepKey: 'recommendations.ea3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. f NIS2-RL, §30 Abs. 2 Nr. 6 BSIG',
+    bsiReference: 'ISMS.1, ORP.5',
+    checklistKey: 'recommendations.ea3.checklist',
   },
   // Category 7: Cyberhygiene
   {
@@ -172,12 +245,24 @@ export const RECOMMENDATIONS: Recommendation[] = [
     legalReference: 'Art. 21 Abs. 2 lit. g NIS2-RL, §30 Abs. 2 Nr. 7 BSIG',
     bsiReference: 'ORP.3, ORP.2',
   },
+  {
+    id: 'rec-ch-3',
+    categoryId: 'cyber-hygiene',
+    priority: 'high',
+    effortLevel: 'quick',
+    titleKey: 'recommendations.ch3.title',
+    descriptionKey: 'recommendations.ch3.description',
+    firstStepKey: 'recommendations.ch3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. g NIS2-RL, §30 Abs. 2 Nr. 7 BSIG, §38 BSIG',
+    bsiReference: 'ORP.3, ISMS.1',
+    checklistKey: 'recommendations.ch3.checklist',
+  },
   // Category 8: Kryptografie
   {
     id: 'rec-cr-1',
     categoryId: 'cryptography',
     priority: 'high',
-    effortLevel: 'quick',
+    effortLevel: 'medium',
     titleKey: 'recommendations.cr1.title',
     descriptionKey: 'recommendations.cr1.description',
     firstStepKey: 'recommendations.cr1.firstStep',
@@ -195,12 +280,24 @@ export const RECOMMENDATIONS: Recommendation[] = [
     legalReference: 'Art. 21 Abs. 2 lit. h NIS2-RL, §30 Abs. 2 Nr. 8 BSIG',
     bsiReference: 'CON.1',
   },
+  {
+    id: 'rec-cr-3',
+    categoryId: 'cryptography',
+    priority: 'medium',
+    effortLevel: 'strategic',
+    titleKey: 'recommendations.cr3.title',
+    descriptionKey: 'recommendations.cr3.description',
+    firstStepKey: 'recommendations.cr3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. h NIS2-RL, §30 Abs. 2 Nr. 8 BSIG',
+    bsiReference: 'CON.1, NET.4.1',
+    checklistKey: 'recommendations.cr3.checklist',
+  },
   // Category 9: Zugriffskontrolle
   {
     id: 'rec-ac-1',
     categoryId: 'access-control',
     priority: 'high',
-    effortLevel: 'quick',
+    effortLevel: 'medium',
     titleKey: 'recommendations.ac1.title',
     descriptionKey: 'recommendations.ac1.description',
     firstStepKey: 'recommendations.ac1.firstStep',
@@ -217,6 +314,18 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'recommendations.ac2.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. i NIS2-RL, §30 Abs. 2 Nr. 9 BSIG',
     bsiReference: 'ORP.4, ORP.2',
+  },
+  {
+    id: 'rec-ac-3',
+    categoryId: 'access-control',
+    priority: 'medium', // Full PAM is advanced/strategic; depends on ac1 (RBAC) + mc1 (MFA) first
+    effortLevel: 'strategic',
+    titleKey: 'recommendations.ac3.title',
+    descriptionKey: 'recommendations.ac3.description',
+    firstStepKey: 'recommendations.ac3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. i NIS2-RL, §30 Abs. 2 Nr. 9 BSIG',
+    bsiReference: 'ORP.4, ORP.2',
+    checklistKey: 'recommendations.ac3.checklist',
   },
   // Category 10: MFA/Kommunikation
   {
@@ -240,6 +349,18 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'recommendations.mc2.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG',
     bsiReference: 'ORP.4, NET.4.2',
+  },
+  {
+    id: 'rec-mc-3',
+    categoryId: 'authentication-communication',
+    priority: 'medium',
+    effortLevel: 'medium',
+    titleKey: 'recommendations.mc3.title',
+    descriptionKey: 'recommendations.mc3.description',
+    firstStepKey: 'recommendations.mc3.firstStep',
+    legalReference: 'Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG',
+    bsiReference: 'NET.4.1, NET.4.2',
+    checklistKey: 'recommendations.mc3.checklist',
   },
 ];
 

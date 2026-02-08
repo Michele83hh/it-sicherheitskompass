@@ -15,21 +15,11 @@ const PDFDsgvoOverlapSection = ({ dsgvoOverlap, messages }: PDFDsgvoOverlapProps
       </Text>
 
       {/* Overall overlap percentage with bar */}
-      <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          marginBottom: 12,
-          padding: 10,
-          backgroundColor: COLORS.gray50,
-          borderRadius: 4,
-        }}
-        wrap={false}
-      >
-        <Text style={{ fontSize: 9, color: COLORS.gray700, width: 140 }}>
+      <View style={styles.summaryBar} wrap={false}>
+        <Text style={styles.summaryLabel}>
           {messages['pdf.dsgvo.overallOverlap'] || 'Overall DSGVO Overlap'}:
         </Text>
-        <Text style={{ fontSize: 14, fontWeight: 700, color: COLORS.primary, width: 50 }}>
+        <Text style={styles.summaryPercentage}>
           {dsgvoOverlap.overallPercentage}%
         </Text>
         {/* Progress bar */}
@@ -93,7 +83,7 @@ const PDFDsgvoOverlapSection = ({ dsgvoOverlap, messages }: PDFDsgvoOverlapProps
       })}
 
       {/* Explanation note */}
-      <Text style={{ fontSize: 7, color: COLORS.gray500, marginTop: 8 }}>
+      <Text style={styles.noteText}>
         {messages['pdf.dsgvo.note'] ||
           'Overlap indicates how much existing DSGVO compliance can be leveraged for NIS2 requirements.'}
       </Text>

@@ -152,8 +152,51 @@
   animation: fadeInUp 0.3s ease-out;
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Completion overlay animations */
+@keyframes completionOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes completionContent {
+  from { opacity: 0; transform: translateY(16px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes checkmark {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.animate-completion-overlay {
+  animation: completionOverlay 0.3s ease-out;
+}
+
+.animate-completion-content {
+  animation: completionContent 0.5s ease-out 0.2s both;
+}
+
+.animate-checkmark {
+  animation: checkmark 0.4s ease-out 0.5s both;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .step-transition {
+  .step-transition,
+  .animate-fade-in,
+  .animate-completion-overlay,
+  .animate-completion-content,
+  .animate-checkmark {
     animation: none;
   }
 }

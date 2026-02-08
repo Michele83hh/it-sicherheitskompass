@@ -185,4 +185,53 @@ export const styles = StyleSheet.create({
     borderBottom: `1 solid ${COLORS.gray300}`,
     marginVertical: 12,
   },
+  // Page-level section header (themed pages in additional analysis)
+  pageHeader: {
+    fontSize: 16,
+    fontWeight: 700,
+    color: COLORS.primary,
+    marginBottom: 4,
+  },
+  // Sub-section title (within a section, smaller than sectionTitle)
+  subSectionTitle: {
+    fontSize: 11,
+    fontWeight: 700,
+    color: COLORS.gray900,
+    marginBottom: 6,
+    marginTop: 12,
+  },
+  // Note/disclaimer text at bottom of sections
+  noteText: {
+    fontSize: 7,
+    color: COLORS.gray500,
+    marginTop: 8,
+    lineHeight: 1.4,
+  },
+  // Visual divider between sections on same page
+  sectionDivider: {
+    borderBottom: `0.5 solid ${COLORS.gray200}`,
+    marginVertical: 16,
+  },
+  // Summary bar with overall percentage (DSGVO, ISO, Progress)
+  summaryBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10,
+    backgroundColor: COLORS.gray50,
+    borderRadius: 4,
+    marginBottom: 12,
+  },
+  // Summary bar label
+  summaryLabel: {
+    fontSize: 9,
+    color: COLORS.gray700,
+    width: 140,
+  },
+  // Summary bar large percentage
+  summaryPercentage: {
+    fontSize: 14,
+    fontWeight: 700,
+    color: COLORS.primary,
+    width: 50,
+  },
 });

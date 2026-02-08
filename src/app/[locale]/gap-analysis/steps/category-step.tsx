@@ -1,11 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { Info } from 'lucide-react';
+import { Info, Lightbulb, HelpCircle, ChevronDown } from 'lucide-react';
 import { useGapAnalysisStore } from '@/stores/gap-analysis-store';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import {
@@ -14,30 +15,40 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { getQuestionsByCategory } from '@/lib/nis2/questions';
+import { getCoreQuestionsByCategory, getAdvancedQuestionsByCategory } from '@/lib/nis2/questions';
 import { WizardNavigation } from '@/app/[locale]/check/components/navigation';
 import type { Answer, MaturityLevel } from '@/lib/nis2/types';
 
 interface CategoryStepProps {
   categoryId: string;
+  categoryTranslationPrefix: string;
   isFirstCategory: boolean;
   isLastCategory: boolean;
   locale: string;
+  tier: 'core' | 'advanced';
+  onCorePhaseDone: () => void;
 }
 
 export function CategoryStep({
   categoryId,
+  categoryTranslationPrefix,
   isFirstCategory,
   isLastCategory,
   locale,
+  tier,
+  onCorePhaseDone,
 }: CategoryStepProps) {
   const t = useTranslations(); // Root translator for question content
   const tGap = useTranslations('gapAnalysis');
+  const tCategories = useTranslations('categories');
   const router = useRouter();
-  const questions = getQuestionsByCategory(categoryId);
+  const questions = tier === 'core'
+    ? getCoreQuestionsByCategory(categoryId)
+    : getAdvancedQuestionsByCategory(categoryId);
   const { updateAnswers, nextCategory, prevCategory, getAnswersByCategory } =
     useGapAnalysisStore();
 
+  const [showCompletion, setShowCompletion] = useState(false);
   const existingAnswers = getAnswersByCategory(categoryId);
 
   // Zod schema - all fields REQUIRED
@@ -78,7 +89,16 @@ export function CategoryStep({
     updateAnswers(categoryAnswers);
 
     if (isLastCategory) {
-      router.push(`/${locale}/results`);
+      if (tier === 'core') {
+        // Core phase done → show milestone screen
+        onCorePhaseDone();
+      } else {
+        // Advanced phase done → show completion animation, then results
+        setShowCompletion(true);
+        setTimeout(() => {
+          router.push(`/${locale}/results`);
+        }, 2000);
+      }
     } else {
       nextCategory();
     }
@@ -102,9 +122,42 @@ export function CategoryStep({
     prevCategory();
   };
 
+  // Completion animation overlay
+  if (showCompletion) {
+    return (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-white/90 animate-completion-overlay">
+        <div className="text-center animate-completion-content">
+          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
+            <svg className="h-10 w-10 text-green-600 animate-checkmark" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h2 className="text-2xl font-bold text-foreground">{tGap('completion.title')}</h2>
+          <p className="mt-2 text-muted-foreground">{tGap('completion.subtitle')}</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Get the empoweringIntro key (e.g., "riskAnalysis.empoweringIntro")
+  const empoweringIntroKey = `${categoryTranslationPrefix}.empoweringIntro`;
+
   return (
     <TooltipProvider>
     <form key={categoryId} onSubmit={handleSubmit(onSubmit)} className="mt-8">
+      {/* Phase-dependent intro box */}
+      {tier === 'core' ? (
+        <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
+          <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+          <p className="text-sm text-blue-800">{tCategories(empoweringIntroKey)}</p>
+        </div>
+      ) : (
+        <div className="mb-6 flex items-start gap-3 rounded-lg border border-purple-200 bg-purple-50 p-4">
+          <Lightbulb className="size-5 text-purple-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+          <p className="text-sm text-purple-800">{tGap('phase.advancedIntro')}</p>
+        </div>
+      )}
+
       <div className="space-y-8">
         {questions.map((question) => (
           <div
@@ -131,6 +184,18 @@ export function CategoryStep({
                   </TooltipContent>
                 </Tooltip>
             </div>
+
+            {/* Collapsible help section */}
+            <details className="mb-4 group">
+              <summary className="flex cursor-pointer items-center gap-1.5 text-sm text-blue-600 hover:text-blue-800 transition-colors select-none list-none [&::-webkit-details-marker]:hidden">
+                <HelpCircle className="size-4 flex-shrink-0" />
+                <span>{tGap('question.helpToggle')}</span>
+                <ChevronDown className="size-3.5 transition-transform group-open:rotate-180" />
+              </summary>
+              <div className="mt-2 rounded-md border border-blue-100 bg-blue-50/50 px-4 py-3 text-sm text-foreground leading-relaxed">
+                {t(question.helpKey)}
+              </div>
+            </details>
 
             {/* Maturity selection label */}
             <p className="mb-3 text-sm font-medium text-muted-foreground">
@@ -186,7 +251,7 @@ export function CategoryStep({
           isLastStep={isLastCategory}
           backLabel={tGap('navigation.back')}
           nextLabel={tGap('navigation.next')}
-          submitLabel={tGap('navigation.showResults')}
+          submitLabel={tier === 'core' ? tGap('navigation.coreComplete') : tGap('navigation.showResults')}
         />
       </div>
     </form>

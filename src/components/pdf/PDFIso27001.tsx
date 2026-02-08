@@ -15,21 +15,11 @@ const PDFIso27001Section = ({ iso27001, messages }: PDFIso27001Props) => {
       </Text>
 
       {/* Overall alignment percentage with bar */}
-      <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          marginBottom: 12,
-          padding: 10,
-          backgroundColor: COLORS.gray50,
-          borderRadius: 4,
-        }}
-        wrap={false}
-      >
-        <Text style={{ fontSize: 9, color: COLORS.gray700, width: 140 }}>
+      <View style={styles.summaryBar} wrap={false}>
+        <Text style={styles.summaryLabel}>
           {messages['pdf.iso.overallAlignment'] || 'Overall ISO 27001 Alignment'}:
         </Text>
-        <Text style={{ fontSize: 14, fontWeight: 700, color: COLORS.primary, width: 50 }}>
+        <Text style={styles.summaryPercentage}>
           {iso27001.overallAlignment}%
         </Text>
         {/* Progress bar */}
@@ -94,7 +84,7 @@ const PDFIso27001Section = ({ iso27001, messages }: PDFIso27001Props) => {
       })}
 
       {/* Explanation note */}
-      <Text style={{ fontSize: 7, color: COLORS.gray500, marginTop: 8 }}>
+      <Text style={styles.noteText}>
         {messages['pdf.iso.note'] ||
           'Shows mapping between NIS2 Art. 21(2) requirements and ISO/IEC 27001:2022 Annex A controls.'}
       </Text>
