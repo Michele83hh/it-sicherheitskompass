@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { useWizardStore } from '@/stores/wizard-store';
-import { getSectorsByAnlage } from '@/lib/nis2/sectors';
+import { getSectorsByAnlage } from '@/lib/regulations/nis2/sectors';
 import {
   Select,
   SelectContent,

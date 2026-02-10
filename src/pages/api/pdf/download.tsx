@@ -27,7 +27,9 @@ export default async function handler(
     );
 
     const timestamp = new Date().toISOString().split('T')[0];
-    const filename = `NIS2-Readiness-Report-${timestamp}.pdf`;
+    const regName = payload.regulationName || payload.regulationId?.toUpperCase() || 'NIS2';
+    const sanitized = regName.replace(/[^a-zA-Z0-9äöüÄÖÜß\s-]/g, '').replace(/\s+/g, '-');
+    const filename = `${sanitized}-Readiness-Report-${timestamp}.pdf`;
 
     res.setHeader('Content-Type', 'application/pdf');
     res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { Answer, MaturityLevel } from '@/lib/nis2/types';
+import { Answer, MaturityLevel } from '@/lib/regulations/nis2/types';
 
 interface GapAnalysisState {
   // Navigation state

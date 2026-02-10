@@ -49,64 +49,46 @@ export default function HubPage() {
     <div className="bg-white">
 
       {/* ══════════════════════════════════════════════════════
-          SECTION 1 — Hero (Dark, seriös, ein CTA)
+          HERO — Neuer Stil: kompakt, grüner CTA, Trust einzeilig
          ══════════════════════════════════════════════════════ */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800">
-        <div className="mx-auto max-w-4xl px-4 pt-20 pb-16 sm:px-6 sm:pt-28 sm:pb-20 lg:px-8">
-          <div className="text-center">
-            <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10">
-              <Shield className="size-7 text-white" />
-            </div>
-            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl leading-tight">
-              {t('hero.title')}
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
-              {t('hero.subtitle')}
-            </p>
+        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem]">
+          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            {t('hero.title')}
+          </h1>
+          <p className="mt-4 text-lg text-slate-300">
+            {t('hero.subtitle')}
+          </p>
 
-            {/* Trust Bar inline */}
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-              {(['basis', 'regulations', 'free', 'anonymous'] as const).map((key) => (
-                <span key={key} className="text-sm text-slate-400">
-                  {t(`trustBar.${key}`)}
-                </span>
-              ))}
-            </div>
-
-            {/* Single CTA */}
-            <div className="mt-10">
-              <Button
-                size="lg"
-                className="bg-white text-slate-900 hover:bg-slate-100 text-lg px-10 py-7 font-semibold rounded-lg"
-                asChild
-              >
-                <Link href="/navigator">
-                  {t('hero.cta')}
-                  <ArrowRight className="ml-2 size-5" />
-                </Link>
-              </Button>
-            </div>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-2 text-sm text-slate-400">
+            <span>{t('trustBar.basis')}</span>
+            <span className="text-slate-600">·</span>
+            <span>{t('trustBar.free')}</span>
+            <span className="text-slate-600">·</span>
+            <span>{t('trustBar.anonymous')}</span>
+            <span className="text-slate-600">·</span>
+            <span>{t('trustBar.questions')}</span>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          SECTION 2 — So funktioniert's (3 Schritte)
+          SO FUNKTIONIERT'S (3 Schritte) — Original
          ══════════════════════════════════════════════════════ */}
-      <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold text-foreground sm:text-3xl">
+      <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-14 lg:px-8">
+        <div className="text-center mb-10">
+          <h2 className="text-2xl font-bold text-foreground">
             {t('howItWorks.title')}
           </h2>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-3">
           {[1, 2, 3].map((step) => {
             const Icon = STEP_ICONS[step - 1];
             return (
               <div key={step} className="relative flex flex-col items-center text-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100 text-slate-700 mb-4">
-                  <Icon className="size-6" />
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-100 text-slate-700 mb-3">
+                  <Icon className="size-5" />
                 </div>
 
                 {/* Connector */}
@@ -114,13 +96,13 @@ export default function HubPage() {
                   <div className="hidden sm:block absolute top-6 left-[calc(50%+28px)] w-[calc(100%-56px)] h-px bg-slate-200" aria-hidden="true" />
                 )}
 
-                <h3 className="text-sm font-semibold text-foreground mb-1">
+                <h3 className="text-base font-semibold text-foreground mb-1">
                   {t(`howItWorks.step${step}.title`)}
                 </h3>
-                <p className="text-xs text-muted-foreground leading-relaxed mb-2">
+                <p className="text-sm text-muted-foreground leading-relaxed mb-2">
                   {t(`howItWorks.step${step}.desc`)}
                 </p>
-                <span className="inline-block rounded-full bg-slate-100 px-2.5 py-0.5 text-[10px] font-medium text-slate-600">
+                <span className="inline-block rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-600">
                   {t(`howItWorks.step${step}.time`)}
                 </span>
               </div>
@@ -130,11 +112,27 @@ export default function HubPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          SECTION 3 — Regelwerke (dezent, Shortcut)
+          CTA — Zentraler Button zwischen Schritte und Regelwerke
+         ══════════════════════════════════════════════════════ */}
+      <section className="text-center pb-12">
+        <Button
+          size="lg"
+          className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-10 py-7 font-semibold rounded-xl shadow-lg shadow-emerald-500/20"
+          asChild
+        >
+          <Link href="/navigator">
+            {t('hero.cta')}
+            <ArrowRight className="ml-2 size-5" />
+          </Link>
+        </Button>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════
+          REGELWERKE — Original (alle 11)
          ══════════════════════════════════════════════════════ */}
       <section className="border-t border-slate-100">
-        <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-          <h2 className="text-center text-lg font-semibold text-muted-foreground mb-8">
+        <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+          <h2 className="text-center text-lg font-semibold text-muted-foreground mb-6">
             {t('directAccessTitle')}
           </h2>
 
@@ -168,9 +166,9 @@ export default function HubPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          SECTION 4 — Identität
+          IDENTITÄT — Original
          ══════════════════════════════════════════════════════ */}
-      <section className="border-t border-slate-100 bg-slate-50 py-8">
+      <section className="border-t border-slate-100 bg-slate-50 py-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center gap-1 text-sm text-muted-foreground">
             <span>{t('identity.createdBy')}</span>

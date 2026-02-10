@@ -8,7 +8,7 @@ import {
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import type { CategoryScore, EffortLevel } from '@/lib/nis2/types';
+import type { CategoryScore, EffortLevel } from '@/lib/regulations/types';
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Shield, AlertTriangle, ServerCrash, Link2, Code,
@@ -20,8 +20,8 @@ interface CategoryCardProps {
   categoryName: string;
   categoryShortName: string;
   categoryIcon?: string;
-  euArticle: string;
-  bsigParagraph: string;
+  euArticle?: string;
+  bsigParagraph?: string;
   verdict: string;
   topRecommendation?: {
     title: string;

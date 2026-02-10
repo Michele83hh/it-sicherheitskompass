@@ -3,18 +3,18 @@
 /**
  * Scoring Engine Types
  *
- * Re-exports scoring-related types from the shared NIS2 types module,
+ * Re-exports scoring-related types from the shared regulation types module,
  * plus engine-specific types for the scoring calculation.
  */
 
-// Re-export scoring types from the shared NIS2 types
+// Re-export scoring types from shared regulation types
 export type {
   MaturityLevel,
   TrafficLight,
   Answer,
   CategoryScore,
   OverallScore,
-} from '@/lib/nis2/types';
+} from '@/lib/regulations/types';
 
 /**
  * Minimal category info needed by the scoring engine.

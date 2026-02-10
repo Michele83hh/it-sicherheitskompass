@@ -10,7 +10,8 @@
  * - Phase 3: Strategic Measures (6-12 months) — strategic items + optimization
  */
 
-import type { CategoryScore, Recommendation, TrafficLight, EffortLevel } from './types';
+import type { CategoryScore, TrafficLight, EffortLevel } from './types';
+import type { BaseRecommendation } from '../types';
 
 export interface RoadmapPhase {
   id: 'quick-wins' | 'core' | 'strategic';
@@ -22,7 +23,7 @@ export interface RoadmapPhase {
 }
 
 export interface RoadmapItem {
-  recommendation: Recommendation;
+  recommendation: BaseRecommendation;
   categoryScore: CategoryScore;
   urgency: 'critical' | 'high' | 'medium' | 'low';
 }
@@ -76,7 +77,7 @@ const URGENCY_ORDER: Record<string, number> = {
  */
 export function generateRoadmap(
   categoryScores: CategoryScore[],
-  recommendations: Recommendation[]
+  recommendations: BaseRecommendation[]
 ): RoadmapPhase[] {
   const scoreMap = new Map(categoryScores.map((cs) => [cs.categoryId, cs]));
 

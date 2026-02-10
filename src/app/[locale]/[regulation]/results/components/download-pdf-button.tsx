@@ -18,20 +18,20 @@ import { useGapAnalysisStore } from '@/stores/gap-analysis-store';
 import { useWizardStore } from '@/stores/wizard-store';
 import { useProgressStore } from '@/stores/progress-store';
 import { usePdfSectionsStore, type PDFSectionKey } from '@/stores/pdf-sections-store';
-import { CATEGORIES } from '@/lib/nis2/categories';
-import { getSectorById } from '@/lib/nis2/sectors';
-import { classifyEntity } from '@/lib/nis2/classification';
-import { getRecommendationsByCategory } from '@/lib/nis2/recommendations';
-import { getCoreQuestionCount, getTotalQuestionCount } from '@/lib/nis2/questions';
-import { calculatePenalty } from '@/lib/nis2/bussgeld';
-import { generateRoadmap } from '@/lib/nis2/roadmap';
-import { getAdjustedCostEstimate, getSizeFactor, type CompanyProfile } from '@/lib/nis2/cost-estimation';
-import { NIS2_DSGVO_OVERLAPS, calculateOverallOverlap } from '@/lib/nis2/dsgvo-overlap';
-import { ISO27001_MAPPINGS, calculateOverallAlignment } from '@/lib/nis2/iso27001';
-import { DIN_SPEC_AREAS } from '@/lib/nis2/din-spec';
-import { EVIDENCE_ITEMS } from '@/lib/nis2/evidence';
-import { getSectorGuidance, hasSectorGuidance } from '@/lib/nis2/sector-guidance';
-import type { OverallScore } from '@/lib/nis2/types';
+import { CATEGORIES } from '@/lib/regulations/nis2/categories';
+import { getSectorById } from '@/lib/regulations/nis2/sectors';
+import { classifyEntity } from '@/lib/regulations/nis2/classification';
+import { getRecommendationsByCategory } from '@/lib/regulations/nis2/recommendations';
+import { getCoreQuestionCount, getTotalQuestionCount } from '@/lib/regulations/nis2/questions';
+import { calculatePenalty } from '@/lib/regulations/nis2/bussgeld';
+import { generateRoadmap } from '@/lib/regulations/nis2/roadmap';
+import { getAdjustedCostEstimate, getSizeFactor, type CompanyProfile } from '@/lib/regulations/nis2/cost-estimation';
+import { NIS2_DSGVO_OVERLAPS, calculateOverallOverlap } from '@/lib/regulations/nis2/dsgvo-overlap';
+import { ISO27001_MAPPINGS, calculateOverallAlignment } from '@/lib/regulations/nis2/iso27001';
+import { DIN_SPEC_AREAS } from '@/lib/regulations/nis2/din-spec';
+import { EVIDENCE_ITEMS } from '@/lib/regulations/nis2/evidence';
+import { getSectorGuidance, hasSectorGuidance } from '@/lib/regulations/nis2/sector-guidance';
+import type { OverallScore } from '@/lib/regulations/types';
 import type { PDFPayload, PDFCategoryResult, PDFRecommendation, PDFExecutiveSummary } from '@/lib/pdf/types';
 import { Download, Loader2, Lock } from 'lucide-react';
 
@@ -62,7 +62,7 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
   const tPdf = useTranslations('pdf');
   const tSectors = useTranslations('sectors');
   const tCategories = useTranslations('categories');
-  const tRec = useTranslations('recommendations');
+  const tAll = useTranslations();
   const tClass = useTranslations('classification');
   const tRoadmap = useTranslations('roadmap');
   const tDsgvo = useTranslations('dsgvoOverlap');
@@ -169,9 +169,9 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
               allRecommendations.push({
                 categoryId: catScore.categoryId,
                 categoryName,
-                title: tRec(rec.titleKey.replace('recommendations.', '')),
-                description: tRec(rec.descriptionKey.replace('recommendations.', '')),
-                firstStep: tRec(rec.firstStepKey.replace('recommendations.', '')),
+                title: tAll(rec.titleKey),
+                description: tAll(rec.descriptionKey),
+                firstStep: tAll(rec.firstStepKey),
                 priority: rec.priority,
                 effortLevel: rec.effortLevel,
                 legalReference: rec.legalReference,
@@ -546,7 +546,7 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
                   ? getAdjustedCostEstimate(item.recommendation.id, companyProfile, categoryTrafficLightMap.get(item.recommendation.categoryId) ?? 'red')
                   : null;
                 return {
-                  title: tRec(item.recommendation.titleKey.replace('recommendations.', '')),
+                  title: tAll(item.recommendation.titleKey),
                   urgency: item.urgency,
                   ...(idx === 0 && adj ? {
                     days: adj.adjustedInternalDays.min === adj.adjustedInternalDays.max
@@ -606,7 +606,7 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
             const category = CATEGORIES.find((c) => c.id === rec.categoryId);
             const catName = category ? tCategories(category.shortNameKey.replace('categories.', '')) : '';
             costItems.push({
-              title: tRec(rec.titleKey.replace('recommendations.', '')),
+              title: tAll(rec.titleKey),
               categoryName: catName,
               effortLevel: rec.effortLevel,
               internalDays: adj.adjustedInternalDays,
@@ -767,7 +767,7 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
           items: allRecForProgress.map((rec) => {
             const progress = getProgress(rec.id);
             return {
-              title: tRec(rec.titleKey.replace('recommendations.', '')),
+              title: tAll(rec.titleKey),
               status: progress?.status || 'not-started',
             };
           }),
@@ -845,6 +845,8 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
       const payload: PDFPayload = {
         locale,
         analysisDepth,
+        regulationId: 'nis2',
+        regulationName: 'NIS2',
         company: {
           sectorName,
           subsectorName,

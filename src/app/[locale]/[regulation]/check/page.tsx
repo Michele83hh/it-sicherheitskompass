@@ -2,10 +2,12 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useParams, useRouter } from 'next/navigation';
 import { Info, Shield, Building2, ArrowRight, Clock, Lock, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useWizardStore } from '@/stores/wizard-store';
 import { StepIndicator } from './components/step-indicator';
+import { RegulationBreadcrumb } from '@/components/layout/breadcrumb';
 import { SectorSelectionStep } from './steps/sector-selection';
 import { CompanySizeStep } from './steps/company-size';
 import { ResultStep } from './steps/result';
@@ -13,6 +15,10 @@ import { ResultStep } from './steps/result';
 export default function CheckPage() {
   const t = useTranslations('check');
   const tDisclaimer = useTranslations('disclaimers');
+  const params = useParams();
+  const router = useRouter();
+  const regulation = params?.regulation as string;
+  const locale = params?.locale as string;
   const currentStep = useWizardStore((state) => state.currentStep);
   const formData = useWizardStore((state) => state.formData);
   const [isClient, setIsClient] = useState(false);
@@ -22,6 +28,13 @@ export default function CheckPage() {
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  // Redirect non-NIS2 regulations to assessment (check/classification is NIS2-only)
+  useEffect(() => {
+    if (isClient && regulation !== 'nis2') {
+      router.replace(`/${locale}/${regulation}/assessment`);
+    }
+  }, [isClient, regulation, locale, router]);
 
   if (!isClient) {
     // Render skeleton with same structure to minimize layout shift
@@ -45,20 +58,23 @@ export default function CheckPage() {
 
   if (shouldShowIntro) {
     return (
-      <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+      <div>
         {/* Hero */}
-        <div className="text-center mb-12">
-          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-            <Shield className="size-8 text-primary" />
+        <section className="bg-gradient-to-b from-slate-900 to-slate-800">
+          <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem]">
+            <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
+              <Shield className="size-7 text-white" />
+            </div>
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              {t('intro.title')}
+            </h1>
+            <p className="mt-4 text-lg text-slate-300">
+              {t('intro.subtitle')}
+            </p>
           </div>
-          <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            {t('intro.title')}
-          </h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-            {t('intro.subtitle')}
-          </p>
-        </div>
+        </section>
 
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12">
         {/* How it works */}
         <div className="mb-12">
           <h2 className="text-xl font-semibold text-center mb-8">{t('intro.howTitle')}</h2>
@@ -96,10 +112,11 @@ export default function CheckPage() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button size="lg" className="text-lg px-8 py-6" onClick={() => setShowIntro(false)}>
+          <Button size="lg" className="text-lg px-8 py-6 bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-500/20" onClick={() => setShowIntro(false)}>
             <Shield className="mr-2 size-5" />
             {t('intro.cta')}
           </Button>
+        </div>
         </div>
       </div>
     );
@@ -113,6 +130,7 @@ export default function CheckPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:py-12">
+      <RegulationBreadcrumb regulation={regulation} currentPage="check" />
       <h1 className="mb-2 text-center text-3xl font-bold text-foreground sm:text-4xl">
         {t('title')}
       </h1>

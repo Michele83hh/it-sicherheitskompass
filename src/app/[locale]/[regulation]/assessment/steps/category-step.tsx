@@ -7,7 +7,8 @@ import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { Info, Lightbulb, HelpCircle, ChevronDown } from 'lucide-react';
-import { useGapAnalysisStore } from '@/stores/gap-analysis-store';
+import { useRegulationStores } from '@/hooks/useRegulationStores';
+import { getQuestionsByCategory } from '@/hooks/useRegulationConfig';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import {
   Tooltip,
@@ -15,9 +16,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { getCoreQuestionsByCategory, getAdvancedQuestionsByCategory } from '@/lib/nis2/questions';
-import { WizardNavigation } from '@/app/[locale]/check/components/navigation';
-import type { Answer, MaturityLevel } from '@/lib/nis2/types';
+import { WizardNavigation } from '@/app/[locale]/[regulation]/check/components/navigation';
+import type { Answer, MaturityLevel, RegulationConfig } from '@/lib/regulations/types';
 
 interface CategoryStepProps {
   categoryId: string;
@@ -25,8 +25,10 @@ interface CategoryStepProps {
   isFirstCategory: boolean;
   isLastCategory: boolean;
   locale: string;
-  tier: 'core' | 'advanced';
+  regulation: string;
+  tier?: 'core' | 'advanced';
   onCorePhaseDone: () => void;
+  config: RegulationConfig;
 }
 
 export function CategoryStep({
@@ -35,18 +37,38 @@ export function CategoryStep({
   isFirstCategory,
   isLastCategory,
   locale,
+  regulation,
   tier,
   onCorePhaseDone,
+  config,
 }: CategoryStepProps) {
   const t = useTranslations(); // Root translator for question content
   const tGap = useTranslations('gapAnalysis');
-  const tCategories = useTranslations('categories');
+  const tAll = useTranslations();
   const router = useRouter();
-  const questions = tier === 'core'
-    ? getCoreQuestionsByCategory(categoryId)
-    : getAdvancedQuestionsByCategory(categoryId);
-  const { updateAnswers, nextCategory, prevCategory, getAnswersByCategory } =
-    useGapAnalysisStore();
+
+  const questions = tier
+    ? getQuestionsByCategory(config, categoryId, tier)
+    : getQuestionsByCategory(config, categoryId);
+
+  const { assessmentStore, quickCheckStore } = useRegulationStores(regulation);
+  const updateAnswers = assessmentStore((state) => state.updateAnswers);
+  const nextCategory = assessmentStore((state) => state.nextCategory);
+  const prevCategory = assessmentStore((state) => state.prevCategory);
+  const getAnswersByCategory = assessmentStore((state) => state.getAnswersByCategory);
+
+  // Quick check hint: find the Schnellcheck answer for this category
+  const quickCheckAnswers = quickCheckStore((state) => state.answers);
+  const quickCheckCompleted = quickCheckStore((state) => state.completed);
+  const quickCheckQuestions = config.quickCheckQuestions || [];
+  const quickCheckQuestionForCategory = quickCheckQuestions.find(
+    (q) => q.categoryId === categoryId
+  );
+  const quickCheckAnswer = quickCheckQuestionForCategory
+    ? quickCheckAnswers.find((a) => a.questionId === quickCheckQuestionForCategory.id)
+    : undefined;
+
+  const maxCategoryIndex = config.categories.length - 1;
 
   const [showCompletion, setShowCompletion] = useState(false);
   const existingAnswers = getAnswersByCategory(categoryId);
@@ -93,14 +115,14 @@ export function CategoryStep({
         // Core phase done → show milestone screen
         onCorePhaseDone();
       } else {
-        // Advanced phase done → show completion animation, then results
+        // Advanced phase done OR non-tiered done → show completion animation, then results
         setShowCompletion(true);
         setTimeout(() => {
-          router.push(`/${locale}/results`);
+          router.push(`/${locale}/${regulation}/results`);
         }, 2000);
       }
     } else {
-      nextCategory();
+      nextCategory(maxCategoryIndex);
     }
   };
 
@@ -139,22 +161,59 @@ export function CategoryStep({
     );
   }
 
-  // Get the empoweringIntro key (e.g., "riskAnalysis.empoweringIntro")
-  const empoweringIntroKey = `${categoryTranslationPrefix}.empoweringIntro`;
+  // Get the empoweringIntro key from the category's nameKey
+  const category = config.categories.find((c) => c.id === categoryId);
+  const empoweringIntroKey = category
+    ? category.nameKey.replace('.name', '.empoweringIntro')
+    : `${categoryTranslationPrefix}.empoweringIntro`;
+
+  const hasTieredAssessment = config.features.hasTieredAssessment;
 
   return (
     <TooltipProvider>
     <form key={categoryId} onSubmit={handleSubmit(onSubmit)} className="mt-8">
+      {/* Quick check hint badge */}
+      {quickCheckCompleted && quickCheckAnswer && (
+        <div className="mb-4">
+          <span
+            className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium ${
+              quickCheckAnswer.value === 'yes'
+                ? 'bg-green-100 text-green-700'
+                : quickCheckAnswer.value === 'partial'
+                  ? 'bg-yellow-100 text-yellow-700'
+                  : 'bg-red-100 text-red-700'
+            }`}
+          >
+            <span
+              className={`inline-block size-1.5 rounded-full ${
+                quickCheckAnswer.value === 'yes'
+                  ? 'bg-green-500'
+                  : quickCheckAnswer.value === 'partial'
+                    ? 'bg-yellow-500'
+                    : 'bg-red-500'
+              }`}
+              aria-hidden="true"
+            />
+            {tGap(`quickCheckHint.${quickCheckAnswer.value}`)}
+          </span>
+        </div>
+      )}
+
       {/* Phase-dependent intro box */}
-      {tier === 'core' ? (
+      {hasTieredAssessment && tier === 'core' ? (
         <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
           <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
-          <p className="text-sm text-blue-800">{tCategories(empoweringIntroKey)}</p>
+          <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
         </div>
-      ) : (
+      ) : hasTieredAssessment && tier === 'advanced' ? (
         <div className="mb-6 flex items-start gap-3 rounded-lg border border-purple-200 bg-purple-50 p-4">
           <Lightbulb className="size-5 text-purple-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
           <p className="text-sm text-purple-800">{tGap('phase.advancedIntro')}</p>
+        </div>
+      ) : (
+        <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
+          <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+          <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
         </div>
       )}
 
@@ -196,6 +255,14 @@ export function CategoryStep({
                 {t(question.helpKey)}
               </div>
             </details>
+
+            {/* Legal reference hint */}
+            {question.legalReference && (
+              <p className="mb-3 text-xs text-muted-foreground">
+                {question.legalReference.primary}
+                {question.legalReference.national ? ` · ${question.legalReference.national}` : ''}
+              </p>
+            )}
 
             {/* Maturity selection label */}
             <p className="mb-3 text-sm font-medium text-muted-foreground">
@@ -251,7 +318,11 @@ export function CategoryStep({
           isLastStep={isLastCategory}
           backLabel={tGap('navigation.back')}
           nextLabel={tGap('navigation.next')}
-          submitLabel={tier === 'core' ? tGap('navigation.coreComplete') : tGap('navigation.showResults')}
+          submitLabel={
+            hasTieredAssessment && tier === 'core'
+              ? tGap('navigation.coreComplete')
+              : tGap('navigation.showResults')
+          }
         />
       </div>
     </form>

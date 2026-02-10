@@ -27,9 +27,15 @@ import {
   FileText,
   KeyRound,
   ShieldCheck,
+  ShieldAlert,
+  Award,
+  BadgeCheck,
+  CreditCard,
+  Cloud,
+  Clock,
 } from 'lucide-react';
 
-type RegulationId = 'nis2' | 'dsgvo' | 'kritis' | 'dora' | 'tisax' | 'cra' | 'bsi-grundschutz';
+type RegulationId = 'nis2' | 'dsgvo' | 'kritis' | 'dora' | 'tisax' | 'cra' | 'bsi-grundschutz' | 'iso27001' | 'soc2' | 'pci-dss' | 'c5';
 
 type Relevance = 'high' | 'medium' | 'low' | 'none';
 
@@ -58,10 +64,12 @@ const INDUSTRIES = [
 const BUSINESS_MODELS = [
   'personalData', 'digitalProducts', 'kritisOperator', 'financialServices',
   'automotiveSupplier', 'digitalServices', 'manufacturing', 'cloudProvider',
+  'supplierForRegulated', 'paymentProcessing', 'saasProvider',
 ] as const;
 
 const SPECIAL_CIRCUMSTANCES = [
   'kritis', 'tisaxRequired', 'art9Data', 'iotProducts', 'financeClients', 'iso27001',
+  'pciRequired', 'publicSectorClients',
 ] as const;
 
 const TOTAL_STEPS = 4;
@@ -74,6 +82,7 @@ export default function NavigatorPage() {
   const [companySize, setCompanySize] = useState('');
   const [businessModels, setBusinessModels] = useState<string[]>([]);
   const [specialCircumstances, setSpecialCircumstances] = useState<string[]>([]);
+  const [showLowRelevance, setShowLowRelevance] = useState(false);
 
   function calculateResults(): RegulationResult[] {
     const results: RegulationResult[] = [];
@@ -82,6 +91,7 @@ export default function NavigatorPage() {
     const nis2Sectors = ['energy', 'transport', 'finance', 'health', 'water', 'digital-infrastructure', 'ict-services', 'space', 'postal', 'waste', 'manufacturing', 'food', 'chemicals', 'research'];
     const isNis2Sector = nis2Sectors.includes(industry);
     const isLargeEnough = companySize === 'medium' || companySize === 'large';
+    const isSupplier = businessModels.includes('supplierForRegulated');
     let nis2Score = 0;
     let nis2Reason = 'nis2Check';
     if (specialCircumstances.includes('kritis')) {
@@ -90,6 +100,9 @@ export default function NavigatorPage() {
     } else if (isNis2Sector && isLargeEnough) {
       nis2Score = 90;
       nis2Reason = 'nis2SectorSize';
+    } else if (isSupplier) {
+      nis2Score = 65;
+      nis2Reason = 'nis2SupplyChain';
     } else if (isNis2Sector) {
       nis2Score = 50;
       nis2Reason = 'nis2SectorOnly';
@@ -147,6 +160,10 @@ export default function NavigatorPage() {
         doraScore = 70;
         doraReason = 'doraICT';
       }
+    }
+    if (isSupplier && specialCircumstances.includes('financeClients') && doraScore < 60) {
+      doraScore = 60;
+      doraReason = 'doraSupplyChain';
     }
     results.push({
       id: 'dora',
@@ -207,6 +224,87 @@ export default function NavigatorPage() {
       reasonKey: bsiReason,
     });
 
+    // ISO 27001
+    let iso27001Score = 30;
+    let iso27001Reason = 'iso27001Framework';
+    if (specialCircumstances.includes('iso27001')) {
+      iso27001Score = 90;
+      iso27001Reason = 'iso27001Already';
+    } else if (nis2Score >= 80 || kritisScore >= 80 || doraScore >= 80) {
+      iso27001Score = 75;
+      iso27001Reason = 'iso27001Compliance';
+    } else if (isLargeEnough) {
+      iso27001Score = 55;
+      iso27001Reason = 'iso27001Size';
+    }
+    results.push({
+      id: 'iso27001',
+      relevance: iso27001Score >= 80 ? 'high' : iso27001Score >= 40 ? 'medium' : 'low',
+      score: iso27001Score,
+      reasonKey: iso27001Reason,
+    });
+
+    // SOC 2
+    let soc2Score = 0;
+    let soc2Reason = 'soc2NA';
+    if (businessModels.includes('saasProvider') || businessModels.includes('cloudProvider')) {
+      soc2Score = 85;
+      soc2Reason = 'soc2Cloud';
+    } else if (businessModels.includes('digitalServices')) {
+      soc2Score = 60;
+      soc2Reason = 'soc2Digital';
+    } else if (isSupplier) {
+      soc2Score = 40;
+      soc2Reason = 'soc2Supplier';
+    }
+    results.push({
+      id: 'soc2',
+      relevance: soc2Score >= 80 ? 'high' : soc2Score >= 40 ? 'medium' : soc2Score >= 10 ? 'low' : 'none',
+      score: soc2Score,
+      reasonKey: soc2Reason,
+    });
+
+    // PCI DSS
+    let pciScore = 0;
+    let pciReason = 'pciNA';
+    if (specialCircumstances.includes('pciRequired') || businessModels.includes('paymentProcessing')) {
+      pciScore = 95;
+      pciReason = 'pciRequired';
+    } else if (industry === 'finance' || industry === 'retail') {
+      pciScore = 70;
+      pciReason = 'pciSector';
+    } else if (businessModels.includes('digitalProducts') || businessModels.includes('digitalServices')) {
+      pciScore = 35;
+      pciReason = 'pciDigital';
+    }
+    results.push({
+      id: 'pci-dss',
+      relevance: pciScore >= 80 ? 'high' : pciScore >= 40 ? 'medium' : pciScore >= 10 ? 'low' : 'none',
+      score: pciScore,
+      reasonKey: pciReason,
+    });
+
+    // C5
+    let c5Score = 0;
+    let c5Reason = 'c5NA';
+    if (businessModels.includes('cloudProvider')) {
+      c5Score = 85;
+      c5Reason = 'c5Cloud';
+    } else if (businessModels.includes('saasProvider')) {
+      c5Score = 75;
+      c5Reason = 'c5Saas';
+    }
+    if (specialCircumstances.includes('publicSectorClients') && c5Score < 90) {
+      c5Score = 90;
+      c5Reason = 'c5PublicSector';
+    }
+    results.push({
+      id: 'c5',
+      relevance: c5Score >= 80 ? 'high' : c5Score >= 40 ? 'medium' : c5Score >= 10 ? 'low' : 'none',
+      score: c5Score,
+      reasonKey: c5Reason,
+    });
+
     return [...results].sort((a, b) => b.score - a.score);
   }
 
@@ -218,6 +316,10 @@ export default function NavigatorPage() {
     'tisax': { icon: Car, tKey: 'tisax', color: 'text-violet-700', bgColor: 'bg-violet-50', borderColor: 'border-violet-200' },
     'cra': { icon: Cpu, tKey: 'cra', color: 'text-cyan-700', bgColor: 'bg-cyan-50', borderColor: 'border-cyan-200' },
     'bsi-grundschutz': { icon: BookOpen, tKey: 'bsiGrundschutz', color: 'text-slate-700', bgColor: 'bg-slate-50', borderColor: 'border-slate-200' },
+    'iso27001': { icon: Award, tKey: 'iso27001', color: 'text-teal-700', bgColor: 'bg-teal-50', borderColor: 'border-teal-200' },
+    'soc2': { icon: BadgeCheck, tKey: 'soc2', color: 'text-sky-700', bgColor: 'bg-sky-50', borderColor: 'border-sky-200' },
+    'pci-dss': { icon: CreditCard, tKey: 'pciDss', color: 'text-indigo-700', bgColor: 'bg-indigo-50', borderColor: 'border-indigo-200' },
+    'c5': { icon: Cloud, tKey: 'c5', color: 'text-purple-700', bgColor: 'bg-purple-50', borderColor: 'border-purple-200' },
   };
 
   function handleRestart() {
@@ -247,25 +349,32 @@ export default function NavigatorPage() {
     const relevant = results.filter(r => r.relevance === 'high' || r.relevance === 'medium');
     const regNames = relevant.map(r => {
       const meta = regMeta[r.id];
-      return meta.tKey.toUpperCase();
-    });
-    return `mailto:?subject=IT-Sicherheitskompass%20Ergebnis&body=Relevante%20Regelwerke%3A%20${regNames.join('%2C%20')}%0A%0ADetails%3A%20${typeof window !== 'undefined' ? encodeURIComponent(window.location.origin) : ''}%2Fdashboard`;
+      return tReg(`${meta.tKey}.name`);
+    }).join(', ');
+    const url = typeof window !== 'undefined' ? window.location.origin + '/dashboard' : '';
+    const subject = encodeURIComponent(t('result.emailSubject'));
+    const body = encodeURIComponent(t('result.emailBody', { regulations: regNames, url }));
+    return `mailto:?subject=${subject}&body=${body}`;
   }
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
+    <div>
       {/* Header */}
-      <div className="text-center mb-10">
-        <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-          <Compass className="size-8 text-primary" />
+      <section className="bg-gradient-to-b from-slate-900 to-slate-800">
+        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem]">
+          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
+            <Compass className="size-7 text-white" />
+          </div>
+          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            {t('title')}
+          </h1>
+          <p className="mt-4 text-lg text-slate-300">
+            {t('subtitle')}
+          </p>
         </div>
-        <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          {t('title')}
-        </h1>
-        <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
-          {t('subtitle')}
-        </p>
-      </div>
+      </section>
+
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-10">
 
       {/* Step indicator */}
       {step < TOTAL_STEPS && (
@@ -479,6 +588,14 @@ export default function NavigatorPage() {
               </div>
             </div>
 
+            {/* Disclaimer (prominent, before results) */}
+            <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+              <div className="flex gap-2">
+                <Info className="size-4 flex-shrink-0 mt-0.5 text-amber-600" />
+                <p>{t('result.disclaimer')}</p>
+              </div>
+            </div>
+
             {/* High relevance */}
             {highResults.length > 0 && (
               <div>
@@ -513,36 +630,23 @@ export default function NavigatorPage() {
               </div>
             )}
 
-            {/* Low relevance */}
-            {lowResults.length > 0 && (
+            {/* Low + Not relevant (collapsed by default) */}
+            {(lowResults.length > 0 || noneResults.length > 0) && (
               <div>
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600">
-                    <Info className="size-3" />
-                    {t('result.lowRelevance')}
-                  </span>
-                </div>
-                <div className="space-y-3">
-                  {lowResults.map((result) => (
-                    <ResultCard key={result.id} result={result} regMeta={regMeta} t={t} tReg={tReg} dimmed />
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Not relevant */}
-            {noneResults.length > 0 && (
-              <div>
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 border border-gray-200 px-3 py-1 text-xs font-semibold text-gray-500">
-                    {t('result.notRelevant')}
-                  </span>
-                </div>
-                <div className="space-y-3">
-                  {noneResults.map((result) => (
-                    <ResultCard key={result.id} result={result} regMeta={regMeta} t={t} tReg={tReg} dimmed />
-                  ))}
-                </div>
+                <button
+                  onClick={() => setShowLowRelevance(!showLowRelevance)}
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <ArrowRight className={`size-3 transition-transform ${showLowRelevance ? 'rotate-90' : ''}`} />
+                  {t('result.notRelevant')} ({lowResults.length + noneResults.length})
+                </button>
+                {showLowRelevance && (
+                  <div className="mt-3 space-y-3">
+                    {[...lowResults, ...noneResults].map((result) => (
+                      <ResultCard key={result.id} result={result} regMeta={regMeta} t={t} tReg={tReg} dimmed />
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
@@ -573,29 +677,34 @@ export default function NavigatorPage() {
               </div>
             </div>
 
-            {/* Disclaimer */}
-            <div className="rounded-lg border border-slate-200 bg-slate-50 p-4 text-sm text-muted-foreground">
-              <div className="flex gap-2">
-                <Info className="size-4 flex-shrink-0 mt-0.5" />
-                <p>{t('result.disclaimer')}</p>
-              </div>
-            </div>
-
             {/* Primary CTAs */}
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button size="lg" className="flex-1 py-6 text-base" asChild>
-                <Link href="/dashboard">
-                  <LayoutDashboard className="mr-2 size-5" />
-                  {t('result.toDashboard')}
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" className="flex-1 py-6 text-base" asChild>
-                <a href={getEmailBody(results)}>
-                  <Mail className="mr-2 size-5" />
-                  {t('result.emailResult')}
-                </a>
-              </Button>
-            </div>
+            {(() => {
+              const firstRegId = highResults[0]?.id || mediumResults[0]?.id || 'nis2';
+              return (
+                <div className="space-y-3">
+                  <Button size="lg" className="w-full py-6 text-base bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-500/20" asChild>
+                    <Link href={`/${firstRegId}/schnellcheck` as any}>
+                      <Shield className="mr-2 size-5" />
+                      {t('result.startFirstAnalysis')}
+                    </Link>
+                  </Button>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <Button size="lg" variant="outline" className="flex-1 py-6 text-base" asChild>
+                      <Link href="/dashboard">
+                        <LayoutDashboard className="mr-2 size-5" />
+                        {t('result.toDashboard')}
+                      </Link>
+                    </Button>
+                    <Button size="lg" variant="outline" className="flex-1 py-6 text-base" asChild>
+                      <a href={getEmailBody(results)}>
+                        <Mail className="mr-2 size-5" />
+                        {t('result.emailResult')}
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              );
+            })()}
 
             {/* Restart */}
             <div className="text-center">
@@ -606,6 +715,7 @@ export default function NavigatorPage() {
           </div>
         );
       })()}
+      </div>
     </div>
   );
 }
@@ -633,18 +743,36 @@ function ResultCard({
           <Icon className={`size-5 ${meta.color}`} />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2">
-            <span className="font-semibold">{tReg(`${meta.tKey}.name`)}</span>
-            <span className="text-xs text-muted-foreground hidden sm:inline">{tReg(`${meta.tKey}.fullName`)}</span>
+          <div className="flex items-baseline gap-2 flex-wrap">
+            <span className="font-semibold whitespace-nowrap">{tReg(`${meta.tKey}.name`)}</span>
+            <span className="text-xs text-muted-foreground hidden sm:inline truncate">{tReg(`${meta.tKey}.fullName`)}</span>
           </div>
           <p className="text-sm text-muted-foreground mt-0.5">{t(`reasons.${result.reasonKey}`)}</p>
+          <p className="text-xs text-muted-foreground mt-0.5 flex items-center gap-1">
+            <Clock className="size-3 flex-shrink-0" />
+            {t(`deadlines.${result.id}`)}
+          </p>
+          {result.id === 'nis2' && !dimmed && (
+            <p className="text-xs text-red-600 font-medium mt-1 flex items-center gap-1">
+              <ShieldAlert className="size-3 flex-shrink-0" />
+              {t('result.liability')}
+            </p>
+          )}
         </div>
         {!dimmed && (
-          <Button variant="outline" size="sm" asChild className="flex-shrink-0">
-            <Link href={`/${result.id}/schnellcheck` as any}>
-              {t('result.startCheck')} <ArrowRight className="ml-1 size-3" />
+          <div className="flex flex-col gap-1.5 flex-shrink-0">
+            <Button variant="outline" size="sm" asChild>
+              <Link href={`/${result.id}/schnellcheck` as any}>
+                {t('result.startCheck')} <ArrowRight className="ml-1 size-3" />
+              </Link>
+            </Button>
+            <Link
+              href={`/${result.id}/assessment` as any}
+              className="text-[11px] text-center text-muted-foreground hover:text-primary transition-colors"
+            >
+              {t('result.fullAnalysis')}
             </Link>
-          </Button>
+          </div>
         )}
       </CardContent>
     </Card>

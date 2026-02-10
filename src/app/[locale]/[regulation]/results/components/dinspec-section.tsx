@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { BookOpen, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { DIN_SPEC_AREAS, NIS2_BEYOND_DIN_SPEC } from '@/lib/nis2/din-spec';
+import { DIN_SPEC_AREAS, NIS2_BEYOND_DIN_SPEC } from '@/lib/regulations/nis2/din-spec';
 
 export function DinSpecSection() {
   const t = useTranslations('dinSpec');

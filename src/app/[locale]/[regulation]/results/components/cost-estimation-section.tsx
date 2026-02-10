@@ -10,8 +10,8 @@ import {
   calculateScalingFactors,
   formatCostRange,
   type CompanyProfile,
-} from '@/lib/nis2/cost-estimation';
-import type { Recommendation, CategoryScore } from '@/lib/nis2/types';
+} from '@/lib/regulations/nis2/cost-estimation';
+import type { BaseRecommendation as Recommendation, CategoryScore } from '@/lib/regulations/types';
 
 interface CostEstimationSectionProps {
   recommendations: Recommendation[];
@@ -25,7 +25,7 @@ export function CostEstimationSection({
   companyProfile,
 }: CostEstimationSectionProps) {
   const t = useTranslations('costEstimation');
-  const tRec = useTranslations('recommendations');
+  const tAll = useTranslations();
 
   const recIds = recommendations.map((r) => r.id);
 
@@ -196,12 +196,11 @@ export function CostEstimationSection({
           </thead>
           <tbody>
             {rows.map(({ rec, base, adjustedDays, baseDays }) => {
-              const titleKey = rec.titleKey.replace('recommendations.', '');
               const isChanged = totals.isAdjusted &&
                 (adjustedDays.min !== baseDays.min || adjustedDays.max !== baseDays.max);
               return (
                 <tr key={rec.id} className="border-b">
-                  <td className="p-3">{tRec(titleKey)}</td>
+                  <td className="p-3">{tAll(rec.titleKey)}</td>
                   <td className="p-3 text-right">
                     <span>{adjustedDays.min}–{adjustedDays.max} {t('personDays')}</span>
                     {isChanged && (

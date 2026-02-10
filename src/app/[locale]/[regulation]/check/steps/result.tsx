@@ -1,16 +1,20 @@
 'use client';
 
+import { useParams } from 'next/navigation';
+
 import { useEffect } from 'react';
 import { Link } from '@/lib/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { AlertCircle, AlertTriangle, CheckCircle, Info } from 'lucide-react';
 import { useWizardStore } from '@/stores/wizard-store';
-import { classifyEntity } from '@/lib/nis2/classification';
-import type { ClassificationInput, ClassificationResult } from '@/lib/nis2/types';
+import { classifyEntity } from '@/lib/regulations/nis2/classification';
+import type { ClassificationInput, ClassificationResult } from '@/lib/regulations/nis2/types';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 export function ResultStep() {
+  const params = useParams();
+  const regulation = params?.regulation as string;
   const t = useTranslations('check.resultStep');
   const tClassification = useTranslations('classification');
   const { formData, reset, setClassificationResult } = useWizardStore();
@@ -48,7 +52,7 @@ export function ResultStep() {
         {/* CTAs */}
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button size="lg" className="flex-1" asChild>
-            <Link href="/gap-analysis">{t('ctaPrimary')}</Link>
+            <Link href={`/${regulation}/assessment`}>{t('ctaPrimary')}</Link>
           </Button>
           <Button variant="outline" size="lg" className="flex-1" onClick={reset}>
             {t('ctaSecondary')}
@@ -157,7 +161,7 @@ export function ResultStep() {
       {/* CTAs */}
       <div className="flex flex-col gap-3 sm:flex-row">
         <Button size="lg" className="flex-1" asChild>
-          <Link href="/gap-analysis">{t('ctaPrimary')}</Link>
+          <Link href={`/${regulation}/assessment`}>{t('ctaPrimary')}</Link>
         </Button>
         <Button variant="outline" size="lg" className="flex-1" onClick={reset}>
           {t('ctaSecondary')}

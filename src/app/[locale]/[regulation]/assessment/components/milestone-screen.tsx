@@ -3,23 +3,34 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
-import { CheckCircle2 } from 'lucide-react';
-import { useGapAnalysisStore } from '@/stores/gap-analysis-store';
-import { CATEGORIES } from '@/lib/nis2/categories';
-import { getCoreQuestionsByCategory } from '@/lib/nis2/questions';
+import { CheckCircle2, LayoutDashboard } from 'lucide-react';
+import { Link } from '@/lib/i18n/routing';
+import { Button } from '@/components/ui/button';
+import { useRegulationStores } from '@/hooks/useRegulationStores';
+import { getQuestionsByCategory } from '@/hooks/useRegulationConfig';
 import { calculateOverallScore, getTrafficLight } from '@/lib/scoring/engine';
+import type { RegulationConfig } from '@/lib/regulations/types';
 
-export function MilestoneScreen() {
+interface MilestoneScreenProps {
+  regulation: string;
+  config: RegulationConfig;
+}
+
+export function MilestoneScreen({ regulation, config }: MilestoneScreenProps) {
   const t = useTranslations('gapAnalysis.milestone');
   const params = useParams();
   const locale = params?.locale as string;
   const router = useRouter();
-  const { answers, setAssessmentPhase, setCategoryIndex } = useGapAnalysisStore();
+
+  const { assessmentStore } = useRegulationStores(regulation);
+  const answers = assessmentStore((state) => state.answers);
+  const setAssessmentPhase = assessmentStore((state) => state.setAssessmentPhase);
+  const setCategoryIndex = assessmentStore((state) => state.setCategoryIndex);
 
   // Calculate score from core answers only
-  const categoryQuestionCounts = CATEGORIES.map((cat) => ({
+  const categoryQuestionCounts = config.categories.map((cat) => ({
     categoryId: cat.id,
-    totalQuestions: getCoreQuestionsByCategory(cat.id).length,
+    totalQuestions: getQuestionsByCategory(config, cat.id, 'core').length,
   }));
 
   const overallScore = calculateOverallScore(answers, categoryQuestionCounts);
@@ -38,7 +49,7 @@ export function MilestoneScreen() {
   };
 
   const handleViewResults = () => {
-    router.push(`/${locale}/results`);
+    router.push(`/${locale}/${regulation}/results`);
   };
 
   const handleDeepen = () => {
@@ -123,6 +134,16 @@ export function MilestoneScreen() {
       <p className="mt-4 text-sm text-muted-foreground">
         {t('laterNote')}
       </p>
+
+      {/* Dashboard link */}
+      <div className="mt-3">
+        <Button variant="outline" asChild>
+          <Link href="/dashboard">
+            <LayoutDashboard className="mr-2 size-4" />
+            {t('laterDashboard')}
+          </Link>
+        </Button>
+      </div>
     </div>
   );
 }

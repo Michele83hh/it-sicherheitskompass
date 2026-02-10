@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { GitCompare } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { NIS2_DSGVO_OVERLAPS, calculateOverallOverlap } from '@/lib/nis2/dsgvo-overlap';
+import { NIS2_DSGVO_OVERLAPS, calculateOverallOverlap } from '@/lib/regulations/nis2/dsgvo-overlap';
 
 export function DsgvoOverlapSection() {
   const t = useTranslations('dsgvoOverlap');

@@ -43,12 +43,17 @@ export default function GeschaeftsleitungPage() {
   const checkedCount = Object.values(checkedItems).filter(Boolean).length;
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8 sm:py-12">
-      <h1 className="mb-2 text-center text-3xl font-bold text-foreground sm:text-4xl">
-        {t('title')}
-      </h1>
-      <p className="mb-8 text-center text-muted-foreground">{t('subtitle')}</p>
+    <div>
+      <section className="bg-gradient-to-b from-slate-900 to-slate-800">
+        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem]">
+          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            {t('title')}
+          </h1>
+          <p className="mt-4 text-lg text-slate-300">{t('subtitle')}</p>
+        </div>
+      </section>
 
+      <div className="mx-auto max-w-4xl px-4 py-8 sm:py-12">
       <p className="mb-8 text-sm leading-relaxed text-muted-foreground">{t('intro')}</p>
 
       {/* Three core duties */}
@@ -171,6 +176,7 @@ export default function GeschaeftsleitungPage() {
       {/* Legal basis */}
       <div className="rounded-lg bg-muted/50 p-4 text-center text-sm text-muted-foreground">
         {t('legalBasis')}
+      </div>
       </div>
     </div>
   );

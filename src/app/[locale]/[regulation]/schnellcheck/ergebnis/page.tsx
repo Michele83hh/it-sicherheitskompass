@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import { useEffect, useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/navigation';
-import { useRegulationConfig } from '@/hooks/useRegulationConfig';
+import { useRegulationConfig, getRecommendationsByCategory } from '@/hooks/useRegulationConfig';
 import { useRegulationStores } from '@/hooks/useRegulationStores';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -15,8 +15,13 @@ import {
   ClipboardList,
   Share2,
   RotateCcw,
+  Zap,
+  CheckCircle2,
+  TrendingUp,
+  LayoutDashboard,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { RegulationBreadcrumb } from '@/components/layout/breadcrumb';
 import type { TrafficLight } from '@/lib/regulations/types';
 import '@/lib/regulations/init';
 
@@ -43,6 +48,8 @@ function trafficLightDot(tl: TrafficLight) {
     case 'green': return 'bg-green-500';
   }
 }
+
+// trafficLightLabel removed — now uses i18n via tAll('common.trafficLight.{tl}')
 
 interface QuickCheckScore {
   percentage: number;
@@ -109,6 +116,53 @@ export default function SchnellcheckErgebnisPage() {
     return { percentage: overallPct, trafficLight: overallTl, categoryScores };
   }, [answers, quickCheckQuestions]);
 
+  // Derive top-3 quick-win recommendations from weak categories
+  const topActions = useMemo(() => {
+    if (score.categoryScores.length === 0) return [];
+
+    // Get categories sorted by weakness (red first, then yellow)
+    const weakCategories = [...score.categoryScores]
+      .filter((cs) => cs.trafficLight === 'red' || cs.trafficLight === 'yellow')
+      .sort((a, b) => a.percentage - b.percentage);
+
+    const actions: Array<{
+      title: string;
+      firstStep: string;
+      categoryName: string;
+    }> = [];
+
+    for (const catScore of weakCategories) {
+      if (actions.length >= 3) break;
+      const recs = getRecommendationsByCategory(config, catScore.categoryId);
+      // Pick highest priority + quickest effort
+      const quickRecs = [...recs]
+        .sort((a, b) => {
+          const priorityOrder = { high: 0, medium: 1, low: 2 };
+          const effortOrder = { quick: 0, medium: 1, strategic: 2 };
+          return (priorityOrder[a.priority] - priorityOrder[b.priority]) ||
+                 (effortOrder[a.effortLevel] - effortOrder[b.effortLevel]);
+        });
+
+      for (const rec of quickRecs) {
+        if (actions.length >= 3) break;
+        const cat = config.categories.find((c) => c.id === catScore.categoryId);
+        actions.push({
+          title: tAll(rec.titleKey),
+          firstStep: tAll(rec.firstStepKey),
+          categoryName: cat ? tAll(cat.shortNameKey) : catScore.categoryId,
+        });
+        break; // One per category
+      }
+    }
+
+    return actions;
+  }, [score, config, tAll]);
+
+  // Count categories with action needed
+  const actionNeededCount = score.categoryScores.filter(
+    (cs) => cs.trafficLight === 'red' || cs.trafficLight === 'yellow'
+  ).length;
+
   if (!isClient) {
     return (
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
@@ -127,7 +181,7 @@ export default function SchnellcheckErgebnisPage() {
         <ClipboardList className="mx-auto size-12 text-muted-foreground mb-4" />
         <h1 className="text-2xl font-bold mb-2">{t('incomplete.title')}</h1>
         <p className="text-muted-foreground mb-6">{t('incomplete.description')}</p>
-        <Button asChild>
+        <Button className="bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-500/20" asChild>
           <Link href={`/${regulation}/schnellcheck`}>{t('incomplete.cta')}</Link>
         </Button>
       </div>
@@ -153,8 +207,9 @@ export default function SchnellcheckErgebnisPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
+      <RegulationBreadcrumb regulation={regulation} currentPage="schnellcheck" />
       {/* Hero Score */}
-      <div className={cn('rounded-xl border-2 p-8 text-center mb-8', trafficLightBg(score.trafficLight))}>
+      <div className={cn('rounded-xl border-2 p-8 text-center mb-6', trafficLightBg(score.trafficLight))}>
         <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
           {t('scoreLabel')}
         </p>
@@ -165,6 +220,13 @@ export default function SchnellcheckErgebnisPage() {
           {t(`verdict.${score.trafficLight}`)}
         </p>
       </div>
+
+      {/* Summary headline */}
+      {actionNeededCount > 0 && (
+        <p className="text-center text-sm font-medium text-foreground mb-8">
+          {t('actionSummary', { count: actionNeededCount, total: score.categoryScores.length })}
+        </p>
+      )}
 
       {/* Penalty Warning (NIS2 only) */}
       {isNis2 && (
@@ -204,7 +266,7 @@ export default function SchnellcheckErgebnisPage() {
         </Card>
       )}
 
-      {/* Category Overview */}
+      {/* Category Overview with visual Ja/Teilweise/Nein */}
       <Card className="mb-8">
         <CardHeader>
           <CardTitle>{t('categories.title')}</CardTitle>
@@ -217,6 +279,14 @@ export default function SchnellcheckErgebnisPage() {
                 <span className="flex-1 text-sm font-medium">
                   {getCategoryName(cs.categoryId)}
                 </span>
+                <span className={cn(
+                  'text-xs font-medium px-2 py-0.5 rounded',
+                  cs.trafficLight === 'red' ? 'bg-red-100 text-red-700' :
+                  cs.trafficLight === 'yellow' ? 'bg-yellow-100 text-yellow-700' :
+                  'bg-green-100 text-green-700'
+                )}>
+                  {tAll(`common.trafficLight.${cs.trafficLight}`)}
+                </span>
                 <Badge variant={cs.trafficLight === 'red' ? 'destructive' : cs.trafficLight === 'yellow' ? 'secondary' : 'default'}>
                   {cs.percentage}%
                 </Badge>
@@ -226,11 +296,107 @@ export default function SchnellcheckErgebnisPage() {
         </CardContent>
       </Card>
 
+      {/* Top-3 Sofort-Maßnahmen */}
+      {topActions.length > 0 && (
+        <div className="mb-8">
+          <div className="flex items-center gap-2 mb-4">
+            <Zap className="size-5 text-amber-500" />
+            <h2 className="text-lg font-bold">{t('topActions.title')}</h2>
+          </div>
+          <div className="grid gap-4">
+            {topActions.map((action, idx) => (
+              <Card key={idx} className="border-amber-200 bg-amber-50/50">
+                <CardContent className="py-4">
+                  <div className="flex items-start gap-3">
+                    <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-bold text-amber-700">
+                      {idx + 1}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-semibold text-foreground">{action.title}</p>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        {t('topActions.firstStep')}: {action.firstStep}
+                      </p>
+                      <span className="inline-block mt-2 text-[10px] bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded">
+                        {action.categoryName}
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Comparison table: Schnellcheck vs Full Analysis */}
+      <Card className="mb-8">
+        <CardHeader>
+          <div className="flex items-center gap-2">
+            <TrendingUp className="size-5 text-primary" />
+            <CardTitle className="text-base">{t('comparison.title')}</CardTitle>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b">
+                  <th className="pb-2 text-left font-medium text-muted-foreground"></th>
+                  <th className="pb-2 text-center font-medium text-muted-foreground">{t('comparison.quickCheck')}</th>
+                  <th className="pb-2 text-center font-medium text-primary">{t('comparison.fullAnalysis')}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y">
+                <tr>
+                  <td className="py-2 text-muted-foreground">{t('comparison.questions')}</td>
+                  <td className="py-2 text-center">{totalQuestions}</td>
+                  <td className="py-2 text-center font-medium">{config.questions.length}</td>
+                </tr>
+                <tr>
+                  <td className="py-2 text-muted-foreground">{t('comparison.result')}</td>
+                  <td className="py-2 text-center">{t('comparison.roughEstimate')}</td>
+                  <td className="py-2 text-center font-medium">{t('comparison.detailedScores')}</td>
+                </tr>
+                <tr>
+                  <td className="py-2 text-muted-foreground">{t('comparison.actions')}</td>
+                  <td className="py-2 text-center">Top 3</td>
+                  <td className="py-2 text-center font-medium">{t('comparison.allWithRoadmap')}</td>
+                </tr>
+                <tr>
+                  <td className="py-2 text-muted-foreground">{tAll('results.pdfReportTitle')}</td>
+                  <td className="py-2 text-center text-muted-foreground">—</td>
+                  <td className="py-2 text-center">
+                    <CheckCircle2 className="mx-auto size-4 text-green-600" />
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-2 text-muted-foreground">{t('comparison.tracking')}</td>
+                  <td className="py-2 text-center text-muted-foreground">—</td>
+                  <td className="py-2 text-center">
+                    <CheckCircle2 className="mx-auto size-4 text-green-600" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Incentive text + Endowed Progress */}
+      <div className="mb-8 rounded-lg border border-blue-200 bg-blue-50 p-5 text-center">
+        <p className="text-sm text-blue-800 font-medium mb-2">
+          {t('incentive.text')}
+        </p>
+        <p className="text-xs text-blue-600">
+          {t('incentive.endowedProgress')}
+        </p>
+      </div>
+
       {/* CTAs */}
       <div className="space-y-4">
         <Button
           size="lg"
-          className="w-full text-lg py-6"
+          className="w-full text-lg py-6 bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-500/20"
           onClick={() => setHasCompletedQuickCheck(true)}
           asChild
         >
@@ -241,6 +407,7 @@ export default function SchnellcheckErgebnisPage() {
         </Button>
         <Button size="lg" variant="outline" className="w-full" asChild>
           <Link href="/dashboard">
+            <LayoutDashboard className="mr-2 size-4" />
             {tAll('platform.dashboard.title')}
           </Link>
         </Button>

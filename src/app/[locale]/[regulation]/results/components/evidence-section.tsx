@@ -3,8 +3,8 @@
 import { useTranslations } from 'next-intl';
 import { ClipboardCheck } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import { EVIDENCE_ITEMS, getEvidenceByCategory } from '@/lib/nis2/evidence';
-import { CATEGORIES } from '@/lib/nis2/categories';
+import { EVIDENCE_ITEMS, getEvidenceByCategory } from '@/lib/regulations/nis2/evidence';
+import { CATEGORIES } from '@/lib/regulations/nis2/categories';
 
 interface EvidenceSectionProps {
   classification: 'besonders-wichtig' | 'wichtig';

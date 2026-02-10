@@ -58,9 +58,13 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
   };
 
   // Footer component
+  const footerLabel = payload.regulationName
+    ? `${payload.regulationName} — IT-Sicherheitskompass`
+    : 'NIS2-Bereitschaftsprüfung';
+
   const Footer = () => (
     <View style={styles.footer} fixed>
-      <Text>NIS2-Bereitschaftsprüfung</Text>
+      <Text>{footerLabel}</Text>
       <Text render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
     </View>
   );
@@ -92,9 +96,9 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
 
   return (
     <Document
-      title={messages['pdf.title'] || 'NIS2 Readiness Report'}
-      author="NIS2-Bereitschaftsprüfung"
-      subject="NIS2 Readiness Assessment Report"
+      title={messages['pdf.title'] || `${payload.regulationName || 'NIS2'} Readiness Report`}
+      author={footerLabel}
+      subject={`${payload.regulationName || 'NIS2'} Readiness Assessment Report`}
     >
       {/* ─── Page 1: Cover (Banner + Score + Company Profile + Disclaimer) ─── */}
       <Page size="A4" style={styles.page}>

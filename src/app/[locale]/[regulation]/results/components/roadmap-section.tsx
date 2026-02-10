@@ -4,17 +4,17 @@ import { useTranslations } from 'next-intl';
 import { Map, Zap, Settings, Target } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { generateRoadmap } from '@/lib/nis2/roadmap';
-import type { CategoryScore, Recommendation } from '@/lib/nis2/types';
+import { generateRoadmap } from '@/lib/regulations/nis2/roadmap';
+import type { CategoryScore, BaseRecommendation } from '@/lib/regulations/types';
 
 interface RoadmapSectionProps {
   categoryScores: CategoryScore[];
-  recommendations: Recommendation[];
+  recommendations: BaseRecommendation[];
 }
 
 export function RoadmapSection({ categoryScores, recommendations }: RoadmapSectionProps) {
   const t = useTranslations('roadmap');
-  const tRec = useTranslations('recommendations');
+  const tAll = useTranslations();
 
   const phases = generateRoadmap(categoryScores, recommendations);
 
@@ -66,7 +66,7 @@ export function RoadmapSection({ categoryScores, recommendations }: RoadmapSecti
                             {t(`urgency.${item.urgency}`)}
                           </Badge>
                           <span className="text-sm">
-                            {tRec(item.recommendation.titleKey.replace('recommendations.', ''))}
+                            {tAll(item.recommendation.titleKey)}
                           </span>
                         </div>
                       );

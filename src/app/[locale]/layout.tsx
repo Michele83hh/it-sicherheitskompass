@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/lib/i18n/routing';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { DevResetButton } from '@/components/dev-reset-button';
 import '../globals.css';
 
 const inter = Inter({
@@ -39,6 +40,7 @@ export default async function LocaleLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <DevResetButton />
           </div>
         </NextIntlClientProvider>
       </body>

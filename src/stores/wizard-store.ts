@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { ClassificationInput, ClassificationResult } from '@/lib/nis2/types';
+import { ClassificationInput, ClassificationResult } from '@/lib/regulations/nis2/types';
 
 interface WizardState {
   // Navigation state

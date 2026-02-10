@@ -1,9 +1,11 @@
 import { useTranslations } from 'next-intl';
-import { ExternalLink } from 'lucide-react';
+import { useParams } from 'next/navigation';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { getBsiUrl } from '@/lib/nis2/bsi-links';
-import type { Recommendation, TrafficLight } from '@/lib/nis2/types';
+import { getAlsoCoveredBy, REGULATION_LABELS } from '@/lib/regulations/recommendation-mappings';
+import type { BaseRecommendation, TrafficLight, RegulationId } from '@/lib/regulations/types';
+
+type Recommendation = BaseRecommendation & { bsiReference?: string };
 
 interface QuickWin {
   recommendation: Recommendation;
@@ -17,7 +19,10 @@ interface QuickWinsSectionProps {
 
 export function QuickWinsSection({ quickWins }: QuickWinsSectionProps) {
   const t = useTranslations('results');
-  const tRec = useTranslations('recommendations');
+  const tCross = useTranslations('crossReg');
+  const tAll = useTranslations();
+  const params = useParams();
+  const regulation = params?.regulation as string;
 
   const trafficLightColors = {
     red: 'bg-red-100 text-red-800 border-red-200',
@@ -34,14 +39,9 @@ export function QuickWinsSection({ quickWins }: QuickWinsSectionProps) {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {quickWins.map((qw) => {
-          const titleKey = qw.recommendation.titleKey.replace(
-            'recommendations.',
-            ''
-          );
-          const firstStepKey = qw.recommendation.firstStepKey.replace(
-            'recommendations.',
-            ''
-          );
+          const titleKey = qw.recommendation.titleKey;
+          const firstStepKey = qw.recommendation.firstStepKey;
+          const alsoCoveredBy = getAlsoCoveredBy(qw.recommendation.id, regulation as RegulationId);
 
           return (
             <Card key={qw.recommendation.id}>
@@ -55,8 +55,20 @@ export function QuickWinsSection({ quickWins }: QuickWinsSectionProps) {
                   <Badge className="bg-green-100 text-green-800 border-green-200">
                     {t('effortLevel.quick')}
                   </Badge>
+                  {alsoCoveredBy.length > 0 && (
+                    <>
+                      {alsoCoveredBy.map((regId) => (
+                        <Badge
+                          key={regId}
+                          className="bg-indigo-50 text-indigo-700 border-indigo-200 text-[10px] px-1.5 py-0"
+                        >
+                          {REGULATION_LABELS[regId]}
+                        </Badge>
+                      ))}
+                    </>
+                  )}
                 </div>
-                <CardTitle className="text-base">{tRec(titleKey)}</CardTitle>
+                <CardTitle className="text-base">{tAll(titleKey)}</CardTitle>
               </CardHeader>
 
               <CardContent className="space-y-3">
@@ -65,24 +77,27 @@ export function QuickWinsSection({ quickWins }: QuickWinsSectionProps) {
                   <p className="mb-1 text-xs font-semibold text-muted-foreground">
                     {t('quickWins.firstStep')}
                   </p>
-                  <p className="text-sm">{tRec(firstStepKey)}</p>
+                  <p className="text-sm">{tAll(firstStepKey)}</p>
                 </div>
+
+                {/* Cross-reg coverage text */}
+                {alsoCoveredBy.length > 0 && (
+                  <p className="text-xs text-indigo-600">
+                    {tCross('alsoCoveredBy')}: {alsoCoveredBy.map(id => REGULATION_LABELS[id]).join(', ')}
+                  </p>
+                )}
 
                 {/* Legal reference */}
                 <p className="text-xs text-muted-foreground">
                   {qw.recommendation.legalReference}
                 </p>
 
-                {/* BSI reference */}
-                <a
-                  href={getBsiUrl(qw.recommendation.bsiReference)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs text-primary hover:underline"
-                >
-                  BSI {qw.recommendation.bsiReference}
-                  <ExternalLink className="size-3" aria-hidden="true" />
-                </a>
+                {/* BSI reference (NIS2 only) */}
+                {qw.recommendation.bsiReference && (
+                  <span className="text-xs text-muted-foreground">
+                    BSI {qw.recommendation.bsiReference}
+                  </span>
+                )}
               </CardContent>
             </Card>
           );

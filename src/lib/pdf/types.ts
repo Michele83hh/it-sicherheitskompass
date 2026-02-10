@@ -1,13 +1,13 @@
-import type { TrafficLight, EffortLevel } from '@/lib/nis2/types';
+import type { TrafficLight, EffortLevel } from '@/lib/regulations/types';
 
 export interface PDFCompanyProfile {
   sectorName: string;        // Translated sector name
   subsectorName?: string;    // Translated subsector name (if any)
   employees: number;
   annualRevenue: number;
-  classification: string;    // Translated: "Besonders wichtige Einrichtung" etc.
-  classificationCategory: 'besonders-wichtig' | 'wichtig' | 'nicht-betroffen';
-  legalReference: string;    // e.g., "§28 Abs. 1 Nr. 2 BSIG"
+  classification?: string;   // Translated: "Besonders wichtige Einrichtung" etc. (NIS2-specific)
+  classificationCategory?: 'besonders-wichtig' | 'wichtig' | 'nicht-betroffen'; // NIS2-specific
+  legalReference?: string;   // e.g., "§28 Abs. 1 Nr. 2 BSIG" (NIS2-specific)
 }
 
 export interface PDFCategoryResult {
@@ -183,6 +183,8 @@ export interface PDFExecutiveSummary {
 export interface PDFPayload {
   locale: 'de' | 'en';
   analysisDepth: 'core' | 'full';
+  regulationId?: string;     // e.g., 'nis2', 'dsgvo', 'dora'
+  regulationName?: string;   // Translated regulation name for display
   company: PDFCompanyProfile;
   overallScore: {
     percentage: number;

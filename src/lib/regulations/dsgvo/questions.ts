@@ -25,7 +25,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dsfaQ1.help',
     legalReference: {
       euArticle: 'Art. 35 Abs. 1 DSGVO',
-      bsigParagraph: '§67 BDSG',
+      bsigParagraph: 'Art. 35-36 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dsfaQ1.maturity.level0',
@@ -43,7 +43,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dsfaQ2.help',
     legalReference: {
       euArticle: 'Art. 35 Abs. 3 DSGVO',
-      bsigParagraph: '§67 BDSG',
+      bsigParagraph: 'Art. 35-36 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dsfaQ2.maturity.level0',
@@ -61,7 +61,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dsfaQ3.help',
     legalReference: {
       euArticle: 'Art. 35 Abs. 7 DSGVO',
-      bsigParagraph: '§67 BDSG',
+      bsigParagraph: 'Art. 35-36 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dsfaQ3.maturity.level0',
@@ -79,7 +79,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dsfaQ4.help',
     legalReference: {
       euArticle: 'Art. 36 Abs. 1 DSGVO',
-      bsigParagraph: '§67 BDSG',
+      bsigParagraph: 'Art. 35-36 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dsfaQ4.maturity.level0',
@@ -97,7 +97,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dsfaQ5.help',
     legalReference: {
       euArticle: 'Art. 35 Abs. 11 DSGVO',
-      bsigParagraph: '§67 BDSG',
+      bsigParagraph: 'Art. 35-36 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dsfaQ5.maturity.level0',
@@ -120,7 +120,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.vvQ1.help',
     legalReference: {
       euArticle: 'Art. 30 Abs. 1 DSGVO',
-      bsigParagraph: '§70 BDSG',
+      bsigParagraph: 'Art. 30 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.vvQ1.maturity.level0',
@@ -138,7 +138,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.vvQ2.help',
     legalReference: {
       euArticle: 'Art. 30 Abs. 1 lit. b-d DSGVO',
-      bsigParagraph: '§70 BDSG',
+      bsigParagraph: 'Art. 30 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.vvQ2.maturity.level0',
@@ -156,7 +156,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.vvQ3.help',
     legalReference: {
       euArticle: 'Art. 30 Abs. 1 lit. f-g DSGVO',
-      bsigParagraph: '§70 BDSG',
+      bsigParagraph: 'Art. 30 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.vvQ3.maturity.level0',
@@ -174,7 +174,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.vvQ4.help',
     legalReference: {
       euArticle: 'Art. 30 Abs. 2 DSGVO',
-      bsigParagraph: '§70 BDSG',
+      bsigParagraph: 'Art. 30 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.vvQ4.maturity.level0',
@@ -192,7 +192,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.vvQ5.help',
     legalReference: {
       euArticle: 'Art. 30 Abs. 5 DSGVO',
-      bsigParagraph: '§70 BDSG',
+      bsigParagraph: 'Art. 30 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.vvQ5.maturity.level0',
@@ -405,7 +405,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dvQ1.help',
     legalReference: {
       euArticle: 'Art. 33 Abs. 1 DSGVO',
-      bsigParagraph: '§65 BDSG',
+      bsigParagraph: 'Art. 33-34 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dvQ1.maturity.level0',
@@ -423,7 +423,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dvQ2.help',
     legalReference: {
       euArticle: 'Art. 33 Abs. 3 DSGVO',
-      bsigParagraph: '§65 BDSG',
+      bsigParagraph: 'Art. 33-34 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dvQ2.maturity.level0',
@@ -441,7 +441,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dvQ3.help',
     legalReference: {
       euArticle: 'Art. 34 Abs. 1 DSGVO',
-      bsigParagraph: '§66 BDSG',
+      bsigParagraph: 'Art. 33-34 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dvQ3.maturity.level0',
@@ -459,7 +459,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dvQ4.help',
     legalReference: {
       euArticle: 'Art. 33 Abs. 5 DSGVO',
-      bsigParagraph: '§65 BDSG',
+      bsigParagraph: 'Art. 33-34 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dvQ4.maturity.level0',
@@ -477,7 +477,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dvQ5.help',
     legalReference: {
       euArticle: 'Art. 34 Abs. 3 DSGVO',
-      bsigParagraph: '§66 BDSG',
+      bsigParagraph: 'Art. 33-34 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dvQ5.maturity.level0',
@@ -595,7 +595,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dtQ1.help',
     legalReference: {
       euArticle: 'Art. 44 DSGVO',
-      bsigParagraph: '§78 BDSG',
+      bsigParagraph: 'Art. 44-49 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dtQ1.maturity.level0',
@@ -613,7 +613,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dtQ2.help',
     legalReference: {
       euArticle: 'Art. 46 Abs. 2 lit. c DSGVO',
-      bsigParagraph: '§78 BDSG',
+      bsigParagraph: 'Art. 44-49 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dtQ2.maturity.level0',
@@ -631,7 +631,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dtQ3.help',
     legalReference: {
       euArticle: 'Art. 45 DSGVO',
-      bsigParagraph: '§78 BDSG',
+      bsigParagraph: 'Art. 44-49 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dtQ3.maturity.level0',
@@ -649,7 +649,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dtQ4.help',
     legalReference: {
       euArticle: 'Art. 46 Abs. 2 DSGVO',
-      bsigParagraph: '§78 BDSG',
+      bsigParagraph: 'Art. 44-49 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dtQ4.maturity.level0',
@@ -667,7 +667,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dtQ5.help',
     legalReference: {
       euArticle: 'Art. 49 DSGVO',
-      bsigParagraph: '§79-80 BDSG',
+      bsigParagraph: 'Art. 44-49 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dtQ5.maturity.level0',
@@ -690,7 +690,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.tomQ1.help',
     legalReference: {
       euArticle: 'Art. 32 Abs. 1 lit. a DSGVO',
-      bsigParagraph: '§64 Abs. 1 BDSG',
+      bsigParagraph: 'Art. 32 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.tomQ1.maturity.level0',
@@ -708,7 +708,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.tomQ2.help',
     legalReference: {
       euArticle: 'Art. 32 Abs. 1 lit. b DSGVO',
-      bsigParagraph: '§64 Abs. 1 BDSG',
+      bsigParagraph: 'Art. 32 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.tomQ2.maturity.level0',
@@ -726,7 +726,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.tomQ3.help',
     legalReference: {
       euArticle: 'Art. 32 Abs. 1 lit. c-d DSGVO',
-      bsigParagraph: '§64 Abs. 1 BDSG',
+      bsigParagraph: 'Art. 32 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.tomQ3.maturity.level0',
@@ -744,7 +744,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.tomQ4.help',
     legalReference: {
       euArticle: 'Art. 32 Abs. 1 lit. d DSGVO',
-      bsigParagraph: '§64 Abs. 2 BDSG',
+      bsigParagraph: 'Art. 32 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.tomQ4.maturity.level0',
@@ -762,7 +762,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.tomQ5.help',
     legalReference: {
       euArticle: 'Art. 32 Abs. 2 DSGVO',
-      bsigParagraph: '§64 BDSG',
+      bsigParagraph: 'Art. 32 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.tomQ5.maturity.level0',
@@ -785,7 +785,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.pbdQ1.help',
     legalReference: {
       euArticle: 'Art. 25 Abs. 1 DSGVO',
-      bsigParagraph: '§71 BDSG',
+      bsigParagraph: 'Art. 25 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.pbdQ1.maturity.level0',
@@ -803,7 +803,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.pbdQ2.help',
     legalReference: {
       euArticle: 'Art. 25 Abs. 2 DSGVO',
-      bsigParagraph: '§71 BDSG',
+      bsigParagraph: 'Art. 25 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.pbdQ2.maturity.level0',
@@ -821,7 +821,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.pbdQ3.help',
     legalReference: {
       euArticle: 'Art. 5 Abs. 1 lit. c DSGVO',
-      bsigParagraph: '§71 BDSG',
+      bsigParagraph: 'Art. 25 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.pbdQ3.maturity.level0',
@@ -839,7 +839,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.pbdQ4.help',
     legalReference: {
       euArticle: 'Art. 25 Abs. 3 DSGVO',
-      bsigParagraph: '§71 BDSG',
+      bsigParagraph: 'Art. 25 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.pbdQ4.maturity.level0',
@@ -857,7 +857,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.pbdQ5.help',
     legalReference: {
       euArticle: 'Art. 5 Abs. 1 lit. e DSGVO',
-      bsigParagraph: '§71 BDSG',
+      bsigParagraph: 'Art. 25 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.pbdQ5.maturity.level0',
@@ -880,7 +880,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.avQ1.help',
     legalReference: {
       euArticle: 'Art. 28 Abs. 1 DSGVO',
-      bsigParagraph: '§62 BDSG',
+      bsigParagraph: 'Art. 28 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.avQ1.maturity.level0',
@@ -898,7 +898,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.avQ2.help',
     legalReference: {
       euArticle: 'Art. 28 Abs. 3 DSGVO',
-      bsigParagraph: '§62 BDSG',
+      bsigParagraph: 'Art. 28 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.avQ2.maturity.level0',
@@ -916,7 +916,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.avQ3.help',
     legalReference: {
       euArticle: 'Art. 28 Abs. 2 DSGVO',
-      bsigParagraph: '§62 BDSG',
+      bsigParagraph: 'Art. 28 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.avQ3.maturity.level0',
@@ -934,7 +934,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.avQ4.help',
     legalReference: {
       euArticle: 'Art. 28 Abs. 4 DSGVO',
-      bsigParagraph: '§62 BDSG',
+      bsigParagraph: 'Art. 28 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.avQ4.maturity.level0',
@@ -952,7 +952,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.avQ5.help',
     legalReference: {
       euArticle: 'Art. 29 DSGVO',
-      bsigParagraph: '§62 BDSG',
+      bsigParagraph: 'Art. 28 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.avQ5.maturity.level0',

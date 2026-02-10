@@ -51,6 +51,7 @@ const PDFCoverPage = ({ messages, locale, generatedDate, company, overallScore, 
     }
   };
 
+  const hasClassification = !!company.classificationCategory;
   const isNichtBetroffen = company.classificationCategory === 'nicht-betroffen';
 
   return (
@@ -404,35 +405,39 @@ const PDFCoverPage = ({ messages, locale, generatedDate, company, overallScore, 
 
           {/* Right column */}
           <View style={{ flex: 1, gap: 6 }}>
-            <View>
-              <Text style={{ fontSize: 7, color: COLORS.gray500, marginBottom: 3 }}>
-                {messages['pdf.classification'] || 'Einstufung'}
-              </Text>
-              <View style={{
-                backgroundColor: getClassificationBg(),
-                paddingHorizontal: 8,
-                paddingVertical: 3,
-                borderRadius: 3,
-                alignSelf: 'flex-start',
-              }}>
-                <Text style={{ fontSize: 9, fontWeight: 700, color: getClassificationColor() }}>
-                  {isNichtBetroffen
-                    ? (messages['pdf.nonAffected.label'] || company.classification)
-                    : company.classification
-                  }
+            {hasClassification && (
+              <View>
+                <Text style={{ fontSize: 7, color: COLORS.gray500, marginBottom: 3 }}>
+                  {messages['pdf.classification'] || 'Einstufung'}
                 </Text>
+                <View style={{
+                  backgroundColor: getClassificationBg(),
+                  paddingHorizontal: 8,
+                  paddingVertical: 3,
+                  borderRadius: 3,
+                  alignSelf: 'flex-start',
+                }}>
+                  <Text style={{ fontSize: 9, fontWeight: 700, color: getClassificationColor() }}>
+                    {isNichtBetroffen
+                      ? (messages['pdf.nonAffected.label'] || company.classification)
+                      : company.classification
+                    }
+                  </Text>
+                </View>
+                {/* Non-affected benefits text */}
+                {isNichtBetroffen && (
+                  <Text style={{ fontSize: 7, color: COLORS.gray500, marginTop: 4, lineHeight: 1.4 }}>
+                    {messages['pdf.nonAffected.benefits'] || ''}
+                  </Text>
+                )}
               </View>
-              {/* Non-affected benefits text */}
-              {isNichtBetroffen && (
-                <Text style={{ fontSize: 7, color: COLORS.gray500, marginTop: 4, lineHeight: 1.4 }}>
-                  {messages['pdf.nonAffected.benefits'] || ''}
-                </Text>
-              )}
-            </View>
-            <DetailField
-              label={messages['pdf.rechtsgrundlage'] || 'Rechtsgrundlage'}
-              value={company.legalReference}
-            />
+            )}
+            {company.legalReference && (
+              <DetailField
+                label={messages['pdf.rechtsgrundlage'] || 'Rechtsgrundlage'}
+                value={company.legalReference}
+              />
+            )}
           </View>
         </View>
       </View>

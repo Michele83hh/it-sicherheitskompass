@@ -1,8 +1,8 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import type { QuickCheckAnswer, QuickCheckValue } from '@/lib/nis2/quick-check';
-import { calculateQuickCheckScore } from '@/lib/nis2/quick-check';
-import type { OverallScore } from '@/lib/nis2/types';
+import type { QuickCheckAnswer, QuickCheckValue } from '@/lib/regulations/nis2/quick-check';
+import { calculateQuickCheckScore } from '@/lib/regulations/nis2/quick-check';
+import type { OverallScore } from '@/lib/regulations/nis2/types';
 
 interface QuickCheckState {
   answers: QuickCheckAnswer[];

@@ -7,7 +7,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Badge } from '@/components/ui/badge';
-import { calculatePenalty, formatEur } from '@/lib/nis2/bussgeld';
+import { calculatePenalty, formatEur } from '@/lib/regulations/nis2/bussgeld';
 
 interface BussgeldSectionProps {
   classification: 'besonders-wichtig' | 'wichtig';

@@ -32,6 +32,7 @@ export function Header() {
         { href: `/${currentRegulation}/assessment` as const, label: tNav('gapAnalysis') },
         { href: `/${currentRegulation}/results` as const, label: tNav('results') },
         { href: '/dashboard' as const, label: tNav('dashboard') },
+        { href: '/wissen' as const, label: tNav('wissen') },
       ]
     : [];
 

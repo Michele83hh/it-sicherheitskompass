@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { CheckCircle2, AlertTriangle, AlertCircle } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
-import type { OverallScore } from '@/lib/nis2/types';
+import type { OverallScore } from '@/lib/regulations/types';
 
 interface OverallScoreHeroProps {
   overallScore: OverallScore;

@@ -5,8 +5,8 @@ import { FileCheck } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import { ISO27001_MAPPINGS, calculateOverallAlignment } from '@/lib/nis2/iso27001';
-import { CATEGORIES } from '@/lib/nis2/categories';
+import { ISO27001_MAPPINGS, calculateOverallAlignment } from '@/lib/regulations/nis2/iso27001';
+import { CATEGORIES } from '@/lib/regulations/nis2/categories';
 
 export function Iso27001Section() {
   const t = useTranslations('iso27001');

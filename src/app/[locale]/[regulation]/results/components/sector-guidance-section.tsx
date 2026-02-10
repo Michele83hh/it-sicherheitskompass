@@ -2,10 +2,11 @@
 
 import { useTranslations } from 'next-intl';
 import { Building2, ExternalLink } from 'lucide-react';
+
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
-import { getSectorGuidance, hasSectorGuidance } from '@/lib/nis2/sector-guidance';
+import { getSectorGuidance, hasSectorGuidance } from '@/lib/regulations/nis2/sector-guidance';
 
 interface SectorGuidanceSectionProps {
   sectorId: string;
@@ -13,6 +14,7 @@ interface SectorGuidanceSectionProps {
 
 export function SectorGuidanceSection({ sectorId }: SectorGuidanceSectionProps) {
   const t = useTranslations('sectorGuidance');
+  const tCommon = useTranslations('common');
 
   if (!hasSectorGuidance(sectorId)) {
     return (
@@ -54,7 +56,7 @@ export function SectorGuidanceSection({ sectorId }: SectorGuidanceSectionProps) 
                 </div>
                 {reg.url && (
                   <a href={reg.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-1 text-xs text-primary hover:underline">
-                    Mehr erfahren <ExternalLink className="size-3" />
+                    {tCommon('learnMore')} <ExternalLink className="size-3" />
                   </a>
                 )}
               </CardContent>

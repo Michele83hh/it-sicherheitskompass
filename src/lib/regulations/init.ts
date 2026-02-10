@@ -11,5 +11,8 @@ import './kritis/config';
 import './dora/config';
 import './tisax/config';
 import './cra/config';
-// Future regulations will be added here when their config.ts is created:
-// import './bsi-grundschutz/config';
+import './bsi-grundschutz/config';
+import './iso27001/config';
+import './soc2/config';
+import './pci-dss/config';
+import './c5/config';

@@ -1,0 +1,386 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { useParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+import { Button } from '@/components/ui/button';
+import { useRegulationConfig, getQuestionsByCategory, getRecommendationsByCategory } from '@/hooks/useRegulationConfig';
+import { useRegulationStores } from '@/hooks/useRegulationStores';
+import { useProgressStore } from '@/stores/progress-store';
+import { calculateOverallScore } from '@/lib/scoring/engine';
+import type { OverallScore } from '@/lib/regulations/types';
+import type { PDFPayload, PDFCategoryResult, PDFRecommendation } from '@/lib/pdf/types';
+import { Download, Loader2 } from 'lucide-react';
+
+interface DownloadGenericPdfButtonProps {
+  overallScore: OverallScore;
+}
+
+export default function DownloadGenericPdfButton({ overallScore }: DownloadGenericPdfButtonProps) {
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [isClient, setIsClient] = useState(false);
+  const params = useParams();
+  const locale = params?.locale as 'de' | 'en';
+  const regulation = params?.regulation as string;
+
+  const config = useRegulationConfig();
+  const { assessmentStore } = useRegulationStores(regulation);
+  const answers = assessmentStore((state) => state.answers);
+
+  const t = useTranslations('results');
+  const tAll = useTranslations();
+  const tPdf = useTranslations('pdf');
+
+  const { getProgress, getCompletionPercentage, getStatusCounts } = useProgressStore();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const handleDownload = async () => {
+    setIsGenerating(true);
+    setError(null);
+
+    try {
+      const regName = tAll(config.nameKey);
+
+      // Build category results
+      const categoryResults: PDFCategoryResult[] = overallScore.categoryScores.map((catScore) => {
+        const category = config.categories.find((c) => c.id === catScore.categoryId)!;
+        const categoryName = tAll(category.nameKey);
+        const shortName = tAll(category.shortNameKey);
+        const verdict = t(`verdict.${catScore.trafficLight}` as 'verdict.red');
+
+        return {
+          categoryId: catScore.categoryId,
+          categoryName,
+          shortName,
+          percentage: catScore.percentage,
+          trafficLight: catScore.trafficLight,
+          euArticle: '',
+          bsigParagraph: '',
+          verdict,
+        };
+      });
+
+      // Build recommendations
+      const allRecommendations: PDFRecommendation[] = [];
+      const trafficLightOrder = { red: 0, yellow: 1, green: 2 };
+      const priorityOrder = { high: 0, medium: 1, low: 2 };
+
+      [...overallScore.categoryScores]
+        .sort((a, b) => trafficLightOrder[a.trafficLight] - trafficLightOrder[b.trafficLight])
+        .forEach((catScore) => {
+          const category = config.categories.find((c) => c.id === catScore.categoryId)!;
+          const categoryName = tAll(category.nameKey);
+          const recommendations = getRecommendationsByCategory(config, catScore.categoryId);
+
+          [...recommendations]
+            .sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority])
+            .forEach((rec) => {
+              allRecommendations.push({
+                categoryId: catScore.categoryId,
+                categoryName,
+                title: tAll(rec.titleKey),
+                description: tAll(rec.descriptionKey),
+                firstStep: tAll(rec.firstStepKey),
+                priority: rec.priority,
+                effortLevel: rec.effortLevel,
+                legalReference: rec.legalReference,
+                bsiReference: (rec as { bsiReference?: string }).bsiReference || '',
+              });
+            });
+        });
+
+      // Flatten translation messages for PDF
+      const messages: Record<string, string> = {};
+
+      // Core PDF messages
+      messages['pdf.title'] = `${regName} — Compliance Report`;
+      messages['pdf.subtitle'] = locale === 'de'
+        ? `Ergebnisse der ${regName}-Analyse`
+        : `Results of ${regName} analysis`;
+      messages['pdf.disclaimer'] = tPdf('disclaimer');
+      messages['pdf.rechtsstand'] = tPdf('rechtsstand');
+      messages['pdf.rechtstandDatum'] = locale === 'de' ? '2024/2025' : '2024/2025';
+      messages['pdf.generatedAt'] = tPdf('generatedAt');
+      messages['pdf.companyProfile'] = tPdf('companyProfile');
+      messages['pdf.sector'] = tPdf('sector');
+      messages['pdf.employees'] = tPdf('employees');
+      messages['pdf.annualRevenue'] = tPdf('annualRevenue');
+      messages['pdf.overallScore'] = tPdf('overallScore');
+      messages['pdf.completionRate'] = tPdf('completionRate');
+      messages['pdf.answeredQuestions'] = tPdf('answeredQuestions');
+      messages['pdf.categories'] = tPdf('categories');
+      messages['pdf.categoryTableHeaders.nr'] = tPdf('categoryTableHeaders.nr');
+      messages['pdf.categoryTableHeaders.category'] = tPdf('categoryTableHeaders.category');
+      messages['pdf.categoryTableHeaders.score'] = tPdf('categoryTableHeaders.score');
+      messages['pdf.categoryTableHeaders.status'] = tPdf('categoryTableHeaders.status');
+      messages['pdf.categoryTableHeaders.legalBasis'] = tPdf('categoryTableHeaders.legalBasis');
+      messages['pdf.recommendations'] = tPdf('recommendations');
+      messages['pdf.priority.high'] = tPdf('priority.high');
+      messages['pdf.priority.medium'] = tPdf('priority.medium');
+      messages['pdf.priority.low'] = tPdf('priority.low');
+      messages['pdf.effortLevel.quick'] = tPdf('effortLevel.quick');
+      messages['pdf.effortLevel.medium'] = tPdf('effortLevel.medium');
+      messages['pdf.effortLevel.strategic'] = tPdf('effortLevel.strategic');
+      messages['pdf.firstStep'] = tPdf('firstStep');
+      messages['pdf.valueProposition'] = locale === 'de'
+        ? 'Ihr individueller Compliance-Status — verständlich, umsetzbar, praxisnah.'
+        : 'Your individual compliance status — clear, actionable, practical.';
+
+      // Hero claim
+      messages['pdf.cover.heroClaimTitle'] = locale === 'de'
+        ? 'Was dieses Ergebnis für Sie bedeutet'
+        : 'What this result means for you';
+      messages['pdf.cover.heroClaim1'] = locale === 'de'
+        ? `Ihr aktueller ${regName}-Reifegrad auf Basis einer strukturierten Selbstbewertung`
+        : `Your current ${regName} maturity level based on a structured self-assessment`;
+      messages['pdf.cover.heroClaim2'] = locale === 'de'
+        ? 'Priorisierte Handlungsempfehlungen mit konkreten ersten Schritten'
+        : 'Prioritized recommendations with concrete first steps';
+      messages['pdf.cover.heroClaim3'] = locale === 'de'
+        ? 'Umsetzungsfahrplan in drei Phasen für planbare Verbesserung'
+        : 'Implementation roadmap in three phases for structured improvement';
+
+      // Trust anchor
+      messages['pdf.cover.trustAnchor'] = locale === 'de'
+        ? `Bewertungsgrundlage: ${regName}-Anforderungen`
+        : `Assessment basis: ${regName} requirements`;
+
+      // Summary
+      messages['pdf.summary.title'] = locale === 'de' ? 'Auf einen Blick' : 'At a Glance';
+      const pct = overallScore.percentage;
+      if (pct <= 25) {
+        messages['pdf.summary.readiness'] = locale === 'de'
+          ? `${Math.round(pct)}% Reifegrad — erheblicher Handlungsbedarf`
+          : `${Math.round(pct)}% readiness — significant action needed`;
+      } else if (pct <= 50) {
+        messages['pdf.summary.readiness'] = locale === 'de'
+          ? `${Math.round(pct)}% Reifegrad — deutlicher Verbesserungsbedarf`
+          : `${Math.round(pct)}% readiness — substantial improvement needed`;
+      } else if (pct <= 75) {
+        messages['pdf.summary.readiness'] = locale === 'de'
+          ? `${Math.round(pct)}% Reifegrad — gute Basis, gezielte Lücken schließen`
+          : `${Math.round(pct)}% readiness — solid foundation, close targeted gaps`;
+      } else {
+        messages['pdf.summary.readiness'] = locale === 'de'
+          ? `${Math.round(pct)}% Reifegrad — fortgeschrittene Compliance`
+          : `${Math.round(pct)}% readiness — advanced compliance posture`;
+      }
+
+      messages['pdf.summary.classification'] = locale === 'de'
+        ? `${regName}-Analyse basierend auf ${overallScore.answeredQuestions} beantworteten Fragen`
+        : `${regName} analysis based on ${overallScore.answeredQuestions} answered questions`;
+
+      const topRec = allRecommendations.find(r => r.priority === 'high');
+      messages['pdf.summary.topAction'] = locale === 'de'
+        ? `Wichtigste Maßnahme: ${topRec?.title || '-'}`
+        : `Top priority: ${topRec?.title || '-'}`;
+
+      // Quick wins for cover
+      const quickWins = allRecommendations
+        .filter(r => r.effortLevel === 'quick')
+        .slice(0, 3);
+      quickWins.forEach((qw, idx) => {
+        messages[`pdf.cover.quickWin${idx + 1}`] = qw.title;
+      });
+      messages['pdf.cover.quickWinsTitle'] = locale === 'de' ? 'Sofort umsetzbar' : 'Quick Wins';
+
+      // CTA messages
+      messages['pdf.cta.title'] = tPdf('cta.title');
+      messages['pdf.cta.subtitle'] = tPdf('cta.subtitle');
+      messages['pdf.cta.option1Title'] = tPdf('cta.option1Title');
+      messages['pdf.cta.option1Text'] = tPdf('cta.option1Text');
+      messages['pdf.cta.option2Title'] = tPdf('cta.option2Title');
+      messages['pdf.cta.option2Text'] = tPdf('cta.option2Text');
+      messages['pdf.cta.option3Title'] = tPdf('cta.option3Title');
+      messages['pdf.cta.option3Text'] = tPdf('cta.option3Text');
+      messages['pdf.cta.currentLabel'] = tPdf('cta.currentLabel');
+      messages['pdf.cta.targetLabel'] = tPdf('cta.targetLabel');
+      messages['pdf.cta.urgencyTitle'] = tPdf('cta.urgencyTitle');
+      messages['pdf.cta.urgencyText'] = tPdf('cta.urgencyText');
+      messages['pdf.cta.starterTitle'] = tPdf('cta.starterTitle');
+      messages['pdf.cta.starterText'] = tPdf('cta.starterText');
+      messages['pdf.cta.contactTitle'] = tPdf('cta.contactTitle');
+      messages['pdf.cta.contactSubtitle'] = tPdf('cta.contactSubtitle');
+      messages['pdf.cta.contactPlaceholder'] = tPdf('cta.contactPlaceholder');
+      messages['pdf.cta.contactDetails'] = tPdf('cta.contactDetails');
+      messages['pdf.cta.footerNote'] = tPdf('cta.footerNote');
+
+      // Glossary messages
+      messages['pdf.glossary.title'] = tPdf('glossary.title');
+      messages['pdf.glossary.intro'] = tPdf('glossary.intro');
+      const glossaryTerms = ['isms', 'bia', 'rto', 'rpo', 'bcm', 'mfa', 'pam', 'siem', 'soc', 'ioc', 'patchMgmt', 'zeroTrust', 'riskTreatment', 'audit', 'compliance'];
+      for (const term of glossaryTerms) {
+        messages[`pdf.glossary.${term}.term`] = tPdf(`glossary.${term}.term`);
+        messages[`pdf.glossary.${term}.def`] = tPdf(`glossary.${term}.def`);
+      }
+
+      // Progress messages
+      messages['pdf.progress.title'] = locale === 'de' ? 'Umsetzungsfortschritt' : 'Implementation Progress';
+      messages['pdf.progress.overall'] = locale === 'de' ? 'Gesamtfortschritt' : 'Overall Progress';
+      messages['pdf.progress.notStarted'] = locale === 'de' ? 'Offen' : 'Not Started';
+      messages['pdf.progress.inProgress'] = locale === 'de' ? 'In Arbeit' : 'In Progress';
+      messages['pdf.progress.completed'] = locale === 'de' ? 'Abgeschlossen' : 'Completed';
+      messages['pdf.progress.status.not-started'] = locale === 'de' ? 'Offen' : 'Not Started';
+      messages['pdf.progress.status.in-progress'] = locale === 'de' ? 'In Arbeit' : 'In Progress';
+      messages['pdf.progress.status.completed'] = locale === 'de' ? 'Abgeschlossen' : 'Completed';
+      messages['pdf.progress.startPointTitle'] = locale === 'de' ? 'Ihr Startpunkt' : 'Your Starting Point';
+      messages['pdf.progress.startPointText'] = locale === 'de'
+        ? 'Sie haben noch keine Maßnahme als umgesetzt markiert — das ist Ihr Ausgangspunkt.'
+        : 'You haven\'t marked any measures as implemented yet — this is your starting point.';
+
+      // Mini-CTA messages
+      messages['pdf.miniCta.title'] = tPdf('miniCta.title');
+      messages['pdf.miniCta.text'] = tPdf('miniCta.text');
+
+      // Build progress data
+      const allRecObjects = config.categories.flatMap((cat) => getRecommendationsByCategory(config, cat.id));
+      const total = allRecObjects.length;
+      const counts = getStatusCounts();
+      const notStarted = total - counts.inProgress - counts.completed;
+
+      const progressData: PDFPayload['progress'] = {
+        completionPercentage: getCompletionPercentage(total),
+        notStarted,
+        inProgress: counts.inProgress,
+        completed: counts.completed,
+        items: allRecObjects.map((rec) => {
+          const progress = getProgress(rec.id);
+          return {
+            title: tAll(rec.titleKey),
+            status: progress?.status || 'not-started',
+          };
+        }),
+      };
+
+      // Navigator data for company profile
+      let navigatorData: { industry: string; companySize: string } | null = null;
+      try {
+        const raw = localStorage.getItem('navigator-results-storage');
+        if (raw) navigatorData = JSON.parse(raw);
+      } catch { /* ignore */ }
+
+      // Company profile (generic — no NIS2 classification)
+      const sectorName = navigatorData?.industry || (locale === 'de' ? 'Nicht angegeben' : 'Not specified');
+
+      // Analysis depth
+      const totalQuestions = config.categories.reduce((sum, cat) =>
+        sum + getQuestionsByCategory(config, cat.id).length, 0);
+      const analysisDepth: 'core' | 'full' = answers.length >= totalQuestions ? 'full' : 'core';
+
+      // Build executive summary
+      const sortedCats = [...categoryResults].sort((a, b) => a.percentage - b.percentage);
+      const topRisks = sortedCats.slice(0, 3).map((cat) => ({
+        name: cat.categoryName,
+        percentage: cat.percentage,
+        trafficLight: cat.trafficLight,
+      }));
+      const quickWinItems = allRecommendations
+        .filter(r => r.effortLevel === 'quick')
+        .slice(0, 5)
+        .map(r => ({ title: r.title, days: '2–5', cost: '' }));
+
+      messages['pdf.executive.title'] = tPdf('executive.title');
+      messages['pdf.executive.riskTitle'] = tPdf('executive.riskTitle');
+      messages['pdf.executive.quickWinTitle'] = tPdf('executive.quickWinTitle');
+      messages['pdf.executive.quickWinDays'] = tPdf('executive.quickWinDays');
+      messages['pdf.executive.totalBasisschutz'] = tPdf('executive.totalBasisschutz');
+      messages['pdf.executive.ctaLine'] = tPdf('executive.ctaLine');
+      messages['pdf.executive.startHint'] = tPdf('executive.startHint');
+      messages['pdf.executive.targetLabel'] = tPdf('executive.targetLabel');
+      messages['pdf.executive.glossaryRef'] = tPdf('executive.glossaryRef');
+      messages['pdf.executive.optionA.title'] = tPdf('executive.optionA.title');
+      messages['pdf.executive.optionA.text'] = tPdf('executive.optionA.text');
+      messages['pdf.executive.optionB.title'] = tPdf('executive.optionB.title');
+      messages['pdf.executive.optionB.text'] = tPdf('executive.optionB.text');
+      messages['pdf.executive.optionC.title'] = tPdf('executive.optionC.title');
+      messages['pdf.executive.optionC.text'] = tPdf('executive.optionC.text');
+
+      // Build payload
+      const payload: PDFPayload = {
+        locale,
+        analysisDepth,
+        regulationId: regulation,
+        regulationName: regName,
+        company: {
+          sectorName,
+          employees: 0,
+          annualRevenue: 0,
+        },
+        overallScore: {
+          percentage: overallScore.percentage,
+          trafficLight: overallScore.trafficLight,
+          completionRate: overallScore.completionRate,
+          answeredQuestions: overallScore.answeredQuestions,
+          totalQuestions: overallScore.totalQuestions,
+        },
+        categories: categoryResults,
+        recommendations: allRecommendations,
+        messages,
+        executiveSummary: {
+          percentage: overallScore.percentage,
+          trafficLight: overallScore.trafficLight,
+          topRisks,
+          quickWins: quickWinItems,
+          basisschutzTotal: { min: 0, max: 0 },
+        },
+        progress: progressData,
+      };
+
+      // POST to API
+      const response = await fetch('/api/pdf/download', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || `HTTP ${response.status}`);
+      }
+
+      // Download the blob
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      const timestamp = new Date().toISOString().split('T')[0];
+      a.download = `${regName.replace(/[^a-zA-Z0-9äöüÄÖÜß\s-]/g, '').replace(/\s+/g, '-')}-Report-${timestamp}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error('PDF download failed:', err);
+      setError(err instanceof Error ? err.message : 'Unknown error');
+    } finally {
+      setIsGenerating(false);
+    }
+  };
+
+  return (
+    <div className="flex flex-col items-center gap-2">
+      <Button variant="default" onClick={handleDownload} disabled={isGenerating}>
+        {isGenerating ? (
+          <>
+            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            {locale === 'de' ? 'PDF wird erstellt...' : 'Generating PDF...'}
+          </>
+        ) : (
+          <>
+            <Download className="mr-2 h-4 w-4" />
+            {t('actions.downloadPdf')}
+          </>
+        )}
+      </Button>
+      {error && (
+        <p className="text-sm text-red-600 text-center">
+          Error: {error}
+        </p>
+      )}
+    </div>
+  );
+}

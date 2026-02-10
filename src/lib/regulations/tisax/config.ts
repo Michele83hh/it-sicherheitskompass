@@ -60,9 +60,10 @@ const tisaxConfig: RegulationConfig = {
     id: q.id,
     categoryId: q.categoryId,
     questionKey: q.titleKey,
+    descriptionKey: q.descriptionKey,
   })),
   features: {
-    hasClassification: true,
+    hasClassification: false,
     hasQuickCheck: true,
     hasTieredAssessment: false,
     hasCostEstimation: false,
