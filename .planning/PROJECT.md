@@ -40,11 +40,7 @@ KMU können in 15-20 Minuten herausfinden, ob sie von NIS2 betroffen sind und wo
 ## Context
 
 **Zweck:**
-Dieses Projekt dient zwei Zielen gleichzeitig:
-1. **Bewerbungsprojekt** für IT-Security-Praktikum — zeigt technische Skills (React, TypeScript), NIS2-Fachwissen und Beratungsdenken
-2. **Grundlage für Selbstständigkeit** — kann später als Lead-Generator für NIS2-Beratung eingesetzt werden
-
-**Deadline:** Vor 16.02.2026 (Bewerbungstraining beginnt)
+Umfassende IT-Sicherheitsplattform für deutsche KMU — zentraler Anlaufpunkt für alle Compliance-Anforderungen (gesetzlich, branchenspezifisch, kundengetrieben). Zeigt technische Skills und IT-Security-Fachwissen, dient gleichzeitig als Grundlage für Beratungstätigkeit.
 
 **NIS2-Hintergrund:**
 - EU-Richtlinie 2022/2555 (NIS2) erweitert regulierte Unternehmen in DE von ~4.500 auf ~30.000
@@ -73,7 +69,7 @@ Dieses Projekt dient zwei Zielen gleichzeitig:
 
 ## Constraints
 
-- **Zeitlich**: Muss vor 16.02.2026 fertig sein (~10 Tage) — erfordert fokussierten Scope
+- **Kontinuierliche Entwicklung**: Kein festes Enddatum — Plattform wächst mit neuen Regelwerken und Features
 - **Akkuratesse**: Jede Frage, jede Bewertungslogik und jede Empfehlung muss auf echten NIS2-Anforderungen basieren mit nachvollziehbarer Quellenangabe — kein "ungefähr"
 - **Tech Stack**: React + TypeScript (Frontend), Backend für PDF-Generierung, Deployment auf Vercel
 - **Zweisprachig**: Deutsch + Englisch (i18n von Anfang an einplanen)
