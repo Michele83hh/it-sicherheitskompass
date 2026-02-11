@@ -39,3 +39,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code
+.claude/
+
+# planning artifacts
+.planning/
+
+# temp files
+tmp-*
+nul
+*.backup.tsx
+replace-cra-questions.mjs
+tmp-tisax-update.js
+~$*
+*.docx
