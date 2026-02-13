@@ -841,17 +841,19 @@ function ResultCard({
           )}
         </div>
         {!dimmed && (
-          <div className="flex flex-col gap-1.5 flex-shrink-0">
-            <Button variant="outline" size="sm" asChild>
-              <Link href={`/${result.id}/schnellcheck` as any}>
-                {t('result.startCheck')}
-              </Link>
-            </Button>
-            <Button variant="outline" size="sm" asChild>
-              <Link href={`/${result.id}/assessment` as any}>
-                {t('result.fullAnalysis')}
-              </Link>
-            </Button>
+          <div className="flex flex-col gap-1 flex-shrink-0 text-right">
+            <Link
+              href={`/${result.id}/schnellcheck` as any}
+              className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+            >
+              {t('result.startCheck')}
+            </Link>
+            <Link
+              href={`/${result.id}/assessment` as any}
+              className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+            >
+              {t('result.fullAnalysis')}
+            </Link>
           </div>
         )}
       </CardContent>
