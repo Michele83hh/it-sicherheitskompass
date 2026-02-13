@@ -10442,6 +10442,10 @@
           "i4": "Lassen Sie die Geschaeftsleitung unterschreiben — das zeigt Commitment",
           "i5": "Bewahren Sie Nachweise auf (Schulungsteilnahmen, Testergebnisse, Richtlinien-Versionen)"
         }
+      },
+      "cta": {
+        "text": "Starten Sie Ihre Bestandsaufnahme mit unserem Regelwerk-Navigator",
+        "button": "Zum Navigator"
       }
     },
     "kiCheck": {

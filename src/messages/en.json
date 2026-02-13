@@ -10388,6 +10388,10 @@
           "i4": "Have management sign it — this shows commitment",
           "i5": "Keep evidence (training records, test results, policy versions)"
         }
+      },
+      "cta": {
+        "text": "Start your assessment with our regulation navigator",
+        "button": "Go to Navigator"
       }
     },
     "kiCheck": {

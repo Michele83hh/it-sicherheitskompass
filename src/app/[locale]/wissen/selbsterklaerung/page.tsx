@@ -122,13 +122,13 @@ export default function SelbsterklaerungPage() {
         {/* CTA */}
         <div className="mb-8 rounded-lg bg-primary/5 border-2 border-primary/20 p-6 text-center">
           <p className="text-sm text-foreground mb-3 font-medium">
-            Starten Sie Ihre Bestandsaufnahme mit unserem Regelwerk-Navigator
+            {t('cta.text')}
           </p>
           <Link
             href="/navigator"
             className="inline-flex items-center gap-2 rounded-md bg-emerald-500 px-6 py-2.5 text-sm font-medium text-white shadow-md shadow-emerald-500/20 hover:bg-emerald-600 transition-colors"
           >
-            Zum Navigator
+            {t('cta.button')}
           </Link>
         </div>
 
