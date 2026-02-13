@@ -7495,70 +7495,70 @@
     "directToFullAnalysis": "Direkt zur vollständigen Analyse",
     "checkAffected": "Betroffenheit prüfen",
     "dsgvo": {
-      "title": "DSGVO-Compliance prüfen",
-      "subtitle": "Wie gut schützen Sie personenbezogene Daten? Prüfen Sie Ihre Datenschutzmaßnahmen gegen die Anforderungen der DSGVO.",
+      "title": "DSGVO-Compliance pruefen",
+      "subtitle": "Pruefen Sie Ihre Datenschutzmassnahmen gegen die Anforderungen der DSGVO.",
       "cta": "DSGVO-Check starten"
     },
     "kritis": {
-      "title": "KRITIS-Anforderungen prüfen",
-      "subtitle": "Erfüllt Ihre kritische Infrastruktur die Sicherheitsanforderungen? Überprüfen Sie Ihre Maßnahmen gegen die BSI-KritisV.",
+      "title": "KRITIS-Anforderungen pruefen",
+      "subtitle": "Erfuellt Ihre kritische Infrastruktur die Sicherheitsanforderungen der BSI-KritisV?",
       "cta": "KRITIS-Check starten"
     },
     "dora": {
-      "title": "DORA-Readiness prüfen",
-      "subtitle": "Ist Ihr Finanzunternehmen digital resilient? Prüfen Sie Ihre ICT-Risikomanagement-Maßnahmen gegen DORA.",
+      "title": "DORA-Readiness pruefen",
+      "subtitle": "Pruefen Sie Ihre ICT-Risikomanagement-Massnahmen gegen die EU-Verordnung DORA.",
       "cta": "DORA-Check starten"
     },
     "tisax": {
       "title": "TISAX-Assessment vorbereiten",
-      "subtitle": "Sind Sie bereit für die Informationssicherheit in der Automobilbranche? Prüfen Sie Ihren Stand gegen VDA ISA.",
+      "subtitle": "Pruefen Sie Ihren Informationssicherheits-Stand gegen die VDA ISA-Anforderungen.",
       "cta": "TISAX-Check starten"
     },
     "cra": {
-      "title": "CRA-Konformität prüfen",
-      "subtitle": "Erfüllen Ihre Produkte die neuen EU-Cybersicherheitsstandards? Prüfen Sie Ihre Produktsicherheit gegen den Cyber Resilience Act.",
+      "title": "CRA-Konformitaet pruefen",
+      "subtitle": "Erfuellen Ihre Produkte die Cybersicherheitsanforderungen des Cyber Resilience Act?",
       "cta": "CRA-Check starten"
     },
     "bsi-grundschutz": {
       "title": "IT-Grundschutz-Check",
-      "subtitle": "Wie systematisch ist Ihre Informationssicherheit? Prüfen Sie Ihre Maßnahmen gegen den BSI IT-Grundschutz.",
+      "subtitle": "Pruefen Sie Ihre Massnahmen gegen den BSI IT-Grundschutz-Katalog.",
       "cta": "Grundschutz-Check starten"
     },
     "iso27001": {
       "title": "ISO 27001-Readiness pruefen",
-      "subtitle": "Wie systematisch ist Ihr Informationssicherheits-Management? Pruefen Sie Ihren Stand gegen die Anforderungen der ISO/IEC 27001:2022.",
+      "subtitle": "Pruefen Sie Ihr ISMS gegen die Anforderungen der ISO/IEC 27001:2022.",
       "cta": "ISO 27001-Check starten"
     },
     "soc2": {
-      "title": "SOC 2 Readiness prüfen",
-      "subtitle": "Erfüllt Ihre Organisation die AICPA Trust Services Criteria? Prüfen Sie Ihre Kontrollen gegen die SOC-2-Anforderungen für Security, Availability, Processing Integrity, Confidentiality und Privacy.",
+      "title": "SOC 2 Readiness pruefen",
+      "subtitle": "Pruefen Sie Ihre Kontrollen gegen die AICPA Trust Services Criteria.",
       "cta": "SOC-2-Check starten"
     },
     "pci-dss": {
       "title": "PCI DSS Compliance-Check",
-      "subtitle": "Wie sicher sind Ihre Zahlungsprozesse? Prüfen Sie Ihre Maßnahmen gegen den Payment Card Industry Data Security Standard v4.0.",
+      "subtitle": "Pruefen Sie Ihre Zahlungsprozesse gegen den PCI DSS v4.0-Standard.",
       "cta": "PCI DSS-Check starten"
     },
     "c5": {
       "title": "BSI C5-Compliance pruefen",
-      "subtitle": "Erfuellt Ihr Cloud-Dienst die Anforderungen des BSI C5:2020? Pruefen Sie Ihre Cloud-Sicherheitsmassnahmen gegen den BSI-Kriterienkatalog.",
+      "subtitle": "Pruefen Sie Ihre Cloud-Sicherheit gegen den BSI C5:2020-Kriterienkatalog.",
       "cta": "C5-Check starten"
     },
     "cis-controls": {
       "title": "CIS Controls v8",
-      "subtitle": "18 priorisierte Sicherheitsmassnahmen des Center for Internet Security — der pragmatische Einstieg in technische IT-Sicherheit."
+      "subtitle": "18 priorisierte Sicherheitsmassnahmen — der pragmatische Einstieg in technische IT-Sicherheit."
     },
     "iso22301": {
       "title": "ISO 22301 — Business Continuity",
-      "subtitle": "Systematisches BCM fuer Geschaeftskontinuitaet: BIA, Notfallplaene und Wiederanlaufstrategien nach ISO 22301:2019."
+      "subtitle": "Systematisches BCM: BIA, Notfallplaene und Wiederanlaufstrategien nach ISO 22301:2019."
     },
     "nist-csf": {
       "title": "NIST Cybersecurity Framework 2.0",
-      "subtitle": "Das weltweit fuehrende Rahmenwerk fuer Cybersicherheit — mit den 6 Funktionen Govern, Identify, Protect, Detect, Respond, Recover."
+      "subtitle": "Das weltweit fuehrende Rahmenwerk fuer Cybersicherheit mit 6 Kernfunktionen."
     },
     "owasp-asvs": {
       "title": "OWASP ASVS 4.0",
-      "subtitle": "Sicherheitsstandard fuer Webanwendungen und APIs — Verifizierungslevel L1 bis L3 fuer Entwickler und Sicherheitsteams."
+      "subtitle": "Sicherheitsstandard fuer Webanwendungen und APIs mit 3 Verifizierungsleveln."
     }
   },
   "pillars": {

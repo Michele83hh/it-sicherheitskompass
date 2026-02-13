@@ -449,7 +449,7 @@ export default function NavigatorPage() {
           <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
             {t('title')}
           </h1>
-          <p className="mt-2 text-base text-slate-300 whitespace-nowrap">
+          <p className="mt-2 text-sm sm:text-base text-slate-300">
             {t('subtitle')}
           </p>
         </div>
