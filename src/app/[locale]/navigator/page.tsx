@@ -841,16 +841,16 @@ function ResultCard({
           )}
         </div>
         {!dimmed && (
-          <div className="flex flex-col gap-1 flex-shrink-0 text-right">
+          <div className="flex flex-col gap-1.5 flex-shrink-0">
             <Link
               href={`/${result.id}/schnellcheck` as any}
-              className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+              className="inline-flex items-center rounded-md bg-emerald-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-emerald-600 transition-colors"
             >
               {t('result.startCheck')}
             </Link>
             <Link
               href={`/${result.id}/assessment` as any}
-              className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+              className="inline-flex items-center rounded-md bg-emerald-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-emerald-600 transition-colors"
             >
               {t('result.fullAnalysis')}
             </Link>
