@@ -10778,6 +10778,94 @@
         }
       }
     },
+    "businessContinuity": {
+      "title": "Business Continuity Management",
+      "subtitle": "Geschaeftskontinuitaet sichern — auch wenn es ernst wird",
+      "intro": "Ein Cyberangriff, ein Serverausfall oder eine Naturkatastrophe — Unternehmen, die keinen Plan B haben, stehen im Ernstfall still. Business Continuity Management (BCM) sorgt dafuer, dass kritische Geschaeftsprozesse auch in Krisensituationen weiterlaufen.",
+      "why": {
+        "title": "Warum jedes Unternehmen BCM braucht",
+        "items": {
+          "i1": "43% der KMU, die einen groesseren IT-Ausfall erleben, erholen sich nie vollstaendig",
+          "i2": "Durchschnittliche Kosten eines Betriebsausfalls: 5.600 EUR pro Minute bei mittelstaendischen Unternehmen",
+          "i3": "NIS2, KRITIS und DORA verpflichten betroffene Unternehmen explizit zu BCM-Massnahmen",
+          "i4": "Kunden und Partner erwarten zunehmend nachgewiesene Ausfallsicherheit",
+          "i5": "Versicherungen pruefen BCM-Faehigkeit bei der Risikobewertung fuer Cyber-Policen"
+        }
+      },
+      "components": {
+        "title": "Die 5 Kernkomponenten des BCM",
+        "bia": {
+          "title": "Business Impact Analyse (BIA)",
+          "desc": "Identifizieren Sie Ihre kritischen Geschaeftsprozesse und bewerten Sie die Auswirkungen eines Ausfalls. Legen Sie fest, wie lange jeder Prozess maximal ausfallen darf (RTO) und wie viel Datenverlust akzeptabel ist (RPO)."
+        },
+        "risk": {
+          "title": "Risikoanalyse",
+          "desc": "Bewerten Sie systematisch alle Bedrohungen: Cyberangriffe, Hardwareausfaelle, Stromausfaelle, Lieferantenausfaelle, Naturereignisse. Priorisieren Sie nach Eintrittswahrscheinlichkeit und Schadenshoehe."
+        },
+        "plans": {
+          "title": "Notfall- und Wiederanlaufplaene",
+          "desc": "Dokumentieren Sie fuer jedes Szenario konkrete Handlungsanweisungen: Wer macht was, in welcher Reihenfolge? Definieren Sie Ausweichstandorte, Kommunikationswege und Eskalationsstufen."
+        },
+        "crisis": {
+          "title": "Krisenmanagement",
+          "desc": "Etablieren Sie ein Krisenteam mit klaren Rollen und Verantwortlichkeiten. Definieren Sie Entscheidungsbefugnisse, Kommunikationsplaene (intern + extern) und Kontaktlisten."
+        },
+        "testing": {
+          "title": "Tests und Uebungen",
+          "desc": "Plaene, die nie getestet werden, funktionieren im Ernstfall nicht. Fuehren Sie regelmaessig Tabletop-Uebungen, technische Tests und vollstaendige Simulationen durch."
+        }
+      },
+      "legal": {
+        "title": "Rechtliche Anforderungen",
+        "nis2": {
+          "name": "NIS2 Art. 21(2)c",
+          "requirement": "Aufrechterhaltung des Betriebs inkl. Backup-Management und Wiederherstellung nach Notfaellen sowie Krisenmanagement"
+        },
+        "kritis": {
+          "name": "BSI-KritisV",
+          "requirement": "Betreiber kritischer Infrastrukturen muessen angemessene organisatorische und technische Vorkehrungen zur Vermeidung von Stoerungen treffen"
+        },
+        "dora": {
+          "name": "DORA Art. 11",
+          "requirement": "IKT-Geschaeftsfortfuehrungsleitlinie mit Reaktions- und Wiederherstellungsplaenen fuer alle IKT-bezogenen Vorfaelle"
+        },
+        "iso22301": {
+          "name": "ISO 22301",
+          "requirement": "Internationaler Standard fuer BCMS — definiert Anforderungen an Planung, Implementierung, Betrieb, Ueberwachung und Verbesserung"
+        },
+        "bsiGrundschutz": {
+          "name": "BSI IT-Grundschutz",
+          "requirement": "Baustein DER.4 Notfallmanagement — verlangt Notfallvorsorgekonzept und Notfallhandbuch"
+        }
+      },
+      "quickStart": {
+        "title": "BCM in 7 Schritten starten",
+        "items": {
+          "i1": "Kritische Geschaeftsprozesse identifizieren — was MUSS weiterlaufen?",
+          "i2": "Maximale Ausfallzeiten (RTO) und akzeptablen Datenverlust (RPO) festlegen",
+          "i3": "Groesste Risiken bewerten: Ransomware, Serverausfall, Stromausfall, Lieferantenausfall",
+          "i4": "Backup-Strategie pruefen: 3-2-1-Regel (3 Kopien, 2 Medien, 1 extern)",
+          "i5": "Notfallkontakte und Eskalationswege dokumentieren und verteilen",
+          "i6": "Einfachen Wiederanlaufplan fuer die 3 wichtigsten Prozesse schreiben",
+          "i7": "Ersten Tabletop-Test durchfuehren: Szenario \"Ransomware am Montagmorgen\""
+        }
+      },
+      "tips": {
+        "title": "Praxis-Tipps",
+        "items": {
+          "i1": "Starten Sie einfach: Ein 2-seitiger Notfallplan ist besser als kein Plan",
+          "i2": "Testen Sie regelmaessig — mindestens einmal pro Jahr eine Uebung durchfuehren",
+          "i3": "Beziehen Sie die Geschaeftsfuehrung ein: BCM ist Chefsache, nicht nur IT-Thema",
+          "i4": "Drucken Sie kritische Kontaktlisten aus — bei IT-Ausfall helfen digitale Listen nicht",
+          "i5": "Lernen Sie aus jedem Vorfall: Nach jeder Stoerung ein kurzes Lessons-Learned durchfuehren"
+        }
+      },
+      "cta": {
+        "title": "BCM-Reifegrad pruefen",
+        "desc": "Nutzen Sie unser ISO 22301 Assessment, um Ihren aktuellen BCM-Reifegrad zu ermitteln und konkrete Handlungsempfehlungen zu erhalten.",
+        "button": "ISO 22301 Assessment starten"
+      }
+    },
     "awarenessQuiz": {
       "title": "Security Awareness Quiz",
       "subtitle": "Testen Sie Ihr Wissen zur IT-Sicherheit — 15 Fragen fuer den Arbeitsalltag",

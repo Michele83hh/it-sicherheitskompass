@@ -10724,6 +10724,94 @@
         }
       }
     },
+    "businessContinuity": {
+      "title": "Business Continuity Management",
+      "subtitle": "Ensure business continuity — even when things go wrong",
+      "intro": "A cyberattack, a server failure, or a natural disaster — companies without a Plan B will be at a standstill in an emergency. Business Continuity Management (BCM) ensures that critical business processes continue to run even in crisis situations.",
+      "why": {
+        "title": "Why every company needs BCM",
+        "items": {
+          "i1": "43% of SMEs that experience a major IT outage never fully recover",
+          "i2": "Average cost of downtime: EUR 5,600 per minute for mid-sized companies",
+          "i3": "NIS2, KRITIS, and DORA explicitly require affected companies to implement BCM measures",
+          "i4": "Customers and partners increasingly expect proven resilience",
+          "i5": "Insurers assess BCM capability when evaluating risk for cyber insurance policies"
+        }
+      },
+      "components": {
+        "title": "The 5 core components of BCM",
+        "bia": {
+          "title": "Business Impact Analysis (BIA)",
+          "desc": "Identify your critical business processes and assess the impact of an outage. Define the maximum tolerable downtime (RTO) and acceptable data loss (RPO) for each process."
+        },
+        "risk": {
+          "title": "Risk Assessment",
+          "desc": "Systematically evaluate all threats: cyberattacks, hardware failures, power outages, supplier failures, natural events. Prioritize by likelihood and impact."
+        },
+        "plans": {
+          "title": "Contingency & Recovery Plans",
+          "desc": "Document concrete action instructions for each scenario: Who does what, in what order? Define fallback locations, communication channels, and escalation levels."
+        },
+        "crisis": {
+          "title": "Crisis Management",
+          "desc": "Establish a crisis team with clear roles and responsibilities. Define decision-making authority, communication plans (internal + external), and contact lists."
+        },
+        "testing": {
+          "title": "Tests & Exercises",
+          "desc": "Plans that are never tested won't work in an emergency. Conduct regular tabletop exercises, technical tests, and full simulations."
+        }
+      },
+      "legal": {
+        "title": "Legal requirements",
+        "nis2": {
+          "name": "NIS2 Art. 21(2)c",
+          "requirement": "Business continuity including backup management, disaster recovery, and crisis management"
+        },
+        "kritis": {
+          "name": "BSI-KritisV",
+          "requirement": "Operators of critical infrastructure must take appropriate organizational and technical precautions to prevent disruptions"
+        },
+        "dora": {
+          "name": "DORA Art. 11",
+          "requirement": "ICT business continuity policy with response and recovery plans for all ICT-related incidents"
+        },
+        "iso22301": {
+          "name": "ISO 22301",
+          "requirement": "International standard for BCMS — defines requirements for planning, implementation, operation, monitoring, and improvement"
+        },
+        "bsiGrundschutz": {
+          "name": "BSI IT-Grundschutz",
+          "requirement": "Module DER.4 Emergency Management — requires emergency preparedness concept and emergency handbook"
+        }
+      },
+      "quickStart": {
+        "title": "Start BCM in 7 steps",
+        "items": {
+          "i1": "Identify critical business processes — what MUST keep running?",
+          "i2": "Define maximum downtime (RTO) and acceptable data loss (RPO)",
+          "i3": "Assess top risks: ransomware, server failure, power outage, supplier failure",
+          "i4": "Review backup strategy: 3-2-1 rule (3 copies, 2 media types, 1 offsite)",
+          "i5": "Document and distribute emergency contacts and escalation paths",
+          "i6": "Write a simple recovery plan for the 3 most important processes",
+          "i7": "Conduct your first tabletop exercise: scenario \"Ransomware on Monday morning\""
+        }
+      },
+      "tips": {
+        "title": "Practical tips",
+        "items": {
+          "i1": "Start simple: A 2-page emergency plan is better than no plan at all",
+          "i2": "Test regularly — conduct at least one exercise per year",
+          "i3": "Involve management: BCM is a leadership responsibility, not just an IT topic",
+          "i4": "Print critical contact lists — digital lists don't help during an IT outage",
+          "i5": "Learn from every incident: Conduct a brief lessons-learned after every disruption"
+        }
+      },
+      "cta": {
+        "title": "Check your BCM maturity",
+        "desc": "Use our ISO 22301 assessment to determine your current BCM maturity level and get specific recommendations for action.",
+        "button": "Start ISO 22301 Assessment"
+      }
+    },
     "awarenessQuiz": {
       "title": "Security Awareness Quiz",
       "subtitle": "Test your IT security knowledge — 15 questions for everyday work",

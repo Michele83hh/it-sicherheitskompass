@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { BookOpen, Siren, Building2, Banknote, ShieldAlert, Wrench, User, UserCheck, Home, Megaphone, ClipboardList, FileCheck, Brain, FileText, TrendingUp, Shield, GraduationCap, FileSearch, Table, FileSignature, Calculator, Award, Truck, FileBarChart, Key, Cloud, BarChart3, Image, Radar, UserCog, Code2, Factory, ArrowRight } from 'lucide-react';
+import { BookOpen, Siren, Building2, Banknote, ShieldAlert, Wrench, User, UserCheck, Home, Megaphone, ClipboardList, FileCheck, Brain, FileText, TrendingUp, Shield, GraduationCap, FileSearch, Table, FileSignature, Calculator, Award, Truck, FileBarChart, Key, Cloud, BarChart3, Image, Radar, UserCog, Code2, Factory, ArrowRight, LifeBuoy } from 'lucide-react';
 import { Link } from '@/lib/i18n/navigation';
 import { getAllPillars } from '@/lib/pillars/registry';
 import '@/lib/pillars/init';
@@ -20,6 +20,7 @@ const QUICK_LINKS = [
   { href: '/wissen/ki-check', icon: Brain, colorClass: 'bg-purple-500/10 text-purple-500', labelKey: 'kiCheck' },
   { href: '/wissen/vorlagen', icon: FileText, colorClass: 'bg-slate-500/10 text-slate-500', labelKey: 'vorlagen' },
   { href: '/wissen/fortschritt', icon: TrendingUp, colorClass: 'bg-lime-500/10 text-lime-500', labelKey: 'fortschritt' },
+  { href: '/wissen/business-continuity', icon: LifeBuoy, colorClass: 'bg-orange-500/10 text-orange-500', labelKey: 'businessContinuity' },
   { href: '/wissen/awareness-quiz', icon: Brain, colorClass: 'bg-fuchsia-500/10 text-fuchsia-500', labelKey: 'awarenessQuiz' },
   { href: '/wissen/schulungsnachweis', icon: GraduationCap, colorClass: 'bg-sky-500/10 text-sky-500', labelKey: 'schulungsnachweis' },
   { href: '/wissen/angriffspfade', icon: Shield, colorClass: 'bg-red-500/10 text-red-600', labelKey: 'angriffspfade' },
