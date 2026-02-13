@@ -25,6 +25,10 @@ export const REGULATION_IDS = [
   'soc2',
   'pci-dss',
   'c5',
+  'cis-controls',
+  'iso22301',
+  'nist-csf',
+  'owasp-asvs',
 ] as const;
 
 export type RegulationId = (typeof REGULATION_IDS)[number];

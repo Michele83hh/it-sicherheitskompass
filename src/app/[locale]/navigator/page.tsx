@@ -33,9 +33,12 @@ import {
   CreditCard,
   Cloud,
   Clock,
+  LifeBuoy,
+  Flag,
+  Bug,
 } from 'lucide-react';
 
-type RegulationId = 'nis2' | 'dsgvo' | 'kritis' | 'dora' | 'tisax' | 'cra' | 'bsi-grundschutz' | 'iso27001' | 'soc2' | 'pci-dss' | 'c5';
+type RegulationId = 'nis2' | 'dsgvo' | 'kritis' | 'dora' | 'tisax' | 'cra' | 'bsi-grundschutz' | 'iso27001' | 'soc2' | 'pci-dss' | 'c5' | 'cis-controls' | 'iso22301' | 'nist-csf' | 'owasp-asvs';
 
 type Relevance = 'high' | 'medium' | 'low' | 'none';
 
@@ -305,6 +308,80 @@ export default function NavigatorPage() {
       reasonKey: c5Reason,
     });
 
+    // CIS Controls
+    let cisScore = 30;
+    let cisReason = 'cisFramework';
+    if (nis2Score >= 80 || iso27001Score >= 80) {
+      cisScore = 60;
+      cisReason = 'cisCompliance';
+    } else if (isLargeEnough) {
+      cisScore = 45;
+      cisReason = 'cisSize';
+    }
+    results.push({
+      id: 'cis-controls',
+      relevance: cisScore >= 80 ? 'high' : cisScore >= 40 ? 'medium' : 'low',
+      score: cisScore,
+      reasonKey: cisReason,
+    });
+
+    // ISO 22301 BCM
+    let bcmScore = 20;
+    let bcmReason = 'bcmFramework';
+    if (kritisScore >= 80) {
+      bcmScore = 80;
+      bcmReason = 'bcmKritis';
+    } else if (nis2Score >= 80) {
+      bcmScore = 65;
+      bcmReason = 'bcmNis2';
+    } else if (isLargeEnough) {
+      bcmScore = 45;
+      bcmReason = 'bcmSize';
+    }
+    results.push({
+      id: 'iso22301',
+      relevance: bcmScore >= 80 ? 'high' : bcmScore >= 40 ? 'medium' : bcmScore >= 10 ? 'low' : 'none',
+      score: bcmScore,
+      reasonKey: bcmReason,
+    });
+
+    // NIST CSF
+    let nistScore = 25;
+    let nistReason = 'nistFramework';
+    if (iso27001Score >= 80 || nis2Score >= 80) {
+      nistScore = 50;
+      nistReason = 'nistCompliance';
+    } else if (businessModels.includes('digitalServices') || businessModels.includes('saasProvider')) {
+      nistScore = 45;
+      nistReason = 'nistDigital';
+    }
+    results.push({
+      id: 'nist-csf',
+      relevance: nistScore >= 80 ? 'high' : nistScore >= 40 ? 'medium' : 'low',
+      score: nistScore,
+      reasonKey: nistReason,
+    });
+
+    // OWASP ASVS
+    let owaspScore = 15;
+    let owaspReason = 'owaspNA';
+    if (businessModels.includes('digitalProducts') || businessModels.includes('saasProvider')) {
+      owaspScore = 75;
+      owaspReason = 'owaspSoftware';
+    } else if (businessModels.includes('digitalServices')) {
+      owaspScore = 55;
+      owaspReason = 'owaspDigital';
+    } else if (businessModels.includes('cloudProvider')) {
+      owaspScore = 60;
+      owaspReason = 'owaspCloud';
+    }
+    results.push({
+      id: 'owasp-asvs',
+      relevance: owaspScore >= 80 ? 'high' : owaspScore >= 40 ? 'medium' : owaspScore >= 10 ? 'low' : 'none',
+      score: owaspScore,
+      reasonKey: owaspReason,
+    });
+
     return [...results].sort((a, b) => b.score - a.score);
   }
 
@@ -320,6 +397,10 @@ export default function NavigatorPage() {
     'soc2': { icon: BadgeCheck, tKey: 'soc2', color: 'text-sky-700', bgColor: 'bg-sky-50', borderColor: 'border-sky-200' },
     'pci-dss': { icon: CreditCard, tKey: 'pciDss', color: 'text-indigo-700', bgColor: 'bg-indigo-50', borderColor: 'border-indigo-200' },
     'c5': { icon: Cloud, tKey: 'c5', color: 'text-purple-700', bgColor: 'bg-purple-50', borderColor: 'border-purple-200' },
+    'cis-controls': { icon: ShieldCheck, tKey: 'cisControls', color: 'text-sky-700', bgColor: 'bg-sky-50', borderColor: 'border-sky-200' },
+    'iso22301': { icon: LifeBuoy, tKey: 'iso22301', color: 'text-orange-700', bgColor: 'bg-orange-50', borderColor: 'border-orange-200' },
+    'nist-csf': { icon: Flag, tKey: 'nistCsf', color: 'text-indigo-700', bgColor: 'bg-indigo-50', borderColor: 'border-indigo-200' },
+    'owasp-asvs': { icon: Bug, tKey: 'owaspAsvs', color: 'text-lime-700', bgColor: 'bg-lime-50', borderColor: 'border-lime-200' },
   };
 
   function handleRestart() {

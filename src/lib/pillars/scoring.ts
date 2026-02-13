@@ -25,6 +25,10 @@ const STORAGE_KEYS: Record<RegulationId, string> = {
   soc2: 'soc2-assessment-storage',
   'pci-dss': 'pci-dss-assessment-storage',
   c5: 'c5-assessment-storage',
+  'cis-controls': 'cis-controls-assessment-storage',
+  iso22301: 'iso22301-assessment-storage',
+  'nist-csf': 'nist-csf-assessment-storage',
+  'owasp-asvs': 'owasp-asvs-assessment-storage',
 };
 
 export interface PillarScore {

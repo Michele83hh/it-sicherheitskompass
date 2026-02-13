@@ -35,6 +35,10 @@ import {
   BadgeCheck,
   CreditCard,
   Cloud,
+  ShieldCheck,
+  LifeBuoy,
+  Flag,
+  Bug,
 } from 'lucide-react';
 
 // ============================================================
@@ -147,6 +151,10 @@ const REG_META: {
   { id: 'soc2', tKey: 'soc2', icon: BadgeCheck, color: 'sky', storageKey: 'soc2-assessment-storage' },
   { id: 'pci-dss', tKey: 'pciDss', icon: CreditCard, color: 'indigo', storageKey: 'pci-dss-assessment-storage' },
   { id: 'c5', tKey: 'c5', icon: Cloud, color: 'purple', storageKey: 'c5-assessment-storage' },
+  { id: 'cis-controls', tKey: 'cisControls', icon: ShieldCheck, color: 'sky', storageKey: 'cis-controls-assessment-storage' },
+  { id: 'iso22301', tKey: 'iso22301', icon: LifeBuoy, color: 'orange', storageKey: 'iso22301-assessment-storage' },
+  { id: 'nist-csf', tKey: 'nistCsf', icon: Flag, color: 'indigo', storageKey: 'nist-csf-assessment-storage' },
+  { id: 'owasp-asvs', tKey: 'owaspAsvs', icon: Bug, color: 'lime', storageKey: 'owasp-asvs-assessment-storage' },
 ];
 
 // ============================================================

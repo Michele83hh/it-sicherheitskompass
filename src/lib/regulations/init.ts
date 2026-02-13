@@ -16,3 +16,7 @@ import './iso27001/config';
 import './soc2/config';
 import './pci-dss/config';
 import './c5/config';
+import './nist-csf/config';
+import './cis-controls/config';
+import './iso22301/config';
+import './owasp-asvs/config';

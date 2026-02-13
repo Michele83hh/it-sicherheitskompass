@@ -16,6 +16,7 @@ import { QuickWinsSection } from './components/quick-wins-section';
 import { RecommendationsSection } from './components/recommendations-section';
 import { RoadmapSection } from './components/roadmap-section';
 import { ProgressTrackingSection } from './components/progress-tracking-section';
+import { ExecutiveSummaryModal } from './components/executive-summary-modal';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
@@ -26,7 +27,7 @@ import {
   Calculator, Map, CheckSquare, ShieldAlert, Coins, GitCompare,
   FileCheck, BookOpen, ClipboardCheck, Building2, ArrowRight,
   HelpCircle, MessageCircle, Mail, ExternalLink, LayoutDashboard,
-  BarChart3, ListChecks, Download, Zap, Settings, Target
+  BarChart3, ListChecks, Download, Zap, Settings, Target, Briefcase
 } from 'lucide-react';
 import { RegulationBreadcrumb } from '@/components/layout/breadcrumb';
 import type { TrafficLight } from '@/lib/regulations/types';
@@ -65,6 +66,7 @@ export default function ResultsPage() {
 
   const [isClient, setIsClient] = useState(false);
   const [activeTab, setActiveTab] = useState<TabValue>('overview');
+  const [showChefSummary, setShowChefSummary] = useState(false);
 
   // Zustand store access
   const answers = assessmentStore((state) => state.answers);
@@ -263,8 +265,16 @@ export default function ResultsPage() {
       {/* Overall score hero — ALWAYS visible above tabs */}
       <OverallScoreHero overallScore={overallScore} />
 
-      {/* Dashboard CTA after score */}
-      <div className="mb-6 flex justify-center">
+      {/* Action buttons after score */}
+      <div className="mb-6 flex flex-wrap justify-center gap-3">
+        <Button
+          variant="default"
+          onClick={() => setShowChefSummary(true)}
+          className="bg-slate-900 hover:bg-slate-800"
+        >
+          <Briefcase className="mr-2 size-4" />
+          {t('chefSummary.button')}
+        </Button>
         <Button variant="outline" asChild>
           <Link href="/dashboard">
             <LayoutDashboard className="mr-2 size-4" />
@@ -272,6 +282,16 @@ export default function ResultsPage() {
           </Link>
         </Button>
       </div>
+
+      {/* Chef-Button Executive Summary Modal */}
+      <ExecutiveSummaryModal
+        open={showChefSummary}
+        onClose={() => setShowChefSummary(false)}
+        overallScore={overallScore}
+        sortedCategories={sortedCategories}
+        quickWins={quickWins}
+        regulationName={config ? tAll(config.nameKey) : regulation.toUpperCase()}
+      />
 
       {/* ========== TAB-BASED LAYOUT ========== */}
       <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">

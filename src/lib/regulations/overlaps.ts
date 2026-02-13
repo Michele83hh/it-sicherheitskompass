@@ -237,6 +237,146 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
       'platform.overlaps.measures.incidentReporting',
     ],
   },
+  // CIS Controls ↔ ISO 27001: ~70% overlap (CIS as technical implementation of ISO controls)
+  {
+    regA: 'cis-controls',
+    regB: 'iso27001',
+    overlapPercent: 70,
+    descriptionKey: 'platform.overlaps.cisIso27001',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.vulnerabilityManagement',
+      'platform.overlaps.measures.networkSecurity',
+      'platform.overlaps.measures.encryption',
+    ],
+  },
+  // CIS Controls ↔ NIS2: ~55% overlap
+  {
+    regA: 'cis-controls',
+    regB: 'nis2',
+    overlapPercent: 55,
+    descriptionKey: 'platform.overlaps.cisNis2',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.vulnerabilityManagement',
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.incidentReporting',
+      'platform.overlaps.measures.networkSecurity',
+    ],
+  },
+  // CIS Controls ↔ BSI IT-Grundschutz: ~65% overlap
+  {
+    regA: 'cis-controls',
+    regB: 'bsi-grundschutz',
+    overlapPercent: 65,
+    descriptionKey: 'platform.overlaps.cisBsi',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.networkSecurity',
+      'platform.overlaps.measures.vulnerabilityManagement',
+      'platform.overlaps.measures.physicalSecurity',
+    ],
+  },
+  // CIS Controls ↔ NIST CSF: ~75% overlap (both US-origin frameworks)
+  {
+    regA: 'cis-controls',
+    regB: 'nist-csf',
+    overlapPercent: 75,
+    descriptionKey: 'platform.overlaps.cisNist',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.vulnerabilityManagement',
+      'platform.overlaps.measures.riskManagement',
+      'platform.overlaps.measures.incidentReporting',
+      'platform.overlaps.measures.networkSecurity',
+    ],
+  },
+  // ISO 22301 ↔ ISO 27001: ~50% overlap (BCM chapter in ISO 27001)
+  {
+    regA: 'iso22301',
+    regB: 'iso27001',
+    overlapPercent: 50,
+    descriptionKey: 'platform.overlaps.bcmIso27001',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.bcm',
+      'platform.overlaps.measures.riskManagement',
+      'platform.overlaps.measures.incidentReporting',
+    ],
+  },
+  // ISO 22301 ↔ NIS2: ~45% overlap (NIS2 requires BCM)
+  {
+    regA: 'iso22301',
+    regB: 'nis2',
+    overlapPercent: 45,
+    descriptionKey: 'platform.overlaps.bcmNis2',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.bcm',
+      'platform.overlaps.measures.incidentReporting',
+      'platform.overlaps.measures.riskManagement',
+    ],
+  },
+  // ISO 22301 ↔ KRITIS: ~55% overlap (KRITIS requires BCM)
+  {
+    regA: 'iso22301',
+    regB: 'kritis',
+    overlapPercent: 55,
+    descriptionKey: 'platform.overlaps.bcmKritis',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.bcm',
+      'platform.overlaps.measures.riskManagement',
+      'platform.overlaps.measures.incidentReporting',
+      'platform.overlaps.measures.physicalSecurity',
+    ],
+  },
+  // NIST CSF ↔ ISO 27001: ~70% overlap
+  {
+    regA: 'nist-csf',
+    regB: 'iso27001',
+    overlapPercent: 70,
+    descriptionKey: 'platform.overlaps.nistIso27001',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.riskManagement',
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.bcm',
+      'platform.overlaps.measures.incidentReporting',
+    ],
+  },
+  // NIST CSF ↔ NIS2: ~55% overlap
+  {
+    regA: 'nist-csf',
+    regB: 'nis2',
+    overlapPercent: 55,
+    descriptionKey: 'platform.overlaps.nistNis2',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.riskManagement',
+      'platform.overlaps.measures.incidentReporting',
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.bcm',
+    ],
+  },
+  // OWASP ASVS ↔ CIS Controls: ~40% overlap (application security focus)
+  {
+    regA: 'owasp-asvs',
+    regB: 'cis-controls',
+    overlapPercent: 40,
+    descriptionKey: 'platform.overlaps.owaspCis',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.encryption',
+      'platform.overlaps.measures.vulnerabilityManagement',
+    ],
+  },
+  // OWASP ASVS ↔ ISO 27001: ~35% overlap
+  {
+    regA: 'owasp-asvs',
+    regB: 'iso27001',
+    overlapPercent: 35,
+    descriptionKey: 'platform.overlaps.owaspIso27001',
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.encryption',
+      'platform.overlaps.measures.securityByDesign',
+    ],
+  },
 ];
 
 /**

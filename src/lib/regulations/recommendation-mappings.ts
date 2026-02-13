@@ -294,6 +294,10 @@ export const REGULATION_LABELS: Record<RegulationId, string> = {
   soc2: 'SOC 2',
   'pci-dss': 'PCI DSS',
   c5: 'C5',
+  'cis-controls': 'CIS Controls',
+  iso22301: 'ISO 22301',
+  'nist-csf': 'NIST CSF',
+  'owasp-asvs': 'OWASP ASVS',
 };
 
 /**
