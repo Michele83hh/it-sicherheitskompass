@@ -12991,6 +12991,68 @@
         },
         "quickWin": "Starten Sie mit dem DORA-Assessment — seit Januar 2025 ist DORA verbindlich."
       }
+    },
+    "widget": {
+      "title": "Embeddable Security Widget",
+      "subtitle": "Generieren Sie ein Badge fuer Ihre Website, E-Mail-Signatur oder Angebotsunterlagen",
+      "intro": "Erstellen Sie ein professionelles IT-Sicherheits-Badge, das Sie auf Ihrer Website einbinden koennen. Waehlen Sie Ihr Regelwerk, Ihren Score und den gewuenschten Stil — der Embed-Code wird automatisch generiert.",
+      "generator": {
+        "title": "Badge-Generator",
+        "regulation": "Regelwerk",
+        "regulationAll": "Gesamt-Score",
+        "score": "Score (%)",
+        "style": "Stil",
+        "styles": {
+          "full": "Vollstaendig",
+          "compact": "Kompakt",
+          "minimal": "Minimal"
+        },
+        "language": "Badge-Sprache",
+        "preview": "Vorschau",
+        "autoDetect": "Aus Assessment uebernehmen",
+        "noData": "Kein Assessment-Score vorhanden. Bitte manuell eingeben."
+      },
+      "embed": {
+        "title": "Embed-Code",
+        "html": "HTML-Code",
+        "copyHtml": "HTML kopieren",
+        "copySvg": "SVG kopieren",
+        "copied": "Kopiert!",
+        "instructions": "Fuegen Sie diesen Code in Ihre Website ein:",
+        "note": "Der Badge ist ein statisches Bild — er aktualisiert sich nicht automatisch. Generieren Sie bei Score-Aenderungen einen neuen Badge."
+      },
+      "badgeLabels": {
+        "securityScore": "IT-Sicherheit",
+        "verifiedBy": "Geprueft mit IT-Sicherheitskompass",
+        "level": {
+          "basic": "Basis",
+          "developing": "Aufbauend",
+          "established": "Etabliert",
+          "advanced": "Fortgeschritten",
+          "excellent": "Exzellent"
+        }
+      },
+      "useCases": {
+        "title": "Einsatzmoeglichkeiten",
+        "items": {
+          "i1": {
+            "title": "Website-Footer",
+            "desc": "Zeigen Sie Besuchern Ihren IT-Sicherheitsstandard — direkt sichtbar auf jeder Seite."
+          },
+          "i2": {
+            "title": "E-Mail-Signatur",
+            "desc": "Fuegen Sie den Badge als Bild in Ihre geschaeftliche E-Mail-Signatur ein."
+          },
+          "i3": {
+            "title": "Angebote & Ausschreibungen",
+            "desc": "Belegen Sie IT-Sicherheit in Angebotsunterlagen und bei Ausschreibungen."
+          },
+          "i4": {
+            "title": "Lieferanten-Qualifikation",
+            "desc": "Nutzen Sie den Badge als Nachweis bei Kunden-Sicherheitsfrageboegen."
+          }
+        }
+      }
     }
   },
   "cis-controls": {

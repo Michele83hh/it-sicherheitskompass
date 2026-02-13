@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { BookOpen, Siren, Building2, Banknote, ShieldAlert, Wrench, User, UserCheck, Home, Megaphone, ClipboardList, FileCheck, Brain, FileText, TrendingUp, Shield, GraduationCap, FileSearch, Table, FileSignature, Calculator, Award, Truck, FileBarChart, Key, Cloud, BarChart3, Image, Radar, UserCog, Factory, ArrowRight } from 'lucide-react';
+import { BookOpen, Siren, Building2, Banknote, ShieldAlert, Wrench, User, UserCheck, Home, Megaphone, ClipboardList, FileCheck, Brain, FileText, TrendingUp, Shield, GraduationCap, FileSearch, Table, FileSignature, Calculator, Award, Truck, FileBarChart, Key, Cloud, BarChart3, Image, Radar, UserCog, Code2, Factory, ArrowRight } from 'lucide-react';
 import { Link } from '@/lib/i18n/navigation';
 import { getAllPillars } from '@/lib/pillars/registry';
 import '@/lib/pillars/init';
@@ -38,6 +38,7 @@ const QUICK_LINKS = [
   { href: '/wissen/poster', icon: Image, colorClass: 'bg-pink-500/10 text-pink-600', labelKey: 'poster' },
   { href: '/wissen/radar', icon: Radar, colorClass: 'bg-red-500/10 text-red-500', labelKey: 'radar' },
   { href: '/wissen/berater-modus', icon: UserCog, colorClass: 'bg-emerald-500/10 text-emerald-600', labelKey: 'beraterModus' },
+  { href: '/wissen/widget', icon: Code2, colorClass: 'bg-cyan-500/10 text-cyan-600', labelKey: 'widget' },
 ] as const;
 
 export default function WissenPage() {

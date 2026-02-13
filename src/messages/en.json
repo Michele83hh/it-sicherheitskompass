@@ -12937,6 +12937,68 @@
         },
         "quickWin": "Start with the DORA assessment — DORA has been mandatory since January 2025."
       }
+    },
+    "widget": {
+      "title": "Embeddable Security Widget",
+      "subtitle": "Generate a badge for your website, email signature, or proposals",
+      "intro": "Create a professional IT security badge that you can embed on your website. Choose your regulation, score, and preferred style — the embed code is generated automatically.",
+      "generator": {
+        "title": "Badge Generator",
+        "regulation": "Regulation",
+        "regulationAll": "Overall Score",
+        "score": "Score (%)",
+        "style": "Style",
+        "styles": {
+          "full": "Full",
+          "compact": "Compact",
+          "minimal": "Minimal"
+        },
+        "language": "Badge Language",
+        "preview": "Preview",
+        "autoDetect": "Load from assessment",
+        "noData": "No assessment score available. Please enter manually."
+      },
+      "embed": {
+        "title": "Embed Code",
+        "html": "HTML Code",
+        "copyHtml": "Copy HTML",
+        "copySvg": "Copy SVG",
+        "copied": "Copied!",
+        "instructions": "Paste this code into your website:",
+        "note": "The badge is a static image — it does not update automatically. Generate a new badge when your score changes."
+      },
+      "badgeLabels": {
+        "securityScore": "IT Security",
+        "verifiedBy": "Verified with IT-Sicherheitskompass",
+        "level": {
+          "basic": "Basic",
+          "developing": "Developing",
+          "established": "Established",
+          "advanced": "Advanced",
+          "excellent": "Excellent"
+        }
+      },
+      "useCases": {
+        "title": "Use Cases",
+        "items": {
+          "i1": {
+            "title": "Website Footer",
+            "desc": "Show visitors your IT security standard — visible on every page."
+          },
+          "i2": {
+            "title": "Email Signature",
+            "desc": "Add the badge as an image to your business email signature."
+          },
+          "i3": {
+            "title": "Proposals & Tenders",
+            "desc": "Demonstrate IT security compliance in proposals and tenders."
+          },
+          "i4": {
+            "title": "Supplier Qualification",
+            "desc": "Use the badge as proof in customer security questionnaires."
+          }
+        }
+      }
     }
   },
   "cis-controls": {
