@@ -844,15 +844,14 @@ function ResultCard({
           <div className="flex flex-col gap-1.5 flex-shrink-0">
             <Button variant="outline" size="sm" asChild>
               <Link href={`/${result.id}/schnellcheck` as any}>
-                {t('result.startCheck')} <ArrowRight className="ml-1 size-3" />
+                {t('result.startCheck')}
               </Link>
             </Button>
-            <Link
-              href={`/${result.id}/assessment` as any}
-              className="text-[11px] text-center text-muted-foreground hover:text-primary transition-colors"
-            >
-              {t('result.fullAnalysis')}
-            </Link>
+            <Button variant="outline" size="sm" asChild>
+              <Link href={`/${result.id}/assessment` as any}>
+                {t('result.fullAnalysis')}
+              </Link>
+            </Button>
           </div>
         )}
       </CardContent>
