@@ -37,7 +37,7 @@
   "landing": {
     "hero": {
       "title": "Is Your Organization Ready for NIS2?",
-      "subtitle": "Stricter cybersecurity requirements take effect in 2026. Find out where you stand in 10 minutes.",
+      "subtitle": "Stricter cybersecurity requirements take effect in 2026.\nFind out where you stand in 10 minutes.",
       "penaltyHook": "Violations cost up to 10 million euros.",
       "ctaPrimary": "Am I Affected?",
       "quickCheck": {
@@ -5681,7 +5681,7 @@
     },
     "navigator": {
       "title": "Your Security Compass",
-      "subtitle": "In a few steps, we'll show you which regulations are relevant to your organization — and where to start.",
+      "subtitle": "In a few steps, we'll show you which regulations are relevant to your organization.\nAnd where to start.",
       "steps": {
         "industry": {
           "title": "What industry are you in?",
@@ -7442,69 +7442,69 @@
     "checkAffected": "Check applicability",
     "dsgvo": {
       "title": "Check GDPR Compliance",
-      "subtitle": "Check your data protection measures against the requirements of the GDPR.",
+      "subtitle": "How well do you protect personal data?\nCheck your data protection measures against GDPR requirements.",
       "cta": "Start GDPR Check"
     },
     "kritis": {
       "title": "Check KRITIS Requirements",
-      "subtitle": "Does your critical infrastructure meet the security requirements of BSI-KritisV?",
+      "subtitle": "Does your critical infrastructure meet security requirements?\nCheck your measures against BSI-KritisV.",
       "cta": "Start KRITIS Check"
     },
     "dora": {
       "title": "Check DORA Readiness",
-      "subtitle": "Check your ICT risk management measures against the EU regulation DORA.",
+      "subtitle": "Is your financial company digitally resilient?\nCheck your ICT risk management measures against DORA.",
       "cta": "Start DORA Check"
     },
     "tisax": {
       "title": "Prepare TISAX Assessment",
-      "subtitle": "Check your information security status against VDA ISA requirements.",
+      "subtitle": "Are you ready for information security in the automotive industry?\nCheck your status against VDA ISA.",
       "cta": "Start TISAX Check"
     },
     "cra": {
       "title": "Check CRA Conformity",
-      "subtitle": "Do your products meet the cybersecurity requirements of the Cyber Resilience Act?",
+      "subtitle": "Do your products meet the new EU cybersecurity standards?\nCheck your product security against the Cyber Resilience Act.",
       "cta": "Start CRA Check"
     },
     "bsi-grundschutz": {
       "title": "IT-Grundschutz Check",
-      "subtitle": "Check your measures against the BSI IT-Grundschutz catalogue.",
+      "subtitle": "How systematic is your information security?\nCheck your measures against BSI IT-Grundschutz.",
       "cta": "Start Grundschutz Check"
     },
     "iso27001": {
       "title": "Check ISO 27001 Readiness",
-      "subtitle": "Check your ISMS against the requirements of ISO/IEC 27001:2022.",
+      "subtitle": "How systematic is your information security management?\nCheck your status against the requirements of ISO/IEC 27001:2022.",
       "cta": "Start ISO 27001 Check"
     },
     "soc2": {
       "title": "Check SOC 2 Readiness",
-      "subtitle": "Check your controls against the AICPA Trust Services Criteria.",
+      "subtitle": "Does your organization meet the AICPA Trust Services Criteria?\nCheck your controls against the SOC 2 requirements.",
       "cta": "Start SOC 2 Check"
     },
     "pci-dss": {
       "title": "PCI DSS Compliance Check",
-      "subtitle": "Check your payment processes against the PCI DSS v4.0 standard.",
+      "subtitle": "Are your payment processes secure?\nCheck your measures against the Payment Card Industry Data Security Standard v4.0.",
       "cta": "Start PCI DSS Check"
     },
     "c5": {
       "title": "BSI C5 Compliance Check",
-      "subtitle": "Check your cloud security against the BSI C5:2020 criteria catalogue.",
+      "subtitle": "Does your cloud service meet BSI C5:2020 requirements?\nCheck your cloud security measures against the BSI criteria catalogue.",
       "cta": "Start C5 Check"
     },
     "cis-controls": {
       "title": "CIS Controls v8",
-      "subtitle": "18 prioritized security measures — the pragmatic entry point into technical IT security."
+      "subtitle": "18 prioritized security measures by the Center for Internet Security.\nThe pragmatic entry point into technical IT security."
     },
     "iso22301": {
       "title": "ISO 22301 — Business Continuity",
-      "subtitle": "Systematic BCM: BIA, emergency plans and recovery strategies per ISO 22301:2019."
+      "subtitle": "Systematic BCM for business continuity.\nBIA, emergency plans and recovery strategies per ISO 22301:2019."
     },
     "nist-csf": {
       "title": "NIST Cybersecurity Framework 2.0",
-      "subtitle": "The world's leading cybersecurity framework with 6 core functions."
+      "subtitle": "The world's leading cybersecurity framework.\nWith 6 functions: Govern, Identify, Protect, Detect, Respond, Recover."
     },
     "owasp-asvs": {
       "title": "OWASP ASVS 4.0",
-      "subtitle": "Security standard for web applications and APIs with 3 verification levels."
+      "subtitle": "Security standard for web applications and APIs.\nVerification levels L1 to L3 for developers and security teams."
     }
   },
   "pillars": {

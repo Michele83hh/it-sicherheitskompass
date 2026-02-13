@@ -106,7 +106,7 @@ function RegulationLanding({ regulation }: { regulation: string }) {
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             {isNis2 ? t('hero.title') : tReg(`regLanding.${regulation}.title`)}
           </h1>
-          <p className="mt-3 text-sm sm:text-base text-slate-300">
+          <p className="mt-4 text-lg text-slate-300 whitespace-pre-line">
             {isNis2 ? t('hero.subtitle') : tReg(`regLanding.${regulation}.subtitle`)}
           </p>
         </div>

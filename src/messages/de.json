@@ -37,7 +37,7 @@
   "landing": {
     "hero": {
       "title": "Ist Ihr Unternehmen bereit für NIS2?",
-      "subtitle": "Ab 2026 gelten verschärfte Cybersicherheitspflichten für Unternehmen. Prüfen Sie jetzt, wo Sie stehen.",
+      "subtitle": "Ab 2026 gelten verschärfte Cybersicherheitspflichten für Unternehmen.\nPrüfen Sie jetzt, wo Sie stehen.",
       "penaltyHook": "Verstöße kosten bis zu 10 Millionen Euro.",
       "ctaPrimary": "Bin ich betroffen?",
       "quickCheck": {
@@ -5735,7 +5735,7 @@
     },
     "navigator": {
       "title": "Ihr Sicherheitskompass",
-      "subtitle": "In wenigen Schritten zeigen wir Ihnen, welche Regelwerke für Ihr Unternehmen relevant sind — und wo Sie am besten starten.",
+      "subtitle": "In wenigen Schritten zeigen wir Ihnen, welche Regelwerke für Ihr Unternehmen relevant sind.\nUnd wo Sie am besten starten.",
       "steps": {
         "industry": {
           "title": "In welcher Branche sind Sie tätig?",
@@ -7496,69 +7496,69 @@
     "checkAffected": "Betroffenheit prüfen",
     "dsgvo": {
       "title": "DSGVO-Compliance pruefen",
-      "subtitle": "Pruefen Sie Ihre Datenschutzmassnahmen gegen die Anforderungen der DSGVO.",
+      "subtitle": "Wie gut schuetzen Sie personenbezogene Daten?\nPruefen Sie Ihre Datenschutzmassnahmen gegen die Anforderungen der DSGVO.",
       "cta": "DSGVO-Check starten"
     },
     "kritis": {
       "title": "KRITIS-Anforderungen pruefen",
-      "subtitle": "Erfuellt Ihre kritische Infrastruktur die Sicherheitsanforderungen der BSI-KritisV?",
+      "subtitle": "Erfuellt Ihre kritische Infrastruktur die Sicherheitsanforderungen?\nUeberpruefen Sie Ihre Massnahmen gegen die BSI-KritisV.",
       "cta": "KRITIS-Check starten"
     },
     "dora": {
       "title": "DORA-Readiness pruefen",
-      "subtitle": "Pruefen Sie Ihre ICT-Risikomanagement-Massnahmen gegen die EU-Verordnung DORA.",
+      "subtitle": "Ist Ihr Finanzunternehmen digital resilient?\nPruefen Sie Ihre ICT-Risikomanagement-Massnahmen gegen DORA.",
       "cta": "DORA-Check starten"
     },
     "tisax": {
       "title": "TISAX-Assessment vorbereiten",
-      "subtitle": "Pruefen Sie Ihren Informationssicherheits-Stand gegen die VDA ISA-Anforderungen.",
+      "subtitle": "Sind Sie bereit fuer die Informationssicherheit in der Automobilbranche?\nPruefen Sie Ihren Stand gegen VDA ISA.",
       "cta": "TISAX-Check starten"
     },
     "cra": {
       "title": "CRA-Konformitaet pruefen",
-      "subtitle": "Erfuellen Ihre Produkte die Cybersicherheitsanforderungen des Cyber Resilience Act?",
+      "subtitle": "Erfuellen Ihre Produkte die neuen EU-Cybersicherheitsstandards?\nPruefen Sie Ihre Produktsicherheit gegen den Cyber Resilience Act.",
       "cta": "CRA-Check starten"
     },
     "bsi-grundschutz": {
       "title": "IT-Grundschutz-Check",
-      "subtitle": "Pruefen Sie Ihre Massnahmen gegen den BSI IT-Grundschutz-Katalog.",
+      "subtitle": "Wie systematisch ist Ihre Informationssicherheit?\nPruefen Sie Ihre Massnahmen gegen den BSI IT-Grundschutz.",
       "cta": "Grundschutz-Check starten"
     },
     "iso27001": {
       "title": "ISO 27001-Readiness pruefen",
-      "subtitle": "Pruefen Sie Ihr ISMS gegen die Anforderungen der ISO/IEC 27001:2022.",
+      "subtitle": "Wie systematisch ist Ihr Informationssicherheits-Management?\nPruefen Sie Ihren Stand gegen die Anforderungen der ISO/IEC 27001:2022.",
       "cta": "ISO 27001-Check starten"
     },
     "soc2": {
       "title": "SOC 2 Readiness pruefen",
-      "subtitle": "Pruefen Sie Ihre Kontrollen gegen die AICPA Trust Services Criteria.",
+      "subtitle": "Erfuellt Ihre Organisation die AICPA Trust Services Criteria?\nPruefen Sie Ihre Kontrollen gegen die SOC-2-Anforderungen.",
       "cta": "SOC-2-Check starten"
     },
     "pci-dss": {
       "title": "PCI DSS Compliance-Check",
-      "subtitle": "Pruefen Sie Ihre Zahlungsprozesse gegen den PCI DSS v4.0-Standard.",
+      "subtitle": "Wie sicher sind Ihre Zahlungsprozesse?\nPruefen Sie Ihre Massnahmen gegen den Payment Card Industry Data Security Standard v4.0.",
       "cta": "PCI DSS-Check starten"
     },
     "c5": {
       "title": "BSI C5-Compliance pruefen",
-      "subtitle": "Pruefen Sie Ihre Cloud-Sicherheit gegen den BSI C5:2020-Kriterienkatalog.",
+      "subtitle": "Erfuellt Ihr Cloud-Dienst die Anforderungen des BSI C5:2020?\nPruefen Sie Ihre Cloud-Sicherheitsmassnahmen gegen den BSI-Kriterienkatalog.",
       "cta": "C5-Check starten"
     },
     "cis-controls": {
       "title": "CIS Controls v8",
-      "subtitle": "18 priorisierte Sicherheitsmassnahmen — der pragmatische Einstieg in technische IT-Sicherheit."
+      "subtitle": "18 priorisierte Sicherheitsmassnahmen des Center for Internet Security.\nDer pragmatische Einstieg in technische IT-Sicherheit."
     },
     "iso22301": {
       "title": "ISO 22301 — Business Continuity",
-      "subtitle": "Systematisches BCM: BIA, Notfallplaene und Wiederanlaufstrategien nach ISO 22301:2019."
+      "subtitle": "Systematisches BCM fuer Geschaeftskontinuitaet.\nBIA, Notfallplaene und Wiederanlaufstrategien nach ISO 22301:2019."
     },
     "nist-csf": {
       "title": "NIST Cybersecurity Framework 2.0",
-      "subtitle": "Das weltweit fuehrende Rahmenwerk fuer Cybersicherheit mit 6 Kernfunktionen."
+      "subtitle": "Das weltweit fuehrende Rahmenwerk fuer Cybersicherheit.\nMit den 6 Funktionen Govern, Identify, Protect, Detect, Respond, Recover."
     },
     "owasp-asvs": {
       "title": "OWASP ASVS 4.0",
-      "subtitle": "Sicherheitsstandard fuer Webanwendungen und APIs mit 3 Verifizierungsleveln."
+      "subtitle": "Sicherheitsstandard fuer Webanwendungen und APIs.\nVerifizierungslevel L1 bis L3 fuer Entwickler und Sicherheitsteams."
     }
   },
   "pillars": {
