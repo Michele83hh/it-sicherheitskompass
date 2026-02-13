@@ -40,6 +40,12 @@ function RegulationLanding({ regulation }: { regulation: string }) {
 
   const regName = regConfig ? tReg(regConfig.nameKey) : regulation;
 
+  /* ─── Dynamic question counts & time estimates ─── */
+  const assessmentCount = regConfig?.questions.length ?? 0;
+  const quickCheckCount = regConfig?.quickCheckQuestions?.length ?? 0;
+  const assessmentMinutes = Math.max(5, Math.round(assessmentCount / 3));
+  const quickCheckMinutes = Math.max(2, Math.round(quickCheckCount / 3));
+
   /* ─── Build option cards ─── */
   const cards: {
     icon: React.ComponentType<{ className?: string }>;
@@ -59,7 +65,7 @@ function RegulationLanding({ regulation }: { regulation: string }) {
       badge: tReg('regLanding.classificationBadge'),
       title: tReg('regLanding.classificationTitle'),
       desc: tReg('regLanding.classificationDesc'),
-      time: tReg('regLanding.classificationTime'),
+      time: tReg('regLanding.classificationTime', { minutes: 2 }),
       cta: tReg('regLanding.classificationCta'),
       href: `/${regulation}/check`,
       accent: 'border-amber-200 hover:border-amber-300',
@@ -72,8 +78,8 @@ function RegulationLanding({ regulation }: { regulation: string }) {
       icon: Zap,
       badge: tReg('regLanding.quickCheckBadge'),
       title: tReg('regLanding.quickCheckTitle'),
-      desc: tReg('regLanding.quickCheckDesc'),
-      time: tReg('regLanding.quickCheckTime'),
+      desc: tReg('regLanding.quickCheckDesc', { count: quickCheckCount }),
+      time: tReg('regLanding.quickCheckTime', { minutes: quickCheckMinutes }),
       cta: tReg('regLanding.quickCheckCta'),
       href: `/${regulation}/schnellcheck`,
       accent: 'border-blue-200 hover:border-blue-300',
@@ -85,8 +91,8 @@ function RegulationLanding({ regulation }: { regulation: string }) {
     icon: ClipboardList,
     badge: tReg('regLanding.assessmentBadge'),
     title: tReg('regLanding.assessmentTitle'),
-    desc: tReg('regLanding.assessmentDesc'),
-    time: tReg('regLanding.assessmentTime'),
+    desc: tReg('regLanding.assessmentDesc', { count: assessmentCount }),
+    time: tReg('regLanding.assessmentTime', { minutes: assessmentMinutes }),
     cta: tReg('regLanding.assessmentCta'),
     href: `/${regulation}/assessment`,
     accent: 'border-emerald-200 hover:border-emerald-300',

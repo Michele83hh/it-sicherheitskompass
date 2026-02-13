@@ -185,6 +185,9 @@ export default function HubPage() {
                     <p className="text-sm font-semibold text-foreground truncate">
                       {tReg(reg.nameKey)}
                     </p>
+                    <p className="text-[11px] text-muted-foreground">
+                      {t('regulationQuestions', { count: reg.questions.length })}
+                    </p>
                   </div>
                   <ArrowRight className="size-3.5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                 </Link>
