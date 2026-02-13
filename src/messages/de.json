@@ -10866,6 +10866,218 @@
         "button": "ISO 22301 Assessment starten"
       }
     },
+    "emailCheck": {
+      "title": "E-Mail Security Check",
+      "subtitle": "Pruefen Sie die E-Mail-Sicherheit Ihrer Domain in Sekunden",
+      "intro": "SPF, DKIM und DMARC schuetzen Ihre Domain vor E-Mail-Spoofing und Phishing. Viele KMU haben diese DNS-Eintraege nicht oder falsch konfiguriert. Geben Sie Ihre Domain ein und erfahren Sie sofort, wie gut Ihre E-Mail-Infrastruktur geschuetzt ist.",
+      "inputLabel": "Domain oder E-Mail-Adresse",
+      "inputPlaceholder": "beispiel.de oder info@beispiel.de",
+      "checkButton": "Pruefen",
+      "scoreLabel": "E-Mail-Sicherheits-Score",
+      "info": {
+        "title": "Was wird geprueft?"
+      },
+      "status": {
+        "pass": "Bestanden",
+        "warn": "Warnung",
+        "fail": "Fehlt"
+      },
+      "checks": {
+        "spf": {
+          "title": "SPF (Sender Policy Framework)",
+          "desc": "Definiert, welche Server im Namen Ihrer Domain E-Mails versenden duerfen. Verhindert, dass Angreifer Ihre Domain fuer Phishing missbrauchen.",
+          "fix": "Tipp: Erstellen Sie einen TXT-Record mit 'v=spf1 include:_spf.google.com ~all' (angepasst an Ihren Mailprovider)."
+        },
+        "dmarc": {
+          "title": "DMARC (Domain-based Message Authentication)",
+          "desc": "Legt fest, was mit E-Mails passiert, die SPF/DKIM-Pruefungen nicht bestehen. Empfaenger-Server koennen gefaelschte Mails ablehnen.",
+          "fix": "Tipp: Starten Sie mit 'v=DMARC1; p=none; rua=mailto:dmarc@ihredomain.de' und erhoehen Sie schrittweise auf 'quarantine' oder 'reject'."
+        },
+        "dkim": {
+          "title": "DKIM (DomainKeys Identified Mail)",
+          "desc": "Signiert ausgehende E-Mails kryptografisch, sodass Empfaenger pruefen koennen, ob die Mail tatsaechlich von Ihrer Domain stammt und nicht veraendert wurde.",
+          "fix": "Tipp: DKIM wird meist ueber Ihren E-Mail-Provider aktiviert (z.B. Google Workspace, Microsoft 365). Pruefen Sie die Anleitung Ihres Anbieters."
+        },
+        "mx": {
+          "title": "MX-Records (Mail Exchanger)",
+          "desc": "Definieren, welche Mailserver fuer Ihre Domain zustaendig sind. Ohne MX-Records koennen keine E-Mails empfangen werden.",
+          "fix": "Tipp: MX-Records werden bei der Einrichtung Ihres E-Mail-Providers konfiguriert. Pruefen Sie, ob die Eintraege aktuell sind."
+        }
+      }
+    },
+    "websiteCheck": {
+      "title": "Website Security Check",
+      "subtitle": "Analysieren Sie die Sicherheits-Header Ihrer Website",
+      "intro": "Security-Header sind die erste Verteidigungslinie Ihrer Website gegen Clickjacking, XSS und andere Angriffe. Viele Websites verzichten auf diese einfache Schutzmassnahme. Geben Sie Ihre URL ein fuer eine sofortige Analyse.",
+      "inputLabel": "Website-URL",
+      "inputPlaceholder": "www.beispiel.de",
+      "checkButton": "Analysieren",
+      "scoreLabel": "Security-Header Score",
+      "info": {
+        "title": "Welche Header werden geprueft?"
+      },
+      "status": {
+        "pass": "Bestanden",
+        "warn": "Warnung",
+        "fail": "Fehlt"
+      },
+      "checks": {
+        "https": {
+          "title": "HTTPS/TLS",
+          "desc": "Verschluesselte Verbindung zwischen Browser und Server. Pflicht fuer jede professionelle Website.",
+          "fix": "Tipp: Aktivieren Sie HTTPS ueber Ihren Hosting-Provider. Let's Encrypt bietet kostenlose TLS-Zertifikate."
+        },
+        "hsts": {
+          "title": "Strict-Transport-Security (HSTS)",
+          "desc": "Erzwingt, dass der Browser ausschliesslich HTTPS-Verbindungen nutzt. Schuetzt vor Downgrade-Angriffen.",
+          "fix": "Tipp: Header setzen: 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload'"
+        },
+        "csp": {
+          "title": "Content-Security-Policy (CSP)",
+          "desc": "Definiert, welche Ressourcen (Scripts, Styles, Bilder) geladen werden duerfen. Schuetzt vor Cross-Site-Scripting (XSS).",
+          "fix": "Tipp: Starten Sie restriktiv mit 'default-src self' und erweitern Sie schrittweise nach Bedarf."
+        },
+        "xFrameOptions": {
+          "title": "X-Frame-Options",
+          "desc": "Verhindert, dass Ihre Website in einem iframe eingebettet wird. Schuetzt vor Clickjacking-Angriffen.",
+          "fix": "Tipp: Header setzen: 'X-Frame-Options: DENY' oder 'SAMEORIGIN'"
+        },
+        "xContentType": {
+          "title": "X-Content-Type-Options",
+          "desc": "Verhindert MIME-Type-Sniffing durch den Browser. Schuetzt vor bestimmten Drive-by-Download-Angriffen.",
+          "fix": "Tipp: Header setzen: 'X-Content-Type-Options: nosniff'"
+        },
+        "referrerPolicy": {
+          "title": "Referrer-Policy",
+          "desc": "Kontrolliert, welche Referrer-Informationen bei externen Links mitgesendet werden. Schuetzt die Privatsphaere Ihrer Nutzer.",
+          "fix": "Tipp: Header setzen: 'Referrer-Policy: strict-origin-when-cross-origin'"
+        },
+        "permissionsPolicy": {
+          "title": "Permissions-Policy",
+          "desc": "Legt fest, welche Browser-APIs (Kamera, Mikrofon, Geolocation) Ihre Website nutzen darf. Reduziert die Angriffsflaeche.",
+          "fix": "Tipp: Header setzen: 'Permissions-Policy: camera=(), microphone=(), geolocation=()'"
+        }
+      }
+    },
+    "hibpCheck": {
+      "title": "Datenleck-Check",
+      "subtitle": "Pruefen Sie, ob Ihre E-Mail-Adresse in bekannten Datenlecks aufgetaucht ist",
+      "intro": "Milliarden von Zugangsdaten wurden durch Datenlecks bei grossen Diensten gestohlen. Mit diesem Check erfahren Sie, ob Ihre E-Mail-Adresse betroffen ist — basierend auf der Have I Been Pwned Datenbank von Troy Hunt.",
+      "inputLabel": "E-Mail-Adresse",
+      "inputPlaceholder": "ihre@email.de",
+      "checkButton": "Pruefen",
+      "privacy": "Ihre E-Mail wird nur fuer die Abfrage verwendet und nicht gespeichert.",
+      "errors": {
+        "notConfigured": "Der Datenleck-Check ist derzeit nicht verfuegbar. Der HIBP-API-Schluessel muss konfiguriert werden.",
+        "rateLimit": "Zu viele Anfragen. Bitte versuchen Sie es in einer Minute erneut."
+      },
+      "results": {
+        "safe": {
+          "title": "Keine Datenlecks gefunden",
+          "desc": "Ihre E-Mail-Adresse wurde in keinem bekannten Datenleck gefunden. Aendern Sie trotzdem regelmaessig Ihre Passwoerter."
+        },
+        "breached": {
+          "title": "In {count} Datenlecks gefunden",
+          "desc": "Ihre E-Mail-Adresse wurde in den folgenden Datenlecks gefunden. Aendern Sie sofort alle betroffenen Passwoerter."
+        },
+        "verified": "Verifiziert",
+        "actions": {
+          "title": "Sofortmassnahmen",
+          "i1": "Aendern Sie SOFORT alle Passwoerter der betroffenen Dienste",
+          "i2": "Aktivieren Sie Zwei-Faktor-Authentifizierung (MFA) ueberall wo moeglich",
+          "i3": "Verwenden Sie einen Passwort-Manager fuer einzigartige Passwoerter",
+          "i4": "Pruefen Sie Ihre Konten auf verdaechtige Aktivitaeten"
+        }
+      },
+      "info": {
+        "title": "Was ist ein Datenleck-Check?",
+        "i1": {
+          "title": "Have I Been Pwned (HIBP)",
+          "desc": "Eine Datenbank mit ueber 13 Milliarden kompromittierten Accounts aus bekannten Datenlecks. Betrieben von IT-Security-Experte Troy Hunt."
+        },
+        "i2": {
+          "title": "Welche Daten werden geprueft?",
+          "desc": "Nur Ihre E-Mail-Adresse wird abgefragt. Die Abfrage laeuft verschluesselt ueber die HIBP-API. Es werden keine Passwoerter uebertragen."
+        },
+        "i3": {
+          "title": "Was tun bei einem Treffer?",
+          "desc": "Aendern Sie betroffene Passwoerter sofort, aktivieren Sie MFA und pruefen Sie verdaechtige Kontoaktivitaeten."
+        }
+      }
+    },
+    "tisaxPruefziele": {
+      "title": "TISAX-Pruefziele im Detail",
+      "subtitle": "Assessment Levels, Prototypenschutz und Datenschutz nach VDA ISA",
+      "intro": "TISAX (Trusted Information Security Assessment Exchange) ist der Branchenstandard der Automobilindustrie fuer Informationssicherheit. Basierend auf VDA ISA v6.0 und ISO 27001 gibt es drei Pruefziele mit unterschiedlichen Anforderungsstufen — je nach Schutzbedarf Ihrer Geschaeftspartner.",
+      "levels": {
+        "title": "Assessment Levels (AL)",
+        "al1": {
+          "title": "AL 1 — Normal",
+          "desc": "Selbstauskunft ohne externe Pruefung. Geeignet fuer Lieferanten mit normalem Schutzbedarf. Sie fuellen den VDA ISA-Fragenkatalog aus und teilen das Ergebnis."
+        },
+        "al2": {
+          "title": "AL 2 — Hoch",
+          "desc": "Fernpruefung durch einen akkreditierten Pruefer. Fuer Lieferanten mit hohem Schutzbedarf. Plausiblitaetspruefung der Selbstauskunft + Interviews."
+        },
+        "al3": {
+          "title": "AL 3 — Sehr hoch",
+          "desc": "Vor-Ort-Pruefung durch akkreditierten Pruefer. Fuer Lieferanten mit sehr hohem Schutzbedarf oder Zugang zu Prototypen. Vollstaendiges Audit inkl. Begehung."
+        }
+      },
+      "pruefziele": {
+        "title": "Die 3 TISAX-Pruefziele",
+        "infosec": {
+          "title": "Informationssicherheit",
+          "desc": "Kernpruefziel: Schutz vertraulicher Informationen nach VDA ISA. Pflicht fuer alle TISAX-Teilnehmer."
+        },
+        "prototype": {
+          "title": "Prototypenschutz",
+          "desc": "Zusaetzliches Pruefziel: Physischer und digitaler Schutz von Prototypen, Vorserienfahrzeugen und Designmodellen."
+        },
+        "datenschutz": {
+          "title": "Datenschutz (DSGVO)",
+          "desc": "Zusaetzliches Pruefziel: Nachweis der DSGVO-Konformitaet bei Verarbeitung personenbezogener Daten fuer OEMs."
+        }
+      },
+      "prototype": {
+        "title": "Prototypenschutz — Anforderungen",
+        "intro": "Wenn Ihr OEM-Auftraggeber Prototypenschutz verlangt (meist AL 3), muessen Sie zusaetzlich zur Informationssicherheit folgende Bereiche abdecken:",
+        "items": {
+          "i1": "Abgesicherter Bereich: Zutrittskontrolle, Kameraverbaende, Schleusensysteme fuer Prototypen-Zonen",
+          "i2": "Foto-/Aufnahmeverbot: Technische und organisatorische Massnahmen gegen unbefugte Dokumentation",
+          "i3": "Transportschutz: Abgedeckte Fahrzeuge, gesicherte Routen, GPS-Tracking bei Prototypen-Transporten",
+          "i4": "Tarnmassnahmen: Folierung, Abdeckplatten und definierte Praesentation im oeffentlichen Raum",
+          "i5": "Digitaler Schutz: Verschluesselung aller CAD-Daten, Designzeichnungen und technischen Dokumentation",
+          "i6": "Besuchermanagement: Spezielle Protokolle fuer externe Besucher in Prototypen-Bereichen"
+        }
+      },
+      "datenschutz": {
+        "title": "Datenschutz (DSGVO) — Anforderungen",
+        "intro": "Das Pruefziel Datenschutz wird verlangt, wenn Sie personenbezogene Daten im Auftrag von OEMs verarbeiten (z.B. Connected Car, Telematik, Kundendaten):",
+        "items": {
+          "i1": "Verarbeitungsverzeichnis (VVT) gemaess Art. 30 DSGVO mit allen relevanten Verarbeitungstaetigkeiten",
+          "i2": "Auftragsverarbeitungsvertraege (AVV) mit allen Unterauftragsverarbeitern",
+          "i3": "Technische und organisatorische Massnahmen (TOM) dokumentiert und regelmaessig geprueft",
+          "i4": "Datenschutz-Folgenabschaetzung (DSFA) fuer Hochrisiko-Verarbeitungen durchgefuehrt",
+          "i5": "Datenschutzbeauftragter benannt und Schulungen fuer alle Mitarbeiter durchgefuehrt"
+        }
+      },
+      "tips": {
+        "title": "Vorbereitung auf das TISAX-Assessment",
+        "items": {
+          "i1": "Starten Sie 6-12 Monate vor dem geplanten Assessment mit der Vorbereitung",
+          "i2": "Fuehren Sie eine Gap-Analyse gegen VDA ISA durch — unser TISAX-Assessment hilft dabei",
+          "i3": "Dokumentieren Sie alle Massnahmen: TISAX-Pruefer bewerten Nachweise, nicht muendliche Aussagen",
+          "i4": "Planen Sie Kosten ein: AL 3-Audits kosten typischerweise 10.000-30.000 EUR je nach Standortgroesse",
+          "i5": "Das TISAX-Label gilt 3 Jahre — planen Sie rechtzeitig die Re-Zertifizierung"
+        }
+      },
+      "cta": {
+        "title": "TISAX-Reifegrad pruefen",
+        "desc": "Nutzen Sie unser TISAX-Assessment mit 36 Fragen zu allen 12 VDA ISA-Bereichen.",
+        "button": "TISAX Assessment starten"
+      }
+    },
     "awarenessQuiz": {
       "title": "Security Awareness Quiz",
       "subtitle": "Testen Sie Ihr Wissen zur IT-Sicherheit — 15 Fragen fuer den Arbeitsalltag",

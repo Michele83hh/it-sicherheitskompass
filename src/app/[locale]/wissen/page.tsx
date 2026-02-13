@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { BookOpen, Siren, Building2, Banknote, ShieldAlert, Wrench, User, UserCheck, Home, Megaphone, ClipboardList, FileCheck, Brain, FileText, TrendingUp, Shield, GraduationCap, FileSearch, Table, FileSignature, Calculator, Award, Truck, FileBarChart, Key, Cloud, BarChart3, Image, Radar, UserCog, Code2, Factory, ArrowRight, LifeBuoy } from 'lucide-react';
+import { BookOpen, Siren, Building2, Banknote, ShieldAlert, Wrench, User, UserCheck, Home, Megaphone, ClipboardList, FileCheck, Brain, FileText, TrendingUp, Shield, GraduationCap, FileSearch, Table, FileSignature, Calculator, Award, Truck, FileBarChart, Key, Cloud, BarChart3, Image, Radar, UserCog, Code2, Factory, ArrowRight, LifeBuoy, Mail, Globe, Car } from 'lucide-react';
 import { Link } from '@/lib/i18n/navigation';
 import { getAllPillars } from '@/lib/pillars/registry';
 import '@/lib/pillars/init';
@@ -40,6 +40,10 @@ const QUICK_LINKS = [
   { href: '/wissen/radar', icon: Radar, colorClass: 'bg-red-500/10 text-red-500', labelKey: 'radar' },
   { href: '/wissen/berater-modus', icon: UserCog, colorClass: 'bg-emerald-500/10 text-emerald-600', labelKey: 'beraterModus' },
   { href: '/wissen/widget', icon: Code2, colorClass: 'bg-cyan-500/10 text-cyan-600', labelKey: 'widget' },
+  { href: '/wissen/email-check', icon: Mail, colorClass: 'bg-blue-500/10 text-blue-600', labelKey: 'emailCheck' },
+  { href: '/wissen/website-check', icon: Globe, colorClass: 'bg-emerald-500/10 text-emerald-600', labelKey: 'websiteCheck' },
+  { href: '/wissen/hibp-check', icon: ShieldAlert, colorClass: 'bg-red-500/10 text-red-600', labelKey: 'hibpCheck' },
+  { href: '/wissen/tisax-pruefziele', icon: Car, colorClass: 'bg-violet-500/10 text-violet-600', labelKey: 'tisaxPruefziele' },
 ] as const;
 
 export default function WissenPage() {

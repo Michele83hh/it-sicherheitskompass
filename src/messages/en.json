@@ -10812,6 +10812,218 @@
         "button": "Start ISO 22301 Assessment"
       }
     },
+    "emailCheck": {
+      "title": "Email Security Check",
+      "subtitle": "Check your domain's email security in seconds",
+      "intro": "SPF, DKIM, and DMARC protect your domain from email spoofing and phishing. Many SMEs have these DNS records misconfigured or missing entirely. Enter your domain to instantly see how well your email infrastructure is protected.",
+      "inputLabel": "Domain or email address",
+      "inputPlaceholder": "example.com or info@example.com",
+      "checkButton": "Check",
+      "scoreLabel": "Email Security Score",
+      "info": {
+        "title": "What is checked?"
+      },
+      "status": {
+        "pass": "Pass",
+        "warn": "Warning",
+        "fail": "Missing"
+      },
+      "checks": {
+        "spf": {
+          "title": "SPF (Sender Policy Framework)",
+          "desc": "Defines which servers are authorized to send emails on behalf of your domain. Prevents attackers from using your domain for phishing.",
+          "fix": "Tip: Create a TXT record with 'v=spf1 include:_spf.google.com ~all' (adapted to your mail provider)."
+        },
+        "dmarc": {
+          "title": "DMARC (Domain-based Message Authentication)",
+          "desc": "Specifies what happens to emails that fail SPF/DKIM checks. Receiving servers can reject forged emails.",
+          "fix": "Tip: Start with 'v=DMARC1; p=none; rua=mailto:dmarc@yourdomain.com' and gradually increase to 'quarantine' or 'reject'."
+        },
+        "dkim": {
+          "title": "DKIM (DomainKeys Identified Mail)",
+          "desc": "Cryptographically signs outgoing emails so recipients can verify they actually came from your domain and weren't modified.",
+          "fix": "Tip: DKIM is usually enabled through your email provider (e.g., Google Workspace, Microsoft 365). Check your provider's setup guide."
+        },
+        "mx": {
+          "title": "MX Records (Mail Exchanger)",
+          "desc": "Define which mail servers handle email for your domain. Without MX records, no emails can be received.",
+          "fix": "Tip: MX records are configured when setting up your email provider. Verify they are current and correct."
+        }
+      }
+    },
+    "websiteCheck": {
+      "title": "Website Security Check",
+      "subtitle": "Analyze your website's security headers",
+      "intro": "Security headers are your website's first line of defense against clickjacking, XSS, and other attacks. Many websites skip this simple protection. Enter your URL for an instant analysis.",
+      "inputLabel": "Website URL",
+      "inputPlaceholder": "www.example.com",
+      "checkButton": "Analyze",
+      "scoreLabel": "Security Header Score",
+      "info": {
+        "title": "Which headers are checked?"
+      },
+      "status": {
+        "pass": "Pass",
+        "warn": "Warning",
+        "fail": "Missing"
+      },
+      "checks": {
+        "https": {
+          "title": "HTTPS/TLS",
+          "desc": "Encrypted connection between browser and server. Mandatory for any professional website.",
+          "fix": "Tip: Enable HTTPS through your hosting provider. Let's Encrypt offers free TLS certificates."
+        },
+        "hsts": {
+          "title": "Strict-Transport-Security (HSTS)",
+          "desc": "Forces browsers to use HTTPS connections exclusively. Protects against downgrade attacks.",
+          "fix": "Tip: Set header: 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload'"
+        },
+        "csp": {
+          "title": "Content-Security-Policy (CSP)",
+          "desc": "Defines which resources (scripts, styles, images) may be loaded. Protects against Cross-Site Scripting (XSS).",
+          "fix": "Tip: Start restrictive with 'default-src self' and expand gradually as needed."
+        },
+        "xFrameOptions": {
+          "title": "X-Frame-Options",
+          "desc": "Prevents your website from being embedded in an iframe. Protects against clickjacking attacks.",
+          "fix": "Tip: Set header: 'X-Frame-Options: DENY' or 'SAMEORIGIN'"
+        },
+        "xContentType": {
+          "title": "X-Content-Type-Options",
+          "desc": "Prevents MIME type sniffing by browsers. Protects against certain drive-by download attacks.",
+          "fix": "Tip: Set header: 'X-Content-Type-Options: nosniff'"
+        },
+        "referrerPolicy": {
+          "title": "Referrer-Policy",
+          "desc": "Controls what referrer information is sent with external links. Protects your users' privacy.",
+          "fix": "Tip: Set header: 'Referrer-Policy: strict-origin-when-cross-origin'"
+        },
+        "permissionsPolicy": {
+          "title": "Permissions-Policy",
+          "desc": "Defines which browser APIs (camera, microphone, geolocation) your website may use. Reduces the attack surface.",
+          "fix": "Tip: Set header: 'Permissions-Policy: camera=(), microphone=(), geolocation=()'"
+        }
+      }
+    },
+    "hibpCheck": {
+      "title": "Data Breach Check",
+      "subtitle": "Check if your email address has appeared in known data breaches",
+      "intro": "Billions of credentials have been stolen through data breaches at major services. Use this check to find out if your email address is affected — based on the Have I Been Pwned database by Troy Hunt.",
+      "inputLabel": "Email address",
+      "inputPlaceholder": "your@email.com",
+      "checkButton": "Check",
+      "privacy": "Your email is only used for the query and is not stored.",
+      "errors": {
+        "notConfigured": "The data breach check is currently unavailable. The HIBP API key needs to be configured.",
+        "rateLimit": "Too many requests. Please try again in a minute."
+      },
+      "results": {
+        "safe": {
+          "title": "No data breaches found",
+          "desc": "Your email address was not found in any known data breach. Still, change your passwords regularly."
+        },
+        "breached": {
+          "title": "Found in {count} data breaches",
+          "desc": "Your email address was found in the following data breaches. Change all affected passwords immediately."
+        },
+        "verified": "Verified",
+        "actions": {
+          "title": "Immediate actions",
+          "i1": "Change ALL passwords for affected services IMMEDIATELY",
+          "i2": "Enable two-factor authentication (MFA) wherever possible",
+          "i3": "Use a password manager for unique passwords per service",
+          "i4": "Check your accounts for suspicious activity"
+        }
+      },
+      "info": {
+        "title": "What is a data breach check?",
+        "i1": {
+          "title": "Have I Been Pwned (HIBP)",
+          "desc": "A database of over 13 billion compromised accounts from known data breaches. Operated by IT security expert Troy Hunt."
+        },
+        "i2": {
+          "title": "What data is checked?",
+          "desc": "Only your email address is queried. The query runs encrypted via the HIBP API. No passwords are transmitted."
+        },
+        "i3": {
+          "title": "What to do if there's a match?",
+          "desc": "Change affected passwords immediately, enable MFA, and check for suspicious account activity."
+        }
+      }
+    },
+    "tisaxPruefziele": {
+      "title": "TISAX Assessment Goals in Detail",
+      "subtitle": "Assessment levels, prototype protection and data privacy per VDA ISA",
+      "intro": "TISAX (Trusted Information Security Assessment Exchange) is the automotive industry standard for information security. Based on VDA ISA v6.0 and ISO 27001, there are three assessment goals with different requirement levels — depending on your business partner's protection needs.",
+      "levels": {
+        "title": "Assessment Levels (AL)",
+        "al1": {
+          "title": "AL 1 — Normal",
+          "desc": "Self-assessment without external audit. Suitable for suppliers with normal protection needs. You complete the VDA ISA questionnaire and share the results."
+        },
+        "al2": {
+          "title": "AL 2 — High",
+          "desc": "Remote audit by an accredited auditor. For suppliers with high protection needs. Plausibility check of self-assessment plus interviews."
+        },
+        "al3": {
+          "title": "AL 3 — Very High",
+          "desc": "On-site audit by an accredited auditor. For suppliers with very high protection needs or access to prototypes. Full audit including site inspection."
+        }
+      },
+      "pruefziele": {
+        "title": "The 3 TISAX Assessment Goals",
+        "infosec": {
+          "title": "Information Security",
+          "desc": "Core assessment goal: Protection of confidential information per VDA ISA. Mandatory for all TISAX participants."
+        },
+        "prototype": {
+          "title": "Prototype Protection",
+          "desc": "Additional assessment goal: Physical and digital protection of prototypes, pre-production vehicles, and design models."
+        },
+        "datenschutz": {
+          "title": "Data Privacy (GDPR)",
+          "desc": "Additional assessment goal: Proof of GDPR compliance when processing personal data for OEMs."
+        }
+      },
+      "prototype": {
+        "title": "Prototype Protection — Requirements",
+        "intro": "If your OEM client requires prototype protection (usually AL 3), you need to cover these areas in addition to information security:",
+        "items": {
+          "i1": "Secured areas: Access control, camera systems, airlock systems for prototype zones",
+          "i2": "Photo/recording prohibition: Technical and organizational measures against unauthorized documentation",
+          "i3": "Transport protection: Covered vehicles, secured routes, GPS tracking for prototype transports",
+          "i4": "Camouflage measures: Wrapping, cover plates, and defined presentation in public spaces",
+          "i5": "Digital protection: Encryption of all CAD data, design drawings, and technical documentation",
+          "i6": "Visitor management: Special protocols for external visitors in prototype areas"
+        }
+      },
+      "datenschutz": {
+        "title": "Data Privacy (GDPR) — Requirements",
+        "intro": "The data privacy assessment goal is required when you process personal data on behalf of OEMs (e.g., connected car, telematics, customer data):",
+        "items": {
+          "i1": "Records of processing activities (ROPA) per Art. 30 GDPR with all relevant processing activities",
+          "i2": "Data processing agreements (DPA) with all sub-processors",
+          "i3": "Technical and organizational measures (TOMs) documented and regularly reviewed",
+          "i4": "Data Protection Impact Assessment (DPIA) conducted for high-risk processing",
+          "i5": "Data Protection Officer appointed and training conducted for all employees"
+        }
+      },
+      "tips": {
+        "title": "Preparing for the TISAX Assessment",
+        "items": {
+          "i1": "Start preparation 6-12 months before the planned assessment",
+          "i2": "Conduct a gap analysis against VDA ISA — our TISAX assessment helps with this",
+          "i3": "Document all measures: TISAX auditors evaluate evidence, not verbal statements",
+          "i4": "Budget accordingly: AL 3 audits typically cost EUR 10,000-30,000 depending on site size",
+          "i5": "The TISAX label is valid for 3 years — plan re-certification in advance"
+        }
+      },
+      "cta": {
+        "title": "Check your TISAX maturity",
+        "desc": "Use our TISAX assessment with 36 questions covering all 12 VDA ISA areas.",
+        "button": "Start TISAX Assessment"
+      }
+    },
     "awarenessQuiz": {
       "title": "Security Awareness Quiz",
       "subtitle": "Test your IT security knowledge — 15 questions for everyday work",
