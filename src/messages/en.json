@@ -13024,331 +13024,331 @@
     "fullName": "CIS Critical Security Controls v8",
     "categories": {
       "inventoryControl": {
-        "name": "Inventar & Bestandsmanagement",
-        "shortName": "Inventar",
-        "description": "Hardware- und Software-Inventar als Grundlage aller Sicherheitsmaßnahmen"
+        "name": "Inventory & Asset Management",
+        "shortName": "Inventory",
+        "description": "Hardware and software inventory as the foundation of all security measures"
       },
       "dataProtection": {
-        "name": "Datenschutz & Datenmanagement",
-        "shortName": "Datenschutz",
-        "description": "Schutz sensibler Daten durch Klassifizierung, Verschlüsselung und Zugriffskontrolle"
+        "name": "Data Protection & Data Management",
+        "shortName": "Data Protection",
+        "description": "Protection of sensitive data through classification, encryption, and access control"
       },
       "secureConfig": {
-        "name": "Sichere Konfiguration & Zugangskontrolle",
-        "shortName": "Konfiguration",
-        "description": "Sichere Basiskonfiguration aller Systeme und kontrollierter Zugang"
+        "name": "Secure Configuration & Access Control",
+        "shortName": "Configuration",
+        "description": "Secure baseline configuration of all systems and controlled access"
       },
       "vulnerabilityMgmt": {
-        "name": "Schwachstellen- & Malware-Management",
-        "shortName": "Schwachstellen",
-        "description": "Kontinuierliches Schwachstellenmanagement, Audit-Logs und Malware-Abwehr"
+        "name": "Vulnerability & Malware Management",
+        "shortName": "Vulnerabilities",
+        "description": "Continuous vulnerability management, audit logs, and malware defense"
       },
       "recoveryNetwork": {
-        "name": "Datenwiederherstellung & Netzwerk",
+        "name": "Data Recovery & Network",
         "shortName": "Recovery",
-        "description": "Backup-Strategien, Netzwerkinfrastruktur und Monitoring"
+        "description": "Backup strategies, network infrastructure, and monitoring"
       },
       "securityOperations": {
-        "name": "Sicherheitsbetrieb & Tests",
+        "name": "Security Operations & Testing",
         "shortName": "Operations",
-        "description": "Awareness, Dienstleister-Management, AppSec, Incident Response und Penetrationstests"
+        "description": "Awareness, service provider management, AppSec, incident response, and penetration testing"
       }
     },
     "questions": {
       "icQ1": {
-        "title": "Haben Sie ein vollständiges Inventar aller Hardware-Geräte in Ihrem Netzwerk?",
-        "tooltip": "CIS Control 1: Inventar und Kontrolle von Hardware-Assets",
-        "help": "Ein aktuelles Hardware-Inventar ist die Grundlage für jede Sicherheitsmaßnahme.",
+        "title": "Do you maintain a complete inventory of all hardware devices on your network?",
+        "tooltip": "CIS Control 1: Inventory and Control of Enterprise Assets",
+        "help": "An up-to-date hardware inventory is the foundation of every security measure.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "icQ2": {
-        "title": "Führen Sie ein aktuelles Verzeichnis aller installierten Software?",
-        "tooltip": "CIS Control 2: Inventar und Kontrolle von Software-Assets",
-        "help": "Nicht genehmigte Software ist eines der größten Einfallstore für Angreifer.",
+        "title": "Do you maintain a current directory of all installed software?",
+        "tooltip": "CIS Control 2: Inventory and Control of Software Assets",
+        "help": "Unauthorized software is one of the biggest entry points for attackers.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "icQ3": {
-        "title": "Werden nicht autorisierte Geräte und Software automatisch erkannt und blockiert?",
-        "tooltip": "CIS Controls 1-2: Automatische Erkennung",
-        "help": "Automatisierte Discovery-Tools identifizieren neue Geräte und Software im Netzwerk.",
+        "title": "Are unauthorized devices and software automatically detected and blocked?",
+        "tooltip": "CIS Controls 1-2: Automated Detection",
+        "help": "Automated discovery tools identify new devices and software on the network.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "dpQ1": {
-        "title": "Haben Sie eine Datenklassifizierung für sensible Informationen eingeführt?",
-        "tooltip": "CIS Control 3: Datenschutz",
-        "help": "Datenklassifizierung definiert Schutzstufen und Handhabungsregeln.",
+        "title": "Have you implemented a data classification scheme for sensitive information?",
+        "tooltip": "CIS Control 3: Data Protection",
+        "help": "Data classification defines protection levels and handling rules.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "dpQ2": {
-        "title": "Werden sensible Daten sowohl bei der Übertragung als auch bei der Speicherung verschlüsselt?",
-        "tooltip": "CIS Control 3: Verschlüsselung",
-        "help": "Verschlüsselung schützt Daten auch bei unbefugtem Zugriff.",
+        "title": "Is sensitive data encrypted both in transit and at rest?",
+        "tooltip": "CIS Control 3: Encryption",
+        "help": "Encryption protects data even in the event of unauthorized access.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "dpQ3": {
-        "title": "Gibt es dokumentierte Löschfristen und -verfahren für nicht mehr benötigte Daten?",
-        "tooltip": "CIS Control 3: Datenentsorgung",
-        "help": "Regelmäßige Löschung reduziert das Risiko bei Datenschutzverletzungen.",
+        "title": "Are there documented retention periods and disposal procedures for data no longer needed?",
+        "tooltip": "CIS Control 3: Data Disposal",
+        "help": "Regular data disposal reduces the risk exposure in case of data breaches.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "scQ1": {
-        "title": "Verwenden Sie gehärtete Basiskonfigurationen für alle Systeme?",
-        "tooltip": "CIS Control 4: Sichere Konfiguration",
-        "help": "CIS Benchmarks bieten gehärtete Konfigurationsvorlagen für alle gängigen Systeme.",
+        "title": "Do you use hardened baseline configurations for all systems?",
+        "tooltip": "CIS Control 4: Secure Configuration",
+        "help": "CIS Benchmarks provide hardened configuration templates for all common systems.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "scQ2": {
-        "title": "Gibt es ein zentrales Benutzerkonten-Management mit definierten Zugriffsrechten?",
-        "tooltip": "CIS Control 5-6: Kontenverwaltung und Zugriffskontrolle",
-        "help": "Zentrale Verwaltung verhindert verwaiste Konten und übermäßige Rechte.",
+        "title": "Is there a centralized user account management system with defined access rights?",
+        "tooltip": "CIS Control 5-6: Account Management and Access Control",
+        "help": "Centralized management prevents orphaned accounts and excessive privileges.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "scQ3": {
-        "title": "Ist Multi-Faktor-Authentifizierung für alle administrativen Zugänge aktiviert?",
-        "tooltip": "CIS Control 6: Zugriffskontrolle",
-        "help": "MFA ist die effektivste Einzelmaßnahme gegen Kontenübernahme.",
+        "title": "Is multi-factor authentication enabled for all administrative access?",
+        "tooltip": "CIS Control 6: Access Control",
+        "help": "MFA is the single most effective measure against account takeover.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "vmQ1": {
-        "title": "Führen Sie regelmäßige Schwachstellenscans aller Systeme durch?",
-        "tooltip": "CIS Control 7: Schwachstellenmanagement",
-        "help": "Regelmäßige Scans identifizieren bekannte Schwachstellen vor Angreifern.",
+        "title": "Do you perform regular vulnerability scans of all systems?",
+        "tooltip": "CIS Control 7: Vulnerability Management",
+        "help": "Regular scans identify known vulnerabilities before attackers can exploit them.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "vmQ2": {
-        "title": "Werden Audit-Logs zentral gesammelt und regelmäßig ausgewertet?",
-        "tooltip": "CIS Control 8: Audit-Log-Management",
-        "help": "Zentrale Logs ermöglichen die Erkennung von Angriffen und forensische Analysen.",
+        "title": "Are audit logs collected centrally and analyzed on a regular basis?",
+        "tooltip": "CIS Control 8: Audit Log Management",
+        "help": "Centralized logs enable the detection of attacks and forensic analysis.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "vmQ3": {
-        "title": "Sind E-Mail- und Browser-Schutzmaßnahmen sowie Anti-Malware-Lösungen im Einsatz?",
-        "tooltip": "CIS Controls 9-10: E-Mail/Browser-Schutz und Malware-Abwehr",
-        "help": "E-Mail und Browser sind die häufigsten Einfallstore für Malware.",
+        "title": "Are email and browser protection measures as well as anti-malware solutions in place?",
+        "tooltip": "CIS Controls 9-10: Email/Browser Protection and Malware Defense",
+        "help": "Email and browsers are the most common entry points for malware.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "rnQ1": {
-        "title": "Haben Sie eine 3-2-1-Backup-Strategie mit regelmäßigen Wiederherstellungstests?",
-        "tooltip": "CIS Control 11: Datenwiederherstellung",
-        "help": "Backups sind nur so gut wie der letzte erfolgreiche Wiederherstellungstest.",
+        "title": "Do you have a 3-2-1 backup strategy with regular recovery tests?",
+        "tooltip": "CIS Control 11: Data Recovery",
+        "help": "Backups are only as good as the last successful recovery test.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "rnQ2": {
-        "title": "Ist Ihr Netzwerk segmentiert und werden Firewall-Regeln regelmäßig überprüft?",
-        "tooltip": "CIS Control 12-13: Netzwerkinfrastruktur und Monitoring",
-        "help": "Netzwerksegmentierung begrenzt die Ausbreitung von Angriffen.",
+        "title": "Is your network segmented and are firewall rules reviewed regularly?",
+        "tooltip": "CIS Control 12-13: Network Infrastructure and Monitoring",
+        "help": "Network segmentation limits the spread of attacks.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "rnQ3": {
-        "title": "Werden Netzwerkverkehr und -aktivitäten kontinuierlich überwacht?",
-        "tooltip": "CIS Control 13: Netzwerk-Monitoring",
-        "help": "Netzwerk-Monitoring erkennt ungewöhnliche Aktivitäten in Echtzeit.",
+        "title": "Is network traffic and activity monitored continuously?",
+        "tooltip": "CIS Control 13: Network Monitoring",
+        "help": "Network monitoring detects unusual activity in real time.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "soQ1": {
-        "title": "Führen Sie regelmäßige Security-Awareness-Schulungen für alle Mitarbeiter durch?",
+        "title": "Do you conduct regular security awareness training for all employees?",
         "tooltip": "CIS Control 14: Security Awareness Training",
-        "help": "Geschulte Mitarbeiter erkennen Phishing und Social Engineering.",
+        "help": "Trained employees recognize phishing and social engineering attacks.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "soQ2": {
-        "title": "Werden IT-Dienstleister auf ihre Sicherheitspraktiken geprüft?",
-        "tooltip": "CIS Control 15: Dienstleister-Management",
-        "help": "Dienstleister mit Zugang zu Ihren Systemen müssen Sicherheitsstandards erfüllen.",
+        "title": "Are IT service providers assessed for their security practices?",
+        "tooltip": "CIS Control 15: Service Provider Management",
+        "help": "Service providers with access to your systems must meet security standards.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "soQ3": {
-        "title": "Gibt es einen dokumentierten Incident-Response-Plan mit regelmäßigen Übungen?",
-        "tooltip": "CIS Controls 17-18: Incident Response und Penetrationstests",
-        "help": "Ein getesteter IR-Plan reduziert die Reaktionszeit bei Sicherheitsvorfällen.",
+        "title": "Is there a documented incident response plan with regular exercises?",
+        "tooltip": "CIS Controls 17-18: Incident Response and Penetration Testing",
+        "help": "A tested IR plan reduces response time during security incidents.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       }
     },
     "recommendations": {
       "ic1": {
-        "title": "Hardware-Inventar aufbauen",
-        "description": "Erstellen Sie ein vollständiges Verzeichnis aller Netzwerkgeräte mit automatischer Erkennung neuer Geräte.",
-        "firstStep": "Starten Sie mit einem Netzwerk-Scan-Tool wie Nmap oder einem kommerziellen Asset-Discovery-Tool."
+        "title": "Build a Hardware Inventory",
+        "description": "Create a complete directory of all network devices with automated detection of new devices.",
+        "firstStep": "Start with a network scanning tool such as Nmap or a commercial asset discovery solution."
       },
       "ic2": {
-        "title": "Software-Whitelist einführen",
-        "description": "Definieren Sie genehmigte Software und blockieren Sie nicht autorisierte Installationen.",
-        "firstStep": "Erstellen Sie eine Liste aller genehmigten Anwendungen und aktivieren Sie AppLocker oder Software Restriction Policies."
+        "title": "Implement a Software Allowlist",
+        "description": "Define approved software and block unauthorized installations.",
+        "firstStep": "Create a list of all approved applications and enable AppLocker or Software Restriction Policies."
       },
       "dp1": {
-        "title": "Datenklassifizierung implementieren",
-        "description": "Führen Sie ein Klassifizierungsschema ein (öffentlich, intern, vertraulich, streng vertraulich).",
-        "firstStep": "Definieren Sie 3-4 Klassifizierungsstufen und schulen Sie alle Mitarbeiter in der korrekten Handhabung."
+        "title": "Implement Data Classification",
+        "description": "Introduce a classification scheme (public, internal, confidential, strictly confidential).",
+        "firstStep": "Define 3-4 classification levels and train all employees on proper handling procedures."
       },
       "dp2": {
-        "title": "Verschlüsselung aktivieren",
-        "description": "Verschlüsseln Sie alle sensiblen Daten at-rest und in-transit.",
-        "firstStep": "Aktivieren Sie BitLocker/FileVault auf allen Endgeräten und erzwingen Sie TLS für alle internen Dienste."
+        "title": "Enable Encryption",
+        "description": "Encrypt all sensitive data at rest and in transit.",
+        "firstStep": "Enable BitLocker/FileVault on all endpoints and enforce TLS for all internal services."
       },
       "sc1": {
-        "title": "CIS Benchmarks anwenden",
-        "description": "Härten Sie alle Systeme nach CIS Benchmark-Vorgaben.",
-        "firstStep": "Laden Sie die CIS Benchmarks für Ihre Betriebssysteme herunter und prüfen Sie die aktuelle Konfiguration."
+        "title": "Apply CIS Benchmarks",
+        "description": "Harden all systems according to CIS Benchmark guidelines.",
+        "firstStep": "Download the CIS Benchmarks for your operating systems and review the current configuration."
       },
       "sc2": {
-        "title": "MFA flächendeckend einführen",
-        "description": "Aktivieren Sie Multi-Faktor-Authentifizierung für alle kritischen Systeme und Admin-Zugänge.",
-        "firstStep": "Beginnen Sie mit MFA für E-Mail, VPN und Cloud-Dienste — die häufigsten Angriffsziele."
+        "title": "Deploy MFA Organization-wide",
+        "description": "Enable multi-factor authentication for all critical systems and administrative access.",
+        "firstStep": "Start with MFA for email, VPN, and cloud services — the most common attack targets."
       },
       "vm1": {
-        "title": "Schwachstellenscanner einsetzen",
-        "description": "Führen Sie wöchentliche Schwachstellenscans durch und priorisieren Sie Patches nach CVSS-Score.",
-        "firstStep": "Richten Sie OpenVAS oder einen kommerziellen Scanner ein und planen Sie wöchentliche Scans."
+        "title": "Deploy a Vulnerability Scanner",
+        "description": "Perform weekly vulnerability scans and prioritize patches by CVSS score.",
+        "firstStep": "Set up OpenVAS or a commercial scanner and schedule weekly scans."
       },
       "vm2": {
-        "title": "Zentrale Log-Sammlung",
-        "description": "Implementieren Sie ein SIEM oder zentrales Log-Management für alle kritischen Systeme.",
-        "firstStep": "Beginnen Sie mit der Weiterleitung von Firewall-, AD- und Server-Logs an einen zentralen Syslog-Server."
+        "title": "Centralized Log Collection",
+        "description": "Implement a SIEM or centralized log management for all critical systems.",
+        "firstStep": "Start by forwarding firewall, AD, and server logs to a central syslog server."
       },
       "rn1": {
-        "title": "3-2-1-Backup implementieren",
-        "description": "3 Kopien, 2 verschiedene Medien, 1 extern — mit monatlichen Wiederherstellungstests.",
-        "firstStep": "Prüfen Sie Ihre aktuelle Backup-Strategie und planen Sie den ersten Wiederherstellungstest."
+        "title": "Implement 3-2-1 Backup",
+        "description": "3 copies, 2 different media types, 1 offsite — with monthly recovery tests.",
+        "firstStep": "Review your current backup strategy and schedule your first recovery test."
       },
       "rn2": {
-        "title": "Netzwerksegmentierung",
-        "description": "Segmentieren Sie Ihr Netzwerk nach Schutzbedarf und beschränken Sie laterale Bewegung.",
-        "firstStep": "Identifizieren Sie Ihre kritischsten Systeme und erstellen Sie ein VLAN-Konzept."
+        "title": "Network Segmentation",
+        "description": "Segment your network based on protection requirements and restrict lateral movement.",
+        "firstStep": "Identify your most critical systems and create a VLAN concept."
       },
       "so1": {
-        "title": "Awareness-Programm starten",
-        "description": "Etablieren Sie regelmäßige Security-Awareness-Schulungen mit simulierten Phishing-Tests.",
-        "firstStep": "Wählen Sie eine Awareness-Plattform und planen Sie die erste Phishing-Simulation."
+        "title": "Launch an Awareness Program",
+        "description": "Establish regular security awareness training with simulated phishing tests.",
+        "firstStep": "Choose an awareness platform and schedule the first phishing simulation."
       },
       "so2": {
-        "title": "Incident-Response-Plan erstellen",
-        "description": "Dokumentieren Sie einen IR-Plan mit Rollen, Eskalationswegen und Kommunikationsvorlagen.",
-        "firstStep": "Definieren Sie das IR-Team und erstellen Sie einen einseitigen Notfall-Kontaktplan."
+        "title": "Create an Incident Response Plan",
+        "description": "Document an IR plan with roles, escalation paths, and communication templates.",
+        "firstStep": "Define the IR team and create a one-page emergency contact plan."
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "title": "Haben Sie ein aktuelles Inventar aller IT-Geräte und Software?",
-          "description": "CIS Controls 1-2: Grundlage aller Sicherheitsmaßnahmen"
+          "title": "Do you have a current inventory of all IT devices and software?",
+          "description": "CIS Controls 1-2: Foundation of all security measures"
         },
         "q2": {
-          "title": "Werden sensible Daten klassifiziert und verschlüsselt?",
-          "description": "CIS Control 3: Schutz sensibler Informationen"
+          "title": "Is sensitive data classified and encrypted?",
+          "description": "CIS Control 3: Protection of sensitive information"
         },
         "q3": {
-          "title": "Verwenden Sie gehärtete Konfigurationen und MFA?",
-          "description": "CIS Controls 4-6: Sichere Basiskonfiguration"
+          "title": "Do you use hardened configurations and MFA?",
+          "description": "CIS Controls 4-6: Secure baseline configuration"
         },
         "q4": {
-          "title": "Werden Schwachstellenscans regelmäßig durchgeführt?",
-          "description": "CIS Control 7: Kontinuierliches Schwachstellenmanagement"
+          "title": "Are vulnerability scans performed regularly?",
+          "description": "CIS Control 7: Continuous vulnerability management"
         },
         "q5": {
-          "title": "Sammeln und analysieren Sie Audit-Logs zentral?",
-          "description": "CIS Control 8: Erkennung von Sicherheitsvorfällen"
+          "title": "Do you collect and analyze audit logs centrally?",
+          "description": "CIS Control 8: Detection of security incidents"
         },
         "q6": {
-          "title": "Haben Sie eine getestete Backup-Strategie?",
-          "description": "CIS Control 11: Datenwiederherstellung"
+          "title": "Do you have a tested backup strategy?",
+          "description": "CIS Control 11: Data recovery"
         },
         "q7": {
-          "title": "Ist Ihr Netzwerk segmentiert und überwacht?",
-          "description": "CIS Controls 12-13: Netzwerksicherheit"
+          "title": "Is your network segmented and monitored?",
+          "description": "CIS Controls 12-13: Network security"
         },
         "q8": {
-          "title": "Gibt es regelmäßige Awareness-Schulungen und einen IR-Plan?",
-          "description": "CIS Controls 14, 17: Mensch und Prozess"
+          "title": "Are there regular awareness training sessions and an IR plan?",
+          "description": "CIS Controls 14, 17: People and process"
         }
       }
     }
@@ -13702,331 +13702,331 @@
     "fullName": "NIST Cybersecurity Framework 2.0",
     "categories": {
       "govern": {
-        "name": "Govern (Steuern)",
+        "name": "Govern",
         "shortName": "Govern",
-        "description": "Cybersicherheits-Governance, Risikomanagement und Strategie"
+        "description": "Cybersecurity governance, risk management, and strategy"
       },
       "identify": {
-        "name": "Identify (Identifizieren)",
+        "name": "Identify",
         "shortName": "Identify",
-        "description": "Asset-Management, Risikobewertung und Lieferketten-Risiken"
+        "description": "Asset management, risk assessment, and supply chain risks"
       },
       "protect": {
-        "name": "Protect (Schützen)",
+        "name": "Protect",
         "shortName": "Protect",
-        "description": "Zugangskontrolle, Schulung, Datensicherheit und Schutzmaßnahmen"
+        "description": "Access control, training, data security, and safeguards"
       },
       "detect": {
-        "name": "Detect (Erkennen)",
+        "name": "Detect",
         "shortName": "Detect",
-        "description": "Anomalie-Erkennung, kontinuierliches Monitoring und Erkennungsprozesse"
+        "description": "Anomaly detection, continuous monitoring, and detection processes"
       },
       "respond": {
-        "name": "Respond (Reagieren)",
+        "name": "Respond",
         "shortName": "Respond",
-        "description": "Reaktionsplanung, Kommunikation und Analyse von Vorfällen"
+        "description": "Response planning, communication, and incident analysis"
       },
       "recover": {
-        "name": "Recover (Wiederherstellen)",
+        "name": "Recover",
         "shortName": "Recover",
-        "description": "Wiederherstellungsplanung, Verbesserungen und Kommunikation"
+        "description": "Recovery planning, improvements, and communication"
       }
     },
     "questions": {
       "gvQ1": {
-        "title": "Gibt es eine dokumentierte Cybersicherheitsstrategie mit klaren Zielen?",
-        "tooltip": "NIST CSF GV.OC: Organisatorischer Kontext",
-        "help": "Die Strategie definiert den Rahmen für alle Cybersicherheitsaktivitäten.",
+        "title": "Is there a documented cybersecurity strategy with clear objectives?",
+        "tooltip": "NIST CSF GV.OC: Organizational Context",
+        "help": "The strategy defines the framework for all cybersecurity activities.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "gvQ2": {
-        "title": "Sind Cybersicherheits-Rollen und -Verantwortlichkeiten in der Organisation definiert?",
-        "tooltip": "NIST CSF GV.RR: Rollen und Verantwortlichkeiten",
-        "help": "Klare Zuständigkeiten verhindern Lücken im Sicherheitsmanagement.",
+        "title": "Are cybersecurity roles and responsibilities defined across the organization?",
+        "tooltip": "NIST CSF GV.RR: Roles and Responsibilities",
+        "help": "Clear accountability prevents gaps in security management.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "gvQ3": {
-        "title": "Wird das Cybersicherheitsrisiko regelmäßig an die Geschäftsleitung berichtet?",
-        "tooltip": "NIST CSF GV.RM: Risikomanagement",
-        "help": "Risikotransparenz ermöglicht informierte Geschäftsentscheidungen.",
+        "title": "Is cybersecurity risk regularly reported to executive management?",
+        "tooltip": "NIST CSF GV.RM: Risk Management",
+        "help": "Risk transparency enables informed business decisions.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "idQ1": {
-        "title": "Ist ein vollständiges Asset-Inventar (Hardware, Software, Daten) vorhanden?",
+        "title": "Is a comprehensive asset inventory (hardware, software, data) maintained?",
         "tooltip": "NIST CSF ID.AM: Asset Management",
-        "help": "Sie können nur schützen, was Sie kennen.",
+        "help": "You can only protect what you know about.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "idQ2": {
-        "title": "Werden Cybersicherheitsrisiken systematisch identifiziert und bewertet?",
-        "tooltip": "NIST CSF ID.RA: Risikobewertung",
-        "help": "Risikobasierte Priorisierung fokussiert Ressourcen auf die größten Bedrohungen.",
+        "title": "Are cybersecurity risks systematically identified and assessed?",
+        "tooltip": "NIST CSF ID.RA: Risk Assessment",
+        "help": "Risk-based prioritization focuses resources on the greatest threats.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "idQ3": {
-        "title": "Werden Lieferketten-Risiken in die Cybersicherheitsbewertung einbezogen?",
+        "title": "Are supply chain risks incorporated into cybersecurity assessments?",
         "tooltip": "NIST CSF ID.SC: Supply Chain Risk Management",
-        "help": "Drittanbieter können erhebliche Risiken in Ihre Organisation einführen.",
+        "help": "Third-party vendors can introduce significant risks into your organization.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "prQ1": {
-        "title": "Wird der Zugang zu Systemen und Daten nach dem Prinzip der minimalen Rechte gesteuert?",
-        "tooltip": "NIST CSF PR.AA: Zugangskontrolle",
-        "help": "Least Privilege reduziert die Angriffsfläche erheblich.",
+        "title": "Is access to systems and data managed based on the principle of least privilege?",
+        "tooltip": "NIST CSF PR.AA: Access Control",
+        "help": "Least privilege significantly reduces the attack surface.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "prQ2": {
-        "title": "Erhalten alle Mitarbeiter regelmäßige Cybersicherheitsschulungen?",
-        "tooltip": "NIST CSF PR.AT: Awareness und Training",
-        "help": "Geschulte Mitarbeiter sind die wichtigste Verteidigungslinie.",
+        "title": "Do all employees receive regular cybersecurity training?",
+        "tooltip": "NIST CSF PR.AT: Awareness and Training",
+        "help": "Trained employees are the most important line of defense.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "prQ3": {
-        "title": "Sind technische Schutzmaßnahmen wie Verschlüsselung und Endpoint-Protection im Einsatz?",
-        "tooltip": "NIST CSF PR.DS: Datensicherheit",
-        "help": "Technische Kontrollen ergänzen organisatorische Maßnahmen.",
+        "title": "Are technical safeguards such as encryption and endpoint protection in place?",
+        "tooltip": "NIST CSF PR.DS: Data Security",
+        "help": "Technical controls complement organizational measures.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "deQ1": {
-        "title": "Gibt es kontinuierliches Monitoring aller kritischen Systeme?",
+        "title": "Is continuous monitoring in place for all critical systems?",
         "tooltip": "NIST CSF DE.CM: Continuous Monitoring",
-        "help": "Echtzeit-Monitoring erkennt Angriffe in der Frühphase.",
+        "help": "Real-time monitoring detects attacks in their early stages.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "deQ2": {
-        "title": "Werden Anomalien und verdächtige Aktivitäten automatisch erkannt?",
-        "tooltip": "NIST CSF DE.AE: Anomalie-Erkennung",
-        "help": "Automatische Erkennung verkürzt die Zeit bis zur Reaktion.",
+        "title": "Are anomalies and suspicious activities detected automatically?",
+        "tooltip": "NIST CSF DE.AE: Anomaly Detection",
+        "help": "Automated detection shortens the time to response.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "deQ3": {
-        "title": "Sind Erkennungsprozesse definiert, getestet und werden sie kontinuierlich verbessert?",
-        "tooltip": "NIST CSF DE.DP: Erkennungsprozesse",
-        "help": "Definierte Prozesse stellen konsistente Erkennung sicher.",
+        "title": "Are detection processes defined, tested, and continuously improved?",
+        "tooltip": "NIST CSF DE.DP: Detection Processes",
+        "help": "Defined processes ensure consistent detection capabilities.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "rsQ1": {
-        "title": "Gibt es einen dokumentierten und getesteten Incident-Response-Plan?",
+        "title": "Is there a documented and tested incident response plan?",
         "tooltip": "NIST CSF RS.MA: Incident Management",
-        "help": "Ein getesteter Plan reduziert die Reaktionszeit erheblich.",
+        "help": "A tested plan significantly reduces response time.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "rsQ2": {
-        "title": "Sind Kommunikationswege für Sicherheitsvorfälle definiert (intern und extern)?",
-        "tooltip": "NIST CSF RS.CO: Kommunikation",
-        "help": "Klare Kommunikation verhindert Informationschaos im Ernstfall.",
+        "title": "Are communication channels for security incidents defined (internal and external)?",
+        "tooltip": "NIST CSF RS.CO: Communication",
+        "help": "Clear communication prevents information chaos during an incident.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "rsQ3": {
-        "title": "Werden Sicherheitsvorfälle analysiert und Lessons Learned dokumentiert?",
-        "tooltip": "NIST CSF RS.AN: Analyse",
-        "help": "Vorfallsanalyse verhindert wiederholte Angriffe mit gleicher Methode.",
+        "title": "Are security incidents analyzed and lessons learned documented?",
+        "tooltip": "NIST CSF RS.AN: Analysis",
+        "help": "Incident analysis prevents repeated attacks using the same methods.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "rcQ1": {
-        "title": "Gibt es Wiederherstellungspläne für alle kritischen Systeme und Daten?",
+        "title": "Are recovery plans in place for all critical systems and data?",
         "tooltip": "NIST CSF RC.RP: Recovery Planning",
-        "help": "Wiederherstellungspläne definieren die Reihenfolge der Systemwiederherstellung.",
+        "help": "Recovery plans define the sequence for restoring systems.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "rcQ2": {
-        "title": "Werden Wiederherstellungsprozesse regelmäßig getestet und verbessert?",
+        "title": "Are recovery processes regularly tested and improved?",
         "tooltip": "NIST CSF RC.IM: Improvements",
-        "help": "Regelmäßige Tests validieren die Wiederherstellungsfähigkeit.",
+        "help": "Regular testing validates recovery capabilities.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       },
       "rcQ3": {
-        "title": "Ist die Kommunikation während der Wiederherstellungsphase geplant?",
-        "tooltip": "NIST CSF RC.CO: Kommunikation",
-        "help": "Stakeholder müssen während der Wiederherstellung informiert werden.",
+        "title": "Is communication during the recovery phase planned?",
+        "tooltip": "NIST CSF RC.CO: Communication",
+        "help": "Stakeholders must be kept informed during recovery.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Not present — no measures implemented",
+          "level1": "Ad-hoc — informal or reactive measures",
+          "level2": "Risk-informed — documented, risk-based processes",
+          "level3": "Adaptive — continuously improved and aligned with threat landscape"
         }
       }
     },
     "recommendations": {
       "gv1": {
-        "title": "Cybersicherheitsstrategie entwickeln",
-        "description": "Erstellen Sie eine dokumentierte Strategie, die Cybersicherheit mit Geschäftszielen verknüpft.",
-        "firstStep": "Definieren Sie die Top-5-Cybersicherheitsziele im Einklang mit Ihrer Geschäftsstrategie."
+        "title": "Develop a cybersecurity strategy",
+        "description": "Create a documented strategy that aligns cybersecurity with business objectives.",
+        "firstStep": "Define the top 5 cybersecurity goals in alignment with your business strategy."
       },
       "gv2": {
-        "title": "Risiko-Governance etablieren",
-        "description": "Implementieren Sie regelmäßiges Cybersicherheits-Risiko-Reporting an die Geschäftsleitung.",
-        "firstStep": "Erstellen Sie ein monatliches Risiko-Dashboard für die Geschäftsleitung."
+        "title": "Establish risk governance",
+        "description": "Implement regular cybersecurity risk reporting to executive management.",
+        "firstStep": "Create a monthly risk dashboard for executive management."
       },
       "id1": {
-        "title": "Asset-Inventar aufbauen",
-        "description": "Erstellen Sie ein vollständiges Inventar aller IT-Assets inkl. Cloud-Dienste.",
-        "firstStep": "Beginnen Sie mit einer Inventarisierung aller Cloud-Dienste und SaaS-Anwendungen."
+        "title": "Build an asset inventory",
+        "description": "Create a comprehensive inventory of all IT assets including cloud services.",
+        "firstStep": "Start by inventorying all cloud services and SaaS applications."
       },
       "id2": {
-        "title": "Risikobewertung durchführen",
-        "description": "Bewerten Sie Cybersicherheitsrisiken systematisch nach Wahrscheinlichkeit und Auswirkung.",
-        "firstStep": "Führen Sie ein Risiko-Assessment für Ihre 10 kritischsten Systeme durch."
+        "title": "Conduct a risk assessment",
+        "description": "Systematically assess cybersecurity risks by likelihood and impact.",
+        "firstStep": "Perform a risk assessment for your 10 most critical systems."
       },
       "pr1": {
-        "title": "Zero-Trust-Ansatz einführen",
-        "description": "Implementieren Sie das Prinzip \"Never trust, always verify\" für alle Zugänge.",
-        "firstStep": "Beginnen Sie mit MFA für alle externen Zugänge und Cloud-Dienste."
+        "title": "Adopt a zero-trust approach",
+        "description": "Implement the principle of \"never trust, always verify\" for all access.",
+        "firstStep": "Start with MFA for all external access points and cloud services."
       },
       "pr2": {
-        "title": "Awareness-Programm etablieren",
-        "description": "Starten Sie ein kontinuierliches Security-Awareness-Programm mit regelmäßigen Schulungen.",
-        "firstStep": "Planen Sie eine initiale Awareness-Schulung für alle Mitarbeiter."
+        "title": "Establish an awareness program",
+        "description": "Launch a continuous security awareness program with regular training sessions.",
+        "firstStep": "Schedule an initial awareness training session for all employees."
       },
       "de1": {
-        "title": "Monitoring implementieren",
-        "description": "Implementieren Sie kontinuierliches Monitoring aller kritischen Systeme und Netzwerke.",
-        "firstStep": "Beginnen Sie mit der Überwachung Ihrer Firewall-Logs und Active-Directory-Ereignisse."
+        "title": "Implement monitoring",
+        "description": "Implement continuous monitoring of all critical systems and networks.",
+        "firstStep": "Start by monitoring your firewall logs and Active Directory events."
       },
       "de2": {
-        "title": "SIEM/SOC aufbauen",
-        "description": "Implementieren Sie ein SIEM-System oder beauftragen Sie einen Managed SOC-Dienst.",
-        "firstStep": "Evaluieren Sie 2-3 Managed-SOC-Anbieter für Ihr Unternehmensprofil."
+        "title": "Build a SIEM/SOC capability",
+        "description": "Implement a SIEM system or engage a managed SOC service.",
+        "firstStep": "Evaluate 2-3 managed SOC providers for your organization's profile."
       },
       "rs1": {
-        "title": "Incident-Response-Plan erstellen",
-        "description": "Erstellen Sie einen umfassenden IR-Plan mit Rollen, Prozessen und Kommunikationsvorlagen.",
-        "firstStep": "Definieren Sie das IR-Team und erstellen Sie einen Eskalationsplan."
+        "title": "Create an incident response plan",
+        "description": "Develop a comprehensive IR plan with roles, processes, and communication templates.",
+        "firstStep": "Define the IR team and create an escalation plan."
       },
       "rs2": {
-        "title": "IR-Übungen durchführen",
-        "description": "Führen Sie regelmäßige Tabletop-Übungen und technische IR-Übungen durch.",
-        "firstStep": "Planen Sie eine Ransomware-Tabletop-Übung mit dem Management."
+        "title": "Conduct IR exercises",
+        "description": "Perform regular tabletop exercises and technical IR drills.",
+        "firstStep": "Schedule a ransomware tabletop exercise with management."
       },
       "rc1": {
-        "title": "Recovery-Pläne erstellen",
-        "description": "Dokumentieren Sie Wiederherstellungspläne für alle kritischen Systeme.",
-        "firstStep": "Erstellen Sie einen Wiederherstellungsplan für Ihr E-Mail-System als Pilot."
+        "title": "Create recovery plans",
+        "description": "Document recovery plans for all critical systems.",
+        "firstStep": "Create a recovery plan for your email system as a pilot."
       },
       "rc2": {
-        "title": "Recovery-Tests planen",
-        "description": "Testen Sie die Wiederherstellung kritischer Systeme mindestens vierteljährlich.",
-        "firstStep": "Planen Sie einen vollständigen Backup-Wiederherstellungstest für nächsten Monat."
+        "title": "Plan recovery tests",
+        "description": "Test the recovery of critical systems at least quarterly.",
+        "firstStep": "Schedule a full backup recovery test for next month."
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "title": "Gibt es eine Cybersicherheitsstrategie und -governance?",
-          "description": "NIST CSF Govern: Steuerung der Cybersicherheit"
+          "title": "Is there a cybersecurity strategy and governance in place?",
+          "description": "NIST CSF Govern: Cybersecurity governance and oversight"
         },
         "q2": {
-          "title": "Ist ein vollständiges Asset-Inventar vorhanden?",
-          "description": "NIST CSF Identify: Kenntnis aller IT-Assets"
+          "title": "Is a comprehensive asset inventory maintained?",
+          "description": "NIST CSF Identify: Awareness of all IT assets"
         },
         "q3": {
-          "title": "Werden Cybersicherheitsrisiken systematisch bewertet?",
-          "description": "NIST CSF Identify: Risikobasierte Priorisierung"
+          "title": "Are cybersecurity risks systematically assessed?",
+          "description": "NIST CSF Identify: Risk-based prioritization"
         },
         "q4": {
-          "title": "Sind Zugangskontrolle und Verschlüsselung implementiert?",
-          "description": "NIST CSF Protect: Technische Schutzmaßnahmen"
+          "title": "Are access control and encryption implemented?",
+          "description": "NIST CSF Protect: Technical safeguards"
         },
         "q5": {
-          "title": "Erhalten Mitarbeiter regelmäßige Sicherheitsschulungen?",
-          "description": "NIST CSF Protect: Awareness und Training"
+          "title": "Do employees receive regular security training?",
+          "description": "NIST CSF Protect: Awareness and training"
         },
         "q6": {
-          "title": "Werden Systeme kontinuierlich auf Anomalien überwacht?",
-          "description": "NIST CSF Detect: Continuous Monitoring"
+          "title": "Are systems continuously monitored for anomalies?",
+          "description": "NIST CSF Detect: Continuous monitoring"
         },
         "q7": {
-          "title": "Gibt es einen getesteten Incident-Response-Plan?",
-          "description": "NIST CSF Respond: Vorbereitung auf Vorfälle"
+          "title": "Is there a tested incident response plan?",
+          "description": "NIST CSF Respond: Incident preparedness"
         },
         "q8": {
-          "title": "Gibt es getestete Wiederherstellungspläne?",
-          "description": "NIST CSF Recover: Geschäftskontinuität"
+          "title": "Are there tested recovery plans?",
+          "description": "NIST CSF Recover: Business continuity"
         }
       }
     }
@@ -14038,331 +14038,331 @@
     "fullName": "OWASP Application Security Verification Standard 4.0",
     "categories": {
       "authentication": {
-        "name": "Authentifizierung",
+        "name": "Authentication",
         "shortName": "Auth",
-        "description": "Passwort-Richtlinien, MFA, sichere Anmeldung"
+        "description": "Password policies, MFA, secure login"
       },
       "sessionMgmt": {
-        "name": "Session-Management",
+        "name": "Session Management",
         "shortName": "Sessions",
-        "description": "Sichere Session-Verwaltung, Token-Handling, Timeout"
+        "description": "Secure session handling, token management, timeout"
       },
       "accessControl": {
-        "name": "Zugriffskontrolle",
-        "shortName": "Zugriff",
-        "description": "Rollenbasierte Zugriffskontrolle, Least Privilege, RBAC"
+        "name": "Access Control",
+        "shortName": "Access",
+        "description": "Role-based access control, least privilege, RBAC"
       },
       "inputValidation": {
-        "name": "Eingabevalidierung",
-        "shortName": "Validierung",
-        "description": "Input-Sanitization, Output-Encoding, Injection-Prävention"
+        "name": "Input Validation",
+        "shortName": "Validation",
+        "description": "Input sanitization, output encoding, injection prevention"
       },
       "cryptography": {
-        "name": "Kryptographie",
-        "shortName": "Krypto",
-        "description": "Verschlüsselung, Hashing, Schlüsselmanagement"
+        "name": "Cryptography",
+        "shortName": "Crypto",
+        "description": "Encryption, hashing, key management"
       },
       "errorLogging": {
-        "name": "Fehlerbehandlung & Logging",
+        "name": "Error Handling & Logging",
         "shortName": "Logging",
-        "description": "Sichere Fehlerbehandlung, Security Logging, API-Sicherheit"
+        "description": "Secure error handling, security logging, API security"
       }
     },
     "questions": {
       "auQ1": {
-        "title": "Werden sichere Passwort-Richtlinien (Länge, Komplexität, Leak-Check) durchgesetzt?",
-        "tooltip": "OWASP ASVS V2.1: Passwort-Sicherheit",
-        "help": "Moderne Richtlinien bevorzugen Länge über Komplexität und prüfen gegen bekannte Leaks.",
+        "title": "Are secure password policies (length, complexity, leak checks) enforced?",
+        "tooltip": "OWASP ASVS V2.1: Password Security",
+        "help": "Modern policies favor length over complexity and check against known credential leaks.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "auQ2": {
-        "title": "Ist Multi-Faktor-Authentifizierung für alle Benutzerkonten verfügbar und aktiviert?",
+        "title": "Is multi-factor authentication available and enabled for all user accounts?",
         "tooltip": "OWASP ASVS V2.8: MFA",
-        "help": "MFA schützt auch bei kompromittierten Passwörtern.",
+        "help": "MFA provides protection even when passwords are compromised.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "auQ3": {
-        "title": "Werden Credential-Stuffing und Brute-Force-Angriffe aktiv erkannt und blockiert?",
-        "tooltip": "OWASP ASVS V2.2: Allgemeine Authentifizierung",
-        "help": "Rate Limiting und Account Lockout schützen vor automatisierten Angriffen.",
+        "title": "Are credential stuffing and brute-force attacks actively detected and blocked?",
+        "tooltip": "OWASP ASVS V2.2: General Authentication",
+        "help": "Rate limiting and account lockout protect against automated attacks.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "smQ1": {
-        "title": "Werden Session-Tokens sicher generiert, übertragen und gespeichert?",
-        "tooltip": "OWASP ASVS V3.1-3.3: Session-Management",
-        "help": "Sichere Session-Tokens verhindern Session-Hijacking.",
+        "title": "Are session tokens securely generated, transmitted, and stored?",
+        "tooltip": "OWASP ASVS V3.1-3.3: Session Management",
+        "help": "Secure session tokens prevent session hijacking.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "smQ2": {
-        "title": "Gibt es angemessene Session-Timeouts und Idle-Timeouts?",
-        "tooltip": "OWASP ASVS V3.3: Session-Timeout",
-        "help": "Timeouts begrenzen das Zeitfenster für Angreifer.",
+        "title": "Are appropriate session timeouts and idle timeouts configured?",
+        "tooltip": "OWASP ASVS V3.3: Session Timeout",
+        "help": "Timeouts limit the window of opportunity for attackers.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "smQ3": {
-        "title": "Werden Sessions bei Logout, Passwortänderung und nach Inaktivität korrekt beendet?",
-        "tooltip": "OWASP ASVS V3.3: Session-Terminierung",
-        "help": "Korrekte Session-Beendigung verhindert persistente Zugriffe.",
+        "title": "Are sessions properly terminated on logout, password change, and after inactivity?",
+        "tooltip": "OWASP ASVS V3.3: Session Termination",
+        "help": "Proper session termination prevents persistent unauthorized access.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "acQ1": {
-        "title": "Wird das Prinzip der minimalen Rechte (Least Privilege) konsequent angewendet?",
-        "tooltip": "OWASP ASVS V4.1: Zugriffskontrolle",
-        "help": "Benutzer sollten nur die Rechte haben, die sie für ihre Aufgabe benötigen.",
+        "title": "Is the principle of least privilege consistently applied?",
+        "tooltip": "OWASP ASVS V4.1: Access Control",
+        "help": "Users should only have the permissions required for their specific role.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "acQ2": {
-        "title": "Werden Zugriffskontrollen serverseitig und nicht nur clientseitig durchgesetzt?",
-        "tooltip": "OWASP ASVS V4.1: Serverseitige Kontrolle",
-        "help": "Clientseitige Kontrollen können leicht umgangen werden.",
+        "title": "Are access controls enforced server-side rather than only client-side?",
+        "tooltip": "OWASP ASVS V4.1: Server-Side Enforcement",
+        "help": "Client-side controls can be easily bypassed.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "acQ3": {
-        "title": "Ist IDOR-Schutz (Insecure Direct Object References) implementiert?",
-        "tooltip": "OWASP ASVS V4.2: IDOR-Prävention",
-        "help": "IDOR ermöglicht Zugriff auf fremde Daten durch Manipulation von Referenzen.",
+        "title": "Is protection against IDOR (Insecure Direct Object References) implemented?",
+        "tooltip": "OWASP ASVS V4.2: IDOR Prevention",
+        "help": "IDOR allows unauthorized access to other users' data through reference manipulation.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "ivQ1": {
-        "title": "Werden alle Benutzereingaben serverseitig validiert und sanitisiert?",
+        "title": "Are all user inputs validated and sanitized server-side?",
         "tooltip": "OWASP ASVS V5.1: Input Validation",
-        "help": "Serverseitige Validierung verhindert Injection-Angriffe.",
+        "help": "Server-side validation prevents injection attacks.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "ivQ2": {
-        "title": "Wird Output-Encoding kontextabhängig angewendet (HTML, JS, SQL, LDAP)?",
+        "title": "Is context-aware output encoding applied (HTML, JS, SQL, LDAP)?",
         "tooltip": "OWASP ASVS V5.3: Output Encoding",
-        "help": "Korrektes Output-Encoding verhindert XSS und andere Injection-Angriffe.",
+        "help": "Proper output encoding prevents XSS and other injection attacks.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "ivQ3": {
-        "title": "Werden parametrisierte Queries oder ORMs zum Schutz vor SQL-Injection verwendet?",
+        "title": "Are parameterized queries or ORMs used to protect against SQL injection?",
         "tooltip": "OWASP ASVS V5.3: SQL Injection",
-        "help": "Parametrisierte Queries sind der effektivste Schutz gegen SQL-Injection.",
+        "help": "Parameterized queries are the most effective defense against SQL injection.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "crQ1": {
-        "title": "Werden alle sensiblen Daten at-rest mit aktuellen Algorithmen verschlüsselt?",
-        "tooltip": "OWASP ASVS V6.1: Datenverschlüsselung",
-        "help": "AES-256 für at-rest, aktuelle TLS-Versionen für in-transit.",
+        "title": "Is all sensitive data encrypted at rest using current algorithms?",
+        "tooltip": "OWASP ASVS V6.1: Data Encryption",
+        "help": "AES-256 for data at rest, current TLS versions for data in transit.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "crQ2": {
-        "title": "Werden Passwörter mit sicheren Hashing-Algorithmen (bcrypt, Argon2) gespeichert?",
-        "tooltip": "OWASP ASVS V2.4: Passwort-Hashing",
-        "help": "Moderne Hashing-Algorithmen mit Salt und Stretching schützen Passwörter.",
+        "title": "Are passwords stored using secure hashing algorithms (bcrypt, Argon2)?",
+        "tooltip": "OWASP ASVS V2.4: Password Hashing",
+        "help": "Modern hashing algorithms with salt and stretching protect stored passwords.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "crQ3": {
-        "title": "Ist ein sicheres Schlüsselmanagement für kryptographische Schlüssel implementiert?",
-        "tooltip": "OWASP ASVS V6.4: Schlüsselmanagement",
-        "help": "Schlüssel sollten sicher generiert, gespeichert und rotiert werden.",
+        "title": "Is secure key management implemented for cryptographic keys?",
+        "tooltip": "OWASP ASVS V6.4: Key Management",
+        "help": "Keys should be securely generated, stored, and rotated.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "elQ1": {
-        "title": "Werden Fehlermeldungen ohne Preisgabe sensibler Informationen angezeigt?",
-        "tooltip": "OWASP ASVS V7.4: Fehlerbehandlung",
-        "help": "Stack-Traces und Systeminformationen in Fehlermeldungen helfen Angreifern.",
+        "title": "Are error messages displayed without exposing sensitive information?",
+        "tooltip": "OWASP ASVS V7.4: Error Handling",
+        "help": "Stack traces and system information in error messages assist attackers.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "elQ2": {
-        "title": "Werden alle sicherheitsrelevanten Ereignisse geloggt und überwacht?",
+        "title": "Are all security-relevant events logged and monitored?",
         "tooltip": "OWASP ASVS V7.1: Security Logging",
-        "help": "Logging ermöglicht die Erkennung und Nachverfolgung von Angriffen.",
+        "help": "Logging enables detection and investigation of attacks.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       },
       "elQ3": {
-        "title": "Sind APIs mit Authentifizierung, Rate Limiting und Input-Validierung geschützt?",
+        "title": "Are APIs secured with authentication, rate limiting, and input validation?",
         "tooltip": "OWASP ASVS V13: API Security",
-        "help": "APIs sind zunehmend Angriffsziel und brauchen spezifischen Schutz.",
+        "help": "APIs are increasingly targeted and require dedicated security measures.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Not present — no measures implemented",
+          "level1": "Basic — initial steps taken, not systematic",
+          "level2": "Partial — documented and regularly performed",
+          "level3": "Complete — systematic, automated, and regularly reviewed"
         }
       }
     },
     "recommendations": {
       "au1": {
-        "title": "Moderne Passwort-Policy einführen",
-        "description": "Implementieren Sie NIST-konforme Passwort-Richtlinien: Mindestlänge 12 Zeichen, Leak-Check, kein erzwungener Wechsel.",
-        "firstStep": "Prüfen Sie Ihre aktuelle Passwort-Policy gegen NIST SP 800-63B."
+        "title": "Implement modern password policy",
+        "description": "Adopt NIST-compliant password policies: minimum 12 characters, breach check, no forced rotation.",
+        "firstStep": "Review your current password policy against NIST SP 800-63B."
       },
       "au2": {
-        "title": "MFA flächendeckend aktivieren",
-        "description": "Aktivieren Sie TOTP oder WebAuthn/FIDO2 für alle Benutzerkonten.",
-        "firstStep": "Beginnen Sie mit Admin-Konten und Entwickler-Zugängen."
+        "title": "Enable MFA across the board",
+        "description": "Enable TOTP or WebAuthn/FIDO2 for all user accounts.",
+        "firstStep": "Start with admin accounts and developer access."
       },
       "sm1": {
-        "title": "Session-Security härten",
-        "description": "Implementieren Sie sichere Session-Konfiguration: HttpOnly, Secure, SameSite-Cookies, angemessene Timeouts.",
-        "firstStep": "Überprüfen Sie Ihre Cookie-Flags und setzen Sie HttpOnly und Secure."
+        "title": "Harden session security",
+        "description": "Implement secure session configuration: HttpOnly, Secure, SameSite cookies, appropriate timeouts.",
+        "firstStep": "Review your cookie flags and enable HttpOnly and Secure."
       },
       "ac1": {
-        "title": "RBAC implementieren",
-        "description": "Führen Sie rollenbasierte Zugriffskontrolle mit Least-Privilege-Prinzip ein.",
-        "firstStep": "Dokumentieren Sie alle Rollen und ihre benötigten Berechtigungen."
+        "title": "Implement RBAC",
+        "description": "Introduce role-based access control following the principle of least privilege.",
+        "firstStep": "Document all roles and their required permissions."
       },
       "ac2": {
-        "title": "Serverseitige Validierung sicherstellen",
-        "description": "Stellen Sie sicher, dass alle Zugriffskontrollen serverseitig durchgesetzt werden.",
-        "firstStep": "Reviewen Sie 5 kritische Endpoints auf fehlende serverseitige Kontrollen."
+        "title": "Ensure server-side enforcement",
+        "description": "Ensure all access controls are enforced server-side.",
+        "firstStep": "Review 5 critical endpoints for missing server-side controls."
       },
       "iv1": {
-        "title": "Input-Validation Framework einführen",
-        "description": "Implementieren Sie eine zentrale Input-Validation-Bibliothek für alle Benutzereingaben.",
-        "firstStep": "Identifizieren Sie alle Eingabepunkte und implementieren Sie Whitelist-Validierung."
+        "title": "Adopt an input validation framework",
+        "description": "Implement a centralized input validation library for all user inputs.",
+        "firstStep": "Identify all input points and implement whitelist validation."
       },
       "iv2": {
-        "title": "Prepared Statements durchsetzen",
-        "description": "Ersetzen Sie alle dynamischen SQL-Queries durch parametrisierte Statements.",
-        "firstStep": "Suchen Sie nach String-Konkatenation in SQL-Queries und ersetzen Sie diese."
+        "title": "Enforce prepared statements",
+        "description": "Replace all dynamic SQL queries with parameterized statements.",
+        "firstStep": "Search for string concatenation in SQL queries and replace them."
       },
       "cr1": {
-        "title": "Verschlüsselungsstrategie implementieren",
-        "description": "Verschlüsseln Sie alle sensiblen Daten at-rest und in-transit mit aktuellen Algorithmen.",
-        "firstStep": "Inventarisieren Sie alle Orte, an denen sensible Daten gespeichert werden."
+        "title": "Implement encryption strategy",
+        "description": "Encrypt all sensitive data at rest and in transit using current algorithms.",
+        "firstStep": "Inventory all locations where sensitive data is stored."
       },
       "cr2": {
-        "title": "Passwort-Hashing modernisieren",
-        "description": "Migrieren Sie zu bcrypt/Argon2 mit angemessenen Kostenfaktoren.",
-        "firstStep": "Prüfen Sie welchen Hashing-Algorithmus Ihre Anwendung aktuell verwendet."
+        "title": "Modernize password hashing",
+        "description": "Migrate to bcrypt/Argon2 with appropriate cost factors.",
+        "firstStep": "Check which hashing algorithm your application currently uses."
       },
       "el1": {
-        "title": "Sichere Fehlerbehandlung implementieren",
-        "description": "Zeigen Sie generische Fehlermeldungen an und loggen Sie Details nur serverseitig.",
-        "firstStep": "Suchen Sie nach Stack-Traces in Produktions-Responses und entfernen Sie diese."
+        "title": "Implement secure error handling",
+        "description": "Display generic error messages and log details only server-side.",
+        "firstStep": "Search for stack traces in production responses and remove them."
       },
       "el2": {
-        "title": "Security Logging aufbauen",
-        "description": "Loggen Sie alle sicherheitsrelevanten Ereignisse (Login, Fehler, Zugriffsverweigerungen).",
-        "firstStep": "Implementieren Sie Logging für fehlgeschlagene Login-Versuche und Berechtigungsfehler."
+        "title": "Establish security logging",
+        "description": "Log all security-relevant events (logins, errors, access denials).",
+        "firstStep": "Implement logging for failed login attempts and authorization errors."
       },
       "el3": {
-        "title": "API-Security implementieren",
-        "description": "Sichern Sie APIs mit Authentifizierung, Rate Limiting und Input-Validierung ab.",
-        "firstStep": "Implementieren Sie Rate Limiting auf allen öffentlichen API-Endpoints."
+        "title": "Implement API security",
+        "description": "Secure APIs with authentication, rate limiting, and input validation.",
+        "firstStep": "Implement rate limiting on all public API endpoints."
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "title": "Werden sichere Passwort-Richtlinien und MFA eingesetzt?",
-          "description": "OWASP ASVS V2: Authentifizierungssicherheit"
+          "title": "Are secure password policies and MFA in place?",
+          "description": "OWASP ASVS V2: Authentication Security"
         },
         "q2": {
-          "title": "Ist das Session-Management sicher konfiguriert?",
-          "description": "OWASP ASVS V3: Sichere Sessions"
+          "title": "Is session management securely configured?",
+          "description": "OWASP ASVS V3: Secure Sessions"
         },
         "q3": {
-          "title": "Wird Zugriffskontrolle serverseitig durchgesetzt?",
-          "description": "OWASP ASVS V4: Autorisierung"
+          "title": "Is access control enforced server-side?",
+          "description": "OWASP ASVS V4: Authorization"
         },
         "q4": {
-          "title": "Werden alle Eingaben serverseitig validiert?",
-          "description": "OWASP ASVS V5: Schutz vor Injection"
+          "title": "Are all inputs validated server-side?",
+          "description": "OWASP ASVS V5: Injection Prevention"
         },
         "q5": {
-          "title": "Werden parametrisierte Queries verwendet?",
-          "description": "OWASP ASVS V5: SQL-Injection-Prävention"
+          "title": "Are parameterized queries used?",
+          "description": "OWASP ASVS V5: SQL Injection Prevention"
         },
         "q6": {
-          "title": "Werden aktuelle Verschlüsselungsstandards eingesetzt?",
-          "description": "OWASP ASVS V6: Kryptographie"
+          "title": "Are current encryption standards in use?",
+          "description": "OWASP ASVS V6: Cryptography"
         },
         "q7": {
-          "title": "Sind Fehlermeldungen sicher und informationsarm?",
-          "description": "OWASP ASVS V7: Fehlerbehandlung"
+          "title": "Are error messages secure and information-lean?",
+          "description": "OWASP ASVS V7: Error Handling"
         },
         "q8": {
-          "title": "Werden APIs mit Rate Limiting und Auth geschützt?",
-          "description": "OWASP ASVS V13: API-Sicherheit"
+          "title": "Are APIs protected with rate limiting and authentication?",
+          "description": "OWASP ASVS V13: API Security"
         }
       }
     }
