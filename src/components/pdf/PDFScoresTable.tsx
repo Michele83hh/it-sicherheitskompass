@@ -13,27 +13,106 @@ const STATUS_LABELS: Record<string, Record<string, string>> = {
   en: { red: 'Critical', yellow: 'Partial', green: 'Fulfilled' },
 };
 
+// Bar chart constants
+const BAR_CHART_WIDTH = 460;
+const BAR_HEIGHT = 14;
+const BAR_GAP = 6;
+const LABEL_WIDTH = 180;
+const SCORE_WIDTH = 45;
+const BAR_AREA_WIDTH = BAR_CHART_WIDTH - LABEL_WIDTH - SCORE_WIDTH - 20;
+
 const PDFScoresTable = ({ categories, messages, locale }: PDFScoresTableProps) => {
   const labels = STATUS_LABELS[locale] || STATUS_LABELS.de;
 
   return (
     <View>
+      {/* ─── Visual Bar Chart Overview ─── */}
+      <View style={{ marginBottom: 20 }}>
+        {categories.map((cat, index) => {
+          const tlc = TRAFFIC_LIGHT_COLORS[cat.trafficLight];
+          const percentage = Math.round(cat.percentage);
+          const barWidth = Math.max(4, (percentage / 100) * BAR_AREA_WIDTH);
+
+          return (
+            <View
+              key={cat.categoryId}
+              wrap={false}
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                marginBottom: BAR_GAP,
+                gap: 8,
+              }}
+            >
+              {/* Category name */}
+              <Text style={{
+                fontSize: 9,
+                color: COLORS.gray700,
+                width: LABEL_WIDTH,
+                textAlign: 'right',
+                paddingRight: 8,
+              }}>
+                {cat.shortName}
+              </Text>
+
+              {/* Bar */}
+              <Svg
+                width={BAR_AREA_WIDTH}
+                height={BAR_HEIGHT}
+                viewBox={`0 0 ${BAR_AREA_WIDTH} ${BAR_HEIGHT}`}
+              >
+                {/* Background */}
+                <Rect
+                  x="0" y="0"
+                  width={`${BAR_AREA_WIDTH}`}
+                  height={`${BAR_HEIGHT}`}
+                  rx="3" ry="3"
+                  fill={COLORS.gray100}
+                />
+                {/* Filled portion */}
+                {percentage > 0 && (
+                  <Rect
+                    x="0" y="0"
+                    width={`${barWidth}`}
+                    height={`${BAR_HEIGHT}`}
+                    rx="3" ry="3"
+                    fill={tlc.dot}
+                  />
+                )}
+              </Svg>
+
+              {/* Percentage label */}
+              <Text style={{
+                fontSize: 10,
+                fontWeight: 700,
+                color: tlc.text,
+                width: SCORE_WIDTH,
+                textAlign: 'right',
+              }}>
+                {percentage}%
+              </Text>
+            </View>
+          );
+        })}
+      </View>
+
+      {/* ─── Detailed Table ─── */}
       {/* Table header */}
       <View style={{
         flexDirection: 'row',
-        backgroundColor: COLORS.gray100,
-        paddingVertical: 6,
-        paddingHorizontal: 8,
-        borderBottom: `1.5 solid ${COLORS.gray300}`,
+        backgroundColor: COLORS.slate900,
+        paddingVertical: 7,
+        paddingHorizontal: 10,
+        borderRadius: 4,
       }}>
-        <Text style={{ fontSize: 8, fontWeight: 700, color: COLORS.gray700, width: 22 }}>Nr.</Text>
-        <Text style={{ fontSize: 8, fontWeight: 700, color: COLORS.gray700, flex: 1 }}>
+        <Text style={{ fontSize: 9, fontWeight: 700, color: COLORS.white, width: 24 }}>Nr.</Text>
+        <Text style={{ fontSize: 9, fontWeight: 700, color: COLORS.white, flex: 1 }}>
           {messages['pdf.categoryTableHeaders.category'] || 'Maßnahmenbereich'}
         </Text>
-        <Text style={{ fontSize: 8, fontWeight: 700, color: COLORS.gray700, width: 90, textAlign: 'center' }}>
+        <Text style={{ fontSize: 9, fontWeight: 700, color: COLORS.white, width: 90, textAlign: 'center' }}>
           {messages['pdf.categoryTableHeaders.score'] || 'Score'}
         </Text>
-        <Text style={{ fontSize: 8, fontWeight: 700, color: COLORS.gray700, width: 70, textAlign: 'center' }}>
+        <Text style={{ fontSize: 9, fontWeight: 700, color: COLORS.white, width: 70, textAlign: 'center' }}>
           {messages['pdf.categoryTableHeaders.status'] || 'Status'}
         </Text>
       </View>
@@ -52,30 +131,32 @@ const PDFScoresTable = ({ categories, messages, locale }: PDFScoresTableProps) =
             style={{
               flexDirection: 'row',
               alignItems: 'center',
-              paddingVertical: 7,
-              paddingHorizontal: 8,
+              paddingVertical: 8,
+              paddingHorizontal: 10,
               borderBottom: `0.5 solid ${COLORS.gray200}`,
               backgroundColor: isEven ? COLORS.white : COLORS.gray50,
             }}
           >
             {/* Nr. */}
-            <Text style={{ fontSize: 9, fontWeight: 700, width: 22, color: COLORS.gray500 }}>
+            <Text style={{ fontSize: 10, fontWeight: 700, width: 24, color: COLORS.gray500 }}>
               {index + 1}
             </Text>
 
             {/* Category name + legal reference below */}
             <View style={{ flex: 1, paddingRight: 8 }}>
-              <Text style={{ fontSize: 9, fontWeight: 600, color: COLORS.gray900 }}>
+              <Text style={{ fontSize: 10, fontWeight: 600, color: COLORS.gray900 }}>
                 {cat.shortName}
               </Text>
-              <Text style={{ fontSize: 7, color: COLORS.gray500, marginTop: 2 }}>
-                {cat.euArticle} · {cat.bsigParagraph}
-              </Text>
+              {(cat.euArticle || cat.bsigParagraph) && (
+                <Text style={{ fontSize: 7, color: COLORS.gray500, marginTop: 2 }}>
+                  {[cat.euArticle, cat.bsigParagraph].filter(Boolean).join(' · ')}
+                </Text>
+              )}
             </View>
 
             {/* Score: percentage + SVG bar */}
             <View style={{ width: 90, alignItems: 'center' }}>
-              <Text style={{ fontSize: 10, fontWeight: 700, color: COLORS.gray900, marginBottom: 3 }}>
+              <Text style={{ fontSize: 11, fontWeight: 700, color: COLORS.gray900, marginBottom: 3 }}>
                 {percentage}%
               </Text>
               <Svg width={80} height={6} viewBox="0 0 80 6">

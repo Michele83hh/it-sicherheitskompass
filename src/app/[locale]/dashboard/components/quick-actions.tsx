@@ -76,7 +76,7 @@ export function QuickActions({ data }: QuickActionsProps) {
     setIsGenerating(true);
 
     try {
-      const XLSX = await import('xlsx');
+      const ExcelJS = await import('exceljs');
       const timestamp = new Date().toISOString().split('T')[0];
 
       const trafficLightLabel: Record<TrafficLight, string> = de
@@ -107,27 +107,95 @@ export function QuickActions({ data }: QuickActionsProps) {
 
       const getProgress = (recId: string) => progressItems.find((p) => p.recommendationId === recId);
 
-      const formatDate = (iso: string | undefined) => {
-        if (!iso) return '';
-        try {
-          return new Date(iso).toLocaleDateString(de ? 'de-DE' : 'en-US', { day: '2-digit', month: '2-digit', year: 'numeric' });
-        } catch { return iso; }
+      // Styling constants
+      const SLATE_900 = '0F172A';
+      const PRIMARY_COL = '1E40AF';
+      const GRAY_50_COL = 'F9FAFB';
+      const GRAY_100_COL = 'F3F4F6';
+      const GRAY_200_COL = 'E5E7EB';
+
+      const headerFillStyle = { type: 'pattern' as const, pattern: 'solid' as const, fgColor: { argb: SLATE_900 } };
+      const headerFontStyle = { bold: true, color: { argb: 'FFFFFFFF' }, size: 11 };
+      const subHeaderFillStyle = { type: 'pattern' as const, pattern: 'solid' as const, fgColor: { argb: PRIMARY_COL } };
+      const subHeaderFontStyle = { bold: true, color: { argb: 'FFFFFFFF' }, size: 10 };
+      const thinBorderStyle = {
+        top: { style: 'thin' as const, color: { argb: GRAY_200_COL } },
+        bottom: { style: 'thin' as const, color: { argb: GRAY_200_COL } },
+        left: { style: 'thin' as const, color: { argb: GRAY_200_COL } },
+        right: { style: 'thin' as const, color: { argb: GRAY_200_COL } },
+      };
+      const altRowFillStyle = { type: 'pattern' as const, pattern: 'solid' as const, fgColor: { argb: GRAY_50_COL } };
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const styleHeader = (row: any) => {
+        row.eachCell((cell: any) => {
+          cell.fill = subHeaderFillStyle;
+          cell.font = subHeaderFontStyle;
+          cell.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
+          cell.border = thinBorderStyle;
+        });
+        row.height = 28;
       };
 
-      const wb = XLSX.utils.book_new();
+      const tlFill = (tl: TrafficLight) => ({
+        type: 'pattern' as const, pattern: 'solid' as const,
+        fgColor: { argb: tl === 'red' ? 'FEF2F2' : tl === 'yellow' ? 'FEFCE8' : 'F0FDF4' },
+      });
+      const tlFont = (tl: TrafficLight) => ({
+        bold: true,
+        color: { argb: tl === 'red' ? 'DC2626' : tl === 'yellow' ? 'CA8A04' : '16A34A' },
+      });
+
+      const wb = new ExcelJS.Workbook();
+      wb.creator = 'IT-Sicherheitskompass';
 
       // ===== Sheet 1: Uebersicht =====
-      const overviewData: (string | number)[][] = [
-        [de ? 'IT-Sicherheitskompass — Dashboard Export' : 'IT Security Compass — Dashboard Export', '', ''],
-        [de ? 'Erstellt am' : 'Generated on', timestamp, ''],
-        [de ? 'Regelwerke' : 'Regulations', selectedRegs.size.toString(), ''],
-        [de ? 'Gesamtscore' : 'Overall Score', `${data.overallScore}%`, ''],
-        ['', '', ''],
-      ];
+      const ws1 = wb.addWorksheet(de ? 'Uebersicht' : 'Overview');
+      ws1.columns = [{ width: 45 }, { width: 20 }, { width: 25 }];
+
+      // Title
+      ws1.mergeCells('A1:C1');
+      const titleCell = ws1.getCell('A1');
+      titleCell.value = de ? 'IT-Sicherheitskompass — Dashboard Export' : 'IT Security Compass — Dashboard Export';
+      titleCell.fill = headerFillStyle;
+      titleCell.font = { ...headerFontStyle, size: 14 };
+      titleCell.alignment = { vertical: 'middle', horizontal: 'center' };
+      ws1.getRow(1).height = 36;
+
+      let row = 3;
+      const addLabelValue = (label: string, val: string | number) => {
+        ws1.getCell(`A${row}`).value = label;
+        ws1.getCell(`A${row}`).font = { bold: true, size: 10 };
+        ws1.getCell(`B${row}`).value = val;
+        ws1.getRow(row).border = thinBorderStyle;
+        row++;
+      };
+
+      addLabelValue(de ? 'Erstellt am' : 'Generated on', timestamp);
+      addLabelValue(de ? 'Regelwerke' : 'Regulations', selectedRegs.size);
+      addLabelValue(de ? 'Gesamtscore' : 'Overall Score', `${data.overallScore}%`);
+      row++;
 
       // Per-regulation summary
-      overviewData.push([de ? '─── Regelwerk-Scores ───' : '─── Regulation Scores ───', '', '']);
-      overviewData.push([de ? 'Regelwerk' : 'Regulation', 'Score', de ? 'Bewertung' : 'Assessment']);
+      ws1.mergeCells(`A${row}:C${row}`);
+      const regScoreHeader = ws1.getCell(`A${row}`);
+      regScoreHeader.value = de ? 'Regelwerk-Scores' : 'Regulation Scores';
+      regScoreHeader.fill = subHeaderFillStyle;
+      regScoreHeader.font = subHeaderFontStyle;
+      ws1.getRow(row).height = 24;
+      row++;
+
+      // Column headers
+      ws1.getCell(`A${row}`).value = de ? 'Regelwerk' : 'Regulation';
+      ws1.getCell(`B${row}`).value = 'Score';
+      ws1.getCell(`C${row}`).value = de ? 'Bewertung' : 'Assessment';
+      const colHdrRow = ws1.getRow(row);
+      colHdrRow.eachCell((cell: any) => {
+        cell.font = { bold: true, size: 10 };
+        cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: GRAY_100_COL } };
+        cell.border = thinBorderStyle;
+      });
+      row++;
 
       for (const regId of selectedRegs) {
         const reg = data.regulations.find((r) => r.id === regId);
@@ -141,10 +209,8 @@ export function QuickActions({ data }: QuickActionsProps) {
           totalQuestions: cat.questions.length,
         }));
 
-        // Re-read answers for this reg
         let answers: Answer[] = [];
         try {
-          const meta = data.regulations.find((r) => r.id === regId);
           const storageKeys: Record<string, string> = {
             'nis2': 'nis2-gap-analysis-storage',
             'dsgvo': 'dsgvo-assessment-storage',
@@ -166,20 +232,31 @@ export function QuickActions({ data }: QuickActionsProps) {
         } catch { /* ignore */ }
 
         const overall = calculateOverallScore(answers, catInfo);
-        overviewData.push([label, `${Math.round(overall.percentage)}%`, trafficLightLabel[overall.trafficLight]]);
+        ws1.getCell(`A${row}`).value = label;
+        ws1.getCell(`B${row}`).value = `${Math.round(overall.percentage)}%`;
+        ws1.getCell(`B${row}`).alignment = { horizontal: 'center' };
+        ws1.getCell(`C${row}`).value = trafficLightLabel[overall.trafficLight];
+        ws1.getCell(`C${row}`).fill = tlFill(overall.trafficLight);
+        ws1.getCell(`C${row}`).font = tlFont(overall.trafficLight);
+        ws1.getRow(row).border = thinBorderStyle;
+        row++;
       }
 
-      const ws1 = XLSX.utils.aoa_to_sheet(overviewData);
-      ws1['!cols'] = [{ wch: 45 }, { wch: 20 }, { wch: 25 }];
-      XLSX.utils.book_append_sheet(wb, ws1, de ? 'Uebersicht' : 'Overview');
-
       // ===== Sheet 2: Alle Empfehlungen =====
+      const ws2 = wb.addWorksheet(de ? 'Empfehlungen' : 'Recommendations');
       const recHeaders = de
         ? ['Regelwerk', 'Kategorie', 'Empfehlung', 'Prioritaet', 'Aufwand', 'Status', 'Rechtsgrundlage']
         : ['Regulation', 'Category', 'Recommendation', 'Priority', 'Effort', 'Status', 'Legal Basis'];
+      ws2.columns = [
+        { width: 15 }, { width: 25 }, { width: 40 }, { width: 12 },
+        { width: 24 }, { width: 14 }, { width: 30 },
+      ];
 
-      const recRows: string[][] = [];
+      const recHdrRow = ws2.addRow(recHeaders);
+      styleHeader(recHdrRow);
+      ws2.views = [{ state: 'frozen', ySplit: 1, xSplit: 0 }];
 
+      let recIdx = 0;
       for (const regId of selectedRegs) {
         const config = getRegulation(regId as RegulationId);
         if (!config) continue;
@@ -189,7 +266,7 @@ export function QuickActions({ data }: QuickActionsProps) {
           const catName = t(cat.nameKey);
           for (const rec of config.recommendations.filter((r) => r.categoryId === cat.id)) {
             const prog = getProgress(rec.id);
-            recRows.push([
+            const dataRow = ws2.addRow([
               label,
               catName,
               t(rec.titleKey),
@@ -198,14 +275,22 @@ export function QuickActions({ data }: QuickActionsProps) {
               statusLabel[prog?.status || 'not-started'] || 'Offen',
               rec.legalReference,
             ]);
+            if (recIdx % 2 === 1) {
+              dataRow.eachCell((cell: any) => { cell.fill = altRowFillStyle; });
+            }
+            // Priority coloring
+            const pCell = dataRow.getCell(4);
+            const pKey = rec.priority;
+            pCell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: pKey === 'high' ? 'FEF2F2' : pKey === 'medium' ? 'FEFCE8' : 'F0FDF4' } };
+            pCell.font = { bold: true, color: { argb: pKey === 'high' ? 'DC2626' : pKey === 'medium' ? 'CA8A04' : '16A34A' } };
+            pCell.alignment = { horizontal: 'center' };
+            dataRow.border = thinBorderStyle;
+            dataRow.alignment = { vertical: 'top', wrapText: true };
+            recIdx++;
           }
         }
       }
-
-      const ws2 = XLSX.utils.aoa_to_sheet([recHeaders, ...recRows]);
-      ws2['!cols'] = [{ wch: 15 }, { wch: 25 }, { wch: 40 }, { wch: 10 }, { wch: 22 }, { wch: 12 }, { wch: 30 }];
-      ws2['!autofilter'] = { ref: `A1:G${recRows.length + 1}` };
-      XLSX.utils.book_append_sheet(wb, ws2, de ? 'Empfehlungen' : 'Recommendations');
+      ws2.autoFilter = { from: 'A1', to: `G${recIdx + 1}` };
 
       // ===== Sheet 3: Cross-Regulation =====
       const crossHeaders = de
@@ -230,16 +315,35 @@ export function QuickActions({ data }: QuickActionsProps) {
       }
 
       if (crossRows.length > 0) {
-        const ws3 = XLSX.utils.aoa_to_sheet([crossHeaders, ...crossRows]);
-        ws3['!cols'] = [{ wch: 40 }, { wch: 15 }, { wch: 40 }];
-        XLSX.utils.book_append_sheet(wb, ws3, 'Cross-Regulation');
+        const ws3 = wb.addWorksheet('Cross-Regulation');
+        ws3.columns = [{ width: 40 }, { width: 15 }, { width: 40 }];
+        const crossHdrRow = ws3.addRow(crossHeaders);
+        styleHeader(crossHdrRow);
+        ws3.views = [{ state: 'frozen', ySplit: 1, xSplit: 0 }];
+        crossRows.forEach((rowData, idx) => {
+          const dataRow = ws3.addRow(rowData);
+          if (idx % 2 === 1) {
+            dataRow.eachCell((cell: any) => { cell.fill = altRowFillStyle; });
+          }
+          dataRow.border = thinBorderStyle;
+          dataRow.alignment = { vertical: 'top', wrapText: true };
+        });
       }
 
       // Download
       const filename = selectedRegs.size === 1
         ? `${REGULATION_LABELS[[...selectedRegs][0] as RegulationId] || 'Report'}-${timestamp}.xlsx`
         : `IT-Sicherheitskompass-Report-${timestamp}.xlsx`;
-      XLSX.writeFile(wb, filename);
+      const buffer = await wb.xlsx.writeBuffer();
+      const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      window.URL.revokeObjectURL(url);
     } catch (err) {
       console.error('Dashboard Excel export failed:', err);
     } finally {

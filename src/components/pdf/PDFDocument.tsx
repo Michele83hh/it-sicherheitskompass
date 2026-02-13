@@ -2,6 +2,7 @@ import { Document, Page, Text, View } from '@react-pdf/renderer';
 import { styles, COLORS } from '@/lib/pdf/styles';
 import type { PDFPayload } from '@/lib/pdf/types';
 import PDFCoverPage from './PDFCoverPage';
+import PDFTableOfContents from './PDFTableOfContents';
 import PDFExecutiveSummarySection from './PDFExecutiveSummary';
 import PDFScoresTable from './PDFScoresTable';
 import PDFRecommendations from './PDFRecommendations';
@@ -75,18 +76,18 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
         <View style={{
           backgroundColor: COLORS.primary,
-          width: 24,
-          height: 24,
-          borderRadius: 12,
+          width: 26,
+          height: 26,
+          borderRadius: 13,
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-          <Text style={{ fontSize: 11, fontWeight: 700, color: COLORS.white }}>{number}</Text>
+          <Text style={{ fontSize: 12, fontWeight: 700, color: COLORS.white }}>{number}</Text>
         </View>
         <Text style={styles.pageHeader}>{title}</Text>
       </View>
       {subtitle && (
-        <Text style={{ fontSize: 7, color: COLORS.gray500, marginTop: 4, marginLeft: 32 }}>
+        <Text style={{ fontSize: 8, color: COLORS.gray500, marginTop: 4, marginLeft: 34 }}>
           {subtitle}
         </Text>
       )}
@@ -100,7 +101,7 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
       author={footerLabel}
       subject={`${payload.regulationName || 'NIS2'} Readiness Assessment Report`}
     >
-      {/* ─── Page 1: Cover (Banner + Score + Company Profile + Disclaimer) ─── */}
+      {/* ─── Page 1: Cover (Dark Header Band + Score + Company Profile + Disclaimer) ─── */}
       <Page size="A4" style={styles.page}>
         <PDFCoverPage
           messages={messages}
@@ -109,6 +110,28 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
           company={company}
           overallScore={overallScore}
           analysisDepth={analysisDepth}
+        />
+
+        <Footer />
+      </Page>
+
+      {/* ─── Page 2: Table of Contents ─── */}
+      <Page size="A4" style={styles.page}>
+        <PDFTableOfContents
+          messages={messages}
+          locale={locale}
+          sectionNumbers={sectionNumbers}
+          hasExecutiveSummary={!!executiveSummary}
+          hasPenalty={!!penalty}
+          hasCostSummary={!!costSummary}
+          hasRoadmap={!!roadmap}
+          hasSectorGuidance={!!sectorGuidance}
+          hasDsgvoOverlap={!!dsgvoOverlap}
+          hasIso27001={!!iso27001}
+          hasDinSpec={!!dinSpec}
+          hasEvidence={!!evidence}
+          hasKritis={!!isKritis}
+          hasProgress={!!progress}
         />
 
         <Footer />

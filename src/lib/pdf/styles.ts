@@ -10,6 +10,11 @@ export const COLORS = {
   yellowBg: '#fefce8',
   green: '#16a34a',
   greenBg: '#f0fdf4',
+  emerald500: '#10b981',
+  emeraldBg: '#ecfdf5',
+  slate900: '#0f172a',
+  slate800: '#1e293b',
+  slate300: '#cbd5e1',
   gray50: '#f9fafb',
   gray100: '#f3f4f6',
   gray200: '#e5e7eb',
@@ -29,9 +34,9 @@ export const TRAFFIC_LIGHT_COLORS: Record<string, { bg: string; text: string; do
 export const styles = StyleSheet.create({
   page: {
     fontFamily: 'Inter',
-    fontSize: 10,
-    paddingTop: 40,
-    paddingBottom: 50,
+    fontSize: 11,
+    paddingTop: 48,
+    paddingBottom: 56,
     paddingLeft: 40,
     paddingRight: 40,
     color: COLORS.gray900,
@@ -50,7 +55,7 @@ export const styles = StyleSheet.create({
   },
   // Sections
   sectionTitle: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: 700,
     color: COLORS.gray900,
     marginBottom: 8,
@@ -102,6 +107,10 @@ export const styles = StyleSheet.create({
   bold: {
     fontWeight: 700,
   },
+  // SemiBold text
+  semiBold: {
+    fontWeight: 600,
+  },
   // Label-value pair
   labelValue: {
     flexDirection: 'row',
@@ -136,36 +145,37 @@ export const styles = StyleSheet.create({
     padding: 8,
     borderBottom: `1 solid ${COLORS.gray300}`,
     fontWeight: 700,
-    fontSize: 9,
+    fontSize: 10,
   },
   tableRow: {
     flexDirection: 'row',
     padding: 8,
     borderBottom: `1 solid ${COLORS.gray200}`,
-    fontSize: 9,
+    fontSize: 10,
   },
   tableCell: {
-    fontSize: 9,
+    fontSize: 10,
   },
   // Recommendation card
   recCard: {
-    marginBottom: 12,
+    marginBottom: 20,
     borderLeft: `3 solid ${COLORS.primary}`,
-    paddingLeft: 8,
+    paddingLeft: 10,
+    paddingVertical: 4,
   },
   recTitle: {
-    fontSize: 11,
+    fontSize: 12,
     fontWeight: 700,
     color: COLORS.gray900,
     marginBottom: 4,
   },
   recDescription: {
-    fontSize: 9,
+    fontSize: 10,
     color: COLORS.gray700,
     marginBottom: 4,
   },
   recFirstStep: {
-    fontSize: 9,
+    fontSize: 10,
     color: COLORS.gray900,
     marginBottom: 4,
   },
@@ -175,9 +185,9 @@ export const styles = StyleSheet.create({
     marginTop: 4,
   },
   badge: {
-    fontSize: 7,
-    paddingHorizontal: 6,
-    paddingVertical: 2,
+    fontSize: 8,
+    paddingHorizontal: 7,
+    paddingVertical: 3,
     borderRadius: 3,
   },
   // Horizontal rule
@@ -187,14 +197,14 @@ export const styles = StyleSheet.create({
   },
   // Page-level section header (themed pages in additional analysis)
   pageHeader: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: 700,
     color: COLORS.primary,
     marginBottom: 4,
   },
   // Sub-section title (within a section, smaller than sectionTitle)
   subSectionTitle: {
-    fontSize: 11,
+    fontSize: 12,
     fontWeight: 700,
     color: COLORS.gray900,
     marginBottom: 6,

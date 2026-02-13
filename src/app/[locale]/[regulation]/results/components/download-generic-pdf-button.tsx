@@ -9,7 +9,7 @@ import { useRegulationStores } from '@/hooks/useRegulationStores';
 import { useProgressStore } from '@/stores/progress-store';
 import { calculateOverallScore } from '@/lib/scoring/engine';
 import type { OverallScore } from '@/lib/regulations/types';
-import type { PDFPayload, PDFCategoryResult, PDFRecommendation } from '@/lib/pdf/types';
+import type { PDFPayload, PDFCategoryResult, PDFRecommendation, PDFRoadmapPhase } from '@/lib/pdf/types';
 import { Download, Loader2 } from 'lucide-react';
 
 interface DownloadGenericPdfButtonProps {
@@ -299,6 +299,46 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
       messages['pdf.executive.optionC.title'] = tPdf('executive.optionC.title');
       messages['pdf.executive.optionC.text'] = tPdf('executive.optionC.text');
 
+      // Build roadmap from effort levels
+      const phaseLabels = locale === 'de'
+        ? ['Phase 1: Sofortmaßnahmen', 'Phase 2: Kernmaßnahmen', 'Phase 3: Strategische Maßnahmen']
+        : ['Phase 1: Immediate Actions', 'Phase 2: Core Measures', 'Phase 3: Strategic Measures'];
+      const phaseDescs = locale === 'de'
+        ? ['Quick Wins — ohne externes Budget umsetzbar', 'Mittelfristige Verbesserungen in 3–6 Monaten', 'Langfristige strategische Investitionen']
+        : ['Quick wins — implementable without external budget', 'Medium-term improvements in 3–6 months', 'Long-term strategic investments'];
+      const phaseTimeframes = locale === 'de'
+        ? ['0–3 Monate', '3–6 Monate', '6–12 Monate']
+        : ['0–3 months', '3–6 months', '6–12 months'];
+      const effortToPhase: Record<string, number> = { quick: 0, medium: 1, strategic: 2 };
+      const urgencyMap: Record<string, string> = { high: 'critical', medium: 'high', low: 'medium' };
+
+      const roadmapBuckets: PDFRoadmapPhase[] = [0, 1, 2].map((i) => ({
+        title: phaseLabels[i],
+        description: phaseDescs[i],
+        timeframe: phaseTimeframes[i],
+        itemCount: 0,
+        items: [],
+      }));
+
+      for (const rec of allRecommendations) {
+        const phaseIdx = effortToPhase[rec.effortLevel] ?? 2;
+        roadmapBuckets[phaseIdx].items.push({
+          title: rec.title,
+          urgency: urgencyMap[rec.priority] || 'medium',
+        });
+        roadmapBuckets[phaseIdx].itemCount++;
+      }
+
+      // Roadmap messages
+      messages['pdf.roadmap.title'] = locale === 'de' ? 'Umsetzungsfahrplan' : 'Implementation Roadmap';
+      messages['pdf.roadmap.subtitle'] = locale === 'de'
+        ? 'Strukturierter Drei-Phasen-Plan'
+        : 'Structured three-phase plan';
+      messages['pdf.roadmap.timelineTitle'] = locale === 'de' ? 'Zeitplan' : 'Timeline';
+
+      // Filter out empty phases
+      const roadmapPhases = roadmapBuckets.filter(p => p.items.length > 0);
+
       // Build payload
       const payload: PDFPayload = {
         locale,
@@ -327,6 +367,7 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
           quickWins: quickWinItems,
           basisschutzTotal: { min: 0, max: 0 },
         },
+        roadmap: roadmapPhases.length > 0 ? { phases: roadmapPhases } : undefined,
         progress: progressData,
       };
 
