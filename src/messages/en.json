@@ -7489,6 +7489,22 @@
       "title": "BSI C5 Compliance Check",
       "subtitle": "Does your cloud service meet BSI C5:2020 requirements? Check your cloud security measures against the BSI criteria catalogue.",
       "cta": "Start C5 Check"
+    },
+    "cis-controls": {
+      "title": "CIS Controls v8",
+      "subtitle": "18 prioritized security measures by the Center for Internet Security — the pragmatic entry point into technical IT security."
+    },
+    "iso22301": {
+      "title": "ISO 22301 — Business Continuity",
+      "subtitle": "Systematic BCM for business continuity: BIA, emergency plans and recovery strategies according to ISO 22301:2019."
+    },
+    "nist-csf": {
+      "title": "NIST Cybersecurity Framework 2.0",
+      "subtitle": "The world's leading cybersecurity framework — with 6 functions: Govern, Identify, Protect, Detect, Respond, Recover."
+    },
+    "owasp-asvs": {
+      "title": "OWASP ASVS 4.0",
+      "subtitle": "Security standard for web applications and APIs — verification levels L1 to L3 for developers and security teams."
     }
   },
   "pillars": {

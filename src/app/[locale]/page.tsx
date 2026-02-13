@@ -13,14 +13,22 @@ import {
   Search,
   ClipboardCheck,
   Target,
+  Award,
+  BadgeCheck,
+  CreditCard,
+  Cloud,
+  ShieldCheck,
+  LifeBuoy,
+  Flag,
+  Bug,
 } from 'lucide-react';
-import { getAllRegulations } from '@/lib/regulations/registry';
+import { getRegulation } from '@/lib/regulations/registry';
 import '@/lib/regulations/init';
 
 /* ─── Icon & Style Maps ─── */
 
 const REG_ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
-  Shield, Lock, Building2, Landmark, Car, Cpu, BookOpen,
+  Shield, Lock, Building2, Landmark, Car, Cpu, BookOpen, Award, BadgeCheck, CreditCard, Cloud, ShieldCheck, LifeBuoy, Flag, Bug,
 };
 
 const REG_STYLE: Record<string, { text: string; bg: string }> = {
@@ -31,7 +39,29 @@ const REG_STYLE: Record<string, { text: string; bg: string }> = {
   tisax:             { text: 'text-violet-400',  bg: 'bg-violet-500/10' },
   cra:               { text: 'text-cyan-400',    bg: 'bg-cyan-500/10' },
   'bsi-grundschutz': { text: 'text-slate-400',   bg: 'bg-slate-500/10' },
+  iso27001:          { text: 'text-sky-400',     bg: 'bg-sky-500/10' },
+  soc2:              { text: 'text-indigo-400',  bg: 'bg-indigo-500/10' },
+  'pci-dss':         { text: 'text-orange-400',  bg: 'bg-orange-500/10' },
+  c5:                { text: 'text-teal-400',    bg: 'bg-teal-500/10' },
+  'cis-controls':    { text: 'text-sky-400',     bg: 'bg-sky-500/10' },
+  iso22301:          { text: 'text-orange-400',  bg: 'bg-orange-500/10' },
+  'nist-csf':        { text: 'text-indigo-400',  bg: 'bg-indigo-500/10' },
+  'owasp-asvs':      { text: 'text-lime-400',   bg: 'bg-lime-500/10' },
 };
+
+/**
+ * Sorted regulation order — grouped by category:
+ * 1. Gesetzlich (EU/DE): NIS2, DSGVO, KRITIS, DORA, CRA
+ * 2. Management-Frameworks: ISO 27001, BSI IT-Grundschutz, NIST CSF, ISO 22301
+ * 3. Branchenstandards: TISAX, PCI DSS, SOC 2, C5
+ * 4. Technische Baselines: CIS Controls, OWASP ASVS
+ */
+const REG_ORDER: string[] = [
+  'nis2', 'dsgvo', 'kritis', 'dora', 'cra',
+  'iso27001', 'bsi-grundschutz', 'nist-csf', 'iso22301',
+  'tisax', 'pci-dss', 'soc2', 'c5',
+  'cis-controls', 'owasp-asvs',
+];
 
 /* ─── Step Icons ─── */
 
@@ -43,7 +73,9 @@ export default function HubPage() {
   const t = useTranslations('platform.hub');
   const tReg = useTranslations();
 
-  const regulations = getAllRegulations();
+  const regulations = REG_ORDER
+    .map(id => getRegulation(id))
+    .filter((r): r is NonNullable<typeof r> => r != null);
 
   return (
     <div className="bg-white">
@@ -128,7 +160,7 @@ export default function HubPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          REGELWERKE — Original (alle 11)
+          REGELWERKE — Sortiert nach Kategorien (15 Regelwerke)
          ══════════════════════════════════════════════════════ */}
       <section className="border-t border-slate-100">
         <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
@@ -136,7 +168,7 @@ export default function HubPage() {
             {t('directAccessTitle')}
           </h2>
 
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {regulations.map((reg) => {
               const s = REG_STYLE[reg.id] || REG_STYLE.nis2;
               const Icon = REG_ICON_MAP[reg.icon] || Shield;
@@ -144,20 +176,17 @@ export default function HubPage() {
                 <Link
                   key={reg.id}
                   href={`/${reg.id}` as any}
-                  className="group flex items-center gap-3 rounded-lg border border-slate-200 bg-white p-3 transition-colors hover:border-slate-300 hover:bg-slate-50"
+                  className="group flex items-center gap-2.5 rounded-lg border border-slate-200 bg-white px-3 py-2.5 transition-colors hover:border-slate-300 hover:bg-slate-50"
                 >
-                  <div className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg ${s.bg}`}>
+                  <div className={`flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg ${s.bg}`}>
                     <Icon className={`size-4 ${s.text}`} />
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-semibold text-foreground truncate">
                       {tReg(reg.nameKey)}
                     </p>
-                    <p className="text-[11px] text-muted-foreground">
-                      {t('regulationQuestions', { count: reg.questions.length })}
-                    </p>
                   </div>
-                  <ArrowRight className="size-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+                  <ArrowRight className="size-3.5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                 </Link>
               );
             })}

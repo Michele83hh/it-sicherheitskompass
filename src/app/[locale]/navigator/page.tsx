@@ -442,14 +442,14 @@ export default function NavigatorPage() {
     <div>
       {/* Header */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800">
-        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem]">
-          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
-            <Compass className="size-7 text-white" />
+        <div className="mx-auto max-w-5xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8 text-center flex flex-col items-center justify-center">
+          <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
+            <Compass className="size-6 text-white" />
           </div>
-          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
             {t('title')}
           </h1>
-          <p className="mt-4 text-lg text-slate-300">
+          <p className="mt-2 text-base text-slate-300 whitespace-nowrap">
             {t('subtitle')}
           </p>
         </div>

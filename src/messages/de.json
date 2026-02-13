@@ -7543,6 +7543,22 @@
       "title": "BSI C5-Compliance pruefen",
       "subtitle": "Erfuellt Ihr Cloud-Dienst die Anforderungen des BSI C5:2020? Pruefen Sie Ihre Cloud-Sicherheitsmassnahmen gegen den BSI-Kriterienkatalog.",
       "cta": "C5-Check starten"
+    },
+    "cis-controls": {
+      "title": "CIS Controls v8",
+      "subtitle": "18 priorisierte Sicherheitsmassnahmen des Center for Internet Security — der pragmatische Einstieg in technische IT-Sicherheit."
+    },
+    "iso22301": {
+      "title": "ISO 22301 — Business Continuity",
+      "subtitle": "Systematisches BCM fuer Geschaeftskontinuitaet: BIA, Notfallplaene und Wiederanlaufstrategien nach ISO 22301:2019."
+    },
+    "nist-csf": {
+      "title": "NIST Cybersecurity Framework 2.0",
+      "subtitle": "Das weltweit fuehrende Rahmenwerk fuer Cybersicherheit — mit den 6 Funktionen Govern, Identify, Protect, Detect, Respond, Recover."
+    },
+    "owasp-asvs": {
+      "title": "OWASP ASVS 4.0",
+      "subtitle": "Sicherheitsstandard fuer Webanwendungen und APIs — Verifizierungslevel L1 bis L3 fuer Entwickler und Sicherheitsteams."
     }
   },
   "pillars": {
