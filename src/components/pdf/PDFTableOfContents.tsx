@@ -24,6 +24,7 @@ interface PDFTableOfContentsProps {
   hasEvidence: boolean;
   hasKritis: boolean;
   hasProgress: boolean;
+  hasCrossRegOverlaps?: boolean;
 }
 
 const PDFTableOfContents = ({
@@ -41,6 +42,7 @@ const PDFTableOfContents = ({
   hasEvidence,
   hasKritis,
   hasProgress,
+  hasCrossRegOverlaps,
 }: PDFTableOfContentsProps) => {
   const de = locale === 'de';
 
@@ -97,6 +99,15 @@ const PDFTableOfContents = ({
       number: sectionNumbers.roadmap,
       title: messages['pdf.roadmap.title'] || (de ? 'Umsetzungsfahrplan' : 'Implementation Roadmap'),
       description: de ? 'Drei-Phasen-Plan zur strukturierten Umsetzung' : 'Three-phase plan for structured implementation',
+      group: 'analysis',
+    });
+  }
+
+  if (hasCrossRegOverlaps && sectionNumbers.crossRegOverlaps) {
+    entries.push({
+      number: sectionNumbers.crossRegOverlaps,
+      title: de ? 'Regelwerks-Synergien' : 'Regulation Synergies',
+      description: de ? 'Überlappungen mit anderen Sicherheitsstandards' : 'Overlaps with other security standards',
       group: 'analysis',
     });
   }

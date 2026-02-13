@@ -67,7 +67,7 @@ const iso27001Config: RegulationConfig = {
     hasClassification: false,
     hasQuickCheck: true,
     hasTieredAssessment: false,
-    hasCostEstimation: false,
+    hasCostEstimation: true,
     hasRoadmap: false,
   },
   resultSections: [

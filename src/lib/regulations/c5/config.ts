@@ -67,7 +67,7 @@ const c5Config: RegulationConfig = {
     hasClassification: false,
     hasQuickCheck: true,
     hasTieredAssessment: false,
-    hasCostEstimation: false,
+    hasCostEstimation: true,
     hasRoadmap: false,
   },
   resultSections: [

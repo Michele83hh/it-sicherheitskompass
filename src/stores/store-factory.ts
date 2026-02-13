@@ -17,6 +17,62 @@ import { persist } from 'zustand/middleware';
 import type { Answer, MaturityLevel, QuickCheckAnswer, QuickCheckValue } from '@/lib/regulations/types';
 
 // ============================================================
+// Generic PDF Sections Store
+// ============================================================
+
+export type GenericPdfSectionKey = 'roadmap' | 'progress' | 'costSummary' | 'crossRegOverlap';
+
+export interface GenericPdfSectionsState {
+  sections: Record<GenericPdfSectionKey, boolean>;
+  toggleSection: (key: GenericPdfSectionKey) => void;
+  selectAll: () => void;
+  deselectAll: () => void;
+}
+
+const GENERIC_ALL_TRUE: Record<GenericPdfSectionKey, boolean> = {
+  roadmap: true,
+  progress: true,
+  costSummary: true,
+  crossRegOverlap: true,
+};
+
+const GENERIC_ALL_FALSE: Record<GenericPdfSectionKey, boolean> = {
+  roadmap: false,
+  progress: false,
+  costSummary: false,
+  crossRegOverlap: false,
+};
+
+const pdfSectionsStoreCache = new Map<string, UseBoundStore<StoreApi<GenericPdfSectionsState>>>();
+
+export function createPdfSectionsStore(
+  regulationId: string
+): UseBoundStore<StoreApi<GenericPdfSectionsState>> {
+  const cached = pdfSectionsStoreCache.get(regulationId);
+  if (cached) return cached;
+
+  const store = create<GenericPdfSectionsState>()(
+    persist(
+      (set) => ({
+        sections: { ...GENERIC_ALL_TRUE },
+        toggleSection: (key) =>
+          set((state) => ({
+            sections: { ...state.sections, [key]: !state.sections[key] },
+          })),
+        selectAll: () => set({ sections: { ...GENERIC_ALL_TRUE } }),
+        deselectAll: () => set({ sections: { ...GENERIC_ALL_FALSE } }),
+      }),
+      {
+        name: `${regulationId}-pdf-sections-storage`,
+      }
+    )
+  );
+
+  pdfSectionsStoreCache.set(regulationId, store);
+  return store;
+}
+
+// ============================================================
 // Assessment Store
 // ============================================================
 

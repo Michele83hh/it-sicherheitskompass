@@ -180,6 +180,14 @@ export interface PDFExecutiveSummary {
   basisschutzTotal: { min: number; max: number };
 }
 
+export interface PDFCrossRegOverlap {
+  targetRegulation: string;
+  overlapPercent: number;
+  sharedTopics: string[];
+  hasAssessment: boolean;
+  otherScore?: number;
+}
+
 export interface PDFPayload {
   locale: 'de' | 'en';
   analysisDepth: 'core' | 'full';
@@ -208,4 +216,5 @@ export interface PDFPayload {
   sectorGuidance?: PDFSectorGuidance;
   kpiDetails?: PDFKritis;
   progress?: PDFProgress;
+  crossRegOverlaps?: PDFCrossRegOverlap[];
 }

@@ -1176,6 +1176,17 @@
     "validation": {
       "required": "Please answer this question"
     },
+    "dedup": {
+      "badge": "Suggestion from {source}: Level {level}",
+      "badgeShort": "Suggestion: Level {level}",
+      "accept": "Apply",
+      "fromRegulation": "from {source}",
+      "confidence": {
+        "exact": "Identical question",
+        "high": "Very similar question",
+        "approximate": "Related question"
+      }
+    },
     "completion": {
       "title": "Analysis Complete!",
       "subtitle": "Your personal report is being prepared..."
@@ -1721,7 +1732,7 @@
     "executive": {
       "title": "Executive Summary",
       "riskTitle": "Biggest Gaps",
-      "quickWinTitle": "Start immediately — no external budget needed",
+      "quickWinTitle": "Quick Wins — implement immediately, no external budget needed",
       "quickWinDays": "days",
       "totalBasisschutz": "Total Basic Protection Cost",
       "ctaLine": "30-minute initial consultation to contextualize your results — free and non-binding",
@@ -14705,6 +14716,32 @@
       "subtitle": "Security standard for web applications and APIs",
       "duration": "15 min.",
       "start": "Start check"
+    }
+  },
+  "dedup": {
+    "topics": {
+      "riskInventory": "Risk Inventory",
+      "riskTreatment": "Risk Treatment",
+      "securityResponsibilities": "Security Responsibilities",
+      "incidentResponsePlan": "Incident Response Plan",
+      "incidentLogging": "Incident Logging",
+      "incidentReporting": "Incident Reporting",
+      "backupStrategy": "Backup Strategy",
+      "businessContinuityPlan": "Business Continuity Plan",
+      "businessImpactAnalysis": "Business Impact Analysis",
+      "accessControl": "Access Control",
+      "privilegedAccess": "Privileged Access",
+      "mfa": "Multi-Factor Authentication",
+      "encryption": "Encryption",
+      "keyManagement": "Key Management",
+      "supplyChainSecurity": "Supply Chain Security",
+      "supplyChainAssessment": "Supply Chain Assessment",
+      "securityAwareness": "Security Awareness Training",
+      "managementTraining": "Management Training",
+      "patchManagement": "Patch Management",
+      "vulnerabilityScanning": "Vulnerability Scanning",
+      "securityMonitoring": "Security Monitoring",
+      "securityKpis": "Security KPIs"
     }
   }
 }

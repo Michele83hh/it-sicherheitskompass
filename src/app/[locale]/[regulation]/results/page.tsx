@@ -42,6 +42,7 @@ import { Iso27001Section } from './components/iso27001-section';
 import { DinSpecSection } from './components/dinspec-section';
 import { EvidenceSection } from './components/evidence-section';
 import { SectorGuidanceSection } from './components/sector-guidance-section';
+import { CrossRegSynergies } from './components/cross-reg-synergies';
 
 const TAB_VALUES = ['overview', 'quickwins', 'actionplan', 'progress', 'export'] as const;
 type TabValue = (typeof TAB_VALUES)[number];
@@ -392,6 +393,11 @@ export default function ResultsPage() {
               />
             </div>
           )}
+
+          {/* Cross-regulation synergies (all regulations) */}
+          <div className="mt-8">
+            <CrossRegSynergies />
+          </div>
         </TabsContent>
 
         {/* ===== TAB: QUICK WINS ===== */}

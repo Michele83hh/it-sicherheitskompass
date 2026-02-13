@@ -4,13 +4,24 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
+import { Checkbox } from '@/components/ui/checkbox';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
 import { useRegulationConfig, getQuestionsByCategory, getRecommendationsByCategory } from '@/hooks/useRegulationConfig';
 import { useRegulationStores } from '@/hooks/useRegulationStores';
 import { useProgressStore } from '@/stores/progress-store';
+import { createPdfSectionsStore, type GenericPdfSectionKey } from '@/stores/store-factory';
 import { calculateOverallScore } from '@/lib/scoring/engine';
 import type { OverallScore } from '@/lib/regulations/types';
-import type { PDFPayload, PDFCategoryResult, PDFRecommendation, PDFRoadmapPhase } from '@/lib/pdf/types';
-import { Download, Loader2 } from 'lucide-react';
+import type { PDFPayload, PDFCategoryResult, PDFRecommendation, PDFRoadmapPhase, PDFCrossRegOverlap } from '@/lib/pdf/types';
+import { Download, Loader2, Lock } from 'lucide-react';
 
 interface DownloadGenericPdfButtonProps {
   overallScore: OverallScore;
@@ -19,6 +30,7 @@ interface DownloadGenericPdfButtonProps {
 export default function DownloadGenericPdfButton({ overallScore }: DownloadGenericPdfButtonProps) {
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [dialogOpen, setDialogOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
   const params = useParams();
   const locale = params?.locale as 'de' | 'en';
@@ -34,9 +46,27 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
 
   const { getProgress, getCompletionPercentage, getStatusCounts } = useProgressStore();
 
+  // Generic PDF sections store per regulation
+  const pdfSectionsStore = createPdfSectionsStore(regulation);
+  const sections = pdfSectionsStore((state) => state.sections);
+  const toggleSection = pdfSectionsStore((state) => state.toggleSection);
+  const selectAll = pdfSectionsStore((state) => state.selectAll);
+  const deselectAll = pdfSectionsStore((state) => state.deselectAll);
+
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  // Optional section keys for generic regulations
+  const optionalSectionKeys: GenericPdfSectionKey[] = ['roadmap', 'progress', 'costSummary', 'crossRegOverlap'];
+
+  // Section labels (reuse existing i18n where possible)
+  const sectionLabels: Record<GenericPdfSectionKey, string> = {
+    roadmap: tPdf('sectionSelector.sections.roadmap'),
+    progress: tPdf('sectionSelector.sections.progress'),
+    costSummary: tPdf('sectionSelector.sections.costSummary'),
+    crossRegOverlap: locale === 'de' ? 'Regelwerks-Synergien' : 'Regulation Synergies',
+  };
 
   const handleDownload = async () => {
     setIsGenerating(true);
@@ -44,6 +74,10 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
 
     try {
       const regName = tAll(config.nameKey);
+
+      const includeRoadmap = sections.roadmap;
+      const includeProgress = sections.progress;
+      const includeCost = sections.costSummary;
 
       // Build category results
       const categoryResults: PDFCategoryResult[] = overallScore.categoryScores.map((catScore) => {
@@ -236,25 +270,85 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
       messages['pdf.miniCta.title'] = tPdf('miniCta.title');
       messages['pdf.miniCta.text'] = tPdf('miniCta.text');
 
-      // Build progress data
-      const allRecObjects = config.categories.flatMap((cat) => getRecommendationsByCategory(config, cat.id));
-      const total = allRecObjects.length;
-      const counts = getStatusCounts();
-      const notStarted = total - counts.inProgress - counts.completed;
+      // Executive summary messages
+      messages['pdf.executive.title'] = tPdf('executive.title');
+      messages['pdf.executive.riskTitle'] = tPdf('executive.riskTitle');
+      messages['pdf.executive.quickWinTitle'] = tPdf('executive.quickWinTitle');
+      messages['pdf.executive.quickWinDays'] = tPdf('executive.quickWinDays');
+      messages['pdf.executive.totalBasisschutz'] = tPdf('executive.totalBasisschutz');
+      messages['pdf.executive.ctaLine'] = tPdf('executive.ctaLine');
+      messages['pdf.executive.startHint'] = tPdf('executive.startHint');
+      messages['pdf.executive.targetLabel'] = tPdf('executive.targetLabel');
+      messages['pdf.executive.glossaryRef'] = tPdf('executive.glossaryRef');
+      messages['pdf.executive.optionA.title'] = tPdf('executive.optionA.title');
+      messages['pdf.executive.optionA.text'] = tPdf('executive.optionA.text');
+      messages['pdf.executive.optionB.title'] = tPdf('executive.optionB.title');
+      messages['pdf.executive.optionB.text'] = tPdf('executive.optionB.text');
+      messages['pdf.executive.optionC.title'] = tPdf('executive.optionC.title');
+      messages['pdf.executive.optionC.text'] = tPdf('executive.optionC.text');
 
-      const progressData: PDFPayload['progress'] = {
-        completionPercentage: getCompletionPercentage(total),
-        notStarted,
-        inProgress: counts.inProgress,
-        completed: counts.completed,
-        items: allRecObjects.map((rec) => {
-          const progress = getProgress(rec.id);
-          return {
-            title: tAll(rec.titleKey),
-            status: progress?.status || 'not-started',
-          };
-        }),
-      };
+      // Cost messages (for generic cost section)
+      messages['pdf.cost.title'] = locale === 'de' ? 'Kostenschätzung' : 'Cost Estimation';
+      messages['pdf.cost.internalDays'] = locale === 'de' ? 'Interner Aufwand (Personentage)' : 'Internal Effort (Person-Days)';
+      messages['pdf.cost.externalCost'] = locale === 'de' ? 'Externe Beratung' : 'External Consulting';
+      messages['pdf.cost.toolsCost'] = locale === 'de' ? 'Tools & Lizenzen (p.a.)' : 'Tools & Licenses (p.a.)';
+      messages['pdf.cost.totalEstimated'] = locale === 'de' ? 'Geschätzte Gesamtkosten' : 'Estimated Total Cost';
+      messages['pdf.cost.days'] = locale === 'de' ? 'Tage' : 'days';
+      messages['pdf.cost.perYear'] = locale === 'de' ? '/Jahr' : '/year';
+      messages['pdf.cost.disclaimer'] = tPdf('cost.disclaimer');
+
+      // Build progress data (if selected)
+      let progressData: PDFPayload['progress'] = undefined;
+      if (includeProgress) {
+        const allRecObjects = config.categories.flatMap((cat) => getRecommendationsByCategory(config, cat.id));
+        const total = allRecObjects.length;
+        const counts = getStatusCounts();
+        const notStarted = total - counts.inProgress - counts.completed;
+
+        progressData = {
+          completionPercentage: getCompletionPercentage(total),
+          notStarted,
+          inProgress: counts.inProgress,
+          completed: counts.completed,
+          items: allRecObjects.map((rec) => {
+            const progress = getProgress(rec.id);
+            return {
+              title: tAll(rec.titleKey),
+              status: progress?.status || 'not-started',
+            };
+          }),
+        };
+      }
+
+      // Build cost summary data (if selected) using generic cost engine
+      let costSummaryData: PDFPayload['costSummary'] = undefined;
+      if (includeCost) {
+        try {
+          const { computeGenericCosts } = await import('@/lib/cost/generic-cost-engine');
+          const allRecObjects = config.categories.flatMap((cat) => getRecommendationsByCategory(config, cat.id));
+
+          // Get employee count from navigator localStorage
+          let employees = 0;
+          try {
+            const raw = localStorage.getItem('navigator-results-storage');
+            if (raw) {
+              const data = JSON.parse(raw);
+              employees = data?.employees || data?.companySize || 0;
+              if (typeof employees === 'string') {
+                employees = parseInt(employees) || 0;
+              }
+            }
+          } catch { /* ignore */ }
+
+          const categoryTrafficLightMap = new Map(
+            overallScore.categoryScores.map((cs) => [cs.categoryId, cs.trafficLight])
+          );
+
+          costSummaryData = computeGenericCosts(allRecObjects, categoryTrafficLightMap, employees, tAll);
+        } catch {
+          // Generic cost engine not available yet — skip silently
+        }
+      }
 
       // Navigator data for company profile
       let navigatorData: { industry: string; companySize: string } | null = null;
@@ -283,61 +377,92 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
         .slice(0, 5)
         .map(r => ({ title: r.title, days: '2–5', cost: '' }));
 
-      messages['pdf.executive.title'] = tPdf('executive.title');
-      messages['pdf.executive.riskTitle'] = tPdf('executive.riskTitle');
-      messages['pdf.executive.quickWinTitle'] = tPdf('executive.quickWinTitle');
-      messages['pdf.executive.quickWinDays'] = tPdf('executive.quickWinDays');
-      messages['pdf.executive.totalBasisschutz'] = tPdf('executive.totalBasisschutz');
-      messages['pdf.executive.ctaLine'] = tPdf('executive.ctaLine');
-      messages['pdf.executive.startHint'] = tPdf('executive.startHint');
-      messages['pdf.executive.targetLabel'] = tPdf('executive.targetLabel');
-      messages['pdf.executive.glossaryRef'] = tPdf('executive.glossaryRef');
-      messages['pdf.executive.optionA.title'] = tPdf('executive.optionA.title');
-      messages['pdf.executive.optionA.text'] = tPdf('executive.optionA.text');
-      messages['pdf.executive.optionB.title'] = tPdf('executive.optionB.title');
-      messages['pdf.executive.optionB.text'] = tPdf('executive.optionB.text');
-      messages['pdf.executive.optionC.title'] = tPdf('executive.optionC.title');
-      messages['pdf.executive.optionC.text'] = tPdf('executive.optionC.text');
+      // Build roadmap from effort levels (if selected)
+      let roadmapData: PDFPayload['roadmap'] = undefined;
+      if (includeRoadmap) {
+        const phaseLabels = locale === 'de'
+          ? ['Phase 1: Sofortmaßnahmen', 'Phase 2: Kernmaßnahmen', 'Phase 3: Strategische Maßnahmen']
+          : ['Phase 1: Immediate Actions', 'Phase 2: Core Measures', 'Phase 3: Strategic Measures'];
+        const phaseDescs = locale === 'de'
+          ? ['Quick Wins — ohne externes Budget umsetzbar', 'Mittelfristige Verbesserungen in 3–6 Monaten', 'Langfristige strategische Investitionen']
+          : ['Quick wins — implementable without external budget', 'Medium-term improvements in 3–6 months', 'Long-term strategic investments'];
+        const phaseTimeframes = locale === 'de'
+          ? ['0–3 Monate', '3–6 Monate', '6–12 Monate']
+          : ['0–3 months', '3–6 months', '6–12 months'];
+        const effortToPhase: Record<string, number> = { quick: 0, medium: 1, strategic: 2 };
+        const urgencyMap: Record<string, string> = { high: 'critical', medium: 'high', low: 'medium' };
 
-      // Build roadmap from effort levels
-      const phaseLabels = locale === 'de'
-        ? ['Phase 1: Sofortmaßnahmen', 'Phase 2: Kernmaßnahmen', 'Phase 3: Strategische Maßnahmen']
-        : ['Phase 1: Immediate Actions', 'Phase 2: Core Measures', 'Phase 3: Strategic Measures'];
-      const phaseDescs = locale === 'de'
-        ? ['Quick Wins — ohne externes Budget umsetzbar', 'Mittelfristige Verbesserungen in 3–6 Monaten', 'Langfristige strategische Investitionen']
-        : ['Quick wins — implementable without external budget', 'Medium-term improvements in 3–6 months', 'Long-term strategic investments'];
-      const phaseTimeframes = locale === 'de'
-        ? ['0–3 Monate', '3–6 Monate', '6–12 Monate']
-        : ['0–3 months', '3–6 months', '6–12 months'];
-      const effortToPhase: Record<string, number> = { quick: 0, medium: 1, strategic: 2 };
-      const urgencyMap: Record<string, string> = { high: 'critical', medium: 'high', low: 'medium' };
+        const roadmapBuckets: PDFRoadmapPhase[] = [0, 1, 2].map((i) => ({
+          title: phaseLabels[i],
+          description: phaseDescs[i],
+          timeframe: phaseTimeframes[i],
+          itemCount: 0,
+          items: [],
+        }));
 
-      const roadmapBuckets: PDFRoadmapPhase[] = [0, 1, 2].map((i) => ({
-        title: phaseLabels[i],
-        description: phaseDescs[i],
-        timeframe: phaseTimeframes[i],
-        itemCount: 0,
-        items: [],
-      }));
+        for (const rec of allRecommendations) {
+          const phaseIdx = effortToPhase[rec.effortLevel] ?? 2;
+          roadmapBuckets[phaseIdx].items.push({
+            title: rec.title,
+            urgency: urgencyMap[rec.priority] || 'medium',
+          });
+          roadmapBuckets[phaseIdx].itemCount++;
+        }
 
-      for (const rec of allRecommendations) {
-        const phaseIdx = effortToPhase[rec.effortLevel] ?? 2;
-        roadmapBuckets[phaseIdx].items.push({
-          title: rec.title,
-          urgency: urgencyMap[rec.priority] || 'medium',
-        });
-        roadmapBuckets[phaseIdx].itemCount++;
+        // Roadmap messages
+        messages['pdf.roadmap.title'] = locale === 'de' ? 'Umsetzungsfahrplan' : 'Implementation Roadmap';
+        messages['pdf.roadmap.subtitle'] = locale === 'de'
+          ? 'Strukturierter Drei-Phasen-Plan'
+          : 'Structured three-phase plan';
+        messages['pdf.roadmap.timelineTitle'] = locale === 'de' ? 'Zeitplan' : 'Timeline';
+
+        // Filter out empty phases
+        const roadmapPhases = roadmapBuckets.filter(p => p.items.length > 0);
+        if (roadmapPhases.length > 0) {
+          roadmapData = { phases: roadmapPhases };
+        }
       }
 
-      // Roadmap messages
-      messages['pdf.roadmap.title'] = locale === 'de' ? 'Umsetzungsfahrplan' : 'Implementation Roadmap';
-      messages['pdf.roadmap.subtitle'] = locale === 'de'
-        ? 'Strukturierter Drei-Phasen-Plan'
-        : 'Structured three-phase plan';
-      messages['pdf.roadmap.timelineTitle'] = locale === 'de' ? 'Zeitplan' : 'Timeline';
+      // Build cross-regulation overlaps (if selected)
+      let crossRegOverlaps: PDFCrossRegOverlap[] | undefined = undefined;
+      if (sections.crossRegOverlap) {
+        try {
+          const { getOverlapsForRegulation } = await import('@/lib/regulations/overlaps');
+          const { getRegulation } = await import('@/lib/regulations/registry');
+          await import('@/lib/regulations/init');
+          const overlaps = getOverlapsForRegulation(regulation as any);
+          if (overlaps.length > 0) {
+            crossRegOverlaps = overlaps
+              .sort((a, b) => b.overlapPercent - a.overlapPercent)
+              .map((overlap) => {
+                const otherRegId = overlap.regA === regulation ? overlap.regB : overlap.regA;
+                const otherConfig = getRegulation(otherRegId);
+                if (!otherConfig) return null;
 
-      // Filter out empty phases
-      const roadmapPhases = roadmapBuckets.filter(p => p.items.length > 0);
+                let hasAssessment = false;
+                try {
+                  const raw = localStorage.getItem(`${otherRegId}-assessment-storage`);
+                  if (raw) {
+                    const data = JSON.parse(raw);
+                    hasAssessment = data?.answers?.length > 0;
+                  }
+                } catch { /* ignore */ }
+
+                const sharedTopics = overlap.sharedMeasureKeys.map((key) => {
+                  try { return tAll(key); } catch { return key.split('.').pop() || key; }
+                });
+
+                return {
+                  targetRegulation: tAll(otherConfig.nameKey),
+                  overlapPercent: overlap.overlapPercent,
+                  sharedTopics,
+                  hasAssessment,
+                } as PDFCrossRegOverlap;
+              })
+              .filter(Boolean) as PDFCrossRegOverlap[];
+          }
+        } catch { /* ignore if overlaps module fails */ }
+      }
 
       // Build payload
       const payload: PDFPayload = {
@@ -365,10 +490,12 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
           trafficLight: overallScore.trafficLight,
           topRisks,
           quickWins: quickWinItems,
-          basisschutzTotal: { min: 0, max: 0 },
+          basisschutzTotal: costSummaryData?.tierTotals?.basisschutz || { min: 0, max: 0 },
         },
-        roadmap: roadmapPhases.length > 0 ? { phases: roadmapPhases } : undefined,
+        roadmap: roadmapData,
         progress: progressData,
+        costSummary: costSummaryData,
+        crossRegOverlaps,
       };
 
       // POST to API
@@ -394,6 +521,8 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
       a.click();
       document.body.removeChild(a);
       window.URL.revokeObjectURL(url);
+
+      setDialogOpen(false);
     } catch (err) {
       console.error('PDF download failed:', err);
       setError(err instanceof Error ? err.message : 'Unknown error');
@@ -402,26 +531,103 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
     }
   };
 
+  // Core sections (always included, not deselectable)
+  const coreSections = [
+    { key: 'cover', label: tPdf('sectionSelector.sections.cover') },
+    { key: 'executive', label: tPdf('executive.title') },
+    { key: 'categories', label: tPdf('sectionSelector.sections.categories') },
+    { key: 'recommendations', label: tPdf('sectionSelector.sections.recommendations') },
+  ];
+
   return (
     <div className="flex flex-col items-center gap-2">
-      <Button variant="default" onClick={handleDownload} disabled={isGenerating}>
-        {isGenerating ? (
-          <>
-            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-            {locale === 'de' ? 'PDF wird erstellt...' : 'Generating PDF...'}
-          </>
-        ) : (
-          <>
+      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+        <DialogTrigger asChild>
+          <Button variant="default">
             <Download className="mr-2 h-4 w-4" />
             {t('actions.downloadPdf')}
-          </>
-        )}
-      </Button>
-      {error && (
-        <p className="text-sm text-red-600 text-center">
-          Error: {error}
-        </p>
-      )}
+          </Button>
+        </DialogTrigger>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>{tPdf('sectionSelector.title')}</DialogTitle>
+            <DialogDescription>{tPdf('sectionSelector.description')}</DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-4 py-2 max-h-[60vh] overflow-y-auto">
+            {/* Core sections (locked) */}
+            <div className="space-y-2">
+              {coreSections.map((section) => (
+                <div key={section.key} className="flex items-center gap-3 py-1">
+                  <Checkbox checked disabled className="opacity-60" />
+                  <span className="text-sm flex-1">{section.label}</span>
+                  <Lock className="h-3.5 w-3.5 text-muted-foreground" />
+                </div>
+              ))}
+            </div>
+
+            {/* Optional sections */}
+            <div className="border-t my-2" />
+            <div className="space-y-2">
+              {optionalSectionKeys.map((key) => {
+                const checked = isClient ? sections[key] : true;
+                return (
+                  <div key={key} className="flex items-center gap-3 py-1">
+                    <Checkbox
+                      id={`pdf-section-${key}`}
+                      checked={checked}
+                      onCheckedChange={() => toggleSection(key)}
+                    />
+                    <label
+                      htmlFor={`pdf-section-${key}`}
+                      className="text-sm flex-1 cursor-pointer select-none"
+                    >
+                      {sectionLabels[key]}
+                    </label>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Select All / None buttons */}
+            <div className="border-t my-2" />
+            <div className="flex gap-2">
+              <Button variant="outline" size="sm" onClick={selectAll}>
+                {tPdf('sectionSelector.selectAll')}
+              </Button>
+              <Button variant="outline" size="sm" onClick={deselectAll}>
+                {tPdf('sectionSelector.deselectAll')}
+              </Button>
+            </div>
+          </div>
+
+          <DialogFooter>
+            <Button
+              onClick={handleDownload}
+              disabled={isGenerating}
+              className="w-full sm:w-auto"
+            >
+              {isGenerating ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  {tPdf('sectionSelector.generating')}
+                </>
+              ) : (
+                <>
+                  <Download className="mr-2 h-4 w-4" />
+                  {tPdf('sectionSelector.generate')}
+                </>
+              )}
+            </Button>
+          </DialogFooter>
+
+          {error && (
+            <p className="text-sm text-red-600 text-center">
+              Error: {error}
+            </p>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

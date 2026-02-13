@@ -19,6 +19,7 @@ import PDFKritisSection from './PDFKritis';
 import PDFProgressSection from './PDFProgress';
 import PDFCallToAction from './PDFCallToAction';
 import PDFGlossary from './PDFGlossary';
+import PDFCrossRegSynergiesSection from './PDFCrossRegSynergies';
 
 interface PDFDocumentProps {
   payload: PDFPayload;
@@ -28,7 +29,7 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
   const {
     locale, analysisDepth, company, overallScore, categories, recommendations, messages,
     executiveSummary, penalty, roadmap, costSummary, dsgvoOverlap, iso27001, isKritis,
-    dinSpec, evidence, sectorGuidance, kpiDetails, progress,
+    dinSpec, evidence, sectorGuidance, kpiDetails, progress, crossRegOverlaps,
   } = payload;
 
   // Format generated date in user's locale
@@ -48,6 +49,7 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
     penalty: penalty ? nextSection() : 0,
     costSummary: costSummary ? nextSection() : 0,
     roadmap: roadmap ? nextSection() : 0,
+    crossRegOverlaps: crossRegOverlaps?.length ? nextSection() : 0,
     sectorGuidance: sectorGuidance ? nextSection() : 0,  // moved before expert sections
     dsgvoOverlap: dsgvoOverlap ? nextSection() : 0,
     iso27001: iso27001 ? nextSection() : 0,
@@ -132,6 +134,7 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
           hasEvidence={!!evidence}
           hasKritis={!!isKritis}
           hasProgress={!!progress}
+          hasCrossRegOverlaps={!!crossRegOverlaps?.length}
         />
 
         <Footer />
@@ -254,6 +257,25 @@ const PDFDocument = ({ payload }: PDFDocumentProps) => {
             phases={roadmap.phases}
             messages={messages}
             overallPercentage={overallScore.percentage}
+          />
+
+          <Footer />
+        </Page>
+      )}
+
+      {/* ─── Cross-Regulation Synergies ─── */}
+      {crossRegOverlaps && crossRegOverlaps.length > 0 && (
+        <Page size="A4" style={styles.page}>
+          <PageHeader
+            number={sectionNumbers.crossRegOverlaps}
+            title={locale === 'de' ? 'Regelwerks-Synergien' : 'Regulation Synergies'}
+          />
+
+          <PDFCrossRegSynergiesSection
+            overlaps={crossRegOverlaps}
+            messages={messages}
+            locale={locale}
+            sectionNumber={sectionNumbers.crossRegOverlaps}
           />
 
           <Footer />

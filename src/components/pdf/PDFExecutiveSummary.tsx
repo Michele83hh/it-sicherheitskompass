@@ -124,7 +124,7 @@ const PDFExecutiveSummarySection = ({ executiveSummary, messages, locale }: PDFE
         marginBottom: 16,
       }}>
         <Text style={{ fontSize: 11, fontWeight: 700, color: COLORS.green, marginBottom: 10 }}>
-          {messages['pdf.executive.quickWinTitle'] || 'Sofort starten — ohne externes Budget'}
+          {messages['pdf.executive.quickWinTitle'] || 'Quick Wins — sofort umsetzbar, ohne externes Budget'}
         </Text>
 
         {/* Quick Win items */}

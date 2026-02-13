@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { Info, Lightbulb, HelpCircle, ChevronDown } from 'lucide-react';
+import { Info, Lightbulb, HelpCircle, ChevronDown, Sparkles } from 'lucide-react';
 import { useRegulationStores } from '@/hooks/useRegulationStores';
 import { getQuestionsByCategory } from '@/hooks/useRegulationConfig';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
@@ -17,6 +17,8 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 import { WizardNavigation } from '@/app/[locale]/[regulation]/check/components/navigation';
+import { getSuggestionsForCategory, type SuggestedAnswer } from '@/lib/regulations/dedup-service';
+import { getRegulation } from '@/lib/regulations/registry';
 import type { Answer, MaturityLevel, RegulationConfig } from '@/lib/regulations/types';
 
 interface CategoryStepProps {
@@ -72,6 +74,12 @@ export function CategoryStep({
 
   const [showCompletion, setShowCompletion] = useState(false);
   const existingAnswers = getAnswersByCategory(categoryId);
+
+  // Dedup: find suggestions from other regulations' assessments
+  const suggestions = useMemo(() => {
+    const questionIds = questions.map((q) => q.id);
+    return getSuggestionsForCategory(regulation, questionIds);
+  }, [regulation, questions]);
 
   // Zod schema - all fields REQUIRED
   const schemaShape = Object.fromEntries(
@@ -273,31 +281,57 @@ export function CategoryStep({
             <Controller
               name={question.id}
               control={control}
-              render={({ field }) => (
-                <RadioGroup
-                  value={field.value !== undefined ? String(field.value) : ''}
-                  onValueChange={(v) => field.onChange(Number(v))}
-                >
-                  {[0, 1, 2, 3].map((level) => {
-                    const levelKey = `level${level}Key` as keyof typeof question.maturityDescriptions;
-                    const description = t(
-                      question.maturityDescriptions[levelKey]
-                    );
-                    return (
-                      <label
-                        key={level}
-                        htmlFor={`${question.id}-${level}`}
-                        className="flex cursor-pointer items-start gap-3 rounded-lg border p-3 sm:p-4 transition-colors hover:bg-gray-50"
+              render={({ field }) => {
+                const suggestion = suggestions.get(question.id);
+                const sourceConfig = suggestion ? getRegulation(suggestion.sourceRegulation) : null;
+                const sourceName = sourceConfig ? tAll(sourceConfig.nameKey) : (suggestion?.sourceRegulation ?? '');
+                return (
+                  <>
+                    {/* Dedup suggestion badge */}
+                    {suggestion && field.value === undefined && (
+                      <button
+                        type="button"
+                        onClick={() => field.onChange(suggestion.suggestedLevel)}
+                        className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-medium text-emerald-700 hover:bg-emerald-100 transition-colors cursor-pointer"
                       >
-                        <RadioGroupItem value={String(level)} id={`${question.id}-${level}`} />
-                        <span className="flex-1 text-sm leading-relaxed">
-                          {description}
+                        <Sparkles className="size-3.5" />
+                        <span>
+                          {tGap('dedup.badge', {
+                            source: sourceName,
+                            level: String(suggestion.suggestedLevel),
+                          })}
                         </span>
-                      </label>
-                    );
-                  })}
-                </RadioGroup>
-              )}
+                        <span className="ml-1 rounded bg-emerald-200/60 px-1.5 py-0.5 text-[10px] font-semibold uppercase">
+                          {tGap(`dedup.confidence.${suggestion.confidence}`)}
+                        </span>
+                      </button>
+                    )}
+                    <RadioGroup
+                      value={field.value !== undefined ? String(field.value) : ''}
+                      onValueChange={(v) => field.onChange(Number(v))}
+                    >
+                      {[0, 1, 2, 3].map((level) => {
+                        const levelKey = `level${level}Key` as keyof typeof question.maturityDescriptions;
+                        const description = t(
+                          question.maturityDescriptions[levelKey]
+                        );
+                        return (
+                          <label
+                            key={level}
+                            htmlFor={`${question.id}-${level}`}
+                            className="flex cursor-pointer items-start gap-3 rounded-lg border p-3 sm:p-4 transition-colors hover:bg-gray-50"
+                          >
+                            <RadioGroupItem value={String(level)} id={`${question.id}-${level}`} />
+                            <span className="flex-1 text-sm leading-relaxed">
+                              {description}
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </RadioGroup>
+                  </>
+                );
+              }}
             />
 
             {/* Validation error */}

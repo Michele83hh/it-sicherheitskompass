@@ -1176,6 +1176,17 @@
     "validation": {
       "required": "Bitte beantworten Sie diese Frage"
     },
+    "dedup": {
+      "badge": "Vorschlag aus {source}: Stufe {level}",
+      "badgeShort": "Vorschlag: Stufe {level}",
+      "accept": "Übernehmen",
+      "fromRegulation": "aus {source}",
+      "confidence": {
+        "exact": "Identische Frage",
+        "high": "Sehr ähnliche Frage",
+        "approximate": "Verwandte Frage"
+      }
+    },
     "completion": {
       "title": "Analyse abgeschlossen!",
       "subtitle": "Ihr persönlicher Report wird vorbereitet..."
@@ -1721,7 +1732,7 @@
     "executive": {
       "title": "Management-Zusammenfassung",
       "riskTitle": "Größte Lücken",
-      "quickWinTitle": "Sofort starten — ohne externes Budget",
+      "quickWinTitle": "Quick Wins — sofort umsetzbar, ohne externes Budget",
       "quickWinDays": "Tage",
       "totalBasisschutz": "Gesamtkosten Basisschutz",
       "ctaLine": "30-Minuten-Erstgespräch zur Einordnung Ihrer Ergebnisse — kostenfrei und unverbindlich",
@@ -14759,6 +14770,32 @@
       "subtitle": "Sicherheitsstandard für Webanwendungen und APIs",
       "duration": "15 Min.",
       "start": "Check starten"
+    }
+  },
+  "dedup": {
+    "topics": {
+      "riskInventory": "Risikoinventar",
+      "riskTreatment": "Risikobehandlung",
+      "securityResponsibilities": "Sicherheitsverantwortlichkeiten",
+      "incidentResponsePlan": "Incident-Response-Plan",
+      "incidentLogging": "Vorfallprotokollierung",
+      "incidentReporting": "Vorfallmeldung",
+      "backupStrategy": "Backup-Strategie",
+      "businessContinuityPlan": "Notfallplan",
+      "businessImpactAnalysis": "Business-Impact-Analyse",
+      "accessControl": "Zugriffskontrolle",
+      "privilegedAccess": "Privilegierte Zugänge",
+      "mfa": "Multi-Faktor-Authentifizierung",
+      "encryption": "Verschlüsselung",
+      "keyManagement": "Schlüsselmanagement",
+      "supplyChainSecurity": "Lieferkettensicherheit",
+      "supplyChainAssessment": "Lieferantenbewertung",
+      "securityAwareness": "Sicherheitsschulungen",
+      "managementTraining": "Geschäftsleitungsschulung",
+      "patchManagement": "Patch-Management",
+      "vulnerabilityScanning": "Schwachstellenscans",
+      "securityMonitoring": "Sicherheitsüberwachung",
+      "securityKpis": "Sicherheits-KPIs"
     }
   }
 }

@@ -8,6 +8,7 @@ import '@/lib/regulations/init';
 import '@/lib/pillars/init';
 import { aggregateDashboardData, type DashboardData } from '@/lib/dashboard/aggregation';
 
+import { DownloadCombinedPdf } from './components/download-combined-pdf';
 import { CommandCenterHero } from './components/command-center-hero';
 import { NextBestAction } from './components/next-best-action';
 import { RegulationsOverview } from './components/regulations-overview';
@@ -77,6 +78,13 @@ export default function DashboardPage() {
 
       {/* Zone 6: Quick Actions + Synergies */}
       <QuickActions data={data} />
+
+      {/* Combined PDF Download (when assessments exist) */}
+      {data.completedCount > 0 && (
+        <div className="flex justify-end mb-4">
+          <DownloadCombinedPdf data={data} />
+        </div>
+      )}
 
       {/* Synergies Hint (when < 2 regs completed) */}
       {data.completedCount < 2 && (
