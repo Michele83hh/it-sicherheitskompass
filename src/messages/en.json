@@ -5786,10 +5786,10 @@
         "soc2": "Framework — no legal deadline",
         "pci-dss": "PCI DSS v4.0 since Mar 31, 2024",
         "c5": "Framework — no legal deadline",
-        "cisControls": "Since 2023 (v8.1)",
+        "cis-controls": "Since 2023 (v8.1)",
         "iso22301": "Since 2019 (2nd Edition)",
-        "nistCsf": "Since 2024 (v2.0)",
-        "owaspAsvs": "Since 2021 (v4.0.3)"
+        "nist-csf": "Since 2024 (v2.0)",
+        "owasp-asvs": "Since 2021 (v4.0.3)"
       },
       "reasons": {
         "nis2SectorSize": "Your organization falls within a NIS2 sector and meets the size threshold.",

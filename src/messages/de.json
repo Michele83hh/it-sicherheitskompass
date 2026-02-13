@@ -5840,10 +5840,10 @@
         "soc2": "Rahmenwerk — keine gesetzliche Frist",
         "pci-dss": "PCI DSS v4.0 seit 31.03.2024",
         "c5": "Rahmenwerk — keine gesetzliche Frist",
-        "cisControls": "Seit 2023 (v8.1)",
+        "cis-controls": "Seit 2023 (v8.1)",
         "iso22301": "Seit 2019 (2nd Edition)",
-        "nistCsf": "Seit 2024 (v2.0)",
-        "owaspAsvs": "Seit 2021 (v4.0.3)"
+        "nist-csf": "Seit 2024 (v2.0)",
+        "owasp-asvs": "Seit 2021 (v4.0.3)"
       },
       "reasons": {
         "nis2SectorSize": "Ihr Unternehmen fällt in einen NIS2-Sektor und erfüllt die Größenschwelle.",
