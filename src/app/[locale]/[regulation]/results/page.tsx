@@ -43,6 +43,10 @@ import { DinSpecSection } from './components/dinspec-section';
 import { EvidenceSection } from './components/evidence-section';
 import { SectorGuidanceSection } from './components/sector-guidance-section';
 import { CrossRegSynergies } from './components/cross-reg-synergies';
+import { PillarImpactSection } from './components/pillar-impact-section';
+import { getAllPillars } from '@/lib/pillars/registry';
+import { calculatePillarScores } from '@/lib/pillars/scoring';
+import '@/lib/pillars/init';
 
 const TAB_VALUES = ['overview', 'quickwins', 'actionplan', 'progress', 'export'] as const;
 type TabValue = (typeof TAB_VALUES)[number];
@@ -118,6 +122,11 @@ export default function ResultsPage() {
     }));
     return calculateOverallScore(answers, categoryQuestionCounts);
   }, [answers, config]);
+
+  // Calculate pillar scores for PillarImpactSection
+  const pillarScores = useMemo(() => {
+    return calculatePillarScores(getAllPillars());
+  }, [answers]);
 
   // Sort categories by traffic light (red -> yellow -> green)
   const sortedCategories = useMemo(() => {
@@ -252,7 +261,7 @@ export default function ResultsPage() {
               setCategoryIndex(0);
               router.push(`/${locale}/${regulation}/assessment`);
             }}
-            className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg bg-emerald-500 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-600 shadow-md shadow-emerald-500/20 transition-colors"
+            className="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-emerald-500 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-600 shadow-md shadow-emerald-500/20 transition-colors"
           >
             {t('deepenBanner.button')}
             <ArrowRight className="size-4" />
@@ -324,6 +333,12 @@ export default function ResultsPage() {
 
         {/* ===== TAB: OVERVIEW ===== */}
         <TabsContent value="overview" className="mt-6">
+          {/* Pillar Impact Section */}
+          <PillarImpactSection
+            regulationId={regulation}
+            pillarScores={pillarScores}
+          />
+
           {/* Category cards grid */}
           <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {sortedCategories.map(({ categoryScore, category, recommendations }) => {
@@ -376,7 +391,7 @@ export default function ResultsPage() {
                   setCategoryIndex(0);
                   router.push(`/${locale}/${regulation}/assessment`);
                 }}
-                className="inline-flex items-center gap-2 whitespace-nowrap rounded-lg bg-emerald-500 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-600 shadow-md shadow-emerald-500/20 transition-colors"
+                className="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-emerald-500 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-600 shadow-md shadow-emerald-500/20 transition-colors"
               >
                 {t('deepenBanner.button')}
                 <ArrowRight className="size-4" />

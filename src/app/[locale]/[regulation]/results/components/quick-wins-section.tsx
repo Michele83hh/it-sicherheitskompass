@@ -4,6 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { getAlsoCoveredBy, REGULATION_LABELS } from '@/lib/regulations/recommendation-mappings';
 import type { BaseRecommendation, TrafficLight, RegulationId } from '@/lib/regulations/types';
+import { tlBadgeStrong } from '@/lib/ui/traffic-light-styles';
 
 type Recommendation = BaseRecommendation & { bsiReference?: string };
 
@@ -24,11 +25,7 @@ export function QuickWinsSection({ quickWins }: QuickWinsSectionProps) {
   const params = useParams();
   const regulation = params?.regulation as string;
 
-  const trafficLightColors = {
-    red: 'bg-red-100 text-red-800 border-red-200',
-    yellow: 'bg-yellow-100 text-yellow-800 border-yellow-200',
-    green: 'bg-green-100 text-green-800 border-green-200',
-  };
+  // Traffic light colors now via centralized utility
 
   return (
     <section className="mb-12">
@@ -48,11 +45,11 @@ export function QuickWinsSection({ quickWins }: QuickWinsSectionProps) {
               <CardHeader>
                 <div className="mb-2 flex flex-wrap items-center gap-2">
                   <Badge
-                    className={trafficLightColors[qw.categoryTrafficLight]}
+                    className={tlBadgeStrong(qw.categoryTrafficLight)}
                   >
                     {qw.categoryName}
                   </Badge>
-                  <Badge className="bg-green-100 text-green-800 border-green-200">
+                  <Badge className="bg-emerald-100 text-emerald-700 border-emerald-200">
                     {t('effortLevel.quick')}
                   </Badge>
                   {alsoCoveredBy.length > 0 && (

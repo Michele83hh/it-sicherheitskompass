@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { DonutChart } from '@/components/ui/donut-chart';
 import { ArrowRight, Compass, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import type { DashboardData } from '@/lib/dashboard/aggregation';
+// scoreText removed — maturity level donut already shows the score
 
 interface CommandCenterHeroProps {
   data: DashboardData;
@@ -16,12 +17,57 @@ export function CommandCenterHero({ data }: CommandCenterHeroProps) {
   const tCC = useTranslations('platform.dashboard.commandCenter');
 
   const hasAnyData = data.completedCount > 0;
+  const hasAnyQuickCheck = data.regulations.some((r) => r.quickCheck.hasData);
 
   // Find critical gap (lowest score regulation with data)
   const regsWithScores = [...data.regulations]
     .filter((r) => r.hasData && r.score !== null)
     .sort((a, b) => (a.score ?? 0) - (b.score ?? 0));
   const criticalGap = regsWithScores[0] ?? null;
+
+  // Smart CTA: find the best next action for the user
+  function getSmartCta(): { href: string; label: string } {
+    if (!data.navigatorData) {
+      return { href: '/navigator', label: t('platform.dashboard.noProfileCta') };
+    }
+
+    const ranked = data.navigatorData.results
+      ?.filter((r) => r.relevance === 'high' || r.relevance === 'medium')
+      .sort((a, b) => b.score - a.score) ?? [];
+
+    // Find a regulation with a completed quick-check but no full assessment
+    const needsFullAssessment = ranked.find((r) => {
+      const reg = data.regulations.find((s) => s.id === r.id);
+      return reg && reg.quickCheck.completed && !reg.hasData;
+    });
+    if (needsFullAssessment) {
+      return {
+        href: `/${needsFullAssessment.id}/assessment`,
+        label: tCC('startFullAssessment'),
+      };
+    }
+
+    // Find a regulation not yet started at all
+    const notStarted = ranked.find((r) => {
+      const reg = data.regulations.find((s) => s.id === r.id);
+      return reg && !reg.quickCheck.hasData && !reg.hasData;
+    });
+    if (notStarted) {
+      return {
+        href: `/${notStarted.id}/schnellcheck`,
+        label: t('platform.dashboard.hero.noDataCta'),
+      };
+    }
+
+    // Fallback
+    const fallbackId = ranked[0]?.id ?? 'nis2';
+    return {
+      href: `/${fallbackId}/schnellcheck`,
+      label: t('platform.dashboard.hero.noDataCta'),
+    };
+  }
+
+  const smartCta = getSmartCta();
 
   const formatTrendDate = (iso: string) => {
     if (!iso) return '';
@@ -71,17 +117,21 @@ export function CommandCenterHero({ data }: CommandCenterHeroProps) {
           {/* Middle: Context */}
           <div className="flex-1 text-center lg:text-left space-y-4">
             {/* Security Level — prominent */}
-            <div>
-              <span className={`inline-block text-base font-semibold px-4 py-1.5 rounded-full ${
-                data.securityLevel === 'elevated' || data.securityLevel === 'standard'
-                  ? 'bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200'
-                  : data.securityLevel === 'building' || data.securityLevel === 'partial'
-                  ? 'bg-amber-50 text-amber-700 ring-1 ring-amber-200'
-                  : 'bg-red-50 text-red-700 ring-1 ring-red-200'
-              }`}>
-                {tCC(`securityLevel.${data.securityLevel}`)}
-              </span>
-            </div>
+            {(() => {
+              const sl = data.securityLevel;
+              const slStyle = sl === 'elevated' || sl === 'standard'
+                ? 'bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200'
+                : sl === 'building' || sl === 'partial'
+                ? 'bg-amber-50 text-amber-700 ring-1 ring-amber-200'
+                : 'bg-red-50 text-red-700 ring-1 ring-red-200';
+              return (
+                <div>
+                  <span className={`inline-block text-base font-semibold px-4 py-1.5 rounded-full ${slStyle}`}>
+                    {tCC(`securityLevel.${sl}`)}
+                  </span>
+                </div>
+              );
+            })()}
 
             {/* Context lines */}
             <div className="space-y-1">
@@ -104,13 +154,10 @@ export function CommandCenterHero({ data }: CommandCenterHeroProps) {
             {/* Key Metrics — 3 clean cards */}
             <div className="grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0">
               <div className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-center shadow-sm">
-                <p className={`text-2xl font-bold tabular-nums ${
-                  data.overallScore >= 70 ? 'text-emerald-600' :
-                  data.overallScore >= 40 ? 'text-amber-600' : 'text-red-600'
-                }`}>
-                  {data.overallScore}%
+                <p className="text-2xl font-bold text-foreground tabular-nums">
+                  {data.roadmapSummary.quickWinCount}
                 </p>
-                <p className="text-[11px] text-slate-500 mt-0.5">{tCC('maturityLevel')}</p>
+                <p className="text-[11px] text-slate-500 mt-0.5">{tCC('quickWinsLabel')}</p>
               </div>
               <div className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-center shadow-sm">
                 <p className="text-2xl font-bold text-foreground tabular-nums">
@@ -130,17 +177,29 @@ export function CommandCenterHero({ data }: CommandCenterHeroProps) {
       ) : (
         /* Empty state */
         <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center">
-          <DonutChart
-            value={0}
-            size={160}
-            strokeWidth={14}
-            trackColor="rgba(0,0,0,0.06)"
-            label="0%"
-            sublabel={tCC('maturityLevel')}
-          />
+          {(() => {
+            const qcRegs = data.regulations.filter((r) => r.quickCheck.score !== null);
+            const qcAvg = qcRegs.length > 0
+              ? Math.round(qcRegs.reduce((s, r) => s + (r.quickCheck.score ?? 0), 0) / qcRegs.length)
+              : 0;
+            return (
+              <DonutChart
+                value={qcAvg}
+                size={160}
+                strokeWidth={14}
+                trackColor="rgba(0,0,0,0.06)"
+                label={`${qcAvg}%`}
+                sublabel={qcAvg > 0 ? tCC('quickCheckLabel') : tCC('maturityLevel')}
+              />
+            );
+          })()}
           <div className="flex-1 text-center sm:text-left">
             <h1 className="text-2xl font-bold text-foreground">{t('platform.dashboard.hero.title')}</h1>
-            {data.navigatorData ? (
+            {hasAnyQuickCheck ? (
+              <p className="mt-2 text-slate-600 font-medium">
+                {tCC('quickChecksDoneHint')}
+              </p>
+            ) : data.navigatorData ? (
               <>
                 <p className="mt-2 text-slate-600 font-medium">
                   {tCC('relevantCount', { count: data.totalRelevant })}
@@ -153,11 +212,8 @@ export function CommandCenterHero({ data }: CommandCenterHeroProps) {
               <p className="mt-2 text-slate-500">{t('platform.dashboard.hero.noData')}</p>
             )}
             <Button className="mt-5" size="lg" asChild>
-              <Link href={data.navigatorData ? `/${data.navigatorData.results?.find(r => r.relevance === 'high')?.id ?? 'nis2'}/schnellcheck` : '/navigator'}>
-                {data.navigatorData
-                  ? t('platform.dashboard.hero.noDataCta')
-                  : t('platform.dashboard.noProfileCta')
-                }
+              <Link href={smartCta.href as any}>
+                {smartCta.label}
                 <ArrowRight className="ml-2 size-4" />
               </Link>
             </Button>

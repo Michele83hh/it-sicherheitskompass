@@ -146,7 +146,7 @@ export default function BusinessContinuityPage() {
           <p className="text-sm text-muted-foreground mb-4">{t('cta.desc')}</p>
           <Link
             href={'/iso22301' as any}
-            className="inline-flex items-center gap-2 rounded-lg bg-emerald-500 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-emerald-500/20 hover:bg-emerald-600 transition-colors"
+            className="inline-flex items-center gap-2 rounded-md bg-emerald-500 px-6 py-2.5 text-sm font-medium text-white shadow-md shadow-emerald-500/20 hover:bg-emerald-600 transition-colors"
           >
             {t('cta.button')}
             <ArrowRight className="size-4" />

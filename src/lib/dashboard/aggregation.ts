@@ -56,6 +56,11 @@ export interface RegulationStatus {
   score: number | null;
   categoryScores: CategoryScore[];
   recommendations: BaseRecommendation[];
+  quickCheck: {
+    hasData: boolean;
+    score: number | null;
+    completed: boolean;
+  };
 }
 
 interface PillarWithScore {
@@ -140,7 +145,7 @@ const REG_META: {
   color: string;
   storageKey: string;
 }[] = [
-  { id: 'nis2', tKey: 'nis2', icon: Shield, color: 'blue', storageKey: 'nis2-gap-analysis-storage' },
+  { id: 'nis2', tKey: 'nis2', icon: Shield, color: 'blue', storageKey: 'nis2-assessment-storage' },
   { id: 'dsgvo', tKey: 'dsgvo', icon: Lock, color: 'emerald', storageKey: 'dsgvo-assessment-storage' },
   { id: 'kritis', tKey: 'kritis', icon: Building2, color: 'red', storageKey: 'kritis-assessment-storage' },
   { id: 'dora', tKey: 'dora', icon: Landmark, color: 'amber', storageKey: 'dora-assessment-storage' },
@@ -173,6 +178,30 @@ export function getSecurityLevel(score: number): string {
 // Main Aggregation
 // ============================================================
 
+function readQuickCheckData(regId: string): { hasData: boolean; score: number | null; completed: boolean } {
+  try {
+    const raw = localStorage.getItem(`${regId}-quick-check-storage`);
+    if (!raw) return { hasData: false, score: null, completed: false };
+    const data = JSON.parse(raw);
+    const state = data.state || data;
+    const answers: { questionId: string; value: string }[] = state.answers || [];
+    if (answers.length === 0) return { hasData: false, score: null, completed: false };
+
+    const total = answers.reduce((sum, a) => {
+      if (a.value === 'yes') return sum + 100;
+      if (a.value === 'partial') return sum + 50;
+      return sum;
+    }, 0);
+    return {
+      hasData: true,
+      score: Math.round(total / answers.length),
+      completed: state.completed ?? false,
+    };
+  } catch {
+    return { hasData: false, score: null, completed: false };
+  }
+}
+
 export function aggregateDashboardData(pillars: Pillar[]): DashboardData {
   // 1. Load navigator data
   let navigatorData: NavigatorResults | null = null;
@@ -185,6 +214,7 @@ export function aggregateDashboardData(pillars: Pillar[]): DashboardData {
   const regulations: RegulationStatus[] = REG_META.map((reg) => {
     const config = getRegulation(reg.id);
     const totalQuestions = config?.questions.length ?? 50;
+    const quickCheck = readQuickCheckData(reg.id);
 
     try {
       const raw = localStorage.getItem(reg.storageKey);
@@ -211,6 +241,7 @@ export function aggregateDashboardData(pillars: Pillar[]): DashboardData {
             score: Math.round(overall.percentage),
             categoryScores: overall.categoryScores,
             recommendations: config.recommendations,
+            quickCheck,
           };
         }
       }
@@ -227,6 +258,7 @@ export function aggregateDashboardData(pillars: Pillar[]): DashboardData {
       score: null,
       categoryScores: [],
       recommendations: config?.recommendations ?? [],
+      quickCheck,
     };
   });
 

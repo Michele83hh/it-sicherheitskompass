@@ -7,6 +7,7 @@ import { FileText, KeyRound, Database, Server, Network, Cloud, Smartphone, Shiel
 import type { Pillar } from '@/lib/pillars/types';
 import type { PillarScore } from '@/lib/pillars/scoring';
 import type { DashboardData } from '@/lib/dashboard/aggregation';
+import { scoreBar, scoreText } from '@/lib/ui/traffic-light-styles';
 
 interface PillarPrioritiesProps {
   data: DashboardData;
@@ -18,16 +19,12 @@ const PILLAR_ICON_MAP: Record<string, React.ComponentType<{ className?: string }
 
 function getBarColor(score: number | null): string {
   if (score === null) return 'bg-slate-200';
-  if (score < 40) return 'bg-red-500';
-  if (score < 70) return 'bg-amber-400';
-  return 'bg-emerald-500';
+  return scoreBar(score);
 }
 
 function getScoreColor(score: number | null): string {
   if (score === null) return 'text-slate-400';
-  if (score < 40) return 'text-red-600';
-  if (score < 70) return 'text-amber-600';
-  return 'text-emerald-600';
+  return scoreText(score);
 }
 
 export function PillarPriorities({ data }: PillarPrioritiesProps) {

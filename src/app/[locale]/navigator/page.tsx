@@ -19,7 +19,7 @@ import {
   Cpu,
   BookOpen,
   CheckCircle2,
-  CircleDot,
+
   Info,
   RotateCcw,
   Mail,
@@ -42,12 +42,42 @@ type RegulationId = 'nis2' | 'dsgvo' | 'kritis' | 'dora' | 'tisax' | 'cra' | 'bs
 
 type Relevance = 'high' | 'medium' | 'low' | 'none';
 
+type RegCategory = 'legal' | 'framework' | 'industry' | 'baseline';
+type ObligationType = 'direct' | 'indirect' | 'cascaded' | 'voluntary';
+
 interface RegulationResult {
   id: RegulationId;
   relevance: Relevance;
   score: number;
   reasonKey: string;
+  regCategory: RegCategory;
+  obligationType: ObligationType;
+  /** Which regulation triggered this (for cascaded results) */
+  triggeredBy?: string;
 }
+
+const REG_CATEGORY_MAP: Record<RegulationId, RegCategory> = {
+  'nis2': 'legal', 'dsgvo': 'legal', 'kritis': 'legal', 'dora': 'legal', 'cra': 'legal',
+  'iso27001': 'framework', 'bsi-grundschutz': 'framework', 'nist-csf': 'framework', 'iso22301': 'framework',
+  'tisax': 'industry', 'pci-dss': 'industry', 'soc2': 'industry', 'c5': 'industry',
+  'cis-controls': 'baseline', 'owasp-asvs': 'baseline',
+};
+
+const CATEGORY_ORDER: RegCategory[] = ['legal', 'industry', 'framework', 'baseline'];
+
+const CATEGORY_DISPLAY: Record<RegCategory, { icon: typeof Shield; color: string; bgColor: string; borderColor: string }> = {
+  legal: { icon: Landmark, color: 'text-red-700', bgColor: 'bg-red-50', borderColor: 'border-red-200' },
+  industry: { icon: Building2, color: 'text-violet-700', bgColor: 'bg-violet-50', borderColor: 'border-violet-200' },
+  framework: { icon: BookOpen, color: 'text-blue-700', bgColor: 'bg-blue-50', borderColor: 'border-blue-200' },
+  baseline: { icon: ShieldCheck, color: 'text-slate-700', bgColor: 'bg-slate-50', borderColor: 'border-slate-200' },
+};
+
+const OBLIGATION_COLORS: Record<ObligationType, string> = {
+  direct: 'bg-red-100 text-red-700 border-red-200',
+  indirect: 'bg-amber-100 text-amber-700 border-amber-200',
+  cascaded: 'bg-blue-100 text-blue-700 border-blue-200',
+  voluntary: 'bg-slate-100 text-slate-600 border-slate-200',
+};
 
 export interface NavigatorResults {
   industry: string;
@@ -120,6 +150,8 @@ export default function NavigatorPage() {
       id: 'nis2',
       relevance: nis2Score >= 80 ? 'high' : nis2Score >= 40 ? 'medium' : nis2Score >= 20 ? 'low' : 'none',
       score: nis2Score, reasonKey: nis2Reason,
+      regCategory: 'legal',
+      obligationType: nis2Reason === 'nis2SupplyChain' ? 'indirect' : nis2Score >= 50 ? 'direct' : 'voluntary',
     });
 
     // ─── DSGVO ─── (gilt fuer alle)
@@ -132,7 +164,7 @@ export default function NavigatorPage() {
     } else if (industry === 'health') {
       dsgvoScore = 95; dsgvoReason = 'dsgvoSensitive';
     }
-    results.push({ id: 'dsgvo', relevance: 'high', score: dsgvoScore, reasonKey: dsgvoReason });
+    results.push({ id: 'dsgvo', relevance: 'high', score: dsgvoScore, reasonKey: dsgvoReason, regCategory: 'legal', obligationType: 'direct' });
 
     // ─── KRITIS ─── (Branche allein reicht fuer medium)
     let kritisScore = 0;
@@ -150,6 +182,8 @@ export default function NavigatorPage() {
       id: 'kritis',
       relevance: kritisScore >= 80 ? 'high' : kritisScore >= 40 ? 'medium' : kritisScore >= 10 ? 'low' : 'none',
       score: kritisScore, reasonKey: kritisReason,
+      regCategory: 'legal',
+      obligationType: kritisScore >= 35 ? 'direct' : 'voluntary',
     });
 
     // ─── DORA ─── (Finanzbranche direkt)
@@ -166,6 +200,8 @@ export default function NavigatorPage() {
       id: 'dora',
       relevance: doraScore >= 80 ? 'high' : doraScore >= 40 ? 'medium' : doraScore >= 10 ? 'low' : 'none',
       score: doraScore, reasonKey: doraReason,
+      regCategory: 'legal',
+      obligationType: doraReason === 'doraFinance' ? 'direct' : doraScore > 0 ? 'indirect' : 'voluntary',
     });
 
     // ─── TISAX ─── (Automotive + Zulieferer)
@@ -175,13 +211,13 @@ export default function NavigatorPage() {
       tisaxScore = 95; tisaxReason = 'tisaxRequired';
     } else if (industry === 'automotive' || businessModels.includes('automotiveSupplier')) {
       tisaxScore = 85; tisaxReason = 'tisaxAuto';
-    } else if (industry === 'transport') {
-      tisaxScore = 40; tisaxReason = 'tisaxAuto';
     }
     results.push({
       id: 'tisax',
       relevance: tisaxScore >= 80 ? 'high' : tisaxScore >= 40 ? 'medium' : tisaxScore >= 10 ? 'low' : 'none',
       score: tisaxScore, reasonKey: tisaxReason,
+      regCategory: 'industry',
+      obligationType: tisaxReason === 'tisaxRequired' ? 'direct' : tisaxScore > 0 ? 'indirect' : 'voluntary',
     });
 
     // ─── CRA ─── (Fertigung/Produkte => immer relevant)
@@ -200,6 +236,8 @@ export default function NavigatorPage() {
       id: 'cra',
       relevance: craScore >= 80 ? 'high' : craScore >= 40 ? 'medium' : craScore >= 10 ? 'low' : 'none',
       score: craScore, reasonKey: craReason,
+      regCategory: 'legal',
+      obligationType: craScore >= 80 ? 'direct' : craScore >= 50 ? 'indirect' : 'voluntary',
     });
 
     // ─── BSI IT-Grundschutz ─── (Empfohlen fuer alle DE-Unternehmen)
@@ -216,6 +254,9 @@ export default function NavigatorPage() {
       id: 'bsi-grundschutz',
       relevance: bsiScore >= 70 ? 'medium' : bsiScore >= 40 ? 'medium' : 'low',
       score: bsiScore, reasonKey: bsiReason,
+      regCategory: 'framework',
+      obligationType: bsiReason === 'bsiNis2Kritis' ? 'cascaded' : 'voluntary',
+      ...(bsiReason === 'bsiNis2Kritis' ? { triggeredBy: nis2Score >= 80 ? 'NIS2' : 'KRITIS' } : {}),
     });
 
     // ─── ISO 27001 ─── (Universeller ISMS-Standard)
@@ -232,6 +273,9 @@ export default function NavigatorPage() {
       id: 'iso27001',
       relevance: iso27001Score >= 80 ? 'high' : iso27001Score >= 40 ? 'medium' : 'low',
       score: iso27001Score, reasonKey: iso27001Reason,
+      regCategory: 'framework',
+      obligationType: iso27001Reason === 'iso27001Compliance' ? 'cascaded' : 'voluntary',
+      ...(iso27001Reason === 'iso27001Compliance' ? { triggeredBy: nis2Score >= 80 ? 'NIS2' : doraScore >= 80 ? 'DORA' : 'KRITIS' } : {}),
     });
 
     // ─── SOC 2 ─── (Cloud/SaaS/Digital + ICT-Branchen)
@@ -250,6 +294,8 @@ export default function NavigatorPage() {
       id: 'soc2',
       relevance: soc2Score >= 80 ? 'high' : soc2Score >= 40 ? 'medium' : soc2Score >= 10 ? 'low' : 'none',
       score: soc2Score, reasonKey: soc2Reason,
+      regCategory: 'industry',
+      obligationType: soc2Reason === 'soc2Cloud' || soc2Reason === 'soc2Supplier' ? 'indirect' : 'voluntary',
     });
 
     // ─── PCI DSS ─── (Handel/Finanzen direkt, alle mit Zahlungen)
@@ -268,6 +314,8 @@ export default function NavigatorPage() {
       id: 'pci-dss',
       relevance: pciScore >= 80 ? 'high' : pciScore >= 40 ? 'medium' : pciScore >= 10 ? 'low' : 'none',
       score: pciScore, reasonKey: pciReason,
+      regCategory: 'industry',
+      obligationType: pciReason === 'pciRequired' || pciReason === 'pciSector' ? 'direct' : pciScore > 0 ? 'indirect' : 'voluntary',
     });
 
     // ─── C5 ─── (Cloud-Anbieter + oeffentlicher Sektor)
@@ -286,6 +334,8 @@ export default function NavigatorPage() {
       id: 'c5',
       relevance: c5Score >= 80 ? 'high' : c5Score >= 40 ? 'medium' : c5Score >= 10 ? 'low' : 'none',
       score: c5Score, reasonKey: c5Reason,
+      regCategory: 'industry',
+      obligationType: c5Reason === 'c5PublicSector' || c5Reason === 'c5Cloud' ? 'indirect' : 'voluntary',
     });
 
     // ─── CIS Controls ─── (Pragmatische Baseline fuer alle)
@@ -302,6 +352,9 @@ export default function NavigatorPage() {
       id: 'cis-controls',
       relevance: cisScore >= 80 ? 'high' : cisScore >= 40 ? 'medium' : 'low',
       score: cisScore, reasonKey: cisReason,
+      regCategory: 'baseline',
+      obligationType: cisReason === 'cisCompliance' ? 'cascaded' : 'voluntary',
+      ...(cisReason === 'cisCompliance' ? { triggeredBy: nis2Score >= 80 ? 'NIS2' : 'ISO 27001' } : {}),
     });
 
     // ─── ISO 22301 BCM ─── (KRITIS-Sektoren brauchen BCM)
@@ -320,6 +373,9 @@ export default function NavigatorPage() {
       id: 'iso22301',
       relevance: bcmScore >= 80 ? 'high' : bcmScore >= 40 ? 'medium' : bcmScore >= 10 ? 'low' : 'none',
       score: bcmScore, reasonKey: bcmReason,
+      regCategory: 'framework',
+      obligationType: bcmReason === 'bcmKritis' || bcmReason === 'bcmNis2' ? 'cascaded' : 'voluntary',
+      ...(bcmReason === 'bcmKritis' ? { triggeredBy: 'KRITIS' } : bcmReason === 'bcmNis2' ? { triggeredBy: 'NIS2' } : {}),
     });
 
     // ─── NIST CSF ─── (Gutes Rahmenwerk fuer alle)
@@ -338,6 +394,9 @@ export default function NavigatorPage() {
       id: 'nist-csf',
       relevance: nistScore >= 80 ? 'high' : nistScore >= 40 ? 'medium' : 'low',
       score: nistScore, reasonKey: nistReason,
+      regCategory: 'framework',
+      obligationType: nistReason === 'nistCompliance' ? 'cascaded' : 'voluntary',
+      ...(nistReason === 'nistCompliance' ? { triggeredBy: iso27001Score >= 80 ? 'ISO 27001' : 'NIS2' } : {}),
     });
 
     // ─── OWASP ASVS ─── (Software/Digital-Branchen)
@@ -356,6 +415,8 @@ export default function NavigatorPage() {
       id: 'owasp-asvs',
       relevance: owaspScore >= 80 ? 'high' : owaspScore >= 40 ? 'medium' : owaspScore >= 10 ? 'low' : 'none',
       score: owaspScore, reasonKey: owaspReason,
+      regCategory: 'baseline',
+      obligationType: 'voluntary',
     });
 
     return [...results].sort((a, b) => b.score - a.score);
@@ -653,39 +714,31 @@ export default function NavigatorPage() {
               </div>
             </div>
 
-            {/* High relevance */}
-            {highResults.length > 0 && (
-              <div>
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 border border-emerald-300 px-3 py-1 text-xs font-semibold text-emerald-800">
-                    <CheckCircle2 className="size-3" />
-                    {t('result.highRelevance')}
-                  </span>
+            {/* Category-based results */}
+            {CATEGORY_ORDER.map((cat) => {
+              const catResults = results.filter(r => r.regCategory === cat && (r.relevance === 'high' || r.relevance === 'medium'));
+              if (catResults.length === 0) return null;
+              const catMeta = CATEGORY_DISPLAY[cat];
+              const CatIcon = catMeta.icon;
+              return (
+                <div key={cat}>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className={`inline-flex items-center gap-1.5 rounded-full ${catMeta.bgColor} border ${catMeta.borderColor} px-3 py-1 text-xs font-semibold ${catMeta.color}`}>
+                      <CatIcon className="size-3" />
+                      {t(`result.category.${cat}`)}
+                    </span>
+                    <span className="text-xs text-muted-foreground hidden sm:inline">
+                      {t(`result.categoryDesc.${cat}`)}
+                    </span>
+                  </div>
+                  <div className="space-y-3">
+                    {catResults.map((result) => (
+                      <ResultCard key={result.id} result={result} regMeta={regMeta} t={t} tReg={tReg} />
+                    ))}
+                  </div>
                 </div>
-                <div className="space-y-3">
-                  {highResults.map((result) => (
-                    <ResultCard key={result.id} result={result} regMeta={regMeta} t={t} tReg={tReg} />
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Medium relevance */}
-            {mediumResults.length > 0 && (
-              <div>
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 border border-amber-300 px-3 py-1 text-xs font-semibold text-amber-800">
-                    <CircleDot className="size-3" />
-                    {t('result.mediumRelevance')}
-                  </span>
-                </div>
-                <div className="space-y-3">
-                  {mediumResults.map((result) => (
-                    <ResultCard key={result.id} result={result} regMeta={regMeta} t={t} tReg={tReg} />
-                  ))}
-                </div>
-              </div>
-            )}
+              );
+            })}
 
             {/* Low + Not relevant (collapsed by default) */}
             {(lowResults.length > 0 || noneResults.length > 0) && (
@@ -800,9 +853,13 @@ function ResultCard({
           <Icon className={`size-5 ${meta.color}`} />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-baseline gap-2 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap">
             <span className="font-semibold whitespace-nowrap">{tReg(`${meta.tKey}.name`)}</span>
-            <span className="text-xs text-muted-foreground hidden sm:inline truncate">{tReg(`${meta.tKey}.fullName`)}</span>
+            <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-medium ${OBLIGATION_COLORS[result.obligationType]}`}>
+              {result.obligationType === 'cascaded' && result.triggeredBy
+                ? t('result.obligation.cascadedWith', { source: result.triggeredBy })
+                : t(`result.obligation.${result.obligationType}`)}
+            </span>
           </div>
           <p className="text-sm text-muted-foreground mt-0.5">{t(`reasons.${result.reasonKey}`)}</p>
           <p className="text-xs text-muted-foreground mt-0.5 flex items-center gap-1">

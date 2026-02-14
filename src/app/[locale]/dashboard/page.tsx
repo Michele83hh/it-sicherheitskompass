@@ -15,6 +15,7 @@ import { RegulationsOverview } from './components/regulations-overview';
 import { PillarPriorities } from './components/pillar-priorities';
 import { OperationalOverview } from './components/operational-overview';
 import { QuickActions } from './components/quick-actions';
+import { SynergyGraph } from './components/synergy-graph';
 
 export default function DashboardPage() {
   const tDash = useTranslations('platform.dashboard');
@@ -75,6 +76,11 @@ export default function DashboardPage() {
 
       {/* Zone 5: Operational Overview */}
       <OperationalOverview data={data} />
+
+      {/* Zone 5b: Synergy Graph */}
+      <div className="mb-8">
+        <SynergyGraph />
+      </div>
 
       {/* Zone 6: Quick Actions + Synergies */}
       <QuickActions data={data} />

@@ -96,7 +96,7 @@ export const useGapAnalysisStore = create<GapAnalysisState>()(
       reset: () => set({ currentCategoryIndex: 0, answers: [], hasCompletedQuickCheck: false, assessmentPhase: 'core' }),
     }),
     {
-      name: 'nis2-gap-analysis-storage', // localStorage key
+      name: 'nis2-assessment-storage', // localStorage key — matches generic store-factory pattern
       partialize: (state) => ({
         answers: state.answers,
         currentCategoryIndex: state.currentCategoryIndex,

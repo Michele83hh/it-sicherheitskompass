@@ -9,6 +9,9 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 import type { CategoryScore, EffortLevel } from '@/lib/regulations/types';
+import { getTlStyle } from '@/lib/ui/traffic-light-styles';
+
+const TL_ICONS = { red: AlertCircle, yellow: AlertTriangle, green: CheckCircle2 } as const;
 
 const ICON_MAP: Record<string, LucideIcon> = {
   Shield, AlertTriangle, ServerCrash, Link2, Code,
@@ -42,35 +45,10 @@ export function CategoryCard({
 }: CategoryCardProps) {
   const t = useTranslations('results');
 
-  const trafficLightConfig = {
-    red: {
-      icon: AlertCircle,
-      bgColor: 'bg-red-50',
-      textColor: 'text-red-600',
-      borderColor: 'border-red-200',
-      progressColor: '[&>div]:bg-red-500',
-      label: t('trafficLight.red'),
-    },
-    yellow: {
-      icon: AlertTriangle,
-      bgColor: 'bg-yellow-50',
-      textColor: 'text-yellow-600',
-      borderColor: 'border-yellow-200',
-      progressColor: '[&>div]:bg-yellow-500',
-      label: t('trafficLight.yellow'),
-    },
-    green: {
-      icon: CheckCircle2,
-      bgColor: 'bg-green-50',
-      textColor: 'text-green-600',
-      borderColor: 'border-green-200',
-      progressColor: '[&>div]:bg-green-500',
-      label: t('trafficLight.green'),
-    },
-  };
-
-  const config = trafficLightConfig[categoryScore.trafficLight];
-  const TrafficIcon = config.icon;
+  const tl = categoryScore.trafficLight;
+  const style = getTlStyle(tl);
+  const TrafficIcon = TL_ICONS[tl];
+  const tlLabel = t(`trafficLight.${tl}` as 'trafficLight.red');
   const CategoryIcon = categoryIcon ? ICON_MAP[categoryIcon] : null;
 
   const effortLevelConfig: Record<
@@ -79,15 +57,15 @@ export function CategoryCard({
   > = {
     quick: {
       label: t('effortLevel.quick'),
-      className: 'bg-green-100 text-green-800 border-green-200',
+      className: 'bg-emerald-100 text-emerald-700 border-emerald-200',
     },
     medium: {
       label: t('effortLevel.medium'),
-      className: 'bg-yellow-100 text-yellow-800 border-yellow-200',
+      className: 'bg-amber-100 text-amber-700 border-amber-200',
     },
     strategic: {
       label: t('effortLevel.strategic'),
-      className: 'bg-blue-100 text-blue-800 border-blue-200',
+      className: 'bg-blue-100 text-blue-700 border-blue-200',
     },
   };
 
@@ -100,11 +78,11 @@ export function CategoryCard({
             <CardTitle className="text-base">{categoryShortName}</CardTitle>
           </div>
           <div
-            className={`flex items-center gap-1.5 rounded-full px-2 py-1 ${config.bgColor} ${config.borderColor} border`}
+            className={`flex items-center gap-1.5 rounded-full px-2 py-1 ${style.bg} ${style.border} border`}
           >
-            <TrafficIcon className={`size-4 ${config.textColor}`} aria-hidden="true" />
-            <span className={`text-xs font-medium ${config.textColor}`}>
-              {config.label}
+            <TrafficIcon className={`size-4 ${style.text}`} aria-hidden="true" />
+            <span className={`text-xs font-medium ${style.text}`}>
+              {tlLabel}
             </span>
           </div>
         </div>
@@ -124,7 +102,7 @@ export function CategoryCard({
           </div>
           <Progress
             value={categoryScore.percentage}
-            className={config.progressColor}
+            className={style.progressBar}
           />
         </div>
 

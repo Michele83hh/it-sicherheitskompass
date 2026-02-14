@@ -14,7 +14,7 @@ import { getRegulation } from '@/lib/regulations/registry';
 import { calculateOverallScore, getTrafficLight } from '@/lib/scoring/engine';
 
 const STORAGE_KEYS: Record<RegulationId, string> = {
-  nis2: 'nis2-gap-analysis-storage',
+  nis2: 'nis2-assessment-storage',
   dsgvo: 'dsgvo-assessment-storage',
   kritis: 'kritis-assessment-storage',
   dora: 'dora-assessment-storage',

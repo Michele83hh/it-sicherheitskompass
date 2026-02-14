@@ -1517,6 +1517,16 @@
         "answer": "Yes. Your answers and results are saved in your browser's localStorage and are available on your next visit — until you clear your browser data or reset the analysis."
       }
     },
+    "pillarImpact": {
+      "title": "Impact on Your Security Pillars",
+      "subtitle": "This {regulation} assessment affects {count} of 8 pillars",
+      "subtitleNone": "Complete more assessments to populate pillar scores",
+      "regsAssessed": "{count}/{total} regulations",
+      "noData": "No data yet",
+      "notAffected": "Not affected",
+      "criticalWarning": "Critical: {pillars} below 40% — prioritize these areas",
+      "detailLink": "View all pillars in detail"
+    },
     "consultation": {
       "title": "Next Steps",
       "subtitle": "Your report provides the foundation — for implementation, we recommend professional support.",
@@ -5783,7 +5793,26 @@
         "firstStep3Time": "5 min check",
         "disclaimer": "This assessment is based on your answers and serves as initial guidance. It cannot replace a comprehensive legal evaluation.",
         "startFirstAnalysis": "Start your first analysis now",
-        "liability": "Executive liability: §38 BSIG — personal responsibility of management"
+        "liability": "Executive liability: §38 BSIG — personal responsibility of management",
+        "category": {
+          "legal": "Legal Requirements",
+          "industry": "Industry Standards",
+          "framework": "Recommended Frameworks",
+          "baseline": "Technical Baselines"
+        },
+        "categoryDesc": {
+          "legal": "These regulations are legally binding",
+          "industry": "Requirements from your industry, customers or partners",
+          "framework": "Proven frameworks for structured security",
+          "baseline": "Technical minimum standards as foundation"
+        },
+        "obligation": {
+          "direct": "Legal obligation",
+          "indirect": "Indirect obligation",
+          "cascaded": "Recommended",
+          "cascadedWith": "Recommended due to {source}",
+          "voluntary": "Best practice"
+        }
       },
       "deadlines": {
         "nis2": "Effective since Oct 17, 2024 (NIS2UmsuCG)",
@@ -5878,11 +5907,31 @@
       "notStarted": "Not started yet",
       "startCheck": "Start quick check",
       "checkAnyway": "Check anyway",
+      "continueQuickCheck": "Continue quick check",
+      "startFullCheck": "Start full assessment",
+      "quickCheckDone": "Quick check completed",
+      "quickCheckInProgress": "Quick check started",
       "notRelevant": "Not relevant for your profile",
+      "inactiveRegs": "Show {count} more regulations",
       "noNavigatorHint": "Start the status check for personalized recommendations",
       "synergiesTitle": "Identified Synergies",
       "synergiesHintTitle": "Leverage regulation synergies",
       "synergiesHintDesc": "Complete at least two regulation checks to identify overlaps and shared measures. This reduces implementation effort.",
+      "synergyGraph": {
+        "title": "Regulation Synergies",
+        "subtitle": "Explore {count} overlaps across 15 regulations. Click any regulation to see which requirements overlap with other standards — and where you can save implementation effort.",
+        "ariaLabel": "Interactive synergy graph of 15 regulations",
+        "connections": "connections",
+        "strongest": "Strongest",
+        "startCheck": "Start check",
+        "hintClick": "Click a regulation to see synergies",
+        "legend": {
+          "legal": "Legal",
+          "industry": "Industry",
+          "framework": "Framework",
+          "baseline": "Baseline"
+        }
+      },
       "overlap": "overlap",
       "nextSteps": {
         "title": "Your Next Steps",
@@ -5950,6 +5999,7 @@
         "criticalGap": "Most critical gap: {regulation} ({score}%)",
         "noCriticalGap": "No critical gaps detected",
         "regulationsAnalyzed": "{completed} of {total} regulations analyzed",
+        "quickWinsLabel": "Quick Wins",
         "maturityLevel": "Maturity level",
         "implementationRate": "Implementation rate",
         "regulationsLabel": "Regulations",
@@ -5957,6 +6007,9 @@
         "startFirstAnalysis": "Start your first analysis",
         "relevantCount": "{count} regulations apply to your organization",
         "startWithMostImportant": "Start now with your most important regulation",
+        "quickChecksDoneHint": "Quick check(s) completed — start the full assessment for detailed results",
+        "startFullAssessment": "Start full assessment",
+        "quickCheckLabel": "Quick check",
         "trend": {
           "up": "+{delta}% since {date}",
           "down": "{delta}% since {date}",

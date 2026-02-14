@@ -1517,6 +1517,16 @@
         "answer": "Ja. Ihre Antworten und Ergebnisse werden im localStorage Ihres Browsers gespeichert und sind beim nächsten Besuch wieder verfügbar — bis Sie die Browserdaten löschen oder die Analyse zurücksetzen."
       }
     },
+    "pillarImpact": {
+      "title": "Auswirkung auf Ihre Sicherheitssaeulen",
+      "subtitle": "Diese {regulation}-Bewertung beeinflusst {count} von 8 Saeulen",
+      "subtitleNone": "Starten Sie weitere Checks, um die Saeulen-Uebersicht zu fuellen",
+      "regsAssessed": "{count}/{total} Regelwerke",
+      "noData": "Noch keine Daten",
+      "notAffected": "Nicht betroffen",
+      "criticalWarning": "Kritisch: {pillars} unter 40% — priorisieren Sie diese Bereiche",
+      "detailLink": "Alle Saeulen im Detail"
+    },
     "consultation": {
       "title": "Nächste Schritte",
       "subtitle": "Ihr Report liefert die Grundlage — für die Umsetzung empfehlen wir professionelle Unterstützung.",
@@ -5837,7 +5847,26 @@
         "firstStep3Time": "5 Min. Check",
         "disclaimer": "Diese Einschätzung basiert auf Ihren Angaben und dient als erste Orientierung. Eine abschließende rechtliche Bewertung kann sie nicht ersetzen.",
         "startFirstAnalysis": "Jetzt erste Analyse starten",
-        "liability": "Geschäftsführerhaftung: §38 BSIG — persönliche Verantwortung der Geschäftsleitung"
+        "liability": "Geschäftsführerhaftung: §38 BSIG — persönliche Verantwortung der Geschäftsleitung",
+        "category": {
+          "legal": "Gesetzliche Pflichten",
+          "industry": "Branchenstandards",
+          "framework": "Empfohlene Rahmenwerke",
+          "baseline": "Technische Baselines"
+        },
+        "categoryDesc": {
+          "legal": "Diese Regelwerke sind gesetzlich verbindlich",
+          "industry": "Anforderungen Ihrer Branche, Kunden oder Partner",
+          "framework": "Bewährte Rahmenwerke für strukturierte Sicherheit",
+          "baseline": "Technische Mindeststandards als Grundlage"
+        },
+        "obligation": {
+          "direct": "Gesetzliche Pflicht",
+          "indirect": "Indirekte Pflicht",
+          "cascaded": "Empfohlen",
+          "cascadedWith": "Empfohlen wegen {source}",
+          "voluntary": "Best Practice"
+        }
       },
       "deadlines": {
         "nis2": "In Kraft seit 17.10.2024 (NIS2UmsuCG)",
@@ -5932,11 +5961,31 @@
       "notStarted": "Noch nicht gestartet",
       "startCheck": "Schnellcheck starten",
       "checkAnyway": "Trotzdem prüfen",
+      "continueQuickCheck": "Schnellcheck fortsetzen",
+      "startFullCheck": "Volles Assessment starten",
+      "quickCheckDone": "Schnellcheck abgeschlossen",
+      "quickCheckInProgress": "Schnellcheck begonnen",
       "notRelevant": "Nicht relevant für Ihr Profil",
+      "inactiveRegs": "{count} weitere Regelwerke anzeigen",
       "noNavigatorHint": "Starten Sie den Status-Check für personalisierte Empfehlungen",
       "synergiesTitle": "Erkannte Synergien",
       "synergiesHintTitle": "Regelwerk-Synergien nutzen",
       "synergiesHintDesc": "Schließen Sie mindestens zwei Regelwerk-Checks ab, um Überlappungen und gemeinsame Maßnahmen zu erkennen. Das spart Implementierungsaufwand.",
+      "synergyGraph": {
+        "title": "Regelwerk-Synergien",
+        "subtitle": "Entdecken Sie {count} Ueberschneidungen zwischen den 15 Regelwerken. Klicken Sie auf ein Regelwerk, um zu sehen, welche Anforderungen sich mit anderen Standards ueberlappen — und wo Sie Aufwand sparen koennen.",
+        "ariaLabel": "Interaktive Synergien-Grafik der 15 Regelwerke",
+        "connections": "Verbindungen",
+        "strongest": "Stärkste",
+        "startCheck": "Check starten",
+        "hintClick": "Regelwerk anklicken für Synergien",
+        "legend": {
+          "legal": "Gesetzlich",
+          "industry": "Branche",
+          "framework": "Rahmenwerk",
+          "baseline": "Baseline"
+        }
+      },
       "overlap": "Überlappung",
       "nextSteps": {
         "title": "Ihre nächsten Schritte",
@@ -6004,6 +6053,7 @@
         "criticalGap": "Kritischste Lücke: {regulation} ({score}%)",
         "noCriticalGap": "Keine kritischen Lücken erkannt",
         "regulationsAnalyzed": "{completed} von {total} Regelwerken analysiert",
+        "quickWinsLabel": "Quick Wins",
         "maturityLevel": "Reifegrad",
         "implementationRate": "Umsetzungsrate",
         "regulationsLabel": "Regelwerke",
@@ -6011,6 +6061,9 @@
         "startFirstAnalysis": "Starten Sie Ihre erste Analyse",
         "relevantCount": "{count} Regelwerke betreffen Ihr Unternehmen",
         "startWithMostImportant": "Starten Sie jetzt mit Ihrem wichtigsten Regelwerk",
+        "quickChecksDoneHint": "Schnellcheck(s) abgeschlossen — starten Sie jetzt das volle Assessment fuer detaillierte Ergebnisse",
+        "startFullAssessment": "Volles Assessment starten",
+        "quickCheckLabel": "Schnellcheck",
         "trend": {
           "up": "+{delta}% seit {date}",
           "down": "{delta}% seit {date}",

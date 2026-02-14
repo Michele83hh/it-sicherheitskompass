@@ -149,7 +149,7 @@ export default function HubPage() {
       <section className="text-center pb-12">
         <Button
           size="lg"
-          className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-10 py-7 font-semibold rounded-xl shadow-lg shadow-emerald-500/20"
+          className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-10 py-7 font-semibold rounded-lg shadow-md shadow-emerald-500/20"
           asChild
         >
           <Link href="/navigator">

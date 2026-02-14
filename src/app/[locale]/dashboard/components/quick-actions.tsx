@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Mail, FileSpreadsheet, Layers, Loader2, Check } from 'lucide-react';
 import type { DashboardData, RegulationStatus } from '@/lib/dashboard/aggregation';
+import { scoreBadge } from '@/lib/ui/traffic-light-styles';
 import { generateMailtoUrl } from '@/lib/pillars/delegation';
 import { getRegulation } from '@/lib/regulations/registry';
 import { calculateOverallScore } from '@/lib/scoring/engine';
@@ -212,7 +213,7 @@ export function QuickActions({ data }: QuickActionsProps) {
         let answers: Answer[] = [];
         try {
           const storageKeys: Record<string, string> = {
-            'nis2': 'nis2-gap-analysis-storage',
+            'nis2': 'nis2-assessment-storage',
             'dsgvo': 'dsgvo-assessment-storage',
             'kritis': 'kritis-assessment-storage',
             'dora': 'dora-assessment-storage',
@@ -365,9 +366,7 @@ export function QuickActions({ data }: QuickActionsProps) {
               <p className="text-xs text-muted-foreground mb-1">{tActions('delegateDesc')}</p>
               <p className="text-sm font-medium text-foreground mb-4">
                 {t(weakestPillar.pillar.nameKey)}
-                <span className={`ml-2 text-xs font-bold px-2 py-0.5 rounded-full ${
-                  (weakestPillar.score.score ?? 0) < 40 ? 'bg-red-50 text-red-600' : 'bg-amber-50 text-amber-600'
-                }`}>
+                <span className={`ml-2 text-xs font-bold px-2 py-0.5 rounded-full ${scoreBadge(weakestPillar.score.score)}`}>
                   {Math.round(weakestPillar.score.score ?? 0)}%
                 </span>
               </p>

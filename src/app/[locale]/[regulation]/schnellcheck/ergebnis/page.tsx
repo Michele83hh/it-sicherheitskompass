@@ -23,31 +23,8 @@ import {
 import { cn } from '@/lib/utils';
 import { RegulationBreadcrumb } from '@/components/layout/breadcrumb';
 import type { TrafficLight } from '@/lib/regulations/types';
+import { getTlStyle, tlText, tlBadge, tlDot, tlBadgeStrong } from '@/lib/ui/traffic-light-styles';
 import '@/lib/regulations/init';
-
-function trafficLightColor(tl: TrafficLight) {
-  switch (tl) {
-    case 'red': return 'text-red-600';
-    case 'yellow': return 'text-yellow-600';
-    case 'green': return 'text-green-600';
-  }
-}
-
-function trafficLightBg(tl: TrafficLight) {
-  switch (tl) {
-    case 'red': return 'bg-red-50 border-red-200';
-    case 'yellow': return 'bg-yellow-50 border-yellow-200';
-    case 'green': return 'bg-green-50 border-green-200';
-  }
-}
-
-function trafficLightDot(tl: TrafficLight) {
-  switch (tl) {
-    case 'red': return 'bg-red-500';
-    case 'yellow': return 'bg-yellow-500';
-    case 'green': return 'bg-green-500';
-  }
-}
 
 // trafficLightLabel removed — now uses i18n via tAll('common.trafficLight.{tl}')
 
@@ -209,11 +186,11 @@ export default function SchnellcheckErgebnisPage() {
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
       <RegulationBreadcrumb regulation={regulation} currentPage="schnellcheck" />
       {/* Hero Score */}
-      <div className={cn('rounded-xl border-2 p-8 text-center mb-6', trafficLightBg(score.trafficLight))}>
+      <div className={cn('rounded-xl border-2 p-8 text-center mb-6', `${getTlStyle(score.trafficLight).bg} ${getTlStyle(score.trafficLight).border}`)}>
         <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2">
           {t('scoreLabel')}
         </p>
-        <p className={cn('text-6xl font-bold', trafficLightColor(score.trafficLight))}>
+        <p className={cn('text-6xl font-bold', tlText(score.trafficLight))}>
           {Math.round(score.percentage)}%
         </p>
         <p className="mt-2 text-muted-foreground">
@@ -275,15 +252,13 @@ export default function SchnellcheckErgebnisPage() {
           <div className="space-y-3">
             {[...score.categoryScores].sort((a, b) => a.percentage - b.percentage).map((cs) => (
               <div key={cs.categoryId} className="flex items-center gap-3">
-                <div className={cn('size-3 rounded-full flex-shrink-0', trafficLightDot(cs.trafficLight))} />
+                <div className={cn('size-3 rounded-full flex-shrink-0', tlDot(cs.trafficLight))} />
                 <span className="flex-1 text-sm font-medium">
                   {getCategoryName(cs.categoryId)}
                 </span>
                 <span className={cn(
                   'text-xs font-medium px-2 py-0.5 rounded',
-                  cs.trafficLight === 'red' ? 'bg-red-100 text-red-700' :
-                  cs.trafficLight === 'yellow' ? 'bg-yellow-100 text-yellow-700' :
-                  'bg-green-100 text-green-700'
+                  tlBadgeStrong(cs.trafficLight)
                 )}>
                   {tAll(`common.trafficLight.${cs.trafficLight}`)}
                 </span>
