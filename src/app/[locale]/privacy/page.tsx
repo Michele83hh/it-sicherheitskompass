@@ -35,12 +35,20 @@ export default function PrivacyPage() {
         <p className="text-muted-foreground">{t('localStorageText')}</p>
       </section>
 
-      {/* Hosting */}
+      {/* Auslieferung und Hosting — Cloudflare liegt dem Vercel-Deployment vor */}
       <section className="mb-8">
         <h2 className="mb-4 text-xl font-semibold text-foreground">
-          {t('hostingTitle')}
+          {t('cdnTitle')}
         </h2>
-        <p className="text-muted-foreground">{t('hostingText')}</p>
+        <p className="text-muted-foreground">{t('cdnText')}</p>
+      </section>
+
+      {/* Freiwillige Sicherheits-Checks, inkl. Drittlanduebermittlung an HIBP */}
+      <section className="mb-8">
+        <h2 className="mb-4 text-xl font-semibold text-foreground">
+          {t('securityChecksTitle')}
+        </h2>
+        <p className="text-muted-foreground">{t('securityChecksText')}</p>
       </section>
 
       {/* Ihre Rechte */}

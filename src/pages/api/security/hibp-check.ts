@@ -25,6 +25,12 @@ interface HibpCheckResponse {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  // Verfuegbarkeit abfragbar machen, damit die Seite den Hinweis zeigen kann,
+  // BEVOR jemand seine E-Mail-Adresse eintippt und absendet.
+  if (req.method === 'GET') {
+    return res.status(200).json({ configured: Boolean(process.env.HIBP_API_KEY) });
+  }
+
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }

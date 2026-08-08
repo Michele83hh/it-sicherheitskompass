@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/navigation';
 import { ShieldAlert, ChevronLeft, Loader2, CheckCircle2, XCircle, Search, AlertTriangle } from 'lucide-react';
@@ -32,6 +32,17 @@ export default function HibpCheckPage() {
   const [result, setResult] = useState<HibpResult | null>(null);
   const [error, setError] = useState('');
   const [notConfigured, setNotConfigured] = useState(false);
+
+  // Verfuegbarkeit vorab klaeren: sonst tippt jemand seine Adresse ein, sendet sie
+  // ab und erfaehrt erst danach, dass der Dienst nicht eingerichtet ist.
+  useEffect(() => {
+    fetch('/api/security/hibp-check')
+      .then((r) => r.json())
+      .then((d) => setNotConfigured(!d.configured))
+      .catch(() => {
+        /* Erreichbarkeit klaert sich spaetestens beim Absenden */
+      });
+  }, []);
 
   async function handleCheck() {
     if (!email.trim() || !email.includes('@')) return;
@@ -92,9 +103,10 @@ export default function HibpCheckPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleCheck()}
                 placeholder={t('inputPlaceholder')}
-                className="flex-1 rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                disabled={notConfigured}
+                className="flex-1 rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:bg-slate-100 disabled:text-slate-400"
               />
-              <Button onClick={handleCheck} disabled={loading || !email.includes('@')} className="bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-500/20">
+              <Button onClick={handleCheck} disabled={loading || notConfigured || !email.includes('@')} className="bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-500/20">
                 {loading ? <Loader2 className="size-4 animate-spin mr-2" /> : <Search className="size-4 mr-2" />}
                 {t('checkButton')}
               </Button>

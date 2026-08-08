@@ -230,16 +230,18 @@
       "title": "Datenschutzhinweis",
       "introTitle": "Datenschutz auf einen Blick",
       "introText": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir Sie über den Umgang mit Ihren Daten bei der Nutzung dieser Website.",
-      "noDataTitle": "Keine Erhebung personenbezogener Daten",
-      "noDataText": "Diese Website erhebt, speichert oder verarbeitet keine personenbezogenen Daten. Es werden keine Cookies gesetzt, keine Tracking-Dienste eingesetzt und keine Analyse-Tools verwendet.",
+      "noDataTitle": "Kein Konto, kein Tracking",
+      "noDataText": "Diese Website benötigt keine Registrierung. Es werden keine Analyse- oder Tracking-Dienste eingesetzt und keine Cookies zu Werbe- oder Statistikzwecken gesetzt. Ihre Antworten in den Fragebögen bleiben in Ihrem Browser. Personenbezogene Daten fallen dennoch in zwei Fällen an: bei den technisch notwendigen Zugriffsdaten (siehe „Auslieferung und Hosting\") und wenn Sie eines der freiwilligen Sicherheits-Werkzeuge nutzen (siehe „Sicherheits-Checks\").",
       "localStorageTitle": "Lokale Datenspeicherung im Browser",
       "localStorageText": "Ihre Eingaben im Fragebogen werden ausschließlich lokal in Ihrem Browser (Local Storage) gespeichert, um den Fortschritt während der Nutzung zu erhalten. Diese Daten verlassen zu keinem Zeitpunkt Ihren Browser und werden nicht an unsere oder andere Server übermittelt. Sie können diese Daten jederzeit durch Löschen des Browser-Speichers entfernen.",
-      "hostingTitle": "Hosting",
-      "hostingText": "Diese Website wird bei Vercel Inc. gehostet. Beim Aufruf der Website werden automatisch technische Zugriffsdaten (z.B. IP-Adresse, Zeitpunkt des Zugriffs) vom Hosting-Provider verarbeitet. Details finden Sie in der Datenschutzerklärung von Vercel: https://vercel.com/legal/privacy-policy",
       "rightsTitle": "Ihre Rechte",
-      "rightsText": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Da wir keine personenbezogenen Daten erheben, entfallen diese Rechte im Kontext dieser Website.",
+      "rightsText": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, sich bei einer Aufsichtsbehörde zu beschweren. Da wir selbst keine Nutzerkonten führen und Eingaben nicht speichern, beschränkt sich eine Auskunft in der Regel auf die technischen Zugriffsdaten der eingesetzten Dienstleister.",
       "contactTitle": "Kontakt",
-      "contactText": "Bei Fragen zum Datenschutz wenden Sie sich bitte an die im Impressum genannte Kontaktadresse."
+      "contactText": "Bei Fragen zum Datenschutz wenden Sie sich bitte an die im Impressum genannte Kontaktadresse.",
+      "cdnTitle": "Auslieferung und Hosting",
+      "cdnText": "Die Auslieferung erfolgt über Cloudflare, Inc. als vorgeschaltetes Content-Delivery-Netzwerk; die Anwendung selbst läuft bei Vercel Inc. Beide verarbeiten dabei technische Zugriffsdaten wie IP-Adresse, Zeitpunkt der Anfrage, angefragte Adresse, Browser- und Betriebssystemkennung. Diese Verarbeitung ist für den Betrieb und die Abwehr von Angriffen erforderlich (Art. 6 Abs. 1 lit. f DSGVO). Beide Anbieter verarbeiten Daten auch außerhalb der EU. Weitere Angaben: https://www.cloudflare.com/privacypolicy/ und https://vercel.com/legal/privacy-policy",
+      "securityChecksTitle": "Sicherheits-Checks (freiwillig)",
+      "securityChecksText": "Die Werkzeuge E-Mail-Sicherheit, Website-Sicherheit und Datenleck-Prüfung verarbeiten nur, was Sie dort selbst eingeben — und nur, wenn Sie die Prüfung starten. Beim E-Mail-Check wird die Domain öffentlich per DNS abgefragt. Beim Website-Check ruft unser Server die angegebene Adresse einmalig auf und liest deren Antwort-Header. Bei der Datenleck-Prüfung wird die von Ihnen eingegebene E-Mail-Adresse an den Dienst „Have I Been Pwned\" (Superlative Enterprises Pty Ltd, Australien) übermittelt; diese Übermittlung erfolgt in ein Drittland ohne Angemessenheitsbeschluss und ausschließlich auf Ihre Veranlassung hin. Wir speichern die Eingaben und Ergebnisse nicht."
     }
   },
   "sectors": {
@@ -5868,19 +5870,19 @@
       "deadlines": {
         "nis2": "In Kraft seit 06.12.2025 (NIS2UmsG)",
         "dsgvo": "In Kraft seit 25.05.2018",
-        "kritis": "In Kraft seit 2021 (IT-SiG 2.0)",
+        "kritis": "Kritische Anlagen: BSIG seit 06.12.2025 (zuvor IT-SiG 2.0)",
         "dora": "In Kraft seit 17.01.2025",
         "tisax": "Fortlaufend — OEM-Anforderung",
         "cra": "Meldepflichten ab 11.09.2026, volle Anwendung ab 11.12.2027 (EU 2024/2847)",
         "bsi-grundschutz": "Rahmenwerk — keine gesetzliche Frist",
         "iso27001": "Rahmenwerk — keine gesetzliche Frist",
         "soc2": "Rahmenwerk — keine gesetzliche Frist",
-        "pci-dss": "PCI DSS v4.0 seit 31.03.2024",
+        "pci-dss": "PCI DSS v4.0.1 seit 31.12.2024 (Umsetzungsfrist neuer Anforderungen: 31.03.2025)",
         "c5": "Rahmenwerk — keine gesetzliche Frist",
-        "cis-controls": "Seit 2023 (v8.1)",
+        "cis-controls": "Seit Juni 2024 (v8.1)",
         "iso22301": "Seit 2019 (2nd Edition)",
         "nist-csf": "Seit 2024 (v2.0)",
-        "owasp-asvs": "Seit 2021 (v4.0.3)"
+        "owasp-asvs": "Fragen nach v4.0.3 — aktuelle Fassung: v5.0 (Mai 2025)"
       },
       "reasons": {
         "nis2SectorSize": "Ihr Unternehmen fällt in einen NIS2-Sektor und erfüllt die Größenschwelle.",
@@ -11035,7 +11037,7 @@
       "checkButton": "Pruefen",
       "privacy": "Ihre E-Mail wird nur fuer die Abfrage verwendet und nicht gespeichert.",
       "errors": {
-        "notConfigured": "Der Datenleck-Check ist derzeit nicht verfuegbar. Der HIBP-API-Schluessel muss konfiguriert werden.",
+        "notConfigured": "Der Datenleck-Check ist derzeit nicht verfügbar. Bis er wieder bereitsteht, können Sie Ihre Adresse direkt bei haveibeenpwned.com prüfen — dort werden dieselben Daten ausgewertet.",
         "rateLimit": "Zu viele Anfragen. Bitte versuchen Sie es in einer Minute erneut."
       },
       "results": {

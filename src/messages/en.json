@@ -230,16 +230,18 @@
       "title": "Privacy Notice",
       "introTitle": "Privacy at a Glance",
       "introText": "The protection of your personal data is important to us. Below we inform you about how we handle your data when you use this website.",
-      "noDataTitle": "No Collection of Personal Data",
-      "noDataText": "This website does not collect, store or process any personal data. No cookies are set, no tracking services are used and no analytics tools are employed.",
+      "noDataTitle": "No account, no tracking",
+      "noDataText": "This website requires no registration. No analytics or tracking services are used, and no cookies are set for advertising or statistical purposes. Your questionnaire answers stay in your browser. Personal data is nevertheless processed in two cases: the technically necessary access data (see \"Delivery and hosting\") and when you use one of the optional security tools (see \"Security checks\").",
       "localStorageTitle": "Local Data Storage in Browser",
       "localStorageText": "Your inputs in the questionnaire are stored exclusively locally in your browser (Local Storage) to preserve progress during use. This data never leaves your browser and is not transmitted to our or other servers. You can remove this data at any time by clearing your browser storage.",
-      "hostingTitle": "Hosting",
-      "hostingText": "This website is hosted by Vercel Inc. When accessing the website, technical access data (e.g. IP address, time of access) is automatically processed by the hosting provider. Details can be found in Vercel's privacy policy: https://vercel.com/legal/privacy-policy",
       "rightsTitle": "Your Rights",
-      "rightsText": "You have the right to information, correction, deletion and restriction of the processing of your personal data. Since we do not collect any personal data, these rights do not apply in the context of this website.",
+      "rightsText": "You have the right to access, rectification, erasure, restriction of processing, data portability and objection, as well as the right to lodge a complaint with a supervisory authority. As we do not operate user accounts and do not store your inputs, a request for access will usually be limited to the technical access data held by the service providers used.",
       "contactTitle": "Contact",
-      "contactText": "If you have any questions about data protection, please contact the address given in the imprint."
+      "contactText": "If you have any questions about data protection, please contact the address given in the imprint.",
+      "cdnTitle": "Delivery and hosting",
+      "cdnText": "The site is delivered via Cloudflare, Inc. as an upstream content delivery network; the application itself runs on Vercel Inc. Both process technical access data such as IP address, time of request, requested address and browser and operating system identifiers. This processing is necessary for operation and attack prevention (Art. 6(1)(f) GDPR). Both providers also process data outside the EU. Further information: https://www.cloudflare.com/privacypolicy/ and https://vercel.com/legal/privacy-policy",
+      "securityChecksTitle": "Security checks (optional)",
+      "securityChecksText": "The email security, website security and breach check tools process only what you enter there, and only when you start the check. The email check queries the domain publicly via DNS. The website check has our server call the given address once and read its response headers. For the breach check, the email address you enter is transmitted to the \"Have I Been Pwned\" service (Superlative Enterprises Pty Ltd, Australia); this is a transfer to a third country without an adequacy decision and happens solely at your instruction. We do not store the inputs or results."
     }
   },
   "sectors": {
@@ -5814,19 +5816,19 @@
       "deadlines": {
         "nis2": "In force since Dec 6, 2025 (NIS2UmsG)",
         "dsgvo": "Effective since May 25, 2018",
-        "kritis": "Effective since 2021 (IT Security Act 2.0)",
+        "kritis": "Critical installations: BSIG since Dec 6, 2025 (previously IT Security Act 2.0)",
         "dora": "Effective since Jan 17, 2025",
         "tisax": "Ongoing — OEM requirement",
         "cra": "Reporting duties from Sep 11, 2026; full application Dec 11, 2027 (EU 2024/2847)",
         "bsi-grundschutz": "Framework — no legal deadline",
         "iso27001": "Framework — no legal deadline",
         "soc2": "Framework — no legal deadline",
-        "pci-dss": "PCI DSS v4.0 since Mar 31, 2024",
+        "pci-dss": "PCI DSS v4.0.1 since Dec 31, 2024 (compliance date for new requirements: Mar 31, 2025)",
         "c5": "Framework — no legal deadline",
-        "cis-controls": "Since 2023 (v8.1)",
+        "cis-controls": "Since June 2024 (v8.1)",
         "iso22301": "Since 2019 (2nd Edition)",
         "nist-csf": "Since 2024 (v2.0)",
-        "owasp-asvs": "Since 2021 (v4.0.3)"
+        "owasp-asvs": "Questions based on v4.0.3 — current release: v5.0 (May 2025)"
       },
       "reasons": {
         "nis2SectorSize": "Your organization falls within a NIS2 sector and meets the size threshold.",
@@ -10981,7 +10983,7 @@
       "checkButton": "Check",
       "privacy": "Your email is only used for the query and is not stored.",
       "errors": {
-        "notConfigured": "The data breach check is currently unavailable. The HIBP API key needs to be configured.",
+        "notConfigured": "The breach check is currently unavailable. In the meantime you can check your address directly at haveibeenpwned.com — it evaluates the same data.",
         "rateLimit": "Too many requests. Please try again in a minute."
       },
       "results": {
