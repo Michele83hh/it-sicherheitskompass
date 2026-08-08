@@ -7056,7 +7056,7 @@
   "dinSpec": {
     "title": "DIN SPEC 27076 Vergleich",
     "subtitle": "CyberRisikoCheck vs. NIS2 — Gemeinsamkeiten und Unterschiede",
-    "intro": "Die DIN SPEC 27076 (CyberRisikoCheck) ist ein standardisierter IT-Sicherheitscheck für KMU bis 50 Mitarbeiter. Sie deckt 27 Anforderungen in 6 Themenbereichen ab und wird über das go-digital-Programm zu 50% gefördert.",
+    "intro": "Die DIN SPEC 27076 (CyberRisikoCheck) ist ein standardisierter IT-Sicherheitscheck für KMU bis 50 Mitarbeiter. Sie deckt 27 Anforderungen in 6 Themenbereichen ab. Die Beratungskosten können über das BAFA-Programm zur Förderung unternehmerischen Know-hows bezuschusst werden (Anträge bis 31.12.2026).",
     "comparison": {
       "title": "Vergleich",
       "header": {
@@ -7081,7 +7081,7 @@
       },
       "subsidy": {
         "aspect": "Förderung",
-        "dinSpec": "50% über go-digital-Programm",
+        "dinSpec": "Beratungszuschuss über BAFA möglich",
         "nis2": "Keine Förderung"
       }
     },
@@ -12063,7 +12063,7 @@
       "tips": {
         "title": "Spar-Tipps",
         "items": {
-          "i1": "Fördermittel nutzen: go-digital, Digital Jetzt, KfW (bis zu 50% Förderung)",
+          "i1": "Fördermittel nutzen: BAFA-Beratungsförderung (Anträge bis 31.12.2026), Mittelstand-Digital Zentren (kostenfrei)",
           "i2": "Open-Source-Tools: KeePass, pfSense, Wazuh, ClamAV — professionell und kostenlos",
           "i3": "BSI-Grundschutz statt teurer Beratung: Frei verfügbar, gut dokumentiert",
           "i4": "Schulungen intern: Videos, Quizzes, Micro-Learning statt teurer Präsenzschulungen",

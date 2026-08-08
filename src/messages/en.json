@@ -7056,7 +7056,7 @@
   "dinSpec": {
     "title": "DIN SPEC 27076 Comparison",
     "subtitle": "CyberRisikoCheck vs. NIS2 — Similarities and Differences",
-    "intro": "DIN SPEC 27076 (CyberRisikoCheck) is a standardized IT security check for SMEs up to 50 employees. It covers 27 requirements across 6 topic areas and is 50% subsidized through the go-digital program.",
+    "intro": "DIN SPEC 27076 (CyberRisikoCheck) is a standardized IT security check for SMEs up to 50 employees. It covers 27 requirements across 6 topic areas. Consulting costs can be subsidized through the BAFA programme for promoting entrepreneurial know-how (applications until 31 December 2026).",
     "comparison": {
       "title": "Comparison",
       "header": {
@@ -7081,7 +7081,7 @@
       },
       "subsidy": {
         "aspect": "Subsidy",
-        "dinSpec": "50% via go-digital program",
+        "dinSpec": "Consulting subsidy available via BAFA",
         "nis2": "No subsidy"
       }
     },
@@ -12063,7 +12063,7 @@
       "tips": {
         "title": "Money-Saving Tips",
         "items": {
-          "i1": "Use funding: go-digital, Digital Jetzt, KfW (up to 50% funded)",
+          "i1": "Use funding: BAFA consulting subsidy (applications until 31 Dec 2026), Mittelstand-Digital centres (free of charge)",
           "i2": "Open source tools: KeePass, pfSense, Wazuh, ClamAV — professional and free",
           "i3": "BSI Grundschutz instead of expensive consulting: Freely available, well documented",
           "i4": "Internal training: Videos, quizzes, micro-learning instead of expensive in-person training",
