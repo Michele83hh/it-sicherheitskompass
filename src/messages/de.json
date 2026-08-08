@@ -6232,7 +6232,7 @@
     "contacts": {
       "title": "BSI-Meldewege",
       "portal": "BSI-Meldeportal (empfohlen)",
-      "portalUrl": "https://meldestelle.bsi.bund.de",
+      "portalUrl": "https://mip2.bsi.bund.de",
       "email": "E-Mail-Meldung",
       "emailAddress": "meldestelle@bsi.bund.de",
       "phone": "Telefonische Meldung (24/7)",
@@ -6383,11 +6383,11 @@
     "links": {
       "title": "Wichtige Links",
       "bsiPortal": "BSI-Registrierungsportal",
-      "bsiPortalUrl": "https://nis2-registrierung.bsi.bund.de",
+      "bsiPortalUrl": "https://portal.bsi.bund.de",
       "muk": "Mein Unternehmenskonto (MUK)",
       "mukUrl": "https://id.bund.de",
       "bsiInfo": "BSI-Informationsseite zu NIS2",
-      "bsiInfoUrl": "https://www.bsi.bund.de/DE/Themen/Regulierung/NIS-2/nis-2_node.html"
+      "bsiInfoUrl": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html"
     },
     "legalBasis": "Rechtsgrundlage: §§33-34 BSIG i.V.m. Art. 3 Abs. 3, Art. 27 NIS2-RL"
   },
@@ -9522,12 +9522,12 @@
         "bsiDesc": "Zentrale Anlaufstelle für Betreiber kritischer Infrastrukturen und NIS2-regulierte Unternehmen. Pflichtmeldungen gehen hierhin.",
         "bsiPhone": "+49 228 99 9582-5500",
         "bsiEmail": "meldestelle@bsi.bund.de",
-        "bsiWeb": "https://meldestelle.bsi.bund.de",
+        "bsiWeb": "https://mip2.bsi.bund.de",
         "certTitle": "CERT-Bund (Computer Emergency Response Team)",
         "certDesc": "Nationales CERT für Bundesbehörden und kritische Infrastrukturen. Technische Soforthilfe bei Cyberangriffen.",
         "certPhone": "+49 228 99 9582-0",
         "certEmail": "certbund@bsi.bund.de",
-        "certWeb": "https://www.bsi.bund.de/cert-bund",
+        "certWeb": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Reaktion/CERT-Bund/cert-bund_node.html",
         "polizeiTitle": "Polizei — Zentrale Ansprechstellen Cybercrime (ZAC)",
         "polizeiDesc": "Jedes Bundesland hat eine spezialisierte ZAC-Stelle für Cyberkriminalität. Erstatten Sie Anzeige bei Ransomware, Datendiebstahl oder digitaler Erpressung.",
         "polizeiCta": "ZAC Ihres Bundeslandes finden",
@@ -9552,7 +9552,7 @@
         "title": "Forensik & Incident Response",
         "allianzTitle": "Allianz für Cyber-Sicherheit — Dienstleister-Liste",
         "allianzDesc": "Das BSI führt eine Liste qualifizierter IT-Sicherheitsdienstleister für Incident Response und Forensik.",
-        "allianzWeb": "https://www.allianz-für-cybersicherheit.de/Webs/ACS/DE/IT-Sicherheitsdienstleister/it-sicherheitsdienstleister.html",
+        "allianzWeb": "https://www.allianz-fuer-cybersicherheit.de/Webs/ACS/DE/Informationen-und-Empfehlungen/Informationen-und-weiterfuehrende-Angebote/Qualifizierte-Dienstleister/qualifizierte-dienstleister_node.html",
         "tipTitle": "Wichtige Sofortmassnahmen",
         "tip1": "Betroffene Systeme NICHT abschalten — Beweise sichern!",
         "tip2": "Netzwerksegmente isolieren, nicht löschen",
@@ -9568,7 +9568,7 @@
         "bfdiWeb": "https://www.bfdi.bund.de",
         "landesTitle": "Landesdatenschutzbehörden",
         "landesDesc": "Für Unternehmen in Privatwirtschaft: Wenden Sie sich an die Behörde des Bundeslandes, in dem Ihr Unternehmen seinen Sitz hat.",
-        "landesWeb": "https://www.bfdi.bund.de/DE/Service/Anschriften/Länder/Länder-node.html"
+        "landesWeb": "https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html"
       },
       "checklist": {
         "title": "Notfall-Checkliste",
@@ -9599,14 +9599,14 @@
         "title": "Allianz für Cyber-Sicherheit (ACS)",
         "desc": "BSI-Initiative speziell für Unternehmen. Kostenlose Mitgliedschaft, Erfahrungsaustausch, Warnmeldungen und Praxisleitfäden. Über 7.000 Teilnehmer.",
         "services": "Partnerkreis, Erfahrungsaustausch, Cyber-Sicherheits-Umfrage, Praxisguides",
-        "web": "https://www.allianz-für-cybersicherheit.de",
+        "web": "https://www.allianz-fuer-cybersicherheit.de",
         "free": "Kostenlose Mitgliedschaft"
       },
       "tisim": {
-        "title": "Transferstelle IT-Sicherheit im Mittelstand (TISiM)",
-        "desc": "Vom BMWi geförderte Initiative, die KMU mit konkreten, branchenspezifischen Handlungsempfehlungen versorgt. Der Sec-O-Mat erstellt individuelle Aktionspläne.",
-        "services": "Sec-O-Mat (individueller Aktionsplan), regionale IT-Sicherheitstrainer, Webinare",
-        "web": "https://www.tisim.de",
+        "title": "Mittelstand-Digital Zentren",
+        "desc": "Vom Bundeswirtschaftsministerium gefördertes Netz aus rund 30 Zentren, das KMU und Handwerksbetriebe kostenfrei bei Digitalisierung und IT-Sicherheit begleitet. Die frühere Transferstelle TISiM ist darin aufgegangen.",
+        "services": "Workshops, Demonstratoren, Einzelberatung vor Ort, Praxisleitfäden",
+        "web": "https://www.mittelstand-digital.de",
         "free": "Kostenlos"
       },
       "dsin": {
@@ -9652,7 +9652,7 @@
         "desc": "Zinsgünstige Kredite für Digitalisierungs- und Innovationsvorhaben einschließlich IT-Sicherheit. Die ERP-Programme wurden zum 01.07.2025 neu zugeschnitten; der frühere Digitalisierungskredit 380 in seiner alten Form ist entfallen.",
         "funding": "Kredit; der Zinssatz richtet sich nach Bonität und Sicherheiten und liegt derzeit deutlich über den Konditionen früherer Jahre",
         "eligible": "Mittelständische Unternehmen — Konditionen und Programmzuschnitt bei der Hausbank erfragen",
-        "web": "https://www.kfw.de/inlandsförderung/Unternehmen/",
+        "web": "https://www.kfw.de/inlandsfoerderung/Unternehmen/",
         "status": "Laufend, Konditionen geändert"
       },
       "laender": {

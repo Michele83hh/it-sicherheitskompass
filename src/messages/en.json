@@ -6232,7 +6232,7 @@
     "contacts": {
       "title": "BSI Reporting Channels",
       "portal": "BSI Reporting Portal (recommended)",
-      "portalUrl": "https://meldestelle.bsi.bund.de",
+      "portalUrl": "https://mip2.bsi.bund.de",
       "email": "Email Reporting",
       "emailAddress": "meldestelle@bsi.bund.de",
       "phone": "Phone Reporting (24/7)",
@@ -6383,11 +6383,11 @@
     "links": {
       "title": "Important Links",
       "bsiPortal": "BSI Registration Portal",
-      "bsiPortalUrl": "https://nis2-registrierung.bsi.bund.de",
+      "bsiPortalUrl": "https://portal.bsi.bund.de",
       "muk": "Mein Unternehmenskonto (MUK)",
       "mukUrl": "https://id.bund.de",
       "bsiInfo": "BSI Information Page on NIS2",
-      "bsiInfoUrl": "https://www.bsi.bund.de/DE/Themen/Regulierung/NIS-2/nis-2_node.html"
+      "bsiInfoUrl": "https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html"
     },
     "legalBasis": "Legal basis: §§33-34 BSIG in conjunction with Art. 3(3), Art. 27 NIS2 Directive"
   },
@@ -9522,12 +9522,12 @@
         "bsiDesc": "Central contact point for critical infrastructure operators and NIS2-regulated companies. Mandatory reports go here.",
         "bsiPhone": "+49 228 99 9582-5500",
         "bsiEmail": "meldestelle@bsi.bund.de",
-        "bsiWeb": "https://meldestelle.bsi.bund.de",
+        "bsiWeb": "https://mip2.bsi.bund.de",
         "certTitle": "CERT-Bund (Computer Emergency Response Team)",
         "certDesc": "National CERT for federal authorities and critical infrastructure. Technical emergency assistance for cyberattacks.",
         "certPhone": "+49 228 99 9582-0",
         "certEmail": "certbund@bsi.bund.de",
-        "certWeb": "https://www.bsi.bund.de/cert-bund",
+        "certWeb": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Cyber-Sicherheitslage/Reaktion/CERT-Bund/cert-bund_node.html",
         "polizeiTitle": "Police — Central Cybercrime Contact Points (ZAC)",
         "polizeiDesc": "Every German state has a specialized ZAC unit for cybercrime. File a report for ransomware, data theft, or digital extortion.",
         "polizeiCta": "Find your state's ZAC",
@@ -9552,7 +9552,7 @@
         "title": "Forensics & Incident Response",
         "allianzTitle": "Alliance for Cyber Security — Service Provider Directory",
         "allianzDesc": "The BSI maintains a list of qualified IT security service providers for incident response and forensics.",
-        "allianzWeb": "https://www.allianz-fuer-cybersicherheit.de/Webs/ACS/DE/IT-Sicherheitsdienstleister/it-sicherheitsdienstleister.html",
+        "allianzWeb": "https://www.allianz-fuer-cybersicherheit.de/Webs/ACS/DE/Informationen-und-Empfehlungen/Informationen-und-weiterfuehrende-Angebote/Qualifizierte-Dienstleister/qualifizierte-dienstleister_node.html",
         "tipTitle": "Critical First Steps",
         "tip1": "Do NOT shut down affected systems — preserve evidence!",
         "tip2": "Isolate network segments, do not delete",
@@ -9603,10 +9603,10 @@
         "free": "Free membership"
       },
       "tisim": {
-        "title": "Transfer Center IT Security for SMEs (TISiM)",
-        "desc": "BMWi-funded initiative providing SMEs with concrete, industry-specific recommendations. The Sec-O-Mat creates individual action plans.",
-        "services": "Sec-O-Mat (individual action plan), regional IT security trainers, webinars",
-        "web": "https://www.tisim.de",
+        "title": "Mittelstand-Digital Centres",
+        "desc": "A network of around 30 centres funded by the Federal Ministry for Economic Affairs, supporting SMEs and skilled crafts businesses on digitalisation and IT security free of charge. The former TISiM transfer centre has been merged into it.",
+        "services": "Workshops, demonstrators, on-site advice, practical guides",
+        "web": "https://www.mittelstand-digital.de",
         "free": "Free of charge"
       },
       "dsin": {
