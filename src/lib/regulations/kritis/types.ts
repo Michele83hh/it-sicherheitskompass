@@ -38,7 +38,6 @@ export type KritisClassification =
 export interface KritisSector {
   id: string;
   nameKey: string; // Translation key: "kritis.sectors.{sectorId}.name"
-  schwellenwert: string; // Description of the threshold
   schwellenwertKey: string; // Translation key for threshold description
   metric: string; // What is measured (e.g., "versorgtePersonen", "mwh")
 }
@@ -53,7 +52,7 @@ export interface KritisClassificationInput {
 export interface KritisClassificationResult {
   category: KritisClassification;
   reason: string; // Translation key for explanation
-  legalReference: string; // e.g., "§2 Abs. 10 BSI-Gesetz"
+  legalReference: string; // e.g., "§2 Nr. 22 BSIG i.V.m. §2 Nr. 3 KRITIS-Dachgesetz"
 }
 
 export interface Question {

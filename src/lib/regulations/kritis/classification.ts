@@ -4,17 +4,13 @@
  * Determines whether an organization is a KRITIS operator based on
  * BSI-KritisV Schwellenwerte (threshold values).
  *
- * 8 KRITIS sectors with specific thresholds:
- * - Energy: >500,000 connected customers
- * - Water: >500,000 supplied persons
- * - Food: >434,500 t/year processed volume
- * - IT/Telecom: >100,000 subscribers
- * - Health: >30,000 full inpatient cases/year
- * - Finance: >15 million transactions/year
- * - Transport: >125 million passengers/year or >17.5 million t cargo/year
- * - Waste: >500,000 connected persons
+ * 10 KRITIS sectors (§2 Nr. 4 KRITIS-Dachgesetz, seit 17.03.2026):
+ * Energie, Transport und Verkehr, Finanzwesen, Sozialversicherung/
+ * Grundsicherung, Gesundheitswesen, Wasser, Ernaehrung, IT und TK,
+ * Weltraum, Siedlungsabfallentsorgung.
  *
- * Legal basis: §2 Abs. 10 BSI-Gesetz, BSI-KritisV
+ * Legal basis: §28 Abs. 1 Nr. 1, §2 Nr. 22/24 BSIG i.V.m.
+ * §2 Nr. 3/4 KRITIS-Dachgesetz; Schwellenwerte: BSI-KritisV (§56 Abs. 4 BSIG)
  */
 
 import type {
@@ -32,56 +28,60 @@ export const KRITIS_SECTORS: KritisSector[] = [
   {
     id: 'energie',
     nameKey: 'kritis.sectors.energie.name',
-    schwellenwert: '>500.000 angeschlossene Kunden',
     schwellenwertKey: 'kritis.sectors.energie.threshold',
-    metric: 'connectedCustomers',
+    metric: 'installedCapacityMw',
   },
   {
     id: 'wasser',
     nameKey: 'kritis.sectors.wasser.name',
-    schwellenwert: '>500.000 versorgte Personen',
     schwellenwertKey: 'kritis.sectors.wasser.threshold',
     metric: 'suppliedPersons',
   },
   {
     id: 'ernaehrung',
     nameKey: 'kritis.sectors.ernaehrung.name',
-    schwellenwert: '>434.500 t/Jahr Verarbeitungsvolumen',
     schwellenwertKey: 'kritis.sectors.ernaehrung.threshold',
     metric: 'processingVolumeTons',
   },
   {
     id: 'it-telekommunikation',
     nameKey: 'kritis.sectors.itTelekommunikation.name',
-    schwellenwert: '>100.000 Teilnehmer',
     schwellenwertKey: 'kritis.sectors.itTelekommunikation.threshold',
-    metric: 'subscribers',
+    metric: 'contractPartners',
   },
   {
     id: 'gesundheit',
     nameKey: 'kritis.sectors.gesundheit.name',
-    schwellenwert: '>30.000 vollstationaere Faelle/Jahr',
     schwellenwertKey: 'kritis.sectors.gesundheit.threshold',
     metric: 'inpatientCases',
   },
   {
-    id: 'finanz-versicherungswesen',
-    nameKey: 'kritis.sectors.finanzVersicherungswesen.name',
-    schwellenwert: '>15 Mio. Transaktionen/Jahr',
-    schwellenwertKey: 'kritis.sectors.finanzVersicherungswesen.threshold',
+    id: 'finanzwesen',
+    nameKey: 'kritis.sectors.finanzwesen.name',
+    schwellenwertKey: 'kritis.sectors.finanzwesen.threshold',
     metric: 'transactions',
+  },
+  {
+    id: 'sozialversicherung',
+    nameKey: 'kritis.sectors.sozialversicherung.name',
+    schwellenwertKey: 'kritis.sectors.sozialversicherung.threshold',
+    metric: 'insuredPersons',
   },
   {
     id: 'transport-verkehr',
     nameKey: 'kritis.sectors.transportVerkehr.name',
-    schwellenwert: '>125 Mio. Passagiere/Jahr oder >17,5 Mio. t Fracht/Jahr',
     schwellenwertKey: 'kritis.sectors.transportVerkehr.threshold',
     metric: 'passengersOrCargo',
   },
   {
+    id: 'weltraum',
+    nameKey: 'kritis.sectors.weltraum.name',
+    schwellenwertKey: 'kritis.sectors.weltraum.threshold',
+    metric: 'groundInfrastructure',
+  },
+  {
     id: 'entsorgung',
     nameKey: 'kritis.sectors.entsorgung.name',
-    schwellenwert: '>500.000 angeschlossene Personen',
     schwellenwertKey: 'kritis.sectors.entsorgung.threshold',
     metric: 'connectedPersons',
   },
@@ -110,12 +110,12 @@ export function getAllSectors(): KritisSector[] {
 export function classifyKritis(input: KritisClassificationInput): KritisClassificationResult {
   const { sectorId, meetsThreshold, hasKritisDesignation, providesEssentialService } = input;
 
-  // Rule 1: Official BSI designation always overrides (§2 Abs. 10 BSIG)
+  // Rule 1: Official designation always overrides (§28 Abs. 1 Nr. 1 BSIG)
   if (hasKritisDesignation) {
     return {
       category: 'kritis-betreiber',
       reason: 'kritis.classification.reasons.bsiDesignation',
-      legalReference: '§2 Abs. 10 BSI-Gesetz',
+      legalReference: '§28 Abs. 1 Nr. 1, §2 Nr. 22 BSIG i.V.m. §2 Nr. 3 KRITIS-Dachgesetz',
     };
   }
 
@@ -125,7 +125,7 @@ export function classifyKritis(input: KritisClassificationInput): KritisClassifi
     return {
       category: 'kritis-betreiber',
       reason: 'kritis.classification.reasons.thresholdExceeded',
-      legalReference: '§2 Abs. 10 BSI-Gesetz, BSI-KritisV',
+      legalReference: '§2 Nr. 22 BSIG, BSI-KritisV (§56 Abs. 4 BSIG)',
     };
   }
 
@@ -134,7 +134,7 @@ export function classifyKritis(input: KritisClassificationInput): KritisClassifi
     return {
       category: 'kritis-kandidat',
       reason: 'kritis.classification.reasons.essentialServiceCandidate',
-      legalReference: '§2 Abs. 10 BSI-Gesetz',
+      legalReference: '§2 Nr. 24 BSIG i.V.m. §2 Nr. 4 KRITIS-Dachgesetz',
     };
   }
 
@@ -151,7 +151,7 @@ export function classifyKritis(input: KritisClassificationInput): KritisClassifi
   return {
     category: 'nicht-kritis',
     reason: 'kritis.classification.reasons.sectorNotInScope',
-    legalReference: '§2 Abs. 10 BSI-Gesetz',
+    legalReference: '§2 Nr. 4 KRITIS-Dachgesetz',
   };
 }
 

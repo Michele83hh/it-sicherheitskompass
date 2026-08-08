@@ -16,8 +16,6 @@ export interface OverlapMapping {
   regB: RegulationId;
   /** Overlap percentage (0-100) — approximate */
   overlapPercent: number;
-  /** Translation key for the synergy description */
-  descriptionKey: string;
   /** Concrete shared measures (translation keys) */
   sharedMeasureKeys: string[];
 }
@@ -32,7 +30,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'nis2',
     regB: 'kritis',
     overlapPercent: 80,
-    descriptionKey: 'platform.overlaps.nis2Kritis',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.incidentReporting',
@@ -46,7 +43,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'nis2',
     regB: 'dora',
     overlapPercent: 60,
-    descriptionKey: 'platform.overlaps.nis2Dora',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.incidentReporting',
@@ -59,7 +55,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'nis2',
     regB: 'dsgvo',
     overlapPercent: 50,
-    descriptionKey: 'platform.overlaps.nis2Dsgvo',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.encryption',
@@ -72,7 +67,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'nis2',
     regB: 'bsi-grundschutz',
     overlapPercent: 70,
-    descriptionKey: 'platform.overlaps.nis2Bsi',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.accessControl',
@@ -86,7 +80,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'dora',
     regB: 'dsgvo',
     overlapPercent: 40,
-    descriptionKey: 'platform.overlaps.doraDsgvo',
     sharedMeasureKeys: [
       'platform.overlaps.measures.incidentReporting',
       'platform.overlaps.measures.thirdPartyRisk',
@@ -98,7 +91,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'kritis',
     regB: 'bsi-grundschutz',
     overlapPercent: 75,
-    descriptionKey: 'platform.overlaps.kritisBsi',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.bcm',
@@ -112,7 +104,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'tisax',
     regB: 'nis2',
     overlapPercent: 45,
-    descriptionKey: 'platform.overlaps.tisaxNis2',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.encryption',
@@ -124,7 +115,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'cra',
     regB: 'nis2',
     overlapPercent: 35,
-    descriptionKey: 'platform.overlaps.craNis2',
     sharedMeasureKeys: [
       'platform.overlaps.measures.vulnerabilityManagement',
       'platform.overlaps.measures.incidentReporting',
@@ -136,7 +126,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'iso27001',
     regB: 'nis2',
     overlapPercent: 65,
-    descriptionKey: 'platform.overlaps.iso27001Nis2',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.accessControl',
@@ -150,7 +139,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'iso27001',
     regB: 'bsi-grundschutz',
     overlapPercent: 85,
-    descriptionKey: 'platform.overlaps.iso27001Bsi',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.accessControl',
@@ -164,7 +152,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'iso27001',
     regB: 'tisax',
     overlapPercent: 70,
-    descriptionKey: 'platform.overlaps.iso27001Tisax',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.encryption',
@@ -177,7 +164,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'soc2',
     regB: 'iso27001',
     overlapPercent: 60,
-    descriptionKey: 'platform.overlaps.soc2Iso27001',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.riskManagement',
@@ -190,7 +176,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'c5',
     regB: 'iso27001',
     overlapPercent: 75,
-    descriptionKey: 'platform.overlaps.c5Iso27001',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.accessControl',
@@ -204,7 +189,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'c5',
     regB: 'bsi-grundschutz',
     overlapPercent: 70,
-    descriptionKey: 'platform.overlaps.c5Bsi',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.accessControl',
@@ -217,7 +201,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'pci-dss',
     regB: 'iso27001',
     overlapPercent: 55,
-    descriptionKey: 'platform.overlaps.pciIso27001',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.encryption',
@@ -230,7 +213,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'pci-dss',
     regB: 'dora',
     overlapPercent: 40,
-    descriptionKey: 'platform.overlaps.pciDora',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.encryption',
@@ -242,7 +224,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'cis-controls',
     regB: 'iso27001',
     overlapPercent: 70,
-    descriptionKey: 'platform.overlaps.cisIso27001',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.vulnerabilityManagement',
@@ -255,7 +236,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'cis-controls',
     regB: 'nis2',
     overlapPercent: 55,
-    descriptionKey: 'platform.overlaps.cisNis2',
     sharedMeasureKeys: [
       'platform.overlaps.measures.vulnerabilityManagement',
       'platform.overlaps.measures.accessControl',
@@ -268,7 +248,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'cis-controls',
     regB: 'bsi-grundschutz',
     overlapPercent: 65,
-    descriptionKey: 'platform.overlaps.cisBsi',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.networkSecurity',
@@ -281,7 +260,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'cis-controls',
     regB: 'nist-csf',
     overlapPercent: 75,
-    descriptionKey: 'platform.overlaps.cisNist',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.vulnerabilityManagement',
@@ -295,7 +273,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'iso22301',
     regB: 'iso27001',
     overlapPercent: 50,
-    descriptionKey: 'platform.overlaps.bcmIso27001',
     sharedMeasureKeys: [
       'platform.overlaps.measures.bcm',
       'platform.overlaps.measures.riskManagement',
@@ -307,7 +284,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'iso22301',
     regB: 'nis2',
     overlapPercent: 45,
-    descriptionKey: 'platform.overlaps.bcmNis2',
     sharedMeasureKeys: [
       'platform.overlaps.measures.bcm',
       'platform.overlaps.measures.incidentReporting',
@@ -319,7 +295,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'iso22301',
     regB: 'kritis',
     overlapPercent: 55,
-    descriptionKey: 'platform.overlaps.bcmKritis',
     sharedMeasureKeys: [
       'platform.overlaps.measures.bcm',
       'platform.overlaps.measures.riskManagement',
@@ -332,7 +307,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'nist-csf',
     regB: 'iso27001',
     overlapPercent: 70,
-    descriptionKey: 'platform.overlaps.nistIso27001',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.accessControl',
@@ -345,7 +319,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'nist-csf',
     regB: 'nis2',
     overlapPercent: 55,
-    descriptionKey: 'platform.overlaps.nistNis2',
     sharedMeasureKeys: [
       'platform.overlaps.measures.riskManagement',
       'platform.overlaps.measures.incidentReporting',
@@ -358,7 +331,6 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'owasp-asvs',
     regB: 'cis-controls',
     overlapPercent: 40,
-    descriptionKey: 'platform.overlaps.owaspCis',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.encryption',
@@ -370,11 +342,57 @@ export const REGULATION_OVERLAPS: OverlapMapping[] = [
     regA: 'owasp-asvs',
     regB: 'iso27001',
     overlapPercent: 35,
-    descriptionKey: 'platform.overlaps.owaspIso27001',
     sharedMeasureKeys: [
       'platform.overlaps.measures.accessControl',
       'platform.overlaps.measures.encryption',
       'platform.overlaps.measures.securityByDesign',
+    ],
+  },
+  // SOC 2 ↔ C5: ~75% overlap (BSI C5:2020 Referenztabelle: 80% der C5-Kriterien mit AICPA-TSC-Referenz)
+  {
+    regA: 'soc2',
+    regB: 'c5',
+    overlapPercent: 75,
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.riskManagement',
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.incidentReporting',
+      'platform.overlaps.measures.bcm',
+    ],
+  },
+  // DORA ↔ ISO 27001: ~60% overlap (IKT-Risikomanagement, Incidents, Drittparteien via A.5.19-5.23)
+  {
+    regA: 'dora',
+    regB: 'iso27001',
+    overlapPercent: 60,
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.riskManagement',
+      'platform.overlaps.measures.incidentReporting',
+      'platform.overlaps.measures.thirdPartyRisk',
+      'platform.overlaps.measures.bcm',
+    ],
+  },
+  // CRA ↔ OWASP ASVS: ~45% overlap (technische Anhang-I-Teil-I-Anforderungen; Prozesspflichten Teil II nicht abgedeckt)
+  {
+    regA: 'cra',
+    regB: 'owasp-asvs',
+    overlapPercent: 45,
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.securityByDesign',
+      'platform.overlaps.measures.vulnerabilityManagement',
+      'platform.overlaps.measures.encryption',
+      'platform.overlaps.measures.accessControl',
+    ],
+  },
+  // TISAX ↔ DSGVO: ~35% overlap (VDA ISA 6 Kap. 9 Datenschutz: Auftragsverarbeitung Art. 28 + TOMs Art. 32)
+  {
+    regA: 'tisax',
+    regB: 'dsgvo',
+    overlapPercent: 35,
+    sharedMeasureKeys: [
+      'platform.overlaps.measures.accessControl',
+      'platform.overlaps.measures.encryption',
+      'platform.overlaps.measures.supplierManagement',
     ],
   },
 ];

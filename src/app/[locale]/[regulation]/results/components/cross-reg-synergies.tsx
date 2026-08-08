@@ -16,7 +16,6 @@ interface SynergyItem {
   targetIcon: string;
   overlapPercent: number;
   sharedTopics: string[];
-  descriptionKey: string;
   hasAssessment: boolean;
   otherScore?: number;
 }
@@ -65,7 +64,6 @@ export function CrossRegSynergies() {
           targetIcon: otherConfig.icon,
           overlapPercent: overlap.overlapPercent,
           sharedTopics,
-          descriptionKey: overlap.descriptionKey,
           hasAssessment,
           otherScore,
         } as SynergyItem;
@@ -153,8 +151,8 @@ export function CrossRegSynergies() {
               {/* Synergy description */}
               <p className="mt-2 text-xs text-muted-foreground">
                 {locale === 'de'
-                  ? `Diese Bewertung deckt ~${syn.overlapPercent}% der ${syn.targetName}-Anforderungen ab`
-                  : `This assessment covers ~${syn.overlapPercent}% of ${syn.targetName} requirements`}
+                  ? `~${syn.overlapPercent}% inhaltliche Überschneidung mit ${syn.targetName} — dort zahlt Ihre Arbeit doppelt ein`
+                  : `~${syn.overlapPercent}% content overlap with ${syn.targetName} — your work counts there too`}
               </p>
             </CardContent>
           </Card>

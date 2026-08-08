@@ -3372,17 +3372,13 @@
         "name": "Food",
         "threshold": "Threshold: 434,500 t/year production volume"
       },
-      "finanzVersicherungswesen": {
-        "name": "Finance and Insurance",
-        "threshold": "Threshold: 15 million transactions/year or 500,000 insurance contracts"
-      },
       "gesundheit": {
         "name": "Health",
         "threshold": "Threshold: 30,000 inpatient cases/year"
       },
       "itTelekommunikation": {
         "name": "IT & Telecommunications",
-        "threshold": "Threshold: 100,000 subscribers or use by KRITIS operators"
+        "threshold": "Threshold: 100,000 contract partners or use by KRITIS operators"
       },
       "transportVerkehr": {
         "name": "Transport and Traffic",
@@ -3390,7 +3386,19 @@
       },
       "wasser": {
         "name": "Water",
-        "threshold": "Threshold: 500,000 persons served (drinking water/wastewater)"
+        "threshold": "Threshold: 22 million m³/year (equivalent to 500,000 persons served; drinking water/wastewater)"
+      },
+      "finanzwesen": {
+        "name": "Finance",
+        "threshold": "Threshold: 15 million transactions/year (cash supply, payment transactions, securities and derivatives trading; Annex 6 BSI-KritisV)"
+      },
+      "sozialversicherung": {
+        "name": "Social Insurance and Basic Income Support",
+        "threshold": "Threshold: Annex 9 BSI-KritisV (data processing of social insurance and basic income support institutions)"
+      },
+      "weltraum": {
+        "name": "Space",
+        "threshold": "New sector under §2 no. 4 KRITIS Umbrella Act — facility categories not yet defined in the BSI-KritisV"
       }
     }
   },
@@ -5813,7 +5821,7 @@
         "manufacturing": "Manufacturing & Industry",
         "food": "Food & Agriculture",
         "chemicals": "Chemicals",
-        "research": "Research & Education",
+        "research": "Research",
         "automotive": "Automotive",
         "retail": "Retail & Services",
         "other": "Other Industry"
@@ -5864,7 +5872,9 @@
           "indirect": "Indirect obligation",
           "cascaded": "Recommended",
           "cascadedWith": "Recommended due to {source}",
-          "voluntary": "Best practice"
+          "voluntary": "Best practice",
+          "contractual": "Contractual obligation",
+          "check": "Check obligation"
         }
       },
       "deadlines": {
@@ -5937,7 +5947,10 @@
         "owaspNA": "OWASP ASVS primarily relevant for software development",
         "owaspSoftware": "As a software provider, OWASP ASVS is especially relevant",
         "owaspDigital": "For digital services, OWASP ASVS provides important security controls",
-        "owaspCloud": "Cloud services should be verified against OWASP ASVS"
+        "owaspCloud": "Cloud services should be verified against OWASP ASVS",
+        "nis2DigitalServices": "Cloud, hosting and platform services (online marketplaces, search engines, social networks) are their own NIS2 entity types (Annex 1 no. 6 / Annex 2 no. 6 BSIG). Check whether your service qualifies.",
+        "c5Health": "Under § 393 SGB V, health data may only be processed in the cloud with a current C5 attestation (type 2 since 01.07.2025) — your healthcare customers are required to demand it from you.",
+        "nis2DoraLex": "For financial entities, DORA supersedes the core NIS2 duties (§ 28 (6) no. 1 BSIG: §§ 30–32, 35, 36, 38, 39 do not apply). Banks and financial market infrastructures must still register with the BSI under § 33 BSIG; insurers and payment institutions are not covered by the BSIG at all."
       },
       "progress": {
         "step": "Step {current} of {total}",
@@ -6157,14 +6170,6 @@
       }
     },
     "overlaps": {
-      "nis2Kritis": "NIS2 and KRITIS are both based on the BSI Act. Most technical and organizational measures apply to both regulations.",
-      "nis2Dora": "NIS2 and DORA share requirements for ICT risk management, incident reporting, and resilience testing in the financial sector.",
-      "nis2Dsgvo": "The technical and organizational measures (TOMs) of GDPR strongly overlap with NIS2 requirements for access control and encryption.",
-      "nis2Bsi": "BSI IT-Grundschutz can serve as an implementation framework for NIS2. Grundschutz modules cover most NIS2 measures.",
-      "doraDsgvo": "DORA and GDPR share requirements for incident reporting, third-party risk management, and access control.",
-      "kritisBsi": "BSI IT-Grundschutz is the recommended evidence framework for KRITIS operators. The modules cover all KRITIS requirements.",
-      "tisaxNis2": "TISAX and NIS2 share requirements for access control, encryption, and supplier management.",
-      "craNis2": "CRA and NIS2 share requirements for vulnerability management, incident reporting, and security-by-design.",
       "measures": {
         "riskManagement": "Risk Management",
         "incidentReporting": "Incident Reporting",
@@ -6179,18 +6184,7 @@
         "supplierManagement": "Supplier Management",
         "vulnerabilityManagement": "Vulnerability Mgmt",
         "securityByDesign": "Security by Design"
-      },
-      "cisIso27001": "CIS Controls and ISO 27001 complement each other — CIS provides technical implementation for ISO controls",
-      "cisNis2": "CIS Controls cover many technical NIS2 requirements",
-      "cisBsi": "CIS Controls and BSI IT-Grundschutz share many technical security measures",
-      "cisNist": "CIS Controls and NIST CSF are complementary US frameworks with high overlap",
-      "bcmIso27001": "ISO 22301 BCM deepens the Annex A.5.29-30 chapter of ISO 27001",
-      "bcmNis2": "NIS2 requires business continuity — ISO 22301 provides the framework",
-      "bcmKritis": "Critical infrastructure operators need robust BCM — ISO 22301 is the reference",
-      "nistIso27001": "NIST CSF and ISO 27001 have ~70% overlapping controls",
-      "nistNis2": "NIST CSF covers most NIS2 security requirements",
-      "owaspCis": "OWASP ASVS and CIS Controls complement each other for application security",
-      "owaspIso27001": "OWASP ASVS deepens application security from ISO 27001 Annex A.8"
+      }
     }
   },
   "meldepflichten": {
@@ -7259,11 +7253,11 @@
         },
         "bait": {
           "name": "BAIT (BaFin)",
-          "description": "Supervisory Requirements for IT in Financial Institutions — binding requirements from BaFin"
+          "description": "German banking supervisory IT requirements — being phased out: DORA institutions have been exempt since 17.01.2025; for the remaining institutions BAIT applies only until 31.12.2026 (VAIT/ZAIT/KAIT already repealed)"
         }
       },
-      "challenges": "Financial companies are already subject to strict regulatory requirements (BAIT, DORA). NIS2 adds an additional layer.",
-      "recommendations": "Use existing DORA/BAIT compliance as a foundation. Identify the delta requirements of NIS2 compared to your existing measures."
+      "challenges": "Financial entities are primarily governed by DORA (lex specialis): § 28 (6) no. 1 BSIG exempts them from the core NIS2 duties (§§ 30–32, 35, 36, 38, 39 BSIG). Banks and financial market infrastructures nevertheless remain entities under § 28 BSIG and must register under § 33 BSIG.",
+      "recommendations": "Align your ICT risk management with DORA (BaFin supervision, incident reporting under Art. 19 DORA). Check the registration duty under § 33 BSIG and use your DORA compliance as the foundation for all other frameworks."
     },
     "water": {
       "regulations": {
