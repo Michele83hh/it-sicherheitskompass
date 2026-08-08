@@ -216,18 +216,15 @@
     "imprint": {
       "title": "Imprint",
       "infoTitle": "Information according to § 5 DDG",
-      "name": "[Name / Company]",
-      "address": "[Street No.]\n[Postal Code City]",
+      "name": "André Michele Joannou",
       "contactTitle": "Contact",
-      "email": "E-mail: [email@example.com]",
-      "phone": "Phone: [+49 ...]",
+      "email": "E-mail: kontakt@it-sicherheitskompass.de",
       "responsibleTitle": "Responsible for content according to § 18 para. 2 MStV",
       "responsiblePerson": "André Michele Joannou",
       "disclaimerTitle": "Disclaimer",
       "disclaimerText": "The content of this website has been created with the greatest care. However, we cannot guarantee the accuracy, completeness and timeliness of the content. This tool serves exclusively as a non-binding orientation aid and does not constitute legal advice.",
       "copyrightTitle": "Copyright",
-      "copyrightText": "The content and works created by the site operators on these pages are subject to German copyright law.",
-      "placeholderNotice": "Note: The information marked with [square brackets] must be replaced with actual data before publication."
+      "copyrightText": "The content and works created by the site operators on these pages are subject to German copyright law."
     },
     "privacy": {
       "title": "Privacy Notice",

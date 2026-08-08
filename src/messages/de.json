@@ -216,18 +216,15 @@
     "imprint": {
       "title": "Impressum",
       "infoTitle": "Angaben gemäß § 5 DDG",
-      "name": "[Name / Firma]",
-      "address": "[Straße Nr.]\n[PLZ Ort]",
+      "name": "André Michele Joannou",
       "contactTitle": "Kontakt",
-      "email": "E-Mail: [email@example.com]",
-      "phone": "Telefon: [+49 ...]",
+      "email": "E-Mail: kontakt@it-sicherheitskompass.de",
       "responsibleTitle": "Inhaltlich verantwortlich gem. § 18 Abs. 2 MStV",
       "responsiblePerson": "André Michele Joannou",
       "disclaimerTitle": "Haftungsausschluss",
       "disclaimerText": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Dieses Tool dient ausschließlich als unverbindliche Orientierungshilfe und stellt keine Rechtsberatung dar.",
       "copyrightTitle": "Urheberrecht",
-      "copyrightText": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.",
-      "placeholderNotice": "Hinweis: Die mit [eckigen Klammern] gekennzeichneten Angaben müssen vor Veröffentlichung durch die tatsächlichen Daten ersetzt werden."
+      "copyrightText": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht."
     },
     "privacy": {
       "title": "Datenschutzhinweis",

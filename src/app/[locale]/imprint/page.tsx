@@ -1,7 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Info } from 'lucide-react';
 
 export default function ImprintPage() {
   const t = useTranslations('legal.imprint');
@@ -12,14 +11,6 @@ export default function ImprintPage() {
         {t('title')}
       </h1>
 
-      {/* Placeholder Notice */}
-      <div className="mb-8 rounded-lg border border-blue-200 bg-blue-50 p-4">
-        <div className="flex gap-3">
-          <Info className="mt-0.5 size-5 shrink-0 text-blue-600" />
-          <p className="text-sm text-blue-900">{t('placeholderNotice')}</p>
-        </div>
-      </div>
-
       {/* Angaben gemäß § 5 DDG */}
       <section className="mb-8">
         <h2 className="mb-4 text-xl font-semibold text-foreground">
@@ -27,7 +18,6 @@ export default function ImprintPage() {
         </h2>
         <div className="space-y-2 text-muted-foreground">
           <p className="whitespace-pre-line">{t('name')}</p>
-          <p className="whitespace-pre-line">{t('address')}</p>
         </div>
       </section>
 
@@ -38,7 +28,6 @@ export default function ImprintPage() {
         </h2>
         <div className="space-y-2 text-muted-foreground">
           <p>{t('email')}</p>
-          <p>{t('phone')}</p>
         </div>
       </section>
 
