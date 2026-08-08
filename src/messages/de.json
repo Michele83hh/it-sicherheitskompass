@@ -6578,7 +6578,7 @@
           "level0": "Es gibt keine Analyse des Organisationskontexts oder der Stakeholder-Anforderungen.",
           "level1": "Einige Einflussfaktoren sind informell bekannt, aber nicht dokumentiert.",
           "level2": "Kontext und Stakeholder-Anforderungen sind dokumentiert und werden bei der ISMS-Planung berücksichtigt.",
-          "level3": "Kontextanalyse und Stakeholder-Anforderungen werden regelmäßig aktualisiert und fliessen systematisch in alle ISMS-Entscheidungen ein."
+          "level3": "Kontextanalyse und Stakeholder-Anforderungen werden regelmäßig aktualisiert und fließen systematisch in alle ISMS-Entscheidungen ein."
         }
       },
       "clQ2": {
@@ -6644,7 +6644,7 @@
           "level0": "Keine Informationssicherheitsziele definiert.",
           "level1": "Allgemeine Ziele existieren, sind aber nicht messbar oder nicht kommuniziert.",
           "level2": "Dokumentierte, messbare Ziele mit Verantwortlichkeiten und Zeitrahmen.",
-          "level3": "Ziele werden regelmäßig überprüft, mit KPIs gemessen und die Ergebnisse fliessen in die Managementbewertung ein."
+          "level3": "Ziele werden regelmäßig überprüft, mit KPIs gemessen und die Ergebnisse fließen in die Managementbewertung ein."
         }
       },
       "prQ4": {
@@ -6840,7 +6840,7 @@
         "help": "Serverräume, Rechenzentren und sensible Bereiche müssen durch Zutrittskontrollsysteme, Überwachung und Alarmanlagen geschützt sein.",
         "maturity": {
           "level0": "Kein physischer Zugangsschutz. Serverräume sind frei zugänglich.",
-          "level1": "Einfache Schliesssysteme vorhanden, aber keine systematische Zutrittskontrolle oder Protokollierung.",
+          "level1": "Einfache Schließsysteme vorhanden, aber keine systematische Zutrittskontrolle oder Protokollierung.",
           "level2": "Zutrittskontrollsysteme für sensible Bereiche, Besucherregelung und dokumentierte Sicherheitszonen.",
           "level3": "Mehrstufige Zutrittskontrolle, Videoüberachung, Alarmsysteme, regelmäßige physische Sicherheitsaudits und Penetrationstests."
         }
@@ -6982,7 +6982,7 @@
       },
       "ps1": {
         "title": "Physische Zugangskontrollen für sensible Bereiche einführen",
-        "description": "Implementieren Sie physische Zugangskontrollen für Serverräume, Rechenzentren und andere sensible Bereiche mit elektronischen Schliesssystemen, Besucherregister und Zutrittsprotokollierung.",
+        "description": "Implementieren Sie physische Zugangskontrollen für Serverräume, Rechenzentren und andere sensible Bereiche mit elektronischen Schließsystemen, Besucherregister und Zutrittsprotokollierung.",
         "firstStep": "Identifizieren Sie alle sensiblen Bereiche (Serverraum, Netzwerkverteiler, Archiv). Prüfen Sie den aktuellen Zugangsschutz und erstellen Sie einen Maßnahmenplan für Verbesserungen."
       },
       "ps2": {
@@ -7559,7 +7559,7 @@
     "checkAffected": "Betroffenheit prüfen",
     "dsgvo": {
       "title": "DSGVO-Compliance prüfen",
-      "subtitle": "Wie gut schützen Sie personenbezogene Daten?\nPrüfen Sie Ihre Datenschutzmassnahmen gegen die Anforderungen der DSGVO.",
+      "subtitle": "Wie gut schützen Sie personenbezogene Daten?\nPrüfen Sie Ihre Datenschutzmaßnahmen gegen die Anforderungen der DSGVO.",
       "cta": "DSGVO-Check starten"
     },
     "kritis": {
@@ -8945,7 +8945,7 @@
       "ac2": {
         "title": "Automatisiertes Zugriffsrechte-Management etablieren",
         "description": "Implementieren Sie automatisierte Prozesse für die Vergabe, Änderung und den Entzug von Zugriffsrechten. Stellen Sie sicher, dass Zugriffsrechte bei Rollenwechseln und Ausscheiden umgehend angepasst werden. Führen Sie regelmäßige Zugriffs-Audits durch.",
-        "firstStep": "Prüfen Sie, ob es verwaiste Konten (von ehemaligen Mitarbeitern) oder Konten mit uebermässigen Rechten in Ihrer CDE gibt.",
+        "firstStep": "Prüfen Sie, ob es verwaiste Konten (von ehemaligen Mitarbeitern) oder Konten mit übermäßigen Rechten in Ihrer CDE gibt.",
         "checklist": "- Zugriffskontrollrichtlinie dokumentieren (Need-to-know, Least Privilege)\n- Rollenmatrix mit Berechtigungen erstellen und pflegen\n- Formalen Genehmigungsprozess für Zugriffserteilungen einführen\n- Automatisierte Deprovisioning bei Ausscheiden implementieren\n- Halbjährliche Zugriffs-Reviews durchführen und dokumentieren\n- Audit-Trail für alle Zugriffsänderungen sicherstellen"
       },
       "au1": {
@@ -9125,7 +9125,7 @@
       "orgQ4": {
         "title": "Wird die Einhaltung der Informationssicherheitsrichtlinien regelmäßig durch unabhängige Prüfungen kontrolliert?",
         "tooltip": "C5:2020 OIS-05 und OIS-07 fordern die regelmäßige unabhängige Überprüfung der Informationssicherheitsorganisation und die Einhaltung der definierten Richtlinien. Ergebnisse müssen dokumentiert und Abweichungen nachverfolgt werden.",
-        "help": "C5 verlangt, dass die Wirksamkeit Ihrer Informationssicherheitsmassnahmen und die Einhaltung Ihrer Richtlinien durch unabhängige Prüfungen -- intern oder extern -- regelmäßig validiert werden. Die Prüfungsergebnisse müssen dem Management berichtet werden. Festgestellte Abweichungen erfordern Korrekturmassnahmen mit definierten Fristen und Verantwortlichkeiten.",
+        "help": "C5 verlangt, dass die Wirksamkeit Ihrer Informationssicherheitsmaßnahmen und die Einhaltung Ihrer Richtlinien durch unabhängige Prüfungen -- intern oder extern -- regelmäßig validiert werden. Die Prüfungsergebnisse müssen dem Management berichtet werden. Festgestellte Abweichungen erfordern Korrekturmaßnahmen mit definierten Fristen und Verantwortlichkeiten.",
         "maturity": {
           "level0": "Keine unabhängigen Prüfungen der Informationssicherheit; Compliance wird nicht systematisch kontrolliert",
           "level1": "Gelegentliche Ad-hoc-Prüfungen durch IT-Mitarbeiter, aber keine strukturierte unabhängige Kontrolle",
@@ -9157,7 +9157,7 @@
       },
       "amQ3": {
         "title": "Ist die sichere Rückgabe und Löschung von Kundendaten bei Vertragsende gewährleistet?",
-        "tooltip": "C5:2020 AM-05 und AM-06 regeln die Rückgabe von Kundendaten und die sichere Löschung nach Vertragsende. Der Cloud-Anbieter muss sicherstellen, dass Kundendaten vollständig und in einem verwendbaren Format zurückgegeben und anschliessend nachweisbar gelöscht werden.",
+        "tooltip": "C5:2020 AM-05 und AM-06 regeln die Rückgabe von Kundendaten und die sichere Löschung nach Vertragsende. Der Cloud-Anbieter muss sicherstellen, dass Kundendaten vollständig und in einem verwendbaren Format zurückgegeben und anschließend nachweisbar gelöscht werden.",
         "help": "Bei Vertragsende oder Kündigung muss der Cloud-Anbieter alle Kundendaten in einem vereinbarten, verwendbaren Format zurückgeben können. Nach erfolgreicher Rückgabe müssen die Daten -- einschließlich aller Kopien und Backups -- sicher und nachweisbar gelöscht werden. Die Löschung muss den anerkannten Standards entsprechen (z. B. BSI-Empfehlungen zur sicheren Datenlöschung). Die Fristen für Rückgabe und Löschung sollten vertraglich vereinbart sein.",
         "maturity": {
           "level0": "Keine Prozesse für Datenrückgabe oder sichere Löschung bei Vertragsende",
@@ -9215,7 +9215,7 @@
         "tooltip": "C5:2020 IDM-03 und IDM-06 fordern die Vergabe von Zugriffsrechten nach dem Grundsatz der minimalen Rechtevergabe (Least Privilege) sowie deren regelmäßige Überprüfung (Access Review). Privilegierte Zugriffsrechte müssen besonders restriktiv vergeben werden.",
         "help": "C5 fordert, dass jeder Benutzer nur die Zugriffsrechte erhält, die für seine aktuelle Aufgabe erforderlich sind. Privilegierte Rechte (Administrator, Root) müssen besonders restriktiv vergeben und separat überwacht werden. Alle Zugriffsrechte müssen regelmäßig -- mindestens halbjährlich -- überprüft werden (Access Review). Bei der Überprüfung müssen unnötige Rechte entzogen und Abweichungen dokumentiert werden.",
         "maturity": {
-          "level0": "Keine systematische Rechtesteuerung; Benutzer erhalten häufig uebermaeßig weitreichende Rechte",
+          "level0": "Keine systematische Rechtesteuerung; Benutzer erhalten häufig übermäßig weitreichende Rechte",
           "level1": "Grundsätzliches Bewusstsein für minimale Rechte, aber kein formaler Prozess und keine regelmäßigen Access Reviews",
           "level2": "Rollenbasierte Rechtesteuerung implementiert, Access Reviews werden durchgeführt, aber nicht regelmäßig oder ohne konsequente Nachverfolgung",
           "level3": "Konsequente Umsetzung des Least-Privilege-Prinzips gemäß C5:2020 IDM-03/06 mit rollenbasierter Zugriffskontrolle, regelmäßigen Access Reviews, dokumentierter Nachverfolgung und separater Verwaltung privilegierter Konten"
@@ -9321,9 +9321,9 @@
         }
       },
       "simQ3": {
-        "title": "Werden Sicherheitsvorfälle systematisch analysiert und fliessen Erkenntnisse in Verbesserungsmaßnahmen ein?",
+        "title": "Werden Sicherheitsvorfälle systematisch analysiert und fließen Erkenntnisse in Verbesserungsmaßnahmen ein?",
         "tooltip": "C5:2020 SIM-04 und SIM-05 fordern die systematische Analyse von Sicherheitsvorfällen und die Ableitung von Verbesserungsmaßnahmen (Lessons Learned). Vorfälle müssen klassifiziert, dokumentiert und Trends analysiert werden.",
-        "help": "C5 verlangt, dass jeder Sicherheitsvorfall nach Abschluss der Sofortmassnahmen systematisch analysiert wird: Was war die Ursache? Hätte der Vorfall früher erkannt werden können? Welche Maßnahmen verhindern eine Wiederholung? Die Ergebnisse müssen in einen kontinuierlichen Verbesserungsprozess einfliessen. Vorfälle müssen klassifiziert werden (nach Schwere, Typ, betroffenem Bereich) und Trends über die Zeit analysiert werden.",
+        "help": "C5 verlangt, dass jeder Sicherheitsvorfall nach Abschluss der Sofortmaßnahmen systematisch analysiert wird: Was war die Ursache? Hätte der Vorfall früher erkannt werden können? Welche Maßnahmen verhindern eine Wiederholung? Die Ergebnisse müssen in einen kontinuierlichen Verbesserungsprozess einfließen. Vorfälle müssen klassifiziert werden (nach Schwere, Typ, betroffenem Bereich) und Trends über die Zeit analysiert werden.",
         "maturity": {
           "level0": "Keine systematische Vorfallanalyse; gleiche Vorfalltypen treten wiederholt auf",
           "level1": "Gelegentliche Nachbesprechungen nach schweren Vorfällen, aber keine strukturierte Lessons-Learned-Analyse",
@@ -9553,7 +9553,7 @@
         "allianzTitle": "Allianz für Cyber-Sicherheit — Dienstleister-Liste",
         "allianzDesc": "Das BSI führt eine Liste qualifizierter IT-Sicherheitsdienstleister für Incident Response und Forensik.",
         "allianzWeb": "https://www.allianz-fuer-cybersicherheit.de/Webs/ACS/DE/Informationen-und-Empfehlungen/Informationen-und-weiterfuehrende-Angebote/Qualifizierte-Dienstleister/qualifizierte-dienstleister_node.html",
-        "tipTitle": "Wichtige Sofortmassnahmen",
+        "tipTitle": "Wichtige Sofortmaßnahmen",
         "tip1": "Betroffene Systeme NICHT abschalten — Beweise sichern!",
         "tip2": "Netzwerksegmente isolieren, nicht löschen",
         "tip3": "Screenshots und Logs sichern (Zeitstempel!)",
@@ -9781,7 +9781,7 @@
         },
         "q4": {
           "question": "Wie starte ich am besten mit IT-Sicherheit?",
-          "answer": "Drei Sofortmassnahmen: 1) MFA überall aktivieren, 2) Regelmäßige Backups (3-2-1-Regel), 3) Software aktuell halten. Dann: Bestandsaufnahme mit unserem Schnellcheck machen und die Quick Wins abarbeiten."
+          "answer": "Drei Sofortmaßnahmen: 1) MFA überall aktivieren, 2) Regelmäßige Backups (3-2-1-Regel), 3) Software aktuell halten. Dann: Bestandsaufnahme mit unserem Schnellcheck machen und die Quick Wins abarbeiten."
         },
         "q5": {
           "question": "Brauche ich eine ISO 27001-Zertifizierung?",
@@ -10195,7 +10195,7 @@
           "items": {
             "i1": {
               "title": "Arbeitsplatz sichern",
-              "desc": "Laptop nie sichtbar im Auto lassen. Bei Reisen: Geräte im Handgepäck. Zu Hause: Arbeitszimmer abschliessbar oder Geräte wegsperren."
+              "desc": "Laptop nie sichtbar im Auto lassen. Bei Reisen: Geräte im Handgepäck. Zu Hause: Arbeitszimmer abschließbar oder Geräte wegsperren."
             },
             "i2": {
               "title": "Kensington Lock",
@@ -10288,7 +10288,7 @@
         "items": {
           "i1": "Keine/mangelhafte Meldestelle: bis 20.000 EUR",
           "i2": "Behinderung von Meldungen: bis 50.000 EUR",
-          "i3": "Vergeltungsmassnahmen gegen Hinweisgeber: bis 50.000 EUR",
+          "i3": "Vergeltungsmaßnahmen gegen Hinweisgeber: bis 50.000 EUR",
           "i4": "Verletzung der Vertraulichkeit: bis 50.000 EUR"
         }
       },
@@ -10646,7 +10646,7 @@
             "t1": {
               "title": "Incident-Response-Plan",
               "desc": "Schritt-für-Schritt-Anleitung bei IT-Sicherheitsvorfällen — wer macht was wann",
-              "sections": "Erkennung, Meldekette, Sofortmassnahmen, Analyse, Wiederherstellung, Lessons Learned",
+              "sections": "Erkennung, Meldekette, Sofortmaßnahmen, Analyse, Wiederherstellung, Lessons Learned",
               "effort": "4-6 Stunden"
             },
             "t2": {
@@ -10977,7 +10977,7 @@
     "websiteCheck": {
       "title": "Website Security Check",
       "subtitle": "Analysieren Sie die Sicherheits-Header Ihrer Website",
-      "intro": "Security-Header sind die erste Verteidigungslinie Ihrer Website gegen Clickjacking, XSS und andere Angriffe. Viele Websites verzichten auf diese einfache Schutzmassnahme. Geben Sie Ihre URL ein für eine sofortige Analyse.",
+      "intro": "Security-Header sind die erste Verteidigungslinie Ihrer Website gegen Clickjacking, XSS und andere Angriffe. Viele Websites verzichten auf diese einfache Schutzmaßnahme. Geben Sie Ihre URL ein für eine sofortige Analyse.",
       "inputLabel": "Website-URL",
       "inputPlaceholder": "www.beispiel.de",
       "checkButton": "Analysieren",
@@ -11051,7 +11051,7 @@
         },
         "verified": "Verifiziert",
         "actions": {
-          "title": "Sofortmassnahmen",
+          "title": "Sofortmaßnahmen",
           "i1": "Ändern Sie SOFORT alle Passwörter der betroffenen Dienste",
           "i2": "Aktivieren Sie Zwei-Faktor-Authentifizierung (MFA) überall wo möglich",
           "i3": "Verwenden Sie einen Passwort-Manager für einzigartige Passwörter",
@@ -11115,7 +11115,7 @@
           "i1": "Abgesicherter Bereich: Zutrittskontrolle, Kameraverbände, Schleusensysteme für Prototypen-Zonen",
           "i2": "Foto-/Aufnahmeverbot: Technische und organisatorische Maßnahmen gegen unbefugte Dokumentation",
           "i3": "Transportschutz: Abgedeckte Fahrzeuge, gesicherte Routen, GPS-Tracking bei Prototypen-Transporten",
-          "i4": "Tarnmassnahmen: Folierung, Abdeckplatten und definierte Präsentation im öffentlichen Raum",
+          "i4": "Tarnmaßnahmen: Folierung, Abdeckplatten und definierte Präsentation im öffentlichen Raum",
           "i5": "Digitaler Schutz: Verschlüsselung aller CAD-Daten, Designzeichnungen und technischen Dokumentation",
           "i6": "Besuchermanagement: Spezielle Protokolle für externe Besucher in Prototypen-Bereichen"
         }
@@ -11436,7 +11436,7 @@
     "angriffspfade": {
       "title": "Typische Angriffspfade",
       "subtitle": "Wie Cyberkriminelle vorgehen — und wie Sie sich schützen",
-      "intro": "Wenn Sie verstehen wie Angreifer denken und vorgehen, können Sie Ihr Unternehmen gezielter schützen. Hier zeigen wir die häufigsten Angriffswege mit konkreten Abwehrmassnahmen.",
+      "intro": "Wenn Sie verstehen wie Angreifer denken und vorgehen, können Sie Ihr Unternehmen gezielter schützen. Hier zeigen wir die häufigsten Angriffswege mit konkreten Abwehrmaßnahmen.",
       "attacks": {
         "phishing": {
           "title": "Phishing-Angriff",
@@ -12274,7 +12274,7 @@
           },
           "s7": {
             "title": "Audit-Ergebnisse",
-            "desc": "Interne/externe Audits, Findings, Massnahmenstand"
+            "desc": "Interne/externe Audits, Findings, Maßnahmenstand"
           },
           "s8": {
             "title": "Budget & Ressourcen",
@@ -12586,7 +12586,7 @@
             "r7": "Vertrauliche Daten nur verschlüsselt versenden",
             "r8": "Kein öffentliches WLAN ohne VPN",
             "r9": "Sicherheitsvorfälle sofort melden — nie vertuschen",
-            "r10": "Clean Desk: Dokumente wegschliessen, Drucker leeren"
+            "r10": "Clean Desk: Dokumente wegschließen, Drucker leeren"
           }
         },
         "phishing": {
