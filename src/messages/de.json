@@ -3906,7 +3906,7 @@
       },
       "vm3": {
         "checklist": "IKT-Vorfallklassifizierungsschema implementieren (Art. 18 DORA)\nMeldeprozess an zuständige Behörde etablieren\nSchwere IKT-Vorfälle dokumentieren und analysieren",
-        "description": "Führen Sie systematische Nachbereitungen von IKT-Vorfällen durch und nutzen Sie die Erkenntnisse zur kontinuierlichen Verbesserung gemäß Art. 17, 23 DORA. Analysieren Sie Bedrohungstrends und passen Sie Schutzmaßnahmen an.",
+        "description": "Führen Sie systematische Nachbereitungen von IKT-Vorfällen durch und nutzen Sie die Erkenntnisse zur kontinuierlichen Verbesserung gemäß Art. 13, 17 DORA. Analysieren Sie Bedrohungstrends und passen Sie Schutzmaßnahmen an.",
         "firstStep": "Etablieren Sie einen strukturierten Post-Incident-Review-Prozess mit definierten Teilnehmern und Dokumentationsanforderungen.",
         "title": "Lessons-Learned-Prozess und Bedrohungsanalyse etablieren"
       }

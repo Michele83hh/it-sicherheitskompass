@@ -3457,458 +3457,458 @@
     },
     "questions": {
       "daQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA requires you to maintain a complete register of all ICT third-party contracts. This register must be made available to the supervisory authority on request. When outsourcing to ICT third-party providers, you must ensure that overall responsibility for DORA compliance remains with your financial entity. Every new ICT outsourcing must undergo a risk analysis before the contract is concluded.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No overview of ICT third-party providers; no register of contractual arrangements",
+          "level1": "Partial overview of ICT third-party providers, but no complete register and no systematic risk consideration",
+          "level2": "Register of information on ICT third-party contracts established, risk analysis before new outsourcing, but the register is not fully up to date",
+          "level3": "Complete, regularly updated register of information on all ICT third-party contracts under Art. 28 DORA, integrated into the ICT risk management framework, with a documented risk analysis before every new outsourcing and regular reporting to the management body"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you manage ICT third-party risk as an integral part of your ICT risk management framework?",
         "tooltip": "Art. 28(1)-(3) DORA obliges financial entities to manage ICT third-party risk as an integral part of the ICT risk management framework. This includes creating and regularly updating a register of information on all contractual arrangements for the use of ICT services. The RTS under Art. 28(9) DORA specify the requirements."
       },
       "daQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA places considerably higher demands on ICT contracts than previous outsourcing rules (e.g. MaRisk, EBA guidelines). Every contract with an ICT third-party provider must contain specific provisions on: service level agreements with measurable targets, the obligation to support ICT incidents and TLPT, audit and access rights for your company and the supervisory authority, exit strategies and termination rights. Review existing contracts for gaps.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "ICT contracts contain no or only general security clauses; DORA requirements not considered",
+          "level1": "Individual DORA requirements considered in newer contracts, but legacy contracts not amended and audit rights not agreed consistently",
+          "level2": "Standard contractual clauses under Art. 28 DORA developed and implemented in most contracts, but amendment of existing contracts not yet complete",
+          "level3": "All ICT contracts contain the full DORA minimum content under Art. 28(4)-(8), including SLAs, audit rights, incident support, TLPT cooperation, exit strategies and data location rules; regular contract reviews established"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do your contracts with ICT third-party providers contain all the minimum content required by DORA?",
         "tooltip": "Art. 28(4)-(8) DORA sets extensive minimum requirements for contractual arrangements with ICT third-party providers. These include, among others: a complete description of services, availability targets, data processing locations, data security provisions, support obligations in ICT incidents, termination rights, audit and access rights, and cooperation duties in TLPT."
       },
       "daQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "ICT concentration risk arises when your financial entity depends on a single ICT provider for several critical functions — for instance when the same cloud provider hosts the core banking system, payment processing and the securities trading system. If this provider fails, all functions are affected simultaneously. DORA requires you to assess these risks and take countermeasures, e.g. through multi-cloud strategies or contingency plans for switching providers.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No analysis of ICT concentration risk; no overview of dependencies on individual providers",
+          "level1": "Basic knowledge of the most important ICT providers, but no systematic analysis of concentration risks",
+          "level2": "ICT concentration risk analysis performed, critical dependencies identified, but countermeasures (e.g. multi-provider strategy) not yet fully implemented",
+          "level3": "Systematic assessment and management of ICT concentration risk under Art. 29 DORA with documented analysis, implemented countermeasures, exit strategies and regular reassessment upon contract changes"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are ICT concentration risks analysed and managed when outsourcing services to third-party providers?",
         "tooltip": "Art. 29(1)-(2) DORA obliges financial entities to assess ICT concentration risk. This includes analysing whether too many critical or important functions are concentrated with one or a few ICT third-party providers and whether substitution options exist. The RTS under Art. 28(9) DORA contain requirements for assessing concentration risk."
       },
       "daQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "For ICT services supporting critical or important functions, Art. 30 DORA imposes stricter contractual requirements than the general requirements of Art. 28. Particularly important are: the unrestricted right to audits and inspections (including by the supervisory authority), guaranteed support during ICT incidents, the obligation to cooperate in TLPT, clear exit strategies with adequate transition periods and the right to terminate for material breaches of contract.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No differentiation between critical and non-critical ICT outsourcing; Art. 30 DORA requirements not considered",
+          "level1": "Critical and important ICT functions identified, but the contractual requirements under Art. 30 DORA not yet included in the contracts",
+          "level2": "Stricter contractual provisions under Art. 30 DORA implemented in most contracts for critical functions, but audit rights and exit strategies still patchy",
+          "level3": "Full implementation of all Art. 30 DORA requirements in every contract for critical and important functions, including unrestricted audit rights, documented exit strategies, incident support and TLPT cooperation"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are the key contractual provisions for ICT services supporting critical or important functions fully implemented?",
         "tooltip": "Art. 30(1)-(5) DORA defines stricter contractual requirements for ICT services supporting critical or important functions. These include, among others: complete service level descriptions, guaranteed availability targets, provider obligations in incidents, security measures, data protection guarantees, unrestricted audit and access rights, termination rights and exit strategies."
       },
       "daQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If one of your ICT third-party providers is designated as critical, this has direct consequences for your financial entity: the lead overseer can issue recommendations to the provider that may affect service delivery. In extreme cases, the supervisory authority can restrict your financial entity's use of the critical provider. You must therefore know whether your providers have been designated as critical and have contingency plans for the event of a usage restriction.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No knowledge of the oversight framework under Art. 31 DORA; no monitoring of designations",
+          "level1": "Basic knowledge of Art. 31 DORA, but no active monitoring of whether own ICT providers have been designated as critical",
+          "level2": "Monitoring of the designation of own ICT providers established; contingency plans for a usage restriction being drawn up",
+          "level3": "Active monitoring of all designations under Art. 31 DORA, documented contingency and exit plans for usage restrictions, regular alignment with critical providers on oversight results and contractual clauses to minimise risk"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have a process for handling the designation of your ICT third-party providers as critical by the supervisory authority?",
         "tooltip": "Art. 31(1)-(12) DORA governs the oversight framework for critical ICT third-party service providers. The ESAs can designate ICT third-party providers as critical and appoint a lead overseer. The overseer has far-reaching powers: information requests, inspections, recommendations and, where applicable, usage restrictions. Financial entities must implement the resulting requirements."
       },
       "govQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA makes clear: the management body (board, executive management) cannot fully delegate responsibility for ICT risk. It must actively approve the ICT risk management framework and oversee its implementation. This includes providing sufficient financial and human resources. The personal accountability of the management body is a central element of DORA governance. Document how your management body fulfils this responsibility.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "The management body is not involved in ICT risk management; no formal assumption of responsibility",
+          "level1": "The management body is informed, but ICT risk management is effectively delegated to the IT department without active steering",
+          "level2": "The management body has approved the ICT risk management framework and receives regular reports, but active steering and resource allocation could be improved",
+          "level3": "Full assumption of overall responsibility by the management body under Art. 5 DORA: approval and oversight of the ICT risk management framework, adequate budget approval, regular engagement with ICT risk and documented accountability"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does the management body assume overall responsibility for ICT risk management and digital operational resilience?",
         "tooltip": "Art. 5(1)-(2) DORA assigns the management body ultimate responsibility for managing the financial entity’s ICT risk. The management body must define, approve, oversee and be accountable for the ICT risk management framework. It must also allocate an appropriate budget and ensure the ICT strategy is aligned with the business strategy."
       },
       "govQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA requires that members of the management body not only bear formal responsibility but are also professionally able to understand and assess ICT risk. Training should cover topics such as the current threat landscape, ICT risk management methods, regulatory requirements (DORA, RTS, ITS), incident reporting obligations and ICT third-party risk. Attendance must be documented.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No ICT risk training for the management body; no awareness of the training obligation under DORA",
+          "level1": "Occasional information sessions on IT security, but no regular, structured training for the management body",
+          "level2": "Regular ICT risk training for the management body established, attendance documented, but the content does not cover all DORA-relevant topics",
+          "level3": "Structured training programme under Art. 5(4) DORA with regular training on the current threat landscape, regulatory requirements, ICT risk management and incident handling, documented attendance and effectiveness checks"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do the members of the management body complete regular training on ICT risk and digital operational resilience?",
         "tooltip": "Art. 5(4) DORA obliges members of the management body to keep their knowledge and skills up to date in order to understand and assess ICT risk and its impact on the financial entity. Specific training appropriate to the complexity of the ICT risks must be offered to them."
       },
       "govQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA requires a continuous improvement cycle for your ICT risk management framework. The annual review must cover, among other things: the currency of the ICT risk analysis, the effectiveness of protective measures, findings from incidents and tests, changes in the threat landscape and supervisory requirements. The review results must be presented to the management body as a formal report and documented.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No regular review of the ICT risk management framework; no formal reporting to the management body",
+          "level1": "Occasional reports to the management body, but no structured annual review of the framework",
+          "level2": "Annual review of the ICT risk management framework with formal reports to the management body, but updates after incidents are not systematic",
+          "level3": "At least annual review under Art. 6 DORA with formal reports to the management body, event-driven reviews after incidents, and integration of test results and supervisory findings into updates of the framework"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is the ICT risk management framework reviewed regularly and reported to the management body?",
         "tooltip": "Art. 6(5)-(8) DORA requires the ICT risk management framework to be reviewed at least once a year and after major ICT-related incidents. The management body must receive formal reports on the ICT risk situation and key findings. The framework must be updated based on test results, incidents and supervisory instructions."
       },
       "govQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA follows a risk-based approach: not every financial entity must implement all requirements to the same extent. Smaller institutions with less complex ICT systems can use a simplified framework. Larger, systemically relevant entities must take more comprehensive measures. You should document how you apply the proportionality principle — which requirements you implement to what extent and why. This must be traceable for the supervisory authority.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No engagement with the proportionality principle; DORA requirements neither prioritised nor adapted to the company's size",
+          "level1": "Basic knowledge of the proportionality principle, but no documented assessment of the entity's own classification",
+          "level2": "Assessment of the entity's size, complexity and risk profile carried out, requirements prioritised, but documentation of proportionality decisions incomplete",
+          "level3": "Comprehensively documented proportionality assessment under Art. 4 DORA with a traceable justification for the implementation scope of each requirement, coordination with the supervisory authority and regular review when the risk profile changes"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is the proportionality principle appropriately taken into account when implementing the DORA requirements?",
         "tooltip": "Art. 4(1)-(2) DORA stipulates that financial entities implement the ICT risk management framework taking into account their size, risk profile, and the nature, scale and complexity of their services and operations. Certain small and non-complex financial entities are subject to simplified requirements under Art. 16 DORA."
       },
       "govQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA requires an independent ICT control function that works separately from operational ICT. This function — typically a CISO (Chief Information Security Officer) or ICT risk manager — must be able to report directly to the management body. It is responsible for monitoring ICT risk, reviewing the effectiveness of protective measures and reporting. Organisational independence is essential: the CISO should not simultaneously be responsible for IT operations.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No independent ICT control function; ICT risk management is co-managed by IT operations",
+          "level1": "ICT risk management assigned to one person, but no organisational independence from IT operations; no direct access to the management body",
+          "level2": "Independent ICT control function (e.g. CISO) established with a reporting line to the management body, but resources and powers not yet sufficient",
+          "level3": "Independent ICT control function under Art. 6 DORA and RTS JC 2023 86 with organisational separation from ICT operations, a direct reporting line to the management body, adequate resources and powers, and regular reporting"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is an independent control function for ICT risk management in place (e.g. CISO, ICT risk manager)?",
         "tooltip": "Art. 6(1)-(4) DORA and the RTS JC 2023 86 require an appropriate organisational structure for ICT risk management with a clear separation of ICT operations from ICT control and monitoring functions. The control function must have sufficient independence, authority and resources to work effectively."
       },
       "iaQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA explicitly encourages the exchange of cyber threat information between financial entities. This can take place via industry associations, sectoral ISACs (Information Sharing and Analysis Centers), CERT groups or bilateral arrangements. The exchange helps detect new threats early and improve your own defences. Participation is voluntary, but is viewed positively by supervisory authorities.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No participation in cyber threat information exchange; no contact with ISACs or industry groups",
+          "level1": "Interest in information sharing in principle, but no active participation in sharing arrangements",
+          "level2": "Participation in at least one sharing arrangement (e.g. an industry ISAC), passive receipt of threat information",
+          "level3": "Active participation in several information-sharing arrangements under Art. 45 DORA with bidirectional exchange of IoCs, TTPs and security alerts, integrated into own threat intelligence processes"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does your financial entity participate in cyber threat information-sharing arrangements?",
         "tooltip": "Art. 45(1)-(2) DORA permits financial entities to exchange cyber threat information and intelligence among themselves. This exchange is intended to strengthen the digital operational resilience of the financial sector as a whole and covers indicators of compromise (IoCs), tactics, techniques and procedures (TTPs) and security alerts."
       },
       "iaQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Not every piece of threat information is equally valuable. DORA requires the exchange to take place within trusted communities and the quality of the shared information to be ensured. This means: information must be current, verified and actionable. It must be clear how reliable a source is and which measures are recommended. A quality assurance process helps reduce false alarms and maximise the operational benefit.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No awareness of the quality requirements for information sharing",
+          "level1": "Threat information is received, but not systematically checked for relevance and quality",
+          "level2": "Assessment process for incoming threat information in place; information is checked for relevance, but no formal quality assurance",
+          "level3": "Structured quality assurance process for threat information under Art. 45(3) DORA assessing source, timeliness, relevance and actionability, integrated into the threat intelligence platform with a feedback loop to the community"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are the quality and relevance of the threat information exchanged ensured?",
         "tooltip": "Art. 45(3) DORA requires the information exchange to take place within trusted communities that protect the potentially sensitive nature of the shared information. Codes of conduct must apply that preserve the protection of personal data, the protection of business secrets and competition policy."
       },
       "iaQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Sharing threat information can involve sensitive data — for instance when IoCs contain personal data (e.g. email addresses from phishing campaigns) or allow conclusions about your own security architecture. DORA therefore requires: confidentiality agreements (NDAs) with all sharing partners, GDPR-compliant processing of personal data, protection of business secrets and clear rules for onward disclosure. The Traffic Light Protocol (TLP) provides a proven framework for this.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No confidentiality agreements or data protection measures for the information exchange",
+          "level1": "Basic awareness of confidentiality requirements, but no formal agreements with sharing partners",
+          "level2": "Confidentiality agreements concluded with the most important sharing partners, GDPR compliance checked, but TLP or a comparable classification scheme not used consistently",
+          "level3": "Comprehensive confidentiality agreements under Art. 45(4) DORA with all sharing partners, GDPR-compliant processing, consistent use of TLP for information classification and regular review of the agreements"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are confidentiality agreements and data protection measures established for the information exchange?",
         "tooltip": "Art. 45(4) DORA requires the information exchange to comply with the rules on the protection of personal data (in particular the GDPR) and on the protection of business secrets. Confidentiality agreements and secrecy obligations must govern the handling of the shared information."
       },
       "iaQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Merely receiving threat information creates no value — only integration into your security systems makes the exchange effective. IoCs (e.g. malicious IP addresses, file hashes, domains) should be fed automatically into your SIEM, firewall and endpoint detection systems. TTPs should flow into your detection rules. This requires tools such as STIX/TAXII-compatible threat intelligence platforms and defined processes for operationalisation.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic processing of threat indicators; no threat intelligence tools in use",
+          "level1": "Threat information is reviewed manually, but not systematically integrated into the ICT security systems",
+          "level2": "IoCs are regularly fed into SIEM and firewall rules, but TTPs are not systematically converted into detection rules; no automated process",
+          "level3": "Fully automated processing of IoCs and TTPs via a threat intelligence platform (STIX/TAXII-compatible) with integration into SIEM, firewall, endpoint detection and detection rules, regular updates and effectiveness measurement"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are threat indicators (IoCs) and tactics (TTPs) systematically processed and integrated into your own defences?",
         "tooltip": "Art. 45(1) DORA names as the subject of the information exchange in particular indicators of compromise (IoCs), tactics, techniques and procedures (TTPs), security alerts and configuration tools. Integrating this information into your own ICT security infrastructure is decisive for its operational value."
       },
       "iaQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA requires transparency towards the supervisory authority regarding your participation in information-sharing arrangements. You must inform your competent authority (e.g. BaFin) which sharing arrangements you participate in. This serves supervision and enables the authority to verify compliance with the confidentiality and data protection requirements where necessary. The notification should cover the nature and purpose of the arrangement, the partners involved and the scope of the exchange.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No notification to the supervisory authority about information-sharing arrangements; no knowledge of the notification duty",
+          "level1": "Knowledge of the information duty under Art. 45(2) DORA, but no notification to the supervisory authority yet",
+          "level2": "Supervisory authority informed about existing participation in sharing arrangements, but no ongoing update process",
+          "level3": "Complete and current notification of all information-sharing arrangements to the competent supervisory authority under Art. 45(2) DORA with regular updates upon changes and a documented notification process"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are the supervisory authorities informed about participation in information-sharing arrangements?",
         "tooltip": "Art. 45(2) DORA provides that financial entities notify the competent authority of their participation in information-sharing arrangements. The supervisory authority should be aware of the participation and can provide guidance on structuring the exchange."
       },
       "irmQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The ICT risk management framework is the central steering instrument for your digital operational resilience. It must contain at least an ICT security strategy, policies for protecting the availability, authenticity, integrity and confidentiality of data, and a clear accountability framework. The management body must approve the framework and actively oversee its implementation. Simplified requirements under Art. 16 DORA apply to smaller financial entities.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No documented ICT risk management framework in place",
+          "level1": "Individual ICT policies exist, but no coherent framework; no formal approval by the management body",
+          "level2": "Documented ICT risk management framework with strategy and policies in place, approved by the management body, but not fully implemented or regularly reviewed",
+          "level3": "Comprehensive ICT risk management framework under Art. 6 DORA and RTS JC 2023 86, approved by the management body, fully implemented, reviewed annually and continuously improved"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does your financial entity have a documented ICT risk management framework in accordance with DORA?",
         "tooltip": "Art. 6(1)-(2) DORA (EU 2022/2554) obliges financial entities to establish a sound, comprehensive and well-documented ICT risk management framework. It must include strategies, policies, procedures, and ICT protocols and tools necessary to protect all ICT assets. The regulatory technical standards (RTS) under JC 2023 86 specify the requirements for the framework."
       },
       "irmQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "You must maintain a current inventory of all ICT assets — including hardware, software, network components, databases and cloud services. Mapping to business-critical functions is particularly important: which ICT assets support which business processes? Where do dependencies on ICT third-party providers exist? The inventory must be updated regularly, especially after significant changes to the ICT infrastructure.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No ICT asset inventory; no overview of ICT-supported business functions",
+          "level1": "Partial inventory exists, but incomplete; dependencies and mapping to business functions not recorded systematically",
+          "level2": "Documented ICT asset inventory with classification and mapping to business functions, but updates not consistently ensured",
+          "level3": "Complete, automatically maintained ICT asset inventory with classification, dependency analysis, mapping to critical functions and regular review under Art. 8 DORA"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you maintain a complete inventory of all ICT assets and their dependencies?",
         "tooltip": "Art. 8(1)-(4) DORA obliges financial entities to identify, classify and document all ICT-supported business functions, information assets and ICT assets. The RTS JC 2023 86 specify the requirements for asset identification and mapping to critical or important functions."
       },
       "irmQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Protection and prevention measures under DORA include, among others: access management following the least-privilege principle, encryption of data at rest and in transit, network segmentation, regular patch management and measures for the physical security of the ICT infrastructure. These measures must be sized on a risk basis derived from the ICT risk analysis.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic ICT protection and prevention measures implemented",
+          "level1": "Basic measures in place (firewall, antivirus), but not sized on a risk basis and not aligned with DORA requirements",
+          "level2": "Risk-based ICT security measures implemented (access management, encryption, segmentation), but not all areas under Art. 9 DORA covered",
+          "level3": "Comprehensive, risk-based ICT protection and prevention measures under Art. 9 DORA, including access management, cryptography, network security and change management, regularly reviewed and updated"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are appropriate ICT security measures for protection and prevention implemented in accordance with DORA?",
         "tooltip": "Art. 9(1)-(4) DORA requires financial entities to continuously monitor and control ICT systems and tools to ensure their security and proper functioning. This includes measures to minimise the impact of ICT risk through the use of appropriate strategies, policies, procedures and tools."
       },
       "irmQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Detecting anomalous activities requires technical tools such as SIEM systems (Security Information and Event Management), intrusion detection systems (IDS), network anomaly detection and user behaviour analytics. DORA requires these mechanisms to be sufficiently tested and to comprise multiple layers of control (defence in depth). For critical or important functions, detection capabilities must be ensured around the clock.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No mechanisms for detecting anomalous activities in ICT systems",
+          "level1": "Basic log collection in place, but no systematic evaluation or automated anomaly detection",
+          "level2": "SIEM system or comparable solution in use with defined detection rules, but incomplete coverage of critical functions and no 24/7 operation",
+          "level3": "Multi-layer anomaly detection (SIEM, IDS, network analysis) with 24/7 monitoring, regularly updated detection rules, automated alerts and documented event correlation under Art. 10 DORA"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have mechanisms for detecting anomalous activities in your ICT systems?",
         "tooltip": "Art. 10(1)-(2) DORA obliges financial entities to establish mechanisms to promptly detect anomalous activities, including ICT-related incidents and performance issues. This includes automated monitoring tools that trigger alerts when predefined thresholds are exceeded."
       },
       "irmQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Your backup and recovery procedures must ensure you can restore critical ICT systems and data within defined timeframes (Recovery Time Objective / Recovery Point Objective). DORA requires backups to be stored physically and logically separated from the production environment, recovery to be tested regularly and the results documented. Particular attention is paid to the ability to fall back on clean data after a cyberattack.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No documented backup policies; recovery has never been tested",
+          "level1": "Backups are created, but without a documented policy; recovery tests do not take place or only ad hoc",
+          "level2": "Documented backup policy with defined RPO/RTO values, regular backups, but recovery tests only occasional and not for all critical systems",
+          "level3": "Comprehensive backup and recovery policy under Art. 12 DORA with regularly tested recovery procedures, geo-redundant storage, documented test results and cyber recovery capability"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are backup policies and recovery procedures for critical ICT systems established and tested?",
         "tooltip": "Art. 12(1)-(2) DORA requires financial entities to establish ICT business continuity policies and plans as well as recovery plans, which must be tested regularly. Backup policies must define the scope, frequency and retention of backups as well as procedures for secure restoration."
       },
       "rtQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A digital operational resilience testing programme goes beyond classic IT security tests. It covers vulnerability scans, open-source analyses, network security assessments, gap analyses, physical security reviews, source code reviews, scenario-based tests, compatibility tests, performance tests and end-to-end tests. The programme must be prioritised on a risk basis and updated annually.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No digital operational resilience testing programme in place",
+          "level1": "Occasional security tests (e.g. vulnerability scans) are performed, but no structured testing programme",
+          "level2": "Documented testing programme with different test types under Art. 25 DORA, prioritised on a risk basis, but not all critical systems covered",
+          "level3": "Comprehensive testing programme under Art. 24 DORA as part of the ICT risk management framework with risk-based prioritisation, full coverage of critical functions, annual updates and documented follow-up of all findings"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does your financial entity have a digital operational resilience testing programme?",
         "tooltip": "Art. 24(1)-(2) DORA obliges financial entities to establish a comprehensive digital operational resilience testing programme as an integral part of the ICT risk management framework. The programme must include a range of tests and be designed on a risk basis, taking into account the evolving ICT risk landscape."
       },
       "rtQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA requires various types of tests that go beyond pure penetration testing. Every year, critical and important ICT systems must be tested by independent, qualified testers — either internal (where no conflicts of interest exist) or external. Test results must be documented, vulnerabilities prioritised and remediated promptly. Important: all test methods from Art. 25 DORA should be considered in the testing programme.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No regular security testing of the ICT systems",
+          "level1": "Occasional vulnerability scans, but no systematic annual testing of critical systems",
+          "level2": "Annual security tests for most critical systems using various test methods, but not all test types named in Art. 25 DORA covered",
+          "level3": "Complete annual testing of all critical ICT systems with all relevant test types under Art. 25 DORA, by independent testers, with documented follow-up of findings and effectiveness checks"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are all critical ICT systems and applications subjected to appropriate security tests at least annually?",
         "tooltip": "Art. 25(1)-(3) DORA lists the required test types: vulnerability assessments and scans, open-source analyses, network security assessments, gap analyses, physical security reviews, questionnaires and software scans, source code reviews, scenario-based tests, compatibility tests, performance tests, end-to-end tests and penetration tests."
       },
       "rtQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "TLPT differs fundamentally from conventional penetration tests: it involves simulated cyberattacks based on real threat intelligence that test critical business functions in the production environment. Not every financial entity must carry out TLPT — the supervisory authority determines the entities concerned. If you are affected, you must engage a qualified external tester and use the TIBER-EU framework as a reference.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No engagement with the TLPT obligation; unknown whether the entity is affected",
+          "level1": "TLPT requirements under Art. 26 DORA are known, but no clarification with the supervisory authority has taken place",
+          "level2": "Clarification with the supervisory authority completed; where TLPT is required: planning started, but no TLPT carried out yet",
+          "level3": "TLPT status clarified with the supervisory authority; where TLPT is required: at least one TLPT under Art. 26 DORA and RTS JC 2024 53 successfully completed, findings followed up and improvements implemented"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Has it been assessed whether your financial entity must carry out threat-led penetration testing (TLPT)?",
         "tooltip": "Art. 26(1)-(8) DORA obliges certain financial entities to carry out threat-led penetration testing (TLPT) at least every three years. The competent authority identifies the financial entities concerned, taking into account systemic relevance, ICT risk profile and ICT maturity. The RTS JC 2024 53 specify the TLPT requirements."
       },
       "rtQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA generally only permits external TLPT testers. Internal testers may only be used under strict conditions and for at most half of the tests — in any case, an external threat intelligence provider must be involved. When selecting external testers you must verify their qualifications, experience with the financial sector, certifications, liability insurance and freedom from conflicts of interest. The supervisory authority can reject the choice of tester.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No criteria defined for selecting TLPT testers",
+          "level1": "Basic knowledge of the qualification requirements, but no selection process established",
+          "level2": "Selection process for TLPT testers defined with checks of qualification and independence, but no practical application yet",
+          "level3": "Documented selection process for TLPT testers under Art. 26 DORA with verification of all qualification requirements, successful execution and a positive assessment by the supervisory authority"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are TLPT testers selected and deployed according to the qualification requirements of DORA?",
         "tooltip": "Art. 26(2)-(4) DORA imposes strict requirements on TLPT testers: they must be of the highest suitability and repute, possess technical and organisational capabilities, and be certified by an accreditation body or adhere to formal codes of conduct. Additional requirements on independence and insurance cover apply to external testers."
       },
       "rtQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The requirements for TLPT testers are deliberately set high, as TLPT takes place directly in the production environment and affects real business processes. The tester must demonstrate experience with TIBER-EU or comparable frameworks. The supervisory authority reviews the tester's suitability and can raise objections. After completing the TLPT, the tester must submit a comprehensive report documenting the test results and remediation recommendations.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No requirements for TLPT testers defined; no overview of the Art. 27 DORA requirements",
+          "level1": "Requirements under Art. 27 DORA are known, but not yet translated into a selection process or contract",
+          "level2": "Requirements catalogue for TLPT testers created with checks of accreditation, insurance and independence, but no TLPT with a qualified tester carried out yet",
+          "level3": "Full compliance with the Art. 27 DORA requirements: TLPT carried out by an accredited, independent tester with professional indemnity insurance, results recognised by the supervisory authority, improvement measures followed up"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are the requirements for external TLPT testers regarding independence, accreditation and insurance cover met?",
         "tooltip": "Art. 27(1)-(3) DORA defines specific requirements for TLPT testers: suitability and repute, technical and organisational capabilities in threat intelligence, penetration testing and red teaming, certification by an accreditation body, professional indemnity insurance, formal codes of conduct and management of conflicts of interest."
       },
       "vmQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The ICT incident management process is the organisational foundation for handling security incidents in your financial entity. It must clearly define: who detects incidents? Who assesses severity? Who coordinates the response? Who informs the supervisory authority? Clear escalation levels are essential so that major incidents can be reported to the competent authority within the reporting deadlines.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No documented ICT incident management process in place",
+          "level1": "Informal response to incidents, but no documented process with roles and escalation levels",
+          "level2": "Documented incident management process with defined roles, categorisation and escalation levels, but not practised regularly",
+          "level3": "Comprehensive incident management process under Art. 17 DORA with early warning indicators, defined roles, automated categorisation, regular exercises and continuous improvement based on past incidents"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does an ICT-related incident management process exist with clear roles, responsibilities and escalation levels?",
         "tooltip": "Art. 17(1)-(3) DORA obliges financial entities to establish a management process to monitor, handle and follow up ICT-related incidents. It must include early warning indicators and procedures for identification, tracking, logging and categorisation. The RTS JC 2024 33 specify the classification requirements."
       },
       "vmQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "DORA distinguishes between ICT-related incidents and major ICT-related incidents. Only major incidents are subject to reporting. Classification is based on seven criteria: number of clients/counterparties affected, duration of the incident, geographical spread, data losses, impact on critical services, economic impact and criticality of the services affected. You need a procedure that systematically checks and documents these criteria.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No classification of ICT incidents by severity",
+          "level1": "Incidents are assessed ad hoc, but not against the DORA classification criteria",
+          "level2": "Classification procedure based on the DORA criteria implemented, but the RTS thresholds not yet fully adopted",
+          "level3": "Systematic classification of all ICT incidents under Art. 18 DORA and RTS JC 2024 33 with documented thresholds, automated pre-screening and regular calibration of the classification criteria"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are ICT-related incidents classified as major according to the DORA classification criteria?",
         "tooltip": "Art. 18(1)-(2) DORA stipulates that financial entities classify ICT-related incidents based on defined criteria. The classification criteria include, among others: number of clients affected, duration of the incident, geographical spread, data losses, criticality of the services affected and economic impact. The RTS JC 2024 33 define the thresholds for major incidents."
       },
       "vmQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The DORA reporting procedure is time-critical: as soon as an ICT incident is classified as major, the clock is running. You have at most 4 hours for the initial notification and must submit intermediate and final reports on time. This requires prepared reporting forms, clear internal communication channels and designated owners who are also available outside business hours. Test the reporting process regularly to be able to meet the deadlines in an emergency.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No reporting procedure for ICT incidents to supervisory authorities established",
+          "level1": "Basic knowledge of the reporting obligation, but no prepared process for meeting the deadlines",
+          "level2": "Reporting process with owners and reporting forms prepared, but meeting the 4-hour deadline not ensured or not yet practised",
+          "level3": "Fully implemented reporting process under Art. 19 DORA with prepared standard forms per the ITS, owners available 24/7, tested communication channels and documented exercises on meeting the deadlines"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Can you meet the DORA reporting deadlines for major ICT-related incidents to the supervisory authority?",
         "tooltip": "Art. 19(1)-(4) DORA establishes a three-stage reporting procedure: initial notification (within 4 hours of classification as major, at the latest 24 hours after detection), intermediate report (within 72 hours of the initial notification) and final report (within one month of the last intermediate report). The deadlines are set in Delegated Regulation (EU) 2025/301; the ITS under Art. 20 DORA define the standard forms."
       },
       "vmQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Using the official standard forms is not optional but mandatory. The forms contain specific data fields on the incident description, affected services, impact on clients, measures taken and root cause analysis. You should integrate the forms into your reporting processes before an incident occurs, so that no time is lost searching for the right templates in an emergency. Automation — for instance by linking to your SIEM system — speeds up completion.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No knowledge of the DORA standard forms; no reporting templates available",
+          "level1": "Knowledge of the ITS reporting forms exists, but not yet integrated into internal processes",
+          "level2": "Standard forms per ITS JC 2024 33 integrated into the reporting process, owners trained, but no automated pre-filling",
+          "level3": "Standard forms fully integrated into the reporting process with automated pre-filling from SIEM/ticket system, regularly updated templates and documented trial runs"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are standard forms and templates used for incident reporting to the supervisory authority?",
         "tooltip": "Art. 20(1) DORA empowers the ESAs to develop draft ITS establishing standard forms, templates and procedures for reporting major ICT-related incidents. The ITS JC 2024 33 contain the specific reporting forms with the required data fields for initial, intermediate and final reports."
       },
       "vmQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "In addition to the mandatory reporting of major incidents, DORA provides for the voluntary reporting of significant cyber threats. This serves to protect the entire financial sector: if your company detects a novel attack method that could also hit other financial entities, this information should be shared. You need a process that systematically assesses cyber threats and triggers a report to the supervisory authority when relevant to the sector.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic assessment of cyber threats; no knowledge of the voluntary reporting option",
+          "level1": "Cyber threats are noticed, but not systematically assessed or classified for sector relevance",
+          "level2": "Process for assessing significant cyber threats in place; the reporting option to the supervisory authority is known but not yet applied in practice",
+          "level3": "Systematic process for identifying, assessing and reporting significant cyber threats under Art. 19(2) DORA with threat intelligence integration, defined assessment criteria and documented reports"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are significant cyber threats identified alongside incidents and reported to the supervisory authority where appropriate?",
         "tooltip": "Art. 19(2) DORA provides that financial entities may voluntarily report significant cyber threats to the competent authority where they consider them relevant to the financial system, service users or clients."
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 5-16 DORA oblige financial entities to comprehensive ICT risk management covering identification, protection, detection, response and recovery.",
+          "title": "Do you have a documented ICT risk management framework?"
         },
         "q2": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 17-23 DORA: ICT-related incidents must be classified, and major incidents reported to the competent authority within defined deadlines.",
+          "title": "Do you have a process for classifying and reporting major ICT incidents?"
         },
         "q3": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 24-27 DORA: annual baseline tests are mandatory, and for systemically relevant institutions threat-led penetration tests (TLPT) every 3 years.",
+          "title": "Do you carry out regular tests of your digital operational resilience?"
         },
         "q4": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 28-44 DORA: a complete ICT third-party register, contractual minimum requirements and exit strategies for critical services are prescribed.",
+          "title": "Do you maintain a register of all ICT third-party providers and monitor their risks?"
         },
         "q5": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 45 DORA enables and encourages the voluntary exchange of cyber threat information between financial entities.",
+          "title": "Do you participate in an exchange of cyber threat information?"
         },
         "q6": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 5 DORA: the management body must approve and oversee the ICT risk strategy and bear personal responsibility for digital operational resilience.",
+          "title": "Does your management demonstrably bear responsibility for digital resilience?"
         }
       }
     },
     "recommendations": {
       "da1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Maintain a current register of all ICT third-party providers with detailed information on the services provided, criticality and contractual arrangements under Art. 28 DORA. The register must be available to supervisors at all times.",
+        "firstStep": "Systematically record all existing ICT third-party providers and classify them by criticality (critical/important/non-critical).",
+        "title": "Maintain a register of ICT third-party providers"
       },
       "da2": {
         "checklist": "Build ICT third-party provider register (Art. 28 DORA)\nReview and adjust contractual requirements\nDevelop exit strategies for critical ICT services",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure that all contracts with ICT third-party providers contain the mandatory clauses under Art. 30 DORA, in particular on audit rights, exit arrangements, subcontractor management and data protection.",
+        "firstStep": "Create a checklist of all mandatory contractual clauses under Art. 30 DORA and review existing contracts.",
+        "title": "Implement contractual clauses for ICT third-party providers"
       },
       "da3": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Identify concentration risks from critical ICT third-party providers and develop exit strategies and alternative scenarios under Art. 29 DORA. Avoid single points of failure.",
+        "firstStep": "Analyse dependencies on individual third-party providers and identify critical concentration risks (e.g. cloud providers).",
+        "title": "Manage concentration risks and exit strategies"
       },
       "gov1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Anchor responsibility for ICT risk management explicitly with the board/management under Art. 5 DORA. The management body must understand, steer and oversee ICT risk.",
+        "firstStep": "Make ICT risk management a fixed agenda item in board/management meetings (at least quarterly).",
+        "title": "Make the board responsible for ICT risk"
       },
       "gov2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure the management body has sufficient knowledge and skills in ICT risk management through regular training under Art. 5, 13 DORA.",
+        "firstStep": "Plan targeted ICT security training for the board/management (e.g. cyber resilience, cloud risks, DORA requirements).",
+        "title": "Run ICT training for the management body"
       },
       "gov3": {
         "checklist": "Establish ICT governance structure\nEnsure management responsibility for digital resilience\nEstablish regular reporting to management body",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement risk-based, proportionate ICT risk management under Art. 4, 6 DORA. Establish structured internal reporting on ICT risks, incidents and third-party providers to the management body.",
+        "firstStep": "Define management dashboards with KPIs for ICT risk (e.g. incident numbers, vulnerabilities, third-party risks).",
+        "title": "Ensure proportionality and internal reporting"
       },
       "ia1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Join industry-specific information-sharing platforms (e.g. FS-ISAC for the financial sector) and share cyber threat intelligence under Art. 45 DORA to benefit from collective knowledge.",
+        "firstStep": "Identify relevant information-sharing initiatives for the financial sector and apply for membership.",
+        "title": "Participate in cyber threat intelligence sharing"
       },
       "ia2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement clear policies for exchanging cyber threat intelligence using the Traffic Light Protocol (TLP) under Art. 45 DORA. Define release processes and confidentiality levels.",
+        "firstStep": "Train employees in using the Traffic Light Protocol (TLP) and define internal release processes.",
+        "title": "Establish governance for information sharing (TLP)"
       },
       "ia3": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Fulfil all reporting duties towards the competent supervisory authorities under Art. 45 DORA, in particular on ICT risks, incidents and third-party relationships. Use standardised reporting formats.",
+        "firstStep": "Identify all supervisory reporting duties under DORA and set internal reporting cycles.",
+        "title": "Fulfil reporting duties towards supervisory authorities"
       },
       "irm1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Establish a comprehensive ICT risk management framework under Art. 6 DORA covering all business functions, ICT assets and processes. The framework must be integrated into the overall strategy.",
+        "firstStep": "Appoint an owner for ICT risk management and define the organisational structure under Art. 6 DORA.",
+        "title": "Establish an ICT risk management framework"
       },
       "irm2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Carry out a complete inventory of all ICT assets and classify them by criticality under Art. 8 DORA. Record dependencies and the business impact of outages.",
+        "firstStep": "Create a complete inventory of all ICT assets (hardware, software, data, networks) with assigned owners.",
+        "title": "Identify and classify critical ICT assets"
       },
       "irm3": {
         "checklist": "Implement ICT risk management framework (Art. 6 DORA)\nConduct Business Impact Analysis for ICT systems\nDefine and approve ICT risk tolerance levels",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement technical and organisational measures for protecting against, detecting and responding to ICT risks under Art. 9-11 DORA. This includes preventive controls, monitoring and incident response.",
+        "firstStep": "Define protective measures for critical ICT assets based on the risk classification from irm2.",
+        "title": "Implement ICT protection, detection and response measures"
       },
       "rt1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Develop a comprehensive testing programme for regularly reviewing digital operational resilience under Art. 24-25 DORA. The programme must cover different test types (vulnerability, scenario-based, performance).",
+        "firstStep": "Create an annual plan for resilience tests with defined test types, scopes, owners and dates.",
+        "title": "Set up a digital operational resilience testing programme"
       },
       "rt2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Carry out threat-led penetration testing (TLPT) at least every 3 years under Art. 26 DORA. Use external experts and simulate realistic attack scenarios.",
+        "firstStep": "Check whether you are among the financial entities subject to TLPT and, if so, plan a TLPT in line with the TIBER-EU framework.",
+        "title": "Carry out threat-led penetration testing (TLPT)"
       },
       "rt3": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a structured process for tracking and promptly remediating all vulnerabilities identified in tests under Art. 24 DORA. Document measures and responsibilities.",
+        "firstStep": "Create a central register for all test findings with status, owners, deadlines and risk assessment.",
+        "title": "Ensure follow-up and remediation of test findings"
       },
       "vm1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Develop a structured process for detecting, managing and resolving ICT-related incidents under Art. 17 DORA. The process must cover classification, escalation and documentation.",
+        "firstStep": "Define categories and severity levels for ICT incidents as well as escalation paths and responsibilities.",
+        "title": "Establish an ICT incident management process"
       },
       "vm2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a process for reporting major ICT incidents to the competent authorities on time under Art. 19 DORA. Observe the statutory reporting deadlines (initial notification, intermediate report, final report).",
+        "firstStep": "Identify the competent supervisory authorities and define internal reporting channels and deadlines (initial notification within 4h).",
+        "title": "Set up a reporting process to supervisory authorities"
       },
       "vm3": {
         "checklist": "Implement ICT incident classification scheme (Art. 18 DORA)\nEstablish reporting process to competent authority\nDocument and analyze major ICT incidents",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Carry out systematic follow-ups of ICT incidents and use the findings for continuous improvement under Art. 13, 17 DORA. Analyse threat trends and adapt protective measures.",
+        "firstStep": "Establish a structured post-incident review process with defined participants and documentation requirements.",
+        "title": "Establish a lessons-learned process and threat analysis"
       }
     }
   },
