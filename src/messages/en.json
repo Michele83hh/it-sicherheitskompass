@@ -2863,500 +2863,500 @@
     },
     "questions": {
       "auQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "KRITIS operators must regularly demonstrate to the BSI that they take appropriate state-of-the-art precautions. The evidence is provided through security audits, reviews or certifications. The BSI has published guidance on evidence submissions that you should use as a basis.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No evidence submission to the BSI established",
+          "level1": "Evidence was submitted, but not on time or incomplete",
+          "level2": "On-time submission with a documented process, individual findings",
+          "level3": "Complete, on-time evidence submission with an established audit cycle and deficiency tracking"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are the KRITIS compliance certificates submitted to the BSI on time every three years?",
         "tooltip": "Under Section 39(1) BSIG, operators of critical facilities must demonstrate implementation of their measures every three years — the NIS2UmsG extended the cycle from two to three years. Where deficiencies are found, the BSI can demand a remediation plan."
       },
       "auQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "For the BSI evidence submission you need structured documentation describing all implemented technical and organisational measures. This includes ISMS policies, network plans, risk analyses, penetration test reports and training records. Without auditable documentation, the audit cannot be passed.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No structured documentation of the IT security measures",
+          "level1": "Partly documented, but not prepared in an auditable form",
+          "level2": "Auditable documentation available for most areas",
+          "level3": "Complete, audit-proof documentation with versioning and regular updates"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is there auditable documentation of all IT security measures for the BSI evidence submission?",
         "tooltip": "Under Section 39(1) BSIG, the compliance documentation must verifiably evidence the implemented measures. The BSI reviews the adequacy and completeness of the documentation."
       },
       "auQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Internal audits are planned reviews of your IT security measures by your own or commissioned auditors. They should take place at least annually and cover all critical systems and processes. Identified deficiencies must be tracked and remedied before the official BSI evidence submission is due.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No internal IT security audits",
+          "level1": "Occasional ad hoc reviews without a fixed plan",
+          "level2": "Regular internal audits with an audit plan, but deficiency follow-up is patchy",
+          "level3": "Systematic internal audit programme with an annual plan, deficiency tracking and effectiveness checks"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are internal audits of the critical IT systems carried out regularly?",
         "tooltip": "Internal audits complement the BSI evidence obligation under Section 39(1) BSIG and help identify deficiencies before the official review. BSI module ISMS.1 requires regular internal reviews."
       },
       "auQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "After every audit — internal or external — the results should be analysed and turned into concrete improvement measures. This includes prioritising the findings, assigning owners and deadlines, and tracking implementation. In follow-up reviews, the BSI expects earlier deficiencies to have been remedied.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic processing of audit results",
+          "level1": "Audit results are noted, but not followed up in a structured way",
+          "level2": "An action plan is created, but implementation is only partly tracked",
+          "level3": "Full PDCA cycle: findings are prioritised, measures implemented, effectiveness verified and documented"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are findings from BSI reviews and external audits systematically turned into improvement measures?",
         "tooltip": "Under Section 39(1) BSIG, the BSI can order specific measures where deficiencies are found. A structured improvement process (PDCA) ensures that findings are remedied sustainably."
       },
       "bcmQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A BCMS defines how your organisation ensures the availability of the critical service even during serious disruptions. It covers business impact analyses (BIA), contingency plans, restart concepts and regular tests. For KRITIS operators this is particularly important, as outages can endanger the security of supply for the population.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No BCMS in place, no contingency plans for the critical service",
+          "level1": "Individual emergency measures defined, but no systematic BCMS",
+          "level2": "BCMS established with BIA and contingency plans, but not tested regularly",
+          "level3": "Complete BCMS in line with BSI 200-4 or ISO 22301 with regular tests and continuous improvement"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does a business continuity management system (BCMS) exist for the critical service?",
         "tooltip": "Section 30(1) BSIG requires measures to maintain the availability of critical services. A BCMS in line with BSI Standard 200-4 or ISO 22301 provides the organisational framework."
       },
       "bcmQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "RTO (Recovery Time Objective) defines the maximum downtime, RPO (Recovery Point Objective) the maximum data loss. For KRITIS operators this means: how long may your critical service (e.g. water supply, power generation, hospital operations) be down at most without endangering the security of supply? These values determine your entire contingency strategy.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No RTO/RPO values defined",
+          "level1": "Rough estimates exist, but not based on a BIA",
+          "level2": "BIA carried out with documented RTO/RPO values for important systems",
+          "level3": "Comprehensive BIA with validated RTO/RPO values, updated regularly and integrated into restart plans"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have the maximum tolerable downtimes (RTO/RPO) been defined for your critical service?",
         "tooltip": "The business impact analysis (BIA) is a core component of a BCMS under BSI Standard 200-4. It determines recovery time objectives (RTO) and tolerable data loss (RPO) for the critical service."
       },
       "bcmQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Contingency plans that have never been tested almost always fail in a real emergency. KRITIS operators should run emergency exercises at least annually — from tabletop exercises (simulations) to technical failover tests. These verify whether the defined RTO/RPO values are met and whether staff know the procedures.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No emergency exercises carried out",
+          "level1": "Occasional tests, but not regular and without structured evaluation",
+          "level2": "Annual exercises with documented results, but not all scenarios covered",
+          "level3": "Regular exercise programme with different scenarios, documented evaluation and improvement measures"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are contingency and restart plans regularly tested through exercises?",
         "tooltip": "Section 30(1) BSIG requires appropriate precautions, which includes testing the contingency plans. BSI module DER.4 describes requirements for emergency exercises."
       },
       "bcmQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Critical services require technical redundancies so that a single failure (e.g. data centre, network connection, power supply) does not lead to a total outage. This can include geo-redundancy, UPS systems, emergency power, mirrored databases or alternate sites. The redundancy strategy must match the defined RTO/RPO values.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No technical redundancy for critical systems",
+          "level1": "Individual redundancies exist (e.g. UPS), but no consistent strategy",
+          "level2": "Important systems designed redundantly, fallback concept in place but not fully tested",
+          "level3": "Consistent redundancy strategy with geo-redundant sites, regularly tested failover scenarios and documented recovery time"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are redundant systems and alternate sites in place for the critical service?",
         "tooltip": "Technical redundancy is an essential part of the BCMS for KRITIS operators. Section 30(1) BSIG requires state-of-the-art measures to ensure availability."
       },
       "bsiQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The BSI contact point is the official interface between your company and the BSI. It must be registered with the BSI by name including contact details. The BSI uses this contact point to inform you about threat situations, vulnerabilities and security warnings. Without a registered contact point you cannot receive important warnings in time.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No BSI contact point established or registered with the BSI",
+          "level1": "Contact point designated, but not yet formally registered with the BSI",
+          "level2": "Contact point registered with the BSI, but availability not consistently ensured",
+          "level3": "Contact point registered with the BSI, reachable 24/7, with a documented deputisation arrangement and regular updates of the contact details"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is your BSI contact point established and registered with the BSI by name?",
         "tooltip": "Section 33 BSIG requires registration with the BSI including address and up-to-date contact details. For the BSI to reach you in acute threat situations, a designated unit must reliably receive these notifications."
       },
       "bsiQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The BSI can send critical warnings at any time of day or night — e.g. during active cyberattacks on KRITIS sectors. Your contact point must therefore be reachable 24/7, for instance via an on-call phone, a staffed control centre or an on-call service. An email address staffed only on weekdays is not sufficient.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No availability outside business hours",
+          "level1": "Availability only during business hours, no on-call duty",
+          "level2": "On-call duty established, but not covering all times without gaps",
+          "level3": "24/7 availability through an on-call service or control centre with defined response times and escalation paths"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is the BSI contact point reachable around the clock (24/7)?",
         "tooltip": "The contact details registered under Section 33 BSIG must be current and reachable. The BSI also issues warnings about acute threats outside business hours — a continuously staffed or on-call unit is the practical prerequisite."
       },
       "bsiQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The BSI regularly sends situation reports, warnings and sector-specific information to KRITIS operators. Your contact point must not only receive this information but also assess it and forward it to the responsible departments (e.g. IT security, operations). This requires a defined process with clear responsibilities and response times.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "BSI notifications are not evaluated systematically",
+          "level1": "Notifications are read, but not forwarded in a structured way",
+          "level2": "Defined process for evaluation and forwarding, but response times not specified",
+          "level3": "Structured process with defined response times, an assessment matrix and follow-up of the measures initiated"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are BSI warnings and situation reports evaluated promptly and forwarded to the responsible units?",
         "tooltip": "The contact point must not only receive BSI information but also be able to evaluate and route it internally. Mere registration under Section 33 BSIG is not sufficient for this."
       },
       "bsiQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The BSI organises sector-specific and cross-sector KRITIS exercises (e.g. LÜKEX) in which cooperation between the BSI and operators in a crisis is rehearsed. Your contact point's participation in such exercises improves responsiveness and provides valuable insights into weaknesses in the reporting processes.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No participation in KRITIS exercises",
+          "level1": "Willingness in principle, but no participation yet",
+          "level2": "Participation in individual exercises; findings are documented",
+          "level3": "Regular participation in BSI exercises and own exercises with the contact point, documented lessons learned and process improvements"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is the contact point regularly involved in BSI KRITIS exercises?",
         "tooltip": "The BSI conducts and participates in cross-sector exercises. Taking part strengthens cooperation and tests the reporting channels. BSI module DER.2.1 recommends regular exercises."
       },
       "lkQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "As a KRITIS operator, you bear responsibility for the IT security of your critical service — even where parts of it are outsourced. Contracts with suppliers and IT service providers must therefore set out specific security requirements: patch management, incident response, access controls, audit rights and reporting duties for security incidents.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No IT security requirements in supplier contracts",
+          "level1": "General security clauses in individual contracts, but not standardised",
+          "level2": "Standardised security requirements in most contracts, including audit rights",
+          "level3": "Comprehensive security requirements in all relevant contracts with SLAs, audit rights, reporting duties and termination rights in case of security deficiencies"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are security-relevant requirements anchored in contracts with suppliers and IT service providers?",
         "tooltip": "Section 30(1) BSIG requires appropriate precautions in the supply chain as well. BSI module ORP.1 describes requirements for contract design with external service providers."
       },
       "lkQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "You should have an overview of which suppliers and service providers have access to your critical systems or are relevant to their operation. They should be assessed regularly with regard to their IT security — e.g. through questionnaires, certification evidence (ISO 27001), audit reports or on-site reviews.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No assessment of suppliers' IT security",
+          "level1": "Occasional reviews, but no systematic process",
+          "level2": "Regular assessment of the most important suppliers based on defined criteria",
+          "level3": "Systematic supplier risk management with classification, regular assessment, an audit programme and follow-up of measures"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are critical suppliers and service providers assessed with regard to their IT security?",
         "tooltip": "Assessing supply chain security is part of the risk analysis under Section 30(1) BSIG. BSI module OPS.1.1.3 describes requirements for outsourcing management."
       },
       "lkQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If a critical IT service provider fails — whether through a cyberattack of its own, insolvency or contract termination — your critical service must still keep running. This requires contingency plans: alternative providers, in-house fallback solutions, documented handover processes and regularly updated exit strategies.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No contingency planning for supplier failures",
+          "level1": "Critical dependencies known, but no documented contingency plans",
+          "level2": "Contingency plans for the most important suppliers in place, alternative service providers identified",
+          "level3": "Comprehensive contingency plans with tested exit strategies, alternative service providers and regular review of dependencies"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are there contingency plans for the failure of critical suppliers or service providers?",
         "tooltip": "Dependence on third parties must be taken into account in the BCM (Section 30(1) BSIG). BSI Standard 200-4 requires considering external dependencies in the business impact analysis."
       },
       "lkQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Contractually agreed security requirements are only effective if compliance is actually verified. This can be done through regular audits, obtaining current certifications, providers' security reports or technical checks (e.g. vulnerability scans of interfaces). Close monitoring is particularly necessary for providers with remote access to critical systems.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No review of security requirements at suppliers",
+          "level1": "Occasional review of individual suppliers, but not systematic",
+          "level2": "Regular review of the most important suppliers based on defined audit criteria",
+          "level3": "Systematic audit programme for all critical suppliers with documented results, follow-up of measures and an escalation process"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is supplier compliance with the security requirements reviewed regularly?",
         "tooltip": "Ongoing monitoring of supply chain security is part of the evidence obligation under Section 39(1) BSIG. The BSI can also review the adequacy of measures with regard to the supply chain."
       },
       "psQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Server rooms, control rooms and other areas housing critical IT infrastructure must be protected against unauthorised entry. An access control system can include electronic badges, biometric systems or key management. Logging of all entries and regular review of access authorisations are essential.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No access control for critical IT areas",
+          "level1": "Simple key allocation without logging or systematic administration",
+          "level2": "Electronic access control system with logging, but authorisations not reviewed regularly",
+          "level3": "Multi-level access control system with electronic logging, regular authorisation reviews and visitor rules"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does a physical access control system exist for the areas housing critical IT infrastructure?",
         "tooltip": "Section 30(1) BSIG requires appropriate precautions including physical security. BSI modules INF.1 (general building) and INF.2 (data centre) describe specific requirements for access controls."
       },
       "psQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Physical threats such as fire, water ingress, power failure or extreme temperatures can destroy critical IT systems. KRITIS operators must take appropriate protective measures: fire alarm and extinguishing systems, water detectors, uninterruptible power supply (UPS), emergency power (generator), air conditioning and lightning protection.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic protection against environmental influences and natural hazards",
+          "level1": "Basic fire protection in place, but no comprehensive hazard analysis",
+          "level2": "Protective measures against the main hazards implemented (fire, power, climate), regularly maintained",
+          "level3": "Comprehensive protection in line with EN 50600 or comparable, with redundant UPS/emergency generator, extinguishing system, climate monitoring and regular function tests"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are the buildings and facilities housing critical infrastructure protected against environmental influences and natural hazards?",
         "tooltip": "BSI module INF.1 requires protecting buildings against environmental hazards such as fire, water, lightning and power failure. For data centres, INF.2 imposes elevated requirements."
       },
       "psQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "In addition to access control, critical facilities should be protected by further physical security measures: video surveillance at entrances and sensitive areas, an intrusion alarm system connected to a control centre, perimeter protection (fences, barriers) and site lighting. The scope depends on the threat situation and the facility's protection needs.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No supplementary physical security measures",
+          "level1": "Individual measures in place (e.g. camera surveillance), but not comprehensive",
+          "level2": "Video surveillance and intrusion alarm system at critical areas, connected to a control centre",
+          "level3": "Comprehensive perimeter protection with video surveillance, intrusion alarms, physical barriers, control centre connection and regular security walkthroughs"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is physical security supplemented by video surveillance, intrusion detection systems or perimeter protection?",
         "tooltip": "For KRITIS facilities with elevated protection needs, Section 30(1) BSIG requires state-of-the-art measures. BSI module INF.1 recommends supplementary monitoring measures for critical areas."
       },
       "rmQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "KRITIS operators must systematically determine which risks endanger the availability, integrity, authenticity and confidentiality of their critical service. The risk analysis should cover all IT systems necessary for providing the critical service. The BSI recommends the methodology of BSI Standard 200-3 as a basis.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic risk analysis carried out for the critical service",
+          "level1": "Rough risk estimate exists, but not methodically sound or documented",
+          "level2": "Documented risk analysis using a recognised methodology, but not updated regularly",
+          "level3": "Regularly updated risk analysis in line with BSI Standard 200-3 or ISO 27005 with full coverage of all critical systems"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you carried out a systematic state-of-the-art risk analysis for your critical service?",
         "tooltip": "Section 30(1) BSIG requires appropriate organisational and technical precautions in line with the state of the art. A risk analysis based on BSI Standard 200-3 or ISO 27005 provides the foundation."
       },
       "rmQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "An ISMS forms the organisational framework for your entire IT security. It defines responsibilities, policies, processes and controls. For KRITIS operators, an ISMS based on ISO 27001 or BSI IT-Grundschutz is the most efficient way to demonstrably implement the requirements of Section 30 BSIG. The scope must cover at least all IT systems of the critical service.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No ISMS in place",
+          "level1": "Individual security policies exist, but no systematic ISMS",
+          "level2": "ISMS set up and operated, but not certified or with gaps in scope",
+          "level3": "Certified ISMS according to ISO 27001 or BSI IT-Grundschutz with full KRITIS scope and regular re-certification"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is an information security management system (ISMS) established for the KRITIS scope?",
         "tooltip": "An ISMS based on ISO 27001 or BSI IT-Grundschutz is the recommended foundation for implementing Section 30 BSIG. BSI module ISMS.1 defines the minimum requirements."
       },
       "rmQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Attack detection systems (SzA) comprise technical measures such as SIEM systems, IDS/IPS, log analysis and anomaly detection. In its guidance, the BSI distinguishes three areas: logging (collecting logs), detection (recognising attacks) and response (reacting to detected attacks). KRITIS operators must demonstrate the use of SzA as part of the BSI evidence obligation.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No attack detection systems in use",
+          "level1": "Basic log collection in place, but no systematic evaluation or detection",
+          "level2": "SIEM or comparable system in use with detection rules, but response processes not fully defined",
+          "level3": "Full SzA implementation in line with the BSI guidance: central logging, automated detection, defined response processes and 24/7 monitoring"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are attack detection systems (SzA) in use as required by Section 31 BSIG?",
         "tooltip": "Section 31 BSIG obliges KRITIS operators to use attack detection systems (SzA). The BSI has published guidance on SzA describing specific requirements for logging, detection and response."
       },
       "rmQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A treatment strategy must be defined for every identified risk: reduce the risk (implement a measure), transfer it (e.g. cyber insurance), avoid it (shut down the system) or accept it (a conscious decision for low risks). The implemented measures must be regularly reviewed for effectiveness — a formal risk acceptance process with management involvement is required.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic risk treatment",
+          "level1": "Individual measures are implemented, but without a documented treatment plan",
+          "level2": "Documented risk treatment plans for the most important risks; effectiveness is checked occasionally",
+          "level3": "Complete risk treatment process with management involvement, regular effectiveness reviews and KPI-based success measurement"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are identified risks treated systematically and is the effectiveness of the measures reviewed?",
         "tooltip": "Risk treatment and effectiveness reviews are core components of the ISMS under BSI module ISMS.1. Section 30(1) BSIG requires appropriate precautions whose adequacy must be reviewed regularly."
       },
       "shQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "System hardening means disabling unnecessary services, changing default passwords, applying security configurations and minimising the attack surface. For KRITIS systems you should use recognised hardening standards such as CIS Benchmarks, BSI recommendations or vendor-specific security guides. Hardening must be documented and applied to every new system.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic hardening of the IT systems",
+          "level1": "Individual measures (e.g. default passwords changed), but no uniform standard",
+          "level2": "Hardening guidelines defined and implemented for the most important systems; compliance checked occasionally",
+          "level3": "Consistent hardening according to recognised standards (CIS/BSI) with automated compliance checks and deviation management"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are IT systems within the KRITIS scope configured according to recognised hardening standards?",
         "tooltip": "Section 30(1) BSIG requires state-of-the-art technical precautions. BSI module SYS.1.1 (general server) describes requirements for secure configuration. CIS Benchmarks and BSI hardening guidelines are recognised standards."
       },
       "shQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Critical KRITIS systems (e.g. control technology, process control) must be separated at network level from less critical areas (e.g. office IT, internet). This prevents an attack on the office IT from spreading directly to the critical infrastructure. Segmentation is achieved through firewalls, VLANs, DMZs and dedicated networks for OT systems (operational technology).",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No network segmentation; critical and non-critical systems in the same network",
+          "level1": "Basic segmentation exists (e.g. VLANs), but firewall rules are not restrictive",
+          "level2": "Critical systems in separate segments with firewall rules; OT and IT fundamentally separated",
+          "level3": "Multi-layer segmentation with dedicated security zones, strict firewall rules, IDS/IPS at zone transitions and regular review of the rule sets"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is the network infrastructure segmented to separate critical systems from other network areas?",
         "tooltip": "Network segmentation is a core measure under Section 30(1) BSIG. BSI module NET.1.1 (network architecture and design) requires separating network segments by protection needs."
       },
       "shQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Unpatched vulnerabilities are one of the most common entry points for cyberattacks. KRITIS operators must have a structured process for promptly assessing and applying security updates. For OT systems (control technology, SCADA), patching must be planned carefully, as outages of the critical service must be avoided. A risk assessment process helps weigh urgency against availability.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No structured patch management; updates are not applied regularly",
+          "level1": "Patches are applied occasionally, but without a defined process or prioritisation",
+          "level2": "Defined patch process with prioritisation by criticality, but not all systems covered (e.g. OT missing)",
+          "level3": "Comprehensive patch management for IT and OT with risk assessment, defined maintenance windows, a test environment and rollback procedures"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are security updates and patches for critical systems applied promptly and according to a defined process?",
         "tooltip": "Patch management is a basic requirement under Section 30(1) BSIG (state of the art). BSI module OPS.1.1.3 describes requirements for patch and change management. Special requirements apply to OT systems."
       },
       "vmQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "KRITIS operators must have a clearly defined process describing: how are incidents detected (e.g. through SzA, helpdesk reports, automatic alarms)? How are they assessed (severity, impact on the critical service)? When and how is the BSI informed? Who is responsible internally? Without a documented process, valuable minutes are lost in an emergency.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No documented incident response process in place",
+          "level1": "Informal arrangements for incident handling, but not documented",
+          "level2": "Documented process with roles, escalation levels and BSI reporting channel, but not practised regularly",
+          "level3": "Fully documented and regularly practised incident response process with defined escalation levels, BSI reporting channel and follow-up"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is there a documented process for detecting, assessing and reporting IT security incidents?",
         "tooltip": "Section 32 BSIG obliges KRITIS operators to report significant IT disruptions to the BSI without undue delay. BSI module DER.2.1 describes requirements for handling security incidents."
       },
       "vmQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "In the event of a significant IT disruption you must inform the BSI without undue delay — submit an initial report at the latest within 24 hours, a follow-up report with an assessment within 72 hours and a final report within one month. This requires: prepared reporting forms, clear criteria for 'significant disruption', a designated reporter and tested reporting channels (BSI reporting platform).",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No preparation for BSI reporting obligations; reporting deadlines unknown",
+          "level1": "Reporting deadlines known, but no prepared processes or forms",
+          "level2": "Reporting process defined with templates and responsibilities, but not yet tested in a real case",
+          "level3": "Fully established reporting process with pre-filled forms, tested reporting channels, defined criteria and regular exercises"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Can you meet the BSI reporting deadlines for significant IT disruptions (without undue delay, at the latest within 24 hours)?",
         "tooltip": "Section 32 BSIG requires significant security incidents to be reported to the BSI without undue delay. The staggered deadlines — initial report within 24 hours, report within 72 hours, final report no later than one month afterwards — must be met."
       },
       "vmQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A structured follow-up should take place after every security incident: what happened? How was the incident detected? Was the response appropriate? Which vulnerabilities were exploited? Which measures will prevent a recurrence? The results feed into improving the security measures. The BSI final report under Section 32 BSIG requires exactly this analysis.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic follow-up of security incidents",
+          "level1": "Occasional informal evaluation after serious incidents",
+          "level2": "Structured post-incident reviews for significant incidents with documented findings",
+          "level3": "Systematic follow-up of all incidents with root cause analysis, documented improvement measures and effectiveness checks"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are IT security incidents systematically followed up and improvements derived from them?",
         "tooltip": "Follow-up (lessons learned) is an essential part of incident management under BSI module DER.2.3. Section 32(1) no. 4 BSIG requires final reports that also describe causes and countermeasures."
       },
       "vmQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A CSIRT or incident response team consists of specialists who handle the technical analysis, containment and clean-up of serious IT security incidents. KRITIS operators should either build their own team or have a specialised provider under contract that supports them within defined response times in an emergency. The team should have communication channels coordinated with the contact point and the BSI.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No incident response team in place or commissioned",
+          "level1": "IT staff handle incidents ad hoc; no specialised IR capacity",
+          "level2": "External IR provider under contract with defined response times, but internal processes not fully integrated",
+          "level3": "In-house or commissioned CSIRT with defined response times, regular exercises, forensic capabilities and coordinated communication channels with the BSI"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is a KRITIS-specific Computer Security Incident Response Team (CSIRT) established or commissioned?",
         "tooltip": "For KRITIS operators, the BSI recommends establishing or commissioning a specialised incident response team. BSI modules DER.2.1 and DER.2.2 describe requirements for incident handling and forensic analysis."
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Section 33 BSIG requires registration with the BSI including current contact details. A reachable contact point is the basic prerequisite for warnings and queries to arrive.",
+          "title": "Have you registered a contact point with the BSI, and is it reachable 24/7?"
         },
         "q2": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Section 30 BSIG requires appropriate precautions based on a risk assessment — including the IT systems, components and processes of the critical service.",
+          "title": "Do you carry out regular risk analyses for your critical supply processes?"
         },
         "q3": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Section 32 BSIG: significant disruptions of the critical service must be reported to the BSI without undue delay — with classification and initial assessment.",
+          "title": "Is there a process for reporting significant IT disruptions to the BSI?"
         },
         "q4": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Business continuity management according to BSI Standard 200-4: contingency plans must be documented, tested and updated regularly.",
+          "title": "Have you tested contingency plans for the failure of your critical infrastructure?"
         },
         "q5": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Supply chain security under Section 30 BSIG: critical dependencies on suppliers must be identified and their security measures contractually secured.",
+          "title": "Do you review the IT security of the suppliers of your critical services?"
         },
         "q6": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Section 39(1) BSIG: every three years, operators of critical facilities must demonstrate implementation through security audits, reviews or certifications.",
+          "title": "Can you demonstrate the implementation of your security measures to the BSI?"
         },
         "q7": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Physical security covers access control systems, perimeter protection, surveillance and protection against environmental hazards (fire, water, power).",
+          "title": "Are your critical facilities protected against unauthorised physical access?"
         },
         "q8": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Section 30 BSIG: system hardening according to the state of the art — e.g. via BSI IT-Grundschutz or ISO 27001, with patch management and secure configuration.",
+          "title": "Are the IT systems of your critical infrastructure hardened according to the state of the art?"
         }
       }
     },
     "recommendations": {
       "au1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Prepare for the mandatory review of IT security measures under Section 39(1) BSIG. Every three years, operators of critical facilities must demonstrate compliance through security audits, reviews or certifications.",
+        "firstStep": "Find out about recognised audit bodies (e.g. via the BSI portal) and request offers for a Section 39 audit.",
+        "title": "Prepare for the audit under Section 39 BSIG"
       },
       "au2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a regular internal audit programme to identify weaknesses early and support preparation for the external evidence submissions under Section 39(1) BSIG.",
+        "firstStep": "Schedule semi-annual internal IT security audits and train internal auditors in the requirements of the BSI-KritisV.",
+        "title": "Establish an internal audit programme"
       },
       "au3": {
         "checklist": "Create audit plan per §39 BSIG\nPlan internal and external audits\nPrepare evidence documentation",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Use technical tools for continuous monitoring of IT security compliance (e.g. SIEM, vulnerability scanners, configuration management) in line with Section 39(1) BSIG. This eases audits and reduces risks.",
+        "firstStep": "Implement a Security Information and Event Management (SIEM) system for central logging and anomaly detection.",
+        "title": "Build continuous compliance monitoring"
       },
       "bcm1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Identify all business-critical processes and IT systems and assess the impact of outages under Section 30(1) BSIG. This is the foundation for contingency and recovery plans.",
+        "firstStep": "Create a list of all core processes and assess for each: maximum tolerable downtime (MTD) and Recovery Time Objective (RTO).",
+        "title": "Carry out a business impact analysis for critical services"
       },
       "bcm2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Develop detailed plans for maintaining or rapidly restoring critical services under Section 30(1) BSIG. This includes technical redundancies, alternate sites and manual emergency procedures.",
+        "firstStep": "Document a step-by-step recovery plan for your most critical IT system, including responsibilities and contacts.",
+        "title": "Develop contingency and recovery plans"
       },
       "bcm3": {
         "checklist": "Conduct Business Impact Analysis\nDevelop and document BCM strategy\nTest and update emergency plans",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Test your contingency plans through regular exercises (tabletop exercises, technical tests, full-scale exercises) under Section 30(1) BSIG. Only tested plans work in a real emergency.",
+        "firstStep": "Plan a tabletop exercise with a simulated ransomware attack and involve all relevant stakeholders (IT, management, communications).",
+        "title": "Carry out regular BCM exercises and tests"
       },
       "bsi1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Register your organisation with the BSI and designate a dedicated contact point. Section 33 BSIG requires an address and current contact details; changes must be notified to the BSI.",
+        "firstStep": "Register your company on the BSI web portal and designate a contact person with name, role and availability (24/7).",
+        "title": "Set up registration and contact point under Section 33 BSIG"
       },
       "bsi2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Regularly verify that the communication channels to the BSI (email, phone, web portal) are working, in line with Section 33 BSIG. In an emergency, disruptions and security incidents must be reportable without delay.",
+        "firstStep": "Carry out a test reporting procedure via the BSI web portal to verify credentials and the process.",
+        "title": "Test and document the BSI reporting channels"
       },
       "bsi3": {
         "checklist": "Designate BSI contact point (§ 33 BSIG)\nDocument communication channels to BSI\nDefine reporting obligations and deadlines",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create a structured communication plan for the exchange of information with the BSI under Section 33 BSIG (registration) and Section 32 BSIG (reporting obligations). This covers incident reporting duties, participation in situation reports and receiving warnings.",
+        "firstStep": "Subscribe to BSI warnings and CERT-Bund advisories and define internal escalation paths for BSI information.",
+        "title": "Develop a communication plan with the BSI"
       },
       "lk1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Record all external service providers and suppliers necessary for operating your critical infrastructure (Section 30(1) BSIG). This includes IT service providers, cloud providers, maintenance firms and hardware suppliers.",
+        "firstStep": "Create a spreadsheet of all IT service providers and assess their criticality for your KRITIS service.",
+        "title": "Inventory critical suppliers and service providers"
       },
       "lk2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure that all contracts with critical suppliers contain security requirements, audit rights and reporting duties for security incidents (Section 30(1) BSIG).",
+        "firstStep": "Develop a contract clause template with IT security requirements (e.g. ISO 27001 certification, patch management SLA).",
+        "title": "Include security requirements in supplier contracts"
       },
       "lk3": {
         "checklist": "Define supplier assessment criteria\nInclude security requirements in contracts\nRegular review of suppliers",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Regularly assess the IT security of your critical suppliers through audits, questionnaires or certificate checks under Section 30(1) BSIG. Supply chain attacks are a growing threat.",
+        "firstStep": "Request current ISO 27001 or TISAX certificates from your top 5 suppliers.",
+        "title": "Carry out regular supplier security assessments"
       },
       "ps1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Secure all critical IT and OT rooms (server rooms, control centres, network equipment) with physical access controls such as chip cards, biometric systems or keys under Section 30(1) BSIG.",
+        "firstStep": "Walk through all technical rooms and check whether access controls are in place and working.",
+        "title": "Implement physical access controls for critical infrastructure"
       },
       "ps2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Protect critical IT infrastructure against physical threats such as fire, flooding and power failure through appropriate measures (e.g. fire alarm system, UPS, air conditioning) under Section 30(1) BSIG.",
+        "firstStep": "Check whether your data centre has an uninterruptible power supply (UPS) and an emergency generator.",
+        "title": "Environmental security against fire, water and power failure"
       },
       "ps3": {
         "checklist": "Implement access controls for server rooms\nVideo surveillance for critical areas\nVisitor registration and escort policy",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Develop a holistic physical security concept under Section 30(1) BSIG covering perimeter protection, access controls, video surveillance, visitor management and alerting.",
+        "firstStep": "Commission a security consultancy or use BSI standards (e.g. IT-Grundschutz module INF.1 or the data centre module).",
+        "title": "Create a comprehensive physical security concept"
       },
       "rm1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a systematic method for identifying and assessing IT risks to your critical services under Section 30(1) BSIG. The analysis must be updated regularly.",
+        "firstStep": "Choose a recognised risk analysis method (e.g. BSI Standard 200-3, ISO 27005) and schedule a kick-off meeting.",
+        "title": "Establish an IT risk analysis methodology under Section 30 BSIG"
       },
       "rm2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Assess all identified IT risks (likelihood × impact) and derive prioritised risk mitigation measures, as required by Section 30(1) BSIG.",
+        "firstStep": "Create a risk register with all identified threats, their assessment and the status of countermeasures.",
+        "title": "Develop a risk assessment and action plan"
       },
       "rm3": {
         "checklist": "Define risk assessment methodology\nIdentify critical business processes\nPrioritize risks and derive measures",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Establish a process for continuously monitoring and re-assessing IT risks under Section 30(1) BSIG. New threats (e.g. zero-day exploits) or changes in the IT landscape must be captured promptly.",
+        "firstStep": "Set up a quarterly risk review meeting in which the risk register is updated and new threats are assessed.",
+        "title": "Introduce continuous risk monitoring"
       },
       "sh1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Harden all critical servers and endpoints by disabling unnecessary services, applying secure configuration and restrictive permissions under Section 30(1) BSIG. This considerably reduces the attack surface.",
+        "firstStep": "Use CIS Benchmarks or BSI SiSyPHuS guidelines to define a baseline hardening configuration for Windows/Linux servers.",
+        "title": "Server and endpoint hardening according to the state of the art"
       },
       "sh2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Segment your network by criticality and protection needs (e.g. OT vs office IT) and enforce restrictive firewall rules (Section 30(1) BSIG). This limits the spread of attacks.",
+        "firstStep": "Create a network zone architecture (e.g. DMZ, production network, office network) and document permitted data flows.",
+        "title": "Implement network segmentation and firewall rules"
       },
       "sh3": {
         "checklist": "Define baseline hardening guidelines\nIntroduce configuration management\nEstablish patch management process",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Develop standardised hardening guidelines for all system types (servers, clients, network devices, OT components) under Section 30(1) BSIG and enforce them through configuration management.",
+        "firstStep": "Use tools such as the Microsoft Security Compliance Toolkit or Ansible/Puppet to roll out hardening configurations automatically.",
+        "title": "Develop comprehensive hardening baselines"
       },
       "vm1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Develop a comprehensive contingency plan for IT security incidents in critical infrastructure under Section 32 BSIG. The plan must cover detection, assessment, containment, reporting to the BSI and recovery.",
+        "firstStep": "Carry out a business impact analysis to identify the most critical IT systems and their maximum tolerable downtimes.",
+        "title": "Create an IT emergency management plan for KRITIS services"
       },
       "vm2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Define clear criteria for assessing and classifying IT security incidents under Section 32 BSIG. This determines whether an incident is significant and must be reported to the BSI.",
+        "firstStep": "Create a table with severity levels (e.g. 1-5) and concrete examples for each level (e.g. 'outage >30 min = level 4').",
+        "title": "Implement an incident classification system"
       },
       "vm3": {
         "checklist": "Create IT emergency management plan\nImplement reporting process per §32 BSIG\nConduct regular emergency exercises",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "After every relevant IT security incident, hold a structured debrief to identify weaknesses and derive preventive measures (Section 32 BSIG).",
+        "firstStep": "Create a template for post-incident reviews with questions such as: What happened? Why? What went well? What must be improved?",
+        "title": "Establish a lessons-learned process after incidents"
       }
     },
     "sectors": {
