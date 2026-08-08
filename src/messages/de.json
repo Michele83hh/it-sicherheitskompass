@@ -2802,10 +2802,10 @@
     "legalBasis": "Rechtsgrundlage: §§31, 39 BSIG",
     "categories": {
       "audit": {
-        "description": "Regelmäßige Nachweispflicht der IT-Sicherheit gegenüber dem BSI nach § 8a BSIG",
+        "description": "Regelmäßige Nachweispflicht der IT-Sicherheit gegenüber dem BSI nach §30 BSIG",
         "name": "Audit & Nachweis",
         "shortName": "Audit",
-        "empoweringIntro": "Nachweisfähigkeit ist Pflicht: Als KRITIS-Betreiber müssen Sie alle zwei Jahre die Umsetzung Ihrer IT-Sicherheitsmaßnahmen gegenüber dem BSI nachweisen. Eine strukturierte Audit-Vorbereitung spart Zeit, Kosten und vermeidet Beanstandungen."
+        "empoweringIntro": "Nachweisfähigkeit ist Pflicht: Als Betreiber einer kritischen Anlage müssen Sie alle drei Jahre die Umsetzung Ihrer IT-Sicherheitsmaßnahmen gegenüber dem BSI nachweisen (§39 Abs. 1 BSIG). Eine strukturierte Audit-Vorbereitung spart Zeit, Kosten und vermeidet Beanstandungen."
       },
       "bcm": {
         "description": "Sicherstellung der Verfügbarkeit kritischer Dienstleistungen auch im Krisenfall",
@@ -2814,7 +2814,7 @@
         "empoweringIntro": "Ihre kritische Dienstleistung muss auch im Krisenfall verfügbar bleiben. Ein durchdachtes Business Continuity Management mit getesteten Notfallplänen stellt sicher, dass Ausfälle die Versorgungssicherheit nicht gefährden."
       },
       "bsiKontaktstelle": {
-        "description": "Einrichtung und Betrieb der Kontaktstelle zum BSI nach § 8b Abs. 3 BSIG",
+        "description": "Registrierung beim BSI mit aktuellen Kontaktdaten nach §33 BSIG und dauerhafte Erreichbarkeit",
         "name": "BSI-Kontaktstelle",
         "shortName": "BSI-Kontakt",
         "empoweringIntro": "Die BSI-Kontaktstelle ist Ihre Schnittstelle zum Bundesamt für Sicherheit in der Informationstechnik. Sie muss jederzeit erreichbar sein, damit das BSI Sie bei Bedrohungslagen warnen und Sie Vorfälle fristgerecht melden können."
@@ -2835,7 +2835,7 @@
         "description": "Systematische Identifikation und Bewertung von Risiken für kritische Infrastrukturen nach BSI-KritisV",
         "name": "Risikomanagement",
         "shortName": "Risiko",
-        "empoweringIntro": "Ein systematisches Risikomanagement bildet das Fundament Ihrer KRITIS-Sicherheit. Nur wer seine Risiken kennt, kann angemessene Schutzmaßnahmen nach dem Stand der Technik gemäß §8a BSIG umsetzen."
+        "empoweringIntro": "Ein systematisches Risikomanagement bildet das Fundament Ihrer KRITIS-Sicherheit. Nur wer seine Risiken kennt, kann angemessene Schutzmaßnahmen nach dem Stand der Technik gemäß §30 BSIG umsetzen."
       },
       "systemhaertung": {
         "description": "Absicherung von IT-Systemen durch Minimierung der Angriffsfläche und sichere Konfiguration",
@@ -2844,7 +2844,7 @@
         "empoweringIntro": "Systemhärtung reduziert die Angriffsfläche Ihrer kritischen IT-Systeme. Durch sichere Konfiguration, Netzwerksegmentierung und konsequentes Patch-Management schützen Sie die Verfügbarkeit Ihrer Infrastruktur nach dem Stand der Technik."
       },
       "vorfallmanagement": {
-        "description": "Erkennung, Meldung und Bewältigung von IT-Sicherheitsvorfällen gemäß § 8b BSIG",
+        "description": "Erkennung, Meldung und Bewältigung von IT-Sicherheitsvorfällen gemäß §32 BSIG",
         "name": "Vorfallmanagement",
         "shortName": "Vorfälle",
         "empoweringIntro": "KRITIS-Betreiber müssen Sicherheitsvorfälle unverzüglich an das BSI melden. Ein strukturiertes Vorfallmanagement mit klaren Eskalationswegen und eingeübten Abläufen ist entscheidend, um Meldefristen einzuhalten und Schäden zu minimieren."
@@ -2861,8 +2861,8 @@
     },
     "questions": {
       "auQ1": {
-        "title": "Werden die KRITIS-Nachweise fristgerecht alle zwei Jahre beim BSI eingereicht?",
-        "tooltip": "Nach §8a Abs. 3 BSIG müssen KRITIS-Betreiber mindestens alle zwei Jahre die Einhaltung der IT-Sicherheitsanforderungen nachweisen. Das BSI kann bei Mängeln Nachbesserungen verlangen.",
+        "title": "Werden die KRITIS-Nachweise fristgerecht alle drei Jahre beim BSI eingereicht?",
+        "tooltip": "Nach §39 Abs. 1 BSIG müssen Betreiber kritischer Anlagen alle drei Jahre die Umsetzung der Maßnahmen nachweisen — der Zyklus wurde mit dem NIS2UmsG von zwei auf drei Jahre verlängert. Das BSI kann bei Mängeln einen Mängelbeseitigungsplan verlangen.",
         "help": "KRITIS-Betreiber müssen dem BSI regelmäßig nachweisen, dass sie angemessene Vorkehrungen nach dem Stand der Technik treffen. Der Nachweis erfolgt durch Sicherheitsaudits, Prüfungen oder Zertifizierungen. Das BSI hat eine Orientierungshilfe zu Nachweisen veröffentlicht, die Sie als Grundlage verwenden sollten.",
         "maturity": {
           "level0": "Keine Nachweisführung gegenüber dem BSI etabliert",
@@ -2873,7 +2873,7 @@
       },
       "auQ2": {
         "title": "Gibt es eine prüffähige Dokumentation aller IT-Sicherheitsmaßnahmen für den BSI-Nachweis?",
-        "tooltip": "Die Nachweisdokumentation muss nach §8a Abs. 3 BSIG die umgesetzten Maßnahmen nachvollziehbar belegen. Das BSI prüft die Angemessenheit und Vollständigkeit der Dokumentation.",
+        "tooltip": "Die Nachweisdokumentation muss nach §39 Abs. 1 BSIG die umgesetzten Maßnahmen nachvollziehbar belegen. Das BSI prüft die Angemessenheit und Vollständigkeit der Dokumentation.",
         "help": "Für den BSI-Nachweis benötigen Sie eine strukturierte Dokumentation, die alle umgesetzten technischen und organisatorischen Maßnahmen beschreibt. Dazu gehören ISMS-Richtlinien, Netzwerkpläne, Risikoanalysen, Penetrationstest-Berichte und Schulungsnachweise. Ohne prüffähige Dokumentation kann das Audit nicht bestanden werden.",
         "maturity": {
           "level0": "Keine strukturierte Dokumentation der IT-Sicherheitsmaßnahmen",
@@ -2884,7 +2884,7 @@
       },
       "auQ3": {
         "title": "Werden interne Audits der kritischen IT-Systeme regelmäßig durchgeführt?",
-        "tooltip": "Interne Audits ergänzen die BSI-Nachweispflicht nach §8a Abs. 3 BSIG und helfen, Mängel vor der offiziellen Prüfung zu identifizieren. Der BSI-Baustein ISMS.1 fordert regelmäßige interne Überprüfungen.",
+        "tooltip": "Interne Audits ergänzen die BSI-Nachweispflicht nach §39 Abs. 1 BSIG und helfen, Mängel vor der offiziellen Prüfung zu identifizieren. Der BSI-Baustein ISMS.1 fordert regelmäßige interne Überprüfungen.",
         "help": "Interne Audits sind geplante Überprüfungen Ihrer IT-Sicherheitsmaßnahmen durch eigene oder beauftragte Prüfer. Sie sollten mindestens jährlich stattfinden und alle kritischen Systeme und Prozesse abdecken. Festgestellte Mängel müssen nachverfolgt und behoben werden, bevor der offizielle BSI-Nachweis ansteht.",
         "maturity": {
           "level0": "Keine internen Audits der IT-Sicherheit",
@@ -2895,7 +2895,7 @@
       },
       "auQ4": {
         "title": "Werden Erkenntnisse aus BSI-Prüfungen und externen Audits systematisch in Verbesserungsmaßnahmen überführt?",
-        "tooltip": "Das BSI kann nach §8a Abs. 4 BSIG bei festgestellten Mängeln konkrete Maßnahmen anordnen. Ein strukturierter Verbesserungsprozess (PDCA) stellt sicher, dass Beanstandungen nachhaltig behoben werden.",
+        "tooltip": "Das BSI kann nach §39 Abs. 1 BSIG bei festgestellten Mängeln konkrete Maßnahmen anordnen. Ein strukturierter Verbesserungsprozess (PDCA) stellt sicher, dass Beanstandungen nachhaltig behoben werden.",
         "help": "Nach jedem Audit -- ob intern oder extern -- sollten die Ergebnisse analysiert und in konkrete Verbesserungsmaßnahmen überführt werden. Das umfasst die Priorisierung der Befunde, Festlegung von Verantwortlichen und Fristen sowie die Nachverfolgung der Umsetzung. Das BSI erwartet bei Folgeprüfungen, dass frühere Mängel behoben wurden.",
         "maturity": {
           "level0": "Keine systematische Aufarbeitung von Audit-Ergebnissen",
@@ -2906,7 +2906,7 @@
       },
       "bcmQ1": {
         "title": "Existiert ein Business-Continuity-Managementsystem (BCMS) für die kritische Dienstleistung?",
-        "tooltip": "§8a Abs. 1 BSIG fordert Maßnahmen zur Aufrechterhaltung der Verfügbarkeit kritischer Dienstleistungen. Ein BCMS nach BSI-Standard 200-4 oder ISO 22301 bildet den organisatorischen Rahmen.",
+        "tooltip": "§30 Abs. 1 BSIG fordert Maßnahmen zur Aufrechterhaltung der Verfügbarkeit kritischer Dienstleistungen. Ein BCMS nach BSI-Standard 200-4 oder ISO 22301 bildet den organisatorischen Rahmen.",
         "help": "Ein BCMS definiert, wie Ihre Organisation die Verfügbarkeit der kritischen Dienstleistung auch bei schwerwiegenden Störungen sicherstellt. Es umfasst Business-Impact-Analysen (BIA), Notfallpläne, Wiederanlaufkonzepte und regelmäßige Tests. Für KRITIS-Betreiber ist dies besonders wichtig, da Ausfälle die Versorgungssicherheit der Bevölkerung gefährden können.",
         "maturity": {
           "level0": "Kein BCMS vorhanden, keine Notfallpläne für die kritische Dienstleistung",
@@ -2928,7 +2928,7 @@
       },
       "bcmQ3": {
         "title": "Werden Notfall- und Wiederanlaufpläne regelmäßig durch Übungen getestet?",
-        "tooltip": "§8a Abs. 1 BSIG fordert angemessene Vorkehrungen, was auch das Testen der Notfallpläne einschließt. BSI-Baustein DER.4 beschreibt Anforderungen an Notfallübungen.",
+        "tooltip": "§30 Abs. 1 BSIG fordert angemessene Vorkehrungen, was auch das Testen der Notfallpläne einschließt. BSI-Baustein DER.4 beschreibt Anforderungen an Notfallübungen.",
         "help": "Notfallpläne, die nie getestet wurden, versagen im Ernstfall fast immer. KRITIS-Betreiber sollten mindestens jährlich Notfallübungen durchführen -- von Tabletop-Übungen (Planspiele) bis hin zu technischen Failover-Tests. Dabei wird geprüft, ob die definierten RTO/RPO-Werte eingehalten werden und ob das Personal die Abläufe kennt.",
         "maturity": {
           "level0": "Keine Notfallübungen durchgeführt",
@@ -2939,7 +2939,7 @@
       },
       "bcmQ4": {
         "title": "Sind redundante Systeme und Ausweichstandorte für die kritische Dienstleistung eingerichtet?",
-        "tooltip": "Technische Redundanz ist ein wesentlicher Bestandteil des BCMS für KRITIS-Betreiber. §8a Abs. 1 BSIG fordert Maßnahmen nach dem Stand der Technik zur Sicherstellung der Verfügbarkeit.",
+        "tooltip": "Technische Redundanz ist ein wesentlicher Bestandteil des BCMS für KRITIS-Betreiber. §30 Abs. 1 BSIG fordert Maßnahmen nach dem Stand der Technik zur Sicherstellung der Verfügbarkeit.",
         "help": "Für kritische Dienstleistungen müssen technische Redundanzen vorhanden sein, damit ein einzelner Ausfall (z. B. Rechenzentrum, Netzanbindung, Energieversorgung) nicht zum Totalausfall führt. Das kann Georedundanz, USV-Anlagen, Notstromversorgung, gespiegelte Datenbanken oder Ausweichstandorte umfassen. Die Redundanzstrategie muss zu den definierten RTO/RPO-Werten passen.",
         "maturity": {
           "level0": "Keine technische Redundanz für kritische Systeme",
@@ -2950,7 +2950,7 @@
       },
       "bsiQ1": {
         "title": "Ist Ihre BSI-Kontaktstelle eingerichtet und dem BSI namentlich gemeldet?",
-        "tooltip": "Nach §8b Abs. 3 BSIG müssen KRITIS-Betreiber eine Kontaktstelle benennen und dem BSI melden. Die Kontaktstelle muss jederzeit erreichbar sein. BSI-KritisV §3 konkretisiert die Anforderungen.",
+        "tooltip": "§33 BSIG verpflichtet zur Registrierung beim BSI mit Anschrift und aktuellen Kontaktdaten. Damit das BSI Sie bei akuten Bedrohungslagen erreicht, muss eine benannte Stelle diese Meldungen zuverlässig entgegennehmen.",
         "help": "Die BSI-Kontaktstelle ist die offizielle Schnittstelle zwischen Ihrem Unternehmen und dem BSI. Sie muss namentlich mit Kontaktdaten beim BSI registriert sein. Das BSI nutzt diese Kontaktstelle, um Sie über Bedrohungslagen, Schwachstellen und Sicherheitswarnungen zu informieren. Ohne gemeldete Kontaktstelle können Sie wichtige Warnungen nicht rechtzeitig erhalten.",
         "maturity": {
           "level0": "Keine BSI-Kontaktstelle eingerichtet oder dem BSI gemeldet",
@@ -2961,7 +2961,7 @@
       },
       "bsiQ2": {
         "title": "Ist die BSI-Kontaktstelle rund um die Uhr (24/7) erreichbar?",
-        "tooltip": "§8b Abs. 3 BSIG verlangt jederzeitige Erreichbarkeit der Kontaktstelle. Das BSI muss KRITIS-Betreiber auch außerhalb der Geschäftszeiten über akute Bedrohungen informieren können.",
+        "tooltip": "Die nach §33 BSIG registrierten Kontaktdaten müssen aktuell und erreichbar sein. Das BSI informiert auch außerhalb der Geschäftszeiten über akute Bedrohungen — eine durchgehend besetzte oder rufbereite Stelle ist die praktische Voraussetzung dafür.",
         "help": "Das BSI kann zu jeder Tages- und Nachtzeit kritische Warnmeldungen versenden -- z. B. bei aktiven Cyberangriffen auf KRITIS-Sektoren. Ihre Kontaktstelle muss daher 24/7 erreichbar sein, etwa durch ein Bereitschaftstelefon, eine besetzte Leitstelle oder einen Rufbereitschaftsdienst. Eine rein werktags besetzte E-Mail-Adresse reicht nicht aus.",
         "maturity": {
           "level0": "Keine Erreichbarkeit außerhalb der Geschäftszeiten",
@@ -2972,7 +2972,7 @@
       },
       "bsiQ3": {
         "title": "Werden BSI-Warnmeldungen und Lageberichte zeitnah ausgewertet und an die zuständigen Stellen weitergeleitet?",
-        "tooltip": "Die Kontaktstelle muss nach §8b Abs. 3 BSIG BSI-Informationen entgegennehmen und intern weiterleiten können. Nur die Entgegennahme ohne Auswertung erfüllt die Anforderung nicht.",
+        "tooltip": "Die Kontaktstelle muss BSI-Informationen nicht nur entgegennehmen, sondern intern auswerten und weiterleiten können. Die blosse Registrierung nach §33 BSIG genügt dafür nicht.",
         "help": "Das BSI versendet regelmäßig Lageberichte, Warnmeldungen und sektorspezifische Informationen an KRITIS-Betreiber. Ihre Kontaktstelle muss diese Informationen nicht nur empfangen, sondern bewerten und an die zuständigen Fachabteilungen (z. B. IT-Sicherheit, Betrieb) weiterleiten. Dafür brauchen Sie einen definierten Prozess mit klaren Zuständigkeiten und Reaktionszeiten.",
         "maturity": {
           "level0": "BSI-Meldungen werden nicht systematisch ausgewertet",
@@ -2994,7 +2994,7 @@
       },
       "lkQ1": {
         "title": "Sind sicherheitsrelevante Anforderungen in Verträgen mit Zulieferern und IT-Dienstleistern verankert?",
-        "tooltip": "§8a Abs. 1 BSIG fordert angemessene Vorkehrungen auch im Bereich der Lieferkette. BSI-Baustein ORP.1 beschreibt Anforderungen an die Vertragsgestaltung mit externen Dienstleistern.",
+        "tooltip": "§30 Abs. 1 BSIG fordert angemessene Vorkehrungen auch im Bereich der Lieferkette. BSI-Baustein ORP.1 beschreibt Anforderungen an die Vertragsgestaltung mit externen Dienstleistern.",
         "help": "Als KRITIS-Betreiber tragen Sie die Verantwortung für die IT-Sicherheit Ihrer kritischen Dienstleistung -- auch wenn Teile davon ausgelagert sind. In Verträgen mit Zulieferern und IT-Dienstleistern müssen daher konkrete Sicherheitsanforderungen festgelegt sein: Patch-Management, Incident-Response, Zugriffskontrollen, Audit-Rechte und Meldepflichten bei Sicherheitsvorfällen.",
         "maturity": {
           "level0": "Keine IT-Sicherheitsanforderungen in Lieferantenverträgen",
@@ -3005,7 +3005,7 @@
       },
       "lkQ2": {
         "title": "Werden kritische Zulieferer und Dienstleister hinsichtlich ihrer IT-Sicherheit bewertet?",
-        "tooltip": "Die Bewertung der Lieferkettensicherheit ist Bestandteil der Risikoanalyse nach §8a Abs. 1 BSIG. BSI-Baustein OPS.1.1.3 beschreibt Anforderungen an das Outsourcing-Management.",
+        "tooltip": "Die Bewertung der Lieferkettensicherheit ist Bestandteil der Risikoanalyse nach §30 Abs. 1 BSIG. BSI-Baustein OPS.1.1.3 beschreibt Anforderungen an das Outsourcing-Management.",
         "help": "Sie sollten eine Übersicht haben, welche Zulieferer und Dienstleister Zugang zu Ihren kritischen Systemen haben oder für deren Betrieb relevant sind. Diese sollten regelmäßig hinsichtlich ihrer IT-Sicherheit bewertet werden -- z. B. durch Fragebögen, Zertifizierungsnachweise (ISO 27001), Audit-Berichte oder Vor-Ort-Prüfungen.",
         "maturity": {
           "level0": "Keine Bewertung der IT-Sicherheit von Zulieferern",
@@ -3016,7 +3016,7 @@
       },
       "lkQ3": {
         "title": "Gibt es Notfallpläne für den Ausfall kritischer Zulieferer oder Dienstleister?",
-        "tooltip": "Die Abhängigkeit von Dritten muss im BCM berücksichtigt werden (§8a Abs. 1 BSIG). BSI-Standard 200-4 fordert die Betrachtung externer Abhängigkeiten in der Business-Impact-Analyse.",
+        "tooltip": "Die Abhängigkeit von Dritten muss im BCM berücksichtigt werden (§30 Abs. 1 BSIG). BSI-Standard 200-4 fordert die Betrachtung externer Abhängigkeiten in der Business-Impact-Analyse.",
         "help": "Wenn ein kritischer IT-Dienstleister ausfällt -- sei es durch eigenen Cyberangriff, Insolvenz oder Vertragskündigung -- muss Ihre kritische Dienstleistung trotzdem weiter funktionieren. Dafür brauchen Sie Notfallpläne: alternative Dienstleister, eigene Rückfalllösungen, dokumentierte Übergabeprozesse und regelmäßig aktualisierte Exit-Strategien.",
         "maturity": {
           "level0": "Keine Notfallplanung für Lieferantenausfälle",
@@ -3027,7 +3027,7 @@
       },
       "lkQ4": {
         "title": "Wird die Einhaltung der Sicherheitsanforderungen durch Zulieferer regelmäßig überprüft?",
-        "tooltip": "Die laufende Überwachung der Lieferkettensicherheit ist Teil der Nachweispflicht nach §8a Abs. 3 BSIG. Das BSI kann die Angemessenheit der Maßnahmen auch bezüglich der Lieferkette prüfen.",
+        "tooltip": "Die laufende Überwachung der Lieferkettensicherheit ist Teil der Nachweispflicht nach §39 Abs. 1 BSIG. Das BSI kann die Angemessenheit der Maßnahmen auch bezüglich der Lieferkette prüfen.",
         "help": "Vertraglich vereinbarte Sicherheitsanforderungen sind nur dann wirksam, wenn deren Einhaltung auch überprüft wird. Das kann durch regelmäßige Audits, Einholung aktueller Zertifizierungen, Sicherheitsberichte der Dienstleister oder technische Prüfungen (z. B. Schwachstellenscans bei Schnittstellen) erfolgen. Insbesondere bei Anbietern mit Fernzugriff auf kritische Systeme ist eine engmaschige Kontrolle notwendig.",
         "maturity": {
           "level0": "Keine Überprüfung der Sicherheitsanforderungen bei Zulieferern",
@@ -3038,7 +3038,7 @@
       },
       "psQ1": {
         "title": "Existiert ein physisches Zutrittskontrollsystem für die Bereiche mit kritischer IT-Infrastruktur?",
-        "tooltip": "§8a Abs. 1 BSIG fordert angemessene Vorkehrungen einschließlich physischer Sicherheit. BSI-Bausteine INF.1 (Allgemeines Gebäude) und INF.2 (Rechenzentrum) beschreiben konkrete Anforderungen an Zutrittskontrollen.",
+        "tooltip": "§30 Abs. 1 BSIG fordert angemessene Vorkehrungen einschließlich physischer Sicherheit. BSI-Bausteine INF.1 (Allgemeines Gebäude) und INF.2 (Rechenzentrum) beschreiben konkrete Anforderungen an Zutrittskontrollen.",
         "help": "Serverräume, Leitstände und andere Bereiche mit kritischer IT-Infrastruktur müssen vor unbefugtem Zutritt geschützt sein. Ein Zutrittskontrollsystem kann elektronische Zugangsausweise, biometrische Systeme oder Schlüsselverwaltung umfassen. Wichtig ist die Protokollierung aller Zutritte und die regelmäßige Überprüfung der Zutrittsberechtigungen.",
         "maturity": {
           "level0": "Keine Zutrittskontrolle für kritische IT-Bereiche",
@@ -3060,7 +3060,7 @@
       },
       "psQ3": {
         "title": "Wird die physische Sicherheit durch Videoüberwachung, Einbruchmeldesysteme oder Perimeterschutz ergänzt?",
-        "tooltip": "Für KRITIS-Anlagen mit erhöhtem Schutzbedarf fordert §8a Abs. 1 BSIG Maßnahmen nach dem Stand der Technik. BSI-Baustein INF.1 empfiehlt ergänzende Überwachungsmaßnahmen für kritische Bereiche.",
+        "tooltip": "Für KRITIS-Anlagen mit erhöhtem Schutzbedarf fordert §30 Abs. 1 BSIG Maßnahmen nach dem Stand der Technik. BSI-Baustein INF.1 empfiehlt ergänzende Überwachungsmaßnahmen für kritische Bereiche.",
         "help": "Ergänzend zur Zutrittskontrolle sollten kritische Anlagen durch weitere physische Sicherheitsmaßnahmen geschützt werden: Videoüberwachung an Zugängen und sensiblen Bereichen, Einbruchmeldeanlage (EMA) mit Aufschaltung auf eine Leitstelle, Perimeterschutz (Zäune, Barrieren) und Beleuchtung des Geländes. Der Umfang richtet sich nach der Gefährdungslage und dem Schutzbedarf der Anlage.",
         "maturity": {
           "level0": "Keine ergänzenden physischen Sicherheitsmaßnahmen",
@@ -3071,7 +3071,7 @@
       },
       "rmQ1": {
         "title": "Haben Sie eine systematische Risikoanalyse für Ihre kritische Dienstleistung nach dem Stand der Technik durchgeführt?",
-        "tooltip": "§8a Abs. 1 BSIG fordert angemessene organisatorische und technische Vorkehrungen nach dem Stand der Technik. Eine Risikoanalyse nach BSI-Standard 200-3 oder ISO 27005 bildet die Grundlage dafür.",
+        "tooltip": "§30 Abs. 1 BSIG fordert angemessene organisatorische und technische Vorkehrungen nach dem Stand der Technik. Eine Risikoanalyse nach BSI-Standard 200-3 oder ISO 27005 bildet die Grundlage dafür.",
         "help": "KRITIS-Betreiber müssen systematisch ermitteln, welche Risiken die Verfügbarkeit, Integrität, Authentizität und Vertraulichkeit ihrer kritischen Dienstleistung gefährden. Die Risikoanalyse sollte alle IT-Systeme umfassen, die für die Erbringung der kritischen Dienstleistung notwendig sind. Das BSI empfiehlt die Methodik des BSI-Standards 200-3 als Grundlage.",
         "maturity": {
           "level0": "Keine systematische Risikoanalyse für die kritische Dienstleistung durchgeführt",
@@ -3082,8 +3082,8 @@
       },
       "rmQ2": {
         "title": "Ist ein Informationssicherheits-Managementsystem (ISMS) für den KRITIS-Geltungsbereich etabliert?",
-        "tooltip": "Ein ISMS nach ISO 27001 oder BSI IT-Grundschutz ist die empfohlene Grundlage für die Umsetzung von §8a BSIG. BSI-Baustein ISMS.1 definiert die Mindestanforderungen.",
-        "help": "Ein ISMS bildet den organisatorischen Rahmen für Ihre gesamte IT-Sicherheit. Es definiert Verantwortlichkeiten, Richtlinien, Prozesse und Kontrollen. Für KRITIS-Betreiber ist ein ISMS nach ISO 27001 oder BSI IT-Grundschutz der effizienteste Weg, die Anforderungen des §8a BSIG nachweisbar umzusetzen. Der Geltungsbereich muss mindestens alle IT-Systeme der kritischen Dienstleistung umfassen.",
+        "tooltip": "Ein ISMS nach ISO 27001 oder BSI IT-Grundschutz ist die empfohlene Grundlage für die Umsetzung von §30 BSIG. BSI-Baustein ISMS.1 definiert die Mindestanforderungen.",
+        "help": "Ein ISMS bildet den organisatorischen Rahmen für Ihre gesamte IT-Sicherheit. Es definiert Verantwortlichkeiten, Richtlinien, Prozesse und Kontrollen. Für KRITIS-Betreiber ist ein ISMS nach ISO 27001 oder BSI IT-Grundschutz der effizienteste Weg, die Anforderungen des §30 BSIG nachweisbar umzusetzen. Der Geltungsbereich muss mindestens alle IT-Systeme der kritischen Dienstleistung umfassen.",
         "maturity": {
           "level0": "Kein ISMS vorhanden",
           "level1": "Einzelne Sicherheitsrichtlinien vorhanden, aber kein systematisches ISMS",
@@ -3104,7 +3104,7 @@
       },
       "rmQ4": {
         "title": "Werden identifizierte Risiken systematisch behandelt und die Wirksamkeit der Maßnahmen überprüft?",
-        "tooltip": "Die Risikobehandlung und Wirksamkeitsprüfung sind Kernbestandteile des ISMS nach BSI-Baustein ISMS.1. §8a Abs. 1 BSIG fordert angemessene Vorkehrungen, deren Angemessenheit regelmäßig zu überprüfen ist.",
+        "tooltip": "Die Risikobehandlung und Wirksamkeitsprüfung sind Kernbestandteile des ISMS nach BSI-Baustein ISMS.1. §30 Abs. 1 BSIG fordert angemessene Vorkehrungen, deren Angemessenheit regelmäßig zu überprüfen ist.",
         "help": "Für jedes identifizierte Risiko muss eine Behandlungsstrategie festgelegt werden: Risiko reduzieren (Maßnahme umsetzen), übertragen (z. B. Cyberversicherung), vermeiden (System abschalten) oder akzeptieren (bewusste Entscheidung bei niedrigem Risiko). Die umgesetzten Maßnahmen müssen regelmäßig auf ihre Wirksamkeit überprüft werden -- ein formaler Risiko-Akzeptanzprozess mit Geschäftsleitungsbeteiligung ist erforderlich.",
         "maturity": {
           "level0": "Keine systematische Risikobehandlung",
@@ -3115,7 +3115,7 @@
       },
       "shQ1": {
         "title": "Werden IT-Systeme im KRITIS-Geltungsbereich nach anerkannten Härtungsstandards konfiguriert?",
-        "tooltip": "§8a Abs. 1 BSIG fordert technische Vorkehrungen nach dem Stand der Technik. BSI-Baustein SYS.1.1 (Allgemeiner Server) beschreibt Anforderungen an die sichere Konfiguration. CIS Benchmarks und BSI-Härtungsrichtlinien sind anerkannte Standards.",
+        "tooltip": "§30 Abs. 1 BSIG fordert technische Vorkehrungen nach dem Stand der Technik. BSI-Baustein SYS.1.1 (Allgemeiner Server) beschreibt Anforderungen an die sichere Konfiguration. CIS Benchmarks und BSI-Härtungsrichtlinien sind anerkannte Standards.",
         "help": "Systemhärtung bedeutet, unnötige Dienste zu deaktivieren, Standardpasswörter zu ändern, Sicherheitskonfigurationen anzuwenden und die Angriffsfläche zu minimieren. Für KRITIS-Systeme sollten Sie anerkannte Härtungsstandards wie CIS Benchmarks, BSI-Empfehlungen oder herstellerspezifische Security Guides verwenden. Die Härtung muss dokumentiert und bei jedem neuen System angewendet werden.",
         "maturity": {
           "level0": "Keine systematische Härtung der IT-Systeme",
@@ -3126,7 +3126,7 @@
       },
       "shQ2": {
         "title": "Ist die Netzwerkinfrastruktur segmentiert, um kritische Systeme von anderen Netzbereichen zu trennen?",
-        "tooltip": "Netzwerksegmentierung ist eine Kernmaßnahme nach §8a Abs. 1 BSIG. BSI-Baustein NET.1.1 (Netzarchitektur und -design) fordert die Trennung von Netzsegmenten nach Schutzbedarf.",
+        "tooltip": "Netzwerksegmentierung ist eine Kernmaßnahme nach §30 Abs. 1 BSIG. BSI-Baustein NET.1.1 (Netzarchitektur und -design) fordert die Trennung von Netzsegmenten nach Schutzbedarf.",
         "help": "Kritische KRITIS-Systeme (z. B. Leittechnik, Prozesssteuerung) müssen netzwerktechnisch von weniger kritischen Bereichen (z. B. Büro-IT, Internet) getrennt sein. Dies verhindert, dass ein Angriff auf die Büro-IT sich direkt auf die kritische Infrastruktur ausbreiten kann. Segmentierung erfolgt durch Firewalls, VLANs, DMZ und dedizierte Netzwerke für OT-Systeme (Operational Technology).",
         "maturity": {
           "level0": "Keine Netzwerksegmentierung, kritische und unkritische Systeme im selben Netz",
@@ -3137,7 +3137,7 @@
       },
       "shQ3": {
         "title": "Werden Sicherheitsupdates und Patches für kritische Systeme zeitnah und nach einem definierten Prozess eingespielt?",
-        "tooltip": "Patch-Management ist eine Grundanforderung nach §8a Abs. 1 BSIG (Stand der Technik). BSI-Baustein OPS.1.1.3 beschreibt Anforderungen an das Patch- und Änderungsmanagement. Für OT-Systeme gelten besondere Anforderungen.",
+        "tooltip": "Patch-Management ist eine Grundanforderung nach §30 Abs. 1 BSIG (Stand der Technik). BSI-Baustein OPS.1.1.3 beschreibt Anforderungen an das Patch- und Änderungsmanagement. Für OT-Systeme gelten besondere Anforderungen.",
         "help": "Ungepatchte Schwachstellen sind eines der häufigsten Einfallstore für Cyberangriffe. KRITIS-Betreiber müssen einen strukturierten Prozess haben, um Sicherheitsupdates zeitnah zu bewerten und einzuspielen. Bei OT-Systemen (Leittechnik, SCADA) muss das Einspielen von Patches sorgfältig geplant werden, da Ausfälle der kritischen Dienstleistung vermieden werden müssen. Ein Risikobewertungsprozess hilft, die Dringlichkeit vs. Verfügbarkeit abzuwägen.",
         "maturity": {
           "level0": "Kein strukturiertes Patch-Management, Updates werden nicht regelmäßig eingespielt",
@@ -3148,7 +3148,7 @@
       },
       "vmQ1": {
         "title": "Gibt es einen dokumentierten Prozess zur Erkennung, Bewertung und Meldung von IT-Sicherheitsvorfällen?",
-        "tooltip": "§8b Abs. 4 BSIG verpflichtet KRITIS-Betreiber zur unverzüglichen Meldung erheblicher IT-Störungen an das BSI. BSI-Baustein DER.2.1 beschreibt Anforderungen an die Behandlung von Sicherheitsvorfällen.",
+        "tooltip": "§32 BSIG verpflichtet KRITIS-Betreiber zur unverzüglichen Meldung erheblicher IT-Störungen an das BSI. BSI-Baustein DER.2.1 beschreibt Anforderungen an die Behandlung von Sicherheitsvorfällen.",
         "help": "KRITIS-Betreiber müssen einen klar definierten Prozess haben, der beschreibt: Wie werden Vorfälle erkannt (z. B. durch SzA, Helpdesk-Meldungen, automatische Alarme)? Wie werden sie bewertet (Schweregrad, Auswirkung auf die kritische Dienstleistung)? Wann und wie wird das BSI informiert? Wer ist intern zuständig? Ohne dokumentierten Prozess gehen im Ernstfall wertvolle Minuten verloren.",
         "maturity": {
           "level0": "Kein dokumentierter Incident-Response-Prozess vorhanden",
@@ -3159,7 +3159,7 @@
       },
       "vmQ2": {
         "title": "Können Sie die BSI-Meldefristen für erhebliche IT-Störungen einhalten (unverzüglich, spätestens 24 Stunden)?",
-        "tooltip": "§8b Abs. 4 BSIG fordert die unverzügliche Meldung erheblicher IT-Störungen an das BSI. Die Meldefristen nach §32 BSIG (Erstmeldung binnen 24 Stunden, Folgemeldung binnen 72 Stunden) müssen eingehalten werden.",
+        "tooltip": "§32 BSIG fordert die unverzügliche Meldung erheblicher Sicherheitsvorfälle an das BSI. Die gestaffelten Fristen — Erstmeldung binnen 24 Stunden, Meldung binnen 72 Stunden, Abschlussmeldung spätestens einen Monat danach — müssen eingehalten werden.",
         "help": "Bei einer erheblichen IT-Störung müssen Sie das BSI unverzüglich informieren -- spätestens innerhalb von 24 Stunden eine Erstmeldung absetzen, innerhalb von 72 Stunden eine Folgemeldung mit Bewertung und innerhalb eines Monats einen Abschlussbericht liefern. Dafür brauchen Sie: vorbereitete Meldeformulare, klare Kriterien für 'erhebliche Störung', einen benannten Melder und getestete Meldewege (BSI-Meldeplattform).",
         "maturity": {
           "level0": "Keine Vorbereitung auf BSI-Meldepflichten, Meldefristen nicht bekannt",
@@ -3170,7 +3170,7 @@
       },
       "vmQ3": {
         "title": "Werden IT-Sicherheitsvorfälle systematisch nachbereitet und daraus Verbesserungen abgeleitet?",
-        "tooltip": "Die Nachbereitung (Lessons Learned) ist nach BSI-Baustein DER.2.3 ein wesentlicher Bestandteil des Vorfallmanagements. §8b Abs. 4a BSIG fordert Abschlussberichte, die auch Ursachen und Gegenmaßnahmen beschreiben.",
+        "tooltip": "Die Nachbereitung (Lessons Learned) ist nach BSI-Baustein DER.2.3 ein wesentlicher Bestandteil des Vorfallmanagements. §32 Abs. 1 Nr. 4 BSIG fordert Abschlussberichte, die auch Ursachen und Gegenmaßnahmen beschreiben.",
         "help": "Nach jedem Sicherheitsvorfall sollte eine strukturierte Nachbereitung stattfinden: Was ist passiert? Wie wurde der Vorfall erkannt? War die Reaktion angemessen? Welche Schwachstellen wurden ausgenutzt? Welche Maßnahmen verhindern eine Wiederholung? Die Ergebnisse fließen in die Verbesserung der Sicherheitsmaßnahmen ein. Der BSI-Abschlussbericht nach §32 BSIG fordert genau diese Analyse.",
         "maturity": {
           "level0": "Keine systematische Nachbereitung von Sicherheitsvorfällen",
@@ -3195,15 +3195,15 @@
       "questions": {
         "q1": {
           "title": "Haben Sie eine Kontaktstelle beim BSI registriert und ist diese 24/7 erreichbar?",
-          "description": "§8b BSIG verpflichtet KRITIS-Betreiber zur Benennung einer Kontaktstelle, die jederzeit für das BSI erreichbar ist — eine Grundvoraussetzung für die Meldepflicht."
+          "description": "§33 BSIG verpflichtet zur Registrierung beim BSI mit aktuellen Kontaktdaten. Eine erreichbare Kontaktstelle ist die Grundvoraussetzung dafür, dass Warnungen und Rückfragen ankommen."
         },
         "q2": {
           "title": "Führen Sie regelmäßige Risikoanalysen für Ihre kritischen Versorgungsprozesse durch?",
-          "description": "§8a BSIG verlangt angemessene Vorkehrungen auf Basis einer Risikobewertung — einschließlich IT-Systeme, Komponenten und Prozesse der kritischen Dienstleistung."
+          "description": "§30 BSIG verlangt angemessene Vorkehrungen auf Basis einer Risikobewertung — einschließlich IT-Systeme, Komponenten und Prozesse der kritischen Dienstleistung."
         },
         "q3": {
           "title": "Gibt es einen Meldeprozess für erhebliche IT-Störungen an das BSI?",
-          "description": "§8b Abs. 4 BSIG: Erhebliche Störungen der kritischen Dienstleistung müssen unverzüglich an das BSI gemeldet werden — mit Klassifizierung und Erstbewertung."
+          "description": "§32 BSIG: Erhebliche Störungen der kritischen Dienstleistung müssen unverzüglich an das BSI gemeldet werden — mit Klassifizierung und Erstbewertung."
         },
         "q4": {
           "title": "Haben Sie Notfallpläne für den Ausfall Ihrer kritischen Infrastruktur getestet?",
@@ -3211,11 +3211,11 @@
         },
         "q5": {
           "title": "Prüfen Sie die IT-Sicherheit der Zulieferer Ihrer kritischen Dienste?",
-          "description": "Lieferkettensicherheit nach §8a BSIG: Kritische Abhängigkeiten von Zulieferern müssen identifiziert und deren Sicherheitsmaßnahmen vertraglich gesichert sein."
+          "description": "Lieferkettensicherheit nach §30 BSIG: Kritische Abhängigkeiten von Zulieferern müssen identifiziert und deren Sicherheitsmaßnahmen vertraglich gesichert sein."
         },
         "q6": {
           "title": "Können Sie die Umsetzung Ihrer Sicherheitsmaßnahmen gegenüber dem BSI nachweisen?",
-          "description": "§8a Abs. 3 BSIG: Alle zwei Jahre müssen KRITIS-Betreiber die Einhaltung durch Audits, Prüfungen oder Zertifizierungen nachweisen."
+          "description": "§39 Abs. 1 BSIG: Alle drei Jahre müssen Betreiber kritischer Anlagen die Umsetzung durch Sicherheitsaudits, Prüfungen oder Zertifizierungen nachweisen."
         },
         "q7": {
           "title": "Sind Ihre kritischen Anlagen gegen unbefugten physischen Zugang geschützt?",
@@ -3223,138 +3223,138 @@
         },
         "q8": {
           "title": "Sind die IT-Systeme Ihrer kritischen Infrastruktur nach dem Stand der Technik gehärtet?",
-          "description": "§8a BSIG: Systemhärtung nach Stand der Technik — z. B. über BSI IT-Grundschutz oder ISO 27001, mit Patch-Management und sicherer Konfiguration."
+          "description": "§30 BSIG: Systemhärtung nach Stand der Technik — z. B. über BSI IT-Grundschutz oder ISO 27001, mit Patch-Management und sicherer Konfiguration."
         }
       }
     },
     "recommendations": {
       "au1": {
-        "title": "Vorbereitung auf §8a-Audit nach BSI-Gesetz",
-        "description": "Bereiten Sie die verpflichtende Überprüfung der IT-Sicherheitsmaßnahmen nach §8a Abs. 3 BSI-Gesetz vor. KRITIS-Betreiber müssen alle zwei Jahre durch qualifizierte Prüfer nachweisen, dass der Stand der Technik eingehalten wird.",
-        "firstStep": "Informieren Sie sich über anerkannte Prüfstellen (z.B. über das BSI-Portal) und fordern Sie Angebote für ein §8a-Audit an."
+        "title": "Vorbereitung auf §39-Audit nach BSI-Gesetz",
+        "description": "Bereiten Sie die verpflichtende Überprüfung der IT-Sicherheitsmaßnahmen nach §39 Abs. 1 BSI-Gesetz vor. Betreiber kritischer Anlagen müssen alle drei Jahre durch Sicherheitsaudits, Prüfungen oder Zertifizierungen nachweisen, dass die Anforderungen eingehalten werden.",
+        "firstStep": "Informieren Sie sich über anerkannte Prüfstellen (z.B. über das BSI-Portal) und fordern Sie Angebote für ein §39-Audit an."
       },
       "au2": {
         "title": "Internes Audit-Programm etablieren",
-        "description": "Implementieren Sie ein regelmäßiges internes Audit-Programm, um Schwachstellen frühzeitig zu identifizieren und die Vorbereitung auf externe §8a-Audits zu unterstützen (§8a Abs. 3 BSI-Gesetz).",
+        "description": "Implementieren Sie ein regelmäßiges internes Audit-Programm, um Schwachstellen frühzeitig zu identifizieren und die Vorbereitung auf die externen Nachweise nach §39 Abs. 1 BSI-Gesetz zu unterstützen.",
         "firstStep": "Planen Sie halbjährliche interne IT-Sicherheits-Audits und schulen Sie interne Auditoren in den Anforderungen des BSI-Kritisverordnungen."
       },
       "au3": {
         "title": "Kontinuierliches Compliance-Monitoring aufbauen",
-        "description": "Nutzen Sie technische Tools zur kontinuierlichen Überwachung der IT-Sicherheitskonformität (z.B. SIEM, Vulnerability Scanner, Configuration Management) gemäß §8a Abs. 3 BSI-Gesetz. Dies erleichtert Audits und reduziert Risiken.",
+        "description": "Nutzen Sie technische Tools zur kontinuierlichen Überwachung der IT-Sicherheitskonformität (z.B. SIEM, Vulnerability Scanner, Configuration Management) gemäß §39 Abs. 1 BSI-Gesetz. Dies erleichtert Audits und reduziert Risiken.",
         "firstStep": "Implementieren Sie ein Security Information and Event Management (SIEM) System zur zentralen Protokollierung und Anomalieerkennung.",
-        "checklist": "Prüfplan gemäß § 8a BSIG erstellen\nInterne und externe Audits planen\nNachweisdokumentation vorbereiten"
+        "checklist": "Prüfplan gemäß §30 BSIG erstellen\nInterne und externe Audits planen\nNachweisdokumentation vorbereiten"
       },
       "bcm1": {
         "title": "Business Impact Analyse für kritische Dienstleistungen durchführen",
-        "description": "Identifizieren Sie alle geschäftskritischen Prozesse und IT-Systeme und bewerten Sie die Auswirkungen von Ausfällen gemäß §8a Abs. 1 BSI-Gesetz. Dies ist die Grundlage für Notfall- und Wiederherstellungspläne.",
+        "description": "Identifizieren Sie alle geschäftskritischen Prozesse und IT-Systeme und bewerten Sie die Auswirkungen von Ausfällen gemäß §30 Abs. 1 BSI-Gesetz. Dies ist die Grundlage für Notfall- und Wiederherstellungspläne.",
         "firstStep": "Erstellen Sie eine Liste aller Kernprozesse und bewerten Sie für jeden: Maximale tolerierbare Ausfallzeit (MTA) und Recovery Time Objective (RTO)."
       },
       "bcm2": {
         "title": "Notfall- und Wiederherstellungspläne entwickeln",
-        "description": "Erarbeiten Sie detaillierte Pläne zur Aufrechterhaltung oder schnellen Wiederherstellung kritischer Dienstleistungen nach §8a Abs. 1 BSI-Gesetz. Dies umfasst technische Redundanzen, Ausweichstandorte und manuelle Notfallverfahren.",
+        "description": "Erarbeiten Sie detaillierte Pläne zur Aufrechterhaltung oder schnellen Wiederherstellung kritischer Dienstleistungen nach §30 Abs. 1 BSI-Gesetz. Dies umfasst technische Redundanzen, Ausweichstandorte und manuelle Notfallverfahren.",
         "firstStep": "Dokumentieren Sie für Ihr kritischstes IT-System einen Schritt-für-Schritt-Wiederherstellungsplan mit Verantwortlichkeiten und Kontakten."
       },
       "bcm3": {
         "title": "Regelmäßige BCM-Übungen und Tests durchführen",
-        "description": "Testen Sie Ihre Notfallpläne durch regelmäßige Übungen (Tabletop-Übungen, technische Tests, Vollübungen) gemäß §8a Abs. 1 BSI-Gesetz. Nur getestete Pläne funktionieren im Ernstfall.",
+        "description": "Testen Sie Ihre Notfallpläne durch regelmäßige Übungen (Tabletop-Übungen, technische Tests, Vollübungen) gemäß §30 Abs. 1 BSI-Gesetz. Nur getestete Pläne funktionieren im Ernstfall.",
         "firstStep": "Planen Sie eine Tabletop-Übung mit einem simulierten Ransomware-Angriff und involvieren Sie alle relevanten Stakeholder (IT, Geschäftsleitung, Kommunikation).",
         "checklist": "Business Impact Analyse durchführen\nBCM-Strategie entwickeln und dokumentieren\nNotfallpläne testen und aktualisieren"
       },
       "bsi1": {
-        "title": "BSI-Kontaktstelle gemäß §8b Abs. 3 BSI-Gesetz benennen",
-        "description": "Benennen Sie eine dedizierte Kontaktstelle zum Bundesamt für Sicherheit in der Informationstechnik (BSI) und melden Sie diese offiziell. Dies ist Pflicht für alle KRITIS-Betreiber nach §8b Abs. 3 BSI-Gesetz.",
+        "title": "Registrierung und Kontaktstelle nach §33 BSI-Gesetz einrichten",
+        "description": "Registrieren Sie Ihre Einrichtung beim BSI und benennen Sie eine dedizierte Kontaktstelle. §33 BSI-Gesetz verlangt Anschrift und aktuelle Kontaktdaten; Änderungen sind dem BSI mitzuteilen.",
         "firstStep": "Registrieren Sie Ihr Unternehmen beim BSI-Webportal und benennen Sie einen Ansprechpartner mit Name, Funktion und Erreichbarkeit (24/7)."
       },
       "bsi2": {
         "title": "BSI-Meldewege testen und dokumentieren",
-        "description": "Überprüfen Sie regelmäßig die Funktionsfähigkeit der Kommunikationswege zum BSI (E-Mail, Telefon, Webportal) gemäß §8b Abs. 3 BSI-Gesetz. Im Ernstfall müssen Störungen und Sicherheitsvorfälle unverzüglich gemeldet werden können.",
+        "description": "Überprüfen Sie regelmäßig die Funktionsfähigkeit der Kommunikationswege zum BSI (E-Mail, Telefon, Webportal) gemäß §33 BSI-Gesetz. Im Ernstfall müssen Störungen und Sicherheitsvorfälle unverzüglich gemeldet werden können.",
         "firstStep": "Führen Sie einen Test-Meldevorgang über das BSI-Webportal durch, um Zugangsdaten und Prozess zu verifizieren."
       },
       "bsi3": {
         "title": "Kommunikationsplan mit BSI entwickeln",
-        "description": "Erstellen Sie einen strukturierten Kommunikationsplan für den Informationsaustausch mit dem BSI nach §8b Abs. 3 BSI-Gesetz. Dies umfasst Meldepflichten bei Störungen, Teilnahme an Lagebildern und Empfang von Warnmeldungen.",
+        "description": "Erstellen Sie einen strukturierten Kommunikationsplan für den Informationsaustausch mit dem BSI nach §33 BSI-Gesetz. Dies umfasst Meldepflichten bei Störungen, Teilnahme an Lagebildern und Empfang von Warnmeldungen.",
         "firstStep": "Abonnieren Sie die BSI-Warnmeldungen und CERT-Bund-Advisories und definieren Sie interne Eskalationswege für BSI-Informationen.",
-        "checklist": "Kontaktstelle zum BSI benennen (§ 8b Abs. 3 BSIG)\nKommunikationswege zum BSI dokumentieren\nMeldepflichten und Fristen definieren"
+        "checklist": "Kontaktstelle zum BSI benennen (§33 BSIG)\nKommunikationswege zum BSI dokumentieren\nMeldepflichten und Fristen definieren"
       },
       "lk1": {
         "title": "Kritische Lieferanten und Dienstleister inventarisieren",
-        "description": "Erfassen Sie alle externen Dienstleister und Lieferanten, die für den Betrieb Ihrer kritischen Infrastruktur notwendig sind (§8a Abs. 1 BSI-Gesetz). Dies umfasst IT-Dienstleister, Cloud-Provider, Wartungsfirmen und Hardware-Lieferanten.",
+        "description": "Erfassen Sie alle externen Dienstleister und Lieferanten, die für den Betrieb Ihrer kritischen Infrastruktur notwendig sind (§30 Abs. 1 BSI-Gesetz). Dies umfasst IT-Dienstleister, Cloud-Provider, Wartungsfirmen und Hardware-Lieferanten.",
         "firstStep": "Erstellen Sie eine Excel-Liste mit allen IT-Dienstleistern und bewerten Sie deren Kritikalität für Ihre KRITIS-Dienstleistung."
       },
       "lk2": {
         "title": "Sicherheitsanforderungen in Lieferantenverträge aufnehmen",
-        "description": "Stellen Sie sicher, dass alle Verträge mit kritischen Lieferanten Sicherheitsanforderungen, Audit-Rechte und Meldepflichten bei Sicherheitsvorfällen enthalten (§8a Abs. 1 BSI-Gesetz).",
+        "description": "Stellen Sie sicher, dass alle Verträge mit kritischen Lieferanten Sicherheitsanforderungen, Audit-Rechte und Meldepflichten bei Sicherheitsvorfällen enthalten (§30 Abs. 1 BSI-Gesetz).",
         "firstStep": "Entwickeln Sie eine Vertragsklausel-Vorlage mit IT-Sicherheitsanforderungen (z.B. ISO 27001-Zertifizierung, Patch-Management-SLA)."
       },
       "lk3": {
         "title": "Regelmäßige Lieferanten-Sicherheitsbewertungen durchführen",
-        "description": "Bewerten Sie die IT-Sicherheit Ihrer kritischen Lieferanten regelmäßig durch Audits, Fragebögen oder Zertifikatsprüfungen gemäß §8a Abs. 1 BSI-Gesetz. Supply-Chain-Angriffe sind eine wachsende Bedrohung.",
+        "description": "Bewerten Sie die IT-Sicherheit Ihrer kritischen Lieferanten regelmäßig durch Audits, Fragebögen oder Zertifikatsprüfungen gemäß §30 Abs. 1 BSI-Gesetz. Supply-Chain-Angriffe sind eine wachsende Bedrohung.",
         "firstStep": "Fordern Sie von Ihren Top-5-Lieferanten aktuelle ISO 27001- oder TISAX-Zertifikate an.",
         "checklist": "Lieferantenbewertungskriterien festlegen\nSicherheitsanforderungen in Verträge aufnehmen\nRegelmäßige Überprüfung der Lieferanten"
       },
       "ps1": {
         "title": "Physische Zugangskontrollen für kritische Infrastruktur implementieren",
-        "description": "Sichern Sie alle kritischen IT- und OT-Räume (Serverräume, Leitstellen, Netzwerktechnik) durch physische Zugangskontrollen wie Chipkarten, biometrische Systeme oder Schlüssel gemäß §8a Abs. 1 BSI-Gesetz.",
+        "description": "Sichern Sie alle kritischen IT- und OT-Räume (Serverräume, Leitstellen, Netzwerktechnik) durch physische Zugangskontrollen wie Chipkarten, biometrische Systeme oder Schlüssel gemäß §30 Abs. 1 BSI-Gesetz.",
         "firstStep": "Führen Sie eine Begehung aller technischen Räume durch und prüfen Sie, ob Zutrittskontrollen vorhanden und funktionsfähig sind."
       },
       "ps2": {
         "title": "Umgebungssicherheit gegen Feuer, Wasser und Stromausfall",
-        "description": "Schützen Sie kritische IT-Infrastruktur vor physischen Bedrohungen wie Brand, Überschwemmung und Stromausfall durch entsprechende Maßnahmen (z.B. Brandmeldeanlage, USV, Klimatisierung) nach §8a Abs. 1 BSI-Gesetz.",
+        "description": "Schützen Sie kritische IT-Infrastruktur vor physischen Bedrohungen wie Brand, Überschwemmung und Stromausfall durch entsprechende Maßnahmen (z.B. Brandmeldeanlage, USV, Klimatisierung) nach §30 Abs. 1 BSI-Gesetz.",
         "firstStep": "Prüfen Sie, ob Ihr Rechenzentrum über eine unterbrechungsfreie Stromversorgung (USV) und Notstromaggregat verfügt."
       },
       "ps3": {
         "title": "Umfassendes physisches Sicherheitskonzept erstellen",
-        "description": "Entwickeln Sie ein ganzheitliches Konzept für physische Sicherheit gemäß §8a Abs. 1 BSI-Gesetz, das Perimeterschutz, Zutrittskontrollen, Videoüberwachung, Besuchermanagement und Alarmierung umfasst.",
+        "description": "Entwickeln Sie ein ganzheitliches Konzept für physische Sicherheit gemäß §30 Abs. 1 BSI-Gesetz, das Perimeterschutz, Zutrittskontrollen, Videoüberwachung, Besuchermanagement und Alarmierung umfasst.",
         "firstStep": "Beauftragen Sie eine Sicherheitsberatung oder nutzen Sie BSI-Standards (z.B. IT-Grundschutz Baustein INF.1 Rechenzentrum).",
         "checklist": "Zutrittskontrollen für Serverräume implementieren\nVideoüberwachung für kritische Bereiche\nBesucherregistrierung und Begleitpflicht"
       },
       "rm1": {
-        "title": "IT-Risikoanalyse-Methodik nach §8a BSI-Gesetz etablieren",
-        "description": "Implementieren Sie eine systematische Methode zur Identifikation und Bewertung von IT-Risiken für Ihre kritischen Dienstleistungen gemäß §8a Abs. 1 BSI-Gesetz. Die Analyse muss regelmäßig aktualisiert werden.",
+        "title": "IT-Risikoanalyse-Methodik nach §30 BSI-Gesetz etablieren",
+        "description": "Implementieren Sie eine systematische Methode zur Identifikation und Bewertung von IT-Risiken für Ihre kritischen Dienstleistungen gemäß §30 Abs. 1 BSI-Gesetz. Die Analyse muss regelmäßig aktualisiert werden.",
         "firstStep": "Wählen Sie eine anerkannte Risikoanalyse-Methode (z.B. BSI-Standard 200-3, ISO 27005) und terminieren Sie ein Kickoff-Meeting."
       },
       "rm2": {
         "title": "Risikobewertung und Maßnahmenplan entwickeln",
-        "description": "Führen Sie für alle identifizierten IT-Risiken eine Bewertung durch (Eintrittswahrscheinlichkeit × Schadenshöhe) und leiten Sie priorisierte Maßnahmen zur Risikominimierung ab, wie §8a Abs. 1 BSI-Gesetz es verlangt.",
+        "description": "Führen Sie für alle identifizierten IT-Risiken eine Bewertung durch (Eintrittswahrscheinlichkeit × Schadenshöhe) und leiten Sie priorisierte Maßnahmen zur Risikominimierung ab, wie §30 Abs. 1 BSI-Gesetz es verlangt.",
         "firstStep": "Erstellen Sie ein Risikoregister mit allen identifizierten Bedrohungen, Bewertung und Status der Gegenmaßnahmen."
       },
       "rm3": {
         "title": "Kontinuierliches Risiko-Monitoring einführen",
-        "description": "Etablieren Sie einen Prozess zur fortlaufenden Überwachung und Neubewertung von IT-Risiken gemäß §8a Abs. 1 BSI-Gesetz. Neue Bedrohungen (z.B. Zero-Day-Exploits) oder Änderungen in der IT-Landschaft müssen zeitnah erfasst werden.",
+        "description": "Etablieren Sie einen Prozess zur fortlaufenden Überwachung und Neubewertung von IT-Risiken gemäß §30 Abs. 1 BSI-Gesetz. Neue Bedrohungen (z.B. Zero-Day-Exploits) oder Änderungen in der IT-Landschaft müssen zeitnah erfasst werden.",
         "firstStep": "Richten Sie ein quartalsweises Risiko-Review-Meeting ein, in dem das Risikoregister aktualisiert und neue Bedrohungen bewertet werden.",
         "checklist": "Risikobewertungsmethodik festlegen\nKritische Geschäftsprozesse identifizieren\nRisiken priorisieren und Maßnahmen ableiten"
       },
       "sh1": {
         "title": "Server- und Endpoint-Härtung nach Stand der Technik",
-        "description": "Härten Sie alle kritischen Server und Endgeräte durch Deaktivierung unnötiger Dienste, sichere Konfiguration und restriktive Berechtigungen gemäß §8a Abs. 1 BSI-Gesetz. Dies reduziert die Angriffsfläche erheblich.",
+        "description": "Härten Sie alle kritischen Server und Endgeräte durch Deaktivierung unnötiger Dienste, sichere Konfiguration und restriktive Berechtigungen gemäß §30 Abs. 1 BSI-Gesetz. Dies reduziert die Angriffsfläche erheblich.",
         "firstStep": "Verwenden Sie CIS Benchmarks oder BSI SiSyPHuS-Richtlinien, um eine Baseline-Härtungskonfiguration für Windows/Linux-Server zu definieren."
       },
       "sh2": {
         "title": "Netzwerksegmentierung und Firewall-Regeln implementieren",
-        "description": "Segmentieren Sie Ihr Netzwerk nach Kritikalität und Schutzbedarf (z.B. OT vs. Office-IT) und setzen Sie restriktive Firewall-Regeln durch (§8a Abs. 1 BSI-Gesetz). Dies begrenzt die Ausbreitung von Angriffen.",
+        "description": "Segmentieren Sie Ihr Netzwerk nach Kritikalität und Schutzbedarf (z.B. OT vs. Office-IT) und setzen Sie restriktive Firewall-Regeln durch (§30 Abs. 1 BSI-Gesetz). Dies begrenzt die Ausbreitung von Angriffen.",
         "firstStep": "Erstellen Sie eine Netzwerk-Zonen-Architektur (z.B. DMZ, Produktionsnetz, Office-Netz) und dokumentieren Sie erlaubte Datenflüsse."
       },
       "sh3": {
         "title": "Umfassende Härtungsbaselines entwickeln",
-        "description": "Entwickeln Sie für alle Systemtypen (Server, Clients, Netzwerkgeräte, OT-Komponenten) standardisierte Härtungsrichtlinien gemäß §8a Abs. 1 BSI-Gesetz und setzen Sie diese durch Configuration Management durch.",
+        "description": "Entwickeln Sie für alle Systemtypen (Server, Clients, Netzwerkgeräte, OT-Komponenten) standardisierte Härtungsrichtlinien gemäß §30 Abs. 1 BSI-Gesetz und setzen Sie diese durch Configuration Management durch.",
         "firstStep": "Nutzen Sie Tools wie Microsoft Security Compliance Toolkit oder Ansible/Puppet, um Härtungskonfigurationen automatisiert zu verteilen.",
         "checklist": "Baseline-Härtungsrichtlinien definieren\nKonfigurationsmanagement einführen\nPatch-Management-Prozess etablieren"
       },
       "vm1": {
         "title": "IT-Notfallmanagement-Plan für KRITIS-Dienste erstellen",
-        "description": "Entwickeln Sie einen umfassenden Notfallplan für IT-Sicherheitsvorfälle in kritischen Infrastrukturen gemäß §8b Abs. 4 BSI-Gesetz. Der Plan muss Erkennung, Bewertung, Eindämmung, Meldung an BSI und Wiederherstellung abdecken.",
+        "description": "Entwickeln Sie einen umfassenden Notfallplan für IT-Sicherheitsvorfälle in kritischen Infrastrukturen gemäß §32 BSI-Gesetz. Der Plan muss Erkennung, Bewertung, Eindämmung, Meldung an BSI und Wiederherstellung abdecken.",
         "firstStep": "Führen Sie eine Business Impact Analyse durch, um die kritischsten IT-Systeme und ihre maximalen Ausfallzeiten zu identifizieren."
       },
       "vm2": {
         "title": "Vorfallklassifizierungs-System implementieren",
-        "description": "Definieren Sie klare Kriterien zur Bewertung und Klassifizierung von IT-Sicherheitsvorfällen nach §8b Abs. 4 BSI-Gesetz. Dies bestimmt, ob ein Vorfall erheblich ist und an das BSI gemeldet werden muss.",
+        "description": "Definieren Sie klare Kriterien zur Bewertung und Klassifizierung von IT-Sicherheitsvorfällen nach §32 BSI-Gesetz. Dies bestimmt, ob ein Vorfall erheblich ist und an das BSI gemeldet werden muss.",
         "firstStep": "Erstellen Sie eine Tabelle mit Schweregrad-Stufen (z.B. 1-5) und konkreten Beispielen für jeden Level (z.B. 'Ausfall >30 Min = Stufe 4')."
       },
       "vm3": {
         "title": "Lessons-Learned-Prozess nach Vorfällen etablieren",
-        "description": "Führen Sie nach jedem relevanten IT-Sicherheitsvorfall eine strukturierte Nachbesprechung durch, um Schwachstellen zu identifizieren und präventive Maßnahmen abzuleiten (§8b Abs. 4 BSI-Gesetz).",
+        "description": "Führen Sie nach jedem relevanten IT-Sicherheitsvorfall eine strukturierte Nachbesprechung durch, um Schwachstellen zu identifizieren und präventive Maßnahmen abzuleiten (§32 BSI-Gesetz).",
         "firstStep": "Legen Sie eine Vorlage für Post-Incident-Reviews an mit Fragen wie: Was ist passiert? Warum? Was wurde gut gemacht? Was muss verbessert werden?",
-        "checklist": "IT-Notfallmanagementplan erstellen\nMeldeprozess nach § 8b BSIG implementieren\nRegelmäßige Notfallübungen durchführen"
+        "checklist": "IT-Notfallmanagementplan erstellen\nMeldeprozess nach §32 BSIG implementieren\nRegelmäßige Notfallübungen durchführen"
       }
     },
     "sectors": {

@@ -2792,7 +2792,7 @@
     "legalBasis": "Legal basis: §§31, 39 BSIG",
     "categories": {
       "audit": {
-        "description": "Regular obligation to demonstrate IT security to BSI per § 8a BSIG",
+        "description": "Regular obligation to demonstrate IT security to BSI per §30 BSIG",
         "name": "Audit & Evidence",
         "shortName": "Audit"
       },
@@ -2802,7 +2802,7 @@
         "shortName": "BCM"
       },
       "bsiKontaktstelle": {
-        "description": "Establishment and operation of the BSI contact point per § 8b(3) BSIG",
+        "description": "Registration with the BSI including current contact details per § 33 BSIG, and continuous reachability",
         "name": "BSI Contact Point",
         "shortName": "BSI Contact"
       },
@@ -2827,7 +2827,7 @@
         "shortName": "Hardening"
       },
       "vorfallmanagement": {
-        "description": "Detection, reporting and handling of IT security incidents per § 8b BSIG",
+        "description": "Detection, reporting and handling of IT security incidents per §32 BSIG",
         "name": "Incident Management",
         "shortName": "Incidents"
       }
@@ -3221,7 +3221,7 @@
         "title": "Implement measure"
       },
       "au3": {
-        "checklist": "Create audit plan per § 8a BSIG\nPlan internal and external audits\nPrepare evidence documentation",
+        "checklist": "Create audit plan per §30 BSIG\nPlan internal and external audits\nPrepare evidence documentation",
         "description": "Implement the required measures according to regulatory requirements.",
         "firstStep": "Conduct an assessment of the current state.",
         "title": "Implement measure"
@@ -3253,7 +3253,7 @@
         "title": "Implement measure"
       },
       "bsi3": {
-        "checklist": "Designate BSI contact point (§ 8b(3) BSIG)\nDocument communication channels to BSI\nDefine reporting obligations and deadlines",
+        "checklist": "Designate BSI contact point (§ 33 BSIG)\nDocument communication channels to BSI\nDefine reporting obligations and deadlines",
         "description": "Implement the required measures according to regulatory requirements.",
         "firstStep": "Conduct an assessment of the current state.",
         "title": "Implement measure"
@@ -3333,7 +3333,7 @@
         "title": "Implement measure"
       },
       "vm3": {
-        "checklist": "Create IT emergency management plan\nImplement reporting process per § 8b BSIG\nConduct regular emergency exercises",
+        "checklist": "Create IT emergency management plan\nImplement reporting process per §32 BSIG\nConduct regular emergency exercises",
         "description": "Implement the required measures according to regulatory requirements.",
         "firstStep": "Conduct an assessment of the current state.",
         "title": "Implement measure"
