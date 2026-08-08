@@ -7787,7 +7787,7 @@
             "nis2": "Fähigkeit zur Erkennung und Bewältigung von Sicherheitsvorfällen",
             "dsgvo": "Nachweispflicht für angemessene Sicherheitsmaßnahmen",
             "dora": "Protokollierung und Überwachung von IKT-Operationen",
-            "kritis": "Einsatz von Systemen zur Angriffserkennung gemäß BSIG §8a Abs. 1",
+            "kritis": "Einsatz von Systemen zur Angriffserkennung gemäß §31 BSIG",
             "bsi": "Protokollierung sicherheitsrelevanter Ereignisse und Auswertung"
           }
         },
