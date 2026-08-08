@@ -418,7 +418,7 @@ export function aggregateDashboardData(pillars: Pillar[]): DashboardData {
   }
 
   // 8. Roadmap summary (aggregated from all regs with data)
-  let roadmapSummary = { quickWinCount: 0, coreCount: 0, strategicCount: 0, criticalCount: 0 };
+  const roadmapSummary = { quickWinCount: 0, coreCount: 0, strategicCount: 0, criticalCount: 0 };
   for (const reg of regsWithData) {
     if (reg.categoryScores.length > 0) {
       const phases = generateRoadmap(reg.categoryScores, reg.recommendations);

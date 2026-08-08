@@ -1,6 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+// Nur der Typ — exceljs selbst wird weiterhin dynamisch geladen, damit es nicht
+// im Haupt-Bundle landet.
+import type { Cell, Row, Worksheet } from 'exceljs';
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
@@ -141,9 +144,8 @@ export function DownloadExcelButton() {
       });
 
       // Helper to style a header row for data sheets
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const styleSheetHeader = (_ws: any, row: any) => {
-        row.eachCell((cell: any) => {
+      const styleSheetHeader = (_ws: Worksheet, row: Row) => {
+        row.eachCell((cell: Cell) => {
           cell.fill = subHeaderFill;
           cell.font = subHeaderFont;
           cell.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
@@ -258,7 +260,7 @@ export function DownloadExcelButton() {
       ws1.getCell(`B${row}`).value = 'Score (%)';
       ws1.getCell(`C${row}`).value = de ? 'Bewertung' : 'Assessment';
       const catHdrRow = ws1.getRow(row);
-      catHdrRow.eachCell((cell: any) => {
+      catHdrRow.eachCell((cell: Cell) => {
         cell.font = { bold: true, size: 10 };
         cell.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: GRAY_100 } };
         cell.border = thinBorder;
@@ -349,7 +351,7 @@ export function DownloadExcelButton() {
 
           // Alternating row colors
           if (recRowIdx % 2 === 1) {
-            dataRow.eachCell((cell: any) => { cell.fill = altRowFill; });
+            dataRow.eachCell((cell: Cell) => { cell.fill = altRowFill; });
           }
 
           // Priority cell coloring
@@ -496,7 +498,7 @@ export function DownloadExcelButton() {
           }
 
           if (progRowIdx % 2 === 1) {
-            dataRow.eachCell((cell: any) => {
+            dataRow.eachCell((cell: Cell) => {
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
               if (!cell.fill || (cell.fill as any).fgColor?.argb === undefined) {
                 cell.fill = altRowFill;
@@ -544,7 +546,7 @@ export function DownloadExcelButton() {
         crossRows.forEach((rowData, idx) => {
           const dataRow = ws5.addRow(rowData);
           if (idx % 2 === 1) {
-            dataRow.eachCell((cell: any) => { cell.fill = altRowFill; });
+            dataRow.eachCell((cell: Cell) => { cell.fill = altRowFill; });
           }
           dataRow.border = thinBorder;
           dataRow.alignment = { vertical: 'top', wrapText: true };
@@ -571,7 +573,7 @@ export function DownloadExcelButton() {
           if (rec.legalReference) {
             const dataRow = ws6.addRow([catName, tAll(rec.titleKey), rec.legalReference]);
             if (legalRowIdx % 2 === 1) {
-              dataRow.eachCell((cell: any) => { cell.fill = altRowFill; });
+              dataRow.eachCell((cell: Cell) => { cell.fill = altRowFill; });
             }
             dataRow.border = thinBorder;
             dataRow.alignment = { vertical: 'top', wrapText: true };

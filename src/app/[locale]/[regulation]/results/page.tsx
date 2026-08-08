@@ -47,6 +47,10 @@ import { PillarImpactSection } from './components/pillar-impact-section';
 import { getAllPillars } from '@/lib/pillars/registry';
 import { calculatePillarScores } from '@/lib/pillars/scoring';
 import '@/lib/pillars/init';
+// Waren zuvor require()-Aufrufe mitten im Komponentenkoerper — das umgeht die
+// statische Analyse und verhindert Tree-Shaking.
+import { classifyEntity } from '@/lib/regulations/nis2/classification';
+import { generateRoadmap } from '@/lib/regulations/nis2/roadmap';
 
 const TAB_VALUES = ['overview', 'quickwins', 'actionplan', 'progress', 'export'] as const;
 type TabValue = (typeof TAB_VALUES)[number];
@@ -100,7 +104,6 @@ export default function ResultsPage() {
   const classificationResult = useMemo(() => {
     if (!isNis2 || !formData.sectorId) return null;
     try {
-      const { classifyEntity } = require('@/lib/regulations/nis2/classification');
       return classifyEntity({
         sectorId: formData.sectorId,
         subsectorId: formData.subsectorId || null,
@@ -436,7 +439,6 @@ export default function ResultsPage() {
         <TabsContent value="actionplan" className="mt-6">
           {/* Compact 3-phase roadmap timeline */}
           {config.features.hasRoadmap && (() => {
-            const { generateRoadmap } = require('@/lib/regulations/nis2/roadmap');
             const phases = generateRoadmap(overallScore.categoryScores, allRecommendations);
             const phaseConfig = [
               { icon: Zap, borderColor: 'border-l-green-500', bgColor: 'bg-green-100', textColor: 'text-green-700', key: 'phase1' },
