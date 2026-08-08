@@ -9591,43 +9591,23 @@
       "subtitle": "Financial support for your IT security measures — from federal, state, and EU programs",
       "intro": "IT security doesn't have to be expensive — and many costs can be subsidized. Here you'll find current funding programs that specifically support SMEs in implementing IT security measures.",
       "disclaimer": "Funding conditions change regularly. Always check current terms with the respective funding provider before applying. Status: August 2026.",
-      "goDigital": {
-        "title": "go-digital (BMWi)",
-        "desc": "Federal Ministry of Economics funding program for SMEs with fewer than 100 employees. Funds consulting services in the modules 'IT Security', 'Digital Market Development', and 'Digitized Business Processes'.",
-        "funding": "Up to 50% of consulting costs, max. EUR 16,500",
-        "eligible": "SMEs under 100 employees, under EUR 20M revenue",
-        "modules": "Module 'IT Security': Analysis, concept development, implementation support",
-        "web": "https://www.bmwk.de/Redaktion/DE/Artikel/Digitale-Welt/foerderprogramm-go-digital.html",
-        "status": "Ongoing"
-      },
-      "digitalJetzt": {
-        "title": "Digital Jetzt (BMWi)",
-        "desc": "Investment grants for SMEs for digitalization — including IT security. Funds both hardware/software investments and employee qualification.",
-        "funding": "Up to 50% funding, max. EUR 50,000 (investment) + EUR 50,000 (qualification)",
-        "eligible": "SMEs from 3 to 499 employees",
-        "web": "https://www.bmwk.de/Redaktion/DE/Artikel/Digitale-Welt/foerderprogramm-digital-jetzt.html",
-        "status": "Check current funding period"
-      },
       "kfw": {
-        "title": "KfW Digital Credit (ERP Digitalization and Innovation Credit)",
-        "desc": "Low-interest KfW loans for digitalization investments including IT security measures. Also for software, cloud solutions, and consulting.",
-        "funding": "Loans up to EUR 25M, from 1% effective interest, up to 2 repayment-free years",
-        "eligible": "Medium-sized enterprises (up to EUR 500M revenue)",
-        "web": "https://www.kfw.de/inlandsfoerderung/Unternehmen/Digitalisierung-Innovation/",
-        "status": "Ongoing"
+        "title": "KfW — Promotional Loans for Digitalisation and Innovation",
+        "desc": "Low-interest loans for digitalisation and innovation projects including IT security. The ERP programmes were restructured on 1 July 2025; the former digitalisation loan 380 no longer exists in its old form.",
+        "funding": "Loan; the interest rate depends on creditworthiness and collateral and is currently well above the terms of earlier years",
+        "eligible": "Medium-sized companies — ask your house bank about current terms and programme scope",
+        "web": "https://www.kfw.de/inlandsfoerderung/Unternehmen/",
+        "status": "Ongoing, terms changed"
       },
       "laender": {
         "title": "State Funding Programs",
         "desc": "Many German states offer their own funding programs for digitalization and IT security. Conditions vary by state.",
         "examples": {
           "title": "Examples (selection):",
-          "nrw": "NRW: Mittelstand Innovativ & Digital (MID) — up to EUR 15,000",
-          "bayern": "Bavaria: Digitalbonus — up to EUR 50,000 (50% funding)",
-          "bw": "Baden-Wuerttemberg: Digitalisierungspraemie — loan up to EUR 100,000",
-          "niedersachsen": "Lower Saxony: Digitalisierung in KMU — up to EUR 10,000",
-          "hessen": "Hesse: Digi-Zuschuss — up to EUR 10,000 (50% funding)"
+          "nrw": "NRW: Mittelstand Innovativ & Digital (MID) — up to EUR 15,000, administered by NRW.BANK instead of Projektträger Jülich since 1 Jan 2026",
+          "bayern": "Bavaria: Digitalbonus — EUR 7,500 (standard) or EUR 30,000 (plus) at a 50% funding rate, limited until 31 Dec 2027"
         },
-        "tip": "Ask your local IHK or HWK about current funding programs in your state."
+        "tip": "State programmes change frequently and some expire without replacement. The federal funding database (foerderdatenbank.de) lists the current status; your chamber of commerce advises free of charge."
       },
       "eu": {
         "title": "EU Funding Programs",
@@ -9635,13 +9615,13 @@
         "horizon": "Horizon Europe: Research & Innovation in Cybersecurity",
         "dep": "Digital Europe Programme (DIGITAL): Cybersecurity capacities, SOCs, training",
         "enisa": "ENISA Initiatives: Support for national cybersecurity strategies",
-        "web": "https://digital-strategy.ec.europa.eu/en/activities/cybersecurity-policies"
+        "web": "https://digital-strategy.ec.europa.eu/en/activities/digital-programme"
       },
       "tips": {
         "title": "Funding Tips",
         "tip1": "Apply BEFORE starting the project — retroactive funding is usually excluded",
         "tip2": "Combine multiple programs (e.g., federal + state funding)",
-        "tip3": "Use authorized consultants (mandatory for go-digital)",
+        "tip3": "Grant-funded consulting usually requires a listed advisor — check before awarding the contract",
         "tip4": "Use free funding advice from IHK/HWK",
         "tip5": "Training and awareness measures are also eligible for funding"
       },
@@ -9649,6 +9629,28 @@
         "federal": "Federal Funding",
         "state": "State Funding",
         "eu": "EU Funding"
+      },
+      "bafa": {
+        "title": "BAFA — Funding for Entrepreneurial Know-How",
+        "desc": "Grant towards external consulting services, explicitly including IT security and digitalisation consulting. The main remaining federal programme since go-digital expired.",
+        "funding": "Grant towards consulting fees; funding rate and cap depend on company location and programme variant",
+        "eligible": "SMEs as defined by the EU; consulting by an advisor listed with BAFA",
+        "web": "https://www.bafa.de/DE/Wirtschaft/Beratung_Finanzierung/Unternehmensberatung/unternehmensberatung_node.html",
+        "status": "Runs until 31 Dec 2026"
+      },
+      "mittelstandDigital": {
+        "title": "Mittelstand-Digital Centres",
+        "desc": "Around 30 centres across Germany offer workshops, demonstrators and one-to-one advice on digitalisation and IT security — free of charge, but without a grant for a consultancy of your own choosing.",
+        "funding": "Free of charge — no application, no own contribution",
+        "eligible": "Small and medium-sized enterprises and skilled crafts businesses",
+        "web": "https://www.mittelstand-digital.de/",
+        "status": "Ongoing"
+      },
+      "discontinued": {
+        "title": "Discontinued Programmes",
+        "desc": "These programmes are still listed as available in many places. New applications are no longer possible:",
+        "goDigital": "go-digital (BMWK): ended on 31 Dec 2024, no new applications since 1 Jan 2025",
+        "digitalJetzt": "Digital Jetzt (BMWK): funding directive expired on 31 Dec 2023, the portal was shut down on 31 Mar 2026"
       }
     },
     "mythenFaq": {

@@ -5900,7 +5900,7 @@
         "tisaxRequired": "Ihre Kunden fordern TISAX — eine Zertifizierung ist faktisch Pflicht.",
         "tisaxAuto": "Als Automobilzulieferer wird TISAX häufig von OEMs und Tier-1 gefordert.",
         "tisaxNA": "TISAX ist primär für die Automobilbranche relevant.",
-        "craProducts": "Wenn Sie Produkte mit digitalen Elementen herstellen: Die CRA-Meldepflicht f\u00fcr aktiv ausgenutzte Schwachstellen gilt ab 11.09.2026, die \u00fcbrigen Pflichten ab 11.12.2027.",
+        "craProducts": "Wenn Sie Produkte mit digitalen Elementen herstellen: Die CRA-Meldepflicht für aktiv ausgenutzte Schwachstellen gilt ab 11.09.2026, die übrigen Pflichten ab 11.12.2027.",
         "craIoT": "Vernetzte Produkte fallen unter den Cyber Resilience Act.",
         "craNA": "Der CRA betrifft primär Hersteller digitaler Produkte.",
         "bsiNis2Kritis": "Als NIS2/KRITIS-Betroffener ist BSI IT-Grundschutz der empfohlene Nachweis-Rahmen.",
@@ -9645,43 +9645,23 @@
       "subtitle": "Finanzielle Unterstuetzung fuer Ihre IT-Sicherheitsmassnahmen — von Bund, Laendern und EU",
       "intro": "IT-Sicherheit muss nicht teuer sein — und viele Kosten lassen sich foerdern. Hier finden Sie aktuelle Foerderprogramme, die speziell KMU bei der Umsetzung von IT-Sicherheitsmassnahmen finanziell unterstuetzen.",
       "disclaimer": "Foerderbedingungen aendern sich regelmaessig. Pruefen Sie vor Antragstellung immer die aktuellen Konditionen beim jeweiligen Foerdergeber. Stand: August 2026.",
-      "goDigital": {
-        "title": "go-digital (BMWi)",
-        "desc": "Foerderprogramm des Bundesministeriums fuer Wirtschaft fuer KMU mit weniger als 100 Mitarbeitern. Foerdert Beratungsleistungen in den Modulen 'IT-Sicherheit', 'Digitale Markterschliessung' und 'Digitalisierte Geschaeftsprozesse'.",
-        "funding": "Bis zu 50% der Beratungskosten, max. 16.500 EUR",
-        "eligible": "KMU unter 100 Mitarbeiter, unter 20 Mio. EUR Umsatz",
-        "modules": "Modul 'IT-Sicherheit': Analyse, Konzepterstellung, Umsetzungsbegleitung",
-        "web": "https://www.bmwk.de/Redaktion/DE/Artikel/Digitale-Welt/foerderprogramm-go-digital.html",
-        "status": "Laufend"
-      },
-      "digitalJetzt": {
-        "title": "Digital Jetzt (BMWi)",
-        "desc": "Investitionszuschuesse fuer KMU zur Digitalisierung — einschliesslich IT-Sicherheit. Foerdert sowohl Investitionen in Hard-/Software als auch Mitarbeiterqualifizierung.",
-        "funding": "Bis zu 50% Foerderung, max. 50.000 EUR (Investition) + 50.000 EUR (Qualifizierung)",
-        "eligible": "KMU von 3 bis 499 Mitarbeiter",
-        "web": "https://www.bmwk.de/Redaktion/DE/Artikel/Digitale-Welt/foerderprogramm-digital-jetzt.html",
-        "status": "Aktuellen Foerderzeitraum pruefen"
-      },
       "kfw": {
-        "title": "KfW-Digitalkredit (ERP-Digitalisierungs- und Innovationskredit)",
-        "desc": "Guenstige Kredite der KfW fuer Digitalisierungsinvestitionen inklusive IT-Sicherheitsmassnahmen. Auch fuer Software, Cloud-Loesungen und Beratung.",
-        "funding": "Kredite bis 25 Mio. EUR, ab 1% Effektivzins, bis zu 2 tilgungsfreie Jahre",
-        "eligible": "Mittelstaendische Unternehmen (bis 500 Mio. EUR Umsatz)",
-        "web": "https://www.kfw.de/inlandsfoerderung/Unternehmen/Digitalisierung-Innovation/",
-        "status": "Laufend"
+        "title": "KfW — Förderkredite für Digitalisierung und Innovation",
+        "desc": "Zinsgünstige Kredite für Digitalisierungs- und Innovationsvorhaben einschließlich IT-Sicherheit. Die ERP-Programme wurden zum 01.07.2025 neu zugeschnitten; der frühere Digitalisierungskredit 380 in seiner alten Form ist entfallen.",
+        "funding": "Kredit; der Zinssatz richtet sich nach Bonität und Sicherheiten und liegt derzeit deutlich über den Konditionen früherer Jahre",
+        "eligible": "Mittelständische Unternehmen — Konditionen und Programmzuschnitt bei der Hausbank erfragen",
+        "web": "https://www.kfw.de/inlandsfoerderung/Unternehmen/",
+        "status": "Laufend, Konditionen geändert"
       },
       "laender": {
         "title": "Laenderfoerderprogramme",
         "desc": "Viele Bundeslaender bieten eigene Foerderprogramme fuer Digitalisierung und IT-Sicherheit. Die Konditionen variieren je nach Bundesland.",
         "examples": {
           "title": "Beispiele (Auswahl):",
-          "nrw": "NRW: Mittelstand Innovativ & Digital (MID) — bis zu 15.000 EUR",
-          "bayern": "Bayern: Digitalbonus — bis zu 50.000 EUR (50% Foerderung)",
-          "bw": "Baden-Wuerttemberg: Digitalisierungspraemie — Kredit bis 100.000 EUR",
-          "niedersachsen": "Niedersachsen: Digitalisierung in KMU — bis zu 10.000 EUR",
-          "hessen": "Hessen: Digi-Zuschuss — bis zu 10.000 EUR (50% Foerderung)"
+          "nrw": "NRW: Mittelstand Innovativ & Digital (MID) — bis zu 15.000 EUR, seit 01.01.2026 über die NRW.BANK statt Projektträger Jülich",
+          "bayern": "Bayern: Digitalbonus — 7.500 EUR (Standard) bzw. 30.000 EUR (Plus) bei 50 % Förderquote, befristet bis 31.12.2027"
         },
-        "tip": "Fragen Sie Ihre IHK oder HWK nach aktuellen Foerderprogrammen in Ihrem Bundesland."
+        "tip": "Länderprogramme ändern sich häufig und laufen teils ersatzlos aus. Die Förderdatenbank des Bundes (foerderdatenbank.de) führt den jeweils aktuellen Stand; Ihre IHK oder HWK berät kostenlos dazu."
       },
       "eu": {
         "title": "EU-Foerderprogramme",
@@ -9689,13 +9669,13 @@
         "horizon": "Horizon Europe: Forschung & Innovation in Cybersicherheit",
         "dep": "Digital Europe Programme (DIGITAL): Cybersecurity-Kapazitaeten, SOCs, Schulungen",
         "enisa": "ENISA-Initiativen: Unterstuetzung nationaler Cybersicherheitsstrategien",
-        "web": "https://digital-strategy.ec.europa.eu/en/activities/cybersecurity-policies"
+        "web": "https://digital-strategy.ec.europa.eu/en/activities/digital-programme"
       },
       "tips": {
         "title": "Tipps zur Foerderung",
         "tip1": "Antrag VOR Projektbeginn stellen — nachtraegliche Foerderung ist meist ausgeschlossen",
         "tip2": "Mehrere Programme kombinieren (z.B. Bundes- + Landesfoerderung)",
-        "tip3": "Autorisierte Berater nutzen (bei go-digital Pflicht)",
+        "tip3": "Bei zuschussgeförderter Beratung muss die Beratungsperson meist gelistet sein — vor Auftragsvergabe prüfen",
         "tip4": "Foerderberatung der IHK/HWK in Anspruch nehmen (kostenlos)",
         "tip5": "Auch Schulungen und Awareness-Massnahmen sind foerderfaehig"
       },
@@ -9703,6 +9683,28 @@
         "federal": "Bundesfoerderung",
         "state": "Laenderfoerderung",
         "eu": "EU-Foerderung"
+      },
+      "bafa": {
+        "title": "BAFA — Förderung unternehmerischen Know-hows",
+        "desc": "Zuschuss zu externen Beratungsleistungen, ausdrücklich auch für IT-Sicherheits- und Digitalisierungsberatung. Das wichtigste verbliebene Bundesprogramm, seit go-digital ausgelaufen ist.",
+        "funding": "Zuschuss zum Beratungshonorar; Förderquote und Höchstbetrag richten sich nach Unternehmenssitz und Programmvariante",
+        "eligible": "KMU nach EU-Definition; Beratung durch eine bei der BAFA gelistete Beratungsperson",
+        "web": "https://www.bafa.de/DE/Wirtschaft/Beratung_Finanzierung/Unternehmensberatung/unternehmensberatung_node.html",
+        "status": "Läuft bis 31.12.2026"
+      },
+      "mittelstandDigital": {
+        "title": "Mittelstand-Digital Zentren",
+        "desc": "Rund 30 Zentren bundesweit bieten Workshops, Demonstratoren und Einzelberatung zu Digitalisierung und IT-Sicherheit — kostenfrei, aber ohne Zuschuss für eine selbst gewählte Beratungsfirma.",
+        "funding": "Kostenfrei — keine Antragstellung, kein Eigenanteil",
+        "eligible": "Kleine und mittlere Unternehmen sowie Handwerksbetriebe",
+        "web": "https://www.mittelstand-digital.de/",
+        "status": "Laufend"
+      },
+      "discontinued": {
+        "title": "Ausgelaufene Programme",
+        "desc": "Diese Programme werden vielerorts noch als verfügbar gelistet. Neue Anträge sind nicht mehr möglich:",
+        "goDigital": "go-digital (BMWK): endete am 31.12.2024, seit 01.01.2025 keine neuen Anträge",
+        "digitalJetzt": "Digital Jetzt (BMWK): Förderrichtlinie war bis 31.12.2023 befristet, das Förderportal wurde zum 31.03.2026 abgeschaltet"
       }
     },
     "mythenFaq": {

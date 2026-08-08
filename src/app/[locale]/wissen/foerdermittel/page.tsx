@@ -42,7 +42,7 @@ export default function FoerdermittelPage() {
             {t('categories.federal')}
           </h2>
           <div className="space-y-4">
-            {(['goDigital', 'digitalJetzt', 'kfw'] as const).map((prog) => (
+            {(['bafa', 'mittelstandDigital', 'kfw'] as const).map((prog) => (
               <Card key={prog} className="border-l-4 border-l-emerald-500">
                 <CardHeader>
                   <div className="flex items-center justify-between">
@@ -55,7 +55,6 @@ export default function FoerdermittelPage() {
                   <div className="rounded-md bg-muted/50 p-3 space-y-1 text-sm">
                     <p><span className="font-medium">Foerderung:</span> {t(`${prog}.funding`)}</p>
                     <p><span className="font-medium">Berechtigt:</span> {t(`${prog}.eligible`)}</p>
-                    {prog === 'goDigital' && <p><span className="font-medium">Modul:</span> {t('goDigital.modules')}</p>}
                   </div>
                   <a href={t(`${prog}.web`)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline">
                     <Globe className="size-4" /> Mehr erfahren <ExternalLink className="size-3" />
@@ -63,6 +62,22 @@ export default function FoerdermittelPage() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </section>
+
+        {/* Ausgelaufene Programme — werden vielerorts noch als verfuegbar gelistet */}
+        <section className="mb-12">
+          <div className="rounded-lg border border-slate-200 bg-slate-50 p-5">
+            <h3 className="mb-1 text-sm font-semibold text-slate-900">{t('discontinued.title')}</h3>
+            <p className="mb-3 text-sm text-slate-600">{t('discontinued.desc')}</p>
+            <ul className="space-y-1.5 text-sm text-slate-600">
+              {(['goDigital', 'digitalJetzt'] as const).map((prog) => (
+                <li key={prog} className="flex gap-2">
+                  <span className="text-slate-400">&bull;</span>
+                  {t(`discontinued.${prog}`)}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -81,7 +96,7 @@ export default function FoerdermittelPage() {
               <div className="rounded-md bg-muted/50 p-4">
                 <p className="font-medium text-sm mb-2">{t('laender.examples.title')}</p>
                 <ul className="space-y-1.5 text-sm text-muted-foreground">
-                  {(['nrw', 'bayern', 'bw', 'niedersachsen', 'hessen'] as const).map((state) => (
+                  {(['nrw', 'bayern'] as const).map((state) => (
                     <li key={state} className="flex gap-2">
                       <span className="text-violet-500 font-bold">&bull;</span>
                       {t(`laender.examples.${state}`)}
