@@ -4793,7 +4793,7 @@
       },
       "dokQ2": {
         "title": "Führen Sie eine dokumentierte Cybersicherheits-Risikobewertung für Ihre Produkte durch?",
-        "tooltip": "Anhang VII Nr. 2 CRA (EU 2024/2847) verlangt eine Beschreibung der Cybersicherheits-Risikobewertung. Die Risikobewertung muss während der Entwurfs- und Entwicklungsphase durchgeführt und während des Supportzeitraums aktualisiert werden.",
+        "tooltip": "Anhang VII CRA (EU 2024/2847) verlangt eine Beschreibung der Cybersicherheits-Risikobewertung. Die Risikobewertung muss während der Entwurfs- und Entwicklungsphase durchgeführt und während des Supportzeitraums aktualisiert werden.",
         "help": "Die Cybersicherheits-Risikobewertung ist ein Kernbestandteil der CRA-Dokumentation. Sie müssen systematisch identifizieren, welche Bedrohungen auf Ihr Produkt einwirken können, wie wahrscheinlich ein Angriff ist und welche Auswirkungen er hätte. Diese Bewertung bestimmt, welche Sicherheitsmaßnahmen aus Anhang I anzuwenden sind.",
         "maturity": {
           "level0": "Keine Cybersicherheits-Risikobewertung durchgeführt",
@@ -4804,7 +4804,7 @@
       },
       "dokQ3": {
         "title": "Stellen Sie den Nutzern Ihrer Produkte verständliche Sicherheitsinformationen bereit?",
-        "tooltip": "Art. 31 CRA (EU 2024/2847) i.V.m. Anhang VII Nr. 8 fordert Informationen und Anleitungen für den Nutzer zur sicheren Installation, Konfiguration und Nutzung des Produkts.",
+        "tooltip": "Anhang II CRA (EU 2024/2847) fordert Informationen und Anleitungen für den Nutzer zur sicheren Installation, Konfiguration und Nutzung des Produkts.",
         "help": "Neben der technischen Dokumentation für Behörden verlangt der CRA auch nutzergerichtete Sicherheitsinformationen. Dazu gehören Anleitungen zur sicheren Erstkonfiguration, Informationen über bekannte Risiken, Hinweise zum sicheren Betrieb und Kontaktdaten für Schwachstellenmeldungen. Diese Informationen müssen verständlich und leicht zugänglich sein.",
         "maturity": {
           "level0": "Keine nutzergerichteten Sicherheitsinformationen — weder Anleitung zur sicheren Konfiguration noch Hinweise zu bekannten Risiken",
@@ -4951,7 +4951,7 @@
     },
     "recommendations": {
       "dok1": {
-        "description": "Erstellen Sie eine EU-Konformitätserklärung gemäß Anhang VII CRA für jedes Ihrer Produkte mit digitalen Elementen. Diese bestätigt die Einhaltung aller CRA-Anforderungen und ist Voraussetzung für die CE-Kennzeichnung.",
+        "description": "Erstellen Sie eine EU-Konformitätserklärung nach dem Muster in Anhang V CRA (Art. 28) für jedes Ihrer Produkte mit digitalen Elementen. Diese bestätigt die Einhaltung aller CRA-Anforderungen und ist Voraussetzung für die CE-Kennzeichnung.",
         "firstStep": "Laden Sie die Vorlage für EU-Konformitätserklärungen herunter (BSI oder EU-Kommission) und beginnen Sie mit der Befüllung für Ihr Hauptprodukt.",
         "title": "EU-Konformitätserklärung erstellen"
       },
@@ -4962,7 +4962,7 @@
       },
       "dok3": {
         "checklist": "Technische Dokumentation nach Anhang VII erstellen\nRisikobewertungsdokumentation pflegen\nNutzerdokumentation zu Cybersicherheit erstellen",
-        "description": "Erstellen Sie verständliche Benutzerinformationen zu Cybersicherheit und sicherem Betrieb Ihrer Produkte. Anhang VII Nr. 4 CRA fordert, dass Endanwender über Sicherheitsrisiken und Schutzmaßnahmen informiert werden.",
+        "description": "Erstellen Sie verständliche Benutzerinformationen zu Cybersicherheit und sicherem Betrieb Ihrer Produkte. Anhang II CRA fordert, dass Endanwender über Sicherheitsrisiken und Schutzmaßnahmen informiert werden.",
         "firstStep": "Ergänzen Sie Ihre Produktdokumentation um einen Abschnitt \"Sicherheitshinweise\" mit konkreten Handlungsempfehlungen für Nutzer.",
         "title": "Benutzerinformation zur Cybersicherheit erstellen"
       },
@@ -4978,7 +4978,7 @@
       },
       "konf3": {
         "checklist": "Anwendbares Konformitätsverfahren bestimmen\nHarmonisierte Normen identifizieren und anwenden\nKonformitätserklärung und CE-Kennzeichnung vorbereiten",
-        "description": "Bereiten Sie die Konformitätsbewertung durch eine benannte Stelle vor, falls Ihr Produkt als kritisch (Anhang IV) oder wichtig Klasse II (Anhang III) eingestuft ist. Art. 24-30 CRA fordern für kritische Produkte eine unabhängige Zertifizierung.",
+        "description": "Bereiten Sie die Konformitätsbewertung durch eine benannte Stelle vor, falls Ihr Produkt als kritisch (Anhang IV) oder wichtig Klasse II (Anhang III) eingestuft ist. Art. 32 CRA i.V.m. Anhang VIII fordert für kritische Produkte eine unabhängige Zertifizierung.",
         "firstStep": "Recherchieren Sie benannte Stellen für CRA-Konformitätsbewertung (Liste wird von EU-Kommission veröffentlicht).",
         "title": "Drittanbieterbewertung vorbereiten"
       },
@@ -5031,7 +5031,7 @@
         "title": "Lifecycle-Sicherheitsrichtlinie erstellen"
       },
       "swm1": {
-        "description": "Implementieren Sie einen Prozess für koordinierte Schwachstellenoffenlegung (Coordinated Vulnerability Disclosure). Art. 11 Abs. 1-2 CRA verpflichtet Hersteller, Sicherheitsforschern einen sicheren Meldeweg bereitzustellen.",
+        "description": "Implementieren Sie einen Prozess für koordinierte Schwachstellenoffenlegung (Coordinated Vulnerability Disclosure). Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 5 CRA verpflichtet Hersteller, Sicherheitsforschern einen sicheren Meldeweg bereitzustellen.",
         "firstStep": "Legen Sie eine zentrale E-Mail-Adresse für Schwachstellenmeldungen fest (z.B. security@ihrefirma.de).",
         "title": "Koordinierte Schwachstellenoffenlegung einrichten"
       },

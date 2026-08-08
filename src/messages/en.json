@@ -4649,434 +4649,434 @@
     },
     "questions": {
       "dokQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The technical documentation is the central basis for the conformity assessment. Annex VII CRA lists all required elements: general product description, design and development information, cybersecurity risk assessment, applied harmonised standards and test results. Without complete documentation, no CE marking is possible.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No technical documentation per the CRA requirements",
+          "level1": "Fragmented documentation — individual parts exist (e.g. product description), but not all elements under Annex VII covered",
+          "level2": "Technical documentation covers all essential elements under Annex VII — risk analysis, security architecture and test reports available",
+          "level3": "Complete, versioned technical documentation per Annex VII with automated generation, regular updates and an audit trail for all changes"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have complete technical documentation for your products in accordance with Annex VII CRA?",
         "tooltip": "Art. 31 CRA (EU 2024/2847) in conjunction with Annex VII lists the required elements of the technical documentation, including product description, risk analysis, security architecture and test reports."
       },
       "dokQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The cybersecurity risk assessment is a core component of the CRA documentation. You must systematically identify which threats can affect your product, how likely an attack is and what impact it would have. This assessment determines which security measures from Annex I must be applied.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No cybersecurity risk assessment carried out",
+          "level1": "Informal risk consideration — no structured methodology, no documentation of the results",
+          "level2": "Structured risk assessment using a recognised methodology (e.g. STRIDE, DREAD) — documented threat scenarios, risk matrix and derived measures",
+          "level3": "Comprehensive, living risk assessment with regular updates, integration of new threat intelligence and a traceable link between risks and security measures"
         },
-        "title": "What is the implementation status in this area?",
-        "tooltip": "Annex VII no. 2 CRA (EU 2024/2847) requires a description of the cybersecurity risk assessment. The risk assessment must be performed during the design and development phase and updated during the support period."
+        "title": "Do you carry out a documented cybersecurity risk assessment for your products?",
+        "tooltip": "Annex VII CRA (EU 2024/2847) requires a description of the cybersecurity risk assessment. The risk assessment must be performed during the design and development phase and updated during the support period."
       },
       "dokQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Besides the technical documentation for authorities, the CRA also requires user-facing security information. This includes instructions for secure initial configuration, information about known risks, guidance on secure operation and contact details for vulnerability reports. This information must be understandable and easily accessible.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No user-facing security information — neither guidance on secure configuration nor notes on known risks",
+          "level1": "Basic security notes in the manual — but not CRA-compliant, essential elements missing",
+          "level2": "Dedicated security documentation for users with guidance on secure configuration, known risks and contact details for vulnerability reports",
+          "level3": "Comprehensive, multilingual user documentation with interactive security guidance, regular updates and integration into the product (in-app security notices)"
         },
-        "title": "What is the implementation status in this area?",
-        "tooltip": "Art. 31 CRA (EU 2024/2847) in conjunction with Annex VII no. 8 requires information and instructions for the user on secure installation, configuration and use of the product."
+        "title": "Do you provide the users of your products with understandable security information?",
+        "tooltip": "Annex II CRA (EU 2024/2847) requires information and instructions for the user on secure installation, configuration and use of the product."
       },
       "konfQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Which conformity assessment procedure you must follow depends on your product's classification: standard products can use internal production control (module A). Important class I products can use module A if harmonised standards are applied. Class II and critical products require a third-party assessment.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No knowledge of the applicable procedure — product classification under CRA Annex III/IV not carried out",
+          "level1": "Product classification done — the applicable module is known in principle, but the specific requirements have not been analysed in detail",
+          "level2": "Applicable conformity assessment procedure clearly determined and documented — necessary harmonised standards identified, timeline for the assessment created",
+          "level3": "Conformity assessment fully carried out, EU declaration of conformity drawn up, notified body involved where necessary and the procedure updated regularly"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you determined the conformity assessment procedure applicable to your product under Art. 32 CRA?",
         "tooltip": "Art. 32 CRA (EU 2024/2847) defines the conformity assessment procedures by product category: module A (self-assessment) for standard products, modules B+C or H for important/critical products (Annex III/IV)."
       },
       "konfQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Harmonised European standards (hEN) such as the EN 18031 series specify the CRA requirements. If you apply these standards, the presumption of conformity applies: your products are deemed CRA-compliant without individual proof. For important class I products, applying hENs is particularly relevant, as it can enable self-assessment.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No harmonised standards known or applied",
+          "level1": "Relevant standards identified — but no systematic application yet, gap analysis outstanding",
+          "level2": "Relevant hENs (e.g. EN 18031-1/2/3) applied systematically — gap analysis performed, implementation plan created",
+          "level3": "Full application of all relevant hENs with a documented presumption of conformity, regular review upon changes to the standards and integration into the development process"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you apply the relevant harmonised European standards (hEN) for your conformity procedure?",
         "tooltip": "Art. 27 CRA (EU 2024/2847): applying harmonised European standards (e.g. EN 18031-1/2/3) establishes a presumption of conformity for the requirements covered."
       },
       "konfQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The CE marking is the visible sign of CRA conformity. Before affixing it, you must successfully complete the applicable conformity assessment procedure and draw up an EU declaration of conformity following the template in Annex V. The declaration must be kept up to date at all times and be presentable to the market surveillance authority on request.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No CE marking and no declaration of conformity for the CRA",
+          "level1": "CE marking and/or declaration of conformity in preparation — the procedure is under way but not yet complete",
+          "level2": "EU declaration of conformity per Annex V drawn up, CE marking affixed to products — documentation held ready for market surveillance",
+          "level3": "Complete conformity management with a versioned declaration, automatic updates upon product changes and an integrated audit trail for all conformity evidence"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you know which CE marking your product needs, and have you affixed it?",
         "tooltip": "After successful completion of the conformity assessment procedure, manufacturers must draw up the EU declaration of conformity (Art. 13(12), Art. 28 CRA) and affix the CE marking (Art. 30 CRA)."
       },
       "sbdQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Security by design means that security aspects are considered from the design phase of your product — not retrofitted afterwards. This includes threat modelling, secure architecture decisions and minimising the attack surface. The CRA makes this mandatory for all products with digital elements.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No security-by-design principles — security is not systematically considered in product development",
+          "level1": "Individual security aspects considered ad hoc — no structured approach, no threat modelling",
+          "level2": "Documented development process with threat modelling and secure architecture — the security requirements from Annex I are implemented systematically",
+          "level3": "Fully integrated secure SDLC with automated security checks, regular threat modelling and continuous improvement in line with EN 18031-1"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are your products developed according to security-by-design principles in line with Annex I CRA?",
         "tooltip": "Art. 13(1) CRA (EU 2024/2847) requires products with digital elements to be designed and developed with cybersecurity in mind. Annex I Part I lists the essential security requirements."
       },
       "sbdQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Secure default configurations mean your product ships from the factory in a secure state. No open ports without necessity, no default passwords, no unnecessary services active. The user does not have to enable security first — it is the initial state.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Products ship with insecure default settings — default passwords, open ports, all services enabled",
+          "level1": "Some default settings have been hardened — but no systematic review of all configuration parameters",
+          "level2": "Defined hardening profile for all products — secure defaults documented, no default passwords, minimal attack surface",
+          "level3": "Automated checking of all default configurations in the CI/CD pipeline — hardening benchmarks (CIS or similar) observed, regular audits"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are your products shipped with secure default configurations (secure by default)?",
         "tooltip": "Art. 13(1) in conjunction with Annex I Part I CRA (EU 2024/2847) requires products to be placed on the market without known exploitable vulnerabilities. Annex I no. 1 requires an appropriate attack surface and secure default settings."
       },
       "sbdQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The CRA requires products to have effective access protection mechanisms. This covers strong authentication, identity management and the principle of least privilege. This is particularly critical for connected products, as they represent potential entry points into corporate networks.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No meaningful access protection — no or only trivial authentication (e.g. hard-coded credentials)",
+          "level1": "Simple password authentication in place — no multi-factor authentication, no role-based access control",
+          "level2": "Robust authentication mechanisms with individual credentials — role-based access and session management implemented",
+          "level3": "Multi-layer access protection with MFA support, fine-grained authorisation and secure key storage in line with EN 18031-1"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do your products implement appropriate access protection and authentication mechanisms?",
         "tooltip": "Annex I Part I CRA (EU 2024/2847) requires protection against unauthorised access through suitable control mechanisms, including authentication, identity and access management systems."
       },
       "sbomQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "An SBOM lists all software components contained in your product — your own and third-party. The CRA requires at least the documentation of the top-level dependencies in a machine-readable format. The SBOM is the basis for vulnerability management, since you can only protect what you know.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No SBOM — there is no overview of the software components and dependencies in use",
+          "level1": "Informal documentation of individual dependencies — no complete or machine-readable bill of materials",
+          "level2": "SBOM created in a standardised format (SPDX or CycloneDX) for all products — top-level dependencies fully recorded",
+          "level3": "Automated SBOM generation in the CI/CD pipeline, transitive dependencies recorded, regular updates with every build, SBOM available to customers"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you create and maintain a software bill of materials (SBOM) for your products?",
         "tooltip": "Art. 13(8) in conjunction with Annex I Part II point 1 CRA (EU 2024/2847) obliges manufacturers to draw up a software bill of materials (SBOM) documenting at least the top-level dependencies of the product."
       },
       "sbomQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Machine-readable SBOM formats enable automated evaluation: vulnerability matching against CVE databases, licence clarification and compliance checks. CycloneDX and SPDX are the established standards. Without a standardised format your SBOM is just a document — with one, it becomes a security tool.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No standardised format — the SBOM exists at most as an informal text file or spreadsheet",
+          "level1": "Individual projects use standardised formats — but no uniform requirement across all products",
+          "level2": "Uniform use of CycloneDX or SPDX for all products — format validation in the build process, NTIA Minimum Elements observed",
+          "level3": "Fully automated SBOM generation in a standard format with versioning, signing and automatic CVE matching against NVD/OSV databases"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you use standardised formats (CycloneDX or SPDX) for your software bills of materials?",
         "tooltip": "Art. 13(8) in conjunction with Annex I Part II point 1 CRA (EU 2024/2847) refers to machine-readable formats. The common standards are CycloneDX (OWASP) and SPDX (Linux Foundation), which are covered by the NTIA Minimum Elements."
       },
       "sbomQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "An SBOM is only as valuable as its currency. With every release, every dependency update and every patch, the SBOM must be updated. Only then can you check whether your products are affected when a new CVE becomes known. Outdated SBOMs are a compliance risk.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "The SBOM is not updated — created once or not at all, no maintenance upon changes",
+          "level1": "The SBOM is updated manually and irregularly — major releases are captured, smaller patches are not",
+          "level2": "SBOM updates are part of the release process — automatic regeneration with every release, versioning of the SBOM",
+          "level3": "Continuous SBOM updates with every build/commit, automatic diff tracking, proactive matching of new CVEs against the current SBOM"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are your SBOMs kept up to date when product components change?",
         "tooltip": "Art. 13(8) in conjunction with Annex I Part II point 1 CRA (EU 2024/2847) implies ongoing maintenance of the SBOM, as the manufacturer must monitor vulnerabilities in the components used. The NTIA Minimum Elements require timestamps and versioning."
       },
       "slQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The CRA requires you to define, for every product, the period during which you will provide security updates. This support period must be at least 5 years or match the expected product lifetime. The period must be clearly communicated and stated on the packaging/website.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No support period defined — users do not know how long they can expect security updates",
+          "level1": "Informal support period — roughly estimated internally, but not publicly communicated or documented",
+          "level2": "Support period defined for all products (at least 5 years), communicated on the packaging/website and anchored in the technical documentation",
+          "level3": "Support period as a fixed part of product planning, end-of-life process defined, proactive communication to users before support ends and migration options offered"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you defined and communicated the support period for security updates for your products?",
         "tooltip": "Art. 13(8) CRA (EU 2024/2847) obliges manufacturers to define and communicate the support period. The minimum period is 5 years or the expected product lifetime — whichever is shorter."
       },
       "slQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The obligation to provide updates does not end after the first product year. Throughout the entire support period you must be able to fix vulnerabilities and distribute updates. This requires long-term planning: infrastructure, build systems and test environments must remain available years after the initial release.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No long-term update capability — no resources planned for security patches after the initial release",
+          "level1": "Update delivery possible in principle — but no secured resources, build environments or test infrastructure for older product versions",
+          "level2": "Long-term update infrastructure planned — build systems, test environments and resources secured for the entire support period, release process documented",
+          "level3": "Demonstrably secured long-term update capability with automated build pipelines for all supported versions, resource-level safeguards and escalation processes for capacity shortages"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you ensure the provision of security updates throughout the entire support period?",
         "tooltip": "Art. 13(8) CRA (EU 2024/2847) obliges manufacturers to provide security updates throughout the entire support period. EN 18031-1 section 10 specifies the requirements for long-term updateability."
       },
       "slQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Your product is only as secure as its weakest component. The CRA requires you to also monitor the security of third-party components (public libraries, purchased modules, supplier firmware) and respond to vulnerabilities. This requires contractual arrangements with suppliers and continuous monitoring.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No consideration of third-party components — supply chain security is not considered",
+          "level1": "Awareness of supply chain risks exists — but no contractual requirements for suppliers and no monitoring of third-party components",
+          "level2": "Security requirements for suppliers contractually anchored — open-source components monitored, third-party SBOMs requested and checked against CVE databases",
+          "level3": "Comprehensive supply chain security management with contractual SLAs for vulnerability remediation, automated monitoring of all third-party components and regular security audits of the supply chain"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you consider cybersecurity requirements for third-party components and supply chains in your product lifecycle?",
         "tooltip": "Art. 13(8) CRA (EU 2024/2847) also extends to third-party components. IEC 62443-4-1 and ETSI EN 303 645 contain requirements for supply chain security management for products with digital elements."
       },
       "swmQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The CRA requires systematic vulnerability management throughout the entire support period. You must be able to identify, document, assess and promptly remediate vulnerabilities in your products. An ad hoc approach is not sufficient — it must be a repeatable process with clear responsibilities.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No vulnerability management — vulnerabilities are not systematically detected or handled",
+          "level1": "Reactive approach — vulnerabilities are only handled upon external reports or incidents, no defined process",
+          "level2": "Documented process for vulnerability identification and remediation — regular scans, prioritisation by severity, defined response times",
+          "level3": "Proactive vulnerability management with automated scans, CVE monitoring, SLA-based remediation and integration into the development process in line with ISO/IEC 30111"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have a documented process for identifying and remediating vulnerabilities in your products?",
         "tooltip": "Art. 13(8) in conjunction with Annex I Part II CRA (EU 2024/2847) obliges manufacturers to handle vulnerabilities effectively. This includes identification, documentation and prompt remediation through security updates."
       },
       "swmQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Security researchers and users must be able to report vulnerabilities to you confidentially. The CRA requires a publicly accessible contact address (e.g. security@company.com), clear rules for handling reports and prompt feedback. Without a CVD process, you risk vulnerabilities becoming public before a patch is ready.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No CVD process — no contact address for vulnerability reports, no policy published",
+          "level1": "General contact address exists — but no dedicated process, unclear responsibilities and response times",
+          "level2": "Dedicated security.txt and CVD policy published — defined process with acknowledgement of receipt, assessment and feedback to reporters",
+          "level3": "Mature CVD process with a bug bounty programme, PGP-encrypted communication, SLAs for response times and coordination with CERT/CSIRT in line with ISO/IEC 29147"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you set up a process for coordinated vulnerability disclosure?",
         "tooltip": "Art. 13(8) in conjunction with Annex I Part II point 5 CRA (EU 2024/2847) requires manufacturers to establish a coordinated vulnerability disclosure policy and provide a contact point for reporting vulnerabilities."
       },
       "swmQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "When a vulnerability is identified in your product, you must provide a patch or security update without undue delay. The CRA also requires users to be actively informed about the vulnerability and the available update. Updates must be free of charge and easy to install.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No structured patch delivery — vulnerabilities remain open or are fixed only sporadically",
+          "level1": "Patches are created, but without fixed timelines — users are not informed systematically",
+          "level2": "Defined patch process with prioritisation by CVSS score — automatic user notification, free delivery via the update channel",
+          "level3": "Rapid patch delivery with defined SLAs (e.g. critical: 48h), automated distribution, verified update integrity and public security advisories"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are security updates for fixed vulnerabilities provided without delay and free of charge?",
         "tooltip": "Art. 13(8) in conjunction with Annex I Part II CRA (EU 2024/2847) obliges manufacturers to provide a security update without delay once a vulnerability becomes known and to inform users about it."
       },
       "umQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The CRA requires products to be updatable via a secure mechanism. The update channel must be protected against manipulation (e.g. through signed firmware), updates must be verified and the user must be informed about available updates. Automatic updates are preferred, but must be configurable by the user.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No update mechanism — products cannot be updated, or only manually with physical access",
+          "level1": "Simple update mechanism without integrity checks — updates must be downloaded and installed manually",
+          "level2": "Secure OTA update mechanism with cryptographic signature verification — automatic notification of new updates, rollback capability",
+          "level3": "Fully automatic, signed update mechanism with delta updates, A/B partitioning, integrity checks and user notification in line with ETSI EN 303 645"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do your products have a secure mechanism for automatic security updates?",
         "tooltip": "Art. 13(8) CRA (EU 2024/2847) obliges manufacturers to deliver security updates via a secure update mechanism. ETSI EN 303 645 section 5.3 specifies the requirements for secure update procedures."
       },
       "umQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Users often hesitate to install larger feature updates because they fear compatibility problems. If security patches are only available as part of large updates, critical gaps remain open. The CRA therefore requires pure security updates to be provided separately and promptly.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No separation — security patches are only delivered together with feature updates, or not at all",
+          "level1": "Security updates are occasionally provided separately — no defined process, depends on the individual case",
+          "level2": "Clear separation of security and feature updates — defined process, security patches are released with priority and independently",
+          "level3": "Fully separate security update channel with its own release cycle, hotfix capability for critical vulnerabilities (24–48h) and a documented update history"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are security updates provided separately from feature updates?",
         "tooltip": "Art. 13(8) CRA (EU 2024/2847) emphasises delivering security updates separately. EN 18031-1 section 9 specifies that security patches must be available independently of feature updates."
       },
       "umQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Users must understand why an update matters and which vulnerabilities it fixes. The CRA requires transparent communication about security updates — including CVE references, severity and affected functions. Only then can users make informed decisions about installation.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No documentation — updates are delivered without a description of the changes",
+          "level1": "Generic release notes without security details — no CVE references, no severity stated",
+          "level2": "Structured security advisories with CVE references, CVSS scores and a description of the fixed vulnerabilities for every security update",
+          "level3": "Comprehensive security changelog with CVE references, impact analysis, workarounds and automated publication via a security advisory channel (e.g. CSAF/VEX)"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you document changes from security updates transparently for users?",
         "tooltip": "Art. 13(8) CRA (EU 2024/2847) requires users to be informed about fixed vulnerabilities and the impact of security updates. ETSI EN 303 645 section 5.3 requires understandable security information."
       },
       "vmQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The CRA introduces strict reporting obligations: if a vulnerability in your product is actively exploited, you must send an early warning to ENISA within 24 hours. A detailed report follows within 72 hours, and a final report at the latest 14 days after a corrective measure is made available.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No reporting process — no knowledge of the reporting obligations under Art. 14 CRA",
+          "level1": "Awareness of the reporting obligations exists — but no defined process, no responsibilities assigned",
+          "level2": "Documented reporting process with responsibilities, an escalation chain and templates for the 24h early warning and the 72h detailed report to ENISA",
+          "level3": "Practised reporting process with regular exercises, automated detection of actively exploited vulnerabilities and a direct connection to the ENISA reporting platform"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you set up a process for reporting actively exploited vulnerabilities to ENISA?",
         "tooltip": "Art. 14(1) CRA (EU 2024/2847) obliges manufacturers to report actively exploited vulnerabilities to ENISA within 24 hours. The early warning must contain basic information about the vulnerability."
       },
       "vmQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The CRA reporting deadlines are demanding: within 24 hours you must submit basic information, within 72 hours a detailed assessment. This requires clear internal escalation paths, on-call staff and prepared reporting templates. Without preparation, these deadlines are barely achievable.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No ability to report on time — neither on-call staff nor prepared processes",
+          "level1": "Theoretically possible, but untested — no templates, no defined on-call duty, timeline unclear",
+          "level2": "On-time reporting ensured through defined on-call services, prepared reporting templates and documented escalation paths",
+          "level3": "Automated detection and pre-qualification of incidents, 24/7 on-call duty, regular exercises of the reporting chain and demonstrated compliance with the deadlines"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Can you meet the prescribed reporting deadlines (24h early warning, 72h detailed report)?",
         "tooltip": "Art. 14(2) CRA (EU 2024/2847) defines the staggered reporting deadlines: 24 hours for the early warning, 72 hours for the detailed report and 14 days for the final report after a corrective measure is made available."
       },
       "vmQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Besides reporting to ENISA, you must also inform your users. The CRA requires you to notify affected users about actively exploited vulnerabilities and possible workarounds. This notification must be prompt, understandable and action-oriented.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No user notification — users do not learn about security incidents affecting their products",
+          "level1": "Occasional information via general channels — no targeted notification of affected users, no recommendations for action",
+          "level2": "Defined communication process for security incidents — targeted notification of affected users with concrete recommendations and workarounds",
+          "level3": "Automated, audience-appropriate notification via several channels (in-app, email, security advisory), with delivery tracking and effectiveness checks"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you promptly inform affected users about serious security incidents and necessary measures?",
         "tooltip": "Art. 14(3) CRA (EU 2024/2847) requires manufacturers to inform affected users about actively exploited vulnerabilities and recommended corrective measures — especially when no patch is yet available."
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 13 in conjunction with Annex I CRA: products with digital elements must be developed according to the security-by-design principle — with a minimal attack surface and secure default settings.",
+          "title": "Are cybersecurity requirements already considered during product development?"
         },
         "q2": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 13(8) in conjunction with Annex I Part II CRA: manufacturers must identify and assess vulnerabilities throughout the support period and fix them through free updates.",
+          "title": "Is there a documented process for detecting and remediating vulnerabilities?"
         },
         "q3": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 13(8) in conjunction with Annex I Part II point 1 CRA: a machine-readable SBOM with all components (including open-source libraries) must be created and kept up to date.",
+          "title": "Do you maintain a current software bill of materials (SBOM) for your products?"
         },
         "q4": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 13(8) CRA: security updates must be installable automatically or easily — for at least 5 years or the expected period of use, whichever is shorter.",
+          "title": "Can you provide security updates throughout the entire product lifecycle?"
         },
         "q5": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 31 + Annex VII CRA: complete technical documentation including risk assessment, applied standards and cybersecurity properties must exist before placing on the market.",
+          "title": "Is the technical documentation of your products prepared in a CRA-compliant manner?"
         },
         "q6": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 14 CRA: actively exploited vulnerabilities must be reported to ENISA/CSIRT within 24h, serious incidents within 72h.",
+          "title": "Do you have a process for reporting actively exploited vulnerabilities to ENISA?"
         },
         "q7": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 32 in conjunction with Art. 7 CRA: different assessment procedures apply depending on the product category (standard, class I, class II) — from self-assessment to EU type examination.",
+          "title": "Do you know the applicable conformity assessment procedure for your product category?"
         },
         "q8": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 13(8) CRA: the support period (at least 5 years) must be set before placing on the market and clearly documented for users.",
+          "title": "Have you defined and communicated the support period for your products?"
         }
       }
     },
     "recommendations": {
       "dok1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Draw up an EU declaration of conformity following the template in Annex V CRA (Art. 28) for each of your products with digital elements. It confirms compliance with all CRA requirements and is a prerequisite for the CE marking.",
+        "firstStep": "Download the template for EU declarations of conformity (BSI or EU Commission) and start filling it in for your main product.",
+        "title": "Draw up the EU declaration of conformity"
       },
       "dok2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create the technical documentation in accordance with Annex VII no. 2 CRA. It must contain the product description, security architecture, risk analysis and proof of conformity.",
+        "firstStep": "Create an outline for the technical documentation based on Annex VII CRA and start with the product description.",
+        "title": "Create the technical documentation"
       },
       "dok3": {
         "checklist": "Create technical documentation per Annex VII\nMaintain risk assessment documentation\nCreate user documentation on cybersecurity",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create understandable user information on cybersecurity and the secure operation of your products. Annex II CRA requires end users to be informed about security risks and protective measures.",
+        "firstStep": "Add a 'security notes' section to your product documentation with concrete recommendations for users.",
+        "title": "Create user information on cybersecurity"
       },
       "konf1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Determine the conformity assessment procedure applicable to your product (module A, B+C or H). Art. 32 CRA in conjunction with Annex VIII distinguishes between self-assessment and third-party assessment depending on criticality.",
+        "firstStep": "Check whether your product is listed in Annex III (important) or Annex IV (critical) of the CRA.",
+        "title": "Determine the conformity assessment procedure"
       },
       "konf2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Prepare the CE marking and EU declaration of conformity in accordance with Art. 30 CRA. Products with digital elements may only be placed on the EU market after a successful conformity assessment.",
+        "firstStep": "Download the CE logo in the correct size and prepare its placement on your product/packaging.",
+        "title": "Prepare CE marking and declaration of conformity"
       },
       "konf3": {
         "checklist": "Determine applicable conformity procedure\nIdentify and apply harmonised standards\nPrepare declaration of conformity and CE marking",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Prepare for the conformity assessment by a notified body if your product is classified as critical (Annex IV) or important class II (Annex III). Art. 32 CRA in conjunction with Annex VIII requires an independent assessment for critical products.",
+        "firstStep": "Research notified bodies for CRA conformity assessment (the list is published by the EU Commission).",
+        "title": "Prepare for third-party assessment"
       },
       "sbd1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Integrate security requirements from the design phase of your products with digital elements. Art. 13(1) CRA requires cybersecurity to be considered from the outset.",
+        "firstStep": "Create a threat model for your most important product with digital elements.",
+        "title": "Integrate security requirements into product design"
       },
       "sbd2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ship all products with secure default settings (secure by default). Art. 13(1) in conjunction with Annex I Part I CRA requires that no default passwords are used and only necessary services are enabled.",
+        "firstStep": "Check the default configuration of your main product for insecure defaults (default passwords, open ports, unnecessary services).",
+        "title": "Set up secure default configurations"
       },
       "sbd3": {
         "checklist": "Integrate security-by-design principles into development\nConduct threat modeling\nDefine secure default configurations",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Introduce a secure development process covering threat modelling, secure coding and security testing. Art. 13(1) in conjunction with Annex I Part I CRA requires the systematic integration of security into all development phases.",
+        "firstStep": "Define security gates in your development process (e.g. threat model review before design, code review before release).",
+        "title": "Establish a secure development lifecycle (SDL)"
       },
       "sbom1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create a software bill of materials (SBOM) in SPDX or CycloneDX format for your products. Art. 13(8) in conjunction with Annex I Part II point 1 CRA requires a complete, machine-readable listing of all software components.",
+        "firstStep": "Choose an SBOM tool (e.g. Syft, CycloneDX Generator) and generate a first SBOM for your main product.",
+        "title": "Create a machine-readable SBOM"
       },
       "sbom2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Integrate SBOM generation automatically into your build pipeline. Art. 13(8) in conjunction with Annex I Part II point 1 CRA requires the SBOM to be always current and shipped with every product version.",
+        "firstStep": "Add an SBOM generation step to your CI/CD pipeline (e.g. as a post-build step).",
+        "title": "Automate SBOM generation in the CI/CD pipeline"
       },
       "sbom3": {
         "checklist": "Establish toolchain for SBOM generation\nContinuously monitor dependencies\nStandardize SBOM format (SPDX/CycloneDX)",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Introduce lifecycle management for SBOMs and add Vulnerability Exploitability eXchange (VEX) statements. Art. 13(8) in conjunction with Annex I Part II point 1 CRA requires continuous maintenance and assessment of the SBOM components.",
+        "firstStep": "Define a process for regular SBOM updates and vulnerability assessment (at least with every release).",
+        "title": "Establish SBOM lifecycle management with VEX"
       },
       "sl1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Define a clear security support period for your products. Art. 13(8) CRA requires manufacturers to determine and communicate in advance how long security updates will be provided.",
+        "firstStep": "Create a support lifecycle policy defining the minimum support period for each product category.",
+        "title": "Define the product security support period"
       },
       "sl2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Set up a process to inform customers in good time about the end of security support. Art. 13(8) CRA requires users to be warned early when updates will no longer be provided.",
+        "firstStep": "Define a lead time for end-of-support announcements (e.g. 12 months in advance).",
+        "title": "Set up end-of-support communication"
       },
       "sl3": {
         "checklist": "Define security requirements for suppliers\nCheck third-party components for vulnerabilities\nConduct supply chain risk analysis",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create a comprehensive lifecycle security policy covering all phases from development to end-of-life. Art. 13(8) CRA requires a consistent security concept across the entire product lifecycle.",
+        "firstStep": "Document all lifecycle phases of your products (development, release, maintenance, end-of-life) with security requirements.",
+        "title": "Create a lifecycle security policy"
       },
       "swm1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a process for coordinated vulnerability disclosure. Art. 13(8) in conjunction with Annex I Part II point 5 CRA obliges manufacturers to provide security researchers with a secure reporting channel.",
+        "firstStep": "Set up a central email address for vulnerability reports (e.g. security@yourcompany.com).",
+        "title": "Set up coordinated vulnerability disclosure"
       },
       "swm2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create a security.txt file per RFC 9116 and publish a security contact point. Art. 13(8) in conjunction with Annex I Part II point 5 CRA requires a publicly documented contact point for vulnerability reports.",
+        "firstStep": "Create a /.well-known/security.txt on your website with contact details and a PGP key.",
+        "title": "Publish security.txt and a contact point"
       },
       "swm3": {
         "checklist": "Create SBOM (Software Bill of Materials)\nAutomate vulnerability scanning\nSet up coordinated disclosure process",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Continuously monitor known vulnerabilities in the components you use via CVE/NVD databases. Art. 13(8) in conjunction with Annex I Part II CRA requires manufacturers to stay actively informed about vulnerabilities in their products.",
+        "firstStep": "Set up an automated CVE feed for your software components (e.g. via the NIST NVD API).",
+        "title": "Build vulnerability monitoring with CVE/NVD"
       },
       "um1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a reliable mechanism for delivering security updates across the entire product lifecycle. Art. 13(8) CRA requires security updates to be available securely and promptly.",
+        "firstStep": "Check whether your product has an automatic or manual update mechanism and document it.",
+        "title": "Provide a security update mechanism"
       },
       "um2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Separate security updates from feature updates so that critical patches can be rolled out quickly. Art. 13(8) CRA requires security updates to be available independently of feature enhancements.",
+        "firstStep": "Define a versioning and release strategy with separate security patch versions (e.g. semantic versioning with a patch level for security).",
+        "title": "Separate security updates from feature updates"
       },
       "um3": {
         "checklist": "Implement update mechanism for security updates\nPlan and document 5-year support period\nSet up automatic update notifications",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Set a security support period of at least 5 years and communicate it. Art. 13(8) CRA requires an appropriate support duration for security updates from placement on the market.",
+        "firstStep": "Document the planned security support period for each of your products with digital elements.",
+        "title": "Define the support period (at least 5 years)"
       },
       "vm1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Set up a process for reporting actively exploited vulnerabilities to ENISA within 24 hours. Art. 14(1)-(2) CRA requires the immediate reporting of serious incidents.",
+        "firstStep": "Register in the ENISA reporting system and define internal escalation paths for vulnerability reports.",
+        "title": "Set up 24h vulnerability reporting to ENISA"
       },
       "vm2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create standardised templates and processes for internal vulnerability reports. Art. 14(2) CRA requires manufacturers to have clearly defined procedures for assessing and reporting incidents.",
+        "firstStep": "Create a vulnerability reporting template with fields for CVE ID, severity, affected products and planned measures.",
+        "title": "Establish internal reporting templates and processes"
       },
       "vm3": {
         "checklist": "Set up reporting process for actively exploited vulnerabilities (Art. 14 CRA)\nIntegrate ENISA reporting platform\nImplement 24h initial report and 72h detailed report",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a process for informing your end users about vulnerabilities in your products. Art. 14(3) CRA requires users to be informed promptly and understandably about security risks.",
+        "firstStep": "Set up a security newsletter or a security advisory section on your website.",
+        "title": "Inform end users about vulnerabilities"
       }
     }
   },
