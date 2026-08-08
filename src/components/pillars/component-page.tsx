@@ -139,6 +139,11 @@ export function ComponentPage({ component, pillar, children }: ComponentPageProp
             {t(component.benefitKey)}
           </p>
         </div>
+        {/* Die Prozentangaben sind Erfahrungswerte, keine Studienergebnisse —
+            das muss am Ort der Aussage stehen, nicht im Impressum. */}
+        <p className="mt-2 text-xs text-muted-foreground">
+          {t('pillars.sections.benefitDisclaimer')}
+        </p>
       </section>
 
       {/* Next Step */}

@@ -1720,7 +1720,7 @@
         "supply-chain": "→ Große Kunden vertrauen Ihnen, weil Sie Lieferkettensicherheit nachweisen können.",
         "acquisition-development": "→ Keine offenen Hintertüren durch veraltete Software oder fehlende Updates.",
         "effectiveness-assessment": "→ Sie können Ihrer Geschäftsleitung und Aufsicht jederzeit belegen, dass Sie handeln.",
-        "cyber-hygiene": "→ 90% weniger Angriffsfläche, weil Ihre Mitarbeiter Phishing erkennen.",
+        "cyber-hygiene": "→ Erfahrungsgemäß deutlich weniger Angriffsfläche, weil Ihre Mitarbeiter Phishing erkennen (Größenordnung 90%).",
         "cryptography": "→ Selbst bei einem Datenleck bleiben Ihre sensiblen Daten geschützt.",
         "access-control": "→ Kein Ex-Mitarbeiter hat noch Zugriff, kein Praktikant sieht die Gehaltsliste.",
         "authentication-communication": "→ Ein gestohlenes Passwort reicht nicht mehr aus, um in Ihr System einzudringen."
@@ -7633,7 +7633,7 @@
           "name": "IT-Sicherheitspolicy",
           "scenario": "Ein mittelständischer Maschinenbauer wird Opfer eines Ransomware-Angriffs. Bei der Analyse stellt sich heraus: Es gab keine dokumentierte IT-Sicherheitsrichtlinie. Mitarbeiter nutzten private USB-Sticks, Passwörter wurden geteilt, und niemand wusste, wer im Notfall verantwortlich ist. Der Schaden: 3 Wochen Produktionsausfall, 180.000 € direkte Kosten.\n\nOhne verbindliche IT-Sicherheitspolicy fehlt die Grundlage für alle weiteren Maßnahmen — und im Audit-Fall gibt es nichts vorzuweisen.",
           "solution": "1. Vorlage herunterladen und an Ihre Organisation anpassen (2-3 Seiten reichen)\n2. Kernpunkte definieren: Geltungsbereich, Verantwortlichkeiten, Passwort-Regeln, Umgang mit Datenträgern, Meldewege\n3. Geschäftsleitung unterschreiben lassen (rechtlich erforderlich nach NIS2)\n4. Allen Mitarbeitern bekannt machen (E-Mail + Intranet + Aushang)\n5. Jährliche Überprüfung und Aktualisierung einplanen",
-          "benefit": "Eine dokumentierte IT-Sicherheitspolicy ist die Basis für jedes Audit und jede Zertifizierung. Sie reduziert das Haftungsrisiko der Geschäftsleitung erheblich und schafft klare Verhältnisse für alle Mitarbeiter. Versicherungen gewähren bis zu 10% Rabatt auf Cyber-Policen.",
+          "benefit": "Eine dokumentierte IT-Sicherheitspolicy ist die Basis für jedes Audit und jede Zertifizierung. Sie reduziert das Haftungsrisiko der Geschäftsleitung erheblich und schafft klare Verhältnisse für alle Mitarbeiter. Versicherer honorieren sie erfahrungsgemäß mit einem Nachlass auf Cyber-Policen (Größenordnung 10%).",
           "nextStep": "Erstellen Sie Ihre IT-Sicherheitspolicy mit unserer 2-Seiten-Vorlage. Passen Sie die Vorlage an und lassen Sie sie von der Geschäftsleitung unterschreiben.",
           "legal": {
             "nis2": "Verpflichtung der Geschäftsleitung zur Billigung von Risikomanagementmaßnahmen",
@@ -7646,7 +7646,7 @@
           "name": "Schulungskonzept",
           "scenario": "Eine Buchhalterin öffnet eine perfekt gefälschte E-Mail vom vermeintlichen Geschäftsführer und überweist 45.000 € auf ein fremdes Konto (CEO-Fraud). Der Grund: Kein einziger Mitarbeiter wurde jemals in IT-Sicherheit geschult. Phishing-Mails, Social Engineering und sichere Passwörter waren nie Thema.\n\n92% aller Cyberangriffe beginnen mit dem Faktor Mensch. Ohne Schulung sind Ihre Mitarbeiter das schwächste Glied.",
           "solution": "1. Jährliche Basis-Schulung (2h) für alle Mitarbeiter einplanen\n2. Inhalte: Phishing erkennen, sichere Passwörter, Meldewege, Social Engineering\n3. Quartalsmäßige Phishing-Simulation (kostenlose Tools: GoPhish, KnowBe4 Free)\n4. Neue Mitarbeiter: IT-Sicherheits-Einweisung am ersten Tag\n5. Ergebnisse dokumentieren (Teilnahmelisten, Testergebnisse)",
-          "benefit": "Geschulte Mitarbeiter erkennen 70% mehr Phishing-Mails. Die Investition von 2 Stunden pro Jahr spart im Schnitt 50.000 € an verhinderten Vorfällen. Pflichtdokumentation für NIS2 und DSGVO-Audits.",
+          "benefit": "Geschulte Mitarbeiter erkennen erfahrungsgemäß deutlich mehr Phishing-Mails (Größenordnung 70% mehr). Zwei Schulungsstunden pro Jahr stehen Schäden gegenüber, die schnell fünfstellig werden (Größenordnung 50.000 €). Pflichtdokumentation für NIS2 und DSGVO-Audits.",
           "nextStep": "Planen Sie Ihre erste IT-Sicherheitsschulung. Nutzen Sie unsere Schulungsvorlage mit Agenda, Folien-Vorschlägen und Teilnahme-Dokumentation.",
           "legal": {
             "nis2": "Pflicht zu regelmäßigen Cybersicherheitsschulungen für alle Mitarbeiter",
@@ -7658,7 +7658,7 @@
           "name": "Risikomanagement-Prozess",
           "scenario": "Ein Logistikunternehmen investiert 200.000 € in eine Next-Gen-Firewall, während die größte Bedrohung ein ungepatchter Legacy-Server im Keller ist, auf dem die gesamte Auftragsabwicklung läuft. Ohne systematisches Risikomanagement werden Budgets falsch verteilt und die wirklichen Schwachstellen übersehen.\n\nRisikomanagement bedeutet: Wissen, wo die echten Gefahren liegen — und dort zuerst investieren.",
           "solution": "1. Asset-Inventar erstellen: Alle kritischen Systeme, Daten und Prozesse auflisten\n2. Bedrohungen identifizieren: Was kann schiefgehen? (Ransomware, Ausfall, Datenverlust)\n3. Risiken bewerten: Eintrittswahrscheinlichkeit × Schadenshöhe (einfache Matrix)\n4. Maßnahmen priorisieren: Höchste Risiken zuerst behandeln\n5. Monatlicher 30-Minuten-Workshop: Status-Review und neue Risiken aufnehmen",
-          "benefit": "Systematisches Risikomanagement spart durchschnittlich 40% des IT-Sicherheitsbudgets durch bessere Priorisierung. Es ist die Kernforderung von NIS2, DORA und BSI IT-Grundschutz — ohne Risikomanagement besteht kein Audit.",
+          "benefit": "Systematisches Risikomanagement spart durch bessere Priorisierung erfahrungsgemäß einen erheblichen Teil des IT-Sicherheitsbudgets (Größenordnung 40%). Es ist die Kernforderung von NIS2, DORA und BSI IT-Grundschutz — ohne Risikomanagement besteht kein Audit.",
           "nextStep": "Starten Sie mit unserem Risikobewertungs-Template (Excel). Erfassen Sie in 60 Minuten Ihre Top-10-Risiken und priorisieren Sie Ihre nächsten Maßnahmen.",
           "legal": {
             "nis2": "Konzept für Risikoanalyse und Sicherheit der Informationssysteme",
@@ -7678,7 +7678,7 @@
           "name": "Multi-Faktor-Authentifizierung (MFA)",
           "scenario": "Ein IT-Dienstleister verliert den Zugang zu 200 Kundenservern, weil ein Administrator-Passwort bei einem Datenleck auftaucht. Der Angreifer loggt sich nachts ein und verschlüsselt alle Systeme. Mit aktivierter MFA wäre das Passwort allein wertlos gewesen.\n\n81% aller Datenschutzverletzungen nutzen gestohlene oder schwache Passwörter. MFA stoppt 99,9% dieser Angriffe.",
           "solution": "1. Kritische Systeme identifizieren: E-Mail, VPN, Cloud-Dienste, Admin-Zugänge\n2. MFA-Methode wählen: Authenticator-App (empfohlen), Hardware-Token (hochsicher), SMS (Minimum)\n3. Rollout planen: Admins zuerst, dann Führungskräfte, dann alle Mitarbeiter\n4. Recovery-Prozess definieren: Was passiert bei verlorenem Token?\n5. Enforcement: MFA als Pflicht konfigurieren, nicht optional",
-          "benefit": "MFA reduziert Account-Kompromittierungen um 99,9%. Die Einrichtung dauert 15 Minuten pro Mitarbeiter und kostet mit Authenticator-Apps nichts. Pflicht für NIS2-regulierte Unternehmen.",
+          "benefit": "MFA verhindert nach einer Microsoft-Messstudie über 99% der Account-Übernahmen (99,22% in der Gesamtpopulation, 98,56% selbst bei bereits geleaktem Passwort). Die Einrichtung dauert etwa 15 Minuten pro Mitarbeiter und kostet mit Authenticator-Apps nichts. Pflicht für NIS2-regulierte Unternehmen.",
           "nextStep": "Aktivieren Sie MFA für Ihre Admin-Accounts noch heute. Starten Sie mit Microsoft Authenticator oder Google Authenticator — beide sind kostenlos.",
           "legal": {
             "nis2": "Multi-Faktor-Authentifizierung als Teil der Zugriffskontrolle",
@@ -7691,7 +7691,7 @@
           "name": "Rollenbasierte Zugriffskontrolle (RBAC)",
           "scenario": "Ein Werkstudent im Marketing hat versehentlich Zugriff auf alle Finanzdaten, weil bei der Einstellung einfach die Berechtigungen eines ausgeschiedenen Controllers kopiert wurden. Als sein Laptop gestohlen wird, sind sämtliche Gehaltsdaten kompromittiert.\n\nDas Prinzip 'jeder hat Zugriff auf alles' ist der häufigste Fehler bei KMU — und der teuerste bei einem Vorfall.",
           "solution": "1. Rollen definieren: Geschäftsleitung, Abteilungsleiter, Sachbearbeiter, IT-Admin, Extern\n2. Pro Rolle: Welche Systeme und Daten werden tatsächlich benötigt?\n3. Rollenmatrix erstellen (Excel-Template nutzen)\n4. Berechtigungen in allen Systemen anpassen (AD, Cloud, ERP)\n5. Quartalsweise Review: Stimmen die Berechtigungen noch?",
-          "benefit": "RBAC reduziert die Angriffsfläche bei Datenlecks um 60%. Im Vorfall sind nur die Daten der jeweiligen Rolle betroffen, nicht alles. Pflichtanforderung in allen IT-Sicherheitsstandards.",
+          "benefit": "RBAC verkleinert die Angriffsfläche bei Datenlecks erfahrungsgemäß deutlich (Größenordnung 60%). Im Vorfall sind nur die Daten der jeweiligen Rolle betroffen, nicht alles. Pflichtanforderung in allen IT-Sicherheitsstandards.",
           "nextStep": "Erstellen Sie Ihre Rollenmatrix mit unserem Excel-Template. Definieren Sie 5-7 Rollen und ordnen Sie Ihre Systeme zu.",
           "legal": {
             "nis2": "Konzepte für die Zugriffskontrolle und Anlagenmanagement",
@@ -7704,7 +7704,7 @@
           "name": "Passwort-Hygiene & -Policy",
           "scenario": "Ein Steuerberater nutzt 'Sommer2024!' für alle Mandantenportale. Als ein Portal gehackt wird, probiert der Angreifer das gleiche Passwort bei DATEV, Elster und der Kanzlei-Cloud — überall funktioniert es. Ergebnis: Steuerdaten von 300 Mandanten kompromittiert, Meldung an die Datenschutzaufsicht, existenzbedrohender Reputationsschaden.",
           "solution": "1. Passwort-Policy festlegen: Mindestens 14 Zeichen, keine Wörterbuchbegriffe\n2. Passwort-Manager einführen (Bitwarden Business, ab 3€/Nutzer/Monat)\n3. Automatische Prüfung gegen Leaked-Passwort-Datenbanken aktivieren\n4. Passwort-Rotation: Nur bei Verdacht auf Kompromittierung (nicht mehr zeitbasiert)\n5. Admin-Passwörter: 20+ Zeichen, separate Passwort-Tresore",
-          "benefit": "Ein Passwort-Manager eliminiert Passwort-Wiederverwendung zu 100%. Mitarbeiter müssen sich nur noch ein Master-Passwort merken. Reduziert Helpdesk-Anfragen für Passwort-Resets um 50%.",
+          "benefit": "Ein Passwort-Manager beendet die Wiederverwendung von Passwörtern vollständig. Mitarbeiter müssen sich nur noch ein Master-Passwort merken. Das senkt auch die Helpdesk-Anfragen für Passwort-Resets spürbar (Größenordnung 50%).",
           "nextStep": "Führen Sie einen Passwort-Manager ein und erstellen Sie eine Passwort-Policy. Unsere Vorlage enthält fertige Regeln für Ihr Unternehmen.",
           "legal": {
             "nis2": "Sicherheit bei Erwerb, Entwicklung und Wartung von Systemen inkl. Zugangsschutz",
@@ -7735,7 +7735,7 @@
           "name": "Verschlüsselung",
           "scenario": "Einem Außendienstmitarbeiter wird der Laptop aus dem Auto gestohlen. Darauf: Kundenlisten, Angebote, Verträge. Ohne Festplattenverschlüsselung kann der Dieb alle Daten einfach auslesen. Ergebnis: Meldepflicht nach DSGVO Art. 33, Benachrichtigung aller betroffenen Kunden, Bußgeld 15.000 €.\n\nMit BitLocker (Windows) oder FileVault (Mac) wäre der Laptop wertlos gewesen.",
           "solution": "1. Festplattenverschlüsselung auf allen Endgeräten aktivieren (BitLocker/FileVault)\n2. USB-Sticks und externe Medien verschlüsseln (BitLocker To Go)\n3. E-Mail-Verschlüsselung für sensible Kommunikation (S/MIME oder PGP)\n4. Datenbankverschlüsselung für personenbezogene Daten (TDE)\n5. Recovery-Schlüssel zentral und sicher verwahren",
-          "benefit": "Verschlüsselung macht Geräteverlust zu einem Ärgernis statt einer Katastrophe. Bei verschlüsselten Daten entfällt die DSGVO-Meldepflicht. Reduziert potenzielle Bußgelder um bis zu 90%.",
+          "benefit": "Verschlüsselung macht Geräteverlust zu einem Ärgernis statt einer Katastrophe. Bei verschlüsselten Daten kann die Meldepflicht nach Art. 34 Abs. 3 lit. a DSGVO entfallen — und damit ein großer Teil des Bußgeldrisikos.",
           "nextStep": "Aktivieren Sie BitLocker auf allen Windows-Geräten. In 15 Minuten ist Ihr erster Laptop geschützt.",
           "legal": {
             "nis2": "Einsatz von Kryptografie und Verschlüsselung als Sicherheitsmaßnahme",
@@ -7749,7 +7749,7 @@
           "name": "Datenklassifizierung",
           "scenario": "Ein Praktikant teilt eine interne Preisliste auf LinkedIn, weil sie nicht als vertraulich gekennzeichnet war. Ein Wettbewerber nutzt die Information, um gezielt Kunden abzuwerben. Ohne Datenklassifizierung wissen Mitarbeiter nicht, welche Informationen wie geschützt werden müssen.\n\nJedes Unternehmen hat Daten in verschiedenen Schutzstufen — aber nur wenige machen das transparent.",
           "solution": "1. Vier Schutzstufen definieren: Öffentlich, Intern, Vertraulich, Streng vertraulich\n2. Label-System einführen (Fußzeile in Dokumenten, E-Mail-Tags)\n3. Pro Stufe: Wer darf zugreifen? Wie wird gespeichert? Wie wird geteilt?\n4. Bestehende Daten klassifizieren (Abteilungsleiter einbinden)\n5. Neue Dokumente: Klassifizierung wird Pflichtfeld",
-          "benefit": "Datenklassifizierung verhindert versehentliche Datenlecks und ermöglicht gezielte Schutzmaßnahmen. Reduziert den Aufwand für Datenschutz um 30%, weil nicht alles mit höchster Stufe geschützt werden muss.",
+          "benefit": "Datenklassifizierung verhindert versehentliche Datenlecks und ermöglicht gezielte Schutzmaßnahmen. Sie senkt den Datenschutzaufwand erfahrungsgemäß spürbar (Größenordnung 30%), weil nicht alles mit höchster Stufe geschützt werden muss.",
           "nextStep": "Erstellen Sie Ihr Klassifizierungsschema mit unserem Template. Starten Sie mit den drei wichtigsten Abteilungen.",
           "legal": {
             "nis2": "Bestandsaufnahme und Schutz kritischer Informationswerte",
@@ -7768,7 +7768,7 @@
           "name": "Patch-Management",
           "scenario": "Dezember 2021: Die Log4Shell-Schwachstelle wird bekannt. Unternehmen mit funktionierendem Patch-Management hatten den Fix innerhalb von 72 Stunden eingespielt. Ein mittelständisches Handelsunternehmen ohne Prozess brauchte 4 Wochen — in dieser Zeit wurden ihre Systeme kompromittiert und Kundendaten gestohlen.\n\n60% aller erfolgreichen Angriffe nutzen bekannte Schwachstellen, für die bereits Patches existieren.",
           "solution": "1. Inventar aller Systeme und Software erstellen (automatisiert mit WSUS, Intune, oder Open Source)\n2. Kritische Patches: Innerhalb von 72h nach Veröffentlichung einspielen\n3. Reguläre Patches: Monatlicher Patch-Zyklus (z.B. erster Dienstag)\n4. Test-Umgebung: Patches vor Produktiv-Rollout kurz testen\n5. Legacy-Systeme: Isolieren wenn kein Patch möglich (Netzwerksegmentierung)",
-          "benefit": "Regelmäßiges Patching verhindert 60% aller Cyberangriffe. Automatisiertes Patch-Management spart 10h/Woche Administrationsaufwand. Pflichtanforderung für NIS2 und CRA.",
+          "benefit": "Regelmäßiges Patching verhindert erfahrungsgemäß einen Großteil der Angriffe, weil die meisten bekannte Schwachstellen ausnutzen (Größenordnung 60%). Automatisiertes Patch-Management spart spürbar Administrationsaufwand (Größenordnung 10 Stunden pro Woche). Pflichtanforderung für NIS2 und CRA.",
           "nextStep": "Erstellen Sie Ihr Software-Inventar und definieren Sie Ihren Patch-Zyklus. Starten Sie mit den kritischsten Systemen.",
           "legal": {
             "nis2": "Sicherheit bei Erwerb, Entwicklung und Wartung von Systemen einschließlich Schwachstellenmanagement",
@@ -7795,7 +7795,7 @@
           "name": "Schatten-IT-Management",
           "scenario": "Der Marketing-Chef installiert einen KI-Übersetzer aus dem Internet, um Produkttexte für den französischen Markt zu erstellen. Der Dienst speichert alle eingegebenen Texte auf Servern in den USA — darunter unveröffentlichte Produktnamen und Preise. Drei Monate später tauchen die Daten bei der Konkurrenz auf.\n\nGleichzeitig: Ein Teamleiter nutzt ein kostenloses Projektmanagement-Tool. Kundendaten werden hochgeladen — DSGVO-Verstoß. Die Aufsichtsbehörde verhängt ein Bußgeld von 20.000 €.\n\nSchatten-IT: Software, die ohne Wissen der IT eingesetzt wird. In jedem Unternehmen durchschnittlich 5× mehr Apps als offiziell bekannt.",
           "solution": "1. Ist-Aufnahme: Netzwerk-Scan + Mitarbeiterbefragung — welche Tools werden wirklich genutzt?\n2. Freigabeprozess einführen: Einfaches Formular (Name, Zweck, Datenanforderungen, Kosten)\n3. Geschäftsführer-Freigabe für neue Software-Installationen\n4. Sicherheitscheck: VirusTotal-Scan, Datenschutzprüfung, Lizenzcheck\n5. Quartalsweiser Review: Welche Schatten-IT ist dazugekommen?\n6. Whitelist pflegen: Erlaubte Tools für jeden Einsatzbereich kommunizieren",
-          "benefit": "Schatten-IT-Management reduziert unbekannte Risiken um 90%. Sie sparen Lizenzkosten durch Konsolidierung (oft 20-30% Einsparung). Nachweis für Audits: Kontrollierter Software-Einsatz. Cyber-Versicherungen gewähren bis zu 15% Rabatt.",
+          "benefit": "Schatten-IT-Management holt unbekannte Risiken ins Sichtfeld und reduziert sie erfahrungsgemäß erheblich (Größenordnung 90%). Sie sparen Lizenzkosten durch Konsolidierung (oft 20-30% Einsparung). Nachweis für Audits: Kontrollierter Software-Einsatz. Cyber-Versicherungen gewähren dafür erfahrungsgemäß einen Nachlass (Größenordnung 15%).",
           "nextStep": "Führen Sie eine Schatten-IT-Inventur durch. Nutzen Sie unser Antragsformular und unsere Review-Checkliste als Vorlage.",
           "legal": {
             "nis2": "Sicherheit der Lieferkette einschließlich Bewertung eingesetzter Software und Dienste",
@@ -7815,7 +7815,7 @@
           "name": "Next-Generation-Firewall",
           "scenario": "Ein Handwerksbetrieb nutzt eine 8 Jahre alte Fritzbox als einzige Firewall. Ein Angreifer nutzt eine bekannte Schwachstelle und gelangt ins Netzwerk. Von dort breitet er sich lateral aus — Fileserver, Buchhaltung, E-Mail-Server: alles kompromittiert.\n\nEine moderne NGFW erkennt nicht nur Ports, sondern Anwendungen und Bedrohungsmuster. Sie ist der Türsteher, der nicht nur den Ausweis prüft, sondern auch das Verhalten beobachtet.",
           "solution": "1. NGFW auswählen: OPNsense (kostenlos), Sophos XGS, FortiGate (KMU-Modelle ab 500€)\n2. Grundregeln: Deny-All als Default, nur explizit erlaubte Verbindungen\n3. IDS/IPS aktivieren: Einbruchserkennung und -verhinderung\n4. Geo-Blocking: Länder blockieren, mit denen kein Geschäftsverkehr besteht\n5. Regelmäßige Regel-Review: Vierteljährlich veraltete Regeln entfernen",
-          "benefit": "Eine NGFW blockiert 95% der automatisierten Angriffe. IDS/IPS erkennt Anomalien in Echtzeit. OPNsense als Open-Source-Lösung kostet nur die Hardware (~300€). Pflichtanforderung für NIS2-regulierte Unternehmen.",
+          "benefit": "Eine NGFW blockiert erfahrungsgemäß den überwiegenden Teil der automatisierten Angriffe (Größenordnung 95%). IDS/IPS erkennt Anomalien in Echtzeit. OPNsense als Open-Source-Lösung kostet nur die Hardware (~300€). Pflichtanforderung für NIS2-regulierte Unternehmen.",
           "nextStep": "Evaluieren Sie Ihre aktuelle Firewall-Lösung. Prüfen Sie, ob IDS/IPS aktiviert ist und ob die Regeln aktuell sind.",
           "legal": {
             "nis2": "Netzwerksicherheit und Schutz der Kommunikationsinfrastruktur",
@@ -7828,7 +7828,7 @@
           "name": "Netzwerksegmentierung",
           "scenario": "Ein Produktionsbetrieb hat IT und OT im selben Netzwerk. Ein Mitarbeiter öffnet eine infizierte E-Mail — der Trojaner verbreitet sich nicht nur auf Büro-PCs, sondern auch auf die Maschinensteuerung. Produktionsstillstand für 2 Wochen, Schaden: 500.000 €.\n\nNetzwerksegmentierung ist wie Brandschutztüren: Ein Feuer in der Küche muss nicht das ganze Gebäude zerstören.",
           "solution": "1. Netzwerkzonen definieren: Office, Server, Produktion/OT, Gäste-WLAN, IoT\n2. VLANs einrichten: Jede Zone ein eigenes VLAN\n3. Firewall-Regeln zwischen Zonen: Nur notwendige Kommunikation erlauben\n4. Management-Netz separieren: Admin-Zugriffe nur aus dedizierten Netzen\n5. Netzwerkplan dokumentieren und aktuell halten",
-          "benefit": "Segmentierung begrenzt die Ausbreitung von Angriffen auf eine Zone. Reduziert den Schaden bei Vorfällen um durchschnittlich 70%. Pflichtanforderung für KRITIS-Betreiber und NIS2.",
+          "benefit": "Segmentierung begrenzt die Ausbreitung von Angriffen auf eine Zone und senkt den Schaden bei Vorfällen erfahrungsgemäß deutlich (Größenordnung 70%). Pflichtanforderung für KRITIS-Betreiber und NIS2.",
           "nextStep": "Zeichnen Sie Ihren aktuellen Netzwerkplan und identifizieren Sie fehlende Segmentierungen. Starten Sie mit der Trennung von Gäste-WLAN und Produktionsnetz.",
           "legal": {
             "nis2": "Netzwerksegmentierung als Teil der Risikomaßnahmen",
@@ -7861,7 +7861,7 @@
           "name": "Shared Responsibility & Cloud-Audit",
           "scenario": "Ein Online-Shop migriert in die Cloud. Der Geschäftsführer geht davon aus: 'Amazon kümmert sich um die Sicherheit.' Sechs Monate später: Kundendaten geleakt, weil die S3-Buckets öffentlich zugänglich waren. AWS haftet nicht — die Verantwortung für Datenzugriff liegt beim Kunden.\n\n'Der Provider sichert die Hardware, Sie sichern Ihre Daten.' Diesen Satz verstehen 70% der KMU nicht — bis es zu spät ist.",
           "solution": "1. Shared-Responsibility-Modell verstehen (siehe interaktives Diagramm oben)\n2. Pro Cloud-Dienst dokumentieren: Was sichert der Provider, was wir?\n3. IAM-Rechte prüfen: Wer hat Zugriff auf Cloud-Ressourcen? Least Privilege!\n4. Logging aktivieren: CloudTrail (AWS), Activity Log (Azure), Cloud Audit (GCP)\n5. Vierteljährlicher Cloud-Audit: Offene Ports, öffentliche Ressourcen, ungenutzte Accounts",
-          "benefit": "Ein klares Verantwortungsmodell verhindert die häufigsten Cloud-Fehlkonfigurationen (Ursache für 80% der Cloud-Datenlecks). Der vierteljährliche Audit findet Schwachstellen, bevor Angreifer sie finden.",
+          "benefit": "Ein klares Verantwortungsmodell verhindert die häufigsten Cloud-Fehlkonfigurationen — sie gelten als Hauptursache von Cloud-Datenlecks (Größenordnung 80% der Fälle). Der vierteljährliche Audit findet Schwachstellen, bevor Angreifer sie finden.",
           "nextStep": "Nutzen Sie das interaktive Diagramm oben, um Ihr Verantwortungsmodell zu verstehen. Dann: Cloud-Audit-Checkliste abarbeiten.",
           "legal": {
             "nis2": "Sicherheit der Lieferkette und Bewertung von Drittanbietern",
@@ -7888,7 +7888,7 @@
           "name": "API-Sicherheit",
           "scenario": "Ein Fintech-Startup bietet eine Bezahl-API an. Ein Sicherheitsforscher entdeckt: Durch Manipulation der API-Parameter lassen sich Kontostände anderer Nutzer abfragen. Die API hatte keine Rate-Limitierung, kein Input-Validation und keine Authentifizierung für sensible Endpunkte.\n\nAPIs sind die Hintertür moderner Anwendungen — und oft weit offen.",
           "solution": "1. Authentifizierung: OAuth 2.0 für alle API-Endpunkte\n2. Rate-Limiting: Max. Anfragen pro Minute pro Client begrenzen\n3. Input-Validation: Alle Parameter validieren (Typ, Länge, Format)\n4. OWASP API Security Top 10 als Checkliste nutzen\n5. API-Gateway einsetzen: Zentrales Monitoring und Zugriffskontrolle",
-          "benefit": "Sichere APIs verhindern Datenlecks und Missbrauch. Rate-Limiting stoppt automatisierte Angriffe. OWASP-konforme APIs bestehen Penetrationstests und reduzieren die Angriffsfläche um 80%.",
+          "benefit": "Sichere APIs verhindern Datenlecks und Missbrauch. Rate-Limiting stoppt automatisierte Angriffe. OWASP-konforme APIs bestehen Penetrationstests und verkleinern die Angriffsfläche erfahrungsgemäß erheblich (Größenordnung 80%).",
           "nextStep": "Prüfen Sie Ihre APIs gegen die OWASP API Security Top 10. Implementieren Sie OAuth 2.0 und Rate-Limiting als erste Schritte.",
           "legal": {
             "nis2": "Sicherheit bei Entwicklung und Wartung von Informationssystemen",
@@ -7921,7 +7921,7 @@
           "name": "Endpoint Detection & Response (EDR)",
           "scenario": "Ein klassischer Virenscanner meldet: 'Keine Bedrohung gefunden.' Gleichzeitig verschlüsselt eine dateilose Ransomware im Hintergrund den Server — der Scanner erkennt sie nicht, weil kein klassischer Virus im Spiel ist.\n\nEDR geht über traditionelle Antivirus hinaus: Es erkennt verdächtiges Verhalten statt nur bekannte Signaturen. Wie eine Überwachungskamera, die nicht nur nach bekannten Gesichtern sucht, sondern verdächtiges Verhalten meldet.",
           "solution": "1. EDR-Lösung evaluieren: CrowdStrike, SentinelOne, oder Microsoft Defender for Endpoint\n2. Auf allen Endgeräten und Servern ausrollen\n3. Alerting konfigurieren: Wer wird benachrichtigt? Eskalationspfad definieren\n4. Response-Playbooks: Was tun bei verschiedenen Alert-Typen?\n5. Regelmäßige Tuning: False Positives reduzieren, neue Bedrohungsmuster aufnehmen",
-          "benefit": "EDR erkennt 99% der modernen Bedrohungen, die klassische Scanner übersehen. Automatische Isolation kompromittierter Endgeräte in Sekunden. Microsoft Defender for Endpoint ist in M365 E5 enthalten.",
+          "benefit": "EDR erkennt erfahrungsgemäß den weit überwiegenden Teil moderner Bedrohungen, die klassische Scanner übersehen (Größenordnung 99%). Automatische Isolation kompromittierter Endgeräte in Sekunden. Microsoft Defender for Endpoint ist in M365 E5 enthalten.",
           "nextStep": "Evaluieren Sie Microsoft Defender for Endpoint oder CrowdStrike Falcon Go. Starten Sie mit einem Pilotrollout auf 10 Geräten.",
           "legal": {
             "nis2": "Systeme zur Angriffserkennung und -abwehr auf Endgeräten",
@@ -7953,7 +7953,7 @@
           "name": "Incident Response Plan & Melde-Timer",
           "scenario": "Freitagabend, 22:00 Uhr: Der Admin entdeckt verschlüsselte Dateien auf dem Server. Ransomware. Was jetzt?\n\nOhne Plan: Panik, hektische Anrufe, falsche Entscheidungen. Server werden abgeschaltet statt isoliert, Beweise werden zerstört, die Meldung an die Behörde kommt zu spät. Bußgeld: 100.000 €.\n\nMit Plan: Ruhiges Abarbeiten der Checkliste. Systeme isolieren, Forensik sichern, Behörde innerhalb von 24h informieren. Wiederherstellung aus Backup am Montag.\n\nDer Unterschied: Ein getesteter Plan.",
           "solution": "1. Incident Response Team definieren: Wer wird angerufen? (IT-Leiter, GF, Datenschutz, ggf. extern)\n2. Kommunikationsplan: Telefonnummern (nicht nur E-Mail!), Eskalationswege\n3. Erste-Hilfe-Maßnahmen: Isolieren (nicht abschalten!), Screenshots, Logs sichern\n4. Meldefristen kennen und einhalten (siehe Melde-Timer oben)\n5. Vorlagen vorbereiten: Erstmeldung, Detailmeldung, Abschlussbericht\n6. Jährliche Übung: Planspiel mit simuliertem Vorfall (Tabletop Exercise)",
-          "benefit": "Ein getesteter IRP reduziert die Schadenshöhe um durchschnittlich 60% und die Wiederherstellungszeit um 70%. Meldefristen werden eingehalten — keine Bußgelder. Versicherungen verlangen einen IRP als Mindeststandard.",
+          "benefit": "Ein getesteter IRP senkt Schadenshöhe und Wiederherstellungszeit erfahrungsgemäß deutlich (Größenordnung 60% bzw. 70%). Meldefristen werden eingehalten — keine Bußgelder. Versicherungen verlangen einen IRP als Mindeststandard.",
           "nextStep": "Erstellen Sie Ihren Incident Response Plan mit unserer Vorlage. Definieren Sie Ihr Team und testen Sie den Plan mit einem Planspiel.",
           "legal": {
             "nis2": "Bewältigung von Sicherheitsvorfällen mit Erstmeldung binnen 24h",
@@ -7967,7 +7967,7 @@
           "name": "Business Continuity Plan (BCP)",
           "scenario": "Ein Hochwasser flutet das Rechenzentrum eines Logistikunternehmens. Alle Server unter Wasser. Ohne BCP: 3 Wochen Totalausfall, Kunden wechseln zur Konkurrenz, 2 Millionen € Umsatzverlust.\n\nMit BCP: Cloud-Failover springt an, Mitarbeiter arbeiten von zu Hause, Kundenkommunikation läuft über vorbereitete Kanäle. Produktivität nach 4 Stunden bei 80%.\n\nDer BCP ist Ihre Antwort auf: 'Was, wenn alles ausfällt?'",
           "solution": "1. Kritische Geschäftsprozesse identifizieren: Was muss in 4h/24h/72h wieder laufen?\n2. RTO festlegen: Recovery Time Objective pro System (maximale Ausfallzeit)\n3. RPO festlegen: Recovery Point Objective (maximaler Datenverlust in Stunden)\n4. Wiederherstellungspläne pro kritischem System dokumentieren\n5. Alternative Arbeitsplätze und Kommunikationswege vorbereiten\n6. Halbjährlicher BCP-Test: Stimmen RTO/RPO mit der Realität überein?",
-          "benefit": "Ein BCP reduziert Ausfallzeiten um 60-80%. Unternehmen mit BCP überleben Krisenereignisse zu 90%, ohne nur zu 50%. Pflichtanforderung für NIS2, KRITIS und DORA.",
+          "benefit": "Ein BCP verkürzt Ausfallzeiten erfahrungsgemäß erheblich (Größenordnung 60-80%) und macht die Reihenfolge des Wiederanlaufs im Ernstfall planbar statt improvisiert. Pflichtanforderung für NIS2, KRITIS und DORA.",
           "nextStep": "Identifizieren Sie Ihre 5 kritischsten Geschäftsprozesse und definieren Sie RTO/RPO für jeden. Nutzen Sie unsere BCP-Vorlage.",
           "legal": {
             "nis2": "Aufrechterhaltung des Betriebs und Krisenmanagement",
@@ -8004,7 +8004,8 @@
       "solution": "Lösung & Umsetzung",
       "benefit": "Ihr Mehrwert",
       "nextStep": "Nächster Schritt",
-      "relatedComponents": "Verwandte Maßnahmen"
+      "relatedComponents": "Verwandte Maßnahmen",
+      "benefitDisclaimer": "Die Prozent- und Kostenangaben in diesem Abschnitt sind Erfahrungswerte zur Einordnung der Größenordnung — keine belegten Studienergebnisse."
     },
     "timer": {
       "title": "Melde-Timer — Vorfall-Countdown",
