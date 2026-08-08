@@ -2804,7 +2804,7 @@
     "legalBasis": "Rechtsgrundlage: §§31, 39 BSIG",
     "categories": {
       "audit": {
-        "description": "Regelmäßige Nachweispflicht der IT-Sicherheit gegenüber dem BSI nach §30 BSIG",
+        "description": "Regelmäßige Nachweispflicht der IT-Sicherheit gegenüber dem BSI nach §39 BSIG",
         "name": "Audit & Nachweis",
         "shortName": "Audit",
         "empoweringIntro": "Nachweisfähigkeit ist Pflicht: Als Betreiber einer kritischen Anlage müssen Sie alle drei Jahre die Umsetzung Ihrer IT-Sicherheitsmaßnahmen gegenüber dem BSI nachweisen (§39 Abs. 1 BSIG). Eine strukturierte Audit-Vorbereitung spart Zeit, Kosten und vermeidet Beanstandungen."
@@ -3244,7 +3244,7 @@
         "title": "Kontinuierliches Compliance-Monitoring aufbauen",
         "description": "Nutzen Sie technische Tools zur kontinuierlichen Überwachung der IT-Sicherheitskonformität (z.B. SIEM, Vulnerability Scanner, Configuration Management) gemäß §39 Abs. 1 BSI-Gesetz. Dies erleichtert Audits und reduziert Risiken.",
         "firstStep": "Implementieren Sie ein Security Information and Event Management (SIEM) System zur zentralen Protokollierung und Anomalieerkennung.",
-        "checklist": "Prüfplan gemäß §30 BSIG erstellen\nInterne und externe Audits planen\nNachweisdokumentation vorbereiten"
+        "checklist": "Prüfplan gemäß §39 BSIG erstellen\nInterne und externe Audits planen\nNachweisdokumentation vorbereiten"
       },
       "bcm1": {
         "title": "Business Impact Analyse für kritische Dienstleistungen durchführen",
@@ -3274,7 +3274,7 @@
       },
       "bsi3": {
         "title": "Kommunikationsplan mit BSI entwickeln",
-        "description": "Erstellen Sie einen strukturierten Kommunikationsplan für den Informationsaustausch mit dem BSI nach §33 BSI-Gesetz. Dies umfasst Meldepflichten bei Störungen, Teilnahme an Lagebildern und Empfang von Warnmeldungen.",
+        "description": "Erstellen Sie einen strukturierten Kommunikationsplan für den Informationsaustausch mit dem BSI nach §33 BSI-Gesetz (Registrierung) und §32 BSI-Gesetz (Meldepflichten). Dies umfasst Meldepflichten bei Störungen, Teilnahme an Lagebildern und Empfang von Warnmeldungen.",
         "firstStep": "Abonnieren Sie die BSI-Warnmeldungen und CERT-Bund-Advisories und definieren Sie interne Eskalationswege für BSI-Informationen.",
         "checklist": "Kontaktstelle zum BSI benennen (§33 BSIG)\nKommunikationswege zum BSI dokumentieren\nMeldepflichten und Fristen definieren"
       },

@@ -2804,7 +2804,7 @@
     "legalBasis": "Legal basis: §§31, 39 BSIG",
     "categories": {
       "audit": {
-        "description": "Regular obligation to demonstrate IT security to BSI per §30 BSIG",
+        "description": "Regular obligation to demonstrate IT security to the BSI per Section 39 BSIG",
         "name": "Audit & Evidence",
         "shortName": "Audit",
         "empoweringIntro": "Providing evidence is mandatory: as the operator of a critical installation you must demonstrate the implementation of your IT security measures to the BSI every three years (Section 39(1) BSIG). Structured audit preparation saves time and money and avoids findings."
@@ -3241,7 +3241,7 @@
         "title": "Implement measure"
       },
       "au3": {
-        "checklist": "Create audit plan per §30 BSIG\nPlan internal and external audits\nPrepare evidence documentation",
+        "checklist": "Create audit plan per §39 BSIG\nPlan internal and external audits\nPrepare evidence documentation",
         "description": "Implement the required measures according to regulatory requirements.",
         "firstStep": "Conduct an assessment of the current state.",
         "title": "Implement measure"

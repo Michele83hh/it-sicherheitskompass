@@ -5,6 +5,8 @@ import { SITE_URL, LOCALES, localizedPath, NOINDEX_ROUTES } from '@/lib/seo';
 import { getRegulationIds, getRegulation } from '@/lib/regulations/registry';
 import '@/lib/regulations/init';
 import { PILLAR_IDS } from '@/lib/pillars/types';
+import { getAllPillars } from '@/lib/pillars/registry';
+import '@/lib/pillars/init';
 import { BRANCHE_SLUGS } from '@/lib/branchen';
 
 /**
@@ -32,6 +34,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...wissenSlugs().map((s) => `/wissen/${s}`),
     ...PILLAR_IDS.map((p) => `/wissen/${p}`),
     ...BRANCHE_SLUGS.map((b) => `/wissen/branchen/${b}`),
+    // Die Massnahmen-Detailseiten je Saeule — 24 Stueck, zuvor nicht enthalten.
+    ...getAllPillars().flatMap((p) => p.components.map((c) => `/wissen/${p.id}/${c.id}`)),
   ];
 
   for (const id of getRegulationIds()) {
