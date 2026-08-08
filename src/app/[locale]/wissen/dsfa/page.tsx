@@ -13,7 +13,7 @@ export default function DsfaPage() {
   return (
     <div>
       <section className="bg-gradient-to-b from-slate-900 to-slate-800">
-        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem]">
+        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem] lg:min-h-[19rem]">
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
             <FileSearch className="size-7 text-white" />
           </div>

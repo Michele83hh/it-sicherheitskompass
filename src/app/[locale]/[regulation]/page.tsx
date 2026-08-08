@@ -108,7 +108,7 @@ function RegulationLanding({ regulation }: { regulation: string }) {
     <div className="bg-white">
       {/* Hero — same dark gradient as home screen */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800">
-        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem]">
+        <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem] lg:min-h-[19rem]">
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             {isNis2 ? t('hero.title') : tReg(`regLanding.${regulation}.title`)}
           </h1>
