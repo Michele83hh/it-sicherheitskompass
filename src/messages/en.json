@@ -1986,757 +1986,757 @@
     },
     "questions": {
       "avQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Processors are external service providers that process personal data on your behalf — e.g. your cloud provider, payroll office, hosting provider, email marketing service or external IT support. Before engaging such a provider, you must check: can they handle data protection? Do they have security measures? Are there certifications? This review should be documented.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No vetting of processors before engagement; service providers are used without any data protection assessment",
+          "level1": "Rough reliability assessment during selection, but no systematic review of data protection guarantees",
+          "level2": "Key processors reviewed based on security concepts or certifications, but not across the board",
+          "level3": "Documented suitability review of all processors before engagement based on defined criteria; regular re-assessment; results are archived"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you only engage processors that provide sufficient guarantees of appropriate technical and organisational measures?",
         "tooltip": "Art. 28(1) GDPR requires the controller to work only with processors providing sufficient guarantees that appropriate technical and organisational measures are implemented so that processing complies with the GDPR and protects the rights of data subjects."
       },
       "avQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "You need a written data processing agreement (DPA) with every processor. It governs: what may the provider do with the data? Which security measures must they take? What happens in the event of a data breach? What happens to the data when the contract ends? Many cloud providers offer ready-made DPAs — review them carefully. Without a DPA you are acting unlawfully.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No data processing agreements in place; service providers process data without a contractual basis",
+          "level1": "Individual DPAs in place (e.g. with the cloud provider), but not across the board and partly outdated",
+          "level2": "DPAs concluded with most processors; all mandatory content under Art. 28(3) GDPR is included",
+          "level3": "Complete DPAs with all processors; standardised contract process; regular review for currency and completeness; central management of all DPAs"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you concluded a contract or other legal instrument pursuant to Art. 28(3) GDPR with all processors?",
         "tooltip": "Art. 28(3) GDPR requires that processing by a processor be governed by a contract or other legal instrument binding the processor to the controller. This contract must at minimum specify: subject matter and duration of processing, nature and purpose, type of data, categories of data subjects, and the obligations and rights of the controller."
       },
       "avQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Your processor may not simply pass the data on to further service providers without asking you. Example: your cloud hosting provider uses another company's data centre — that is a sub-processor. You must either approve each one individually or grant a general authorisation with a right to object to changes. Check your providers' sub-processor lists.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No overview of sub-processors; no authorisation procedures established",
+          "level1": "Awareness that sub-processors require authorisation; lists partly available but not systematically reviewed",
+          "level2": "Sub-processor lists of the key processors available; general authorisation granted with a duty to inform about changes",
+          "level3": "Complete overview of all sub-processors; change notifications actively monitored; documented authorisation procedure with assessment criteria"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have an overview of all sub-processors used by your processors and of their authorisation procedures?",
         "tooltip": "Art. 28(2) GDPR requires that the processor not engage another processor (sub-processor) without prior written authorisation from the controller. Under a general written authorisation, the processor must inform the controller of any changes and give the controller the opportunity to object."
       },
       "avQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If your processor engages sub-processors, they must comply with the same data protection obligations as your direct provider. This must be ensured contractually — a 'pass-through' of the data protection obligations along the entire chain. Check: does the DPA with your provider contain a clause that sub-processors assume the same obligations? Who is liable in case of violations?",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No contractual arrangement for passing data protection obligations on to sub-processors",
+          "level1": "The DPA allows sub-processors to be engaged, but passing on the obligations is not specifically ensured",
+          "level2": "DPA contains a clause on passing on data protection obligations; spot checks on whether subcontracts actually exist",
+          "level3": "Contractual obligation to pass on all data protection obligations to sub-processors; regular review of implementation; documented liability arrangements across the entire processing chain"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you ensure that processors contractually pass on the same data protection obligations when engaging sub-processors?",
         "tooltip": "Art. 28(4) GDPR requires the processor to impose on the sub-processor, by way of a contract, the same data protection obligations as set out in the contract between controller and processor. Where the sub-processor fails to fulfil its obligations, the initial processor remains fully liable to the controller for the performance of the sub-processor’s obligations."
       },
       "avQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Employees and service providers may process personal data only as instructed by you as the controller — not for their own purposes or at their own discretion. In practice this means: all employees with data access must be bound to confidentiality (confidentiality declaration). Processors may use the data only within the scope of the DPA. Check whether all employees have signed a confidentiality declaration.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No confidentiality or instruction-boundness obligations; employees and service providers act without clear rules",
+          "level1": "Verbal confidentiality reminders at hiring, but no written obligation; instruction-boundness not regulated",
+          "level2": "Written confidentiality obligation for employees in place; instruction-boundness regulated in the DPA but not reviewed regularly",
+          "level3": "Written confidentiality obligation for all employees with data access; instruction-boundness contractually anchored with all processors; regular training and reviews"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you ensure that persons with access to personal data process it only on instructions from the controller?",
         "tooltip": "Art. 29 GDPR stipulates that the processor and any person acting under the authority of the controller or processor who has access to personal data may process that data only on instructions from the controller — unless required to do so by Union or Member State law. This also covers your own employees, who must be bound to confidentiality."
       },
       "brQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Everyone has the right to know whether and which data you have stored about them. If a customer or employee makes such a request, you must respond within one month — free of charge and completely. You must state: which data, where it came from, to whom it was passed on, how long it is stored. Without a fixed process you will miss the deadline and risk complaints to the supervisory authority.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No process for access requests; requests are handled ad hoc or not at all",
+          "level1": "Requests are handled, but without a fixed procedure and without deadline monitoring",
+          "level2": "Basic process in place with assigned responsibility, but deadlines are not always met; no templates",
+          "level3": "Documented process with acknowledgement of receipt, deadline monitoring, response templates and quality control; the one-month deadline is reliably met"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you established a process to answer data subject access requests within the statutory one-month deadline?",
         "tooltip": "Art. 15 GDPR gives every data subject the right of access to the personal data concerning them. Art. 12(3) GDPR sets a deadline of one month for responding. Section 34 BDSG contains exemptions from the duty to provide access, e.g. where data is stored solely due to statutory retention requirements."
       },
       "brQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If someone demands that you rectify or erase their data, you must do so in ALL systems — not only in the CRM, but also in Excel lists, email archives, backup systems and with service providers to whom you passed the data on. This requires knowing where personal data is stored. Exceptions apply, e.g. for statutory retention obligations.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No capability to rectify or erase data across systems",
+          "level1": "Rectification and erasure possible, but only in individual systems; no overview of all storage locations",
+          "level2": "Overview of the main storage locations available; rectification and erasure implemented there, but backups and subsystems are not systematically covered",
+          "level3": "Complete overview of all storage locations; documented process for cross-system rectification and erasure including backups and notification of recipients"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Can you reliably implement rectification and erasure requests from data subjects across all relevant systems?",
         "tooltip": "Art. 16 GDPR grants the right to rectification of inaccurate data. Art. 17 GDPR establishes the right to erasure (‘right to be forgotten’). Implementation must cover all systems in which the data is stored, including backups and recipients (Art. 17(2) GDPR). Section 35 BDSG contains exemptions from the erasure obligation."
       },
       "brQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The right to data portability means: if a customer switches to a competitor, they can demand that you hand over their data in a common format (e.g. CSV, JSON, XML) so they can import it with the new provider. This covers e.g. order history, profile details or usage data. You must be technically able to export this data.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No data export in a machine-readable format possible",
+          "level1": "Manual export of individual records possible, but laborious and not standardised",
+          "level2": "Export in a common format (e.g. CSV) possible for the main records, but not for all relevant data",
+          "level3": "Automated export of all relevant personal data in structured, machine-readable formats; process is documented and tested"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Can you provide data subjects with their data in a structured, machine-readable format (right to data portability)?",
         "tooltip": "Art. 20 GDPR grants data subjects the right to receive their data in a structured, commonly used and machine-readable format and to transmit it to another controller. This applies only to data based on consent or contract performance and processed by automated means. Section 36 BDSG restricts the right for public bodies."
       },
       "brQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Anyone can object to the processing of their data. The rules are particularly strict for direct marketing: if someone objects, you must remove them from all marketing lists immediately — no ifs and buts, no assessment. For other objections (e.g. against profiling for credit checks), you must weigh whether your grounds override the interests of the data subject. You need a clear process for who handles the objection and how.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No process for objections; direct marketing continues despite objection",
+          "level1": "Objections are taken into account, but only informally and without a fixed process; gaps in technical implementation",
+          "level2": "Basic process in place; objections to direct marketing are implemented, but the documented balancing of interests is missing for other objections",
+          "level3": "Documented process for all types of objection; immediate implementation for direct marketing; documented balancing of interests for other objections; technical suppression lists implemented"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have a process for handling objections to data processing, in particular objections to direct marketing?",
         "tooltip": "Art. 21 GDPR grants data subjects a right to object to processing based on Art. 6(1)(e) or (f) GDPR. Upon objection to direct marketing (Art. 21(2) GDPR), the data must be removed from marketing use immediately without further assessment. For other objections, a balancing of interests is required."
       },
       "brQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Automated individual decisions include e.g. the automatic rejection of a loan application by an algorithm, automated scoring of job applications or automated cancellation of subscriptions. If software makes such decisions without human involvement and they significantly affect a person, that person must be able to challenge them and has the right to human review.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No check whether automated individual decisions are made; no awareness of Art. 22 GDPR",
+          "level1": "Awareness exists; individual automated decisions are identified, but no safeguards implemented",
+          "level2": "Automated decision processes are identified; human review is possible in principle but not systematically ensured",
+          "level3": "Complete overview of all automated decisions; human review is an integral part of the process; data subjects are informed and can contest decisions"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you implemented procedures ensuring that automated individual decisions meet the requirements of Art. 22 GDPR?",
         "tooltip": "Art. 22 GDPR gives data subjects the right not to be subject to a decision based solely on automated processing which produces legal effects concerning them or similarly significantly affects them. Exceptions apply for contract performance, legal authorisation or explicit consent. Section 37 BDSG contains supplementary national rules and provides safeguards."
       },
       "dsbQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "In Germany, almost every company with 20 or more employees working with personal data (e.g. writing emails, maintaining customer data, keeping personnel files) must designate a data protection officer. The obligation can also apply with fewer employees, e.g. if you must carry out a data protection impact assessment. The DPO can be internal or external.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No assessment of the designation obligation carried out; no DPO designated",
+          "level1": "Assessment carried out informally but not documented; outcome unclear",
+          "level2": "Designation obligation assessed and documented; DPO designated, but the designation has not been notified to the supervisory authority or contact details are not published",
+          "level3": "Documented assessment of the designation obligation; DPO designated and notified to the supervisory authority (Art. 37(7) GDPR); contact details published and known to all employees"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you assessed whether your company must designate a data protection officer (DPO) and implemented this where required?",
         "tooltip": "Art. 37(1) GDPR requires designation of a DPO for: (a) public authorities, (b) large-scale regular monitoring, (c) large-scale processing of special categories of data. Section 38(1) BDSG extends this considerably: in Germany, a DPO must be designated where as a rule at least 20 persons are permanently engaged in automated processing of personal data. Irrespective of headcount, the duty applies to processing subject to a DPIA or commercial processing for the purpose of transfer or market research."
       },
       "dsbQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The DPO must not exist only on paper. They must be involved BEFORE new systems are introduced, contracts with service providers are concluded or new business areas involving data processing are launched — not only afterwards. They also need sufficient time and resources for the role. Check: is your DPO invited to project meetings? Do they have access to relevant information?",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "DPO is not involved or only pro forma; no resources allocated for data protection",
+          "level1": "DPO is informed occasionally, but not systematically involved at an early stage; resources are scarce",
+          "level2": "DPO is involved in larger projects; basic resources exist, but involvement is not standardised",
+          "level3": "A standardised process ensures the DPO is involved early in all data protection matters; sufficient resources and regular exchange with management"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is your data protection officer involved properly and in a timely manner in all data protection matters?",
         "tooltip": "Art. 38(1) GDPR obliges the controller to ensure the DPO is involved, properly and in a timely manner, in all issues relating to the protection of personal data. Art. 38(2) GDPR requires that the DPO receive the resources necessary to carry out their tasks. Section 38(2) BDSG specifies protection where more than 20 persons are permanently engaged in processing."
       },
       "dsbQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Your DPO has clearly defined tasks: they advise you and your employees on data protection, monitor compliance with the rules, train employees, support data protection impact assessments and act as the contact for the supervisory authority. Check: does your DPO run regular training sessions? Do they produce reports? Do they review your data protection documentation?",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "DPO tasks are not performed; the DPO is only formally designated",
+          "level1": "DPO advises on request, but performs no proactive monitoring, training or audits",
+          "level2": "DPO performs basic tasks (advice, occasional training), but systematic monitoring and reporting are missing",
+          "level3": "DPO actively performs all tasks under Art. 39 GDPR: regular training, documented audits, annual activity report, proactive advice on new processing operations"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does your data protection officer fulfil the tasks defined in Art. 39 GDPR (advising, monitoring, cooperating with the supervisory authority)?",
         "tooltip": "Art. 39(1) GDPR defines the DPO’s minimum tasks: (a) informing and advising the controller and employees, (b) monitoring compliance with the GDPR and the BDSG including awareness-raising and training, (c) advising on the DPIA and monitoring its performance, (d) cooperating with the supervisory authority, (e) acting as contact point for the supervisory authority."
       },
       "dsbQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Two obligations are often overlooked: first, you must notify your DPO to the competent data protection authority — usually online via its website. Second, the DPO's contact details must be publicly accessible, typically in your privacy policy on the website. Both are mandatory, not optional. A missing notification can itself constitute a violation.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "DPO is neither notified to the supervisory authority nor are contact details published",
+          "level1": "Contact details are published on the website, but the notification to the supervisory authority is missing, or vice versa",
+          "level2": "Both notification and publication have been carried out, but contact details are not up to date or hard to find",
+          "level3": "DPO is notified to the supervisory authority; contact details are current in the privacy policy and known internally to all employees; promptly updated when the DPO changes"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you notified your data protection officer to the supervisory authority pursuant to Art. 37(7) GDPR and published their contact details?",
         "tooltip": "Art. 37(7) GDPR requires the controller to publish the DPO’s contact details and communicate them to the supervisory authority. Section 38(1) sentence 6 BDSG specifies the notification duty. Publication typically takes place on the website (privacy policy) and in the legal notice. Notification to the authority is made online via the portal of the competent state authority."
       },
       "dsbQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Your DPO must be able to work independently. They may not receive instructions on how to perform their data protection tasks, and they may not be penalised for their work (e.g. worse appraisals, dismissal). They also may not hold a position that leads to conflicts of interest — e.g. the IT manager cannot simultaneously be the DPO, because they would have to supervise their own work.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Independence not ensured; the DPO holds a position with an obvious conflict of interest (e.g. IT manager, management board)",
+          "level1": "DPO holds no obviously conflicting position, but there is no documented assessment of potential conflicts of interest",
+          "level2": "Conflicts of interest assessed and ruled out; DPO reports to management, but dismissal protection is not formalised",
+          "level3": "Documented conflict-of-interest assessment; DPO reports directly to the highest management level; dismissal protection and non-penalisation contractually anchored"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Is the independence of your data protection officer ensured pursuant to Art. 38(3) GDPR (no conflict of interest, no penalisation)?",
         "tooltip": "Art. 38(3) GDPR protects the DPO: they may not be dismissed or penalised for performing their tasks. They report directly to the highest management level. No conflicts of interest may exist (Art. 38(6) GDPR). Typical conflicts: the DPO simultaneously acting as IT manager, managing director, HR manager or marketing manager. Section 38(2) BDSG specifies the dismissal protection."
       },
       "dsfaQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A DPIA is a structured assessment of whether a planned data processing operation is particularly risky for the persons affected. Example: you want to introduce video surveillance in the office or use a new CRM system with extensive customer profiles. You must then assess in advance what risks this poses to data subjects and how to minimise them. Without a DPIA you risk fines and potentially unlawful processing.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No awareness of the DPIA obligation; new processing operations are introduced without any risk assessment",
+          "level1": "Awareness of the DPIA obligation exists, but no systematic execution; case-by-case checks only for obviously critical projects",
+          "level2": "DPIA is carried out for recognisably high-risk processing, but without a standardised procedure or uniform template",
+          "level3": "Standardised DPIA process with templates, threshold analysis and DPO involvement before every high-risk processing operation"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you carry out a systematic data protection impact assessment (DPIA) before deploying new processing operations with a high risk to data subjects?",
         "tooltip": "Art. 35(1) GDPR obliges the controller to carry out a data protection impact assessment before introducing processing operations likely to result in a high risk to the rights and freedoms of natural persons. This applies in particular to the use of new technologies."
       },
       "dsfaQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The supervisory authorities have published lists of processing operations that always require a DPIA — e.g. scoring, video surveillance of public areas or large-scale processing of health data. Check the list of your state authority and compare whether your processing operations are on it. If so, you must carry out a DPIA — regardless of your own risk assessment.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "The supervisory authority's blacklist is unknown; no comparison with own processing activities has taken place",
+          "level1": "The blacklist is known, but a systematic comparison with own processing activities has not taken place",
+          "level2": "The main processing activities were checked against the blacklist, but not completely or without documentation",
+          "level3": "Complete, documented comparison of all processing activities with the current blacklist; results are updated when changes occur"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you checked which of your processing activities are subject to a mandatory DPIA under the blacklist of the competent supervisory authority?",
         "tooltip": "Art. 35(3) GDPR lists standard cases of processing requiring a DPIA (profiling, large-scale processing of special categories, systematic monitoring). In addition, supervisory authorities publish mandatory lists (blacklists) pursuant to Art. 35(4) GDPR. In Germany, the list of the DSK (Conference of Data Protection Authorities) is authoritative."
       },
       "dsfaQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A DPIA is more than 'we thought about it.' It must contain four things: 1) What exactly is processed, how and why? 2) Is the processing really necessary, or could it be done with less data? 3) What specific risks exist for data subjects (e.g. identity theft, discrimination)? 4) What specific protective measures do you deploy against them? Only when all four points are documented does the DPIA meet the legal requirements.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No structured DPIA documentation available",
+          "level1": "DPIA documentation exists, but essential minimum content is missing (e.g. no risk assessment or no measures)",
+          "level2": "DPIA contains all four minimum components, but with varying depth and quality",
+          "level3": "Complete DPIA with all minimum content under Art. 35(7) GDPR, including a comprehensible risk assessment and concrete mitigation measures"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Does your DPIA contain the minimum content required by Art. 35(7) GDPR (description, assessment of necessity, risk assessment and mitigation measures)?",
         "tooltip": "Art. 35(7) GDPR prescribes four minimum components of a DPIA: (a) a systematic description of the processing operations and purposes, (b) an assessment of necessity and proportionality, (c) an assessment of the risks to data subjects, (d) the measures envisaged to address the risks. Without these elements the DPIA is incomplete."
       },
       "dsfaQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If your DPIA shows that a high risk to data subjects remains despite all planned safeguards, you may not simply start the processing. You must first consult the competent data protection authority. It will examine your case and may issue recommendations or conditions. Do you have a process for who in your company would trigger this consultation and how it works?",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No awareness of the consultation obligation in case of a high residual risk",
+          "level1": "The consultation obligation is known, but no defined process exists for triggering it",
+          "level2": "Basic process defined, but thresholds for 'high residual risk' are unclear or undocumented",
+          "level3": "Documented escalation process with clear criteria for when the supervisory authority is consulted, including responsibilities and deadlines"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have a procedure for prior consultation of the supervisory authority when a DPIA indicates a high residual risk?",
         "tooltip": "Art. 36(1) GDPR obliges the controller to consult the supervisory authority prior to processing where the DPIA indicates that the processing would result in a high risk despite the planned safeguards. The authority then has up to 8 weeks to provide written advice (Art. 36(2) GDPR)."
       },
       "dsfaQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A DPIA is not a one-off document to file away and forget. When something changes — e.g. you add an AI feature, use a new cloud provider or the threat landscape shifts — you must review the DPIA again and update it if necessary. Schedule regular reviews, e.g. annually or upon significant changes.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Existing DPIAs are never touched again after creation",
+          "level1": "Event-driven review in case of obvious changes, but no fixed cycle",
+          "level2": "Regular review planned, but not carried out consistently",
+          "level3": "Documented review cycle for all DPIAs (at least annually) with trigger criteria for event-driven reassessment"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you review existing DPIAs regularly, especially when the risk of the processing changes?",
         "tooltip": "Art. 35(11) GDPR requires the controller to review a DPIA already carried out when there is a change in the risk represented by the processing. This applies, for example, when new technologies are introduced, the purpose of processing changes or new threat scenarios emerge."
       },
       "dtQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Third-country transfer means: data leaves the EEA (EU plus Iceland, Liechtenstein, Norway). This happens more often than you think — e.g. when you use US cloud services (Microsoft 365, Google Workspace, AWS), US tools (Mailchimp, Salesforce, Zoom) or engage service providers in India or Ukraine. Create a list of all services and check where the data is actually processed.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No overview of third-country transfers; it has not been checked whether data leaves the EEA",
+          "level1": "Individual obvious third-country transfers are known (e.g. US cloud), but no systematic survey",
+          "level2": "Overview of the main third-country transfers available, but incomplete or not updated regularly",
+          "level3": "Complete, current overview of all third-country transfers stating the recipient country, the data transferred and the legal basis for each transfer"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have an overview of whether and to which third countries you transfer personal data?",
         "tooltip": "Art. 44 GDPR stipulates that any transfer of personal data to a third country is permitted only if the conditions of Art. 44-49 GDPR are met. Third countries are all countries outside the EEA (EU plus Iceland, Liechtenstein, Norway)."
       },
       "dtQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If you transfer data to a country without an adequacy decision (e.g. India, Brazil, or the USA without a Privacy Framework certification), you need Standard Contractual Clauses. These are contract texts prescribed by the EU that you conclude with the data recipient. Since the end of 2022 you must use the EU's new SCCs. Old clauses are no longer valid.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No appropriate safeguards for third-country transfers; data is transferred without a legal basis",
+          "level1": "Awareness of the necessity exists; individual SCCs concluded, but not across the board and partly outdated",
+          "level2": "Current SCCs (post 2021/914) concluded with the main recipients; individual gaps with smaller service providers",
+          "level3": "Current SCCs concluded with all third-country recipients; Transfer Impact Assessments carried out; additional technical measures implemented where necessary"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you use appropriate safeguards for third-country transfers, in particular EU Standard Contractual Clauses (SCC)?",
         "tooltip": "Art. 46(2)(c) GDPR permits third-country transfers on the basis of Standard Contractual Clauses (SCC) adopted by the EU Commission. Since 27.12.2022, only the Commission’s new SCCs (Implementing Decision 2021/914) may be used. Additional measures may be required following the CJEU’s Schrems II judgment."
       },
       "dtQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "An adequacy decision is the simplest solution for third-country transfers: the EU Commission has determined that the recipient country has an adequate level of data protection. Then you need no additional safeguards. For the USA, the EU-U.S. Data Privacy Framework has applied since July 2023 — but only for certified US companies. Always check whether a decision exists before laboriously concluding SCCs.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No check for adequacy decisions; third-country transfers are carried out without a legal basis",
+          "level1": "Occasional checks in obvious cases, but no systematic review of all transfers",
+          "level2": "Adequacy decisions are checked for new service providers, but existing transfers have not been assessed retroactively",
+          "level3": "Systematic check of all third-country transfers for an adequacy decision; DPF certification verified for US providers; monitoring for changes to or revocation of decisions"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "For third-country transfers, do you check whether an EU Commission adequacy decision exists for the recipient country?",
         "tooltip": "Art. 45 GDPR permits data transfers to third countries for which the EU Commission has determined an adequate level of data protection by decision. Current adequacy decisions exist for, among others: Andorra, Argentina, Canada (partially), the Faroe Islands, Guernsey, Israel, the Isle of Man, Japan, Jersey, New Zealand, South Korea, Switzerland, the UK and the USA (EU-U.S. Data Privacy Framework since 10.07.2023). These decisions can be revoked."
       },
       "dtQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "A Transfer Impact Assessment (TIA) is a risk assessment you must carry out when transferring data to a country without an adequacy decision while relying on SCCs. You examine: does that country have laws allowing authorities to access the data? Are the SCCs enforceable there? Are the SCCs sufficient on their own, or do you need additional technical measures such as encryption?",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No awareness of the need for TIAs; no assessment of the legal situation in the recipient country",
+          "level1": "Awareness exists, but no TIAs carried out",
+          "level2": "TIAs carried out for the main transfers, but not for all; supplementary measures not systematically derived",
+          "level3": "TIAs carried out and documented for all relevant third-country transfers; supplementary technical and organisational measures implemented; regular updates when the law changes"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you carry out Transfer Impact Assessments (TIAs) to evaluate the effectiveness of the safeguards in the recipient country?",
         "tooltip": "Art. 46(1)-(2) GDPR requires appropriate safeguards for third-country transfers. Following the CJEU’s Schrems II judgment (C-311/18), controllers must assess whether the SCCs can ensure an adequate level of protection in the specific case — taking into account the legal situation in the recipient country (in particular government access powers). EDPB Recommendations 01/2020 describe the procedure in detail."
       },
       "dtQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Art. 49 GDPR provides derogations for specific individual cases — e.g. a customer books a hotel in a third country (contract performance), or you must transfer data for litigation abroad. However, these derogations must NOT be misused as a permanent solution for regular data transfers. If you constantly send customer data to a service provider in a third country, you need SCCs or an adequacy decision — Art. 49 is not sufficient for that.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Art. 49 GDPR is invoked as the legal basis for regular transfers, although this is not permissible",
+          "level1": "Awareness exists that Art. 49 GDPR applies only to exceptions; its use is however not documented or reviewed",
+          "level2": "Art. 49 GDPR is invoked only in individual cases; documentation of the conditions exists but is not always complete",
+          "level3": "Clear policy that Art. 49 GDPR is applied only in narrowly defined exceptional cases; every use is documented with reasons; regular transfers run exclusively via adequacy decisions or SCCs"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you use derogations under Art. 49 GDPR for third-country transfers only in the narrowly defined statutory cases?",
         "tooltip": "Art. 49 GDPR permits third-country transfers in exceptional cases without an adequacy decision or appropriate safeguards, e.g. with explicit consent (para. 1(a)), for contract performance ((b)-(c)), for important reasons of public interest ((d)), for legal claims ((e)) or vital interests ((f)). These derogations are to be interpreted narrowly and are not suitable for regular, large-scale transfers."
       },
       "dvQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If personal data is lost, disclosed without authorisation or altered — e.g. through a hacking attack, a lost USB stick or an email accidentally sent to the wrong recipient — you have at most 72 hours to notify the supervisory authority. This requires a clear procedure: who determines that an incident has occurred? Who decides whether it is notifiable? Who submits the notification?",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No notification process for personal data breaches in place",
+          "level1": "Awareness of the 72-hour deadline exists, but no defined procedure and no responsibilities",
+          "level2": "Basic notification process documented, but not known to all employees or not practised regularly",
+          "level3": "Documented notification process with clear responsibilities, escalation paths, templates for notifying the supervisory authority and regular training"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have a process to notify personal data breaches to the supervisory authority within 72 hours?",
         "tooltip": "Art. 33(1) GDPR obliges the controller to notify a personal data breach to the competent supervisory authority without undue delay and, where feasible, within 72 hours — unless the breach is unlikely to result in a risk. Where notification is delayed, reasons for the delay must be given."
       },
       "dvQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "For every personal data breach you must document internally: what happened? How many people are affected? Which data is affected (e.g. names, bank details)? What are the possible consequences? What have you done about it? You need this documentation both for the notification to the authority and as evidence towards the supervisory authority. Use a form or template for this.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Personal data breaches are not documented",
+          "level1": "Incidents are documented only informally or incompletely",
+          "level2": "Documentation template exists, but not all mandatory details under Art. 33(3) GDPR are recorded systematically",
+          "level3": "Standardised documentation of every breach with all mandatory details, timestamps, measures taken and the outcome of the risk assessment"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are personal data breaches documented internally with all the details required by Art. 33(3) GDPR?",
         "tooltip": "Art. 33(3) GDPR requires the notification to the supervisory authority to contain at least: (a) the nature of the breach including categories and number of data subjects affected, (b) the name and contact details of the DPO, (c) the likely consequences of the breach, (d) the measures taken and proposed. Art. 33(5) GDPR additionally requires internal documentation of all breaches."
       },
       "dvQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If, for example, customer data including bank details is stolen, you must inform the affected persons directly — not just the supervisory authority, but the people themselves. You must state clearly: what happened? Which data is affected? What can those affected do (e.g. change passwords, inform their bank)? Prepare text templates so no valuable time is lost in an emergency.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No process for notifying data subjects in place",
+          "level1": "Awareness of the notification duty exists, but no criteria or templates",
+          "level2": "Basic criteria for the risk assessment defined; notification templates partly available",
+          "level3": "Documented risk assessment criteria for high risk; ready-made notification templates in plain language; defined communication channels and responsibilities"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have a process for notifying data subjects of personal data breaches involving a high risk?",
         "tooltip": "Art. 34(1) GDPR requires that data subjects be notified without undue delay when a personal data breach is likely to result in a high risk to their rights and freedoms. The notification must use clear and plain language."
       },
       "dvQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Even if a data protection incident poses no significant risk and is therefore not notifiable, you must still document it internally. Example: an employee sends an email with customer data to the wrong recipient, who deletes it immediately. Not notifiable, but subject to documentation. The supervisory authority can request this record to check whether you take your obligations seriously.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No documentation of personal data breaches",
+          "level1": "Only serious or notified breaches are documented; smaller incidents slip through",
+          "level2": "Most breaches are recorded, but documentation is not uniform or complete",
+          "level3": "Complete record of all personal data breaches with assessment, measures and the reasons for the notification decision; regular analysis for prevention"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you keep a complete record of all personal data breaches — including those that were not notifiable?",
         "tooltip": "Art. 33(5) GDPR obliges the controller to document all personal data breaches, including the related facts, effects and remedial measures taken. This documentation must enable the supervisory authority to verify compliance — which means it must also cover incidents not subject to notification."
       },
       "dvQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "You can avoid the obligation to notify data subjects if you have taken good protective measures in advance. The most important example: encryption. If an encrypted laptop is stolen, the data cannot be read — hence no high risk and no notification obligation. The same applies to pseudonymisation. Invest in preventive measures and spare yourself the reputational damage in an emergency.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No preventive protective measures such as encryption or pseudonymisation implemented",
+          "level1": "Individual measures exist (e.g. disk encryption), but not across the board and not documented",
+          "level2": "Key data stores are encrypted; pseudonymisation is used for individual processing operations",
+          "level3": "Comprehensive encryption of all mobile devices and data transfers; pseudonymisation wherever possible; documented mapping of protective measures per processing activity"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you implemented technical and organisational measures that can render notification of data subjects unnecessary under Art. 34(3) GDPR?",
         "tooltip": "Art. 34(3) GDPR provides that notification of data subjects is not required if: (a) appropriate protective measures such as encryption were applied, (b) subsequent measures have eliminated the high risk, or (c) notification would involve disproportionate effort (in which case a public communication is required)."
       },
       "ewQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Before processing personal data, you need legal permission to do so. The most common bases are: contract performance (e.g. delivery address for orders), legal obligation (e.g. payroll tax filing) or consent (e.g. newsletter). The legal basis should be documented for every processing operation in your record. If it is missing, the processing is unlawful.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Legal bases are not identified or documented for any processing operation",
+          "level1": "The legal basis is known for individual processing operations, but not systematically documented",
+          "level2": "Legal bases are documented for most processing operations; occasionally missing or unclear",
+          "level3": "The legal basis for every processing activity is clearly documented, regularly reviewed and updated when changes occur"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you identified and documented a valid legal basis under Art. 6(1) GDPR for every processing activity?",
         "tooltip": "Art. 6(1) GDPR lists six possible legal bases: consent ((a)), contract performance ((b)), legal obligation ((c)), vital interests ((d)), public interest ((e)) and legitimate interest ((f)). Every processing operation requires at least one of these bases. Section 26 BDSG contains special rules for employee data."
       },
       "ewQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If you rely on consent as the legal basis — e.g. for newsletters or marketing cookies — you must be able to prove that the person actually consented. This includes: when was consent given? How were they informed? What exactly was permitted? Double opt-in for newsletters is a good example: the person signs up, receives a confirmation email and clicks the link — all of which is logged.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No evidence of consents given is available",
+          "level1": "Consent is obtained, but the evidence is patchy (e.g. no timestamp, no wording stored)",
+          "level2": "Consents are documented with timestamp and wording, but not centrally managed or regularly reviewed",
+          "level3": "Complete, audit-proof documentation of all consents with timestamp, exact wording, consent channel and central management"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "For processing based on consent, can you demonstrate that the data subject has validly consented?",
         "tooltip": "Art. 7(1) GDPR places the burden of proof on the controller: they must be able to demonstrate that the data subject has consented to the processing. Consent must be freely given, specific, informed and unambiguous (Art. 4(11) GDPR). Section 26(2) BDSG generally requires written form for employee consent."
       },
       "ewQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If someone signs up for your newsletter with a click, they must be able to unsubscribe just as easily — e.g. via an unsubscribe link in every email. It is not sufficient if data subjects have to write a letter or call. You must also ensure that no more emails are actually sent after withdrawal. Test this regularly.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No withdrawal mechanism exists; data subjects have practically no way to withdraw consent",
+          "level1": "Withdrawal is possible, but cumbersome (e.g. only by email or letter) and not as easy as giving consent",
+          "level2": "Simple withdrawal mechanism in place (e.g. unsubscribe link), but the technical cessation of processing is not always ensured",
+          "level3": "Withdrawal is as easy as giving consent; after withdrawal, processing is stopped automatically and verifiably"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Can data subjects withdraw their consent easily at any time, and is processing actually stopped after withdrawal?",
         "tooltip": "Art. 7(3) GDPR guarantees the right to withdraw consent at any time. Withdrawal must be as easy as giving consent. Before giving consent, the data subject must be informed of the right to withdraw. The lawfulness of processing carried out before withdrawal remains unaffected."
       },
       "ewQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If your online service, app or web shop can also be used by people under 16, you need special precautions: you must verify age and, for under-16s, obtain and verify parental consent. This affects e.g. registrations, newsletter sign-ups or in-app purchases. If you run a purely B2B service, this topic is usually not relevant.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No age verification or special safeguards for minors implemented",
+          "level1": "Age query in place, but no verification and no process for parental consent",
+          "level2": "Age check and basic process for parental consent in place, but verification is patchy",
+          "level3": "Robust age verification with demonstrable collection and verification of parental consent; regular review of the mechanism"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you implemented special safeguards for the consent of minors in relation to information society services?",
         "tooltip": "Art. 8 GDPR governs children’s consent for information society services (e.g. online services, apps). In Germany the age limit is 16 years (Art. 8(1) GDPR; Germany has not set a different age limit). For children under 16, consent or authorisation by the holder of parental responsibility is required. The controller must make reasonable efforts to verify this."
       },
       "ewQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Special categories of data include e.g. health data (sick notes, occupational reintegration), religious affiliation (church tax), trade union membership or biometric data (fingerprint scanners). This data may only be processed under strict conditions. Where no statutory permission applies, you need explicit consent — particularly clear and prominent, not hidden in terms and conditions.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No check whether special categories of data are processed; no specific consents obtained",
+          "level1": "Awareness of special categories of data exists, but no systematic check or separate consents",
+          "level2": "Special categories of data are identified; explicit consent is obtained, but not consistently in all cases",
+          "level3": "Complete overview of special categories of data; explicit, separately documented consents with additional safeguards under Section 22 BDSG"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you obtain explicit consent for processing special categories of personal data where no other exception under Art. 9(2) GDPR applies?",
         "tooltip": "Art. 9(1) GDPR prohibits in principle the processing of special categories of data (health, religion, ethnic origin, political opinions, trade union membership, genetics, biometrics, sex life). Art. 9(2)(a) GDPR permits processing with explicit consent. Section 22 BDSG contains additional conditions and safeguards."
       },
       "pbdQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Privacy by design means: data protection is considered from the very beginning, not bolted on afterwards. For example, when planning a new customer database, consider already in the planning phase: which data do we really need? How long do we keep it? How do we protect it? Who has access? This is more efficient and safer than laboriously retrofitting later.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Data protection is not considered when introducing new systems or processes",
+          "level1": "Data protection is raised for obviously critical projects, but not systematically included in planning",
+          "level2": "Checklist or guideline for data protection in new projects available; DPO is involved in larger projects",
+          "level3": "Standardised process: every new system, product or procedure undergoes a data protection review in the planning phase with documented sign-off by the DPO"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you take data protection requirements into account from the planning and development stage of new systems, products and processes (privacy by design)?",
         "tooltip": "Art. 25(1) GDPR requires the controller, both at the time of determining the means for processing and at the time of processing itself, to implement appropriate technical and organisational measures designed to implement data protection principles effectively. The state of the art, implementation costs and risks must be taken into account."
       },
       "pbdQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Privacy by default means: the most privacy-friendly setting is the default. Example: when you create an online form, only the mandatory fields are pre-filled — not optional newsletter sign-ups or marketing consents. In a social media profile, visibility is set to 'private' by default. In your CRM, employees only see the data they need for their tasks.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No privacy-friendly default settings; maximum data collection and accessibility as the default",
+          "level1": "Individual systems have restrictive default settings, but there is no consistent principle",
+          "level2": "Privacy by default is considered for most new systems; existing systems have been partly adapted",
+          "level3": "All systems are configured by default for minimal data processing and minimal accessibility; regular review of the default settings"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you ensure that your systems process, by default, only the personal data necessary for the specific purpose (privacy by default)?",
         "tooltip": "Art. 25(2) GDPR requires that, by default, only personal data necessary for each specific purpose of processing is processed. This applies to the amount collected, the extent of processing, the storage period and accessibility. By default, personal data must not be made accessible to an indefinite number of persons without the data subject’s intervention."
       },
       "pbdQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Data minimisation means: collect only what you really need. Do you really need date of birth, gender and phone number for a newsletter — or is the email address enough? Do you really need the customer's company size for a delivery? Review every form field, every database column: is this really necessary, or are we collecting it 'just in case'?",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No necessity check; data is collected 'in reserve' and 'just in case'",
+          "level1": "Awareness of data minimisation exists, but no systematic review of the data collected",
+          "level2": "Key forms and processes reviewed for necessity; individual data fields removed, but no comprehensive implementation",
+          "level3": "Systematic necessity review of all data collection; documented justification for every data field collected; regular review of existing data holdings"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you apply the principle of data minimisation — collecting and storing only the data actually necessary for the specific purpose?",
         "tooltip": "Art. 5(1)(c) GDPR establishes the principle of data minimisation: personal data must be adequate, relevant and limited to what is necessary for the purposes of processing. This principle is a core element of privacy by design and affects the design of forms, databases, processes and interfaces."
       },
       "pbdQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Certifications such as ISO 27701 (privacy information management system) or industry-specific codes of conduct can help you demonstrate compliance with privacy by design. This is particularly useful towards the supervisory authority, in tenders or towards customers. A certification does not protect against fines, but can serve as evidence of your efforts and reduce the fine risk.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No certifications or codes of conduct in the data protection area; no evidence of compliance efforts",
+          "level1": "Interest in certification exists, but no concrete steps taken",
+          "level2": "Individual measures follow recognised standards (e.g. ISO 27001/27701), but no formal certification",
+          "level3": "Formal data protection certification (e.g. ISO 27701) or participation in approved codes of conduct; regular re-certification; the certificate is actively used as compliance documentation"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you use certifications or approved codes of conduct to demonstrate compliance with privacy by design?",
         "tooltip": "Art. 25(3) GDPR provides that approved certification mechanisms pursuant to Art. 42 GDPR may be used as an element to demonstrate compliance with privacy by design and privacy by default requirements. Likewise, approved codes of conduct pursuant to Art. 40 GDPR may be taken into account in the assessment."
       },
       "pbdQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Data you no longer need must be deleted — not only when someone asks, but automatically once the defined retention period expires. Example: automatically delete applicant data 6 months after rejection, cookie data after the defined period, inactive customer accounts after 3 years. Manual deletion is error-prone — build in automatic mechanisms.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No defined retention periods; data is kept indefinitely; no deletion mechanisms",
+          "level1": "Retention periods are partly defined, but deletion happens only manually and irregularly",
+          "level2": "Retention periods defined for the main data categories; individual automated deletion mechanisms exist, but not across the board",
+          "level3": "Deletion concept for all data categories with defined periods; automated deletion mechanisms in all relevant systems; regular review of implementation and logging"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you implemented automated deletion mechanisms that automatically erase personal data once the processing purpose or retention period has expired?",
         "tooltip": "Art. 5(1)(e) GDPR establishes the principle of storage limitation: personal data may be stored only for as long as necessary for the purposes. Privacy by design requires that deletion mechanisms be built into the system architecture from the outset, not retrofitted."
       },
       "tomQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "Encryption means: data is transformed so that only authorised persons can read it. This covers e.g. email encryption, HTTPS on your website, encrypted hard drives and encrypted database connections. Pseudonymisation means: the direct personal reference is removed and replaced by a code. Both measures considerably reduce the risk in the event of data breaches.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Neither encryption nor pseudonymisation in use; personal data is stored and transmitted in plain text",
+          "level1": "Basic encryption in place (e.g. HTTPS on the website), but no encryption of storage media or databases; no pseudonymisation",
+          "level2": "Encryption for data transfers and mobile devices; pseudonymisation for individual processing operations (e.g. analytics)",
+          "level3": "End-to-end encryption at rest and in transit; pseudonymisation wherever possible; regular review of the mechanisms used against the state of the art"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you use encryption and pseudonymisation as technical measures to protect personal data?",
         "tooltip": "Art. 32(1)(a) GDPR explicitly names pseudonymisation and encryption as appropriate technical measures to ensure a level of protection appropriate to the risk."
       },
       "tomQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "You must ensure three protection goals: confidentiality (only those authorised see the data — e.g. through an authorisation concept and passwords), integrity (data is not altered without authorisation — e.g. through checksums and change logs), availability (systems work when needed — e.g. through backups and redundant systems). Document which specific measures you have implemented for each protection goal.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No systematic measures for confidentiality, integrity or availability",
+          "level1": "Basic measures in place (e.g. password protection, antivirus software), but no comprehensive authorisation concept and no availability safeguards",
+          "level2": "Authorisation concept implemented; backups in place; integrity checks for important systems, but not across the board",
+          "level3": "Documented authorisation concept following the need-to-know principle; automated integrity checks; highly available systems with tested recovery procedures"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you ensure the confidentiality, integrity and availability of your systems and services that process personal data?",
         "tooltip": "Art. 32(1)(b) GDPR requires the ability to ensure the ongoing confidentiality, integrity, availability and resilience of systems and services. Confidentiality: only authorised persons have access. Integrity: data is not altered without authorisation. Availability: systems function when needed."
       },
       "tomQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If your systems fail due to a ransomware attack, server damage, fire or water damage — how quickly can you restore the personal data? 'Rapidly' means: within hours, not weeks. This requires tested backups stored separately from the main system and a documented recovery plan. Test regularly whether recovery actually works.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No backup or recovery strategy in place",
+          "level1": "Backups are created but not tested; recovery time and procedure are unclear",
+          "level2": "Regular backups with occasional recovery tests; recovery time is around 24-48 hours",
+          "level3": "Automated backups with regularly tested recovery within defined time targets; separate storage; documented contingency plan"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Can you rapidly restore the availability of personal data after a physical or technical incident?",
         "tooltip": "Art. 32(1)(c) GDPR requires the ability to restore the availability of and access to personal data in a timely manner in the event of a physical or technical incident. Art. 32(1)(d) GDPR additionally requires a process for regularly testing and evaluating the effectiveness of the measures."
       },
       "tomQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "It is not enough to introduce protective measures once and never check them again. You must regularly test whether your measures are still effective. This can be an annual review by your DPO or an external provider, a penetration test of your systems or the evaluation of security incidents. Document the results and derive improvement measures.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No review of the effectiveness of protective measures",
+          "level1": "Occasional, event-driven reviews (e.g. after an incident), but no regular cycle",
+          "level2": "Annual review of the main measures; results are documented, but improvements are not implemented systematically",
+          "level3": "Regular audit cycle with internal and external reviews; penetration tests; documented results with a binding action plan and follow-up"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you have a procedure for regularly testing, assessing and evaluating the effectiveness of your technical and organisational measures?",
         "tooltip": "Art. 32(1)(d) GDPR explicitly requires a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures. This includes internal audits, penetration tests, vulnerability analyses and the evaluation of security incidents."
       },
       "tomQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The GDPR does not expect measures at any price, but proportionate measures. A small craft business that only stores customer addresses needs different measures than a hospital with patient data. When selecting, consider: what is technically feasible today (state of the art)? What does implementation cost? How sensitive is the data? How likely and severe would a data loss be? Document this weighing.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No documented weighing when selecting protective measures; measures are random or have grown historically",
+          "level1": "Protective measures are selected based on availability and cost, but without a systematic risk assessment",
+          "level2": "Risk-based selection of protective measures for the main processing operations; the state of the art is considered but not updated regularly",
+          "level3": "Documented, risk-based selection of all protective measures considering the state of the art, costs, processing purpose and risk assessment; annual update"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "When selecting your protective measures, do you take into account the state of the art, implementation costs and the nature, scope and purposes of the processing?",
         "tooltip": "Art. 32(1) GDPR requires that the selection of protective measures take into account the state of the art, implementation costs, the nature, scope, context and purposes of processing, and the likelihood and severity of the risk. Art. 32(2) GDPR requires the assessment to consider in particular risks from destruction, loss, alteration or unauthorised access."
       },
       "vvQ1": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The record of processing activities is your company's central data protection document. It lists every activity in which personal data is processed — e.g. payroll, customer database, newsletter dispatch, applicant management. Certain details must be documented for each activity. The supervisory authority can request this record at any time.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No record of processing activities exists",
+          "level1": "Individual processing activities are known, but not systematically documented",
+          "level2": "A record of processing activities exists, but does not contain all mandatory details or all processing operations",
+          "level3": "Complete record of processing activities with all mandatory details under Art. 30(1) GDPR for every processing activity"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you maintain a complete record of all processing activities with the mandatory details required by Art. 30(1) GDPR?",
         "tooltip": "Art. 30(1) GDPR obliges every controller to maintain a record of all processing activities. Mandatory entries include: name and contact details of the controller, purposes of processing, categories of data subjects and personal data, categories of recipients, transfers to third countries, erasure deadlines and technical and organisational measures."
       },
       "vvQ2": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "For every processing operation in your record you must state: WHY do you process the data (e.g. contract performance, legal obligation)? WHOSE data is affected (customers, employees, suppliers)? WHICH data exactly (name, address, bank details, health data)? These entries must be up to date — if you launch a new online shop, for example, it must be added promptly.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Purposes, categories of data subjects and data categories are not documented",
+          "level1": "Rough entries exist, but they are incomplete or outdated",
+          "level2": "Mostly documented correctly, but updates after changes are not made promptly",
+          "level3": "All processing operations with current, correct entries on purposes, categories of data subjects and data categories; a change process is established"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Are the purposes of processing, the categories of data subjects and the data categories documented correctly and kept up to date in your record of processing activities?",
         "tooltip": "Art. 30(1)(b)-(d) GDPR requires documentation of the purposes of processing, the categories of data subjects (e.g. customers, employees, applicants) and the categories of personal data (e.g. contact details, bank details, health data). These entries must reflect the actual processing operations."
       },
       "vvQ3": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "For every data processing operation you must define when the data will be deleted — e.g. applicant data 6 months after rejection, invoice data after 10 years (statutory retention obligation). In addition, you describe how the data is protected — e.g. encryption, access restriction, pseudonymisation. These entries belong in your record of processing activities.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "Neither erasure deadlines nor protective measures are documented in the record",
+          "level1": "Blanket reference to 'statutory periods'; no specific deadlines per processing operation; protective measures missing or only generic",
+          "level2": "Erasure deadlines defined for most processing operations; protective measures described in general terms but not per processing operation",
+          "level3": "Specific erasure deadlines for each data category with legal basis; protective measures documented per processing operation and reviewed regularly"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Have you documented the envisaged erasure deadlines and a general description of the technical and organisational protective measures in your record of processing activities?",
         "tooltip": "Art. 30(1)(f)-(g) GDPR requires stating the envisaged time limits for erasure of the different categories of data and a general description of the technical and organisational security measures pursuant to Art. 32(1) GDPR. ‘Where possible’ is not an exemption here but the supervisory authorities’ expectation."
       },
       "vvQ4": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "If your company processes data for other companies — e.g. as an IT service provider, payroll office, hosting provider or marketing agency — you are a processor and must keep your own record. It lists which data you process for which clients. Even if you are mainly a controller, there may be areas in which you act as a processor.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No check performed on whether the company also acts as a processor; no corresponding record exists",
+          "level1": "Awareness exists that acting as a processor requires its own record, but this has not been implemented",
+          "level2": "Record under Art. 30(2) GDPR exists, but is incomplete or not up to date",
+          "level3": "Complete, current processor record with all mandatory details, clearly separated from the controller's record of processing activities"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Do you also maintain your own record of processing activities as a processor pursuant to Art. 30(2) GDPR?",
         "tooltip": "Art. 30(2) GDPR also obliges the processor to maintain a record. It contains: name and contact details of the processor and of each controller, categories of processing, transfers to third countries where applicable, and a general description of the protective measures. This is a separate record, independent of the controller’s record of processing activities."
       },
       "vvQ5": {
-        "help": "Check existing documentation, processes, and technical implementation.",
+        "help": "The supervisory authority can request your record of processing activities at any time — e.g. during an audit or after a complaint. You must then be able to present it promptly. This means: it must be up to date, not compiled only upon request. The exemption for small companies under 250 employees almost never applies in practice, because almost every company processes personal data regularly.",
         "maturity": {
-          "level0": "Not implemented — no measures in place",
-          "level1": "Partially implemented — some measures in place, no systematic approach",
-          "level2": "Largely implemented — standardized processes established",
-          "level3": "Fully implemented — optimized processes with continuous improvement"
+          "level0": "No presentable record exists",
+          "level1": "A record exists, but it is outdated or incomplete and cannot be presented at short notice",
+          "level2": "The record is presentable, but is updated only when prompted and not maintained regularly",
+          "level3": "The record is reviewed and updated at least quarterly; the supervisory authority can receive a current version at any time"
         },
-        "title": "What is the implementation status in this area?",
+        "title": "Can your record of processing activities be presented to the supervisory authority on request at any time, and is it updated regularly?",
         "tooltip": "Art. 30(4) GDPR requires that the record be made available to the supervisory authority on request. Art. 30(5) GDPR contains an exemption for organisations with fewer than 250 employees, which however only applies if the processing is not regular, does not involve special categories of data and poses no risk — in practice this exemption rarely applies."
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 35 GDPR requires a DPIA for processing with a high risk to the rights of data subjects, e.g. profiling, video surveillance or processing of special categories of data.",
+          "title": "Do you carry out a data protection impact assessment for high-risk processing?"
         },
         "q10": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 28 GDPR requires written data processing agreements with instruction-boundness, TOMs, sub-processor approval and support with data subject rights.",
+          "title": "Have you concluded GDPR-compliant contracts with all processors?"
         },
         "q2": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 30 GDPR requires documentation of all processing operations with purpose, legal basis, recipients, erasure deadlines and technical and organisational measures.",
+          "title": "Do you maintain a complete record of all processing activities?"
         },
         "q3": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 6-7 GDPR require freely given, informed and unambiguous consent with documented evidence and a simple withdrawal option.",
+          "title": "Is consent obtained verifiably and can it be withdrawn at any time?"
         },
         "q4": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 15-21 GDPR guarantee data subject rights (access, erasure, rectification, data portability, objection) with a response deadline of one month.",
+          "title": "Can you handle access, erasure and rectification requests within one month?"
         },
         "q5": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 33-34 GDPR require notification to the supervisory authority within 72 hours and, where applicable, notification of data subjects in case of high risk.",
+          "title": "Is there a process for reporting personal data breaches within 72 hours?"
         },
         "q6": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 37-39 GDPR, Section 38 BDSG: from 20 employees engaged in data processing, or where the core business involves large-scale processing, a DPO is mandatory.",
+          "title": "Has a data protection officer been designated and involved in all relevant processes?"
         },
         "q7": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 44-49 GDPR require an adequacy decision, Standard Contractual Clauses or binding corporate rules for third-country transfers (e.g. USA, India).",
+          "title": "Are transfers of personal data to third countries secured by appropriate safeguards?"
         },
         "q8": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 32 GDPR requires measures appropriate to the risk, such as encryption, pseudonymisation, access controls and regular effectiveness reviews.",
+          "title": "Are technical and organisational measures in place to protect personal data?"
         },
         "q9": {
-          "description": "Assess whether basic measures are in place.",
-          "title": "Is this area covered in your organization?"
+          "description": "Art. 25 GDPR (privacy by design/default): data protection must be built into technical systems from the outset, with privacy-friendly default settings.",
+          "title": "Is data protection considered from the outset when developing new systems and processes?"
         }
       }
     },
     "recommendations": {
       "av1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Review all existing contracts with processors for completeness under Art. 28(1) and (3) GDPR. The contract must govern the subject matter, duration, nature and purpose of processing, data types, erasure obligations and TOMs.",
+        "firstStep": "Create a list of all external service providers with data access and check whether DPAs exist and are up to date.",
+        "title": "Review data processing agreements under Art. 28 GDPR"
       },
       "av2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Before engagement, check whether the processor provides sufficient guarantees for data protection and data security (Art. 28(1) GDPR). This includes certifications, security concepts and audit reports.",
+        "firstStep": "Request current ISO 27001 certificates, SOC 2 reports or comparable evidence from all cloud and SaaS providers.",
+        "title": "Carry out due diligence on processors"
       },
       "av3": {
         "checklist": "Review and update data processing agreements per Art. 28 GDPR\nDocument and approve sub-processors\nVerify technical and organizational measures of processors",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure that processors do not engage sub-processors without your approval (Art. 28(2) and (4) GDPR). You must be informed about sub-processors and have a right to object.",
+        "firstStep": "Request a current list of sub-processors from all main service providers and have changes reported to you.",
+        "title": "Establish sub-processor management"
       },
       "br1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create a systematic process for handling access, rectification, erasure, restriction, objection and data portability requests under Art. 15-22 GDPR. The process must govern responsibilities, deadlines and documentation.",
+        "firstStep": "Designate a central point of contact for data subject requests and define the workflow from receipt to response.",
+        "title": "Establish a process for data subject requests"
       },
       "br2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure that all data subject requests are answered within one month, as prescribed by Art. 12(3) GDPR. For complex requests the deadline can be extended by two months, but this must be justified.",
+        "firstStep": "Set up a ticket system or email inbox with automatic deadline monitoring for data subject requests.",
+        "title": "Meet the one-month deadline for data subject requests"
       },
       "br3": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Develop technical solutions for efficiently implementing the right to erasure (Art. 17 GDPR) and data portability (Art. 20 GDPR). This reduces manual effort and minimises sources of error during processing.",
+        "firstStep": "Check your systems for functions for automated data extraction and deletion (e.g. via API or admin interface).",
+        "title": "Implement automated erasure and data portability"
       },
       "dsb1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Check whether your company is obliged to designate a data protection officer (Art. 37 GDPR, Section 38 BDSG). This applies in particular to core activities involving systematic monitoring, large-scale processing of sensitive data or from 20 persons with data access.",
+        "firstStep": "Count how many employees are permanently engaged in processing personal data (from 20: designation obligation under Section 38 BDSG).",
+        "title": "Check the obligation to designate a data protection officer"
       },
       "dsb2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure that your data protection officer can act free of instructions, has the necessary resources and is involved early in all data protection matters, as required by Art. 38 GDPR.",
+        "firstStep": "Provide the DPO with a budget for training, tools and legal advice and formalise their involvement in project kick-offs.",
+        "title": "Ensure the DPO's independence and resources"
       },
       "dsb3": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Define the specific tasks of the data protection officer under Art. 39 GDPR: informing, advising, monitoring compliance, cooperating with the supervisory authority and acting as contact for data subjects. Clarify reporting lines to management.",
+        "firstStep": "Create a written role description for the DPO with tasks, powers and reporting lines.",
+        "title": "Define the DPO's tasks and reporting lines"
       },
       "dsfa1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Carry out a data protection impact assessment for all processing operations with a high risk to the rights and freedoms of natural persons. Under Art. 35(1) and (3) GDPR, this is mandatory for large-scale processing of sensitive data or systematic profiling.",
+        "firstStep": "Create a list of all current processing operations and assess them against the DPIA criteria under Art. 35(3) GDPR.",
+        "title": "Carry out a DPIA for high-risk processing"
       },
       "dsfa2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Compare your processing activities against the blacklist and whitelist of your competent supervisory authority. Under Art. 35(4) GDPR, these lists specify when a DPIA is mandatory or not necessary.",
+        "firstStep": "Open the DPIA list of your state data protection authority (e.g. the DSK blacklist) and compare your processing operations.",
+        "title": "Check the supervisory authority's DPIA blacklist and whitelist"
       },
       "dsfa3": {
         "checklist": "Identify high-risk processing activities\nConduct data protection impact assessment per Art. 35 GDPR\nDocument and implement risk mitigation measures",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a standardised methodology for carrying out data protection impact assessments under Art. 35(7) GDPR. The methodology should cover risk assessment, mitigation measures and, where necessary, consultation of the supervisory authority under Art. 36 GDPR.",
+        "firstStep": "Define a DPIA template with the mandatory content under Art. 35(7) GDPR (description, necessity, risk assessment, mitigation measures).",
+        "title": "Establish a systematic DPIA methodology"
       },
       "dt1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Record all transfers of personal data to countries outside the EU/EEA under Chapter V GDPR (Art. 44-49). This includes cloud services, international group structures, support providers and web tracking tools.",
+        "firstStep": "Check all processors and cloud services for server locations outside the EU/EEA (e.g. USA, Switzerland, UK post-Brexit).",
+        "title": "Identify and document all third-country transfers"
       },
       "dt2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Secure third-country transfers with appropriate safeguards: an EU Commission adequacy decision or Standard Contractual Clauses (SCCs) under Art. 46(2)(c) GDPR. Since Schrems II, an additional case-by-case assessment is required.",
+        "firstStep": "Conclude the current EU Standard Contractual Clauses (2021) with all third-country providers or check for adequacy decisions.",
+        "title": "Implement Standard Contractual Clauses or adequacy decisions"
       },
       "dt3": {
         "checklist": "Identify and document third-country transfers\nReview adequacy decisions and standard contractual clauses\nConduct Transfer Impact Assessment (TIA)",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Carry out a Transfer Impact Assessment (TIA) for every third-country transfer under Art. 46(2) GDPR. It assesses whether the level of data protection in the destination country can be raised to the EU level through additional measures (e.g. encryption).",
+        "firstStep": "Select your most critical third-country transfers and use the EDPB recommendations to assess whether government access is possible in the destination country.",
+        "title": "Carry out a Transfer Impact Assessment"
       },
       "dv1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a process that enables personal data breaches to be notified to the supervisory authority within 72 hours of becoming aware of them, as required by Art. 33(1) GDPR. Late notifications can result in fines.",
+        "firstStep": "Create a notification template with all mandatory details under Art. 33(3) GDPR and store the contact details of your supervisory authority.",
+        "title": "Set up a 72-hour breach notification process"
       },
       "dv2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Keep a record of all personal data breaches under Art. 33(5) GDPR. Incidents that are not notifiable must also be documented in order to fulfil the accountability obligation and identify patterns.",
+        "firstStep": "Set up a table or database logging the type of breach, affected data categories, time, remedial measures and notification status.",
+        "title": "Create documentation of all personal data breaches"
       },
       "dv3": {
         "checklist": "Establish data breach process per Art. 33/34 GDPR\nIntegrate reporting deadlines (72h) into incident response plan\nTrain employees on data protection incidents",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create a complete contingency plan for personal data breaches covering detection, assessment, containment, notification of the supervisory authority and data subjects (Art. 33-34 GDPR) and lessons learned.",
+        "firstStep": "Run a tabletop exercise with a simulated data protection incident to identify gaps in the current process.",
+        "title": "Develop a comprehensive breach response plan"
       },
       "ew1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Check for every processing operation whether a valid legal basis under Art. 6(1) GDPR exists. Consents must meet the requirements of Art. 7 GDPR (freely given, informed, unambiguous, demonstrable).",
+        "firstStep": "Create a list of all data processing operations and enter the respective legal basis (contract, consent, legitimate interest etc.).",
+        "title": "Review the legal bases of all processing activities"
       },
       "ew2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure that data subjects can withdraw their consent at any time as easily as it was given (Art. 7(3) GDPR). This applies to newsletters, cookies, marketing purposes and all other consent-based processing.",
+        "firstStep": "Check all systems processing consent (newsletter tool, cookie banner) for working withdrawal options.",
+        "title": "Enable easy withdrawal of consent"
       },
       "ew3": {
         "checklist": "Review consent texts for voluntariness and specificity\nImplement technical withdrawal mechanisms\nIntroduce consent management system",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement a central system for managing all consents that fulfils the evidence obligations under Art. 7(1) and the accountability obligation under Art. 5(2) GDPR. The system should log the time of consent, its scope, withdrawal and evidence.",
+        "firstStep": "Evaluate consent management platforms (e.g. OneTrust, Usercentrics) or develop an internal tracking system for consents.",
+        "title": "Introduce a central consent management system"
       },
       "pbd1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure that data protection is considered from the design and development phase of IT systems (Art. 25(1) GDPR). Privacy by design means: data protection as the standard, not as an afterthought.",
+        "firstStep": "Add a mandatory 'data protection requirements' review item to your project checklists before implementation.",
+        "title": "Integrate data protection requirements into development processes"
       },
       "pbd2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Configure all systems by default so that only the data necessary for the specific processing purpose is processed (Art. 25(2) GDPR). Users must not be nudged into disclosing unnecessary data through pre-ticked boxes.",
+        "firstStep": "Check all forms and registration screens: are optional fields really optional and not pre-filled?",
+        "title": "Implement privacy-friendly default settings"
       },
       "pbd3": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Anchor privacy by design systematically in your development processes under Art. 25 GDPR. This can be done through privacy impact assessments, data protection checklists in agile sprints or privacy champions in teams.",
+        "firstStep": "Train all developers and product owners in the basic principles of privacy by design (data minimisation, transparency, control).",
+        "title": "Implement a privacy-by-design framework"
       },
       "tom1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Record and document all technical and organisational measures for protecting personal data under Art. 32(1) GDPR. This includes access control, encryption, pseudonymisation, availability and regular testing.",
+        "firstStep": "Create a TOM register with categories such as physical access control, data backup and encryption, and assign concrete measures to each category.",
+        "title": "Document technical and organisational measures"
       },
       "tom2": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Implement encryption and pseudonymisation as central protective measures under Art. 32(1)(a) GDPR. This reduces the risk in the event of data breaches and can eliminate notification obligations.",
+        "firstStep": "Enable encryption on all mobile devices (BitLocker, FileVault) and check TLS for all data transfers.",
+        "title": "Deploy encryption and pseudonymisation"
       },
       "tom3": {
         "checklist": "Inventory all technical and organizational measures\nAssess measures for adequacy per Art. 32 GDPR\nEstablish regular effectiveness reviews",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Carry out regular tests and reviews of your technical and organisational measures, as required by Art. 32(1)(d) GDPR. This includes penetration tests, backup restores and access logs.",
+        "firstStep": "Schedule an annual audit at which all TOMs are checked for currency and effectiveness.",
+        "title": "Establish regular effectiveness reviews of the TOMs"
       },
       "vv1": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Create a complete record of all processing activities under Art. 30(1) GDPR. This record is required evidence for the accountability obligation under Art. 5(2) GDPR and the basis of every data protection audit.",
+        "firstStep": "Record all systems and applications in which personal data is processed (HR system, CRM, email, web shop etc.).",
+        "title": "Create a record of processing activities under Art. 30 GDPR"
       },
       "vv2": {
         "checklist": "Record all processing activities\nCreate records of processing per Art. 30 GDPR\nDocument responsibilities and legal bases",
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Ensure that your record of processing activities contains all mandatory details under Art. 30(1)(a)-(g) GDPR: name of the controller, purposes, categories of data subjects and data, recipients, third-country transfers, erasure deadlines and technical/organisational measures.",
+        "firstStep": "Check your existing record of processing activities against the checklist in Art. 30(1) GDPR and identify missing entries.",
+        "title": "Document all mandatory details in the record of processing activities"
       },
       "vv3": {
-        "description": "Implement the required measures according to regulatory requirements.",
-        "firstStep": "Conduct an assessment of the current state.",
-        "title": "Implement measure"
+        "description": "Establish a process for regularly reviewing and updating the record of processing activities under Art. 30(4) GDPR. New processing operations, changed purposes or decommissioned systems must be recorded promptly.",
+        "firstStep": "Set a quarterly reminder for all departments to report changes to processing activities.",
+        "title": "Regularly update and review the record of processing activities"
       }
     }
   },
