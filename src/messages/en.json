@@ -37,7 +37,7 @@
   "landing": {
     "hero": {
       "title": "Is Your Organization Ready for NIS2?",
-      "subtitle": "Stricter cybersecurity requirements take effect in 2026.\nFind out where you stand in 10 minutes.",
+      "subtitle": "Stricter cybersecurity requirements have applied since December 2025.\nFind out where you stand in 10 minutes.",
       "penaltyHook": "Violations cost up to 10 million euros.",
       "ctaPrimary": "Am I Affected?",
       "quickCheck": {
@@ -168,7 +168,7 @@
     },
     "combined": {
       "title": "What You'll Get",
-      "subtitle": "Based on NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555, and BSI IT-Grundschutz — as of February 2026.",
+      "subtitle": "Based on NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555, and BSI IT-Grundschutz — as of August 2026.",
       "pdf": {
         "title": "PDF Report",
         "desc": "Comprehensive PDF report with scores, recommendations, roadmap, and cost estimates — for download and sharing."
@@ -203,7 +203,7 @@
       "privacy": "Privacy Policy"
     },
     "copyright": "© {year} IT Security Compass",
-    "legalDate": "Legal status: February 2026"
+    "legalDate": "Legal status: August 2026"
   },
   "disclaimers": {
     "preAssessment": {
@@ -1598,7 +1598,7 @@
     },
     "disclaimer": "Your responses indicate the following maturity level. A high score does not automatically mean NIS2 conformity. Every measure must be adequately and effectively implemented for your specific risk profile (Section 30(1) BSIG). This assessment does not replace legal advice or a professional security evaluation.",
     "rechtsstand": "Rechtsstand",
-    "rechtstandDatum": "February 2026",
+    "rechtstandDatum": "August 2026",
     "generatedAt": "Generated on",
     "companyProfile": "Company Profile",
     "sector": "Sector",
@@ -5815,12 +5815,12 @@
         }
       },
       "deadlines": {
-        "nis2": "Effective since Oct 17, 2024 (NIS2UmsuCG)",
+        "nis2": "In force since Dec 6, 2025 (NIS2UmsG)",
         "dsgvo": "Effective since May 25, 2018",
         "kritis": "Effective since 2021 (IT Security Act 2.0)",
         "dora": "Effective since Jan 17, 2025",
         "tisax": "Ongoing — OEM requirement",
-        "cra": "Expected ~2027 (EU Regulation 2024/2847)",
+        "cra": "Reporting duties from Sep 11, 2026; full application Dec 11, 2027 (EU 2024/2847)",
         "bsi-grundschutz": "Framework — no legal deadline",
         "iso27001": "Framework — no legal deadline",
         "soc2": "Framework — no legal deadline",
@@ -5849,7 +5849,7 @@
         "tisaxRequired": "Your customers require TISAX — certification is effectively mandatory.",
         "tisaxAuto": "As an automotive supplier, TISAX is frequently required by OEMs and Tier-1 suppliers.",
         "tisaxNA": "TISAX is primarily relevant for the automotive industry.",
-        "craProducts": "If you manufacture products with digital elements, the CRA will apply from 2027.",
+        "craProducts": "If you manufacture products with digital elements: CRA reporting duties for actively exploited vulnerabilities apply from Sep 11, 2026, all remaining obligations from Dec 11, 2027.",
         "craIoT": "Connected products fall under the Cyber Resilience Act.",
         "craNA": "The CRA primarily affects manufacturers of digital products.",
         "bsiNis2Kritis": "As a NIS2/KRITIS-affected organization, BSI IT-Grundschutz is the recommended evidence framework.",
@@ -6279,11 +6279,11 @@
   "registrierung": {
     "title": "Registration Guide under §§33-34 BSIG",
     "subtitle": "Step-by-step guide for BSI registration",
-    "intro": "Affected entities must register with the BSI within three months of the NIS2 Implementation Act taking effect. Registration is done via the BSI portal.",
+    "intro": "Affected entities must register with the BSI within three months of the NIS2 Implementation Act taking effect. Registration is done via the BSI portal. The deadline expired on 6 March 2026, and the BSI's grace period for late registrations ended on 31 July 2026. The obligation to register remains in force regardless — entities not yet registered should do so without delay.",
     "deadline": {
       "title": "Deadlines",
-      "effective": "NIS2 Implementation Act effective: 06 January 2026",
-      "registration": "Registration deadline: 06 April 2026",
+      "effective": "NIS2 Implementation Act in force since: 6 December 2025 (BGBl. 2025 I No. 301)",
+      "registration": "Registration deadline expired — statutory deadline 6 March 2026, BSI grace period ended 31 July 2026",
       "note": "The registration obligation applies from the time the entity first falls under the regulations."
     },
     "steps": {
@@ -7822,7 +7822,7 @@
           "name": "Software Bill of Materials (SBOM)",
           "scenario": "Log4Shell (2021) affected millions of systems. The first question: 'Do we use Log4j?' Companies without SBOM needed weeks to clarify. With SBOM: one look at the inventory, instant clarity.\n\nAn SBOM is the ingredient list of your software — you know exactly which libraries are in your products and whether any are vulnerable.",
           "solution": "1. Deploy SBOM generator: CycloneDX, Syft, or GitHub Dependency Graph\n2. Create an SBOM for each product/application\n3. Automatic vulnerability check: match SBOM against CVE databases\n4. Integrate into CI/CD pipeline: generate new SBOM with each build\n5. Document SBOMs and keep available for audits",
-          "benefit": "SBOMs reduce response time to new vulnerabilities from weeks to minutes. Mandatory for all products with digital elements from 2027 (CRA). Early adoption provides competitive advantage.",
+          "benefit": "SBOMs reduce response time to new vulnerabilities from weeks to minutes. Mandatory for all products with digital elements from Dec 11, 2027 (CRA), with reporting duties already from Sep 11, 2026. Early adoption provides competitive advantage.",
           "nextStep": "Generate your first SBOM with Syft or GitHub Dependency Graph. Check it against the CVE database.",
           "legal": {
             "nis2": "Vulnerability management and knowledge of deployed software components",
@@ -9593,7 +9593,7 @@
       "title": "Funding for IT Security",
       "subtitle": "Financial support for your IT security measures — from federal, state, and EU programs",
       "intro": "IT security doesn't have to be expensive — and many costs can be subsidized. Here you'll find current funding programs that specifically support SMEs in implementing IT security measures.",
-      "disclaimer": "Funding conditions change regularly. Always check current terms with the respective funding provider before applying. Status: February 2026.",
+      "disclaimer": "Funding conditions change regularly. Always check current terms with the respective funding provider before applying. Status: August 2026.",
       "goDigital": {
         "title": "go-digital (BMWi)",
         "desc": "Federal Ministry of Economics funding program for SMEs with fewer than 100 employees. Funds consulting services in the modules 'IT Security', 'Digital Market Development', and 'Digitized Business Processes'.",
@@ -10464,13 +10464,13 @@
       "intro": "Using AI systems offers enormous potential but also comes with regulatory obligations. Since August 2024, the EU AI Act applies. Here's what your company needs to know.",
       "aiAct": {
         "title": "EU AI Act Overview",
-        "desc": "The world's first comprehensive AI regulation has been in effect since August 2024 with staggered deadlines.",
+        "desc": "The world's first comprehensive AI regulation has been in effect since August 2024 with staggered deadlines. The Digital Omnibus postponed the high-risk obligations to December 2027.",
         "timeline": {
           "title": "Timeline",
           "t1": "February 2025: Ban on unacceptable AI practices (social scoring, real-time biometrics)",
           "t2": "August 2025: Rules for general-purpose AI models (GPAI) including ChatGPT, Gemini etc.",
-          "t3": "August 2026: Full application — all obligations for high-risk AI systems",
-          "t4": "August 2027: Review and possible adjustment by EU Commission"
+          "t3": "Aug 2, 2026: Transparency obligations apply — disclosure of AI interaction and AI-generated content",
+          "t4": "Dec 2, 2027: Obligations for high-risk AI under Annex III — postponed by the Digital Omnibus (embedded high-risk AI from Aug 2, 2028)"
         }
       },
       "riskLevels": {

@@ -37,7 +37,7 @@
   "landing": {
     "hero": {
       "title": "Ist Ihr Unternehmen bereit für NIS2?",
-      "subtitle": "Ab 2026 gelten verschärfte Cybersicherheitspflichten für Unternehmen.\nPrüfen Sie jetzt, wo Sie stehen.",
+      "subtitle": "Seit Dezember 2025 gelten verschärfte Cybersicherheitspflichten für Unternehmen.\nPrüfen Sie jetzt, wo Sie stehen.",
       "penaltyHook": "Verstöße kosten bis zu 10 Millionen Euro.",
       "ctaPrimary": "Bin ich betroffen?",
       "quickCheck": {
@@ -168,7 +168,7 @@
     },
     "combined": {
       "title": "Was Sie erhalten",
-      "subtitle": "Basierend auf NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555 und BSI IT-Grundschutz — Rechtsstand Februar 2026.",
+      "subtitle": "Basierend auf NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555 und BSI IT-Grundschutz — Rechtsstand August 2026.",
       "pdf": {
         "title": "PDF-Report",
         "desc": "Umfassender PDF-Report mit Scores, Empfehlungen, Roadmap und Kostenschätzung — zum Download und Weitergeben."
@@ -203,7 +203,7 @@
       "privacy": "Datenschutz"
     },
     "copyright": "© {year} IT-Sicherheitskompass",
-    "legalDate": "Rechtsstand: Februar 2026"
+    "legalDate": "Rechtsstand: August 2026"
   },
   "disclaimers": {
     "preAssessment": {
@@ -1598,7 +1598,7 @@
     },
     "disclaimer": "Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität. Jede Maßnahme muss angemessen und wirksam für Ihr spezifisches Risikoprofil umgesetzt sein (§30 Abs. 1 BSIG). Diese Auswertung ersetzt keine Rechtsberatung oder professionelle Sicherheitsbewertung.",
     "rechtsstand": "Rechtsstand",
-    "rechtstandDatum": "Februar 2026",
+    "rechtstandDatum": "August 2026",
     "generatedAt": "Erstellt am",
     "companyProfile": "Unternehmensprofil",
     "sector": "Sektor",
@@ -5869,12 +5869,12 @@
         }
       },
       "deadlines": {
-        "nis2": "In Kraft seit 17.10.2024 (NIS2UmsuCG)",
+        "nis2": "In Kraft seit 06.12.2025 (NIS2UmsG)",
         "dsgvo": "In Kraft seit 25.05.2018",
         "kritis": "In Kraft seit 2021 (IT-SiG 2.0)",
         "dora": "In Kraft seit 17.01.2025",
         "tisax": "Fortlaufend — OEM-Anforderung",
-        "cra": "Ab ca. 2027 (EU-Verordnung 2024/2847)",
+        "cra": "Meldepflichten ab 11.09.2026, volle Anwendung ab 11.12.2027 (EU 2024/2847)",
         "bsi-grundschutz": "Rahmenwerk — keine gesetzliche Frist",
         "iso27001": "Rahmenwerk — keine gesetzliche Frist",
         "soc2": "Rahmenwerk — keine gesetzliche Frist",
@@ -5903,7 +5903,7 @@
         "tisaxRequired": "Ihre Kunden fordern TISAX — eine Zertifizierung ist faktisch Pflicht.",
         "tisaxAuto": "Als Automobilzulieferer wird TISAX häufig von OEMs und Tier-1 gefordert.",
         "tisaxNA": "TISAX ist primär für die Automobilbranche relevant.",
-        "craProducts": "Wenn Sie Produkte mit digitalen Elementen herstellen, betrifft Sie der CRA ab 2027.",
+        "craProducts": "Wenn Sie Produkte mit digitalen Elementen herstellen: Die CRA-Meldepflicht f\u00fcr aktiv ausgenutzte Schwachstellen gilt ab 11.09.2026, die \u00fcbrigen Pflichten ab 11.12.2027.",
         "craIoT": "Vernetzte Produkte fallen unter den Cyber Resilience Act.",
         "craNA": "Der CRA betrifft primär Hersteller digitaler Produkte.",
         "bsiNis2Kritis": "Als NIS2/KRITIS-Betroffener ist BSI IT-Grundschutz der empfohlene Nachweis-Rahmen.",
@@ -6333,12 +6333,12 @@
   "registrierung": {
     "title": "Registrierungshilfe nach §§33-34 BSIG",
     "subtitle": "Schritt-für-Schritt-Anleitung zur BSI-Registrierung",
-    "intro": "Betroffene Einrichtungen müssen sich innerhalb von drei Monaten nach Inkrafttreten des NIS2UmsG beim BSI registrieren. Die Registrierung erfolgt über das BSI-Portal.",
+    "intro": "Betroffene Einrichtungen müssen sich innerhalb von drei Monaten nach Inkrafttreten des NIS2UmsG beim BSI registrieren. Die Registrierung erfolgt über das BSI-Portal. Die Frist lief am 06.03.2026 ab, die vom BSI gewährte Duldung verspäteter Registrierungen endete am 31.07.2026. Die Registrierungspflicht besteht unabhängig davon fort — nicht registrierte Einrichtungen sollten dies unverzüglich nachholen.",
     "deadline": {
       "title": "Fristen",
-      "effective": "NIS2UmsG in Kraft seit: 06.01.2026",
-      "registration": "Registrierungsfrist: 06.04.2026",
-      "note": "Die Registrierungspflicht gilt ab dem Zeitpunkt, zu dem die Einrichtung erstmals unter die Regelungen fällt."
+      "effective": "NIS2UmsG in Kraft seit: 06.12.2025 (BGBl. 2025 I Nr. 301)",
+      "registration": "Registrierungsfrist abgelaufen — gesetzlich am 06.03.2026, BSI-Duldung endete am 31.07.2026",
+      "note": "Die Registrierungspflicht gilt ab dem Zeitpunkt, zu dem die Einrichtung erstmals unter die Regelungen fällt. Verstöße gegen die Registrierungspflicht können mit Bußgeldern bis zu 500.000 Euro geahndet werden."
     },
     "steps": {
       "title": "Registrierungsschritte",
@@ -7876,7 +7876,7 @@
           "name": "Software Bill of Materials (SBOM)",
           "scenario": "Log4Shell (2021) betraf Millionen Systeme. Die erste Frage: 'Nutzen wir Log4j?' Unternehmen ohne SBOM brauchten Wochen zur Klärung. Mit SBOM: Ein Blick ins Inventar, sofortige Klarheit.\n\nEin SBOM ist die Zutatenliste Ihrer Software — Sie wissen genau, welche Bibliotheken in Ihren Produkten stecken und ob eine davon verwundbar ist.",
           "solution": "1. SBOM-Generator einsetzen: CycloneDX, Syft, oder GitHub Dependency Graph\n2. Für jedes Produkt / jede Anwendung ein SBOM erstellen\n3. Automatische Schwachstellen-Prüfung: SBOM gegen CVE-Datenbanken abgleichen\n4. In CI/CD-Pipeline integrieren: Bei jedem Build neues SBOM generieren\n5. SBOMs dokumentieren und für Audits bereithalten",
-          "benefit": "SBOMs reduzieren die Reaktionszeit auf neue Schwachstellen von Wochen auf Minuten. Ab 2027 Pflicht für alle Produkte mit digitalen Elementen (CRA). Frühzeitige Einführung verschafft Wettbewerbsvorteil.",
+          "benefit": "SBOMs reduzieren die Reaktionszeit auf neue Schwachstellen von Wochen auf Minuten. Ab 11.12.2027 Pflicht für alle Produkte mit digitalen Elementen (CRA), Meldepflichten bereits ab 11.09.2026. Frühzeitige Einführung verschafft Wettbewerbsvorteil.",
           "nextStep": "Generieren Sie Ihr erstes SBOM mit Syft oder dem GitHub Dependency Graph. Prüfen Sie es gegen die CVE-Datenbank.",
           "legal": {
             "nis2": "Schwachstellenmanagement und Kenntnis eingesetzter Softwarekomponenten",
@@ -9647,7 +9647,7 @@
       "title": "Foerdermittel fuer IT-Sicherheit",
       "subtitle": "Finanzielle Unterstuetzung fuer Ihre IT-Sicherheitsmassnahmen — von Bund, Laendern und EU",
       "intro": "IT-Sicherheit muss nicht teuer sein — und viele Kosten lassen sich foerdern. Hier finden Sie aktuelle Foerderprogramme, die speziell KMU bei der Umsetzung von IT-Sicherheitsmassnahmen finanziell unterstuetzen.",
-      "disclaimer": "Foerderbedingungen aendern sich regelmaessig. Pruefen Sie vor Antragstellung immer die aktuellen Konditionen beim jeweiligen Foerdergeber. Stand: Februar 2026.",
+      "disclaimer": "Foerderbedingungen aendern sich regelmaessig. Pruefen Sie vor Antragstellung immer die aktuellen Konditionen beim jeweiligen Foerdergeber. Stand: August 2026.",
       "goDigital": {
         "title": "go-digital (BMWi)",
         "desc": "Foerderprogramm des Bundesministeriums fuer Wirtschaft fuer KMU mit weniger als 100 Mitarbeitern. Foerdert Beratungsleistungen in den Modulen 'IT-Sicherheit', 'Digitale Markterschliessung' und 'Digitalisierte Geschaeftsprozesse'.",
@@ -10518,13 +10518,13 @@
       "intro": "Der Einsatz von KI-Systemen bietet enorme Chancen, bringt aber auch regulatorische Pflichten mit sich. Seit August 2024 gilt der EU AI Act. Hier erfahren Sie, was Ihr Unternehmen beachten muss.",
       "aiAct": {
         "title": "EU AI Act im Ueberblick",
-        "desc": "Die weltweit erste umfassende KI-Regulierung gilt seit August 2024 mit gestaffelten Fristen.",
+        "desc": "Die weltweit erste umfassende KI-Regulierung gilt seit August 2024 mit gestaffelten Fristen. Der Digital Omnibus hat die Pflichten fuer Hochrisiko-KI auf Dezember 2027 verschoben.",
         "timeline": {
           "title": "Zeitplan",
           "t1": "Februar 2025: Verbot inakzeptabler KI-Praktiken (Social Scoring, Echtzeit-Biometrie)",
           "t2": "August 2025: Regeln fuer allgemeine KI-Modelle (GPAI) inkl. ChatGPT, Gemini etc.",
-          "t3": "August 2026: Vollstaendige Anwendung — alle Pflichten fuer Hochrisiko-KI-Systeme",
-          "t4": "August 2027: Ueberpruefung und ggf. Anpassung durch EU-Kommission"
+          "t3": "02.08.2026: Transparenzpflichten gelten — Kennzeichnung von KI-Interaktion und KI-generierten Inhalten",
+          "t4": "02.12.2027: Pflichten fuer Hochrisiko-KI nach Anhang III — durch den Digital Omnibus verschoben (eingebettete Hochrisiko-KI ab 02.08.2028)"
         }
       },
       "riskLevels": {
