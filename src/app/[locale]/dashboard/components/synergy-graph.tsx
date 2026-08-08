@@ -84,6 +84,10 @@ function layout(): NPos[] {
   });
 }
 
+/** Einmal beim Laden des Moduls berechnet — die Anordnung ist konstant. */
+const NODE_POSITIONS: NPos[] = layout();
+const NODE_MAP = new Map(NODE_POSITIONS.map((n) => [n.id, n]));
+
 /* ─── Curved edge helper ─── */
 
 function edgePath(ax: number, ay: number, bx: number, by: number): string {
@@ -105,8 +109,10 @@ export function SynergyGraph() {
   const [hovered, setHovered] = useState<RegulationId | null>(null);
   const active = hovered || selected;
 
-  const nodes = useMemo(layout, []);
-  const nodeMap = useMemo(() => new Map(nodes.map(n => [n.id, n])), [nodes]);
+  // NODE_POSITIONS und NODE_MAP haengen nur von Konstanten ab — sie gehoeren
+  // nicht in den Render-Zyklus.
+  const nodes = NODE_POSITIONS;
+  const nodeMap = NODE_MAP;
 
   const overlaps = useMemo(() => {
     if (!active) return [];

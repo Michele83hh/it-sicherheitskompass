@@ -19,8 +19,35 @@ export function ResultStep() {
   const tClassification = useTranslations('classification');
   const { formData, reset, setClassificationResult } = useWizardStore();
 
+  const isNotListed = formData.sectorId === 'not-listed';
+
+  // Einstufung vor der Verzweigung berechnen, damit der Effekt unten in jedem
+  // Render laeuft. Stand er nach dem fruehen return, aenderte ein Wechsel der
+  // Branche die Zahl der Hooks zwischen zwei Renders — das bricht React ab.
+  const result: ClassificationResult | null = isNotListed
+    ? null
+    : classifyEntity({
+        sectorId: formData.sectorId!,
+        subsectorId: formData.subsectorId ?? null,
+        employees: formData.employees ?? 0,
+        annualRevenue: formData.annualRevenue ?? 0,
+        // CRITICAL: Map omitted balance sheet to MAX_SAFE_INTEGER to avoid blocking classification
+        balanceSheet:
+          formData.balanceSheet && formData.balanceSheet > 0
+            ? formData.balanceSheet
+            : Number.MAX_SAFE_INTEGER,
+        isKritis: formData.isKritis ?? false,
+      } satisfies ClassificationInput);
+
+  // Ergebnis fuer die PDF-Erzeugung ablegen. Abhaengigkeiten bewusst auf die
+  // inhaltlichen Felder statt auf das Objekt, das bei jedem Render neu entsteht.
+  useEffect(() => {
+    if (result) setClassificationResult(result);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [result?.category, result?.legalReference, setClassificationResult]);
+
   // Handle "not listed" shortcut
-  if (formData.sectorId === 'not-listed') {
+  if (isNotListed) {
     return (
       <div className="space-y-6">
         {/* Green card for "nicht betroffen" */}
@@ -62,26 +89,9 @@ export function ResultStep() {
     );
   }
 
-  // Classify entity with balance sheet mapping
-  const classificationInput: ClassificationInput = {
-    sectorId: formData.sectorId!,
-    subsectorId: formData.subsectorId ?? null,
-    employees: formData.employees ?? 0,
-    annualRevenue: formData.annualRevenue ?? 0,
-    // CRITICAL: Map omitted balance sheet to MAX_SAFE_INTEGER to avoid blocking classification
-    balanceSheet:
-      formData.balanceSheet && formData.balanceSheet > 0
-        ? formData.balanceSheet
-        : Number.MAX_SAFE_INTEGER,
-    isKritis: formData.isKritis ?? false,
-  };
-
-  const result: ClassificationResult = classifyEntity(classificationInput);
-
-  // Store classification result for PDF generation
-  useEffect(() => {
-    setClassificationResult(result);
-  }, [result.category, result.legalReference, setClassificationResult]);
+  // Ab hier ist die Einstufung immer vorhanden — der "not listed"-Fall ist oben
+  // bereits beantwortet worden.
+  if (!result) return null;
 
   // Card config by category
   const cardConfig = {

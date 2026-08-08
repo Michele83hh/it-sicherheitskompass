@@ -36,7 +36,10 @@ export function IncidentTimer() {
   const t = useTranslations();
   const [incidentType, setIncidentType] = useState<IncidentType>('ransomware');
   const [startTime, setStartTime] = useState<number | null>(null);
-  const [now, setNow] = useState<number>(Date.now());
+  // Kein Date.now() im Render: Server und Client wuerden unterschiedliche Werte
+  // erzeugen (Hydration-Abweichung). Der Wert wird erst beim Start gesetzt und
+  // vorher ohnehin nicht verwendet — elapsed haengt an startTime.
+  const [now, setNow] = useState<number>(0);
 
   useEffect(() => {
     if (!startTime) return;

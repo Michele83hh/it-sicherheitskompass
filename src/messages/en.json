@@ -14797,5 +14797,8 @@
       "securityMonitoring": "Security Monitoring",
       "securityKpis": "Security KPIs"
     }
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
   }
 }

@@ -14851,5 +14851,8 @@
       "securityMonitoring": "Sicherheitsüberwachung",
       "securityKpis": "Sicherheits-KPIs"
     }
+  },
+  "a11y": {
+    "skipToContent": "Zum Hauptinhalt springen"
   }
 }

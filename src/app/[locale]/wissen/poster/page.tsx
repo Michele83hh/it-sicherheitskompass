@@ -2,7 +2,9 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/navigation';
-import { Image, ChevronLeft, Shield, AlertTriangle, Key, Siren, Lightbulb } from 'lucide-react';
+// ImageIcon statt Image: sonst haelt die a11y-Regel das Icon fuer ein Bild ohne
+// alt-Text, und der Name kollidiert gedanklich mit next/image.
+import { ImageIcon, ChevronLeft, Shield, AlertTriangle, Key, Siren, Lightbulb } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { WissenBreadcrumb } from '@/components/layout/breadcrumb';
 
@@ -22,7 +24,7 @@ export default function PosterPage() {
       <section className="bg-gradient-to-b from-slate-900 to-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem] lg:min-h-[19rem]">
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
-            <Image className="size-7 text-white" />
+            <ImageIcon className="size-7 text-white" />
           </div>
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">{t('title')}</h1>
           <p className="mt-4 text-lg text-slate-300">{t('subtitle')}</p>

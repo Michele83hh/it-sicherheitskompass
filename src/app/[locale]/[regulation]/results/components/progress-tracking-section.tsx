@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import {
@@ -247,12 +247,14 @@ export function ProgressTrackingSection({ recommendations }: ProgressTrackingSec
     return Array.from(groupedByCategory.keys());
   }, [groupedByCategory]);
 
-  // Initialize expanded state on first render
-  useMemo(() => {
+  // Anfangs alle Kategorien aufgeklappt. Das lief bisher in einem useMemo,
+  // der waehrend des Renderings setState aufrief — bei jeder Neuberechnung des
+  // Memos droht daraus eine Render-Schleife. Ein Effekt laeuft nach dem Render.
+  useEffect(() => {
     if (expandedCategories.size === 0 && allCategoryIds.length > 0) {
       setExpandedCategories(new Set(allCategoryIds));
     }
-  }, [allCategoryIds]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [allCategoryIds, expandedCategories.size]);
 
   return (
     <section className="mb-12">

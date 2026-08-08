@@ -71,9 +71,17 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${inter.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
+          {/* Sprungmarke fuer Tastatur- und Screenreader-Nutzung: sichtbar erst
+              bei Fokus, damit sie die Navigation ueberspringbar macht. */}
+          <a
+            href="#hauptinhalt"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-slate-900 focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          >
+            {messages.a11y?.skipToContent as string}
+          </a>
           <div className="flex min-h-screen flex-col">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main id="hauptinhalt" tabIndex={-1} className="flex-1">{children}</main>
             <Footer />
             <DevResetButton />
           </div>
