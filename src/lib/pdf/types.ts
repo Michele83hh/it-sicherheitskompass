@@ -44,6 +44,8 @@ export interface PDFPenalty {
   maxPenaltyRevenueBased: number;
   revenuePercentage: number;
   effectiveMaxPenalty: number;
+  /** §65 Abs. 6/7 BSIG — prozentuale Obergrenze erst ab 500 Mio. € Gesamtumsatz. */
+  revenueCapApplies?: boolean;
   legalReference: string;
 }
 

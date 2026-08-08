@@ -62,13 +62,13 @@
     "penalty": {
       "essential": {
         "title": "Essential Entities",
-        "amount": "up to €10M or 2% of annual revenue",
-        "legal": "§65 para. 2 BSIG"
+        "amount": "up to €10M",
+        "legal": "Section 65(5) sentence 1 no. 1a BSIG"
       },
       "important": {
         "title": "Important Entities",
-        "amount": "up to €7M or 1.4% of annual revenue",
-        "legal": "§65 para. 3 BSIG"
+        "amount": "up to €7M",
+        "legal": "Section 65(5) sentence 1 no. 1b BSIG"
       },
       "cta": "Am I affected?"
     },
@@ -3362,7 +3362,7 @@
     "sectors": {
       "energie": {
         "name": "Energy",
-        "threshold": "Threshold: 500 MW installed net capacity or 104,000 persons served"
+        "threshold": "Threshold: 104 MW installed net capacity (electricity generation; black-start units from 0 MW, primary control reserve from 36 MW) or 3,700 GWh/year of energy drawn (electricity grids)"
       },
       "entsorgung": {
         "name": "Waste Management",
@@ -6394,7 +6394,7 @@
   "bussgeld": {
     "title": "Penalty Calculator",
     "subtitle": "Estimated maximum penalty risk under §65 BSIG",
-    "intro": "The NIS2 Implementation Act provides for significant penalties. The amount depends on the entity's classification and annual revenue.",
+    "intro": "The NIS2UmsG provides for substantial fines. The amount depends on how the entity is classified. A turnover-based cap only applies above a total turnover of EUR 500 million.",
     "classification": "Classification",
     "besondersWichtig": "Essential entity",
     "wichtig": "Important entity",
@@ -6404,8 +6404,8 @@
     "revenuePercentage": "Revenue Percentage",
     "applicableMax": "Applicable Maximum",
     "explanation": {
-      "besondersWichtig": "For essential entities, the maximum penalty is up to EUR 10,000,000 or 2% of global annual revenue — whichever is higher.",
-      "wichtig": "For important entities, the maximum penalty is up to EUR 7,000,000 or 1.4% of global annual revenue — whichever is higher."
+      "besondersWichtig": "For essential entities the maximum fine is up to EUR 10,000,000 (Section 65(5) sentence 1 no. 1a BSIG). Only for entities with a total turnover exceeding EUR 500 million does a cap of 2% of total turnover take its place (Section 65(6) BSIG).",
+      "wichtig": "For important entities the maximum fine is up to EUR 7,000,000 (Section 65(5) sentence 1 no. 1b BSIG). Only for entities with a total turnover exceeding EUR 500 million does a cap of 1.4% of total turnover take its place (Section 65(7) BSIG)."
     },
     "note": "Note: The actual penalty amount is determined by the competent authority on a case-by-case basis, taking into account the severity of the violation, possible recurrence, and countermeasures taken.",
     "legalBasis": "Legal basis: §65 BSIG"
@@ -7490,11 +7490,11 @@
       },
       "penalty": {
         "title": "Penalty Risk",
-        "description": "Violations of NIS2 requirements can result in significant fines:",
+        "description": "Violations of NIS2 requirements carry substantial fines. A turnover-based cap (2% or 1.4%) only applies above a total turnover of EUR 500 million:",
         "essential": "Essential entities",
-        "essentialAmount": "up to €10M or 2% of annual revenue",
+        "essentialAmount": "up to €10M",
         "important": "Important entities",
-        "importantAmount": "up to €7M or 1.4% of annual revenue",
+        "importantAmount": "up to €7M",
         "legal": "Legal basis: §65 BSIG"
       },
       "actionSummary": "{count} of {total} areas need attention",
@@ -9762,7 +9762,7 @@
         "m10": {
           "myth": "NIS2 only affects large corporations",
           "fact": "NIS2 affects companies with 50+ employees OR EUR 10M+ revenue in regulated sectors. In Germany, that's an estimated 30,000 companies — including many mid-sized businesses. Suppliers can also be affected.",
-          "source": "§28 NIS2UmsG (BSIG-E)"
+          "source": "Section 28 BSIG"
         }
       },
       "faq": {
@@ -9777,7 +9777,7 @@
         },
         "q3": {
           "question": "What happens if I don't implement NIS2?",
-          "answer": "Fines up to EUR 10 million or 2% of global annual revenue. Additionally: Personal liability of management (§38 BSIG-E), BSI enforcement orders, and potential reputational damage."
+          "answer": "Fines up to EUR 10 million for essential and up to EUR 7 million for important entities (Section 65(5) BSIG); a turnover-based cap only applies above EUR 500 million total turnover. Additionally: personal liability of management (Section 38(2) BSIG), BSI enforcement orders, and potential reputational damage."
         },
         "q4": {
           "question": "What's the best way to start with IT security?",
@@ -11314,7 +11314,7 @@
         "title": "Legal Requirements",
         "items": {
           "i1": {
-            "title": "NIS2 (Section 30 BSIG-E)",
+            "title": "NIS2 (Section 30 BSIG)",
             "desc": "Risk awareness training for employees and management is mandatory"
           },
           "i2": {
@@ -11635,7 +11635,7 @@
     "dsfa": {
       "title": "Data Protection Impact Assessment (DPIA)",
       "subtitle": "When a DPIA is required and how to conduct one step by step",
-      "intro": "The DPIA under Art. 35 GDPR is mandatory for processing with high risk to data subjects. Neglecting it risks fines up to EUR 10 million. Here's everything you need to know.",
+      "intro": "The DPIA under Art. 35 GDPR is mandatory for processing with high risk to data subjects. Neglecting it risks fines of up to EUR 10 million or 2% of global annual turnover, whichever is higher (Art. 83(4) GDPR). Here is everything you need to know.",
       "when": {
         "title": "When is a DPIA required?",
         "desc": "A DPIA is mandatory when processing is likely to result in high risk:",

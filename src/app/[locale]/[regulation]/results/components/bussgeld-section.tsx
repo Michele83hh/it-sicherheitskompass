@@ -62,10 +62,14 @@ export function BussgeldSection({ classification, annualRevenue }: BussgeldSecti
               <span className="text-red-800">{t('fixedMax')}</span>
               <span className="font-semibold text-red-900">{formatEur(penalty.maxPenaltyAbsolute)}</span>
             </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-red-800">{t('revenuePercentage')} ({penalty.revenuePercentage}%)</span>
-              <span className="font-semibold text-red-900">{formatEur(penalty.maxPenaltyRevenueBased)}</span>
-            </div>
+            {/* Die prozentuale Obergrenze gibt es nach §65 Abs. 6/7 BSIG erst
+                oberhalb von 500 Mio. € Gesamtumsatz — darunter waere sie erfunden. */}
+            {penalty.revenueCapApplies && (
+              <div className="flex justify-between text-sm">
+                <span className="text-red-800">{t('revenuePercentage')} ({penalty.revenuePercentage}%)</span>
+                <span className="font-semibold text-red-900">{formatEur(penalty.maxPenaltyRevenueBased)}</span>
+              </div>
+            )}
             <div className="border-t border-red-200 pt-3">
               <div className="flex justify-between">
                 <span className="font-semibold text-red-900">{t('applicableMax')}</span>

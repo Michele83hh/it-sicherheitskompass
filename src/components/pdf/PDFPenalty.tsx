@@ -54,15 +54,18 @@ const PDFPenaltySection = ({ penalty, messages, locale }: PDFPenaltyProps) => {
         <Text style={styles.value}>{formatEur(penalty.maxPenaltyAbsolute, locale)}</Text>
       </View>
 
-      {/* Revenue-based maximum */}
-      <View style={styles.labelValue}>
-        <Text style={styles.label}>
-          {messages['pdf.penalty.maxRevenueBased'] || 'Revenue-Based Maximum'}:
-        </Text>
-        <Text style={styles.value}>
-          {formatEur(penalty.maxPenaltyRevenueBased, locale)} ({penalty.revenuePercentage}%)
-        </Text>
-      </View>
+      {/* Revenue-based maximum — nach §65 Abs. 6/7 BSIG erst ab 500 Mio. €
+          Gesamtumsatz vorhanden, darunter nicht ausweisen. */}
+      {penalty.revenueCapApplies && (
+        <View style={styles.labelValue}>
+          <Text style={styles.label}>
+            {messages['pdf.penalty.maxRevenueBased'] || 'Revenue-Based Maximum'}:
+          </Text>
+          <Text style={styles.value}>
+            {formatEur(penalty.maxPenaltyRevenueBased, locale)} ({penalty.revenuePercentage}%)
+          </Text>
+        </View>
+      )}
 
       {/* Horizontal separator */}
       <View style={styles.hr} />

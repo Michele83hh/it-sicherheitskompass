@@ -501,6 +501,7 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
           maxPenaltyRevenueBased: penalty.maxPenaltyRevenueBased,
           revenuePercentage: penalty.revenuePercentage,
           effectiveMaxPenalty: penalty.effectiveMaxPenalty,
+          revenueCapApplies: penalty.revenueCapApplies,
           legalReference: penalty.legalReference,
         };
       }

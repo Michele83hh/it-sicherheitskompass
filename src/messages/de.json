@@ -62,13 +62,13 @@
     "penalty": {
       "essential": {
         "title": "Besonders wichtige Einrichtungen",
-        "amount": "bis zu 10 Mio. € oder 2% des Jahresumsatzes",
-        "legal": "§65 Abs. 2 BSIG"
+        "amount": "bis zu 10 Mio. €",
+        "legal": "§65 Abs. 5 S. 1 Nr. 1a BSIG"
       },
       "important": {
         "title": "Wichtige Einrichtungen",
-        "amount": "bis zu 7 Mio. € oder 1,4% des Jahresumsatzes",
-        "legal": "§65 Abs. 3 BSIG"
+        "amount": "bis zu 7 Mio. €",
+        "legal": "§65 Abs. 5 S. 1 Nr. 1b BSIG"
       },
       "cta": "Bin ich betroffen?"
     },
@@ -3362,7 +3362,7 @@
     "sectors": {
       "energie": {
         "name": "Energie",
-        "threshold": "Schwellenwert: 500 MW installierte Nettoleistung bzw. 104.000 versorgte Personen"
+        "threshold": "Schwellenwert: 104 MW installierte Netto-Nennleistung (Stromerzeugung; Schwarzstartanlagen ab 0 MW, Primärregelleistung ab 36 MW) bzw. 3.700 GWh/Jahr entnommene Jahresarbeit (Stromnetze)"
       },
       "entsorgung": {
         "name": "Entsorgung",
@@ -3755,7 +3755,7 @@
       },
       "vmQ3": {
         "title": "Können Sie die DORA-Meldefristen für schwerwiegende IKT-bezogene Vorfälle an die Aufsichtsbehörde einhalten?",
-        "tooltip": "Art. 19 Abs. 1-4 DORA legt ein dreistufiges Meldeverfahren fest: Erstmeldung (innerhalb von 4 Stunden nach Klassifizierung als schwerwiegend, spätestens 24 Stunden nach Erkennung), Zwischenmeldung (innerhalb von 72 Stunden) und Abschlussbericht (innerhalb eines Monats). Die ITS nach Art. 20 DORA definieren die Standardformulare für diese Meldungen.",
+        "tooltip": "Art. 19 Abs. 1-4 DORA legt ein dreistufiges Meldeverfahren fest: Erstmeldung (innerhalb von 4 Stunden nach Klassifizierung als schwerwiegend, spätestens 24 Stunden nach Erkennung), Zwischenmeldung (innerhalb von 72 Stunden nach der Erstmeldung) und Abschlussbericht (innerhalb eines Monats nach der letzten Zwischenmeldung). Die Fristen sind in der Delegierten Verordnung (EU) 2025/301 festgelegt; die ITS nach Art. 20 DORA definieren die Standardformulare.",
         "help": "Das Meldeverfahren nach DORA ist zeitkritisch: Sobald ein IKT-Vorfall als schwerwiegend klassifiziert wird, läuft die Uhr. Sie haben maximal 4 Stunden für die Erstmeldung und müssen Zwischen- sowie Abschlussberichte fristgerecht nachreichen. Dafür benötigen Sie vorbereitete Meldeformulare, klare interne Kommunikationswege und benannte Verantwortliche, die auch außerhalb der Geschäftszeiten verfügbar sind. Testen Sie den Meldeprozess regelmäßig, um die Fristen im Ernstfall einhalten zu können.",
         "maturity": {
           "level0": "Kein Meldeverfahren für IKT-Vorfälle an Aufsichtsbehörden etabliert",
@@ -6394,7 +6394,7 @@
   "bussgeld": {
     "title": "Bußgeld-Kalkulator",
     "subtitle": "Schätzung des maximalen Bußgeldrisikos nach §65 BSIG",
-    "intro": "Das NIS2UmsG sieht empfindliche Bußgelder vor. Die Höhe richtet sich nach der Einstufung der Einrichtung und dem Jahresumsatz.",
+    "intro": "Das NIS2UmsG sieht empfindliche Bußgelder vor. Die Höhe richtet sich nach der Einstufung der Einrichtung. Eine umsatzabhängige Obergrenze greift erst ab einem Gesamtumsatz von mehr als 500 Mio. EUR.",
     "classification": "Einstufung",
     "besondersWichtig": "Besonders wichtige Einrichtung",
     "wichtig": "Wichtige Einrichtung",
@@ -6404,8 +6404,8 @@
     "revenuePercentage": "Umsatzanteil",
     "applicableMax": "Maßgeblicher Höchstbetrag",
     "explanation": {
-      "besondersWichtig": "Für besonders wichtige Einrichtungen beträgt das maximale Bußgeld bis zu 10.000.000 EUR oder 2% des weltweiten Jahresumsatzes — je nachdem, welcher Betrag höher ist.",
-      "wichtig": "Für wichtige Einrichtungen beträgt das maximale Bußgeld bis zu 7.000.000 EUR oder 1,4% des weltweiten Jahresumsatzes — je nachdem, welcher Betrag höher ist."
+      "besondersWichtig": "Für besonders wichtige Einrichtungen beträgt das maximale Bußgeld bis zu 10.000.000 EUR (§65 Abs. 5 S. 1 Nr. 1a BSIG). Nur gegenüber Einrichtungen mit einem Gesamtumsatz von mehr als 500 Mio. EUR tritt an diese Stelle eine Obergrenze von 2 % des Gesamtumsatzes (§65 Abs. 6 BSIG).",
+      "wichtig": "Für wichtige Einrichtungen beträgt das maximale Bußgeld bis zu 7.000.000 EUR (§65 Abs. 5 S. 1 Nr. 1b BSIG). Nur gegenüber Einrichtungen mit einem Gesamtumsatz von mehr als 500 Mio. EUR tritt an diese Stelle eine Obergrenze von 1,4 % des Gesamtumsatzes (§65 Abs. 7 BSIG)."
     },
     "note": "Hinweis: Die tatsächliche Bußgeldhöhe wird von der zuständigen Behörde im Einzelfall unter Berücksichtigung der Schwere des Verstoßes, eventueller Wiederholungsfälle und der ergriffenen Gegenmaßnahmen festgelegt.",
     "legalBasis": "Rechtsgrundlage: §65 BSIG"
@@ -7490,11 +7490,11 @@
       },
       "penalty": {
         "title": "Bußgeld-Risiko",
-        "description": "Bei Verstößen gegen NIS2-Anforderungen drohen empfindliche Geldbußen:",
+        "description": "Bei Verstößen gegen NIS2-Anforderungen drohen empfindliche Geldbußen. Eine umsatzabhängige Obergrenze (2 % bzw. 1,4 %) greift erst ab einem Gesamtumsatz von mehr als 500 Mio. EUR:",
         "essential": "Besonders wichtige Einrichtungen",
-        "essentialAmount": "bis zu 10 Mio. € oder 2% des Jahresumsatzes",
+        "essentialAmount": "bis zu 10 Mio. €",
         "important": "Wichtige Einrichtungen",
-        "importantAmount": "bis zu 7 Mio. € oder 1,4% des Jahresumsatzes",
+        "importantAmount": "bis zu 7 Mio. €",
         "legal": "Rechtsgrundlage: §65 BSIG"
       },
       "actionSummary": "{count} von {total} Bereichen mit Handlungsbedarf",
@@ -9762,7 +9762,7 @@
         "m10": {
           "myth": "NIS2 betrifft nur große Konzerne",
           "fact": "NIS2 betrifft Unternehmen ab 50 Mitarbeitern ODER 10 Mio. EUR Umsatz in regulierten Sektoren. Das sind in Deutschland schätzungsweise 30.000 Unternehmen — darunter viele Mittelständler. Auch Zulieferer können betroffen sein.",
-          "source": "§28 NIS2UmsG (BSIG-E)"
+          "source": "§28 BSIG"
         }
       },
       "faq": {
@@ -9777,7 +9777,7 @@
         },
         "q3": {
           "question": "Was passiert, wenn ich NIS2 nicht umsetze?",
-          "answer": "Bußgelder bis 10 Mio. EUR oder 2% des weltweiten Jahresumsatzes. Außerdem: Persönliche Haftung der Geschäftsleitung (§38 BSIG-E), Anordnungen durch das BSI, und potenzielle Reputationsschäden."
+          "answer": "Bußgelder bis 10 Mio. EUR für besonders wichtige und bis 7 Mio. EUR für wichtige Einrichtungen (§65 Abs. 5 BSIG); eine umsatzabhängige Obergrenze greift erst über 500 Mio. EUR Gesamtumsatz. Außerdem: Persönliche Haftung der Geschäftsleitung (§38 Abs. 2 BSIG), Anordnungen durch das BSI, und potenzielle Reputationsschäden."
         },
         "q4": {
           "question": "Wie starte ich am besten mit IT-Sicherheit?",
@@ -11314,7 +11314,7 @@
         "title": "Rechtliche Grundlagen",
         "items": {
           "i1": {
-            "title": "NIS2 (§30 BSIG-E)",
+            "title": "NIS2 (§30 BSIG)",
             "desc": "Schulungen zur Risikosensibilisierung für Mitarbeiter und Geschäftsführung sind Pflicht"
           },
           "i2": {
@@ -11635,7 +11635,7 @@
     "dsfa": {
       "title": "Datenschutz-Folgenabschätzung (DSFA)",
       "subtitle": "Wann eine DSFA nötig ist und wie Sie sie Schritt für Schritt durchführen",
-      "intro": "Die DSFA nach Art. 35 DSGVO ist bei Verarbeitungen mit hohem Risiko für Betroffene Pflicht. Wer sie vernachlässigt, riskiert Bußgelder bis zu 10 Mio. EUR. Hier erfahren Sie alles, was Sie wissen müssen.",
+      "intro": "Die DSFA nach Art. 35 DSGVO ist bei Verarbeitungen mit hohem Risiko für Betroffene Pflicht. Wer sie vernachlässigt, riskiert Bußgelder bis zu 10 Mio. EUR oder 2 % des weltweiten Jahresumsatzes — je nachdem, welcher Betrag höher ist (Art. 83 Abs. 4 DSGVO). Hier erfahren Sie alles, was Sie wissen müssen.",
       "when": {
         "title": "Wann ist eine DSFA erforderlich?",
         "desc": "Eine DSFA ist Pflicht, wenn die Verarbeitung voraussichtlich ein hohes Risiko birgt:",
