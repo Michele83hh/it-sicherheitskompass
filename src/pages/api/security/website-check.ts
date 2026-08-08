@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { safeFetch, rateLimit } from '@/lib/api-guards';
 
 interface HeaderCheck {
   status: 'pass' | 'warn' | 'fail';
@@ -31,6 +32,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
+  if (!rateLimit(req, res, { limit: 10, windowMs: 60_000 })) return;
+
   const { url: rawUrl } = req.body;
   if (!rawUrl || typeof rawUrl !== 'string') {
     return res.status(400).json({ error: 'URL required' });
@@ -54,9 +57,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 10000);
 
-    const response = await fetch(url, {
+    // safeFetch loest jeden Hop auf und lehnt interne Ziele ab (SSRF-Schutz).
+    const response = await safeFetch(url, {
       method: 'HEAD',
-      redirect: 'follow',
       signal: controller.signal,
       headers: { 'User-Agent': 'IT-Sicherheitskompass Security Check/1.0' },
     });
@@ -148,6 +151,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const message = error instanceof Error ? error.message : 'unknown';
     if (message.includes('abort')) {
       return res.status(408).json({ error: 'timeout', detail: 'Website did not respond within 10 seconds' });
+    }
+    if (message === 'blocked_target' || message === 'blocked_protocol') {
+      return res.status(400).json({ error: 'blocked_target', detail: 'Only publicly reachable http(s) addresses can be checked' });
+    }
+    if (message === 'too_many_redirects') {
+      return res.status(502).json({ error: 'too_many_redirects', detail: 'The address redirects too many times' });
     }
     return res.status(502).json({ error: 'fetch_failed', detail: message });
   }

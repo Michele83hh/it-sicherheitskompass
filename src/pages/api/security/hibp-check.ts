@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
+import { rateLimit } from '@/lib/api-guards';
 
 interface Breach {
   Name: string;
@@ -34,6 +35,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
+
+  // Der HIBP-Schluessel ist kostenpflichtig — ohne Limit ist das ein Kostenrisiko.
+  if (!rateLimit(req, res, { limit: 5, windowMs: 60_000 })) return;
 
   const apiKey = process.env.HIBP_API_KEY;
   if (!apiKey) {

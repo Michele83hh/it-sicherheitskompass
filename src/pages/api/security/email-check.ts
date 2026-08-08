@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import dns from 'dns';
 import { promisify } from 'util';
+import { rateLimit } from '@/lib/api-guards';
 
 const resolveTxt = promisify(dns.resolveTxt);
 const resolveMx = promisify(dns.resolveMx);
@@ -35,6 +36,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
+
+  if (!rateLimit(req, res, { limit: 10, windowMs: 60_000 })) return;
 
   const { domain: rawDomain } = req.body;
   if (!rawDomain || typeof rawDomain !== 'string') {
