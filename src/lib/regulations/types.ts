@@ -150,6 +150,12 @@ export interface RegulationFeatures {
   hasTieredAssessment: boolean;
   hasCostEstimation: boolean;
   hasRoadmap: boolean;
+  /**
+   * Die Info-Seiten (Meldepflichten, Geschaeftsleitung, Registrierung) beschreiben
+   * BSIG-Pflichten und gelten damit nur fuer NIS2. Optional, damit die uebrigen
+   * Konfigurationen unveraendert bleiben.
+   */
+  hasBsigInfo?: boolean;
 }
 
 export interface RegulationConfig {

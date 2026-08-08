@@ -36,7 +36,9 @@ export function Header() {
       ]
     : [];
 
-  const infoLinks = currentRegulation
+  // Die Info-Seiten beschreiben BSIG-Pflichten — sie gelten nur fuer NIS2 und
+  // wurden bisher unter jedem Regelwerk verlinkt.
+  const infoLinks = currentRegulation && regConfig?.features.hasBsigInfo
     ? [
         { href: `/${currentRegulation}/info/meldepflichten` as const, label: tNav('meldepflichten') },
         { href: `/${currentRegulation}/info/geschaeftsleitung` as const, label: tNav('geschaeftsleitung') },

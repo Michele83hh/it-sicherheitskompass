@@ -9,16 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { WissenBreadcrumb } from '@/components/layout/breadcrumb';
 import { notFound } from 'next/navigation';
 
-const SLUG_TO_KEY: Record<string, string> = {
-  'logistik': 'logistik',
-  'gesundheit': 'gesundheit',
-  'fertigung': 'fertigung',
-  'handel': 'handel',
-  'it-dienstleister': 'itDienstleister',
-  'energie': 'energie',
-  'automotive': 'automotive',
-  'finanzen': 'finanzen',
-};
+import { BRANCHE_SLUG_TO_KEY as SLUG_TO_KEY } from '@/lib/branchen';
 
 const REG_LINKS: Record<string, string> = {
   nis2: '/nis2',

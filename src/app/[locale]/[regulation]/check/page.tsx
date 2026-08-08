@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import { Info, Shield, Building2, ArrowRight, Clock, Lock, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useWizardStore } from '@/stores/wizard-store';
@@ -16,9 +16,7 @@ export default function CheckPage() {
   const t = useTranslations('check');
   const tDisclaimer = useTranslations('disclaimers');
   const params = useParams();
-  const router = useRouter();
   const regulation = params?.regulation as string;
-  const locale = params?.locale as string;
   const currentStep = useWizardStore((state) => state.currentStep);
   const formData = useWizardStore((state) => state.formData);
   const [isClient, setIsClient] = useState(false);
@@ -29,12 +27,7 @@ export default function CheckPage() {
     setIsClient(true);
   }, []);
 
-  // Redirect non-NIS2 regulations to assessment (check/classification is NIS2-only)
-  useEffect(() => {
-    if (isClient && regulation !== 'nis2') {
-      router.replace(`/${locale}/${regulation}/assessment`);
-    }
-  }, [isClient, regulation, locale, router]);
+  // Nicht-NIS2-Regelwerke werden bereits serverseitig im layout.tsx umgeleitet.
 
   if (!isClient) {
     // Render skeleton with same structure to minimize layout shift

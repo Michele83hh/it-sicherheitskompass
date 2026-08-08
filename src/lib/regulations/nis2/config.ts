@@ -67,6 +67,7 @@ const nis2Config: RegulationConfig = {
     hasTieredAssessment: true,
     hasCostEstimation: true,
     hasRoadmap: true,
+    hasBsigInfo: true,
   },
   resultSections: [
     'overallScore',

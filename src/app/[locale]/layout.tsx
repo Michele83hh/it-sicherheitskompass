@@ -1,8 +1,10 @@
+import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { routing } from '@/lib/i18n/routing';
+import { SITE_URL, SITE_NAME, absoluteUrl, LOCALES } from '@/lib/seo';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { DevResetButton } from '@/components/dev-reset-button';
@@ -15,6 +17,39 @@ const inter = Inter({
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+
+  const languages: Record<string, string> = {};
+  for (const l of LOCALES) languages[l] = absoluteUrl('/', l);
+  languages['x-default'] = absoluteUrl('/', 'de');
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    title: {
+      // Der Markenname steckt bereits im Hero-Titel — kein Suffix auf der Startseite.
+      default: t('platform.hub.hero.title'),
+      // Unterseiten liefern nur ihren eigenen Titel, das Suffix kommt von hier.
+      template: `%s | ${SITE_NAME}`,
+    },
+    description: t('platform.hub.hero.subtitle').replace(/\s+/g, ' ').trim(),
+    applicationName: SITE_NAME,
+    alternates: { canonical: absoluteUrl('/', locale), languages },
+    openGraph: {
+      type: 'website',
+      siteName: SITE_NAME,
+      locale: locale === 'de' ? 'de_DE' : 'en_US',
+      url: absoluteUrl('/', locale),
+    },
+    robots: { index: true, follow: true },
+  };
 }
 
 export default async function LocaleLayout({
