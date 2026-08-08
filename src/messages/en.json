@@ -1994,7 +1994,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 28(1) GDPR requires the controller to work only with processors providing sufficient guarantees that appropriate technical and organisational measures are implemented so that processing complies with the GDPR and protects the rights of data subjects."
       },
       "avQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2005,7 +2005,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 28(3) GDPR requires that processing by a processor be governed by a contract or other legal instrument binding the processor to the controller. This contract must at minimum specify: subject matter and duration of processing, nature and purpose, type of data, categories of data subjects, and the obligations and rights of the controller."
       },
       "avQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2016,7 +2016,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 28(2) GDPR requires that the processor not engage another processor (sub-processor) without prior written authorisation from the controller. Under a general written authorisation, the processor must inform the controller of any changes and give the controller the opportunity to object."
       },
       "avQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2027,7 +2027,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 28(4) GDPR requires the processor to impose on the sub-processor, by way of a contract, the same data protection obligations as set out in the contract between controller and processor. Where the sub-processor fails to fulfil its obligations, the initial processor remains fully liable to the controller for the performance of the sub-processor’s obligations."
       },
       "avQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2038,7 +2038,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 29 GDPR stipulates that the processor and any person acting under the authority of the controller or processor who has access to personal data may process that data only on instructions from the controller — unless required to do so by Union or Member State law. This also covers your own employees, who must be bound to confidentiality."
       },
       "brQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2049,7 +2049,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 15 GDPR gives every data subject the right of access to the personal data concerning them. Art. 12(3) GDPR sets a deadline of one month for responding. Section 34 BDSG contains exemptions from the duty to provide access, e.g. where data is stored solely due to statutory retention requirements."
       },
       "brQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2060,7 +2060,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 16 GDPR grants the right to rectification of inaccurate data. Art. 17 GDPR establishes the right to erasure (‘right to be forgotten’). Implementation must cover all systems in which the data is stored, including backups and recipients (Art. 17(2) GDPR). Section 35 BDSG contains exemptions from the erasure obligation."
       },
       "brQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2071,7 +2071,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 20 GDPR grants data subjects the right to receive their data in a structured, commonly used and machine-readable format and to transmit it to another controller. This applies only to data based on consent or contract performance and processed by automated means. Section 36 BDSG restricts the right for public bodies."
       },
       "brQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2082,7 +2082,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 21 GDPR grants data subjects a right to object to processing based on Art. 6(1)(e) or (f) GDPR. Upon objection to direct marketing (Art. 21(2) GDPR), the data must be removed from marketing use immediately without further assessment. For other objections, a balancing of interests is required."
       },
       "brQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2093,7 +2093,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 22 GDPR gives data subjects the right not to be subject to a decision based solely on automated processing which produces legal effects concerning them or similarly significantly affects them. Exceptions apply for contract performance, legal authorisation or explicit consent. Section 37 BDSG contains supplementary national rules and provides safeguards."
       },
       "dsbQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2104,7 +2104,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 37(1) GDPR requires designation of a DPO for: (a) public authorities, (b) large-scale regular monitoring, (c) large-scale processing of special categories of data. Section 38(1) BDSG extends this considerably: in Germany, a DPO must be designated where as a rule at least 20 persons are permanently engaged in automated processing of personal data. Irrespective of headcount, the duty applies to processing subject to a DPIA or commercial processing for the purpose of transfer or market research."
       },
       "dsbQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2115,7 +2115,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 38(1) GDPR obliges the controller to ensure the DPO is involved, properly and in a timely manner, in all issues relating to the protection of personal data. Art. 38(2) GDPR requires that the DPO receive the resources necessary to carry out their tasks. Section 38(2) BDSG specifies protection where more than 20 persons are permanently engaged in processing."
       },
       "dsbQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2126,7 +2126,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 39(1) GDPR defines the DPO’s minimum tasks: (a) informing and advising the controller and employees, (b) monitoring compliance with the GDPR and the BDSG including awareness-raising and training, (c) advising on the DPIA and monitoring its performance, (d) cooperating with the supervisory authority, (e) acting as contact point for the supervisory authority."
       },
       "dsbQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2137,7 +2137,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 37(7) GDPR requires the controller to publish the DPO’s contact details and communicate them to the supervisory authority. Section 38(1) sentence 6 BDSG specifies the notification duty. Publication typically takes place on the website (privacy policy) and in the legal notice. Notification to the authority is made online via the portal of the competent state authority."
       },
       "dsbQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2148,7 +2148,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 38(3) GDPR protects the DPO: they may not be dismissed or penalised for performing their tasks. They report directly to the highest management level. No conflicts of interest may exist (Art. 38(6) GDPR). Typical conflicts: the DPO simultaneously acting as IT manager, managing director, HR manager or marketing manager. Section 38(2) BDSG specifies the dismissal protection."
       },
       "dsfaQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2159,7 +2159,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 35(1) GDPR obliges the controller to carry out a data protection impact assessment before introducing processing operations likely to result in a high risk to the rights and freedoms of natural persons. This applies in particular to the use of new technologies."
       },
       "dsfaQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2170,7 +2170,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 35(3) GDPR lists standard cases of processing requiring a DPIA (profiling, large-scale processing of special categories, systematic monitoring). In addition, supervisory authorities publish mandatory lists (blacklists) pursuant to Art. 35(4) GDPR. In Germany, the list of the DSK (Conference of Data Protection Authorities) is authoritative."
       },
       "dsfaQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2181,7 +2181,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 35(7) GDPR prescribes four minimum components of a DPIA: (a) a systematic description of the processing operations and purposes, (b) an assessment of necessity and proportionality, (c) an assessment of the risks to data subjects, (d) the measures envisaged to address the risks. Without these elements the DPIA is incomplete."
       },
       "dsfaQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2192,7 +2192,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 36(1) GDPR obliges the controller to consult the supervisory authority prior to processing where the DPIA indicates that the processing would result in a high risk despite the planned safeguards. The authority then has up to 8 weeks to provide written advice (Art. 36(2) GDPR)."
       },
       "dsfaQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2203,7 +2203,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 35(11) GDPR requires the controller to review a DPIA already carried out when there is a change in the risk represented by the processing. This applies, for example, when new technologies are introduced, the purpose of processing changes or new threat scenarios emerge."
       },
       "dtQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2214,7 +2214,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 44 GDPR stipulates that any transfer of personal data to a third country is permitted only if the conditions of Art. 44-49 GDPR are met. Third countries are all countries outside the EEA (EU plus Iceland, Liechtenstein, Norway)."
       },
       "dtQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2225,7 +2225,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 46(2)(c) GDPR permits third-country transfers on the basis of Standard Contractual Clauses (SCC) adopted by the EU Commission. Since 27.12.2022, only the Commission’s new SCCs (Implementing Decision 2021/914) may be used. Additional measures may be required following the CJEU’s Schrems II judgment."
       },
       "dtQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2236,7 +2236,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 45 GDPR permits data transfers to third countries for which the EU Commission has determined an adequate level of data protection by decision. Current adequacy decisions exist for, among others: Andorra, Argentina, Canada (partially), the Faroe Islands, Guernsey, Israel, the Isle of Man, Japan, Jersey, New Zealand, South Korea, Switzerland, the UK and the USA (EU-U.S. Data Privacy Framework since 10.07.2023). These decisions can be revoked."
       },
       "dtQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2247,7 +2247,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 46(1)-(2) GDPR requires appropriate safeguards for third-country transfers. Following the CJEU’s Schrems II judgment (C-311/18), controllers must assess whether the SCCs can ensure an adequate level of protection in the specific case — taking into account the legal situation in the recipient country (in particular government access powers). EDPB Recommendations 01/2020 describe the procedure in detail."
       },
       "dtQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2258,7 +2258,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 49 GDPR permits third-country transfers in exceptional cases without an adequacy decision or appropriate safeguards, e.g. with explicit consent (para. 1(a)), for contract performance ((b)-(c)), for important reasons of public interest ((d)), for legal claims ((e)) or vital interests ((f)). These derogations are to be interpreted narrowly and are not suitable for regular, large-scale transfers."
       },
       "dvQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2269,7 +2269,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 33(1) GDPR obliges the controller to notify a personal data breach to the competent supervisory authority without undue delay and, where feasible, within 72 hours — unless the breach is unlikely to result in a risk. Where notification is delayed, reasons for the delay must be given."
       },
       "dvQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2280,7 +2280,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 33(3) GDPR requires the notification to the supervisory authority to contain at least: (a) the nature of the breach including categories and number of data subjects affected, (b) the name and contact details of the DPO, (c) the likely consequences of the breach, (d) the measures taken and proposed. Art. 33(5) GDPR additionally requires internal documentation of all breaches."
       },
       "dvQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2291,7 +2291,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 34(1) GDPR requires that data subjects be notified without undue delay when a personal data breach is likely to result in a high risk to their rights and freedoms. The notification must use clear and plain language."
       },
       "dvQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2302,7 +2302,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 33(5) GDPR obliges the controller to document all personal data breaches, including the related facts, effects and remedial measures taken. This documentation must enable the supervisory authority to verify compliance — which means it must also cover incidents not subject to notification."
       },
       "dvQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2313,7 +2313,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 34(3) GDPR provides that notification of data subjects is not required if: (a) appropriate protective measures such as encryption were applied, (b) subsequent measures have eliminated the high risk, or (c) notification would involve disproportionate effort (in which case a public communication is required)."
       },
       "ewQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2324,7 +2324,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 6(1) GDPR lists six possible legal bases: consent ((a)), contract performance ((b)), legal obligation ((c)), vital interests ((d)), public interest ((e)) and legitimate interest ((f)). Every processing operation requires at least one of these bases. Section 26 BDSG contains special rules for employee data."
       },
       "ewQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2335,7 +2335,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 7(1) GDPR places the burden of proof on the controller: they must be able to demonstrate that the data subject has consented to the processing. Consent must be freely given, specific, informed and unambiguous (Art. 4(11) GDPR). Section 26(2) BDSG generally requires written form for employee consent."
       },
       "ewQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2346,7 +2346,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 7(3) GDPR guarantees the right to withdraw consent at any time. Withdrawal must be as easy as giving consent. Before giving consent, the data subject must be informed of the right to withdraw. The lawfulness of processing carried out before withdrawal remains unaffected."
       },
       "ewQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2357,7 +2357,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 8 GDPR governs children’s consent for information society services (e.g. online services, apps). In Germany the age limit is 16 years (Art. 8(1) GDPR; Germany has not set a different age limit). For children under 16, consent or authorisation by the holder of parental responsibility is required. The controller must make reasonable efforts to verify this."
       },
       "ewQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2368,7 +2368,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 9(1) GDPR prohibits in principle the processing of special categories of data (health, religion, ethnic origin, political opinions, trade union membership, genetics, biometrics, sex life). Art. 9(2)(a) GDPR permits processing with explicit consent. Section 22 BDSG contains additional conditions and safeguards."
       },
       "pbdQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2379,7 +2379,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 25(1) GDPR requires the controller, both at the time of determining the means for processing and at the time of processing itself, to implement appropriate technical and organisational measures designed to implement data protection principles effectively. The state of the art, implementation costs and risks must be taken into account."
       },
       "pbdQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2390,7 +2390,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 25(2) GDPR requires that, by default, only personal data necessary for each specific purpose of processing is processed. This applies to the amount collected, the extent of processing, the storage period and accessibility. By default, personal data must not be made accessible to an indefinite number of persons without the data subject’s intervention."
       },
       "pbdQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2401,7 +2401,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 5(1)(c) GDPR establishes the principle of data minimisation: personal data must be adequate, relevant and limited to what is necessary for the purposes of processing. This principle is a core element of privacy by design and affects the design of forms, databases, processes and interfaces."
       },
       "pbdQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2412,7 +2412,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 25(3) GDPR provides that approved certification mechanisms pursuant to Art. 42 GDPR may be used as an element to demonstrate compliance with privacy by design and privacy by default requirements. Likewise, approved codes of conduct pursuant to Art. 40 GDPR may be taken into account in the assessment."
       },
       "pbdQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2423,7 +2423,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 5(1)(e) GDPR establishes the principle of storage limitation: personal data may be stored only for as long as necessary for the purposes. Privacy by design requires that deletion mechanisms be built into the system architecture from the outset, not retrofitted."
       },
       "tomQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2434,7 +2434,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 32(1)(a) GDPR explicitly names pseudonymisation and encryption as appropriate technical measures to ensure a level of protection appropriate to the risk."
       },
       "tomQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2445,7 +2445,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 32(1)(b) GDPR requires the ability to ensure the ongoing confidentiality, integrity, availability and resilience of systems and services. Confidentiality: only authorised persons have access. Integrity: data is not altered without authorisation. Availability: systems function when needed."
       },
       "tomQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2456,7 +2456,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 32(1)(c) GDPR requires the ability to restore the availability of and access to personal data in a timely manner in the event of a physical or technical incident. Art. 32(1)(d) GDPR additionally requires a process for regularly testing and evaluating the effectiveness of the measures."
       },
       "tomQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2467,7 +2467,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 32(1)(d) GDPR explicitly requires a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures. This includes internal audits, penetration tests, vulnerability analyses and the evaluation of security incidents."
       },
       "tomQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2478,7 +2478,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 32(1) GDPR requires that the selection of protective measures take into account the state of the art, implementation costs, the nature, scope, context and purposes of processing, and the likelihood and severity of the risk. Art. 32(2) GDPR requires the assessment to consider in particular risks from destruction, loss, alteration or unauthorised access."
       },
       "vvQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2489,7 +2489,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 30(1) GDPR obliges every controller to maintain a record of all processing activities. Mandatory entries include: name and contact details of the controller, purposes of processing, categories of data subjects and personal data, categories of recipients, transfers to third countries, erasure deadlines and technical and organisational measures."
       },
       "vvQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2500,7 +2500,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 30(1)(b)-(d) GDPR requires documentation of the purposes of processing, the categories of data subjects (e.g. customers, employees, applicants) and the categories of personal data (e.g. contact details, bank details, health data). These entries must reflect the actual processing operations."
       },
       "vvQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2511,7 +2511,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 30(1)(f)-(g) GDPR requires stating the envisaged time limits for erasure of the different categories of data and a general description of the technical and organisational security measures pursuant to Art. 32(1) GDPR. ‘Where possible’ is not an exemption here but the supervisory authorities’ expectation."
       },
       "vvQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2522,7 +2522,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 30(2) GDPR also obliges the processor to maintain a record. It contains: name and contact details of the processor and of each controller, categories of processing, transfers to third countries where applicable, and a general description of the protective measures. This is a separate record, independent of the controller’s record of processing activities."
       },
       "vvQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2533,7 +2533,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 30(4) GDPR requires that the record be made available to the supervisory authority on request. Art. 30(5) GDPR contains an exemption for organisations with fewer than 250 employees, which however only applies if the processing is not regular, does not involve special categories of data and poses no risk — in practice this exemption rarely applies."
       }
     },
     "quickCheck": {
@@ -2871,7 +2871,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Under Section 39(1) BSIG, operators of critical facilities must demonstrate implementation of their measures every three years — the NIS2UmsG extended the cycle from two to three years. Where deficiencies are found, the BSI can demand a remediation plan."
       },
       "auQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2882,7 +2882,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Under Section 39(1) BSIG, the compliance documentation must verifiably evidence the implemented measures. The BSI reviews the adequacy and completeness of the documentation."
       },
       "auQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2893,7 +2893,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Internal audits complement the BSI evidence obligation under Section 39(1) BSIG and help identify deficiencies before the official review. BSI module ISMS.1 requires regular internal reviews."
       },
       "auQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2904,7 +2904,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Under Section 39(1) BSIG, the BSI can order specific measures where deficiencies are found. A structured improvement process (PDCA) ensures that findings are remedied sustainably."
       },
       "bcmQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2915,7 +2915,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 30(1) BSIG requires measures to maintain the availability of critical services. A BCMS in line with BSI Standard 200-4 or ISO 22301 provides the organisational framework."
       },
       "bcmQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2926,7 +2926,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "The business impact analysis (BIA) is a core component of a BCMS under BSI Standard 200-4. It determines recovery time objectives (RTO) and tolerable data loss (RPO) for the critical service."
       },
       "bcmQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2937,7 +2937,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 30(1) BSIG requires appropriate precautions, which includes testing the contingency plans. BSI module DER.4 describes requirements for emergency exercises."
       },
       "bcmQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2948,7 +2948,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Technical redundancy is an essential part of the BCMS for KRITIS operators. Section 30(1) BSIG requires state-of-the-art measures to ensure availability."
       },
       "bsiQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2959,7 +2959,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 33 BSIG requires registration with the BSI including address and up-to-date contact details. For the BSI to reach you in acute threat situations, a designated unit must reliably receive these notifications."
       },
       "bsiQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2970,7 +2970,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "The contact details registered under Section 33 BSIG must be current and reachable. The BSI also issues warnings about acute threats outside business hours — a continuously staffed or on-call unit is the practical prerequisite."
       },
       "bsiQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2981,7 +2981,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "The contact point must not only receive BSI information but also be able to evaluate and route it internally. Mere registration under Section 33 BSIG is not sufficient for this."
       },
       "bsiQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -2992,7 +2992,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "The BSI conducts and participates in cross-sector exercises. Taking part strengthens cooperation and tests the reporting channels. BSI module DER.2.1 recommends regular exercises."
       },
       "lkQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3003,7 +3003,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 30(1) BSIG requires appropriate precautions in the supply chain as well. BSI module ORP.1 describes requirements for contract design with external service providers."
       },
       "lkQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3014,7 +3014,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Assessing supply chain security is part of the risk analysis under Section 30(1) BSIG. BSI module OPS.1.1.3 describes requirements for outsourcing management."
       },
       "lkQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3025,7 +3025,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Dependence on third parties must be taken into account in the BCM (Section 30(1) BSIG). BSI Standard 200-4 requires considering external dependencies in the business impact analysis."
       },
       "lkQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3036,7 +3036,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Ongoing monitoring of supply chain security is part of the evidence obligation under Section 39(1) BSIG. The BSI can also review the adequacy of measures with regard to the supply chain."
       },
       "psQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3047,7 +3047,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 30(1) BSIG requires appropriate precautions including physical security. BSI modules INF.1 (general building) and INF.2 (data centre) describe specific requirements for access controls."
       },
       "psQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3058,7 +3058,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI module INF.1 requires protecting buildings against environmental hazards such as fire, water, lightning and power failure. For data centres, INF.2 imposes elevated requirements."
       },
       "psQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3069,7 +3069,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "For KRITIS facilities with elevated protection needs, Section 30(1) BSIG requires state-of-the-art measures. BSI module INF.1 recommends supplementary monitoring measures for critical areas."
       },
       "rmQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3080,7 +3080,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 30(1) BSIG requires appropriate organisational and technical precautions in line with the state of the art. A risk analysis based on BSI Standard 200-3 or ISO 27005 provides the foundation."
       },
       "rmQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3091,7 +3091,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "An ISMS based on ISO 27001 or BSI IT-Grundschutz is the recommended foundation for implementing Section 30 BSIG. BSI module ISMS.1 defines the minimum requirements."
       },
       "rmQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3102,7 +3102,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 31 BSIG obliges KRITIS operators to use attack detection systems (SzA). The BSI has published guidance on SzA describing specific requirements for logging, detection and response."
       },
       "rmQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3113,7 +3113,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Risk treatment and effectiveness reviews are core components of the ISMS under BSI module ISMS.1. Section 30(1) BSIG requires appropriate precautions whose adequacy must be reviewed regularly."
       },
       "shQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3124,7 +3124,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 30(1) BSIG requires state-of-the-art technical precautions. BSI module SYS.1.1 (general server) describes requirements for secure configuration. CIS Benchmarks and BSI hardening guidelines are recognised standards."
       },
       "shQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3135,7 +3135,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Network segmentation is a core measure under Section 30(1) BSIG. BSI module NET.1.1 (network architecture and design) requires separating network segments by protection needs."
       },
       "shQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3146,7 +3146,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Patch management is a basic requirement under Section 30(1) BSIG (state of the art). BSI module OPS.1.1.3 describes requirements for patch and change management. Special requirements apply to OT systems."
       },
       "vmQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3157,7 +3157,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 32 BSIG obliges KRITIS operators to report significant IT disruptions to the BSI without undue delay. BSI module DER.2.1 describes requirements for handling security incidents."
       },
       "vmQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3168,7 +3168,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Section 32 BSIG requires significant security incidents to be reported to the BSI without undue delay. The staggered deadlines — initial report within 24 hours, report within 72 hours, final report no later than one month afterwards — must be met."
       },
       "vmQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3179,7 +3179,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Follow-up (lessons learned) is an essential part of incident management under BSI module DER.2.3. Section 32(1) no. 4 BSIG requires final reports that also describe causes and countermeasures."
       },
       "vmQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3190,7 +3190,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "For KRITIS operators, the BSI recommends establishing or commissioning a specialised incident response team. BSI modules DER.2.1 and DER.2.2 describe requirements for incident handling and forensic analysis."
       }
     },
     "quickCheck": {
@@ -3465,7 +3465,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 28(1)-(3) DORA obliges financial entities to manage ICT third-party risk as an integral part of the ICT risk management framework. This includes creating and regularly updating a register of information on all contractual arrangements for the use of ICT services. The RTS under Art. 28(9) DORA specify the requirements."
       },
       "daQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3476,7 +3476,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 28(4)-(8) DORA sets extensive minimum requirements for contractual arrangements with ICT third-party providers. These include, among others: a complete description of services, availability targets, data processing locations, data security provisions, support obligations in ICT incidents, termination rights, audit and access rights, and cooperation duties in TLPT."
       },
       "daQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3487,7 +3487,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 29(1)-(2) DORA obliges financial entities to assess ICT concentration risk. This includes analysing whether too many critical or important functions are concentrated with one or a few ICT third-party providers and whether substitution options exist. The RTS under Art. 28(9) DORA contain requirements for assessing concentration risk."
       },
       "daQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3498,7 +3498,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 30(1)-(5) DORA defines stricter contractual requirements for ICT services supporting critical or important functions. These include, among others: complete service level descriptions, guaranteed availability targets, provider obligations in incidents, security measures, data protection guarantees, unrestricted audit and access rights, termination rights and exit strategies."
       },
       "daQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3509,7 +3509,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 31(1)-(12) DORA governs the oversight framework for critical ICT third-party service providers. The ESAs can designate ICT third-party providers as critical and appoint a lead overseer. The overseer has far-reaching powers: information requests, inspections, recommendations and, where applicable, usage restrictions. Financial entities must implement the resulting requirements."
       },
       "govQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3520,7 +3520,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 5(1)-(2) DORA assigns the management body ultimate responsibility for managing the financial entity’s ICT risk. The management body must define, approve, oversee and be accountable for the ICT risk management framework. It must also allocate an appropriate budget and ensure the ICT strategy is aligned with the business strategy."
       },
       "govQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3531,7 +3531,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 5(4) DORA obliges members of the management body to keep their knowledge and skills up to date in order to understand and assess ICT risk and its impact on the financial entity. Specific training appropriate to the complexity of the ICT risks must be offered to them."
       },
       "govQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3542,7 +3542,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 6(5)-(8) DORA requires the ICT risk management framework to be reviewed at least once a year and after major ICT-related incidents. The management body must receive formal reports on the ICT risk situation and key findings. The framework must be updated based on test results, incidents and supervisory instructions."
       },
       "govQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3553,7 +3553,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 4(1)-(2) DORA stipulates that financial entities implement the ICT risk management framework taking into account their size, risk profile, and the nature, scale and complexity of their services and operations. Certain small and non-complex financial entities are subject to simplified requirements under Art. 16 DORA."
       },
       "govQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3564,7 +3564,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 6(1)-(4) DORA and the RTS JC 2023 86 require an appropriate organisational structure for ICT risk management with a clear separation of ICT operations from ICT control and monitoring functions. The control function must have sufficient independence, authority and resources to work effectively."
       },
       "iaQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3575,7 +3575,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 45(1)-(2) DORA permits financial entities to exchange cyber threat information and intelligence among themselves. This exchange is intended to strengthen the digital operational resilience of the financial sector as a whole and covers indicators of compromise (IoCs), tactics, techniques and procedures (TTPs) and security alerts."
       },
       "iaQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3586,7 +3586,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 45(3) DORA requires the information exchange to take place within trusted communities that protect the potentially sensitive nature of the shared information. Codes of conduct must apply that preserve the protection of personal data, the protection of business secrets and competition policy."
       },
       "iaQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3597,7 +3597,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 45(4) DORA requires the information exchange to comply with the rules on the protection of personal data (in particular the GDPR) and on the protection of business secrets. Confidentiality agreements and secrecy obligations must govern the handling of the shared information."
       },
       "iaQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3608,7 +3608,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 45(1) DORA names as the subject of the information exchange in particular indicators of compromise (IoCs), tactics, techniques and procedures (TTPs), security alerts and configuration tools. Integrating this information into your own ICT security infrastructure is decisive for its operational value."
       },
       "iaQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3619,7 +3619,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 45(2) DORA provides that financial entities notify the competent authority of their participation in information-sharing arrangements. The supervisory authority should be aware of the participation and can provide guidance on structuring the exchange."
       },
       "irmQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3630,7 +3630,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 6(1)-(2) DORA (EU 2022/2554) obliges financial entities to establish a sound, comprehensive and well-documented ICT risk management framework. It must include strategies, policies, procedures, and ICT protocols and tools necessary to protect all ICT assets. The regulatory technical standards (RTS) under JC 2023 86 specify the requirements for the framework."
       },
       "irmQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3641,7 +3641,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 8(1)-(4) DORA obliges financial entities to identify, classify and document all ICT-supported business functions, information assets and ICT assets. The RTS JC 2023 86 specify the requirements for asset identification and mapping to critical or important functions."
       },
       "irmQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3652,7 +3652,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 9(1)-(4) DORA requires financial entities to continuously monitor and control ICT systems and tools to ensure their security and proper functioning. This includes measures to minimise the impact of ICT risk through the use of appropriate strategies, policies, procedures and tools."
       },
       "irmQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3663,7 +3663,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 10(1)-(2) DORA obliges financial entities to establish mechanisms to promptly detect anomalous activities, including ICT-related incidents and performance issues. This includes automated monitoring tools that trigger alerts when predefined thresholds are exceeded."
       },
       "irmQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3674,7 +3674,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 12(1)-(2) DORA requires financial entities to establish ICT business continuity policies and plans as well as recovery plans, which must be tested regularly. Backup policies must define the scope, frequency and retention of backups as well as procedures for secure restoration."
       },
       "rtQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3685,7 +3685,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 24(1)-(2) DORA obliges financial entities to establish a comprehensive digital operational resilience testing programme as an integral part of the ICT risk management framework. The programme must include a range of tests and be designed on a risk basis, taking into account the evolving ICT risk landscape."
       },
       "rtQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3696,7 +3696,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 25(1)-(3) DORA lists the required test types: vulnerability assessments and scans, open-source analyses, network security assessments, gap analyses, physical security reviews, questionnaires and software scans, source code reviews, scenario-based tests, compatibility tests, performance tests, end-to-end tests and penetration tests."
       },
       "rtQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3707,7 +3707,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 26(1)-(8) DORA obliges certain financial entities to carry out threat-led penetration testing (TLPT) at least every three years. The competent authority identifies the financial entities concerned, taking into account systemic relevance, ICT risk profile and ICT maturity. The RTS JC 2024 53 specify the TLPT requirements."
       },
       "rtQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3718,7 +3718,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 26(2)-(4) DORA imposes strict requirements on TLPT testers: they must be of the highest suitability and repute, possess technical and organisational capabilities, and be certified by an accreditation body or adhere to formal codes of conduct. Additional requirements on independence and insurance cover apply to external testers."
       },
       "rtQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3729,7 +3729,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 27(1)-(3) DORA defines specific requirements for TLPT testers: suitability and repute, technical and organisational capabilities in threat intelligence, penetration testing and red teaming, certification by an accreditation body, professional indemnity insurance, formal codes of conduct and management of conflicts of interest."
       },
       "vmQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3740,7 +3740,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 17(1)-(3) DORA obliges financial entities to establish a management process to monitor, handle and follow up ICT-related incidents. It must include early warning indicators and procedures for identification, tracking, logging and categorisation. The RTS JC 2024 33 specify the classification requirements."
       },
       "vmQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3751,7 +3751,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 18(1)-(2) DORA stipulates that financial entities classify ICT-related incidents based on defined criteria. The classification criteria include, among others: number of clients affected, duration of the incident, geographical spread, data losses, criticality of the services affected and economic impact. The RTS JC 2024 33 define the thresholds for major incidents."
       },
       "vmQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3762,7 +3762,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 19(1)-(4) DORA establishes a three-stage reporting procedure: initial notification (within 4 hours of classification as major, at the latest 24 hours after detection), intermediate report (within 72 hours of the initial notification) and final report (within one month of the last intermediate report). The deadlines are set in Delegated Regulation (EU) 2025/301; the ITS under Art. 20 DORA define the standard forms."
       },
       "vmQ4": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3773,7 +3773,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 20(1) DORA empowers the ESAs to develop draft ITS establishing standard forms, templates and procedures for reporting major ICT-related incidents. The ITS JC 2024 33 contain the specific reporting forms with the required data fields for initial, intermediate and final reports."
       },
       "vmQ5": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -3784,7 +3784,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 19(2) DORA provides that financial entities may voluntarily report significant cyber threats to the competent authority where they consider them relevant to the financial system, service users or clients."
       }
     },
     "quickCheck": {
@@ -4013,7 +4013,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.9 — IT systems must be hardened before going live. Unnecessary services, ports and default accounts must be disabled, and security patches applied promptly."
       },
       "bsQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4024,7 +4024,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.7 — All information-processing systems must be protected against malware by appropriate measures. This includes antivirus software, Endpoint Detection and Response (EDR) and web/email filtering."
       },
       "bsQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4035,7 +4035,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.8 — Technical vulnerabilities must be identified promptly, rated by severity and remediated through patches or compensating measures. Regular vulnerability scans are required."
       },
       "compQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4046,7 +4046,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.31 — All relevant legal, regulatory and contractual information security requirements must be identified and documented, and compliance with them ensured."
       },
       "compQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4057,7 +4057,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.35 — Internal audits must be planned and performed regularly to verify the effectiveness of the ISMS. The results must be evaluated in a management review."
       },
       "compQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4068,7 +4068,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.27 — Findings from TISAX assessments, internal audits and security incidents must be systematically evaluated and turned into improvement measures. The PDCA cycle must be demonstrably practised."
       },
       "dsQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4079,7 +4079,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.34 — Processing of personal data must comply with the requirements of the GDPR and the BDSG. A data protection officer must be designated and compliance with the data protection principles ensured."
       },
       "dsQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4090,7 +4090,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 (Data Protection module) — Where personal data is processed by third parties (processors), data processing agreements (DPA) must be concluded in accordance with Art. 28 GDPR."
       },
       "dsQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4101,7 +4101,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 (Data Protection module) — Personal data breaches must be reported to the supervisory authority within 72 hours in accordance with Art. 33/34 GDPR. A documented process must ensure that breaches are detected, assessed and reported on time."
       },
       "komQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4112,7 +4112,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.20 — Networks must be segmented according to protection needs and protected by firewalls, intrusion detection/prevention systems and further security components."
       },
       "komQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4123,7 +4123,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.21 — Network services must be identified, securely configured and monitored. This includes DNS, DHCP, VPN access, remote access solutions and wireless networks."
       },
       "komQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4134,7 +4134,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.14 — Confidential information must be exchanged with external partners via encrypted and authenticated communication channels. Special requirements apply to OEM data exchange."
       },
       "kryQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4145,7 +4145,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — A cryptography policy must define when and how cryptographic mechanisms are used. This covers encryption standards, key lengths and the management of cryptographic keys."
       },
       "kryQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4156,7 +4156,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Confidential information must be protected by appropriate encryption both at rest and in transit."
       },
       "kryQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4167,7 +4167,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Management of cryptographic keys must cover the entire lifecycle: generation, distribution, storage, rotation, archiving and revocation/destruction."
       },
       "liefQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4178,7 +4178,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.20 — Contractual agreements with suppliers and service providers must include information security requirements, especially where they gain access to confidential OEM data or IT systems."
       },
       "liefQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4189,7 +4189,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.22 — The information security of suppliers must be assessed regularly, especially where they have access to confidential information or critical IT systems."
       },
       "liefQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4200,7 +4200,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.21 — Changes in the supply chain (e.g. new sub-suppliers, site relocations, personnel changes) must be assessed for their impact on information security."
       },
       "orgQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4211,7 +4211,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.1 — An information security policy is the top-level directive for handling information security in the company. It must be approved by management and made available to all employees."
       },
       "orgQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4222,7 +4222,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.2 — Clear roles for information security must be defined, in particular an information security officer (ISO). Responsibilities must be documented and communicated."
       },
       "orgQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4233,7 +4233,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 clause 6.1.2 — Systematic risk management is a core component of the ISMS. Risks must be identified, rated by likelihood and impact, and treated with appropriate measures."
       },
       "perQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4244,7 +4244,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.1 — Background checks appropriate to the protection needs of the future role must be performed before hiring. This includes identity verification, proof of qualifications and, where applicable, criminal record certificates."
       },
       "perQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4255,7 +4255,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.3 — All employees must receive regular information security training and awareness. Training must be role-specific and verifiable."
       },
       "perQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4266,7 +4266,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.6 — Non-disclosure agreements (NDA) must be concluded with all persons who have access to information requiring protection. This includes employees, temporary workers, consultants and service providers."
       },
       "phyQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4277,7 +4277,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.1 — Security areas must be defined and protected by physical barriers and access controls. The strength of protection must match the protection needs of the information processed."
       },
       "phyQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4288,7 +4288,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.8 — IT equipment, storage media and documentation must be protected against theft, damage and unauthorised viewing. Special requirements apply to mobile devices and removable media."
       },
       "phyQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4299,7 +4299,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.5 — Security-relevant areas must be protected against environmental threats. This includes fire protection, water protection, air conditioning and uninterruptible power supply."
       },
       "protoQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4310,7 +4310,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 (Prototype Protection module) — Prototype protection is a TISAX-specific requirement area. A documented concept must exist for protecting physical prototypes against unauthorised viewing, photography and disclosure."
       },
       "protoQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4321,7 +4321,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.10 — Digital prototype information such as CAD data, photos, design sketches and technical specifications requires special protection and handling rules. Disclosure must be strictly controlled."
       },
       "protoQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4332,7 +4332,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.20 — Where prototypes or prototype information are passed on to sub-suppliers, the prototype protection requirements must be agreed contractually and compliance monitored."
       },
       "techQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4343,7 +4343,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.9 — All information-processing assets must be identified, inventoried and classified by protection needs. Without a complete asset inventory, effective security management is impossible."
       },
       "techQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4354,7 +4354,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.12 — A classification scheme for information must be defined. Information must be labelled according to its confidentiality and handled, stored and transmitted according to defined rules."
       },
       "techQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4365,7 +4365,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.10 — The use of removable media (USB sticks, external drives, optical media) must be controlled. Storage media no longer needed must be securely erased or physically destroyed."
       },
       "zkQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4376,7 +4376,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.15 — Access rights to information and information-processing systems must be granted based on business requirements and the principle of least privilege."
       },
       "zkQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4387,7 +4387,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.16 — Management of identities and access rights must cover the entire lifecycle: creation, modification and deactivation of accounts when employees join, transfer or leave."
       },
       "zkQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4398,7 +4398,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.2 — Privileged access (e.g. administrator, root and service accounts) poses an elevated risk and must be separately managed, restricted and monitored."
       }
     },
     "quickCheck": {
@@ -4447,122 +4447,122 @@
     },
     "recommendations": {
       "bs1": {
-        "description": "Implement comprehensive malware protection for all automotive development and production systems per VDA ISA 9.1.1 and ISO 27001 A.8.6. Take special requirements for OT environments into account.",
+        "description": "Implement comprehensive malware protection for all automotive development and production systems per VDA ISA 6 and ISO 27001 A.8.7. Take special requirements for OT environments into account.",
         "firstStep": "Deploy anti-malware solutions on all workstations and servers handling automotive data (development, PLM, MES).",
         "title": "Malware protection for automotive development environments"
       },
       "bs2": {
-        "description": "Establish vulnerability management for all automotive IT and OT systems per VDA ISA 9.1.2 and ISO 27001 A.8.7. Prioritize patching for production-adjacent and prototype systems.",
+        "description": "Establish vulnerability management for all automotive IT and OT systems per VDA ISA 6 and ISO 27001 A.8.8. Prioritize patching for production-adjacent and prototype systems.",
         "firstStep": "Implement automated vulnerability scanning for all automotive systems (at least monthly for development environments).",
         "title": "Vulnerability management for automotive systems"
       },
       "comp1": {
-        "description": "Implement a comprehensive compliance framework to meet all VDA ISA/TISAX requirements per VDA ISA 12.1.1 and ISO 27001 A.5.31. Prepare for a TISAX assessment.",
+        "description": "Implement a comprehensive compliance framework to meet all VDA ISA/TISAX requirements per VDA ISA 6 and ISO 27001 A.5.31. Prepare for a TISAX assessment.",
         "firstStep": "Conduct a TISAX gap assessment to identify deviations between the current state and VDA ISA requirements.",
         "title": "Implement a TISAX compliance framework"
       },
       "comp2": {
-        "description": "Conduct regular reviews to ensure compliance with all TISAX and automotive security requirements per VDA ISA 12.1.2 and ISO 27001 A.5.32. Document evidence for audits.",
+        "description": "Conduct regular reviews to ensure compliance with all TISAX and automotive security requirements per VDA ISA 6 and ISO 27001 A.5.36. Document evidence for audits.",
         "firstStep": "Schedule quarterly TISAX compliance reviews with defined checkpoints (VDA ISA controls, measure status).",
         "title": "Conduct regular compliance reviews"
       },
       "ds1": {
-        "description": "Implement a data protection management system for automotive-specific personal data (e.g., vehicle data, test drivers) per VDA ISA 6.1.1 and GDPR.",
+        "description": "Implement a data protection management system for automotive-specific personal data (e.g., vehicle data, test drivers) per VDA ISA 6 (Data Protection module) and GDPR.",
         "firstStep": "Identify all processing activities involving automotive personal data and maintain a record of processing activities per Art. 30 GDPR.",
         "title": "Establish data protection management for automotive data"
       },
       "ds2": {
-        "description": "Conduct regular data protection audits and reviews, especially for automotive data processing activities (connected car, test data) per VDA ISA 6.1.2.",
+        "description": "Conduct regular data protection audits and reviews, especially for automotive data processing activities (connected car, test data) per VDA ISA 6 (Data Protection module).",
         "firstStep": "Schedule an annual data protection audit focusing on automotive-specific data processing (e.g., telematics, test drives).",
         "title": "Conduct data protection audits and reviews"
       },
       "kom1": {
-        "description": "Implement comprehensive network security measures for automotive development networks (segmentation, firewalls, IDS/IPS) per VDA ISA 10.1.1 and ISO 27001 A.8.20.",
+        "description": "Implement comprehensive network security measures for automotive development networks (segmentation, firewalls, IDS/IPS) per VDA ISA 6 and ISO 27001 A.8.20.",
         "firstStep": "Segment the network by sensitivity level (e.g., prototype zone, development, production, office) with strict firewall controls.",
         "title": "Network security for automotive development networks"
       },
       "kom2": {
-        "description": "Implement encrypted transmission channels for all automotive-sensitive data (internal and external to suppliers/OEMs) per VDA ISA 10.1.2 and ISO 27001 A.8.21.",
+        "description": "Implement encrypted transmission channels for all automotive-sensitive data (internal and external to suppliers/OEMs) per VDA ISA 6 and ISO 27001 A.5.14.",
         "firstStep": "Define secure transmission methods for prototype data (e.g., SFTP, HTTPS, VPN) and prohibit unencrypted channels.",
         "title": "Secure data transmission for automotive information"
       },
       "kry1": {
-        "description": "Develop an enterprise-wide cryptography concept for automotive data at rest and in transit per VDA ISA 8.1.1 and ISO 27001 A.8.24. Define encryption standards for prototype information.",
+        "description": "Develop an enterprise-wide cryptography concept for automotive data at rest and in transit per VDA ISA 6 and ISO 27001 A.8.24. Define encryption standards for prototype information.",
         "firstStep": "Create a cryptography concept with defined algorithms, key lengths, and use cases (e.g., AES-256 for prototype data).",
         "title": "Develop a cryptography concept for automotive data"
       },
       "kry2": {
-        "description": "Implement secure key management for all cryptographic keys in automotive applications per VDA ISA 8.1.2 and ISO 27001 A.8.25. Use HSMs for highly sensitive keys.",
+        "description": "Implement secure key management for all cryptographic keys in automotive applications per VDA ISA 6 and ISO 27001 A.8.24. Use HSMs for highly sensitive keys.",
         "firstStep": "Define processes for key generation, storage, distribution, rotation, and destruction for automotive encryption.",
         "title": "Key management for automotive encryption"
       },
       "lief1": {
-        "description": "Define binding information security requirements for all automotive suppliers per VDA ISA 11.1.1 and ISO 27001 A.5.19. Require TISAX certification for suppliers handling sensitive data.",
+        "description": "Define binding information security requirements for all automotive suppliers per VDA ISA 6 and ISO 27001 A.5.19. Require TISAX certification for suppliers handling sensitive data.",
         "firstStep": "Create a supplier requirements checklist for information security including TISAX requirements for critical suppliers.",
         "title": "Information security requirements for automotive suppliers"
       },
       "lief2": {
-        "description": "Continuously monitor the information security of your automotive suppliers through regular audits and assessments per VDA ISA 11.1.2 and ISO 27001 A.5.20.",
+        "description": "Continuously monitor the information security of your automotive suppliers through regular audits and assessments per VDA ISA 6 and ISO 27001 A.5.22.",
         "firstStep": "Schedule annual information security audits for all critical suppliers with access to prototypes or sensitive automotive data.",
         "title": "Conduct supplier monitoring and audits"
       },
       "org1": {
-        "description": "Develop an automotive-specific information security policy and implement an ISMS per VDA ISA 1.1.1 and ISO 27001 A.5.1. The policy must cover prototype protection and supply chain requirements.",
+        "description": "Develop an automotive-specific information security policy and implement an ISMS per VDA ISA 6 and ISO 27001 A.5.1. The policy must cover prototype protection and supply chain requirements.",
         "firstStep": "Draft a written information security policy referencing VDA ISA requirements and have it approved by senior management.",
         "title": "Establish an information security policy and ISMS"
       },
       "org2": {
-        "description": "Define clear roles and responsibilities for information security per VDA ISA 1.2.1 and ISO 27001 A.5.2. Appoint an Information Security Officer (ISO) with direct access to senior management.",
+        "description": "Define clear roles and responsibilities for information security per VDA ISA 6 and ISO 27001 A.5.2. Appoint an Information Security Officer (ISO) with direct access to senior management.",
         "firstStep": "Formally appoint an Information Security Officer (ISO) and document their tasks, authority, and reporting lines.",
         "title": "Define information security roles and responsibilities"
       },
       "per1": {
-        "description": "Implement pre-employment security screening processes, particularly for positions with access to prototypes or sensitive automotive data per VDA ISA 2.1.1 and ISO 27001 A.6.1.",
+        "description": "Implement pre-employment security screening processes, particularly for positions with access to prototypes or sensitive automotive data per VDA ISA 6 and ISO 27001 A.6.1.",
         "firstStep": "Define security screening criteria based on the sensitivity of the position (e.g., prototype access, development data).",
         "title": "Conduct employee security screening"
       },
       "per2": {
-        "description": "Conduct regular automotive-specific security awareness training per VDA ISA 2.1.2 and ISO 27001 A.6.3. Topics: prototype protection, supply chain risks, social engineering.",
+        "description": "Conduct regular automotive-specific security awareness training per VDA ISA 6 and ISO 27001 A.6.3. Topics: prototype protection, supply chain risks, social engineering.",
         "firstStep": "Develop a training program with automotive focus areas (prototypes, suppliers, NDA handling) for all employees.",
         "title": "Conduct security awareness training for the automotive context"
       },
       "phy1": {
-        "description": "Establish physical security perimeters to protect critical areas (e.g., prototype workshops, development labs) per VDA ISA 3.1.1 and ISO 27001 A.7.1. Implement access controls and visitor management.",
+        "description": "Establish physical security perimeters to protect critical areas (e.g., prototype workshops, development labs) per VDA ISA 6 and ISO 27001 A.7.1. Implement access controls and visitor management.",
         "firstStep": "Identify all areas containing prototypes or highly sensitive automotive data and define security zones.",
         "title": "Set up physical security perimeters for prototypes"
       },
       "phy2": {
-        "description": "Install surveillance systems for critical areas (prototype zones, test grounds) per VDA ISA 3.1.2 and ISO 27001 A.7.2. Observe data protection requirements (GDPR).",
+        "description": "Install surveillance systems for critical areas (prototype zones, test grounds) per VDA ISA 6 and ISO 27001 A.7.4. Observe data protection requirements (GDPR).",
         "firstStep": "Conduct a risk analysis for critical areas and identify zones requiring surveillance (prototypes, test grounds).",
         "title": "Implement video surveillance and physical monitoring"
       },
       "proto1": {
-        "description": "Implement specific physical protection measures for prototype vehicles and components per VDA ISA 5.1.1. This includes secure storage, transportation, labeling, and disposal.",
+        "description": "Implement specific physical protection measures for prototype vehicles and components per VDA ISA 6 (Prototype Protection module) This includes secure storage, transportation, labeling, and disposal.",
         "firstStep": "Create a prototype protection policy with clear guidelines for storage, labeling, transportation, and destruction.",
         "title": "Implement physical prototype protection"
       },
       "proto2": {
-        "description": "Classify all prototype-related information (CAD, test data, specifications) by sensitivity per VDA ISA 5.2.1 and implement appropriate protective measures (encryption, DRM).",
+        "description": "Classify all prototype-related information (CAD, test data, specifications) by sensitivity per VDA ISA 6 (Prototype Protection module) and implement appropriate protective measures (encryption, DRM).",
         "firstStep": "Conduct a data classification for all prototype information (public, internal, confidential, strictly confidential).",
         "title": "Classify and protect prototype information"
       },
       "tech1": {
-        "description": "Implement comprehensive asset management for all automotive-relevant assets (hardware, software, data, prototypes) with classification per VDA ISA 4.1.1 and ISO 27001 A.8.1.",
+        "description": "Implement comprehensive asset management for all automotive-relevant assets (hardware, software, data, prototypes) with classification per VDA ISA 6 and ISO 27001 A.5.9.",
         "firstStep": "Create a complete inventory of all automotive-related assets and classify them by protection level (e.g., prototype level).",
         "title": "Asset management and classification for automotive data"
       },
       "tech2": {
-        "description": "Implement comprehensive endpoint security measures for developer workstations and mobile devices with access to automotive data per VDA ISA 4.1.2 and ISO 27001 A.8.2.",
+        "description": "Implement comprehensive endpoint security measures for developer workstations and mobile devices with access to automotive data per VDA ISA 6 and ISO 27001 A.8.1.",
         "firstStep": "Deploy endpoint protection solutions (anti-malware, EDR) on all devices with access to development data or prototypes.",
         "title": "Endpoint security for development environments"
       },
       "zk1": {
-        "description": "Implement a comprehensive access control policy for all automotive systems (development, production, prototypes) per VDA ISA 7.1.1 and ISO 27001 A.5.15. Apply least-privilege and need-to-know principles.",
+        "description": "Implement a comprehensive access control policy for all automotive systems (development, production, prototypes) per VDA ISA 6 and ISO 27001 A.5.15. Apply least-privilege and need-to-know principles.",
         "firstStep": "Document an access control policy with rules for automotive-specific systems (CAD, PLM, test databases).",
         "title": "Access control policy for automotive environments"
       },
       "zk2": {
-        "description": "Implement Privileged Access Management (PAM) for critical automotive systems (development environments, prototype networks) per VDA ISA 7.1.3 and ISO 27001 A.8.5.",
+        "description": "Implement Privileged Access Management (PAM) for critical automotive systems (development environments, prototype networks) per VDA ISA 6 and ISO 27001 A.8.2.",
         "firstStep": "Identify all privileged accounts in automotive-critical systems and implement a PAM solution with session recording.",
         "title": "Privileged Access Management (PAM) for critical systems"
       }
@@ -4657,7 +4657,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 31 CRA (EU 2024/2847) in conjunction with Annex VII lists the required elements of the technical documentation, including product description, risk analysis, security architecture and test reports."
       },
       "dokQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4668,7 +4668,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Annex VII no. 2 CRA (EU 2024/2847) requires a description of the cybersecurity risk assessment. The risk assessment must be performed during the design and development phase and updated during the support period."
       },
       "dokQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4679,7 +4679,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 31 CRA (EU 2024/2847) in conjunction with Annex VII no. 8 requires information and instructions for the user on secure installation, configuration and use of the product."
       },
       "konfQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4690,7 +4690,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 32 CRA (EU 2024/2847) defines the conformity assessment procedures by product category: module A (self-assessment) for standard products, modules B+C or H for important/critical products (Annex III/IV)."
       },
       "konfQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4701,7 +4701,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 27 CRA (EU 2024/2847): applying harmonised European standards (e.g. EN 18031-1/2/3) establishes a presumption of conformity for the requirements covered."
       },
       "konfQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4712,7 +4712,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "After successful completion of the conformity assessment procedure, manufacturers must draw up the EU declaration of conformity (Art. 13(12), Art. 28 CRA) and affix the CE marking (Art. 30 CRA)."
       },
       "sbdQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4723,7 +4723,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(1) CRA (EU 2024/2847) requires products with digital elements to be designed and developed with cybersecurity in mind. Annex I Part I lists the essential security requirements."
       },
       "sbdQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4734,7 +4734,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(1) in conjunction with Annex I Part I CRA (EU 2024/2847) requires products to be placed on the market without known exploitable vulnerabilities. Annex I no. 1 requires an appropriate attack surface and secure default settings."
       },
       "sbdQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4745,7 +4745,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Annex I Part I CRA (EU 2024/2847) requires protection against unauthorised access through suitable control mechanisms, including authentication, identity and access management systems."
       },
       "sbomQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4756,7 +4756,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) in conjunction with Annex I Part II point 1 CRA (EU 2024/2847) obliges manufacturers to draw up a software bill of materials (SBOM) documenting at least the top-level dependencies of the product."
       },
       "sbomQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4767,7 +4767,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) in conjunction with Annex I Part II point 1 CRA (EU 2024/2847) refers to machine-readable formats. The common standards are CycloneDX (OWASP) and SPDX (Linux Foundation), which are covered by the NTIA Minimum Elements."
       },
       "sbomQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4778,7 +4778,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) in conjunction with Annex I Part II point 1 CRA (EU 2024/2847) implies ongoing maintenance of the SBOM, as the manufacturer must monitor vulnerabilities in the components used. The NTIA Minimum Elements require timestamps and versioning."
       },
       "slQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4789,7 +4789,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) CRA (EU 2024/2847) obliges manufacturers to define and communicate the support period. The minimum period is 5 years or the expected product lifetime — whichever is shorter."
       },
       "slQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4800,7 +4800,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) CRA (EU 2024/2847) obliges manufacturers to provide security updates throughout the entire support period. EN 18031-1 section 10 specifies the requirements for long-term updateability."
       },
       "slQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4811,7 +4811,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) CRA (EU 2024/2847) also extends to third-party components. IEC 62443-4-1 and ETSI EN 303 645 contain requirements for supply chain security management for products with digital elements."
       },
       "swmQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4822,7 +4822,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) in conjunction with Annex I Part II CRA (EU 2024/2847) obliges manufacturers to handle vulnerabilities effectively. This includes identification, documentation and prompt remediation through security updates."
       },
       "swmQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4833,7 +4833,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) in conjunction with Annex I Part II point 5 CRA (EU 2024/2847) requires manufacturers to establish a coordinated vulnerability disclosure policy and provide a contact point for reporting vulnerabilities."
       },
       "swmQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4844,7 +4844,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) in conjunction with Annex I Part II CRA (EU 2024/2847) obliges manufacturers to provide a security update without delay once a vulnerability becomes known and to inform users about it."
       },
       "umQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4855,7 +4855,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) CRA (EU 2024/2847) obliges manufacturers to deliver security updates via a secure update mechanism. ETSI EN 303 645 section 5.3 specifies the requirements for secure update procedures."
       },
       "umQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4866,7 +4866,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) CRA (EU 2024/2847) emphasises delivering security updates separately. EN 18031-1 section 9 specifies that security patches must be available independently of feature updates."
       },
       "umQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4877,7 +4877,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 13(8) CRA (EU 2024/2847) requires users to be informed about fixed vulnerabilities and the impact of security updates. ETSI EN 303 645 section 5.3 requires understandable security information."
       },
       "vmQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4888,7 +4888,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 14(1) CRA (EU 2024/2847) obliges manufacturers to report actively exploited vulnerabilities to ENISA within 24 hours. The early warning must contain basic information about the vulnerability."
       },
       "vmQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4899,7 +4899,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 14(2) CRA (EU 2024/2847) defines the staggered reporting deadlines: 24 hours for the early warning, 72 hours for the detailed report and 14 days for the final report after a corrective measure is made available."
       },
       "vmQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -4910,7 +4910,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "Art. 14(3) CRA (EU 2024/2847) requires manufacturers to inform affected users about actively exploited vulnerabilities and recommended corrective measures — especially when no patch is yet available."
       }
     },
     "quickCheck": {
@@ -5178,7 +5178,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module APP.1.1.A1 require secure configuration of office products. Macros, ActiveX and other active content must be restricted and security updates applied promptly."
       },
       "appQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5189,7 +5189,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module APP.1.2.A1 require secure configuration of web browsers. Browsers are a primary attack target and must be controlled with regard to extensions, privacy and security settings."
       },
       "appQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5200,7 +5200,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module APP.3.1.A1 require secure configuration and operation of web applications. This includes input validation, authentication, session management and protection against the OWASP Top 10 vulnerabilities."
       },
       "conQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5211,7 +5211,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 5 and module CON.1.A1 require a cryptography concept as the basis for consistent and secure use of cryptographic mechanisms. It must define which data is encrypted how, and how keys are managed."
       },
       "conQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5222,7 +5222,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-4 ch. 3 and module CON.3.A1 require a data backup concept. It must define which data is backed up how often, where backups are stored and how restoration is tested."
       },
       "conQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5233,7 +5233,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 5.3 and module CON.6.A1 require rules for securely deleting and destroying data. Especially when decommissioning devices or passing on storage media, data must be removed irrecoverably."
       },
       "derQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5244,7 +5244,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-4 ch. 5 and module DER.1.A1 require creating and analysing system logs to detect security incidents. Logs must be collected centrally, correlated and evaluated promptly."
       },
       "derQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5255,7 +5255,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-4 ch. 6 and module DER.2.1.A1 require a documented process for handling security incidents. The process must define roles, escalation paths and communication rules."
       },
       "derQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5266,7 +5266,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-4 ch. 7 and module DER.4.A1 require creating contingency plans and reviewing them regularly through exercises. The plans must define restart procedures and communication channels in a crisis."
       },
       "indQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5277,7 +5277,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module IND.1.A1 require basic security measures for process control and automation technology. The convergence of IT and OT requires a coordinated security concept covering both worlds."
       },
       "indQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5288,7 +5288,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module IND.2.1.A1 require restricting access to ICS components. PLCs, HMI panels and engineering workstations must be protected against unauthorised access and manipulation."
       },
       "indQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5299,7 +5299,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module IND.2.7.A1 require special protection of safety instrumented systems. SIS are safety-related systems whose compromise can lead to personal injury or environmental disasters."
       },
       "infQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5310,7 +5310,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module INF.1.A1 require protecting buildings against unauthorised entry, burglary and natural hazards. Basic measures such as access control, intrusion alarm systems and fire protection must be in place."
       },
       "infQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5321,7 +5321,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module INF.2.A1 define requirements for data centres and server rooms. These include access control, redundant power supply (UPS/emergency generator), air conditioning, fire protection and monitoring of environmental parameters."
       },
       "infQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5332,7 +5332,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module INF.5.A1 require protecting technical rooms. Network distribution points, patch panels and telecommunications systems must be secured against unauthorised access, overheating and manipulation."
       },
       "ismsQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5343,7 +5343,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-1 ch. 7 and module ISMS.1.A1 require top management to assume overall responsibility for information security. This includes appointing an information security officer (ISO) and providing sufficient resources."
       },
       "ismsQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5354,7 +5354,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-1 ch. 7.3 and module ISMS.1.A3 require a security policy as the central governing document. It must define the security objectives, the scope and the organisational structure for information security."
       },
       "ismsQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5365,7 +5365,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-3 ch. 4 and module ISMS.1.A7 describe the risk analysis methodology in IT-Grundschutz. Risks must be identified, assessed and treated with suitable measures. For elevated protection needs, a supplementary security analysis is required."
       },
       "netQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5376,7 +5376,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module NET.1.1.A1 require a structured network architecture with segmentation. Different security zones (e.g. DMZ, internal network, guest Wi-Fi) must be separated from each other."
       },
       "netQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5387,7 +5387,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module NET.3.1.A1 require secure configuration and operation of network components. Routers and switches must be hardened, default passwords changed and firmware kept up to date."
       },
       "netQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5398,7 +5398,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module NET.4.1.A1 require secure operation of telecommunications systems. VoIP systems must be encrypted, secured against toll fraud and integrated into the network security architecture."
       },
       "opsQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5409,7 +5409,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 6 and module OPS.1.1.3.A1 require systematic patch and change management. Security updates must be applied promptly; changes must be planned and tested."
       },
       "opsQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5420,7 +5420,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 6 and module OPS.1.1.4.A1 require the use of protection programs against malware. Protection must cover all relevant IT systems and be kept up to date at all times."
       },
       "opsQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5431,7 +5431,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 6 and module OPS.1.2.2.A1 require rules for remote maintenance of IT systems. With outsourcing and external service providers, security requirements must be safeguarded contractually and technically."
       },
       "orpQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5442,7 +5442,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 4.1 and module ORP.1.A1 require organisational security aspects to be regulated. This includes responsibilities, approval procedures and integrating security requirements into all business processes."
       },
       "orpQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5453,7 +5453,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 4.2 and module ORP.2.A1 require rules for dealing with personnel in security-relevant areas. This covers hiring, onboarding, ongoing employment and the orderly departure of employees."
       },
       "orpQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5464,7 +5464,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 4.3 and module ORP.3.A1 require awareness and training on information security for all employees. The measures must be tailored to target groups and repeated regularly."
       },
       "sysQ1": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5475,7 +5475,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module SYS.1.1.A1 require secure server configuration. This includes disabling unneeded services, secure authentication, assignment of privileges and regular updates."
       },
       "sysQ2": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5486,7 +5486,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module SYS.2.1.A1 require secure client configuration. This includes screen lock, user authentication, restricted administrator rights and central management."
       },
       "sysQ3": {
         "help": "Check existing documentation, processes, and technical implementation.",
@@ -5497,7 +5497,7 @@
           "level3": "Fully implemented — optimized processes with continuous improvement"
         },
         "title": "What is the implementation status in this area?",
-        "tooltip": "Assess the current status based on the four maturity levels."
+        "tooltip": "BSI Standard 200-2 ch. 7 and module SYS.3.1.A1 require special protective measures for portable IT systems. Laptops and mobile devices are particularly exposed to loss and theft and must be encrypted and remotely wipeable."
       }
     },
     "quickCheck": {

@@ -1987,7 +1987,7 @@
     "questions": {
       "avQ1": {
         "title": "Setzen Sie Auftragsverarbeiter nur ein, wenn diese hinreichende Garantien für geeignete technische und organisatorische Maßnahmen bieten?",
-        "tooltip": "Art. 28 Abs. 1 DSGVO verlangt, dass der Verantwortliche nur mit Auftragsverarbeitern zusammenarbeitet, die hinreichende Garantien dafür bieten, dass geeignete technische und organisatorische Maßnahmen so durchgeführt werden, dass die Verarbeitung im Einklang mit der DSGVO erfolgt und den Schutz der Rechte der betroffenen Personen gewährleistet. §62 BDSG enthält ergänzende Bestimmungen.",
+        "tooltip": "Art. 28 Abs. 1 DSGVO verlangt, dass der Verantwortliche nur mit Auftragsverarbeitern zusammenarbeitet, die hinreichende Garantien dafür bieten, dass geeignete technische und organisatorische Maßnahmen so durchgeführt werden, dass die Verarbeitung im Einklang mit der DSGVO erfolgt und den Schutz der Rechte der betroffenen Personen gewährleistet.",
         "help": "Auftragsverarbeiter sind externe Dienstleister, die in Ihrem Auftrag personenbezogene Daten verarbeiten -- z.B. Ihr Cloud-Anbieter, Lohnbüro, Hosting-Provider, E-Mail-Marketing-Dienst oder externer IT-Support. Bevor Sie einen solchen Dienstleister einsetzen, müssen Sie prüfen: Kann er Datenschutz? Hat er Sicherheitsmaßnahmen? Gibt es Zertifizierungen? Diese Prüfung sollte dokumentiert sein.",
         "maturity": {
           "level0": "Keine Prüfung von Auftragsverarbeitern vor der Beauftragung; Dienstleister werden ohne Datenschutzbewertung eingesetzt",
@@ -1998,7 +1998,7 @@
       },
       "avQ2": {
         "title": "Haben Sie mit allen Auftragsverarbeitern einen Vertrag oder ein anderes Rechtsinstrument gemäß Art. 28 Abs. 3 DSGVO abgeschlossen?",
-        "tooltip": "Art. 28 Abs. 3 DSGVO verlangt, dass die Verarbeitung durch einen Auftragsverarbeiter auf Grundlage eines Vertrags oder eines anderen Rechtsinstruments erfolgt, das den Auftragsverarbeiter in Bezug auf den Verantwortlichen bindet. Dieser Vertrag muss mindestens enthalten: Gegenstand und Dauer der Verarbeitung, Art und Zweck, Art der Daten, Kategorien betroffener Personen, Pflichten und Rechte des Verantwortlichen. §62 BDSG enthält ergänzende Regelungen.",
+        "tooltip": "Art. 28 Abs. 3 DSGVO verlangt, dass die Verarbeitung durch einen Auftragsverarbeiter auf Grundlage eines Vertrags oder eines anderen Rechtsinstruments erfolgt, das den Auftragsverarbeiter in Bezug auf den Verantwortlichen bindet. Dieser Vertrag muss mindestens enthalten: Gegenstand und Dauer der Verarbeitung, Art und Zweck, Art der Daten, Kategorien betroffener Personen, Pflichten und Rechte des Verantwortlichen.",
         "help": "Mit jedem Auftragsverarbeiter brauchen Sie einen schriftlichen Vertrag zur Auftragsverarbeitung (AVV). Dieser regelt: Was darf der Dienstleister mit den Daten machen? Welche Sicherheitsmaßnahmen muss er treffen? Was passiert bei einer Datenpanne? Was passiert nach Vertragsende mit den Daten? Viele Cloud-Anbieter stellen fertige AVVs bereit -- prüfen Sie diese sorgfältig. Ohne AVV handeln Sie rechtswidrig.",
         "maturity": {
           "level0": "Keine Auftragsverarbeitungsverträge vorhanden; Dienstleister verarbeiten Daten ohne vertragliche Grundlage",
@@ -2031,7 +2031,7 @@
       },
       "avQ5": {
         "title": "Stellen Sie sicher, dass Personen, die Zugang zu personenbezogenen Daten haben, diese nur auf Weisung des Verantwortlichen verarbeiten?",
-        "tooltip": "Art. 29 DSGVO legt fest, dass der Auftragsverarbeiter und jede dem Verantwortlichen oder dem Auftragsverarbeiter unterstellte Person, die Zugang zu personenbezogenen Daten hat, diese Daten ausschließlich auf Weisung des Verantwortlichen verarbeiten darf -- es sei denn, es besteht eine unionsrechtliche oder mitgliedstaatliche Rechtspflicht. §62 BDSG enthält ergänzende nationale Regelungen. Dies betrifft auch eigene Mitarbeiter, die zur Vertraulichkeit verpflichtet werden müssen.",
+        "tooltip": "Art. 29 DSGVO legt fest, dass der Auftragsverarbeiter und jede dem Verantwortlichen oder dem Auftragsverarbeiter unterstellte Person, die Zugang zu personenbezogenen Daten hat, diese Daten ausschließlich auf Weisung des Verantwortlichen verarbeiten darf -- es sei denn, es besteht eine unionsrechtliche oder mitgliedstaatliche Rechtspflicht. Dies betrifft auch eigene Mitarbeiter, die zur Vertraulichkeit verpflichtet werden müssen.",
         "help": "Mitarbeiter und Dienstleister dürfen personenbezogene Daten nur so verarbeiten, wie Sie es als Verantwortlicher angewiesen haben -- nicht für eigene Zwecke oder nach eigenem Gutdünken. Konkret bedeutet das: Alle Mitarbeiter mit Datenzugang müssen auf die Vertraulichkeit verpflichtet werden (Verpflichtungserklärung). Auftragsverarbeiter dürfen die Daten nur im Rahmen des AVV nutzen. Prüfen Sie, ob alle Mitarbeiter eine Vertraulichkeitserklärung unterschrieben haben.",
         "maturity": {
           "level0": "Keine Verpflichtung auf Vertraulichkeit oder Weisungsgebundenheit; Mitarbeiter und Dienstleister handeln ohne klare Vorgaben",
@@ -2152,7 +2152,7 @@
       },
       "dsfaQ1": {
         "title": "Führen Sie eine systematische Datenschutz-Folgenabschätzung (DSFA) durch, bevor Sie neue Verarbeitungsverfahren mit hohem Risiko für Betroffene einsetzen?",
-        "tooltip": "Art. 35 Abs. 1 DSGVO verpflichtet den Verantwortlichen, vor Einführung von Verarbeitungsvorgängen, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen zur Folge haben, eine Datenschutz-Folgenabschätzung durchzuführen. Dies betrifft insbesondere den Einsatz neuer Technologien. Ergänzend gilt §67 BDSG für öffentliche Stellen des Bundes.",
+        "tooltip": "Art. 35 Abs. 1 DSGVO verpflichtet den Verantwortlichen, vor Einführung von Verarbeitungsvorgängen, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen zur Folge haben, eine Datenschutz-Folgenabschätzung durchzuführen. Dies betrifft insbesondere den Einsatz neuer Technologien.",
         "help": "Eine DSFA ist eine strukturierte Prüfung, ob eine geplante Datenverarbeitung besonders riskant für die betroffenen Personen ist. Beispiel: Sie wollen eine Videoüberwachung im Büro einführen oder ein neues CRM-System mit umfangreichen Kundenprofilen nutzen. Dann müssen Sie vorher prüfen, welche Risiken das für die Betroffenen hat und wie Sie diese minimieren können. Ohne DSFA riskieren Sie Bußgelder und schaffen eventuell rechtswidrige Verarbeitungen.",
         "maturity": {
           "level0": "Keine Kenntnis der DSFA-Pflicht; neue Verarbeitungen werden ohne Risikoprüfung eingeführt",
@@ -2185,7 +2185,7 @@
       },
       "dsfaQ4": {
         "title": "Haben Sie ein Verfahren für die vorherige Konsultation der Aufsichtsbehörde, wenn eine DSFA ergibt, dass ein hohes Restrisiko besteht?",
-        "tooltip": "Art. 36 Abs. 1 DSGVO verpflichtet den Verantwortlichen, die Aufsichtsbehörde vor der Verarbeitung zu konsultieren, wenn die DSFA ergibt, dass die Verarbeitung trotz vorgesehener Schutzmaßnahmen ein hohes Risiko zur Folge hätte. Die Behörde hat dann bis zu 8 Wochen Zeit für eine Stellungnahme (Art. 36 Abs. 2 DSGVO). §67 BDSG enthält ergänzende Regelungen.",
+        "tooltip": "Art. 36 Abs. 1 DSGVO verpflichtet den Verantwortlichen, die Aufsichtsbehörde vor der Verarbeitung zu konsultieren, wenn die DSFA ergibt, dass die Verarbeitung trotz vorgesehener Schutzmaßnahmen ein hohes Risiko zur Folge hätte. Die Behörde hat dann bis zu 8 Wochen Zeit für eine Stellungnahme (Art. 36 Abs. 2 DSGVO).",
         "help": "Wenn Ihre DSFA ergibt, dass trotz aller geplanten Schutzmaßnahmen ein hohes Risiko für die Betroffenen bleibt, dürfen Sie die Verarbeitung nicht einfach starten. Sie müssen zuerst die zuständige Datenschutzbehörde fragen. Diese prüft dann Ihren Fall und kann Empfehlungen oder Auflagen außprechen. Haben Sie einen Prozess, wer in Ihrem Unternehmen diese Konsultation anstossen würde und wie der Ablauf ist?",
         "maturity": {
           "level0": "Keine Kenntnis der Konsultationspflicht bei hohem Restrisiko",
@@ -2207,7 +2207,7 @@
       },
       "dtQ1": {
         "title": "Haben Sie einen Überblick darüber, ob und an welche Drittländer Sie personenbezogene Daten übermitteln?",
-        "tooltip": "Art. 44 DSGVO legt fest, dass jede Übermittlung personenbezogener Daten an ein Drittland nur zulässig ist, wenn die Bedingungen der Art. 44-49 DSGVO eingehalten werden. Drittländer sind alle Länder außerhalb des EWR (EU + Island, Liechtenstein, Norwegen). §78 BDSG enthält ergänzende nationale Regelungen für öffentliche Stellen.",
+        "tooltip": "Art. 44 DSGVO legt fest, dass jede Übermittlung personenbezogener Daten an ein Drittland nur zulässig ist, wenn die Bedingungen der Art. 44-49 DSGVO eingehalten werden. Drittländer sind alle Länder außerhalb des EWR (EU + Island, Liechtenstein, Norwegen).",
         "help": "Drittlandtransfer bedeutet: Daten verlassen den EWR (EU plus Island, Liechtenstein, Norwegen). Das passiert öfter als Sie denken -- z.B. wenn Sie US-Cloud-Dienste nutzen (Microsoft 365, Google Workspace, AWS), US-Tools einsetzen (Mailchimp, Salesforce, Zoom) oder Dienstleister in Indien oder der Ukraine beauftragen. Erstellen Sie eine Liste aller Dienste und prüfen Sie, wo die Daten tatsächlich verarbeitet werden.",
         "maturity": {
           "level0": "Kein Überblick über Drittlandtransfers; es wurde nicht geprüft, ob Daten den EWR verlassen",
@@ -2251,7 +2251,7 @@
       },
       "dtQ5": {
         "title": "Nutzen Sie Ausnahmen nach Art. 49 DSGVO für Drittlandtransfers nur in den eng begrenzten gesetzlichen Fällen?",
-        "tooltip": "Art. 49 DSGVO erlaubt Drittlandtransfers in Ausnahmefällen ohne Angemessenheitsbeschluss oder geeignete Garantien, z.B. bei: ausdrücklicher Einwilligung (Abs. 1 lit. a), Vertragserfüllung (lit. b-c), wichtigen Gründen des öffentlichen Interesses (lit. d), Rechtsansprüchen (lit. e) oder lebenswichtigen Interessen (lit. f). Diese Ausnahmen sind eng auszulegen und nicht für regelmäßige, umfangreiche Transfers geeignet. §§79-80 BDSG enthalten ergänzende Bestimmungen.",
+        "tooltip": "Art. 49 DSGVO erlaubt Drittlandtransfers in Ausnahmefällen ohne Angemessenheitsbeschluss oder geeignete Garantien, z.B. bei: ausdrücklicher Einwilligung (Abs. 1 lit. a), Vertragserfüllung (lit. b-c), wichtigen Gründen des öffentlichen Interesses (lit. d), Rechtsansprüchen (lit. e) oder lebenswichtigen Interessen (lit. f). Diese Ausnahmen sind eng auszulegen und nicht für regelmäßige, umfangreiche Transfers geeignet.",
         "help": "Art. 49 DSGVO bietet Ausnahmen für bestimmte Einzelfälle -- z.B. ein Kunde bucht ein Hotel in einem Drittland (Vertragserfüllung) oder Sie müssen Daten für einen Rechtsstreit im Ausland übermitteln. Diese Ausnahmen dürfen aber NICHT als Dauerlösung für regelmäßige Datentransfers missbraucht werden. Wenn Sie z.B. ständig Kundendaten an einen Dienstleister in einem Drittland senden, brauchen Sie SVK oder einen Angemessenheitsbeschluss -- Art. 49 reicht dafür nicht.",
         "maturity": {
           "level0": "Art. 49 DSGVO wird für regelmäßige Transfers als Rechtsgrundlage angeführt, obwohl dies nicht zulässig ist",
@@ -2262,7 +2262,7 @@
       },
       "dvQ1": {
         "title": "Haben Sie einen Prozess, um Datenschutzverletzungen innerhalb von 72 Stunden an die Aufsichtsbehörde zu melden?",
-        "tooltip": "Art. 33 Abs. 1 DSGVO verpflichtet den Verantwortlichen, eine Verletzung des Schutzes personenbezogener Daten unverzüglich und möglichst binnen 72 Stunden der zuständigen Aufsichtsbehörde zu melden -- es sei denn, die Verletzung führt voraussichtlich nicht zu einem Risiko. Bei verspäteter Meldung muss die Verzögerung begründet werden. §65 BDSG enthält ergänzende Regelungen.",
+        "tooltip": "Art. 33 Abs. 1 DSGVO verpflichtet den Verantwortlichen, eine Verletzung des Schutzes personenbezogener Daten unverzüglich und möglichst binnen 72 Stunden der zuständigen Aufsichtsbehörde zu melden -- es sei denn, die Verletzung führt voraussichtlich nicht zu einem Risiko. Bei verspäteter Meldung muss die Verzögerung begründet werden.",
         "help": "Wenn personenbezogene Daten abhandenkommen, unbefugt offengelegt oder verändert werden -- z.B. durch einen Hackerangriff, einen verlorenen USB-Stick oder eine versehentliche E-Mail an den falschen Empfänger -- haben Sie maximal 72 Stunden Zeit, dies der Aufsichtsbehörde zu melden. Dafür brauchen Sie einen klaren Ablauf: Wer stellt fest, dass ein Vorfall vorliegt? Wer entscheidet über die Meldepflicht? Wer führt die Meldung durch?",
         "maturity": {
           "level0": "Kein Meldeprozess für Datenschutzverletzungen vorhanden",
@@ -2284,7 +2284,7 @@
       },
       "dvQ3": {
         "title": "Haben Sie einen Prozess zur Benachrichtigung betroffener Personen bei Datenschutzverletzungen mit hohem Risiko?",
-        "tooltip": "Art. 34 Abs. 1 DSGVO verlangt, dass betroffene Personen unverzüglich benachrichtigt werden, wenn eine Datenschutzverletzung voraussichtlich ein hohes Risiko für ihre persönlichen Rechte und Freiheiten zur Folge hat. Die Benachrichtigung muss in klarer, einfacher Sprache erfolgen. §66 BDSG enthält Ausnahmen bei bestimmten Sicherheitsvorkehrungen.",
+        "tooltip": "Art. 34 Abs. 1 DSGVO verlangt, dass betroffene Personen unverzüglich benachrichtigt werden, wenn eine Datenschutzverletzung voraussichtlich ein hohes Risiko für ihre persönlichen Rechte und Freiheiten zur Folge hat. Die Benachrichtigung muss in klarer, einfacher Sprache erfolgen.",
         "help": "Wenn z.B. Kundendaten mit Bankverbindungen gestohlen werden, müssen Sie die Betroffenen direkt informieren -- nicht die Aufsichtsbehörde, sondern die Menschen selbst. Sie müssen klar sagen: Was ist passiert? Welche Daten sind betroffen? Was können die Betroffenen tun (z.B. Passwörter ändern, Bank informieren)? Dafür sollten Sie Textvorlagen vorbereitet haben, damit im Ernstfall keine wertvolle Zeit verloren geht.",
         "maturity": {
           "level0": "Kein Prozess zur Benachrichtigung Betroffener vorhanden",
@@ -2306,7 +2306,7 @@
       },
       "dvQ5": {
         "title": "Haben Sie technische und organisatorische Maßnahmen getroffen, die eine Benachrichtigung Betroffener nach Art. 34 Abs. 3 DSGVO entbehrlich machen können?",
-        "tooltip": "Art. 34 Abs. 3 DSGVO sieht vor, dass die Benachrichtigung betroffener Personen nicht erforderlich ist, wenn: (a) geeignete Schutzmaßnahmen wie Verschlüsselung angewandt wurden, (b) nachträgliche Maßnahmen das hohe Risiko beseitigt haben, oder (c) die Benachrichtigung unverhältnismäßigen Aufwand erfordern würde (dann öffentliche Bekanntmachung). §66 BDSG enthält ergänzende nationale Bestimmungen.",
+        "tooltip": "Art. 34 Abs. 3 DSGVO sieht vor, dass die Benachrichtigung betroffener Personen nicht erforderlich ist, wenn: (a) geeignete Schutzmaßnahmen wie Verschlüsselung angewandt wurden, (b) nachträgliche Maßnahmen das hohe Risiko beseitigt haben, oder (c) die Benachrichtigung unverhältnismäßigen Aufwand erfordern würde (dann öffentliche Bekanntmachung).",
         "help": "Sie können die Pflicht zur Benachrichtigung Betroffener vermeiden, wenn Sie im Vorfeld gute Schutzmaßnahmen getroffen haben. Wichtigstes Beispiel: Verschlüsselung. Wenn ein verschlüsselter Laptop gestohlen wird, können die Daten nicht gelesen werden -- daher kein hohes Risiko und keine Benachrichtigungspflicht. Ähnlich bei Pseudonymisierung. Investieren Sie in präventive Maßnahmen, sparen Sie sich im Ernstfall den Reputationsschaden.",
         "maturity": {
           "level0": "Keine präventiven Schutzmaßnahmen wie Verschlüsselung oder Pseudonymisierung implementiert",
@@ -2350,7 +2350,7 @@
       },
       "ewQ4": {
         "title": "Haben Sie besondere Schutzmaßnahmen für die Einwilligung Minderjähriger bei Diensten der Informationsgesellschaft implementiert?",
-        "tooltip": "Art. 8 DSGVO regelt die Einwilligung von Kindern bei Diensten der Informationsgesellschaft (z.B. Online-Dienste, Apps). In Deutschland liegt die Altersgrenze bei 16 Jahren (§8 Abs. 1 DSGVO-Anpassungsgesetz). Bei Kindern unter 16 Jahren ist die Einwilligung oder Genehmigung des Trägers der elterlichen Verantwortung erforderlich. Der Verantwortliche muss angemessene Anstrengungen unternehmen, um dies zu überprüfen.",
+        "tooltip": "Art. 8 DSGVO regelt die Einwilligung von Kindern bei Diensten der Informationsgesellschaft (z.B. Online-Dienste, Apps). In Deutschland liegt die Altersgrenze bei 16 Jahren (Art. 8 Abs. 1 DSGVO; Deutschland hat keine abweichende Altersgrenze festgelegt). Bei Kindern unter 16 Jahren ist die Einwilligung oder Genehmigung des Trägers der elterlichen Verantwortung erforderlich. Der Verantwortliche muss angemessene Anstrengungen unternehmen, um dies zu überprüfen.",
         "help": "Wenn Ihr Online-Dienst, Ihre App oder Ihr Webshop auch von Personen unter 16 Jahren genutzt werden kann, brauchen Sie besondere Vorkehrungen: Sie müssen das Alter prüfen, und bei unter 16-Jährigen die Zustimmung der Eltern einholen und verifizieren. Das betrifft z.B. Registrierungen, Newsletter-Anmeldungen oder In-App-Käufe. Betreiben Sie einen reinen B2B-Dienst, ist dieses Thema in der Regel nicht relevant.",
         "maturity": {
           "level0": "Keine Altersprüfung oder besonderen Schutzmaßnahmen für Minderjährige implementiert",
@@ -2372,7 +2372,7 @@
       },
       "pbdQ1": {
         "title": "Berücksichtigen Sie Datenschutzanforderungen bereits bei der Planung und Entwicklung neuer Systeme, Produkte und Prozesse (Privacy by Design)?",
-        "tooltip": "Art. 25 Abs. 1 DSGVO verlangt, dass der Verantwortliche sowohl zum Zeitpunkt der Festlegung der Mittel für die Verarbeitung als auch zum Zeitpunkt der Verarbeitung selbst geeignete technische und organisatorische Maßnahmen trifft, die darauf ausgelegt sind, Datenschutzgrundsätze wirksam umzusetzen. Dabei sind der Stand der Technik, die Implementierungskosten und die Risiken zu berücksichtigen. §71 BDSG enthält ergänzende nationale Regelungen.",
+        "tooltip": "Art. 25 Abs. 1 DSGVO verlangt, dass der Verantwortliche sowohl zum Zeitpunkt der Festlegung der Mittel für die Verarbeitung als auch zum Zeitpunkt der Verarbeitung selbst geeignete technische und organisatorische Maßnahmen trifft, die darauf ausgelegt sind, Datenschutzgrundsätze wirksam umzusetzen. Dabei sind der Stand der Technik, die Implementierungskosten und die Risiken zu berücksichtigen.",
         "help": "Privacy by Design bedeutet: Datenschutz wird von Anfang an mitgedacht, nicht erst nachträglich aufgesetzt. Wenn Sie z.B. eine neue Kundendatenbank planen, überlegen Sie bereits in der Planungsphase: Welche Daten brauchen wir wirklich? Wie lange behalten wir sie? Wie schützen wir sie? Wer hat Zugriff? Das ist effizienter und sicherer, als später mühsam nachzubessern.",
         "maturity": {
           "level0": "Datenschutz wird bei der Einführung neuer Systeme oder Prozesse nicht berücksichtigt",
@@ -2405,7 +2405,7 @@
       },
       "pbdQ4": {
         "title": "Nutzen Sie Zertifizierungen oder genehmigte Verhaltensregeln, um die Einhaltung von Privacy by Design nachzuweisen?",
-        "tooltip": "Art. 25 Abs. 3 DSGVO sieht vor, dass genehmigte Zertifizierungsverfahren nach Art. 42 DSGVO als Nachweis für die Erfüllung der Anforderungen an Privacy by Design und Privacy by Default herangezogen werden können. Ebenso können genehmigte Verhaltensregeln nach Art. 40 DSGVO als Faktor bei der Bewertung herangezogen werden. §71 BDSG enthält nationale Ergänzungen.",
+        "tooltip": "Art. 25 Abs. 3 DSGVO sieht vor, dass genehmigte Zertifizierungsverfahren nach Art. 42 DSGVO als Nachweis für die Erfüllung der Anforderungen an Privacy by Design und Privacy by Default herangezogen werden können. Ebenso können genehmigte Verhaltensregeln nach Art. 40 DSGVO als Faktor bei der Bewertung herangezogen werden.",
         "help": "Zertifizierungen wie ISO 27701 (Datenschutz-Managementsystem) oder branchenspezifische Verhaltensregeln können Ihnen helfen, die Einhaltung von Privacy by Design nachzuweisen. Das ist besonders nützlich gegenüber der Aufsichtsbehörde, bei Ausschreibungen oder gegenüber Kunden. Eine Zertifizierung schützt nicht vor Bußgeldern, kann aber als Nachweis der Bemühungen dienen und das Bußgeldrisko mindern.",
         "maturity": {
           "level0": "Keine Zertifizierungen oder Verhaltensregeln im Datenschutzbereich; kein Nachweis der Compliance-Bemühungen",
@@ -2416,7 +2416,7 @@
       },
       "pbdQ5": {
         "title": "Haben Sie automatisierte Löschmechanismen implementiert, die personenbezogene Daten nach Ablauf des Verarbeitungszwecks oder der Speicherfrist automatisch löschen?",
-        "tooltip": "Art. 5 Abs. 1 lit. e DSGVO normiert den Grundsatz der Speicherbegrenzung: Personenbezogene Daten dürfen nur so lange gespeichert werden, wie es für die Zwecke erforderlich ist. Privacy by Design erfordert, dass Löschmechanismen bereits in die Systemarchitektur eingebaut werden, nicht nachträglich. §71 BDSG verweist auf die Umsetzung technischer Maßnahmen zur Gewährleistung der Datenschutzgrundsätze.",
+        "tooltip": "Art. 5 Abs. 1 lit. e DSGVO normiert den Grundsatz der Speicherbegrenzung: Personenbezogene Daten dürfen nur so lange gespeichert werden, wie es für die Zwecke erforderlich ist. Privacy by Design erfordert, dass Löschmechanismen bereits in die Systemarchitektur eingebaut werden, nicht nachträglich.",
         "help": "Daten, die Sie nicht mehr brauchen, müssen gelöscht werden -- nicht erst wenn jemand danach fragt, sondern automatisch nach Ablauf der definierten Speicherfrist. Beispiel: Bewerberdaten 6 Monate nach Absage automatisch löschen, Cookie-Daten nach der definierten Frist, inaktive Kundenkonten nach 3 Jahren. Manuelle Löschung ist fehleranfällig -- bauen Sie automatische Mechanismen ein.",
         "maturity": {
           "level0": "Keine definierten Speicherfristen; Daten werden unbegrenzt aufbewahrt; keine Löschmechanismen",
@@ -2427,7 +2427,7 @@
       },
       "tomQ1": {
         "title": "Setzen Sie Verschlüsselung und Pseudonymisierung als technische Schutzmaßnahmen für personenbezogene Daten ein?",
-        "tooltip": "Art. 32 Abs. 1 lit. a DSGVO nennt Pseudonymisierung und Verschlüsselung ausdrücklich als geeignete technische Maßnahmen zur Sicherstellung eines dem Risiko angemessenen Schutzniveaus. §64 Abs. 1 BDSG verlangt ergänzend, dass Maßnahmen dem Stand der Technik entsprechen müssen.",
+        "tooltip": "Art. 32 Abs. 1 lit. a DSGVO nennt Pseudonymisierung und Verschlüsselung ausdrücklich als geeignete technische Maßnahmen zur Sicherstellung eines dem Risiko angemessenen Schutzniveaus.",
         "help": "Verschlüsselung bedeutet: Daten werden so umgewandelt, dass nur berechtigte Personen sie lesen können. Das betrifft z.B. E-Mail-Verschlüsselung, HTTPS auf Ihrer Website, verschlüsselte Festplatten und verschlüsselte Datenbank-Verbindungen. Pseudonymisierung bedeutet: Der direkte Personenbezug wird entfernt und durch einen Code ersetzt. Beide Maßnahmen reduzieren das Risiko bei Datenpannen erheblich.",
         "maturity": {
           "level0": "Weder Verschlüsselung noch Pseudonymisierung im Einsatz; personenbezogene Daten werden im Klartext gespeichert und übertragen",
@@ -2438,7 +2438,7 @@
       },
       "tomQ2": {
         "title": "Gewährleisten Sie die Vertraulichkeit, Integrität und Verfügbarkeit Ihrer Systeme und Dienste, die personenbezogene Daten verarbeiten?",
-        "tooltip": "Art. 32 Abs. 1 lit. b DSGVO fordert die Fähigkeit, die Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der Systeme und Dienste dauerhaft sicherzustellen. Vertraulichkeit: Nur Berechtigte haben Zugriff. Integrität: Daten werden nicht unbefugt verändert. Verfügbarkeit: Systeme sind bei Bedarf funktionsfähig. §64 Abs. 1 BDSG verlangt ein dem Stand der Technik angemessenes Schutzniveau.",
+        "tooltip": "Art. 32 Abs. 1 lit. b DSGVO fordert die Fähigkeit, die Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der Systeme und Dienste dauerhaft sicherzustellen. Vertraulichkeit: Nur Berechtigte haben Zugriff. Integrität: Daten werden nicht unbefugt verändert. Verfügbarkeit: Systeme sind bei Bedarf funktionsfähig.",
         "help": "Drei Schutzziele müssen Sie gewährleisten: Vertraulichkeit (nur wer darf, sieht die Daten -- z.B. durch Berechtigungskonzept und Passwörter), Integrität (Daten werden nicht unbefugt verändert -- z.B. durch Prüf-Hashwerte und Änderungsprotokolle), Verfügbarkeit (Systeme funktionieren wenn nötig -- z.B. durch Backups und redundante Systeme). Dokumentieren Sie, welche konkreten Maßnahmen Sie für jedes Schutzziel umgesetzt haben.",
         "maturity": {
           "level0": "Keine systematischen Maßnahmen für Vertraulichkeit, Integrität oder Verfügbarkeit",
@@ -2449,7 +2449,7 @@
       },
       "tomQ3": {
         "title": "Können Sie die Verfügbarkeit personenbezogener Daten nach einem physischen oder technischen Zwischenfall rasch wiederherstellen?",
-        "tooltip": "Art. 32 Abs. 1 lit. c DSGVO verlangt die Fähigkeit, die Verfügbarkeit personenbezogener Daten und den Zugang zu ihnen bei einem physischen oder technischen Zwischenfall rasch wiederherzustellen. Art. 32 Abs. 1 lit. d DSGVO fordert zusätzlich ein Verfahren zur regelmäßigen Überprüfung und Bewertung der Wirksamkeit der Maßnahmen. §64 Abs. 1 BDSG verlangt entsprechende Maßnahmen.",
+        "tooltip": "Art. 32 Abs. 1 lit. c DSGVO verlangt die Fähigkeit, die Verfügbarkeit personenbezogener Daten und den Zugang zu ihnen bei einem physischen oder technischen Zwischenfall rasch wiederherzustellen. Art. 32 Abs. 1 lit. d DSGVO fordert zusätzlich ein Verfahren zur regelmäßigen Überprüfung und Bewertung der Wirksamkeit der Maßnahmen.",
         "help": "Wenn Ihre Systeme durch einen Ransomware-Angriff, einen Serverschaden, Brand oder Wasserschaden ausfallen -- wie schnell können Sie die personenbezogenen Daten wiederherstellen? 'Rasch' bedeutet: innerhalb von Stunden, nicht Wochen. Dafür brauchen Sie getestete Backups, die getrennt vom Hauptsystem aufbewahrt werden, und einen dokumentierten Wiederherstellungsplan. Testen Sie regelmäßig, ob die Wiederherstellung tatsächlich funktioniert.",
         "maturity": {
           "level0": "Keine Backup- oder Wiederherstellungsstrategie vorhanden",
@@ -2460,7 +2460,7 @@
       },
       "tomQ4": {
         "title": "Haben Sie ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit Ihrer technischen und organisatorischen Maßnahmen?",
-        "tooltip": "Art. 32 Abs. 1 lit. d DSGVO fordert ausdrücklich ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der technisch-organisatorischen Maßnahmen. Dies umfasst interne Audits, Penetrationstests, Schwachstellenanalysen und die Bewertung von Sicherheitsvorfällen. §64 Abs. 2 BDSG präzisiert, dass im Bereich der automatisierten Verarbeitung eine Kontrolle erforderlich ist.",
+        "tooltip": "Art. 32 Abs. 1 lit. d DSGVO fordert ausdrücklich ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der technisch-organisatorischen Maßnahmen. Dies umfasst interne Audits, Penetrationstests, Schwachstellenanalysen und die Bewertung von Sicherheitsvorfällen.",
         "help": "Es reicht nicht, einmal Schutzmaßnahmen einzuführen und dann nie wieder zu prüfen. Sie müssen regelmäßig testen, ob Ihre Maßnahmen noch wirksam sind. Das kann eine jährliche Überprüfung durch Ihren DSB oder einen externen Dienstleister sein, ein Penetrationstest Ihrer Systeme oder die Auswertung von Sicherheitsvorfällen. Dokumentieren Sie die Ergebnisse und leiten Sie Verbesserungsmaßnahmen ab.",
         "maturity": {
           "level0": "Keine Überprüfung der Wirksamkeit von Schutzmaßnahmen",
@@ -2471,7 +2471,7 @@
       },
       "tomQ5": {
         "title": "Berücksichtigen Sie bei der Auswahl Ihrer Schutzmaßnahmen den Stand der Technik, die Implementierungskosten und die Art, den Umfang und die Zwecke der Verarbeitung?",
-        "tooltip": "Art. 32 Abs. 1 DSGVO verlangt, dass bei der Auswahl der Schutzmaßnahmen der Stand der Technik, die Implementierungskosten, die Art, der Umfang, die Umstände und die Zwecke der Verarbeitung sowie die Eintrittswahrscheinlichkeit und Schwere des Risikos berücksichtigt werden. Art. 32 Abs. 2 DSGVO fordert bei der Beurteilung insbesondere die Berücksichtigung von Risiken durch Vernichtung, Verlust, Veränderung oder unbefugten Zugang. §64 BDSG wiederholt diese Anforderungen.",
+        "tooltip": "Art. 32 Abs. 1 DSGVO verlangt, dass bei der Auswahl der Schutzmaßnahmen der Stand der Technik, die Implementierungskosten, die Art, der Umfang, die Umstände und die Zwecke der Verarbeitung sowie die Eintrittswahrscheinlichkeit und Schwere des Risikos berücksichtigt werden. Art. 32 Abs. 2 DSGVO fordert bei der Beurteilung insbesondere die Berücksichtigung von Risiken durch Vernichtung, Verlust, Veränderung oder unbefugten Zugang.",
         "help": "Die DSGVO erwartet keine Maßnahmen um jeden Preis, sondern verhältnismäßige Maßnahmen. Ein kleines Handwerksunternehmen, das nur Kundenadressen speichert, braucht andere Maßnahmen als ein Krankenhaus mit Patientendaten. Bei der Auswahl berücksichtigen Sie: Was ist technisch aktuell möglich (Stand der Technik)? Was kostet die Umsetzung? Wie sensibel sind die Daten? Wie wahrscheinlich und schwerwiegend ist ein Datenverlust? Dokumentieren Sie diese Abwägung.",
         "maturity": {
           "level0": "Keine dokumentierte Abwägung bei der Auswahl von Schutzmaßnahmen; Maßnahmen sind zufällig oder historisch gewachsen",
@@ -2985,7 +2985,7 @@
       },
       "bsiQ4": {
         "title": "Wird die Kontaktstelle regelmäßig in KRITIS-Übungen des BSI eingebunden?",
-        "tooltip": "Das BSI führt nach §5a BSIG sektorübergreifende Übungen durch. Die Teilnahme stärkt die Zusammenarbeit und testet die Meldewege. BSI-Baustein DER.2.1 empfiehlt regelmäßige Übungen.",
+        "tooltip": "Das BSI führt sektorübergreifende Übungen durch und beteiligt sich an ihnen. Die Teilnahme stärkt die Zusammenarbeit und testet die Meldewege. BSI-Baustein DER.2.1 empfiehlt regelmäßige Übungen.",
         "help": "Das BSI organisiert sektorspezifische und sektorübergreifende KRITIS-Übungen (z. B. LÜKEX), bei denen die Zusammenarbeit zwischen BSI und Betreibern im Krisenfall geprobt wird. Die Teilnahme Ihrer Kontaktstelle an solchen Übungen verbessert die Reaktionsfähigkeit und gibt wertvolle Erkenntnisse über Schwachstellen in den Meldeprozessen.",
         "maturity": {
           "level0": "Keine Teilnahme an KRITIS-Übungen",
@@ -3679,7 +3679,7 @@
       "rtQ1": {
         "title": "Verfügt Ihr Finanzunternehmen über ein Programm für Tests der digitalen operationalen Resilienz?",
         "tooltip": "Art. 24 Abs. 1-2 DORA verpflichtet Finanzunternehmen, ein umfassendes Programm für Tests der digitalen operationalen Resilienz als integralen Bestandteil des IKT-Risikomanagementrahmens einzurichten. Das Programm muss verschiedene Tests umfassen und risikobasiert unter Berücksichtigung der sich wandelnden IKT-Risikolandschaft ausgestaltet sein.",
-        "help": "Ein Testprogramm für digitale operationale Resilienz geht über klassische IT-Sicherheitstests hinaus. Es umfasst Schwachstellenscans, Open-Source-Analysen, Netzwerksicherheitsbewertungen, Gap-Analysen, physische Sicherheitsüberprüfungen, Qüllcode-Reviews, szenariobasierte Tests, Kompatibilitätstests, Leistungstests und End-to-End-Tests. Das Programm muss risikobasiert priorisiert und jährlich aktualisiert werden.",
+        "help": "Ein Testprogramm für digitale operationale Resilienz geht über klassische IT-Sicherheitstests hinaus. Es umfasst Schwachstellenscans, Open-Source-Analysen, Netzwerksicherheitsbewertungen, Gap-Analysen, physische Sicherheitsüberprüfungen, Quellcode-Reviews, szenariobasierte Tests, Kompatibilitätstests, Leistungstests und End-to-End-Tests. Das Programm muss risikobasiert priorisiert und jährlich aktualisiert werden.",
         "maturity": {
           "level0": "Kein Programm für Tests der digitalen operationalen Resilienz vorhanden",
           "level1": "Vereinzelte Sicherheitstests (z. B. Schwachstellenscans) werden durchgeführt, aber kein strukturiertes Testprogramm",
@@ -3689,7 +3689,7 @@
       },
       "rtQ2": {
         "title": "Werden alle kritischen IKT-Systeme und -Anwendungen mindestens jährlich angemessenen Sicherheitstests unterzogen?",
-        "tooltip": "Art. 25 Abs. 1-3 DORA listet die geforderten Testarten auf: Schwachstellenbewertungen und -scans, Open-Source-Analysen, Netzwerksicherheitsbewertungen, Gap-Analysen, physische Sicherheitsüberprüfungen, Fragebögen und Scans von Softwarelösungen, Qüllcode-Reviews, szenariobasierte Tests, Kompatibilitätstests, Leistungstests, End-to-End-Tests und Penetrationstests.",
+        "tooltip": "Art. 25 Abs. 1-3 DORA listet die geforderten Testarten auf: Schwachstellenbewertungen und -scans, Open-Source-Analysen, Netzwerksicherheitsbewertungen, Gap-Analysen, physische Sicherheitsüberprüfungen, Fragebögen und Scans von Softwarelösungen, Quellcode-Reviews, szenariobasierte Tests, Kompatibilitätstests, Leistungstests, End-to-End-Tests und Penetrationstests.",
         "help": "DORA fordert verschiedene Arten von Tests, die über reine Penetrationstests hinausgehen. Jedes Jahr müssen kritische und wichtige IKT-Systeme durch unabhängige, fachkundige Prüfer getestet werden -- entweder intern (wenn keine Interessenkonflikte bestehen) oder extern. Die Testergebnisse müssen dokumentiert, Schwachstellen priorisiert und zeitnah behoben werden. Wichtig: Alle Testmethoden aus Art. 25 DORA sollten im Testprogramm berücksichtigt werden.",
         "maturity": {
           "level0": "Keine regelmäßigen Sicherheitstests der IKT-Systeme",
@@ -3777,13 +3777,13 @@
       },
       "vmQ5": {
         "title": "Werden erhebliche Cyberbedrohungen neben Vorfällen ebenfalls identifiziert und bei Bedarf an die Aufsichtsbehörde gemeldet?",
-        "tooltip": "Art. 23 Abs. 1-4 DORA sieht vor, dass Finanzunternehmen erhebliche Cyberbedrohungen freiwillig an die zuständige Behörde melden können, wenn sie diese als relevant für das Finanzsystem, die Dienstleistungsnutzer oder die Kunden erachten. Art. 23 Abs. 2 DORA verpflichtet die zuständige Behörde, die erhaltenen Informationen an andere Behörden weiterzuleiten.",
+        "tooltip": "Art. 19 Abs. 2 DORA sieht vor, dass Finanzunternehmen erhebliche Cyberbedrohungen freiwillig an die zuständige Behörde melden können, wenn sie diese als relevant für das Finanzsystem, die Dienstleistungsnutzer oder die Kunden erachten.",
         "help": "Neben der Pflichtmeldung schwerwiegender Vorfälle sieht DORA die freiwillige Meldung erheblicher Cyberbedrohungen vor. Dies dient dem Schutz des gesamten Finanzsektors: Wenn Ihr Unternehmen eine neuartige Angriffsmethode erkennt, die auch andere Finanzunternehmen treffen könnte, sollte diese Information geteilt werden. Dafür benötigen Sie einen Prozess, der Cyberbedrohungen systematisch bewertet und bei Relevanz für den Sektor eine Meldung an die Aufsichtsbehörde auslöst.",
         "maturity": {
           "level0": "Keine systematische Bewertung von Cyberbedrohungen; keine Kenntnis der freiwilligen Meldemöglichkeit",
           "level1": "Cyberbedrohungen werden wahrgenommen, aber nicht systematisch bewertet oder hinsichtlich Sektorrelevanz eingeordnet",
           "level2": "Prozess zur Bewertung erheblicher Cyberbedrohungen vorhanden, Meldemöglichkeit an Aufsichtsbehörde bekannt, aber noch nicht praktisch angewendet",
-          "level3": "Systematischer Prozess zur Identifizierung, Bewertung und Meldung erheblicher Cyberbedrohungen gemäß Art. 23 DORA mit Threat-Intelligence-Anbindung, definierten Bewertungskriterien und dokumentierten Meldungen"
+          "level3": "Systematischer Prozess zur Identifizierung, Bewertung und Meldung erheblicher Cyberbedrohungen gemäß Art. 19 Abs. 2 DORA mit Threat-Intelligence-Anbindung, definierten Bewertungskriterien und dokumentierten Meldungen"
         }
       }
     },
@@ -4006,7 +4006,7 @@
     "questions": {
       "bsQ1": {
         "title": "Werden IT-Systeme systematisch gehärtet und gegen bekannte Schwachstellen geschützt?",
-        "tooltip": "VDA ISA Kontrolle 9.1.1 / ISO 27001:2022 A.8.6 — IT-Systeme müssen vor Inbetriebnahme gehärtet werden. Unnötige Dienste, Ports und Standardkonten müssen deaktiviert, Sicherheitspatches zeitnah eingespielt werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.9 — IT-Systeme müssen vor Inbetriebnahme gehärtet werden. Unnötige Dienste, Ports und Standardkonten müssen deaktiviert, Sicherheitspatches zeitnah eingespielt werden.",
         "help": "Systemhärtung bedeutet, die Angriffsfläche Ihrer IT-Systeme zu minimieren: Deaktivierung nicht benötigter Dienste, Schließung offener Ports, Änderung von Standardpasswörtern, Einschränkung von Benutzerrechten und zeitnahes Patchen. TISAX verlangt dokumentierte Härtungsrichtlinien, idealerweise basierend auf CIS Benchmarks oder vergleichbaren Standards. Besonders OEM-angebundene Systeme müssen gehärtet sein.",
         "maturity": {
           "level0": "Keine systematische Härtung — Systeme werden mit Standardkonfigurationen betrieben, Patches werden nicht regelmäßig eingespielt",
@@ -4017,7 +4017,7 @@
       },
       "bsQ2": {
         "title": "Werden Schutzmaßnahmen gegen Schadsoftware (Malware) auf allen Endpunkten und Servern eingesetzt?",
-        "tooltip": "VDA ISA Kontrolle 9.1.2 / ISO 27001:2022 A.8.7 — Alle informationsverarbeitenden Systeme müssen durch angemessene Maßnahmen gegen Schadsoftware geschützt werden. Dies umfasst Antiviren-Software, Endpoint Detection and Response (EDR) und Web-/E-Mail-Filterung.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.7 — Alle informationsverarbeitenden Systeme müssen durch angemessene Maßnahmen gegen Schadsoftware geschützt werden. Dies umfasst Antiviren-Software, Endpoint Detection and Response (EDR) und Web-/E-Mail-Filterung.",
         "help": "Malware-Schutz ist eine Grundanforderung bei TISAX-Assessments. Alle Arbeitsplätze, Server und Gateways müssen mit aktueller Schutzsoftware ausgestattet sein. TISAX-Assessoren prüfen, ob Signaturen automatisch aktualisiert werden, ob Echtzeit-Scanning aktiv ist und ob Vorfälle zentral protokolliert und ausgewertet werden. Für Produktionsnetzwerke gelten besondere Anforderungen.",
         "maturity": {
           "level0": "Kein systematischer Malware-Schutz — kein Antivirenprogramm auf allen Systemen, keine zentrale Verwaltung",
@@ -4028,7 +4028,7 @@
       },
       "bsQ3": {
         "title": "Existiert ein systematisches Schwachstellenmanagement mit regelmäßiger Erkennung und Behebung?",
-        "tooltip": "VDA ISA Kontrolle 9.1.3 / ISO 27001:2022 A.8.8 — Technische Schwachstellen müssen zeitnah identifiziert, nach Schweregrad bewertet und durch Patches oder kompensierende Maßnahmen behoben werden. Regelmäßige Schwachstellenscans sind erforderlich.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.8 — Technische Schwachstellen müssen zeitnah identifiziert, nach Schweregrad bewertet und durch Patches oder kompensierende Maßnahmen behoben werden. Regelmäßige Schwachstellenscans sind erforderlich.",
         "help": "Ein systematisches Schwachstellenmanagement ist essentiell für TISAX-Compliance. Sie müssen regelmäßig Schwachstellenscans durchführen (intern und extern), die Ergebnisse nach Schweregrad (CVSS) priorisieren und Patches innerhalb definierter Fristen einspielen. Besonders kritisch sind Schwachstellen in Systemen mit OEM-Anbindung oder Zugang zu Prototypen-Daten.",
         "maturity": {
           "level0": "Kein Schwachstellenmanagement — keine regelmäßigen Scans, keine systematische Patch-Priorisierung",
@@ -4039,7 +4039,7 @@
       },
       "compQ1": {
         "title": "Werden alle für Ihr Unternehmen relevanten gesetzlichen und regulatorischen IS-Anforderungen systematisch identifiziert und eingehalten?",
-        "tooltip": "VDA ISA Kontrolle 12.1.1 / ISO 27001:2022 A.5.31 — Alle relevanten gesetzlichen, regulatorischen und vertraglichen Anforderungen an die Informationssicherheit müssen identifiziert, dokumentiert und deren Einhaltung sichergestellt werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.31 — Alle relevanten gesetzlichen, regulatorischen und vertraglichen Anforderungen an die Informationssicherheit müssen identifiziert, dokumentiert und deren Einhaltung sichergestellt werden.",
         "help": "Neben TISAX und ISO 27001 gibt es zahlreiche weitere Anforderungen, die für Automobilzulieferer relevant sein können: DSGVO, NIS2, KRITIS-VO, Geschäftsgeheimnisgesetz, OEM-spezifische Anforderungen und branchenspezifische Standards. TISAX-Assessoren prüfen, ob Sie eine Übersicht aller relevanten Anforderungen führen und deren Einhaltung systematisch sicherstellen.",
         "maturity": {
           "level0": "Keine systematische Erfassung relevanter IS-Anforderungen — gesetzliche und regulatorische Pflichten sind nicht bekannt oder dokumentiert",
@@ -4050,7 +4050,7 @@
       },
       "compQ2": {
         "title": "Werden regelmäßige interne Audits und Managementbewertungen des ISMS durchgeführt?",
-        "tooltip": "VDA ISA Kontrolle 12.1.2 / ISO 27001:2022 A.5.32 — Interne Audits müssen regelmäßig geplant und durchgeführt werden, um die Wirksamkeit des ISMS zu überprüfen. Die Ergebnisse müssen in einer Managementbewertung (Management Review) bewertet werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.35 — Interne Audits müssen regelmäßig geplant und durchgeführt werden, um die Wirksamkeit des ISMS zu überprüfen. Die Ergebnisse müssen in einer Managementbewertung (Management Review) bewertet werden.",
         "help": "TISAX verlangt einen funktionierenden PDCA-Zyklus: Planen, Umsetzen, Überprüfen, Verbessern. Interne Audits sind der zentrale Überprüfungsmechanismus. Sie müssen jährlich alle VDA-ISA-Kapitel abdecken, die Ergebnisse dokumentieren und der Geschäftsleitung im Rahmen eines Management Reviews vorlegen. Befunde müssen nachverfolgt und Maßnahmen auf Wirksamkeit geprüft werden.",
         "maturity": {
           "level0": "Keine internen ISMS-Audits — keine systematische Überprüfung der Informationssicherheitsmaßnahmen",
@@ -4061,7 +4061,7 @@
       },
       "compQ3": {
         "title": "Werden die Ergebnisse von TISAX-Assessments und Audits in einen kontinuierlichen Verbesserungsprozess überführt?",
-        "tooltip": "VDA ISA Kontrolle 12.1.3 / ISO 27001:2022 A.5.33 — Erkenntnisse aus TISAX-Assessments, internen Audits und Sicherheitsvorfällen müssen systematisch ausgewertet und in Verbesserungsmaßnahmen überführt werden. Der PDCA-Zyklus muss nachweisbar gelebt werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.27 — Erkenntnisse aus TISAX-Assessments, internen Audits und Sicherheitsvorfällen müssen systematisch ausgewertet und in Verbesserungsmaßnahmen überführt werden. Der PDCA-Zyklus muss nachweisbar gelebt werden.",
         "help": "TISAX ist kein einmaliges Projekt, sondern ein kontinuierlicher Prozess. Nach jedem Assessment, Audit oder Sicherheitsvorfall müssen die Erkenntnisse analysiert und in konkrete Verbesserungsmaßnahmen überführt werden. TISAX-Assessoren prüfen bei Folge-Assessments, ob frühere Befunde adressiert wurden und ob ein nachweisbarer Verbesserungstrend erkennbar ist.",
         "maturity": {
           "level0": "Keine systematische Verbesserung — Befunde aus Assessments und Audits werden nicht nachverfolgt oder adressiert",
@@ -4072,7 +4072,7 @@
       },
       "dsQ1": {
         "title": "Ist die Einhaltung datenschutzrechtlicher Anforderungen (DSGVO) im Rahmen Ihrer Informationssicherheit sichergestellt?",
-        "tooltip": "VDA ISA Kontrolle 6.1.1 / ISO 27001:2022 A.5.34 — Die Verarbeitung personenbezogener Daten muss den Anforderungen der DSGVO und des BDSG entsprechen. Ein Datenschutzbeauftragter muss benannt und die Einhaltung der Datenschutzgrundsätze sichergestellt sein.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.34 — Die Verarbeitung personenbezogener Daten muss den Anforderungen der DSGVO und des BDSG entsprechen. Ein Datenschutzbeauftragter muss benannt und die Einhaltung der Datenschutzgrundsätze sichergestellt sein.",
         "help": "TISAX umfasst auch Datenschutzanforderungen, die über die reine Informationssicherheit hinausgehen. Als Automobilzulieferer verarbeiten Sie personenbezogene Daten von Mitarbeitern, Kunden und Ansprechpartnern. Die VDA ISA prüft, ob ein Datenschutzbeauftragter benannt ist, ob ein Verarbeitungsverzeichnis geführt wird und ob die DSGVO-Grundsätze (Rechtmäßigkeit, Zweckbindung, Datenminimierung) eingehalten werden.",
         "maturity": {
           "level0": "Keine systematische Berücksichtigung datenschutzrechtlicher Anforderungen — kein Datenschutzbeauftragter benannt, kein Verarbeitungsverzeichnis",
@@ -4083,7 +4083,7 @@
       },
       "dsQ2": {
         "title": "Werden Auftragsverarbeitungsverträge mit allen relevanten Dienstleistern geschlossen und gepflegt?",
-        "tooltip": "VDA ISA Kontrolle 6.1.2 / ISO 27001:2022 A.5.35 — Bei der Verarbeitung personenbezogener Daten durch Dritte (Auftragsverarbeiter) müssen Auftragsverarbeitungsverträge (AVV) gemäß Art. 28 DSGVO geschlossen werden.",
+        "tooltip": "VDA ISA 6 (Modul Datenschutz) — Bei der Verarbeitung personenbezogener Daten durch Dritte (Auftragsverarbeiter) müssen Auftragsverarbeitungsverträge (AVV) gemäß Art. 28 DSGVO geschlossen werden.",
         "help": "Als Automobilzulieferer geben Sie häufig personenbezogene Daten an IT-Dienstleister, Cloud-Anbieter, Personaldienstleister oder Entsorger weiter. Für jede dieser Verarbeitungen benötigen Sie einen rechtskonformen AVV nach Art. 28 DSGVO. TISAX-Assessoren prüfen, ob AVVs vorhanden, vollständig und aktuell sind — insbesondere bei Cloud-Diensten und Fernwartungszugriff.",
         "maturity": {
           "level0": "Keine Auftragsverarbeitungsverträge vorhanden — Datenverarbeitung durch Dritte erfolgt ohne vertragliche Grundlage",
@@ -4094,7 +4094,7 @@
       },
       "dsQ3": {
         "title": "Ist ein Prozess zur Erkennung und Meldung von Datenschutzverletzungen implementiert?",
-        "tooltip": "VDA ISA Kontrolle 6.1.3 / ISO 27001:2022 A.5.36 — Datenschutzverletzungen (Data Breaches) müssen gemäß Art. 33/34 DSGVO innerhalb von 72 Stunden an die Aufsichtsbehörde gemeldet werden. Ein dokumentierter Prozess muss sicherstellen, dass Verletzungen erkannt, bewertet und fristgerecht gemeldet werden.",
+        "tooltip": "VDA ISA 6 (Modul Datenschutz) — Datenschutzverletzungen (Data Breaches) müssen gemäß Art. 33/34 DSGVO innerhalb von 72 Stunden an die Aufsichtsbehörde gemeldet werden. Ein dokumentierter Prozess muss sicherstellen, dass Verletzungen erkannt, bewertet und fristgerecht gemeldet werden.",
         "help": "Eine Datenschutzverletzung liegt vor, wenn personenbezogene Daten unbefugt offengelegt, geändert, gelöscht oder sonst kompromittiert werden. Der TISAX-Assessor prüft, ob Sie einen dokumentierten Prozess haben, der die Erkennung, Bewertung (Risikoeinschätzung für Betroffene), interne Eskalation, Meldung an die Aufsichtsbehörde (72h) und ggf. Benachrichtigung der Betroffenen sicherstellt.",
         "maturity": {
           "level0": "Kein Prozess zur Erkennung und Meldung von Datenschutzverletzungen — Vorfälle werden nicht als Datenschutzverletzung erkannt",
@@ -4105,7 +4105,7 @@
       },
       "komQ1": {
         "title": "Sind Netzwerke segmentiert und durch geeignete Sicherheitskomponenten geschützt?",
-        "tooltip": "VDA ISA Kontrolle 10.1.1 / ISO 27001:2022 A.8.20 — Netzwerke müssen nach Schutzbedarf segmentiert und durch Firewalls, Intrusion-Detection-/Prevention-Systeme und weitere Sicherheitskomponenten geschützt werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.20 — Netzwerke müssen nach Schutzbedarf segmentiert und durch Firewalls, Intrusion-Detection-/Prevention-Systeme und weitere Sicherheitskomponenten geschützt werden.",
         "help": "Netzwerksegmentierung ist eine zentrale Anforderung bei TISAX: OEM-Daten, Prototypen-Informationen und Produktionssysteme müssen in separaten Netzwerksegmenten betrieben werden, die durch Firewalls voneinander getrennt sind. TISAX-Assessoren prüfen die Netzwerkarchitektur, Firewall-Regelwerke und die Überwachung der Netzwerkübergänge. Eine flache Netzwerkarchitektur ohne Segmentierung ist ein häufiger Hauptbefund.",
         "maturity": {
           "level0": "Keine Netzwerksegmentierung — flache Netzwerkarchitektur ohne Zonenkonzept, kein Firewall-Management",
@@ -4116,7 +4116,7 @@
       },
       "komQ2": {
         "title": "Werden Netzwerkdienste und -verbindungen sicher konfiguriert und überwacht?",
-        "tooltip": "VDA ISA Kontrolle 10.1.2 / ISO 27001:2022 A.8.21 — Netzwerkdienste müssen identifiziert, sicher konfiguriert und überwacht werden. Dazu gehören DNS, DHCP, VPN-Zugänge, Remote-Access-Lösungen und drahtlose Netzwerke.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.21 — Netzwerkdienste müssen identifiziert, sicher konfiguriert und überwacht werden. Dazu gehören DNS, DHCP, VPN-Zugänge, Remote-Access-Lösungen und drahtlose Netzwerke.",
         "help": "TISAX verlangt eine vollständige Übersicht über alle Netzwerkdienste und -verbindungen. VPN-Zugänge für Fernwartung und Homeoffice müssen mit starker Authentifizierung (MFA) gesichert sein. WLAN-Netzwerke erfordern WPA3 oder WPA2-Enterprise, Gäste-WLAN muss vom Unternehmensnetzwerk getrennt sein. Fernwartungszugänge von OEMs und Dienstleistern müssen besonders kontrolliert werden.",
         "maturity": {
           "level0": "Keine systematische Übersicht oder Kontrolle der Netzwerkdienste — VPN ohne MFA, offene WLAN-Netzwerke, unkontrollierte Fernwartungszugänge",
@@ -4127,7 +4127,7 @@
       },
       "komQ3": {
         "title": "Werden Datenüberträge mit OEMs und Geschäftspartnern über sichere Kanäle abgewickelt?",
-        "tooltip": "VDA ISA Kontrolle 10.1.3 / ISO 27001:2022 A.8.22 — Der Austausch vertraulicher Informationen mit externen Partnern muss über verschlüsselte und authentifizierte Kommunikationskanäle erfolgen. Besondere Anforderungen gelten für den OEM-Datenaustausch.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.14 — Der Austausch vertraulicher Informationen mit externen Partnern muss über verschlüsselte und authentifizierte Kommunikationskanäle erfolgen. Besondere Anforderungen gelten für den OEM-Datenaustausch.",
         "help": "Der Datenaustausch mit OEMs ist ein zentrales Thema bei TISAX-Assessments. Konstruktionsdaten, Prototypen-Informationen und Qualitätsdaten müssen über sichere Kanäle übertragen werden — z.B. über OEM-spezifische Plattformen (Teamcenter, ENOVIA), verschlüsselte Datentransferlösungen oder SFTP. Unverschlüsselte E-Mail-Anhänge für vertrauliche OEM-Daten sind ein typischer Befund.",
         "maturity": {
           "level0": "Keine gesicherten Datenaustauschkanäle — vertrauliche Daten werden per unverschlüsselter E-Mail oder offenen Filesharing-Diensten ausgetauscht",
@@ -4138,7 +4138,7 @@
       },
       "kryQ1": {
         "title": "Existiert eine Kryptografie-Richtlinie mit Vorgaben für die Verwendung von Verschlüsselung und Schlüsselverwaltung?",
-        "tooltip": "VDA ISA Kontrolle 8.1.1 / ISO 27001:2022 A.8.24 — Eine Kryptografie-Richtlinie muss definieren, wann und wie kryptografische Verfahren eingesetzt werden. Dies umfasst Verschlüsselungsstandards, Schlüssellängen und die Verwaltung kryptografischer Schlüssel.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Eine Kryptografie-Richtlinie muss definieren, wann und wie kryptografische Verfahren eingesetzt werden. Dies umfasst Verschlüsselungsstandards, Schlüssellängen und die Verwaltung kryptografischer Schlüssel.",
         "help": "TISAX verlangt eine dokumentierte Kryptografie-Richtlinie, die festlegt, welche Verschlüsselungsverfahren und Schlüssellängen eingesetzt werden. Die Richtlinie muss Vorgaben für Datenverschlüsselung (at rest und in transit), E-Mail-Verschlüsselung, Festplattenverschlüsselung mobiler Geräte und VPN-Verbindungen umfassen. Veraltete Algorithmen (z.B. MD5, SHA-1, DES) dürfen nicht mehr eingesetzt werden.",
         "maturity": {
           "level0": "Keine Kryptografie-Richtlinie vorhanden — Verschlüsselung wird sporadisch und ohne Standards eingesetzt",
@@ -4149,7 +4149,7 @@
       },
       "kryQ2": {
         "title": "Werden vertrauliche Daten bei Speicherung und Übertragung durchgehend verschlüsselt?",
-        "tooltip": "VDA ISA Kontrolle 8.1.2 / ISO 27001:2022 A.8.25 — Vertrauliche Informationen müssen sowohl bei der Speicherung (at rest) als auch bei der Übertragung (in transit) durch angemessene Verschlüsselung geschützt werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Vertrauliche Informationen müssen sowohl bei der Speicherung (at rest) als auch bei der Übertragung (in transit) durch angemessene Verschlüsselung geschützt werden.",
         "help": "Für Automobilzulieferer ist dies besonders relevant: OEM-Konstruktionsdaten, Prototypen-Informationen und Testergebnisse müssen verschlüsselt gespeichert und übertragen werden. TISAX verlangt Festplattenverschlüsselung für mobile Geräte, Verschlüsselung von Datenbanken mit Schutzbedarf und die Nutzung sicherer Übertragungsprotokolle (TLS 1.2+, SFTP, verschlüsselte E-Mail) für den Datenaustausch mit OEMs.",
         "maturity": {
           "level0": "Keine systematische Verschlüsselung — vertrauliche Daten werden unverschlüsselt gespeichert und per E-Mail oder FTP übertragen",
@@ -4160,7 +4160,7 @@
       },
       "kryQ3": {
         "title": "Werden kryptografische Schlüssel sicher erzeugt, gespeichert, verteilt und bei Kompromittierung widerrufen?",
-        "tooltip": "VDA ISA Kontrolle 8.1.3 / ISO 27001:2022 A.8.26 — Die Verwaltung kryptografischer Schlüssel muss den gesamten Lebenszyklus abdecken: Erzeugung, Verteilung, Speicherung, Rotation, Archivierung und Widerruf/Vernichtung.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Die Verwaltung kryptografischer Schlüssel muss den gesamten Lebenszyklus abdecken: Erzeugung, Verteilung, Speicherung, Rotation, Archivierung und Widerruf/Vernichtung.",
         "help": "Selbst die stärkste Verschlüsselung ist wertlos, wenn die Schlüssel unsicher verwaltet werden. TISAX verlangt ein dokumentiertes Schlüsselmanagement: Schlüssel müssen mit kryptografisch sicheren Zufallsgeneratoren erzeugt, in gesicherten Keystores gespeichert, regelmäßig rotiert und bei Verdacht auf Kompromittierung sofort widerrufen werden. Besonders wichtig bei Zertifikaten für den OEM-Datenaustausch.",
         "maturity": {
           "level0": "Kein Schlüsselmanagement — Schlüssel werden ad hoc erzeugt, in Konfigurationsdateien gespeichert, nicht rotiert oder widerrufen",
@@ -4171,7 +4171,7 @@
       },
       "liefQ1": {
         "title": "Werden Informationssicherheitsanforderungen in Verträgen mit Lieferanten und Dienstleistern verankert?",
-        "tooltip": "VDA ISA Kontrolle 11.1.1 / ISO 27001:2022 A.5.19 — Vertragliche Vereinbarungen mit Lieferanten und Dienstleistern müssen Anforderungen an die Informationssicherheit enthalten, insbesondere wenn diese Zugang zu vertraulichen OEM-Daten oder IT-Systemen erhalten.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.20 — Vertragliche Vereinbarungen mit Lieferanten und Dienstleistern müssen Anforderungen an die Informationssicherheit enthalten, insbesondere wenn diese Zugang zu vertraulichen OEM-Daten oder IT-Systemen erhalten.",
         "help": "Als Automobilzulieferer müssen Sie die Sicherheitsanforderungen Ihrer OEMs an Ihre eigenen Lieferanten und Dienstleister weitergeben. TISAX verlangt, dass Verträge Klauseln zu Vertraulichkeit, Informationsschutz, Audit-Rechten, Incident-Meldepflichten und TISAX-Label-Anforderungen enthalten. Ohne vertragliche Absicherung haften Sie für Sicherheitsvorfälle bei Ihren Lieferanten.",
         "maturity": {
           "level0": "Keine Informationssicherheitsanforderungen in Lieferantenverträgen — Dienstleister erhalten Zugang ohne vertragliche Sicherheitsverpflichtungen",
@@ -4182,7 +4182,7 @@
       },
       "liefQ2": {
         "title": "Werden Lieferanten und Dienstleister hinsichtlich ihrer Informationssicherheit regelmäßig bewertet?",
-        "tooltip": "VDA ISA Kontrolle 11.1.2 / ISO 27001:2022 A.5.20 — Die Informationssicherheit von Lieferanten muss regelmäßig bewertet werden, insbesondere bei Zugang zu vertraulichen Informationen oder kritischen IT-Systemen.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.22 — Die Informationssicherheit von Lieferanten muss regelmäßig bewertet werden, insbesondere bei Zugang zu vertraulichen Informationen oder kritischen IT-Systemen.",
         "help": "TISAX verlangt, dass Sie Ihre Lieferanten regelmäßig auf Einhaltung der Sicherheitsanforderungen prüfen. Dies kann durch Lieferanten-Fragebögen, Überprüfung des TISAX-Labels, ISO-27001-Zertifizierung, Vor-Ort-Audits oder technische Prüfungen (z.B. Schwachstellenscans bei Schnittstellen) erfolgen. Kritische Lieferanten mit Zugang zu OEM-Daten erfordern eine höhere Prüftiefe.",
         "maturity": {
           "level0": "Keine Bewertung der Informationssicherheit von Lieferanten — es existiert kein Überprüfungsprozess",
@@ -4193,7 +4193,7 @@
       },
       "liefQ3": {
         "title": "Werden Änderungen in der Lieferkette hinsichtlich ihrer Auswirkungen auf die Informationssicherheit bewertet?",
-        "tooltip": "VDA ISA Kontrolle 11.1.3 / ISO 27001:2022 A.5.21 — Änderungen in der Lieferkette (z.B. neue Unterlieferanten, Standortwechsel, Personalwechsel) müssen auf ihre Auswirkungen auf die Informationssicherheit bewertet werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.21 — Änderungen in der Lieferkette (z.B. neue Unterlieferanten, Standortwechsel, Personalwechsel) müssen auf ihre Auswirkungen auf die Informationssicherheit bewertet werden.",
         "help": "Lieferkettenänderungen können erhebliche Sicherheitsauswirkungen haben: Ein neuer Unterlieferant in einem Drittland, ein Standortwechsel ohne adäquate physische Sicherheit oder die Nutzung neuer Cloud-Dienste ändern das Risikoprofil. TISAX verlangt, dass solche Änderungen vor der Umsetzung auf ihre Sicherheitsauswirkungen geprüft und ggf. vom OEM genehmigt werden.",
         "maturity": {
           "level0": "Keine Bewertung von Lieferkettenänderungen — Unterlieferanten werden gewechselt oder hinzugefügt, ohne Sicherheitsaspekte zu prüfen",
@@ -4204,7 +4204,7 @@
       },
       "orgQ1": {
         "title": "Existiert eine dokumentierte Informationssicherheitsleitlinie, die von der Geschäftsleitung freigegeben und kommuniziert wurde?",
-        "tooltip": "VDA ISA Kontrolle 1.1.1 / ISO 27001:2022 A.5.1 — Eine Informationssicherheitsleitlinie (IS-Leitlinie) ist die oberste Richtlinie für den Umgang mit Informationssicherheit im Unternehmen. Sie muss von der Geschäftsleitung verabschiedet und allen Mitarbeitern zugänglich gemacht werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.1 — Eine Informationssicherheitsleitlinie (IS-Leitlinie) ist die oberste Richtlinie für den Umgang mit Informationssicherheit im Unternehmen. Sie muss von der Geschäftsleitung verabschiedet und allen Mitarbeitern zugänglich gemacht werden.",
         "help": "Die IS-Leitlinie definiert die strategische Ausrichtung Ihrer Informationssicherheit und zeigt das Commitment der Geschäftsleitung. Für TISAX ist sie ein Pflichtdokument, das bei jedem Assessment geprüft wird. Sie sollte Schutzziele, Geltungsbereich, Verantwortlichkeiten und den Bezug zu OEM-Anforderungen enthalten. Ohne freigegebene Leitlinie kann kein Assessment Level bestanden werden.",
         "maturity": {
           "level0": "Keine Informationssicherheitsleitlinie vorhanden — kein dokumentiertes Bekenntnis der Geschäftsleitung zur Informationssicherheit",
@@ -4215,7 +4215,7 @@
       },
       "orgQ2": {
         "title": "Sind Rollen und Verantwortlichkeiten für die Informationssicherheit klar zugewiesen und dokumentiert?",
-        "tooltip": "VDA ISA Kontrolle 1.2.1 / ISO 27001:2022 A.5.2 — Es müssen eindeutige Rollen für die Informationssicherheit definiert sein, insbesondere ein Informationssicherheitsbeauftragter (ISB). Die Zuständigkeiten müssen dokumentiert und kommuniziert werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.2 — Es müssen eindeutige Rollen für die Informationssicherheit definiert sein, insbesondere ein Informationssicherheitsbeauftragter (ISB). Die Zuständigkeiten müssen dokumentiert und kommuniziert werden.",
         "help": "TISAX verlangt, dass ein Informationssicherheitsbeauftragter (ISB) benannt ist, der direkt an die Geschäftsleitung berichtet. Darüber hinaus müssen Verantwortlichkeiten für Risikomanagement, Vorfallbehandlung, physische Sicherheit und Prototypenschutz klar zugewiesen sein. In der Automobilindustrie müssen diese Rollen auch gegenüber OEM-Partnern nachgewiesen werden können.",
         "maturity": {
           "level0": "Keine definierten Rollen für Informationssicherheit — niemand ist formal für IS-Themen zuständig",
@@ -4226,7 +4226,7 @@
       },
       "orgQ3": {
         "title": "Werden Informationssicherheitsrisiken systematisch identifiziert, bewertet und behandelt?",
-        "tooltip": "VDA ISA Kontrolle 1.3.1 / ISO 27001:2022 A.5.3 — Ein systematisches Risikomanagement ist Kernbestandteil des ISMS. Risiken müssen identifiziert, nach Eintrittswahrscheinlichkeit und Auswirkung bewertet und mit angemessenen Maßnahmen behandelt werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 Kap. 6.1.2 — Ein systematisches Risikomanagement ist Kernbestandteil des ISMS. Risiken müssen identifiziert, nach Eintrittswahrscheinlichkeit und Auswirkung bewertet und mit angemessenen Maßnahmen behandelt werden.",
         "help": "Das Risikomanagement ist für TISAX zentral: Sie müssen eine methodische Risikoanalyse durchführen, die alle relevanten Assets (insbesondere OEM-Daten, Prototypen, IT-Systeme) umfasst. Die Risikobewertung bestimmt, welche Schutzmaßnahmen erforderlich sind. Der Assessor prüft, ob die Methodik nachvollziehbar und die Risikobehandlung angemessen ist.",
         "maturity": {
           "level0": "Kein systematisches Risikomanagement — Risiken werden nicht strukturiert erfasst oder bewertet",
@@ -4237,7 +4237,7 @@
       },
       "perQ1": {
         "title": "Werden Mitarbeiter vor der Einstellung hinsichtlich ihrer Zuverlässigkeit und Qualifikation überprüft?",
-        "tooltip": "VDA ISA Kontrolle 2.1.1 / ISO 27001:2022 A.6.1 — Vor der Einstellung müssen Hintergrundprüfungen durchgeführt werden, die dem Schutzbedarf der künftigen Tätigkeit entsprechen. Dies umfasst Identitätsprüfung, Qualifikationsnachweise und ggf. Führungszeugnisse.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.1 — Vor der Einstellung müssen Hintergrundprüfungen durchgeführt werden, die dem Schutzbedarf der künftigen Tätigkeit entsprechen. Dies umfasst Identitätsprüfung, Qualifikationsnachweise und ggf. Führungszeugnisse.",
         "help": "In der Automobilindustrie haben Mitarbeiter häufig Zugang zu streng vertraulichen OEM-Daten und Prototypen. Vor der Einstellung sollten Sie Identität, Qualifikation und Zuverlässigkeit überprüfen. Bei Tätigkeiten mit Zugang zu hochvertraulichen Informationen kann ein polizeiliches Führungszeugnis erforderlich sein. TISAX-Assessoren prüfen, ob ein dokumentierter Prozess für Pre-Employment-Screening existiert.",
         "maturity": {
           "level0": "Keine Hintergrundprüfung vor der Einstellung — weder Identität noch Qualifikation werden verifiziert",
@@ -4248,7 +4248,7 @@
       },
       "perQ2": {
         "title": "Gibt es ein strukturiertes Programm für Informationssicherheits-Awareness und -Schulungen?",
-        "tooltip": "VDA ISA Kontrolle 2.1.2 / ISO 27001:2022 A.6.2 — Alle Mitarbeiter müssen regelmäßig zu Informationssicherheitsthemen geschult und sensibilisiert werden. Schulungen müssen rollenspezifisch und nachweisbar sein.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.3 — Alle Mitarbeiter müssen regelmäßig zu Informationssicherheitsthemen geschult und sensibilisiert werden. Schulungen müssen rollenspezifisch und nachweisbar sein.",
         "help": "TISAX verlangt, dass alle Mitarbeiter — einschließlich temporärem Personal und Leiharbeitern — regelmäßig zu Informationssicherheit geschult werden. Die Schulungen müssen den Umgang mit vertraulichen OEM-Daten, Prototypenschutz, Social-Engineering-Erkennung und Meldepflichten bei Sicherheitsvorfällen abdecken. Schulungsnachweise müssen dokumentiert und beim Assessment vorgelegt werden können.",
         "maturity": {
           "level0": "Keine Informationssicherheitsschulungen — Mitarbeiter werden nicht systematisch sensibilisiert",
@@ -4259,7 +4259,7 @@
       },
       "perQ3": {
         "title": "Sind Regelungen für Vertraulichkeit und Geheimhaltung mit Mitarbeitern und externen Partnern vereinbart?",
-        "tooltip": "VDA ISA Kontrolle 2.1.3 / ISO 27001:2022 A.6.3 — Vertraulichkeitsvereinbarungen (NDA) müssen mit allen Personen geschlossen werden, die Zugang zu schutzwürdigen Informationen haben. Dies umfasst Mitarbeiter, Leiharbeitnehmer, Berater und Dienstleister.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.6 — Vertraulichkeitsvereinbarungen (NDA) müssen mit allen Personen geschlossen werden, die Zugang zu schutzwürdigen Informationen haben. Dies umfasst Mitarbeiter, Leiharbeitnehmer, Berater und Dienstleister.",
         "help": "In der Automobilindustrie ist die vertragliche Absicherung der Vertraulichkeit besonders wichtig, da OEM-Partner häufig strenge Geheimhaltungsanforderungen stellen. TISAX verlangt nachweisbare NDAs für alle Personen mit Zugang zu vertraulichen Informationen. Die Vereinbarungen müssen den Umfang der Geheimhaltung, die Dauer, Sanktionen bei Verstoßen und die Pflichten bei Beendigung des Verhältnisses regeln.",
         "maturity": {
           "level0": "Keine Vertraulichkeitsvereinbarungen vorhanden — weder mit Mitarbeitern noch mit externen Partnern",
@@ -4270,7 +4270,7 @@
       },
       "phyQ1": {
         "title": "Sind physische Sicherheitsbereiche definiert und mit angemessenen Zutrittskontrollen ausgestattet?",
-        "tooltip": "VDA ISA Kontrolle 3.1.1 / ISO 27001:2022 A.7.1 — Sicherheitsbereiche müssen definiert und durch physische Barrieren und Zutrittskontrollen geschützt werden. Die Schutzstärke muss dem Schutzbedarf der verarbeiteten Informationen entsprechen.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.1 — Sicherheitsbereiche müssen definiert und durch physische Barrieren und Zutrittskontrollen geschützt werden. Die Schutzstärke muss dem Schutzbedarf der verarbeiteten Informationen entsprechen.",
         "help": "TISAX verlangt eine klare Zonierung Ihrer Räumlichkeiten: Öffentlicher Bereich, allgemeiner Unternehmensbereich, sicherheitsrelevanter Bereich und Hochsicherheitsbereich (z.B. Prototypenwerkstatt). Jede Zone erfordert angemessene Zutrittskontrollen — von der einfachen Ausweispflicht bis zur biometrischen Zutrittskontrolle mit Vereinzelungsanlage. Der Assessor prüft die Wirksamkeit der Zonierung vor Ort.",
         "maturity": {
           "level0": "Keine Sicherheitsbereiche definiert — keine differenzierte Zutrittskontrolle, freier Zugang zu allen Räumlichkeiten",
@@ -4281,7 +4281,7 @@
       },
       "phyQ2": {
         "title": "Sind IT-Systeme und Datenträger gegen Diebstahl, Manipulation und unbefugten Zugriff physisch geschützt?",
-        "tooltip": "VDA ISA Kontrolle 3.1.2 / ISO 27001:2022 A.7.2 — IT-Equipment, Datenträger und Dokumentation müssen gegen Entwendung, Beschädigung und unbefugte Einsichtnahme geschützt werden. Besondere Anforderungen gelten für mobile Geräte und Wechseldatenträger.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.8 — IT-Equipment, Datenträger und Dokumentation müssen gegen Entwendung, Beschädigung und unbefugte Einsichtnahme geschützt werden. Besondere Anforderungen gelten für mobile Geräte und Wechseldatenträger.",
         "help": "In der Automobilindustrie werden häufig vertrauliche OEM-Konstruktionsdaten, Messergebnisse und Prototypenbilder auf lokalen Systemen verarbeitet. TISAX verlangt, dass diese physisch gesichert sind: Laptops mit Kensington-Schloss oder in verschlossenen Schränken, Clean-Desk-Policy, gesicherte Entsorgung von Datenträgern und Druckerzeugnissen. Mobile Geräte müssen verschlüsselt sein.",
         "maturity": {
           "level0": "Kein physischer Schutz für IT-Geräte und Datenträger — Laptops und USB-Sticks werden ungesichert zurückgelassen, keine Clean-Desk-Regelung",
@@ -4292,7 +4292,7 @@
       },
       "phyQ3": {
         "title": "Existieren Maßnahmen zum Schutz vor Umweltbedrohungen wie Brand, Wasser und Stromausfall für sicherheitsrelevante Bereiche?",
-        "tooltip": "VDA ISA Kontrolle 3.1.3 / ISO 27001:2022 A.7.3 — Sicherheitsrelevante Bereiche müssen gegen Umweltbedrohungen geschützt sein. Dies umfasst Brandschutz, Wasserschutz, Klimatisierung und unterbrechungsfreie Stromversorgung.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.5 — Sicherheitsrelevante Bereiche müssen gegen Umweltbedrohungen geschützt sein. Dies umfasst Brandschutz, Wasserschutz, Klimatisierung und unterbrechungsfreie Stromversorgung.",
         "help": "Serverräume, Archivbereiche und Prototypenwerkstätten benötigen angemessenen Schutz gegen physische Bedrohungen. TISAX-Assessoren prüfen, ob Brandmeldeanlage, Löschsystem (Gas oder Wasser), USV-Anlage, Klimaüberwachung und Wassersensoren vorhanden sind. Der Schutzumfang muss dem Schutzbedarf der im Bereich verarbeiteten Informationen entsprechen.",
         "maturity": {
           "level0": "Kein spezifischer Schutz gegen Umweltbedrohungen für IT-Bereiche — kein Brandschutz, keine USV, keine Klimatisierung im Serverraum",
@@ -4303,7 +4303,7 @@
       },
       "protoQ1": {
         "title": "Existiert ein dediziertes Schutzkonzept für Prototypenfahrzeuge, -bauteile und -komponenten?",
-        "tooltip": "VDA ISA Kontrolle 5.1.1 / ISO 27001:2022 A.7.1 — Der Prototypenschutz ist ein TISAX-spezifisches Anforderungsgebiet. Es muss ein dokumentiertes Konzept zum Schutz physischer Prototypen vor unbefugter Einsichtnahme, Fotografieren und Weitergabe bestehen.",
+        "tooltip": "VDA ISA 6 (Modul Prototypenschutz) — Der Prototypenschutz ist ein TISAX-spezifisches Anforderungsgebiet. Es muss ein dokumentiertes Konzept zum Schutz physischer Prototypen vor unbefugter Einsichtnahme, Fotografieren und Weitergabe bestehen.",
         "help": "Der Prototypenschutz ist eines der zentralen Differenzierungsmerkmale von TISAX gegenüber ISO 27001. OEMs verlangen, dass Zulieferer Prototypen — ob Fahrzeuge, Bauteile oder Designstudien — durch physische und organisatorische Maßnahmen schützen. Das Schutzkonzept muss Tarnungsmaßnahmen, Zugangsrestriktionen, Foto-/Filmverbote und Transportregelungen umfassen.",
         "maturity": {
           "level0": "Kein Prototypenschutzkonzept vorhanden — Prototypen werden nicht gesondert geschützt, keine speziellen Zugangsregelungen",
@@ -4314,7 +4314,7 @@
       },
       "protoQ2": {
         "title": "Ist die Handhabung und Weitergabe von Prototypen-Informationen (Bilder, CAD-Daten, Spezifikationen) geregelt?",
-        "tooltip": "VDA ISA Kontrolle 5.1.2 / ISO 27001:2022 A.5.10 — Digitale Prototypen-Informationen wie CAD-Daten, Fotos, Designskizzen und technische Spezifikationen erfordern besondere Schutz- und Handhabungsvorschriften. Die Weitergabe muss streng kontrolliert werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.10 — Digitale Prototypen-Informationen wie CAD-Daten, Fotos, Designskizzen und technische Spezifikationen erfordern besondere Schutz- und Handhabungsvorschriften. Die Weitergabe muss streng kontrolliert werden.",
         "help": "Neben physischen Prototypen müssen auch digitale Prototypen-Informationen geschützt werden. CAD-Daten, Rendering-Bilder, Simulationsergebnisse und Spezifikationen sind häufig das primäre Ziel von Industriespionage. TISAX verlangt klare Regeln für Speicherung (verschlüsselt, zugangsgeschützt), Übermittlung (sichere Kanäle) und Löschung (nach Projektende). Der Need-to-Know-Grundsatz muss streng angewandt werden.",
         "maturity": {
           "level0": "Keine Regelungen für den Umgang mit digitalen Prototypen-Informationen — CAD-Daten und Bilder werden ungeschützt gespeichert und per E-Mail versandt",
@@ -4325,7 +4325,7 @@
       },
       "protoQ3": {
         "title": "Werden Anforderungen an den Prototypenschutz in der Lieferkette vertraglich sichergestellt und überwacht?",
-        "tooltip": "VDA ISA Kontrolle 5.2.1 / ISO 27001:2022 A.5.12 — Wenn Prototypen oder Prototypen-Informationen an Unterlieferanten weitergegeben werden, müssen die Prototypenschutzanforderungen vertraglich vereinbart und deren Einhaltung überwacht werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.20 — Wenn Prototypen oder Prototypen-Informationen an Unterlieferanten weitergegeben werden, müssen die Prototypenschutzanforderungen vertraglich vereinbart und deren Einhaltung überwacht werden.",
         "help": "OEMs fordern, dass ihre Prototypenschutzanforderungen entlang der gesamten Lieferkette eingehalten werden. Wenn Sie als Tier-1 oder Tier-2-Lieferant Prototypenteile oder -informationen an Ihre Unterlieferanten weitergeben, müssen Sie die Schutzanforderungen vertraglich weitergeben und deren Einhaltung überprüfen. TISAX-Assessoren fragen gezielt nach Nachweisen der Lieferantenüberwachung.",
         "maturity": {
           "level0": "Keine vertraglichen Prototypenschutzanforderungen an Unterlieferanten — Weitergabe von Prototypen ohne Sicherheitsauflagen",
@@ -4336,7 +4336,7 @@
       },
       "techQ1": {
         "title": "Ist ein systematisches Management der IT-Assets einschließlich Klassifizierung und Inventarisierung etabliert?",
-        "tooltip": "VDA ISA Kontrolle 4.1.1 / ISO 27001:2022 A.8.1 — Alle informationsverarbeitenden Assets müssen identifiziert, inventarisiert und nach Schutzbedarf klassifiziert werden. Ohne vollständiges Asset-Inventar ist kein wirksames Sicherheitsmanagement möglich.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.9 — Alle informationsverarbeitenden Assets müssen identifiziert, inventarisiert und nach Schutzbedarf klassifiziert werden. Ohne vollständiges Asset-Inventar ist kein wirksames Sicherheitsmanagement möglich.",
         "help": "TISAX verlangt ein vollständiges Inventar aller IT-Assets: Server, Clients, Netzwerkkomponenten, Software, Datenbanken und Cloud-Dienste. Jedes Asset muss einem Verantwortlichen zugeordnet und nach dem Schutzbedarf der darauf verarbeiteten Informationen klassifiziert sein. Besonders OEM-bezogene Systeme erfordern häufig eine erhöhte Klassifizierung.",
         "maturity": {
           "level0": "Kein IT-Asset-Inventar vorhanden — es gibt keine Übersicht über eingesetzte Systeme, Software und Datenbestände",
@@ -4347,7 +4347,7 @@
       },
       "techQ2": {
         "title": "Werden Informationen und Dokumente nach einem definierten Klassifizierungsschema gekennzeichnet und behandelt?",
-        "tooltip": "VDA ISA Kontrolle 4.1.2 / ISO 27001:2022 A.8.2 — Ein Klassifizierungsschema für Informationen muss definiert sein. Informationen müssen entsprechend ihrer Vertraulichkeit gekennzeichnet und nach definierten Regeln behandelt, gespeichert und übermittelt werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.12 — Ein Klassifizierungsschema für Informationen muss definiert sein. Informationen müssen entsprechend ihrer Vertraulichkeit gekennzeichnet und nach definierten Regeln behandelt, gespeichert und übermittelt werden.",
         "help": "Die Informationsklassifizierung ist ein Kernthema bei TISAX-Assessments. Sie müssen ein Klassifizierungsschema definieren (z.B. öffentlich, intern, vertraulich, streng vertraulich), das kompatibel mit den OEM-Klassifizierungen ist. Jedes Dokument und jede Information muss entsprechend gekennzeichnet werden. Die Handhabungsvorschriften bestimmen, wie klassifizierte Informationen gespeichert, übermittelt und vernichtet werden dürfen.",
         "maturity": {
           "level0": "Kein Klassifizierungsschema vorhanden — Informationen werden nicht nach Vertraulichkeit differenziert behandelt",
@@ -4358,7 +4358,7 @@
       },
       "techQ3": {
         "title": "Werden Wechseldatenträger und Speichermedien kontrolliert eingesetzt und sicher entsorgt?",
-        "tooltip": "VDA ISA Kontrolle 4.1.3 / ISO 27001:2022 A.8.3 — Der Einsatz von Wechseldatenträgern (USB-Sticks, externe Festplatten, optische Medien) muss kontrolliert werden. Nicht mehr benötigte Speichermedien müssen sicher gelöscht oder physisch vernichtet werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.10 — Der Einsatz von Wechseldatenträgern (USB-Sticks, externe Festplatten, optische Medien) muss kontrolliert werden. Nicht mehr benötigte Speichermedien müssen sicher gelöscht oder physisch vernichtet werden.",
         "help": "Wechseldatenträger stellen ein erhebliches Sicherheitsrisiko dar: Datenverlust durch Verlieren, unkontrollierter Datenabfluss und Malware-Einschleusung. TISAX verlangt klare Regelungen für die Nutzung von USB-Geräten, die Verschlüsselung mobiler Datenträger und die sichere Entsorgung. Viele OEMs fordern ein vollständiges USB-Verbot oder eine Whitelist-basierte Kontrolle.",
         "maturity": {
           "level0": "Keine Kontrolle über Wechseldatenträger — USB-Ports frei nutzbar, keine Entsorgungsregelung für Altmedien",
@@ -4369,7 +4369,7 @@
       },
       "zkQ1": {
         "title": "Existiert eine Zugangssteuerungsrichtlinie nach dem Need-to-Know- und Least-Privilege-Prinzip?",
-        "tooltip": "VDA ISA Kontrolle 7.1.1 / ISO 27001:2022 A.5.15 — Zugriffsrechte auf Informationen und informationsverarbeitende Systeme müssen auf Basis geschäftlicher Erfordernisse und nach dem Prinzip der geringsten Berechtigung vergeben werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.15 — Zugriffsrechte auf Informationen und informationsverarbeitende Systeme müssen auf Basis geschäftlicher Erfordernisse und nach dem Prinzip der geringsten Berechtigung vergeben werden.",
         "help": "TISAX verlangt, dass der Zugang zu IT-Systemen und Informationen nur auf Basis eines dokumentierten Bedarfs gewährt wird. Das Need-to-Know-Prinzip bedeutet: Jeder Mitarbeiter erhält nur Zugriff auf die Informationen, die er für seine Tätigkeit benötigt. Das Least-Privilege-Prinzip bedeutet: Jeder Benutzer erhält nur die minimalen Rechte, die für seine Aufgaben erforderlich sind.",
         "maturity": {
           "level0": "Keine Zugangssteuerungsrichtlinie — Zugriffsrechte werden ohne Bedarfsprüfung vergeben, breite Zugriffsrechte für alle Mitarbeiter",
@@ -4380,7 +4380,7 @@
       },
       "zkQ2": {
         "title": "Werden Benutzerkonten und Zugriffsberechtigungen über den gesamten Lebenszyklus verwaltet?",
-        "tooltip": "VDA ISA Kontrolle 7.1.2 / ISO 27001:2022 A.5.16 — Die Verwaltung von Identitäten und Zugriffsrechten muss den gesamten Lebenszyklus abdecken: Einrichtung, Änderung und Deaktivierung von Konten bei Eintritt, Versetzung und Austritt von Mitarbeitern.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.16 — Die Verwaltung von Identitäten und Zugriffsrechten muss den gesamten Lebenszyklus abdecken: Einrichtung, Änderung und Deaktivierung von Konten bei Eintritt, Versetzung und Austritt von Mitarbeitern.",
         "help": "Ein häufiger Befund bei TISAX-Assessments sind verwaiste Konten: Mitarbeiter sind längst ausgeschieden, aber ihre Zugänge bestehen noch. TISAX verlangt einen definierten Identity-Lifecycle-Prozess, der Konten bei Eintritt anlegt, bei Rollenwechsel anpasst und bei Austritt zeitnah deaktiviert. Besonders kritisch ist dies für Konten mit Zugriff auf OEM-Systeme oder Prototypen-Daten.",
         "maturity": {
           "level0": "Keine systematische Verwaltung von Benutzerkonten — Konten werden angelegt, aber nicht systematisch deaktiviert oder überprüft",
@@ -4391,7 +4391,7 @@
       },
       "zkQ3": {
         "title": "Werden privilegierte Zugriffsrechte (Administratorkonten) besonders geschützt und überwacht?",
-        "tooltip": "VDA ISA Kontrolle 7.1.3 / ISO 27001:2022 A.8.5 — Privilegierte Zugriffe (z.B. Administrator-, Root- und Service-Konten) stellen ein erhöhtes Risiko dar und müssen gesondert verwaltet, eingeschränkt und überwacht werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.2 — Privilegierte Zugriffe (z.B. Administrator-, Root- und Service-Konten) stellen ein erhöhtes Risiko dar und müssen gesondert verwaltet, eingeschränkt und überwacht werden.",
         "help": "Administratorkonten haben weitreichende Rechte und sind daher bevorzugte Angriffsziele. TISAX verlangt, dass privilegierte Konten besonders geschützt werden: separate Admin-Konten (nicht für den Tagesgebrauch), starke Authentifizierung (MFA), Protokollierung aller administrativen Aktivitäten und regelmäßige Überprüfung der Notwendigkeit. Shared-Admin-Konten müssen vermieden werden.",
         "maturity": {
           "level0": "Keine gesonderte Verwaltung privilegierter Konten — Administratoren nutzen Standardkonten mit erhöhten Rechten für alle Tätigkeiten",
@@ -4405,164 +4405,164 @@
       "questions": {
         "q1": {
           "title": "Gibt es eine dokumentierte Informationssicherheitsrichtlinie mit klaren Verantwortlichkeiten?",
-          "description": "VDA ISA 1.x: Eine vom Management verabschiedete IS-Richtlinie mit definierten Rollen, Zuständigkeiten und regelmäßiger Überprüfung bildet die Grundlage für TISAX."
+          "description": "VDA ISA 6: Eine vom Management verabschiedete IS-Richtlinie mit definierten Rollen, Zuständigkeiten und regelmäßiger Überprüfung bildet die Grundlage für TISAX."
         },
         "q2": {
           "title": "Werden Mitarbeitende regelmäßig zu Informationssicherheit geschult und sensibilisiert?",
-          "description": "VDA ISA 2.x: Alle Beschäftigten — auch externe — müssen regelmäßig zu Informationssicherheitsrisiken und -regeln geschult werden."
+          "description": "VDA ISA 6: Alle Beschäftigten — auch externe — müssen regelmäßig zu Informationssicherheitsrisiken und -regeln geschult werden."
         },
         "q3": {
           "title": "Sind Sicherheitszonen definiert und der Zugang zu sensiblen Bereichen kontrolliert?",
-          "description": "VDA ISA 3.x: Physische Zutrittskontrolle mit Zonierung, Besuchermanagement und Schutz gegen unbefugten Zutritt zu Bereichen mit vertraulichen Daten."
+          "description": "VDA ISA 6: Physische Zutrittskontrolle mit Zonierung, Besuchermanagement und Schutz gegen unbefugten Zutritt zu Bereichen mit vertraulichen Daten."
         },
         "q4": {
           "title": "Sind Ihre IT-Systeme durch aktuelle Schutzmaßnahmen gegen Cyberangriffe gesichert?",
-          "description": "VDA ISA 4.x: Endpointschutz, Netzwerksicherheit, Patch-Management und Monitoring — dem aktuellen Stand der Technik entsprechend."
+          "description": "VDA ISA 6: Endpointschutz, Netzwerksicherheit, Patch-Management und Monitoring — dem aktuellen Stand der Technik entsprechend."
         },
         "q5": {
           "title": "Sind Prototypen und vertrauliche Entwicklungsdaten physisch und digital geschützt?",
-          "description": "VDA ISA 5.x: Besondere Schutzmaßnahmen für Prototypen, Tarnungen, Testfahrzeuge und vertrauliche OEM-Entwicklungsdaten."
+          "description": "VDA ISA 6: Besondere Schutzmaßnahmen für Prototypen, Tarnungen, Testfahrzeuge und vertrauliche OEM-Entwicklungsdaten."
         },
         "q6": {
           "title": "Werden personenbezogene Daten gemäß den Datenschutzanforderungen verarbeitet?",
-          "description": "VDA ISA 6.x: TISAX-Assessment Level 2/3 prüft die Einhaltung datenschutzrechtlicher Anforderungen der DSGVO im Kontext der Automobilbranche."
+          "description": "VDA ISA 6: TISAX-Assessment Level 2/3 prüft die Einhaltung datenschutzrechtlicher Anforderungen der DSGVO im Kontext der Automobilbranche."
         },
         "q7": {
           "title": "Gibt es ein rollenbasiertes Berechtigungskonzept mit regelmäßigen Reviews?",
-          "description": "VDA ISA 4.1: Need-to-Know-Prinzip, individuelle Benutzerkonten, regelmäßige Rezertifizierung und zeitnahe Deaktivierung bei Austritt."
+          "description": "VDA ISA 6: Need-to-Know-Prinzip, individuelle Benutzerkonten, regelmäßige Rezertifizierung und zeitnahe Deaktivierung bei Austritt."
         },
         "q8": {
           "title": "Werden Verschlüsselungsverfahren für die Übertragung und Speicherung sensibler Daten eingesetzt?",
-          "description": "VDA ISA 4.2: Aktuelle Verschlüsselungsstandards für Daten in Transit und at Rest — insbesondere für OEM-vertrauliche Informationen."
+          "description": "VDA ISA 6: Aktuelle Verschlüsselungsstandards für Daten in Transit und at Rest — insbesondere für OEM-vertrauliche Informationen."
         },
         "q9": {
           "title": "Werden Informationssicherheitsanforderungen vertraglich an Lieferanten weitergegeben?",
-          "description": "VDA ISA 7.x: Vertragsklauseln für Informationssicherheit, regelmäßige Überprüfung und Pflicht zur Weiterreichung an Unterauftragnehmer."
+          "description": "VDA ISA 6: Vertragsklauseln für Informationssicherheit, regelmäßige Überprüfung und Pflicht zur Weiterreichung an Unterauftragnehmer."
         },
         "q10": {
           "title": "Werden TISAX-Anforderungen regelmäßig überprüft und Abweichungen systematisch nachverfolgt?",
-          "description": "VDA ISA 8.x: Internes Audit-Programm, Management-Reviews und nachweisbare Korrekturmaßnahmen bei identifizierten Abweichungen."
+          "description": "VDA ISA 6: Internes Audit-Programm, Management-Reviews und nachweisbare Korrekturmaßnahmen bei identifizierten Abweichungen."
         }
       }
     },
     "recommendations": {
       "bs1": {
-        "description": "Implementieren Sie umfassenden Malware-Schutz für alle Automotive-Entwicklungs- und Produktionssysteme gemäß VDA ISA 9.1.1 und ISO 27001 A.8.6. Beachten Sie spezielle Anforderungen für OT-Umgebungen.",
+        "description": "Implementieren Sie umfassenden Malware-Schutz für alle Automotive-Entwicklungs- und Produktionssysteme gemäß VDA ISA 6 und ISO 27001 A.8.7. Beachten Sie spezielle Anforderungen für OT-Umgebungen.",
         "firstStep": "Deployen Sie Anti-Malware-Lösungen auf allen Workstations und Servern mit Automotive-Daten (Entwicklung, PLM, MES).",
         "title": "Malware-Schutz für Automotive-Entwicklungsumgebungen"
       },
       "bs2": {
-        "description": "Etablieren Sie ein Schwachstellen-Management für alle Automotive-IT- und OT-Systeme gemäß VDA ISA 9.1.2 und ISO 27001 A.8.7. Priorisieren Sie Patches für produktionsnahe und Prototypen-Systeme.",
+        "description": "Etablieren Sie ein Schwachstellen-Management für alle Automotive-IT- und OT-Systeme gemäß VDA ISA 6 und ISO 27001 A.8.8. Priorisieren Sie Patches für produktionsnahe und Prototypen-Systeme.",
         "firstStep": "Implementieren Sie einen automatisierten Schwachstellen-Scan für alle Automotive-Systeme (mindestens monatlich für Entwicklungsumgebungen).",
         "title": "Schwachstellen-Management für Automotive-Systeme"
       },
       "comp1": {
-        "description": "Implementieren Sie ein umfassendes Compliance-Framework zur Erfüllung aller VDA ISA/TISAX-Anforderungen gemäß VDA ISA 12.1.1 und ISO 27001 A.5.31. Bereiten Sie ein TISAX-Assessment vor.",
+        "description": "Implementieren Sie ein umfassendes Compliance-Framework zur Erfüllung aller VDA ISA/TISAX-Anforderungen gemäß VDA ISA 6 und ISO 27001 A.5.31. Bereiten Sie ein TISAX-Assessment vor.",
         "firstStep": "Führen Sie ein TISAX-Gap-Assessment durch, um Abweichungen zwischen IST-Zustand und VDA ISA-Anforderungen zu identifizieren.",
         "title": "TISAX-Compliance-Framework implementieren"
       },
       "comp2": {
-        "description": "Führen Sie regelmäßige Reviews zur Einhaltung aller TISAX- und Automotive-Sicherheitsanforderungen durch gemäß VDA ISA 12.1.2 und ISO 27001 A.5.32. Dokumentieren Sie Nachweise für Audits.",
+        "description": "Führen Sie regelmäßige Reviews zur Einhaltung aller TISAX- und Automotive-Sicherheitsanforderungen durch gemäß VDA ISA 6 und ISO 27001 A.5.36. Dokumentieren Sie Nachweise für Audits.",
         "firstStep": "Planen Sie quartalsweise TISAX-Compliance-Reviews mit definierten Prüfpunkten (VDA ISA-Controls, Maßnahmenstatus).",
         "title": "Regelmäßige Compliance-Reviews durchführen"
       },
       "ds1": {
-        "description": "Implementieren Sie ein Datenschutz-Management-System für Automotive-spezifische personenbezogene Daten (z.B. Fahrzeugdaten, Testfahrer) gemäß VDA ISA 6.1.1 und DSGVO.",
+        "description": "Implementieren Sie ein Datenschutz-Management-System für Automotive-spezifische personenbezogene Daten (z.B. Fahrzeugdaten, Testfahrer) gemäß VDA ISA 6 (Modul Datenschutz) und DSGVO.",
         "firstStep": "Identifizieren Sie alle Verarbeitungstätigkeiten mit personenbezogenen Automotive-Daten und führen Sie ein Verzeichnis gemäß Art. 30 DSGVO.",
         "title": "Datenschutz-Management für Automotive-Daten etablieren"
       },
       "ds2": {
-        "description": "Führen Sie regelmäßige Datenschutz-Audits und Reviews durch, insbesondere für Automotive-Datenverarbeitungen (Connected Car, Testdaten) gemäß VDA ISA 6.1.2.",
+        "description": "Führen Sie regelmäßige Datenschutz-Audits und Reviews durch, insbesondere für Automotive-Datenverarbeitungen (Connected Car, Testdaten) gemäß VDA ISA 6 (Modul Datenschutz).",
         "firstStep": "Planen Sie einen jährlichen Datenschutz-Audit mit Fokus auf Automotive-spezifische Datenverarbeitungen (z.B. Telematik, Testfahrten).",
         "title": "Datenschutz-Audits und Reviews durchführen"
       },
       "kom1": {
-        "description": "Implementieren Sie umfassende Netzwerksicherheitsmaßnahmen für Automotive-Entwicklungsnetzwerke (Segmentierung, Firewalls, IDS/IPS) gemäß VDA ISA 10.1.1 und ISO 27001 A.8.20.",
+        "description": "Implementieren Sie umfassende Netzwerksicherheitsmaßnahmen für Automotive-Entwicklungsnetzwerke (Segmentierung, Firewalls, IDS/IPS) gemäß VDA ISA 6 und ISO 27001 A.8.20.",
         "firstStep": "Segmentieren Sie das Netzwerk nach Sensibilität (z.B. Prototypen-Zone, Entwicklung, Produktion, Office) mit strikter Firewall-Kontrolle.",
         "title": "Netzwerksicherheit für Automotive-Entwicklungsnetzwerke"
       },
       "kom2": {
-        "description": "Implementieren Sie verschlüsselte Übertragungswege für alle Automotive-sensiblen Daten (intern und extern zu Lieferanten/OEMs) gemäß VDA ISA 10.1.2 und ISO 27001 A.8.21.",
+        "description": "Implementieren Sie verschlüsselte Übertragungswege für alle Automotive-sensiblen Daten (intern und extern zu Lieferanten/OEMs) gemäß VDA ISA 6 und ISO 27001 A.5.14.",
         "firstStep": "Definieren Sie sichere Übertragungsmethoden für Prototypen-Daten (z.B. SFTP, HTTPS, VPN) und verbieten Sie unverschlüsselte Kanäle.",
         "title": "Sichere Datenübertragung für Automotive-Informationen"
       },
       "kry1": {
-        "description": "Entwickeln Sie ein unternehmensweites Kryptografie-Konzept für Automotive-Daten in Ruhe und Transit gemäß VDA ISA 8.1.1 und ISO 27001 A.8.24. Definieren Sie Verschlüsselungsstandards für Prototypen-Informationen.",
+        "description": "Entwickeln Sie ein unternehmensweites Kryptografie-Konzept für Automotive-Daten in Ruhe und Transit gemäß VDA ISA 6 und ISO 27001 A.8.24. Definieren Sie Verschlüsselungsstandards für Prototypen-Informationen.",
         "firstStep": "Erstellen Sie ein Kryptografie-Konzept mit definierten Algorithmen, Schlüssellängen und Anwendungsfällen (z.B. AES-256 für Prototypen-Daten).",
         "title": "Kryptografie-Konzept für Automotive-Daten entwickeln"
       },
       "kry2": {
-        "description": "Implementieren Sie ein sicheres Schlüsselmanagement für alle kryptografischen Schlüssel in Automotive-Anwendungen gemäß VDA ISA 8.1.2 und ISO 27001 A.8.25. Nutzen Sie HSMs für hochsensible Keys.",
+        "description": "Implementieren Sie ein sicheres Schlüsselmanagement für alle kryptografischen Schlüssel in Automotive-Anwendungen gemäß VDA ISA 6 und ISO 27001 A.8.24. Nutzen Sie HSMs für hochsensible Keys.",
         "firstStep": "Definieren Sie Prozesse für Schlüsselgenerierung, -speicherung, -verteilung, -rotation und -vernichtung für Automotive-Verschlüsselung.",
         "title": "Schlüsselmanagement für Automotive-Verschlüsselung"
       },
       "lief1": {
-        "description": "Definieren Sie verbindliche Informationssicherheitsanforderungen für alle Automotive-Lieferanten gemäß VDA ISA 11.1.1 und ISO 27001 A.5.19. Fordern Sie TISAX-Zertifizierung bei sensiblen Zulieferern.",
+        "description": "Definieren Sie verbindliche Informationssicherheitsanforderungen für alle Automotive-Lieferanten gemäß VDA ISA 6 und ISO 27001 A.5.19. Fordern Sie TISAX-Zertifizierung bei sensiblen Zulieferern.",
         "firstStep": "Erstellen Sie eine Lieferantenanforderungs-Checkliste für Informationssicherheit mit TISAX-Anforderungen für kritische Zulieferer.",
         "title": "Informationssicherheitsanforderungen an Automotive-Lieferanten"
       },
       "lief2": {
-        "description": "Überwachen Sie kontinuierlich die Informationssicherheit Ihrer Automotive-Lieferanten durch regelmäßige Audits und Assessments gemäß VDA ISA 11.1.2 und ISO 27001 A.5.20.",
+        "description": "Überwachen Sie kontinuierlich die Informationssicherheit Ihrer Automotive-Lieferanten durch regelmäßige Audits und Assessments gemäß VDA ISA 6 und ISO 27001 A.5.22.",
         "firstStep": "Planen Sie jährliche Informationssicherheits-Audits für alle kritischen Lieferanten mit Zugang zu Prototypen oder sensiblen Automotive-Daten.",
         "title": "Lieferanten-Monitoring und Audits durchführen"
       },
       "org1": {
-        "description": "Entwickeln Sie eine automotive-spezifische Informationssicherheitsleitlinie und implementieren Sie ein ISMS gemäß VDA ISA 1.1.1 und ISO 27001 A.5.1. Die Leitlinie muss Prototypenschutz und Lieferkettenanforderungen abdecken.",
+        "description": "Entwickeln Sie eine automotive-spezifische Informationssicherheitsleitlinie und implementieren Sie ein ISMS gemäß VDA ISA 6 und ISO 27001 A.5.1. Die Leitlinie muss Prototypenschutz und Lieferkettenanforderungen abdecken.",
         "firstStep": "Erstellen Sie eine schriftliche Informationssicherheitsleitlinie mit Bezug zu VDA ISA-Anforderungen und lassen Sie diese durch die Geschäftsleitung genehmigen.",
         "title": "Informationssicherheitsleitlinie und ISMS etablieren"
       },
       "org2": {
-        "description": "Definieren Sie klare Rollen und Verantwortlichkeiten für Informationssicherheit gemäß VDA ISA 1.2.1 und ISO 27001 A.5.2. Benennen Sie einen Informationssicherheitsbeauftragten (ISB) mit direktem Zugang zur Geschäftsleitung.",
+        "description": "Definieren Sie klare Rollen und Verantwortlichkeiten für Informationssicherheit gemäß VDA ISA 6 und ISO 27001 A.5.2. Benennen Sie einen Informationssicherheitsbeauftragten (ISB) mit direktem Zugang zur Geschäftsleitung.",
         "firstStep": "Benennen Sie formell einen Informationssicherheitsbeauftragten (ISB) und dokumentieren Sie dessen Aufgaben, Befugnisse und Berichtslinien.",
         "title": "Informationssicherheitsrollen und Verantwortlichkeiten definieren"
       },
       "per1": {
-        "description": "Implementieren Sie Prozesse zur Sicherheitsüberprüfung von Mitarbeitern vor Einstellung, insbesondere bei Zugang zu Prototypen oder sensiblen Automotive-Daten gemäß VDA ISA 2.1.1 und ISO 27001 A.6.1.",
+        "description": "Implementieren Sie Prozesse zur Sicherheitsüberprüfung von Mitarbeitern vor Einstellung, insbesondere bei Zugang zu Prototypen oder sensiblen Automotive-Daten gemäß VDA ISA 6 und ISO 27001 A.6.1.",
         "firstStep": "Definieren Sie Sicherheitsüberprüfungskriterien abhängig von der Sensibilität der Position (z.B. Prototypen-Zugang, Entwicklungsdaten).",
         "title": "Sicherheitsüberprüfung von Mitarbeitern durchführen"
       },
       "per2": {
-        "description": "Führen Sie regelmäßige, automotive-spezifische Security-Awareness-Schulungen durch gemäß VDA ISA 2.1.2 und ISO 27001 A.6.3. Themen: Prototypenschutz, Lieferkettenrisiken, Social Engineering.",
+        "description": "Führen Sie regelmäßige, automotive-spezifische Security-Awareness-Schulungen durch gemäß VDA ISA 6 und ISO 27001 A.6.3. Themen: Prototypenschutz, Lieferkettenrisiken, Social Engineering.",
         "firstStep": "Entwickeln Sie ein Schulungsprogramm mit Automotive-Schwerpunkten (Prototypen, Lieferanten, NDA-Handling) für alle Mitarbeiter.",
         "title": "Security-Awareness-Schulungen für Automotive-Kontext durchführen"
       },
       "phy1": {
-        "description": "Etablieren Sie physische Sicherheitsperimeter zum Schutz kritischer Bereiche (z.B. Prototypenwerkstätten, Entwicklungslabore) gemäß VDA ISA 3.1.1 und ISO 27001 A.7.1. Implementieren Sie Zugangskontrollen und Besuchermanagement.",
+        "description": "Etablieren Sie physische Sicherheitsperimeter zum Schutz kritischer Bereiche (z.B. Prototypenwerkstätten, Entwicklungslabore) gemäß VDA ISA 6 und ISO 27001 A.7.1. Implementieren Sie Zugangskontrollen und Besuchermanagement.",
         "firstStep": "Identifizieren Sie alle Bereiche mit Prototypen oder hochsensiblen Automotive-Daten und definieren Sie Sicherheitszonen.",
         "title": "Physische Sicherheitsperimeter für Prototypen einrichten"
       },
       "phy2": {
-        "description": "Installieren Sie Überwachungssysteme für kritische Bereiche (Prototypenzonen, Testgelände) gemäß VDA ISA 3.1.2 und ISO 27001 A.7.2. Beachten Sie datenschutzrechtliche Anforderungen (DSGVO).",
+        "description": "Installieren Sie Überwachungssysteme für kritische Bereiche (Prototypenzonen, Testgelände) gemäß VDA ISA 6 und ISO 27001 A.7.4. Beachten Sie datenschutzrechtliche Anforderungen (DSGVO).",
         "firstStep": "Führen Sie eine Risikoanalyse für kritische Bereiche durch und identifizieren Sie Bereiche mit Überwachungsbedarf (Prototypen, Testgelände).",
         "title": "Videoüberwachung und physisches Monitoring implementieren"
       },
       "proto1": {
-        "description": "Implementieren Sie spezifische physische Schutzmaßnahmen für Prototypen-Fahrzeuge und -Bauteile gemäß VDA ISA 5.1.1. Dies umfasst sichere Lagerung, Transport, Kennzeichnung und Verschrottung.",
+        "description": "Implementieren Sie spezifische physische Schutzmaßnahmen für Prototypen-Fahrzeuge und -Bauteile gemäß VDA ISA 6 (Modul Prototypenschutz) Dies umfasst sichere Lagerung, Transport, Kennzeichnung und Verschrottung.",
         "firstStep": "Erstellen Sie eine Prototypen-Schutzrichtlinie mit klaren Vorgaben zu Lagerung, Kennzeichnung, Transport und Vernichtung.",
         "title": "Physischen Prototypenschutz implementieren"
       },
       "proto2": {
-        "description": "Klassifizieren Sie alle Prototypen-bezogenen Informationen (CAD, Testdaten, Spezifikationen) nach Sensitivität gemäß VDA ISA 5.2.1 und implementieren Sie entsprechende Schutzmaßnahmen (Verschlüsselung, DRM).",
+        "description": "Klassifizieren Sie alle Prototypen-bezogenen Informationen (CAD, Testdaten, Spezifikationen) nach Sensitivität gemäß VDA ISA 6 (Modul Prototypenschutz) und implementieren Sie entsprechende Schutzmaßnahmen (Verschlüsselung, DRM).",
         "firstStep": "Führen Sie eine Datenklassifizierung für alle Prototypen-Informationen durch (öffentlich, intern, vertraulich, streng vertraulich).",
         "title": "Prototypen-Informationen klassifizieren und schützen"
       },
       "tech1": {
-        "description": "Implementieren Sie ein umfassendes Asset-Management für alle Automotive-relevanten Assets (Hardware, Software, Daten, Prototypen) mit Klassifizierung gemäß VDA ISA 4.1.1 und ISO 27001 A.8.1.",
+        "description": "Implementieren Sie ein umfassendes Asset-Management für alle Automotive-relevanten Assets (Hardware, Software, Daten, Prototypen) mit Klassifizierung gemäß VDA ISA 6 und ISO 27001 A.5.9.",
         "firstStep": "Erstellen Sie ein vollständiges Inventar aller Assets mit Automotive-Bezug und klassifizieren Sie diese nach Schutzbedarf (z.B. Prototypen-Level).",
         "title": "Asset-Management und Klassifizierung für Automotive-Daten"
       },
       "tech2": {
-        "description": "Implementieren Sie umfassende Endpoint-Sicherheitsmaßnahmen für Entwickler-Workstations und mobile Geräte mit Zugriff auf Automotive-Daten gemäß VDA ISA 4.1.2 und ISO 27001 A.8.2.",
+        "description": "Implementieren Sie umfassende Endpoint-Sicherheitsmaßnahmen für Entwickler-Workstations und mobile Geräte mit Zugriff auf Automotive-Daten gemäß VDA ISA 6 und ISO 27001 A.8.1.",
         "firstStep": "Deployen Sie Endpoint-Protection-Lösungen (Anti-Malware, EDR) auf allen Geräten mit Zugriff auf Entwicklungsdaten oder Prototypen.",
         "title": "Endpoint-Sicherheit für Entwicklungsumgebungen"
       },
       "zk1": {
-        "description": "Implementieren Sie eine umfassende Zugriffskontrollrichtlinie für alle Automotive-Systeme (Entwicklung, Produktion, Prototypen) gemäß VDA ISA 7.1.1 und ISO 27001 A.5.15. Nutzen Sie Least-Privilege- und Need-to-Know-Prinzipien.",
+        "description": "Implementieren Sie eine umfassende Zugriffskontrollrichtlinie für alle Automotive-Systeme (Entwicklung, Produktion, Prototypen) gemäß VDA ISA 6 und ISO 27001 A.5.15. Nutzen Sie Least-Privilege- und Need-to-Know-Prinzipien.",
         "firstStep": "Dokumentieren Sie eine Zugriffskontrollrichtlinie mit Regeln für Automotive-spezifische Systeme (CAD, PLM, Testdatenbanken).",
         "title": "Zugriffskontrollrichtlinie für Automotive-Umgebungen"
       },
       "zk2": {
-        "description": "Implementieren Sie ein Privileged-Access-Management (PAM) für kritische Automotive-Systeme (Entwicklungsumgebungen, Prototypen-Netzwerke) gemäß VDA ISA 7.1.3 und ISO 27001 A.8.5.",
+        "description": "Implementieren Sie ein Privileged-Access-Management (PAM) für kritische Automotive-Systeme (Entwicklungsumgebungen, Prototypen-Netzwerke) gemäß VDA ISA 6 und ISO 27001 A.8.2.",
         "firstStep": "Identifizieren Sie alle privilegierten Accounts in Automotive-kritischen Systemen und implementieren Sie eine PAM-Lösung mit Session-Recording.",
         "title": "Privileged-Access-Management (PAM) für kritische Systeme"
       }
@@ -4650,7 +4650,7 @@
     "questions": {
       "sbdQ1": {
         "title": "Werden Ihre Produkte nach Security-by-Design-Prinzipien gemäß Anhang I CRA entwickelt?",
-        "tooltip": "Art. 10 Abs. 1 CRA (EU 2024/2847) verlangt, dass Produkte mit digitalen Elementen unter Berücksichtigung der Cybersicherheit entworfen und entwickelt werden. Anhang I Teil I listet die wesentlichen Sicherheitsanforderungen auf.",
+        "tooltip": "Art. 13 Abs. 1 CRA (EU 2024/2847) verlangt, dass Produkte mit digitalen Elementen unter Berücksichtigung der Cybersicherheit entworfen und entwickelt werden. Anhang I Teil I listet die wesentlichen Sicherheitsanforderungen auf.",
         "help": "Security by Design bedeutet, dass Sicherheitsaspekte bereits in der Entwurfsphase Ihres Produkts berücksichtigt werden — nicht erst nachträglich. Dazu gehören Bedrohungsmodellierung, sichere Architekturentscheidungen und die Minimierung der Angriffsfläche. Der CRA macht dies zur Pflicht für alle Produkte mit digitalen Elementen.",
         "maturity": {
           "level0": "Keine Security-by-Design-Prinzipien vorhanden — Sicherheit wird nicht systematisch in der Produktentwicklung berücksichtigt",
@@ -4661,7 +4661,7 @@
       },
       "sbdQ2": {
         "title": "Werden Ihre Produkte mit sicheren Standardkonfigurationen ausgeliefert (Secure by Default)?",
-        "tooltip": "Art. 10 Abs. 2 CRA (EU 2024/2847) fordert, dass Produkte ohne bekannte ausnutzbare Schwachstellen auf den Markt gebracht werden. Anhang I Nr. 1 verlangt eine angemessene Angriffsfläche und sichere Standardeinstellungen.",
+        "tooltip": "Art. 13 Abs. 1 i.V.m. Anhang I Teil I CRA (EU 2024/2847) fordert, dass Produkte ohne bekannte ausnutzbare Schwachstellen auf den Markt gebracht werden. Anhang I Nr. 1 verlangt eine angemessene Angriffsfläche und sichere Standardeinstellungen.",
         "help": "Sichere Standardkonfigurationen bedeuten, dass Ihr Produkt ab Werk in einem sicheren Zustand ausgeliefert wird. Keine offenen Ports ohne Notwendigkeit, keine Standardpasswörter, keine unnötigen Dienste aktiv. Der Nutzer muss Sicherheit nicht erst aktivieren — sie ist der Ausgangszustand.",
         "maturity": {
           "level0": "Produkte werden mit unsicheren Standardeinstellungen ausgeliefert — Standardpasswörter, offene Ports, alle Dienste aktiviert",
@@ -4672,7 +4672,7 @@
       },
       "sbdQ3": {
         "title": "Implementieren Ihre Produkte angemessene Zugangsschutz- und Authentifizierungsmechanismen?",
-        "tooltip": "Anhang I Teil I Nr. 3 CRA (EU 2024/2847) fordert den Schutz vor unbefugtem Zugriff durch geeignete Kontrollmechanismen, einschließlich Authentifizierungs-, Identitäts- und Zugangsverwaltungssystemen.",
+        "tooltip": "Anhang I Teil I CRA (EU 2024/2847) fordert den Schutz vor unbefugtem Zugriff durch geeignete Kontrollmechanismen, einschließlich Authentifizierungs-, Identitäts- und Zugangsverwaltungssystemen.",
         "help": "Der CRA verlangt, dass Produkte über wirksame Zugangsschutzmechanismen verfügen. Das umfasst starke Authentifizierung, Identitätsmanagement und das Prinzip der geringsten Berechtigung. Für vernetzte Produkte ist dies besonders kritisch, da sie potenzielle Einfallstore in Unternehmensnetzwerke darstellen.",
         "maturity": {
           "level0": "Kein nennenswerter Zugangsschutz — keine oder nur triviale Authentifizierung (z.B. fest kodierte Zugangsdaten)",
@@ -4683,7 +4683,7 @@
       },
       "swmQ1": {
         "title": "Verfügen Sie über einen dokumentierten Prozess zur Identifikation und Behebung von Schwachstellen in Ihren Produkten?",
-        "tooltip": "Art. 11 Abs. 1 CRA (EU 2024/2847) verpflichtet Hersteller, Schwachstellen wirksam zu behandeln. Dies umfasst die Identifikation, Dokumentation und unverzügliche Behebung durch Sicherheitsupdates.",
+        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II CRA (EU 2024/2847) verpflichtet Hersteller, Schwachstellen wirksam zu behandeln. Dies umfasst die Identifikation, Dokumentation und unverzügliche Behebung durch Sicherheitsupdates.",
         "help": "Der CRA fordert ein systematisches Schwachstellenmanagement über den gesamten Supportzeitraum. Sie müssen Schwachstellen in Ihren Produkten identifizieren, dokumentieren, bewerten und zeitnah beheben können. Ein Ad-hoc-Ansatz reicht nicht aus — es muss ein wiederholbarer Prozess mit klaren Verantwortlichkeiten sein.",
         "maturity": {
           "level0": "Kein Schwachstellenmanagement — Schwachstellen werden nicht systematisch erkannt oder bearbeitet",
@@ -4694,7 +4694,7 @@
       },
       "swmQ2": {
         "title": "Haben Sie einen Prozess für die koordinierte Offenlegung von Schwachstellen (Coordinated Vulnerability Disclosure) eingerichtet?",
-        "tooltip": "Art. 11 Abs. 2 CRA (EU 2024/2847) verlangt, dass Hersteller eine Richtlinie zur koordinierten Offenlegung von Schwachstellen aufstellen und einen Kontaktpunkt für die Meldung von Schwachstellen bereitstellen.",
+        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 5 CRA (EU 2024/2847) verlangt, dass Hersteller eine Richtlinie zur koordinierten Offenlegung von Schwachstellen aufstellen und einen Kontaktpunkt für die Meldung von Schwachstellen bereitstellen.",
         "help": "Sicherheitsforscher und Nutzer müssen die Möglichkeit haben, Schwachstellen vertraulich an Sie zu melden. Der CRA verlangt eine öffentlich zugängliche Kontaktadresse (z.B. security@firma.de), klare Regeln für den Umgang mit Meldungen und eine zeitnahe Rückmeldung. Ohne CVD-Prozess riskieren Sie, dass Schwachstellen öffentlich werden, bevor ein Patch bereitsteht.",
         "maturity": {
           "level0": "Kein CVD-Prozess — keine Kontaktadresse für Schwachstellenmeldungen, keine Richtlinie veröffentlicht",
@@ -4705,7 +4705,7 @@
       },
       "swmQ3": {
         "title": "Werden Sicherheitsupdates für behobene Schwachstellen unverzüglich und kostenlos bereitgestellt?",
-        "tooltip": "Art. 11 Abs. 3 CRA (EU 2024/2847) verpflichtet Hersteller, nach Bekanntwerden einer Schwachstelle unverzüglich ein Sicherheitsupdate bereitzustellen und die Nutzer darüber zu informieren.",
+        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II CRA (EU 2024/2847) verpflichtet Hersteller, nach Bekanntwerden einer Schwachstelle unverzüglich ein Sicherheitsupdate bereitzustellen und die Nutzer darüber zu informieren.",
         "help": "Wenn eine Schwachstelle in Ihrem Produkt identifiziert wird, müssen Sie ohne unnötigen Aufschub einen Patch oder ein Sicherheitsupdate bereitstellen. Der CRA verlangt zudem, dass Nutzer aktiv über die Schwachstelle und das verfügbare Update informiert werden. Updates müssen kostenlos und einfach installierbar sein.",
         "maturity": {
           "level0": "Keine strukturierte Patch-Bereitstellung — Schwachstellen bleiben offen oder werden nur sporadisch behoben",
@@ -4716,7 +4716,7 @@
       },
       "sbomQ1": {
         "title": "Erstellen und pflegen Sie eine Software-Stückliste (SBOM) für Ihre Produkte?",
-        "tooltip": "Art. 10 Abs. 6 CRA (EU 2024/2847) verpflichtet Hersteller, eine Software-Stückliste (SBOM) zu erstellen, die mindestens die Top-Level-Abhängigkeiten des Produkts dokumentiert.",
+        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA (EU 2024/2847) verpflichtet Hersteller, eine Software-Stückliste (SBOM) zu erstellen, die mindestens die Top-Level-Abhängigkeiten des Produkts dokumentiert.",
         "help": "Eine SBOM listet alle Software-Komponenten auf, die in Ihrem Produkt enthalten sind — eigene und fremde. Der CRA verlangt mindestens die Dokumentation der Top-Level-Abhängigkeiten im maschinenlesbaren Format. Die SBOM ist die Grundlage für Schwachstellenmanagement, da Sie nur schützen können, was Sie kennen.",
         "maturity": {
           "level0": "Keine SBOM vorhanden — es gibt keine Übersicht der eingesetzten Software-Komponenten und -Abhängigkeiten",
@@ -4727,7 +4727,7 @@
       },
       "sbomQ2": {
         "title": "Nutzen Sie standardisierte Formate (CycloneDX oder SPDX) für Ihre Software-Stücklisten?",
-        "tooltip": "Art. 10 Abs. 6 CRA (EU 2024/2847) verweist auf maschinenlesbare Formate. Die gängigen Standards sind CycloneDX (OWASP) und SPDX (Linux Foundation), die von NTIA Minimum Elements abgedeckt werden.",
+        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA (EU 2024/2847) verweist auf maschinenlesbare Formate. Die gängigen Standards sind CycloneDX (OWASP) und SPDX (Linux Foundation), die von NTIA Minimum Elements abgedeckt werden.",
         "help": "Maschinenlesbare SBOM-Formate ermöglichen die automatisierte Auswertung: Schwachstellen-Abgleich gegen CVE-Datenbanken, Lizenzklärung und Compliance-Prüfung. CycloneDX und SPDX sind die etablierten Standards. Ohne standardisiertes Format ist Ihre SBOM nur ein Dokument — mit Standardformat wird sie zum Sicherheitswerkzeug.",
         "maturity": {
           "level0": "Kein standardisiertes Format — SBOM existiert höchstens als informelle Textdatei oder Tabellendokument",
@@ -4738,7 +4738,7 @@
       },
       "sbomQ3": {
         "title": "Werden Ihre SBOMs bei Änderungen an den Produktkomponenten aktuell gehalten?",
-        "tooltip": "Art. 10 Abs. 6 CRA (EU 2024/2847) impliziert eine laufende Pflege der SBOM, da der Hersteller Schwachstellen in eingesetzten Komponenten überwachen muss. Die NTIA Minimum Elements fordern Zeitstempel und Versionierung.",
+        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA (EU 2024/2847) impliziert eine laufende Pflege der SBOM, da der Hersteller Schwachstellen in eingesetzten Komponenten überwachen muss. Die NTIA Minimum Elements fordern Zeitstempel und Versionierung.",
         "help": "Eine SBOM ist nur so wertvoll wie ihre Aktualität. Bei jedem Release, jedem Dependency-Update und jedem Patch muss die SBOM aktualisiert werden. Nur so können Sie bei Bekanntwerden einer neuen CVE prüfen, ob Ihre Produkte betroffen sind. Veraltete SBOMs sind ein Compliance-Risiko.",
         "maturity": {
           "level0": "SBOM wird nicht aktualisiert — einmalig oder gar nicht erstellt, keine Nachpflege bei Änderungen",
@@ -4749,7 +4749,7 @@
       },
       "umQ1": {
         "title": "Verfügen Ihre Produkte über einen sicheren Mechanismus für automatische Sicherheitsupdates?",
-        "tooltip": "Art. 10 Abs. 12 CRA (EU 2024/2847) verpflichtet Hersteller, Sicherheitsupdates über einen sicheren Update-Mechanismus bereitzustellen. ETSI EN 303 645 Abschnitt 5.3 konkretisiert die Anforderungen an sichere Update-Verfahren.",
+        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verpflichtet Hersteller, Sicherheitsupdates über einen sicheren Update-Mechanismus bereitzustellen. ETSI EN 303 645 Abschnitt 5.3 konkretisiert die Anforderungen an sichere Update-Verfahren.",
         "help": "Der CRA verlangt, dass Produkte über einen sicheren Mechanismus aktualisiert werden können. Der Update-Kanal muss gegen Manipulation geschützt sein (z.B. durch signierte Firmware), Updates müssen verifiziert werden und der Nutzer muss über verfügbare Updates informiert werden. Automatische Updates sind bevorzugt, müssen aber vom Nutzer konfigurierbar sein.",
         "maturity": {
           "level0": "Kein Update-Mechanismus vorhanden — Produkte können nicht oder nur manuell per physischem Zugriff aktualisiert werden",
@@ -4760,7 +4760,7 @@
       },
       "umQ2": {
         "title": "Werden Sicherheitsupdates getrennt von Funktionsupdates bereitgestellt?",
-        "tooltip": "Art. 10 Abs. 12 CRA (EU 2024/2847) betont die separate Bereitstellung von Sicherheitsupdates. EN 18031-1 Abschnitt 9 konkretisiert, dass Sicherheitspatches unabhängig von Feature-Updates verfügbar sein müssen.",
+        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) betont die separate Bereitstellung von Sicherheitsupdates. EN 18031-1 Abschnitt 9 konkretisiert, dass Sicherheitspatches unabhängig von Feature-Updates verfügbar sein müssen.",
         "help": "Nutzer zögern häufig, größere Funktionsupdates zu installieren, weil sie Kompatibilitätsprobleme befürchten. Wenn Sicherheitspatches nur als Teil großer Updates verfügbar sind, bleiben kritische Lücken offen. Der CRA fordert daher, dass reine Sicherheitsupdates separat und zeitnah bereitgestellt werden.",
         "maturity": {
           "level0": "Keine Trennung — Sicherheitspatches werden nur zusammen mit Funktionsupdates ausgeliefert oder gar nicht bereitgestellt",
@@ -4771,7 +4771,7 @@
       },
       "umQ3": {
         "title": "Dokumentieren Sie Änderungen aus Sicherheitsupdates transparent für die Nutzer?",
-        "tooltip": "Art. 10 Abs. 12 CRA (EU 2024/2847) verlangt, dass Nutzer über behobene Schwachstellen und die Auswirkungen von Sicherheitsupdates informiert werden. ETSI EN 303 645 Abschnitt 5.3 fordert verständliche Sicherheitsinformationen.",
+        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verlangt, dass Nutzer über behobene Schwachstellen und die Auswirkungen von Sicherheitsupdates informiert werden. ETSI EN 303 645 Abschnitt 5.3 fordert verständliche Sicherheitsinformationen.",
         "help": "Nutzer müssen verstehen, warum ein Update wichtig ist und welche Schwachstellen es behebt. Der CRA verlangt transparente Kommunikation über Sicherheitsupdates — einschließlich CVE-Referenzen, Schweregrad und betroffener Funktionen. Nur so können Nutzer fundierte Entscheidungen über die Installation treffen.",
         "maturity": {
           "level0": "Keine Dokumentation — Updates werden ohne Beschreibung der Änderungen bereitgestellt",
@@ -4847,8 +4847,8 @@
         }
       },
       "konfQ1": {
-        "title": "Haben Sie das für Ihr Produkt zutreffende Konformitätsbewertungsverfahren nach Art. 24–28 CRA bestimmt?",
-        "tooltip": "Art. 24 CRA (EU 2024/2847) definiert die Konformitätsbewertungsverfahren je nach Produktkategorie: Modul A (Selbstbewertung) für Standardprodukte, Modul B+C oder H für wichtige/kritische Produkte (Anhang III/IV).",
+        "title": "Haben Sie das für Ihr Produkt zutreffende Konformitätsbewertungsverfahren nach Art. 32 CRA bestimmt?",
+        "tooltip": "Art. 32 CRA (EU 2024/2847) definiert die Konformitätsbewertungsverfahren je nach Produktkategorie: Modul A (Selbstbewertung) für Standardprodukte, Modul B+C oder H für wichtige/kritische Produkte (Anhang III/IV).",
         "help": "Welches Konformitätsbewertungsverfahren Sie durchlaufen müssen, hängt von der Einstufung Ihres Produkts ab: Standardprodukte können eine interne Fertigungskontrolle (Modul A) durchführen. Wichtige Produkte der Klasse I können Modul A nutzen, wenn harmonisierte Normen angewendet werden. Klasse II und kritische Produkte benötigen eine Drittanbieterbewertung.",
         "maturity": {
           "level0": "Keine Kenntnis des zutreffenden Verfahrens — Produktklassifizierung nach CRA Anhang III/IV nicht durchgeführt",
@@ -4859,7 +4859,7 @@
       },
       "konfQ2": {
         "title": "Wenden Sie die einschlägigen harmonisierten europäischen Normen (hEN) für Ihr Konformitätsverfahren an?",
-        "tooltip": "Art. 25–28 CRA (EU 2024/2847) i.V.m. Anhang VIII verweisen auf harmonisierte europäische Normen (z.B. EN 18031-1/2/3), deren Anwendung eine Konformitätsvermutung begründet.",
+        "tooltip": "Art. 27 CRA (EU 2024/2847): Die Anwendung harmonisierter europäischer Normen (z.B. EN 18031-1/2/3) begründet eine Konformitätsvermutung für die abgedeckten Anforderungen.",
         "help": "Harmonisierte europäische Normen (hEN) wie die EN 18031-Reihe konkretisieren die Anforderungen des CRA. Wenn Sie diese Normen anwenden, greift die Konformitätsvermutung: Ihre Produkte gelten als CRA-konform, ohne dass dies einzeln nachgewiesen werden muss. Für wichtige Produkte der Klasse I ist die Anwendung von hEN besonders relevant, da sie die Selbstbewertung ermöglichen kann.",
         "maturity": {
           "level0": "Keine harmonisierten Normen bekannt oder angewendet",
@@ -4870,7 +4870,7 @@
       },
       "konfQ3": {
         "title": "Wissen Sie, welche CE-Kennzeichnung Ihr Produkt braucht, und haben Sie diese angebracht?",
-        "tooltip": "Art. 30 CRA (EU 2024/2847) verpflichtet Hersteller, nach erfolgreichem Abschluss des Konformitätsbewertungsverfahrens die CE-Kennzeichnung anzubringen und die EU-Konformitätserklärung zu erstellen.",
+        "tooltip": "Nach erfolgreichem Abschluss des Konformitätsbewertungsverfahrens müssen Hersteller die EU-Konformitätserklärung ausstellen (Art. 13 Abs. 12, Art. 28 CRA) und die CE-Kennzeichnung anbringen (Art. 30 CRA).",
         "help": "Die CE-Kennzeichnung ist das sichtbare Zeichen der CRA-Konformität. Vor dem Anbringen müssen Sie das jeweilige Konformitätsbewertungsverfahren erfolgreich durchlaufen und eine EU-Konformitätserklärung nach dem Muster in Anhang V erstellen. Die Erklärung muss stets aktuell gehalten und der Marktüberwachungsbehörde auf Verlangen vorgelegt werden können.",
         "maturity": {
           "level0": "Keine CE-Kennzeichnung und keine Konformitätserklärung für CRA vorhanden",
@@ -4881,7 +4881,7 @@
       },
       "slQ1": {
         "title": "Haben Sie den Supportzeitraum für Sicherheitsupdates Ihrer Produkte definiert und kommuniziert?",
-        "tooltip": "Art. 10 Abs. 12 CRA (EU 2024/2847) verpflichtet Hersteller, den Supportzeitraum festzulegen und zu kommunizieren. Der Mindestzeitraum beträgt 5 Jahre oder die erwartete Produktlebensdauer — je nachdem, welcher Zeitraum kürzer ist.",
+        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verpflichtet Hersteller, den Supportzeitraum festzulegen und zu kommunizieren. Der Mindestzeitraum beträgt 5 Jahre oder die erwartete Produktlebensdauer — je nachdem, welcher Zeitraum kürzer ist.",
         "help": "Der CRA verlangt, dass Sie für jedes Produkt den Zeitraum festlegen, in dem Sie Sicherheitsupdates bereitstellen. Dieser Supportzeitraum muss mindestens 5 Jahre betragen oder der erwarteten Produktlebensdauer entsprechen. Der Zeitraum muss klar kommuniziert und auf der Verpackung/Website angegeben werden.",
         "maturity": {
           "level0": "Kein Supportzeitraum definiert — Nutzer wissen nicht, wie lange sie mit Sicherheitsupdates rechnen können",
@@ -4892,7 +4892,7 @@
       },
       "slQ2": {
         "title": "Gewährleisten Sie die Bereitstellung von Sicherheitsupdates über den gesamten Supportzeitraum?",
-        "tooltip": "Art. 10 Abs. 12 CRA (EU 2024/2847) verpflichtet Hersteller, während des gesamten Supportzeitraums Sicherheitsupdates bereitzustellen. EN 18031-1 Abschnitt 10 konkretisiert die Anforderungen an die langfristige Updatefähigkeit.",
+        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verpflichtet Hersteller, während des gesamten Supportzeitraums Sicherheitsupdates bereitzustellen. EN 18031-1 Abschnitt 10 konkretisiert die Anforderungen an die langfristige Updatefähigkeit.",
         "help": "Die Verpflichtung zur Update-Bereitstellung endet nicht nach dem ersten Produktjahr. Über den gesamten Supportzeitraum müssen Sie in der Lage sein, Schwachstellen zu beheben und Updates zu verteilen. Dies erfordert langfristige Planung: Infrastruktur, Build-Systeme und Testumgebungen müssen auch Jahre nach dem Erstrelease verfügbar sein.",
         "maturity": {
           "level0": "Keine langfristige Update-Fähigkeit — nach initialem Release keine Ressourcen für Sicherheitspatches eingeplant",
@@ -4903,7 +4903,7 @@
       },
       "slQ3": {
         "title": "Berücksichtigen Sie Cybersicherheitsanforderungen an Drittkomponenten und Lieferketten in Ihrem Produktlebenszyklus?",
-        "tooltip": "Art. 10 Abs. 12 CRA (EU 2024/2847) erstreckt sich auch auf Drittkomponenten. IEC 62443-4-1 und ETSI EN 303 645 enthalten Anforderungen an das Supply-Chain-Sicherheitsmanagement für Produkte mit digitalen Elementen.",
+        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) erstreckt sich auch auf Drittkomponenten. IEC 62443-4-1 und ETSI EN 303 645 enthalten Anforderungen an das Supply-Chain-Sicherheitsmanagement für Produkte mit digitalen Elementen.",
         "help": "Ihr Produkt ist nur so sicher wie seine schwächste Komponente. Der CRA verlangt, dass Sie auch die Sicherheit von Drittkomponenten (öffentliche Bibliotheken, zugekaufte Module, Firmware von Zulieferern) überwachen und bei Schwachstellen reagieren. Dies erfordert vertragliche Vereinbarungen mit Zulieferern und kontinuierliches Monitoring.",
         "maturity": {
           "level0": "Keine Berücksichtigung von Drittkomponenten — Sicherheit der Lieferkette wird nicht betrachtet",
@@ -4917,19 +4917,19 @@
       "questions": {
         "q1": {
           "title": "Werden Cybersicherheitsanforderungen bereits in der Produktentwicklung berücksichtigt?",
-          "description": "Art. 10 + Anhang I CRA: Produkte mit digitalen Elementen müssen nach dem Security-by-Design-Prinzip entwickelt werden — mit minimaler Angriffsfläche und sicheren Standardeinstellungen."
+          "description": "Art. 13 i.V.m. Anhang I CRA: Produkte mit digitalen Elementen müssen nach dem Security-by-Design-Prinzip entwickelt werden — mit minimaler Angriffsfläche und sicheren Standardeinstellungen."
         },
         "q2": {
           "title": "Gibt es einen dokumentierten Prozess zur Erkennung und Behebung von Schwachstellen?",
-          "description": "Art. 10 Abs. 6 + Anhang I CRA: Hersteller müssen Schwachstellen über den gesamten Support-Zeitraum identifizieren, bewerten und durch kostenlose Updates beheben."
+          "description": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II CRA: Hersteller müssen Schwachstellen über den gesamten Support-Zeitraum identifizieren, bewerten und durch kostenlose Updates beheben."
         },
         "q3": {
           "title": "Pflegen Sie eine aktuelle Software-Stückliste (SBOM) für Ihre Produkte?",
-          "description": "Art. 10 Abs. 7 CRA: Eine maschinenlesbare SBOM mit allen Komponenten (inkl. Open-Source-Bibliotheken) muss erstellt und aktuell gehalten werden."
+          "description": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA: Eine maschinenlesbare SBOM mit allen Komponenten (inkl. Open-Source-Bibliotheken) muss erstellt und aktuell gehalten werden."
         },
         "q4": {
           "title": "Können Sie Sicherheitsupdates über den gesamten Produktlebenszyklus bereitstellen?",
-          "description": "Art. 10 Abs. 12-15 CRA: Sicherheitsupdates müssen automatisch oder einfach installierbar sein — mindestens 5 Jahre oder die erwartete Nutzungsdauer, je nachdem was kürzer ist."
+          "description": "Art. 13 Abs. 8 CRA: Sicherheitsupdates müssen automatisch oder einfach installierbar sein — mindestens 5 Jahre oder die erwartete Nutzungsdauer, je nachdem was kürzer ist."
         },
         "q5": {
           "title": "Ist die technische Dokumentation Ihrer Produkte CRA-konform erstellt?",
@@ -4941,11 +4941,11 @@
         },
         "q7": {
           "title": "Kennen Sie das anwendbare Konformitätsbewertungsverfahren für Ihre Produktkategorie?",
-          "description": "Art. 32-39 CRA: Je nach Produktkategorie (Standard, Klasse I, Klasse II) gelten unterschiedliche Bewertungsverfahren — von Selbstbewertung bis EU-Typprüfung."
+          "description": "Art. 32 i.V.m. Art. 7 CRA: Je nach Produktkategorie (Standard, Klasse I, Klasse II) gelten unterschiedliche Bewertungsverfahren — von Selbstbewertung bis EU-Typprüfung."
         },
         "q8": {
           "title": "Haben Sie den Support-Zeitraum für Ihre Produkte definiert und kommuniziert?",
-          "description": "Art. 10 Abs. 12 CRA: Der Support-Zeitraum (mindestens 5 Jahre) muss vor Inverkehrbringen festgelegt und für Nutzer klar ersichtlich dokumentiert sein."
+          "description": "Art. 13 Abs. 8 CRA: Der Support-Zeitraum (mindestens 5 Jahre) muss vor Inverkehrbringen festgelegt und für Nutzer klar ersichtlich dokumentiert sein."
         }
       }
     },
@@ -4967,7 +4967,7 @@
         "title": "Benutzerinformation zur Cybersicherheit erstellen"
       },
       "konf1": {
-        "description": "Bestimmen Sie das für Ihr Produkt zutreffende Konformitätsbewertungsverfahren (Modul A, B+C oder H). Art. 24-28 CRA unterscheiden nach Kritikalität zwischen Selbstbewertung und Drittanbieterbewertung.",
+        "description": "Bestimmen Sie das für Ihr Produkt zutreffende Konformitätsbewertungsverfahren (Modul A, B+C oder H). Art. 32 CRA i.V.m. Anhang VIII unterscheiden nach Kritikalität zwischen Selbstbewertung und Drittanbieterbewertung.",
         "firstStep": "Prüfen Sie, ob Ihr Produkt in Anhang III (wichtig) oder Anhang IV (kritisch) des CRA gelistet ist.",
         "title": "Konformitätsbewertungsverfahren bestimmen"
       },
@@ -4983,50 +4983,50 @@
         "title": "Drittanbieterbewertung vorbereiten"
       },
       "sbd1": {
-        "description": "Integrieren Sie Sicherheitsanforderungen bereits in der Designphase Ihrer Produkte mit digitalen Elementen. Art. 10 Abs. 1 CRA fordert, dass Cybersicherheit von Anfang an berücksichtigt wird.",
+        "description": "Integrieren Sie Sicherheitsanforderungen bereits in der Designphase Ihrer Produkte mit digitalen Elementen. Art. 13 Abs. 1 CRA fordert, dass Cybersicherheit von Anfang an berücksichtigt wird.",
         "firstStep": "Erstellen Sie eine Bedrohungsmodellierung für Ihr wichtigstes Produkt mit digitalen Elementen.",
         "title": "Security-Anforderungen in Produktdesign integrieren"
       },
       "sbd2": {
-        "description": "Liefern Sie alle Produkte mit sicheren Standardeinstellungen aus (Secure by Default). Art. 10 Abs. 2 CRA verlangt, dass keine Standardpasswörter verwendet und nur notwendige Dienste aktiviert werden.",
+        "description": "Liefern Sie alle Produkte mit sicheren Standardeinstellungen aus (Secure by Default). Art. 13 Abs. 1 i.V.m. Anhang I Teil I CRA verlangt, dass keine Standardpasswörter verwendet und nur notwendige Dienste aktiviert werden.",
         "firstStep": "Prüfen Sie die Standardkonfiguration Ihres Hauptprodukts auf unsichere Defaults (Standardpasswörter, offene Ports, unnötige Dienste).",
         "title": "Sichere Standardkonfigurationen einrichten"
       },
       "sbd3": {
         "checklist": "Security-by-Design-Prinzipien in Entwicklung integrieren\nBedrohungsmodellierung durchführen\nSichere Standardkonfigurationen definieren",
-        "description": "Führen Sie einen sicheren Entwicklungsprozess ein, der Bedrohungsmodellierung, Secure Coding und Security-Testing umfasst. Art. 10 Abs. 3 CRA fordert die systematische Integration von Sicherheit in alle Entwicklungsphasen.",
+        "description": "Führen Sie einen sicheren Entwicklungsprozess ein, der Bedrohungsmodellierung, Secure Coding und Security-Testing umfasst. Art. 13 Abs. 1 i.V.m. Anhang I Teil I CRA fordert die systematische Integration von Sicherheit in alle Entwicklungsphasen.",
         "firstStep": "Definieren Sie Security Gates in Ihrem Entwicklungsprozess (z.B. Threat Model Review vor Design, Code Review vor Release).",
         "title": "Secure Development Lifecycle (SDL) etablieren"
       },
       "sbom1": {
-        "description": "Erstellen Sie eine Software Bill of Materials (SBOM) im SPDX- oder CycloneDX-Format für Ihre Produkte. Art. 10 Abs. 6 CRA fordert eine vollständige, maschinenlesbare Auflistung aller Software-Komponenten.",
+        "description": "Erstellen Sie eine Software Bill of Materials (SBOM) im SPDX- oder CycloneDX-Format für Ihre Produkte. Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA fordert eine vollständige, maschinenlesbare Auflistung aller Software-Komponenten.",
         "firstStep": "Wählen Sie ein SBOM-Tool (z.B. Syft, CycloneDX Generator) und erzeugen Sie eine erste SBOM für Ihr Hauptprodukt.",
         "title": "Maschinenlesbare SBOM erstellen"
       },
       "sbom2": {
-        "description": "Integrieren Sie die SBOM-Erzeugung automatisch in Ihre Build-Pipeline. Art. 10 Abs. 6 CRA verlangt, dass die SBOM stets aktuell ist und bei jeder Produktversion mitgeliefert wird.",
+        "description": "Integrieren Sie die SBOM-Erzeugung automatisch in Ihre Build-Pipeline. Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA verlangt, dass die SBOM stets aktuell ist und bei jeder Produktversion mitgeliefert wird.",
         "firstStep": "Fügen Sie einen SBOM-Generierungsschritt in Ihre CI/CD-Pipeline ein (z.B. als Post-Build-Step).",
         "title": "SBOM-Generierung in CI/CD-Pipeline automatisieren"
       },
       "sbom3": {
         "checklist": "Toolchain für SBOM-Generierung etablieren\nAbhängigkeiten laufend überwachen\nSBOM-Format standardisieren (SPDX/CycloneDX)",
-        "description": "Führen Sie ein Lifecycle-Management für SBOMs ein und ergänzen Sie Vulnerability Exploitability eXchange (VEX)-Statements. Art. 10 Abs. 6 CRA fordert kontinuierliche Pflege und Bewertung der SBOM-Komponenten.",
+        "description": "Führen Sie ein Lifecycle-Management für SBOMs ein und ergänzen Sie Vulnerability Exploitability eXchange (VEX)-Statements. Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA fordert kontinuierliche Pflege und Bewertung der SBOM-Komponenten.",
         "firstStep": "Definieren Sie einen Prozess zur regelmäßigen SBOM-Aktualisierung und Schwachstellenbewertung (mindestens bei jedem Release).",
         "title": "SBOM-Lebenszyklusmanagement mit VEX etablieren"
       },
       "sl1": {
-        "description": "Definieren Sie einen klaren Sicherheits-Support-Zeitraum für Ihre Produkte. Art. 10 Abs. 12 CRA fordert, dass Hersteller vorab festlegen und kommunizieren, wie lange Sicherheitsupdates bereitgestellt werden.",
+        "description": "Definieren Sie einen klaren Sicherheits-Support-Zeitraum für Ihre Produkte. Art. 13 Abs. 8 CRA fordert, dass Hersteller vorab festlegen und kommunizieren, wie lange Sicherheitsupdates bereitgestellt werden.",
         "firstStep": "Erstellen Sie eine Support-Lifecycle-Policy, die für jede Produktkategorie den Mindest-Support-Zeitraum festlegt.",
         "title": "Produktsicherheits-Support-Zeitraum definieren"
       },
       "sl2": {
-        "description": "Richten Sie einen Prozess ein, um Kunden rechtzeitig über das Ende des Sicherheits-Supports zu informieren. Art. 10 Abs. 12 CRA verlangt, dass Nutzer frühzeitig gewarnt werden, wenn keine Updates mehr bereitgestellt werden.",
+        "description": "Richten Sie einen Prozess ein, um Kunden rechtzeitig über das Ende des Sicherheits-Supports zu informieren. Art. 13 Abs. 8 CRA verlangt, dass Nutzer frühzeitig gewarnt werden, wenn keine Updates mehr bereitgestellt werden.",
         "firstStep": "Definieren Sie eine Vorlaufzeit für End-of-Support-Ankündigungen (z.B. 12 Monate im Voraus).",
         "title": "End-of-Support-Kommunikation einrichten"
       },
       "sl3": {
         "checklist": "Sicherheitsanforderungen an Zulieferer definieren\nThird-Party-Komponenten auf Schwachstellen prüfen\nLieferketten-Risikoanalyse durchführen",
-        "description": "Erstellen Sie eine umfassende Lifecycle-Sicherheitsrichtlinie, die alle Phasen von der Entwicklung bis zum End-of-Life abdeckt. Art. 10 Abs. 12 CRA fordert ein durchgängiges Sicherheitskonzept über den gesamten Produktlebenszyklus.",
+        "description": "Erstellen Sie eine umfassende Lifecycle-Sicherheitsrichtlinie, die alle Phasen von der Entwicklung bis zum End-of-Life abdeckt. Art. 13 Abs. 8 CRA fordert ein durchgängiges Sicherheitskonzept über den gesamten Produktlebenszyklus.",
         "firstStep": "Dokumentieren Sie alle Lifecycle-Phasen Ihrer Produkte (Development, Release, Maintenance, End-of-Life) mit Sicherheitsanforderungen.",
         "title": "Lifecycle-Sicherheitsrichtlinie erstellen"
       },
@@ -5036,29 +5036,29 @@
         "title": "Koordinierte Schwachstellenoffenlegung einrichten"
       },
       "swm2": {
-        "description": "Erstellen Sie eine security.txt-Datei gemäß RFC 9116 und veröffentlichen Sie einen Sicherheitskontaktpunkt. Art. 11 Abs. 2 CRA fordert eine öffentlich dokumentierte Anlaufstelle für Schwachstellenmeldungen.",
+        "description": "Erstellen Sie eine security.txt-Datei gemäß RFC 9116 und veröffentlichen Sie einen Sicherheitskontaktpunkt. Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 5 CRA fordert eine öffentlich dokumentierte Anlaufstelle für Schwachstellenmeldungen.",
         "firstStep": "Erstellen Sie eine /.well-known/security.txt auf Ihrer Website mit Kontaktdaten und PGP-Key.",
         "title": "security.txt und Kontaktpunkt veröffentlichen"
       },
       "swm3": {
         "checklist": "SBOM (Software Bill of Materials) erstellen\nSchwachstellen-Scanning automatisieren\nKoordinierten Offenlegungsprozess einrichten",
-        "description": "Überwachen Sie kontinuierlich bekannte Schwachstellen in verwendeten Komponenten über CVE/NVD-Datenbanken. Art. 11 Abs. 3 CRA verlangt, dass Hersteller aktiv über Schwachstellen in ihren Produkten informiert bleiben.",
+        "description": "Überwachen Sie kontinuierlich bekannte Schwachstellen in verwendeten Komponenten über CVE/NVD-Datenbanken. Art. 13 Abs. 8 i.V.m. Anhang I Teil II CRA verlangt, dass Hersteller aktiv über Schwachstellen in ihren Produkten informiert bleiben.",
         "firstStep": "Richten Sie einen automatisierten CVE-Feed für Ihre verwendeten Software-Komponenten ein (z.B. via NIST NVD API).",
         "title": "Schwachstellenüberwachung mit CVE/NVD aufbauen"
       },
       "um1": {
-        "description": "Implementieren Sie einen zuverlässigen Mechanismus zur Bereitstellung von Sicherheitsupdates über den gesamten Produktlebenszyklus. Art. 10 Abs. 12 CRA fordert, dass Sicherheitsupdates sicher und zeitnah verfügbar sind.",
+        "description": "Implementieren Sie einen zuverlässigen Mechanismus zur Bereitstellung von Sicherheitsupdates über den gesamten Produktlebenszyklus. Art. 13 Abs. 8 CRA fordert, dass Sicherheitsupdates sicher und zeitnah verfügbar sind.",
         "firstStep": "Prüfen Sie, ob Ihr Produkt einen automatischen oder manuellen Update-Mechanismus besitzt und dokumentieren Sie diesen.",
         "title": "Sicherheitsupdate-Mechanismus bereitstellen"
       },
       "um2": {
-        "description": "Trennen Sie Sicherheitsupdates von Funktionsupdates, damit kritische Patches schnell ausgerollt werden können. Art. 10 Abs. 12 CRA verlangt, dass Sicherheitsupdates unabhängig von Funktionserweiterungen verfügbar sind.",
+        "description": "Trennen Sie Sicherheitsupdates von Funktionsupdates, damit kritische Patches schnell ausgerollt werden können. Art. 13 Abs. 8 CRA verlangt, dass Sicherheitsupdates unabhängig von Funktionserweiterungen verfügbar sind.",
         "firstStep": "Definieren Sie eine Versionierungs- und Release-Strategie mit separaten Security-Patch-Versionen (z.B. Semantic Versioning mit Patch-Level für Security).",
         "title": "Sicherheitsupdates von Feature-Updates trennen"
       },
       "um3": {
         "checklist": "Update-Mechanismus für Sicherheitsupdates implementieren\n5-Jahre-Support-Zeitraum planen und dokumentieren\nAutomatische Update-Benachrichtigungen einrichten",
-        "description": "Legen Sie einen Sicherheits-Support-Zeitraum von mindestens 5 Jahren fest und kommunizieren Sie diesen. Art. 10 Abs. 12 CRA fordert eine angemessene Supportdauer für Sicherheitsupdates ab Inverkehrbringen.",
+        "description": "Legen Sie einen Sicherheits-Support-Zeitraum von mindestens 5 Jahren fest und kommunizieren Sie diesen. Art. 13 Abs. 8 CRA fordert eine angemessene Supportdauer für Sicherheitsupdates ab Inverkehrbringen.",
         "firstStep": "Dokumentieren Sie für jedes Ihrer Produkte mit digitalen Elementen den geplanten Sicherheits-Support-Zeitraum.",
         "title": "Support-Zeitraum definieren (mind. 5 Jahre)"
       },
@@ -6770,7 +6770,7 @@
       },
       "acQ3": {
         "title": "Wie werden privilegierte Zugriffsrechte (Admin-Rechte) verwaltet?",
-        "tooltip": "Controls A.8.2, A.8.3 und A.8.4 fordern den eingeschränkten Zugang zu Qüllcode, privilegierten Rechten und Informationen.",
+        "tooltip": "Controls A.8.2, A.8.3 und A.8.4 fordern den eingeschränkten Zugang zu Quellcode, privilegierten Rechten und Informationen.",
         "help": "Privilegierte Konten stellen ein hohes Risiko dar und müssen besonders geschützt, überwacht und nur bei Bedarf vergeben werden.",
         "maturity": {
           "level0": "Keine Kontrolle über privilegierte Zugänge. Admin-Rechte weit verbreitet.",
