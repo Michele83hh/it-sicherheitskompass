@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import {
   Compass,
   ArrowRight,
@@ -159,20 +160,48 @@ export default function NavigatorPage() {
     return `mailto:?subject=${subject}&body=${body}`;
   }
 
+  // Ergebnis einmal berechnen, sobald Schritt 4 erreicht ist — der Hero zeigt
+  // dann die Zusammenfassung statt des generischen Titels (Muster der Wissen-Seite)
+  const finalResults = step === TOTAL_STEPS ? calculateResults() : null;
+  const finalRelevant = finalResults ? finalResults.filter(r => r.relevance === 'high' || r.relevance === 'medium') : [];
+
   return (
     <div>
       {/* Header */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-800">
         <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-center flex flex-col items-center justify-center min-h-[14rem] sm:min-h-[16rem] lg:min-h-[19rem]">
-          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
-            <Compass className="size-7 text-white" />
-          </div>
-          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            {t('title')}
-          </h1>
-          <p className="mt-2 text-lg text-slate-300 whitespace-pre-line">
-            {t('subtitle')}
-          </p>
+          {finalResults ? (
+            <>
+              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
+                <CheckCircle2 className="size-7 text-emerald-400" />
+              </div>
+              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                {t('result.summaryTitle')}
+              </h1>
+              <p className="mt-2 text-lg text-slate-300">
+                {t('result.summaryText', { count: finalRelevant.length })}
+              </p>
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+                {finalRelevant.map((r) => (
+                  <span key={r.id} className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-sm font-medium text-white">
+                    {tReg(`${regMeta[r.id].tKey}.name`)}
+                  </span>
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
+                <Compass className="size-7 text-white" />
+              </div>
+              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                {t('title')}
+              </h1>
+              <p className="mt-2 text-lg text-slate-300 whitespace-pre-line">
+                {t('subtitle')}
+              </p>
+            </>
+          )}
         </div>
       </section>
 
@@ -357,66 +386,34 @@ export default function NavigatorPage() {
         </Card>
       )}
 
-      {/* Results */}
-      {step === 4 && (() => {
-        const results = calculateResults();
-        const highResults = results.filter(r => r.relevance === 'high');
-        const mediumResults = results.filter(r => r.relevance === 'medium');
+      {/* Results — Zusammenfassung steht im Hero, hier beginnt der Inhalt mit dem Disclaimer */}
+      {step === 4 && finalResults && (() => {
+        const results = finalResults;
         const lowResults = results.filter(r => r.relevance === 'low');
         const noneResults = results.filter(r => r.relevance === 'none');
-        const relevantCount = highResults.length + mediumResults.length;
 
         // Persist to localStorage
         persistResults(results);
 
         return (
           <div className="space-y-6">
-            {/* Summary Box */}
-            <div className="rounded-xl bg-slate-800 p-6 text-center text-white">
-              <CheckCircle2 className="mx-auto size-10 text-emerald-400 mb-3" />
-              <h2 className="text-xl font-bold">{t('result.summaryTitle')}</h2>
-              <p className="mt-2 text-slate-300">
-                {t('result.summaryText', { count: relevantCount })}
-              </p>
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-                {[...highResults, ...mediumResults].map((r) => {
-                  const meta = regMeta[r.id];
-                  return (
-                    <span key={r.id} className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-sm font-medium text-white">
-                      {tReg(`${meta.tKey}.name`)}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Ihre Angaben — Grundlage der Einschätzung, transparent + korrigierbar */}
-            <div className="rounded-lg border bg-muted/30 p-4">
-              <div className="mb-2 flex items-center justify-between gap-2">
-                <p className="text-sm font-semibold">{t('result.yourInputs')}</p>
-                <Button variant="ghost" size="sm" onClick={() => setStep(0)}>
-                  {t('result.editInputs')}
-                </Button>
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                <span className="inline-flex items-center rounded-full border bg-background px-2.5 py-0.5 text-xs font-medium text-foreground">
-                  {t(`industries.${industry}`)}
-                </span>
-                <span className="inline-flex items-center rounded-full border bg-background px-2.5 py-0.5 text-xs font-medium text-foreground">
-                  {t(`steps.size.${companySize}`)}
-                </span>
-                {businessModels.map((m) => (
-                  <span key={m} className="inline-flex items-center rounded-full border bg-background px-2.5 py-0.5 text-xs text-muted-foreground">
-                    {t(`steps.activities.${m}`)}
-                  </span>
-                ))}
-                {specialCircumstances.map((c) => (
-                  <span key={c} className="inline-flex items-center rounded-full border bg-background px-2.5 py-0.5 text-xs text-muted-foreground">
-                    {t(`steps.specifics.${c}`)}
-                  </span>
-                ))}
-              </div>
-            </div>
+            {/* Ihre Angaben — stille Meta-Zeile unter dem Hero, kein Kasten */}
+            <p className="text-center text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">{t('result.yourInputs')}:</span>{' '}
+              {[
+                t(`industries.${industry}`),
+                t(`steps.size.${companySize}`),
+                ...businessModels.map((m) => t(`shortLabels.${m}`)),
+                ...specialCircumstances.map((c) => t(`shortLabels.${c}`)),
+              ].join(' · ')}
+              {' — '}
+              <button
+                onClick={() => setStep(0)}
+                className="underline underline-offset-2 transition-colors hover:text-foreground"
+              >
+                {t('result.editInputs')}
+              </button>
+            </p>
 
             {/* Disclaimer (prominent, before results) */}
             <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
@@ -501,7 +498,7 @@ export default function NavigatorPage() {
 
             {/* Primary CTAs */}
             {(() => {
-              const firstRegId = highResults[0]?.id || mediumResults[0]?.id || 'nis2';
+              const firstRegId = finalRelevant.find(r => r.relevance === 'high')?.id || finalRelevant[0]?.id || 'nis2';
               return (
                 <div className="space-y-3">
                   <Button size="lg" className="w-full py-6 text-base bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-500/20" asChild>
@@ -567,18 +564,29 @@ function ResultCard({
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
             <span className="font-semibold whitespace-nowrap">{tReg(`${meta.tKey}.name`)}</span>
-            <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-medium ${OBLIGATION_COLORS[result.obligationType]}`}>
-              {result.obligationType === 'cascaded' && result.triggeredBy
-                ? t('result.obligation.cascadedWith', { source: result.triggeredBy })
-                : t(`result.obligation.${result.obligationType}`)}
-            </span>
+            <TooltipProvider delayDuration={150}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <span className={`inline-flex cursor-help items-center rounded-full border px-2 py-0.5 text-[10px] font-medium ${OBLIGATION_COLORS[result.obligationType]}`}>
+                    {result.obligationType === 'cascaded' && result.triggeredBy
+                      ? t('result.obligation.cascadedWith', { source: result.triggeredBy })
+                      : t(`result.obligation.${result.obligationType}`)}
+                  </span>
+                </TooltipTrigger>
+                <TooltipContent className="max-w-xs text-sm">
+                  {t(`result.obligationDesc.${result.obligationType}`)}
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
           <p className="text-sm text-muted-foreground mt-0.5">{t(`reasons.${result.reasonKey}`)}</p>
-          <p className="text-xs text-muted-foreground mt-0.5 flex items-center gap-1">
+          <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
             <Clock className="size-3 flex-shrink-0" />
             {t(`deadlines.${result.id}`)}
           </p>
-          {result.id === 'nis2' && !dimmed && (
+          {/* §38 BSIG trifft nur Geschaeftsleitungen von Einrichtungen — bei bloss
+              indirekter/vertraglicher Betroffenheit waere die Warnung falsch */}
+          {result.id === 'nis2' && !dimmed && (result.obligationType === 'direct' || result.obligationType === 'check') && (
             <p className="text-xs text-red-600 font-medium mt-1 flex items-center gap-1">
               <ShieldAlert className="size-3 flex-shrink-0" />
               {t('result.liability')}

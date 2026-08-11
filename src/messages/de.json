@@ -5807,6 +5807,27 @@
           "publicSectorClients": "Wir haben Kunden aus dem öffentlichen Sektor / der Verwaltung"
         }
       },
+      "shortLabels": {
+        "personalData": "Kundendaten",
+        "digitalProducts": "Software & digitale Produkte",
+        "kritisOperator": "KRITIS-Betreiber",
+        "financialServices": "Finanzdienstleistungen",
+        "automotiveSupplier": "Automobilzulieferer",
+        "digitalServices": "Digitale Dienste",
+        "manufacturing": "Physische Produkte",
+        "cloudProvider": "IT-Dienstleistungen",
+        "supplierForRegulated": "Lieferant regulierter Unternehmen",
+        "paymentProcessing": "Zahlungsverarbeitung",
+        "saasProvider": "SaaS-Anbieter",
+        "kritis": "offiziell KRITIS-eingestuft",
+        "tisaxRequired": "TISAX gefordert",
+        "art9Data": "sensible Daten",
+        "iotProducts": "vernetzte Produkte",
+        "financeClients": "Finanzkunden",
+        "iso27001": "ISO 27001 vorhanden/geplant",
+        "pciRequired": "PCI DSS gefordert",
+        "publicSectorClients": "Behördenkunden"
+      },
       "industries": {
         "energy": "Energie & Versorgung",
         "transport": "Transport & Verkehr",
@@ -5877,6 +5898,14 @@
           "voluntary": "Best Practice",
           "contractual": "Vertragliche Pflicht",
           "check": "Pflicht prüfen"
+        },
+        "obligationDesc": {
+          "direct": "Dieses Regelwerk verpflichtet Ihr Unternehmen unmittelbar — Verstöße können mit Bußgeldern geahndet werden.",
+          "indirect": "Keine eigene gesetzliche Pflicht: Das Gesetz verpflichtet Ihre Kunden, Sicherheitsanforderungen vertraglich an Sie weiterzugeben. Ihr Risiko ist der Auftrag, nicht das Bußgeld.",
+          "contractual": "Kein Gesetz dahinter: Die Pflicht entsteht durch Verträge — etwa Kundenanforderungen, OEM-Vorgaben oder Kartennetzwerk-Regeln.",
+          "check": "Ob die gesetzliche Pflicht greift, hängt von Schwellenwerten und Einstufung ab — prüfen Sie es im Detail-Check.",
+          "cascaded": "Keine eigene Pflicht: Dieses Rahmenwerk hilft, die Anforderungen Ihrer Pflicht-Regelwerke strukturiert umzusetzen und nachzuweisen.",
+          "voluntary": "Freiwilliger Standard — sinnvoll zur Selbstverbesserung und als Vertrauensnachweis gegenüber Kunden."
         }
       },
       "deadlines": {
@@ -5937,10 +5966,10 @@
         "cisFramework": "CIS Controls als technische Baseline empfohlen",
         "cisCompliance": "CIS Controls ergänzen Ihre Compliance-Anforderungen optimal",
         "cisSize": "CIS Controls bieten eine strukturierte Baseline für Ihr Unternehmen",
-        "bcmFramework": "Business Continuity Management als ergänzendes Rahmenwerk",
-        "bcmKritis": "BCM ist für KRITIS-Betreiber unverzichtbar",
-        "bcmNis2": "NIS2 fordert Business Continuity — ISO 22301 bietet den Rahmen",
-        "bcmSize": "BCM schützt vor Geschäftsausfällen und ist für Ihre Größe relevant",
+        "bcmFramework": "Business-Continuity-Management — der geplante Weiterbetrieb bei Ausfällen — als ergänzendes Rahmenwerk",
+        "bcmKritis": "Business-Continuity-Management — der geplante Weiterbetrieb im Notfall — ist für KRITIS-Betreiber unverzichtbar",
+        "bcmNis2": "NIS2 fordert die Aufrechterhaltung des Betriebs im Krisenfall (Business Continuity) — ISO 22301 bietet den Rahmen",
+        "bcmSize": "Business-Continuity-Management schützt vor Geschäftsausfällen und ist für Ihre Unternehmensgröße relevant",
         "nistFramework": "NIST CSF als internationales Cybersicherheits-Rahmenwerk",
         "nistCompliance": "NIST CSF ergänzt Ihre bestehenden Compliance-Anforderungen",
         "nistDigital": "Als digitaler Dienstleister profitieren Sie vom NIST CSF",

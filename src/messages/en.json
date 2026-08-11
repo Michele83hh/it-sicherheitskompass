@@ -5807,6 +5807,27 @@
           "publicSectorClients": "We have public sector / government clients"
         }
       },
+      "shortLabels": {
+        "personalData": "Customer data",
+        "digitalProducts": "Software & digital products",
+        "kritisOperator": "Critical infrastructure operator",
+        "financialServices": "Financial services",
+        "automotiveSupplier": "Automotive supplier",
+        "digitalServices": "Digital services",
+        "manufacturing": "Physical products",
+        "cloudProvider": "IT services",
+        "supplierForRegulated": "Supplier to regulated companies",
+        "paymentProcessing": "Payment processing",
+        "saasProvider": "SaaS provider",
+        "kritis": "officially KRITIS-designated",
+        "tisaxRequired": "TISAX required",
+        "art9Data": "sensitive data",
+        "iotProducts": "connected products",
+        "financeClients": "financial-sector clients",
+        "iso27001": "ISO 27001 existing/planned",
+        "pciRequired": "PCI DSS required",
+        "publicSectorClients": "public-sector clients"
+      },
       "industries": {
         "energy": "Energy & Utilities",
         "transport": "Transport & Logistics",
@@ -5877,6 +5898,14 @@
           "voluntary": "Best practice",
           "contractual": "Contractual obligation",
           "check": "Check obligation"
+        },
+        "obligationDesc": {
+          "direct": "This regulation directly obligates your company — violations can result in fines.",
+          "indirect": "No legal obligation of your own: the law obligates your customers to pass security requirements on to you contractually. Your risk is the contract, not a fine.",
+          "contractual": "No law behind it: the obligation arises from contracts — such as customer requirements, OEM mandates, or card network rules.",
+          "check": "Whether the legal obligation applies depends on thresholds and classification — verify it in the detailed check.",
+          "cascaded": "No obligation of its own: this framework helps you implement and demonstrate the requirements of your mandatory regulations.",
+          "voluntary": "Voluntary standard — useful for self-improvement and as a trust signal towards customers."
         }
       },
       "deadlines": {
@@ -5938,9 +5967,9 @@
         "cisCompliance": "CIS Controls complement your compliance requirements",
         "cisSize": "CIS Controls provide a structured baseline for your organization",
         "bcmFramework": "Business Continuity Management as complementary framework",
-        "bcmKritis": "BCM is essential for critical infrastructure operators",
+        "bcmKritis": "Business continuity management — keeping operations running in an emergency — is essential for critical infrastructure operators",
         "bcmNis2": "NIS2 requires business continuity — ISO 22301 provides the framework",
-        "bcmSize": "BCM protects against business disruptions and is relevant for your size",
+        "bcmSize": "Business continuity management protects against business disruptions and is relevant for your company size",
         "nistFramework": "NIST CSF as international cybersecurity framework",
         "nistCompliance": "NIST CSF complements your existing compliance requirements",
         "nistDigital": "As a digital service provider, you benefit from the NIST CSF",
