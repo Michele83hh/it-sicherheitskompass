@@ -390,6 +390,34 @@ export default function NavigatorPage() {
               </div>
             </div>
 
+            {/* Ihre Angaben — Grundlage der Einschätzung, transparent + korrigierbar */}
+            <div className="rounded-lg border bg-muted/30 p-4">
+              <div className="mb-2 flex items-center justify-between gap-2">
+                <p className="text-sm font-semibold">{t('result.yourInputs')}</p>
+                <Button variant="ghost" size="sm" onClick={() => setStep(0)}>
+                  {t('result.editInputs')}
+                </Button>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="inline-flex items-center rounded-full border bg-background px-2.5 py-0.5 text-xs font-medium text-foreground">
+                  {t(`industries.${industry}`)}
+                </span>
+                <span className="inline-flex items-center rounded-full border bg-background px-2.5 py-0.5 text-xs font-medium text-foreground">
+                  {t(`steps.size.${companySize}`)}
+                </span>
+                {businessModels.map((m) => (
+                  <span key={m} className="inline-flex items-center rounded-full border bg-background px-2.5 py-0.5 text-xs text-muted-foreground">
+                    {t(`steps.activities.${m}`)}
+                  </span>
+                ))}
+                {specialCircumstances.map((c) => (
+                  <span key={c} className="inline-flex items-center rounded-full border bg-background px-2.5 py-0.5 text-xs text-muted-foreground">
+                    {t(`steps.specifics.${c}`)}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             {/* Disclaimer (prominent, before results) */}
             <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
               <div className="flex gap-2">

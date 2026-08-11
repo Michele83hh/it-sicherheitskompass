@@ -5830,6 +5830,8 @@
         "title": "Ihre Richtung steht fest",
         "subtitle": "Basierend auf Ihren Angaben sind folgende Regelwerke für Ihr Unternehmen relevant.",
         "summaryTitle": "Ihre Erstbewertung ist abgeschlossen.",
+        "yourInputs": "Ihre Angaben",
+        "editInputs": "Angaben ändern",
         "summaryText": "Basierend auf Ihren Angaben gelten voraussichtlich {count} Regelwerke für Ihr Unternehmen.",
         "highRelevance": "Betrifft Sie sehr wahrscheinlich",
         "mediumRelevance": "Prüfung empfohlen",

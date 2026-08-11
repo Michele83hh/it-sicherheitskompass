@@ -5830,6 +5830,8 @@
         "title": "Your Direction is Set",
         "subtitle": "Based on your answers, the following regulations are relevant to your organization.",
         "summaryTitle": "Your initial assessment is complete.",
+        "yourInputs": "Your details",
+        "editInputs": "Edit details",
         "summaryText": "Based on your answers, approximately {count} regulations apply to your organization.",
         "highRelevance": "Very likely applies to you",
         "mediumRelevance": "Review recommended",
