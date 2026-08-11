@@ -70,7 +70,9 @@ export function calculateRelevance(profile: NavigatorProfile): RegulationResult[
     // §§30-32, 35, 36, 38, 39 aus; Banken/FMI bleiben registrierungspflichtig (§33),
     // Versicherungen/Zahlungsinstitute stehen gar nicht in Anlage 1/2
     nis2Score = 55; nis2Reason = 'nis2DoraLex';
-  } else if (specialCircumstances.includes('kritis')) {
+  } else if (specialCircumstances.includes('kritis') || businessModels.includes('kritisOperator')) {
+    // §28 Abs. 1 Nr. 1 BSIG: Betreiber kritischer Anlagen sind besonders
+    // wichtige Einrichtungen — ohne Groessenschwelle (gleiche Bedingung wie KRITIS-Zweig)
     nis2Score = 95; nis2Reason = 'nis2Critical';
   } else if (isNis2Sector && isLargeEnough) {
     nis2Score = 90; nis2Reason = 'nis2SectorSize';
@@ -136,10 +138,13 @@ export function calculateRelevance(profile: NavigatorProfile): RegulationResult[
   let doraReason = 'doraNA';
   if (industry === 'finance' || businessModels.includes('financialServices')) {
     doraScore = 90; doraReason = 'doraFinance';
-  } else if (businessModels.includes('cloudProvider') && specialCircumstances.includes('financeClients')) {
+  } else if (
+    (businessModels.includes('cloudProvider') || businessModels.includes('saasProvider') || businessModels.includes('digitalServices')) &&
+    specialCircumstances.includes('financeClients')
+  ) {
+    // Art. 28 DORA erfasst nur IKT-Drittdienstleister (Art. 3 Nr. 21: digitale
+    // Dienste ueber IKT-Systeme) — physische Lieferanten fallen nicht darunter
     doraScore = 70; doraReason = 'doraICT';
-  } else if (isSupplier && specialCircumstances.includes('financeClients')) {
-    doraScore = 60; doraReason = 'doraSupplyChain';
   }
   results.push({
     id: 'dora',
@@ -200,7 +205,7 @@ export function calculateRelevance(profile: NavigatorProfile): RegulationResult[
   }
   results.push({
     id: 'bsi-grundschutz',
-    relevance: bsiScore >= 70 ? 'medium' : bsiScore >= 40 ? 'medium' : 'low',
+    relevance: bsiScore >= 80 ? 'high' : bsiScore >= 40 ? 'medium' : 'low',
     score: bsiScore, reasonKey: bsiReason,
     regCategory: 'framework',
     obligationType: bsiReason === 'bsiNis2Kritis' ? 'cascaded' : 'voluntary',
@@ -235,8 +240,6 @@ export function calculateRelevance(profile: NavigatorProfile): RegulationResult[
     soc2Score = 65; soc2Reason = 'soc2Digital';
   } else if (businessModels.includes('digitalServices')) {
     soc2Score = 60; soc2Reason = 'soc2Digital';
-  } else if (isSupplier) {
-    soc2Score = 40; soc2Reason = 'soc2Supplier';
   }
   results.push({
     id: 'soc2',

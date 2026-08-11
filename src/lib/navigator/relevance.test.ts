@@ -87,4 +87,35 @@ describe('Navigator-Relevanz: gesetzliche Zuordnungen (Primärquellen-geprüft 0
     expect(r.dsgvo.relevance).toBe('high');
     expect(r.dsgvo.obligationType).toBe('direct');
   });
+
+  it('KRITIS-Betreiber (Schritt 3) sind besonders wichtige Einrichtungen — NIS2 direkt (§28 Abs. 1 Nr. 1 BSIG, ohne Größenschwelle)', () => {
+    const r = run({ industry: 'transport', companySize: 'small', businessModels: ['kritisOperator'] });
+    expect(r.nis2.relevance).toBe('high');
+    expect(r.nis2.obligationType).toBe('direct');
+    expect(r.nis2.reasonKey).toBe('nis2Critical');
+    expect(r.kritis.obligationType).toBe('direct');
+  });
+
+  it('Physischer Lieferant von Finanzunternehmen fällt NICHT unter DORA (Art. 28 nur IKT-Drittdienstleister) und bekommt kein SOC 2', () => {
+    const spediteur = run({ industry: 'transport', companySize: 'small', businessModels: ['personalData', 'supplierForRegulated'], specialCircumstances: ['financeClients'] });
+    expect(spediteur.dora.relevance).toBe('none');
+    expect(spediteur.soc2.relevance).toBe('none');
+    // NIS2-Lieferketten-Hinweis bleibt (§30 Abs. 2 Nr. 4 BSIG)
+    expect(spediteur.nis2.reasonKey).toBe('nis2SupplyChain');
+    expect(spediteur.nis2.obligationType).toBe('indirect');
+  });
+
+  it('IT-Dienstleister mit Finanzkunden fällt als IKT-Drittdienstleister unter DORA (Art. 3 Nr. 21 DORA)', () => {
+    for (const model of ['cloudProvider', 'saasProvider', 'digitalServices']) {
+      const r = run({ businessModels: [model], specialCircumstances: ['financeClients'] });
+      expect(r.dora.relevance).toBe('medium');
+      expect(r.dora.reasonKey).toBe('doraICT');
+      expect(r.dora.obligationType).toBe('indirect');
+    }
+  });
+
+  it('BSI IT-Grundschutz erreicht bei ISO-27001-Synergie "high" (Schwellen-Konsistenz mit ISO 27001)', () => {
+    const r = run({ specialCircumstances: ['iso27001'] });
+    expect(r['bsi-grundschutz'].relevance).toBe('high');
+  });
 });
