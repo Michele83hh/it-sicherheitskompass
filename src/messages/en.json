@@ -13778,331 +13778,331 @@
     "fullName": "ISO 22301:2019 Business Continuity Management",
     "categories": {
       "contextLeadership": {
-        "name": "Kontext & Führung",
-        "shortName": "Kontext",
-        "description": "Organisatorischer Kontext und Führungsverantwortung für BCM"
+        "name": "Context & Leadership",
+        "shortName": "Context",
+        "description": "Organizational context and leadership responsibility for BCM"
       },
       "planning": {
-        "name": "BCM-Planung",
-        "shortName": "Planung",
-        "description": "Risikobasierte Planung des Business Continuity Management Systems"
+        "name": "BCM Planning",
+        "shortName": "Planning",
+        "description": "Risk-based planning of the business continuity management system"
       },
       "supportResources": {
-        "name": "Ressourcen & Unterstützung",
-        "shortName": "Ressourcen",
-        "description": "Kompetenzen, Kommunikation und dokumentierte Informationen"
+        "name": "Resources & Support",
+        "shortName": "Resources",
+        "description": "Competencies, communication, and documented information"
       },
       "biaRisk": {
-        "name": "Business Impact Analyse",
+        "name": "Business Impact Analysis",
         "shortName": "BIA",
-        "description": "Analyse der Geschäftsauswirkungen und Risikobewertung"
+        "description": "Business impact analysis and risk assessment"
       },
       "bcmStrategy": {
-        "name": "BCM-Strategie & Übungen",
-        "shortName": "Strategie",
-        "description": "BC-Strategien, -Pläne und regelmäßige Übungen"
+        "name": "BCM Strategy & Exercises",
+        "shortName": "Strategy",
+        "description": "BC strategies, plans, and regular exercises"
       },
       "evaluationImprovement": {
-        "name": "Bewertung & Verbesserung",
-        "shortName": "Bewertung",
-        "description": "Leistungsbewertung, Audits und kontinuierliche Verbesserung"
+        "name": "Evaluation & Improvement",
+        "shortName": "Evaluation",
+        "description": "Performance evaluation, audits, and continual improvement"
       }
     },
     "questions": {
       "clQ1": {
-        "title": "Ist der Geltungsbereich Ihres BCM klar definiert und von der Geschäftsleitung genehmigt?",
-        "tooltip": "ISO 22301 Clause 4-5: Kontext und Führung",
-        "help": "Der BCMS-Scope definiert, welche Produkte und Dienstleistungen geschützt werden.",
+        "title": "Is the scope of your BCM clearly defined and approved by top management?",
+        "tooltip": "ISO 22301 Clause 4-5: Context and leadership",
+        "help": "The BCMS scope defines which products and services are protected.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "clQ2": {
-        "title": "Hat die Geschäftsleitung eine BCM-Politik verabschiedet und kommuniziert?",
-        "tooltip": "ISO 22301 Clause 5.2: Politik",
-        "help": "Die BC-Politik zeigt das Engagement der Leitung und setzt den Rahmen.",
+        "title": "Has top management adopted and communicated a BCM policy?",
+        "tooltip": "ISO 22301 Clause 5.2: Policy",
+        "help": "The BC policy demonstrates management commitment and sets the framework.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "clQ3": {
-        "title": "Sind BCM-Rollen und Verantwortlichkeiten klar zugewiesen?",
-        "tooltip": "ISO 22301 Clause 5.3: Rollen",
-        "help": "Klare Zuständigkeiten sind essentiell für eine wirksame BC-Organisation.",
+        "title": "Are BCM roles and responsibilities clearly assigned?",
+        "tooltip": "ISO 22301 Clause 5.3: Roles",
+        "help": "Clear responsibilities are essential for an effective BC organization.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "plQ1": {
-        "title": "Wurden Risiken und Chancen für das BCMS systematisch identifiziert?",
-        "tooltip": "ISO 22301 Clause 6.1: Risiken und Chancen",
-        "help": "Eine Risikoanalyse identifiziert Bedrohungen für die Geschäftskontinuität.",
+        "title": "Have risks and opportunities for the BCMS been systematically identified?",
+        "tooltip": "ISO 22301 Clause 6.1: Risks and opportunities",
+        "help": "A risk analysis identifies threats to business continuity.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "plQ2": {
-        "title": "Sind messbare BCM-Ziele definiert und werden diese verfolgt?",
-        "tooltip": "ISO 22301 Clause 6.2: Ziele",
-        "help": "Messbare Ziele ermöglichen die Bewertung der BCM-Wirksamkeit.",
+        "title": "Are measurable BCM objectives defined and tracked?",
+        "tooltip": "ISO 22301 Clause 6.2: Objectives",
+        "help": "Measurable objectives enable the evaluation of BCM effectiveness.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "plQ3": {
-        "title": "Gibt es einen Plan zur Erreichung der BCM-Ziele mit Ressourcen und Zeitrahmen?",
-        "tooltip": "ISO 22301 Clause 6.3: Planung",
-        "help": "Ein strukturierter Plan stellt sicher, dass BCM-Ziele erreicht werden.",
+        "title": "Is there a plan for achieving the BCM objectives with resources and timeframe?",
+        "tooltip": "ISO 22301 Clause 6.2.2: Planning to achieve objectives",
+        "help": "A structured plan ensures that BCM objectives are achieved.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "srQ1": {
-        "title": "Sind ausreichend Ressourcen und Kompetenzen für das BCM vorhanden?",
-        "tooltip": "ISO 22301 Clause 7.1-7.2: Ressourcen",
-        "help": "BCM erfordert dedizierte Ressourcen und geschultes Personal.",
+        "title": "Are sufficient resources and competencies available for BCM?",
+        "tooltip": "ISO 22301 Clause 7.1-7.2: Resources",
+        "help": "BCM requires dedicated resources and trained personnel.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "srQ2": {
-        "title": "Werden Mitarbeiter regelmäßig zum Thema Business Continuity geschult?",
-        "tooltip": "ISO 22301 Clause 7.3: Bewusstsein",
-        "help": "Jeder Mitarbeiter muss seine Rolle im Notfall kennen.",
+        "title": "Are employees regularly trained on business continuity?",
+        "tooltip": "ISO 22301 Clause 7.3: Awareness",
+        "help": "Every employee must know their role in an emergency.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "srQ3": {
-        "title": "Ist die BCM-Dokumentation aktuell und kontrolliert?",
-        "tooltip": "ISO 22301 Clause 7.5: Dokumentation",
-        "help": "Aktuelle Dokumentation ist im Notfall überlebenswichtig.",
+        "title": "Is the BCM documentation up to date and controlled?",
+        "tooltip": "ISO 22301 Clause 7.5: Documented information",
+        "help": "Up-to-date documentation is vital for survival in an emergency.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "biQ1": {
-        "title": "Wurde eine Business Impact Analyse (BIA) für alle kritischen Geschäftsprozesse durchgeführt?",
+        "title": "Has a business impact analysis (BIA) been conducted for all critical business processes?",
         "tooltip": "ISO 22301 Clause 8.2.2: BIA",
-        "help": "Die BIA identifiziert kritische Prozesse und deren maximal tolerierbare Ausfallzeit.",
+        "help": "The BIA identifies critical processes and their maximum tolerable downtime.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "biQ2": {
-        "title": "Sind RTO und RPO für alle kritischen Prozesse definiert?",
+        "title": "Are RTO and RPO defined for all critical processes?",
         "tooltip": "ISO 22301 Clause 8.2.2: RTO/RPO",
-        "help": "Recovery Time Objective und Recovery Point Objective sind Kernmetriken des BCM.",
+        "help": "Recovery Time Objective and Recovery Point Objective are core BCM metrics.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "biQ3": {
-        "title": "Wurde eine Risikobewertung der identifizierten Bedrohungen durchgeführt?",
-        "tooltip": "ISO 22301 Clause 8.2.3: Risikobewertung",
-        "help": "Die Risikobewertung priorisiert Bedrohungen nach Wahrscheinlichkeit und Auswirkung.",
+        "title": "Has a risk assessment of the identified threats been conducted?",
+        "tooltip": "ISO 22301 Clause 8.2.3: Risk assessment",
+        "help": "The risk assessment prioritizes threats by likelihood and impact.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "bsQ1": {
-        "title": "Gibt es dokumentierte BC-Pläne für alle kritischen Geschäftsprozesse?",
-        "tooltip": "ISO 22301 Clause 8.4: BC-Pläne",
-        "help": "BC-Pläne beschreiben konkret, wie bei einem Ausfall reagiert wird.",
+        "title": "Are there documented BC plans for all critical business processes?",
+        "tooltip": "ISO 22301 Clause 8.4: BC plans",
+        "help": "BC plans describe in concrete terms how to respond to an outage.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "bsQ2": {
-        "title": "Werden BC-Pläne regelmäßig durch Übungen und Tests validiert?",
-        "tooltip": "ISO 22301 Clause 8.5: Übungen",
-        "help": "Ungetestete Pläne sind im Ernstfall wertlos.",
+        "title": "Are BC plans regularly validated through exercises and tests?",
+        "tooltip": "ISO 22301 Clause 8.5: Exercises",
+        "help": "Untested plans are worthless in a real emergency.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "bsQ3": {
-        "title": "Gibt es eine Krisenkommunikationsstrategie mit definierten Eskalationswegen?",
-        "tooltip": "ISO 22301 Clause 8.4.3: Kommunikation",
-        "help": "Klare Kommunikationswege verhindern Chaos in der Krise.",
+        "title": "Is there a crisis communication strategy with defined escalation paths?",
+        "tooltip": "ISO 22301 Clause 8.4.3: Communication",
+        "help": "Clear communication channels prevent chaos in a crisis.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "eiQ1": {
-        "title": "Werden Leistungsindikatoren für das BCM regelmäßig gemessen?",
-        "tooltip": "ISO 22301 Clause 9.1: Überwachung",
-        "help": "KPIs zeigen, ob das BCM wirksam funktioniert.",
+        "title": "Are performance indicators for BCM measured regularly?",
+        "tooltip": "ISO 22301 Clause 9.1: Monitoring",
+        "help": "KPIs show whether BCM is working effectively.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "eiQ2": {
-        "title": "Werden regelmäßige interne Audits des BCMS durchgeführt?",
-        "tooltip": "ISO 22301 Clause 9.2: Internes Audit",
-        "help": "Audits identifizieren Verbesserungspotenziale im BCM.",
+        "title": "Are regular internal audits of the BCMS conducted?",
+        "tooltip": "ISO 22301 Clause 9.2: Internal audit",
+        "help": "Audits identify opportunities for improvement in BCM.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       },
       "eiQ3": {
-        "title": "Werden Erkenntnisse aus Vorfällen und Übungen systematisch in Verbesserungen umgesetzt?",
-        "tooltip": "ISO 22301 Clause 10: Verbesserung",
-        "help": "Kontinuierliche Verbesserung macht das BCM mit jedem Zyklus robuster.",
+        "title": "Are lessons from incidents and exercises systematically turned into improvements?",
+        "tooltip": "ISO 22301 Clause 10: Improvement",
+        "help": "Continual improvement makes BCM more robust with every cycle.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Not present — no BCM implemented",
+          "level1": "Basic — initial measures, not systematic",
+          "level2": "Partial — documented and periodically reviewed",
+          "level3": "Complete — systematic, tested, and continuously improved"
         }
       }
     },
     "recommendations": {
       "cl1": {
-        "title": "BCM-Politik erstellen",
-        "description": "Verabschieden Sie eine BC-Politik, die Scope, Ziele und Verantwortlichkeiten definiert.",
-        "firstStep": "Erstellen Sie einen einseitigen Politik-Entwurf und legen Sie ihn der Geschäftsleitung zur Freigabe vor."
+        "title": "Create a BCM policy",
+        "description": "Adopt a BC policy that defines scope, objectives, and responsibilities.",
+        "firstStep": "Draft a one-page policy and submit it to top management for approval."
       },
       "cl2": {
-        "title": "BCM-Organisation aufbauen",
-        "description": "Benennen Sie einen BC-Manager und definieren Sie Rollen für alle Notfall-Teams.",
-        "firstStep": "Identifizieren Sie den BC-Verantwortlichen und erstellen Sie eine RACI-Matrix."
+        "title": "Build a BCM organization",
+        "description": "Appoint a BC manager and define roles for all emergency teams.",
+        "firstStep": "Identify the BC owner and create a RACI matrix."
       },
       "pl1": {
-        "title": "Risikoanalyse durchführen",
-        "description": "Identifizieren Sie alle Bedrohungen für Ihre Geschäftskontinuität und bewerten Sie diese.",
-        "firstStep": "Listen Sie die Top-10-Bedrohungen für Ihren Standort und Ihre IT-Systeme auf."
+        "title": "Conduct a risk analysis",
+        "description": "Identify all threats to your business continuity and assess them.",
+        "firstStep": "List the top 10 threats to your site and your IT systems."
       },
       "sr1": {
-        "title": "BC-Schulungsprogramm starten",
-        "description": "Schulen Sie alle Mitarbeiter in ihren Notfall-Rollen und -Verantwortlichkeiten.",
-        "firstStep": "Erstellen Sie eine kurze Notfall-Einweisung für alle neuen Mitarbeiter."
+        "title": "Start a BC training program",
+        "description": "Train all employees in their emergency roles and responsibilities.",
+        "firstStep": "Create a short emergency briefing for all new employees."
       },
       "bi1": {
-        "title": "Business Impact Analyse erstellen",
-        "description": "Bewerten Sie alle Geschäftsprozesse hinsichtlich Kritikalität und maximal tolerierbarer Ausfallzeit.",
-        "firstStep": "Identifizieren Sie Ihre 5 kritischsten Geschäftsprozesse und deren Abhängigkeiten."
+        "title": "Create a business impact analysis",
+        "description": "Assess all business processes for criticality and maximum tolerable downtime.",
+        "firstStep": "Identify your 5 most critical business processes and their dependencies."
       },
       "bi2": {
-        "title": "RTO/RPO definieren",
-        "description": "Legen Sie Recovery Time und Recovery Point Objectives für alle kritischen Prozesse fest.",
-        "firstStep": "Bestimmen Sie für jeden kritischen Prozess die maximal akzeptable Ausfallzeit."
+        "title": "Define RTO/RPO",
+        "description": "Set recovery time and recovery point objectives for all critical processes.",
+        "firstStep": "Determine the maximum acceptable downtime for each critical process."
       },
       "bs1": {
-        "title": "BC-Pläne dokumentieren",
-        "description": "Erstellen Sie konkrete Notfallpläne mit Schritt-für-Schritt-Anleitungen für jeden kritischen Prozess.",
-        "firstStep": "Beginnen Sie mit dem kritischsten Prozess und erstellen Sie einen Wiederanlaufplan."
+        "title": "Document BC plans",
+        "description": "Create concrete emergency plans with step-by-step instructions for each critical process.",
+        "firstStep": "Start with the most critical process and create a recovery plan."
       },
       "bs2": {
-        "title": "Übungsprogramm etablieren",
-        "description": "Planen Sie mindestens jährliche BC-Übungen von Tischübungen bis Vollübungen.",
-        "firstStep": "Planen Sie eine Tischübung (Tabletop) mit dem Management-Team."
+        "title": "Establish an exercise program",
+        "description": "Plan at least annual BC exercises, from tabletop drills to full-scale exercises.",
+        "firstStep": "Schedule a tabletop exercise with the management team."
       },
       "bs3": {
-        "title": "Krisenkommunikation vorbereiten",
-        "description": "Definieren Sie Eskalationswege, Kommunikationsvorlagen und Kontaktlisten.",
-        "firstStep": "Erstellen Sie eine Notfall-Kontaktliste mit allen internen und externen Ansprechpartnern."
+        "title": "Prepare crisis communication",
+        "description": "Define escalation paths, communication templates, and contact lists.",
+        "firstStep": "Create an emergency contact list with all internal and external contacts."
       },
       "ei1": {
-        "title": "BCM-KPIs definieren",
-        "description": "Messen Sie die Wirksamkeit Ihres BCM anhand definierter Kennzahlen.",
-        "firstStep": "Definieren Sie 5 KPIs (z.B. Übungshäufigkeit, Plan-Aktualität, Wiederherstellungszeit)."
+        "title": "Define BCM KPIs",
+        "description": "Measure the effectiveness of your BCM using defined metrics.",
+        "firstStep": "Define 5 KPIs (e.g. exercise frequency, plan currency, recovery time)."
       },
       "ei2": {
-        "title": "Interne BCM-Audits planen",
-        "description": "Führen Sie jährliche interne Audits des BCMS durch.",
-        "firstStep": "Erstellen Sie eine Audit-Checkliste basierend auf ISO 22301 Anforderungen."
+        "title": "Plan internal BCM audits",
+        "description": "Conduct annual internal audits of the BCMS.",
+        "firstStep": "Create an audit checklist based on ISO 22301 requirements."
       },
       "ei3": {
-        "title": "Lessons Learned Prozess einführen",
-        "description": "Dokumentieren und implementieren Sie Verbesserungen nach jeder Übung oder jedem Vorfall.",
-        "firstStep": "Erstellen Sie ein Lessons-Learned-Template für die nächste Übung."
+        "title": "Introduce a lessons learned process",
+        "description": "Document and implement improvements after every exercise or incident.",
+        "firstStep": "Create a lessons learned template for the next exercise."
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "title": "Gibt es eine von der Geschäftsleitung genehmigte BCM-Politik?",
-          "description": "Grundlage für jedes Business Continuity Management System"
+          "title": "Is there a BCM policy approved by top management?",
+          "description": "The foundation of every business continuity management system"
         },
         "q2": {
-          "title": "Wurden BCM-Risiken systematisch identifiziert und bewertet?",
-          "description": "Risikobasierter Ansatz für Geschäftskontinuität"
+          "title": "Have BCM risks been systematically identified and assessed?",
+          "description": "A risk-based approach to business continuity"
         },
         "q3": {
-          "title": "Sind BCM-Rollen zugewiesen und Mitarbeiter geschult?",
-          "description": "Kompetente Mitarbeiter sind im Notfall entscheidend"
+          "title": "Are BCM roles assigned and employees trained?",
+          "description": "Competent employees are decisive in an emergency"
         },
         "q4": {
-          "title": "Wurde eine Business Impact Analyse durchgeführt?",
-          "description": "BIA identifiziert kritische Prozesse und deren Ausfalltoleranz"
+          "title": "Has a business impact analysis been conducted?",
+          "description": "The BIA identifies critical processes and their downtime tolerance"
         },
         "q5": {
-          "title": "Sind RTO und RPO für kritische Prozesse definiert?",
-          "description": "Kernmetriken für die Wiederherstellungsplanung"
+          "title": "Are RTO and RPO defined for critical processes?",
+          "description": "Core metrics for recovery planning"
         },
         "q6": {
-          "title": "Gibt es dokumentierte BC-Pläne?",
-          "description": "Konkrete Handlungsanweisungen für den Notfall"
+          "title": "Are there documented BC plans?",
+          "description": "Concrete instructions for emergencies"
         },
         "q7": {
-          "title": "Werden BC-Pläne regelmäßig getestet?",
-          "description": "Ungetestete Pläne versagen im Ernstfall"
+          "title": "Are BC plans tested regularly?",
+          "description": "Untested plans fail in a real emergency"
         },
         "q8": {
-          "title": "Werden BCM-Verbesserungen nach Übungen umgesetzt?",
-          "description": "Kontinuierliche Verbesserung des BCM"
+          "title": "Are BCM improvements implemented after exercises?",
+          "description": "Continual improvement of BCM"
         }
       }
     },

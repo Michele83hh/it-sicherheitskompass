@@ -13866,7 +13866,7 @@
       },
       "plQ3": {
         "title": "Gibt es einen Plan zur Erreichung der BCM-Ziele mit Ressourcen und Zeitrahmen?",
-        "tooltip": "ISO 22301 Clause 6.3: Planung",
+        "tooltip": "ISO 22301 Clause 6.2.2: Planung zur Zielerreichung",
         "help": "Ein strukturierter Plan stellt sicher, dass BCM-Ziele erreicht werden.",
         "maturity": {
           "level0": "Nicht vorhanden — kein BCM implementiert",
