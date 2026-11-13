@@ -13637,10 +13637,10 @@
         "tooltip": "CIS Control 1: Inventar und Kontrolle von Hardware-Assets",
         "help": "Ein aktuelles Hardware-Inventar ist die Grundlage für jede Sicherheitsmaßnahme.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Es gibt kein Verzeichnis der Geräte im Netzwerk.",
+          "level1": "Geräte sind teilweise bekannt, etwa aus Einkaufslisten, aber nicht zentral erfasst.",
+          "level2": "Ein Inventar aller Geräte ist dokumentiert und wird von Hand gepflegt.",
+          "level3": "Das Inventar wird automatisch aktualisiert und regelmäßig mit dem Netzwerk abgeglichen."
         }
       },
       "icQ2": {
@@ -13648,10 +13648,10 @@
         "tooltip": "CIS Control 2: Inventar und Kontrolle von Software-Assets",
         "help": "Nicht genehmigte Software ist eines der größten Einfallstore für Angreifer.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Es gibt kein Verzeichnis der installierten Software.",
+          "level1": "Einzelne Programme und Lizenzen sind bekannt, eine vollständige Liste fehlt.",
+          "level2": "Ein Softwareverzeichnis mit Versionen und Verantwortlichen ist dokumentiert.",
+          "level3": "Das Verzeichnis wird automatisch erfasst und regelmäßig auf nicht freigegebene Software geprüft."
         }
       },
       "icQ3": {
@@ -13659,10 +13659,10 @@
         "tooltip": "CIS Controls 1-2: Automatische Erkennung",
         "help": "Automatisierte Discovery-Tools identifizieren neue Geräte und Software im Netzwerk.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Unbekannte Geräte und Software werden nicht erkannt.",
+          "level1": "Unbekannte Geräte oder Programme fallen nur zufällig auf.",
+          "level2": "Es gibt regelmäßige Prüfungen von Hand und eine Liste freigegebener Software.",
+          "level3": "Unbekannte Geräte werden automatisch vom Netz getrennt, nicht freigegebene Software wird blockiert."
         }
       },
       "dpQ1": {
@@ -13670,10 +13670,10 @@
         "tooltip": "CIS Control 3: Datenschutz",
         "help": "Datenklassifizierung definiert Schutzstufen und Handhabungsregeln.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Daten werden nicht nach Schutzbedarf unterschieden.",
+          "level1": "Es ist informell bekannt, welche Daten sensibel sind.",
+          "level2": "Ein Klassifizierungsschema ist dokumentiert und für die wichtigsten Datenbestände angewendet.",
+          "level3": "Alle Datenbestände sind klassifiziert, gekennzeichnet und die Einstufung wird regelmäßig überprüft."
         }
       },
       "dpQ2": {
@@ -13681,10 +13681,10 @@
         "tooltip": "CIS Control 3: Verschlüsselung",
         "help": "Verschlüsselung schützt Daten auch bei unbefugtem Zugriff.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Sensible Daten werden unverschlüsselt gespeichert und übertragen.",
+          "level1": "Verschlüsselung gibt es nur an einzelnen Stellen, etwa bei der Website.",
+          "level2": "Vorgaben zur Verschlüsselung sind dokumentiert und für Übertragung und Speicherung überwiegend umgesetzt.",
+          "level3": "Sensible Daten sind durchgängig verschlüsselt; Verfahren und Schlüssel werden regelmäßig überprüft."
         }
       },
       "dpQ3": {
@@ -13692,10 +13692,10 @@
         "tooltip": "CIS Control 3: Datenentsorgung",
         "help": "Regelmäßige Löschung reduziert das Risiko bei Datenschutzverletzungen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Es gibt keine Löschfristen; Daten bleiben unbegrenzt liegen.",
+          "level1": "Daten werden gelegentlich gelöscht, aber ohne feste Regeln.",
+          "level2": "Löschfristen und Löschverfahren sind dokumentiert und werden von Hand umgesetzt.",
+          "level3": "Löschungen laufen nach festen Fristen weitgehend automatisch und werden nachgewiesen, auch bei Datenträgern."
         }
       },
       "scQ1": {
@@ -13703,10 +13703,10 @@
         "tooltip": "CIS Control 4: Sichere Konfiguration",
         "help": "CIS Benchmarks bieten gehärtete Konfigurationsvorlagen für alle gängigen Systeme.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Systeme laufen mit den Werkseinstellungen.",
+          "level1": "Einzelne Systeme werden nach Erfahrung des Administrators abgesichert.",
+          "level2": "Basiskonfigurationen sind je Systemtyp dokumentiert und werden bei der Einrichtung angewendet.",
+          "level3": "Konfigurationen werden automatisch ausgerollt und Abweichungen regelmäßig erkannt und behoben."
         }
       },
       "scQ2": {
@@ -13714,10 +13714,10 @@
         "tooltip": "CIS Control 5-6: Kontenverwaltung und Zugriffskontrolle",
         "help": "Zentrale Verwaltung verhindert verwaiste Konten und übermäßige Rechte.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Konten werden lokal und ohne Regeln angelegt; alte Konten bleiben bestehen.",
+          "level1": "Konten werden auf Zuruf angelegt, Rechte wachsen mit der Zeit.",
+          "level2": "Es gibt eine zentrale Kontenverwaltung mit dokumentierten Rollen und einem Ablauf für Ein- und Austritte.",
+          "level3": "Rechte werden nach Rollen vergeben, regelmäßig überprüft und ungenutzte Konten automatisch gesperrt."
         }
       },
       "scQ3": {
@@ -13725,10 +13725,10 @@
         "tooltip": "CIS Control 6: Zugriffskontrolle",
         "help": "MFA ist die effektivste Einzelmaßnahme gegen Kontenübernahme.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Administrative Zugänge sind nur durch ein Passwort geschützt.",
+          "level1": "Einzelne Administratorkonten nutzen einen zweiten Faktor.",
+          "level2": "MFA ist für administrative Zugänge vorgeschrieben und bei den meisten Systemen aktiv.",
+          "level3": "MFA ist für alle administrativen Zugänge technisch erzwungen; Ausnahmen werden regelmäßig geprüft."
         }
       },
       "vmQ1": {
@@ -13736,10 +13736,10 @@
         "tooltip": "CIS Control 7: Schwachstellenmanagement",
         "help": "Regelmäßige Scans identifizieren bekannte Schwachstellen vor Angreifern.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Es finden keine Schwachstellenscans statt.",
+          "level1": "Scans werden gelegentlich oder nur für einzelne Systeme durchgeführt.",
+          "level2": "Regelmäßige Scans sind geplant, Ergebnisse werden dokumentiert und nach Dringlichkeit behoben.",
+          "level3": "Alle Systeme werden automatisch gescannt; Behebungsfristen sind festgelegt und werden überwacht."
         }
       },
       "vmQ2": {
@@ -13747,10 +13747,10 @@
         "tooltip": "CIS Control 8: Audit-Log-Management",
         "help": "Zentrale Logs ermöglichen die Erkennung von Angriffen und forensische Analysen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Protokolle werden nicht gesammelt oder nie angesehen.",
+          "level1": "Protokolle liegen auf den einzelnen Systemen und werden nur im Störungsfall gelesen.",
+          "level2": "Protokolle wichtiger Systeme werden zentral gesammelt und regelmäßig von Hand ausgewertet.",
+          "level3": "Protokolle aller relevanten Systeme werden zentral ausgewertet; Auffälligkeiten lösen automatisch einen Alarm aus."
         }
       },
       "vmQ3": {
@@ -13758,10 +13758,10 @@
         "tooltip": "CIS Controls 9-10: E-Mail/Browser-Schutz und Malware-Abwehr",
         "help": "E-Mail und Browser sind die häufigsten Einfallstore für Malware.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Es gibt keinen Schutz vor Schadsoftware und keinen E-Mail- oder Web-Filter.",
+          "level1": "Ein Virenschutz ist auf einigen Geräten installiert, wird aber nicht zentral verwaltet.",
+          "level2": "Virenschutz, Spam-Filter und Web-Filter sind auf allen Geräten eingerichtet und dokumentiert.",
+          "level3": "Die Schutzlösungen werden zentral verwaltet und automatisch aktualisiert; Funde werden ausgewertet."
         }
       },
       "rnQ1": {
@@ -13769,10 +13769,10 @@
         "tooltip": "CIS Control 11: Datenwiederherstellung",
         "help": "Backups sind nur so gut wie der letzte erfolgreiche Wiederherstellungstest.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Es gibt keine regelmäßigen Datensicherungen.",
+          "level1": "Sicherungen laufen unregelmäßig oder nur auf einem Datenträger; die Wiederherstellung wurde nie getestet.",
+          "level2": "Sicherungen laufen nach Plan mit mehreren Kopien, eine davon außer Haus; Tests finden gelegentlich statt.",
+          "level3": "Die 3-2-1-Regel ist umgesetzt, eine Kopie ist vor Veränderung geschützt und die Wiederherstellung wird regelmäßig getestet."
         }
       },
       "rnQ2": {
@@ -13780,10 +13780,10 @@
         "tooltip": "CIS Control 12-13: Netzwerkinfrastruktur und Monitoring",
         "help": "Netzwerksegmentierung begrenzt die Ausbreitung von Angriffen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Alle Geräte hängen in einem gemeinsamen Netz; Firewall-Regeln wurden nie geprüft.",
+          "level1": "Einzelne Bereiche sind getrennt, etwa das Gäste-WLAN; Regeln entstehen nach Bedarf.",
+          "level2": "Das Netz ist in dokumentierte Zonen aufgeteilt; Firewall-Regeln werden bei Änderungen geprüft.",
+          "level3": "Zonen sind nach Schutzbedarf getrennt; alle Firewall-Regeln werden regelmäßig überprüft und bereinigt."
         }
       },
       "rnQ3": {
@@ -13791,10 +13791,10 @@
         "tooltip": "CIS Control 13: Netzwerk-Monitoring",
         "help": "Netzwerk-Monitoring erkennt ungewöhnliche Aktivitäten in Echtzeit.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Der Netzwerkverkehr wird nicht überwacht.",
+          "level1": "Bei Störungen wird von Hand in Protokolle der Firewall geschaut.",
+          "level2": "Der Verkehr an den Netzübergängen wird aufgezeichnet und regelmäßig ausgewertet.",
+          "level3": "Der Netzwerkverkehr wird laufend überwacht; Angriffsmuster werden automatisch erkannt und gemeldet."
         }
       },
       "soQ1": {
@@ -13802,10 +13802,10 @@
         "tooltip": "CIS Control 14: Security Awareness Training",
         "help": "Geschulte Mitarbeiter erkennen Phishing und Social Engineering.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Es gibt keine Schulungen zur IT-Sicherheit.",
+          "level1": "Neue Mitarbeiter bekommen einmalig Hinweise; Auffrischungen gibt es nicht.",
+          "level2": "Alle Mitarbeiter werden mindestens jährlich geschult; die Teilnahme wird dokumentiert.",
+          "level3": "Schulungen sind auf Rollen zugeschnitten, werden durch Phishing-Tests ergänzt und anhand der Ergebnisse angepasst."
         }
       },
       "soQ2": {
@@ -13813,10 +13813,10 @@
         "tooltip": "CIS Control 15: Dienstleister-Management",
         "help": "Dienstleister mit Zugang zu Ihren Systemen müssen Sicherheitsstandards erfüllen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Die Sicherheit von IT-Dienstleistern wird nicht betrachtet.",
+          "level1": "Bei der Auswahl wird informell nach Sicherheit gefragt.",
+          "level2": "Es gibt eine Liste der Dienstleister; Sicherheitsanforderungen stehen in den Verträgen.",
+          "level3": "Dienstleister werden nach Risiko eingestuft und regelmäßig geprüft, etwa anhand von Zertifikaten oder Fragebögen."
         }
       },
       "soQ3": {
@@ -13824,10 +13824,10 @@
         "tooltip": "CIS Controls 17-18: Incident Response und Penetrationstests",
         "help": "Ein getesteter IR-Plan reduziert die Reaktionszeit bei Sicherheitsvorfällen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Ansatzweise — erste Schritte unternommen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und regelmäßig durchgeführt",
-          "level3": "Vollständig — systematisch, automatisiert und regelmäßig überprüft"
+          "level0": "Es gibt keinen Plan für Sicherheitsvorfälle.",
+          "level1": "Im Ernstfall wird improvisiert; Ansprechpartner sind nur informell bekannt.",
+          "level2": "Ein Plan mit Zuständigkeiten, Meldewegen und Kontaktlisten ist dokumentiert.",
+          "level3": "Der Plan wird regelmäßig geübt und nach Übungen und Vorfällen überarbeitet."
         }
       }
     },
@@ -13973,10 +13973,10 @@
         "tooltip": "ISO 22301 Clause 4-5: Kontext und Führung",
         "help": "Der BCMS-Scope definiert, welche Produkte und Dienstleistungen geschützt werden.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es ist nicht festgelegt, welche Bereiche das BCM abdeckt.",
+          "level1": "Der Umfang ist informell bekannt, aber nicht schriftlich festgehalten.",
+          "level2": "Der Geltungsbereich ist dokumentiert und von der Geschäftsleitung genehmigt.",
+          "level3": "Der Geltungsbereich wird regelmäßig und bei Änderungen im Unternehmen überprüft und angepasst."
         }
       },
       "clQ2": {
@@ -13984,10 +13984,10 @@
         "tooltip": "ISO 22301 Clause 5.2: Politik",
         "help": "Die BC-Politik zeigt das Engagement der Leitung und setzt den Rahmen.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es gibt keine BCM-Politik.",
+          "level1": "Die Geschäftsleitung hat sich mündlich zum Thema geäußert.",
+          "level2": "Eine BCM-Politik ist verabschiedet und den Mitarbeitern bekannt gemacht.",
+          "level3": "Die Politik wird regelmäßig überprüft; ihre Bekanntheit wird in Schulungen und Audits nachgehalten."
         }
       },
       "clQ3": {
@@ -13995,10 +13995,10 @@
         "tooltip": "ISO 22301 Clause 5.3: Rollen",
         "help": "Klare Zuständigkeiten sind essentiell für eine wirksame BC-Organisation.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Niemand ist für das BCM zuständig.",
+          "level1": "Eine Person kümmert sich nebenbei, ohne festgelegte Aufgaben.",
+          "level2": "Rollen, Aufgaben und Vertretungen sind dokumentiert und zugewiesen.",
+          "level3": "Die Rolleninhaber sind geschult, haben die nötigen Befugnisse und die Besetzung wird regelmäßig überprüft."
         }
       },
       "plQ1": {
@@ -14006,10 +14006,10 @@
         "tooltip": "ISO 22301 Clause 6.1: Risiken und Chancen",
         "help": "Eine Risikoanalyse identifiziert Bedrohungen für die Geschäftskontinuität.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Risiken und Chancen für das BCMS wurden nicht betrachtet.",
+          "level1": "Einzelne Risiken sind bekannt, aber nicht festgehalten.",
+          "level2": "Risiken und Chancen sind dokumentiert und mit Maßnahmen versehen.",
+          "level3": "Die Betrachtung wird regelmäßig wiederholt; die Wirksamkeit der Maßnahmen wird bewertet."
         }
       },
       "plQ2": {
@@ -14017,10 +14017,10 @@
         "tooltip": "ISO 22301 Clause 6.2: Ziele",
         "help": "Messbare Ziele ermöglichen die Bewertung der BCM-Wirksamkeit.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es gibt keine BCM-Ziele.",
+          "level1": "Ziele sind allgemein formuliert und nicht messbar.",
+          "level2": "Messbare Ziele sind dokumentiert und Verantwortlichen zugeordnet.",
+          "level3": "Die Zielerreichung wird regelmäßig gemessen und an die Geschäftsleitung berichtet; Ziele werden bei Bedarf angepasst."
         }
       },
       "plQ3": {
@@ -14028,10 +14028,10 @@
         "tooltip": "ISO 22301 Clause 6.2.2: Planung zur Zielerreichung",
         "help": "Ein strukturierter Plan stellt sicher, dass BCM-Ziele erreicht werden.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es gibt keinen Plan, wie die BCM-Ziele erreicht werden sollen.",
+          "level1": "Maßnahmen werden nach Gelegenheit angegangen.",
+          "level2": "Ein Plan mit Maßnahmen, Ressourcen, Verantwortlichen und Terminen ist dokumentiert.",
+          "level3": "Der Fortschritt wird regelmäßig verfolgt; Abweichungen führen zu Nachsteuerung."
         }
       },
       "srQ1": {
@@ -14039,10 +14039,10 @@
         "tooltip": "ISO 22301 Clause 7.1-7.2: Ressourcen",
         "help": "BCM erfordert dedizierte Ressourcen und geschultes Personal.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Für das BCM sind weder Zeit noch Budget vorgesehen.",
+          "level1": "Das BCM läuft nebenbei mit, soweit Zeit bleibt.",
+          "level2": "Budget, Zeitanteile und erforderliche Kenntnisse sind festgelegt und dokumentiert.",
+          "level3": "Ressourcen und Kompetenzen werden regelmäßig bewertet; Lücken werden durch Schulung oder Unterstützung geschlossen."
         }
       },
       "srQ2": {
@@ -14050,10 +14050,10 @@
         "tooltip": "ISO 22301 Clause 7.3: Bewusstsein",
         "help": "Jeder Mitarbeiter muss seine Rolle im Notfall kennen.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es gibt keine Schulungen zur Business Continuity.",
+          "level1": "Einzelne Mitarbeiter wurden einmalig informiert.",
+          "level2": "Alle Mitarbeiter werden regelmäßig geschult; die Teilnahme wird dokumentiert.",
+          "level3": "Schulungen sind auf die Rolle im Notfall zugeschnitten und werden nach Übungen und Vorfällen angepasst."
         }
       },
       "srQ3": {
@@ -14061,10 +14061,10 @@
         "tooltip": "ISO 22301 Clause 7.5: Dokumentation",
         "help": "Aktuelle Dokumentation ist im Notfall überlebenswichtig.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es gibt keine BCM-Dokumentation.",
+          "level1": "Es gibt einzelne Dokumente, die verstreut liegen und teils veraltet sind.",
+          "level2": "Die Dokumente sind zentral abgelegt, versioniert und freigegeben.",
+          "level3": "Die Dokumente werden nach festem Turnus überprüft und sind auch bei einem IT-Ausfall erreichbar."
         }
       },
       "biQ1": {
@@ -14072,10 +14072,10 @@
         "tooltip": "ISO 22301 Clause 8.2.2: BIA",
         "help": "Die BIA identifiziert kritische Prozesse und deren maximal tolerierbare Ausfallzeit.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es wurde keine Business Impact Analyse durchgeführt.",
+          "level1": "Welche Prozesse kritisch sind, ist nur informell bekannt.",
+          "level2": "Eine BIA ist für die kritischen Geschäftsprozesse dokumentiert, mit Auswirkungen und Abhängigkeiten.",
+          "level3": "Die BIA deckt alle Prozesse ab und wird regelmäßig und bei Änderungen aktualisiert."
         }
       },
       "biQ2": {
@@ -14083,10 +14083,10 @@
         "tooltip": "ISO 22301 Clause 8.2.2: RTO/RPO",
         "help": "Recovery Time Objective und Recovery Point Objective sind Kernmetriken des BCM.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es gibt keine Vorgaben für Wiederanlaufzeit und Datenverlust.",
+          "level1": "Es gibt grobe Schätzungen für einzelne Systeme.",
+          "level2": "RTO und RPO sind für alle kritischen Prozesse dokumentiert und mit den Fachbereichen abgestimmt.",
+          "level3": "RTO und RPO werden in Tests überprüft; die technische Umsetzung wird an die Ergebnisse angepasst."
         }
       },
       "biQ3": {
@@ -14094,10 +14094,10 @@
         "tooltip": "ISO 22301 Clause 8.2.3: Risikobewertung",
         "help": "Die Risikobewertung priorisiert Bedrohungen nach Wahrscheinlichkeit und Auswirkung.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Bedrohungen für die kritischen Prozesse wurden nicht bewertet.",
+          "level1": "Einzelne Bedrohungen wie Stromausfall werden informell berücksichtigt.",
+          "level2": "Eine Risikobewertung für die kritischen Prozesse und ihre Ressourcen ist dokumentiert.",
+          "level3": "Die Risikobewertung wird regelmäßig aktualisiert und ist mit dem übrigen Risikomanagement abgestimmt."
         }
       },
       "bsQ1": {
@@ -14105,10 +14105,10 @@
         "tooltip": "ISO 22301 Clause 8.4: BC-Pläne",
         "help": "BC-Pläne beschreiben konkret, wie bei einem Ausfall reagiert wird.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es gibt keine Notfallpläne.",
+          "level1": "Es gibt Notizen oder Pläne für einzelne Systeme.",
+          "level2": "Für alle kritischen Geschäftsprozesse sind Pläne mit Abläufen, Zuständigkeiten und Kontakten dokumentiert.",
+          "level3": "Die Pläne werden nach Übungen und Änderungen aktualisiert und sind im Notfall sicher verfügbar."
         }
       },
       "bsQ2": {
@@ -14116,10 +14116,10 @@
         "tooltip": "ISO 22301 Clause 8.5: Übungen",
         "help": "Ungetestete Pläne sind im Ernstfall wertlos.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Die Pläne wurden noch nie geübt.",
+          "level1": "Es gab einzelne Tests ohne festen Rhythmus.",
+          "level2": "Übungen finden nach einem dokumentierten Programm statt und werden ausgewertet.",
+          "level3": "Das Übungsprogramm deckt alle Pläne ab und umfasst realistische Szenarien; Ergebnisse führen zu Verbesserungen."
         }
       },
       "bsQ3": {
@@ -14127,10 +14127,10 @@
         "tooltip": "ISO 22301 Clause 8.4.3: Kommunikation",
         "help": "Klare Kommunikationswege verhindern Chaos in der Krise.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Die Kommunikation im Krisenfall ist nicht geregelt.",
+          "level1": "Wer informiert wird, entscheidet sich im Einzelfall.",
+          "level2": "Eskalationswege, Sprecher, Empfänger und Kanäle sind dokumentiert.",
+          "level3": "Vorlagen und Ausweichkanäle liegen bereit; die Krisenkommunikation wird regelmäßig geübt."
         }
       },
       "eiQ1": {
@@ -14138,10 +14138,10 @@
         "tooltip": "ISO 22301 Clause 9.1: Überwachung",
         "help": "KPIs zeigen, ob das BCM wirksam funktioniert.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es werden keine Kennzahlen zum BCM erhoben.",
+          "level1": "Einzelne Werte wie die Zahl der Übungen werden gelegentlich betrachtet.",
+          "level2": "Kennzahlen sind festgelegt und werden regelmäßig gemessen und dokumentiert.",
+          "level3": "Die Kennzahlen werden ausgewertet, an die Geschäftsleitung berichtet und führen zu Maßnahmen."
         }
       },
       "eiQ2": {
@@ -14149,10 +14149,10 @@
         "tooltip": "ISO 22301 Clause 9.2: Internes Audit",
         "help": "Audits identifizieren Verbesserungspotenziale im BCM.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Es finden keine internen Audits des BCMS statt.",
+          "level1": "Es gab einzelne Prüfungen ohne Plan.",
+          "level2": "Interne Audits finden nach einem Auditprogramm statt; Feststellungen werden dokumentiert.",
+          "level3": "Das Auditprogramm deckt das gesamte BCMS ab; Auditoren sind unabhängig und Feststellungen werden bis zum Abschluss verfolgt."
         }
       },
       "eiQ3": {
@@ -14160,10 +14160,10 @@
         "tooltip": "ISO 22301 Clause 10: Verbesserung",
         "help": "Kontinuierliche Verbesserung macht das BCM mit jedem Zyklus robuster.",
         "maturity": {
-          "level0": "Nicht vorhanden — kein BCM implementiert",
-          "level1": "Ansatzweise — erste Maßnahmen, nicht systematisch",
-          "level2": "Teilweise — dokumentiert und periodisch überprüft",
-          "level3": "Vollständig — systematisch, getestet und kontinuierlich verbessert"
+          "level0": "Aus Vorfällen und Übungen werden keine Schlüsse gezogen.",
+          "level1": "Erkenntnisse werden besprochen, aber nicht festgehalten.",
+          "level2": "Erkenntnisse und Korrekturmaßnahmen werden dokumentiert und Verantwortlichen zugewiesen.",
+          "level3": "Die Umsetzung wird nachverfolgt, die Wirksamkeit geprüft und Pläne werden entsprechend angepasst."
         }
       }
     },
@@ -14315,10 +14315,10 @@
         "tooltip": "NIST CSF GV.OC: Organisatorischer Kontext",
         "help": "Die Strategie definiert den Rahmen für alle Cybersicherheitsaktivitäten.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Es gibt keine Cybersicherheitsstrategie.",
+          "level1": "Ziele bestehen nur in den Köpfen einzelner Personen.",
+          "level2": "Eine Strategie mit Zielen ist dokumentiert und von der Geschäftsleitung freigegeben.",
+          "level3": "Die Strategie ist mit den Geschäftszielen verknüpft, wird regelmäßig überprüft und an die Bedrohungslage angepasst."
         }
       },
       "gvQ2": {
@@ -14326,10 +14326,10 @@
         "tooltip": "NIST CSF GV.RR: Rollen und Verantwortlichkeiten",
         "help": "Klare Zuständigkeiten verhindern Lücken im Sicherheitsmanagement.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Niemand ist ausdrücklich für Cybersicherheit zuständig.",
+          "level1": "Die IT kümmert sich nebenbei; Zuständigkeiten sind nicht festgelegt.",
+          "level2": "Rollen und Verantwortlichkeiten sind dokumentiert und den Personen bekannt.",
+          "level3": "Rollen sind mit Befugnissen und Vertretungen ausgestattet und werden bei Änderungen der Organisation angepasst."
         }
       },
       "gvQ3": {
@@ -14337,10 +14337,10 @@
         "tooltip": "NIST CSF GV.RM: Risikomanagement",
         "help": "Risikotransparenz ermöglicht informierte Geschäftsentscheidungen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Die Geschäftsleitung erhält keine Informationen zum Cyberrisiko.",
+          "level1": "Berichtet wird nur nach einem Vorfall.",
+          "level2": "Die Geschäftsleitung erhält regelmäßig einen dokumentierten Bericht zur Risikolage.",
+          "level3": "Berichte enthalten Kennzahlen und Trends; die Geschäftsleitung entscheidet auf dieser Grundlage über Maßnahmen und Budget."
         }
       },
       "idQ1": {
@@ -14348,10 +14348,10 @@
         "tooltip": "NIST CSF ID.AM: Asset Management",
         "help": "Sie können nur schützen, was Sie kennen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Es gibt kein Verzeichnis von Geräten, Software und Daten.",
+          "level1": "Teile sind bekannt, etwa die Server, aber nicht vollständig erfasst.",
+          "level2": "Ein Inventar für Hardware, Software und wichtige Datenbestände ist dokumentiert.",
+          "level3": "Das Inventar wird automatisch gepflegt, enthält Verantwortliche und Kritikalität und wird regelmäßig überprüft."
         }
       },
       "idQ2": {
@@ -14359,10 +14359,10 @@
         "tooltip": "NIST CSF ID.RA: Risikobewertung",
         "help": "Risikobasierte Priorisierung fokussiert Ressourcen auf die größten Bedrohungen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Cyberrisiken werden nicht betrachtet.",
+          "level1": "Risiken werden anlassbezogen und nach Bauchgefühl eingeschätzt.",
+          "level2": "Risiken werden nach einer dokumentierten Methode erfasst und bewertet.",
+          "level3": "Die Risikobewertung wird regelmäßig und bei Änderungen wiederholt und berücksichtigt aktuelle Bedrohungsinformationen."
         }
       },
       "idQ3": {
@@ -14370,10 +14370,10 @@
         "tooltip": "NIST CSF 2.0 GV.SC: Cybersecurity Supply Chain Risk Management",
         "help": "Drittanbieter können erhebliche Risiken in Ihre Organisation einführen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Risiken aus der Lieferkette werden nicht betrachtet.",
+          "level1": "Bei einzelnen wichtigen Lieferanten wird informell nachgefragt.",
+          "level2": "Kritische Lieferanten sind erfasst; Sicherheitsanforderungen sind vertraglich geregelt.",
+          "level3": "Lieferanten werden nach Risiko bewertet und regelmäßig geprüft; Ausfälle sind in der Notfallplanung berücksichtigt."
         }
       },
       "prQ1": {
@@ -14381,10 +14381,10 @@
         "tooltip": "NIST CSF PR.AA: Zugangskontrolle",
         "help": "Least Privilege reduziert die Angriffsfläche erheblich.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Die meisten Benutzer haben weitreichende Rechte oder Administratorrechte.",
+          "level1": "Rechte werden auf Zuruf vergeben und selten entzogen.",
+          "level2": "Rechte werden nach dokumentierten Rollen vergeben; Ein- und Austritte folgen einem festen Ablauf.",
+          "level3": "Rechte werden regelmäßig überprüft, Administratorrechte nur bei Bedarf und zeitlich begrenzt vergeben."
         }
       },
       "prQ2": {
@@ -14392,10 +14392,10 @@
         "tooltip": "NIST CSF PR.AT: Awareness und Training",
         "help": "Geschulte Mitarbeiter sind die wichtigste Verteidigungslinie.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Es gibt keine Cybersicherheitsschulungen.",
+          "level1": "Hinweise gibt es gelegentlich, etwa per E-Mail nach einem Vorfall.",
+          "level2": "Alle Mitarbeiter werden regelmäßig geschult; die Teilnahme wird dokumentiert.",
+          "level3": "Schulungen sind rollenbezogen, ihre Wirkung wird gemessen und die Inhalte werden an neue Angriffsmethoden angepasst."
         }
       },
       "prQ3": {
@@ -14403,10 +14403,10 @@
         "tooltip": "NIST CSF PR.DS: Datensicherheit",
         "help": "Technische Kontrollen ergänzen organisatorische Maßnahmen.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Es gibt weder Verschlüsselung noch Schutz der Endgeräte.",
+          "level1": "Einzelne Geräte haben Virenschutz; verschlüsselt wird nur vereinzelt.",
+          "level2": "Verschlüsselung und Endgeräteschutz sind nach dokumentierten Vorgaben auf den wichtigen Systemen eingerichtet.",
+          "level3": "Alle Geräte sind zentral verwaltet geschützt und verschlüsselt; die Maßnahmen werden an neue Bedrohungen angepasst."
         }
       },
       "deQ1": {
@@ -14414,10 +14414,10 @@
         "tooltip": "NIST CSF DE.CM: Continuous Monitoring",
         "help": "Echtzeit-Monitoring erkennt Angriffe in der Frühphase.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Kritische Systeme werden nicht überwacht.",
+          "level1": "Die Überwachung beschränkt sich auf Verfügbarkeit oder geschieht nur im Störungsfall.",
+          "level2": "Kritische Systeme werden nach dokumentierten Vorgaben überwacht; Meldungen werden regelmäßig gesichtet.",
+          "level3": "Alle kritischen Systeme werden rund um die Uhr überwacht; die Überwachung wird laufend an neue Bedrohungen angepasst."
         }
       },
       "deQ2": {
@@ -14425,10 +14425,10 @@
         "tooltip": "NIST CSF DE.AE: Anomalie-Erkennung",
         "help": "Automatische Erkennung verkürzt die Zeit bis zur Reaktion.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Auffälligkeiten werden nicht erkannt.",
+          "level1": "Auffälligkeiten fallen nur zufällig oder durch Hinweise von Benutzern auf.",
+          "level2": "Für bekannte Angriffsmuster sind Alarme eingerichtet und dokumentiert.",
+          "level3": "Abweichungen vom Normalverhalten werden automatisch erkannt; die Regeln werden laufend nachgeschärft."
         }
       },
       "deQ3": {
@@ -14436,10 +14436,10 @@
         "tooltip": "NIST CSF 2.0 DE.AE: Analyse ungewöhnlicher Ereignisse",
         "help": "Definierte Prozesse stellen konsistente Erkennung sicher.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Es gibt keine festgelegten Abläufe zur Erkennung.",
+          "level1": "Wer einen Alarm bearbeitet und wie, ergibt sich im Einzelfall.",
+          "level2": "Abläufe und Zuständigkeiten für die Bearbeitung von Alarmen sind dokumentiert.",
+          "level3": "Die Erkennung wird regelmäßig getestet, etwa mit simulierten Angriffen, und anhand der Ergebnisse verbessert."
         }
       },
       "rsQ1": {
@@ -14447,10 +14447,10 @@
         "tooltip": "NIST CSF RS.MA: Incident Management",
         "help": "Ein getesteter Plan reduziert die Reaktionszeit erheblich.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Es gibt keinen Plan für Sicherheitsvorfälle.",
+          "level1": "Im Ernstfall wird improvisiert.",
+          "level2": "Ein Plan mit Abläufen und Zuständigkeiten ist dokumentiert.",
+          "level3": "Der Plan wird regelmäßig geübt und nach jeder Übung und jedem Vorfall angepasst."
         }
       },
       "rsQ2": {
@@ -14458,10 +14458,10 @@
         "tooltip": "NIST CSF RS.CO: Kommunikation",
         "help": "Klare Kommunikation verhindert Informationschaos im Ernstfall.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Es ist nicht geregelt, wer bei einem Vorfall wen informiert.",
+          "level1": "Intern wird auf Zuruf informiert; externe Meldungen sind ungeklärt.",
+          "level2": "Interne und externe Meldewege, Ansprechpartner und Fristen sind dokumentiert.",
+          "level3": "Meldewege und Kontaktlisten werden regelmäßig geprüft und geübt; Vorlagen für Mitteilungen liegen bereit."
         }
       },
       "rsQ3": {
@@ -14469,10 +14469,10 @@
         "tooltip": "NIST CSF RS.AN: Analyse",
         "help": "Vorfallsanalyse verhindert wiederholte Angriffe mit gleicher Methode.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Vorfälle werden behoben, aber nicht untersucht.",
+          "level1": "Über Ursachen wird gesprochen, festgehalten wird nichts.",
+          "level2": "Jeder größere Vorfall wird mit Ursache und Maßnahmen dokumentiert.",
+          "level3": "Erkenntnisse führen nachweislich zu Verbesserungen; die Umsetzung wird nachverfolgt."
         }
       },
       "rcQ1": {
@@ -14480,10 +14480,10 @@
         "tooltip": "NIST CSF RC.RP: Recovery Planning",
         "help": "Wiederherstellungspläne definieren die Reihenfolge der Systemwiederherstellung.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Es gibt keine Wiederherstellungspläne.",
+          "level1": "Die Wiederherstellung hängt vom Wissen einzelner Personen ab.",
+          "level2": "Für die kritischen Systeme sind Wiederherstellungspläne mit Reihenfolge und Zeitvorgaben dokumentiert.",
+          "level3": "Die Pläne decken alle kritischen Systeme und Daten ab und werden bei Änderungen und nach Tests aktualisiert."
         }
       },
       "rcQ2": {
@@ -14491,10 +14491,10 @@
         "tooltip": "NIST CSF 2.0 ID.IM: Verbesserung",
         "help": "Regelmäßige Tests validieren die Wiederherstellungsfähigkeit.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Die Wiederherstellung wurde noch nie getestet.",
+          "level1": "Getestet wurde einmalig oder nur für einzelne Dateien.",
+          "level2": "Wiederherstellungstests finden nach Plan statt und werden dokumentiert.",
+          "level3": "Vollständige Wiederherstellungen werden regelmäßig geübt; Abweichungen von den Zeitvorgaben führen zu Verbesserungen."
         }
       },
       "rcQ3": {
@@ -14502,10 +14502,10 @@
         "tooltip": "NIST CSF RC.CO: Kommunikation",
         "help": "Stakeholder müssen während der Wiederherstellung informiert werden.",
         "maturity": {
-          "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
-          "level1": "Teilweise — informelle oder Ad-hoc-Maßnahmen",
-          "level2": "Risikoinformiert — dokumentierte, risikobasierte Prozesse",
-          "level3": "Adaptiv — kontinuierlich verbessert und an Bedrohungslage angepasst"
+          "level0": "Die Kommunikation während der Wiederherstellung ist nicht geplant.",
+          "level1": "Kunden und Mitarbeiter werden nach Lage informiert.",
+          "level2": "Zuständigkeiten, Empfänger und Kanäle für die Kommunikation sind dokumentiert.",
+          "level3": "Vorlagen und Ausweichkanäle liegen bereit; die Kommunikation wird in Übungen erprobt und danach verbessert."
         }
       }
     },
@@ -14651,10 +14651,10 @@
         "tooltip": "OWASP ASVS V2.1: Passwort-Sicherheit",
         "help": "Moderne Richtlinien bevorzugen Länge über Komplexität und prüfen gegen bekannte Leaks.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Es gibt keine Vorgaben für Passwörter.",
+          "level1": "Es gilt nur eine Mindestlänge; kurze oder bekannte Passwörter sind möglich.",
+          "level2": "Eine Richtlinie mit ausreichender Mindestlänge ist umgesetzt und getestet.",
+          "level3": "Passwörter werden zusätzlich gegen Listen geleakter Passwörter geprüft; die Regeln werden regelmäßig überprüft."
         }
       },
       "auQ2": {
@@ -14662,10 +14662,10 @@
         "tooltip": "OWASP ASVS V2.8: MFA",
         "help": "MFA schützt auch bei kompromittierten Passwörtern.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Die Anwendung bietet keine Multi-Faktor-Authentifizierung.",
+          "level1": "MFA gibt es nur für einzelne Konten, etwa Administratoren.",
+          "level2": "MFA steht allen Benutzern zur Verfügung und ist getestet.",
+          "level3": "MFA ist für alle Konten Pflicht oder voreingestellt; die Wiederherstellung des Zugangs ist ebenso abgesichert."
         }
       },
       "auQ3": {
@@ -14673,10 +14673,10 @@
         "tooltip": "OWASP ASVS V2.2: Allgemeine Authentifizierung",
         "help": "Rate Limiting und Account Lockout schützen vor automatisierten Angriffen.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Anmeldeversuche sind unbegrenzt möglich.",
+          "level1": "Es gibt eine einfache Sperre nach mehreren Fehlversuchen an einzelnen Stellen.",
+          "level2": "Anmeldeversuche werden an allen Anmeldewegen begrenzt; die Begrenzung ist getestet.",
+          "level3": "Verdächtige Muster werden automatisch erkannt und blockiert; Auffälligkeiten lösen einen Alarm aus."
         }
       },
       "smQ1": {
@@ -14684,10 +14684,10 @@
         "tooltip": "OWASP ASVS V3.1-3.3: Session-Management",
         "help": "Sichere Session-Tokens verhindern Session-Hijacking.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Session-Tokens sind vorhersagbar oder stehen in der URL.",
+          "level1": "Tokens stammen aus dem Framework, Cookie-Attribute sind aber nicht gesetzt.",
+          "level2": "Tokens sind zufällig, werden nur über HTTPS übertragen und in Cookies mit Secure, HttpOnly und SameSite gespeichert.",
+          "level3": "Die Vorgaben gelten durchgängig, Tokens werden nach der Anmeldung erneuert und automatisierte Tests prüfen das."
         }
       },
       "smQ2": {
@@ -14695,10 +14695,10 @@
         "tooltip": "OWASP ASVS V3.3: Session-Timeout",
         "help": "Timeouts begrenzen das Zeitfenster für Angreifer.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Sessions laufen nie ab.",
+          "level1": "Es gilt der Standardwert des Frameworks, ohne Bezug zum Schutzbedarf.",
+          "level2": "Maximale Sitzungsdauer und Ablauf bei Inaktivität sind festgelegt, umgesetzt und getestet.",
+          "level3": "Die Zeiten richten sich nach dem Schutzbedarf, sensible Aktionen verlangen eine erneute Anmeldung und die Werte werden regelmäßig überprüft."
         }
       },
       "smQ3": {
@@ -14706,10 +14706,10 @@
         "tooltip": "OWASP ASVS V3.3: Session-Terminierung",
         "help": "Korrekte Session-Beendigung verhindert persistente Zugriffe.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Beim Abmelden bleibt die Session auf dem Server gültig.",
+          "level1": "Beim Abmelden wird die Session beendet, bei einer Passwortänderung nicht.",
+          "level2": "Sessions werden bei Abmeldung, Passwortänderung und Zeitablauf serverseitig beendet; das ist getestet.",
+          "level3": "Benutzer können alle eigenen Sessions einsehen und beenden; automatisierte Tests prüfen die Beendigung."
         }
       },
       "acQ1": {
@@ -14717,10 +14717,10 @@
         "tooltip": "OWASP ASVS V4.1: Zugriffskontrolle",
         "help": "Benutzer sollten nur die Rechte haben, die sie für ihre Aufgabe benötigen.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Alle angemeldeten Benutzer dürfen praktisch alles.",
+          "level1": "Es gibt wenige grobe Rollen; Rechte sind eher großzügig vergeben.",
+          "level2": "Ein Rollenmodell ist dokumentiert; Zugriffe sind standardmäßig verboten und getestet.",
+          "level3": "Rechte werden regelmäßig überprüft; automatisierte Tests prüfen die Berechtigungen bei jeder Änderung."
         }
       },
       "acQ2": {
@@ -14728,10 +14728,10 @@
         "tooltip": "OWASP ASVS V4.1: Serverseitige Kontrolle",
         "help": "Clientseitige Kontrollen können leicht umgangen werden.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Berechtigungen werden nur in der Oberfläche geprüft, etwa durch ausgeblendete Schaltflächen.",
+          "level1": "Einige Endpunkte prüfen die Berechtigung serverseitig, andere nicht.",
+          "level2": "Jeder Endpunkt prüft die Berechtigung serverseitig über einen zentralen Mechanismus; das ist getestet.",
+          "level3": "Neue Endpunkte sind ohne ausdrückliche Freigabe gesperrt; automatisierte Tests decken alle Endpunkte ab."
         }
       },
       "acQ3": {
@@ -14739,10 +14739,10 @@
         "tooltip": "OWASP ASVS V4.2: IDOR-Prävention",
         "help": "IDOR ermöglicht Zugriff auf fremde Daten durch Manipulation von Referenzen.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Fremde Datensätze lassen sich durch Ändern der ID in der Anfrage abrufen.",
+          "level1": "Bei einzelnen Funktionen wird geprüft, ob der Datensatz dem Benutzer gehört.",
+          "level2": "Bei jedem Zugriff auf einen Datensatz wird die Zugehörigkeit zum Benutzer geprüft; das ist getestet.",
+          "level3": "Die Prüfung ist zentral verankert und wird durch automatisierte Tests und Penetrationstests regelmäßig bestätigt."
         }
       },
       "ivQ1": {
@@ -14750,10 +14750,10 @@
         "tooltip": "OWASP ASVS V5.1: Input Validation",
         "help": "Serverseitige Validierung verhindert Injection-Angriffe.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Eingaben werden ungeprüft verarbeitet.",
+          "level1": "Geprüft wird nur im Browser oder nur an einzelnen Formularen.",
+          "level2": "Alle Eingaben werden serverseitig gegen festgelegte Regeln geprüft; das ist getestet.",
+          "level3": "Die Prüfung erfolgt zentral anhand von Schemata, ungültige Eingaben werden protokolliert und automatisierte Tests prüfen das."
         }
       },
       "ivQ2": {
@@ -14761,10 +14761,10 @@
         "tooltip": "OWASP ASVS V5.3: Output Encoding",
         "help": "Korrektes Output-Encoding verhindert XSS und andere Injection-Angriffe.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Ausgaben werden ohne Kodierung eingefügt.",
+          "level1": "Kodiert wird an einzelnen Stellen von Hand.",
+          "level2": "Die Kodierung erfolgt durchgängig passend zum Kontext, etwa durch das Template-System; das ist getestet.",
+          "level3": "Zusätzlich ist eine Content Security Policy aktiv; automatisierte Prüfungen suchen bei jeder Änderung nach Lücken."
         }
       },
       "ivQ3": {
@@ -14772,10 +14772,10 @@
         "tooltip": "OWASP ASVS V5.3: SQL Injection",
         "help": "Parametrisierte Queries sind der effektivste Schutz gegen SQL-Injection.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Datenbankabfragen werden aus Benutzereingaben zusammengesetzt.",
+          "level1": "Parametrisierte Abfragen werden meist verwendet, es gibt aber Ausnahmen.",
+          "level2": "Alle Datenbankzugriffe nutzen parametrisierte Abfragen oder ein ORM; das ist getestet.",
+          "level3": "Zusammengesetzte Abfragen werden durch automatische Code-Prüfung verhindert; das Datenbankkonto hat nur die nötigen Rechte."
         }
       },
       "crQ1": {
@@ -14783,10 +14783,10 @@
         "tooltip": "OWASP ASVS V6.1: Datenverschlüsselung",
         "help": "AES-256 für at-rest, aktuelle TLS-Versionen für in-transit.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Sensible Daten liegen unverschlüsselt in Datenbank und Dateien.",
+          "level1": "Einzelne Felder oder Datenträger sind verschlüsselt.",
+          "level2": "Alle sensiblen Daten sind mit aktuellen Verfahren verschlüsselt; es ist dokumentiert, welche Daten das sind.",
+          "level3": "Auch Sicherungen sind verschlüsselt; die Verfahren werden regelmäßig überprüft und bei Bedarf ausgetauscht."
         }
       },
       "crQ2": {
@@ -14794,10 +14794,10 @@
         "tooltip": "OWASP ASVS V2.4: Passwort-Hashing",
         "help": "Moderne Hashing-Algorithmen mit Salt und Stretching schützen Passwörter.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Passwörter werden im Klartext oder umkehrbar gespeichert.",
+          "level1": "Passwörter werden mit schnellen Hashverfahren wie MD5 oder SHA-1 gespeichert.",
+          "level2": "Passwörter werden mit bcrypt, scrypt oder Argon2 und individuellem Salt gespeichert.",
+          "level3": "Die Parameter werden regelmäßig an die Rechenleistung angepasst; alte Hashes werden bei der Anmeldung umgestellt."
         }
       },
       "crQ3": {
@@ -14805,10 +14805,10 @@
         "tooltip": "OWASP ASVS V6.4: Schlüsselmanagement",
         "help": "Schlüssel sollten sicher generiert, gespeichert und rotiert werden.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Schlüssel stehen im Quellcode oder in der Versionsverwaltung.",
+          "level1": "Schlüssel liegen in Konfigurationsdateien auf dem Server.",
+          "level2": "Schlüssel liegen in einem Secret-Speicher; der Zugriff ist beschränkt und dokumentiert.",
+          "level3": "Schlüssel werden regelmäßig gewechselt, Zugriffe werden protokolliert und der Wechsel ist geübt."
         }
       },
       "elQ1": {
@@ -14816,10 +14816,10 @@
         "tooltip": "OWASP ASVS V7.4: Fehlerbehandlung",
         "help": "Stack-Traces und Systeminformationen in Fehlermeldungen helfen Angreifern.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Fehlermeldungen zeigen technische Details wie Stacktraces oder Datenbankfehler.",
+          "level1": "Technische Details sind an einigen Stellen ausgeblendet.",
+          "level2": "Benutzer sehen überall allgemeine Meldungen; Details stehen nur im Protokoll. Das ist getestet.",
+          "level3": "Eine zentrale Fehlerbehandlung stellt das sicher; automatisierte Tests prüfen, dass keine Details nach außen gelangen."
         }
       },
       "elQ2": {
@@ -14827,10 +14827,10 @@
         "tooltip": "OWASP ASVS V7.1: Security Logging",
         "help": "Logging ermöglicht die Erkennung und Nachverfolgung von Angriffen.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "Sicherheitsrelevante Ereignisse werden nicht protokolliert.",
+          "level1": "Protokolliert werden einzelne Ereignisse, etwa Anmeldungen; ausgewertet wird nichts.",
+          "level2": "Anmeldungen, Zugriffsverweigerungen und Änderungen an Rechten werden protokolliert und regelmäßig gesichtet.",
+          "level3": "Protokolle werden zentral und vor Veränderung geschützt gespeichert; Auffälligkeiten lösen automatisch einen Alarm aus."
         }
       },
       "elQ3": {
@@ -14838,10 +14838,10 @@
         "tooltip": "OWASP ASVS V13: API Security",
         "help": "APIs sind zunehmend Angriffsziel und brauchen spezifischen Schutz.",
         "maturity": {
-          "level0": "Nicht implementiert — keine Schutzmaßnahmen vorhanden",
-          "level1": "Ansatzweise — grundlegende Maßnahmen, nicht durchgängig",
-          "level2": "Implementiert — systematisch umgesetzt und getestet",
-          "level3": "Fortgeschritten — durchgängig, automatisiert und regelmäßig geprüft"
+          "level0": "APIs sind ohne Anmeldung erreichbar.",
+          "level1": "APIs verlangen eine Anmeldung, haben aber keine Begrenzung der Anfragen und prüfen Eingaben nur teilweise.",
+          "level2": "Alle APIs verlangen eine Anmeldung, begrenzen Anfragen und prüfen Eingaben; das ist getestet.",
+          "level3": "Alle APIs sind in einem Verzeichnis erfasst und gegen ihre Spezifikation geprüft; die Nutzung wird überwacht."
         }
       }
     },

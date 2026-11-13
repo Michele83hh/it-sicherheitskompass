@@ -7,10 +7,10 @@ Stand: 14.11.2026. Reihenfolge = Vorschlag. Was am 13./14.11. erledigt wurde, st
 - [ ] Neue Zuordnung gleicher Fragen in `src/lib/regulations/question-equivalences.ts` (49 Themen).
 - [ ] Geänderte Normbezüge bei ISO 22301, OWASP ASVS und KRITIS (Tabelle im Prüfprotokoll, Nr. 2, 6, 12).
 - [ ] Erklärtexte zu den 13 Schlagwörtern im Synergie-Graphen (`platform.overlaps.measureInfo` in `de.json`).
+- [ ] Reifegrad-Texte der 72 Fragen von CIS, ISO 22301, NIST CSF und OWASP ASVS (je vier Stufen, DE und EN).
 
 ## 2. Fragen: offene Inhalte
 
-- [ ] **Reifegrad-Texte:** Bei CIS, ISO 22301, NIST CSF und OWASP sind die vier Stufen bei allen 72 Fragen gleich. Fragespezifische Texte schreiben (DE und EN).
 - [ ] **Einleitungstexte je Bereich** fehlen bei 8 Regelwerken (55 Bereiche). Die Box ist dort ausgeblendet.
 - [ ] **ISO-27001-Abschnitt der NIS2-Ergebnisseite:** Prozentwerte je Kategorie haben keine Quelle; Einleitung nennt „ca. 72 %“, berechnet werden 68 %. Auf Stufen mit Quelle umstellen wie bei den Synergien.
 - [ ] PCI DSS zeigt „Goal 1“, SOC 2 englische Kriteriennamen unter den Fragen.

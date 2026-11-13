@@ -45,6 +45,18 @@ describe('Übersetzungsschlüssel der Regelwerke', () => {
   );
 
   // Fängt Schlüssel in Hilfsdateien ab, die nicht über die Registry laufen.
+  it.each(getAllRegulations().map((r) => [r.id, r] as const))(
+    '%s: Reifegrad-Texte sind je Frage eigene Texte',
+    (_id, r) => {
+      for (const msgs of [de, en]) {
+        const texts = r.questions.map((q) =>
+          Object.values(q.maturityDescriptions).map((k) => get(msgs, k)).join('|'),
+        );
+        expect(new Set(texts).size).toBe(texts.length);
+      }
+    },
+  );
+
   it('jeder Schlüssel-Literal in src/lib/regulations existiert in DE und EN', () => {
     const roots = new Set(Object.keys(de));
     const found: string[] = [];
