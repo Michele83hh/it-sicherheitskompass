@@ -198,7 +198,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.psQ3.tooltip',
     helpKey: 'c5.questions.psQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 PS-07, PS-09',
+      euArticle: 'C5:2020 PS, AM',
       bsigParagraph: 'BSI C5:2020 Kap. 4.5',
     },
     maturityDescriptions: {
@@ -296,7 +296,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.opsQ2.tooltip',
     helpKey: 'c5.questions.opsQ2.help',
     legalReference: {
-      euArticle: 'C5:2020 OPS-07, OPS-08',
+      euArticle: 'C5:2020 OPS-10 ff.',
       bsigParagraph: 'BSI C5:2020 Kap. 4.6',
     },
     maturityDescriptions: {
@@ -354,7 +354,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.kryQ2.tooltip',
     helpKey: 'c5.questions.kryQ2.help',
     legalReference: {
-      euArticle: 'C5:2020 KRY-03',
+      euArticle: 'C5:2020 KRY-04',
       bsigParagraph: 'BSI C5:2020 Kap. 4.9',
     },
     maturityDescriptions: {
@@ -372,7 +372,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.kryQ3.tooltip',
     helpKey: 'c5.questions.kryQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 KRY-04',
+      euArticle: 'C5:2020 KRY-02, KRY-03',
       bsigParagraph: 'BSI C5:2020 Kap. 4.9',
     },
     maturityDescriptions: {
@@ -488,7 +488,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.devQ3.tooltip',
     helpKey: 'c5.questions.devQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 PI-01, PI-03',
+      euArticle: 'C5:2020 COM',
       bsigParagraph: 'BSI C5:2020 Kap. 4.16',
     },
     maturityDescriptions: {

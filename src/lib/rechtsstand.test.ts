@@ -45,3 +45,21 @@ describe('Rechtsstand ist ueberall gleich', () => {
     expect(alle).not.toContain('Anträge bis 31.12.2026');
   });
 });
+
+/** Inhaltsprüfung 13.11.2026 (docs/pruefprotokoll): diese Fehlangaben dürfen nicht zurückkommen. */
+describe('korrigierte Fehlangaben bleiben draußen', () => {
+  const alle = JSON.stringify(de) + JSON.stringify(en);
+  it.each([
+    'NIS2UmsCG',          // Gesetz heißt NIS2UmsuCG
+    'EN 18031-1',         // RED-Norm, keine CRA-hEN
+    'JC 2023 86',         // jetzt DelVO (EU) 2024/1774
+    'JC 2024 33',         // jetzt DurchfVO (EU) 2025/302
+    'Art. 28-44 DORA',    // Pflichten der FU: Art. 28-30
+    'DE.DP',              // in NIST CSF 2.0 entfallen
+    'OPS-07',             // C5-IDs nicht belegt
+    'macOS-Malware',      // unbelegte Statistik
+    'Labore, Pharma',     // nur EU-Referenzlabore
+  ])('%s', (s) => {
+    expect(alle).not.toContain(s);
+  });
+});

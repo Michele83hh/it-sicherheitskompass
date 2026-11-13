@@ -82,7 +82,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.orpQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.orpQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 4.1',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'ORP.1.A1',
     },
     maturityDescriptions: {
@@ -100,7 +100,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.orpQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.orpQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 4.2',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'ORP.2.A1',
     },
     maturityDescriptions: {
@@ -118,7 +118,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.orpQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.orpQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 4.3',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'ORP.3.A1',
     },
     maturityDescriptions: {
@@ -140,8 +140,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.conQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.conQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 5',
-      bsigParagraph: 'CON.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium',
+      bsigParagraph: 'CON.3.A1',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.conQ1.maturity.level0',
@@ -158,8 +158,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.conQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.conQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-4 Kap. 3',
-      bsigParagraph: 'CON.3.A1',
+      euArticle: 'BSI-Standard 200-4',
+      bsigParagraph: 'BSI-Standard 200-4',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.conQ2.maturity.level0',
@@ -176,7 +176,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.conQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.conQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 5.3',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'CON.6.A1',
     },
     maturityDescriptions: {
@@ -198,7 +198,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.opsQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.opsQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 6',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'OPS.1.1.3.A1',
     },
     maturityDescriptions: {
@@ -216,7 +216,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.opsQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.opsQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 6',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'OPS.1.1.4.A1',
     },
     maturityDescriptions: {
@@ -234,8 +234,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.opsQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.opsQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 6',
-      bsigParagraph: 'OPS.1.2.2.A1',
+      euArticle: 'IT-Grundschutz-Kompendium',
+      bsigParagraph: 'OPS.1.2.5.A1',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.opsQ3.maturity.level0',
@@ -256,7 +256,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.derQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.derQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-4 Kap. 5',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'DER.1.A1',
     },
     maturityDescriptions: {
@@ -274,7 +274,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.derQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.derQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-4 Kap. 6',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'DER.2.1.A1',
     },
     maturityDescriptions: {
@@ -292,8 +292,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.derQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.derQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-4 Kap. 7',
-      bsigParagraph: 'DER.4.A1',
+      euArticle: 'IT-Grundschutz-Kompendium',
+      bsigParagraph: 'DER.2.2.A1',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.derQ3.maturity.level0',
@@ -314,7 +314,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.appQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.appQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'APP.1.1.A1',
     },
     maturityDescriptions: {
@@ -332,7 +332,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.appQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.appQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'APP.1.2.A1',
     },
     maturityDescriptions: {
@@ -350,7 +350,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.appQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.appQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'APP.3.1.A1',
     },
     maturityDescriptions: {
@@ -372,7 +372,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.sysQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.sysQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'SYS.1.1.A1',
     },
     maturityDescriptions: {
@@ -390,7 +390,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.sysQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.sysQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'SYS.2.1.A1',
     },
     maturityDescriptions: {
@@ -408,8 +408,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.sysQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.sysQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
-      bsigParagraph: 'SYS.3.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium',
+      bsigParagraph: 'SYS.3.2.2.A1',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.sysQ3.maturity.level0',
@@ -430,7 +430,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.netQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.netQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'NET.1.1.A1',
     },
     maturityDescriptions: {
@@ -448,7 +448,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.netQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.netQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'NET.3.1.A1',
     },
     maturityDescriptions: {
@@ -466,7 +466,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.netQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.netQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'NET.4.1.A1',
     },
     maturityDescriptions: {
@@ -488,7 +488,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.infQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.infQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'INF.1.A1',
     },
     maturityDescriptions: {
@@ -506,7 +506,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.infQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.infQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'INF.2.A1',
     },
     maturityDescriptions: {
@@ -524,7 +524,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.infQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.infQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'INF.5.A1',
     },
     maturityDescriptions: {
@@ -546,7 +546,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.indQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.indQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'IND.1.A1',
     },
     maturityDescriptions: {
@@ -564,7 +564,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.indQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.indQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'IND.2.1.A1',
     },
     maturityDescriptions: {
@@ -582,7 +582,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.indQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.indQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-2 Kap. 7',
+      euArticle: 'IT-Grundschutz-Kompendium',
       bsigParagraph: 'IND.2.7.A1',
     },
     maturityDescriptions: {

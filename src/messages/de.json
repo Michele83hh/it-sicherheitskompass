@@ -129,7 +129,7 @@
         "description": "Alle Daten bleiben lokal in Ihrem Browser. Keine Übertragung an Server."
       },
       "foundationBar": {
-        "basis": "Basierend auf BSI IT-Grundschutz · NIS2UmsCG · EU 2022/2555",
+        "basis": "Basierend auf BSI IT-Grundschutz · NIS2UmsuCG · EU 2022/2555",
         "local": "Alle Daten bleiben in Ihrem Browser",
         "free": "Kostenlos & ohne Registrierung"
       }
@@ -552,7 +552,7 @@
     "bcQ2": {
       "title": "Können Sie nach einem schweren IT-Ausfall innerhalb von 24-48 Stunden Ihren Betrieb wieder aufnehmen?",
       "tooltip": "Wiederherstellungsfähigkeit ist ein Kernziel von NIS2. BSI-Standard 200-4 beschreibt Business Continuity Management (BCM).",
-      "help": "Stellen Sie sich vor, Ihre gesamte IT fällt aus — kein E-Mail, kein ERP, keine Buchhaltung. Wie lange können Sie so arbeiten? 24-48 Stunden ist der Zeitrahmen, den NIS2 als Orientierung für die Wiederherstellungsfähigkeit ansetzt. Dafür brauchen Sie einen Plan, wer was in welcher Reihenfolge wieder ans Laufen bringt.",
+      "help": "Stellen Sie sich vor, Ihre gesamte IT fällt aus — kein E-Mail, kein ERP, keine Buchhaltung. Wie lange können Sie so arbeiten? NIS2 schreibt keine feste Wiederanlaufzeit vor – 24 bis 48 Stunden sind ein gängiger Orientierungswert für KMU; maßgeblich sind Ihre eigenen RTO aus der Business-Impact-Analyse. Dafür brauchen Sie einen Plan, wer was in welcher Reihenfolge wieder ans Laufen bringt.",
       "maturity": {
         "level0": "Keine Wiederherstellungsplanung vorhanden",
         "level1": "Grobe Vorstellung, aber kein dokumentierter Plan",
@@ -925,7 +925,7 @@
     },
     "mcQ1": {
       "title": "Nutzen Sie Multi-Faktor-Authentifizierung (z.B. Authenticator-App, Hardware-Token) für kritische Systeme?",
-      "tooltip": "NIS2 verlangt MFA für privilegierte Zugänge (Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG). MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
+      "tooltip": "NIS2 verlangt gegebenenfalls MFA oder kontinuierliche Authentifizierung – besonders wichtig für privilegierte Zugänge (Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG). MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
       "help": "Multi-Faktor-Authentifizierung (MFA) bedeutet: Zum Einloggen brauchen Sie nicht nur ein Passwort, sondern zusätzlich einen zweiten Faktor — z. B. einen Code aus einer App auf Ihrem Smartphone. Selbst wenn jemand Ihr Passwort stiehlt, kann er sich ohne den zweiten Faktor nicht einloggen. MFA blockiert über 99% aller Kontoübernahmen.",
       "maturity": {
         "level0": "Kein MFA im Einsatz",
@@ -1732,7 +1732,7 @@
         "supply-chain": "Was heißt das? Große Kunden verlangen zunehmend Sicherheitsnachweise von Zulieferern — ohne diese verlieren Sie Aufträge.",
         "acquisition-development": "Was heißt das? Veraltete Software und fehlende Updates sind das Einfallstor Nr. 1 für Cyberangriffe.",
         "effectiveness-assessment": "Was heißt das? Ohne regelmäßige Prüfung wissen Sie nicht, ob Ihre Schutzmaßnahmen tatsächlich wirken.",
-        "cyber-hygiene": "Was heißt das? 90% aller Cyberangriffe beginnen mit menschlichem Fehlverhalten — Schulung ist der effektivste Schutz.",
+        "cyber-hygiene": "Was heißt das? Ein Großteil der Cyberangriffe beginnt mit menschlichem Handeln, etwa einem Klick auf eine Phishing-Mail — Schulung ist einer der wirksamsten Schutzfaktoren.",
         "cryptography": "Was heißt das? Unverschlüsselte Daten sind wie offene Briefe — jeder kann mitlesen, der Zugriff erhält.",
         "access-control": "Was heißt das? Wenn jeder auf alles zugreifen kann, genügt ein kompromittiertes Konto für den Totalschaden.",
         "authentication-communication": "Was heißt das? Ohne MFA (Zwei-Faktor-Anmeldung) genügt ein gestohlenes Passwort für den Zugriff auf Ihre Systeme."
@@ -2130,7 +2130,7 @@
       },
       "dsbQ4": {
         "title": "Haben Sie Ihren Datenschutzbeauftragten gemäß Art. 37 Abs. 7 DSGVO der Aufsichtsbehörde gemeldet und seine Kontaktdaten veröffentlicht?",
-        "tooltip": "Art. 37 Abs. 7 DSGVO verlangt, dass der Verantwortliche die Kontaktdaten des DSB der Aufsichtsbehörde mitteilt und veröffentlicht. §38 Abs. 1 Satz 6 BDSG präzisiert die Meldepflicht. Die Veröffentlichung erfolgt typischerweise auf der Website (Datenschutzerklärung) und im Impressum. Die Meldung an die Behörde erfolgt online über das Portal der zuständigen Landesbehörde.",
+        "tooltip": "Art. 37 Abs. 7 DSGVO verlangt, dass der Verantwortliche die Kontaktdaten des DSB der Aufsichtsbehörde mitteilt und veröffentlicht. Die Veröffentlichung erfolgt typischerweise auf der Website (Datenschutzerklärung) und im Impressum. Die Meldung an die Behörde erfolgt online über das Portal der zuständigen Landesbehörde.",
         "help": "Zwei Pflichten werden oft übersehen: Erstens müssen Sie Ihren DSB bei der zuständigen Datenschutzbehörde melden -- in der Regel online über deren Website. Zweitens müssen die Kontaktdaten des DSB öffentlich zugänglich sein, typischerweise in Ihrer Datenschutzerklärung auf der Website. Beides ist keine Kür, sondern Pflicht. Fehlt die Meldung, kann bereits das einen Verstoß darstellen.",
         "maturity": {
           "level0": "DSB ist weder bei der Aufsichtsbehörde gemeldet noch sind Kontaktdaten veröffentlicht",
@@ -2219,7 +2219,7 @@
       "dtQ2": {
         "title": "Setzen Sie für Drittlandtransfers geeignete Garantien ein, insbesondere EU-Standardvertragsklauseln (SVK)?",
         "tooltip": "Art. 46 Abs. 2 lit. c DSGVO erlaubt Drittlandtransfers auf Grundlage von Standardvertragsklauseln (Standard Contractual Clauses, SCC), die von der EU-Kommission erlassen wurden. Seit dem 27.12.2022 dürfen nur noch die neuen SVK der Kommission (Durchführungsbeschluss 2021/914) verwendet werden. Zusätzliche Maßnahmen können nach dem Schrems-II-Urteil des EuGH erforderlich sein.",
-        "help": "Wenn Sie Daten in ein Land ohne Angemessenheitsbeschluss übermitteln (z.B. Indien, Brasilien, oder in die USA ohne Privacy-Framework-Zertifizierung), brauchen Sie sogenannte Standardvertragsklauseln. Das sind EU-vorgegebene Vertragstexte, die Sie mit dem Datenempfänger abschließen. Seit Ende 2022 müssen Sie die neuen SVK der EU verwenden. Alte Klauseln sind nicht mehr gültig.",
+        "help": "Wenn Sie Daten in ein Land ohne Angemessenheitsbeschluss übermitteln (z.B. Indien oder in die USA ohne Privacy-Framework-Zertifizierung), brauchen Sie sogenannte Standardvertragsklauseln. Das sind EU-vorgegebene Vertragstexte, die Sie mit dem Datenempfänger abschließen. Seit Ende 2022 müssen Sie die neuen SVK der EU verwenden. Alte Klauseln sind nicht mehr gültig.",
         "maturity": {
           "level0": "Keine geeigneten Garantien für Drittlandtransfers vorhanden; Daten werden ohne Rechtsgrundlage übermittelt",
           "level1": "Bewusstsein für die Notwendigkeit vorhanden; einzelne SVK abgeschlossen, aber nicht flächendeckend und teils veraltet",
@@ -2229,7 +2229,7 @@
       },
       "dtQ3": {
         "title": "Prüfen Sie bei Drittlandtransfers, ob für das Empfängerland ein Angemessenheitsbeschluss der EU-Kommission vorliegt?",
-        "tooltip": "Art. 45 DSGVO erlaubt Datenübermittlungen in Drittländer, für die die EU-Kommission per Beschluss ein angemessenes Datenschutzniveau festgestellt hat. Aktuelle Angemessenheitsbeschlüsse bestehen u.a. für: Andorra, Argentinien, Kanada (teilweise), Färöer, Guernsey, Israel, Isle of Man, Japan, Jersey, Neuseeland, Südkorea, Schweiz, UK und USA (EU-U.S. Data Privacy Framework seit 10.07.2023). Diese Beschlüsse können widerrufen werden.",
+        "tooltip": "Art. 45 DSGVO erlaubt Datenübermittlungen in Drittländer, für die die EU-Kommission per Beschluss ein angemessenes Datenschutzniveau festgestellt hat. Aktuelle Angemessenheitsbeschlüsse bestehen u.a. für: Andorra, Argentinien, Brasilien (seit Januar 2026), Kanada (teilweise), Färöer, Guernsey, Israel, Isle of Man, Japan, Jersey, Neuseeland, Südkorea, Schweiz, UK und USA (EU-U.S. Data Privacy Framework seit 10.07.2023). Diese Beschlüsse können widerrufen werden.",
         "help": "Ein Angemessenheitsbeschluss ist die einfachste Lösung für Drittlandtransfers: Die EU-Kommission hat festgestellt, dass das Empfängerland ein ausreichendes Datenschutzniveau hat. Dann brauchen Sie keine zusätzlichen Garantien. Für die USA gilt seit Juli 2023 das EU-U.S. Data Privacy Framework -- aber nur für zertifizierte US-Unternehmen. Prüfen Sie immer, ob ein Beschluss existiert, bevor Sie aufwendig SVK abschließen.",
         "maturity": {
           "level0": "Keine Prüfung auf Angemessenheitsbeschlüsse; Drittlandtransfers werden ohne Rechtsgrundlage durchgeführt",
@@ -2505,7 +2505,7 @@
       "vvQ3": {
         "title": "Haben Sie die vorgesehenen Löschfristen und eine allgemeine Beschreibung der technisch-organisatorischen Schutzmaßnahmen in Ihrem Verarbeitungsverzeichnis dokumentiert?",
         "tooltip": "Art. 30 Abs. 1 lit. f-g DSGVO verlangt die Angabe der vorgesehenen Fristen für die Löschung der verschiedenen Datenkategorien sowie eine allgemeine Beschreibung der technischen und organisatorischen Sicherheitsmaßnahmen nach Art. 32 Abs. 1 DSGVO. 'Wenn möglich' ist dabei keine Ausnahme, sondern die Erwartung der Aufsichtsbehörden.",
-        "help": "Für jede Datenverarbeitung müssen Sie festlegen, wann die Daten gelöscht werden -- z.B. Bewerberdaten 6 Monate nach Absage, Rechnungsdaten nach 10 Jahren (gesetzliche Aufbewahrungspflicht). Zusätzlich beschreiben Sie, wie die Daten geschützt werden -- z.B. Verschlüsselung, Zugangsbeschränkung, Pseudonymisierung. Diese Angaben gehören in Ihr Verarbeitungsverzeichnis.",
+        "help": "Für jede Datenverarbeitung müssen Sie festlegen, wann die Daten gelöscht werden -- z.B. Bewerberdaten 6 Monate nach Absage, Rechnungen und Buchungsbelege nach 8 Jahren (gesetzliche Aufbewahrungspflicht nach § 147 AO, § 257 HGB, seit 2025). Zusätzlich beschreiben Sie, wie die Daten geschützt werden -- z.B. Verschlüsselung, Zugangsbeschränkung, Pseudonymisierung. Diese Angaben gehören in Ihr Verarbeitungsverzeichnis.",
         "maturity": {
           "level0": "Weder Löschfristen noch Schutzmaßnahmen sind im Verzeichnis dokumentiert",
           "level1": "Pauschal 'gesetzliche Fristen' angegeben, keine spezifischen Fristen pro Verarbeitung; Schutzmaßnahmen fehlen oder sind nur generisch",
@@ -2634,7 +2634,7 @@
       },
       "dsfa2": {
         "title": "DSFA-Positiv- und Negativliste der Aufsichtsbehörde prüfen",
-        "description": "Gleichen Sie Ihre Verarbeitungstätigkeiten mit der Positiv- und Negativliste (Blacklist/Whitelist) Ihrer zuständigen Aufsichtsbehörde ab. Diese Listen konkretisieren nach Art. 35 Abs. 4 DSGVO, wann eine DSFA zwingend erforderlich oder nicht notwendig ist.",
+        "description": "Gleichen Sie Ihre Verarbeitungstätigkeiten mit der Liste der Verarbeitungsvorgänge ab, für die nach Art. 35 Abs. 4 DSGVO eine DSFA durchzuführen ist (Muss-Liste der deutschen Aufsichtsbehörden). Eine Liste DSFA-freier Vorgänge nach Art. 35 Abs. 5 ist freiwillig und in Deutschland nicht veröffentlicht.",
         "firstStep": "Rufen Sie die DSFA-Liste Ihrer Landesdatenschutzbehörde auf (z.B. DSK-Positivliste) und gleichen Sie Ihre Verarbeitungen ab."
       },
       "dsfa3": {
@@ -2655,7 +2655,7 @@
       },
       "dt3": {
         "title": "Transfer Impact Assessment durchführen",
-        "description": "Führen Sie für jeden Drittlandtransfer ein Transfer Impact Assessment (TIA) gemäß Art. 46 Abs. 2 DSGVO durch. Dies bewertet, ob das Datenschutzniveau im Zielland durch zusätzliche Maßnahmen (z.B. Verschlüsselung) auf EU-Niveau angehoben werden kann.",
+        "description": "Führen Sie für jeden Drittlandtransfer ein Transfer Impact Assessment (TIA) durch (nach dem Schrems-II-Urteil und den EDSA-Empfehlungen 01/2020 bei Transfers auf Basis von Art. 46 DSGVO). Dies bewertet, ob das Datenschutzniveau im Zielland durch zusätzliche Maßnahmen (z.B. Verschlüsselung) auf EU-Niveau angehoben werden kann.",
         "firstStep": "Wählen Sie Ihre kritischsten Drittlandtransfers aus und prüfen Sie anhand der EDSA-Empfehlungen, ob staatlicher Zugriff im Zielland möglich ist.",
         "checklist": "Drittlandtransfers identifizieren und dokumentieren\nAngemessenheitsbeschlüsse und Standardvertragsklauseln prüfen\nTransfer Impact Assessment (TIA) durchführen"
       },
@@ -2855,7 +2855,7 @@
     "classification": {
       "reasons": {
         "belowThreshold": "Schwellenwert der BSI-KritisV für diesen Sektor nicht erreicht",
-        "bsiDesignation": "Vom BSI als Betreiber kritischer Infrastruktur benannt (§ 10 Abs. 1 BSIG)",
+        "bsiDesignation": "Betreiber einer kritischen Anlage – Schwellenwert der BSI-KritisV erreicht (§ 28 Abs. 1 Nr. 1 i.V.m. § 56 Abs. 4 BSIG)",
         "essentialServiceCandidate": "Potentieller Betreiber eines wesentlichen Dienstes (Anlage 1 BSIG)",
         "sectorNotInScope": "Branche ist nicht im Geltungsbereich der BSI-KritisV erfasst",
         "thresholdExceeded": "Schwellenwert der BSI-KritisV für diesen Sektor überschritten — Ihr Unternehmen gilt als KRITIS-Betreiber"
@@ -2996,7 +2996,7 @@
       },
       "lkQ1": {
         "title": "Sind sicherheitsrelevante Anforderungen in Verträgen mit Zulieferern und IT-Dienstleistern verankert?",
-        "tooltip": "§30 Abs. 1 BSIG fordert angemessene Vorkehrungen auch im Bereich der Lieferkette. BSI-Baustein ORP.1 beschreibt Anforderungen an die Vertragsgestaltung mit externen Dienstleistern.",
+        "tooltip": "§30 Abs. 1 BSIG fordert angemessene Vorkehrungen auch im Bereich der Lieferkette. BSI-Baustein OPS.2.3 (Nutzung von Outsourcing) beschreibt Anforderungen an die Vertragsgestaltung mit externen Dienstleistern.",
         "help": "Als KRITIS-Betreiber tragen Sie die Verantwortung für die IT-Sicherheit Ihrer kritischen Dienstleistung -- auch wenn Teile davon ausgelagert sind. In Verträgen mit Zulieferern und IT-Dienstleistern müssen daher konkrete Sicherheitsanforderungen festgelegt sein: Patch-Management, Incident-Response, Zugriffskontrollen, Audit-Rechte und Meldepflichten bei Sicherheitsvorfällen.",
         "maturity": {
           "level0": "Keine IT-Sicherheitsanforderungen in Lieferantenverträgen",
@@ -3007,7 +3007,7 @@
       },
       "lkQ2": {
         "title": "Werden kritische Zulieferer und Dienstleister hinsichtlich ihrer IT-Sicherheit bewertet?",
-        "tooltip": "Die Bewertung der Lieferkettensicherheit ist Bestandteil der Risikoanalyse nach §30 Abs. 1 BSIG. BSI-Baustein OPS.1.1.3 beschreibt Anforderungen an das Outsourcing-Management.",
+        "tooltip": "Die Bewertung der Lieferkettensicherheit ist Bestandteil der Risikoanalyse nach §30 Abs. 1 BSIG. BSI-Baustein OPS.2.3 beschreibt Anforderungen an das Outsourcing-Management.",
         "help": "Sie sollten eine Übersicht haben, welche Zulieferer und Dienstleister Zugang zu Ihren kritischen Systemen haben oder für deren Betrieb relevant sind. Diese sollten regelmäßig hinsichtlich ihrer IT-Sicherheit bewertet werden -- z. B. durch Fragebögen, Zertifizierungsnachweise (ISO 27001), Audit-Berichte oder Vor-Ort-Prüfungen.",
         "maturity": {
           "level0": "Keine Bewertung der IT-Sicherheit von Zulieferern",
@@ -3150,7 +3150,7 @@
       },
       "vmQ1": {
         "title": "Gibt es einen dokumentierten Prozess zur Erkennung, Bewertung und Meldung von IT-Sicherheitsvorfällen?",
-        "tooltip": "§32 BSIG verpflichtet KRITIS-Betreiber zur unverzüglichen Meldung erheblicher IT-Störungen an das BSI. BSI-Baustein DER.2.1 beschreibt Anforderungen an die Behandlung von Sicherheitsvorfällen.",
+        "tooltip": "§32 BSIG verpflichtet KRITIS-Betreiber zur Meldung erheblicher Sicherheitsvorfälle an das BSI – frühe Erstmeldung binnen 24 Stunden, Meldung binnen 72 Stunden, Abschlussmeldung nach einem Monat. BSI-Baustein DER.2.1 beschreibt Anforderungen an die Behandlung von Sicherheitsvorfällen.",
         "help": "KRITIS-Betreiber müssen einen klar definierten Prozess haben, der beschreibt: Wie werden Vorfälle erkannt (z. B. durch SzA, Helpdesk-Meldungen, automatische Alarme)? Wie werden sie bewertet (Schweregrad, Auswirkung auf die kritische Dienstleistung)? Wann und wie wird das BSI informiert? Wer ist intern zuständig? Ohne dokumentierten Prozess gehen im Ernstfall wertvolle Minuten verloren.",
         "maturity": {
           "level0": "Kein dokumentierter Incident-Response-Prozess vorhanden",
@@ -3172,7 +3172,7 @@
       },
       "vmQ3": {
         "title": "Werden IT-Sicherheitsvorfälle systematisch nachbereitet und daraus Verbesserungen abgeleitet?",
-        "tooltip": "Die Nachbereitung (Lessons Learned) ist nach BSI-Baustein DER.2.3 ein wesentlicher Bestandteil des Vorfallmanagements. §32 Abs. 1 Nr. 4 BSIG fordert Abschlussberichte, die auch Ursachen und Gegenmaßnahmen beschreiben.",
+        "tooltip": "Die Nachbereitung (Lessons Learned) ist nach BSI-Baustein DER.2.1 ein wesentlicher Bestandteil des Vorfallmanagements. §32 Abs. 1 Nr. 4 BSIG fordert Abschlussberichte, die auch Ursachen und Gegenmaßnahmen beschreiben.",
         "help": "Nach jedem Sicherheitsvorfall sollte eine strukturierte Nachbereitung stattfinden: Was ist passiert? Wie wurde der Vorfall erkannt? War die Reaktion angemessen? Welche Schwachstellen wurden ausgenutzt? Welche Maßnahmen verhindern eine Wiederholung? Die Ergebnisse fließen in die Verbesserung der Sicherheitsmaßnahmen ein. Der BSI-Abschlussbericht nach §32 BSIG fordert genau diese Analyse.",
         "maturity": {
           "level0": "Keine systematische Nachbereitung von Sicherheitsvorfällen",
@@ -3291,7 +3291,7 @@
       "lk3": {
         "title": "Regelmäßige Lieferanten-Sicherheitsbewertungen durchführen",
         "description": "Bewerten Sie die IT-Sicherheit Ihrer kritischen Lieferanten regelmäßig durch Audits, Fragebögen oder Zertifikatsprüfungen gemäß §30 Abs. 1 BSI-Gesetz. Supply-Chain-Angriffe sind eine wachsende Bedrohung.",
-        "firstStep": "Fordern Sie von Ihren Top-5-Lieferanten aktuelle ISO 27001- oder TISAX-Zertifikate an.",
+        "firstStep": "Fordern Sie von Ihren Top-5-Lieferanten aktuelle ISO 27001- oder TISAX-Labels an.",
         "checklist": "Lieferantenbewertungskriterien festlegen\nSicherheitsanforderungen in Verträge aufnehmen\nRegelmäßige Überprüfung der Lieferanten"
       },
       "ps1": {
@@ -3366,7 +3366,7 @@
       },
       "entsorgung": {
         "name": "Entsorgung",
-        "threshold": "Schwellenwert: 500.000 angeschlossene Einwohner (Siedlungsabfallentsorgung)"
+        "threshold": "Schwellenwerte in Tonnen je Anlagenart (Anhang 8 BSI-KritisV, seit 01.01.2024), bemessen an 500.000 versorgten Einwohnern"
       },
       "ernaehrung": {
         "name": "Ernährung",
@@ -3378,7 +3378,7 @@
       },
       "itTelekommunikation": {
         "name": "IT & Telekommunikation",
-        "threshold": "Schwellenwert: 100.000 Vertragspartner oder Nutzung durch KRITIS-Betreiber"
+        "threshold": "Schwellenwerte je Anlagenart nach Anhang 4 BSI-KritisV (z. B. 100.000 Teilnehmende bei TK-Netzen, 3,5 MW vertraglich vereinbarte Leistung bei Rechenzentren)"
       },
       "transportVerkehr": {
         "name": "Transport und Verkehr",
@@ -3398,7 +3398,7 @@
       },
       "weltraum": {
         "name": "Weltraum",
-        "threshold": "Neuer Sektor nach §2 Nr. 4 KRITIS-Dachgesetz — Anlagenkategorien in der BSI-KritisV noch nicht bestimmt"
+        "threshold": "Neuer Sektor nach § 4 Abs. 1 KRITIS-Dachgesetz – Anlagenkategorien und Schwellenwerte folgen mit der KRITIS-Verordnung (bisher nur Entwurf)"
       }
     }
   },
@@ -3409,8 +3409,8 @@
     "description": "Digitale Betriebsstabilität für den Finanzsektor",
     "categories": {
       "drittanbieter": {
-        "description": "Management von Risiken durch IKT-Drittdienstleister nach Art. 28-44 DORA",
-        "empoweringIntro": "IKT-Drittanbieter sind ein zentraler Bestandteil der digitalen Wertschöpfungskette im Finanzsektor. DORA verpflichtet Finanzunternehmen, sämtliche Risiken aus der Nutzung von IKT-Drittdienstleistungen systematisch zu identifizieren, zu bewerten und vertraglich abzusichern. Die folgenden Fragen prüfen, ob Ihr Unternehmen die Anforderungen der Art. 28-44 DORA an das IKT-Drittparteienrisikomanagement erfüllt.",
+        "description": "Management von Risiken durch IKT-Drittdienstleister nach Art. 28-30 DORA (Art. 31-44: Überwachung kritischer Anbieter)",
+        "empoweringIntro": "IKT-Drittanbieter sind ein zentraler Bestandteil der digitalen Wertschöpfungskette im Finanzsektor. DORA verpflichtet Finanzunternehmen, sämtliche Risiken aus der Nutzung von IKT-Drittdienstleistungen systematisch zu identifizieren, zu bewerten und vertraglich abzusichern. Die folgenden Fragen prüfen, ob Ihr Unternehmen die Anforderungen der Art. 28-30 DORA an das IKT-Drittparteienrisikomanagement erfüllt.",
         "name": "IKT-Drittanbieter-Risikomanagement",
         "shortName": "Drittanbieter"
       },
@@ -3565,13 +3565,13 @@
       },
       "govQ5": {
         "title": "Ist eine unabhängige Kontrollfunktion für das IKT-Risikomanagement eingerichtet (z. B. CISO, IKT-Risikomanager)?",
-        "tooltip": "Art. 6 Abs. 1-4 DORA und die RTS JC 2023 86 fordern eine angemessene Aufbauorganisation für das IKT-Risikomanagement mit klarer Trennung von IKT-Betrieb und IKT-Kontroll- und Überwachungsfunktionen. Die Kontrollfunktion muss über ausreichende Unabhängigkeit, Befugnisse und Ressourcen verfügen, um wirksam arbeiten zu können.",
+        "tooltip": "Art. 6 Abs. 1-4 DORA und die Delegierte Verordnung (EU) 2024/1774 (RTS zum IKT-Risikomanagement) fordern eine angemessene Aufbauorganisation für das IKT-Risikomanagement mit klarer Trennung von IKT-Betrieb und IKT-Kontroll- und Überwachungsfunktionen. Die Kontrollfunktion muss über ausreichende Unabhängigkeit, Befugnisse und Ressourcen verfügen, um wirksam arbeiten zu können.",
         "help": "DORA verlangt eine unabhängige IKT-Kontrollfunktion, die getrennt vom operativen IKT-Betrieb arbeitet. Diese Funktion -- typischerweise ein CISO (Chief Information Security Officer) oder IKT-Risikomanager -- muss direkt an das Leitungsorgan berichten können. Sie ist verantwortlich für die Überwachung der IKT-Risiken, die Prüfung der Wirksamkeit von Schutzmaßnahmen und die Berichterstattung. Wichtig ist die organisatorische Unabhängigkeit: Der CISO sollte nicht gleichzeitig für den IT-Betrieb verantwortlich sein.",
         "maturity": {
           "level0": "Keine unabhängige IKT-Kontrollfunktion vorhanden; IKT-Risikomanagement wird vom IT-Betrieb mitverwaltet",
           "level1": "IKT-Risikomanagement ist einer Person zugeordnet, aber keine organisatorische Unabhängigkeit vom IT-Betrieb; kein direkter Zugang zum Leitungsorgan",
           "level2": "Unabhängige IKT-Kontrollfunktion (z. B. CISO) eingerichtet mit Berichtsweg an das Leitungsorgan, aber Ressourcen und Befugnisse noch nicht ausreichend",
-          "level3": "Unabhängige IKT-Kontrollfunktion gemäß Art. 6 DORA und RTS JC 2023 86 mit organisatorischer Trennung vom IKT-Betrieb, direktem Berichtsweg an das Leitungsorgan, angemessenen Ressourcen und Befugnissen sowie regelmäßiger Berichterstattung"
+          "level3": "Unabhängige IKT-Kontrollfunktion gemäß Art. 6 DORA und Delegierte Verordnung (EU) 2024/1774 mit organisatorischer Trennung vom IKT-Betrieb, direktem Berichtsweg an das Leitungsorgan, angemessenen Ressourcen und Befugnissen sowie regelmäßiger Berichterstattung"
         }
       },
       "iaQ1": {
@@ -3587,7 +3587,7 @@
       },
       "iaQ2": {
         "title": "Werden die Qualität und Relevanz der ausgetauschten Bedrohungsinformationen sichergestellt?",
-        "tooltip": "Art. 45 Abs. 3 DORA fordert, dass der Informationsaustausch innerhalb vertrauenswürdiger Gemeinschaften stattfindet, die die potenziell sensible Natur der geteilten Informationen schützen. Es müssen Verhaltensregeln gelten, die den Schutz personenbezogener Daten, den Schutz von Geschäftsgeheimnissen und die Wettbewerbspolitik wahren.",
+        "tooltip": "Art. 45 Abs. 1 lit. b und Abs. 2 DORA fordern, dass der Informationsaustausch innerhalb vertrauenswürdiger Gemeinschaften stattfindet, die die potenziell sensible Natur der geteilten Informationen schützen. Es müssen Verhaltensregeln gelten, die den Schutz personenbezogener Daten, den Schutz von Geschäftsgeheimnissen und die Wettbewerbspolitik wahren.",
         "help": "Nicht jede Bedrohungsinformation ist gleich wertvoll. DORA verlangt, dass der Austausch innerhalb vertrauenswürdiger Gemeinschaften stattfindet und die Qualität der geteilten Informationen sichergestellt wird. Dazu gehört: Informationen müssen aktuell, verifiziert und handlungsrelevant sein. Es muss klar sein, wie zuverlässig eine Quelle ist und welche Maßnahmen empfohlen werden. Ein Qualitätssicherungsprozess hilft, Fehlalarme zu reduzieren und den operativen Nutzen zu maximieren.",
         "maturity": {
           "level0": "Kein Bewusstsein für die Qualitätsanforderungen beim Informationsaustausch",
@@ -3598,7 +3598,7 @@
       },
       "iaQ3": {
         "title": "Sind Vertraulichkeitsvereinbarungen und Datenschutzmaßnahmen für den Informationsaustausch etabliert?",
-        "tooltip": "Art. 45 Abs. 4 DORA fordert, dass der Informationsaustausch unter Einhaltung der Vorschriften zum Schutz personenbezogener Daten (insbesondere DSGVO) sowie der Vorschriften über den Schutz von Geschäftsgeheimnissen erfolgt. Vertraulichkeitsvereinbarungen und Geheimhaltungspflichten müssen den Umgang mit den geteilten Informationen regeln.",
+        "tooltip": "Art. 45 Abs. 2 DORA fordert, dass der Informationsaustausch unter Einhaltung der Vorschriften zum Schutz personenbezogener Daten (insbesondere DSGVO) sowie der Vorschriften über den Schutz von Geschäftsgeheimnissen erfolgt. Vertraulichkeitsvereinbarungen und Geheimhaltungspflichten müssen den Umgang mit den geteilten Informationen regeln.",
         "help": "Beim Austausch von Bedrohungsinformationen können sensible Daten betroffen sein -- etwa wenn IoCs personenbezogene Daten enthalten (z. B. E-Mail-Adressen von Phishing-Kampagnen) oder Rückschlüsse auf die eigene Sicherheitsarchitektur ermöglichen. DORA verlangt daher: Vertraulichkeitsvereinbarungen (NDAs) mit allen Austauschpartnern, DSGVO-konforme Verarbeitung personenbezogener Daten, Schutz von Geschäftsgeheimnissen und klare Regeln zur Weitergabe an Dritte. Das Traffic Light Protocol (TLP) bietet hierfür einen bewährten Rahmen.",
         "maturity": {
           "level0": "Keine Vertraulichkeitsvereinbarungen oder Datenschutzmaßnahmen für den Informationsaustausch vorhanden",
@@ -3620,7 +3620,7 @@
       },
       "iaQ5": {
         "title": "Werden die Aufsichtsbehörden über die Teilnahme an Informationsaustauschvereinbarungen informiert?",
-        "tooltip": "Art. 45 Abs. 2 DORA sieht vor, dass Finanzunternehmen die zuständige Behörde über ihre Teilnahme an Informationsaustauschvereinbarungen unterrichten. Die Aufsichtsbehörde soll Kenntnis über die Teilnahme haben und kann Hinweise zur Gestaltung des Austauschs geben.",
+        "tooltip": "Art. 45 Abs. 3 DORA sieht vor, dass Finanzunternehmen die zuständige Behörde über ihre Teilnahme an Informationsaustauschvereinbarungen unterrichten. Die Aufsichtsbehörde soll Kenntnis über die Teilnahme haben und kann Hinweise zur Gestaltung des Austauschs geben.",
         "help": "DORA verlangt Transparenz gegenüber der Aufsichtsbehörde bezüglich Ihrer Teilnahme an Informationsaustauschvereinbarungen. Sie müssen Ihre zuständige Behörde (z. B. BaFin) informieren, an welchen Austauschvereinbarungen Sie teilnehmen. Dies dient der Aufsicht und ermöglicht es der Behörde, bei Bedarf die Einhaltung der Vertraulichkeits- und Datenschutzanforderungen zu überprüfen. Die Meldung sollte Art und Zweck der Vereinbarung, die beteiligten Partner und den Umfang des Austauschs umfassen.",
         "maturity": {
           "level0": "Keine Meldung an die Aufsichtsbehörde über Informationsaustauschvereinbarungen; keine Kenntnis der Meldepflicht",
@@ -3631,18 +3631,18 @@
       },
       "irmQ1": {
         "title": "Verfügt Ihr Finanzunternehmen über einen dokumentierten IKT-Risikomanagementrahmen gemäß DORA?",
-        "tooltip": "Art. 6 Abs. 1-2 DORA (EU 2022/2554) verpflichtet Finanzunternehmen, einen soliden, umfassenden und gut dokumentierten IKT-Risikomanagementrahmen einzurichten. Dieser muss Strategien, Leitlinien, Verfahren sowie IKT-Protokolle und -Werkzeuge umfassen, die zum Schutz aller IKT-Assets erforderlich sind. Die technischen Regulierungsstandards (RTS) nach JC 2023 86 konkretisieren die Anforderungen an den Rahmen.",
+        "tooltip": "Art. 6 Abs. 1-2 DORA (EU 2022/2554) verpflichtet Finanzunternehmen, einen soliden, umfassenden und gut dokumentierten IKT-Risikomanagementrahmen einzurichten. Dieser muss Strategien, Leitlinien, Verfahren sowie IKT-Protokolle und -Werkzeuge umfassen, die zum Schutz aller IKT-Assets erforderlich sind. Die Delegierte Verordnung (EU) 2024/1774 (RTS zum IKT-Risikomanagement) konkretisiert die Anforderungen an den Rahmen.",
         "help": "Der IKT-Risikomanagementrahmen ist das zentrale Steuerungsinstrument für Ihre digitale operationale Resilienz. Er muss mindestens eine IKT-Sicherheitsstrategie, Richtlinien zum Schutz der Verfügbarkeit, Authentizität, Integrität und Vertraulichkeit von Daten sowie einen klaren Verantwortungsrahmen enthalten. Das Leitungsorgan muss den Rahmen genehmigen und dessen Umsetzung aktiv überwachen. Für kleinere Finanzunternehmen gelten vereinfachte Anforderungen nach Art. 16 DORA.",
         "maturity": {
           "level0": "Kein dokumentierter IKT-Risikomanagementrahmen vorhanden",
           "level1": "Einzelne IKT-Richtlinien existieren, aber kein kohärenter Rahmen; keine formale Genehmigung durch das Leitungsorgan",
           "level2": "Dokumentierter IKT-Risikomanagementrahmen mit Strategie und Richtlinien vorhanden, vom Leitungsorgan genehmigt, aber nicht vollständig umgesetzt oder regelmäßig überprüft",
-          "level3": "Umfassender IKT-Risikomanagementrahmen gemäß Art. 6 DORA und RTS JC 2023 86, vom Leitungsorgan genehmigt, vollständig implementiert, jährlich überprüft und kontinuierlich verbessert"
+          "level3": "Umfassender IKT-Risikomanagementrahmen gemäß Art. 6 DORA und Delegierte Verordnung (EU) 2024/1774, vom Leitungsorgan genehmigt, vollständig implementiert, jährlich überprüft und kontinuierlich verbessert"
         }
       },
       "irmQ2": {
         "title": "Führen Sie ein vollständiges Inventar aller IKT-Assets und deren Abhängigkeiten?",
-        "tooltip": "Art. 8 Abs. 1-4 DORA verpflichtet Finanzunternehmen, alle IKT-gestützten Geschäftsfunktionen, Informationsassets und IKT-Assets zu identifizieren, zu klassifizieren und zu dokumentieren. Die RTS JC 2023 86 konkretisieren die Anforderungen an die Asset-Identifizierung und die Zuordnung zu kritischen oder wichtigen Funktionen.",
+        "tooltip": "Art. 8 Abs. 1-4 DORA verpflichtet Finanzunternehmen, alle IKT-gestützten Geschäftsfunktionen, Informationsassets und IKT-Assets zu identifizieren, zu klassifizieren und zu dokumentieren. Die Delegierte Verordnung (EU) 2024/1774 konkretisiert die Anforderungen an die Asset-Identifizierung und die Zuordnung zu kritischen oder wichtigen Funktionen.",
         "help": "Sie müssen ein aktuelles Verzeichnis aller IKT-Assets führen -- dazu gehören Hardware, Software, Netzwerkkomponenten, Datenbanken und Cloud-Dienste. Besonders wichtig ist die Zuordnung zu geschäftskritischen Funktionen: Welche IKT-Assets unterstützen welche Geschäftsprozesse? Wo bestehen Abhängigkeiten zu IKT-Drittanbietern? Das Inventar muss regelmäßig aktualisiert werden, insbesondere nach wesentlichen Änderungen der IKT-Infrastruktur.",
         "maturity": {
           "level0": "Kein IKT-Asset-Inventar vorhanden; keine Übersicht über IKT-gestützte Geschäftsfunktionen",
@@ -3719,7 +3719,7 @@
       },
       "rtQ4": {
         "title": "Werden TLPT-Tester nach den Qualifikationsanforderungen der DORA ausgewählt und eingesetzt?",
-        "tooltip": "Art. 26 Abs. 2-4 DORA stellt strenge Anforderungen an TLPT-Tester: Sie müssen über höchste Eignung und Ansehen verfügen, technische und organisatorische Fähigkeiten besitzen und von einer Akkreditierungsstelle zertifiziert sein oder formalen Verhaltenskodizes folgen. Bei externen Testern gelten zusätzliche Anforderungen an Unabhängigkeit und Versicherungsschutz.",
+        "tooltip": "Art. 27 Abs. 1-2 DORA stellt strenge Anforderungen an TLPT-Tester: Sie müssen über höchste Eignung und Ansehen verfügen, technische und organisatorische Fähigkeiten besitzen und von einer Akkreditierungsstelle zertifiziert sein oder formalen Verhaltenskodizes folgen. Bei externen Testern gelten zusätzliche Anforderungen an Unabhängigkeit und Versicherungsschutz.",
         "help": "DORA erlaubt grundsätzlich nur externe TLPT-Tester. Interne Tester dürfen nur unter strengen Voraussetzungen eingesetzt werden und nur für maximal die Hälfte der Tests -- in jedem Fall muss ein externer Threat-Intelligence-Anbieter beteiligt sein. Bei der Auswahl externer Tester müssen Sie deren Qualifikation, Erfahrung mit dem Finanzsektor, Zertifizierungen, Haftpflichtversicherung und Interessenfreiheit prüfen. Die Aufsichtsbehörde kann die Auswahl des Testers ablehnen.",
         "maturity": {
           "level0": "Keine Kriterien für die Auswahl von TLPT-Testern definiert",
@@ -3741,7 +3741,7 @@
       },
       "vmQ1": {
         "title": "Existiert ein IKT-bezogener Vorfallmanagementprozess mit klaren Rollen, Verantwortlichkeiten und Eskalationsstufen?",
-        "tooltip": "Art. 17 Abs. 1-3 DORA verpflichtet Finanzunternehmen, einen Managementprozess zur Überwachung, Behandlung und Nachverfolgung IKT-bezogener Vorfälle einzurichten. Dieser muss Frühwarnindikatoren, Verfahren zur Identifizierung, Nachverfolgung, Protokollierung und Kategorisierung umfassen. Die RTS JC 2024 33 konkretisieren die Anforderungen an die Klassifizierung.",
+        "tooltip": "Art. 17 Abs. 1-3 DORA verpflichtet Finanzunternehmen, einen Managementprozess zur Überwachung, Behandlung und Nachverfolgung IKT-bezogener Vorfälle einzurichten. Dieser muss Frühwarnindikatoren, Verfahren zur Identifizierung, Nachverfolgung, Protokollierung und Kategorisierung umfassen. Die Delegierte Verordnung (EU) 2024/1772 konkretisiert die Anforderungen an die Klassifizierung.",
         "help": "Der IKT-Vorfallmanagementprozess ist die organisatorische Grundlage für den Umgang mit Sicherheitsvorfällen in Ihrem Finanzunternehmen. Er muss klar definieren: Wer erkennt Vorfälle? Wer bewertet den Schweregrad? Wer koordiniert die Reaktion? Wer informiert die Aufsichtsbehörde? Wichtig sind klare Eskalationsstufen, damit schwerwiegende Vorfälle innerhalb der Meldefristen an die zuständige Behörde gemeldet werden können.",
         "maturity": {
           "level0": "Kein dokumentierter IKT-Vorfallmanagementprozess vorhanden",
@@ -3752,13 +3752,13 @@
       },
       "vmQ2": {
         "title": "Werden IKT-bezogene Vorfälle nach den DORA-Klassifizierungskriterien als schwerwiegend eingestuft?",
-        "tooltip": "Art. 18 Abs. 1-2 DORA legt fest, dass Finanzunternehmen IKT-bezogene Vorfälle anhand bestimmter Kriterien klassifizieren müssen. Die Klassifizierungskriterien umfassen unter anderem: Anzahl betroffener Kunden, Dauer des Vorfalls, geografische Ausbreitung, Datenverluste, Kritikalität betroffener Dienste und wirtschaftliche Auswirkungen. Die RTS JC 2024 33 definieren die Schwellenwerte für schwerwiegende Vorfälle.",
+        "tooltip": "Art. 18 Abs. 1-2 DORA legt fest, dass Finanzunternehmen IKT-bezogene Vorfälle anhand bestimmter Kriterien klassifizieren müssen. Die Klassifizierungskriterien umfassen unter anderem: Anzahl betroffener Kunden, Dauer des Vorfalls, geografische Ausbreitung, Datenverluste, Kritikalität betroffener Dienste und wirtschaftliche Auswirkungen. Die Delegierte Verordnung (EU) 2024/1772 definiert die Schwellenwerte für schwerwiegende Vorfälle.",
         "help": "DORA unterscheidet zwischen IKT-bezogenen Vorfällen und schwerwiegenden IKT-bezogenen Vorfällen. Nur schwerwiegende Vorfälle sind meldepflichtig. Die Klassifizierung erfolgt anhand von sieben Kriterien: Anzahl betroffener Kunden/Gegenparteien, Dauer des Vorfalls, geografische Ausbreitung, Datenverluste, Auswirkungen auf kritische Dienste, wirtschaftliche Auswirkungen und Kritikalität der betroffenen Dienste. Sie benötigen ein Verfahren, das diese Kriterien systematisch prüft und dokumentiert.",
         "maturity": {
           "level0": "Keine Klassifizierung von IKT-Vorfällen nach Schweregrad",
           "level1": "Vorfälle werden ad hoc bewertet, aber nicht anhand der DORA-Klassifizierungskriterien",
           "level2": "Klassifizierungsverfahren anhand der DORA-Kriterien implementiert, aber Schwellenwerte der RTS noch nicht vollständig übernommen",
-          "level3": "Systematische Klassifizierung aller IKT-Vorfälle gemäß Art. 18 DORA und RTS JC 2024 33 mit dokumentierten Schwellenwerten, automatisierter Vorprüfung und regelmäßiger Kalibrierung der Einstufungskriterien"
+          "level3": "Systematische Klassifizierung aller IKT-Vorfälle gemäß Art. 18 DORA und Delegierte Verordnung (EU) 2024/1772 mit dokumentierten Schwellenwerten, automatisierter Vorprüfung und regelmäßiger Kalibrierung der Einstufungskriterien"
         }
       },
       "vmQ3": {
@@ -3774,12 +3774,12 @@
       },
       "vmQ4": {
         "title": "Werden Standardformulare und -vorlagen für die Vorfallmeldung an die Aufsichtsbehörde verwendet?",
-        "tooltip": "Art. 20 Abs. 1 DORA ermächtigt die ESAs, ITS-Entwürfe zu erarbeiten, die Standardformulare, -vorlagen und -verfahren für die Meldung schwerwiegender IKT-bezogener Vorfälle festlegen. Die ITS JC 2024 33 enthalten die konkreten Meldeformulare mit den erforderlichen Datenfeldern für Erst-, Zwischen- und Abschlussmeldungen.",
+        "tooltip": "Art. 20 Abs. 1 DORA ermächtigt die ESAs, ITS-Entwürfe zu erarbeiten, die Standardformulare, -vorlagen und -verfahren für die Meldung schwerwiegender IKT-bezogener Vorfälle festlegen. Die Durchführungsverordnung (EU) 2025/302 enthält die konkreten Meldeformulare mit den erforderlichen Datenfeldern für Erst-, Zwischen- und Abschlussmeldungen.",
         "help": "Die Verwendung der offiziellen Standardformulare ist nicht optional, sondern Pflicht. Die Formulare enthalten spezifische Datenfelder zu Vorfallbeschreibung, betroffenen Diensten, Auswirkungen auf Kunden, ergriffenen Maßnahmen und Root-Cause-Analyse. Sie sollten die Formulare bereits vor einem Vorfall in Ihre Meldeprozesse integrieren, damit im Ernstfall keine Zeit mit der Suche nach den richtigen Vorlagen verloren geht. Automatisierungen -- etwa durch Verknüpfung mit Ihrem SIEM-System -- beschleunigen die Befüllung.",
         "maturity": {
           "level0": "Keine Kenntnis der DORA-Standardformulare; keine Meldevorlagen vorhanden",
           "level1": "Kenntnis der ITS-Meldeformulare vorhanden, aber noch nicht in interne Prozesse integriert",
-          "level2": "Standardformulare nach ITS JC 2024 33 in den Meldeprozess integriert, Verantwortliche geschult, aber keine automatisierte Vorbefüllung",
+          "level2": "Standardformulare nach Durchführungsverordnung (EU) 2025/302 in den Meldeprozess integriert, Verantwortliche geschult, aber keine automatisierte Vorbefüllung",
           "level3": "Standardformulare vollständig in den Meldeprozess integriert mit automatisierter Vorbefüllung aus SIEM/Ticketsystem, regelmäßig aktualisierten Vorlagen und dokumentierten Probeläufen"
         }
       },
@@ -3807,11 +3807,11 @@
         },
         "q3": {
           "title": "Führen Sie regelmäßige Tests Ihrer digitalen operationalen Resilienz durch?",
-          "description": "Art. 24-27 DORA: Jährliche Basistests und bei systemrelevanten Instituten alle 3 Jahre bedrohungsgeleitete Penetrationstests (TLPT) sind Pflicht."
+          "description": "Art. 24-27 DORA: Jährliche Basistests und für von der Aufsicht bestimmte Finanzunternehmen alle 3 Jahre bedrohungsgeleitete Penetrationstests (TLPT) sind Pflicht."
         },
         "q4": {
           "title": "Führen Sie ein Register aller IKT-Drittanbieter und überwachen deren Risiken?",
-          "description": "Art. 28-44 DORA: Ein vollständiges IKT-Drittanbieterregister, vertragliche Mindestanforderungen und Exit-Strategien für kritische Dienste sind vorgeschrieben."
+          "description": "Art. 28-30 DORA: Ein vollständiges IKT-Drittanbieterregister, vertragliche Mindestanforderungen und Exit-Strategien für kritische Dienste sind vorgeschrieben."
         },
         "q5": {
           "title": "Nehmen Sie an einem Informationsaustausch über Cyberbedrohungen teil?",
@@ -3867,7 +3867,7 @@
         "title": "Governance für Informationsaustausch etablieren (TLP)"
       },
       "ia3": {
-        "description": "Erfüllen Sie alle Berichtspflichten gegenüber zuständigen Aufsichtsbehörden gemäß Art. 45 DORA, insbesondere zu IKT-Risiken, Vorfällen und Drittanbieterbeziehungen. Nutzen Sie standardisierte Meldeformate.",
+        "description": "Teilen Sie der zuständigen Behörde Ihre Teilnahme an Vereinbarungen zum Informationsaustausch mit (Art. 45 Abs. 3 DORA). Getrennt davon: Schwerwiegende IKT-Vorfälle melden Sie nach Art. 19, das Informationsregister zu IKT-Drittdienstleistern führen Sie nach Art. 28 Abs. 3.",
         "firstStep": "Identifizieren Sie alle aufsichtsrechtlichen Berichtspflichten gemäß DORA und legen Sie interne Meldezyklen fest.",
         "title": "Berichtspflichten gegenüber Aufsichtsbehörden erfüllen"
       },
@@ -4058,7 +4058,7 @@
       },
       "compQ2": {
         "title": "Werden regelmäßige interne Audits und Managementbewertungen des ISMS durchgeführt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.35 — Interne Audits müssen regelmäßig geplant und durchgeführt werden, um die Wirksamkeit des ISMS zu überprüfen. Die Ergebnisse müssen in einer Managementbewertung (Management Review) bewertet werden.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 Kap. 9.2/9.3 — Interne Audits müssen regelmäßig geplant und durchgeführt werden, um die Wirksamkeit des ISMS zu überprüfen. Die Ergebnisse müssen in einer Managementbewertung (Management Review) bewertet werden.",
         "help": "TISAX verlangt einen funktionierenden PDCA-Zyklus: Planen, Umsetzen, Überprüfen, Verbessern. Interne Audits sind der zentrale Überprüfungsmechanismus. Sie müssen jährlich alle VDA-ISA-Kapitel abdecken, die Ergebnisse dokumentieren und der Geschäftsleitung im Rahmen eines Management Reviews vorlegen. Befunde müssen nachverfolgt und Maßnahmen auf Wirksamkeit geprüft werden.",
         "maturity": {
           "level0": "Keine internen ISMS-Audits — keine systematische Überprüfung der Informationssicherheitsmaßnahmen",
@@ -4080,7 +4080,7 @@
       },
       "dsQ1": {
         "title": "Ist die Einhaltung datenschutzrechtlicher Anforderungen (DSGVO) im Rahmen Ihrer Informationssicherheit sichergestellt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.34 — Die Verarbeitung personenbezogener Daten muss den Anforderungen der DSGVO und des BDSG entsprechen. Ein Datenschutzbeauftragter muss benannt und die Einhaltung der Datenschutzgrundsätze sichergestellt sein.",
+        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.34 — Die Verarbeitung personenbezogener Daten muss den Anforderungen der DSGVO und des BDSG entsprechen. Sofern nach Art. 37 DSGVO/§ 38 BDSG erforderlich, muss ein Datenschutzbeauftragter benannt und die Einhaltung der Datenschutzgrundsätze sichergestellt sein.",
         "help": "TISAX umfasst auch Datenschutzanforderungen, die über die reine Informationssicherheit hinausgehen. Als Automobilzulieferer verarbeiten Sie personenbezogene Daten von Mitarbeitern, Kunden und Ansprechpartnern. Die VDA ISA prüft, ob ein Datenschutzbeauftragter benannt ist, ob ein Verarbeitungsverzeichnis geführt wird und ob die DSGVO-Grundsätze (Rechtmäßigkeit, Zweckbindung, Datenminimierung) eingehalten werden.",
         "maturity": {
           "level0": "Keine systematische Berücksichtigung datenschutzrechtlicher Anforderungen — kein Datenschutzbeauftragter benannt, kein Verarbeitungsverzeichnis",
@@ -4505,7 +4505,7 @@
         "title": "Schlüsselmanagement für Automotive-Verschlüsselung"
       },
       "lief1": {
-        "description": "Definieren Sie verbindliche Informationssicherheitsanforderungen für alle Automotive-Lieferanten gemäß VDA ISA 6 und ISO 27001 A.5.19. Fordern Sie TISAX-Zertifizierung bei sensiblen Zulieferern.",
+        "description": "Definieren Sie verbindliche Informationssicherheitsanforderungen für alle Automotive-Lieferanten gemäß VDA ISA 6 und ISO 27001 A.5.19. Fordern Sie ein TISAX-Label bei sensiblen Zulieferern.",
         "firstStep": "Erstellen Sie eine Lieferantenanforderungs-Checkliste für Informationssicherheit mit TISAX-Anforderungen für kritische Zulieferer.",
         "title": "Informationssicherheitsanforderungen an Automotive-Lieferanten"
       },
@@ -4652,7 +4652,7 @@
         "importantClass1": "Wichtiges Produkt Klasse I (Anhang III) — Selbstbewertung mit harmonisierten Standards möglich",
         "importantClass2": "Wichtiges Produkt Klasse II (Anhang III) — Drittanbieterbewertung erforderlich",
         "noDigitalElements": "Produkt ohne digitale Elemente — CRA nicht anwendbar",
-        "openSourceExcluded": "Nichtkommerzielle Open-Source-Software — vom CRA ausgenommen (Art. 3 Nr. 47)"
+        "openSourceExcluded": "Nicht im Rahmen einer Geschäftstätigkeit bereitgestellte Open-Source-Software – nicht vom CRA erfasst (ErwG 18 f.)"
       }
     },
     "questions": {
@@ -4664,7 +4664,7 @@
           "level0": "Keine Security-by-Design-Prinzipien vorhanden — Sicherheit wird nicht systematisch in der Produktentwicklung berücksichtigt",
           "level1": "Einzelne Sicherheitsaspekte werden ad hoc berücksichtigt — kein strukturierter Ansatz, keine Bedrohungsmodellierung",
           "level2": "Dokumentierter Entwicklungsprozess mit Bedrohungsmodellierung und sicherer Architektur — Sicherheitsanforderungen aus Anhang I werden systematisch umgesetzt",
-          "level3": "Vollständig integrierter Secure-SDLC mit automatisierten Sicherheitsprüfungen, regelmäßiger Bedrohungsmodellierung und kontinuierlicher Verbesserung gemäß EN 18031-1"
+          "level3": "Vollständig integrierter Secure-SDLC mit automatisierten Sicherheitsprüfungen, regelmäßiger Bedrohungsmodellierung und kontinuierlicher Verbesserung gemäß Anhang I CRA"
         }
       },
       "sbdQ2": {
@@ -4686,7 +4686,7 @@
           "level0": "Kein nennenswerter Zugangsschutz — keine oder nur triviale Authentifizierung (z.B. fest kodierte Zugangsdaten)",
           "level1": "Einfache Passwortauthentifizierung vorhanden — keine Mehrfaktorauthentifizierung, keine rollenbasierte Zugriffskontrolle",
           "level2": "Robuste Authentifizierungsmechanismen mit individuellen Zugangsdaten — rollenbasierter Zugriff und Sitzungsverwaltung implementiert",
-          "level3": "Mehrschichtiges Zugangsschutzsystem mit MFA-Unterstützung, feingranularer Autorisierung und sicherer Schlüsselverwahrung gemäß EN 18031-1"
+          "level3": "Mehrschichtiges Zugangsschutzsystem mit MFA-Unterstützung, feingranularer Autorisierung und sicherer Schlüsselverwahrung gemäß Anhang I CRA"
         }
       },
       "swmQ1": {
@@ -4768,7 +4768,7 @@
       },
       "umQ2": {
         "title": "Werden Sicherheitsupdates getrennt von Funktionsupdates bereitgestellt?",
-        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) betont die separate Bereitstellung von Sicherheitsupdates. EN 18031-1 Abschnitt 9 konkretisiert, dass Sicherheitspatches unabhängig von Feature-Updates verfügbar sein müssen.",
+        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) betont die separate Bereitstellung von Sicherheitsupdates. Nach Anhang I Teil II Nr. 8 sind Sicherheitsupdates nach Möglichkeit getrennt von Funktionsupdates bereitzustellen.",
         "help": "Nutzer zögern häufig, größere Funktionsupdates zu installieren, weil sie Kompatibilitätsprobleme befürchten. Wenn Sicherheitspatches nur als Teil großer Updates verfügbar sind, bleiben kritische Lücken offen. Der CRA fordert daher, dass reine Sicherheitsupdates separat und zeitnah bereitgestellt werden.",
         "maturity": {
           "level0": "Keine Trennung — Sicherheitspatches werden nur zusammen mit Funktionsupdates ausgeliefert oder gar nicht bereitgestellt",
@@ -4823,8 +4823,8 @@
       },
       "vmQ1": {
         "title": "Haben Sie einen Prozess zur Meldung aktiv ausgenutzter Schwachstellen an die ENISA eingerichtet?",
-        "tooltip": "Art. 14 Abs. 1 CRA (EU 2024/2847) verpflichtet Hersteller, aktiv ausgenutzte Schwachstellen innerhalb von 24 Stunden an die ENISA zu melden. Die Frühwarnung muss grundlegende Informationen zur Schwachstelle enthalten.",
-        "help": "Der CRA führt strenge Meldepflichten ein: Wenn eine Schwachstelle in Ihrem Produkt aktiv ausgenutzt wird, müssen Sie innerhalb von 24 Stunden eine Frühwarnung an die ENISA senden. Innerhalb von 72 Stunden folgt eine detaillierte Meldung, und spätestens 14 Tage nach Bereitstellung einer Abhilfemaßnahme ein Abschlussbericht.",
+        "tooltip": "Art. 14 Abs. 1 CRA (EU 2024/2847) verpflichtet Hersteller, aktiv ausgenutzte Schwachstellen innerhalb von 24 Stunden über die zentrale Meldeplattform zu melden – gleichzeitig an das zuständige CSIRT (in Deutschland das BSI) und die ENISA. Die Frühwarnung muss grundlegende Informationen zur Schwachstelle enthalten.",
+        "help": "Der CRA führt strenge Meldepflichten ein: Wenn eine Schwachstelle in Ihrem Produkt aktiv ausgenutzt wird, müssen Sie innerhalb von 24 Stunden eine Frühwarnung über die zentrale Meldeplattform an CSIRT (BSI) und ENISA senden. Innerhalb von 72 Stunden folgt eine detaillierte Meldung, und spätestens 14 Tage nach Bereitstellung einer Abhilfemaßnahme ein Abschlussbericht.",
         "maturity": {
           "level0": "Kein Meldeprozess vorhanden — keine Kenntnis der Meldepflichten nach Art. 14 CRA",
           "level1": "Bewusstsein für Meldepflichten vorhanden — jedoch kein definierter Prozess, keine Verantwortlichkeiten festgelegt",
@@ -4867,12 +4867,12 @@
       },
       "konfQ2": {
         "title": "Wenden Sie die einschlägigen harmonisierten europäischen Normen (hEN) für Ihr Konformitätsverfahren an?",
-        "tooltip": "Art. 27 CRA (EU 2024/2847): Die Anwendung harmonisierter europäischer Normen (z.B. EN 18031-1/2/3) begründet eine Konformitätsvermutung für die abgedeckten Anforderungen.",
-        "help": "Harmonisierte europäische Normen (hEN) wie die EN 18031-Reihe konkretisieren die Anforderungen des CRA. Wenn Sie diese Normen anwenden, greift die Konformitätsvermutung: Ihre Produkte gelten als CRA-konform, ohne dass dies einzeln nachgewiesen werden muss. Für wichtige Produkte der Klasse I ist die Anwendung von hEN besonders relevant, da sie die Selbstbewertung ermöglichen kann.",
+        "tooltip": "Art. 27 CRA (EU 2024/2847): Die Anwendung harmonisierter Normen, deren Fundstellen im Amtsblatt veröffentlicht sind, begründet eine Konformitätsvermutung. Die CRA-Normen entstehen aus dem Normungsauftrag M/606 bei CEN, CENELEC und ETSI. Die EN-18031-Reihe gehört zur Funkanlagenrichtlinie (RED), nicht zum CRA.",
+        "help": "Harmonisierte europäische Normen (hEN) konkretisieren die Anforderungen des CRA. Sobald ihre Fundstellen im Amtsblatt veröffentlicht sind, greift bei ihrer Anwendung die Konformitätsvermutung. Für wichtige Produkte der Klasse I ist das besonders relevant, weil die Selbstbewertung dann möglich ist. Bis dahin helfen etablierte Normen wie ETSI EN 303 645 oder IEC 62443-4-1 bei der Orientierung.",
         "maturity": {
           "level0": "Keine harmonisierten Normen bekannt oder angewendet",
           "level1": "Relevante Normen identifiziert — jedoch noch keine systematische Anwendung, Gap-Analyse ausstehend",
-          "level2": "Relevante hEN (z.B. EN 18031-1/2/3) werden systematisch angewendet — Gap-Analyse durchgeführt, Umsetzungsplan erstellt",
+          "level2": "Relevante Normen (z. B. ETSI EN 303 645, IEC 62443-4-1; CRA-hEN sobald veröffentlicht) werden systematisch angewendet — Gap-Analyse durchgeführt, Umsetzungsplan erstellt",
           "level3": "Vollständige Anwendung aller relevanten hEN mit dokumentierter Konformitätsvermutung, regelmäßiger Überprüfung bei Normenänderungen und Integration in den Entwicklungsprozess"
         }
       },
@@ -4900,7 +4900,7 @@
       },
       "slQ2": {
         "title": "Gewährleisten Sie die Bereitstellung von Sicherheitsupdates über den gesamten Supportzeitraum?",
-        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verpflichtet Hersteller, während des gesamten Supportzeitraums Sicherheitsupdates bereitzustellen. EN 18031-1 Abschnitt 10 konkretisiert die Anforderungen an die langfristige Updatefähigkeit.",
+        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verpflichtet Hersteller, während des gesamten Supportzeitraums Sicherheitsupdates bereitzustellen.",
         "help": "Die Verpflichtung zur Update-Bereitstellung endet nicht nach dem ersten Produktjahr. Über den gesamten Supportzeitraum müssen Sie in der Lage sein, Schwachstellen zu beheben und Updates zu verteilen. Dies erfordert langfristige Planung: Infrastruktur, Build-Systeme und Testumgebungen müssen auch Jahre nach dem Erstrelease verfügbar sein.",
         "maturity": {
           "level0": "Keine langfristige Update-Fähigkeit — nach initialem Release keine Ressourcen für Sicherheitspatches eingeplant",
@@ -4933,7 +4933,7 @@
         },
         "q3": {
           "title": "Pflegen Sie eine aktuelle Software-Stückliste (SBOM) für Ihre Produkte?",
-          "description": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA: Eine maschinenlesbare SBOM mit allen Komponenten (inkl. Open-Source-Bibliotheken) muss erstellt und aktuell gehalten werden."
+          "description": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA: Eine maschinenlesbare SBOM mindestens mit den Top-Level-Abhängigkeiten muss erstellt und aktuell gehalten werden."
         },
         "q4": {
           "title": "Können Sie Sicherheitsupdates über den gesamten Produktlebenszyklus bereitstellen?",
@@ -4953,7 +4953,7 @@
         },
         "q8": {
           "title": "Haben Sie den Support-Zeitraum für Ihre Produkte definiert und kommuniziert?",
-          "description": "Art. 13 Abs. 8 CRA: Der Support-Zeitraum (mindestens 5 Jahre) muss vor Inverkehrbringen festgelegt und für Nutzer klar ersichtlich dokumentiert sein."
+          "description": "Art. 13 Abs. 8 CRA: Der Support-Zeitraum (mindestens 5 Jahre, außer die erwartete Nutzungsdauer ist kürzer) muss vor Inverkehrbringen festgelegt und für Nutzer klar ersichtlich dokumentiert sein."
         }
       }
     },
@@ -5007,7 +5007,7 @@
         "title": "Secure Development Lifecycle (SDL) etablieren"
       },
       "sbom1": {
-        "description": "Erstellen Sie eine Software Bill of Materials (SBOM) im SPDX- oder CycloneDX-Format für Ihre Produkte. Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA fordert eine vollständige, maschinenlesbare Auflistung aller Software-Komponenten.",
+        "description": "Erstellen Sie eine Software Bill of Materials (SBOM) im SPDX- oder CycloneDX-Format für Ihre Produkte. Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA fordert eine maschinenlesbare SBOM, die mindestens die Top-Level-Abhängigkeiten erfasst.",
         "firstStep": "Wählen Sie ein SBOM-Tool (z.B. Syft, CycloneDX Generator) und erzeugen Sie eine erste SBOM für Ihr Hauptprodukt.",
         "title": "Maschinenlesbare SBOM erstellen"
       },
@@ -5071,9 +5071,9 @@
         "title": "Support-Zeitraum definieren (mind. 5 Jahre)"
       },
       "vm1": {
-        "description": "Richten Sie einen Prozess ein, um aktiv ausgenutzte Schwachstellen innerhalb von 24 Stunden an ENISA zu melden. Art. 14 Abs. 1-2 CRA verpflichtet zur unverzüglichen Meldung schwerwiegender Vorfälle.",
+        "description": "Richten Sie einen Prozess ein, um aktiv ausgenutzte Schwachstellen innerhalb von 24 Stunden über die zentrale Meldeplattform an CSIRT (BSI) und ENISA zu melden. Art. 14 Abs. 3 CRA verpflichtet zusätzlich zur Meldung schwerwiegender Sicherheitsvorfälle.",
         "firstStep": "Registrieren Sie sich im ENISA-Meldesystem und definieren Sie interne Eskalationswege für Schwachstellenmeldungen.",
-        "title": "Schwachstellenmeldung an ENISA innerhalb 24h einrichten"
+        "title": "Schwachstellenmeldung an CSIRT/ENISA innerhalb 24h einrichten"
       },
       "vm2": {
         "description": "Erstellen Sie standardisierte Vorlagen und Prozesse für interne Schwachstellenmeldungen. Art. 14 Abs. 2 CRA fordert, dass Hersteller klar definierte Abläufe zur Bewertung und Meldung von Vorfällen haben.",
@@ -5173,13 +5173,13 @@
       "reasons": {
         "basis": "Einstieg in die Informationssicherheit — Umsetzung der wichtigsten Basismaßnahmen",
         "kern": "Fokussierter Schutz für die wichtigsten Geschäftsprozesse und kritischen Assets",
-        "standard": "Umfassender Schutz — vollständige Umsetzung des BSI IT-Grundschutz-Kompendiums"
+        "standard": "Umfassender Schutz — Umsetzung aller für den Informationsverbund relevanten Bausteine (Basis- und Standard-Anforderungen)"
       }
     },
     "questions": {
       "appQ1": {
         "title": "Werden Office-Produkte und Standardanwendungen sicher konfiguriert und mit aktuellen Sicherheitsupdates betrieben?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein APP.1.1.A1 fordern die sichere Konfiguration von Office-Produkten. Makros, ActiveX und andere aktive Inhalte müssen eingeschränkt, Sicherheitsupdates zeitnah eingespielt werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein APP.1.1 (Kompendium, Edition 2023) fordert die sichere Konfiguration von Office-Produkten. Makros, ActiveX und andere aktive Inhalte müssen eingeschränkt, Sicherheitsupdates zeitnah eingespielt werden.",
         "help": "Office-Produkte (Microsoft Office, LibreOffice etc.) sind eines der häufigsten Einfallstore für Schadsoftware — insbesondere über Makros in E-Mail-Anhängen. Die sichere Konfiguration umfasst: Makro-Ausführung standardmäßig deaktivieren, ActiveX-Steuerelemente einschränken, geschützte Ansicht für Dateien aus dem Internet aktivieren und Sicherheitsupdates automatisch einspielen.",
         "maturity": {
           "level0": "Keine sichere Konfiguration — Office-Produkte werden mit Standardeinstellungen betrieben, Makros uneingeschränkt erlaubt, Updates unregelmäßig",
@@ -5190,7 +5190,7 @@
       },
       "appQ2": {
         "title": "Werden Webbrowser zentral verwaltet und gegen typische webbasierte Angriffe gehärtet?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein APP.1.2.A1 fordern die sichere Konfiguration von Webbrowsern. Browser sind ein primäres Angriffsziel und müssen hinsichtlich Erweiterungen, Datenschutz und Sicherheitseinstellungen kontrolliert werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein APP.1.2 (Kompendium, Edition 2023) fordert die sichere Konfiguration von Webbrowsern. Browser sind ein primäres Angriffsziel und müssen hinsichtlich Erweiterungen, Datenschutz und Sicherheitseinstellungen kontrolliert werden.",
         "help": "Webbrowser sind das meistgenutzte Programm in den meisten Unternehmen — und damit ein bevorzugtes Angriffsziel. Die Härtung umfasst: Regelmäßige Updates sicherstellen, nicht benötigte Plugins und Erweiterungen deaktivieren, Zertifikatsprüfung aktivieren, unsichere Inhalte blockieren und eine Positivliste für Browser-Erweiterungen pflegen. Idealerweise erfolgt die Konfiguration zentral über Managementsysteme.",
         "maturity": {
           "level0": "Keine zentrale Verwaltung der Browser — Mitarbeitende installieren beliebige Browser und Erweiterungen, keine Sicherheitsvorgaben",
@@ -5201,7 +5201,7 @@
       },
       "appQ3": {
         "title": "Werden selbst betriebene Webanwendungen und Webservices nach anerkannten Sicherheitsstandards entwickelt und betrieben?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein APP.3.1.A1 fordern die sichere Konfiguration und den sicheren Betrieb von Webanwendungen. Dies umfasst Eingabevalidierung, Authentifizierung, Session-Management und den Schutz vor OWASP-Top-10-Schwachstellen.",
+        "tooltip": "Der IT-Grundschutz-Baustein APP.3.1 (Kompendium, Edition 2023) fordert die sichere Konfiguration und den sicheren Betrieb von Webanwendungen. Dies umfasst Eingabevalidierung, Authentifizierung, Session-Management und den Schutz vor OWASP-Top-10-Schwachstellen.",
         "help": "Webanwendungen (z.B. Kundenportale, Webshops, interne Tools) sind aus dem Internet erreichbar und damit besonders exponiert. Sie müssen gegen gängige Angriffe geschützt werden: SQL-Injection, Cross-Site-Scripting (XSS), fehlerhafte Authentifizierung und unzureichende Zugriffskontrolle (OWASP Top 10). Regelmäßige Sicherheitstests (Penetrationstests, automatisierte Scans) sind unerlässlich.",
         "maturity": {
           "level0": "Keine Sicherheitsvorgaben für Webanwendungen — Entwicklung ohne Sicherheitsrichtlinien, keine Sicherheitstests vor Inbetriebnahme",
@@ -5212,7 +5212,7 @@
       },
       "conQ1": {
         "title": "Existiert ein Kryptokonzept, das den Einsatz von Verschlüsselung in Ihrem Unternehmen regelt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 5 und Baustein CON.1.A1 fordern ein Kryptokonzept als Grundlage für den einheitlichen und sicheren Einsatz kryptographischer Verfahren. Es muss festlegen, welche Daten wie verschlüsselt werden und wie Schlüssel verwaltet werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein CON.1 (Kompendium, Edition 2023) fordert ein Kryptokonzept als Grundlage für den einheitlichen und sicheren Einsatz kryptographischer Verfahren. Es muss festlegen, welche Daten wie verschlüsselt werden und wie Schlüssel verwaltet werden.",
         "help": "Ein Kryptokonzept legt fest, welche Verschlüsselungsverfahren und -algorithmen in Ihrem Unternehmen eingesetzt werden, welche Daten verschlüsselt werden müssen (z.B. personenbezogene Daten, Geschäftsgeheimnisse), wie Schlüssel erzeugt, verteilt, gespeichert und bei Bedarf gewechselt werden. Ohne Kryptokonzept wird Verschlüsselung oft unsystematisch oder mit veralteten Verfahren eingesetzt.",
         "maturity": {
           "level0": "Kein Kryptokonzept vorhanden — Verschlüsselung wird nicht systematisch eingesetzt oder nur anlassbezogen verwendet",
@@ -5223,7 +5223,7 @@
       },
       "conQ2": {
         "title": "Ist ein Datensicherungskonzept erstellt und werden Backups regelmäßig durchgeführt und getestet?",
-        "tooltip": "BSI-Standard 200-4 Kap. 3 und Baustein CON.3.A1 fordern ein Datensicherungskonzept. Es muss festlegen, welche Daten wie oft gesichert werden, wo Backups gelagert werden und wie die Wiederherstellung getestet wird.",
+        "tooltip": "Der IT-Grundschutz-Baustein CON.3 (Kompendium, Edition 2023) fordert ein Datensicherungskonzept. Es muss festlegen, welche Daten wie oft gesichert werden, wo Backups gelagert werden und wie die Wiederherstellung getestet wird.",
         "help": "Ein Datensicherungskonzept definiert, welche Daten und Systeme gesichert werden, wie häufig Backups erstellt werden (täglich, wöchentlich), welche Sicherungsart verwendet wird (Voll-, Inkrementell-, Differenziell-Backup) und wo die Sicherungen aufbewahrt werden. Besonders wichtig: Backups müssen regelmäßig auf Wiederherstellbarkeit getestet werden. Ein nicht getestetes Backup ist kein Backup.",
         "maturity": {
           "level0": "Kein Datensicherungskonzept — Backups werden nicht oder nur sporadisch erstellt, keine Wiederherstellungstests",
@@ -5234,7 +5234,7 @@
       },
       "conQ3": {
         "title": "Gibt es verbindliche Regelungen für das sichere Löschen und Vernichten von Daten und Datenträgern?",
-        "tooltip": "BSI-Standard 200-2 Kap. 5.3 und Baustein CON.6.A1 fordern Regelungen zum sicheren Löschen und Vernichten von Daten. Insbesondere bei der Außerbetriebnahme von Geräten oder der Weitergabe von Datenträgern müssen Daten unwiederherstellbar entfernt werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein CON.6 (Kompendium, Edition 2023) fordert Regelungen zum sicheren Löschen und Vernichten von Daten. Insbesondere bei der Außerbetriebnahme von Geräten oder der Weitergabe von Datenträgern müssen Daten unwiederherstellbar entfernt werden.",
         "help": "Einfaches Löschen oder Formatieren reicht nicht aus — Daten können mit Spezialwerkzeugen wiederhergestellt werden. Festplatten, USB-Sticks, Drucker mit internem Speicher, Smartphones und Kopiergeräte müssen vor Entsorgung oder Weitergabe sicher gelöscht oder physisch vernichtet werden. Das BSI empfiehlt je nach Schutzklasse unterschiedliche Methoden (Überschreiben, Degausser, Schredder nach DIN 66399).",
         "maturity": {
           "level0": "Keine Regelungen zum Löschen und Vernichten — Datenträger werden ungelöscht entsorgt, zurückgegeben oder weitergegeben",
@@ -5245,7 +5245,7 @@
       },
       "derQ1": {
         "title": "Werden sicherheitsrelevante Ereignisse auf Ihren IT-Systemen systematisch erfasst und ausgewertet?",
-        "tooltip": "BSI-Standard 200-4 Kap. 5 und Baustein DER.1.A1 fordern die Erstellung und Auswertung von Systemprotokollen zur Erkennung von Sicherheitsvorfällen. Logs müssen zentral gesammelt, korreliert und zeitnah ausgewertet werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein DER.1 (Kompendium, Edition 2023) fordert die Erstellung und Auswertung von Systemprotokollen zur Erkennung von Sicherheitsvorfällen. Logs müssen zentral gesammelt, korreliert und zeitnah ausgewertet werden.",
         "help": "Ohne systematische Protokollierung und Auswertung von Logdaten bleiben Angriffe oft wochen- oder monatelang unentdeckt. Sicherheitsrelevante Ereignisse — fehlgeschlagene Anmeldungen, ungewöhnliche Netzwerkaktivitäten, Konfigurationsänderungen — müssen erfasst, zentral gesammelt und analysiert werden. Ein SIEM-System (Security Information and Event Management) kann dabei helfen, relevante Muster automatisch zu erkennen.",
         "maturity": {
           "level0": "Keine systematische Erfassung sicherheitsrelevanter Ereignisse — Logs werden nicht zentral gesammelt oder ausgewertet",
@@ -5256,7 +5256,7 @@
       },
       "derQ2": {
         "title": "Gibt es einen dokumentierten Prozess zur Behandlung von Sicherheitsvorfällen (Incident Response)?",
-        "tooltip": "BSI-Standard 200-4 Kap. 6 und Baustein DER.2.1.A1 fordern einen dokumentierten Prozess für die Behandlung von Sicherheitsvorfällen. Der Prozess muss Rollen, Eskalationswege und Kommunikationsregeln festlegen.",
+        "tooltip": "Der IT-Grundschutz-Baustein DER.2.1 (Kompendium, Edition 2023) fordert einen dokumentierten Prozess für die Behandlung von Sicherheitsvorfällen. Der Prozess muss Rollen, Eskalationswege und Kommunikationsregeln festlegen.",
         "help": "Wenn ein Sicherheitsvorfall eintritt — z.B. eine Ransomware-Infektion oder ein Datendiebstahl — muss sofort klar sein, wer was tut. Ein Incident-Response-Prozess definiert: Wer meldet Vorfälle? Wer koordiniert die Reaktion? Welche Sofortmaßnahmen werden ergriffen? Wann wird die Geschäftsleitung informiert? Wann werden Behörden eingeschaltet? Ohne diesen Prozess kostet die Abstimmung im Ernstfall wertvolle Zeit.",
         "maturity": {
           "level0": "Kein Incident-Response-Prozess definiert — keine Meldewege, keine Verantwortlichkeiten für die Vorfallsbehandlung",
@@ -5267,7 +5267,7 @@
       },
       "derQ3": {
         "title": "Sind Notfallpläne für IT-Ausfälle und Cyberkrisen erstellt und werden diese regelmäßig geübt?",
-        "tooltip": "BSI-Standard 200-4 Kap. 7 und Baustein DER.4.A1 fordern die Erstellung von Notfallplänen und deren regelmäßige Überprüfung durch Übungen. Die Pläne müssen Wiederanlaufprozeduren und Kommunikationswege im Krisenfall definieren.",
+        "tooltip": "Der IT-Grundschutz-Baustein DER.4 (Kompendium, Edition 2023) fordert die Erstellung von Notfallplänen und deren regelmäßige Überprüfung durch Übungen. Die Pläne müssen Wiederanlaufprozeduren und Kommunikationswege im Krisenfall definieren.",
         "help": "Notfallpläne beschreiben, wie der IT-Betrieb nach einem schwerwiegenden Vorfall (z.B. Ransomware, Rechenzentrumausfall) wiederhergestellt wird. Sie umfassen Kontaktlisten, Wiederanlaufreihenfolgen, Kommunikationsregeln und technische Anleitungen. Entscheidend ist die regelmäßige Übung — nur so zeigt sich, ob die Pläne in der Praxis funktionieren und ob das Personal die Abläufe beherrscht.",
         "maturity": {
           "level0": "Keine IT-Notfallpläne vorhanden — bei einem Ausfall gibt es keine definierten Abläufe oder Wiederanlaufprozeduren",
@@ -5278,7 +5278,7 @@
       },
       "indQ1": {
         "title": "Falls Sie Produktionsanlagen oder Steuerungssysteme betreiben: Ist deren IT-Sicherheit in einem Konzept berücksichtigt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein IND.1.A1 fordern grundlegende Sicherheitsmaßnahmen für die Prozessleit- und Automatisierungstechnik. Die Konvergenz von IT und OT erfordert ein abgestimmtes Sicherheitskonzept, das beide Welten berücksichtigt.",
+        "tooltip": "Der IT-Grundschutz-Baustein IND.1 (Kompendium, Edition 2023) fordert grundlegende Sicherheitsmaßnahmen für die Prozessleit- und Automatisierungstechnik. Die Konvergenz von IT und OT erfordert ein abgestimmtes Sicherheitskonzept, das beide Welten berücksichtigt.",
         "help": "Industrielle Steuerungssysteme (ICS, SCADA, SPS) steuern physische Prozesse — Produktionsanlagen, Gebäudetechnik, Energieversorgung. Ihre Kompromittierung kann physische Schäden verursachen. Die traditionelle Trennung von IT und OT löst sich zunehmend auf. Ein übergreifendes Sicherheitskonzept muss die besonderen Anforderungen der OT berücksichtigen: Verfügbarkeit hat höchste Priorität, Patches können nicht immer sofort eingespielt werden, und Lebenszyklen sind deutlich länger als in der IT.",
         "maturity": {
           "level0": "Keine Berücksichtigung von OT-Sicherheit — industrielle Steuerungssysteme nicht im IT-Sicherheitskonzept enthalten, keine Verantwortlichkeit definiert",
@@ -5289,7 +5289,7 @@
       },
       "indQ2": {
         "title": "Werden Ihre industriellen Komponenten (SPS, HMI, Engineering-Workstations) nach OT-spezifischen Sicherheitsanforderungen gehärtet?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein IND.2.1.A1 fordern die Einschränkung des Zugriffs auf ICS-Komponenten. SPS, HMI-Panels und Engineering-Workstations müssen gegen unbefugten Zugriff und Manipulation geschützt werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein IND.2.1 (Kompendium, Edition 2023) fordert die Einschränkung des Zugriffs auf ICS-Komponenten. SPS, HMI-Panels und Engineering-Workstations müssen gegen unbefugten Zugriff und Manipulation geschützt werden.",
         "help": "Industrielle Komponenten wie speicherprogrammierbare Steuerungen (SPS), Bedien- und Beobachtungssysteme (HMI) und Engineering-Workstations haben oft eigene Sicherheitsanforderungen. Viele SPS haben keine Authentifizierung, HMI-Panels laufen auf veralteten Betriebssystemen, und Engineering-Workstations haben direkten Zugriff auf die Steuerungsebene. Härtungsmaßnahmen müssen die besonderen Anforderungen der OT berücksichtigen — z.B. können manche Komponenten nicht einfach neugestartet werden.",
         "maturity": {
           "level0": "Keine Härtung industrieller Komponenten — Standard-Zugangsdaten, keine Zugriffsbeschränkung, keine Segmentierung der Steuerungsebene",
@@ -5300,7 +5300,7 @@
       },
       "indQ3": {
         "title": "Sind Sicherheitssysteme (Safety Instrumented Systems / SIS) gegen Cyberangriffe und unbefugte Manipulation geschützt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein IND.2.7.A1 fordern den besonderen Schutz von Safety Instrumented Systems. SIS sind sicherheitsgerichtete Systeme, deren Kompromittierung zu Personenschäden oder Umweltkatastrophen führen kann.",
+        "tooltip": "Der IT-Grundschutz-Baustein IND.2.7 (Kompendium, Edition 2023) fordert den besonderen Schutz von Safety Instrumented Systems. SIS sind sicherheitsgerichtete Systeme, deren Kompromittierung zu Personenschäden oder Umweltkatastrophen führen kann.",
         "help": "Safety Instrumented Systems (SIS) sind Notabschaltsysteme, die Menschen und Umwelt vor gefährlichen Zuständen schützen — z.B. Überdruckabschaltung, Notaus, Gasdetektion. Ein erfolgreicher Cyberangriff auf ein SIS kann die Sicherheitsfunktion deaktivieren und physische Katastrophen ermöglichen (wie beim TRITON/TRISIS-Angriff 2017). SIS müssen daher streng von der Prozesssteuerung getrennt und besonders geschützt werden.",
         "maturity": {
           "level0": "Kein besonderer Schutz von SIS — Safety-Systeme im gleichen Netzwerk wie Prozesssteuerung, keine spezifischen Cybersicherheitsmaßnahmen",
@@ -5311,7 +5311,7 @@
       },
       "infQ1": {
         "title": "Sind Ihre Gebäude und Büroräume mit grundlegenden physischen Sicherheitsmaßnahmen ausgestattet?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein INF.1.A1 fordern den Schutz von Gebäuden vor unbefugtem Zutritt, Einbruch und Elementarschäden. Grundlegende Maßnahmen wie Zutrittskontrolle, Einbruchmeldeanlage und Brandschutz müssen vorhanden sein.",
+        "tooltip": "Der IT-Grundschutz-Baustein INF.1 (Kompendium, Edition 2023) fordert den Schutz von Gebäuden vor unbefugtem Zutritt, Einbruch und Elementarschäden. Grundlegende Maßnahmen wie Zutrittskontrolle, Einbruchmeldeanlage und Brandschutz müssen vorhanden sein.",
         "help": "Physische Sicherheit ist die Grundlage jeder IT-Sicherheit — wenn jemand physischen Zugang zu Ihren Servern hat, sind alle digitalen Schutzmaßnahmen wirkungslos. Grundlegende Maßnahmen umfassen: verschlossene Eingänge, Zutrittskontrolle (mindestens Schlüsselverwaltung), Einbruchmeldeanlage, Brandmeldeanlage und klare Besucherregelungen. Die Maßnahmen müssen dem Schutzbedarf der dort verarbeiteten Informationen angemessen sein.",
         "maturity": {
           "level0": "Keine nennenswerten physischen Sicherheitsmaßnahmen — Gebäude und Räume frei zugänglich, keine Schlüsselverwaltung",
@@ -5322,7 +5322,7 @@
       },
       "infQ2": {
         "title": "Erfüllt Ihr Rechenzentrum oder Serverraum die Anforderungen an physische Sicherheit, Klimatisierung und Stromversorgung?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein INF.2.A1 definieren Anforderungen an Rechenzentren und Serverräume. Dazu gehören Zutrittskontrolle, redundante Stromversorgung (USV/NEA), Klimatisierung, Brandschutz und Überwachung der Umgebungsparameter.",
+        "tooltip": "Der IT-Grundschutz-Baustein INF.2 (Kompendium, Edition 2023) definiert Anforderungen an Rechenzentren und Serverräume. Dazu gehören Zutrittskontrolle, redundante Stromversorgung (USV/NEA), Klimatisierung, Brandschutz und Überwachung der Umgebungsparameter.",
         "help": "Der Serverraum oder das Rechenzentrum ist der sensibelste Bereich Ihrer IT-Infrastruktur. Er muss besonders geschützt sein: Zutritt nur für autorisiertes Personal, redundante Stromversorgung mit USV und idealerweise Notstromaggregat, Klimaanlage mit Überwachung von Temperatur und Luftfeuchtigkeit, Brandfrüherkennung und geeignetes Löschsystem (kein Wasser!), sowie Wassermelder unter dem Doppelboden.",
         "maturity": {
           "level0": "Kein dedizierter Serverraum — IT-Systeme in allgemein zugänglichen Räumen ohne Klimatisierung, USV oder besonderen Schutz",
@@ -5333,7 +5333,7 @@
       },
       "infQ3": {
         "title": "Sind Technikräume (Verteilerräume, Patchfelder, TK-Anlagen) angemessen geschützt und dokumentiert?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein INF.5.A1 fordern den Schutz von Technikräumen. Netzwerkverteiler, Patchfelder und TK-Anlagen müssen gegen unbefugten Zugriff, Überhitzung und Manipulation gesichert sein.",
+        "tooltip": "Der IT-Grundschutz-Baustein INF.5 (Kompendium, Edition 2023) fordert den Schutz von Technikräumen. Netzwerkverteiler, Patchfelder und TK-Anlagen müssen gegen unbefugten Zugriff, Überhitzung und Manipulation gesichert sein.",
         "help": "Technikräume beherbergen Netzwerkverteiler, Patchfelder, Switches und TK-Anlagen. Obwohl sie oft weniger Aufmerksamkeit erhalten als der Serverraum, ist ihr Schutz ebenso wichtig — ein manipulierter Switch kann den gesamten Netzwerkverkehr umleiten. Die Räume müssen verschlossen sein, eine ausreichende Belüftung haben und ihre Belegung muss dokumentiert sein (Patch-Dokumentation).",
         "maturity": {
           "level0": "Technikräume nicht gesichert — offene Verteilerschränke, kein Zugangsschutz, keine Dokumentation der Verkabelung",
@@ -5344,7 +5344,7 @@
       },
       "ismsQ1": {
         "title": "Ist in Ihrem Unternehmen ein Informationssicherheitsmanagementsystem (ISMS) mit klaren Verantwortlichkeiten etabliert?",
-        "tooltip": "BSI-Standard 200-1 Kap. 7 und Baustein ISMS.1.A1 fordern die Übernahme der Gesamtverantwortung für Informationssicherheit durch die Leitungsebene. Dazu gehört die Benennung eines Informationssicherheitsbeauftragten (ISB) und die Bereitstellung ausreichender Ressourcen.",
+        "tooltip": "Der IT-Grundschutz-Baustein ISMS.1 (Kompendium, Edition 2023) fordert die Übernahme der Gesamtverantwortung für Informationssicherheit durch die Leitungsebene. Dazu gehört die Benennung eines Informationssicherheitsbeauftragten (ISB) und die Bereitstellung ausreichender Ressourcen.",
         "help": "Ein ISMS bildet den organisatorischen Rahmen für Ihre gesamte IT-Sicherheit. Die Geschäftsleitung muss die Verantwortung für Informationssicherheit formell übernehmen, einen ISB benennen und ausreichend Personal, Budget und Zeit bereitstellen. Ohne diese Grundlage bleiben alle technischen Maßnahmen Stückwerk.",
         "maturity": {
           "level0": "Kein ISMS vorhanden — keine definierten Verantwortlichkeiten für Informationssicherheit, kein ISB benannt",
@@ -5355,7 +5355,7 @@
       },
       "ismsQ2": {
         "title": "Existiert eine aktuelle, von der Geschäftsleitung freigegebene Leitlinie zur Informationssicherheit?",
-        "tooltip": "BSI-Standard 200-1 Kap. 7.3 und Baustein ISMS.1.A3 fordern eine Sicherheitsleitlinie als zentrales Steuerungsdokument. Sie muss die Sicherheitsziele, den Geltungsbereich und die Organisationsstruktur für Informationssicherheit festlegen.",
+        "tooltip": "Der IT-Grundschutz-Baustein ISMS.1 (Kompendium, Edition 2023) fordert eine Sicherheitsleitlinie als zentrales Steuerungsdokument. Sie muss die Sicherheitsziele, den Geltungsbereich und die Organisationsstruktur für Informationssicherheit festlegen.",
         "help": "Die Sicherheitsleitlinie ist das wichtigste Dokument Ihres ISMS. Sie definiert, welche Sicherheitsziele Ihr Unternehmen verfolgt, welchen Stellenwert Informationssicherheit hat und wie die Sicherheitsorganisation aufgebaut ist. Die Leitlinie muss von der Geschäftsleitung unterschrieben und allen Mitarbeitenden bekannt gemacht werden.",
         "maturity": {
           "level0": "Keine Sicherheitsleitlinie vorhanden — weder Sicherheitsziele noch Geltungsbereich definiert",
@@ -5366,7 +5366,7 @@
       },
       "ismsQ3": {
         "title": "Wird eine systematische Risikoanalyse für Ihre Informationswerte und Geschäftsprozesse durchgeführt?",
-        "tooltip": "BSI-Standard 200-3 Kap. 4 und Baustein ISMS.1.A7 beschreiben die Methodik zur Risikoanalyse im IT-Grundschutz. Risiken müssen identifiziert, bewertet und mit geeigneten Maßnahmen behandelt werden. Für erhöhten Schutzbedarf ist eine ergänzende Sicherheitsanalyse erforderlich.",
+        "tooltip": "BSI-Standard 200-3 beschreibt die Risikoanalyse im IT-Grundschutz. Sie ergänzt die Standard-Absicherung: Erforderlich ist sie für Zielobjekte mit hohem oder sehr hohem Schutzbedarf, für Zielobjekte, die sich nicht mit Bausteinen modellieren lassen, und für Einsatzszenarien, die im Kompendium nicht vorgesehen sind.",
         "help": "Die Risikoanalyse nach BSI-Standard 200-3 hilft Ihnen, Gefährdungen für Ihre IT-Systeme und Geschäftsprozesse systematisch zu erkennen und zu bewerten. Sie ermitteln, wo die Standard-Absicherung des IT-Grundschutzes nicht ausreicht und zusätzliche Maßnahmen erforderlich sind. Ohne Risikoanalyse investieren Sie möglicherweise an den falschen Stellen in Sicherheit.",
         "maturity": {
           "level0": "Keine systematische Risikoanalyse — Gefährdungen werden nicht strukturiert erfasst oder bewertet",
@@ -5377,7 +5377,7 @@
       },
       "netQ1": {
         "title": "Ist Ihr Unternehmensnetzwerk nach dem Prinzip der Netzsegmentierung in Sicherheitszonen aufgeteilt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein NET.1.1.A1 fordern eine strukturierte Netzarchitektur mit Segmentierung. Unterschiedliche Sicherheitszonen (z.B. DMZ, internes Netz, Gäste-WLAN) müssen voneinander getrennt sein.",
+        "tooltip": "Der IT-Grundschutz-Baustein NET.1.1 (Kompendium, Edition 2023) fordert eine strukturierte Netzarchitektur mit Segmentierung. Unterschiedliche Sicherheitszonen (z.B. DMZ, internes Netz, Gäste-WLAN) müssen voneinander getrennt sein.",
         "help": "Ein flaches, unsegmentiertes Netzwerk bedeutet: Ein kompromittiertes System kann direkt auf alle anderen zugreifen. Durch Netzsegmentierung teilen Sie Ihr Netzwerk in Sicherheitszonen auf — z.B. Server-Zone, Client-Zone, DMZ für öffentlich erreichbare Dienste, separates WLAN für Gäste. Der Datenverkehr zwischen den Zonen wird über Firewalls kontrolliert. So begrenzen Sie die Ausbreitung eines Angriffs erheblich.",
         "maturity": {
           "level0": "Keine Netzsegmentierung — flaches Netzwerk ohne Sicherheitszonen, alle Systeme im gleichen Subnetz erreichbar",
@@ -5388,7 +5388,7 @@
       },
       "netQ2": {
         "title": "Werden Router, Switches und Firewalls nach Sicherheitsstandards konfiguriert und regelmäßig aktualisiert?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein NET.3.1.A1 fordern die sichere Konfiguration und den sicheren Betrieb von Netzwerkkomponenten. Router und Switches müssen gehärtet, Standardpasswörter geändert und Firmware aktuell gehalten werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein NET.3.1 (Kompendium, Edition 2023) fordert die sichere Konfiguration und den sicheren Betrieb von Netzwerkkomponenten. Router und Switches müssen gehärtet, Standardpasswörter geändert und Firmware aktuell gehalten werden.",
         "help": "Router, Switches und Firewalls sind die Infrastruktur Ihres Netzwerks. Werden sie kompromittiert, hat ein Angreifer Kontrolle über den gesamten Datenverkehr. Die Härtung umfasst: Standardpasswörter und -communities ändern, nicht benötigte Dienste und Protokolle deaktivieren (z.B. Telnet, HTTP-Management), verschlüsselte Verwaltungsschnittstellen nutzen (SSH, HTTPS), Firmware-Updates zeitnah einspielen und Konfigurationsänderungen dokumentieren.",
         "maturity": {
           "level0": "Netzwerkkomponenten mit Standardkonfiguration — Standardpasswörter nicht geändert, keine Härtung, Firmware veraltet",
@@ -5399,7 +5399,7 @@
       },
       "netQ3": {
         "title": "Sind Ihre TK-Anlagen, VoIP-Systeme und Kommunikationsdienste gegen unbefugten Zugriff und Abhören geschützt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein NET.4.1.A1 fordern den sicheren Betrieb von TK-Anlagen. VoIP-Systeme müssen verschlüsselt, gegen Gebührenmissbrauch gesichert und in die Netzwerksicherheitsarchitektur eingebunden sein.",
+        "tooltip": "Der IT-Grundschutz-Baustein NET.4.1 (Kompendium, Edition 2023) fordert den sicheren Betrieb von TK-Anlagen. VoIP-Systeme müssen verschlüsselt, gegen Gebührenmissbrauch gesichert und in die Netzwerksicherheitsarchitektur eingebunden sein.",
         "help": "Telefonanlagen und VoIP-Systeme werden oft bei der IT-Sicherheit vergessen. Sie sind jedoch anfällig für Gebührenmissbrauch (Toll Fraud), Abhören und als Einstiegspunkt ins Netzwerk. Schutzmaßnahmen umfassen: VoIP-Verkehr in separatem VLAN, Verschlüsselung der Sprachdaten (SRTP) und Signalisierung (TLS), Absicherung der Administrationszugänge, Schutz vor Gebührenmissbrauch und regelmäßige Updates der TK-Software.",
         "maturity": {
           "level0": "Keine Sicherheitsmaßnahmen für TK-/VoIP-Systeme — Standardpasswörter, kein separates VLAN, keine Verschlüsselung der Sprachdaten",
@@ -5410,7 +5410,7 @@
       },
       "opsQ1": {
         "title": "Gibt es einen strukturierten Patch- und Änderungsmanagement-Prozess für Ihre IT-Systeme?",
-        "tooltip": "BSI-Standard 200-2 Kap. 6 und Baustein OPS.1.1.3.A1 fordern ein systematisches Patch- und Änderungsmanagement. Sicherheitsupdates müssen zeitnah eingespielt, Änderungen geplant und getestet werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein OPS.1.1.3 (Kompendium, Edition 2023) fordert ein systematisches Patch- und Änderungsmanagement. Sicherheitsupdates müssen zeitnah eingespielt, Änderungen geplant und getestet werden.",
         "help": "Ungepatchte Systeme sind eines der häufigsten Einfallstore für Cyberangriffe. Ein Patch-Management-Prozess stellt sicher, dass Sicherheitsupdates für Betriebssysteme, Anwendungen und Firmware zeitnah identifiziert, getestet und eingespielt werden. Ebenso wichtig: Änderungen an IT-Systemen (z.B. Konfigurationsanpassungen, neue Software) müssen geplant, genehmigt und dokumentiert werden, um unbeabsichtigte Ausfälle zu vermeiden.",
         "maturity": {
           "level0": "Kein Patch- oder Änderungsmanagement — Updates werden nicht systematisch eingespielt, Änderungen nicht dokumentiert",
@@ -5421,7 +5421,7 @@
       },
       "opsQ2": {
         "title": "Ist ein umfassender Schutz vor Schadprogrammen auf allen IT-Systemen implementiert?",
-        "tooltip": "BSI-Standard 200-2 Kap. 6 und Baustein OPS.1.1.4.A1 fordern den Einsatz von Schutzprogrammen gegen Schadsoftware. Der Schutz muss alle relevanten IT-Systeme abdecken und stets aktuell gehalten werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein OPS.1.1.4 (Kompendium, Edition 2023) fordert den Einsatz von Schutzprogrammen gegen Schadsoftware. Der Schutz muss alle relevanten IT-Systeme abdecken und stets aktuell gehalten werden.",
         "help": "Schutz vor Schadsoftware umfasst mehr als nur eine Antivirenlösung auf dem Desktop. Alle Systeme — Server, Clients, mobile Geräte, E-Mail-Gateways und Fileserver — müssen geschützt sein. Die Signaturen müssen automatisch aktualisiert werden, und es sollten zentrale Richtlinien gelten (z.B. Echtzeitschutz aktiv, regelmäßige Vollscans, Verhalten bei Fund). Moderne Lösungen nutzen zusätzlich verhaltensbasierte Erkennung (EDR).",
         "maturity": {
           "level0": "Kein systematischer Schutz vor Schadsoftware — keine Antivirenlösung auf allen Systemen oder stark veraltet",
@@ -5432,7 +5432,7 @@
       },
       "opsQ3": {
         "title": "Werden IT-Betriebsaufgaben wie Fernwartung und Outsourcing sicher geregelt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 6 und Baustein OPS.1.2.2.A1 fordern Regelungen für die Fernwartung von IT-Systemen. Bei Outsourcing und Nutzung externer Dienstleister müssen Sicherheitsanforderungen vertraglich und technisch abgesichert sein.",
+        "tooltip": "Der IT-Grundschutz-Baustein OPS.1.2.5 (Kompendium, Edition 2023) fordert Regelungen für die Fernwartung von IT-Systemen. Bei Outsourcing und Nutzung externer Dienstleister müssen Sicherheitsanforderungen vertraglich und technisch abgesichert sein.",
         "help": "Fernwartungszugänge sind ein beliebtes Angriffsziel — ein kompromittierter Fernwartungszugang gibt Angreifern direkten Zugriff auf Ihre Systeme. Fernwartung muss daher über sichere, verschlüsselte Verbindungen erfolgen, mit starker Authentifizierung gesichert sein und protokolliert werden. Bei ausgelagerten IT-Aufgaben (Outsourcing) müssen die gleichen Sicherheitsstandards gelten wie intern — vertraglich festgeschrieben und überprüfbar.",
         "maturity": {
           "level0": "Keine Regelungen für Fernwartung oder Outsourcing — Fernzugriffe ohne Kontrolle, Dienstleisterverträge ohne Sicherheitsanforderungen",
@@ -5443,7 +5443,7 @@
       },
       "orpQ1": {
         "title": "Sind Sicherheitsanforderungen in der organisatorischen Ablauf- und Aufbauorganisation verankert?",
-        "tooltip": "BSI-Standard 200-2 Kap. 4.1 und Baustein ORP.1.A1 fordern die Regelung organisatorischer Sicherheitsaspekte. Dazu gehören Zuständigkeiten, Genehmigungsverfahren und die Integration von Sicherheitsanforderungen in alle Geschäftsprozesse.",
+        "tooltip": "Der IT-Grundschutz-Baustein ORP.1 (Kompendium, Edition 2023) fordert die Regelung organisatorischer Sicherheitsaspekte. Dazu gehören Zuständigkeiten, Genehmigungsverfahren und die Integration von Sicherheitsanforderungen in alle Geschäftsprozesse.",
         "help": "Informationssicherheit muss in Ihre Unternehmensorganisation eingebettet sein — nicht nur als IT-Thema, sondern als Teil aller Geschäftsprozesse. Das bedeutet: Klare Zuständigkeiten für Sicherheitsaufgaben, dokumentierte Genehmigungsverfahren (z.B. für Softwareinstallationen oder Zugriffsberechtigungen) und die Berücksichtigung von Sicherheitsaspekten bei organisatorischen Änderungen.",
         "maturity": {
           "level0": "Keine organisatorischen Sicherheitsregelungen — Zuständigkeiten unklar, keine dokumentierten Verfahren",
@@ -5454,7 +5454,7 @@
       },
       "orpQ2": {
         "title": "Sind Sicherheitsanforderungen im gesamten Personallebenszyklus berücksichtigt — von der Einstellung bis zum Austritt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 4.2 und Baustein ORP.2.A1 fordern Regelungen für den Umgang mit Personal in sicherheitsrelevanten Bereichen. Dies umfasst Einstellung, Einarbeitung, laufende Beschäftigung und das geregelte Ausscheiden von Mitarbeitenden.",
+        "tooltip": "Der IT-Grundschutz-Baustein ORP.2 (Kompendium, Edition 2023) fordert Regelungen für den Umgang mit Personal in sicherheitsrelevanten Bereichen. Dies umfasst Einstellung, Einarbeitung, laufende Beschäftigung und das geregelte Ausscheiden von Mitarbeitenden.",
         "help": "Personal ist einer der größten Risikofaktoren für IT-Sicherheit. Vor der Einstellung sollten Qualifikationen geprüft werden, bei der Einarbeitung müssen Sicherheitsrichtlinien vermittelt werden, und beim Austritt müssen alle Zugänge, Schlüssel und Berechtigungen entzogen werden. Ohne geregelte Prozesse bleiben z.B. ehemalige Mitarbeitende mit aktiven VPN-Zugängen ein erhebliches Sicherheitsrisiko.",
         "maturity": {
           "level0": "Keine sicherheitsbezogenen Personalregelungen — weder Vertraulichkeitserklärungen noch Offboarding-Prozesse definiert",
@@ -5465,7 +5465,7 @@
       },
       "orpQ3": {
         "title": "Werden alle Mitarbeitenden regelmäßig zur Informationssicherheit geschult und sensibilisiert?",
-        "tooltip": "BSI-Standard 200-2 Kap. 4.3 und Baustein ORP.3.A1 fordern Sensibilisierung und Schulung aller Mitarbeitenden zur Informationssicherheit. Die Maßnahmen müssen zielgruppengerecht sein und regelmäßig wiederholt werden.",
+        "tooltip": "Der IT-Grundschutz-Baustein ORP.3 (Kompendium, Edition 2023) fordert Sensibilisierung und Schulung aller Mitarbeitenden zur Informationssicherheit. Die Maßnahmen müssen zielgruppengerecht sein und regelmäßig wiederholt werden.",
         "help": "Die besten technischen Schutzmaßnahmen sind wirkungslos, wenn Mitarbeitende auf Phishing-Mails klicken, Passwörter teilen oder USB-Sticks ungeprüft anschließen. Regelmäßige Schulungen zu Themen wie Phishing-Erkennung, sicherem Umgang mit Passwörtern, Social Engineering und Meldewege für Sicherheitsvorfälle sind unverzichtbar. Die Schulungen sollten auf die jeweilige Rolle der Mitarbeitenden zugeschnitten sein.",
         "maturity": {
           "level0": "Keine Schulungen oder Sensibilisierungsmaßnahmen zur Informationssicherheit",
@@ -5476,7 +5476,7 @@
       },
       "sysQ1": {
         "title": "Werden Ihre Server nach einem definierten Härtungsstandard sicher konfiguriert und betrieben?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein SYS.1.1.A1 fordern die sichere Konfiguration von Servern. Dazu gehören die Deaktivierung nicht benötigter Dienste, sichere Authentifizierung, Rechtevergabe und regelmäßige Aktualisierung.",
+        "tooltip": "Der IT-Grundschutz-Baustein SYS.1.1 (Kompendium, Edition 2023) fordert die sichere Konfiguration von Servern. Dazu gehören die Deaktivierung nicht benötigter Dienste, sichere Authentifizierung, Rechtevergabe und regelmäßige Aktualisierung.",
         "help": "Server bilden das Rückgrat Ihrer IT — Ausfälle oder Kompromittierungen haben meist weitreichende Folgen. Die Härtung umfasst: Nur benötigte Dienste und Ports aktivieren, Standardpasswörter ändern, administrative Zugänge absichern (SSH-Key statt Passwort, kein root-Login), Dateisystemrechte korrekt setzen, Logging aktivieren und Sicherheitsupdates zeitnah einspielen. Der BSI empfiehlt die Nutzung von Härtungsleitfäden (z.B. CIS Benchmarks).",
         "maturity": {
           "level0": "Keine Server-Härtung — Server werden mit Standardinstallation betrieben, unnötige Dienste aktiv, keine systematische Absicherung",
@@ -5487,7 +5487,7 @@
       },
       "sysQ2": {
         "title": "Sind Ihre Client-Systeme (Arbeitsplatzrechner) zentral verwaltet und gegen unbefugte Nutzung geschützt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein SYS.2.1.A1 fordern die sichere Konfiguration von Clients. Dazu gehören Bildschirmsperre, Benutzerauthentifizierung, eingeschränkte Administratorrechte und zentrale Verwaltung.",
+        "tooltip": "Der IT-Grundschutz-Baustein SYS.2.1 (Kompendium, Edition 2023) fordert die sichere Konfiguration von Clients. Dazu gehören Bildschirmsperre, Benutzerauthentifizierung, eingeschränkte Administratorrechte und zentrale Verwaltung.",
         "help": "Client-Systeme sind die Geräte, an denen Ihre Mitarbeitenden täglich arbeiten. Sie müssen gegen unbefugte Nutzung geschützt sein: automatische Bildschirmsperre, persönliche Anmeldung mit starkem Passwort, keine lokalen Administratorrechte für Standardnutzer, Festplattenverschlüsselung (BitLocker/LUKS) und zentrale Verwaltung über ein Endpoint-Management-System. Ohne zentrale Verwaltung verlieren Sie den Überblick über Sicherheitszustand und Softwarestand.",
         "maturity": {
           "level0": "Keine zentrale Verwaltung der Clients — Mitarbeitende haben Administratorrechte, keine einheitliche Sicherheitskonfiguration, keine Festplattenverschlüsselung",
@@ -5498,7 +5498,7 @@
       },
       "sysQ3": {
         "title": "Werden mobile Endgeräte und Laptops durch ein Mobile-Device-Management und Verschlüsselung geschützt?",
-        "tooltip": "BSI-Standard 200-2 Kap. 7 und Baustein SYS.3.1.A1 fordern besondere Schutzmaßnahmen für tragbare IT-Systeme. Laptops und mobile Geräte sind durch Verlust und Diebstahl besonders gefährdet und müssen verschlüsselt und fernlöschbar sein.",
+        "tooltip": "Der IT-Grundschutz-Baustein SYS.3.1 (Kompendium, Edition 2023) fordert besondere Schutzmaßnahmen für tragbare IT-Systeme. Laptops und mobile Geräte sind durch Verlust und Diebstahl besonders gefährdet und müssen verschlüsselt und fernlöschbar sein.",
         "help": "Laptops und mobile Geräte verlassen regelmäßig die geschützte Unternehmensumgebung und sind damit erhöhten Risiken ausgesetzt — Verlust, Diebstahl, unsichere WLAN-Verbindungen. Schutzmaßnahmen umfassen: Vollständige Festplatten-/Geräteverschlüsselung, VPN-Pflicht für Unternehmensverbindungen, Mobile Device Management (MDM) mit Fernlöschfunktion, Gerätesperre und klare Richtlinien für Bring Your Own Device (BYOD).",
         "maturity": {
           "level0": "Kein Schutz mobiler Geräte — keine Verschlüsselung, kein MDM, keine Regelungen für Laptops außerhalb des Unternehmens",
@@ -5554,82 +5554,82 @@
     },
     "recommendations": {
       "app1": {
-        "description": "Härten Sie Standardsoftware (Office, Browser, PDF-Reader) nach BSI-Standard 200-2, APP.1.1. Deaktivieren Sie Makros, aktivieren Sie Auto-Updates, entfernen Sie unnötige Features.",
+        "description": "Härten Sie Standardsoftware (Office, Browser, PDF-Reader) nach IT-Grundschutz-Baustein APP.1.1. Deaktivieren Sie Makros, aktivieren Sie Auto-Updates, entfernen Sie unnötige Features.",
         "firstStep": "Erstellen Sie eine Härtungsrichtlinie für Microsoft Office: Makros nur aus vertrauenswürdigen Quellen, Protected View aktiv.",
         "title": "Standardsoftware sicher einsetzen"
       },
       "app2": {
-        "description": "Sichern Sie Webbrowser nach BSI-Standard 200-2, APP.1.2: Updates automatisieren, Plugins einschränken, Safe Browsing aktivieren, zentrale Browser-Policies ausrollen.",
+        "description": "Sichern Sie Webbrowser nach IT-Grundschutz-Baustein APP.1.2: Updates automatisieren, Plugins einschränken, Safe Browsing aktivieren, zentrale Browser-Policies ausrollen.",
         "firstStep": "Deaktivieren Sie unsichere Browser-Plugins (Flash, Java) auf allen Clients und aktivieren Sie automatische Browser-Updates.",
         "title": "Webbrowser absichern"
       },
       "app3": {
         "checklist": "Anwendungssicherheit in Entwicklung integrieren\nWebanwendungen und APIs absichern\nDatenbanken und Verzeichnisdienste härten",
-        "description": "Sichern Sie Ihre Webanwendungen nach BSI-Standard 200-2, APP.3.1: Input-Validierung, Output-Encoding, sichere Session-Verwaltung, HTTPS erzwingen.",
+        "description": "Sichern Sie Ihre Webanwendungen nach IT-Grundschutz-Baustein APP.3.1: Input-Validierung, Output-Encoding, sichere Session-Verwaltung, HTTPS erzwingen.",
         "firstStep": "Führen Sie einen automatisierten Sicherheitsscan Ihrer wichtigsten Webanwendung durch (z.B. mit OWASP ZAP).",
         "title": "Webanwendungen absichern"
       },
       "con1": {
-        "description": "Erstellen Sie ein Datensicherungskonzept gemäß BSI-Standard 200-2, CON.1 mit Backup-Strategie, Recovery-Verfahren und Testplan. Legen Sie fest, welche Daten wie oft und wo gesichert werden.",
+        "description": "Erstellen Sie ein Datensicherungskonzept gemäß IT-Grundschutz-Baustein CON.3 mit Backup-Strategie, Recovery-Verfahren und Testplan. Legen Sie fest, welche Daten wie oft und wo gesichert werden.",
         "firstStep": "Dokumentieren Sie Ihre aktuelle Backup-Strategie: Was wird gesichert, wie oft, wo liegen die Backups, wer ist verantwortlich?",
         "title": "Datensicherungskonzept erstellen"
       },
       "con2": {
-        "description": "Erstellen Sie ein Notfallmanagement-Konzept nach BSI-Standard 200-4, CON.3 mit Business Impact Analysis, Notfallplänen und definierten Wiederanlaufzeiten (RTO/RPO).",
+        "description": "Erstellen Sie ein Notfallmanagement-Konzept nach BSI-Standard 200-4 (Business Continuity Management) mit Business Impact Analysis, Notfallplänen und definierten Wiederanlaufzeiten (RTO/RPO).",
         "firstStep": "Identifizieren Sie Ihre 5 kritischsten Geschäftsprozesse und deren maximal tolerierbare Ausfallzeit.",
         "title": "Notfallmanagement- und Business-Continuity-Konzept erstellen"
       },
       "con3": {
         "checklist": "Konzepte und Vorgehensweisen dokumentieren\nDatenschutzkonzept integrieren\nKryptokonzept erstellen und umsetzen",
-        "description": "Erstellen Sie ein Konzept zur sicheren Löschung und Vernichtung von Daten und Datenträgern. BSI-Standard 200-2, CON.6 fordert definierte Verfahren zur Datenentsorgung.",
+        "description": "Erstellen Sie ein Konzept zur sicheren Löschung und Vernichtung von Daten und Datenträgern. Der IT-Grundschutz-Baustein CON.6 fordert definierte Verfahren zur Datenentsorgung.",
         "firstStep": "Dokumentieren Sie, wie ausgemusterte Festplatten, USB-Sticks und Altpapier mit vertraulichen Daten aktuell entsorgt werden.",
         "title": "Lösch- und Vernichtungskonzept erstellen"
       },
       "der1": {
-        "description": "Etablieren Sie Mechanismen zur Erkennung von Sicherheitsvorfällen nach BSI-Standard 200-4, DER.1: Log-Monitoring, Anomalieerkennung, Intrusion Detection.",
+        "description": "Etablieren Sie Mechanismen zur Erkennung von Sicherheitsvorfällen nach IT-Grundschutz-Baustein DER.1: Log-Monitoring, Anomalieerkennung, Intrusion Detection.",
         "firstStep": "Aktivieren Sie Logging auf allen kritischen Systemen (Server, Firewalls, Domain Controller) und definieren Sie, wo Logs gesammelt werden.",
         "title": "Sicherheitsereignis-Detektion aufbauen"
       },
       "der2": {
-        "description": "Implementieren Sie einen Incident-Response-Prozess nach BSI-Standard 200-4, DER.2.1 mit klaren Rollen, Eskalationswegen und Handlungsanweisungen für verschiedene Vorfalltypen.",
+        "description": "Implementieren Sie einen Incident-Response-Prozess nach IT-Grundschutz-Baustein DER.2.1 mit klaren Rollen, Eskalationswegen und Handlungsanweisungen für verschiedene Vorfalltypen.",
         "firstStep": "Erstellen Sie eine Incident-Response-Checkliste für die 3 häufigsten Vorfalltypen (z.B. Malware-Infektion, Datenverlust, Phishing).",
         "title": "Incident-Response-Prozess etablieren"
       },
       "der3": {
         "checklist": "Detektion von Sicherheitsvorfällen aufbauen\nIncident-Response-Prozess implementieren\nForensische Fähigkeiten entwickeln",
-        "description": "Bereiten Sie Ihre Organisation auf forensische Untersuchungen vor nach BSI-Standard 200-4, DER.4: Beweissicherung, Chain of Custody, Analyse-Tools.",
+        "description": "Bereiten Sie Ihre Organisation auf forensische Untersuchungen vor nach IT-Grundschutz-Baustein DER.2.2 (Vorsorge für die IT-Forensik): Beweissicherung, Chain of Custody, Analyse-Tools.",
         "firstStep": "Definieren Sie, wer im Ernstfall befugt ist, Systeme für forensische Zwecke zu sichern, und beschaffen Sie ein Forensik-USB-Toolkit.",
         "title": "IT-Forensik-Fähigkeit aufbauen"
       },
       "ind1": {
-        "description": "Etablieren Sie eine Sicherheitsstrategie für Industrial Control Systems (ICS) und Operational Technology (OT) nach BSI-Standard 200-2, IND.1. OT hat andere Anforderungen als IT (Verfügbarkeit vor Vertraulichkeit).",
+        "description": "Etablieren Sie eine Sicherheitsstrategie für Industrial Control Systems (ICS) und Operational Technology (OT) nach IT-Grundschutz-Baustein IND.1. OT hat andere Anforderungen als IT (Verfügbarkeit vor Vertraulichkeit).",
         "firstStep": "Erstellen Sie ein Inventar aller ICS/SCADA-Systeme, Steuerungen und Sensoren in Ihrer Produktion.",
         "title": "ICS/OT-Sicherheitsstrategie etablieren"
       },
       "ind2": {
-        "description": "Sichern Sie speicherprogrammierbare Steuerungen (SPS/PLC) nach BSI-Standard 200-2, IND.2.1: Firmware-Updates, Netzwerksegmentierung, Zugriffsschutz, Projektdatei-Backup.",
+        "description": "Sichern Sie speicherprogrammierbare Steuerungen (SPS/PLC) nach IT-Grundschutz-Baustein IND.2.1: Firmware-Updates, Netzwerksegmentierung, Zugriffsschutz, Projektdatei-Backup.",
         "firstStep": "Inventarisieren Sie alle SPS/PLC mit Hersteller, Modell und Firmware-Version und prüfen Sie verfügbare Updates.",
         "title": "SPS/PLC absichern"
       },
       "ind3": {
         "checklist": "Industrielle Steuerungssysteme (ICS/SCADA) absichern\nOT-Netzwerke segmentieren und überwachen\nSicherheit von IoT-Geräten gewährleisten",
-        "description": "Sichern Sie sicherheitsgerichtete Systeme (Safety Instrumented Systems, SIS) nach BSI-Standard 200-2, IND.2.7: Strikte Trennung von Steuerung und Safety, redundante Auslegung, regelmäßige Tests.",
+        "description": "Sichern Sie sicherheitsgerichtete Systeme (Safety Instrumented Systems, SIS) nach IT-Grundschutz-Baustein IND.2.7: Strikte Trennung von Steuerung und Safety, redundante Auslegung, regelmäßige Tests.",
         "firstStep": "Prüfen Sie, ob Ihre SIS-Systeme physisch und logisch von der Produktionssteuerung getrennt sind.",
         "title": "Safety Instrumented Systems absichern"
       },
       "inf1": {
-        "description": "Etablieren Sie physische Sicherheitsmaßnahmen nach BSI-Standard 200-2, INF.1: Zutrittskontrolle, Alarmanlage, Schließkonzept, Besuchermanagement.",
+        "description": "Etablieren Sie physische Sicherheitsmaßnahmen nach IT-Grundschutz-Baustein INF.1: Zutrittskontrolle, Alarmanlage, Schließkonzept, Besuchermanagement.",
         "firstStep": "Erstellen Sie ein Schließkonzept: Wer hat Schlüssel/Zutrittskarten für welche Bereiche? Dokumentieren Sie Zugangsberechtigungen.",
         "title": "Gebäudesicherheit gewährleisten"
       },
       "inf2": {
-        "description": "Sichern Sie Rechenzentrum oder Serverraum nach BSI-Standard 200-2, INF.2: Klimatisierung, USV, Brandschutz, Zugangskontrolle, Überwachung.",
+        "description": "Sichern Sie Rechenzentrum oder Serverraum nach IT-Grundschutz-Baustein INF.2: Klimatisierung, USV, Brandschutz, Zugangskontrolle, Überwachung.",
         "firstStep": "Prüfen Sie, ob Ihr Serverraum über eine unterbrechungsfreie Stromversorgung (USV) verfügt und führen Sie einen Belastungstest durch.",
         "title": "Rechenzentrum/Serverraum absichern"
       },
       "inf3": {
         "checklist": "Gebäude und Räume physisch absichern\nRechenzentrum-Schutz umsetzen\nVerkabelung und Infrastruktur dokumentieren",
-        "description": "Schützen Sie technische Räume (Netzwerkverteiler, Patchräume) nach BSI-Standard 200-2, INF.5: Verschlossen, klimatisiert, Zutrittskontrolle, dokumentierte Verkabelung.",
+        "description": "Schützen Sie technische Räume (Netzwerkverteiler, Patchräume) nach IT-Grundschutz-Baustein INF.5: Verschlossen, klimatisiert, Zutrittskontrolle, dokumentierte Verkabelung.",
         "firstStep": "Stellen Sie sicher, dass alle Netzwerkverteiler verschlossen sind und nur autorisierte Personen Zugang haben.",
         "title": "Technische Räume schützen"
       },
@@ -5639,77 +5639,77 @@
         "title": "Leitlinie und ISMS nach BSI-Standard 200-1 aufbauen"
       },
       "isms2": {
-        "description": "Benennen Sie eine Leitung Informationssicherheit und verankern Sie die Verantwortung auf Managementebene. BSI-Standard 200-1 fordert klare Zuständigkeiten und Eskalationswege für Informationssicherheit.",
+        "description": "Benennen Sie einen Informationssicherheitsbeauftragten (ISB) und verankern Sie die Verantwortung auf Managementebene. BSI-Standard 200-1 fordert klare Zuständigkeiten und Eskalationswege für Informationssicherheit.",
         "firstStep": "Benennen Sie formal einen Informationssicherheitsbeauftragten (ISB) und kommunizieren Sie dessen Rolle an alle Mitarbeitenden.",
         "title": "IS-Managementverantwortung zuweisen"
       },
       "isms3": {
         "checklist": "ISMS nach BSI-Standard 200-1 aufbauen\nSicherheitsleitlinie erstellen und verabschieden\nSicherheitsorganisation mit Rollen und Verantwortlichkeiten etablieren",
-        "description": "Führen Sie eine Risikoanalyse gemäß BSI-Standard 200-3 durch, um Ihre kritischsten Assets und Bedrohungen zu identifizieren. Dies ist die Grundlage für alle weiteren Sicherheitsmaßnahmen.",
+        "description": "Führen Sie für Zielobjekte mit hohem oder sehr hohem Schutzbedarf – und für alles, was sich nicht mit Bausteinen modellieren lässt – eine Risikoanalyse nach BSI-Standard 200-3 durch. Grundlage dafür sind Strukturanalyse, Schutzbedarfsfeststellung und Modellierung nach BSI-Standard 200-2.",
         "firstStep": "Erstellen Sie eine Liste Ihrer 10 wichtigsten IT-Assets (Server, Anwendungen, Daten) als Basis für die Risikoanalyse.",
         "title": "Risikoanalyse nach BSI-Standard 200-3 durchführen"
       },
       "net1": {
-        "description": "Segmentieren Sie Ihr Netzwerk nach BSI-Standard 200-2, NET.1.1: VLANs für verschiedene Sicherheitszonen, DMZ für externe Dienste, Zugriffskontrollen zwischen Segmenten.",
+        "description": "Segmentieren Sie Ihr Netzwerk nach IT-Grundschutz-Baustein NET.1.1: VLANs für verschiedene Sicherheitszonen, DMZ für externe Dienste, Zugriffskontrollen zwischen Segmenten.",
         "firstStep": "Zeichnen Sie Ihre aktuelle Netzwerkarchitektur auf und identifizieren Sie, welche Systeme in unterschiedliche Sicherheitszonen gehören.",
         "title": "Netzwerkarchitektur und Segmentierung umsetzen"
       },
       "net2": {
-        "description": "Härten Sie Netzwerkkomponenten nach BSI-Standard 200-2, NET.3.1: Standardpasswörter ändern, unnötige Dienste deaktivieren, Management-Zugriff absichern, Logging aktivieren.",
+        "description": "Härten Sie Netzwerkkomponenten nach IT-Grundschutz-Baustein NET.3.1: Standardpasswörter ändern, unnötige Dienste deaktivieren, Management-Zugriff absichern, Logging aktivieren.",
         "firstStep": "Ändern Sie alle Standardpasswörter auf Routern und Switches und deaktivieren Sie Telnet (nur SSH verwenden).",
         "title": "Router und Switches härten"
       },
       "net3": {
         "checklist": "Netzwerksegmentierung umsetzen\nFirewall-Regelwerke prüfen und optimieren\nVPN und WLAN absichern",
-        "description": "Sichern Sie Telekommunikationsanlagen nach BSI-Standard 200-2, NET.4.1: Firmware-Updates, starke Authentifizierung, Netzwerksegmentierung für VoIP, Verschlüsselung.",
+        "description": "Sichern Sie Telekommunikationsanlagen nach IT-Grundschutz-Baustein NET.4.1: Firmware-Updates, starke Authentifizierung, Netzwerksegmentierung für VoIP, Verschlüsselung.",
         "firstStep": "Prüfen Sie, ob Ihre TK-Anlage über das Internet erreichbar ist, und beschränken Sie den Zugriff auf notwendige IP-Adressen.",
         "title": "TK-Anlagen absichern"
       },
       "ops1": {
-        "description": "Implementieren Sie ein systematisches Patch- und Update-Management nach BSI-Standard 200-2, OPS.1.1.3. Definieren Sie Prozesse zur zeitnahen Einspielen von Sicherheitsupdates.",
+        "description": "Implementieren Sie ein systematisches Patch- und Update-Management nach IT-Grundschutz-Baustein OPS.1.1.3. Definieren Sie Prozesse zur zeitnahen Einspielen von Sicherheitsupdates.",
         "firstStep": "Erstellen Sie eine Inventarliste aller Software-Systeme mit aktueller Versionsnummer und letztem Update-Datum.",
         "title": "Patch- und Update-Management etablieren"
       },
       "ops2": {
-        "description": "Implementieren Sie mehrstufigen Malware-Schutz nach BSI-Standard 200-2, OPS.1.1.4: Virenscanner, Application Whitelisting, E-Mail-Filterung, Verhaltensanalyse.",
+        "description": "Implementieren Sie mehrstufigen Malware-Schutz nach IT-Grundschutz-Baustein OPS.1.1.4: Virenscanner, Application Whitelisting, E-Mail-Filterung, Verhaltensanalyse.",
         "firstStep": "Prüfen Sie, ob auf allen Clients und Servern ein aktueller Virenscanner mit automatischen Updates aktiv ist.",
         "title": "Malware-Schutz implementieren"
       },
       "ops3": {
         "checklist": "IT-Betriebsprozesse standardisieren\nPatch- und Änderungsmanagement einführen\nProtokollierung und Monitoring etablieren",
-        "description": "Richten Sie ein Archivierungssystem nach BSI-Standard 200-2, OPS.1.2.2 ein. Definieren Sie Aufbewahrungsfristen, Zugriffsrechte und Integritätssicherung für archivierte Daten.",
-        "firstStep": "Erstellen Sie eine Liste aller gesetzlichen und vertraglichen Aufbewahrungspflichten für Ihre Daten (z.B. 10 Jahre für Buchhaltung).",
+        "description": "Richten Sie ein Archivierungssystem nach IT-Grundschutz-Baustein OPS.1.2.2 ein. Definieren Sie Aufbewahrungsfristen, Zugriffsrechte und Integritätssicherung für archivierte Daten.",
+        "firstStep": "Erstellen Sie eine Liste aller gesetzlichen und vertraglichen Aufbewahrungspflichten für Ihre Daten (z. B. 10 Jahre für Handelsbücher und Jahresabschlüsse, 8 Jahre für Buchungsbelege).",
         "title": "Archivierung etablieren"
       },
       "orp1": {
-        "description": "Erstellen Sie verbindliche Sicherheitsrichtlinien für alle relevanten Bereiche (Passwörter, Zugriffe, mobile Geräte etc.). BSI-Standard 200-2, Baustein ORP.1 fordert dokumentierte und kommunizierte Regelungen.",
-        "firstStep": "Erstellen Sie eine Passwort-Richtlinie mit Mindestlänge, Komplexität und Gültigkeitsdauer.",
+        "description": "Erstellen Sie verbindliche Sicherheitsrichtlinien für alle relevanten Bereiche (Passwörter, Zugriffe, mobile Geräte etc.). Der IT-Grundschutz-Baustein ORP.1 fordert dokumentierte und kommunizierte Regelungen.",
+        "firstStep": "Erstellen Sie eine Passwort-Richtlinie mit Mindestlänge und Regeln für den Passwortwechsel bei Verdacht auf Kompromittierung – ein regelmäßiger Wechsel ohne Anlass wird im IT-Grundschutz nicht mehr gefordert.",
         "title": "Sicherheitsrichtlinien und Regelungen erstellen"
       },
       "orp2": {
-        "description": "Etablieren Sie Sicherheitsmaßnahmen für Personal: Verpflichtungserklärungen, Vertraulichkeitsvereinbarungen, geregelte Einarbeitung und Austrittsprozesse. BSI-Standard 200-2, ORP.2 fordert strukturierte Personal-Sicherheitsprozesse.",
+        "description": "Etablieren Sie Sicherheitsmaßnahmen für Personal: Verpflichtungserklärungen, Vertraulichkeitsvereinbarungen, geregelte Einarbeitung und Austrittsprozesse. Der IT-Grundschutz-Baustein ORP.2 fordert strukturierte Personal-Sicherheitsprozesse.",
         "firstStep": "Erstellen Sie eine Verpflichtungserklärung zur Informationssicherheit, die neue Mitarbeitende bei Eintritt unterschreiben.",
         "title": "Personalsicherheitsmaßnahmen implementieren"
       },
       "orp3": {
         "checklist": "Organisatorische Rahmenbedingungen für IS definieren\nRegelungen für Mitarbeiter und externe Dienstleister\nSchulungs- und Sensibilisierungsprogramm aufbauen",
-        "description": "Etablieren Sie ein kontinuierliches Schulungs- und Sensibilisierungsprogramm für alle Mitarbeitenden. BSI-Standard 200-2, ORP.3 fordert regelmäßige Awareness-Maßnahmen zu aktuellen Bedrohungen.",
+        "description": "Etablieren Sie ein kontinuierliches Schulungs- und Sensibilisierungsprogramm für alle Mitarbeitenden. Der IT-Grundschutz-Baustein ORP.3 fordert regelmäßige Awareness-Maßnahmen zu aktuellen Bedrohungen.",
         "firstStep": "Planen Sie eine erste Security-Awareness-Schulung für alle Mitarbeitenden (z.B. Phishing-Awareness).",
         "title": "Security-Awareness-Programm aufbauen"
       },
       "sys1": {
-        "description": "Härten Sie Server nach BSI-Standard 200-2, SYS.1.1: Minimale Installation, unnötige Dienste deaktivieren, Härtungsbenchmarks (CIS) anwenden, Updates automatisieren.",
+        "description": "Härten Sie Server nach IT-Grundschutz-Baustein SYS.1.1: Minimale Installation, unnötige Dienste deaktivieren, Härtungsbenchmarks (CIS) anwenden, Updates automatisieren.",
         "firstStep": "Erstellen Sie eine Checkliste mit allen laufenden Diensten auf Ihrem wichtigsten Server und prüfen Sie, welche wirklich benötigt werden.",
         "title": "Server härten"
       },
       "sys2": {
-        "description": "Sichern Sie Client-Systeme nach BSI-Standard 200-2, SYS.2.1: Vollverschlüsselung, sichere Baseline-Konfiguration, automatisches Patching, lokale Admin-Rechte entfernen.",
+        "description": "Sichern Sie Client-Systeme nach IT-Grundschutz-Baustein SYS.2.1: Vollverschlüsselung, sichere Baseline-Konfiguration, automatisches Patching, lokale Admin-Rechte entfernen.",
         "firstStep": "Aktivieren Sie BitLocker-Festplattenverschlüsselung auf allen Windows-Laptops oder FileVault auf macOS.",
         "title": "Clients absichern"
       },
       "sys3": {
         "checklist": "Server und Clients nach Grundschutz härten\nMobile Endgeräte absichern (MDM)\nVirtualisierung und Cloud-Nutzung absichern",
-        "description": "Implementieren Sie Mobile Device Management (MDM) nach BSI-Standard 200-2, SYS.3.1: Geräteverschlüsselung, Remote Wipe, App-Whitelisting, Compliance-Checks.",
+        "description": "Implementieren Sie Mobile Device Management (MDM) nach IT-Grundschutz-Baustein SYS.3.2.2: Geräteverschlüsselung, Remote Wipe, App-Whitelisting, Compliance-Checks.",
         "firstStep": "Evaluieren Sie MDM-Lösungen (z.B. Microsoft Intune, Jamf, MobileIron) und führen Sie einen Piloten mit 10 Geräten durch.",
         "title": "Mobile Geräte absichern (MDM)"
       }
@@ -6238,7 +6238,7 @@
       },
       "stage3": {
         "title": "Abschlussbericht (1 Monat)",
-        "deadline": "Spätestens einen Monat nach der Erstmeldung",
+        "deadline": "Spätestens einen Monat nach der Folgemeldung (72-Stunden-Meldung)",
         "description": "Umfassender Abschlussbericht über den Vorfall und die ergriffenen Maßnahmen.",
         "content": "Detaillierte Beschreibung: Ursachenanalyse (Root Cause), Art der Bedrohung, ergriffene Abhilfemaßnahmen, grenzüberschreitende Auswirkungen, Lessons Learned.",
         "legalBasis": "§32 Abs. 2 Nr. 3 BSIG"
@@ -6485,7 +6485,7 @@
   "dsgvoOverlap": {
     "title": "DSGVO-Überlappungsanalyse",
     "subtitle": "Synergien zwischen NIS2 und DSGVO-Compliance nutzen",
-    "intro": "Etwa 60% der NIS2-Anforderungen überlappen sich mit bestehenden DSGVO-Maßnahmen. Unternehmen mit bestehender DSGVO-Compliance haben einen Vorsprung bei der NIS2-Umsetzung.",
+    "intro": "Nach unserer Schätzung überschneidet sich ein großer Teil der NIS2-Anforderungen (grob 60 %) mit bestehenden DSGVO-Maßnahmen. Unternehmen mit bestehender DSGVO-Compliance haben einen Vorsprung bei der NIS2-Umsetzung.",
     "overallOverlap": "Durchschnittliche Überlappung",
     "category": "NIS2-Kategorie",
     "dsgvoArticle": "DSGVO-Bezug",
@@ -6538,7 +6538,7 @@
         "gap": "NIS2 fordert MFA, PAM und regelmäßige Zugriffsrezertifizierung"
       },
       "documentation": {
-        "nis2": "Sichere Kommunikation (§30 Abs. 2 Nr. 10)",
+        "nis2": "Dokumentationspflicht (§30 Abs. 1 BSIG)",
         "dsgvo": "Art. 30 DSGVO (Verarbeitungsverzeichnis)",
         "gap": "NIS2 verlangt umfassende Dokumentation aller Sicherheitsmaßnahmen"
       }
@@ -6548,7 +6548,7 @@
   "iso27001": {
     "name": "ISO 27001",
     "shortName": "ISO 27001",
-    "fullName": "ISO/IEC 27001:2022 — Informationssicherheits-Managementsysteme",
+    "fullName": "ISO/IEC 27001:2022 inkl. Amd 1:2024 — Informationssicherheits-Managementsysteme",
     "description": "Internationaler Standard für systematisches Informationssicherheits-Management",
     "categories": {
       "contextLeadership": {
@@ -6618,7 +6618,7 @@
       "clQ3": {
         "title": "Sind Rollen, Verantwortlichkeiten und Befugnisse für die Informationssicherheit klar zugewiesen?",
         "tooltip": "Clause 5.3 verlangt die Zuweisung und Kommunikation von ISMS-Rollen und Verantwortlichkeiten.",
-        "help": "Mindestens ein Informationssicherheitsbeauftragter (ISB/CISO) sollte benannt sein. Verantwortlichkeiten müssen in Stellenbeschreibungen oder Organigrammen dokumentiert sein.",
+        "help": "ISO 27001 (Kap. 5.3) verlangt, dass die oberste Leitung Verantwortlichkeiten und Befugnisse für Informationssicherheit zuweist und bekannt macht. Eine ISB- oder CISO-Funktion schreibt die Norm nicht vor, sie ist aber gängige Praxis. Dokumentieren Sie die Rollen, z. B. in Stellenbeschreibungen oder im Organigramm.",
         "maturity": {
           "level0": "Keine definierten Rollen oder Verantwortlichkeiten für Informationssicherheit.",
           "level1": "Ein ISB ist informell benannt, aber Verantwortlichkeiten sind nicht klar dokumentiert.",
@@ -6849,7 +6849,7 @@
       "cnQ4": {
         "title": "Werden Entwicklungsumgebungen sicher konfiguriert und von Produktivsystemen getrennt?",
         "tooltip": "Control A.8.25 fordert einen sicheren Entwicklungszyklus mit getrennten Umgebungen.",
-        "help": "Entwicklungs-, Test- und Produktivumgebungen müssen getrennt sein. Produktivdaten dürfen nur anonymisiert in Test-Umgebungen verwendet werden.",
+        "help": "Entwicklungs-, Test- und Produktivumgebungen müssen getrennt sein (A.8.31). Testdaten sind sorgfältig auszuwählen, zu schützen und zu verwalten (A.8.33) – Produktivdaten sollten möglichst nicht oder nur anonymisiert, geschützt und mit Freigabe in Testumgebungen genutzt werden.",
         "maturity": {
           "level0": "Keine Trennung zwischen Entwicklung und Produktion.",
           "level1": "Grundlegende Trennung, aber gelegentlich Produktivdaten in Testumgebungen.",
@@ -7216,7 +7216,7 @@
       "regulations": {
         "enwg": {
           "name": "Energiewirtschaftsgesetz (EnWG)",
-          "description": "IT-Sicherheitsanforderungen für Energieversorger nach §11 Abs. 1a-1b EnWG"
+          "description": "IT-Sicherheitsanforderungen für Netz- und Energieanlagenbetreiber nach § 5c EnWG (seit 06.12.2025; bis zum neuen BNetzA-Katalog gelten die IT-Sicherheitskataloge nach § 11 Abs. 1a/1b EnWG a. F. weiter)"
         },
         "bnetza": {
           "name": "IT-Sicherheitskatalog BNetzA",
@@ -7332,7 +7332,7 @@
       "regulations": {
         "seveso": {
           "name": "Störfall-Verordnung (12. BImSchV) / Seveso-III-Richtlinie",
-          "description": "Regelt die Verhinderung schwerer Unfälle mit gefährlichen Stoffen. §2 umfasst auch den Schutz vor unbefugten Eingriffen in IT- und OT-Systeme. Das Merkblatt KAS-44 konkretisiert IT-Security-Anforderungen für Störfallanlagen."
+          "description": "Regelt die Verhinderung schwerer Unfälle mit gefährlichen Stoffen. § 3 Abs. 2 Nr. 3 umfasst auch den Schutz vor unbefugten Eingriffen in IT- und OT-Systeme. Der Leitfaden KAS-51 (Nachfolger von KAS-44) konkretisiert IT-Security-Anforderungen für Störfallanlagen."
         }
       },
       "challenges": "Chemieanlagen stehen vor der Herausforderung, IT-Sicherheit (Cybersecurity) und Anlagensicherheit (Safety) parallel zu gewährleisten. Cyberangriffe auf ICS/SCADA können gefährliche Reaktionen, Umweltschäden oder Störfälle auslösen. Die Überschneidung von Seveso-III, IEC 62443 und NIS2 erzeugt eine komplexe regulatorische Mehrfachbelastung.",
@@ -7622,7 +7622,7 @@
     },
     "pci-dss": {
       "title": "PCI DSS Compliance-Check",
-      "subtitle": "Wie sicher sind Ihre Zahlungsprozesse?\nPrüfen Sie Ihre Maßnahmen gegen den Payment Card Industry Data Security Standard v4.0.",
+      "subtitle": "Wie sicher sind Ihre Zahlungsprozesse?\nPrüfen Sie Ihre Maßnahmen gegen den Payment Card Industry Data Security Standard v4.0.1.",
       "cta": "PCI DSS-Check starten"
     },
     "c5": {
@@ -7631,7 +7631,7 @@
       "cta": "C5-Check starten"
     },
     "cis-controls": {
-      "title": "CIS Controls v8",
+      "title": "CIS Controls v8.1",
       "subtitle": "18 priorisierte Sicherheitsmaßnahmen des Center for Internet Security.\nDer pragmatische Einstieg in technische IT-Sicherheit."
     },
     "iso22301": {
@@ -7643,7 +7643,7 @@
       "subtitle": "Das weltweit führende Rahmenwerk für Cybersicherheit.\nMit den 6 Funktionen Govern, Identify, Protect, Detect, Respond, Recover."
     },
     "owasp-asvs": {
-      "title": "OWASP ASVS 4.0",
+      "title": "OWASP ASVS 4.0.3",
       "subtitle": "Sicherheitsstandard für Webanwendungen und APIs.\nVerifizierungslevel L1 bis L3 für Entwickler und Sicherheitsteams."
     }
   },
@@ -7804,7 +7804,7 @@
           "name": "Logging & SIEM",
           "scenario": "Ein Unternehmen bemerkt nach 6 Monaten, dass ein Angreifer Zugriff auf den Mail-Server hatte. Die Frage der Forensiker: 'Zeigen Sie uns die Logs.' Antwort: 'Logs werden nach 7 Tagen überschrieben.' Ohne Protokollierung ist es unmöglich festzustellen, was gestohlen wurde, wie der Angreifer reinkam und ob er noch da ist.\n\nOhne Logs kein Nachweis. Ohne Nachweis keine Forensik. Ohne Forensik keine Versicherungsleistung.",
           "solution": "1. Zentrale Log-Sammlung einrichten (Syslog-Server, ELK Stack, oder Graylog)\n2. Mindestens protokollieren: Anmeldungen, Fehler, Änderungen, Netzwerkzugriffe\n3. Log-Aufbewahrung: Mindestens 6 Monate (NIS2-Empfehlung: 12 Monate)\n4. Alerting: Automatische Benachrichtigung bei verdächtigen Mustern\n5. Regelmäßige Log-Review: Wöchentlich die wichtigsten Alerts prüfen",
-          "benefit": "Zentrale Protokollierung halbiert die Zeit zur Erkennung von Sicherheitsvorfällen (von 207 auf ~100 Tage). Logs sind die Grundlage für Forensik, Versicherungsansprüche und behördliche Meldungen.",
+          "benefit": "Zentrale Protokollierung verkürzt die Zeit bis zur Erkennung deutlich – laut IBM (2025) dauert es im Schnitt 241 Tage, bis ein Datenleck erkannt und eingedämmt ist. Logs sind die Grundlage für Forensik, Versicherungsansprüche und behördliche Meldungen.",
           "nextStep": "Richten Sie eine zentrale Log-Sammlung ein. Starten Sie mit Anmelde-Logs Ihrer kritischsten Systeme.",
           "legal": {
             "nis2": "Fähigkeit zur Erkennung und Bewältigung von Sicherheitsvorfällen",
@@ -8548,7 +8548,7 @@
   "pciDss": {
     "name": "PCI DSS",
     "shortName": "PCI DSS",
-    "fullName": "Payment Card Industry Data Security Standard v4.0",
+    "fullName": "Payment Card Industry Data Security Standard v4.0.1",
     "description": "Sicherheitsstandard für Kartenzahlungsdaten",
     "categories": {
       "networkSecurity": {
@@ -8706,7 +8706,7 @@
       "vmQ3": {
         "title": "Werden bekannte Sicherheitsschwachstellen durch Installation der vom Anbieter bereitgestellten Sicherheitspatches behoben?",
         "tooltip": "PCI DSS v4.0.1 Req. 6.3 fordert, dass Sicherheitsschwachstellen identifiziert und behoben werden. Kritische Sicherheitspatches müssen innerhalb eines Monats nach Veröffentlichung installiert werden. Ein formaler Patch-Management-Prozess muss etabliert sein.",
-        "help": "Patch-Management ist eine der wichtigsten Maßnahmen gegen bekannte Schwachstellen. PCI DSS verlangt, dass Sie kritische und hochriskante Patches innerhalb eines Monats nach Veröffentlichung installieren. Für alle anderen Patches sollte ein risikobasierter Zeitplan gelten. Führen Sie ein Inventar aller Systeme und überwachen Sie aktiv Schwachstellen-Datenbanken (CVE, NVD) für Ihre eingesetzten Technologien.",
+        "help": "Patch-Management ist eine der wichtigsten Maßnahmen gegen bekannte Schwachstellen. PCI DSS verlangt, dass Sie kritische Patches innerhalb eines Monats nach Veröffentlichung installieren (Req. 6.3.3). Für alle anderen Patches, auch hochriskante, sollte ein risikobasierter Zeitplan gelten. Führen Sie ein Inventar aller Systeme und überwachen Sie aktiv Schwachstellen-Datenbanken (CVE, NVD) für Ihre eingesetzten Technologien.",
         "maturity": {
           "level0": "Kein Patch-Management-Prozess; Systeme mit bekannten ungepatchten Schwachstellen im Einsatz",
           "level1": "Ad-hoc-Patching ohne formalen Prozess; keine systematische Überwachung von Schwachstellen",
@@ -8782,7 +8782,7 @@
       },
       "auQ3": {
         "title": "Ist Multi-Faktor-Authentifizierung (MFA) für alle Zugriffe auf die CDE implementiert?",
-        "tooltip": "PCI DSS v4.0.1 Req. 8.4 fordert MFA für alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE und für alle Remote-Zugriffe, die von außerhalb des Unternehmensnetzwerks auf die CDE zugreifen.",
+        "tooltip": "PCI DSS v4.0.1 Req. 8.4 fordert MFA für alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE (8.4.1), seit 31.03.2025 für jeden Zugriff in die CDE (8.4.2) und für alle Fernzugriffe aus Netzen außerhalb der Organisation (8.4.3).",
         "help": "MFA bedeutet, dass mindestens zwei der folgenden Authentifizierungsfaktoren erforderlich sind: Wissen (Passwort, PIN), Besitz (Token, Smartphone) und Eigenschaft (Biometrie). PCI DSS v4.0.1 verlangt MFA für: (1) alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE, und (2) alle Remote-Zugriffe von außerhalb des Netzwerks. Die MFA-Implementierung muss manipulationssicher sein und darf nicht umgangen werden können.",
         "maturity": {
           "level0": "Keine MFA implementiert; CDE-Zugriff nur mit Passwort",
@@ -9214,13 +9214,13 @@
       },
       "psQ3": {
         "title": "Werden Wartungs- und Entsorgungsprozesse für IT-Ausrüstung sicher durchgeführt?",
-        "tooltip": "C5:2020 PS-07 und PS-09 fordern sichere Wartungsprozesse und die nachweisbare sichere Entsorgung oder Wiederverwendung von IT-Ausrüstung. Speichermedien müssen vor der Entsorgung sicher gelöscht oder physisch zerstört werden.",
+        "tooltip": "C5:2020 (Bereiche PS und AM) fordert sichere Wartungsprozesse und die nachweisbare sichere Entsorgung oder Wiederverwendung von IT-Ausrüstung. Speichermedien müssen vor der Entsorgung sicher gelöscht oder physisch zerstört werden.",
         "help": "C5 verlangt dokumentierte Prozesse für die sichere Wartung und Entsorgung von IT-Ausrüstung. Bei Wartungsarbeiten durch externe Dienstleister muss sichergestellt sein, dass kein unbefugter Zugriff auf Kundendaten möglich ist. Bei der Entsorgung oder Wiederverwendung müssen alle Speichermedien sicher gelöscht (nach anerkannten Standards) oder physisch zerstört werden. Die Vernichtung muss dokumentiert und nachweisbar sein.",
         "maturity": {
           "level0": "Keine definierten Prozesse für sichere Wartung oder Entsorgung; Speichermedien werden ohne Löschung entsorgt",
           "level1": "Grundsätzliche Sensibilisierung, aber keine dokumentierten Prozesse; Löschung von Speichermedien nicht standardisiert",
           "level2": "Dokumentierte Wartungs- und Entsorgungsprozesse mit sicherer Datenlöschung, aber Nachweisführung und externe Wartungskontrolle noch lückenhaft",
-          "level3": "Vollständig dokumentierte Prozesse gemäß C5:2020 PS-07/09 mit sicherer Datenlöschung nach BSI-Standards, physischer Vernichtung bei Bedarf, Nachweisdokumentation und Kontrolle externer Wartungsarbeiten"
+          "level3": "Vollständig dokumentierte Prozesse gemäß C5:2020 (PS, AM) mit sicherer Datenlöschung nach BSI-Standards, physischer Vernichtung bei Bedarf, Nachweisdokumentation und Kontrolle externer Wartungsarbeiten"
         }
       },
       "idmQ1": {
@@ -9269,13 +9269,13 @@
       },
       "opsQ2": {
         "title": "Werden Sicherheitsereignisse und Systemaktivitäten zentral protokolliert und überwacht?",
-        "tooltip": "C5:2020 OPS-07 und OPS-08 fordern die Protokollierung sicherheitsrelevanter Ereignisse und eine zeitnahe Auswertung. Protokolldaten müssen vor Manipulation geschützt und für definierte Zeiträume aufbewahrt werden.",
+        "tooltip": "C5:2020 (Bereich OPS, Kriterien zur Protokollierung und Überwachung ab OPS-10) fordert die Protokollierung sicherheitsrelevanter Ereignisse und eine zeitnahe Auswertung. Protokolldaten müssen vor Manipulation geschützt und für definierte Zeiträume aufbewahrt werden.",
         "help": "C5 verlangt eine umfassende Protokollierung aller sicherheitsrelevanten Ereignisse: Anmeldevorgänge, Zugriffsversuche, Systemkonfigurationsänderungen, privilegierte Aktionen und Sicherheitsereignisse. Die Protokolle müssen zentral gesammelt, vor unberechtigtem Zugriff und Manipulation geschützt sowie zeitnah ausgewertet werden. Die Aufbewahrungsfristen müssen definiert sein und regulatorischen Anforderungen entsprechen.",
         "maturity": {
           "level0": "Keine systematische Protokollierung oder Überwachung; Sicherheitsereignisse werden nicht erfasst",
           "level1": "Grundlegende Systemprotokollierung vorhanden, aber nicht zentral gesammelt und nicht regelmäßig ausgewertet",
           "level2": "Zentrale Protokollierung (SIEM) implementiert, wichtige Sicherheitsereignisse werden erfasst und bei Alarmen reagiert, aber keine vollständige Abdeckung",
-          "level3": "Umfassendes Logging und Monitoring gemäß C5:2020 OPS-07/08 mit zentralem SIEM, manipulationsgeschützter Speicherung, automatisierter Alarmierung, definierten Aufbewahrungsfristen und regelmäßiger Überprüfung der Protokollierungsrichtlinien"
+          "level3": "Umfassendes Logging und Monitoring gemäß C5:2020 (OPS, ab OPS-10) mit zentralem SIEM, manipulationsgeschützter Speicherung, automatisierter Alarmierung, definierten Aufbewahrungsfristen und regelmäßiger Überprüfung der Protokollierungsrichtlinien"
         }
       },
       "opsQ3": {
@@ -9302,24 +9302,24 @@
       },
       "kryQ2": {
         "title": "Werden kryptografische Schlüssel über ihren gesamten Lebenszyklus sicher verwaltet?",
-        "tooltip": "C5:2020 KRY-03 fordert ein Schlüsselmanagement, das den gesamten Lebenszyklus kryptografischer Schlüssel abdeckt: Erzeugung, Verteilung, Speicherung, Rotation, Archivierung und Vernichtung.",
+        "tooltip": "C5:2020 KRY-04 fordert ein Schlüsselmanagement, das den gesamten Lebenszyklus kryptografischer Schlüssel abdeckt: Erzeugung, Verteilung, Speicherung, Rotation, Archivierung und Vernichtung.",
         "help": "C5 verlangt ein dokumentiertes Schlüsselmanagement für alle eingesetzten kryptografischen Schlüssel. Der Prozess muss alle Phasen abdecken: sichere Erzeugung (z. B. mit Hardware Security Modules), geschützte Speicherung, kontrollierte Verteilung, regelmäßige Rotation (z. B. jährlich für symmetrische Schlüssel), sichere Archivierung und nachweisbare Vernichtung. Schlüsselkompromittierung muss sofortige Maßnahmen auslösen.",
         "maturity": {
           "level0": "Kein definiertes Schlüsselmanagement; Schlüssel werden unsicher gespeichert oder gar nicht rotiert",
           "level1": "Grundlegendes Schlüsselmanagement vorhanden, aber keine formalen Prozesse für Rotation, Archivierung oder Vernichtung",
           "level2": "Dokumentiertes Schlüsselmanagement mit definierten Prozessen für Erzeugung, Speicherung und Rotation, aber keine HSM-Nutzung und Lücken bei der Vernichtung",
-          "level3": "Umfassendes Schlüsselmanagement gemäß C5:2020 KRY-03 mit HSM-gestützter Erzeugung und Speicherung, automatisierter Rotation, sicherer Archivierung, nachweisbarer Vernichtung und definierten Notfallprozessen bei Schlüsselkompromittierung"
+          "level3": "Umfassendes Schlüsselmanagement gemäß C5:2020 KRY-04 mit HSM-gestützter Erzeugung und Speicherung, automatisierter Rotation, sicherer Archivierung, nachweisbarer Vernichtung und definierten Notfallprozessen bei Schlüsselkompromittierung"
         }
       },
       "kryQ3": {
         "title": "Werden Kundendaten sowohl bei der Übertragung als auch im Ruhezustand verschlüsselt?",
-        "tooltip": "C5:2020 KRY-04 fordert die Verschlüsselung von Kundendaten in Transit und at Rest. Die eingesetzten Verfahren müssen der Kryptografie-Richtlinie entsprechen und dem aktuellen Stand der Technik genügen.",
+        "tooltip": "C5:2020 KRY-02 und KRY-03 fordern die Verschlüsselung von Kundendaten in Transit und at Rest. Die eingesetzten Verfahren müssen der Kryptografie-Richtlinie entsprechen und dem aktuellen Stand der Technik genügen.",
         "help": "C5 verlangt, dass Kundendaten durchgängig verschlüsselt werden: bei der Übertragung (in Transit) durch aktuelle TLS-Versionen und bei der Speicherung (at Rest) durch starke Verschlüsselungsverfahren (z. B. AES-256). Besonders wichtig ist die Verschlüsselung von Backups, Datenbankeinträgen und temporären Dateien. Der Kunde sollte über die eingesetzten Verfahren informiert werden und idealerweise die Möglichkeit haben, eigene Schlüssel zu verwenden (BYOK/HYOK).",
         "maturity": {
           "level0": "Kundendaten werden weder bei Übertragung noch bei Speicherung verschlüsselt",
           "level1": "TLS für externe Verbindungen, aber keine Verschlüsselung at Rest und keine durchgängige Verschlüsselung interner Kommunikation",
           "level2": "Verschlüsselung in Transit und at Rest für die meisten Kundendaten implementiert, aber Lücken bei Backups, temporären Dateien oder internen Übertragungen",
-          "level3": "Durchgängige Verschlüsselung gemäß C5:2020 KRY-04 für alle Kundendaten in Transit und at Rest, einschließlich Backups und temporärer Dateien, mit aktuellen Verfahren, Kundeninformation und optionaler BYOK-Möglichkeit"
+          "level3": "Durchgängige Verschlüsselung gemäß C5:2020 KRY-02/KRY-03 für alle Kundendaten in Transit und at Rest, einschließlich Backups und temporärer Dateien, mit aktuellen Verfahren, Kundeninformation und optionaler BYOK-Möglichkeit"
         }
       },
       "simQ1": {
@@ -9379,13 +9379,13 @@
       },
       "devQ3": {
         "title": "Werden unabhängige Prüfungen (Audits/Penetrationstests) des Cloud-Dienstes regelmäßig durchgeführt?",
-        "tooltip": "C5:2020 PI-01 und PI-03 fordern regelmäßige unabhängige Prüfungen der Informationssicherheit des Cloud-Dienstes. Dies umfasst sowohl Compliance-Audits als auch technische Prüfungen wie Penetrationstests.",
+        "tooltip": "C5:2020 (Bereich COM – Compliance) fordert regelmäßige unabhängige Prüfungen der Informationssicherheit des Cloud-Dienstes. Dies umfasst sowohl Compliance-Audits als auch technische Prüfungen wie Penetrationstests.",
         "help": "C5 ist ein Testat-basierter Standard: Die Einhaltung der Kriterien muss durch unabhängige Wirtschaftsprüfer attestiert werden (SOC-2-ähnlich). Zusätzlich zu den formalen C5-Audits verlangt C5, dass regelmäßig technische Sicherheitsprüfungen (Penetrationstests, Schwachstellenscans) durchgeführt werden. Die Ergebnisse müssen dokumentiert und festgestellte Schwachstellen zeitnah behoben werden.",
         "maturity": {
           "level0": "Keine unabhängigen Prüfungen oder Penetrationstests; keine Aussage über den Sicherheitszustand des Cloud-Dienstes möglich",
           "level1": "Gelegentliche interne Sicherheitsprüfungen, aber keine unabhängigen Audits oder professionellen Penetrationstests",
           "level2": "Regelmäßige Penetrationstests durch externe Dienstleister und Schwachstellenscans, aber kein formales C5-Audit",
-          "level3": "Umfassendes Prüfungsprogramm gemäß C5:2020 PI-01/03 mit formellem C5-Testat durch unabhängigen Wirtschaftsprüfer, regelmäßigen Penetrationstests, Schwachstellenscans und dokumentierter Nachverfolgung aller Findings"
+          "level3": "Umfassendes Prüfungsprogramm gemäß C5:2020 (COM) mit formellem C5-Testat durch unabhängigen Wirtschaftsprüfer, regelmäßigen Penetrationstests, Schwachstellenscans und dokumentierter Nachverfolgung aller Findings"
         }
       }
     },
@@ -9426,7 +9426,7 @@
       "ps2": {
         "title": "Umweltschutz und sichere Entsorgung nach C5-Standard",
         "description": "Stellen Sie umfassenden Umweltschutz für Ihre Rechenzentren sicher: redundante Stromversorgung, Brandschutz, Wasserdetektion und Klimasteuerung. Etablieren Sie sichere Entsorgungsprozesse für IT-Ausrüstung mit nachweisbarer Datenlöschung.",
-        "firstStep": "Führen Sie eine Bestandsaufnahme Ihrer Infrastruktur-Redundanzen (Strom, Kühlung, Löschanlage) durch und vergleichen Sie mit C5 PS-05 bis PS-09.",
+        "firstStep": "Führen Sie eine Bestandsaufnahme Ihrer Infrastruktur-Redundanzen (Strom, Kühlung, Löschanlage) durch und vergleichen Sie mit C5 PS-05 bis PS-07.",
         "checklist": "- USV und Netzersatzanlage vorhanden und getestet\n- Brandmelde- und Löschanlage installiert\n- Wasserdetektion unter Doppelboden\n- Redundante Klimaanlage\n- Temperatur- und Feuchtigkeitsüberwachung\n- Wartungsverträge aktuell\n- Entsorgungsprozess dokumentiert\n- Sichere Löschung nach BSI-Standard\n- Vernichtungsprotokolle archiviert"
       },
       "idm1": {
@@ -9513,7 +9513,7 @@
         },
         "q6": {
           "title": "Werden Sicherheitsereignisse zentral protokolliert und überwacht?",
-          "description": "Zentrales Logging aller sicherheitsrelevanten Ereignisse mit manipulationsgeschützter Speicherung und zeitnaher Auswertung (C5 OPS-07/08)."
+          "description": "Zentrales Logging aller sicherheitsrelevanten Ereignisse mit manipulationsgeschützter Speicherung und zeitnaher Auswertung (C5 OPS, ab OPS-10)."
         },
         "q7": {
           "title": "Setzen Sie aktuelle Verschlüsselungsstandards für Kundendaten ein (Transit + at Rest)?",
@@ -9529,7 +9529,7 @@
         },
         "q10": {
           "title": "Werden regelmäßig unabhängige Sicherheitsprüfungen oder Penetrationstests durchgeführt?",
-          "description": "Regelmäßige externe Audits, Penetrationstests und Schwachstellenscans mit dokumentierter Nachverfolgung der Ergebnisse (C5 PI-01/03)."
+          "description": "Regelmäßige externe Audits, Penetrationstests und Schwachstellenscans mit dokumentierter Nachverfolgung der Ergebnisse (C5 COM)."
         }
       }
     }
@@ -9569,7 +9569,7 @@
         "kritisDeadline": "Unverzüglich bei erheblichen Störungen",
         "kritisAuthority": "BSI-Meldestelle",
         "doraTitle": "DORA (Finanzsektor)",
-        "doraDeadline": "Sofortige Erstmeldung, 72h Folgemeldung, 1 Monat Abschlussbericht",
+        "doraDeadline": "Erstmeldung binnen 4 h nach Klassifizierung (spätestens 24 h nach Kenntnis), Zwischenmeldung binnen 72 h, Abschlussmeldung binnen 1 Monat",
         "doraAuthority": "BaFin / BSI"
       },
       "forensics": {
@@ -9613,7 +9613,7 @@
       "intro": "Sie müssen IT-Sicherheit nicht alleine stemmen. In Deutschland gibt es zahlreiche kostenlose und geförderte Anlaufstellen, die speziell kleine und mittlere Unternehmen bei der Umsetzung von IT-Sicherheitsmaßnahmen unterstützen.",
       "bsi": {
         "title": "BSI — Bundesamt für Sicherheit in der Informationstechnik",
-        "desc": "Die zentrale Cyberbehörde Deutschlands. Das BSI bietet kostenlose Handlungsempfehlungen, Warnmeldungen und den IT-Grundschutz-Katalog — das Referenzwerk für IT-Sicherheit in Deutschland.",
+        "desc": "Die zentrale Cyberbehörde Deutschlands. Das BSI bietet kostenlose Handlungsempfehlungen, Warnmeldungen und das IT-Grundschutz-Kompendium (Nachfolger: Grundschutz++) — das Referenzwerk für IT-Sicherheit in Deutschland.",
         "services": "IT-Grundschutz-Kompendium, BSI-Standards 200-1/2/3, Warnmeldungen, Zertifizierung",
         "web": "https://www.bsi.bund.de",
         "kmuWeb": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/unternehmen-und-organisationen_node.html",
@@ -9621,7 +9621,7 @@
       },
       "acs": {
         "title": "Allianz für Cyber-Sicherheit (ACS)",
-        "desc": "BSI-Initiative speziell für Unternehmen. Kostenlose Mitgliedschaft, Erfahrungsaustausch, Warnmeldungen und Praxisleitfäden. Über 7.000 Teilnehmer.",
+        "desc": "BSI-Initiative speziell für Unternehmen. Kostenlose Mitgliedschaft, Erfahrungsaustausch, Warnmeldungen und Praxisleitfäden. Mehrere tausend teilnehmende Organisationen.",
         "services": "Partnerkreis, Erfahrungsaustausch, Cyber-Sicherheits-Umfrage, Praxisguides",
         "web": "https://www.allianz-fuer-cybersicherheit.de",
         "free": "Kostenlose Mitgliedschaft"
@@ -9740,8 +9740,8 @@
       "myths": {
         "m1": {
           "myth": "Wir sind zu klein — Hacker interessieren sich nicht für uns",
-          "fact": "43% aller Cyberangriffe richten sich gegen KMU. Gerade kleine Unternehmen sind attraktive Ziele, weil sie oft schlechter geschützt sind. Automatisierte Angriffe unterscheiden nicht nach Unternehmensgröße.",
-          "source": "Verizon Data Breach Investigations Report 2024"
+          "fact": "58 % der deutschen Unternehmen hatten in den letzten zwölf Monaten Schäden durch Cyberangriffe – darunter viele KMU. Gerade kleine Unternehmen sind attraktive Ziele, weil sie oft schlechter geschützt sind. Automatisierte Angriffe unterscheiden nicht nach Unternehmensgröße.",
+          "source": "Bitkom Wirtschaftsschutz 2026"
         },
         "m2": {
           "myth": "Unsere Firewall schützt uns ausreichend",
@@ -9756,22 +9756,22 @@
         "m4": {
           "myth": "Cloud ist unsicher — unsere Daten gehören auf eigene Server",
           "fact": "Professionelle Cloud-Anbieter investieren Millionen in Sicherheit, haben 24/7-Teams und zertifizierte Rechenzentren. Für die meisten KMU ist die Cloud SICHERER als der eigene Server im Keller — wenn sie richtig konfiguriert ist.",
-          "source": "BSI Cloud Computing Grundschutz"
+          "source": "BSI: Cloud Computing Compliance Criteria Catalogue (C5) und Empfehlungen zur sicheren Cloud-Nutzung"
         },
         "m5": {
           "myth": "Unser IT-Dienstleister kümmert sich um alles",
           "fact": "IT-Dienstleister sind wichtig, aber die Verantwortung für IT-Sicherheit bleibt beim Unternehmen. Viele Dienstleisterverträge decken keine Sicherheitsvorfälle ab. Prüfen Sie Ihren Vertrag und Ihre SLAs.",
-          "source": "NIS2 Art. 21 — Verantwortung der Geschäftsleitung"
+          "source": "Art. 20 NIS2 / § 38 BSIG — Verantwortung der Geschäftsleitung"
         },
         "m6": {
           "myth": "IT-Sicherheit ist zu teuer für uns",
-          "fact": "Die wichtigsten Maßnahmen kosten wenig oder nichts: MFA aktivieren, regelmäßige Backups, Software-Updates, Mitarbeiterschulungen. Ein Ransomware-Vorfall kostet durchschnittlich 255.000 EUR — Prävention ist günstiger.",
-          "source": "Bitkom Wirtschaftsschutzstudie 2024"
+          "fact": "Die wichtigsten Maßnahmen kosten wenig oder nichts: MFA aktivieren, regelmäßige Backups, Software-Updates, Mitarbeiterschulungen. Ein Ransomware-Vorfall kostet schnell sechsstellige Beträge (Größenordnung) — Prävention ist günstiger.",
+          "source": "Bitkom Wirtschaftsschutz 2026; BSI-Lagebericht 2025"
         },
         "m7": {
           "myth": "Wir nutzen Apple/Mac — die sind sicher",
-          "fact": "Kein Betriebssystem ist immun. macOS-Malware hat sich 2023 verdreifacht. Social Engineering und Phishing funktionieren betriebssystemunabhängig. Auch Apple-Geräte brauchen Updates, MFA und Backups.",
-          "source": "Malwarebytes State of Malware Report 2024"
+          "fact": "Kein Betriebssystem ist immun. Apple veröffentlicht regelmäßig Sicherheitsupdates für aktiv ausgenutzte Lücken in macOS und iOS. Social Engineering und Phishing funktionieren betriebssystemunabhängig. Auch Apple-Geräte brauchen Updates, MFA und Backups.",
+          "source": "Apple Security Releases"
         },
         "m8": {
           "myth": "Wir haben ein Backup — uns kann nichts passieren",
@@ -9785,7 +9785,7 @@
         },
         "m10": {
           "myth": "NIS2 betrifft nur große Konzerne",
-          "fact": "NIS2 betrifft Unternehmen ab 50 Mitarbeitern ODER 10 Mio. EUR Umsatz in regulierten Sektoren. Das sind in Deutschland schätzungsweise 30.000 Unternehmen — darunter viele Mittelständler. Auch Zulieferer können betroffen sein.",
+          "fact": "NIS2 betrifft Unternehmen ab 50 Beschäftigten ODER mehr als 10 Mio. EUR Jahresumsatz und Bilanzsumme in regulierten Sektoren. Das sind in Deutschland nach Regierungsschätzung rund 29.500 Unternehmen — darunter viele Mittelständler. Auch Zulieferer können betroffen sein.",
           "source": "§28 BSIG"
         }
       },
@@ -9825,7 +9825,7 @@
       "categories": {
         "passwords": {
           "title": "Passwort-Management",
-          "why": "80% der Datenlecks gehen auf schwache oder wiederverwendete Passwörter zurück.",
+          "why": "Gestohlene, schwache oder wiederverwendete Zugangsdaten gehören laut Verizon DBIR seit Jahren zu den häufigsten Einfallstoren.",
           "tools": {
             "t1": {
               "name": "Bitwarden",
@@ -9846,7 +9846,7 @@
         },
         "mfa": {
           "title": "Multi-Faktor-Authentifizierung (MFA)",
-          "why": "MFA blockiert 99,9% aller automatisierten Angriffe auf Konten.",
+          "why": "MFA verhindert laut Microsoft über 99 % der automatisierten Kontoübernahmen.",
           "tools": {
             "t1": {
               "name": "Microsoft Authenticator",
@@ -10083,7 +10083,7 @@
         },
         "q2": {
           "title": "Ist Multi-Faktor-Authentifizierung (MFA) für E-Mail und Cloud aktiviert?",
-          "tip": "MFA blockiert 99,9% der automatisierten Kontoübernahmen."
+          "tip": "MFA verhindert laut Microsoft über 99 % der automatisierten Kontoübernahmen."
         },
         "q3": {
           "title": "Haben Sie ein funktionierendes Backup nach der 3-2-1-Regel?",
@@ -10091,7 +10091,7 @@
         },
         "q4": {
           "title": "Sind alle Geräte (Laptop, Handy) mit aktueller Software und automatischen Updates?",
-          "tip": "90% der Angriffe nutzen bekannte, bereits gepatchte Schwachstellen."
+          "tip": "Ein großer Teil erfolgreicher Angriffe nutzt bekannte Schwachstellen, für die es längst Updates gibt."
         },
         "q5": {
           "title": "Ist Ihre Festplatte verschlüsselt (BitLocker/FileVault)?",
@@ -10103,7 +10103,7 @@
         },
         "q7": {
           "title": "Haben Sie ein Verarbeitungsverzeichnis (DSGVO Art. 30)?",
-          "tip": "Pflicht für JEDEN der personenbezogene Daten verarbeitet."
+          "tip": "Grundsätzlich Pflicht für jeden, der personenbezogene Daten verarbeitet — die Ausnahme für Betriebe unter 250 Beschäftigten (Art. 30 Abs. 5 DSGVO) greift bei regelmäßiger Verarbeitung praktisch nie."
         },
         "q8": {
           "title": "Haben Sie AVV-Verträge mit Ihren Cloud-Dienstleistern?",
@@ -10250,7 +10250,7 @@
     "hinschg": {
       "title": "Hinweisgeberschutzgesetz (HinSchG)",
       "subtitle": "Whistleblowing-Pflichten für Unternehmen — was Sie wissen müssen",
-      "intro": "Seit Juli 2023 müssen Unternehmen ab 50 Beschäftigten interne Meldekanäle einrichten. Das Hinweisgeberschutzgesetz schützt Personen, die auf Missstände hinweisen — auch bei IT-Sicherheitsvorfällen.",
+      "intro": "Seit dem 02.07.2023 müssen Unternehmen ab 250 Beschäftigten, seit dem 17.12.2023 auch ab 50 Beschäftigten interne Meldestellen einrichten. Das Hinweisgeberschutzgesetz schützt Personen, die auf Missstände hinweisen — auch bei IT-Sicherheitsvorfällen.",
       "overview": {
         "title": "Das Wichtigste im Überblick",
         "who": {
@@ -10352,7 +10352,7 @@
             "i3": "Krisenstab / ISB / IT-Leitung informieren",
             "i4": "Betroffene Systeme identifizieren und isolieren",
             "i5": "Beweissicherung: Logs, Screenshots, Netzwerk-Traffic",
-            "i6": "Meldepflichten prüfen (NIS2: 24h, DSGVO: 72h, KRITIS: unverzüglich)",
+            "i6": "Meldepflichten prüfen (NIS2/KRITIS: 24 h/72 h/1 Monat, DSGVO: 72 h)",
             "i7": "BSI-Meldestelle kontaktieren (wenn meldepflichtig)",
             "i8": "Polizei ZAC einschalten (bei Straftat)",
             "i9": "Datenschutzbehörde informieren (bei personenbezogenen Daten)",
@@ -10437,7 +10437,7 @@
         "items": {
           "i1": "Auftraggeber verlangen Sicherheitsnachweise in Ausschreibungen und Lieferantenaudits",
           "i2": "NIS2 Art. 21(3): Sicherheit der Lieferkette — auch SIE als Zulieferer sind betroffen",
-          "i3": "TISAX: In der Automobilindustrie quasi Pflicht für alle Zulieferer",
+          "i3": "TISAX: In der Automobilindustrie Voraussetzung für Zulieferer, die vertrauliche OEM-Informationen verarbeiten",
           "i4": "Cyberversicherungen verlangen dokumentierte Sicherheitsmaßnahmen",
           "i5": "Eine gute Selbsterklärung ist Wettbewerbsvorteil gegenüber Mitbewerbern ohne Nachweis"
         }
@@ -10451,12 +10451,12 @@
         },
         "standard": {
           "title": "Stufe 2: Zertifizierung Light",
-          "desc": "Externe Prüfung gegen einen definierten Standard (z.B. DIN SPEC 27076, BSI-Grundschutz-Check). Mittlerer Aufwand, hohe Aussagekraft.",
+          "desc": "Externe Prüfung gegen einen definierten Standard (z. B. DIN SPEC 27076 durch IT-Dienstleister). Mittlerer Aufwand, hohe Aussagekraft.",
           "effort": "Aufwand: 2-4 Wochen"
         },
         "advanced": {
           "title": "Stufe 3: Vollzertifizierung",
-          "desc": "ISO 27001, TISAX oder C5. Umfassender Audit durch akkreditierte Stelle. Höchste Stufe, für große Auftraggeber oder regulierte Branchen.",
+          "desc": "ISO 27001 (auch auf Basis von IT-Grundschutz), TISAX oder C5. Zertifizierung durch akkreditierte Stelle, TISAX-Assessment durch ENX-zugelassene Prüfdienstleister, C5-Testat durch Wirtschaftsprüfer. Höchste Stufe, für große Auftraggeber oder regulierte Branchen.",
           "effort": "Aufwand: 6-18 Monate"
         }
       },
@@ -10514,7 +10514,7 @@
           },
           "i4": {
             "name": "TISAX",
-            "desc": "Standard der Automobilindustrie. Pflicht für Zulieferer von VW, BMW, Mercedes etc."
+            "desc": "Standard der Automobilindustrie. Von OEMs wie VW, BMW oder Mercedes für Zulieferer mit Zugang zu vertraulichen Daten gefordert."
           },
           "i5": {
             "name": "ISO 27001",
@@ -10797,7 +10797,7 @@
       "intro": "IT-Sicherheit ist kein Projekt mit Enddatum, sondern ein kontinuierlicher Prozess. Hier erfahren Sie, wie Sie Ihren Fortschritt messen, Reifegrade bestimmen und systematisch besser werden.",
       "maturity": {
         "title": "BSI-Reifegradmodell",
-        "desc": "Das BSI definiert 6 Reifegrade für den Aufbau eines Informationssicherheitsmanagementsystems (ISMS).",
+        "desc": "Das Reifegradmodell der BSI-Orientierungshilfe zu Nachweisen für KRITIS-Betreiber unterscheidet 6 Stufen (0 bis 5) für den Aufbau eines Informationssicherheitsmanagementsystems (ISMS).",
         "levels": {
           "l0": {
             "title": "Stufe 0 — Nicht vorhanden",
@@ -10857,7 +10857,7 @@
       },
       "pdca": {
         "title": "PDCA-Zyklus für IT-Sicherheit",
-        "desc": "Der Plan-Do-Check-Act-Zyklus nach ISO 27001 ist das Herzstück systematischer Verbesserung.",
+        "desc": "Der Plan-Do-Check-Act-Zyklus ist ein bewährtes Modell für die fortlaufende Verbesserung, die ISO 27001 (Kap. 10) fordert – vorgeschrieben ist er seit der Ausgabe 2013 nicht mehr.",
         "plan": {
           "title": "Plan — Planen",
           "desc": "Risiken identifizieren, Ziele setzen, Maßnahmen planen, Ressourcen einplanen"
@@ -10914,8 +10914,8 @@
       "why": {
         "title": "Warum jedes Unternehmen BCM braucht",
         "items": {
-          "i1": "43% der KMU, die einen größeren IT-Ausfall erleben, erholen sich nie vollständig",
-          "i2": "Durchschnittliche Kosten eines Betriebsausfalls: 5.600 EUR pro Minute bei mittelständischen Unternehmen",
+          "i1": "Längere IT-Ausfälle gefährden bei KMU schnell die Existenz – Aufträge, Lieferketten und Kundenvertrauen brechen weg",
+          "i2": "Ausfallkosten erreichen schnell vier- bis fünfstellige Beträge pro Stunde (Größenordnung, stark branchenabhängig)",
           "i3": "NIS2, KRITIS und DORA verpflichten betroffene Unternehmen explizit zu BCM-Maßnahmen",
           "i4": "Kunden und Partner erwarten zunehmend nachgewiesene Ausfallsicherheit",
           "i5": "Versicherungen prüfen BCM-Fähigkeit bei der Risikobewertung für Cyber-Policen"
@@ -11137,24 +11137,24 @@
     "tisaxPruefziele": {
       "title": "TISAX-Prüfziele im Detail",
       "subtitle": "Assessment Levels, Prototypenschutz und Datenschutz nach VDA ISA",
-      "intro": "TISAX (Trusted Information Security Assessment Exchange) ist der Branchenstandard der Automobilindustrie für Informationssicherheit. Basierend auf VDA ISA v6.0 und ISO 27001 gibt es drei Prüfziele mit unterschiedlichen Anforderungsstufen — je nach Schutzbedarf Ihrer Geschäftspartner.",
+      "intro": "TISAX (Trusted Information Security Assessment Exchange) ist der Prüf- und Austauschmechanismus der Automobilindustrie für Informationssicherheit. Grundlage ist der VDA ISA (aktuell Version 6), der sich an ISO 27001 orientiert. Die Prüfziele gliedern sich in drei Module – Informationssicherheit, Prototypenschutz und Datenschutz – mit unterschiedlichen Schutzbedarfen.",
       "levels": {
         "title": "Assessment Levels (AL)",
         "al1": {
           "title": "AL 1 — Normal",
-          "desc": "Selbstauskunft ohne externe Prüfung. Geeignet für Lieferanten mit normalem Schutzbedarf. Sie füllen den VDA ISA-Fragenkatalog aus und teilen das Ergebnis."
+          "desc": "Selbstauskunft ohne externe Prüfung. Wird in TISAX nicht genutzt – es gibt dafür kein Label und keinen Ergebnisaustausch. Sinnvoll nur als interne Vorbereitung mit dem VDA ISA."
         },
         "al2": {
           "title": "AL 2 — Hoch",
-          "desc": "Fernprüfung durch einen akkreditierten Prüfer. Für Lieferanten mit hohem Schutzbedarf. Plausiblitätsprüfung der Selbstauskunft + Interviews."
+          "desc": "Fernprüfung durch einen ENX-zugelassenen Prüfdienstleister. Für Lieferanten mit hohem Schutzbedarf. Plausiblitätsprüfung der Selbstauskunft + Interviews."
         },
         "al3": {
           "title": "AL 3 — Sehr hoch",
-          "desc": "Vor-Ort-Prüfung durch akkreditierten Prüfer. Für Lieferanten mit sehr hohem Schutzbedarf oder Zugang zu Prototypen. Vollständiges Audit inkl. Begehung."
+          "desc": "Vor-Ort-Prüfung durch einen ENX-zugelassenen Prüfdienstleister. Für Lieferanten mit sehr hohem Schutzbedarf oder Zugang zu Prototypen. Vollständiges Audit inkl. Begehung."
         }
       },
       "pruefziele": {
-        "title": "Die 3 TISAX-Prüfziele",
+        "title": "Die 3 TISAX-Module",
         "infosec": {
           "title": "Informationssicherheit",
           "desc": "Kernprüfziel: Schutz vertraulicher Informationen nach VDA ISA. Pflicht für alle TISAX-Teilnehmer."
@@ -11198,12 +11198,12 @@
           "i2": "Führen Sie eine Gap-Analyse gegen VDA ISA durch — unser TISAX-Assessment hilft dabei",
           "i3": "Dokumentieren Sie alle Maßnahmen: TISAX-Prüfer bewerten Nachweise, nicht mündliche Aussagen",
           "i4": "Planen Sie Kosten ein: AL 3-Audits kosten typischerweise 10.000-30.000 EUR je nach Standortgröße",
-          "i5": "Das TISAX-Label gilt 3 Jahre — planen Sie rechtzeitig die Re-Zertifizierung"
+          "i5": "Das TISAX-Label gilt 3 Jahre — planen Sie rechtzeitig das Re-Assessment"
         }
       },
       "cta": {
         "title": "TISAX-Reifegrad prüfen",
-        "desc": "Nutzen Sie unser TISAX-Assessment mit 36 Fragen zu allen 12 VDA ISA-Bereichen.",
+        "desc": "Nutzen Sie unser TISAX-Assessment mit 36 Fragen in 12 Kategorien, angelehnt an den VDA ISA.",
         "button": "TISAX Assessment starten"
       }
     },
@@ -11599,7 +11599,7 @@
         "items": {
           "i1": "Defence in Depth: Mehrere Verteidigungsschichten statt einer einzelnen Maßnahme",
           "i2": "Zero Trust: Vertraue niemandem, verifiziere alles — auch im internen Netzwerk",
-          "i3": "Patch schnell: 60% aller erfolgreichen Angriffe nutzen bekannte, ungepatchte Lücken",
+          "i3": "Patch schnell: Viele erfolgreiche Angriffe nutzen bekannte, ungepatchte Lücken",
           "i4": "MFA überall: Verhindert 99,9% aller kontobasierten Angriffe laut Microsoft",
           "i5": "Schulen, schulen, schulen: Der Mensch bleibt der wichtigste Sicherheitsfaktor"
         }
@@ -11654,20 +11654,20 @@
         "title": "Zahlen & Fakten",
         "items": {
           "i1": {
-            "value": "206 Mrd. EUR",
-            "desc": "Jährlicher Schaden durch Cyberangriffe in Deutschland (Bitkom)"
+            "value": "160–206 Mrd. EUR",
+            "desc": "Schaden durch Cyberangriffe in Deutschland in 12 Monaten, je nach Zurechnung (Bitkom Wirtschaftsschutz 2026)"
           },
           "i2": {
-            "value": "68%",
-            "desc": "Der deutschen Unternehmen waren bereits von Cyberangriffen betroffen"
+            "value": "58%",
+            "desc": "Der deutschen Unternehmen hatten in 12 Monaten Schäden durch Cyberangriffe (Bitkom 2026)"
           },
           "i3": {
-            "value": "70 neue",
-            "desc": "Schwachstellen täglich im Durchschnitt entdeckt (BSI 2024)"
+            "value": "119 neue",
+            "desc": "Schwachstellen täglich im Durchschnitt (BSI-Lagebericht 2025)"
           },
           "i4": {
-            "value": "132 Tage",
-            "desc": "Durchschnittliche Zeit bis ein Angriff erkannt wird (IBM)"
+            "value": "241 Tage",
+            "desc": "Durchschnittlich bis ein Datenleck erkannt und eingedämmt ist (IBM Cost of a Data Breach 2025)"
           }
         }
       },
@@ -11915,7 +11915,7 @@
         "items": {
           "i1": "Große Anbieter (Microsoft, Google) haben Standard-AVVs — prüfen und akzeptieren",
           "i2": "Führen Sie eine AVV-Liste: Wer verarbeitet was für Sie?",
-          "i3": "Prüfrecht = Sie MüssEN prüfen, nicht nur können (mind. Fragebogen)",
+          "i3": "Prüfrecht nutzen: Art. 28 DSGVO verlangt, dass Sie sich von den Maßnahmen des Auftragsverarbeiters überzeugen können – mindestens per Fragebogen oder Nachweis",
           "i4": "Ohne AVV sind SIE verantwortlich — nicht der Dienstleister",
           "i5": "Aktualisieren Sie bei Anbieterwechsel oder Scope-Änderung"
         }
@@ -11928,8 +11928,8 @@
       "why": {
         "title": "Warum Cyber-Versicherung?",
         "items": {
-          "i1": "Durchschnittlicher Schaden pro Cyberangriff bei KMU: 95.000 EUR",
-          "i2": "30% der betroffenen KMU können nach einem Angriff nicht mehr normal arbeiten",
+          "i1": "Ein Cyberangriff kostet KMU schnell fünf- bis sechsstellige Beträge (Größenordnung)",
+          "i2": "Viele betroffene KMU können nach einem Angriff tage- bis wochenlang nicht normal arbeiten",
           "i3": "DSGVO-Bußgelder, Benachrichtigungskosten und forensische Analysen sind teuer",
           "i4": "Betriebsunterbrechungen können wochenlang dauern",
           "i5": "Kunden und Partner erwarten zunehmend Absicherung"
@@ -12081,12 +12081,12 @@
         "title": "Return on Security Investment",
         "items": {
           "i1": {
-            "label": "Durchschnittlicher Schaden Cyberangriff KMU",
-            "value": "95.000 EUR"
+            "label": "Typischer Schaden Cyberangriff KMU",
+            "value": "5- bis 6-stellig (Größenordnung)"
           },
           "i2": {
-            "label": "Durchschnittliche Ausfallzeit",
-            "value": "21 Tage"
+            "label": "Typische Ausfallzeit",
+            "value": "Tage bis Wochen"
           },
           "i3": {
             "label": "DSGVO-Bußgeld (Basis)",
@@ -12094,7 +12094,7 @@
           },
           "i4": {
             "label": "Reputationsschaden (geschätzt)",
-            "value": "5-20% Kundenverlust"
+            "value": "schwer bezifferbar"
           }
         },
         "conclusion": "Fazit: Eine Investition von 10.000 EUR/Jahr in IT-Sicherheit kann Schäden von 100.000+ EUR verhindern."
@@ -12127,7 +12127,7 @@
           "i2": "Open-Source-Tools: KeePass, pfSense, Wazuh, ClamAV — professionell und kostenlos",
           "i3": "BSI-Grundschutz statt teurer Beratung: Frei verfügbar, gut dokumentiert",
           "i4": "Schulungen intern: Videos, Quizzes, Micro-Learning statt teurer Präsenzschulungen",
-          "i5": "Synergien nutzen: ISMS deckt NIS2, ISO 27001 und TISAX gleichzeitig ab"
+          "i5": "Synergien nutzen: Ein ISMS deckt große Teile von NIS2, ISO 27001 und TISAX gemeinsam ab"
         }
       }
     },
@@ -12140,7 +12140,7 @@
         "items": {
           "i1": "Vertrauen bei Geschäftspartnern schaffen — besonders in Lieferketten",
           "i2": "Wettbewerbsvorteil: Kunden bevorzugen nachweislich sichere Partner",
-          "i3": "Compliance nachweisen ohne teure Zertifizierung",
+          "i3": "Sicherheitsstand transparent machen – als Selbstbewertung, nicht als Zertifikat",
           "i4": "Versicherungsprämien senken durch dokumentierte Sicherheit",
           "i5": "Mitarbeiter motivieren durch sichtbaren Fortschritt"
         }
@@ -12165,7 +12165,7 @@
           },
           "advanced": {
             "title": "Fortgeschritten (81-95%)",
-            "desc": "Umfassend geschützt. Zertifizierungsniveau.",
+            "desc": "Umfassend geschützt (Selbstbewertung) – gute Ausgangslage für eine Zertifizierung.",
             "color": "Grün"
           },
           "excellent": {
@@ -12213,8 +12213,8 @@
       "why": {
         "title": "Warum Lieferantenbewertung?",
         "items": {
-          "i1": "NIS2 §30 Abs. 2 Nr. 4: Sicherheit in der Lieferkette ist Pflicht",
-          "i2": "60% der Cyberangriffe erfolgen über die Lieferkette (Gartner)",
+          "i1": "§ 30 Abs. 2 Nr. 4 BSIG (NIS2): Sicherheit in der Lieferkette ist Pflicht",
+          "i2": "Gartner prognostizierte 2021, dass bis 2025 45 % der Organisationen Angriffe auf ihre Software-Lieferkette erleben",
           "i3": "Ein kompromittierter Dienstleister gefährdet alle Kunden",
           "i4": "Versicherungen verlangen zunehmend Lieferantenbewertung",
           "i5": "Kunden fragen aktiv nach Ihrer Lieferkettensicherheit"
@@ -12531,7 +12531,7 @@
       "intro": "Wie gut ist Ihre IT-Sicherheit wirklich? Vergleichen Sie sich mit Branchendurchschnitten und Best-Practice-Werten, um Stärken und Schwächen zu erkennen.",
       "averages": {
         "title": "Branchendurchschnitte IT-Sicherheit",
-        "desc": "Basierend auf BSI-Lagebericht, Bitkom-Studien und Branchenberichten:",
+        "desc": "Schätzwerte (Größenordnungen) aus BSI-Lagebericht, Bitkom-Studien und Branchenberichten – keine Einzelquelle pro Wert:",
         "items": {
           "i1": {
             "label": "MFA-Verbreitung in KMU",
@@ -12870,14 +12870,14 @@
       },
       "logistik": {
         "title": "IT-Sicherheit für Transport & Logistik",
-        "subtitle": "Lieferketten schützen, NIS2-Pflichten erfüllen, Betrieb absichern",
+        "subtitle": "Lieferketten schützen, NIS2-Anforderungen kennen, Betrieb absichern",
         "metaDesc": "IT-Sicherheit für Speditionen, Logistikunternehmen und Transportdienstleister. NIS2, DSGVO, KRITIS — alle Anforderungen im Überblick.",
-        "intro": "Die Transport- und Logistikbranche ist zunehmend digitalisiert — von Telematik über Lagerverwaltung bis zur Tourenplanung. Gleichzeitig steigen die regulatorischen Anforderungen durch NIS2 und die Abhängigkeit von IT-Systemen macht die Branche verwundbar.",
+        "intro": "Die Transport- und Logistikbranche ist zunehmend digitalisiert — von Telematik über Lagerverwaltung bis zur Tourenplanung. Gleichzeitig steigen die Anforderungen durch NIS2 – direkt oder über Kunden, die ihre Lieferkette absichern müssen – und die Abhängigkeit von IT-Systemen macht die Branche verwundbar.",
         "regulations": {
           "items": {
             "nis2": {
               "relevant": "true",
-              "reason": "Transportsektor in NIS2 Anhang I — alle mittleren und großen Unternehmen betroffen"
+              "reason": "NIS2 Anhang I erfasst im Verkehr v. a. Luft-, Schienen- und Schiffsverkehr sowie Straßenverkehrsbehörden und IVS-Betreiber; Post- und Kurierdienste stehen in Anhang II. Speditionen sind meist mittelbar über die Lieferkette ihrer Kunden betroffen"
             },
             "dsgvo": {
               "relevant": "true",
@@ -12889,7 +12889,7 @@
             },
             "tisax": {
               "relevant": "true",
-              "reason": "Automotive-Zulieferer in der Logistik brauchen TISAX-Konformität"
+              "reason": "Logistiker, die vertrauliche OEM-Informationen oder Prototypen handhaben, brauchen häufig ein TISAX-Label"
             },
             "iso27001": {
               "relevant": "true",
@@ -12937,7 +12937,7 @@
             }
           }
         },
-        "quickWin": "Starten Sie mit dem NIS2-Schnellcheck — als Transportunternehmen sind Sie mit hoher Wahrscheinlichkeit betroffen."
+        "quickWin": "Starten Sie mit dem NIS2-Schnellcheck — er klärt, ob Sie direkt (z. B. als Kurier-/Postdienst ab mittlerer Größe) oder nur mittelbar über Ihre Kunden betroffen sind."
       },
       "gesundheit": {
         "title": "IT-Sicherheit im Gesundheitswesen",
@@ -12948,7 +12948,7 @@
           "items": {
             "nis2": {
               "relevant": "true",
-              "reason": "Gesundheitssektor in NIS2 Anhang I — Krankenhäuser, Labore, Pharmaunternehmen betroffen"
+              "reason": "Gesundheitssektor in NIS2 Anhang I — u. a. Gesundheitsdienstleister, EU-Referenzlabore und Pharmahersteller ab mittlerer Größe"
             },
             "dsgvo": {
               "relevant": "true",
@@ -12960,7 +12960,7 @@
             },
             "bsiGrundschutz": {
               "relevant": "true",
-              "reason": "BSI-Richtlinie für die Sicherheit in Krankenhäusern (B3S)"
+              "reason": "Branchenspezifischer Sicherheitsstandard (B3S) der DKG für Krankenhäuser, vom BSI als geeignet festgestellt; IT-Grundschutz-Bausteine sind ergänzend nutzbar"
             },
             "iso27001": {
               "relevant": "true",
@@ -13042,7 +13042,7 @@
         "risks": {
           "title": "Typische IT-Risiken in der Fertigung",
           "items": {
-            "i1": "Ransomware stoppt Produktionslinie — Kosten von 100.000+ EUR pro Tag Stillstand",
+            "i1": "Ransomware stoppt Produktionslinie — Stillstandskosten schnell im fünf- bis sechsstelligen Bereich pro Tag (Größenordnung)",
             "i2": "Veraltete SPS/SCADA-Systeme ohne Sicherheitsupdates",
             "i3": "Ungesicherte OT-Netzwerke mit direktem Internet-Zugang",
             "i4": "Industriespionage durch kompromittierte Entwicklungsrechner",
@@ -13079,7 +13079,7 @@
             }
           }
         },
-        "quickWin": "Starten Sie mit dem NIS2-Schnellcheck — die meisten Fertigungsunternehmen fallen unter Anhang II."
+        "quickWin": "Starten Sie mit dem NIS2-Schnellcheck — viele Hersteller (z. B. Maschinen, Elektronik, Fahrzeuge, Medizinprodukte) fallen ab mittlerer Größe unter Anhang II."
       },
       "handel": {
         "title": "IT-Sicherheit für Handel & E-Commerce",
@@ -13090,7 +13090,7 @@
           "items": {
             "pciDss": {
               "relevant": "true",
-              "reason": "Jeder Händler, der Kartenzahlungen akzeptiert, muss PCI DSS einhalten"
+              "reason": "Wer Kartenzahlungen akzeptiert, ist vertraglich über den Acquirer bzw. die Kartenorganisationen zu PCI DSS verpflichtet"
             },
             "dsgvo": {
               "relevant": "true",
@@ -13098,7 +13098,7 @@
             },
             "nis2": {
               "relevant": "true",
-              "reason": "Online-Marktplätze und große Handelsunternehmen fallen unter NIS2"
+              "reason": "Online-Marktplätze sowie Lebensmittel-Großhandel und -Produktion (Anhang II) fallen ab mittlerer Größe unter NIS2 — der Einzelhandel an sich nicht"
             },
             "iso27001": {
               "relevant": "true",
@@ -13150,7 +13150,7 @@
             }
           }
         },
-        "quickWin": "Starten Sie mit dem PCI DSS-Check — wenn Sie Kartenzahlungen akzeptieren, ist das Pflicht."
+        "quickWin": "Starten Sie mit dem PCI DSS-Check — wenn Sie Kartenzahlungen akzeptieren, verlangt Ihr Acquirer den Nachweis."
       },
       "itDienstleister": {
         "title": "IT-Sicherheit für IT-Dienstleister",
@@ -13161,7 +13161,7 @@
           "items": {
             "nis2": {
               "relevant": "true",
-              "reason": "IKT-Dienstleister fallen direkt unter NIS2 — MSPs, Cloud-Provider, Rechenzentren"
+              "reason": "IKT-Dienstleister fallen ab mittlerer Größe direkt unter NIS2 (Anhang I) — MSPs, MSSPs, Cloud-Provider, Rechenzentren"
             },
             "iso27001": {
               "relevant": "true",
@@ -13173,7 +13173,7 @@
             },
             "c5": {
               "relevant": "true",
-              "reason": "Cloud-Dienste für öffentliche Auftraggeber benötigen C5-Testat"
+              "reason": "Ein C5-Testat verlangen v. a. Bundesbehörden (Mindeststandard des BSI) und das Gesundheitswesen (§ 393 SGB V); andere Auftraggeber fordern es zunehmend"
             },
             "dsgvo": {
               "relevant": "true",
@@ -13236,11 +13236,11 @@
             },
             "kritis": {
               "relevant": "true",
-              "reason": "Energieversorger sind klassische KRITIS-Betreiber nach BSI-KritisV"
+              "reason": "Energieversorger oberhalb der Schwellenwerte der BSI-KritisV sind KRITIS-Betreiber — viele kleinere Stadtwerke liegen darunter"
             },
             "bsiGrundschutz": {
               "relevant": "true",
-              "reason": "BSI IT-Grundschutz ist de-facto-Standard für die Branche"
+              "reason": "Netz- und Energieanlagenbetreiber müssen den IT-Sicherheitskatalog der BNetzA erfüllen und eine ISO-27001-Zertifizierung nachweisen; IT-Grundschutz ist als Methodik nutzbar"
             },
             "iso27001": {
               "relevant": "true",
@@ -13292,18 +13292,18 @@
             }
           }
         },
-        "quickWin": "Starten Sie mit dem KRITIS-Check — als Energieversorger unterliegen Sie den strengsten Anforderungen."
+        "quickWin": "Starten Sie mit dem KRITIS-Check — er zeigt, ob Sie die Schwellenwerte erreichen und welche Nachweispflichten dann gelten."
       },
       "automotive": {
         "title": "IT-Sicherheit für Automotive & Zulieferer",
         "subtitle": "TISAX-Anforderungen erfüllen, Produktionsgeheimnisse schützen, Lieferkette absichern",
         "metaDesc": "IT-Sicherheit für Automotive-Zulieferer. TISAX, NIS2, CRA — alle Anforderungen für die Automobilbranche.",
-        "intro": "Die Automobilbranche stellt besonders hohe Anforderungen an Informationssicherheit. TISAX ist der branchenspezifische Standard, der von allen OEMs und Tier-1-Zulieferern gefordert wird. Dazu kommen NIS2-Pflichten und der Cyber Resilience Act für vernetzte Fahrzeugkomponenten.",
+        "intro": "Die Automobilbranche stellt besonders hohe Anforderungen an Informationssicherheit. TISAX ist der branchenspezifische Prüf- und Austauschmechanismus, den OEMs und viele Tier-1-Zulieferer von Partnern verlangen, die vertrauliche Informationen oder Prototypen verarbeiten. Dazu kommen NIS2-Pflichten für Fahrzeughersteller ab mittlerer Größe. Typgenehmigte Fahrzeuge und ihre Komponenten sind vom Cyber Resilience Act ausgenommen – hier gelten UN R155/R156.",
         "regulations": {
           "items": {
             "tisax": {
               "relevant": "true",
-              "reason": "Pflichtstandard für alle VDA-Geschäftsbeziehungen — OEMs und Tier-1 fordern TISAX"
+              "reason": "Branchenstandard des VDA — OEMs und Tier-1 fordern TISAX von Partnern mit Zugang zu vertraulichen Informationen oder Prototypen"
             },
             "nis2": {
               "relevant": "true",
@@ -13311,7 +13311,7 @@
             },
             "cra": {
               "relevant": "true",
-              "reason": "Vernetzte Fahrzeugkomponenten (V2X, OBD) fallen unter den CRA"
+              "reason": "Der CRA gilt für vernetzte Nachrüst- und Zubehörprodukte; typgenehmigte Fahrzeugkomponenten sind ausgenommen (Art. 2 Abs. 2 CRA, dort gelten UN R155/R156)"
             },
             "iso27001": {
               "relevant": "true",
@@ -13331,7 +13331,7 @@
             "i3": "Kompromittierte Firmware in ECUs und vernetzten Fahrzeugkomponenten",
             "i4": "Supplier-Angriffe über unsichere Schnittstellen zu Tier-2/Tier-3-Zulieferern",
             "i5": "Datenabfluss durch ungeschützte Entwicklungsumgebungen",
-            "i6": "Verlust der TISAX-Zulassung durch Sicherheitsmängel — Geschäftsverlust"
+            "i6": "Verlust bzw. Nichtverlängerung des TISAX-Labels durch Sicherheitsmängel — Geschäftsverlust"
           }
         },
         "actions": {
@@ -13363,13 +13363,13 @@
             }
           }
         },
-        "quickWin": "Starten Sie mit dem TISAX-Check — ohne TISAX-Label kein Geschäft mit OEMs."
+        "quickWin": "Starten Sie mit dem TISAX-Check — wer vertrauliche OEM-Daten verarbeitet, braucht in der Regel ein TISAX-Label."
       },
       "finanzen": {
         "title": "IT-Sicherheit für Finanzdienstleister",
         "subtitle": "DORA-Compliance sicherstellen, Kundendaten schützen, Aufsichtspflichten erfüllen",
         "metaDesc": "IT-Sicherheit für Banken, Versicherungen und Finanzdienstleister. DORA, NIS2, PCI DSS — alle Regulierungen im Überblick.",
-        "intro": "Der Finanzsektor unterliegt den strengsten IT-Sicherheitsanforderungen aller Branchen. Mit DORA (Digital Operational Resilience Act) kommt ab 2025 eine EU-weite Regulierung hinzu, die IT-Risikomanagement, Incident Reporting und Third-Party-Risk-Management verbindlich vorschreibt.",
+        "intro": "Der Finanzsektor unterliegt besonders strengen IT-Sicherheitsanforderungen. Mit DORA (Digital Operational Resilience Act) gilt seit dem 17.01.2025 eine EU-weite Regulierung, die IT-Risikomanagement, Incident Reporting und Third-Party-Risk-Management verbindlich vorschreibt.",
         "regulations": {
           "items": {
             "dora": {
@@ -13378,7 +13378,7 @@
             },
             "nis2": {
               "relevant": "true",
-              "reason": "Finanzsektor in NIS2 Anhang I — zusätzlich zu sektorspezifischen Anforderungen"
+              "reason": "DORA geht als Spezialregelung vor: Für Finanzunternehmen im DORA-Anwendungsbereich gelten die NIS2-Pflichten des BSIG weitgehend nicht (§ 28 Abs. 6 BSIG)"
             },
             "pciDss": {
               "relevant": "true",
@@ -13386,7 +13386,7 @@
             },
             "iso27001": {
               "relevant": "true",
-              "reason": "De-facto-Standard, oft von BaFin als Mindestanforderung gesehen"
+              "reason": "Keine BaFin-Pflicht, aber verbreiteter Rahmen, um DORA-Anforderungen strukturiert umzusetzen"
             },
             "dsgvo": {
               "relevant": "true",
@@ -13414,11 +13414,11 @@
             },
             "i2": {
               "title": "Third-Party-Risk-Management",
-              "desc": "Alle IT-Dienstleister bewerten und überwachen — DORA Artikel 28-44"
+              "desc": "Alle IKT-Dienstleister bewerten und überwachen — DORA Artikel 28-30"
             },
             "i3": {
               "title": "Threat-Led Penetration Testing",
-              "desc": "TLPT nach DORA Artikel 26 — realistische Angriffssimulationen"
+              "desc": "TLPT nach DORA Artikel 26 — Pflicht für von der Aufsicht bestimmte Finanzunternehmen"
             },
             "i4": {
               "title": "Business Continuity Management",
@@ -13430,7 +13430,7 @@
             },
             "i6": {
               "title": "Regulatorisches Reporting",
-              "desc": "Meldeprozesse an BaFin und BSI etablieren und regelmäßig üben"
+              "desc": "Meldeprozesse an die BaFin etablieren und regelmäßig üben"
             }
           }
         },
@@ -13503,8 +13503,8 @@
   "cis-controls": {
     "name": "CIS Controls",
     "shortName": "CIS",
-    "description": "CIS Controls v8 — 18 priorisierte Sicherheitsmaßnahmen des Center for Internet Security",
-    "fullName": "CIS Critical Security Controls v8",
+    "description": "CIS Controls v8.1 — 18 priorisierte Sicherheitsmaßnahmen des Center for Internet Security",
+    "fullName": "CIS Critical Security Controls v8.1",
     "categories": {
       "inventoryControl": {
         "name": "Inventar & Bestandsmanagement",
@@ -14273,7 +14273,7 @@
       },
       "idQ3": {
         "title": "Werden Lieferketten-Risiken in die Cybersicherheitsbewertung einbezogen?",
-        "tooltip": "NIST CSF ID.SC: Supply Chain Risk Management",
+        "tooltip": "NIST CSF 2.0 GV.SC: Cybersecurity Supply Chain Risk Management",
         "help": "Drittanbieter können erhebliche Risiken in Ihre Organisation einführen.",
         "maturity": {
           "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
@@ -14339,7 +14339,7 @@
       },
       "deQ3": {
         "title": "Sind Erkennungsprozesse definiert, getestet und werden sie kontinuierlich verbessert?",
-        "tooltip": "NIST CSF DE.DP: Erkennungsprozesse",
+        "tooltip": "NIST CSF 2.0 DE.AE: Analyse ungewöhnlicher Ereignisse",
         "help": "Definierte Prozesse stellen konsistente Erkennung sicher.",
         "maturity": {
           "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
@@ -14394,7 +14394,7 @@
       },
       "rcQ2": {
         "title": "Werden Wiederherstellungsprozesse regelmäßig getestet und verbessert?",
-        "tooltip": "NIST CSF RC.IM: Improvements",
+        "tooltip": "NIST CSF 2.0 ID.IM: Verbesserung",
         "help": "Regelmäßige Tests validieren die Wiederherstellungsfähigkeit.",
         "maturity": {
           "level0": "Nicht vorhanden — keine Maßnahmen implementiert",
@@ -14853,10 +14853,10 @@
   "cisControls": {
     "name": "CIS Controls",
     "shortName": "CIS",
-    "description": "CIS Controls v8 — 18 priorisierte Sicherheitsmaßnahmen",
-    "fullName": "CIS Critical Security Controls v8",
+    "description": "CIS Controls v8.1 — 18 priorisierte Sicherheitsmaßnahmen",
+    "fullName": "CIS Critical Security Controls v8.1",
     "regLanding": {
-      "title": "CIS Controls v8",
+      "title": "CIS Controls v8.1",
       "subtitle": "18 priorisierte Sicherheitsmaßnahmen des Center for Internet Security",
       "duration": "15 Min.",
       "start": "Check starten"
@@ -14878,7 +14878,7 @@
     "name": "OWASP ASVS",
     "shortName": "OWASP",
     "description": "OWASP Application Security Verification Standard",
-    "fullName": "OWASP ASVS 4.0",
+    "fullName": "OWASP ASVS 4.0.3",
     "regLanding": {
       "title": "OWASP ASVS",
       "subtitle": "Sicherheitsstandard für Webanwendungen und APIs",

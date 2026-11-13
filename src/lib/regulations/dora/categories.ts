@@ -46,7 +46,7 @@ export const CATEGORIES: DoraCategory[] = [
     nameKey: 'dora.categories.drittanbieter.name',
     shortNameKey: 'dora.categories.drittanbieter.shortName',
     descriptionKey: 'dora.categories.drittanbieter.description',
-    doraArticles: 'Art. 28-44 DORA',
+    doraArticles: 'Art. 28-30 DORA',
     rtsParagraph: 'RTS zu Art. 28 Abs. 9 DORA (Unterauftragsvergabe)',
     icon: 'Building2',
     questions: [],

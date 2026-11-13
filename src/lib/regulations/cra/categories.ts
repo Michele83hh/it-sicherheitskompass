@@ -6,7 +6,7 @@
  * corresponding harmonized standards.
  *
  * Legal basis: Verordnung (EU) 2024/2847 (Cyber Resilience Act)
- * Standard references: EN 18031-1/2/3, ETSI EN 303 645
+ * Standard references: CRA Annex I, hEN under M/606 (in preparation), ETSI EN 303 645
  */
 
 import type { Category } from './types';
@@ -18,7 +18,7 @@ export const CATEGORIES: Category[] = [
     shortNameKey: 'cra.categories.securityByDesign.shortName',
     descriptionKey: 'cra.categories.securityByDesign.description',
     craArticle: 'Art. 10 CRA',
-    harmonizedStandard: 'EN 18031-1',
+    harmonizedStandard: 'hEN nach Normungsauftrag M/606 (in Vorbereitung)',
     icon: 'ShieldCheck',
     questions: [], // Populated from QUESTIONS array
   },
@@ -28,7 +28,7 @@ export const CATEGORIES: Category[] = [
     shortNameKey: 'cra.categories.schwachstellenmanagement.shortName',
     descriptionKey: 'cra.categories.schwachstellenmanagement.description',
     craArticle: 'Art. 11 CRA',
-    harmonizedStandard: 'EN 18031-1, ISO/IEC 30111',
+    harmonizedStandard: 'ISO/IEC 30111',
     icon: 'Bug',
     questions: [],
   },
@@ -48,7 +48,7 @@ export const CATEGORIES: Category[] = [
     shortNameKey: 'cra.categories.updateManagement.shortName',
     descriptionKey: 'cra.categories.updateManagement.description',
     craArticle: 'Art. 10 Abs. 12 CRA',
-    harmonizedStandard: 'EN 18031-1, ETSI EN 303 645',
+    harmonizedStandard: 'ETSI EN 303 645',
     icon: 'RefreshCw',
     questions: [],
   },
@@ -88,7 +88,7 @@ export const CATEGORIES: Category[] = [
     shortNameKey: 'cra.categories.supportLifecycle.shortName',
     descriptionKey: 'cra.categories.supportLifecycle.description',
     craArticle: 'Art. 10 Abs. 12 CRA',
-    harmonizedStandard: 'EN 18031-1, IEC 62443-4-1',
+    harmonizedStandard: 'IEC 62443-4-1',
     icon: 'Clock',
     questions: [],
   },

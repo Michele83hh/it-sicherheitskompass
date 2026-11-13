@@ -10,10 +10,10 @@
  * - Basis-Absicherung (BSI-Standard 200-2 Kap. 6):
  *   Quick-start for small companies or initial entry into IT-Grundschutz.
  *
- * - Standard-Absicherung (BSI-Standard 200-2 Kap. 7):
+ * - Standard-Absicherung (BSI-Standard 200-2 Kap. 8):
  *   Comprehensive protection for medium organizations, moderate risk.
  *
- * - Kern-Absicherung (BSI-Standard 200-2 Kap. 8):
+ * - Kern-Absicherung (BSI-Standard 200-2 Kap. 7):
  *   Focused protection for large companies or critical business processes.
  *
  * Reference: BSI-Standard 200-2 "IT-Grundschutz-Methodik"
@@ -52,7 +52,7 @@ export function classifyGrundschutzMethode(
     return {
       methode: 'kern',
       reason: 'bsiGrundschutz.classification.reasons.kern',
-      bsiReference: 'BSI-Standard 200-2 Kap. 8',
+      bsiReference: 'BSI-Standard 200-2 Kap. 7',
     };
   }
 
@@ -67,7 +67,7 @@ export function classifyGrundschutzMethode(
     return {
       methode: 'standard',
       reason: 'bsiGrundschutz.classification.reasons.standard',
-      bsiReference: 'BSI-Standard 200-2 Kap. 7',
+      bsiReference: 'BSI-Standard 200-2 Kap. 8',
     };
   }
 
@@ -93,13 +93,13 @@ export function getMethodeDisplayInfo(methode: GrundschutzMethode): {
       return {
         nameKey: 'bsiGrundschutz.classification.methoden.kern.name',
         descriptionKey: 'bsiGrundschutz.classification.methoden.kern.description',
-        bsiReference: 'BSI-Standard 200-2 Kap. 8',
+        bsiReference: 'BSI-Standard 200-2 Kap. 7',
       };
     case 'standard':
       return {
         nameKey: 'bsiGrundschutz.classification.methoden.standard.name',
         descriptionKey: 'bsiGrundschutz.classification.methoden.standard.description',
-        bsiReference: 'BSI-Standard 200-2 Kap. 7',
+        bsiReference: 'BSI-Standard 200-2 Kap. 8',
       };
     case 'basis':
       return {
