@@ -1,9 +1,9 @@
 // src/lib/regulations/pci-dss/types.ts
 
 /**
- * PCI DSS v4.0 Domain Types
+ * PCI DSS v4.0.1 Domain Types
  *
- * Legal basis: Payment Card Industry Data Security Standard v4.0 (March 2022)
+ * Legal basis: Payment Card Industry Data Security Standard v4.0.1 (June 2024)
  * Published by PCI Security Standards Council (PCI SSC)
  * These types model PCI-DSS-specific structures for gap analysis,
  * scoring, and recommendations.
@@ -27,7 +27,7 @@ export type {
 // ============================================================
 
 export interface LegalReference {
-  pciRequirement: string; // e.g., "PCI DSS v4.0 Req. 1.2.1"
+  pciRequirement: string; // e.g., "PCI DSS v4.0.1 Req. 1.2.1"
   pciGoal: string; // e.g., "Goal 1: Build and Maintain a Secure Network"
 }
 

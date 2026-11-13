@@ -6,7 +6,7 @@
  * 24 recommendations total (8 categories x 3 recommendations).
  *
  * Legal basis: Verordnung (EU) 2024/2847 (Cyber Resilience Act)
- * Standard references: EN 18031-1/2/3, ETSI EN 303 645, ISO/IEC 62443
+* Standard references: CRA Annex I, ETSI EN 303 645, ISO/IEC 62443
  */
 
 import type { Recommendation } from './types';
@@ -22,7 +22,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     descriptionKey: 'cra.recommendations.sbd1.description',
     firstStepKey: 'cra.recommendations.sbd1.firstStep',
     legalReference: 'Art. 10 Abs. 1 CRA, Anhang I Teil I',
-    standardReference: 'EN 18031-1 Abschnitt 5',
+    standardReference: 'CRA Anhang I',
   },
   {
     id: 'rec-sbd-2',
@@ -33,7 +33,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     descriptionKey: 'cra.recommendations.sbd2.description',
     firstStepKey: 'cra.recommendations.sbd2.firstStep',
     legalReference: 'Art. 10 Abs. 2 CRA, Anhang I Teil I Nr. 1',
-    standardReference: 'EN 18031-1, OWASP ASVS',
+    standardReference: 'OWASP ASVS',
   },
   {
     id: 'rec-sbd-3',
@@ -80,7 +80,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     descriptionKey: 'cra.recommendations.swm3.description',
     firstStepKey: 'cra.recommendations.swm3.firstStep',
     legalReference: 'Art. 11 Abs. 3 CRA, Anhang I Teil II Nr. 5',
-    standardReference: 'EN 18031-1, CVE/NVD',
+    standardReference: 'CVE/NVD',
     checklistKey: 'cra.recommendations.swm3.checklist',
   },
 
@@ -141,7 +141,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     descriptionKey: 'cra.recommendations.um2.description',
     firstStepKey: 'cra.recommendations.um2.firstStep',
     legalReference: 'Art. 10 Abs. 12 CRA',
-    standardReference: 'EN 18031-1, ETSI EN 303 645',
+    standardReference: 'ETSI EN 303 645',
   },
   {
     id: 'rec-um-3',
@@ -274,7 +274,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     descriptionKey: 'cra.recommendations.sl1.description',
     firstStepKey: 'cra.recommendations.sl1.firstStep',
     legalReference: 'Art. 10 Abs. 12 CRA',
-    standardReference: 'IEC 62443-4-1, EN 18031-1',
+    standardReference: 'IEC 62443-4-1',
   },
   {
     id: 'rec-sl-2',
@@ -296,7 +296,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     descriptionKey: 'cra.recommendations.sl3.description',
     firstStepKey: 'cra.recommendations.sl3.firstStep',
     legalReference: 'Art. 10 Abs. 12 CRA',
-    standardReference: 'IEC 62443-4-1, EN 18031-1',
+    standardReference: 'IEC 62443-4-1',
     checklistKey: 'cra.recommendations.sl3.checklist',
   },
 ];

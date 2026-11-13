@@ -32,10 +32,10 @@ export type {
  * - 'basis': Basis-Absicherung (BSI-Standard 200-2, Kap. 6)
  *   Quick-start approach for small organizations or initial entry.
  *
- * - 'standard': Standard-Absicherung (BSI-Standard 200-2, Kap. 7)
+ * - 'standard': Standard-Absicherung (BSI-Standard 200-2, Kap. 8)
  *   Comprehensive protection for medium organizations with moderate risk.
  *
- * - 'kern': Kern-Absicherung (BSI-Standard 200-2, Kap. 8)
+ * - 'kern': Kern-Absicherung (BSI-Standard 200-2, Kap. 7)
  *   Focused protection for critical business processes in large orgs.
  */
 export type GrundschutzMethode = 'basis' | 'standard' | 'kern';

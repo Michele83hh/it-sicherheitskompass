@@ -1,8 +1,8 @@
 /**
- * PCI DSS v4.0 Gap Analysis Categories
+ * PCI DSS v4.0.1 Gap Analysis Categories
  *
- * 8 categories based on PCI DSS v4.0 requirements organized by 6 goals.
- * Legal basis: PCI DSS v4.0 (March 2022), PCI Security Standards Council
+ * 8 categories based on PCI DSS v4.0.1 requirements organized by 6 goals.
+ * Legal basis: PCI DSS v4.0.1 (March 2022), PCI Security Standards Council
  *
  * Goal 1: Build and Maintain a Secure Network and Systems (Req 1-2)
  * Goal 2: Protect Account Data (Req 3-4)

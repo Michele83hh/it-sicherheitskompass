@@ -302,7 +302,7 @@ export const QUESTIONS: DoraQuestion[] = [
   },
 
   // ============================================================
-  // Category 4: ICT-Drittanbieter-Risikomanagement (Art. 28-44)
+  // Category 4: ICT-Drittanbieter-Risikomanagement (Art. 28-30)
   // ============================================================
   {
     id: 'da-q1',

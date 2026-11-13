@@ -125,7 +125,7 @@ export const RECOMMENDATIONS: DoraRecommendation[] = [
   },
 
   // ============================================================
-  // Category 4: ICT-Drittanbieter (Art. 28-44 DORA)
+  // Category 4: ICT-Drittanbieter (Art. 28-30 DORA)
   // ============================================================
   {
     id: 'rec-da-1',

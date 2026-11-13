@@ -23,7 +23,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.sbdQ1.help',
     legalReference: {
       euArticle: 'Art. 10 Abs. 1 CRA',
-      bsigParagraph: 'EN 18031-1 Abschnitt 5',
+      bsigParagraph: 'CRA Anhang I',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbdQ1.maturity.level0',
@@ -41,7 +41,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.sbdQ2.help',
     legalReference: {
       euArticle: 'Art. 10 Abs. 2 CRA',
-      bsigParagraph: 'EN 18031-1 Abschnitt 6',
+      bsigParagraph: 'CRA Anhang I',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbdQ2.maturity.level0',
@@ -59,7 +59,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.sbdQ3.help',
     legalReference: {
       euArticle: 'Art. 10 Abs. 3 CRA',
-      bsigParagraph: 'EN 18031-1 Abschnitt 7',
+      bsigParagraph: 'CRA Anhang I',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbdQ3.maturity.level0',
@@ -81,7 +81,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.swmQ1.help',
     legalReference: {
       euArticle: 'Art. 11 Abs. 1 CRA',
-      bsigParagraph: 'ISO/IEC 30111, EN 18031-1',
+      bsigParagraph: 'ISO/IEC 30111',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.swmQ1.maturity.level0',
@@ -117,7 +117,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.swmQ3.help',
     legalReference: {
       euArticle: 'Art. 11 Abs. 3 CRA',
-      bsigParagraph: 'EN 18031-1 Abschnitt 8',
+      bsigParagraph: 'CRA Anhang I',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.swmQ3.maturity.level0',
@@ -215,7 +215,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.umQ2.help',
     legalReference: {
       euArticle: 'Art. 10 Abs. 12 CRA',
-      bsigParagraph: 'EN 18031-1 Abschnitt 9',
+      bsigParagraph: 'CRA Anhang I',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.umQ2.maturity.level0',
@@ -447,7 +447,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.slQ2.help',
     legalReference: {
       euArticle: 'Art. 10 Abs. 12 CRA',
-      bsigParagraph: 'EN 18031-1 Abschnitt 10',
+      bsigParagraph: 'CRA Anhang I',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.slQ2.maturity.level0',

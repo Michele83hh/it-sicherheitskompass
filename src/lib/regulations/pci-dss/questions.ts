@@ -1,11 +1,11 @@
 /**
- * PCI DSS v4.0 Gap Analysis Questions
+ * PCI DSS v4.0.1 Gap Analysis Questions
  *
  * 28 questions across 8 categories (3-4 per category).
  * Questions target organizations processing, storing, or transmitting cardholder data.
  * All user-facing text uses translation keys resolved by next-intl.
  *
- * Legal basis: PCI DSS v4.0 (March 2022)
+ * Legal basis: PCI DSS v4.0.1 (March 2022)
  * Published by: PCI Security Standards Council (PCI SSC)
  */
 
@@ -23,7 +23,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.nsQ1.tooltip',
     helpKey: 'pciDss.questions.nsQ1.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 1.2',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 1.2',
       pciGoal: 'Goal 1',
     },
     maturityDescriptions: {
@@ -41,7 +41,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.nsQ2.tooltip',
     helpKey: 'pciDss.questions.nsQ2.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 1.3',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 1.3',
       pciGoal: 'Goal 1',
     },
     maturityDescriptions: {
@@ -59,7 +59,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.nsQ3.tooltip',
     helpKey: 'pciDss.questions.nsQ3.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 2.2',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 2.2',
       pciGoal: 'Goal 1',
     },
     maturityDescriptions: {
@@ -77,7 +77,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.nsQ4.tooltip',
     helpKey: 'pciDss.questions.nsQ4.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 1.4',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 1.4',
       pciGoal: 'Goal 1',
     },
     maturityDescriptions: {
@@ -99,7 +99,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.dpQ1.tooltip',
     helpKey: 'pciDss.questions.dpQ1.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 3.1-3.3',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 3.1-3.3',
       pciGoal: 'Goal 2',
     },
     maturityDescriptions: {
@@ -117,7 +117,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.dpQ2.tooltip',
     helpKey: 'pciDss.questions.dpQ2.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 3.5',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 3.5',
       pciGoal: 'Goal 2',
     },
     maturityDescriptions: {
@@ -135,7 +135,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.dpQ3.tooltip',
     helpKey: 'pciDss.questions.dpQ3.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 4.2',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 4.2',
       pciGoal: 'Goal 2',
     },
     maturityDescriptions: {
@@ -153,7 +153,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.dpQ4.tooltip',
     helpKey: 'pciDss.questions.dpQ4.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 3.4',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 3.4',
       pciGoal: 'Goal 2',
     },
     maturityDescriptions: {
@@ -175,7 +175,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.vmQ1.tooltip',
     helpKey: 'pciDss.questions.vmQ1.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 5.2-5.3',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 5.2-5.3',
       pciGoal: 'Goal 3',
     },
     maturityDescriptions: {
@@ -193,7 +193,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.vmQ2.tooltip',
     helpKey: 'pciDss.questions.vmQ2.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 6.2',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 6.2',
       pciGoal: 'Goal 3',
     },
     maturityDescriptions: {
@@ -211,7 +211,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.vmQ3.tooltip',
     helpKey: 'pciDss.questions.vmQ3.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 6.3',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 6.3',
       pciGoal: 'Goal 3',
     },
     maturityDescriptions: {
@@ -229,7 +229,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.vmQ4.tooltip',
     helpKey: 'pciDss.questions.vmQ4.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 6.4-6.5',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 6.4-6.5',
       pciGoal: 'Goal 3',
     },
     maturityDescriptions: {
@@ -251,7 +251,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.acQ1.tooltip',
     helpKey: 'pciDss.questions.acQ1.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 7.1-7.2',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 7.1-7.2',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -269,7 +269,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.acQ2.tooltip',
     helpKey: 'pciDss.questions.acQ2.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 7.2',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 7.2',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -287,7 +287,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.acQ3.tooltip',
     helpKey: 'pciDss.questions.acQ3.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 7.3',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 7.3',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -309,7 +309,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.auQ1.tooltip',
     helpKey: 'pciDss.questions.auQ1.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 8.2-8.3',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 8.2-8.3',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -327,7 +327,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.auQ2.tooltip',
     helpKey: 'pciDss.questions.auQ2.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 8.3.6',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 8.3.6',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -345,7 +345,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.auQ3.tooltip',
     helpKey: 'pciDss.questions.auQ3.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 8.4',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 8.4',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -363,7 +363,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.auQ4.tooltip',
     helpKey: 'pciDss.questions.auQ4.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 8.5-8.6',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 8.5-8.6',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -385,7 +385,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.psQ1.tooltip',
     helpKey: 'pciDss.questions.psQ1.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 9.1-9.2',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 9.1-9.2',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -403,7 +403,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.psQ2.tooltip',
     helpKey: 'pciDss.questions.psQ2.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 9.4',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 9.4',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -421,7 +421,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.psQ3.tooltip',
     helpKey: 'pciDss.questions.psQ3.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 9.5',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 9.5',
       pciGoal: 'Goal 4',
     },
     maturityDescriptions: {
@@ -443,7 +443,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.mtQ1.tooltip',
     helpKey: 'pciDss.questions.mtQ1.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 10.1-10.3',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 10.1-10.3',
       pciGoal: 'Goal 5',
     },
     maturityDescriptions: {
@@ -461,7 +461,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.mtQ2.tooltip',
     helpKey: 'pciDss.questions.mtQ2.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 11.3',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 11.3',
       pciGoal: 'Goal 5',
     },
     maturityDescriptions: {
@@ -479,7 +479,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.mtQ3.tooltip',
     helpKey: 'pciDss.questions.mtQ3.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 11.4',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 11.4',
       pciGoal: 'Goal 5',
     },
     maturityDescriptions: {
@@ -497,7 +497,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.mtQ4.tooltip',
     helpKey: 'pciDss.questions.mtQ4.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 10.7',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 10.7',
       pciGoal: 'Goal 5',
     },
     maturityDescriptions: {
@@ -519,7 +519,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.spQ1.tooltip',
     helpKey: 'pciDss.questions.spQ1.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 12.1',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 12.1',
       pciGoal: 'Goal 6',
     },
     maturityDescriptions: {
@@ -537,7 +537,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.spQ2.tooltip',
     helpKey: 'pciDss.questions.spQ2.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 12.6',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 12.6',
       pciGoal: 'Goal 6',
     },
     maturityDescriptions: {
@@ -555,7 +555,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'pciDss.questions.spQ3.tooltip',
     helpKey: 'pciDss.questions.spQ3.help',
     legalReference: {
-      pciRequirement: 'PCI DSS v4.0 Req. 12.10',
+      pciRequirement: 'PCI DSS v4.0.1 Req. 12.10',
       pciGoal: 'Goal 6',
     },
     maturityDescriptions: {

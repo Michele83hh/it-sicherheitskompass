@@ -79,7 +79,7 @@ export interface CraClassificationResult {
  */
 export interface LegalReference {
   euArticle: string; // e.g., "Art. 10 CRA"
-  bsigParagraph: string; // Harmonized standard reference, e.g., "EN 18031-1"
+  bsigParagraph: string; // Harmonized standard reference, e.g., "CRA Anhang I"
 }
 
 // ============================================================
