@@ -1,9 +1,9 @@
 // src/lib/regulations/pci-dss/config.ts
 
 /**
- * PCI DSS v4.0 Regulation Configuration for the Registry
+ * PCI DSS v4.0.1 Regulation Configuration for the Registry
  *
- * Legal basis: Payment Card Industry Data Security Standard v4.0 (March 2022)
+ * Legal basis: Payment Card Industry Data Security Standard v4.0.1 (June 2024)
  * Published by: PCI Security Standards Council (PCI SSC)
  */
 

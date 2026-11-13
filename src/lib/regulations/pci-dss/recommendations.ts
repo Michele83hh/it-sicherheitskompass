@@ -1,10 +1,10 @@
 /**
- * PCI DSS v4.0 Recommendations per Category
+ * PCI DSS v4.0.1 Recommendations per Category
  *
  * 20 recommendations with concrete first steps and PCI DSS requirement references.
  * Mix: 6 quick, 8 medium, 6 strategic.
  *
- * Legal basis: PCI DSS v4.0 (March 2022)
+ * Legal basis: PCI DSS v4.0.1 (March 2022)
  * Published by: PCI Security Standards Council (PCI SSC)
  */
 
@@ -22,7 +22,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.ns1.title',
     descriptionKey: 'pciDss.recommendations.ns1.description',
     firstStepKey: 'pciDss.recommendations.ns1.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 1.2-1.3',
+    legalReference: 'PCI DSS v4.0.1 Req. 1.2-1.3',
     bsiReference: 'NET.1.1, NET.3.2',
   },
   {
@@ -33,7 +33,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.ns2.title',
     descriptionKey: 'pciDss.recommendations.ns2.description',
     firstStepKey: 'pciDss.recommendations.ns2.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 2.2',
+    legalReference: 'PCI DSS v4.0.1 Req. 2.2',
     bsiReference: 'SYS.1.1, OPS.1.1.3',
   },
   {
@@ -44,7 +44,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.ns3.title',
     descriptionKey: 'pciDss.recommendations.ns3.description',
     firstStepKey: 'pciDss.recommendations.ns3.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 1.4',
+    legalReference: 'PCI DSS v4.0.1 Req. 1.4',
     bsiReference: 'NET.1.1, NET.1.2',
     checklistKey: 'pciDss.recommendations.ns3.checklist',
   },
@@ -60,7 +60,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.dp1.title',
     descriptionKey: 'pciDss.recommendations.dp1.description',
     firstStepKey: 'pciDss.recommendations.dp1.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 3.1-3.4',
+    legalReference: 'PCI DSS v4.0.1 Req. 3.1-3.4',
     bsiReference: 'CON.1, OPS.1.2.2',
   },
   {
@@ -71,7 +71,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.dp2.title',
     descriptionKey: 'pciDss.recommendations.dp2.description',
     firstStepKey: 'pciDss.recommendations.dp2.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 3.5',
+    legalReference: 'PCI DSS v4.0.1 Req. 3.5',
     bsiReference: 'CON.1, CON.4',
   },
   {
@@ -82,7 +82,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.dp3.title',
     descriptionKey: 'pciDss.recommendations.dp3.description',
     firstStepKey: 'pciDss.recommendations.dp3.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 4.2',
+    legalReference: 'PCI DSS v4.0.1 Req. 4.2',
     bsiReference: 'CON.1',
   },
 
@@ -97,7 +97,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.vm1.title',
     descriptionKey: 'pciDss.recommendations.vm1.description',
     firstStepKey: 'pciDss.recommendations.vm1.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 5.2-5.3',
+    legalReference: 'PCI DSS v4.0.1 Req. 5.2-5.3',
     bsiReference: 'OPS.1.1.4',
   },
   {
@@ -108,7 +108,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.vm2.title',
     descriptionKey: 'pciDss.recommendations.vm2.description',
     firstStepKey: 'pciDss.recommendations.vm2.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 6.3',
+    legalReference: 'PCI DSS v4.0.1 Req. 6.3',
     bsiReference: 'OPS.1.1.3',
   },
   {
@@ -119,7 +119,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.vm3.title',
     descriptionKey: 'pciDss.recommendations.vm3.description',
     firstStepKey: 'pciDss.recommendations.vm3.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 6.2, 6.4-6.5',
+    legalReference: 'PCI DSS v4.0.1 Req. 6.2, 6.4-6.5',
     bsiReference: 'CON.8, OPS.1.1.6',
     checklistKey: 'pciDss.recommendations.vm3.checklist',
   },
@@ -135,7 +135,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.ac1.title',
     descriptionKey: 'pciDss.recommendations.ac1.description',
     firstStepKey: 'pciDss.recommendations.ac1.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 7.1-7.2',
+    legalReference: 'PCI DSS v4.0.1 Req. 7.1-7.2',
     bsiReference: 'ORP.4, OPS.1.1.1',
   },
   {
@@ -146,7 +146,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.ac2.title',
     descriptionKey: 'pciDss.recommendations.ac2.description',
     firstStepKey: 'pciDss.recommendations.ac2.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 7.3',
+    legalReference: 'PCI DSS v4.0.1 Req. 7.3',
     bsiReference: 'ORP.4',
     checklistKey: 'pciDss.recommendations.ac2.checklist',
   },
@@ -162,7 +162,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.au1.title',
     descriptionKey: 'pciDss.recommendations.au1.description',
     firstStepKey: 'pciDss.recommendations.au1.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 8.3.6',
+    legalReference: 'PCI DSS v4.0.1 Req. 8.3.6',
     bsiReference: 'ORP.4',
   },
   {
@@ -173,7 +173,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.au2.title',
     descriptionKey: 'pciDss.recommendations.au2.description',
     firstStepKey: 'pciDss.recommendations.au2.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 8.4',
+    legalReference: 'PCI DSS v4.0.1 Req. 8.4',
     bsiReference: 'ORP.4',
   },
   {
@@ -184,7 +184,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.au3.title',
     descriptionKey: 'pciDss.recommendations.au3.description',
     firstStepKey: 'pciDss.recommendations.au3.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 8.5-8.6',
+    legalReference: 'PCI DSS v4.0.1 Req. 8.5-8.6',
     bsiReference: 'ORP.4, OPS.1.1.1',
     checklistKey: 'pciDss.recommendations.au3.checklist',
   },
@@ -200,7 +200,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.ps1.title',
     descriptionKey: 'pciDss.recommendations.ps1.description',
     firstStepKey: 'pciDss.recommendations.ps1.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 9.1-9.2',
+    legalReference: 'PCI DSS v4.0.1 Req. 9.1-9.2',
     bsiReference: 'INF.1, INF.2',
   },
   {
@@ -211,7 +211,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.ps2.title',
     descriptionKey: 'pciDss.recommendations.ps2.description',
     firstStepKey: 'pciDss.recommendations.ps2.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 9.4-9.5',
+    legalReference: 'PCI DSS v4.0.1 Req. 9.4-9.5',
     bsiReference: 'INF.1, INF.5',
   },
 
@@ -226,7 +226,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.mt1.title',
     descriptionKey: 'pciDss.recommendations.mt1.description',
     firstStepKey: 'pciDss.recommendations.mt1.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 10.1-10.3',
+    legalReference: 'PCI DSS v4.0.1 Req. 10.1-10.3',
     bsiReference: 'OPS.1.1.5, DER.1',
   },
   {
@@ -237,7 +237,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.mt2.title',
     descriptionKey: 'pciDss.recommendations.mt2.description',
     firstStepKey: 'pciDss.recommendations.mt2.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 11.3-11.4',
+    legalReference: 'PCI DSS v4.0.1 Req. 11.3-11.4',
     bsiReference: 'DER.1',
   },
 
@@ -252,7 +252,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.sp1.title',
     descriptionKey: 'pciDss.recommendations.sp1.description',
     firstStepKey: 'pciDss.recommendations.sp1.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 12.1',
+    legalReference: 'PCI DSS v4.0.1 Req. 12.1',
     bsiReference: 'ISMS.1, ORP.1',
   },
   {
@@ -263,7 +263,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'pciDss.recommendations.sp2.title',
     descriptionKey: 'pciDss.recommendations.sp2.description',
     firstStepKey: 'pciDss.recommendations.sp2.firstStep',
-    legalReference: 'PCI DSS v4.0 Req. 12.6, 12.10',
+    legalReference: 'PCI DSS v4.0.1 Req. 12.6, 12.10',
     bsiReference: 'ORP.3, DER.2.1',
     checklistKey: 'pciDss.recommendations.sp2.checklist',
   },

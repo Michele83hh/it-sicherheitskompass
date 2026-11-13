@@ -8,8 +8,8 @@ import en from '../messages/en.json';
  * beruehren; stattdessen faellt hier auf, wenn eine Stelle beim naechsten
  * Update vergessen wird.
  */
-const STAND_DE = 'August 2026';
-const STAND_EN = 'August 2026';
+const STAND_DE = 'November 2026';
+const STAND_EN = 'November 2026';
 
 describe('Rechtsstand ist ueberall gleich', () => {
   it('deutsche Fassung', () => {
@@ -40,5 +40,8 @@ describe('Rechtsstand ist ueberall gleich', () => {
     const alle = JSON.stringify(de) + JSON.stringify(en);
     expect(alle).not.toContain('Rechtsstand: Februar 2026');
     expect(alle).not.toContain('Legal status: February 2026');
+    expect(alle).not.toContain('Rechtsstand: August 2026');
+    expect(alle).not.toContain('Legal status: August 2026');
+    expect(alle).not.toContain('Anträge bis 31.12.2026');
   });
 });

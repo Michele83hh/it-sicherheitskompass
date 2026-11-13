@@ -1,5 +1,5 @@
 /**
- * PCI DSS v4.0 Quick Check (Schnellcheck)
+ * PCI DSS v4.0.1 Quick Check (Schnellcheck)
  *
  * 10 simplified questions for a quick initial assessment of
  * PCI DSS compliance readiness.
@@ -8,7 +8,7 @@
  * Scoring: yes=100%, partial=50%, no=0%
  * Traffic light thresholds match the full assessment engine.
  *
- * Legal basis: PCI DSS v4.0 (March 2022)
+ * Legal basis: PCI DSS v4.0.1 (March 2022)
  */
 
 import type { TrafficLight, CategoryScore, OverallScore } from './types';

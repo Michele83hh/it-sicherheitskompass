@@ -58,7 +58,7 @@ export default function KiCheckPage() {
           </h2>
           <p className="mb-4 text-sm text-muted-foreground">{t('aiAct.desc')}</p>
           <div className="space-y-2">
-            {['t1', 't2', 't3', 't4'].map((id) => (
+            {['t1', 't2', 't3', 't5', 't4'].map((id) => (
               <div key={id} className="flex gap-3 rounded-md border px-4 py-3 text-sm">
                 <Clock className="mt-0.5 size-4 shrink-0 text-primary" />
                 <span>{t(`aiAct.timeline.${id}` as any)}</span>

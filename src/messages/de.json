@@ -168,7 +168,7 @@
     },
     "combined": {
       "title": "Was Sie erhalten",
-      "subtitle": "Basierend auf NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555 und BSI IT-Grundschutz — Rechtsstand August 2026.",
+      "subtitle": "Basierend auf NIS2UmsG (BGBl. 2025 I Nr. 301), EU 2022/2555 und BSI IT-Grundschutz — Rechtsstand November 2026.",
       "pdf": {
         "title": "PDF-Report",
         "desc": "Umfassender PDF-Report mit Scores, Empfehlungen, Roadmap und Kostenschätzung — zum Download und Weitergeben."
@@ -203,7 +203,7 @@
       "privacy": "Datenschutz"
     },
     "copyright": "© {year} IT-Sicherheitskompass",
-    "legalDate": "Rechtsstand: August 2026"
+    "legalDate": "Rechtsstand: November 2026"
   },
   "disclaimers": {
     "preAssessment": {
@@ -1597,7 +1597,7 @@
     },
     "disclaimer": "Ihre Angaben deuten darauf hin, dass der folgende Reifegrad vorliegt. Ein hoher Score bedeutet nicht automatisch NIS2-Konformität. Jede Maßnahme muss angemessen und wirksam für Ihr spezifisches Risikoprofil umgesetzt sein (§30 Abs. 1 BSIG). Diese Auswertung ersetzt keine Rechtsberatung oder professionelle Sicherheitsbewertung.",
     "rechtsstand": "Rechtsstand",
-    "rechtstandDatum": "August 2026",
+    "rechtstandDatum": "November 2026",
     "generatedAt": "Erstellt am",
     "companyProfile": "Unternehmensprofil",
     "sector": "Sektor",
@@ -5914,7 +5914,7 @@
         "kritis": "Kritische Anlagen: BSIG seit 06.12.2025 (zuvor IT-SiG 2.0)",
         "dora": "In Kraft seit 17.01.2025",
         "tisax": "Fortlaufend — OEM-Anforderung",
-        "cra": "Meldepflichten ab 11.09.2026, volle Anwendung ab 11.12.2027 (EU 2024/2847)",
+        "cra": "Meldepflichten seit 11.09.2026 (ENISA Single Reporting Platform), volle Anwendung ab 11.12.2027 (EU 2024/2847)",
         "bsi-grundschutz": "Rahmenwerk — keine gesetzliche Frist",
         "iso27001": "Rahmenwerk — keine gesetzliche Frist",
         "soc2": "Rahmenwerk — keine gesetzliche Frist",
@@ -5942,7 +5942,7 @@
         "tisaxRequired": "Ihre Kunden fordern TISAX — eine Zertifizierung ist faktisch Pflicht.",
         "tisaxAuto": "Als Automobilzulieferer wird TISAX häufig von OEMs und Tier-1 gefordert.",
         "tisaxNA": "TISAX ist primär für die Automobilbranche relevant.",
-        "craProducts": "Wenn Sie Produkte mit digitalen Elementen herstellen: Die CRA-Meldepflicht für aktiv ausgenutzte Schwachstellen gilt ab 11.09.2026, die übrigen Pflichten ab 11.12.2027.",
+        "craProducts": "Wenn Sie Produkte mit digitalen Elementen herstellen: Die CRA-Meldepflicht für aktiv ausgenutzte Schwachstellen gilt seit 11.09.2026 (Meldung über die ENISA Single Reporting Platform), die übrigen Pflichten ab 11.12.2027.",
         "craIoT": "Vernetzte Produkte fallen unter den Cyber Resilience Act.",
         "craNA": "Der CRA betrifft primär Hersteller digitaler Produkte.",
         "bsiNis2Kritis": "Als NIS2/KRITIS-Betroffener ist BSI IT-Grundschutz der empfohlene Nachweis-Rahmen.",
@@ -7079,7 +7079,7 @@
   "dinSpec": {
     "title": "DIN SPEC 27076 Vergleich",
     "subtitle": "CyberRisikoCheck vs. NIS2 — Gemeinsamkeiten und Unterschiede",
-    "intro": "Die DIN SPEC 27076 (CyberRisikoCheck) ist ein standardisierter IT-Sicherheitscheck für KMU bis 50 Mitarbeiter. Sie deckt 27 Anforderungen in 6 Themenbereichen ab. Die Beratungskosten können über das BAFA-Programm zur Förderung unternehmerischen Know-hows bezuschusst werden (Anträge bis 31.12.2026).",
+    "intro": "Die DIN SPEC 27076 (CyberRisikoCheck) ist ein standardisierter IT-Sicherheitscheck für KMU bis 50 Mitarbeiter. Sie deckt 27 Anforderungen in 6 Themenbereichen ab. Die Beratungskosten können über das BAFA-Programm zur Förderung unternehmerischen Know-hows bezuschusst werden (Richtlinie verlängert bis 31.12.2028; ab 01.01.2027 Antrag nur noch digital über ELSTER-Unternehmenskonto oder BundID).",
     "comparison": {
       "title": "Vergleich",
       "header": {
@@ -7898,7 +7898,7 @@
           "name": "Software Bill of Materials (SBOM)",
           "scenario": "Log4Shell (2021) betraf Millionen Systeme. Die erste Frage: 'Nutzen wir Log4j?' Unternehmen ohne SBOM brauchten Wochen zur Klärung. Mit SBOM: Ein Blick ins Inventar, sofortige Klarheit.\n\nEin SBOM ist die Zutatenliste Ihrer Software — Sie wissen genau, welche Bibliotheken in Ihren Produkten stecken und ob eine davon verwundbar ist.",
           "solution": "1. SBOM-Generator einsetzen: CycloneDX, Syft, oder GitHub Dependency Graph\n2. Für jedes Produkt / jede Anwendung ein SBOM erstellen\n3. Automatische Schwachstellen-Prüfung: SBOM gegen CVE-Datenbanken abgleichen\n4. In CI/CD-Pipeline integrieren: Bei jedem Build neues SBOM generieren\n5. SBOMs dokumentieren und für Audits bereithalten",
-          "benefit": "SBOMs reduzieren die Reaktionszeit auf neue Schwachstellen von Wochen auf Minuten. Ab 11.12.2027 Pflicht für alle Produkte mit digitalen Elementen (CRA), Meldepflichten bereits ab 11.09.2026. Frühzeitige Einführung verschafft Wettbewerbsvorteil.",
+          "benefit": "SBOMs reduzieren die Reaktionszeit auf neue Schwachstellen von Wochen auf Minuten. Ab 11.12.2027 Pflicht für alle Produkte mit digitalen Elementen (CRA), Meldepflichten gelten bereits seit 11.09.2026. Frühzeitige Einführung verschafft Wettbewerbsvorteil.",
           "nextStep": "Generieren Sie Ihr erstes SBOM mit Syft oder dem GitHub Dependency Graph. Prüfen Sie es gegen die CVE-Datenbank.",
           "legal": {
             "nis2": "Schwachstellenmanagement und Kenntnis eingesetzter Softwarekomponenten",
@@ -8595,7 +8595,7 @@
     "questions": {
       "nsQ1": {
         "title": "Sind Netzwerksicherheitskontrollen (NSCs) installiert und konfiguriert, um den Zugang zur Karteninhaberdatenumgebung (CDE) zu kontrollieren?",
-        "tooltip": "PCI DSS v4.0 Req. 1.2 verlangt, dass Netzwerksicherheitskontrollen (z. B. Firewalls, Segmentierungslösungen) installiert und konfiguriert sind, um den Datenverkehr zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken zu kontrollieren. Alle eingehenden und ausgehenden Verbindungen müssen dokumentiert und genehmigt sein.",
+        "tooltip": "PCI DSS v4.0.1 Req. 1.2 verlangt, dass Netzwerksicherheitskontrollen (z. B. Firewalls, Segmentierungslösungen) installiert und konfiguriert sind, um den Datenverkehr zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken zu kontrollieren. Alle eingehenden und ausgehenden Verbindungen müssen dokumentiert und genehmigt sein.",
         "help": "Netzwerksicherheitskontrollen sind die erste Verteidigungslinie zum Schutz Ihrer Karteninhaberdatenumgebung. Sie müssen Firewalls oder gleichwertige Technologien einsetzen, um den Zugang zur CDE zu beschränken. Jede Regel muss dokumentiert und mit einer geschäftlichen Begründung versehen sein. Stellen Sie sicher, dass nur notwendiger Datenverkehr erlaubt ist und alle anderen Verbindungen standardmäßig blockiert werden.",
         "maturity": {
           "level0": "Keine Netzwerksicherheitskontrollen vorhanden oder Konfiguration unbekannt; kein Überblick über die Karteninhaberdatenumgebung",
@@ -8606,7 +8606,7 @@
       },
       "nsQ2": {
         "title": "Ist der Netzwerkzugang zwischen der CDE und allen anderen Netzwerken eingeschränkt?",
-        "tooltip": "PCI DSS v4.0 Req. 1.3 fordert, dass der Netzwerkzugang zwischen der CDE und allen anderen Netzwerken — einschließlich interner Netzwerke und dem Internet — eingeschränkt ist. Die Segmentierung muss verhindern, dass Systeme außerhalb der CDE direkt auf Karteninhaberdaten zugreifen können.",
+        "tooltip": "PCI DSS v4.0.1 Req. 1.3 fordert, dass der Netzwerkzugang zwischen der CDE und allen anderen Netzwerken — einschließlich interner Netzwerke und dem Internet — eingeschränkt ist. Die Segmentierung muss verhindern, dass Systeme außerhalb der CDE direkt auf Karteninhaberdaten zugreifen können.",
         "help": "Netzwerksegmentierung ist ein Kernprinzip von PCI DSS. Ihre CDE muss von allen anderen Netzwerken isoliert sein. Das bedeutet: Nur Systeme, die Karteninhaberdaten verarbeiten oder übertragen, dürfen sich innerhalb der CDE befinden. Alle anderen Systeme müssen über kontrollierte Zugangspunkte verbunden sein. Dokumentieren Sie alle Netzwerkflüsse und prüfen Sie regelmäßig, ob die Segmentierung wirksam ist.",
         "maturity": {
           "level0": "Keine Netzwerksegmentierung; CDE ist im gleichen Netzwerk wie alle anderen Systeme",
@@ -8617,7 +8617,7 @@
       },
       "nsQ3": {
         "title": "Werden Systemkomponenten sicher konfiguriert, um bekannte Schwachstellen zu reduzieren?",
-        "tooltip": "PCI DSS v4.0 Req. 2.2 verlangt, dass für alle Systemkomponenten sichere Konfigurationsstandards entwickelt und angewendet werden. Herstellerstandard-Passwörter und -Konten müssen geändert oder deaktiviert werden. Nicht benötigte Dienste, Protokolle und Funktionen müssen entfernt oder deaktiviert werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 2.2 verlangt, dass für alle Systemkomponenten sichere Konfigurationsstandards entwickelt und angewendet werden. Herstellerstandard-Passwörter und -Konten müssen geändert oder deaktiviert werden. Nicht benötigte Dienste, Protokolle und Funktionen müssen entfernt oder deaktiviert werden.",
         "help": "Jedes System in Ihrer CDE muss gemäß dokumentierter Härtungsstandards konfiguriert sein. Das umfasst: Änderung aller Standardpasswörter, Deaktivierung nicht benötigter Dienste und Protokolle, Konfiguration von Sicherheitsparametern und Dokumentation der Baseline-Konfiguration. Nutzen Sie anerkannte Härtungsrichtlinien wie CIS Benchmarks oder DISA STIGs als Grundlage.",
         "maturity": {
           "level0": "Keine Härtungsstandards vorhanden; Systeme mit Standardkonfigurationen im Einsatz",
@@ -8628,7 +8628,7 @@
       },
       "nsQ4": {
         "title": "Sind Netzwerksicherheitskontrollen für Verbindungen zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken implementiert?",
-        "tooltip": "PCI DSS v4.0 Req. 1.4 fordert, dass der Netzwerkverkehr zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken kontrolliert wird. Dies umfasst sowohl eingehenden als auch ausgehenden Verkehr, mit besonderem Fokus auf die Absicherung drahtloser Netzwerke, die mit der CDE verbunden sind.",
+        "tooltip": "PCI DSS v4.0.1 Req. 1.4 fordert, dass der Netzwerkverkehr zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken kontrolliert wird. Dies umfasst sowohl eingehenden als auch ausgehenden Verkehr, mit besonderem Fokus auf die Absicherung drahtloser Netzwerke, die mit der CDE verbunden sind.",
         "help": "Nicht vertrauenswürdige Netzwerke umfassen das Internet, Gastnetzwerke und unkontrollierte drahtlose Netzwerke. Jede Verbindung zwischen solchen Netzwerken und Ihrer CDE muss durch NSCs geschützt sein. Drahtlose Netzwerke stellen ein besonderes Risiko dar — stellen Sie sicher, dass WPA3 oder mindestens WPA2 mit starken Passwörtern verwendet wird und drahtlose Netzwerke nicht direkt in die CDE reichen.",
         "maturity": {
           "level0": "Keine differenzierte Behandlung von vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken; WLAN ohne angemessene Sicherheit",
@@ -8639,7 +8639,7 @@
       },
       "dpQ1": {
         "title": "Ist die Speicherung von Karteninhaberdaten auf das geschäftlich Notwendige beschränkt?",
-        "tooltip": "PCI DSS v4.0 Req. 3.1-3.3 verlangt, dass die Speicherung von Karteninhaberdaten auf das Minimum beschränkt wird, das für geschäftliche, rechtliche oder regulatorische Anforderungen erforderlich ist. Eine Datenaufbewahrungsrichtlinie muss definieren, welche Daten gespeichert werden, wie lange und wann sie sicher gelöscht werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 3.1-3.3 verlangt, dass die Speicherung von Karteninhaberdaten auf das Minimum beschränkt wird, das für geschäftliche, rechtliche oder regulatorische Anforderungen erforderlich ist. Eine Datenaufbewahrungsrichtlinie muss definieren, welche Daten gespeichert werden, wie lange und wann sie sicher gelöscht werden.",
         "help": "Das grundlegende Prinzip lautet: Speichern Sie keine Karteninhaberdaten, wenn es nicht unbedingt nötig ist. PCI DSS verbietet die Speicherung sensibler Authentifizierungsdaten (SAD) nach der Autorisierung vollständig. Für die primäre Kontonummer (PAN) müssen Sie eine klare Aufbewahrungsrichtlinie haben. Implementieren Sie automatisierte Löschprozesse und überprüfen Sie quartalmäßig, ob gespeicherte Daten noch benötigt werden.",
         "maturity": {
           "level0": "Kein Überblick über gespeicherte Karteninhaberdaten; keine Aufbewahrungsrichtlinie vorhanden",
@@ -8650,7 +8650,7 @@
       },
       "dpQ2": {
         "title": "Wird die primäre Kontonummer (PAN) bei der Speicherung durch starke Kryptografie unlesbar gemacht?",
-        "tooltip": "PCI DSS v4.0 Req. 3.5 fordert, dass die PAN überall dort, wo sie gespeichert wird, unlesbar gemacht wird — durch Einweg-Hashing, Trunkierung, Index-Token oder starke Kryptografie mit zugehörigen Schlüsselmanagement-Prozessen.",
+        "tooltip": "PCI DSS v4.0.1 Req. 3.5 fordert, dass die PAN überall dort, wo sie gespeichert wird, unlesbar gemacht wird — durch Einweg-Hashing, Trunkierung, Index-Token oder starke Kryptografie mit zugehörigen Schlüsselmanagement-Prozessen.",
         "help": "Wenn Sie die PAN speichern müssen, muss sie geschützt werden. Akzeptierte Methoden sind: Einweg-Hashing (z. B. SHA-256 mit Salt), Trunkierung (Anzeige nur der ersten 6 und letzten 4 Stellen), Index-Token und Tokenisierung, oder starke Verschlüsselung (z. B. AES-256). Wichtig: Der Verschlüsselungsschlüssel muss getrennt von den verschlüsselten Daten gespeichert und gemäß einem dokumentierten Schlüsselmanagement-Prozess verwaltet werden.",
         "maturity": {
           "level0": "PAN wird im Klartext gespeichert; kein Kryptografie-Konzept vorhanden",
@@ -8661,7 +8661,7 @@
       },
       "dpQ3": {
         "title": "Wird die PAN bei der Übertragung über offene, öffentliche Netzwerke durch starke Kryptografie geschützt?",
-        "tooltip": "PCI DSS v4.0 Req. 4.2 verlangt, dass die PAN bei der Übertragung über offene, öffentliche Netzwerke durch starke Kryptografie geschützt wird. Nur vertrauenswürdige Schlüssel und Zertifikate dürfen verwendet werden. TLS 1.2 oder höher ist für alle Übertragungen erforderlich.",
+        "tooltip": "PCI DSS v4.0.1 Req. 4.2 verlangt, dass die PAN bei der Übertragung über offene, öffentliche Netzwerke durch starke Kryptografie geschützt wird. Nur vertrauenswürdige Schlüssel und Zertifikate dürfen verwendet werden. TLS 1.2 oder höher ist für alle Übertragungen erforderlich.",
         "help": "Jede Übertragung von Karteninhaberdaten über das Internet, WLAN oder andere öffentliche Netzwerke muss verschlüsselt sein. Verwenden Sie TLS 1.2 oder höher für alle webbasierten Übertragungen. Stellen Sie sicher, dass nur vertrauenswürdige Zertifikate verwendet werden und schwache Verschlüsselungsalgorithmen deaktiviert sind. E-Mail-Übertragung von PAN muss ebenfalls verschlüsselt werden (z. B. S/MIME oder PGP).",
         "maturity": {
           "level0": "Keine Verschlüsselung bei der Übertragung von Karteninhaberdaten; PAN wird im Klartext über das Netzwerk gesendet",
@@ -8672,7 +8672,7 @@
       },
       "dpQ4": {
         "title": "Wird der Zugriff auf Anzeigen der vollständigen PAN und die Möglichkeit zum Kopieren von Karteninhaberdaten eingeschränkt?",
-        "tooltip": "PCI DSS v4.0 Req. 3.4 fordert, dass technische Kontrollen implementiert werden, die sicherstellen, dass die vollständige PAN nur für Benutzer mit einem dokumentierten geschäftlichen Bedarf angezeigt wird. Alle anderen Benutzer sollen höchstens die maskierte PAN sehen (z. B. die ersten 6 und letzten 4 Stellen).",
+        "tooltip": "PCI DSS v4.0.1 Req. 3.4 fordert, dass technische Kontrollen implementiert werden, die sicherstellen, dass die vollständige PAN nur für Benutzer mit einem dokumentierten geschäftlichen Bedarf angezeigt wird. Alle anderen Benutzer sollen höchstens die maskierte PAN sehen (z. B. die ersten 6 und letzten 4 Stellen).",
         "help": "Nicht jeder Mitarbeiter muss die vollständige PAN sehen können. Implementieren Sie Maskierung als Standard — zeigen Sie nur die ersten 6 und letzten 4 Stellen an. Nur Benutzer mit einem dokumentierten geschäftlichen Bedarf (z. B. Betrugsermittlung) dürfen die vollständige PAN sehen. Beschränken Sie auch die Möglichkeit, Karteninhaberdaten zu kopieren (z. B. Copy/Paste, Screenshots, Downloads).",
         "maturity": {
           "level0": "Vollständige PAN für alle Benutzer sichtbar; keine Maskierung implementiert",
@@ -8683,7 +8683,7 @@
       },
       "vmQ1": {
         "title": "Ist auf allen Systemen ein Malware-Schutz installiert, aktiv und wird regelmäßig aktualisiert?",
-        "tooltip": "PCI DSS v4.0 Req. 5.2-5.3 verlangt, dass auf allen Systemen, die üblicherweise von Malware betroffen sind, Anti-Malware-Lösungen installiert, aktiv und aktuell sind. Die Lösungen müssen regelmäßige Scans durchführen, Echtzeitschutz bieten und Audit-Protokolle generieren.",
+        "tooltip": "PCI DSS v4.0.1 Req. 5.2-5.3 verlangt, dass auf allen Systemen, die üblicherweise von Malware betroffen sind, Anti-Malware-Lösungen installiert, aktiv und aktuell sind. Die Lösungen müssen regelmäßige Scans durchführen, Echtzeitschutz bieten und Audit-Protokolle generieren.",
         "help": "Jedes System in Ihrer CDE muss über einen aktuellen Malware-Schutz verfügen. Stellen Sie sicher, dass automatische Updates aktiviert sind, regelmäßige Scans ausgeführt werden und der Echtzeitschutz nicht deaktiviert werden kann. Für Systeme, bei denen herkömmliche Anti-Malware nicht geeignet ist (z. B. Linux-Server), müssen Sie eine dokumentierte Risikoanalyse durchführen und alternative Schutzmaßnahmen implementieren.",
         "maturity": {
           "level0": "Kein Malware-Schutz auf CDE-Systemen installiert oder veraltet",
@@ -8694,7 +8694,7 @@
       },
       "vmQ2": {
         "title": "Werden benutzerdefinierte und eigene Software sicher entwickelt?",
-        "tooltip": "PCI DSS v4.0 Req. 6.2 verlangt, dass benutzerdefinierte Software sicher entwickelt wird. Entwickler müssen in sicherer Programmierung geschult sein, und der Entwicklungsprozess muss Sicherheitsanforderungen, Code-Reviews und Tests auf Schwachstellen umfassen.",
+        "tooltip": "PCI DSS v4.0.1 Req. 6.2 verlangt, dass benutzerdefinierte Software sicher entwickelt wird. Entwickler müssen in sicherer Programmierung geschult sein, und der Entwicklungsprozess muss Sicherheitsanforderungen, Code-Reviews und Tests auf Schwachstellen umfassen.",
         "help": "Wenn Sie eigene Software entwickeln oder anpassen, die mit Karteninhaberdaten in Berührung kommt, muss der Entwicklungsprozess Sicherheit integrieren. Das umfasst: Schulung der Entwickler in sicherer Programmierung (OWASP Top 10), Code-Reviews vor der Produktivsetzung, Trennung von Entwicklungs-/Test- und Produktivumgebungen sowie automatisierte Sicherheitstests in der CI/CD-Pipeline.",
         "maturity": {
           "level0": "Keine sicheren Entwicklungspraktiken; keine Trennung von Entwicklungs- und Produktivumgebungen",
@@ -8705,7 +8705,7 @@
       },
       "vmQ3": {
         "title": "Werden bekannte Sicherheitsschwachstellen durch Installation der vom Anbieter bereitgestellten Sicherheitspatches behoben?",
-        "tooltip": "PCI DSS v4.0 Req. 6.3 fordert, dass Sicherheitsschwachstellen identifiziert und behoben werden. Kritische Sicherheitspatches müssen innerhalb eines Monats nach Veröffentlichung installiert werden. Ein formaler Patch-Management-Prozess muss etabliert sein.",
+        "tooltip": "PCI DSS v4.0.1 Req. 6.3 fordert, dass Sicherheitsschwachstellen identifiziert und behoben werden. Kritische Sicherheitspatches müssen innerhalb eines Monats nach Veröffentlichung installiert werden. Ein formaler Patch-Management-Prozess muss etabliert sein.",
         "help": "Patch-Management ist eine der wichtigsten Maßnahmen gegen bekannte Schwachstellen. PCI DSS verlangt, dass Sie kritische und hochriskante Patches innerhalb eines Monats nach Veröffentlichung installieren. Für alle anderen Patches sollte ein risikobasierter Zeitplan gelten. Führen Sie ein Inventar aller Systeme und überwachen Sie aktiv Schwachstellen-Datenbanken (CVE, NVD) für Ihre eingesetzten Technologien.",
         "maturity": {
           "level0": "Kein Patch-Management-Prozess; Systeme mit bekannten ungepatchten Schwachstellen im Einsatz",
@@ -8716,7 +8716,7 @@
       },
       "vmQ4": {
         "title": "Sind öffentlich zugängliche Webanwendungen gegen bekannte Angriffe geschützt?",
-        "tooltip": "PCI DSS v4.0 Req. 6.4-6.5 fordert, dass öffentlich zugängliche Webanwendungen gegen bekannte Angriffe geschützt werden — entweder durch eine Web Application Firewall (WAF) oder durch regelmäßige Anwendungs-Schwachstellenbewertungen. Alle Eingaben müssen validiert werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 6.4-6.5 fordert, dass öffentlich zugängliche Webanwendungen gegen bekannte Angriffe geschützt werden — entweder durch eine Web Application Firewall (WAF) oder durch regelmäßige Anwendungs-Schwachstellenbewertungen. Alle Eingaben müssen validiert werden.",
         "help": "Öffentlich zugängliche Webanwendungen, die Karteninhaberdaten verarbeiten, sind ein bevorzugtes Angriffsziel. PCI DSS bietet zwei Optionen: (1) Einsatz einer Web Application Firewall (WAF) vor allen öffentlichen Webanwendungen, oder (2) mindestens jährliche Schwachstellenbewertung durch spezialisierte Sicherheitsexperten. Die WAF-Option wird empfohlen, da sie kontinuierlichen Schutz bietet.",
         "maturity": {
           "level0": "Keine Schutzmaßnahmen für öffentlich zugängliche Webanwendungen; keine Eingabevalidierung",
@@ -8727,7 +8727,7 @@
       },
       "acQ1": {
         "title": "Ist der Zugriff auf Systemkomponenten und Karteninhaberdaten auf Personen beschränkt, die diesen Zugriff geschäftlich benötigen?",
-        "tooltip": "PCI DSS v4.0 Req. 7.1-7.2 verlangt, dass der Zugriff auf Systemkomponenten und Karteninhaberdaten auf diejenigen Personen beschränkt ist, deren Aufgaben diesen Zugriff erfordern. Ein Zugriffskontrollsystem muss eingerichtet sein, das auf dem Need-to-know-Prinzip und dem Least-Privilege-Prinzip basiert.",
+        "tooltip": "PCI DSS v4.0.1 Req. 7.1-7.2 verlangt, dass der Zugriff auf Systemkomponenten und Karteninhaberdaten auf diejenigen Personen beschränkt ist, deren Aufgaben diesen Zugriff erfordern. Ein Zugriffskontrollsystem muss eingerichtet sein, das auf dem Need-to-know-Prinzip und dem Least-Privilege-Prinzip basiert.",
         "help": "Das Need-to-know-Prinzip bedeutet: Jeder Benutzer erhält nur die Zugriffsrechte, die für seine konkrete Aufgabe erforderlich sind. Implementieren Sie ein rollenbasiertes Zugriffskontrollsystem (RBAC), in dem Rollen definiert und den geschäftlichen Anforderungen zugeordnet werden. Jede Zugriffserteilung muss dokumentiert und von einer autorisierten Person genehmigt werden.",
         "maturity": {
           "level0": "Keine formale Zugriffskontrolle; breiter Zugriff auf Karteninhaberdaten ohne Einschränkung",
@@ -8738,7 +8738,7 @@
       },
       "acQ2": {
         "title": "Ist ein Zugriffskontrollsystem für Systemkomponenten konfiguriert, das den Zugriff basierend auf dem Need-to-know des Benutzers einschränkt?",
-        "tooltip": "PCI DSS v4.0 Req. 7.2 fordert, dass Zugriffskontrollsysteme konfiguriert sind, um Zugriff basierend auf Rollen und Aufgaben einzuschränken. Standardmäßig muss 'alle verweigern' gelten, es sei denn, der Zugriff ist ausdrücklich erlaubt.",
+        "tooltip": "PCI DSS v4.0.1 Req. 7.2 fordert, dass Zugriffskontrollsysteme konfiguriert sind, um Zugriff basierend auf Rollen und Aufgaben einzuschränken. Standardmäßig muss 'alle verweigern' gelten, es sei denn, der Zugriff ist ausdrücklich erlaubt.",
         "help": "Ihr Zugriffskontrollsystem muss nach dem Deny-All-Prinzip konfiguriert sein — also standardmäßig alle Zugriffe verweigern und nur explizit genehmigte Zugriffe erlauben. Stellen Sie sicher, dass jede Zugriffsregel dokumentiert ist, regelmäßig überprüft wird und bei Rollenwechseln oder Ausscheiden eines Mitarbeiters umgehend angepasst wird.",
         "maturity": {
           "level0": "Kein konfiguriertes Zugriffskontrollsystem; Standard ist 'alles erlaubt'",
@@ -8749,7 +8749,7 @@
       },
       "acQ3": {
         "title": "Werden Zugriffsrechte regelmäßig überprüft und bei Bedarf angepasst?",
-        "tooltip": "PCI DSS v4.0 Req. 7.3 verlangt, dass alle Zugriffsrechte mindestens alle sechs Monate überprüft werden, um sicherzustellen, dass sie weiterhin angemessen sind. Nicht mehr benötigte Rechte müssen umgehend entzogen werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 7.3 verlangt, dass alle Zugriffsrechte mindestens alle sechs Monate überprüft werden, um sicherzustellen, dass sie weiterhin angemessen sind. Nicht mehr benötigte Rechte müssen umgehend entzogen werden.",
         "help": "Zugriffsrechte können im Laufe der Zeit veralten — durch Stellenwechsel, Projektänderungen oder Ausscheiden von Mitarbeitern. PCI DSS fordert eine halbjährliche Überprüfung aller Zugriffsrechte auf Karteninhaberdaten und Systemkomponenten. Stellen Sie sicher, dass es einen formalen Prozess gibt, um nicht mehr benötigte Rechte zu entziehen, und dass die Überprüfung dokumentiert wird.",
         "maturity": {
           "level0": "Keine Überprüfung von Zugriffsrechten; Rechte werden nie entzogen",
@@ -8760,7 +8760,7 @@
       },
       "auQ1": {
         "title": "Werden alle Benutzer mit einer eindeutigen ID identifiziert, bevor der Zugriff auf Systemkomponenten oder Karteninhaberdaten gewährt wird?",
-        "tooltip": "PCI DSS v4.0 Req. 8.2-8.3 verlangt, dass jedem Benutzer eine eindeutige ID zugewiesen wird und die Identität vor dem Zugriff auf Systemkomponenten verifiziert wird. Generische, gemeinsam genutzte oder gruppenbezogene Konten dürfen nur in Ausnahmefällen mit dokumentierter Begründung verwendet werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 8.2-8.3 verlangt, dass jedem Benutzer eine eindeutige ID zugewiesen wird und die Identität vor dem Zugriff auf Systemkomponenten verifiziert wird. Generische, gemeinsam genutzte oder gruppenbezogene Konten dürfen nur in Ausnahmefällen mit dokumentierter Begründung verwendet werden.",
         "help": "Eindeutige Benutzer-IDs sind die Grundlage für Zurechenbarkeit und Nachverfolgbarkeit. Jede Aktion in Ihrer CDE muss einem individuellen Benutzer zugeordnet werden können. Eliminieren Sie gemeinsam genutzte Konten und generische IDs (z. B. 'admin', 'user1'). Für Ausnahmen (z. B. Notfallkonten) muss eine dokumentierte Begründung und erhöhte Überwachung vorhanden sein.",
         "maturity": {
           "level0": "Gemeinsam genutzte Konten und generische IDs sind die Norm; keine individuelle Zurechenbarkeit",
@@ -8771,8 +8771,8 @@
       },
       "auQ2": {
         "title": "Werden starke Passwort-/Passphrase-Anforderungen für alle Benutzer und Systemkonten durchgesetzt?",
-        "tooltip": "PCI DSS v4.0 Req. 8.3.6 definiert Mindestanforderungen für Passwörter: mindestens 12 Zeichen (oder 8, wenn das System keine 12 unterstützt), mit numerischen und alphabetischen Zeichen. Passwörter müssen alle 90 Tage geändert werden oder alternativ dynamische Sicherheitsanalysen der Konten durchgeführt werden.",
-        "help": "PCI DSS v4.0 hat die Mindestlänge von Passwörtern auf 12 Zeichen erhöht (vorher 7). Passwörter müssen eine Kombination aus numerischen und alphabetischen Zeichen enthalten. Sie können zwischen zwei Ansätzen wählen: (1) Passwortwechsel alle 90 Tage, oder (2) dynamische Sicherheitsanalyse der Konten, die ungewöhnliche Aktivitäten erkennt. Sperren Sie Konten nach maximal 10 fehlgeschlagenen Anmeldeversuchen für mindestens 30 Minuten.",
+        "tooltip": "PCI DSS v4.0.1 Req. 8.3.6 definiert Mindestanforderungen für Passwörter: mindestens 12 Zeichen (oder 8, wenn das System keine 12 unterstützt), mit numerischen und alphabetischen Zeichen. Passwörter müssen alle 90 Tage geändert werden oder alternativ dynamische Sicherheitsanalysen der Konten durchgeführt werden.",
+        "help": "PCI DSS v4.0.1 hat die Mindestlänge von Passwörtern auf 12 Zeichen erhöht (vorher 7). Passwörter müssen eine Kombination aus numerischen und alphabetischen Zeichen enthalten. Sie können zwischen zwei Ansätzen wählen: (1) Passwortwechsel alle 90 Tage, oder (2) dynamische Sicherheitsanalyse der Konten, die ungewöhnliche Aktivitäten erkennt. Sperren Sie Konten nach maximal 10 fehlgeschlagenen Anmeldeversuchen für mindestens 30 Minuten.",
         "maturity": {
           "level0": "Keine Passwort-Richtlinie; Standardpasswörter im Einsatz; keine Kontosperrung",
           "level1": "Grundlegende Passwort-Richtlinie vorhanden, aber Mindestlänge unter 12 Zeichen; Passwortwechsel nicht durchgesetzt",
@@ -8782,8 +8782,8 @@
       },
       "auQ3": {
         "title": "Ist Multi-Faktor-Authentifizierung (MFA) für alle Zugriffe auf die CDE implementiert?",
-        "tooltip": "PCI DSS v4.0 Req. 8.4 fordert MFA für alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE und für alle Remote-Zugriffe, die von außerhalb des Unternehmensnetzwerks auf die CDE zugreifen.",
-        "help": "MFA bedeutet, dass mindestens zwei der folgenden Authentifizierungsfaktoren erforderlich sind: Wissen (Passwort, PIN), Besitz (Token, Smartphone) und Eigenschaft (Biometrie). PCI DSS v4.0 verlangt MFA für: (1) alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE, und (2) alle Remote-Zugriffe von außerhalb des Netzwerks. Die MFA-Implementierung muss manipulationssicher sein und darf nicht umgangen werden können.",
+        "tooltip": "PCI DSS v4.0.1 Req. 8.4 fordert MFA für alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE und für alle Remote-Zugriffe, die von außerhalb des Unternehmensnetzwerks auf die CDE zugreifen.",
+        "help": "MFA bedeutet, dass mindestens zwei der folgenden Authentifizierungsfaktoren erforderlich sind: Wissen (Passwort, PIN), Besitz (Token, Smartphone) und Eigenschaft (Biometrie). PCI DSS v4.0.1 verlangt MFA für: (1) alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE, und (2) alle Remote-Zugriffe von außerhalb des Netzwerks. Die MFA-Implementierung muss manipulationssicher sein und darf nicht umgangen werden können.",
         "maturity": {
           "level0": "Keine MFA implementiert; CDE-Zugriff nur mit Passwort",
           "level1": "MFA für einige administrative Zugriffe implementiert, aber nicht für alle Remote-Zugriffe; Umgehungsmöglichkeiten vorhanden",
@@ -8793,7 +8793,7 @@
       },
       "auQ4": {
         "title": "Werden System- und Anwendungskonten sowie zugehörige Authentifizierungsfaktoren sicher verwaltet?",
-        "tooltip": "PCI DSS v4.0 Req. 8.5-8.6 fordert, dass die Nutzung von System- und Anwendungskonten (Service Accounts) verwaltet und kontrolliert wird. Interaktive Anmeldungen mit solchen Konten müssen eingeschränkt und überwacht werden. Authentifizierungsfaktoren müssen sicher gespeichert und übertragen werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 8.5-8.6 fordert, dass die Nutzung von System- und Anwendungskonten (Service Accounts) verwaltet und kontrolliert wird. Interaktive Anmeldungen mit solchen Konten müssen eingeschränkt und überwacht werden. Authentifizierungsfaktoren müssen sicher gespeichert und übertragen werden.",
         "help": "System- und Anwendungskonten (Service Accounts) stellen ein besonderes Risiko dar, da sie oft erhöhte Rechte haben und nicht an individuelle Benutzer gebunden sind. PCI DSS verlangt: Dokumentation aller Service Accounts mit Begründung, Einschränkung interaktiver Anmeldungen, sichere Speicherung der Authentifizierungsfaktoren (keine Klartext-Passwörter in Skripten oder Code) und regelmäßige Überprüfung und Rotation der Zugangsdaten.",
         "maturity": {
           "level0": "Service Accounts unkontrolliert; Passwörter in Skripten im Klartext; kein Überblick über vorhandene Service Accounts",
@@ -8804,7 +8804,7 @@
       },
       "psQ1": {
         "title": "Sind geeignete physische Zugangskontrollen implementiert, um den Zugang zu Systemen in der CDE einzuschränken?",
-        "tooltip": "PCI DSS v4.0 Req. 9.1-9.2 fordert physische Zugangskontrollen, um den Zugang zu Systemen in der CDE auf autorisiertes Personal zu beschränken. Dazu gehören Zutrittskontrollsysteme, Überwachungskameras, Besuchermanagement und die Kennzeichnung von Besuchern.",
+        "tooltip": "PCI DSS v4.0.1 Req. 9.1-9.2 fordert physische Zugangskontrollen, um den Zugang zu Systemen in der CDE auf autorisiertes Personal zu beschränken. Dazu gehören Zutrittskontrollsysteme, Überwachungskameras, Besuchermanagement und die Kennzeichnung von Besuchern.",
         "help": "Physische Sicherheit ergänzt die technischen Kontrollen. Ihre CDE-Räume (z. B. Serverräume, Rechenzentren) müssen durch Zutrittskontrollsysteme geschützt sein. Nutzen Sie Zutrittskarten, biometrische Systeme oder ähnliche Mechanismen. Alle Zutritte müssen protokolliert werden. Besucher müssen begleitet werden und sichtbar als Besucher gekennzeichnet sein. Überwachungskameras sollten an allen Ein- und Ausgängen installiert sein.",
         "maturity": {
           "level0": "Keine physischen Zugangskontrollen; CDE-Bereiche frei zugänglich",
@@ -8815,7 +8815,7 @@
       },
       "psQ2": {
         "title": "Ist der physische Zugang zu WLAN-Zugangspunkten, Gateways, Netzwerk-/Kommunikationsleitungen und tragbaren Geräten innerhalb der CDE eingeschränkt?",
-        "tooltip": "PCI DSS v4.0 Req. 9.4 fordert, dass der physische Zugang zu WLAN-Zugangspunkten, Gateways, Netzwerkgeräten und tragbaren Medien innerhalb der Einrichtung eingeschränkt ist. Tragbare Medien mit Karteninhaberdaten müssen physisch gesichert sein.",
+        "tooltip": "PCI DSS v4.0.1 Req. 9.4 fordert, dass der physische Zugang zu WLAN-Zugangspunkten, Gateways, Netzwerkgeräten und tragbaren Medien innerhalb der Einrichtung eingeschränkt ist. Tragbare Medien mit Karteninhaberdaten müssen physisch gesichert sein.",
         "help": "Netzwerkgeräte und WLAN-Zugangspunkte innerhalb Ihrer CDE müssen physisch gesichert sein — in verschlossenen Räumen, Schränken oder Gehäuse. Tragbare Medien (USB-Sticks, Festplatten, Bänder) mit Karteninhaberdaten müssen in sicheren Bereichen aufbewahrt werden. Führen Sie ein Inventar aller tragbaren Medien und implementieren Sie einen Prozess für die sichere Vernichtung nicht mehr benötigter Medien.",
         "maturity": {
           "level0": "Netzwerkgeräte frei zugänglich; kein Inventar tragbarer Medien; keine sichere Aufbewahrung",
@@ -8826,7 +8826,7 @@
       },
       "psQ3": {
         "title": "Werden Point-of-Interaction-Geräte (z. B. Kartenterminals) vor Manipulation und unbefugter Ersetzung geschützt?",
-        "tooltip": "PCI DSS v4.0 Req. 9.5 verlangt den Schutz von Point-of-Interaction-Geräten (POI) wie Kartenterminals vor Manipulation, unbefugter Ersetzung und Skimming. Es muss ein Inventar aller POI-Geräte geführt und regelmäßig überprüft werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 9.5 verlangt den Schutz von Point-of-Interaction-Geräten (POI) wie Kartenterminals vor Manipulation, unbefugter Ersetzung und Skimming. Es muss ein Inventar aller POI-Geräte geführt und regelmäßig überprüft werden.",
         "help": "Kartenterminals und andere POI-Geräte sind ein häufiges Ziel für Skimming-Angriffe. PCI DSS verlangt: Führen Sie ein Inventar aller POI-Geräte mit Seriennummer und Standort. Überprüfen Sie Geräte regelmäßig auf Manipulation (z. B. zusätzliche Aufsätze, gelöste Siegel). Schulen Sie Mitarbeiter darin, Manipulationen zu erkennen. Implementieren Sie einen Meldeprozess für verdächtiges Verhalten rund um die Geräte.",
         "maturity": {
           "level0": "Kein Inventar der POI-Geräte; keine Überprüfung auf Manipulation; keine Mitarbeiterschulung",
@@ -8837,7 +8837,7 @@
       },
       "mtQ1": {
         "title": "Werden Audit-Logs für alle Zugriffe auf Systemkomponenten und Karteninhaberdaten geführt?",
-        "tooltip": "PCI DSS v4.0 Req. 10.1-10.3 verlangt, dass Audit-Logs implementiert und aktiviert sind, um alle individuellen Benutzerzugriffe auf Karteninhaberdaten zu verfolgen. Logs müssen bestimmte Ereignisse erfassen, einschließlich aller Aktionen durch Benutzer mit Root- oder Administratorrechten, aller Zugriffe auf Audit-Logs und aller fehlgeschlagenen Anmeldeversuche.",
+        "tooltip": "PCI DSS v4.0.1 Req. 10.1-10.3 verlangt, dass Audit-Logs implementiert und aktiviert sind, um alle individuellen Benutzerzugriffe auf Karteninhaberdaten zu verfolgen. Logs müssen bestimmte Ereignisse erfassen, einschließlich aller Aktionen durch Benutzer mit Root- oder Administratorrechten, aller Zugriffe auf Audit-Logs und aller fehlgeschlagenen Anmeldeversuche.",
         "help": "Audit-Logging ist entscheidend für die Erkennung und Untersuchung von Sicherheitsvorfällen. PCI DSS verlangt, dass folgende Ereignisse protokolliert werden: individuelle Benutzerzugriffe auf Karteninhaberdaten, Aktionen mit Root-/Admin-Rechten, Zugriffe auf Audit-Logs, fehlgeschlagene Anmeldeversuche, Änderungen an Identifizierungsmechanismen, Initialisierung und Stoppen von Logs sowie Erstellen und Löschen von Systemobjekten. Logs müssen vor Manipulation geschützt und mindestens 12 Monate aufbewahrt werden.",
         "maturity": {
           "level0": "Kein Audit-Logging implementiert; keine Nachverfolgbarkeit von Zugriffen",
@@ -8848,7 +8848,7 @@
       },
       "mtQ2": {
         "title": "Werden externe und interne Schwachstellen-Scans regelmäßig durchgeführt?",
-        "tooltip": "PCI DSS v4.0 Req. 11.3 fordert, dass interne und externe Schwachstellen-Scans mindestens quartalmäßig und nach wesentlichen Änderungen durchgeführt werden. Externe Scans müssen von einem zugelassenen PCI Approved Scanning Vendor (ASV) durchgeführt werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 11.3 fordert, dass interne und externe Schwachstellen-Scans mindestens quartalmäßig und nach wesentlichen Änderungen durchgeführt werden. Externe Scans müssen von einem zugelassenen PCI Approved Scanning Vendor (ASV) durchgeführt werden.",
         "help": "Schwachstellen-Scans helfen, Sicherheitslücken zu identifizieren, bevor sie ausgenutzt werden. PCI DSS verlangt: Quartalmäßige interne Scans (können intern durchgeführt werden) und quartalmäßige externe Scans durch einen PCI ASV. Bei wesentlichen Änderungen an der Infrastruktur müssen zusätzliche Scans durchgeführt werden. Externe Scans müssen ein 'Passing'-Ergebnis erzielen. Gefundene Schwachstellen müssen priorisiert und behoben werden.",
         "maturity": {
           "level0": "Keine Schwachstellen-Scans; keine Kenntnis vorhandener Schwachstellen",
@@ -8859,7 +8859,7 @@
       },
       "mtQ3": {
         "title": "Werden regelmäßige Penetrationstests durchgeführt?",
-        "tooltip": "PCI DSS v4.0 Req. 11.4 fordert, dass mindestens jährlich und nach wesentlichen Änderungen externe und interne Penetrationstests durchgeführt werden. Die Tests müssen anerkannte Methodologien anwenden (z. B. NIST SP 800-115, OWASP, PTES) und sowohl Netzwerk- als auch Anwendungsschicht abdecken.",
+        "tooltip": "PCI DSS v4.0.1 Req. 11.4 fordert, dass mindestens jährlich und nach wesentlichen Änderungen externe und interne Penetrationstests durchgeführt werden. Die Tests müssen anerkannte Methodologien anwenden (z. B. NIST SP 800-115, OWASP, PTES) und sowohl Netzwerk- als auch Anwendungsschicht abdecken.",
         "help": "Penetrationstests gehen über Schwachstellen-Scans hinaus — sie versuchen, gefundene Schwachstellen tatsächlich auszunutzen und die Auswirkungen zu demonstrieren. PCI DSS verlangt jährliche Penetrationstests von innen und aussen sowie Tests der Netzwerksegmentierung. Die Tests müssen von qualifizierten Fachleuten durchgeführt werden (intern oder extern). Alle gefundenen Schwachstellen müssen behoben und erneut getestet werden.",
         "maturity": {
           "level0": "Keine Penetrationstests durchgeführt; keine Kenntnis ausnutzbarer Schwachstellen",
@@ -8870,7 +8870,7 @@
       },
       "mtQ4": {
         "title": "Können Ausfälle kritischer Sicherheitskontrollsysteme erkannt und darauf reagiert werden?",
-        "tooltip": "PCI DSS v4.0 Req. 10.7 fordert, dass Ausfälle kritischer Sicherheitskontrollsysteme umgehend erkannt, gemeldet und behoben werden. Dazu gehören Firewalls, IDS/IPS, Anti-Malware, Zugangskontrollen, Audit-Logging und Segmentierungskontrollen.",
+        "tooltip": "PCI DSS v4.0.1 Req. 10.7 fordert, dass Ausfälle kritischer Sicherheitskontrollsysteme umgehend erkannt, gemeldet und behoben werden. Dazu gehören Firewalls, IDS/IPS, Anti-Malware, Zugangskontrollen, Audit-Logging und Segmentierungskontrollen.",
         "help": "Wenn eine Sicherheitskontrolle ausfällt — z. B. eine Firewall-Regel gelöscht wird oder das Anti-Malware-System stoppt — entstehen Sicherheitslücken, die schnell ausgenutzt werden können. PCI DSS verlangt, dass Sie Mechanismen implementieren, die solche Ausfälle sofort erkennen und melden. Definieren Sie Eskalationsprozesse und maximale Zeitrahmen für die Wiederherstellung.",
         "maturity": {
           "level0": "Keine Überwachung von Sicherheitskontrollsystemen; Ausfälle werden nicht erkannt",
@@ -8881,7 +8881,7 @@
       },
       "spQ1": {
         "title": "Ist eine umfassende Informationssicherheitsrichtlinie etabliert, veröffentlicht, gepflegt und allen relevanten Personen bekannt?",
-        "tooltip": "PCI DSS v4.0 Req. 12.1 fordert, dass eine umfassende Informationssicherheitsrichtlinie etabliert, veröffentlicht und mindestens jährlich sowie nach Änderungen der Umgebung aktualisiert wird. Die Richtlinie muss alle PCI DSS-Anforderungen adressieren und die Informationssicherheitsrollen und -verantwortlichkeiten definieren.",
+        "tooltip": "PCI DSS v4.0.1 Req. 12.1 fordert, dass eine umfassende Informationssicherheitsrichtlinie etabliert, veröffentlicht und mindestens jährlich sowie nach Änderungen der Umgebung aktualisiert wird. Die Richtlinie muss alle PCI DSS-Anforderungen adressieren und die Informationssicherheitsrollen und -verantwortlichkeiten definieren.",
         "help": "Die Informationssicherheitsrichtlinie ist das Fundament Ihres PCI DSS-Compliance-Programms. Sie muss alle 12 PCI DSS-Anforderungsbereiche adressieren und klar definieren, wer für was verantwortlich ist. Die Richtlinie muss von der Geschäftsführung genehmigt und allen Mitarbeitern bekannt gemacht werden. Eine jährliche Überprüfung und Aktualisierung ist Pflicht.",
         "maturity": {
           "level0": "Keine Informationssicherheitsrichtlinie vorhanden; keine definierten Rollen und Verantwortlichkeiten",
@@ -8892,7 +8892,7 @@
       },
       "spQ2": {
         "title": "Wird ein Sicherheitsbewusstseinsprogramm für alle Mitarbeiter durchgeführt?",
-        "tooltip": "PCI DSS v4.0 Req. 12.6 fordert ein formales Sicherheitsbewusstseinsprogramm, das alle Mitarbeiter über die Wichtigkeit der Karteninhaberdatensicherheit informiert. Schulungen müssen bei Einstellung und danach mindestens jährlich durchgeführt werden.",
+        "tooltip": "PCI DSS v4.0.1 Req. 12.6 fordert ein formales Sicherheitsbewusstseinsprogramm, das alle Mitarbeiter über die Wichtigkeit der Karteninhaberdatensicherheit informiert. Schulungen müssen bei Einstellung und danach mindestens jährlich durchgeführt werden.",
         "help": "Mitarbeiter sind ein zentraler Faktor für die Sicherheit von Karteninhaberdaten. PCI DSS verlangt ein formales Awareness-Programm, das mindestens umfasst: Schulung bei Einstellung und danach mindestens jährlich, Abdeckung aktueller Bedrohungen (Phishing, Social Engineering), Bestätigungen der Mitarbeiter, dass sie die Richtlinie gelesen und verstanden haben, sowie spezifische Schulungen für Rollen mit Zugang zu Karteninhaberdaten.",
         "maturity": {
           "level0": "Kein Sicherheitsbewusstseinsprogramm; keine Mitarbeiterschulungen zur Kartendatensicherheit",
@@ -8903,7 +8903,7 @@
       },
       "spQ3": {
         "title": "Ist ein Incident-Response-Plan implementiert, der bei einem vermuteten oder bestätigten Sicherheitsvorfall sofort aktiviert werden kann?",
-        "tooltip": "PCI DSS v4.0 Req. 12.10 fordert einen Incident-Response-Plan, der bei Verdacht auf einen Sicherheitsvorfall sofort aktiviert wird. Der Plan muss Rollen und Verantwortlichkeiten, Kommunikationswege, Benachrichtigungspflichten (z. B. an Kartenmarken) und Verfahren zur Beweissicherung definieren.",
+        "tooltip": "PCI DSS v4.0.1 Req. 12.10 fordert einen Incident-Response-Plan, der bei Verdacht auf einen Sicherheitsvorfall sofort aktiviert wird. Der Plan muss Rollen und Verantwortlichkeiten, Kommunikationswege, Benachrichtigungspflichten (z. B. an Kartenmarken) und Verfahren zur Beweissicherung definieren.",
         "help": "Ein Sicherheitsvorfall mit Karteninhaberdaten kann erhebliche finanzielle und reputative Schäden verursachen. Ihr Incident-Response-Plan muss klar definieren: Wer ist verantwortlich? Wer wird benachrichtigt (intern, Kartenmarken, Acquirer, Behörden)? Wie werden Beweise gesichert? Wie wird der Vorfall eingedämmt? Der Plan muss mindestens jährlich getestet werden und das Personal muss geschult sein.",
         "maturity": {
           "level0": "Kein Incident-Response-Plan vorhanden; keine definierten Reaktionsprozesse für Sicherheitsvorfälle",
@@ -8974,7 +8974,7 @@
       },
       "au1": {
         "title": "Starke Passwort-Richtlinie durchsetzen",
-        "description": "Implementieren und erzwingen Sie Passwort-Richtlinien gemäß PCI DSS v4.0: mindestens 12 Zeichen, numerische und alphabetische Zeichen, Kontosperrung nach 10 Fehlversuchen, Passwort-Historie (letzte 4). Ergänzen Sie durch dynamische Sicherheitsanalyse oder 90-Tage-Rotation.",
+        "description": "Implementieren und erzwingen Sie Passwort-Richtlinien gemäß PCI DSS v4.0.1: mindestens 12 Zeichen, numerische und alphabetische Zeichen, Kontosperrung nach 10 Fehlversuchen, Passwort-Historie (letzte 4). Ergänzen Sie durch dynamische Sicherheitsanalyse oder 90-Tage-Rotation.",
         "firstStep": "Prüfen Sie die aktuellen Passwort-Einstellungen auf allen CDE-Systemen und passen Sie die Mindestlänge auf 12 Zeichen an."
       },
       "au2": {
@@ -9670,7 +9670,7 @@
       "title": "Fördermittel für IT-Sicherheit",
       "subtitle": "Finanzielle Unterstützung für Ihre IT-Sicherheitsmaßnahmen — von Bund, Ländern und EU",
       "intro": "IT-Sicherheit muss nicht teuer sein — und viele Kosten lassen sich fördern. Hier finden Sie aktuelle Förderprogramme, die speziell KMU bei der Umsetzung von IT-Sicherheitsmaßnahmen finanziell unterstützen.",
-      "disclaimer": "Förderbedingungen ändern sich regelmäßig. Prüfen Sie vor Antragstellung immer die aktuellen Konditionen beim jeweiligen Fördergeber. Stand: August 2026.",
+      "disclaimer": "Förderbedingungen ändern sich regelmäßig. Prüfen Sie vor Antragstellung immer die aktuellen Konditionen beim jeweiligen Fördergeber. Stand: November 2026.",
       "kfw": {
         "title": "KfW — Förderkredite für Digitalisierung und Innovation",
         "desc": "Zinsgünstige Kredite für Digitalisierungs- und Innovationsvorhaben einschließlich IT-Sicherheit. Die ERP-Programme wurden zum 01.07.2025 neu zugeschnitten; der frühere Digitalisierungskredit 380 in seiner alten Form ist entfallen.",
@@ -9716,7 +9716,7 @@
         "funding": "Zuschuss zum Beratungshonorar; Förderquote und Höchstbetrag richten sich nach Unternehmenssitz und Programmvariante",
         "eligible": "KMU nach EU-Definition; Beratung durch eine bei der BAFA gelistete Beratungsperson",
         "web": "https://www.bafa.de/DE/Wirtschaft/Beratung_Finanzierung/Unternehmensberatung/unternehmensberatung_node.html",
-        "status": "Läuft bis 31.12.2026"
+        "status": "Verlängert bis 31.12.2028 — ab 01.01.2027 Antrag nur noch über ELSTER-Unternehmenskonto oder BundID"
       },
       "mittelstandDigital": {
         "title": "Mittelstand-Digital Zentren",
@@ -10543,13 +10543,14 @@
       "intro": "Der Einsatz von KI-Systemen bietet enorme Chancen, bringt aber auch regulatorische Pflichten mit sich. Seit August 2024 gilt der EU AI Act. Hier erfahren Sie, was Ihr Unternehmen beachten muss.",
       "aiAct": {
         "title": "EU AI Act im Überblick",
-        "desc": "Die weltweit erste umfassende KI-Regulierung gilt seit August 2024 mit gestaffelten Fristen. Der Digital Omnibus hat die Pflichten für Hochrisiko-KI auf Dezember 2027 verschoben.",
+        "desc": "Die weltweit erste umfassende KI-Regulierung gilt seit August 2024 mit gestaffelten Fristen. Der Digital Omnibus (VO (EU) 2026/1744, in Kraft seit 27.07.2026) hat die Pflichten für Hochrisiko-KI auf Dezember 2027 verschoben.",
         "timeline": {
           "title": "Zeitplan",
           "t1": "Februar 2025: Verbot inakzeptabler KI-Praktiken (Social Scoring, Echtzeit-Biometrie)",
           "t2": "August 2025: Regeln für allgemeine KI-Modelle (GPAI) inkl. ChatGPT, Gemini etc.",
-          "t3": "02.08.2026: Transparenzpflichten gelten — Kennzeichnung von KI-Interaktion und KI-generierten Inhalten",
-          "t4": "02.12.2027: Pflichten für Hochrisiko-KI nach Anhang III — durch den Digital Omnibus verschoben (eingebettete Hochrisiko-KI ab 02.08.2028)"
+          "t3": "Seit 02.08.2026: Transparenzpflichten gelten — Kennzeichnung von KI-Interaktion und KI-generierten Inhalten",
+          "t4": "02.12.2027: Pflichten für Hochrisiko-KI nach Anhang III — durch den Digital Omnibus verschoben (eingebettete Hochrisiko-KI ab 02.08.2028)",
+        "t5": "02.12.2026: Zwei zusätzliche Verbote nach Art. 5 und maschinenlesbare Kennzeichnung auch für generative KI-Systeme, die vor dem 02.08.2026 auf den Markt kamen (VO (EU) 2026/1744)"
         }
       },
       "riskLevels": {
@@ -10583,7 +10584,7 @@
           "i3": "Hochrisiko-KI (z.B. Bewerbermanagement) braucht Konformitätsbewertung",
           "i4": "KI-generierte Inhalte müssen gekennzeichnet werden",
           "i5": "Schulen Sie Mitarbeiter im verantwortungsvollen KI-Umgang",
-          "i6": "Bußgeld bei Verstößen: bis 35 Mio. EUR oder 7% des Jahresumsatzes"
+          "i6": "Bußgelder: bis 35 Mio. EUR oder 7 % des Jahresumsatzes bei verbotenen Praktiken, bis 15 Mio. EUR oder 3 % bei den meisten anderen Verstößen — für KMU gilt jeweils der niedrigere Betrag (Art. 99 Abs. 6 AI Act)"
         }
       },
       "dsgvo": {
@@ -12087,7 +12088,7 @@
       "tips": {
         "title": "Spar-Tipps",
         "items": {
-          "i1": "Fördermittel nutzen: BAFA-Beratungsförderung (Anträge bis 31.12.2026), Mittelstand-Digital Zentren (kostenfrei)",
+          "i1": "Fördermittel nutzen: BAFA-Beratungsförderung (verlängert bis 31.12.2028), Mittelstand-Digital Zentren (kostenfrei)",
           "i2": "Open-Source-Tools: KeePass, pfSense, Wazuh, ClamAV — professionell und kostenlos",
           "i3": "BSI-Grundschutz statt teurer Beratung: Frei verfügbar, gut dokumentiert",
           "i4": "Schulungen intern: Videos, Quizzes, Micro-Learning statt teurer Präsenzschulungen",
