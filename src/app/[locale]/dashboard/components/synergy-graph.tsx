@@ -119,9 +119,11 @@ export function SynergyGraph() {
     return getOverlapsForRegulation(active).sort((a, b) => b.overlapPercent - a.overlapPercent);
   }, [active]);
 
-  const connIds = useMemo(() => {
-    if (!active) return new Set<RegulationId>();
-    return new Set(overlaps.map(o => o.regA === active ? o.regB : o.regA));
+  // Verbundene Regelwerke mit Überschneidung in % — die Zahl hängt als Badge
+  // direkt an der Kachel, damit sie nie unter einer anderen Kachel verschwindet.
+  const connPct = useMemo(() => {
+    if (!active) return new Map<RegulationId, number>();
+    return new Map(overlaps.map(o => [o.regA === active ? o.regB : o.regA, o.overlapPercent] as const));
   }, [active, overlaps]);
 
   const click = useCallback((id: RegulationId) => {
@@ -145,9 +147,9 @@ export function SynergyGraph() {
 
       <div className="flex flex-col lg:flex-row">
         {/* Graph area */}
-        <div className="flex-1 min-w-0 relative">
+        <div className="flex-1 min-w-0 relative overflow-x-auto">
           {/* Container with fixed aspect ratio */}
-          <div className="relative w-full max-w-[760px] mx-auto" style={{ aspectRatio: `${W} / ${H}` }}>
+          <div className="relative w-full min-w-[500px] max-w-[760px] mx-auto" style={{ aspectRatio: `${W} / ${H}` }}>
 
             {/* Subtle background */}
             <div
@@ -188,28 +190,6 @@ export function SynergyGraph() {
                 );
               })}
 
-              {/* % labels on edges */}
-              {active != null && overlaps.map((ov, i) => {
-                const a = nodeMap.get(ov.regA);
-                const b = nodeMap.get(ov.regB);
-                if (!a || !b) return null;
-                const mx = (a.x + b.x) / 2;
-                const my = (a.y + b.y) / 2;
-                const dx = b.x - a.x, dy = b.y - a.y;
-                const len = Math.sqrt(dx * dx + dy * dy) || 1;
-                const ox = (-dy / len) * 15, oy = (dx / len) * 15;
-                return (
-                  <g key={`l${i}`}>
-                    <rect x={mx + ox - 18} y={my + oy - 10} width="36" height="20" rx="6"
-                      fill="white" stroke="#e2e8f0" strokeWidth="0.8" />
-                    <text x={mx + ox} y={my + oy + 1} textAnchor="middle" dominantBaseline="central"
-                      fontSize="9.5" fontWeight="700" fill="#475569" fontFamily="system-ui, sans-serif">
-                      {ov.overlapPercent}%
-                    </text>
-                  </g>
-                );
-              })}
-
               {/* Legend */}
               {(['legal', 'industry', 'framework', 'baseline'] as const).map((cat, i) => {
                 const color = CAT_BORDER[cat];
@@ -239,7 +219,8 @@ export function SynergyGraph() {
             {/* HTML Nodes */}
             {nodes.map((n) => {
               const isActive = n.id === active;
-              const isConn = connIds.has(n.id);
+              const pct = connPct.get(n.id);
+              const isConn = pct != null;
               const dim = active != null && !isActive && !isConn;
               const catColor = CAT_BORDER[n.cat];
               const catShadow = CAT_SHADOW[n.cat];
@@ -302,6 +283,11 @@ export function SynergyGraph() {
                     }}
                   >
                     {n.label}
+                    {isConn && (
+                      <span className="ml-1 rounded bg-slate-800 px-1 py-px text-[10.5px] font-bold text-white tabular-nums">
+                        {pct}%
+                      </span>
+                    )}
                   </span>
                 </div>
               );
