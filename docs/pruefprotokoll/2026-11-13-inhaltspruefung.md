@@ -195,3 +195,112 @@
 |---|---|---|---|---|---|
 | N3 | NIS2 scQ3 (externe Zugriffe) | „Siehe BSI-Baustein ORP.1“ | Kompendium 2023: OPS.2.3 Outsourcing, OPS.1.2.5 Fernwartung | F | OPS.2.3 und OPS.1.2.5 |
 | B4 | Branche Logistik, KRITIS | „Große Logistikunternehmen können als KRITIS-Betreiber eingestuft werden“ | BSI-KritisV, Sektor Transport und Verkehr | U | Nur Betreiber von Anlagen oberhalb der Schwellenwerte; die meisten Speditionen liegen darunter |
+
+## Nachtrag 13.11.2026: Regelwerk-Synergien
+
+Anlass: Die Überschneidungsdaten (Synergie-Graph, Ergebnisseite, PDF-Exporte) waren nicht Teil der Prüfung. Von 105 möglichen Paaren waren 32 hinterlegt, alle mit Prozentwerten ohne Quelle (Ausnahme SOC 2 – C5).
+
+Methode:
+- Alle 105 Paare geprüft, nicht nur die vorhandenen.
+- Prozentwerte entfernt: Keine der gefundenen Quellen liefert eine belastbare Prozentzahl. Seriöse Zuordnungstabellen zeigen, dass und wo sich Regelwerke überschneiden, nicht wie viel.
+- Drei Stufen: stark = eins baut auf dem anderen auf oder eine Zuordnung deckt den Kern ab; mittel = deutliche Teilüberschneidung bei anderem Geltungsbereich; gering = einzelne gemeinsame Themen. Die Stufe ist immer eine Einordnung anhand der Quelle.
+- Quelle = offizielle Zuordnungstabelle eines Herausgebers oder einer Behörde (CIS, NIST, ENISA, AICPA, PCI SSC, BSI, ENX) oder Rechts- bzw. Normtext. Ohne Quelle steht die Verbindung als „Einschätzung" und wird im Graphen gestrichelt bzw. hellgrau gezeigt.
+- Nicht verwendet: kommerzielle Vergleichsseiten mit Abdeckungsprozenten (widersprechen sich, Methode unklar).
+- Verworfen: BSI-KRITIS-FAQ zu ISO 27001 (Seite liefert 404), daher KRITIS – ISO 27001 als Einschätzung.
+
+Ergebnis: 88 Verbindungen (34 mit Quelle), 17 Paare ohne nennenswerte Überschneidung.
+
+| Paar | vorher | jetzt | Quelle |
+|---|---|---|---|
+| NIS2 – KRITIS | 80 % | stark | §§ 28, 30, 31 BSIG |
+| NIS2 – DORA | 60 % | stark | NIS2 Art. 4; DORA Art. 1 Abs. 2 (DORA als sektorspezifischer Rechtsakt) |
+| NIS2 – ISO 27001 | 65 % | stark | ENISA: NIS2 Technical Implementation Guidance mit Mapping-Tabelle (2025) |
+| NIS2 – NIST CSF | 55 % | stark | ENISA: NIS2 Technical Implementation Guidance mit Mapping-Tabelle (2025) |
+| NIS2 – BSI-Grundschutz | 70 % | stark | Einschätzung |
+| NIS2 – DSGVO | 50 % | mittel | NIS2 Art. 35; DSGVO Art. 32 |
+| NIS2 – CIS Controls | 55 % | mittel | CIS: Controls v8.1 Mapping to NIS2 Directive |
+| NIS2 – TISAX | 45 % | mittel | Einschätzung |
+| NIS2 – SOC 2 | fehlte | mittel | Einschätzung |
+| NIS2 – C5 | fehlte | mittel | Einschätzung |
+| NIS2 – CRA | 35 % | gering | NIS2 Art. 21 Abs. 2 lit. e; CRA Art. 14 |
+| NIS2 – ISO 22301 | 45 % | gering | NIS2 Art. 21 Abs. 2 lit. c (Aufrechterhaltung des Betriebs) |
+| NIS2 – PCI DSS | fehlte | gering | Einschätzung |
+| NIS2 – OWASP ASVS | fehlte | gering | Einschätzung |
+| DSGVO – TISAX | 35 % | mittel | VDA ISA, Modul Datenschutz (Auftragsverarbeitung nach Art. 28 DSGVO) |
+| DSGVO – SOC 2 | fehlte | mittel | AICPA: Mapping Trust Services Criteria to GDPR |
+| DSGVO – ISO 27001 | fehlte | mittel | ISO/IEC 27001:2022 Anhang A 5.34; ISO/IEC 27701:2025 Anhang D |
+| DSGVO – BSI-Grundschutz | fehlte | mittel | IT-Grundschutz-Kompendium, Baustein CON.2 Datenschutz |
+| DSGVO – CRA | fehlte | gering | CRA Anhang I Teil I (Vertraulichkeit, Datenminimierung) |
+| DSGVO – ISO 22301 | fehlte | gering | DSGVO Art. 32 Abs. 1 lit. c (Wiederherstellbarkeit) |
+| DSGVO – DORA | 40 % | gering | Einschätzung |
+| DSGVO – PCI DSS | fehlte | gering | Einschätzung |
+| DSGVO – C5 | fehlte | gering | Einschätzung |
+| DSGVO – NIST CSF | fehlte | gering | Einschätzung |
+| DSGVO – CIS Controls | fehlte | gering | Einschätzung |
+| DSGVO – OWASP ASVS | fehlte | gering | Einschätzung |
+| KRITIS – BSI-Grundschutz | 75 % | stark | Einschätzung |
+| KRITIS – ISO 22301 | 55 % | mittel | CER-Richtlinie (EU) 2022/2557 Art. 13 (Resilienzmaßnahmen) |
+| KRITIS – ISO 27001 | fehlte | mittel | Einschätzung |
+| KRITIS – DORA | fehlte | gering | Einschätzung |
+| KRITIS – NIST CSF | fehlte | gering | Einschätzung |
+| KRITIS – CIS Controls | fehlte | gering | Einschätzung |
+| DORA – ISO 22301 | fehlte | mittel | DORA Art. 11 (IKT-Geschäftsfortführung) |
+| DORA – CIS Controls | fehlte | mittel | CIS: Controls v8.1 Mapping to DORA |
+| DORA – ISO 27001 | 60 % | mittel | Einschätzung |
+| DORA – BSI-Grundschutz | fehlte | mittel | Einschätzung |
+| DORA – NIST CSF | fehlte | mittel | Einschätzung |
+| DORA – SOC 2 | fehlte | mittel | Einschätzung |
+| DORA – C5 | fehlte | mittel | Einschätzung |
+| DORA – PCI DSS | 40 % | gering | Einschätzung |
+| DORA – OWASP ASVS | fehlte | gering | Einschätzung |
+| CRA – OWASP ASVS | 45 % | mittel | Einschätzung |
+| CRA – ISO 27001 | fehlte | gering | Einschätzung |
+| CRA – BSI-Grundschutz | fehlte | gering | Einschätzung |
+| CRA – NIST CSF | fehlte | gering | Einschätzung |
+| CRA – CIS Controls | fehlte | gering | Einschätzung |
+| TISAX – ISO 27001 | 70 % | stark | ENX: VDA ISA mit Zuordnung zu ISO/IEC 27001:2022 und NIST CSF 2.0 |
+| TISAX – NIST CSF | fehlte | mittel | ENX: VDA ISA mit Zuordnung zu ISO/IEC 27001:2022 und NIST CSF 2.0 |
+| TISAX – BSI-Grundschutz | fehlte | mittel | Einschätzung |
+| TISAX – SOC 2 | fehlte | mittel | Einschätzung |
+| TISAX – C5 | fehlte | mittel | Einschätzung |
+| TISAX – CIS Controls | fehlte | mittel | Einschätzung |
+| TISAX – PCI DSS | fehlte | gering | Einschätzung |
+| TISAX – ISO 22301 | fehlte | gering | Einschätzung |
+| TISAX – OWASP ASVS | fehlte | gering | Einschätzung |
+| PCI DSS – NIST CSF | fehlte | mittel | PCI SSC: Mapping PCI DSS v4.0.1 to NIST CSF 2.0 |
+| PCI DSS – CIS Controls | fehlte | mittel | CIS: Controls v8.1 Mapping to PCI DSS v4.0 |
+| PCI DSS – ISO 27001 | 55 % | mittel | Einschätzung |
+| PCI DSS – SOC 2 | fehlte | mittel | Einschätzung |
+| PCI DSS – OWASP ASVS | fehlte | mittel | Einschätzung |
+| PCI DSS – C5 | fehlte | gering | Einschätzung |
+| PCI DSS – BSI-Grundschutz | fehlte | gering | Einschätzung |
+| SOC 2 – C5 | 75 % | stark | BSI: C5:2020 Referenztabellen zu internationalen Standards |
+| SOC 2 – ISO 27001 | 60 % | mittel | AICPA: Mapping Trust Services Criteria to ISO 27001 |
+| SOC 2 – NIST CSF | fehlte | mittel | AICPA: Mapping Trust Services Criteria to NIST CSF |
+| SOC 2 – CIS Controls | fehlte | mittel | CIS: Controls v8.1 Mapping to SOC 2 |
+| SOC 2 – BSI-Grundschutz | fehlte | gering | Einschätzung |
+| SOC 2 – ISO 22301 | fehlte | gering | Einschätzung |
+| C5 – ISO 27001 | 75 % | stark | BSI: C5:2020 Referenztabellen zu internationalen Standards |
+| C5 – BSI-Grundschutz | 70 % | stark | Einschätzung |
+| C5 – NIST CSF | fehlte | mittel | Einschätzung |
+| C5 – CIS Controls | fehlte | mittel | Einschätzung |
+| C5 – ISO 22301 | fehlte | gering | Einschätzung |
+| C5 – OWASP ASVS | fehlte | gering | Einschätzung |
+| ISO 27001 – BSI-Grundschutz | 85 % | stark | BSI: ISO 27001-Zertifizierung auf der Basis von IT-Grundschutz |
+| ISO 27001 – NIST CSF | 70 % | stark | NIST: CSF 2.0 Informative References – ISO/IEC 27001:2022 |
+| ISO 27001 – ISO 22301 | 50 % | mittel | ISO/IEC 27001:2022 Anhang A 5.29, 5.30 |
+| ISO 27001 – CIS Controls | 70 % | mittel | CIS: Controls v8.1 Mapping to ISO/IEC 27001:2022 |
+| ISO 27001 – OWASP ASVS | 35 % | gering | ISO/IEC 27001:2022 Anhang A 8.25–8.28 (sichere Entwicklung) |
+| BSI-Grundschutz – ISO 22301 | fehlte | stark | BSI-Standard 200-4 (kompatibel zu ISO 22301) |
+| BSI-Grundschutz – NIST CSF | fehlte | mittel | Einschätzung |
+| BSI-Grundschutz – CIS Controls | 65 % | mittel | Einschätzung |
+| BSI-Grundschutz – OWASP ASVS | fehlte | gering | IT-Grundschutz-Kompendium, Bausteine CON.8 und APP.3.1 |
+| NIST CSF – CIS Controls | 75 % | stark | CIS: Controls v8.1 Mapping to NIST CSF 2.0 |
+| NIST CSF – ISO 22301 | fehlte | gering | Einschätzung |
+| NIST CSF – OWASP ASVS | fehlte | gering | Einschätzung |
+| ISO 22301 – CIS Controls | fehlte | gering | Einschätzung |
+| CIS Controls – OWASP ASVS | 40 % | gering | Einschätzung |
+
+Ohne Verbindung: DSGVO – KRITIS; KRITIS – CRA; KRITIS – TISAX; KRITIS – PCI DSS; KRITIS – SOC 2; KRITIS – C5; KRITIS – OWASP ASVS; DORA – CRA; DORA – TISAX; CRA – TISAX; CRA – PCI DSS; CRA – SOC 2; CRA – C5; CRA – ISO 22301; PCI DSS – ISO 22301; SOC 2 – OWASP ASVS; ISO 22301 – OWASP ASVS.
+
+Offen: Die C5-Referenztabelle (XLSX) ist nicht zeilenweise ausgewertet; C5 – SOC 2 und C5 – ISO 27001 stützen sich auf die BSI-Seite zur Tabelle. Bei C5:2026, VDA ISA2027 und ISO/IEC 27701:2025 die Zuordnungen nachprüfen, sobald die Tabellen vorliegen.

@@ -1,15 +1,16 @@
 'use client';
 
 import { useState, useMemo, useCallback } from 'react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/routing';
 import {
-  ArrowRight, X, Network, MousePointerClick,
+  ArrowRight, X, Network, MousePointerClick, ExternalLink,
   Shield, Lock, Building2, Landmark, Car, Cpu,
   BookOpen, Award, CheckCircle2, CreditCard, Cloud,
   ListChecks, LifeBuoy, Flag, Bug,
 } from 'lucide-react';
-import { REGULATION_OVERLAPS, getOverlapsForRegulation } from '@/lib/regulations/overlaps';
+import { REGULATION_OVERLAPS, getOverlapsForRegulation, byLevel, levelLabel, sourceLabel, LEVEL_RANK } from '@/lib/regulations/overlaps';
+import type { OverlapMapping } from '@/lib/regulations/overlaps';
 import type { RegulationId } from '@/lib/regulations/types';
 import type { LucideIcon } from 'lucide-react';
 
@@ -104,6 +105,7 @@ function edgePath(ax: number, ay: number, bx: number, by: number): string {
 export function SynergyGraph() {
   const t = useTranslations('platform.dashboard.synergyGraph');
   const tReg = useTranslations();
+  const locale = useLocale();
 
   const [selected, setSelected] = useState<RegulationId | null>(null);
   const [hovered, setHovered] = useState<RegulationId | null>(null);
@@ -116,12 +118,14 @@ export function SynergyGraph() {
 
   const overlaps = useMemo(() => {
     if (!active) return [];
-    return getOverlapsForRegulation(active).sort((a, b) => b.overlapPercent - a.overlapPercent);
+    return getOverlapsForRegulation(active).sort(byLevel);
   }, [active]);
 
-  const connIds = useMemo(() => {
-    if (!active) return new Set<RegulationId>();
-    return new Set(overlaps.map(o => o.regA === active ? o.regB : o.regA));
+  // Verbundene Regelwerke mit ihrer Überschneidung — die Stufe steht als Badge
+  // am Namen der Kachel, damit sie nie unter einer anderen Kachel verschwindet.
+  const connOv = useMemo(() => {
+    if (!active) return new Map<RegulationId, OverlapMapping>();
+    return new Map(overlaps.map(o => [o.regA === active ? o.regB : o.regA, o] as const));
   }, [active, overlaps]);
 
   const click = useCallback((id: RegulationId) => {
@@ -145,9 +149,9 @@ export function SynergyGraph() {
 
       <div className="flex flex-col lg:flex-row">
         {/* Graph area */}
-        <div className="flex-1 min-w-0 relative">
+        <div className="flex-1 min-w-0 relative overflow-x-auto">
           {/* Container with fixed aspect ratio */}
-          <div className="relative w-full max-w-[760px] mx-auto" style={{ aspectRatio: `${W} / ${H}` }}>
+          <div className="relative w-full min-w-[500px] max-w-[760px] mx-auto" style={{ aspectRatio: `${W} / ${H}` }}>
 
             {/* Subtle background */}
             <div
@@ -181,32 +185,11 @@ export function SynergyGraph() {
                     d={edgePath(a.x, a.y, b.x, b.y)}
                     fill="none"
                     stroke={catColor}
-                    strokeWidth={Math.max(1.5, ov.overlapPercent / 20)}
+                    strokeWidth={LEVEL_RANK[ov.level] * 1.5}
                     strokeOpacity="0.3"
+                    strokeDasharray={ov.source ? undefined : '5 5'}
                     strokeLinecap="round"
                   />
-                );
-              })}
-
-              {/* % labels on edges */}
-              {active != null && overlaps.map((ov, i) => {
-                const a = nodeMap.get(ov.regA);
-                const b = nodeMap.get(ov.regB);
-                if (!a || !b) return null;
-                const mx = (a.x + b.x) / 2;
-                const my = (a.y + b.y) / 2;
-                const dx = b.x - a.x, dy = b.y - a.y;
-                const len = Math.sqrt(dx * dx + dy * dy) || 1;
-                const ox = (-dy / len) * 15, oy = (dx / len) * 15;
-                return (
-                  <g key={`l${i}`}>
-                    <rect x={mx + ox - 18} y={my + oy - 10} width="36" height="20" rx="6"
-                      fill="white" stroke="#e2e8f0" strokeWidth="0.8" />
-                    <text x={mx + ox} y={my + oy + 1} textAnchor="middle" dominantBaseline="central"
-                      fontSize="9.5" fontWeight="700" fill="#475569" fontFamily="system-ui, sans-serif">
-                      {ov.overlapPercent}%
-                    </text>
-                  </g>
                 );
               })}
 
@@ -239,7 +222,8 @@ export function SynergyGraph() {
             {/* HTML Nodes */}
             {nodes.map((n) => {
               const isActive = n.id === active;
-              const isConn = connIds.has(n.id);
+              const ov = connOv.get(n.id);
+              const isConn = ov != null;
               const dim = active != null && !isActive && !isConn;
               const catColor = CAT_BORDER[n.cat];
               const catShadow = CAT_SHADOW[n.cat];
@@ -302,6 +286,22 @@ export function SynergyGraph() {
                     }}
                   >
                     {n.label}
+                    {ov && (
+                      <span
+                        className="ml-1 inline-flex items-end gap-px align-baseline"
+                        role="img"
+                        aria-label={`${levelLabel(ov.level, locale)}, ${sourceLabel(ov, locale)}`}
+                        title={`${levelLabel(ov.level, locale)} – ${sourceLabel(ov, locale)}`}
+                      >
+                        {[1, 2, 3].map((bar) => (
+                          <span
+                            key={bar}
+                            className={`w-[3px] rounded-[1px] ${bar <= LEVEL_RANK[ov.level] ? (ov.source ? 'bg-slate-800' : 'bg-slate-400') : 'bg-slate-200'}`}
+                            style={{ height: 2 + bar * 3 }}
+                          />
+                        ))}
+                      </span>
+                    )}
                   </span>
                 </div>
               );
@@ -313,7 +313,7 @@ export function SynergyGraph() {
         {selected && (() => {
           const nd = nodeMap.get(selected);
           if (!nd) return null;
-          const ovs = getOverlapsForRegulation(selected).sort((a, b) => b.overlapPercent - a.overlapPercent);
+          const ovs = getOverlapsForRegulation(selected).sort(byLevel);
           const SelectedIcon = nd.icon;
           const catColor = CAT_BORDER[nd.cat];
 
@@ -347,12 +347,10 @@ export function SynergyGraph() {
                   <div className="text-lg font-bold text-foreground leading-none">{ovs.length}</div>
                   <div className="text-[10px] text-muted-foreground mt-0.5">{t('connections')}</div>
                 </div>
-                {ovs[0] && (
-                  <div className="flex-1 rounded-lg bg-slate-100/80 px-3 py-2 text-center">
-                    <div className="text-lg font-bold leading-none" style={{ color: catColor }}>{ovs[0].overlapPercent}%</div>
-                    <div className="text-[10px] text-muted-foreground mt-0.5">{t('strongest')}</div>
-                  </div>
-                )}
+                <div className="flex-1 rounded-lg bg-slate-100/80 px-3 py-2 text-center">
+                  <div className="text-lg font-bold leading-none" style={{ color: catColor }}>{ovs.filter(o => o.source).length}</div>
+                  <div className="text-[10px] text-muted-foreground mt-0.5">{t('sourced')}</div>
+                </div>
               </div>
 
               {/* Overlap list */}
@@ -375,15 +373,20 @@ export function SynergyGraph() {
                           </div>
                           <span className="text-xs font-semibold text-foreground">{on.label}</span>
                         </div>
-                        <span className="text-xs font-bold tabular-nums" style={{ color: on.accent }}>
-                          {ov.overlapPercent}%
+                        <span className="text-xs font-bold" style={{ color: on.accent }}>
+                          {levelLabel(ov.level, locale)}
                         </span>
                       </div>
-                      <div className="h-1.5 rounded-full bg-slate-100 overflow-hidden ml-9">
-                        <div
-                          className="h-full rounded-full transition-all duration-500"
-                          style={{ width: `${ov.overlapPercent}%`, backgroundColor: on.accent }}
-                        />
+                      <div className="ml-9 text-[10px] leading-snug text-muted-foreground">
+                        {ov.source?.url ? (
+                          <a href={ov.source.url} target="_blank" rel="noopener noreferrer"
+                            className="inline-flex items-start gap-1 underline decoration-slate-300 underline-offset-2 hover:text-foreground">
+                            {ov.source.label}
+                            <ExternalLink className="size-2.5 mt-0.5 shrink-0" />
+                          </a>
+                        ) : (
+                          <span className={ov.source ? '' : 'italic'}>{sourceLabel(ov, locale)}</span>
+                        )}
                       </div>
                       {ov.sharedMeasureKeys.length > 0 && (
                         <div className="mt-1.5 ml-9 flex flex-wrap gap-1 max-h-0 group-hover:max-h-24 overflow-hidden transition-[max-height] duration-300">
@@ -398,6 +401,8 @@ export function SynergyGraph() {
                   );
                 })}
               </div>
+
+              <p className="px-5 pb-3 text-[10px] leading-snug text-muted-foreground">{t('method')}</p>
 
               {/* CTA */}
               <div className="px-5 pb-5 pt-3 border-t border-slate-100">

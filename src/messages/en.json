@@ -6017,7 +6017,8 @@
         "subtitle": "Explore {count} overlaps across 15 regulations. Click any regulation to see which requirements overlap with other standards — and where you can save implementation effort.",
         "ariaLabel": "Interactive synergy graph of 15 regulations",
         "connections": "connections",
-        "strongest": "Strongest",
+        "sourced": "With source",
+        "method": "The bars next to each regulation show the level: three = strong (one builds on the other or an official mapping covers the core), two = moderate (substantial partial overlap), one = minor (individual shared topics). Light grey bars and dashed lines = own assessment without an official source.",
         "startCheck": "Start check",
         "hintClick": "Click a regulation to see synergies",
         "legend": {

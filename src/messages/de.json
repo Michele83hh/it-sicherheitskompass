@@ -6017,7 +6017,8 @@
         "subtitle": "Entdecken Sie {count} Überschneidungen zwischen den 15 Regelwerken. Klicken Sie auf ein Regelwerk, um zu sehen, welche Anforderungen sich mit anderen Standards überlappen — und wo Sie Aufwand sparen können.",
         "ariaLabel": "Interaktive Synergien-Grafik der 15 Regelwerke",
         "connections": "Verbindungen",
-        "strongest": "Stärkste",
+        "sourced": "Mit Quelle",
+        "method": "Die Balken am Regelwerk zeigen die Stufe: drei = stark (baut aufeinander auf oder eine offizielle Zuordnung deckt den Kern ab), zwei = mittel (deutliche Teilüberschneidung), einer = gering (einzelne gemeinsame Themen). Hellgraue Balken und gestrichelte Linien = eigene Einschätzung ohne offizielle Quelle.",
         "startCheck": "Check starten",
         "hintClick": "Regelwerk anklicken für Synergien",
         "legend": {

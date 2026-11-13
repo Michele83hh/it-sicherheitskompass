@@ -5,7 +5,8 @@ import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { GitCompare, ArrowRight, CheckCircle2, Info } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { getOverlapsForRegulation } from '@/lib/regulations/overlaps';
+import { getOverlapsForRegulation, byLevel, levelLabel, sourceLabel } from '@/lib/regulations/overlaps';
+import type { OverlapLevel } from '@/lib/regulations/overlaps';
 import { getRegulation } from '@/lib/regulations/registry';
 import type { RegulationId } from '@/lib/regulations/types';
 import '@/lib/regulations/init';
@@ -14,7 +15,9 @@ interface SynergyItem {
   targetRegId: RegulationId;
   targetName: string;
   targetIcon: string;
-  overlapPercent: number;
+  level: OverlapLevel;
+  source: string;
+  sourceUrl?: string;
   sharedTopics: string[];
   hasAssessment: boolean;
   otherScore?: number;
@@ -32,7 +35,7 @@ export function CrossRegSynergies() {
     if (!overlaps.length) return [];
 
     return overlaps
-      .sort((a, b) => b.overlapPercent - a.overlapPercent)
+      .sort(byLevel)
       .map((overlap) => {
         const otherRegId = overlap.regA === regulation ? overlap.regB : overlap.regA;
         const otherConfig = getRegulation(otherRegId);
@@ -62,14 +65,16 @@ export function CrossRegSynergies() {
           targetRegId: otherRegId,
           targetName: tAll(otherConfig.nameKey),
           targetIcon: otherConfig.icon,
-          overlapPercent: overlap.overlapPercent,
+          level: overlap.level,
+          source: sourceLabel(overlap, locale),
+          sourceUrl: overlap.source?.url,
           sharedTopics,
           hasAssessment,
           otherScore,
         } as SynergyItem;
       })
       .filter(Boolean) as SynergyItem[];
-  }, [regulation, tAll]);
+  }, [regulation, tAll, locale]);
 
   if (synergies.length === 0) return null;
 
@@ -109,27 +114,17 @@ export function CrossRegSynergies() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <div className={`text-sm font-bold ${
-                    syn.overlapPercent >= 70 ? 'text-green-600' :
-                    syn.overlapPercent >= 50 ? 'text-amber-600' : 'text-blue-600'
+                    syn.level === 'high' ? 'text-green-600' :
+                    syn.level === 'medium' ? 'text-amber-600' : 'text-blue-600'
                   }`}>
-                    {syn.overlapPercent}%
+                    {levelLabel(syn.level, locale)}
                   </div>
                   <span className="text-xs text-muted-foreground">
-                    {locale === 'de' ? 'Überlappung' : 'overlap'}
+                    {locale === 'de' ? 'Überschneidung' : 'overlap'}
                   </span>
                 </div>
               </div>
 
-              {/* Overlap bar */}
-              <div className="mt-3 h-1.5 w-full rounded-full bg-muted overflow-hidden">
-                <div
-                  className={`h-full rounded-full transition-all ${
-                    syn.overlapPercent >= 70 ? 'bg-green-500' :
-                    syn.overlapPercent >= 50 ? 'bg-amber-500' : 'bg-blue-500'
-                  }`}
-                  style={{ width: `${syn.overlapPercent}%` }}
-                />
-              </div>
 
               {/* Shared topics as tags */}
               <div className="mt-3 flex flex-wrap gap-1.5">
@@ -148,11 +143,14 @@ export function CrossRegSynergies() {
                 )}
               </div>
 
-              {/* Synergy description */}
+              {/* Quelle */}
               <p className="mt-2 text-xs text-muted-foreground">
-                {locale === 'de'
-                  ? `~${syn.overlapPercent}% inhaltliche Überschneidung mit ${syn.targetName} — dort zahlt Ihre Arbeit doppelt ein`
-                  : `~${syn.overlapPercent}% content overlap with ${syn.targetName} — your work counts there too`}
+                {locale === 'de' ? 'Quelle: ' : 'Source: '}
+                {syn.sourceUrl ? (
+                  <a href={syn.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-foreground">
+                    {syn.source}
+                  </a>
+                ) : syn.source}
               </p>
             </CardContent>
           </Card>
@@ -164,8 +162,8 @@ export function CrossRegSynergies() {
         <Info className="size-4 mt-0.5 shrink-0" />
         <span>
           {locale === 'de'
-            ? 'Prozentsätze sind Näherungswerte auf Basis gemeinsamer Maßnahmenkategorien. Eine vollständige Compliance erfordert immer die individuelle Prüfung jedes Regelwerks.'
-            : 'Percentages are approximations based on shared measure categories. Full compliance always requires individual assessment of each regulation.'}
+            ? 'Die Stufen (stark, mittel, gering) sind eine Einordnung. Die Quelle belegt, wo sich die Regelwerke überschneiden; ohne Quelle ist es eine eigene Einschätzung. Eine Überschneidung ersetzt nie die Prüfung jedes einzelnen Regelwerks.'
+            : 'The levels (strong, moderate, minor) are a classification. The source shows where the regulations overlap; without a source it is our own assessment. An overlap never replaces assessing each regulation on its own.'}
         </span>
       </div>
     </div>

@@ -1,6 +1,8 @@
-import { Text, View, Svg, Rect } from '@react-pdf/renderer';
+import { Text, View } from '@react-pdf/renderer';
 import { COLORS } from '@/lib/pdf/styles';
 import type { PDFCrossRegOverlap, PDFMessages } from '@/lib/pdf/types';
+import { levelLabel } from '@/lib/regulations/overlaps';
+import type { OverlapLevel } from '@/lib/regulations/overlaps';
 
 interface PDFCrossRegSynergiesProps {
   overlaps: PDFCrossRegOverlap[];
@@ -9,18 +11,15 @@ interface PDFCrossRegSynergiesProps {
   sectionNumber: number;
 }
 
-const BAR_WIDTH = 180;
-const BAR_HEIGHT = 8;
-
-function getOverlapColor(percent: number): string {
-  if (percent >= 70) return COLORS.green;
-  if (percent >= 50) return '#ca8a04'; // amber
+function getOverlapColor(level: OverlapLevel): string {
+  if (level === 'high') return COLORS.green;
+  if (level === 'medium') return '#ca8a04'; // amber
   return COLORS.primary;
 }
 
-function getOverlapBg(percent: number): string {
-  if (percent >= 70) return COLORS.greenBg;
-  if (percent >= 50) return COLORS.yellowBg;
+function getOverlapBg(level: OverlapLevel): string {
+  if (level === 'high') return COLORS.greenBg;
+  if (level === 'medium') return COLORS.yellowBg;
   return COLORS.primaryLight;
 }
 
@@ -49,9 +48,8 @@ const PDFCrossRegSynergiesSection = ({
 
       {/* Overlap cards */}
       {overlaps.map((overlap, idx) => {
-        const color = getOverlapColor(overlap.overlapPercent);
-        const bgColor = getOverlapBg(overlap.overlapPercent);
-        const barFillWidth = (overlap.overlapPercent / 100) * BAR_WIDTH;
+        const color = getOverlapColor(overlap.level);
+        const bgColor = getOverlapBg(overlap.level);
 
         return (
           <View
@@ -71,19 +69,17 @@ const PDFCrossRegSynergiesSection = ({
               </Text>
               <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
                 <Text style={{ fontSize: 12, fontWeight: 700, color }}>
-                  {overlap.overlapPercent}%
+                  {levelLabel(overlap.level, locale)}
                 </Text>
                 <Text style={{ fontSize: 8, color: COLORS.gray500 }}>
-                  {locale === 'de' ? 'Überlappung' : 'overlap'}
+                  {locale === 'de' ? 'Überschneidung' : 'overlap'}
                 </Text>
               </View>
             </View>
 
-            {/* Bar chart */}
-            <Svg width={BAR_WIDTH} height={BAR_HEIGHT} style={{ marginBottom: 6 }}>
-              <Rect x={0} y={0} width={BAR_WIDTH} height={BAR_HEIGHT} rx={4} fill={COLORS.gray100} />
-              <Rect x={0} y={0} width={barFillWidth} height={BAR_HEIGHT} rx={4} fill={color} />
-            </Svg>
+            <Text style={{ fontSize: 7, color: COLORS.gray500, marginBottom: 6 }}>
+              {locale === 'de' ? 'Quelle: ' : 'Source: '}{overlap.source}
+            </Text>
 
             {/* Shared topics */}
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 4 }}>
@@ -119,8 +115,8 @@ const PDFCrossRegSynergiesSection = ({
       <View style={{ marginTop: 8, padding: 8, backgroundColor: COLORS.primaryLight, borderRadius: 4 }}>
         <Text style={{ fontSize: 7, color: COLORS.primary }}>
           {locale === 'de'
-            ? 'Hinweis: Prozentsätze sind Näherungswerte auf Basis gemeinsamer Maßnahmenkategorien. Vollständige Compliance erfordert die individuelle Prüfung jedes Regelwerks.'
-            : 'Note: Percentages are approximations based on shared measure categories. Full compliance requires individual assessment of each regulation.'}
+            ? 'Hinweis: Die Stufen (stark, mittel, gering) sind eine Einordnung. Die Quelle belegt, wo sich die Regelwerke überschneiden; ohne Quelle ist es eine eigene Einschätzung. Eine Überschneidung ersetzt nie die Prüfung jedes einzelnen Regelwerks.'
+            : 'Note: The levels (strong, moderate, minor) are a classification. The source shows where the regulations overlap; without a source it is our own assessment. An overlap never replaces assessing each regulation on its own.'}
         </Text>
       </View>
     </View>

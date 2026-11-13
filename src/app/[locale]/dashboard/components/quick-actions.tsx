@@ -12,6 +12,7 @@ import { generateMailtoUrl } from '@/lib/pillars/delegation';
 import { getRegulation } from '@/lib/regulations/registry';
 import { calculateOverallScore } from '@/lib/scoring/engine';
 import { REGULATION_LABELS, getAlsoCoveredBy } from '@/lib/regulations/recommendation-mappings';
+import { levelLabel } from '@/lib/regulations/overlaps';
 import type { RegulationId, TrafficLight, Answer } from '@/lib/regulations/types';
 
 interface QuickActionsProps {
@@ -462,7 +463,7 @@ export function QuickActions({ data }: QuickActionsProps) {
                       {t(`${syn.regB === 'bsi-grundschutz' ? 'bsiGrundschutz' : syn.regB}.name`)}
                     </span>
                     <span className="text-[11px] font-bold text-slate-500 bg-slate-50 px-2 py-0.5 rounded-full">
-                      {syn.overlapPercent}%
+                      {levelLabel(syn.level, locale)}
                     </span>
                   </div>
                 ))}
