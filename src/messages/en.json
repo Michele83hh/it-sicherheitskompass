@@ -617,7 +617,7 @@
     },
     "scQ3": {
       "title": "Do you know which external service providers have access to your critical systems or data?",
-      "tooltip": "Transparency about external access is a prerequisite for effective supply chain security. See BSI building block ORP.1.",
+      "tooltip": "Transparency about external access is a prerequisite for effective supply chain security. See IT-Grundschutz modules OPS.2.3 (use of outsourcing) and OPS.1.2.5 (remote maintenance).",
       "help": "Many companies don't know exactly which external service providers can access their systems — e.g., the IT support, the printer maintenance service, or the accounting software provider. Create a list of all external access and check whether these are still necessary and secure.",
       "maturity": {
         "level0": "No overview of external access",
@@ -12885,7 +12885,7 @@
             },
             "kritis": {
               "relevant": "true",
-              "reason": "Large logistics companies may be classified as critical infrastructure operators"
+              "reason": "Operators in the transport sector are critical infrastructure operators only if a facility exceeds the BSI-KritisV thresholds, such as large transshipment facilities – most freight forwarders fall below them"
             },
             "tisax": {
               "relevant": "true",

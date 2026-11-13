@@ -617,7 +617,7 @@
     },
     "scQ3": {
       "title": "Wissen Sie, welche externen Dienstleister Zugriff auf Ihre kritischen Systeme oder Daten haben?",
-      "tooltip": "Transparenz über externe Zugriffe ist Voraussetzung für wirksame Lieferkettensicherheit. Siehe BSI-Baustein ORP.1.",
+      "tooltip": "Transparenz über externe Zugriffe ist Voraussetzung für wirksame Lieferkettensicherheit. Siehe IT-Grundschutz-Bausteine OPS.2.3 (Nutzung von Outsourcing) und OPS.1.2.5 (Fernwartung).",
       "help": "Viele Unternehmen wissen nicht genau, welche externen Dienstleister auf ihre Systeme zugreifen können — z. B. der IT-Support, der Drucker-Wartungsdienst oder der Anbieter der Buchhaltungssoftware. Erstellen Sie eine Liste aller externen Zugriffe und prüfen Sie, ob diese noch nötig und sicher sind.",
       "maturity": {
         "level0": "Kein Überblick über externe Zugriffe",
@@ -12885,7 +12885,7 @@
             },
             "kritis": {
               "relevant": "true",
-              "reason": "Große Logistikunternehmen können als KRITIS-Betreiber eingestuft werden"
+              "reason": "KRITIS-Betreiber im Sektor Transport und Verkehr ist, wer eine Anlage oberhalb der Schwellenwerte der BSI-KritisV betreibt, etwa große Umschlaganlagen – die meisten Speditionen liegen darunter"
             },
             "tisax": {
               "relevant": "true",

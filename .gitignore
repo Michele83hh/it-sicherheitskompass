@@ -54,3 +54,5 @@ replace-cra-questions.mjs
 tmp-tisax-update.js
 ~$*
 *.docx
+
+.superpowers/

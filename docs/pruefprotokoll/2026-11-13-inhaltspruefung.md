@@ -188,3 +188,10 @@
 - CRA: Fundstellen der harmonisierten Normen (M/606) nachtragen, sobald sie im Amtsblatt stehen.
 - KRITIS-Dachgesetz: Schwellenwerte für den Sektor Weltraum folgen mit der KRITIS-Verordnung.
 - OWASP ASVS 5.0 (Mai 2025): Fragenkatalog bei Gelegenheit von 4.0.3 auf 5.0 umstellen.
+
+## Nachtrag 13.11.2026
+
+| Nr | Stelle | Aussage vorher | Quelle | Ergebnis | Korrektur |
+|---|---|---|---|---|---|
+| N3 | NIS2 scQ3 (externe Zugriffe) | „Siehe BSI-Baustein ORP.1“ | Kompendium 2023: OPS.2.3 Outsourcing, OPS.1.2.5 Fernwartung | F | OPS.2.3 und OPS.1.2.5 |
+| B4 | Branche Logistik, KRITIS | „Große Logistikunternehmen können als KRITIS-Betreiber eingestuft werden“ | BSI-KritisV, Sektor Transport und Verkehr | U | Nur Betreiber von Anlagen oberhalb der Schwellenwerte; die meisten Speditionen liegen darunter |
