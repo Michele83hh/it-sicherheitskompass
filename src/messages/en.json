@@ -6030,6 +6030,19 @@
           "industry": "Industry",
           "framework": "Framework",
           "baseline": "Baseline"
+        },
+        "sourceTypes": {
+          "title": "Where the information comes from",
+          "official": "With link: a publisher's official mapping table.",
+          "legal": "Text only: passage in the law or standard.",
+          "own": "Own assessment: no source, a rough guide only."
+        },
+        "topicsLabel": "Shared topics",
+        "topicsHint": "Click for an explanation",
+        "sourceKind": {
+          "official": "Mapping table",
+          "legal": "Law/standard",
+          "own": "Own assessment"
         }
       },
       "overlap": "overlap",
@@ -6218,6 +6231,60 @@
         "supplierManagement": "Supplier Management",
         "vulnerabilityManagement": "Vulnerability Mgmt",
         "securityByDesign": "Security by Design"
+      },
+      "measureInfo": {
+        "riskManagement": {
+          "short": "Identify, assess and treat risks to IT and information.",
+          "detail": "Both frameworks require you to know your important systems and data, assess the threats to them and decide how to handle each risk. One well-built risk analysis with a treatment plan can serve both."
+        },
+        "incidentReporting": {
+          "short": "Detect security incidents and report them on time.",
+          "detail": "Both frameworks require a fixed process for security incidents: detect, assess and report to the competent body within the deadline. Deadlines and recipients differ, but the internal process and responsibilities can be the same."
+        },
+        "supplyChain": {
+          "short": "Secure your suppliers and service providers.",
+          "detail": "Both frameworks require you to assess the security of your suppliers and fix requirements in contracts. One shared supplier list with assessments and contract clauses covers both."
+        },
+        "bcm": {
+          "short": "Keep operations running during outages and recover from them.",
+          "detail": "Both frameworks require continuity planning: know your critical processes, set recovery times, write emergency plans and exercise them. The business impact analysis, emergency handbook and exercise records can be used for both."
+        },
+        "accessControl": {
+          "short": "Only authorised people reach systems and data.",
+          "detail": "Both frameworks require managed access rights: granted by task, reviewed regularly, removed on departure, with extra protection for administrator accounts. One shared authorisation concept satisfies both."
+        },
+        "thirdPartyRisk": {
+          "short": "Manage risks from external IT service providers.",
+          "detail": "Both frameworks require you to know your dependencies on IT providers, assess their risks and plan exit options. One shared provider register with risk ratings serves both."
+        },
+        "resilienceTesting": {
+          "short": "Test security and resilience regularly.",
+          "detail": "Both frameworks require regular testing such as vulnerability scans, penetration tests or continuity exercises. One shared test plan with documented results and follow-up is enough for both."
+        },
+        "encryption": {
+          "short": "Encrypt data at rest and in transit.",
+          "detail": "Both frameworks require rules on which data is encrypted how, and secure handling of the keys. One shared cryptography concept with key management covers both."
+        },
+        "networkSecurity": {
+          "short": "Segment, protect and monitor networks.",
+          "detail": "Both frameworks require networks to be split into zones, transitions protected by firewalls and access monitored. The network plan, firewall rule set and logging can be presented for both."
+        },
+        "physicalSecurity": {
+          "short": "Protect rooms, devices and media from unauthorised access.",
+          "detail": "Both frameworks require access control for server rooms and protection against fire, water and power failure. The access concept and building services records apply to both."
+        },
+        "supplierManagement": {
+          "short": "Select suppliers, bind them by contract and review them regularly.",
+          "detail": "Both frameworks require security requirements in contracts and a recurring supplier assessment. You can use the same contract templates and assessment sheets for both."
+        },
+        "vulnerabilityManagement": {
+          "short": "Find vulnerabilities and close them promptly.",
+          "detail": "Both frameworks require vulnerabilities to be systematically identified, rated and fixed by updates. One shared process with scans, deadlines per severity and evidence satisfies both."
+        },
+        "securityByDesign": {
+          "short": "Plan security into development and procurement from the start.",
+          "detail": "Both frameworks require security requirements to be considered at design, development and purchasing, for example through secure defaults and checks before release. One shared development process serves both."
+        }
       }
     }
   },

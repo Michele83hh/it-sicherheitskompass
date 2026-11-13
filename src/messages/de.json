@@ -6030,6 +6030,19 @@
           "industry": "Branche",
           "framework": "Rahmenwerk",
           "baseline": "Baseline"
+        },
+        "sourceTypes": {
+          "title": "Woher die Angabe stammt",
+          "official": "Mit Link: offizielle Zuordnungstabelle eines Herausgebers.",
+          "legal": "Nur Text: Stelle im Gesetz oder in der Norm.",
+          "own": "Eigene Einschätzung: keine Quelle, nur als Anhaltspunkt."
+        },
+        "topicsLabel": "Gemeinsame Themen",
+        "topicsHint": "Anklicken für eine Erklärung",
+        "sourceKind": {
+          "official": "Zuordnungstabelle",
+          "legal": "Gesetz/Norm",
+          "own": "Eigene Einschätzung"
         }
       },
       "overlap": "Überlappung",
@@ -6218,6 +6231,60 @@
         "supplierManagement": "Lieferantenmanagement",
         "vulnerabilityManagement": "Schwachstellenmanagement",
         "securityByDesign": "Security by Design"
+      },
+      "measureInfo": {
+        "riskManagement": {
+          "short": "Risiken für IT und Informationen erkennen, bewerten und behandeln.",
+          "detail": "Beide Regelwerke verlangen, dass Sie Ihre wichtigen Systeme und Daten kennen, Bedrohungen dafür bewerten und entscheiden, wie Sie mit jedem Risiko umgehen. Eine einmal sauber aufgebaute Risikoanalyse mit Behandlungsplan lässt sich für beide verwenden."
+        },
+        "incidentReporting": {
+          "short": "Sicherheitsvorfälle erkennen und fristgerecht melden.",
+          "detail": "Beide Regelwerke verlangen einen festen Ablauf für Sicherheitsvorfälle: erkennen, bewerten, innerhalb der Frist an die zuständige Stelle melden. Fristen und Empfänger unterscheiden sich, der interne Ablauf und die Zuständigkeiten können dieselben sein."
+        },
+        "supplyChain": {
+          "short": "Sicherheit bei Lieferanten und Dienstleistern absichern.",
+          "detail": "Beide Regelwerke verlangen, dass Sie die Sicherheit Ihrer Zulieferer bewerten und Anforderungen vertraglich festhalten. Eine gemeinsame Lieferantenliste mit Bewertung und Vertragsklauseln deckt beide ab."
+        },
+        "bcm": {
+          "short": "Den Betrieb bei Ausfällen aufrechterhalten und wiederherstellen.",
+          "detail": "Beide Regelwerke verlangen Notfallvorsorge: kritische Prozesse kennen, Wiederanlaufzeiten festlegen, Notfallpläne schreiben und üben. Business-Impact-Analyse, Notfallhandbuch und Übungsnachweise lassen sich für beide nutzen."
+        },
+        "accessControl": {
+          "short": "Nur Berechtigte kommen an Systeme und Daten.",
+          "detail": "Beide Regelwerke verlangen geregelte Zugriffsrechte: Vergabe nach Aufgabe, regelmäßige Überprüfung, Entzug beim Ausscheiden und besonderen Schutz für Administratorkonten. Ein gemeinsames Berechtigungskonzept erfüllt beide."
+        },
+        "thirdPartyRisk": {
+          "short": "Risiken durch externe IT-Dienstleister steuern.",
+          "detail": "Beide Regelwerke verlangen, dass Sie Abhängigkeiten von IT-Dienstleistern kennen, deren Risiken bewerten und Ausstiegsmöglichkeiten einplanen. Ein gemeinsames Register der Dienstleister mit Risikobewertung dient beiden."
+        },
+        "resilienceTesting": {
+          "short": "Sicherheit und Widerstandsfähigkeit regelmäßig testen.",
+          "detail": "Beide Regelwerke verlangen regelmäßige Tests, etwa Schwachstellenscans, Penetrationstests oder Notfallübungen. Ein gemeinsamer Testplan mit dokumentierten Ergebnissen und Nachverfolgung reicht für beide."
+        },
+        "encryption": {
+          "short": "Daten bei Speicherung und Übertragung verschlüsseln.",
+          "detail": "Beide Regelwerke verlangen Vorgaben, welche Daten wie verschlüsselt werden, und einen sicheren Umgang mit den Schlüsseln. Ein gemeinsames Kryptokonzept mit Schlüsselverwaltung deckt beide ab."
+        },
+        "networkSecurity": {
+          "short": "Netze trennen, absichern und überwachen.",
+          "detail": "Beide Regelwerke verlangen, dass Netze in Zonen aufgeteilt, Übergänge durch Firewalls geschützt und Zugriffe überwacht werden. Netzplan, Firewall-Regelwerk und Protokollierung lassen sich für beide vorlegen."
+        },
+        "physicalSecurity": {
+          "short": "Räume, Geräte und Datenträger vor unbefugtem Zutritt schützen.",
+          "detail": "Beide Regelwerke verlangen Zutrittskontrollen für Serverräume und Schutz vor Feuer, Wasser und Stromausfall. Zutrittskonzept und Nachweise zur Gebäudetechnik gelten für beide."
+        },
+        "supplierManagement": {
+          "short": "Lieferanten auswählen, vertraglich binden und regelmäßig prüfen.",
+          "detail": "Beide Regelwerke verlangen Sicherheitsanforderungen in Verträgen und eine wiederkehrende Bewertung der Lieferanten. Vertragsvorlagen und Bewertungsbögen können Sie für beide verwenden."
+        },
+        "vulnerabilityManagement": {
+          "short": "Schwachstellen finden und zeitnah schließen.",
+          "detail": "Beide Regelwerke verlangen, dass Schwachstellen systematisch erkannt, bewertet und durch Updates behoben werden. Ein gemeinsamer Ablauf mit Scans, Fristen je Schweregrad und Nachweisen erfüllt beide."
+        },
+        "securityByDesign": {
+          "short": "Sicherheit von Anfang an in Entwicklung und Beschaffung einplanen.",
+          "detail": "Beide Regelwerke verlangen, dass Sicherheitsanforderungen schon bei Entwurf, Entwicklung und Einkauf berücksichtigt werden, etwa durch sichere Voreinstellungen und Prüfungen vor der Freigabe. Ein gemeinsamer Entwicklungsprozess dient beiden."
+        }
       }
     }
   },
