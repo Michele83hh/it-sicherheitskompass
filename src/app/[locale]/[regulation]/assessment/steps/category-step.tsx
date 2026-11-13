@@ -174,6 +174,8 @@ export function CategoryStep({
   const empoweringIntroKey = category
     ? category.nameKey.replace('.name', '.empoweringIntro')
     : `${categoryTranslationPrefix}.empoweringIntro`;
+  // Nicht jedes Regelwerk hat einen Einleitungstext je Bereich — dann keine Box statt Rohschlüssel.
+  const hasIntro = tAll.has(empoweringIntroKey);
 
   const hasTieredAssessment = config.features.hasTieredAssessment;
 
@@ -209,20 +211,24 @@ export function CategoryStep({
 
       {/* Phase-dependent intro box */}
       {hasTieredAssessment && tier === 'core' ? (
-        <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
-          <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
-          <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
-        </div>
+        hasIntro && (
+          <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
+          </div>
+        )
       ) : hasTieredAssessment && tier === 'advanced' ? (
         <div className="mb-6 flex items-start gap-3 rounded-lg border border-purple-200 bg-purple-50 p-4">
           <Lightbulb className="size-5 text-purple-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
           <p className="text-sm text-purple-800">{tGap('phase.advancedIntro')}</p>
         </div>
       ) : (
-        <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
-          <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
-          <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
-        </div>
+        hasIntro && (
+          <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
+          </div>
+        )
       )}
 
       <div className="space-y-8">

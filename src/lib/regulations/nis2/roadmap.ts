@@ -15,9 +15,6 @@ import type { BaseRecommendation } from '../types';
 
 export interface RoadmapPhase {
   id: 'quick-wins' | 'core' | 'strategic';
-  nameKey: string;
-  timeframeKey: string;
-  descriptionKey: string;
   months: string; // e.g., "0-3"
   items: RoadmapItem[];
 }
@@ -116,25 +113,16 @@ export function generateRoadmap(
   return [
     {
       id: 'quick-wins',
-      nameKey: 'roadmap.phases.quickWins.name',
-      timeframeKey: 'roadmap.phases.quickWins.timeframe',
-      descriptionKey: 'roadmap.phases.quickWins.description',
       months: '0-3',
       items: phases['quick-wins'],
     },
     {
       id: 'core',
-      nameKey: 'roadmap.phases.core.name',
-      timeframeKey: 'roadmap.phases.core.timeframe',
-      descriptionKey: 'roadmap.phases.core.description',
       months: '3-6',
       items: phases.core,
     },
     {
       id: 'strategic',
-      nameKey: 'roadmap.phases.strategic.name',
-      timeframeKey: 'roadmap.phases.strategic.timeframe',
-      descriptionKey: 'roadmap.phases.strategic.description',
       months: '6-12',
       items: phases.strategic,
     },

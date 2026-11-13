@@ -424,7 +424,7 @@
       "name": "Multi-Factor Authentication and Secured Communication",
       "shortName": "MFA & Communication",
       "description": "Use of multi-factor authentication or continuous authentication, secured voice, video and text communication, and secured emergency communication systems",
-      "empoweringIntro": "Secure identities: Multi-factor authentication prevents over 99% of account takeovers — one of the most effective single measures."
+      "empoweringIntro": "Secure identities: according to a Microsoft study (2023), multi-factor authentication prevents over 99% of account takeovers — one of the most effective single measures."
     }
   },
   "questions": {
@@ -926,7 +926,7 @@
     "mcQ1": {
       "title": "Do you use multi-factor authentication (e.g., authenticator app, hardware token) for critical systems?",
       "tooltip": "NIS2 requires MFA or continuous authentication where appropriate – especially important for privileged access (Art. 21 Abs. 2 lit. j NIS2-RL, §30 Para. 2 No. 10 BSIG). MFA protects against password theft and unauthorized access.",
-      "help": "Multi-factor authentication (MFA) means: To log in, you need not only a password but also a second factor — e.g., a code from an app on your smartphone. Even if someone steals your password, they cannot log in without the second factor. MFA blocks over 99% of all account takeovers.",
+      "help": "Multi-factor authentication (MFA) means: To log in, you need not only a password but also a second factor — e.g., a code from an app on your smartphone. Even if someone steals your password, they cannot log in without the second factor. According to a Microsoft study (2023), MFA prevents over 99% of account takeovers.",
       "maturity": {
         "level0": "No MFA in use",
         "level1": "MFA for individual systems (e.g., cloud email only)",
@@ -1500,8 +1500,8 @@
         "answer": "Red indicates significant action required (below 40%), yellow indicates improvement needed (40–69%), and green signals good implementation (70% and above). The thresholds are based on common maturity models."
       },
       "q2": {
-        "question": "Am I automatically NIS2-compliant with a green score?",
-        "answer": "No. A high score indicates that your self-assessment suggests good implementation. However, NIS2 compliance requires professional evaluation of the adequacy and effectiveness of your measures (§30 para. 1 BSIG)."
+        "question": "Does a green score mean I automatically meet the requirements of {regulation}?",
+        "answer": "No. A high score shows that your self-assessment points to good implementation. Whether you actually meet the requirements of {regulation} can only be established by a qualified review of the adequacy and effectiveness of your measures."
       },
       "q3": {
         "question": "Can I forward the PDF report to my IT service provider?",
@@ -1540,6 +1540,10 @@
       "bsi": {
         "title": "BSI Resources",
         "desc": "Use the BSI IT-Grundschutz compendium and NIS2 information portal."
+      },
+      "official": {
+        "title": "Official sources",
+        "desc": "Consult the original text and official supporting documents for {regulation}."
       }
     },
     "tabs": {
@@ -6546,6 +6550,28 @@
     },
     "legalBasis": "NIS2 Directive Art. 21 / GDPR Art. 32"
   },
+  "iso27001Mapping": {
+    "title": "ISO 27001:2022 Crosswalk",
+    "subtitle": "Mapping NIS2 requirements to ISO 27001:2022 Annex A Controls",
+    "intro": "Companies with existing ISO 27001 certification have a significant head start on NIS2 implementation. Average coverage is approximately 72%.",
+    "overallAlignment": "Average Coverage",
+    "nis2Category": "NIS2 Category",
+    "isoControls": "ISO 27001:2022 Controls",
+    "alignment": "Coverage",
+    "gap": "NIS2 Additional Requirements",
+    "gaps": {
+      "riskAnalysis": "NIS2 requires explicit inclusion of supply chain risks and regulatory requirements",
+      "incidentHandling": "NIS2 has stricter reporting deadlines (24h/72h) and specific BSI reporting obligations",
+      "businessContinuity": "NIS2 requires explicit crisis management and shorter recovery times",
+      "supplyChain": "NIS2 goes beyond ISO: cybersecurity-specific supplier assessment mandatory",
+      "acquisitionDevelopment": "NIS2 requires secure-by-design and explicit vulnerability management",
+      "effectivenessAssessment": "NIS2 requires demonstrable KPIs and regular management reviews",
+      "cyberHygiene": "NIS2 mandates explicit management training (§38 BSIG) — not just general awareness",
+      "cryptography": "NIS2 requires crypto agility and documented key management",
+      "accessControl": "NIS2 requires explicit MFA, PAM, and zero-trust approaches",
+      "authenticationCommunication": "NIS2 requires secured emergency communication and continuous authentication"
+    }
+  },
   "iso27001": {
     "name": "ISO 27001",
     "shortName": "ISO 27001",
@@ -7700,7 +7726,7 @@
       "components": {
         "mfa": {
           "name": "Multi-Factor Authentication (MFA)",
-          "scenario": "An IT service provider loses access to 200 customer servers because an admin password appears in a data breach. The attacker logs in at night and encrypts all systems. With MFA enabled, the password alone would have been worthless.\n\n81% of all data breaches exploit stolen or weak passwords. MFA stops 99.9% of these attacks.",
+          "scenario": "An IT service provider loses access to 200 customer servers because an admin password appears in a data breach. The attacker logs in at night and encrypts all systems. With MFA enabled, the password alone would have been worthless.\n\nStolen credentials have for years been among the most common entry points in data breaches (Verizon Data Breach Investigations Report). MFA closes exactly that path.",
           "solution": "1. Identify critical systems: email, VPN, cloud services, admin access\n2. Choose MFA method: authenticator app (recommended), hardware token (high security), SMS (minimum)\n3. Plan rollout: admins first, then management, then all employees\n4. Define recovery process: what happens with a lost token?\n5. Enforcement: configure MFA as mandatory, not optional",
           "benefit": "According to a Microsoft measurement study, MFA prevents over 99% of account takeovers (99.22% across the population, 98.56% even when the password had already leaked). Setup takes about 15 minutes per employee and costs nothing with authenticator apps. Mandatory for NIS2-regulated companies.",
           "nextStep": "Enable MFA for your admin accounts today. Start with Microsoft Authenticator or Google Authenticator — both are free.",
@@ -10551,7 +10577,7 @@
           "t2": "August 2025: Rules for general-purpose AI models (GPAI) including ChatGPT, Gemini etc.",
           "t3": "Since Aug 2, 2026: Transparency obligations apply — disclosure of AI interaction and AI-generated content",
           "t4": "Dec 2, 2027: Obligations for high-risk AI under Annex III — postponed by the Digital Omnibus (embedded high-risk AI from Aug 2, 2028)",
-        "t5": "Dec 2, 2026: Two additional prohibitions under Art. 5 and machine-readable marking also for generative AI systems placed on the market before Aug 2, 2026 (Regulation (EU) 2026/1744)"
+          "t5": "Dec 2, 2026: Two additional prohibitions under Art. 5 and machine-readable marking also for generative AI systems placed on the market before Aug 2, 2026 (Regulation (EU) 2026/1744)"
         }
       },
       "riskLevels": {
@@ -11601,7 +11627,7 @@
           "i1": "Defense in Depth: Multiple defense layers instead of a single measure",
           "i2": "Zero Trust: Trust no one, verify everything — even within the internal network",
           "i3": "Patch fast: many successful attacks exploit known, unpatched vulnerabilities",
-          "i4": "MFA everywhere: Prevents 99.9% of all account-based attacks according to Microsoft",
+          "i4": "MFA everywhere: according to Microsoft, prevents more than 99% of automated account takeovers",
           "i5": "Train, train, train: Humans remain the most important security factor"
         }
       }
@@ -14889,28 +14915,55 @@
   },
   "dedup": {
     "topics": {
-      "riskInventory": "Risk Inventory",
-      "riskTreatment": "Risk Treatment",
-      "securityResponsibilities": "Security Responsibilities",
-      "incidentResponsePlan": "Incident Response Plan",
-      "incidentLogging": "Incident Logging",
-      "incidentReporting": "Incident Reporting",
-      "backupStrategy": "Backup Strategy",
-      "businessContinuityPlan": "Business Continuity Plan",
-      "businessImpactAnalysis": "Business Impact Analysis",
-      "accessControl": "Access Control",
-      "privilegedAccess": "Privileged Access",
-      "mfa": "Multi-Factor Authentication",
-      "encryption": "Encryption",
-      "keyManagement": "Key Management",
-      "supplyChainSecurity": "Supply Chain Security",
-      "supplyChainAssessment": "Supply Chain Assessment",
-      "securityAwareness": "Security Awareness Training",
-      "managementTraining": "Management Training",
-      "patchManagement": "Patch Management",
-      "vulnerabilityScanning": "Vulnerability Scanning",
-      "securityMonitoring": "Security Monitoring",
-      "securityKpis": "Security KPIs"
+      "assetInventory": "Asset inventory",
+      "riskAssessment": "Risk assessment",
+      "riskTreatment": "Risk treatment",
+      "ismsEstablished": "ISMS established",
+      "securityPolicy": "Security policy",
+      "securityResponsibilities": "Security responsibilities",
+      "incidentResponsePlan": "Incident response",
+      "incidentLessonsLearned": "Incident lessons learned",
+      "incidentReporting": "Incident reporting to authorities",
+      "securityMonitoring": "Logging and monitoring",
+      "anomalyDetection": "Attack detection",
+      "backupStrategy": "Backup",
+      "businessContinuityPlan": "Business continuity plan",
+      "bcExercises": "Continuity exercises",
+      "businessImpactAnalysis": "Business impact analysis",
+      "rtoRpo": "Recovery objectives (RTO/RPO)",
+      "crisisCommunication": "Crisis communication",
+      "accessControl": "Access control",
+      "accessReview": "User and access rights management",
+      "privilegedAccess": "Privileged access",
+      "mfa": "Multi-factor authentication",
+      "passwordPolicy": "Password policy",
+      "encryption": "Data encryption",
+      "cryptoPolicy": "Cryptography policy",
+      "keyManagement": "Key management",
+      "supplierContracts": "Security in supplier contracts",
+      "supplierAssessment": "Supplier assessment",
+      "supplierReassessment": "Recurring supplier review",
+      "securityAwareness": "Security awareness training",
+      "managementTraining": "Management training",
+      "managementReporting": "Reporting to management",
+      "patchManagement": "Patch management",
+      "vulnerabilityScanning": "Vulnerability management",
+      "penetrationTesting": "Security testing",
+      "internalAudit": "Internal audits",
+      "auditFollowup": "Follow-up on audit findings",
+      "malwareProtection": "Malware protection",
+      "systemHardening": "System hardening",
+      "networkSegmentation": "Network segmentation",
+      "physicalAccess": "Physical access control",
+      "environmentalProtection": "Environmental protection",
+      "dataClassification": "Information classification",
+      "secureDeletion": "Secure deletion and disposal",
+      "secureDevelopment": "Secure development",
+      "webApplicationSecurity": "Web application security",
+      "changeManagement": "Change management",
+      "privacyBreachNotification": "Personal data breach notification",
+      "processorContracts": "Data processing agreements",
+      "dataSubjectRights": "Data subject rights"
     }
   },
   "a11y": {

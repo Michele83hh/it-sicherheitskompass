@@ -9,7 +9,7 @@ import { ISO27001_MAPPINGS, calculateOverallAlignment } from '@/lib/regulations/
 import { CATEGORIES } from '@/lib/regulations/nis2/categories';
 
 export function Iso27001Section() {
-  const t = useTranslations('iso27001');
+  const t = useTranslations('iso27001Mapping');
   const tCat = useTranslations('categories');
 
   const overallAlignment = calculateOverallAlignment();
@@ -48,7 +48,7 @@ export function Iso27001Section() {
             {ISO27001_MAPPINGS.map((mapping) => {
               const category = CATEGORIES.find((c) => c.id === mapping.nis2CategoryId);
               const catName = category ? tCat(category.shortNameKey.replace('categories.', '')) : mapping.nis2CategoryId;
-              const gapKey = mapping.gapNoteKey.replace('iso27001.gaps.', '');
+              const gapKey = mapping.gapNoteKey.replace('iso27001Mapping.gaps.', '');
 
               return (
                 <tr key={mapping.nis2CategoryId} className="border-b">

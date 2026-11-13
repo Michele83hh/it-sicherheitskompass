@@ -424,7 +424,7 @@
       "name": "Multi-Faktor-Authentifizierung und gesicherte Kommunikation",
       "shortName": "MFA & Kommunikation",
       "description": "Verwendung von Lösungen zur Multi-Faktor-Authentifizierung oder kontinuierlichen Authentifizierung, gesicherte Sprach-, Video- und Textkommunikation sowie gegebenenfalls gesicherte Notfallkommunikationssysteme",
-      "empoweringIntro": "Identität absichern: Multi-Faktor-Authentifizierung verhindert über 99% aller Kontoübernahmen — eine der wirksamsten Einzelmaßnahmen."
+      "empoweringIntro": "Identität absichern: Multi-Faktor-Authentifizierung verhindert laut einer Microsoft-Studie (2023) über 99 % der Kontoübernahmen — eine der wirksamsten Einzelmaßnahmen."
     }
   },
   "questions": {
@@ -926,7 +926,7 @@
     "mcQ1": {
       "title": "Nutzen Sie Multi-Faktor-Authentifizierung (z.B. Authenticator-App, Hardware-Token) für kritische Systeme?",
       "tooltip": "NIS2 verlangt gegebenenfalls MFA oder kontinuierliche Authentifizierung – besonders wichtig für privilegierte Zugänge (Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG). MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
-      "help": "Multi-Faktor-Authentifizierung (MFA) bedeutet: Zum Einloggen brauchen Sie nicht nur ein Passwort, sondern zusätzlich einen zweiten Faktor — z. B. einen Code aus einer App auf Ihrem Smartphone. Selbst wenn jemand Ihr Passwort stiehlt, kann er sich ohne den zweiten Faktor nicht einloggen. MFA blockiert über 99% aller Kontoübernahmen.",
+      "help": "Multi-Faktor-Authentifizierung (MFA) bedeutet: Zum Einloggen brauchen Sie nicht nur ein Passwort, sondern zusätzlich einen zweiten Faktor — z. B. einen Code aus einer App auf Ihrem Smartphone. Selbst wenn jemand Ihr Passwort stiehlt, kann er sich ohne den zweiten Faktor nicht einloggen. Laut einer Microsoft-Studie (2023) verhindert MFA über 99 % der Kontoübernahmen.",
       "maturity": {
         "level0": "Kein MFA im Einsatz",
         "level1": "MFA für einzelne Systeme (z.B. nur Cloud-E-Mail)",
@@ -1500,8 +1500,8 @@
         "answer": "Rot bedeutet erheblicher Handlungsbedarf (unter 40%), Gelb zeigt Verbesserungsbedarf (40–69%), und Grün signalisiert eine gute Umsetzung (ab 70%). Die Schwellenwerte orientieren sich an gängigen Reifegradmodellen."
       },
       "q2": {
-        "question": "Bin ich mit einem grünen Score automatisch NIS2-konform?",
-        "answer": "Nein. Ein hoher Score zeigt, dass Ihre Selbsteinschätzung auf eine gute Umsetzung hindeutet. NIS2-Konformität erfordert jedoch eine professionelle Bewertung der Angemessenheit und Wirksamkeit Ihrer Maßnahmen (§30 Abs. 1 BSIG)."
+        "question": "Erfülle ich mit einem grünen Score automatisch die Anforderungen von {regulation}?",
+        "answer": "Nein. Ein hoher Score zeigt, dass Ihre Selbsteinschätzung auf eine gute Umsetzung hindeutet. Ob Sie die Anforderungen von {regulation} tatsächlich erfüllen, zeigt erst eine fachkundige Prüfung der Angemessenheit und Wirksamkeit Ihrer Maßnahmen."
       },
       "q3": {
         "question": "Kann ich den PDF-Report an meinen IT-Dienstleister weiterleiten?",
@@ -1540,6 +1540,10 @@
       "bsi": {
         "title": "BSI-Ressourcen",
         "desc": "BSI IT-Grundschutz-Kompendium und NIS2-Informationsportal nutzen."
+      },
+      "official": {
+        "title": "Offizielle Quellen",
+        "desc": "Originaltext und offizielle Begleitdokumente zu {regulation} heranziehen."
       }
     },
     "tabs": {
@@ -6546,6 +6550,28 @@
     },
     "legalBasis": "NIS2-RL Art. 21 / DSGVO Art. 32"
   },
+  "iso27001Mapping": {
+    "title": "ISO 27001:2022 Crosswalk",
+    "subtitle": "Zuordnung von NIS2-Anforderungen zu ISO 27001:2022 Annex A Controls",
+    "intro": "Unternehmen mit bestehender ISO 27001-Zertifizierung haben einen erheblichen Vorsprung bei der NIS2-Umsetzung. Die durchschnittliche Abdeckung liegt bei ca. 72%.",
+    "overallAlignment": "Durchschnittliche Abdeckung",
+    "nis2Category": "NIS2-Kategorie",
+    "isoControls": "ISO 27001:2022 Controls",
+    "alignment": "Abdeckung",
+    "gap": "NIS2-Zusatzanforderungen",
+    "gaps": {
+      "riskAnalysis": "NIS2 fordert explizite Einbeziehung von Lieferketten-Risiken und regulatorischen Anforderungen",
+      "incidentHandling": "NIS2 hat strengere Meldefristen (24h/72h) und spezifische BSI-Meldepflichten",
+      "businessContinuity": "NIS2 fordert explizites Krisenmanagement und kürzere Wiederherstellungszeiten",
+      "supplyChain": "NIS2 geht über ISO hinaus: Cybersecurity-spezifische Lieferantenbewertung verpflichtend",
+      "acquisitionDevelopment": "NIS2 fordert Secure-by-Design und explizites Schwachstellenmanagement",
+      "effectivenessAssessment": "NIS2 verlangt nachweisbare KPIs und regelmäßige Management-Reviews",
+      "cyberHygiene": "NIS2 fordert explizite Geschäftsleitungsschulung (§38 BSIG) — nicht nur allgemeine Awareness",
+      "cryptography": "NIS2 fordert Krypto-Agilität und dokumentiertes Schlüsselmanagement",
+      "accessControl": "NIS2 fordert explizit MFA, PAM und Zero-Trust-Ansätze",
+      "authenticationCommunication": "NIS2 fordert gesicherte Notfallkommunikation und kontinuierliche Authentifizierung"
+    }
+  },
   "iso27001": {
     "name": "ISO 27001",
     "shortName": "ISO 27001",
@@ -7700,7 +7726,7 @@
       "components": {
         "mfa": {
           "name": "Multi-Faktor-Authentifizierung (MFA)",
-          "scenario": "Ein IT-Dienstleister verliert den Zugang zu 200 Kundenservern, weil ein Administrator-Passwort bei einem Datenleck auftaucht. Der Angreifer loggt sich nachts ein und verschlüsselt alle Systeme. Mit aktivierter MFA wäre das Passwort allein wertlos gewesen.\n\n81% aller Datenschutzverletzungen nutzen gestohlene oder schwache Passwörter. MFA stoppt 99,9% dieser Angriffe.",
+          "scenario": "Ein IT-Dienstleister verliert den Zugang zu 200 Kundenservern, weil ein Administrator-Passwort bei einem Datenleck auftaucht. Der Angreifer loggt sich nachts ein und verschlüsselt alle Systeme. Mit aktivierter MFA wäre das Passwort allein wertlos gewesen.\n\nGestohlene Zugangsdaten gehören seit Jahren zu den häufigsten Einstiegswegen bei Datenpannen (Verizon Data Breach Investigations Report). Genau diesen Weg versperrt MFA.",
           "solution": "1. Kritische Systeme identifizieren: E-Mail, VPN, Cloud-Dienste, Admin-Zugänge\n2. MFA-Methode wählen: Authenticator-App (empfohlen), Hardware-Token (hochsicher), SMS (Minimum)\n3. Rollout planen: Admins zuerst, dann Führungskräfte, dann alle Mitarbeiter\n4. Recovery-Prozess definieren: Was passiert bei verlorenem Token?\n5. Enforcement: MFA als Pflicht konfigurieren, nicht optional",
           "benefit": "MFA verhindert nach einer Microsoft-Messstudie über 99% der Account-Übernahmen (99,22% in der Gesamtpopulation, 98,56% selbst bei bereits geleaktem Passwort). Die Einrichtung dauert etwa 15 Minuten pro Mitarbeiter und kostet mit Authenticator-Apps nichts. Pflicht für NIS2-regulierte Unternehmen.",
           "nextStep": "Aktivieren Sie MFA für Ihre Admin-Accounts noch heute. Starten Sie mit Microsoft Authenticator oder Google Authenticator — beide sind kostenlos.",
@@ -10551,7 +10577,7 @@
           "t2": "August 2025: Regeln für allgemeine KI-Modelle (GPAI) inkl. ChatGPT, Gemini etc.",
           "t3": "Seit 02.08.2026: Transparenzpflichten gelten — Kennzeichnung von KI-Interaktion und KI-generierten Inhalten",
           "t4": "02.12.2027: Pflichten für Hochrisiko-KI nach Anhang III — durch den Digital Omnibus verschoben (eingebettete Hochrisiko-KI ab 02.08.2028)",
-        "t5": "02.12.2026: Zwei zusätzliche Verbote nach Art. 5 und maschinenlesbare Kennzeichnung auch für generative KI-Systeme, die vor dem 02.08.2026 auf den Markt kamen (VO (EU) 2026/1744)"
+          "t5": "02.12.2026: Zwei zusätzliche Verbote nach Art. 5 und maschinenlesbare Kennzeichnung auch für generative KI-Systeme, die vor dem 02.08.2026 auf den Markt kamen (VO (EU) 2026/1744)"
         }
       },
       "riskLevels": {
@@ -11601,7 +11627,7 @@
           "i1": "Defence in Depth: Mehrere Verteidigungsschichten statt einer einzelnen Maßnahme",
           "i2": "Zero Trust: Vertraue niemandem, verifiziere alles — auch im internen Netzwerk",
           "i3": "Patch schnell: Viele erfolgreiche Angriffe nutzen bekannte, ungepatchte Lücken",
-          "i4": "MFA überall: Verhindert 99,9% aller kontobasierten Angriffe laut Microsoft",
+          "i4": "MFA überall: Verhindert laut Microsoft über 99 % der automatisierten Kontoübernahmen",
           "i5": "Schulen, schulen, schulen: Der Mensch bleibt der wichtigste Sicherheitsfaktor"
         }
       }
@@ -14889,28 +14915,55 @@
   },
   "dedup": {
     "topics": {
-      "riskInventory": "Risikoinventar",
+      "assetInventory": "IT-Inventar",
+      "riskAssessment": "Risikoanalyse",
       "riskTreatment": "Risikobehandlung",
+      "ismsEstablished": "ISMS eingerichtet",
+      "securityPolicy": "Sicherheitsleitlinie",
       "securityResponsibilities": "Sicherheitsverantwortlichkeiten",
-      "incidentResponsePlan": "Incident-Response-Plan",
-      "incidentLogging": "Vorfallprotokollierung",
-      "incidentReporting": "Vorfallmeldung",
-      "backupStrategy": "Backup-Strategie",
+      "incidentResponsePlan": "Vorfallbehandlung",
+      "incidentLessonsLearned": "Nachbereitung von Vorfällen",
+      "incidentReporting": "Vorfallmeldung an Behörden",
+      "securityMonitoring": "Protokollierung und Überwachung",
+      "anomalyDetection": "Angriffserkennung",
+      "backupStrategy": "Datensicherung",
       "businessContinuityPlan": "Notfallplan",
+      "bcExercises": "Notfallübungen",
       "businessImpactAnalysis": "Business-Impact-Analyse",
+      "rtoRpo": "Wiederanlaufziele (RTO/RPO)",
+      "crisisCommunication": "Krisenkommunikation",
       "accessControl": "Zugriffskontrolle",
+      "accessReview": "Benutzer- und Rechteverwaltung",
       "privilegedAccess": "Privilegierte Zugänge",
       "mfa": "Multi-Faktor-Authentifizierung",
-      "encryption": "Verschlüsselung",
+      "passwordPolicy": "Passwortrichtlinie",
+      "encryption": "Verschlüsselung von Daten",
+      "cryptoPolicy": "Kryptokonzept",
       "keyManagement": "Schlüsselmanagement",
-      "supplyChainSecurity": "Lieferkettensicherheit",
-      "supplyChainAssessment": "Lieferantenbewertung",
+      "supplierContracts": "Sicherheit in Lieferantenverträgen",
+      "supplierAssessment": "Lieferantenbewertung",
+      "supplierReassessment": "Regelmäßige Lieferantenprüfung",
       "securityAwareness": "Sicherheitsschulungen",
-      "managementTraining": "Geschäftsleitungsschulung",
+      "managementTraining": "Schulung der Geschäftsleitung",
+      "managementReporting": "Bericht an die Geschäftsleitung",
       "patchManagement": "Patch-Management",
-      "vulnerabilityScanning": "Schwachstellenscans",
-      "securityMonitoring": "Sicherheitsüberwachung",
-      "securityKpis": "Sicherheits-KPIs"
+      "vulnerabilityScanning": "Schwachstellenmanagement",
+      "penetrationTesting": "Sicherheitstests",
+      "internalAudit": "Interne Audits",
+      "auditFollowup": "Maßnahmen aus Prüfungen",
+      "malwareProtection": "Schutz vor Schadsoftware",
+      "systemHardening": "Systemhärtung",
+      "networkSegmentation": "Netzsegmentierung",
+      "physicalAccess": "Physische Zutrittskontrolle",
+      "environmentalProtection": "Schutz vor Umwelteinflüssen",
+      "dataClassification": "Klassifizierung von Informationen",
+      "secureDeletion": "Sicheres Löschen und Entsorgen",
+      "secureDevelopment": "Sichere Entwicklung",
+      "webApplicationSecurity": "Sicherheit von Webanwendungen",
+      "changeManagement": "Änderungsmanagement",
+      "privacyBreachNotification": "Meldung von Datenschutzverletzungen",
+      "processorContracts": "Auftragsverarbeitungsverträge",
+      "dataSubjectRights": "Betroffenenrechte"
     }
   },
   "a11y": {

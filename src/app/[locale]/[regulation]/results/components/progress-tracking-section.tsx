@@ -331,7 +331,6 @@ export function ProgressTrackingSection({ recommendations }: ProgressTrackingSec
                 onClick={() => toggleCategory(categoryId)}
                 className="flex w-full items-center gap-3 p-4 text-left hover:bg-muted/50 transition-colors"
               >
-                <span className="text-lg">{category.icon}</span>
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2">
                     <h3 className="truncate font-semibold">{categoryName}</h3>

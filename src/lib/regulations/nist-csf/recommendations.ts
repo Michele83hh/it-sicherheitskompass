@@ -39,7 +39,6 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'nist-csf.recommendations.gv2.firstStep',
     legalReference: 'NIST CSF 2.0 GV.RM-01, GV.RM-02, GV.RR-01',
     bsiReference: 'ISMS.1, BSI-Standard 200-2',
-    checklistKey: 'nist-csf.recommendations.gv2.checklist',
   },
 
   // ============================================================
@@ -66,7 +65,6 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'nist-csf.recommendations.id2.firstStep',
     legalReference: 'NIST CSF 2.0 ID.RA-01, ID.RA-02, ID.RA-03',
     bsiReference: 'BSI-Standard 200-3',
-    checklistKey: 'nist-csf.recommendations.id2.checklist',
   },
 
   // ============================================================
@@ -119,7 +117,6 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'nist-csf.recommendations.de2.firstStep',
     legalReference: 'NIST CSF 2.0 DE.AE-02, DE.AE-03, DE.AE-06',
     bsiReference: 'DER.1, DER.2.1',
-    checklistKey: 'nist-csf.recommendations.de2.checklist',
   },
 
   // ============================================================
@@ -172,7 +169,6 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'nist-csf.recommendations.rc2.firstStep',
     legalReference: 'NIST CSF 2.0 RC.RP-04, RC.RP-05, RC.CO-03',
     bsiReference: 'DER.4, BSI-Standard 200-4',
-    checklistKey: 'nist-csf.recommendations.rc2.checklist',
   },
 ];
 

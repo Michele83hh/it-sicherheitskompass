@@ -8,7 +8,7 @@
  * Scoring: yes=100%, partial=50%, no=0%
  * Traffic light thresholds match the full assessment engine.
  *
- * Legal basis: §8a, §8b BSI-Gesetz; BSI-KritisV
+ * Legal basis: §§ 30–33, 39 BSI-Gesetz; BSI-KritisV
  */
 
 import type { TrafficLight, CategoryScore, OverallScore } from './types';

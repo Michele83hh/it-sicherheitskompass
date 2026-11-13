@@ -29,7 +29,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.riskAssessment.dsgvo',
     dsgvoReference: 'Art. 24 Abs. 1, Art. 32 Abs. 1, Art. 35 DSGVO',
     overlapPercentage: 65, // DSFA covers personal data only, NIS2 requires enterprise-wide assessment
-    noteKey: 'dsgvoOverlap.mappings.riskAssessment.note',
+    noteKey: 'dsgvoOverlap.mappings.riskAssessment.gap',
   },
   {
     id: 'incident-handling',
@@ -38,7 +38,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.incidentHandling.dsgvo',
     dsgvoReference: 'Art. 32 Abs. 1 lit. c, Art. 33, Art. 34 DSGVO',
     overlapPercentage: 55, // Different timelines (24h/72h/1mo vs 72h), recipients (BSI vs DSB), triggers
-    noteKey: 'dsgvoOverlap.mappings.incidentHandling.note',
+    noteKey: 'dsgvoOverlap.mappings.incidentHandling.gap',
   },
   {
     id: 'business-continuity',
@@ -47,7 +47,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.businessContinuity.dsgvo',
     dsgvoReference: 'Art. 32 Abs. 1 lit. b, c, d DSGVO',
     overlapPercentage: 40, // DSGVO only covers availability of personal data systems, not full BCM/crisis mgmt
-    noteKey: 'dsgvoOverlap.mappings.businessContinuity.note',
+    noteKey: 'dsgvoOverlap.mappings.businessContinuity.gap',
   },
   {
     id: 'supply-chain',
@@ -56,7 +56,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.supplyChain.dsgvo',
     dsgvoReference: 'Art. 28, Art. 28 Abs. 3, Art. 32 DSGVO',
     overlapPercentage: 50, // Art. 28 covers data processors only; NIS2 covers ALL suppliers incl. hardware/SW
-    noteKey: 'dsgvoOverlap.mappings.supplyChain.note',
+    noteKey: 'dsgvoOverlap.mappings.supplyChain.gap',
   },
   {
     id: 'security-measures',
@@ -65,7 +65,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.securityMeasures.dsgvo',
     dsgvoReference: 'Art. 25, Art. 32, Art. 35 DSGVO',
     overlapPercentage: 40, // Privacy by Design ≠ Security by Design; NIS2 requires full SDLC + patch mgmt
-    noteKey: 'dsgvoOverlap.mappings.securityMeasures.note',
+    noteKey: 'dsgvoOverlap.mappings.securityMeasures.gap',
   },
   {
     id: 'effectiveness',
@@ -74,7 +74,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.effectiveness.dsgvo',
     dsgvoReference: 'Art. 24 Abs. 1, Art. 32 Abs. 1 lit. d DSGVO',
     overlapPercentage: 50, // NIS2 demands pen-testing, red-teaming, continuous monitoring beyond DSGVO scope
-    noteKey: 'dsgvoOverlap.mappings.effectiveness.note',
+    noteKey: 'dsgvoOverlap.mappings.effectiveness.gap',
   },
   {
     id: 'training',
@@ -83,7 +83,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.training.dsgvo',
     dsgvoReference: 'Art. 29, Art. 32 Abs. 4, Art. 39 Abs. 1 lit. b DSGVO',
     overlapPercentage: 35, // DSGVO training is DSB-led awareness only; NIS2 requires full cyber hygiene + §38 mgmt training
-    noteKey: 'dsgvoOverlap.mappings.training.note',
+    noteKey: 'dsgvoOverlap.mappings.training.gap',
   },
   {
     id: 'encryption',
@@ -92,7 +92,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.encryption.dsgvo',
     dsgvoReference: 'Art. 32 Abs. 1 lit. a, Art. 34 Abs. 3 lit. a, ErwGr. 83 DSGVO',
     overlapPercentage: 65, // DSGVO names encryption as TOM but NIS2 requires full crypto policy + key mgmt lifecycle
-    noteKey: 'dsgvoOverlap.mappings.encryption.note',
+    noteKey: 'dsgvoOverlap.mappings.encryption.gap',
   },
   {
     id: 'access-control',
@@ -101,7 +101,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.accessControl.dsgvo',
     dsgvoReference: 'Art. 5 Abs. 1 lit. f, Art. 25, Art. 29, Art. 32 Abs. 1 DSGVO',
     overlapPercentage: 55, // Access control overlap strong for personal data; HR security + asset mgmt = 0% DSGVO
-    noteKey: 'dsgvoOverlap.mappings.accessControl.note',
+    noteKey: 'dsgvoOverlap.mappings.accessControl.gap',
   },
   {
     id: 'documentation',
@@ -110,7 +110,7 @@ export const NIS2_DSGVO_OVERLAPS: OverlapMapping[] = [
     dsgvoEquivalent: 'dsgvoOverlap.mappings.documentation.dsgvo',
     dsgvoReference: 'Art. 30 DSGVO',
     overlapPercentage: 50,
-    noteKey: 'dsgvoOverlap.mappings.documentation.note',
+    noteKey: 'dsgvoOverlap.mappings.documentation.gap',
   },
 ];
 
@@ -124,25 +124,3 @@ export function calculateOverallOverlap(): number {
   );
   return Math.round(total / NIS2_DSGVO_OVERLAPS.length);
 }
-
-/**
- * Key differences between NIS2 and DSGVO incident reporting
- */
-export const REPORTING_COMPARISON = {
-  nis2: {
-    titleKey: 'dsgvoOverlap.reporting.nis2.title',
-    authority: 'BSI',
-    deadlines: ['24h (Erstmeldung)', '72h (Folgemeldung)', '1 Monat (Abschluss)'],
-    trigger: 'dsgvoOverlap.reporting.nis2.trigger',
-    scope: 'dsgvoOverlap.reporting.nis2.scope',
-    legalBasis: '§32 BSIG',
-  },
-  dsgvo: {
-    titleKey: 'dsgvoOverlap.reporting.dsgvo.title',
-    authority: 'Datenschutzbehörde',
-    deadlines: ['72h'],
-    trigger: 'dsgvoOverlap.reporting.dsgvo.trigger',
-    scope: 'dsgvoOverlap.reporting.dsgvo.scope',
-    legalBasis: 'Art. 33, 34 DSGVO',
-  },
-};

@@ -46,7 +46,7 @@ const iso22301Config: RegulationConfig = {
     helpKey: q.helpKey,
     legalReference: {
       primary: q.legalReference.isoClause,
-      national: q.legalReference.bcmControl,
+      national: '', // englische Themenbezeichnung nicht in der deutschen Oberfläche anzeigen
     },
     maturityDescriptions: q.maturityDescriptions,
   })),

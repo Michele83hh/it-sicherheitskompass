@@ -2,6 +2,26 @@
 
 Stand: 13.11.2026. Reihenfolge = Vorschlag.
 
+## 0. Zwischenstand 13.11.2026 abends (im Worktree, noch nicht committet)
+
+Erledigt, Tests grün (111), alle 15 Regelwerke im Browser auf Deutsch durchgeklickt:
+
+- Abschnitt 1 komplett, außer den zwei Punkten unten. Neuer Dauertest: `src/lib/regulations/translation-keys.test.ts`.
+- Zusätzlich gefunden und behoben:
+  - NIS2-Ergebnisseite: Abschnitt „ISO 27001:2022 Crosswalk“ hatte keine Texte mehr (Namensraum `iso27001` vom Regelwerk überschrieben). Texte aus der Git-Historie nach `iso27001Mapping` zurückgeholt.
+  - KRITIS: Normbezüge im Code von §8a/§8b auf die geltende Nummerierung (§30, §32, §33, §39 BSIG) umgestellt.
+  - Maßnahmenplan zeigte Icon-Namen als Text („ServerCrash“). Entfernt.
+  - `question-equivalences.ts` war inhaltlich großteils falsch (z. B. stand unter „MFA“ die Rechteprüfung). Neu aufgebaut: 49 Themen, jede Zuordnung am Fragetext geprüft. Test: `question-equivalences.test.ts`.
+  - ISO 22301 und OWASP: Empfehlungen und Normbezüge an die vorhandenen Texte angeglichen.
+
+Noch offen aus Abschnitt 1 und 2:
+
+- [ ] Reifegrad-Texte: Bei CIS, ISO 22301, NIST CSF und OWASP sind alle vier Stufen bei jeder Frage identisch (72 Fragen). Fragespezifische Texte schreiben.
+- [ ] `empoweringIntro` fehlt bei 8 Regelwerken (55 Bereiche). Die Box wird jetzt ausgeblendet statt den Rohschlüssel zu zeigen. Texte schreiben, falls gewünscht.
+- [ ] Neue Äquivalenztabelle selbst gegenlesen (KI-erstellt). Vorbefüllung danach neu messen; die alten Zahlen in Abschnitt 2 sind überholt.
+- [ ] Vertiefungsfragen und Schnellcheck im Browser, kompletter Durchlauf auf Englisch (bisher nur Stichprobe).
+- [ ] Prüfprotokoll nachtragen. Abschnitte 3 bis 5 unverändert offen.
+
 ## 1. Gefundene Fehler beheben (Fragenprüfung, Zwischenstand)
 
 Gefunden beim automatischen Durchklicken der Gap-Analysen (ISO 22301, NIS2, DSGVO, KRITIS) und per Skript über alle Übersetzungsschlüssel in `src/lib/regulations`.

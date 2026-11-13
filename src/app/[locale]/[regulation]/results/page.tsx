@@ -72,6 +72,7 @@ export default function ResultsPage() {
   const config = useRegulationConfig();
   const { assessmentStore } = useRegulationStores(regulation);
   const isNis2 = regulation === 'nis2';
+  const regulationName = config ? tAll(config.shortNameKey) : regulation.toUpperCase();
 
   const [isClient, setIsClient] = useState(false);
   const [activeTab, setActiveTab] = useState<TabValue>('overview');
@@ -506,7 +507,6 @@ export default function ResultsPage() {
                   <AccordionItem key={categoryScore.categoryId} value={categoryScore.categoryId} className={`rounded-lg border border-l-4 ${trafficColors[categoryScore.trafficLight]}`}>
                     <AccordionTrigger className="px-4 hover:no-underline">
                       <div className="flex items-center gap-3">
-                        <span className="text-lg">{category.icon}</span>
                         <div className="text-left">
                           <span className="font-semibold">{categoryName}</span>
                           <span className="ml-2 text-sm text-muted-foreground">
@@ -698,8 +698,8 @@ export default function ResultsPage() {
             <AccordionContent className="px-4 text-muted-foreground">{t('faq.q1.answer')}</AccordionContent>
           </AccordionItem>
           <AccordionItem value="faq-2">
-            <AccordionTrigger className="px-4 text-left">{t('faq.q2.question')}</AccordionTrigger>
-            <AccordionContent className="px-4 text-muted-foreground">{t('faq.q2.answer')}</AccordionContent>
+            <AccordionTrigger className="px-4 text-left">{t('faq.q2.question', { regulation: regulationName })}</AccordionTrigger>
+            <AccordionContent className="px-4 text-muted-foreground">{t('faq.q2.answer', { regulation: regulationName })}</AccordionContent>
           </AccordionItem>
           <AccordionItem value="faq-3">
             <AccordionTrigger className="px-4 text-left">{t('faq.q3.question')}</AccordionTrigger>
@@ -740,8 +740,8 @@ export default function ResultsPage() {
           </div>
           <div className="rounded-lg border bg-white p-4 text-center">
             <ExternalLink className="mx-auto mb-2 size-5 text-primary" />
-            <p className="text-sm font-medium">{t('consultation.bsi.title')}</p>
-            <p className="text-xs text-muted-foreground mt-1">{t('consultation.bsi.desc')}</p>
+            <p className="text-sm font-medium">{isNis2 ? t('consultation.bsi.title') : t('consultation.official.title')}</p>
+            <p className="text-xs text-muted-foreground mt-1">{isNis2 ? t('consultation.bsi.desc') : t('consultation.official.desc', { regulation: regulationName })}</p>
           </div>
         </div>
       </div>

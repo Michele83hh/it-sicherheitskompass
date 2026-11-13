@@ -39,7 +39,6 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'cis-controls.recommendations.ic2.firstStep',
     legalReference: 'CIS Control 1.4, 2.5: Automated Discovery',
     bsiReference: 'OPS.1.1.2, SYS.1.1',
-    checklistKey: 'cis-controls.recommendations.ic2.checklist',
   },
 
   // ============================================================
@@ -66,7 +65,6 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'cis-controls.recommendations.dp2.firstStep',
     legalReference: 'CIS Control 3.6, 3.9, 3.10: Encryption & DLP',
     bsiReference: 'CON.1, NET.1.1',
-    checklistKey: 'cis-controls.recommendations.dp2.checklist',
   },
 
   // ============================================================
@@ -119,7 +117,6 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'cis-controls.recommendations.vm2.firstStep',
     legalReference: 'CIS Control 8.1-8.5, 9.1-9.7, 10.1-10.7: Logging, Email & Malware',
     bsiReference: 'OPS.1.1.5, DER.1',
-    checklistKey: 'cis-controls.recommendations.vm2.checklist',
   },
 
   // ============================================================
@@ -161,7 +158,6 @@ export const RECOMMENDATIONS: Recommendation[] = [
     firstStepKey: 'cis-controls.recommendations.so1.firstStep',
     legalReference: 'CIS Control 14.1-14.9, 17.1-17.9: Awareness & Incident Response',
     bsiReference: 'ORP.3, DER.2.1',
-    checklistKey: 'cis-controls.recommendations.so1.checklist',
   },
   {
     id: 'cis-rec-so-2',
