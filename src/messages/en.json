@@ -5913,13 +5913,13 @@
         "dsgvo": "Effective since May 25, 2018",
         "kritis": "Critical installations: BSIG since Dec 6, 2025 (previously IT Security Act 2.0)",
         "dora": "Effective since Jan 17, 2025",
-        "tisax": "Ongoing — OEM requirement",
+        "tisax": "Ongoing — OEM requirement. Questions based on VDA ISA 6; assessments ordered from Jan 1, 2027 use ISA2027",
         "cra": "Reporting duties since Sep 11, 2026 (ENISA Single Reporting Platform); full application Dec 11, 2027 (EU 2024/2847)",
-        "bsi-grundschutz": "Framework — no legal deadline",
+        "bsi-grundschutz": "Framework — no legal deadline. Questions based on the Compendium (2023 edition); successor Grundschutz++ (BSI Standard 300-1) is gradually replacing it",
         "iso27001": "Framework — no legal deadline",
         "soc2": "Framework — no legal deadline",
         "pci-dss": "PCI DSS v4.0.1 since Dec 31, 2024 (compliance date for new requirements: Mar 31, 2025)",
-        "c5": "Framework — no legal deadline",
+        "c5": "Framework — no legal deadline. Questions based on C5:2020; successor C5:2026 recommended for audit periods ending on or after Jun 1, 2027",
         "cis-controls": "Since June 2024 (v8.1)",
         "iso22301": "Since 2019 (2nd Edition)",
         "nist-csf": "Since 2024 (v2.0)",
@@ -5942,7 +5942,7 @@
         "tisaxRequired": "Your customers require TISAX — certification is effectively mandatory.",
         "tisaxAuto": "As an automotive supplier, TISAX is frequently required by OEMs and Tier-1 suppliers.",
         "tisaxNA": "TISAX is primarily relevant for the automotive industry.",
-        "craProducts": "If you manufacture products with digital elements: CRA reporting duties for actively exploited vulnerabilities have applied since Sep 11, 2026 (reported via the ENISA Single Reporting Platform), all remaining obligations from Dec 11, 2027.",
+        "craProducts": "If you manufacture products with digital elements: CRA reporting duties for actively exploited vulnerabilities have applied since Sep 11, 2026 (reported via the ENISA Single Reporting Platform), all remaining obligations from Dec 11, 2027. In addition, from Dec 9, 2026 the new Product Liability Act makes you strictly liable for software defects and missing security updates.",
         "craIoT": "Connected products fall under the Cyber Resilience Act.",
         "craNA": "The CRA primarily affects manufacturers of digital products.",
         "bsiNis2Kritis": "As a NIS2/KRITIS-affected organization, BSI IT-Grundschutz is the recommended evidence framework.",
@@ -7597,7 +7597,7 @@
     },
     "tisax": {
       "title": "Prepare TISAX Assessment",
-      "subtitle": "Are you ready for information security in the automotive industry?\nCheck your status against VDA ISA.",
+      "subtitle": "Are you ready for information security in the automotive industry?\nCheck your status against VDA ISA 6.\nAssessments ordered from Jan 1, 2027 use the successor catalogue ISA2027.",
       "cta": "Start TISAX Check"
     },
     "cra": {
@@ -7607,7 +7607,7 @@
     },
     "bsi-grundschutz": {
       "title": "IT-Grundschutz Check",
-      "subtitle": "How systematic is your information security?\nCheck your measures against BSI IT-Grundschutz.",
+      "subtitle": "How systematic is your information security?\nCheck your measures against BSI IT-Grundschutz.\nBased on the Compendium (2023 edition); its successor Grundschutz++ is gradually replacing it.",
       "cta": "Start Grundschutz Check"
     },
     "iso27001": {
@@ -7627,7 +7627,7 @@
     },
     "c5": {
       "title": "BSI C5 Compliance Check",
-      "subtitle": "Does your cloud service meet BSI C5:2020 requirements?\nCheck your cloud security measures against the BSI criteria catalogue.",
+      "subtitle": "Does your cloud service meet BSI C5:2020 requirements?\nCheck your cloud security measures against the BSI criteria catalogue.\nThe successor C5:2026 has been published — BSI recommends it for audit periods ending on or after Jun 1, 2027.",
       "cta": "Start C5 Check"
     },
     "cis-controls": {
@@ -10546,7 +10546,7 @@
         "desc": "The world's first comprehensive AI regulation has been in effect since August 2024 with staggered deadlines. The Digital Omnibus (Regulation (EU) 2026/1744, in force since Jul 27, 2026) postponed the high-risk obligations to December 2027.",
         "timeline": {
           "title": "Timeline",
-          "t1": "February 2025: Ban on unacceptable AI practices (social scoring, real-time biometrics)",
+          "t1": "February 2025: Ban on unacceptable AI practices (social scoring, real-time biometrics) and AI literacy duty for staff (Art. 4)",
           "t2": "August 2025: Rules for general-purpose AI models (GPAI) including ChatGPT, Gemini etc.",
           "t3": "Since Aug 2, 2026: Transparency obligations apply — disclosure of AI interaction and AI-generated content",
           "t4": "Dec 2, 2027: Obligations for high-risk AI under Annex III — postponed by the Digital Omnibus (embedded high-risk AI from Aug 2, 2028)",
@@ -10583,8 +10583,43 @@
           "i2": "Document the purpose of each AI system (transparency obligation)",
           "i3": "High-risk AI (e.g. applicant management) requires conformity assessment",
           "i4": "AI-generated content must be labeled",
-          "i5": "Train employees in responsible AI use",
-          "i6": "Fines: up to EUR 35 million or 7% of annual turnover for prohibited practices, up to EUR 15 million or 3% for most other violations — for SMEs the lower amount applies in each case (Art. 99(6) AI Act)"
+          "i5": "Ensure AI literacy (Art. 4): adequately train staff who use AI — since the Digital Omnibus a duty to take appropriate measures, not to guarantee a specific level of competence",
+          "i6": "Fines: up to EUR 35 million or 7% of annual turnover for prohibited practices, up to EUR 15 million or 3% for most other violations — for SMEs the lower amount applies in each case (Art. 99(6) AI Act)",
+          "i7": "Relief: SMEs and, since the Digital Omnibus, small mid-caps benefit from simplified technical documentation, lower fine caps and priority access to AI regulatory sandboxes"
+        }
+      },
+      "roles": {
+        "title": "Deployer or provider? Your role determines your obligations",
+        "desc": "The AI Act mainly distinguishes between companies that use AI systems and those that develop them or market them under their own name. Most SMEs are deployers.",
+        "deployer": {
+          "title": "Deployer",
+          "desc": "You use an AI system under your own authority in a professional context — e.g. ChatGPT, Copilot or an AI recruiting tool.",
+          "items": {
+            "i1": "Ensure AI literacy of your staff (Art. 4)",
+            "i2": "Disclose deepfakes and AI-generated text on matters of public interest as AI-generated (Art. 50(4))",
+            "i3": "For high-risk AI: use according to instructions, human oversight, keep logs for at least six months, inform employees in advance (Art. 26)"
+          }
+        },
+        "provider": {
+          "title": "Provider",
+          "desc": "You develop an AI system or place it on the market under your own name — even if it is built on a third-party model.",
+          "items": {
+            "i1": "Inform users that they are interacting with an AI (Art. 50(1))",
+            "i2": "Mark AI-generated content in a machine-readable format (Art. 50(2))",
+            "i3": "For high-risk AI: risk management, technical documentation, conformity assessment and CE marking"
+          }
+        },
+        "note": "Note: anyone who markets an AI system under their own name, substantially modifies it, or changes its purpose so that it becomes high-risk is considered a provider (Art. 25)."
+      },
+      "productLiability": {
+        "title": "New Product Liability Act from Dec 9, 2026",
+        "desc": "The new German Product Liability Act transposes EU Directive 2024/2853. It imposes strict (no-fault) liability for products placed on the market from Dec 9, 2026 — and for the first time explicitly covers software and AI systems.",
+        "items": {
+          "i1": "Software is a product — whether installed, provided as a cloud service or as SaaS",
+          "i2": "Manufacturers are also liable for defects caused by updates and for missing security updates as long as they retain control over the product",
+          "i3": "Violations of cybersecurity requirements, e.g. under the CRA, can constitute a product defect",
+          "i4": "Destruction or corruption of data not used for professional purposes is also compensable",
+          "i5": "Open-source software supplied outside a commercial activity is exempt; products placed on the market before Dec 9, 2026 remain under the previous law"
         }
       },
       "dsgvo": {

@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/navigation';
-import { Brain, ChevronLeft, Clock, AlertTriangle, Shield, CheckSquare, Lightbulb, Scale } from 'lucide-react';
+import { Brain, ChevronLeft, Clock, AlertTriangle, Shield, CheckSquare, Lightbulb, Scale, Users, Gavel } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { WissenBreadcrumb } from '@/components/layout/breadcrumb';
@@ -92,11 +92,56 @@ export default function KiCheckPage() {
         <section className="mb-10">
           <h2 className="mb-4 text-2xl font-bold">{t('kmuRelevance.title')}</h2>
           <div className="rounded-lg border-2 border-amber-200 bg-amber-50 p-5 space-y-2">
-            {['i1', 'i2', 'i3', 'i4', 'i5', 'i6'].map((id) => (
+            {['i1', 'i2', 'i3', 'i4', 'i5', 'i6', 'i7'].map((id) => (
               <p key={id} className="flex gap-2 text-sm text-amber-900">
                 <AlertTriangle className="mt-0.5 size-4 shrink-0" />
                 {t(`kmuRelevance.items.${id}` as any)}
               </p>
+            ))}
+          </div>
+        </section>
+
+        {/* Roles: deployer vs provider */}
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-bold flex items-center gap-2">
+            <Users className="size-6 text-primary" />
+            {t('roles.title')}
+          </h2>
+          <p className="mb-4 text-sm text-muted-foreground">{t('roles.desc')}</p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {(['deployer', 'provider'] as const).map((role) => (
+              <Card key={role}>
+                <CardContent className="pt-4">
+                  <p className="font-bold mb-1">{t(`roles.${role}.title`)}</p>
+                  <p className="text-sm text-muted-foreground mb-3">{t(`roles.${role}.desc`)}</p>
+                  <ul className="space-y-1.5">
+                    {['i1', 'i2', 'i3'].map((id) => (
+                      <li key={id} className="flex gap-2 text-sm">
+                        <CheckSquare className="mt-0.5 size-4 shrink-0 text-primary" />
+                        {t(`roles.${role}.items.${id}` as any)}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <p className="mt-4 text-sm text-muted-foreground">{t('roles.note')}</p>
+        </section>
+
+        {/* Product liability */}
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-bold flex items-center gap-2">
+            <Gavel className="size-6 text-primary" />
+            {t('productLiability.title')}
+          </h2>
+          <p className="mb-4 text-sm text-muted-foreground">{t('productLiability.desc')}</p>
+          <div className="space-y-2">
+            {['i1', 'i2', 'i3', 'i4', 'i5'].map((id) => (
+              <div key={id} className="flex gap-3 rounded-md border px-4 py-3 text-sm">
+                <Gavel className="mt-0.5 size-4 shrink-0 text-primary" />
+                <span>{t(`productLiability.items.${id}` as any)}</span>
+              </div>
             ))}
           </div>
         </section>

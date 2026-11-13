@@ -5913,13 +5913,13 @@
         "dsgvo": "In Kraft seit 25.05.2018",
         "kritis": "Kritische Anlagen: BSIG seit 06.12.2025 (zuvor IT-SiG 2.0)",
         "dora": "In Kraft seit 17.01.2025",
-        "tisax": "Fortlaufend — OEM-Anforderung",
+        "tisax": "Fortlaufend — OEM-Anforderung. Fragen nach VDA ISA 6; für ab 01.01.2027 beauftragte Assessments gilt ISA2027",
         "cra": "Meldepflichten seit 11.09.2026 (ENISA Single Reporting Platform), volle Anwendung ab 11.12.2027 (EU 2024/2847)",
-        "bsi-grundschutz": "Rahmenwerk — keine gesetzliche Frist",
+        "bsi-grundschutz": "Rahmenwerk — keine gesetzliche Frist. Fragen nach dem Kompendium (Edition 2023); Nachfolger Grundschutz++ (BSI-Standard 300-1) löst es schrittweise ab",
         "iso27001": "Rahmenwerk — keine gesetzliche Frist",
         "soc2": "Rahmenwerk — keine gesetzliche Frist",
         "pci-dss": "PCI DSS v4.0.1 seit 31.12.2024 (Umsetzungsfrist neuer Anforderungen: 31.03.2025)",
-        "c5": "Rahmenwerk — keine gesetzliche Frist",
+        "c5": "Rahmenwerk — keine gesetzliche Frist. Fragen nach C5:2020; Nachfolger C5:2026 empfohlen für Prüfzeiträume mit Ende ab 01.06.2027",
         "cis-controls": "Seit Juni 2024 (v8.1)",
         "iso22301": "Seit 2019 (2nd Edition)",
         "nist-csf": "Seit 2024 (v2.0)",
@@ -5942,7 +5942,7 @@
         "tisaxRequired": "Ihre Kunden fordern TISAX — eine Zertifizierung ist faktisch Pflicht.",
         "tisaxAuto": "Als Automobilzulieferer wird TISAX häufig von OEMs und Tier-1 gefordert.",
         "tisaxNA": "TISAX ist primär für die Automobilbranche relevant.",
-        "craProducts": "Wenn Sie Produkte mit digitalen Elementen herstellen: Die CRA-Meldepflicht für aktiv ausgenutzte Schwachstellen gilt seit 11.09.2026 (Meldung über die ENISA Single Reporting Platform), die übrigen Pflichten ab 11.12.2027.",
+        "craProducts": "Wenn Sie Produkte mit digitalen Elementen herstellen: Die CRA-Meldepflicht für aktiv ausgenutzte Schwachstellen gilt seit 11.09.2026 (Meldung über die ENISA Single Reporting Platform), die übrigen Pflichten ab 11.12.2027. Zusätzlich haften Sie ab 09.12.2026 nach dem neuen Produkthaftungsgesetz verschuldensunabhängig auch für Software-Fehler und fehlende Sicherheitsupdates.",
         "craIoT": "Vernetzte Produkte fallen unter den Cyber Resilience Act.",
         "craNA": "Der CRA betrifft primär Hersteller digitaler Produkte.",
         "bsiNis2Kritis": "Als NIS2/KRITIS-Betroffener ist BSI IT-Grundschutz der empfohlene Nachweis-Rahmen.",
@@ -7597,7 +7597,7 @@
     },
     "tisax": {
       "title": "TISAX-Assessment vorbereiten",
-      "subtitle": "Sind Sie bereit für die Informationssicherheit in der Automobilbranche?\nPrüfen Sie Ihren Stand gegen VDA ISA.",
+      "subtitle": "Sind Sie bereit für die Informationssicherheit in der Automobilbranche?\nPrüfen Sie Ihren Stand gegen VDA ISA 6.\nFür ab 01.01.2027 beauftragte Assessments gilt der Nachfolgekatalog ISA2027.",
       "cta": "TISAX-Check starten"
     },
     "cra": {
@@ -7607,7 +7607,7 @@
     },
     "bsi-grundschutz": {
       "title": "IT-Grundschutz-Check",
-      "subtitle": "Wie systematisch ist Ihre Informationssicherheit?\nPrüfen Sie Ihre Maßnahmen gegen den BSI IT-Grundschutz.",
+      "subtitle": "Wie systematisch ist Ihre Informationssicherheit?\nPrüfen Sie Ihre Maßnahmen gegen den BSI IT-Grundschutz.\nGrundlage ist das Kompendium (Edition 2023); der Nachfolger Grundschutz++ löst es schrittweise ab.",
       "cta": "Grundschutz-Check starten"
     },
     "iso27001": {
@@ -7627,7 +7627,7 @@
     },
     "c5": {
       "title": "BSI C5-Compliance prüfen",
-      "subtitle": "Erfüllt Ihr Cloud-Dienst die Anforderungen des BSI C5:2020?\nPrüfen Sie Ihre Cloud-Sicherheitsmaßnahmen gegen den BSI-Kriterienkatalog.",
+      "subtitle": "Erfüllt Ihr Cloud-Dienst die Anforderungen des BSI C5:2020?\nPrüfen Sie Ihre Cloud-Sicherheitsmaßnahmen gegen den BSI-Kriterienkatalog.\nDer Nachfolger C5:2026 ist veröffentlicht — das BSI empfiehlt ihn für Prüfzeiträume mit Ende ab 01.06.2027.",
       "cta": "C5-Check starten"
     },
     "cis-controls": {
@@ -10546,7 +10546,7 @@
         "desc": "Die weltweit erste umfassende KI-Regulierung gilt seit August 2024 mit gestaffelten Fristen. Der Digital Omnibus (VO (EU) 2026/1744, in Kraft seit 27.07.2026) hat die Pflichten für Hochrisiko-KI auf Dezember 2027 verschoben.",
         "timeline": {
           "title": "Zeitplan",
-          "t1": "Februar 2025: Verbot inakzeptabler KI-Praktiken (Social Scoring, Echtzeit-Biometrie)",
+          "t1": "Februar 2025: Verbot inakzeptabler KI-Praktiken (Social Scoring, Echtzeit-Biometrie) und Pflicht zur KI-Kompetenz der Beschäftigten (Art. 4)",
           "t2": "August 2025: Regeln für allgemeine KI-Modelle (GPAI) inkl. ChatGPT, Gemini etc.",
           "t3": "Seit 02.08.2026: Transparenzpflichten gelten — Kennzeichnung von KI-Interaktion und KI-generierten Inhalten",
           "t4": "02.12.2027: Pflichten für Hochrisiko-KI nach Anhang III — durch den Digital Omnibus verschoben (eingebettete Hochrisiko-KI ab 02.08.2028)",
@@ -10583,8 +10583,43 @@
           "i2": "Dokumentieren Sie den Einsatzzweck jedes KI-Systems (Transparenzpflicht)",
           "i3": "Hochrisiko-KI (z.B. Bewerbermanagement) braucht Konformitätsbewertung",
           "i4": "KI-generierte Inhalte müssen gekennzeichnet werden",
-          "i5": "Schulen Sie Mitarbeiter im verantwortungsvollen KI-Umgang",
-          "i6": "Bußgelder: bis 35 Mio. EUR oder 7 % des Jahresumsatzes bei verbotenen Praktiken, bis 15 Mio. EUR oder 3 % bei den meisten anderen Verstößen — für KMU gilt jeweils der niedrigere Betrag (Art. 99 Abs. 6 AI Act)"
+          "i5": "KI-Kompetenz sicherstellen (Art. 4): Beschäftigte, die KI nutzen, angemessen schulen — seit dem Digital Omnibus eine Pflicht zu angemessenen Maßnahmen, kein garantiertes Kompetenzniveau",
+          "i6": "Bußgelder: bis 35 Mio. EUR oder 7 % des Jahresumsatzes bei verbotenen Praktiken, bis 15 Mio. EUR oder 3 % bei den meisten anderen Verstößen — für KMU gilt jeweils der niedrigere Betrag (Art. 99 Abs. 6 AI Act)",
+          "i7": "Erleichterungen: KMU und seit dem Digital Omnibus auch kleine Mid-Caps erhalten eine vereinfachte technische Dokumentation, niedrigere Bußgeldobergrenzen und bevorzugten Zugang zu KI-Reallaboren"
+        }
+      },
+      "roles": {
+        "title": "Betreiber oder Anbieter? Ihre Rolle bestimmt die Pflichten",
+        "desc": "Der AI Act unterscheidet vor allem zwischen Unternehmen, die KI-Systeme nutzen, und solchen, die sie entwickeln oder unter eigenem Namen vertreiben. Die meisten KMU sind Betreiber.",
+        "deployer": {
+          "title": "Betreiber (Deployer)",
+          "desc": "Sie setzen ein KI-System in eigener Verantwortung beruflich ein — etwa ChatGPT, Copilot oder ein KI-Tool im Recruiting.",
+          "items": {
+            "i1": "KI-Kompetenz der Beschäftigten sicherstellen (Art. 4)",
+            "i2": "Deepfakes und KI-Texte zu Angelegenheiten von öffentlichem Interesse als KI-generiert offenlegen (Art. 50 Abs. 4)",
+            "i3": "Bei Hochrisiko-KI: Einsatz nach Betriebsanleitung, menschliche Aufsicht, Protokolle mindestens sechs Monate aufbewahren, Beschäftigte vorab informieren (Art. 26)"
+          }
+        },
+        "provider": {
+          "title": "Anbieter (Provider)",
+          "desc": "Sie entwickeln ein KI-System oder bringen es unter eigenem Namen in Verkehr — auch wenn es auf einem fremden Modell aufbaut.",
+          "items": {
+            "i1": "Nutzer darauf hinweisen, dass sie mit einer KI interagieren (Art. 50 Abs. 1)",
+            "i2": "KI-generierte Inhalte maschinenlesbar kennzeichnen (Art. 50 Abs. 2)",
+            "i3": "Bei Hochrisiko-KI: Risikomanagement, technische Dokumentation, Konformitätsbewertung und CE-Kennzeichnung"
+          }
+        },
+        "note": "Achtung: Wer ein KI-System unter eigenem Namen anbietet, es wesentlich verändert oder seinen Zweck so ändert, dass es zur Hochrisiko-KI wird, gilt selbst als Anbieter (Art. 25)."
+      },
+      "productLiability": {
+        "title": "Neues Produkthaftungsgesetz ab 09.12.2026",
+        "desc": "Das neue Produkthaftungsgesetz setzt die EU-Richtlinie 2024/2853 um. Es gilt verschuldensunabhängig für Produkte, die ab dem 09.12.2026 in Verkehr gebracht werden — und erfasst erstmals ausdrücklich Software und KI-Systeme.",
+        "items": {
+          "i1": "Software ist ein Produkt — unabhängig davon, ob sie installiert, als Cloud-Dienst oder als SaaS bereitgestellt wird",
+          "i2": "Hersteller haften auch für Fehler durch Updates und für fehlende Sicherheitsupdates, solange sie die Kontrolle über das Produkt behalten",
+          "i3": "Verstöße gegen Cybersicherheitsanforderungen, etwa aus dem CRA, können einen Produktfehler begründen",
+          "i4": "Ersatzfähig ist auch die Zerstörung oder Verfälschung von Daten, die nicht beruflich genutzt werden",
+          "i5": "Ausgenommen ist Open-Source-Software außerhalb einer Geschäftstätigkeit; für Produkte, die vor dem 09.12.2026 in Verkehr gebracht wurden, gilt das bisherige Recht"
         }
       },
       "dsgvo": {
