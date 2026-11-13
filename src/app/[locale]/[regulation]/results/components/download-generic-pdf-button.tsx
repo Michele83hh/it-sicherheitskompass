@@ -427,13 +427,13 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
       let crossRegOverlaps: PDFCrossRegOverlap[] | undefined = undefined;
       if (sections.crossRegOverlap) {
         try {
-          const { getOverlapsForRegulation } = await import('@/lib/regulations/overlaps');
+          const { getOverlapsForRegulation, byLevel, sourceLabel } = await import('@/lib/regulations/overlaps');
           const { getRegulation } = await import('@/lib/regulations/registry');
           await import('@/lib/regulations/init');
           const overlaps = getOverlapsForRegulation(regulation as any);
           if (overlaps.length > 0) {
             crossRegOverlaps = overlaps
-              .sort((a, b) => b.overlapPercent - a.overlapPercent)
+              .sort(byLevel)
               .map((overlap) => {
                 const otherRegId = overlap.regA === regulation ? overlap.regB : overlap.regA;
                 const otherConfig = getRegulation(otherRegId);
@@ -454,7 +454,8 @@ export default function DownloadGenericPdfButton({ overallScore }: DownloadGener
 
                 return {
                   targetRegulation: tAll(otherConfig.nameKey),
-                  overlapPercent: overlap.overlapPercent,
+                  level: overlap.level,
+                  source: sourceLabel(overlap, locale),
                   sharedTopics,
                   hasAssessment,
                 } as PDFCrossRegOverlap;

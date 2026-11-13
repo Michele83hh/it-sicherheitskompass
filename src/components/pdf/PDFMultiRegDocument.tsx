@@ -1,6 +1,7 @@
 import { Document, Page, Text, View, Svg, Rect } from '@react-pdf/renderer';
 import { styles, COLORS, TRAFFIC_LIGHT_COLORS } from '@/lib/pdf/styles';
 import type { MultiRegPDFPayload, MultiRegEntry, MultiRegSynergy } from '@/lib/pdf/multi-reg-types';
+import { levelLabel } from '@/lib/regulations/overlaps';
 
 interface PDFMultiRegDocumentProps {
   payload: MultiRegPDFPayload;
@@ -238,7 +239,7 @@ const SynergiesMatrix = ({ synergies, locale }: { synergies: MultiRegSynergy[]; 
             {syn.regBName}
           </Text>
           <Text style={{ fontSize: 9, fontWeight: 700, color: COLORS.primary, width: '10%', textAlign: 'right' }}>
-            {syn.overlapPercent}%
+            {levelLabel(syn.level, de ? 'de' : 'en')}
           </Text>
           <View style={{ flex: 1, flexDirection: 'row', flexWrap: 'wrap', gap: 2 }}>
             {syn.sharedTopics.slice(0, 3).map((t, i) => (

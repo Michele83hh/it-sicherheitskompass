@@ -1,3 +1,4 @@
+import type { OverlapLevel } from '@/lib/regulations/overlaps';
 import type { TrafficLight, EffortLevel } from '@/lib/regulations/types';
 
 export interface PDFCompanyProfile {
@@ -184,7 +185,8 @@ export interface PDFExecutiveSummary {
 
 export interface PDFCrossRegOverlap {
   targetRegulation: string;
-  overlapPercent: number;
+  level: OverlapLevel;
+  source: string;
   sharedTopics: string[];
   hasAssessment: boolean;
   otherScore?: number;

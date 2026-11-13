@@ -1,3 +1,4 @@
+import type { OverlapLevel } from '@/lib/regulations/overlaps';
 import type { TrafficLight, EffortLevel } from '@/lib/regulations/types';
 
 export interface MultiRegEntry {
@@ -16,7 +17,8 @@ export interface MultiRegEntry {
 export interface MultiRegSynergy {
   regAName: string;
   regBName: string;
-  overlapPercent: number;
+  level: OverlapLevel;
+  source: string;
   sharedTopics: string[];
 }
 

@@ -16,7 +16,7 @@ import {
 } from '@/components/ui/dialog';
 import { Download, Loader2, FileText } from 'lucide-react';
 import { getAllRegulations, getRegulation } from '@/lib/regulations/registry';
-import { getOverlapsForRegulation, findSynergies } from '@/lib/regulations/overlaps';
+import { getOverlapsForRegulation, findSynergies, sourceLabel } from '@/lib/regulations/overlaps';
 import { calculateOverallScore } from '@/lib/scoring/engine';
 import { computeGenericCosts, getSizeFactor } from '@/lib/cost/generic-cost-engine';
 import type { DashboardData } from '@/lib/dashboard/aggregation';
@@ -197,7 +197,8 @@ export function DownloadCombinedPdf({ data }: DownloadCombinedPdfProps) {
         synergies.push({
           regAName: tAll(regAConfig.nameKey),
           regBName: tAll(regBConfig.nameKey),
-          overlapPercent: syn.overlapPercent,
+          level: syn.level,
+          source: sourceLabel(syn, locale),
           sharedTopics: syn.sharedMeasureKeys.map(key => {
             try { return tAll(key); } catch { return key.split('.').pop() || key; }
           }),
