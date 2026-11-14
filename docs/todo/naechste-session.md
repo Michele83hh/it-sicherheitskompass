@@ -13,7 +13,6 @@ Stand: 14.11.2026. Reihenfolge = Vorschlag. Was am 13./14.11. erledigt wurde, st
 
 ## 2. Fragen: offene Inhalte
 
-- [ ] Englischer Schnellcheck: bisher nur ISO 22301 und OWASP ASVS im Browser geprüft.
 - [ ] Inhaltlich je Regelwerk prüfen: Braucht es die Frage? Doppelungen? KMU-verständlich? Verhältnis Kern zu Vertiefung?
 - [ ] Idee: gemeinsamer Fragenkern, also einmal antworten und auf alle gewählten Regelwerke abbilden. Die 49 Themen sind die Vorarbeit. Vorschläge gibt es bisher nur in der Gap-Analyse, nicht im Schnellcheck.
 

@@ -8,14 +8,14 @@
 
 | Bereich | Deutsch | Englisch |
 |---|---|---|
-| Gap-Analyse, Kernfragen | alle 15 Regelwerke | ISO 22301 (letzte Seite) |
-| Ergebnisseite, alle Reiter und Abschnitte | alle 15 Regelwerke | ISO 22301, OWASP ASVS, NIS2 |
-| Schnellcheck | alle 15 Regelwerke | ISO 22301, OWASP ASVS |
+| Gap-Analyse | alle 15 Regelwerke | alle 15 Regelwerke |
+| Ergebnisseite, alle Reiter und Abschnitte | alle 15 Regelwerke | alle 15 Regelwerke |
+| Schnellcheck | alle 15 Regelwerke | alle 15 Regelwerke |
 | Dashboard mit Synergie-Graph | geprüft | geprüft |
 
 Ergebnis nach den Korrekturen: keine Rohschlüssel, keine NIS2-Texte auf fremden Ergebnisseiten, keine Fehler in der Browser-Konsole.
 
-Nachtrag 14.11.: Gap-Analyse und Ergebnisseite auch auf Englisch für alle 15 Regelwerke durchlaufen, ohne Rohschlüssel. Die Vertiefungsfragen sind damit ebenfalls geprüft: Nur NIS2 trennt Kern und Vertiefung (30 + 20 Fragen), die anderen Regelwerke zeigen alle Fragen in einem Durchlauf. Dabei gefunden und behoben: Der Knopf „Ergebnisse verfeinern“ nach der NIS2-Kernanalyse tat nichts, weil der Meilenstein-Bildschirm stehen blieb. Offen: englischer Schnellcheck für 13 Regelwerke.
+Nachtrag 14.11.: Gap-Analyse und Ergebnisseite auch auf Englisch für alle 15 Regelwerke durchlaufen, ohne Rohschlüssel. Die Vertiefungsfragen sind damit ebenfalls geprüft: Nur NIS2 trennt Kern und Vertiefung (30 + 20 Fragen), die anderen Regelwerke zeigen alle Fragen in einem Durchlauf. Dabei gefunden und behoben: Der Knopf „Ergebnisse verfeinern“ nach der NIS2-Kernanalyse tat nichts, weil der Meilenstein-Bildschirm stehen blieb. Der englische Schnellcheck samt Ergebnisseite ist ebenfalls für alle 15 Regelwerke durchlaufen: keine Rohschlüssel, keine deutschen Textreste, keine Konsolenfehler.
 
 ## 2. Befunde und Korrekturen
 
