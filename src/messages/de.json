@@ -550,9 +550,9 @@
       }
     },
     "bcQ2": {
-      "title": "Können Sie nach einem schweren IT-Ausfall innerhalb von 24-48 Stunden Ihren Betrieb wieder aufnehmen?",
+      "title": "Können Sie nach einem schweren IT-Ausfall Ihren Betrieb innerhalb der von Ihnen festgelegten Zeit wieder aufnehmen?",
       "tooltip": "Wiederherstellungsfähigkeit ist ein Kernziel von NIS2. BSI-Standard 200-4 beschreibt Business Continuity Management (BCM).",
-      "help": "Stellen Sie sich vor, Ihre gesamte IT fällt aus — kein E-Mail, kein ERP, keine Buchhaltung. Wie lange können Sie so arbeiten? NIS2 schreibt keine feste Wiederanlaufzeit vor – 24 bis 48 Stunden sind ein gängiger Orientierungswert für KMU; maßgeblich sind Ihre eigenen RTO aus der Business-Impact-Analyse. Dafür brauchen Sie einen Plan, wer was in welcher Reihenfolge wieder ans Laufen bringt.",
+      "help": "Stellen Sie sich vor, Ihre gesamte IT fällt aus — kein E-Mail, kein ERP, keine Buchhaltung. Wie lange können Sie so arbeiten? NIS2 schreibt keine feste Wiederanlaufzeit vor. Maßgeblich ist die Zeit, die Sie selbst festgelegt haben (RTO aus der Business-Impact-Analyse). Haben Sie noch keine festgelegt, ist das der erste Schritt. Dafür brauchen Sie einen Plan, wer was in welcher Reihenfolge wieder ans Laufen bringt.",
       "maturity": {
         "level0": "Keine Wiederherstellungsplanung vorhanden",
         "level1": "Grobe Vorstellung, aber kein dokumentierter Plan",
@@ -1166,7 +1166,8 @@
       "tooltip": "Erläuterung",
       "helpToggle": "Was bedeutet das?",
       "notApplicable": "Trifft auf uns nicht zu (wird nicht gewertet)",
-      "notApplicableCategories": "Nicht gewertet, weil als „trifft nicht zu“ beantwortet:"
+      "notApplicableCategories": "Nicht gewertet, weil als „trifft nicht zu“ beantwortet:",
+      "beyondMinimum": "Im Regelwerk nicht ausdrücklich verlangt – gute Praxis."
     },
     "maturityOptions": {
       "level0": "Stufe 0: {description}",

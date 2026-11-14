@@ -86,6 +86,8 @@ export interface BaseQuestion {
   tier: 'core' | 'advanced';
   /** Frage gilt nur für einen Teil der Unternehmen: Antwort „trifft nicht zu“ anbieten. */
   notApplicableAllowed?: boolean;
+  /** Im Regelwerk nicht ausdrücklich verlangt (gute Praxis): Hinweis an der Frage. */
+  beyondMinimum?: boolean;
   titleKey: string;
   tooltipKey: string;
   helpKey: string;

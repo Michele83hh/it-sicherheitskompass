@@ -15,11 +15,13 @@ Alles steht zum Abhaken in `docs/pruefprotokoll/2026-11-14-gegenlese-unterlage.m
 
 ## 2. Fragen: Vorschläge entscheiden
 
-Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`. Umgesetzt sind Tippfehler und die Antwort „trifft nicht zu“. Zu entscheiden, in dieser Reihenfolge:
+Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`. Umgesetzt sind Tippfehler, die Antwort „trifft nicht zu“ und die NIS2-Fragen aus Abschnitt 3.4. Zu entscheiden, in dieser Reihenfolge:
 
 - [x] Antwort „trifft nicht zu“ eingeführt (Abschnitt 3.2), bei 21 Fragen.
 - [ ] Selbst prüfen: Ist die Auswahl der 21 Fragen richtig? Sie ist KI-erstellt. Liste in Abschnitt 3.2 der Vorschläge.
-- [ ] NIS2-Fragen, die über die Richtlinie hinausgehen (Abschnitt 3.4), vor allem die Frist „24-48 Stunden“.
+- [x] NIS2-Fragen, die über die Richtlinie hinausgehen (Abschnitt 3.4): Frist aus `bc-q2` entfernt, drei Fragen gekennzeichnet.
+- [ ] Entscheiden: Sollen die drei gekennzeichneten NIS2-Fragen weiter in den Wert eingehen? Derzeit ja.
+- [ ] Gleiche Stellen außerhalb von NIS2: DSGVO `tom-q3` (Stufe 2 nennt „24-48 Stunden“), CIS `cis-rn-q1` (3-2-1-Regel).
 - [ ] Doppelungen je Regelwerk streichen oder zusammenlegen (Abschnitt 4).
 - [ ] „Wie“-Fragen bei SOC 2 und ISO 27001 umformulieren (Abschnitt 3.3).
 - [ ] Kern und Vertiefung: bei DSGVO einschalten? (Abschnitt 3.1)

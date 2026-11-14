@@ -23,6 +23,11 @@ describe('Übersetzungsschlüssel der Regelwerke', () => {
     expect(flagged).toHaveLength(21);
   });
 
+  it('der Hinweis „nicht ausdrücklich verlangt“ kommt bei 3 NIS2-Fragen an', () => {
+    const flagged = getAllRegulations().flatMap((r) => r.questions.filter((q) => q.beyondMinimum));
+    expect(flagged.map((q) => q.id)).toEqual(['ea-q5', 'cr-q5', 'mc-q4']);
+  });
+
   it.each(getAllRegulations().map((r) => [r.id, r] as const))(
     '%s: Bereiche, Fragen, Empfehlungen und Schnellcheck sind in DE und EN übersetzt',
     (_id, r) => {

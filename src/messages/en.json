@@ -550,9 +550,9 @@
       }
     },
     "bcQ2": {
-      "title": "Can you resume operations within 24-48 hours after a severe IT outage?",
+      "title": "Can you resume operations within the time you have defined after a severe IT outage?",
       "tooltip": "Recovery capability is a core NIS2 objective. BSI Standard 200-4 describes Business Continuity Management (BCM).",
-      "help": "Imagine your entire IT fails — no email, no ERP, no accounting. How long can you work like that? NIS2 does not prescribe a fixed recovery time – 24 to 48 hours is a common benchmark for SMEs; what counts are your own RTOs from the business impact analysis. For this, you need a plan of who restores what in which order.",
+      "help": "Imagine your entire IT fails — no email, no ERP, no accounting. How long can you work like that? NIS2 does not prescribe a fixed recovery time. What counts is the time you have defined yourself (RTO from the business impact analysis). If you have not defined one yet, that is the first step. For this, you need a plan of who restores what in which order.",
       "maturity": {
         "level0": "No recovery planning in place",
         "level1": "General idea but no documented plan",
@@ -1166,7 +1166,8 @@
       "tooltip": "Explanation",
       "helpToggle": "What does this mean?",
       "notApplicable": "Does not apply to us (not scored)",
-      "notApplicableCategories": "Not scored because answered as “not applicable”:"
+      "notApplicableCategories": "Not scored because answered as “not applicable”:",
+      "beyondMinimum": "Not explicitly required by the regulation – good practice."
     },
     "maturityOptions": {
       "level0": "Level 0: {description}",

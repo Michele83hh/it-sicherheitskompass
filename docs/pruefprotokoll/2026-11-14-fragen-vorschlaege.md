@@ -86,7 +86,15 @@ Bei NIS2 stehen vier Fragen unter einem Artikel der Richtlinie, verlangen aber e
 
 Vorschlag: `bc-q2` ohne Zahl formulieren („innerhalb der von Ihnen festgelegten Zeit“). Die drei anderen in der Vertiefung belassen, aber sichtbar als „über die Mindestanforderung hinaus“ kennzeichnen.
 
-Weitere Stellen dieser Art: CIS `cis-rn-q1` nennt die 3-2-1-Regel, die Control 11 nicht vorschreibt.
+**Umgesetzt am 14.11.:**
+
+- `bc-q2` fragt jetzt nach der „von Ihnen festgelegten Zeit“. Der Hilfetext nennt keinen Orientierungswert mehr und verweist auf die selbst festgelegte Wiederanlaufzeit.
+- `ea-q5`, `cr-q5` und `mc-q4` tragen an der Frage den Hinweis „Im Regelwerk nicht ausdrücklich verlangt – gute Praxis.“ (`beyondMinimum: true` in `questions.ts`).
+- Die drei Fragen gehen weiter in den Wert ein. Ob das so bleiben soll, ist offen.
+
+Maßstab war der Wortlaut von Art. 21 Abs. 2 lit. c, f, h und j NIS2-RL, aus dem Gedächtnis des Modells, nicht am Amtsblatt nachgeschlagen. Zu `mc-q4`: lit. j nennt „kontinuierliche Authentifizierung“; das ist verwandt, aber nicht dasselbe wie standort- oder geräteabhängige Zugriffsregeln. Selbst gegenlesen.
+
+Weitere Stellen dieser Art, nicht geändert: CIS `cis-rn-q1` nennt die 3-2-1-Regel, die Control 11 nicht vorschreibt. DSGVO `tom-q3` nennt in Stufe 2 „24-48 Stunden“.
 
 ### 3.5 Abkürzungen im Fragetitel
 

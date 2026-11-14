@@ -564,6 +564,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'ea-q5',
+    beyondMinimum: true,
     categoryId: 'effectiveness-assessment',
     tier: 'advanced',
     titleKey: 'questions.eaQ5.title',
@@ -754,6 +755,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'cr-q5',
+    beyondMinimum: true,
     categoryId: 'cryptography',
     tier: 'advanced',
     titleKey: 'questions.crQ5.title',
@@ -926,6 +928,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'mc-q4',
+    beyondMinimum: true,
     categoryId: 'authentication-communication',
     tier: 'advanced',
     titleKey: 'questions.mcQ4.title',

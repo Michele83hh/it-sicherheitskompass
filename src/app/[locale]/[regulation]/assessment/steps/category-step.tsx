@@ -283,6 +283,10 @@ export function CategoryStep({
               </p>
             )}
 
+            {question.beyondMinimum && (
+              <p className="mb-3 text-xs text-muted-foreground">{tGap('question.beyondMinimum')}</p>
+            )}
+
             {/* Maturity selection label */}
             <p className="mb-3 text-sm font-medium text-muted-foreground">
               {tGap('question.selectMaturity')}
