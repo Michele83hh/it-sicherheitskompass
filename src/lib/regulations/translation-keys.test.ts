@@ -23,6 +23,14 @@ describe('Übersetzungsschlüssel der Regelwerke', () => {
     expect(flagged).toHaveLength(21);
   });
 
+  // Die Antwort ist eine von vier Stufen; dazu passt nur eine Ja-Grad-Frage.
+  it('kein deutscher Fragetitel ist eine offene Frage (Wie, Welche, Was)', () => {
+    const open = getAllRegulations()
+      .flatMap((r) => r.questions.map((q) => get(de, q.titleKey) as string))
+      .filter((t) => /^(Wie|Welche[rs]?|Was|Wer|Wann|Wo) /.test(t));
+    expect(open).toEqual([]);
+  });
+
   it('der Hinweis „nicht ausdrücklich verlangt“ kommt bei 3 NIS2-Fragen an', () => {
     const flagged = getAllRegulations().flatMap((r) => r.questions.filter((q) => q.beyondMinimum));
     expect(flagged.map((q) => q.id)).toEqual(['ea-q5', 'cr-q5', 'mc-q4']);

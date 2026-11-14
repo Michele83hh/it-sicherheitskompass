@@ -6852,7 +6852,7 @@
         }
       },
       "opQ3": {
-        "title": "How do you manage information security with suppliers and service providers?",
+        "title": "Do you set information security requirements for your suppliers and service providers and check compliance with them?",
         "tooltip": "Controls A.5.19-A.5.22 require supplier management with IS requirements in contracts and regular monitoring.",
         "help": "For all suppliers with access to information or IT systems, IS requirements must be contractually regulated and compliance monitored.",
         "maturity": {
@@ -6885,7 +6885,7 @@
         }
       },
       "acQ2": {
-        "title": "How is authentication for access to systems and applications managed?",
+        "title": "Is authentication for access to systems and applications controlled (e.g. password policy, MFA)?",
         "tooltip": "Controls A.5.17 and A.8.5 require secure authentication procedures appropriate to the sensitivity of information.",
         "help": "This includes password policies, multi-factor authentication (MFA), privileged access, and protection of authentication information.",
         "maturity": {
@@ -6896,7 +6896,7 @@
         }
       },
       "acQ3": {
-        "title": "How are privileged access rights (admin rights) managed?",
+        "title": "Are privileged access rights (admin rights) granted restrictively, logged and reviewed?",
         "tooltip": "Controls A.8.2, A.8.3, and A.8.4 require restricted access to source code, privileged rights, and information.",
         "help": "Privileged accounts pose a high risk and must be specially protected, monitored, and granted only when needed.",
         "maturity": {
@@ -6929,7 +6929,7 @@
         }
       },
       "cnQ2": {
-        "title": "How is your network security and segmentation set up?",
+        "title": "Is your network separated into zones and protected by documented rules?",
         "tooltip": "Controls A.8.20, A.8.21, and A.8.22 require network security, network services security, and network segmentation.",
         "help": "Networks must be segmented, monitored, and secured. Critical systems should operate in separate network zones.",
         "maturity": {
@@ -6973,7 +6973,7 @@
         }
       },
       "psQ2": {
-        "title": "How do you protect IT equipment and storage media against theft, loss and unauthorised access?",
+        "title": "Are IT equipment and storage media protected against theft, loss and unauthorised access?",
         "tooltip": "Controls A.7.8, A.7.9, and A.7.10 require the protection of equipment and storage media inside and outside the organization.",
         "help": "Laptops, mobile devices and storage media must be protected against theft and loss and disposed of securely at the end of their use.",
         "maturity": {
@@ -8239,7 +8239,7 @@
     },
     "questions": {
       "secQ1": {
-        "title": "How are sign-in and the granting of access rights to your systems and data controlled?",
+        "title": "Are sign-in and the granting of access rights to your systems and data controlled?",
         "tooltip": "Relates to CC6.1: Logical access controls to restrict access to authorized users.",
         "help": "Assess whether your organization has implemented authentication and authorization mechanisms that restrict access to systems, applications, and data to authorized individuals.",
         "maturity": {
@@ -8250,7 +8250,7 @@
         }
       },
       "secQ2": {
-        "title": "How do you manage user accounts when people join, change roles and leave?",
+        "title": "Is there a defined process for user accounts when people join, change roles and leave?",
         "tooltip": "Relates to CC6.2, CC6.3: Registration and authorization of new users and removal of access.",
         "help": "Assess the lifecycle of user accounts — from creation through modifications to deactivation upon departure.",
         "maturity": {
@@ -8261,7 +8261,7 @@
         }
       },
       "secQ3": {
-        "title": "How do you protect data in transit and at rest (encryption)?",
+        "title": "Is data encrypted in transit and at rest?",
         "tooltip": "Relates to CC6.6, CC6.7: Protection of confidential data during transmission and storage.",
         "help": "Assess your encryption strategy for data-in-transit and data-at-rest including key management.",
         "maturity": {
@@ -8272,7 +8272,7 @@
         }
       },
       "secQ4": {
-        "title": "How do you handle physical security of your IT infrastructure?",
+        "title": "Is your IT infrastructure physically protected against unauthorised access?",
         "tooltip": "Relates to CC6.8: Protection of physical facilities and infrastructure.",
         "help": "Assess physical access controls to data centers, server rooms, and other critical locations.",
         "maturity": {
@@ -8283,7 +8283,7 @@
         }
       },
       "avlQ1": {
-        "title": "How do you ensure the availability of your critical systems?",
+        "title": "Is the availability of your critical systems safeguarded (e.g. redundancy, capacity planning, availability targets)?",
         "tooltip": "Relates to A1.1: Capacity management and availability planning.",
         "help": "Assess your measures to ensure system availability including capacity planning and redundancy concepts.",
         "maturity": {
@@ -8305,7 +8305,7 @@
         }
       },
       "avlQ3": {
-        "title": "How is your disaster recovery plan structured?",
+        "title": "Do you have a documented and tested disaster recovery plan?",
         "tooltip": "Relates to A1.3: Recovery planning and testing.",
         "help": "Assess whether a documented and tested disaster recovery plan exists.",
         "maturity": {
@@ -8316,7 +8316,7 @@
         }
       },
       "avlQ4": {
-        "title": "How do you monitor service levels and system performance?",
+        "title": "Do you continuously monitor service levels and system performance?",
         "tooltip": "Relates to A1.2, A1.3: Ongoing performance monitoring and SLA compliance.",
         "help": "Assess your monitoring for system availability, performance, and SLA compliance.",
         "maturity": {
@@ -8327,7 +8327,7 @@
         }
       },
       "piQ1": {
-        "title": "How do you ensure the accuracy and completeness of data processing?",
+        "title": "Do controls check that data is processed accurately and completely?",
         "tooltip": "Relates to PI1.1: Validation of input data and processing results.",
         "help": "Assess your controls to ensure that data is processed accurately, completely, and in an authorized manner.",
         "maturity": {
@@ -8338,7 +8338,7 @@
         }
       },
       "piQ2": {
-        "title": "How do you handle errors and exceptions in data processing?",
+        "title": "Is there a defined procedure for errors and exceptions in data processing?",
         "tooltip": "Relates to PI1.2, PI1.3: Error handling and exception management.",
         "help": "Assess your processes for dealing with processing errors, exceptions, and corrections.",
         "maturity": {
@@ -8349,7 +8349,7 @@
         }
       },
       "piQ3": {
-        "title": "How do you ensure traceability of data changes (audit trail)?",
+        "title": "Are data changes logged in a traceable way (audit trail)?",
         "tooltip": "Relates to PI1.4, PI1.5: Comprehensive logging of all data changes.",
         "help": "Assess your ability to traceably document and verify all data changes.",
         "maturity": {
@@ -8360,7 +8360,7 @@
         }
       },
       "confQ1": {
-        "title": "How do you identify and classify confidential information?",
+        "title": "Is confidential information identified and classified?",
         "tooltip": "Relates to C1.1: Identification and protection of confidential information.",
         "help": "Assess whether your organization systematically identifies, classifies, and appropriately protects confidential data.",
         "maturity": {
@@ -8371,7 +8371,7 @@
         }
       },
       "confQ2": {
-        "title": "How do you protect confidential data throughout its lifecycle?",
+        "title": "Is confidential data protected throughout its lifecycle, from creation to deletion?",
         "tooltip": "Relates to C1.2: Disposal of confidential information and lifecycle management.",
         "help": "Assess the protection of confidential data from creation through secure destruction.",
         "maturity": {
@@ -8382,7 +8382,7 @@
         }
       },
       "confQ3": {
-        "title": "How do you control third-party access to confidential information?",
+        "title": "Is third-party access to confidential information restricted by contract and by technical means?",
         "tooltip": "Relates to C1.1, C1.2: Confidentiality protection when sharing with third parties.",
         "help": "Assess your contractual and technical controls for protecting confidential data when sharing with partners and service providers.",
         "maturity": {
@@ -8393,7 +8393,7 @@
         }
       },
       "privQ1": {
-        "title": "How do you inform data subjects about the collection and use of their data?",
+        "title": "Do you inform data subjects about the collection and use of their data?",
         "tooltip": "Relates to P1.1, P2.1: Privacy notices and consent management.",
         "help": "Assess your transparency toward data subjects regarding data collection, use, and sharing.",
         "maturity": {
@@ -8404,7 +8404,7 @@
         }
       },
       "privQ2": {
-        "title": "How do you manage consent and data collection for personal data?",
+        "title": "Do you obtain consent in a verifiable way and collect personal data only for defined purposes?",
         "tooltip": "Relates to P3.1, P3.2: Consent management and purpose limitation.",
         "help": "Assess your processes for lawful collection of personal data with regard to purpose limitation.",
         "maturity": {
@@ -8415,7 +8415,7 @@
         }
       },
       "privQ3": {
-        "title": "How do you fulfill data subject rights (access, deletion, rectification)?",
+        "title": "Is there a procedure for fulfilling data subject rights (access, deletion, rectification)?",
         "tooltip": "Relates to P4.1, P4.2, P4.3: Rights of data subjects.",
         "help": "Assess your ability to process data subject requests in a timely and complete manner.",
         "maturity": {
@@ -8426,7 +8426,7 @@
         }
       },
       "privQ4": {
-        "title": "How do you ensure secure retention and disposal of personal data?",
+        "title": "Are retention periods and the secure disposal of personal data defined?",
         "tooltip": "Relates to P6.1, P6.7, P8.1: Retention, quality, and disposal of personal data.",
         "help": "Assess your policies for retention, quality assurance, and secure deletion of personal data.",
         "maturity": {
@@ -8437,7 +8437,7 @@
         }
       },
       "monQ1": {
-        "title": "How do you monitor your systems for security events?",
+        "title": "Do you monitor your systems for security events?",
         "tooltip": "Relates to CC7.1, CC7.2: Monitoring of infrastructure and software.",
         "help": "Assess your ability to detect and process security-relevant events in real time.",
         "maturity": {
@@ -8448,7 +8448,7 @@
         }
       },
       "monQ2": {
-        "title": "How do you analyze and respond to detected security incidents?",
+        "title": "Is there a defined procedure for analysing and handling detected security incidents?",
         "tooltip": "Relates to CC7.3, CC7.4: Assessment and response to anomalies and incidents.",
         "help": "Assess your incident response process from detection through remediation.",
         "maturity": {
@@ -8459,7 +8459,7 @@
         }
       },
       "monQ3": {
-        "title": "How do you document and improve your monitoring and response processes?",
+        "title": "Do you review incidents and use the results to improve your monitoring and response processes?",
         "tooltip": "Relates to CC7.5, CC8.1: Remediation and change management after incidents.",
         "help": "Assess how you learn from incidents and continuously improve your monitoring processes.",
         "maturity": {
@@ -8470,7 +8470,7 @@
         }
       },
       "govQ1": {
-        "title": "How is the governance structure for information security organized in your company?",
+        "title": "Are responsibilities and committees for information security defined (governance)?",
         "tooltip": "Relates to CC1.1, CC1.2: COSO control environment and management responsibility.",
         "help": "Assess the organizational anchoring of information security including roles, responsibilities, and reporting lines.",
         "maturity": {
@@ -8481,7 +8481,7 @@
         }
       },
       "govQ2": {
-        "title": "How do you communicate security policies and responsibilities internally?",
+        "title": "Are security policies and responsibilities communicated internally?",
         "tooltip": "Relates to CC2.1, CC2.2, CC2.3: Internal and external communication.",
         "help": "Assess the effectiveness of your internal communication on security topics, policies, and responsibilities.",
         "maturity": {
@@ -8492,7 +8492,7 @@
         }
       },
       "govQ3": {
-        "title": "How do you systematically identify and assess IT risks?",
+        "title": "Do you systematically identify and assess IT risks?",
         "tooltip": "Relates to CC3.1, CC3.2: Risk assessment and identification of changes.",
         "help": "Assess your risk management process including risk identification, assessment, and prioritization.",
         "maturity": {
@@ -8503,7 +8503,7 @@
         }
       },
       "govQ4": {
-        "title": "How do you manage changes and their impact on your control environment?",
+        "title": "Are changes assessed for their impact on security controls before they are implemented?",
         "tooltip": "Relates to CC3.3, CC3.4: Change management and impact analysis.",
         "help": "Assess how changes to systems, processes, and the organization are evaluated for their security implications.",
         "maturity": {

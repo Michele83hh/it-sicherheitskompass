@@ -6852,7 +6852,7 @@
         }
       },
       "opQ3": {
-        "title": "Wie steuern Sie die Informationssicherheit bei Lieferanten und Dienstleistern?",
+        "title": "Stellen Sie Anforderungen an die Informationssicherheit Ihrer Lieferanten und Dienstleister und prüfen Sie deren Einhaltung?",
         "tooltip": "Controls A.5.19-A.5.22 fordern ein Lieferanten-Management mit IS-Anforderungen in Verträgen und regelmäßiger Überwachung.",
         "help": "Für alle Lieferanten mit Zugang zu Informationen oder IT-Systemen müssen IS-Anforderungen vertraglich geregelt und deren Einhaltung überwacht werden.",
         "maturity": {
@@ -6885,7 +6885,7 @@
         }
       },
       "acQ2": {
-        "title": "Wie ist die Authentifizierung für den Zugang zu Systemen und Anwendungen geregelt?",
+        "title": "Ist die Authentifizierung für den Zugang zu Systemen und Anwendungen geregelt (z.B. Passwortrichtlinie, MFA)?",
         "tooltip": "Controls A.5.17 und A.8.5 fordern sichere Authentifizierungsverfahren angemessen zur Sensibilität der Informationen.",
         "help": "Dazu gehören Passwortrichtlinien, Multi-Faktor-Authentifizierung (MFA), privilegierte Zugänge und der Schutz von Authentifizierungsinformationen.",
         "maturity": {
@@ -6896,7 +6896,7 @@
         }
       },
       "acQ3": {
-        "title": "Wie werden privilegierte Zugriffsrechte (Admin-Rechte) verwaltet?",
+        "title": "Werden privilegierte Zugriffsrechte (Admin-Rechte) eingeschränkt vergeben, protokolliert und überprüft?",
         "tooltip": "Controls A.8.2, A.8.3 und A.8.4 fordern den eingeschränkten Zugang zu Quellcode, privilegierten Rechten und Informationen.",
         "help": "Privilegierte Konten stellen ein hohes Risiko dar und müssen besonders geschützt, überwacht und nur bei Bedarf vergeben werden.",
         "maturity": {
@@ -6929,7 +6929,7 @@
         }
       },
       "cnQ2": {
-        "title": "Wie ist Ihre Netzwerksicherheit und -segmentierung aufgestellt?",
+        "title": "Ist Ihr Netzwerk in Zonen getrennt und durch dokumentierte Regeln geschützt?",
         "tooltip": "Controls A.8.20, A.8.21 und A.8.22 fordern Netzwerksicherheit, Netzwerkdienste-Sicherheit und Netzsegmentierung.",
         "help": "Netzwerke müssen segmentiert, überwacht und abgesichert sein. Kritische Systeme sollten in eigenen Netzwerkzonen betrieben werden.",
         "maturity": {
@@ -6973,7 +6973,7 @@
         }
       },
       "psQ2": {
-        "title": "Wie schützen Sie IT-Geräte und Speichermedien vor Diebstahl, Verlust und unbefugtem Zugriff?",
+        "title": "Sind IT-Geräte und Speichermedien vor Diebstahl, Verlust und unbefugtem Zugriff geschützt?",
         "tooltip": "Controls A.7.8, A.7.9 und A.7.10 fordern den Schutz von Equipment und Speichermedien innerhalb und außerhalb des Unternehmens.",
         "help": "Laptops, mobile Geräte und Speichermedien müssen gegen Diebstahl und Verlust geschützt und am Ende ihrer Nutzung sicher entsorgt werden.",
         "maturity": {
@@ -8239,7 +8239,7 @@
     },
     "questions": {
       "secQ1": {
-        "title": "Wie sind Anmeldung und Rechtevergabe für Ihre Systeme und Daten geregelt?",
+        "title": "Sind Anmeldung und Rechtevergabe für Ihre Systeme und Daten geregelt?",
         "tooltip": "Bezieht sich auf CC6.1: Logische Zugangskontrollen zur Beschränkung des Zugriffs auf autorisierte Benutzer.",
         "help": "Bewerten Sie, ob Ihre Organisation Authentifizierungs- und Autorisierungsmechanismen implementiert hat, die den Zugriff auf Systeme, Anwendungen und Daten auf befugte Personen beschränken.",
         "maturity": {
@@ -8250,7 +8250,7 @@
         }
       },
       "secQ2": {
-        "title": "Wie verwalten Sie Benutzerkonten bei Eintritt, Wechsel und Austritt?",
+        "title": "Gibt es einen festen Ablauf für Benutzerkonten bei Eintritt, Wechsel und Austritt?",
         "tooltip": "Bezieht sich auf CC6.2, CC6.3: Registrierung und Autorisierung neuer Benutzer sowie Entfernung des Zugangs.",
         "help": "Bewerten Sie den Lebenszyklus von Benutzerkonten — von der Einrichtung über Änderungen bis zur Deaktivierung bei Ausscheiden.",
         "maturity": {
@@ -8261,7 +8261,7 @@
         }
       },
       "secQ3": {
-        "title": "Wie schützen Sie Daten bei der Übertragung und Speicherung (Verschlüsselung)?",
+        "title": "Sind Daten bei der Übertragung und bei der Speicherung verschlüsselt?",
         "tooltip": "Bezieht sich auf CC6.6, CC6.7: Schutz vertraulicher Daten bei Übertragung und Speicherung.",
         "help": "Bewerten Sie Ihre Verschlüsselungsstrategie für Data-in-Transit und Data-at-Rest einschließlich Schlüsselverwaltung.",
         "maturity": {
@@ -8272,7 +8272,7 @@
         }
       },
       "secQ4": {
-        "title": "Wie handhaben Sie die physische Sicherheit Ihrer IT-Infrastruktur?",
+        "title": "Ist Ihre IT-Infrastruktur physisch gegen unbefugten Zutritt geschützt?",
         "tooltip": "Bezieht sich auf CC6.8: Schutz physischer Einrichtungen und Infrastruktur.",
         "help": "Bewerten Sie physische Zugangskontrollen zu Rechenzentren, Serverräumen und anderen kritischen Standorten.",
         "maturity": {
@@ -8283,7 +8283,7 @@
         }
       },
       "avlQ1": {
-        "title": "Wie stellen Sie die Verfügbarkeit Ihrer kritischen Systeme sicher?",
+        "title": "Ist die Verfügbarkeit Ihrer kritischen Systeme abgesichert (z.B. Redundanz, Kapazitätsplanung, Verfügbarkeitsziele)?",
         "tooltip": "Bezieht sich auf A1.1: Kapazitätsmanagement und Verfügbarkeitsplanung.",
         "help": "Bewerten Sie Ihre Maßnahmen zur Sicherstellung der Systemverfügbarkeit einschließlich Kapazitätsplanung und Redundanzkonzepten.",
         "maturity": {
@@ -8305,7 +8305,7 @@
         }
       },
       "avlQ3": {
-        "title": "Wie ist Ihr Notfallwiederherstellungsplan (Disaster Recovery) aufgebaut?",
+        "title": "Haben Sie einen dokumentierten und getesteten Notfallwiederherstellungsplan (Disaster Recovery)?",
         "tooltip": "Bezieht sich auf A1.3: Recovery-Planung und -Tests.",
         "help": "Bewerten Sie, ob ein dokumentierter und getesteter Disaster-Recovery-Plan existiert.",
         "maturity": {
@@ -8316,7 +8316,7 @@
         }
       },
       "avlQ4": {
-        "title": "Wie überwachen Sie Service-Level und Systemleistung?",
+        "title": "Überwachen Sie Service-Level und Systemleistung laufend?",
         "tooltip": "Bezieht sich auf A1.2, A1.3: Laufende Leistungsüberwachung und SLA-Einhaltung.",
         "help": "Bewerten Sie Ihr Monitoring für Systemverfügbarkeit, Performance und SLA-Compliance.",
         "maturity": {
@@ -8327,7 +8327,7 @@
         }
       },
       "piQ1": {
-        "title": "Wie stellen Sie die Korrektheit und Vollständigkeit der Datenverarbeitung sicher?",
+        "title": "Prüfen Kontrollen, ob Daten korrekt und vollständig verarbeitet werden?",
         "tooltip": "Bezieht sich auf PI1.1: Validierung von Eingabedaten und Verarbeitungsergebnissen.",
         "help": "Bewerten Sie Ihre Kontrollen zur Sicherstellung, dass Daten korrekt, vollständig und autorisiert verarbeitet werden.",
         "maturity": {
@@ -8338,7 +8338,7 @@
         }
       },
       "piQ2": {
-        "title": "Wie handhaben Sie Fehler und Ausnahmen in der Datenverarbeitung?",
+        "title": "Gibt es ein festgelegtes Verfahren für Fehler und Ausnahmen in der Datenverarbeitung?",
         "tooltip": "Bezieht sich auf PI1.2, PI1.3: Fehlerbehandlung und Ausnahmemanagement.",
         "help": "Bewerten Sie Ihre Prozesse für den Umgang mit Verarbeitungsfehlern, Ausnahmen und Korrekturen.",
         "maturity": {
@@ -8349,7 +8349,7 @@
         }
       },
       "piQ3": {
-        "title": "Wie gewährleisten Sie die Nachvollziehbarkeit von Datenänderungen (Audit Trail)?",
+        "title": "Sind Datenänderungen nachvollziehbar protokolliert (Audit Trail)?",
         "tooltip": "Bezieht sich auf PI1.4, PI1.5: Lückenlose Protokollierung aller Datenänderungen.",
         "help": "Bewerten Sie Ihre Fähigkeit, alle Datenänderungen nachvollziehbar zu dokumentieren und zu überprüfen.",
         "maturity": {
@@ -8360,7 +8360,7 @@
         }
       },
       "confQ1": {
-        "title": "Wie identifizieren und klassifizieren Sie vertrauliche Informationen?",
+        "title": "Sind vertrauliche Informationen identifiziert und klassifiziert?",
         "tooltip": "Bezieht sich auf C1.1: Identifikation und Schutz vertraulicher Informationen.",
         "help": "Bewerten Sie, ob Ihre Organisation vertrauliche Daten systematisch identifiziert, klassifiziert und entsprechend schützt.",
         "maturity": {
@@ -8371,7 +8371,7 @@
         }
       },
       "confQ2": {
-        "title": "Wie schützen Sie vertrauliche Daten über ihren gesamten Lebenszyklus?",
+        "title": "Sind vertrauliche Daten über ihren gesamten Lebenszyklus geschützt, von der Entstehung bis zur Löschung?",
         "tooltip": "Bezieht sich auf C1.2: Entsorgung vertraulicher Informationen und Lebenszyklusmanagement.",
         "help": "Bewerten Sie den Schutz vertraulicher Daten von der Erstellung bis zur sicheren Vernichtung.",
         "maturity": {
@@ -8382,7 +8382,7 @@
         }
       },
       "confQ3": {
-        "title": "Wie kontrollieren Sie den Zugriff auf vertrauliche Informationen durch Dritte?",
+        "title": "Ist der Zugriff Dritter auf vertrauliche Informationen vertraglich und technisch beschränkt?",
         "tooltip": "Bezieht sich auf C1.1, C1.2: Vertraulichkeitsschutz bei Weitergabe an Dritte.",
         "help": "Bewerten Sie Ihre vertraglichen und technischen Kontrollen zum Schutz vertraulicher Daten bei der Weitergabe an Partner und Dienstleister.",
         "maturity": {
@@ -8393,7 +8393,7 @@
         }
       },
       "privQ1": {
-        "title": "Wie informieren Sie Betroffene über die Erhebung und Verwendung ihrer Daten?",
+        "title": "Informieren Sie Betroffene über die Erhebung und Verwendung ihrer Daten?",
         "tooltip": "Bezieht sich auf P1.1, P2.1: Datenschutzhinweise und Einwilligungsmanagement.",
         "help": "Bewerten Sie Ihre Transparenz gegenüber Betroffenen bezüglich Datenerhebung, -verwendung und -weitergabe.",
         "maturity": {
@@ -8404,7 +8404,7 @@
         }
       },
       "privQ2": {
-        "title": "Wie verwalten Sie die Einwilligung und Datenerhebung bei personenbezogenen Daten?",
+        "title": "Holen Sie Einwilligungen nachweisbar ein und erheben Sie personenbezogene Daten nur für festgelegte Zwecke?",
         "tooltip": "Bezieht sich auf P3.1, P3.2: Einwilligungsmanagement und Zweckbindung.",
         "help": "Bewerten Sie Ihre Prozesse zur rechtmäßigen Erhebung personenbezogener Daten unter Beachtung der Zweckbindung.",
         "maturity": {
@@ -8415,7 +8415,7 @@
         }
       },
       "privQ3": {
-        "title": "Wie erfüllen Sie Betroffenenrechte (Auskunft, Löschung, Berichtigung)?",
+        "title": "Gibt es ein Verfahren, um Betroffenenrechte zu erfüllen (Auskunft, Löschung, Berichtigung)?",
         "tooltip": "Bezieht sich auf P4.1, P4.2, P4.3: Rechte der betroffenen Personen.",
         "help": "Bewerten Sie Ihre Fähigkeit, Anfragen zu Betroffenenrechten fristgerecht und vollständig zu bearbeiten.",
         "maturity": {
@@ -8426,7 +8426,7 @@
         }
       },
       "privQ4": {
-        "title": "Wie stellen Sie die sichere Aufbewahrung und Entsorgung personenbezogener Daten sicher?",
+        "title": "Sind Aufbewahrungsfristen und die sichere Entsorgung personenbezogener Daten geregelt?",
         "tooltip": "Bezieht sich auf P6.1, P6.7, P8.1: Aufbewahrung, Qualität und Entsorgung personenbezogener Daten.",
         "help": "Bewerten Sie Ihre Richtlinien zur Aufbewahrung, Qualitätssicherung und sicheren Löschung personenbezogener Daten.",
         "maturity": {
@@ -8437,7 +8437,7 @@
         }
       },
       "monQ1": {
-        "title": "Wie überwachen Sie Ihre Systeme auf Sicherheitsereignisse?",
+        "title": "Überwachen Sie Ihre Systeme auf Sicherheitsereignisse?",
         "tooltip": "Bezieht sich auf CC7.1, CC7.2: Überwachung von Infrastruktur und Software.",
         "help": "Bewerten Sie Ihre Fähigkeit, sicherheitsrelevante Ereignisse in Echtzeit zu erkennen und zu verarbeiten.",
         "maturity": {
@@ -8448,7 +8448,7 @@
         }
       },
       "monQ2": {
-        "title": "Wie analysieren und behandeln Sie erkannte Sicherheitsvorfälle?",
+        "title": "Gibt es ein festgelegtes Verfahren, um erkannte Sicherheitsvorfälle zu analysieren und zu behandeln?",
         "tooltip": "Bezieht sich auf CC7.3, CC7.4: Bewertung und Reaktion auf Anomalien und Vorfälle.",
         "help": "Bewerten Sie Ihren Incident-Response-Prozess von der Erkennung bis zur Behebung.",
         "maturity": {
@@ -8459,7 +8459,7 @@
         }
       },
       "monQ3": {
-        "title": "Wie dokumentieren und verbessern Sie Ihre Überwachungs- und Reaktionsprozesse?",
+        "title": "Werten Sie Vorfälle aus und verbessern Sie damit Ihre Überwachungs- und Reaktionsprozesse?",
         "tooltip": "Bezieht sich auf CC7.5, CC8.1: Remediation und Change Management nach Vorfällen.",
         "help": "Bewerten Sie, wie Sie aus Vorfällen lernen und Ihre Überwachungsprozesse kontinuierlich verbessern.",
         "maturity": {
@@ -8470,7 +8470,7 @@
         }
       },
       "govQ1": {
-        "title": "Wie ist die Governance-Struktur für Informationssicherheit in Ihrer Organisation aufgebaut?",
+        "title": "Sind Zuständigkeiten und Gremien für Informationssicherheit festgelegt (Governance)?",
         "tooltip": "Bezieht sich auf CC1.1, CC1.2: COSO-Kontrollumgebung und Leitungsverantwortung.",
         "help": "Bewerten Sie die organisatorische Verankerung von Informationssicherheit einschließlich Rollen, Verantwortlichkeiten und Berichtswege.",
         "maturity": {
@@ -8481,7 +8481,7 @@
         }
       },
       "govQ2": {
-        "title": "Wie kommunizieren Sie Sicherheitsrichtlinien und -verantwortlichkeiten intern?",
+        "title": "Werden Sicherheitsrichtlinien und Verantwortlichkeiten intern bekannt gemacht?",
         "tooltip": "Bezieht sich auf CC2.1, CC2.2, CC2.3: Interne und externe Kommunikation.",
         "help": "Bewerten Sie die Effektivität Ihrer internen Kommunikation zu Sicherheitsthemen, Richtlinien und Verantwortlichkeiten.",
         "maturity": {
@@ -8492,7 +8492,7 @@
         }
       },
       "govQ3": {
-        "title": "Wie identifizieren und bewerten Sie IT-Risiken systematisch?",
+        "title": "Ermitteln und bewerten Sie IT-Risiken systematisch?",
         "tooltip": "Bezieht sich auf CC3.1, CC3.2: Risikobewertung und Identifikation von Veränderungen.",
         "help": "Bewerten Sie Ihren Risikomanagementprozess einschließlich Risikoidentifikation, -bewertung und -priorisierung.",
         "maturity": {
@@ -8503,7 +8503,7 @@
         }
       },
       "govQ4": {
-        "title": "Wie managen Sie Veränderungen und deren Auswirkungen auf Ihre Kontrollumgebung?",
+        "title": "Werden Änderungen auf ihre Auswirkungen auf die Sicherheitskontrollen geprüft, bevor sie umgesetzt werden?",
         "tooltip": "Bezieht sich auf CC3.3, CC3.4: Change Management und Auswirkungsanalyse.",
         "help": "Bewerten Sie, wie Veränderungen an Systemen, Prozessen und der Organisation hinsichtlich ihrer Sicherheitsauswirkungen bewertet werden.",
         "maturity": {

@@ -73,6 +73,8 @@ SOC 2 stellt 24 von 25 Fragen als „Wie …?“, ISO 27001 fünf. Die Antwort i
 
 Vorschlag: auf geschlossene Form umstellen wie bei den anderen Regelwerken.
 
+**Umgesetzt am 14.11.:** 29 Titel je Sprache umgestellt (SOC 2: 24, ISO 27001: 5). Geändert sind nur die Titel; Stufen, Hilfetexte und Normbezüge sind gleich geblieben. Wo der alte Titel offen ließ, wonach gefragt wird, nennt der neue den Gegenstand der Stufe 2 (z. B. `iso27001` `cnQ2`: „in Zonen getrennt und durch dokumentierte Regeln geschützt“). Ein Test verhindert neue deutsche Fragetitel, die mit Wie, Welche oder Was beginnen. KI-erstellt, noch nicht gegengelesen.
+
 ### 3.4 Fragen, die über das Regelwerk hinausgehen
 
 Bei NIS2 stehen vier Fragen unter einem Artikel der Richtlinie, verlangen aber etwas, das dort nicht steht.
