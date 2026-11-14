@@ -501,3 +501,7 @@ Die Kontrollfrage von 3.1.3 lautet jetzt „Inwieweit ist der Umgang mit unterst
 **Mit umgestellt:** Versionsangabe in Hinweiszeile und Untertitel; die Kurztexte nennen nur noch „VDA ISA“ ohne Fassung.
 
 **Nicht geprüft:** die 24 Control-Nummern in den TISAX-Empfehlungen (weiter die alten, durchgezählten Nummern); Hilfe- und Stufentexte gegen 2027.1.
+
+### TISAX-Empfehlungen: Bezüge auf ISA 2027.1
+
+Die 24 Empfehlungen trugen die alten, durchgezählten Nummern (zum Beispiel 10.1.1, 12.1.2), die es im Katalog nicht gibt. Sie verweisen jetzt auf Controls des VDA ISA 2027.1, deren Kontrollfrage zum Titel der Empfehlung passt, mit der ISO-Zuordnung aus dem Katalog. Beispiele: `kom1` (Netzwerksicherheit) → 5.2.7, `comp2` (Compliance-Reviews) → 1.5.1, 1.5.2, `proto1` (physischer Prototypenschutz) → 8.2.1, 8.2.2, 8.2.5. Für `ds2` („Datenschutz-Audits und Reviews“) gibt es im Modul Datenschutz kein Audit-Control; der Bezug nennt 9.1.1 (Richtlinie wird „regelmäßig aktualisiert“) und 7.1.1. Die Texte der Empfehlungen sind nicht geprüft.

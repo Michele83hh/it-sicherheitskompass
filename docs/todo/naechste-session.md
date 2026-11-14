@@ -69,7 +69,7 @@ Einzelheiten in `docs/pruefprotokoll/2026-11-14-wortlautpruefung.md`.
 - [x] VDA ISA: am 14.11. auf 2027.1 umgestellt (Grundlage für ab 1.1.2027 beauftragte Assessments; 30 von 36 verwendeten Controls unverändert).
 - [ ] Selbst gegenlesen: die drei neu zugeordneten Prototypenschutz-Fragen im Nachtrag des Protokolls.
 - [ ] Nicht geprüft, weil kein Normtext vorlag: ISO 27001, ISO 22301, PCI DSS, CIS Controls, SOC 2 (120 Fragen). Mit den Normtexten nachholen.
-- [ ] Empfehlungen (`recommendations.ts` aller Regelwerke) sind nicht am Wortlaut geprüft. Bei OWASP ASVS und C5 sind die Kennungen der Empfehlungen am 14.11. mit umgestellt, die Texte nicht geprüft. Die TISAX-Empfehlungen tragen an 24 Stellen noch die alten, durchgezählten Control-Nummern.
+- [ ] Empfehlungen (`recommendations.ts` aller Regelwerke) sind nicht am Wortlaut geprüft. Bei OWASP ASVS und C5 sind die Kennungen der Empfehlungen am 14.11. mit umgestellt, die Texte nicht geprüft. Die 24 TISAX-Empfehlungen sind am 14.11. auf Controls des VDA ISA 2027.1 umgestellt, die Texte nicht geprüft.
 - [ ] Hilfetexte bei TISAX enthalten noch Erfahrungsaussagen über Assessments ohne Quelle („zentrales Thema“, „häufiger Befund“).
 
 ## Testwerkzeug
