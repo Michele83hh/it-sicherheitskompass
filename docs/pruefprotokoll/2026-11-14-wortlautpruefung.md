@@ -216,3 +216,42 @@ Quelle (Publikationsamt der EU, Abruf 14.11.2026): Verordnung (EU) 2024/2847 deu
 **Verweise auf fremde Normen, entfernt, weil deren Inhalt nicht geprüft wurde:** ISO/IEC 30111, ISO/IEC 29147, NTIA SBOM Minimum Elements, ETSI EN 303 645 Abschnitt 5.3, IEC 62443-4-1, EN ISO/IEC 17050-1, EN ISO/IEC 17065, „ENISA Reporting Guidelines“ (aus Zusatzzeilen, Erklärtexten und Stufe 3). Ebenso entfernt: „CycloneDX (OWASP)“, „SPDX (Linux Foundation)“, Normungsauftrag M/606 und die Aussage zur EN-18031-Reihe in `konf-q2`.
 
 **Nicht geprüft:** `konf-q2`, Hilfe und Stufe 2 nennen ETSI EN 303 645 und IEC 62443-4-1 weiter als Orientierung bis zum Erscheinen harmonisierter Normen. Ob es inzwischen harmonisierte Normen zum CRA im Amtsblatt gibt, wurde nicht nachgeschlagen. Anhänge III und IV (Produktlisten) und Anhang VIII (Module) wurden nicht gelesen.
+
+## KRITIS: Befunde und Änderungen
+
+Quellen (gesetze-im-internet.de, Abruf 14.11.2026): BSIG (`bsig_2025`) §§ 2, 28, 30, 31, 32, 33, 39; KRITIS-Dachgesetz § 8; BSI-KritisV § 1 (nur Titel und Gegenstand). Bausteinliste des IT-Grundschutz-Kompendiums, Edition 2023 (bsi.bund.de).
+
+30 Fragen geprüft. Geändert: 36 ganze Texte und 3 Teiltexte je Sprache, 34 Normbezüge.
+
+**Durchgehender Befund:** 18 Fragen verwiesen pauschal auf „§30 Abs. 1 BSI-Gesetz“ mit der Formel „angemessene organisatorische und technische Vorkehrungen nach dem Stand der Technik“. Das ist der Wortlaut des früheren § 8a BSIG. Der geltende § 30 Abs. 1 lautet „geeignete, verhältnismäßige und wirksame technische und organisatorische Maßnahmen“; der Stand der Technik steht in Abs. 2 Satz 1 („sollen … einhalten“). Die Bezüge zeigen jetzt auf die einschlägige Nummer in § 30 Abs. 2 oder auf § 31.
+
+**Falsche Normbezüge**
+
+| Frage | Vorher | Jetzt | Grund |
+|---|---|---|---|
+| `bsi-q1` bis `bsi-q3` | § 33 BSIG, „BSI-KritisV §3“ | § 33 Abs. 2 BSIG, § 8 Abs. 1 Nr. 7 KRITISDachG | Kritische Anlagen werden nach dem KRITIS-Dachgesetz registriert; die Kontaktstelle mit jederzeitiger Erreichbarkeit steht dort. |
+| `rm-q3` | § 30 Abs. 1 | § 31 Abs. 2 | Systeme zur Angriffserkennung. |
+| `rm-q4` | § 30 Abs. 1 | § 30 Abs. 2 Nr. 6 | Bewertung der Wirksamkeit. |
+| `bcm-q1` bis `bcm-q3` | § 30 Abs. 1 | § 30 Abs. 2 Nr. 3 | Aufrechterhaltung des Betriebs. |
+| `lk-q1` bis `lk-q4` | § 30 Abs. 1 | § 30 Abs. 2 Nr. 4 | Sicherheit der Lieferkette. |
+| `sh-q3` | § 30 Abs. 1 | § 30 Abs. 2 Nr. 5 | Wartung, Schwachstellenmanagement. |
+| `vm-q4`, `bsi-q4` | § 32, § 33 | § 30 Abs. 2 Nr. 2 | Bewältigung von Sicherheitsvorfällen; Team und Übungen sind nicht vorgeschrieben. |
+
+**Aussagen, die dem Wortlaut widersprachen oder ohne Beleg waren**
+
+| Frage | Vorher | Wortlaut oder Folge |
+|---|---|---|
+| `bsi-q1` | Kontaktstelle „dem BSI namentlich gemeldet“ | § 8 Abs. 1 KRITISDachG: Registrierung beim BBK über die gemeinsame Registrierungsmöglichkeit; verlangt ist „eine Kontaktstelle“, kein Name |
+| `bsi-q4` | „Das BSI führt sektorübergreifende Übungen durch“; „KRITIS-Übungen des BSI“ | Nicht belegt, entfernt |
+| `rm-q3` | „Das BSI hat eine Orientierungshilfe zu SzA veröffentlicht, die konkrete Anforderungen … beschreibt“ | Nicht nachgeschlagen, ersetzt durch den Wortlaut des § 31 Abs. 2 |
+| `vm-q1`, `vm-q2` | Meldung „an das BSI“, „erhebliche IT-Störungen“ | § 32 Abs. 1: gemeinsame Meldestelle von BSI und BBK; „erheblicher Sicherheitsvorfall“. Ergänzt: Zusatzangaben nach Abs. 3, Fortschrittsmeldung nach Abs. 2 |
+| `vm-q4` | „empfiehlt das BSI die Einrichtung … eines spezialisierten Incident-Response-Teams“ | Nicht belegt, entfernt |
+| `au-q1` | „der Zyklus wurde mit dem NIS2UmsG von zwei auf drei Jahre verlängert“ | Die frühere Fassung wurde nicht nachgeschlagen, Satz entfernt. „Alle drei Jahre“ ist belegt. |
+| `au-q4` | BSI könne „konkrete Maßnahmen anordnen“ | § 39 Abs. 1: Mängelbeseitigungsplan, Beseitigung der Mängel, Nachweis |
+| `ps-q1` | § 30 Abs. 1 fordere Vorkehrungen „einschließlich physischer Sicherheit“ | § 30 nennt sie nicht; belegt ist der gefahrenübergreifende Ansatz (Abs. 2) und in Art. 21 Abs. 2 NIS2-RL die „physische Umwelt dieser Systeme“ |
+| `rm-q2` (Hilfe) | ISMS sei „der effizienteste Weg“ | Wertung, jetzt „ein üblicher Weg“ |
+| `sh-q1` | „CIS Benchmarks und BSI-Härtungsrichtlinien sind anerkannte Standards“ | Nicht belegt, entfernt |
+
+**Bausteinverweise:** Aussagen darüber, was ein Baustein „fordert“ oder „empfiehlt“ (ISMS.1, DER.2.1, DER.4, INF.1, INF.2, NET.1.1, OPS.2.3), sind auf den Verweis mit Nummer und Titel zurückgeführt. Die Titel stimmen mit der Edition 2023 überein.
+
+**Nicht geprüft:** Inhalt der Bausteine und der BSI-Standards; Inhalt der BSI-KritisV (Schwellenwerte); die Zusatzzeile „BSI-KritisV“ steht weiter bei 26 Fragen als Hinweis, wer Betreiber ist. Ob die BSI-KritisV nach Inkrafttreten des KRITIS-Dachgesetzes (§ 5 Abs. 1: eigene Rechtsverordnung) weiter die maßgebliche Verordnung ist, wurde nicht geklärt. Englische Texte: Das BSIG hat keine amtliche englische Fassung; die englischen Erklärtexte sind Übersetzungen.

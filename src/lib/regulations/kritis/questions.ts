@@ -22,8 +22,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.bsiQ1.tooltip',
     helpKey: 'kritis.questions.bsiQ1.help',
     legalReference: {
-      euArticle: '§33 BSI-Gesetz',
-      bsigParagraph: 'BSI-KritisV §3',
+      euArticle: '§33 Abs. 2 BSIG',
+      bsigParagraph: '§8 Abs. 1 Nr. 7 KRITISDachG',
     },
     maturityDescriptions: {
       level0Key: 'kritis.questions.bsiQ1.maturity.level0',
@@ -40,8 +40,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.bsiQ2.tooltip',
     helpKey: 'kritis.questions.bsiQ2.help',
     legalReference: {
-      euArticle: '§33 BSI-Gesetz',
-      bsigParagraph: 'BSI-KritisV §3',
+      euArticle: '§33 Abs. 2 BSIG',
+      bsigParagraph: '§8 Abs. 1 Nr. 7 KRITISDachG',
     },
     maturityDescriptions: {
       level0Key: 'kritis.questions.bsiQ2.maturity.level0',
@@ -58,8 +58,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.bsiQ3.tooltip',
     helpKey: 'kritis.questions.bsiQ3.help',
     legalReference: {
-      euArticle: '§33 BSI-Gesetz',
-      bsigParagraph: 'BSI-KritisV §3',
+      euArticle: '§33 Abs. 2 BSIG',
+      bsigParagraph: '§8 Abs. 1 Nr. 7 KRITISDachG',
     },
     maturityDescriptions: {
       level0Key: 'kritis.questions.bsiQ3.maturity.level0',
@@ -76,8 +76,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.bsiQ4.tooltip',
     helpKey: 'kritis.questions.bsiQ4.help',
     legalReference: {
-      euArticle: '§33 BSI-Gesetz',
-      bsigParagraph: 'BSI-KritisV §3',
+      euArticle: '§30 Abs. 2 Nr. 2 BSIG',
+      bsigParagraph: 'Übungen: gute Praxis',
     },
     maturityDescriptions: {
       level0Key: 'kritis.questions.bsiQ4.maturity.level0',
@@ -98,7 +98,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.rmQ1.tooltip',
     helpKey: 'kritis.questions.rmQ1.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 1, Abs. 2 Nr. 1 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -116,7 +116,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.rmQ2.tooltip',
     helpKey: 'kritis.questions.rmQ2.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 1 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -134,7 +134,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.rmQ3.tooltip',
     helpKey: 'kritis.questions.rmQ3.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§31 Abs. 2 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -152,7 +152,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.rmQ4.tooltip',
     helpKey: 'kritis.questions.rmQ4.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 6 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -174,7 +174,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.vmQ1.tooltip',
     helpKey: 'kritis.questions.vmQ1.help',
     legalReference: {
-      euArticle: '§32 BSI-Gesetz',
+      euArticle: '§32 Abs. 1 und 3 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -192,7 +192,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.vmQ2.tooltip',
     helpKey: 'kritis.questions.vmQ2.help',
     legalReference: {
-      euArticle: '§32 BSI-Gesetz',
+      euArticle: '§32 Abs. 1-2 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -210,7 +210,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.vmQ3.tooltip',
     helpKey: 'kritis.questions.vmQ3.help',
     legalReference: {
-      euArticle: '§32 BSI-Gesetz',
+      euArticle: '§32 Abs. 1 Nr. 4 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -228,7 +228,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.vmQ4.tooltip',
     helpKey: 'kritis.questions.vmQ4.help',
     legalReference: {
-      euArticle: '§32 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 2 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -250,7 +250,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.bcmQ1.tooltip',
     helpKey: 'kritis.questions.bcmQ1.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 3 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -268,7 +268,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.bcmQ2.tooltip',
     helpKey: 'kritis.questions.bcmQ2.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 3 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -286,7 +286,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.bcmQ3.tooltip',
     helpKey: 'kritis.questions.bcmQ3.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 3 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -304,7 +304,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.bcmQ4.tooltip',
     helpKey: 'kritis.questions.bcmQ4.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 1, §31 Abs. 1 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -326,7 +326,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.lkQ1.tooltip',
     helpKey: 'kritis.questions.lkQ1.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 4 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -344,7 +344,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.lkQ2.tooltip',
     helpKey: 'kritis.questions.lkQ2.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 4 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -362,7 +362,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.lkQ3.tooltip',
     helpKey: 'kritis.questions.lkQ3.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 4 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -380,7 +380,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.lkQ4.tooltip',
     helpKey: 'kritis.questions.lkQ4.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 4 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -402,7 +402,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.auQ1.tooltip',
     helpKey: 'kritis.questions.auQ1.help',
     legalReference: {
-      euArticle: '§39 Abs. 1 BSI-Gesetz',
+      euArticle: '§39 Abs. 1 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -420,7 +420,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.auQ2.tooltip',
     helpKey: 'kritis.questions.auQ2.help',
     legalReference: {
-      euArticle: '§39 Abs. 1 BSI-Gesetz',
+      euArticle: '§39 Abs. 1 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -438,7 +438,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.auQ3.tooltip',
     helpKey: 'kritis.questions.auQ3.help',
     legalReference: {
-      euArticle: '§39 Abs. 1 BSI-Gesetz',
+      euArticle: '§39 Abs. 1 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -456,7 +456,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.auQ4.tooltip',
     helpKey: 'kritis.questions.auQ4.help',
     legalReference: {
-      euArticle: '§39 Abs. 1 BSI-Gesetz',
+      euArticle: '§39 Abs. 1 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -478,7 +478,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.psQ1.tooltip',
     helpKey: 'kritis.questions.psQ1.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 1-2 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -496,7 +496,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.psQ2.tooltip',
     helpKey: 'kritis.questions.psQ2.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 1-2 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -514,7 +514,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.psQ3.tooltip',
     helpKey: 'kritis.questions.psQ3.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§31 Abs. 1 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -536,7 +536,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.shQ1.tooltip',
     helpKey: 'kritis.questions.shQ1.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 1-2 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -554,7 +554,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.shQ2.tooltip',
     helpKey: 'kritis.questions.shQ2.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 1-2 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
@@ -572,7 +572,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'kritis.questions.shQ3.tooltip',
     helpKey: 'kritis.questions.shQ3.help',
     legalReference: {
-      euArticle: '§30 Abs. 1 BSI-Gesetz',
+      euArticle: '§30 Abs. 2 Nr. 5 BSIG',
       bsigParagraph: 'BSI-KritisV',
     },
     maturityDescriptions: {
