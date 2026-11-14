@@ -57,6 +57,16 @@ Mehrere Bereiche gelten nur für einen Teil der Unternehmen. Wer sie nicht betre
 
 Vorschlag: eine fünfte Antwort „trifft nicht zu“, die aus der Wertung fällt. Das ist die Änderung mit der größten Wirkung auf die Aussagekraft des Ergebnisses.
 
+**Umgesetzt am 14.11.** für die 21 Fragen der Tabelle:
+
+- Die Antwort erscheint nur bei diesen Fragen. Pflichtanforderungen lassen sich so nicht wegklicken.
+- Sie zählt als beantwortet, geht aber nicht in den Mittelwert des Bereichs ein.
+- Ist ein ganzer Bereich so beantwortet (TISAX Prototypenschutz, BSI Industrielle IT), fällt er aus der Gesamtwertung, aus den Bereichskarten und aus den Empfehlungen. Die Ergebnisseite nennt ihn in einer Zeile.
+- Die Antwort wird nicht als Vorschlag in andere Regelwerke übertragen.
+- Eine weitere Frage freischalten: `notApplicableAllowed: true` in der `questions.ts` des Regelwerks setzen. Die `config.ts` muss das Feld durchreichen; ein Test zählt die 21 Fragen.
+
+Offen: Der Abschnitt „Auswirkung auf Ihre Sicherheitssäulen“ wählt seine Maßnahmen unabhängig von den Antworten und kann weiter Maßnahmen aus einem unzutreffenden Bereich zeigen. PDF und Excel wurden nicht mit einer solchen Antwort angesehen.
+
 ### 3.3 Offene „Wie“-Fragen
 
 SOC 2 stellt 24 von 25 Fragen als „Wie …?“, ISO 27001 fünf. Die Antwort ist aber eine von vier Stufen. „Wie verwalten Sie …?“ passt dazu schlechter als „Ist … geregelt?“.

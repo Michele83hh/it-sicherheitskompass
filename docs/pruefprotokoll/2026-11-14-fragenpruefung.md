@@ -68,4 +68,5 @@ Der Vorschlag wird als Schaltfläche an der Frage angezeigt und erst per Klick �
 - Einleitungstexte je Bereich: am 14.11. für die 55 fehlenden Bereiche ergänzt (DE und EN). KI-erstellt, noch nicht gegengelesen. Der Schlüsseltest verlangt den Text jetzt für jeden Bereich.
 - ISO-27001-Abschnitt der NIS2-Ergebnisseite: am 14.11. von Prozentwerten ohne Quelle auf Stufen umgestellt (stark/mittel, wie bei den Synergien), Gesamtwert entfernt, Quelle ENISA verlinkt. Die zehn Texte zu den NIS2-Zusatzanforderungen neu gefasst, weil einige Anforderungen nannten, die NIS2 nicht enthält (Zero Trust, Krypto-Agilität, kürzere Wiederherstellungszeiten, KPIs). KI-erstellt, noch nicht gegengelesen; PDF-Ausgabe nicht angesehen.
 - PCI DSS („Goal 1“) und SOC 2 (englische Kriteriennamen): Zusatzzeile unter den Fragen am 14.11. ausgeblendet.
+- Antwort „trifft nicht zu“: am 14.11. für 21 Fragen in sechs Regelwerken eingeführt. Einzelheiten in `2026-11-14-fragen-vorschlaege.md`, Abschnitt 3.2. Die Auswahl der Fragen ist KI-erstellt, noch nicht gegengelesen.
 - Inhaltliche Prüfung je Regelwerk (Notwendigkeit, Doppelungen, KMU-Verständlichkeit, Verhältnis Kern zu Vertiefung) steht aus.

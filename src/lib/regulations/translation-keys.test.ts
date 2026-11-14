@@ -17,6 +17,12 @@ describe('Übersetzungsschlüssel der Regelwerke', () => {
     expect(getAllRegulations()).toHaveLength(15);
   });
 
+  // Die config.ts bildet Fragen Feld für Feld ab — ohne Durchreichen fehlt die Auswahl im Formular.
+  it('„trifft nicht zu“ kommt bei 21 Fragen in der Konfiguration an', () => {
+    const flagged = getAllRegulations().flatMap((r) => r.questions.filter((q) => q.notApplicableAllowed));
+    expect(flagged).toHaveLength(21);
+  });
+
   it.each(getAllRegulations().map((r) => [r.id, r] as const))(
     '%s: Bereiche, Fragen, Empfehlungen und Schnellcheck sind in DE und EN übersetzt',
     (_id, r) => {

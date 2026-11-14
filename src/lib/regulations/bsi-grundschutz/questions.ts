@@ -344,6 +344,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'app-q3',
+    notApplicableAllowed: true,
     categoryId: 'app',
     tier: 'core',
     titleKey: 'bsiGrundschutz.questions.appQ3.title',
@@ -540,6 +541,7 @@ export const QUESTIONS: Question[] = [
   // ============================================================
   {
     id: 'ind-q1',
+    notApplicableAllowed: true,
     categoryId: 'ind',
     tier: 'core',
     titleKey: 'bsiGrundschutz.questions.indQ1.title',
@@ -558,6 +560,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'ind-q2',
+    notApplicableAllowed: true,
     categoryId: 'ind',
     tier: 'core',
     titleKey: 'bsiGrundschutz.questions.indQ2.title',
@@ -576,6 +579,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'ind-q3',
+    notApplicableAllowed: true,
     categoryId: 'ind',
     tier: 'core',
     titleKey: 'bsiGrundschutz.questions.indQ3.title',

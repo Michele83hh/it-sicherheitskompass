@@ -19,7 +19,7 @@ import {
 import { WizardNavigation } from '@/app/[locale]/[regulation]/check/components/navigation';
 import { getSuggestionsForCategory, type SuggestedAnswer } from '@/lib/regulations/dedup-service';
 import { getRegulation } from '@/lib/regulations/registry';
-import type { Answer, MaturityLevel, RegulationConfig } from '@/lib/regulations/types';
+import type { Answer, AnswerLevel, RegulationConfig } from '@/lib/regulations/types';
 
 interface CategoryStepProps {
   categoryId: string;
@@ -81,10 +81,15 @@ export function CategoryStep({
     return getSuggestionsForCategory(regulation, questionIds);
   }, [regulation, questions]);
 
-  // Zod schema - all fields REQUIRED
-  const schemaShape = Object.fromEntries(
-    questions.map((q) => [q.id, z.coerce.number().min(0).max(3)])
-  ) as Record<string, z.ZodNumber>;
+  // Zod schema - all fields REQUIRED; „trifft nicht zu“ ('na') nur bei gekennzeichneten Fragen
+  const levelSchema = z.coerce.number().min(0).max(3);
+  const schemaShape: Record<string, z.ZodTypeAny> = Object.fromEntries(
+    questions.map((q) => [
+      q.id,
+      q.notApplicableAllowed ? z.union([z.literal('na'), levelSchema]) : levelSchema,
+    ])
+  );
+  const toLevel = (v: unknown): AnswerLevel => (v === 'na' ? 'na' : (Number(v) as AnswerLevel));
 
   const schema = z.object(schemaShape);
 
@@ -94,7 +99,7 @@ export function CategoryStep({
   const defaultValues = questions.reduce((acc, q) => {
     const existing = existingAnswers.find((a) => a.questionId === q.id);
     return existing ? { ...acc, [q.id]: existing.level } : acc;
-  }, {} as Record<string, number>);
+  }, {} as Record<string, AnswerLevel>);
 
   const {
     control,
@@ -112,7 +117,7 @@ export function CategoryStep({
       ([questionId, level]) => ({
         questionId,
         categoryId,
-        level: Number(level) as MaturityLevel,
+        level: toLevel(level),
       })
     );
 
@@ -142,7 +147,7 @@ export function CategoryStep({
       .map(([questionId, level]) => ({
         questionId,
         categoryId,
-        level: Number(level) as MaturityLevel,
+        level: toLevel(level),
       }));
 
     if (partialAnswers.length > 0) {
@@ -314,7 +319,7 @@ export function CategoryStep({
                     )}
                     <RadioGroup
                       value={field.value !== undefined ? String(field.value) : ''}
-                      onValueChange={(v) => field.onChange(Number(v))}
+                      onValueChange={(v) => field.onChange(toLevel(v))}
                     >
                       {[0, 1, 2, 3].map((level) => {
                         const levelKey = `level${level}Key` as keyof typeof question.maturityDescriptions;
@@ -334,6 +339,17 @@ export function CategoryStep({
                           </label>
                         );
                       })}
+                      {question.notApplicableAllowed && (
+                        <label
+                          htmlFor={`${question.id}-na`}
+                          className="flex cursor-pointer items-start gap-3 rounded-lg border border-dashed p-3 sm:p-4 transition-colors hover:bg-gray-50"
+                        >
+                          <RadioGroupItem value="na" id={`${question.id}-na`} />
+                          <span className="flex-1 text-sm leading-relaxed text-muted-foreground">
+                            {tGap('question.notApplicable')}
+                          </span>
+                        </label>
+                      )}
                     </RadioGroup>
                   </>
                 );

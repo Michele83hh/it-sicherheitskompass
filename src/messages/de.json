@@ -1164,7 +1164,9 @@
     "question": {
       "selectMaturity": "Wählen Sie den aktuellen Umsetzungsstand:",
       "tooltip": "Erläuterung",
-      "helpToggle": "Was bedeutet das?"
+      "helpToggle": "Was bedeutet das?",
+      "notApplicable": "Trifft auf uns nicht zu (wird nicht gewertet)",
+      "notApplicableCategories": "Nicht gewertet, weil als „trifft nicht zu“ beantwortet:"
     },
     "maturityOptions": {
       "level0": "Stufe 0: {description}",

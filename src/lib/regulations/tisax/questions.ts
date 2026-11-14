@@ -256,6 +256,7 @@ export const QUESTIONS: TisaxQuestion[] = [
   // ============================================================
   {
     id: 'proto-q1',
+    notApplicableAllowed: true,
     categoryId: 'prototypenschutz',
     tier: 'core',
     titleKey: 'tisax.questions.protoQ1.title',
@@ -274,6 +275,7 @@ export const QUESTIONS: TisaxQuestion[] = [
   },
   {
     id: 'proto-q2',
+    notApplicableAllowed: true,
     categoryId: 'prototypenschutz',
     tier: 'core',
     titleKey: 'tisax.questions.protoQ2.title',
@@ -292,6 +294,7 @@ export const QUESTIONS: TisaxQuestion[] = [
   },
   {
     id: 'proto-q3',
+    notApplicableAllowed: true,
     categoryId: 'prototypenschutz',
     tier: 'core',
     titleKey: 'tisax.questions.protoQ3.title',

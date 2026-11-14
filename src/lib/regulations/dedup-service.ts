@@ -71,7 +71,8 @@ export function getSuggestionForQuestion(
     // Find matching answer in the other regulation
     for (const otherQId of equiv.questionIds) {
       const match = otherAnswers.find((a) => a.questionId === otherQId);
-      if (match) {
+      // „Trifft nicht zu“ wird nicht auf andere Regelwerke übertragen.
+      if (match && match.level !== 'na') {
         return {
           questionId,
           suggestedLevel: match.level,

@@ -167,6 +167,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'vv-q4',
+    notApplicableAllowed: true,
     categoryId: 'verarbeitungsverzeichnis',
     tier: 'advanced',
     titleKey: 'dsgvo.questions.vvQ4.title',
@@ -262,6 +263,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'ew-q4',
+    notApplicableAllowed: true,
     categoryId: 'einwilligung',
     tier: 'advanced',
     titleKey: 'dsgvo.questions.ewQ4.title',
@@ -375,6 +377,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'br-q5',
+    notApplicableAllowed: true,
     categoryId: 'betroffenenrechte',
     tier: 'advanced',
     titleKey: 'dsgvo.questions.brQ5.title',
@@ -606,6 +609,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'dt-q2',
+    notApplicableAllowed: true,
     categoryId: 'datentransfer',
     tier: 'core',
     titleKey: 'dsgvo.questions.dtQ2.title',
@@ -624,6 +628,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'dt-q3',
+    notApplicableAllowed: true,
     categoryId: 'datentransfer',
     tier: 'core',
     titleKey: 'dsgvo.questions.dtQ3.title',
@@ -642,6 +647,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'dt-q4',
+    notApplicableAllowed: true,
     categoryId: 'datentransfer',
     tier: 'advanced',
     titleKey: 'dsgvo.questions.dtQ4.title',
@@ -660,6 +666,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'dt-q5',
+    notApplicableAllowed: true,
     categoryId: 'datentransfer',
     tier: 'advanced',
     titleKey: 'dsgvo.questions.dtQ5.title',

@@ -248,6 +248,7 @@ export const QUESTIONS: DoraQuestion[] = [
   },
   {
     id: 'rt-q3',
+    notApplicableAllowed: true,
     categoryId: 'resilience-testing',
     tier: 'core',
     titleKey: 'dora.questions.rtQ3.title',
@@ -266,6 +267,7 @@ export const QUESTIONS: DoraQuestion[] = [
   },
   {
     id: 'rt-q4',
+    notApplicableAllowed: true,
     categoryId: 'resilience-testing',
     tier: 'advanced',
     titleKey: 'dora.questions.rtQ4.title',
@@ -284,6 +286,7 @@ export const QUESTIONS: DoraQuestion[] = [
   },
   {
     id: 'rt-q5',
+    notApplicableAllowed: true,
     categoryId: 'resilience-testing',
     tier: 'advanced',
     titleKey: 'dora.questions.rtQ5.title',
@@ -378,6 +381,7 @@ export const QUESTIONS: DoraQuestion[] = [
   },
   {
     id: 'da-q5',
+    notApplicableAllowed: true,
     categoryId: 'drittanbieter',
     tier: 'advanced',
     titleKey: 'dora.questions.daQ5.title',

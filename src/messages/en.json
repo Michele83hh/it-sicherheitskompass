@@ -1164,7 +1164,9 @@
     "question": {
       "selectMaturity": "Select the current implementation level:",
       "tooltip": "Explanation",
-      "helpToggle": "What does this mean?"
+      "helpToggle": "What does this mean?",
+      "notApplicable": "Does not apply to us (not scored)",
+      "notApplicableCategories": "Not scored because answered as “not applicable”:"
     },
     "maturityOptions": {
       "level0": "Level 0: {description}",

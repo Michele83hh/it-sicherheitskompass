@@ -37,6 +37,7 @@ const iso27001Config: RegulationConfig = {
     id: q.id,
     categoryId: q.categoryId,
     tier: q.tier,
+    notApplicableAllowed: q.notApplicableAllowed,
     titleKey: q.titleKey,
     tooltipKey: q.tooltipKey,
     helpKey: q.helpKey,

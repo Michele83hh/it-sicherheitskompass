@@ -15,9 +15,10 @@ Alles steht zum Abhaken in `docs/pruefprotokoll/2026-11-14-gegenlese-unterlage.m
 
 ## 2. Fragen: Vorschläge entscheiden
 
-Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`. Umgesetzt sind nur Tippfehler. Zu entscheiden, in dieser Reihenfolge:
+Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`. Umgesetzt sind Tippfehler und die Antwort „trifft nicht zu“. Zu entscheiden, in dieser Reihenfolge:
 
-- [ ] Antwort „trifft nicht zu“ einführen (Abschnitt 3.2). Größte Wirkung auf die Aussagekraft.
+- [x] Antwort „trifft nicht zu“ eingeführt (Abschnitt 3.2), bei 21 Fragen.
+- [ ] Selbst prüfen: Ist die Auswahl der 21 Fragen richtig? Sie ist KI-erstellt. Liste in Abschnitt 3.2 der Vorschläge.
 - [ ] NIS2-Fragen, die über die Richtlinie hinausgehen (Abschnitt 3.4), vor allem die Frist „24-48 Stunden“.
 - [ ] Doppelungen je Regelwerk streichen oder zusammenlegen (Abschnitt 4).
 - [ ] „Wie“-Fragen bei SOC 2 und ISO 27001 umformulieren (Abschnitt 3.3).

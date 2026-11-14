@@ -153,6 +153,10 @@ export default function ResultsPage() {
       );
   }, [overallScore, config]);
 
+  const notApplicableNames = config.categories
+    .filter((c) => !overallScore.categoryScores.some((cs) => cs.categoryId === c.id))
+    .map((c) => tAll(c.nameKey));
+
   // All recommendations flat list
   const allRecommendations = useMemo(() => {
     return sortedCategories.flatMap((cat) => cat.recommendations);
@@ -342,6 +346,13 @@ export default function ResultsPage() {
             regulationId={regulation}
             pillarScores={pillarScores}
           />
+
+          {/* Bereiche, die ganz „trifft nicht zu“ sind, fehlen in categoryScores */}
+          {notApplicableNames.length > 0 && (
+            <p className="mb-4 text-sm text-muted-foreground">
+              {tAll('gapAnalysis.question.notApplicableCategories')} {notApplicableNames.join(', ')}
+            </p>
+          )}
 
           {/* Category cards grid */}
           <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

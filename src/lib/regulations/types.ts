@@ -43,10 +43,13 @@ export type TrafficLight = 'red' | 'yellow' | 'green';
 
 export type EffortLevel = 'quick' | 'medium' | 'strategic';
 
+/** 'na' = trifft nicht zu: gilt als beantwortet, fällt aus der Wertung. */
+export type AnswerLevel = MaturityLevel | 'na';
+
 export interface Answer {
   questionId: string;
   categoryId: string;
-  level: MaturityLevel;
+  level: AnswerLevel;
 }
 
 export interface CategoryScore {
@@ -55,6 +58,8 @@ export interface CategoryScore {
   trafficLight: TrafficLight;
   answeredQuestions: number;
   totalQuestions: number;
+  /** Alle Antworten des Bereichs lauten „trifft nicht zu“. */
+  notApplicable?: boolean;
 }
 
 export interface OverallScore {
@@ -79,6 +84,8 @@ export interface BaseQuestion {
   id: string;
   categoryId: string;
   tier: 'core' | 'advanced';
+  /** Frage gilt nur für einen Teil der Unternehmen: Antwort „trifft nicht zu“ anbieten. */
+  notApplicableAllowed?: boolean;
   titleKey: string;
   tooltipKey: string;
   helpKey: string;
