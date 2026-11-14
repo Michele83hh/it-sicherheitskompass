@@ -72,4 +72,5 @@ Der Vorschlag wird als Schaltfläche an der Frage angezeigt und erst per Klick �
 - NIS2-Fragen über die Richtlinie hinaus: am 14.11. Frist aus `bc-q2` entfernt, `ea-q5`, `cr-q5`, `mc-q4` mit Hinweis versehen. Einzelheiten in `2026-11-14-fragen-vorschlaege.md`, Abschnitt 3.4.
 - Doppelungen je Regelwerk: am 14.11. abgegrenzt statt gestrichen, 42 Texte je Sprache. Einzelheiten in `2026-11-14-fragen-vorschlaege.md`, Abschnitt 4a. KI-erstellt, noch nicht gegengelesen.
 - „Wie“-Fragen bei SOC 2 und ISO 27001: am 14.11. 29 Titel je Sprache in geschlossene Form gebracht. KI-erstellt, noch nicht gegengelesen.
+- Kern und Vertiefung: am 14.11. für DSGVO eingeschaltet (30 Kern-, 20 Vertiefungsfragen). Startseite der Gap-Analyse nennt bei NIS2 und DSGVO jetzt die Zahl der Kernfragen.
 - Inhaltliche Prüfung je Regelwerk (Notwendigkeit, Doppelungen, KMU-Verständlichkeit, Verhältnis Kern zu Vertiefung) steht aus.

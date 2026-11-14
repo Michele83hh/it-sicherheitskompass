@@ -112,7 +112,8 @@ export default function GapAnalysisPage() {
 
   // Dynamic counts for translations
   const categoryCount = categories.length;
-  const questionCount = fullTotal;
+  // Mit Kern und Vertiefung umfasst der erste Durchlauf nur die Kernfragen.
+  const questionCount = hasTieredAssessment ? coreTotal : fullTotal;
   const recCount = config.recommendations.length;
   const estimatedMinutes = Math.max(5, Math.round(questionCount / 3));
 

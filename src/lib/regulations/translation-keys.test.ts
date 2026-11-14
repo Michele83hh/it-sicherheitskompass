@@ -23,6 +23,18 @@ describe('Übersetzungsschlüssel der Regelwerke', () => {
     expect(flagged).toHaveLength(21);
   });
 
+  // Meilenstein und Vertiefung nennen feste Zahlen („30 von 50“, „+20 Fragen“).
+  it('Regelwerke mit Kern und Vertiefung haben 30 Kern- und 20 Vertiefungsfragen', () => {
+    const tiered = getAllRegulations().filter((r) => r.features.hasTieredAssessment);
+    expect(tiered.map((r) => r.id).sort()).toEqual(['dsgvo', 'nis2']);
+    for (const r of tiered) {
+      expect(r.questions.filter((q) => q.tier === 'core')).toHaveLength(30);
+      expect(r.questions).toHaveLength(50);
+      // resetPhase im Store trennt nach der Nummer in der ID: q1-q3 Kern, q4-q5 Vertiefung.
+      expect(r.questions.filter((q) => (Number(q.id.split('-q')[1]) <= 3) !== (q.tier === 'core'))).toEqual([]);
+    }
+  });
+
   // Die Antwort ist eine von vier Stufen; dazu passt nur eine Ja-Grad-Frage.
   it('kein deutscher Fragetitel ist eine offene Frage (Wie, Welche, Was)', () => {
     const open = getAllRegulations()

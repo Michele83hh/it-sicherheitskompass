@@ -66,7 +66,7 @@ const dsgvoConfig: RegulationConfig = {
   features: {
     hasClassification: false,
     hasQuickCheck: true,
-    hasTieredAssessment: false,
+    hasTieredAssessment: true,
     hasCostEstimation: true,
     hasRoadmap: true,
   },

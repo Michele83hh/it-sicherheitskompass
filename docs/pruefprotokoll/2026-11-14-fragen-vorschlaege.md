@@ -42,6 +42,17 @@ Zehn Regelwerke kennzeichnen Fragen als Kern oder Vertiefung, aber nur NIS2 tren
 
 Vorschlag: bei DSGVO einschalten (50 Fragen, 132 Zeichen im Schnitt, der längste Durchlauf). Bei den übrigen acht die Kennzeichnung belassen und erst einschalten, wenn der Durchlauf als zu lang empfunden wird.
 
+**Umgesetzt am 14.11. für DSGVO** (`hasTieredAssessment: true`):
+
+- DSGVO hat denselben Aufbau wie NIS2: 10 Bereiche, je Bereich `q1` bis `q3` Kern und `q4`, `q5` Vertiefung, also 30 und 20 Fragen. Die festen Zahlen in den Texten („30 von 50“, „+20 Fragen“) stimmen deshalb ohne Änderung.
+- Gemessen an Titel und Stufentexten macht der Kern 59 % der Textmenge aus (17.584 von 29.916 Zeichen). Der erste Durchlauf wird um rund zwei Fünftel kürzer.
+- Ein Test hält fest, dass Regelwerke mit Phasen 30 Kern- und 20 Vertiefungsfragen haben und die Nummer in der ID zur Kennzeichnung passt. Darauf verlassen sich die Texte und das Zurücksetzen einer Phase.
+- Dabei gefunden und behoben, auch für NIS2: Die Startseite der Gap-Analyse nannte für den ersten Schritt „50 Fragen, ca. 17 Min.“. Jetzt „30 Fragen, ca. 10 Min.“.
+
+Folge für begonnene DSGVO-Analysen im Browser: Wer schon alle 50 Fragen beantwortet hat, behält seine Antworten und sein Ergebnis. Wer mittendrin war, landet in der Kernphase.
+
+Die übrigen acht Regelwerke lassen sich nicht einfach einschalten: Sie haben andere Fragenzahlen, die festen Zahlen in den Texten würden nicht stimmen.
+
 ### 3.2 Keine Antwort „trifft nicht zu“
 
 Mehrere Bereiche gelten nur für einen Teil der Unternehmen. Wer sie nicht betreibt, muss „nicht vorhanden“ wählen und bekommt einen schlechteren Wert.

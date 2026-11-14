@@ -15,7 +15,7 @@ Alles steht zum Abhaken in `docs/pruefprotokoll/2026-11-14-gegenlese-unterlage.m
 
 ## 2. Fragen: Vorschläge entscheiden
 
-Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`. Umgesetzt sind Tippfehler, die Antwort „trifft nicht zu“ die NIS2-Fragen aus Abschnitt 3.4 die Doppelungen (Abschnitt 4a) und die „Wie“-Fragen (Abschnitt 3.3). Zu entscheiden, in dieser Reihenfolge:
+Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`. Umgesetzt sind Tippfehler, die Antwort „trifft nicht zu“ die NIS2-Fragen aus Abschnitt 3.4 die Doppelungen (Abschnitt 4a) die „Wie“-Fragen (Abschnitt 3.3) und Kern und Vertiefung bei DSGVO (Abschnitt 3.1). Zu entscheiden, in dieser Reihenfolge:
 
 - [x] Antwort „trifft nicht zu“ eingeführt (Abschnitt 3.2), bei 21 Fragen.
 - [ ] Selbst prüfen: Ist die Auswahl der 21 Fragen richtig? Sie ist KI-erstellt. Liste in Abschnitt 3.2 der Vorschläge.
@@ -28,7 +28,7 @@ Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`
 - [ ] Übrige Punkte aus Abschnitt 4, die keine Doppelungen sind (Abkürzungen, lange Titel, CRA `konf-q3`, DORA `vm-q2`, DSGVO `dsfa-q2` und `dsb-q5`, OWASP `owasp-iv-q2`).
 - [x] „Wie“-Fragen bei SOC 2 und ISO 27001 umformuliert, 29 Titel je Sprache (Abschnitt 3.3).
 - [ ] Selbst gegenlesen: die 29 neuen Titel in der Gap-Analyse von SOC 2 und ISO 27001.
-- [ ] Kern und Vertiefung: bei DSGVO einschalten? (Abschnitt 3.1)
+- [x] Kern und Vertiefung bei DSGVO eingeschaltet (Abschnitt 3.1).
 - [ ] Gemeinsamer Fragenkern: Weg A oder B (Abschnitt 5). Erst nach dem Gegenlesen der 49 Themen.
 
 ## 3. Ausrichtung besprechen: Umsetzung für ISO-27001-Audits (Wunsch Nutzer)
