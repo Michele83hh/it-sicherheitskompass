@@ -359,3 +359,44 @@ Quellen (gesetze-im-internet.de, Abruf 14.11.2026): BSIG (`bsig_2025`) §§ 2, 2
 **Außerhalb der Fragen:** In `c5/recommendations.ts`, `c5/categories.ts` und einer Empfehlungsbeschreibung ist „KRY“ zu „CRY“ korrigiert. Die übrigen Kennungen der Empfehlungen sind nicht geprüft; `IDM-10` (Empfehlung `idm3`) gibt es im C5:2020 nicht (siehe TODO).
 
 **Nicht geprüft:** Die englischen Erklärtexte nennen die deutschen Titel, weil keine englische Fassung abgerufen wurde. Beispiele in den Hilfetexten (BSI TR-02102, NIST SP 800-131A, AES-256) sind als Beispiele stehen geblieben und nicht nachgeschlagen. Die Zusatzkriterien des C5 sind nicht ausgewertet. Die übrigen Sätze der Hilfe- und Stufentexte sind Empfehlungen des Tools, keine Wiedergabe des C5.
+
+## TISAX (VDA ISA): Befunde und Änderungen
+
+**Quelle:** VDA ISA, Fassung 6.0.2 vom 4.4.2024 (so im Deckblatt der Datei), deutsche und englische Tabellenfassung vom ENX-Portal (`portal.enx.com/isa6-de.xlsx`, `isa6-en.xlsx`), abgerufen am 14.11.2026. Ausgelesen wurden die Module Informationssicherheit (46 Controls), Prototypenschutz (22) und Datenschutz (12) mit Kontrollfrage und der katalogeigenen Zuordnung zu ISO 27001:2022. Ob es eine neuere Fassung als 6.0.2 gibt, ist nicht geprüft.
+
+**Wichtigster Befund:** Die Control-Nummern im Tool waren je Bereich durchgezählt (1.1.1, 1.2.1, 1.3.1, …, 12.1.3) und trafen den Katalog nur bei 3 von 36 Fragen (`org-q1`, `per-q1`, `phy-q1`). Nummern wie 10.1.1, 11.1.1 oder 12.1.1 gibt es im VDA ISA 6.0.2 nicht. Beispiele: `tech-q1` (Asset-Inventar) verwies auf 4.1.1 „Umgang mit Identifikationsmitteln“, `proto-q1` (Prototypenschutz) auf 5.1.1 „kryptografische Verfahren“, `ds-q1` (Datenschutz) auf 6.1.1 „Auftragnehmer und Kooperationspartner“.
+
+**Bezüge jetzt (alle 36 Fragen)**
+
+| Fragen | Controls |
+|---|---|
+| `org-q1`, `org-q2`, `org-q3` | 1.1.1; 1.2.2; 1.4.1 |
+| `per-q1`, `per-q2`, `per-q3` | 2.1.1; 2.1.3; 2.1.2 und 6.1.2 |
+| `phy-q1`, `phy-q2`, `phy-q3` | 3.1.1; 3.1.3 und 3.1.4; 1.6.3 und 5.2.8 |
+| `tech-q1`, `tech-q2`, `tech-q3` | 1.3.1 und 1.3.2; 1.3.2; 3.1.3 und 3.1.4 |
+| `proto-q1`, `proto-q2`, `proto-q3` | 8.1.1; 8.2.4 und 8.2.6; 8.2.1 und 8.2.2 |
+| `ds-q1`, `ds-q2`, `ds-q3` | 7.1.2 und 9.1.1; 9.5.2; 9.6.2 |
+| `zk-q1`, `zk-q2`, `zk-q3` | 4.2.1; 4.1.3 und 4.2.1; 4.1.2 und 4.2.1 |
+| `kry-q1`, `kry-q2`, `kry-q3` | 5.1.1; 5.1.1 und 5.1.2; 5.1.1 |
+| `bs-q1`, `bs-q2`, `bs-q3` | 5.2.5; 5.2.3; 5.2.5 |
+| `kom-q1`, `kom-q2`, `kom-q3` | 5.2.7; 5.2.7 und 5.3.2; 5.1.2 |
+| `lief-q1`, `lief-q2`, `lief-q3` | 6.1.1 |
+| `comp-q1`, `comp-q2`, `comp-q3` | 7.1.1; 1.5.1 und 1.5.2; 1.5.1 und 1.5.2 |
+
+Zwei Fragen haben kein eigenes Control; das steht im Erklärtext: `phy-q3` (Umweltbedrohungen; das frühere Control 3.1.2 ist im Katalog als „Ersetzt durch 1.6.3, 5.2.8 und 5.2.9“ geführt) und `bs-q1` (das Wort „Härtung“ kommt in den Controls der deutschen Fassung nicht vor).
+
+**ISO-27001-Zeile:** Sie gibt jetzt wörtlich die Zuordnung „ISO 27001:2022“ aus dem VDA ISA wieder, mit dem Zusatz „laut VDA ISA“. Wo der Katalog keine Zuordnung zur Fassung 2022 nennt (4.2.1, 2.1.3, Prototypenschutz, Datenschutz), steht das so da. Auffälligkeiten des Katalogs sind unverändert übernommen (5.2.3 nennt „A.8.1“, 4.1.2 nennt „A.5.15, 8.5“); am ISO-Text ließ sich das nicht prüfen.
+
+**Erklärtexte:** Alle 36 geben jetzt die Kontrollfrage des Katalogs wörtlich wieder, deutsch aus der deutschen, englisch aus der englischen Fassung.
+
+**Hilfetexte:** „TISAX verlangt …“ (20 Stellen je Sprache) steht jetzt als Empfehlung. „TISAX-Assessoren prüfen, ob …“ ist zu „Klären Sie, ob …“ geändert. Entfernt: „jährlich alle VDA-ISA-Kapitel“ (`comp-q2`) und „Pflichtdokument, das bei jedem Assessment geprüft wird“ (`org-q1`).
+
+**Nicht geprüft:** Einschätzungen wie „zentrales Thema bei TISAX-Assessments“, „häufiger Befund“, „TISAX-Assessoren prüfen die Netzwerkarchitektur“ (`kom-q1`), „fragen gezielt nach Nachweisen“ (`proto-q3`) sind Erfahrungsaussagen ohne Quelle und stehen noch in den Hilfetexten. Die Zahlen in den Stufentexten (zum Beispiel „kritisch: 48h, hoch: 7 Tage“, „halbjährlich“) beschreiben Umsetzungsstände des Tools und stammen nicht aus dem Katalog. Die Anforderungstexte (muss, sollte, hoher und sehr hoher Schutzbedarf) der Controls sind nicht Satz für Satz gegen die Hilfetexte gelegt.
+
+## Nicht prüfbar: ISO 27001, ISO 22301, PCI DSS, CIS Controls, SOC 2
+
+Für diese fünf Regelwerke (120 Fragen: ISO 27001 30, ISO 22301 18, PCI DSS 29, CIS Controls 18, SOC 2 25) wurde am 14.11.2026 kein Normtext abgerufen. Die ISO-Normen werden verkauft; für PCI DSS, CIS Controls und die SOC-2-Kriterien wurde kein Abruf versucht, der eine Lizenzannahme oder Registrierung verlangt hätte. Ob es dort inzwischen frei zugängliche amtliche Fassungen gibt, ist nicht geprüft.
+
+Folge: Normbezüge, Titel und Erklärtexte dieser 120 Fragen sind **nicht** am Wortlaut geprüft und unverändert. Dazu gehört der offene Punkt PCI DSS `ac-q2` (Req. 7.2 oder 7.3). Wer die Normtexte besitzt, kann die Prüfung mit denselben Schritten nachholen: Kennung vorhanden, Titel passend, Inhaltsaussagen im Erklärtext belegt.
+
+Nach den Befunden bei NIST, OWASP, IT-Grundschutz, C5 und TISAX ist damit zu rechnen, dass auch hier Kennungen nicht zum Fragethema passen. Das ist eine Erwartung aus den Trefferquoten oben, kein Prüfergebnis.

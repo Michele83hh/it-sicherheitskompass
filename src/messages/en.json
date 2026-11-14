@@ -4020,7 +4020,7 @@
     },
     "questions": {
       "bsQ1": {
-        "help": "System hardening means minimising the attack surface of your IT systems: disabling unneeded services, closing open ports, changing default passwords, restricting user rights and patching promptly. TISAX requires documented hardening guidelines, ideally based on CIS Benchmarks or comparable standards. Systems connected to OEMs in particular must be hardened.",
+        "help": "System hardening means minimising the attack surface of your IT systems: disabling unneeded services, closing open ports, changing default passwords, restricting user rights and patching promptly. You need documented hardening guidelines, ideally based on CIS Benchmarks or comparable standards. Systems connected to OEMs in particular must be hardened.",
         "maturity": {
           "level0": "No systematic hardening — systems run with default configurations, patches are not applied regularly",
           "level1": "Individual hardening measures on certain systems, but no standardised process — patch management reactive and patchy",
@@ -4028,10 +4028,10 @@
           "level3": "Automated configuration management with hardening templates, continuous patch management with SLA-based prioritisation (critical: 48h), regular vulnerability scans and penetration tests, compliance monitoring of the hardening standards"
         },
         "title": "Are IT systems systematically hardened and protected against known vulnerabilities?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.9 — IT systems must be hardened before going live. Unnecessary services, ports and default accounts must be disabled, and security patches applied promptly."
+        "tooltip": "VDA ISA 6.0.2, control 5.2.5: “To what extent are vulnerabilities identified and addressed?” The German VDA ISA 6.0.2 does not use the term “hardening” in its controls."
       },
       "bsQ2": {
-        "help": "Malware protection is a basic requirement in TISAX assessments. All workstations, servers and gateways must be equipped with up-to-date protection software. TISAX assessors check whether signatures are updated automatically, whether real-time scanning is active and whether incidents are centrally logged and evaluated. Special requirements apply to production networks.",
+        "help": "Malware protection is a basic requirement in TISAX assessments. All workstations, servers and gateways must be equipped with up-to-date protection software. Check whether signatures are updated automatically, whether real-time scanning is active and whether incidents are centrally logged and evaluated. Special requirements apply to production networks.",
         "maturity": {
           "level0": "No systematic malware protection — no antivirus on all systems, no central management",
           "level1": "Antivirus software on most workstations, but no central management — signatures not always current, not all servers and endpoints covered",
@@ -4039,7 +4039,7 @@
           "level3": "Comprehensive endpoint protection platform (EPP/EDR) with behavioural analysis, machine-learning-based detection, central SIEM integration, automated quarantine and regular effectiveness verification through controlled malware tests"
         },
         "title": "Are protective measures against malware deployed on all endpoints and servers?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.7 — All information-processing systems must be protected against malware by appropriate measures. This includes antivirus software, Endpoint Detection and Response (EDR) and web/email filtering."
+        "tooltip": "VDA ISA 6.0.2, control 5.2.3: “To what extent are IT systems protected against malware?”"
       },
       "bsQ3": {
         "help": "Systematic vulnerability management is essential for TISAX compliance. You must carry out regular vulnerability scans (internal and external), prioritise the results by severity (CVSS) and apply patches within defined deadlines. Vulnerabilities in systems with OEM connections or access to prototype data are particularly critical.",
@@ -4050,10 +4050,10 @@
           "level3": "Continuous vulnerability management with automated scans, integration into risk management, SLA-based remediation (critical: 48h, high: 7 days), annual penetration tests and linkage to the patch management process"
         },
         "title": "Does systematic vulnerability management with regular detection and remediation exist?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.8 — Technical vulnerabilities must be identified promptly, rated by severity and remediated through patches or compensating measures. Regular vulnerability scans are required."
+        "tooltip": "VDA ISA 6.0.2, control 5.2.5: “To what extent are vulnerabilities identified and addressed?”"
       },
       "compQ1": {
-        "help": "Beyond TISAX and ISO 27001, numerous other requirements can be relevant for automotive suppliers: GDPR, NIS2, the KRITIS regulation, the Trade Secrets Act, OEM-specific requirements and industry-specific standards. TISAX assessors check whether you maintain an overview of all relevant requirements and systematically ensure compliance with them.",
+        "help": "Beyond TISAX and ISO 27001, numerous other requirements can be relevant for automotive suppliers: GDPR, NIS2, the KRITIS regulation, the Trade Secrets Act, OEM-specific requirements and industry-specific standards. Check whether you maintain an overview of all relevant requirements and systematically ensure compliance with them.",
         "maturity": {
           "level0": "No systematic capture of relevant information security requirements — legal and regulatory obligations are unknown or undocumented",
           "level1": "Basic knowledge of important requirements (e.g. GDPR), but no complete overview — compliance is not monitored systematically",
@@ -4061,10 +4061,10 @@
           "level3": "Comprehensive compliance management with automated monitoring of regulatory changes, linkage to ISMS measures, regular compliance audits and reporting to management"
         },
         "title": "Are legal and regulatory information security requirements identified and complied with?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.31 — All relevant legal, regulatory and contractual information security requirements must be identified and documented, and compliance with them ensured."
+        "tooltip": "VDA ISA 6.0.2, control 7.1.1: “To what extent is compliance with regulatory and contractual provisions ensured?”"
       },
       "compQ2": {
-        "help": "TISAX requires a working PDCA cycle: plan, do, check, act. Internal audits are the central verification mechanism. They must cover all VDA ISA chapters annually, the results must be documented and presented to management as part of a management review. Findings must be tracked and measures checked for effectiveness.",
+        "help": "You need a working PDCA cycle: plan, do, check, act. Internal audits are the central verification mechanism. They should cover all VDA ISA chapters, the results must be documented and presented to management as part of a management review. Findings must be tracked and measures checked for effectiveness.",
         "maturity": {
           "level0": "No internal ISMS audits — no systematic review of the information security measures",
           "level1": "Individual reviews on request, but no annual audit plan — no management review, no documented follow-up of measures",
@@ -4072,10 +4072,10 @@
           "level3": "Systematic internal audit programme with qualified auditors, risk-based prioritisation, documented follow-up of measures with effectiveness checks, semi-annual management review and KPI-based ISMS reporting"
         },
         "title": "Are regular internal audits and management reviews of the ISMS carried out?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 clauses 9.2/9.3 — Internal audits must be planned and performed regularly to verify the effectiveness of the ISMS. The results must be evaluated in a management review."
+        "tooltip": "VDA ISA 6.0.2, control 1.5.1: “To what extent is compliance with information security ensured in procedures and processes?” control 1.5.2: “To what extent is the ISMS reviewed by an independent authority?”"
       },
       "compQ3": {
-        "help": "TISAX is not a one-off project but a continuous process. After every assessment, audit or security incident, the findings must be analysed and turned into concrete improvement measures. In follow-up assessments, TISAX assessors check whether earlier findings have been addressed and whether a demonstrable improvement trend is visible.",
+        "help": "TISAX is not a one-off project but a continuous process. After every assessment, audit or security incident, the findings must be analysed and turned into concrete improvement measures. Before follow-up assessments, check whether earlier findings have been addressed and whether a demonstrable improvement trend is visible.",
         "maturity": {
           "level0": "No systematic improvement — findings from assessments and audits are not followed up or addressed",
           "level1": "Individual findings are handled, but no structured improvement process — no prioritisation, no effectiveness checks",
@@ -4083,10 +4083,10 @@
           "level3": "Full PDCA cycle with systematic root cause analysis, an action management tool, effectiveness checks, trend analysis across assessment cycles and demonstrable continuous improvement of the ISMS maturity"
         },
         "title": "Are the results of TISAX assessments and audits fed into a continuous improvement process?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.27 — Findings from TISAX assessments, internal audits and security incidents must be systematically evaluated and turned into improvement measures. The PDCA cycle must be demonstrably practised."
+        "tooltip": "VDA ISA 6.0.2, control 1.5.1: “To what extent is compliance with information security ensured in procedures and processes?” control 1.5.2: “To what extent is the ISMS reviewed by an independent authority?”"
       },
       "dsQ1": {
-        "help": "TISAX also covers data protection requirements that go beyond pure information security. As an automotive supplier you process personal data of employees, customers and contacts. The VDA ISA checks whether a data protection officer is designated, whether a record of processing activities is maintained and whether the GDPR principles (lawfulness, purpose limitation, data minimisation) are observed.",
+        "help": "TISAX also covers data protection requirements that go beyond pure information security. As an automotive supplier you process personal data of employees, customers and contacts. Check whether a data protection officer is designated, whether a record of processing activities is maintained and whether the GDPR principles (lawfulness, purpose limitation, data minimisation) are observed.",
         "maturity": {
           "level0": "No systematic consideration of data protection requirements — no data protection officer designated, no record of processing activities",
           "level1": "Data protection officer designated, but data protection processes not fully implemented — record of processing activities incomplete, no data protection impact assessments",
@@ -4094,10 +4094,10 @@
           "level3": "Integrated data protection and information security management system with a privacy-by-design approach, regular data protection audits, an automated deletion concept and demonstrated GDPR compliance in all OEM-relevant processing operations"
         },
         "title": "Is compliance with data protection requirements (GDPR) ensured as part of your information security?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.34 — Processing of personal data must comply with the requirements of the GDPR and the BDSG. Where required by Art. 37 GDPR/Section 38 BDSG, a data protection officer must be designated and compliance with the data protection principles ensured."
+        "tooltip": "VDA ISA 6.0.2, control 7.1.2: “To what extent is the protection of personally identifiable data considered when implementing information security?” control 9.1.1: “To what extent do data protection policies exist?”"
       },
       "dsQ2": {
-        "help": "As an automotive supplier, you frequently pass personal data on to IT service providers, cloud providers, staffing agencies or disposal companies. For each of these processing operations you need a legally compliant DPA under Art. 28 GDPR. TISAX assessors check whether DPAs exist, are complete and current — particularly for cloud services and remote maintenance access.",
+        "help": "As an automotive supplier, you frequently pass personal data on to IT service providers, cloud providers, staffing agencies or disposal companies. For each of these processing operations you need a legally compliant DPA under Art. 28 GDPR. Check whether DPAs exist, are complete and current — particularly for cloud services and remote maintenance access.",
         "maturity": {
           "level0": "No data processing agreements in place — data processing by third parties takes place without a contractual basis",
           "level1": "Individual DPAs exist, but not for all relevant service providers — contract content partly outdated or incomplete",
@@ -4105,10 +4105,10 @@
           "level3": "Complete DPA management with a central overview, regular review of the TOM documentation, audit rights and systematic checks when subcontractors are engaged"
         },
         "title": "Are data processing agreements concluded and maintained with all relevant service providers?",
-        "tooltip": "VDA ISA 6 (Data Protection module) — Where personal data is processed by third parties (processors), data processing agreements (DPA) must be concluded in accordance with Art. 28 GDPR."
+        "tooltip": "VDA ISA 6.0.2, control 9.5.2: “To what extent are contractual obligations passed through to and enforced at subcontractors and cooperation partners?”"
       },
       "dsQ3": {
-        "help": "A personal data breach occurs when personal data is disclosed, altered, deleted or otherwise compromised without authorisation. The TISAX assessor checks whether you have a documented process ensuring detection, assessment (risk evaluation for those affected), internal escalation, notification of the supervisory authority (72h) and, where necessary, notification of the data subjects.",
+        "help": "A personal data breach occurs when personal data is disclosed, altered, deleted or otherwise compromised without authorisation. Check whether you have a documented process ensuring detection, assessment (risk evaluation for those affected), internal escalation, notification of the supervisory authority (72h) and, where necessary, notification of the data subjects.",
         "maturity": {
           "level0": "No process for detecting and reporting personal data breaches — incidents are not recognised as data breaches",
           "level1": "Basic awareness exists, but no documented reporting process — responsibilities and deadlines unclear",
@@ -4116,7 +4116,7 @@
           "level3": "Practised data breach process with regular exercises, automated detection through SIEM integration, templates for supervisory authority notification and data subject notification, complete documentation of all incidents"
         },
         "title": "Is a process for detecting and reporting personal data breaches implemented?",
-        "tooltip": "VDA ISA 6 (Data Protection module) — Personal data breaches must be reported to the supervisory authority within 72 hours in accordance with Art. 33/34 GDPR. A documented process must ensure that breaches are detected, assessed and reported on time."
+        "tooltip": "VDA ISA 6.0.2, control 9.6.2: “To what extent are data protection incidents processed?”"
       },
       "komQ1": {
         "help": "Network segmentation is a central TISAX requirement: OEM data, prototype information and production systems must run in separate network segments divided by firewalls. TISAX assessors review the network architecture, firewall rule sets and the monitoring of network transitions. A flat network architecture without segmentation is a common major finding.",
@@ -4127,10 +4127,10 @@
           "level3": "Multi-layer network architecture with DMZ, dedicated OEM zones, micro-segmentation for critical systems, IDS/IPS at zone transitions, regular firewall audits and network access control (NAC)"
         },
         "title": "Are networks segmented and protected by suitable security components?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.20 — Networks must be segmented according to protection needs and protected by firewalls, intrusion detection/prevention systems and further security components."
+        "tooltip": "VDA ISA 6.0.2, control 5.2.7: “To what extent is the network of the organization managed?”"
       },
       "komQ2": {
-        "help": "TISAX requires a complete overview of all network services and connections. VPN access for remote maintenance and home office must be secured with strong authentication (MFA). Wi-Fi networks require WPA3 or WPA2-Enterprise; guest Wi-Fi must be separated from the corporate network. Remote maintenance access by OEMs and service providers must be controlled particularly closely.",
+        "help": "You need a complete overview of all network services and connections. VPN access for remote maintenance and home office must be secured with strong authentication (MFA). Wi-Fi networks require WPA3 or WPA2-Enterprise; guest Wi-Fi must be separated from the corporate network. Remote maintenance access by OEMs and service providers must be controlled particularly closely.",
         "maturity": {
           "level0": "No systematic overview or control of network services — VPN without MFA, open Wi-Fi networks, uncontrolled remote maintenance access",
           "level1": "Basic VPN solution and Wi-Fi encryption in place, but no MFA — network services not fully documented, remote maintenance access not secured uniformly",
@@ -4138,7 +4138,7 @@
           "level3": "Centrally managed network services with automated monitoring, VPN with MFA and device checks, RADIUS-based Wi-Fi authentication, session recording for remote maintenance and continuous network monitoring with anomaly detection"
         },
         "title": "Are network services and connections securely configured and monitored?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.21 — Network services must be identified, securely configured and monitored. This includes DNS, DHCP, VPN access, remote access solutions and wireless networks."
+        "tooltip": "VDA ISA 6.0.2, control 5.2.7: “To what extent is the network of the organization managed?” control 5.3.2: “To what extent are requirements for network services defined?”"
       },
       "komQ3": {
         "help": "Data exchange with OEMs is a central topic in TISAX assessments. Design data, prototype information and quality data must be transferred via secure channels — e.g. OEM-specific platforms (Teamcenter, ENOVIA), encrypted data transfer solutions or SFTP. Unencrypted email attachments for confidential OEM data are a typical finding.",
@@ -4149,10 +4149,10 @@
           "level3": "End-to-end secure data exchange solution with automated encryption, integrity checks, access logging, retention periods and integration into information classification — compliance with OEM-specific transfer requirements demonstrated"
         },
         "title": "Are data transfers with vehicle manufacturers (OEMs) and business partners handled via secure channels?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.14 — Confidential information must be exchanged with external partners via encrypted and authenticated communication channels. Special requirements apply to OEM data exchange."
+        "tooltip": "VDA ISA 6.0.2, control 5.1.2: “To what extent is information protected during transfer?”"
       },
       "kryQ1": {
-        "help": "TISAX requires a documented cryptography policy defining which encryption mechanisms and key lengths are used. The policy must cover data encryption (at rest and in transit), email encryption, disk encryption of mobile devices and VPN connections. Outdated algorithms (e.g. MD5, SHA-1, DES) may no longer be used.",
+        "help": "You need a documented cryptography policy defining which encryption mechanisms and key lengths are used. The policy must cover data encryption (at rest and in transit), email encryption, disk encryption of mobile devices and VPN connections. Outdated algorithms (e.g. MD5, SHA-1, DES) may no longer be used.",
         "maturity": {
           "level0": "No cryptography policy in place — encryption is used sporadically and without standards",
           "level1": "Individual encryption measures implemented (e.g. VPN), but no overarching policy — algorithms and key lengths not standardised",
@@ -4160,10 +4160,10 @@
           "level3": "Comprehensive cryptography governance with automated enforcement of the standards, central key management (KMS), regular crypto audits, certificate expiry monitoring and a migration plan for post-quantum cryptography"
         },
         "title": "Does a cryptography policy exist with requirements for the use of encryption and key management?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — A cryptography policy must define when and how cryptographic mechanisms are used. This covers encryption standards, key lengths and the management of cryptographic keys."
+        "tooltip": "VDA ISA 6.0.2, control 5.1.1: “To what extent is the use of cryptographic procedures managed?”"
       },
       "kryQ2": {
-        "help": "This is particularly relevant for automotive suppliers: OEM design data, prototype information and test results must be stored and transferred encrypted. TISAX requires disk encryption for mobile devices, encryption of databases with protection needs and the use of secure transfer protocols (TLS 1.2+, SFTP, encrypted email) for data exchange with OEMs.",
+        "help": "This is particularly relevant for automotive suppliers: OEM design data, prototype information and test results must be stored and transferred encrypted. You need disk encryption for mobile devices, encryption of databases with protection needs and the use of secure transfer protocols (TLS 1.2+, SFTP, encrypted email) for data exchange with OEMs.",
         "maturity": {
           "level0": "No systematic encryption — confidential data is stored unencrypted and transferred by email or FTP",
           "level1": "Partial encryption in place (e.g. HTTPS for web applications), but no consistent implementation — hard drives of mobile devices not encrypted, internal email traffic unencrypted",
@@ -4171,10 +4171,10 @@
           "level3": "End-to-end encryption for all confidential data, automated enforcement via endpoint management, DLP integration to prevent unencrypted transfers, database encryption and regular crypto audits"
         },
         "title": "Is confidential data consistently encrypted at rest and in transit?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Confidential information must be protected by appropriate encryption both at rest and in transit."
+        "tooltip": "VDA ISA 6.0.2, control 5.1.1: “To what extent is the use of cryptographic procedures managed?” control 5.1.2: “To what extent is information protected during transfer?”"
       },
       "kryQ3": {
-        "help": "Even the strongest encryption is worthless if the keys are managed insecurely. TISAX requires documented key management: keys must be generated with cryptographically secure random generators, stored in secured keystores, rotated regularly and revoked immediately upon suspected compromise. Particularly important for certificates used in OEM data exchange.",
+        "help": "Even the strongest encryption is worthless if the keys are managed insecurely. You need documented key management: keys must be generated with cryptographically secure random generators, stored in secured keystores, rotated regularly and revoked immediately upon suspected compromise. Particularly important for certificates used in OEM data exchange.",
         "maturity": {
           "level0": "No key management — keys are generated ad hoc, stored in configuration files, not rotated or revoked",
           "level1": "Basic awareness of key protection, but no documented process — keys are managed manually, rotation does not happen regularly",
@@ -4182,10 +4182,10 @@
           "level3": "Central key management system (KMS) with automated key rotation, HSM-backed storage for highly confidential keys, an audit trail of all key operations and automated certificate renewal"
         },
         "title": "Are cryptographic keys generated, stored and distributed securely, and revoked when compromised?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Management of cryptographic keys must cover the entire lifecycle: generation, distribution, storage, rotation, archiving and revocation/destruction."
+        "tooltip": "VDA ISA 6.0.2, control 5.1.1: “To what extent is the use of cryptographic procedures managed?”"
       },
       "liefQ1": {
-        "help": "As an automotive supplier, you must pass your OEMs' security requirements on to your own suppliers and service providers. TISAX requires contracts to contain clauses on confidentiality, information protection, audit rights, incident reporting duties and TISAX label requirements. Without contractual safeguards, you are liable for security incidents at your suppliers.",
+        "help": "As an automotive supplier, you must pass your OEMs' security requirements on to your own suppliers and service providers. Contracts should contain clauses on confidentiality, information protection, audit rights, incident reporting duties and TISAX label requirements. Without contractual safeguards, you are liable for security incidents at your suppliers.",
         "maturity": {
           "level0": "No information security requirements in supplier contracts — service providers get access without contractual security obligations",
           "level1": "General confidentiality clauses exist, but no specific information security requirements — no audit rights, no reporting duties agreed",
@@ -4193,10 +4193,10 @@
           "level3": "Comprehensive supplier security policy with contractual enforcement, TISAX label requirement for critical suppliers, regular contract review and escalation procedures for non-compliance"
         },
         "title": "Are information security requirements anchored in contracts with suppliers and service providers?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.20 — Contractual agreements with suppliers and service providers must include information security requirements, especially where they gain access to confidential OEM data or IT systems."
+        "tooltip": "VDA ISA 6.0.2, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
       },
       "liefQ2": {
-        "help": "TISAX requires you to regularly review your suppliers' compliance with the security requirements. This can be done through supplier questionnaires, verification of the TISAX label, ISO 27001 certification, on-site audits or technical checks (e.g. vulnerability scans of interfaces). Critical suppliers with access to OEM data require greater review depth.",
+        "help": "Regularly review your suppliers' compliance with the security requirements. This can be done through supplier questionnaires, verification of the TISAX label, ISO 27001 certification, on-site audits or technical checks (e.g. vulnerability scans of interfaces). Critical suppliers with access to OEM data require greater review depth.",
         "maturity": {
           "level0": "No assessment of suppliers' information security — no review process exists",
           "level1": "Occasional review of individual suppliers on request, but no systematic assessment process — no risk-based prioritisation",
@@ -4204,10 +4204,10 @@
           "level3": "Systematic supplier risk management with automated monitoring, regular audits of high-risk suppliers, TISAX label tracking, assessment history and action management for deficiencies"
         },
         "title": "Are suppliers and service providers regularly assessed with regard to their information security?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.22 — The information security of suppliers must be assessed regularly, especially where they have access to confidential information or critical IT systems."
+        "tooltip": "VDA ISA 6.0.2, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
       },
       "liefQ3": {
-        "help": "Supply chain changes can have significant security implications: a new sub-supplier in a third country, a site relocation without adequate physical security or the use of new cloud services changes the risk profile. TISAX requires such changes to be assessed for their security impact before implementation and, where necessary, approved by the OEM.",
+        "help": "Supply chain changes can have significant security implications: a new sub-supplier in a third country, a site relocation without adequate physical security or the use of new cloud services changes the risk profile. Such changes should be assessed for their security impact before implementation and, where necessary, approved by the OEM.",
         "maturity": {
           "level0": "No assessment of supply chain changes — sub-suppliers are switched or added without checking security aspects",
           "level1": "Awareness of the risks of supply chain changes, but no formal review — changes are not systematically recorded or assessed",
@@ -4215,10 +4215,10 @@
           "level3": "Integrated supply chain change management with automated risk assessment, an OEM coordination process, monitoring of geopolitical risks and a documented decision history for all security-relevant changes"
         },
         "title": "Are changes in the supply chain assessed for their impact on information security?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.21 — Changes in the supply chain (e.g. new sub-suppliers, site relocations, personnel changes) must be assessed for their impact on information security."
+        "tooltip": "VDA ISA 6.0.2, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
       },
       "orgQ1": {
-        "help": "The information security policy defines the strategic direction of your information security and demonstrates management commitment. For TISAX it is a mandatory document that is reviewed in every assessment. It should contain protection goals, scope, responsibilities and the link to OEM requirements. Without an approved policy, no assessment level can be passed.",
+        "help": "The information security policy defines the strategic direction of your information security and demonstrates management commitment. VDA ISA control 1.1.1 asks to what extent information security policies are available. It should contain protection goals, scope, responsibilities and the link to OEM requirements. Without an approved policy, no assessment level can be passed.",
         "maturity": {
           "level0": "No information security policy in place — no documented management commitment to information security",
           "level1": "A draft policy exists, but not formally approved by management or communicated to employees",
@@ -4226,10 +4226,10 @@
           "level3": "The information security policy is part of a living ISMS, is reviewed annually by management, is known to all employees and relevant externals, and is integrated with OEM-specific requirements"
         },
         "title": "Does a documented information security policy exist that has been approved and communicated by management?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.1 — An information security policy is the top-level directive for handling information security in the company. It must be approved by management and made available to all employees."
+        "tooltip": "VDA ISA 6.0.2, control 1.1.1: “To what extent are information security policies available?”"
       },
       "orgQ2": {
-        "help": "TISAX requires an information security officer (ISO) to be designated who reports directly to management. In addition, responsibilities for risk management, incident handling, physical security and prototype protection must be clearly assigned. In the automotive industry, these roles must also be demonstrable towards OEM partners.",
+        "help": "An information security officer (ISO) should be designated who reports directly to management. In addition, responsibilities for risk management, incident handling, physical security and prototype protection must be clearly assigned. In the automotive industry, these roles must also be demonstrable towards OEM partners.",
         "maturity": {
           "level0": "No defined roles for information security — nobody is formally responsible for information security topics",
           "level1": "Information security officer informally designated, but no documented role description, no clear separation of responsibilities",
@@ -4237,7 +4237,7 @@
           "level3": "Complete information security organisation with ISO, risk owners, subject-matter owners and deputies — reporting line to management established, roles reviewed regularly and updated upon organisational changes"
         },
         "title": "Are roles and responsibilities for information security clearly assigned and documented?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.2 — Clear roles for information security must be defined, in particular an information security officer (ISO). Responsibilities must be documented and communicated."
+        "tooltip": "VDA ISA 6.0.2, control 1.2.2: “To what extent are information security responsibilities organized?”"
       },
       "orgQ3": {
         "help": "Risk management is central to TISAX: you must carry out a methodical risk analysis covering all relevant assets (especially OEM data, prototypes, IT systems). The risk assessment determines which protective measures are required. The assessor checks whether the methodology is traceable and the risk treatment appropriate.",
@@ -4248,10 +4248,10 @@
           "level3": "Integrated risk management with regular reassessment, linkage to VDA ISA controls, residual risk acceptance by management and KPI-based reporting"
         },
         "title": "Are information security risks systematically identified, assessed and treated?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 clause 6.1.2 — Systematic risk management is a core component of the ISMS. Risks must be identified, rated by likelihood and impact, and treated with appropriate measures."
+        "tooltip": "VDA ISA 6.0.2, control 1.4.1: “To what extent are information security risks managed?”"
       },
       "perQ1": {
-        "help": "In the automotive industry, employees frequently have access to strictly confidential OEM data and prototypes. Before hiring, you should verify identity, qualifications and reliability. For roles with access to highly confidential information, a police clearance certificate may be required. TISAX assessors check whether a documented pre-employment screening process exists.",
+        "help": "In the automotive industry, employees frequently have access to strictly confidential OEM data and prototypes. Before hiring, you should verify identity, qualifications and reliability. For roles with access to highly confidential information, a police clearance certificate may be required. Check whether a documented pre-employment screening process exists.",
         "maturity": {
           "level0": "No background checks before hiring — neither identity nor qualifications are verified",
           "level1": "Basic identity check and CV review, but no formalised process — the depth of checks is not differentiated by protection needs",
@@ -4259,10 +4259,10 @@
           "level3": "Comprehensive, protection-need-graded screening process for all employees and temporary workers, regular re-screening for high-security roles, documented rejection criteria and archiving of evidence"
         },
         "title": "Are employees screened for reliability and qualifications before hiring?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.1 — Background checks appropriate to the protection needs of the future role must be performed before hiring. This includes identity verification, proof of qualifications and, where applicable, criminal record certificates."
+        "tooltip": "VDA ISA 6.0.2, control 2.1.1: “To what extent is the qualification of employees for sensitive work fields ensured?”"
       },
       "perQ2": {
-        "help": "TISAX requires all employees — including temporary staff and agency workers — to receive regular information security training. The training must cover handling confidential OEM data, prototype protection, recognising social engineering and reporting duties for security incidents. Training records must be documented and presentable at the assessment.",
+        "help": "All employees — including temporary staff and agency workers — should receive regular information security training. The training must cover handling confidential OEM data, prototype protection, recognising social engineering and reporting duties for security incidents. Training records must be documented and presentable at the assessment.",
         "maturity": {
           "level0": "No information security training — employees are not sensitised systematically",
           "level1": "Occasional training as needed, but no annual programme — no success monitoring, not all employees covered",
@@ -4270,10 +4270,10 @@
           "level3": "Comprehensive, continuous awareness programme with e-learning, phishing simulations, role-specific deep dives, effectiveness measurement through tests and documented training records for all employees"
         },
         "title": "Is there a structured programme for information security awareness and training?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.3 — All employees must receive regular information security training and awareness. Training must be role-specific and verifiable."
+        "tooltip": "VDA ISA 6.0.2, control 2.1.3: “To what extent is staff made aware of and trained with respect to the risks arising from the handling of information?”"
       },
       "perQ3": {
-        "help": "In the automotive industry, contractual confidentiality safeguards are particularly important, as OEM partners often impose strict secrecy requirements. TISAX requires demonstrable NDAs for all persons with access to confidential information. The agreements must govern the scope of secrecy, its duration, sanctions for violations and the obligations upon termination of the relationship.",
+        "help": "In the automotive industry, contractual confidentiality safeguards are particularly important, as OEM partners often impose strict secrecy requirements. You need demonstrable NDAs for all persons with access to confidential information. The agreements must govern the scope of secrecy, its duration, sanctions for violations and the obligations upon termination of the relationship.",
         "maturity": {
           "level0": "No confidentiality agreements — neither with employees nor with external partners",
           "level1": "Confidentiality clauses in employment contracts, but no separate NDAs with externals — content not aligned with information security requirements",
@@ -4281,10 +4281,10 @@
           "level3": "Comprehensive NDA management with protection-need-graded agreements, regular updates when requirements change, exit procedures with return obligations and complete documentation of all signed agreements"
         },
         "title": "Are confidentiality and secrecy arrangements agreed with employees and external partners?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.6 — Non-disclosure agreements (NDA) must be concluded with all persons who have access to information requiring protection. This includes employees, temporary workers, consultants and service providers."
+        "tooltip": "VDA ISA 6.0.2, control 2.1.2: “To what extent is all staff contractually bound to comply with information security policies?” control 6.1.2: “To what extent is non-disclosure regarding the exchange of information contractually agreed?”"
       },
       "phyQ1": {
-        "help": "TISAX requires clear zoning of your premises: public area, general company area, security-relevant area and high-security area (e.g. prototype workshop). Each zone requires appropriate access controls — from a simple badge requirement to biometric access control with a mantrap. The assessor checks the effectiveness of the zoning on site.",
+        "help": "You need clear zoning of your premises: public area, general company area, security-relevant area and high-security area (e.g. prototype workshop). Each zone requires appropriate access controls — from a simple badge requirement to biometric access control with a mantrap. The assessor checks the effectiveness of the zoning on site.",
         "maturity": {
           "level0": "No security areas defined — no differentiated access control, free access to all premises",
           "level1": "Basic access control at the entrance (e.g. reception), but no zoning of security-relevant areas — server rooms not separately secured",
@@ -4292,10 +4292,10 @@
           "level3": "Multi-level zone concept with access control graded by protection needs, mantrap systems for high-security areas, complete entry logging, regular walkthroughs and revision of the zone concepts"
         },
         "title": "Are physical security areas defined and equipped with appropriate access controls?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.1 — Security areas must be defined and protected by physical barriers and access controls. The strength of protection must match the protection needs of the information processed."
+        "tooltip": "VDA ISA 6.0.2, control 3.1.1: “To what extent are security zones managed to protect information assets?”"
       },
       "phyQ2": {
-        "help": "In the automotive industry, confidential OEM design data, measurement results and prototype images are often processed on local systems. TISAX requires these to be physically secured: laptops with Kensington locks or in locked cabinets, a clean desk policy, secure disposal of storage media and printed materials. Mobile devices must be encrypted.",
+        "help": "In the automotive industry, confidential OEM design data, measurement results and prototype images are often processed on local systems. These should be physically secured: laptops with Kensington locks or in locked cabinets, a clean desk policy, secure disposal of storage media and printed materials. Mobile devices must be encrypted.",
         "maturity": {
           "level0": "No physical protection for IT devices and storage media — laptops and USB sticks are left unsecured, no clean desk rule",
           "level1": "Basic measures such as lockable offices, but no specific rules for devices and storage media — no controlled handling of removable media",
@@ -4303,10 +4303,10 @@
           "level3": "Comprehensive equipment protection concept with asset tracking, automatic disk encryption, controlled USB use via endpoint management, a documented disposal process and regular compliance checks"
         },
         "title": "Are IT systems and storage media physically protected against theft, manipulation and unauthorised access?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.8 — IT equipment, storage media and documentation must be protected against theft, damage and unauthorised viewing. Special requirements apply to mobile devices and removable media."
+        "tooltip": "VDA ISA 6.0.2, control 3.1.3: “To what extent is the handling of supporting assets managed?” control 3.1.4: “To what extent is the handling of mobile IT devices and mobile data storage devices managed?”"
       },
       "phyQ3": {
-        "help": "Server rooms, archive areas and prototype workshops need appropriate protection against physical threats. TISAX assessors check whether a fire alarm system, extinguishing system (gas or water), UPS, climate monitoring and water sensors are in place. The scope of protection must match the protection needs of the information processed in the area.",
+        "help": "Server rooms, archive areas and prototype workshops need appropriate protection against physical threats. Check whether a fire alarm system, extinguishing system (gas or water), UPS, climate monitoring and water sensors are in place. The scope of protection must match the protection needs of the information processed in the area.",
         "maturity": {
           "level0": "No specific protection against environmental threats for IT areas — no fire protection, no UPS, no air conditioning in the server room",
           "level1": "Basic fire protection (extinguishers, smoke detectors) in place, but no UPS or dedicated air conditioning for the server room",
@@ -4314,7 +4314,7 @@
           "level3": "Comprehensive protection with redundant UPS and emergency power, automatic fire suppression, climate monitoring with alerting, water sensors and regular function tests of all protection systems"
         },
         "title": "Are measures in place to protect security-relevant areas against environmental threats such as fire, water and power failure?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.5 — Security-relevant areas must be protected against environmental threats. This includes fire protection, water protection, air conditioning and uninterruptible power supply."
+        "tooltip": "VDA ISA 6.0.2, control 1.6.3: “To what extent is the organization prepared to handle crisis situations?” control 5.2.8: “To what extent is continuity planning for IT services in place?” VDA ISA 6.0.2 has no separate control on environmental threats; the former control 3.1.2 is listed there as superseded by 1.6.3, 5.2.8 and 5.2.9."
       },
       "protoQ1": {
         "help": "Prototype protection is one of the central differentiators of TISAX compared with ISO 27001. OEMs require suppliers to protect prototypes — whether vehicles, parts or design studies — through physical and organisational measures. The protection concept must cover camouflage measures, access restrictions, photo/film bans and transport rules.",
@@ -4325,10 +4325,10 @@
           "level3": "Comprehensive prototype protection programme with a multi-level zone concept, complete access control, camera surveillance, dedicated camouflage vehicles and regular audits of prototype protection compliance by the OEM"
         },
         "title": "Does a dedicated protection concept exist for prototype vehicles, parts and components?",
-        "tooltip": "VDA ISA 6 (Prototype Protection module) — Prototype protection is a TISAX-specific requirement area. A documented concept must exist for protecting physical prototypes against unauthorised viewing, photography and disclosure."
+        "tooltip": "VDA ISA 6.0.2, control 8.1.1: “To what extent is a security concept available describing minimum requirements regarding the physical and environmental security for prototype protection?”"
       },
       "protoQ2": {
-        "help": "Besides physical prototypes, digital prototype information must also be protected. CAD data, rendering images, simulation results and specifications are often the primary target of industrial espionage. TISAX requires clear rules for storage (encrypted, access-protected), transfer (secure channels) and deletion (after project end). The need-to-know principle must be applied strictly.",
+        "help": "Besides physical prototypes, digital prototype information must also be protected. CAD data, rendering images, simulation results and specifications are often the primary target of industrial espionage. You need clear rules for storage (encrypted, access-protected), transfer (secure channels) and deletion (after project end). The need-to-know principle must be applied strictly.",
         "maturity": {
           "level0": "No rules for handling digital prototype information — CAD data and images are stored unprotected and sent by email",
           "level1": "Basic awareness exists, but no formal handling rules — distribution of prototype information is not tracked",
@@ -4336,7 +4336,7 @@
           "level3": "Technically enforced protection rules with DRM/rights management for prototype data, traceable access logging, automated deletion after project end and regular review of access authorisations"
         },
         "title": "Is the handling and disclosure of prototype information (images, CAD data, specifications) regulated?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.10 — Digital prototype information such as CAD data, photos, design sketches and technical specifications requires special protection and handling rules. Disclosure must be strictly controlled."
+        "tooltip": "VDA ISA 6.0.2, control 8.2.4: “To what extent are security classifications of the project and the resulting security measures known?” control 8.2.6: “To what extent are regulations for image recording and handling of created image material existent?”"
       },
       "protoQ3": {
         "help": "OEMs require their prototype protection requirements to be observed along the entire supply chain. If you, as a tier 1 or tier 2 supplier, pass prototype parts or information on to your sub-suppliers, you must pass on the protection requirements contractually and verify compliance. TISAX assessors specifically ask for evidence of supplier monitoring.",
@@ -4347,10 +4347,10 @@
           "level3": "Comprehensive supply chain prototype security with contractual OEM-compliant requirements, regular on-site audits at sub-suppliers, a TISAX label requirement for critical suppliers and documented evidence keeping"
         },
         "title": "Are prototype protection requirements contractually ensured and monitored in the supply chain?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.20 — Where prototypes or prototype information are passed on to sub-suppliers, the prototype protection requirements must be agreed contractually and compliance monitored."
+        "tooltip": "VDA ISA 6.0.2, control 8.2.1: “To what extent are non-disclosure agreements/obligations existent according to the valid contractual law?” control 8.2.2: “To what extent are requirements for commissioning subcontractors known and fulfilled?”"
       },
       "techQ1": {
-        "help": "TISAX requires a complete inventory of all IT assets: servers, clients, network components, software, databases and cloud services. Every asset must be assigned to an owner and classified according to the protection needs of the information processed on it. OEM-related systems in particular often require a higher classification.",
+        "help": "You need a complete inventory of all IT assets: servers, clients, network components, software, databases and cloud services. Every asset must be assigned to an owner and classified according to the protection needs of the information processed on it. OEM-related systems in particular often require a higher classification.",
         "maturity": {
           "level0": "No IT asset inventory — there is no overview of the systems, software and data holdings in use",
           "level1": "Partial overview of IT assets, but not complete or current — no protection-needs mapping, no defined asset owners",
@@ -4358,7 +4358,7 @@
           "level3": "Automated asset management with discovery tools, continuous updates, linkage to the risk assessment and protection-needs classification in line with the VDA ISA protection-need categories"
         },
         "title": "Is systematic management of IT assets established, including classification and inventory?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.9 — All information-processing assets must be identified, inventoried and classified by protection needs. Without a complete asset inventory, effective security management is impossible."
+        "tooltip": "VDA ISA 6.0.2, control 1.3.1: “To what extent are information assets identified and recorded?” control 1.3.2: “To what extent are information assets classified and managed in terms of their protection needs?”"
       },
       "techQ2": {
         "help": "Information classification is a core topic in TISAX assessments. You must define a classification scheme (e.g. public, internal, confidential, strictly confidential) that is compatible with the OEM classifications. Every document and piece of information must be labelled accordingly. The handling rules determine how classified information may be stored, transferred and destroyed.",
@@ -4369,10 +4369,10 @@
           "level3": "Fully implemented classification scheme with technical enforcement (e.g. DLP, rights management), automatic labelling, regular review of the classification and integration into OEM-specific information exchange procedures"
         },
         "title": "Are information and documents labelled and handled according to a defined classification scheme?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.12 — A classification scheme for information must be defined. Information must be labelled according to its confidentiality and handled, stored and transmitted according to defined rules."
+        "tooltip": "VDA ISA 6.0.2, control 1.3.2: “To what extent are information assets classified and managed in terms of their protection needs?”"
       },
       "techQ3": {
-        "help": "Removable media pose a considerable security risk: data loss through misplacement, uncontrolled data leakage and malware introduction. TISAX requires clear rules for using USB devices, encryption of mobile storage media and secure disposal. Many OEMs demand a complete USB ban or whitelist-based control.",
+        "help": "Removable media pose a considerable security risk: data loss through misplacement, uncontrolled data leakage and malware introduction. You need clear rules for using USB devices, encryption of mobile storage media and secure disposal. Many OEMs demand a complete USB ban or whitelist-based control.",
         "maturity": {
           "level0": "No control over removable media — USB ports freely usable, no disposal rules for old media",
           "level1": "Policy on removable media use exists, but not technically enforced — disposal not systematically regulated",
@@ -4380,10 +4380,10 @@
           "level3": "Centrally managed device control policy with a whitelist, automatic encryption, logging of all access, certified media destruction and regular review of authorisations"
         },
         "title": "Are removable media and storage devices used in a controlled manner and disposed of securely?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.10 — The use of removable media (USB sticks, external drives, optical media) must be controlled. Storage media no longer needed must be securely erased or physically destroyed."
+        "tooltip": "VDA ISA 6.0.2, control 3.1.3: “To what extent is the handling of supporting assets managed?” control 3.1.4: “To what extent is the handling of mobile IT devices and mobile data storage devices managed?”"
       },
       "zkQ1": {
-        "help": "TISAX requires access to IT systems and information to be granted only on the basis of a documented need. The need-to-know principle means: every employee only gets access to the information required for their work. The least-privilege principle means: every user only gets the minimum rights required for their tasks.",
+        "help": "Access to IT systems and information should be granted only on the basis of a documented need. The need-to-know principle means: every employee only gets access to the information required for their work. The least-privilege principle means: every user only gets the minimum rights required for their tasks.",
         "maturity": {
           "level0": "No access control policy — access rights are granted without a needs assessment, broad access rights for all employees",
           "level1": "Informal rules for granting rights, but no documented authorisation concept — no systematic needs assessment",
@@ -4391,10 +4391,10 @@
           "level3": "Role-based authorisation concept (RBAC) with documented role models, an automated request process, regular recertification and segregation of duties (SoD) for critical authorisations"
         },
         "title": "Does an access control policy based on the need-to-know and least-privilege principles exist?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.15 — Access rights to information and information-processing systems must be granted based on business requirements and the principle of least privilege."
+        "tooltip": "VDA ISA 6.0.2, control 4.2.1: “To what extent are access rights assigned and managed?”"
       },
       "zkQ2": {
-        "help": "A common finding in TISAX assessments is orphaned accounts: employees left long ago, but their access still exists. TISAX requires a defined identity lifecycle process that creates accounts on joining, adjusts them on role changes and deactivates them promptly on departure. This is especially critical for accounts with access to OEM systems or prototype data.",
+        "help": "A common finding in TISAX assessments is orphaned accounts: employees left long ago, but their access still exists. You need a defined identity lifecycle process that creates accounts on joining, adjusts them on role changes and deactivates them promptly on departure. This is especially critical for accounts with access to OEM systems or prototype data.",
         "maturity": {
           "level0": "No systematic management of user accounts — accounts are created but not systematically deactivated or reviewed",
           "level1": "Basic process for account creation, but no prompt deactivation upon departure — orphaned accounts are not systematically cleaned up",
@@ -4402,10 +4402,10 @@
           "level3": "Automated identity lifecycle with HR system integration, immediate account lockout upon departure, automatic recertification of all authorisations, monitoring of inactive accounts and regular reporting to management"
         },
         "title": "Are user accounts and access rights managed across their entire lifecycle?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.16 — Management of identities and access rights must cover the entire lifecycle: creation, modification and deactivation of accounts when employees join, transfer or leave."
+        "tooltip": "VDA ISA 6.0.2, control 4.1.3: “To what extent are user accounts and login information securely managed and applied?” control 4.2.1: “To what extent are access rights assigned and managed?”"
       },
       "zkQ3": {
-        "help": "Administrator accounts have far-reaching rights and are therefore preferred attack targets. TISAX requires privileged accounts to be specially protected: separate admin accounts (not for daily use), strong authentication (MFA), logging of all administrative activities and regular review of necessity. Shared admin accounts must be avoided.",
+        "help": "Administrator accounts have far-reaching rights and are therefore preferred attack targets. Privileged accounts should be specially protected: separate admin accounts (not for daily use), strong authentication (MFA), logging of all administrative activities and regular review of necessity. Shared admin accounts must be avoided.",
         "maturity": {
           "level0": "No separate management of privileged accounts — administrators use standard accounts with elevated rights for all activities",
           "level1": "Separate administrator accounts exist, but no special protection — no MFA for admin access, no logging of administrative actions",
@@ -4413,7 +4413,7 @@
           "level3": "Privileged access management (PAM) with just-in-time access, session recording, automated password rotation, break-glass procedures for emergency access and real-time alerting on anomalous administrator behaviour"
         },
         "title": "Are privileged access rights (administrator accounts) specially protected and monitored?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.2 — Privileged access (e.g. administrator, root and service accounts) poses an elevated risk and must be separately managed, restricted and monitored."
+        "tooltip": "VDA ISA 6.0.2, control 4.1.2: “To what extent is the user access to IT services and IT systems secured?” control 4.2.1: “To what extent are access rights assigned and managed?”"
       }
     },
     "quickCheck": {

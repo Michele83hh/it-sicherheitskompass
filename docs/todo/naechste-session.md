@@ -24,7 +24,8 @@ Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`
 - [ ] Gleiche Stellen außerhalb von NIS2: DSGVO `tom-q3` (Stufe 2 nennt „24-48 Stunden“), CIS `cis-rn-q1` (3-2-1-Regel).
 - [x] Doppelungen je Regelwerk: abgegrenzt statt gestrichen, 42 Texte je Sprache (Abschnitt 4a).
 - [ ] Selbst gegenlesen: die Tabelle in Abschnitt 4a, vor allem die neu gefassten Fragen DORA `rt-q4` und DSGVO `dv-q2`.
-- [ ] Normbezüge klären: DORA `da-q2` (Art. 28 oder Art. 30 Abs. 2), PCI DSS `ac-q2` (Req. 7.2 oder 7.3), Zusatzzeilen der DORA-Fragen.
+- [x] Normbezüge DORA: `da-q2` und die Zusatzzeilen sind am 14.11. am Amtstext geklärt (Wortlautprüfung).
+- [ ] Normbezug klären: PCI DSS `ac-q2` (Req. 7.2 oder 7.3). Der Normtext lag nicht vor.
 - [x] Übrige Punkte aus Abschnitt 4: Einzelbefunde, Abkürzungen, lange Titel (Abschnitt 4b).
 - [ ] Entscheiden: `cis-vm-q3` und `nist-pr-q3` teilen? (Abschnitt 3.6, Begründung in 4b)
 - [ ] Selbst gegenlesen: die gekürzten DSGVO-Titel (23 Stück) gegen den Wortlaut der Artikel.
@@ -52,6 +53,20 @@ Die Idee: die gemeinsamen Maßnahmenthemen beschreiben und die Seite teilweise a
 - [ ] Die Prototypen `public/prototyp/hell.html` und `dunkel.html` liegen nur lokal und werden nicht committet.
 - [ ] Aufräumen: die `node_modules`-Junction im Worktree entfernen, sobald dort nicht mehr gearbeitet wird (`cmd //c "rmdir node_modules"`).
 - [ ] Den GitHub-Token rotieren, falls noch nicht geschehen. Er war in einer früheren Sitzung versehentlich sichtbar.
+
+
+## 5. Aus der Wortlautprüfung vom 14.11.2026 (KI-erstellt)
+
+Einzelheiten in `docs/pruefprotokoll/2026-11-14-wortlautpruefung.md`.
+
+- [ ] Selbst gegenlesen: das Protokoll der Wortlautprüfung, vor allem die Tabellen „Bezüge geändert“ je Regelwerk.
+- [ ] Entscheiden: OWASP ASVS von 4.0.3 auf 5.0.0 umstellen? Die Nummerierung ist dort anders.
+- [ ] Entscheiden: BSI C5 von C5:2020 auf C5:2026 umstellen? Kennungen und Titel weichen ab (127 gegenüber 174 Kriterien).
+- [ ] Klären: Gilt die BSI-KritisV nach dem KRITIS-Dachgesetz weiter, oder tritt eine neue Verordnung an ihre Stelle? Die Zusatzzeile „BSI-KritisV“ steht bei 26 KRITIS-Fragen.
+- [ ] Klären: Gibt es eine neuere VDA-ISA-Fassung als 6.0.2?
+- [ ] Nicht geprüft, weil kein Normtext vorlag: ISO 27001, ISO 22301, PCI DSS, CIS Controls, SOC 2 (120 Fragen). Mit den Normtexten nachholen.
+- [ ] Empfehlungen (`recommendations.ts` aller Regelwerke) sind nicht am Wortlaut geprüft. Bekannt: C5-Empfehlung `idm3` nennt `IDM-10`, das es im C5:2020 nicht gibt; die TISAX-Empfehlungen tragen an 24 Stellen noch die alten, durchgezählten Control-Nummern.
+- [ ] Hilfetexte bei TISAX enthalten noch Erfahrungsaussagen über Assessments ohne Quelle („zentrales Thema“, „häufiger Befund“).
 
 ## Testwerkzeug
 

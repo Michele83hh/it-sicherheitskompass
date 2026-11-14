@@ -4021,8 +4021,8 @@
     "questions": {
       "bsQ1": {
         "title": "Werden IT-Systeme systematisch gehärtet und gegen bekannte Schwachstellen geschützt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.9 — IT-Systeme müssen vor Inbetriebnahme gehärtet werden. Unnötige Dienste, Ports und Standardkonten müssen deaktiviert, Sicherheitspatches zeitnah eingespielt werden.",
-        "help": "Systemhärtung bedeutet, die Angriffsfläche Ihrer IT-Systeme zu minimieren: Deaktivierung nicht benötigter Dienste, Schließung offener Ports, Änderung von Standardpasswörtern, Einschränkung von Benutzerrechten und zeitnahes Patchen. TISAX verlangt dokumentierte Härtungsrichtlinien, idealerweise basierend auf CIS Benchmarks oder vergleichbaren Standards. Besonders OEM-angebundene Systeme müssen gehärtet sein.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.2.5: „Inwieweit werden Schwachstellen erkannt und behandelt?“ Den Begriff „Härtung“ verwendet der VDA ISA 6.0.2 in seinen Controls nicht.",
+        "help": "Systemhärtung bedeutet, die Angriffsfläche Ihrer IT-Systeme zu minimieren: Deaktivierung nicht benötigter Dienste, Schließung offener Ports, Änderung von Standardpasswörtern, Einschränkung von Benutzerrechten und zeitnahes Patchen. Sie brauchen dokumentierte Härtungsrichtlinien, idealerweise basierend auf CIS Benchmarks oder vergleichbaren Standards. Besonders OEM-angebundene Systeme müssen gehärtet sein.",
         "maturity": {
           "level0": "Keine systematische Härtung — Systeme werden mit Standardkonfigurationen betrieben, Patches werden nicht regelmäßig eingespielt",
           "level1": "Einzelne Härtungsmaßnahmen bei bestimmten Systemen, aber kein standardisierter Prozess — Patch-Management reaktiv und lückenhaft",
@@ -4032,8 +4032,8 @@
       },
       "bsQ2": {
         "title": "Werden Schutzmaßnahmen gegen Schadsoftware (Malware) auf allen Endpunkten und Servern eingesetzt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.7 — Alle informationsverarbeitenden Systeme müssen durch angemessene Maßnahmen gegen Schadsoftware geschützt werden. Dies umfasst Antiviren-Software, Endpoint Detection and Response (EDR) und Web-/E-Mail-Filterung.",
-        "help": "Malware-Schutz ist eine Grundanforderung bei TISAX-Assessments. Alle Arbeitsplätze, Server und Gateways müssen mit aktueller Schutzsoftware ausgestattet sein. TISAX-Assessoren prüfen, ob Signaturen automatisch aktualisiert werden, ob Echtzeit-Scanning aktiv ist und ob Vorfälle zentral protokolliert und ausgewertet werden. Für Produktionsnetzwerke gelten besondere Anforderungen.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.2.3: „Inwieweit werden IT-Systeme vor Schadsoftware geschützt?“",
+        "help": "Malware-Schutz ist eine Grundanforderung bei TISAX-Assessments. Alle Arbeitsplätze, Server und Gateways müssen mit aktueller Schutzsoftware ausgestattet sein. Klären Sie, ob Signaturen automatisch aktualisiert werden, ob Echtzeit-Scanning aktiv ist und ob Vorfälle zentral protokolliert und ausgewertet werden. Für Produktionsnetzwerke gelten besondere Anforderungen.",
         "maturity": {
           "level0": "Kein systematischer Malware-Schutz — kein Antivirenprogramm auf allen Systemen, keine zentrale Verwaltung",
           "level1": "Antivirensoftware auf den meisten Arbeitsplätzen, aber keine zentrale Verwaltung — Signaturen nicht immer aktuell, keine Abdeckung aller Server und Endpunkte",
@@ -4043,7 +4043,7 @@
       },
       "bsQ3": {
         "title": "Existiert ein systematisches Schwachstellenmanagement mit regelmäßiger Erkennung und Behebung?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.8 — Technische Schwachstellen müssen zeitnah identifiziert, nach Schweregrad bewertet und durch Patches oder kompensierende Maßnahmen behoben werden. Regelmäßige Schwachstellenscans sind erforderlich.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.2.5: „Inwieweit werden Schwachstellen erkannt und behandelt?“",
         "help": "Ein systematisches Schwachstellenmanagement ist essentiell für TISAX-Compliance. Sie müssen regelmäßig Schwachstellenscans durchführen (intern und extern), die Ergebnisse nach Schweregrad (CVSS) priorisieren und Patches innerhalb definierter Fristen einspielen. Besonders kritisch sind Schwachstellen in Systemen mit OEM-Anbindung oder Zugang zu Prototypen-Daten.",
         "maturity": {
           "level0": "Kein Schwachstellenmanagement — keine regelmäßigen Scans, keine systematische Patch-Priorisierung",
@@ -4054,8 +4054,8 @@
       },
       "compQ1": {
         "title": "Werden gesetzliche und regulatorische Anforderungen an die Informationssicherheit ermittelt und eingehalten?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.31 — Alle relevanten gesetzlichen, regulatorischen und vertraglichen Anforderungen an die Informationssicherheit müssen identifiziert, dokumentiert und deren Einhaltung sichergestellt werden.",
-        "help": "Neben TISAX und ISO 27001 gibt es zahlreiche weitere Anforderungen, die für Automobilzulieferer relevant sein können: DSGVO, NIS2, KRITIS-VO, Geschäftsgeheimnisgesetz, OEM-spezifische Anforderungen und branchenspezifische Standards. TISAX-Assessoren prüfen, ob Sie eine Übersicht aller relevanten Anforderungen führen und deren Einhaltung systematisch sicherstellen.",
+        "tooltip": "VDA ISA 6.0.2, Control 7.1.1: „Inwieweit wird die Einhaltung regulatorischer und vertraglicher Bestimmungen sichergestellt?“",
+        "help": "Neben TISAX und ISO 27001 gibt es zahlreiche weitere Anforderungen, die für Automobilzulieferer relevant sein können: DSGVO, NIS2, KRITIS-VO, Geschäftsgeheimnisgesetz, OEM-spezifische Anforderungen und branchenspezifische Standards. Klären Sie, ob Sie eine Übersicht aller relevanten Anforderungen führen und deren Einhaltung systematisch sicherstellen.",
         "maturity": {
           "level0": "Keine systematische Erfassung relevanter IS-Anforderungen — gesetzliche und regulatorische Pflichten sind nicht bekannt oder dokumentiert",
           "level1": "Grundlegende Kenntnis wichtiger Anforderungen (z.B. DSGVO), aber keine vollständige Übersicht — Einhaltung wird nicht systematisch überwacht",
@@ -4065,8 +4065,8 @@
       },
       "compQ2": {
         "title": "Werden regelmäßige interne Audits und Managementbewertungen des ISMS durchgeführt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 Kap. 9.2/9.3 — Interne Audits müssen regelmäßig geplant und durchgeführt werden, um die Wirksamkeit des ISMS zu überprüfen. Die Ergebnisse müssen in einer Managementbewertung (Management Review) bewertet werden.",
-        "help": "TISAX verlangt einen funktionierenden PDCA-Zyklus: Planen, Umsetzen, Überprüfen, Verbessern. Interne Audits sind der zentrale Überprüfungsmechanismus. Sie müssen jährlich alle VDA-ISA-Kapitel abdecken, die Ergebnisse dokumentieren und der Geschäftsleitung im Rahmen eines Management Reviews vorlegen. Befunde müssen nachverfolgt und Maßnahmen auf Wirksamkeit geprüft werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 1.5.1: „Inwieweit wird die Einhaltung der Informationssicherheit in Verfahren und Prozessen sichergestellt?“ Control 1.5.2: „Inwieweit wird das ISMS von einer unabhängigen Stelle überprüft?“",
+        "help": "Sie brauchen einen funktionierenden PDCA-Zyklus: Planen, Umsetzen, Überprüfen, Verbessern. Interne Audits sind der zentrale Überprüfungsmechanismus. Sie sollten alle VDA-ISA-Kapitel abdecken, die Ergebnisse dokumentieren und der Geschäftsleitung im Rahmen eines Management Reviews vorlegen. Befunde müssen nachverfolgt und Maßnahmen auf Wirksamkeit geprüft werden.",
         "maturity": {
           "level0": "Keine internen ISMS-Audits — keine systematische Überprüfung der Informationssicherheitsmaßnahmen",
           "level1": "Einzelne Überprüfungen auf Anfrage, aber kein jährlicher Audit-Plan — kein Management Review, keine dokumentierte Maßnahmenverfolgung",
@@ -4076,8 +4076,8 @@
       },
       "compQ3": {
         "title": "Werden die Ergebnisse von TISAX-Assessments und Audits in einen kontinuierlichen Verbesserungsprozess überführt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.27 — Erkenntnisse aus TISAX-Assessments, internen Audits und Sicherheitsvorfällen müssen systematisch ausgewertet und in Verbesserungsmaßnahmen überführt werden. Der PDCA-Zyklus muss nachweisbar gelebt werden.",
-        "help": "TISAX ist kein einmaliges Projekt, sondern ein kontinuierlicher Prozess. Nach jedem Assessment, Audit oder Sicherheitsvorfall müssen die Erkenntnisse analysiert und in konkrete Verbesserungsmaßnahmen überführt werden. TISAX-Assessoren prüfen bei Folge-Assessments, ob frühere Befunde adressiert wurden und ob ein nachweisbarer Verbesserungstrend erkennbar ist.",
+        "tooltip": "VDA ISA 6.0.2, Control 1.5.1: „Inwieweit wird die Einhaltung der Informationssicherheit in Verfahren und Prozessen sichergestellt?“ Control 1.5.2: „Inwieweit wird das ISMS von einer unabhängigen Stelle überprüft?“",
+        "help": "TISAX ist kein einmaliges Projekt, sondern ein kontinuierlicher Prozess. Nach jedem Assessment, Audit oder Sicherheitsvorfall müssen die Erkenntnisse analysiert und in konkrete Verbesserungsmaßnahmen überführt werden. Klären Sie vor Folge-Assessments, ob frühere Befunde adressiert wurden und ob ein nachweisbarer Verbesserungstrend erkennbar ist.",
         "maturity": {
           "level0": "Keine systematische Verbesserung — Befunde aus Assessments und Audits werden nicht nachverfolgt oder adressiert",
           "level1": "Einzelne Befunde werden bearbeitet, aber kein strukturierter Verbesserungsprozess — keine Priorisierung, keine Wirksamkeitskontrolle",
@@ -4087,8 +4087,8 @@
       },
       "dsQ1": {
         "title": "Ist die Einhaltung datenschutzrechtlicher Anforderungen (DSGVO) im Rahmen Ihrer Informationssicherheit sichergestellt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.34 — Die Verarbeitung personenbezogener Daten muss den Anforderungen der DSGVO und des BDSG entsprechen. Sofern nach Art. 37 DSGVO/§ 38 BDSG erforderlich, muss ein Datenschutzbeauftragter benannt und die Einhaltung der Datenschutzgrundsätze sichergestellt sein.",
-        "help": "TISAX umfasst auch Datenschutzanforderungen, die über die reine Informationssicherheit hinausgehen. Als Automobilzulieferer verarbeiten Sie personenbezogene Daten von Mitarbeitern, Kunden und Ansprechpartnern. Die VDA ISA prüft, ob ein Datenschutzbeauftragter benannt ist, ob ein Verarbeitungsverzeichnis geführt wird und ob die DSGVO-Grundsätze (Rechtmäßigkeit, Zweckbindung, Datenminimierung) eingehalten werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 7.1.2: „Inwieweit wird der Schutz von personenbezogenen Daten bei der Umsetzung der Informationssicherheit berücksichtigt?“ Control 9.1.1: „Inwieweit sind Richtlinien zum Datenschutz vorhanden?“",
+        "help": "TISAX umfasst auch Datenschutzanforderungen, die über die reine Informationssicherheit hinausgehen. Als Automobilzulieferer verarbeiten Sie personenbezogene Daten von Mitarbeitern, Kunden und Ansprechpartnern. Klären Sie, ob ein Datenschutzbeauftragter benannt ist, ob ein Verarbeitungsverzeichnis geführt wird und ob die DSGVO-Grundsätze (Rechtmäßigkeit, Zweckbindung, Datenminimierung) eingehalten werden.",
         "maturity": {
           "level0": "Keine systematische Berücksichtigung datenschutzrechtlicher Anforderungen — kein Datenschutzbeauftragter benannt, kein Verarbeitungsverzeichnis",
           "level1": "Datenschutzbeauftragter benannt, aber Datenschutzprozesse nicht vollständig implementiert — Verarbeitungsverzeichnis unvollständig, keine Datenschutz-Folgenabschätzungen",
@@ -4098,8 +4098,8 @@
       },
       "dsQ2": {
         "title": "Werden Auftragsverarbeitungsverträge mit allen relevanten Dienstleistern geschlossen und gepflegt?",
-        "tooltip": "VDA ISA 6 (Modul Datenschutz) — Bei der Verarbeitung personenbezogener Daten durch Dritte (Auftragsverarbeiter) müssen Auftragsverarbeitungsverträge (AVV) gemäß Art. 28 DSGVO geschlossen werden.",
-        "help": "Als Automobilzulieferer geben Sie häufig personenbezogene Daten an IT-Dienstleister, Cloud-Anbieter, Personaldienstleister oder Entsorger weiter. Für jede dieser Verarbeitungen benötigen Sie einen rechtskonformen AVV nach Art. 28 DSGVO. TISAX-Assessoren prüfen, ob AVVs vorhanden, vollständig und aktuell sind — insbesondere bei Cloud-Diensten und Fernwartungszugriff.",
+        "tooltip": "VDA ISA 6.0.2, Control 9.5.2: „Inwieweit werden vertragliche Vereinbarungen an Auftragnehmer und Kooperationspartner weitergegeben und deren Einhaltung überprüft?“",
+        "help": "Als Automobilzulieferer geben Sie häufig personenbezogene Daten an IT-Dienstleister, Cloud-Anbieter, Personaldienstleister oder Entsorger weiter. Für jede dieser Verarbeitungen benötigen Sie einen rechtskonformen AVV nach Art. 28 DSGVO. Klären Sie, ob AVVs vorhanden, vollständig und aktuell sind — insbesondere bei Cloud-Diensten und Fernwartungszugriff.",
         "maturity": {
           "level0": "Keine Auftragsverarbeitungsverträge vorhanden — Datenverarbeitung durch Dritte erfolgt ohne vertragliche Grundlage",
           "level1": "Einzelne AVVs vorhanden, aber nicht für alle relevanten Dienstleister — Vertragsinhalte teilweise veraltet oder unvollständig",
@@ -4109,8 +4109,8 @@
       },
       "dsQ3": {
         "title": "Ist ein Prozess zur Erkennung und Meldung von Datenschutzverletzungen implementiert?",
-        "tooltip": "VDA ISA 6 (Modul Datenschutz) — Datenschutzverletzungen (Data Breaches) müssen gemäß Art. 33/34 DSGVO innerhalb von 72 Stunden an die Aufsichtsbehörde gemeldet werden. Ein dokumentierter Prozess muss sicherstellen, dass Verletzungen erkannt, bewertet und fristgerecht gemeldet werden.",
-        "help": "Eine Datenschutzverletzung liegt vor, wenn personenbezogene Daten unbefugt offengelegt, geändert, gelöscht oder sonst kompromittiert werden. Der TISAX-Assessor prüft, ob Sie einen dokumentierten Prozess haben, der die Erkennung, Bewertung (Risikoeinschätzung für Betroffene), interne Eskalation, Meldung an die Aufsichtsbehörde (72h) und ggf. Benachrichtigung der Betroffenen sicherstellt.",
+        "tooltip": "VDA ISA 6.0.2, Control 9.6.2: „Inwieweit werden Datenschutzvorfälle verarbeitet?“",
+        "help": "Eine Datenschutzverletzung liegt vor, wenn personenbezogene Daten unbefugt offengelegt, geändert, gelöscht oder sonst kompromittiert werden. Klären Sie, ob Sie einen dokumentierten Prozess haben, der die Erkennung, Bewertung (Risikoeinschätzung für Betroffene), interne Eskalation, Meldung an die Aufsichtsbehörde (72h) und ggf. Benachrichtigung der Betroffenen sicherstellt.",
         "maturity": {
           "level0": "Kein Prozess zur Erkennung und Meldung von Datenschutzverletzungen — Vorfälle werden nicht als Datenschutzverletzung erkannt",
           "level1": "Grundlegendes Bewusstsein vorhanden, aber kein dokumentierter Meldeprozess — Zuständigkeiten und Fristen unklar",
@@ -4120,7 +4120,7 @@
       },
       "komQ1": {
         "title": "Sind Netzwerke segmentiert und durch geeignete Sicherheitskomponenten geschützt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.20 — Netzwerke müssen nach Schutzbedarf segmentiert und durch Firewalls, Intrusion-Detection-/Prevention-Systeme und weitere Sicherheitskomponenten geschützt werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.2.7: „Inwieweit wird das Netzwerk der Organisation verwaltet?“",
         "help": "Netzwerksegmentierung ist eine zentrale Anforderung bei TISAX: OEM-Daten, Prototypen-Informationen und Produktionssysteme müssen in separaten Netzwerksegmenten betrieben werden, die durch Firewalls voneinander getrennt sind. TISAX-Assessoren prüfen die Netzwerkarchitektur, Firewall-Regelwerke und die Überwachung der Netzwerkübergänge. Eine flache Netzwerkarchitektur ohne Segmentierung ist ein häufiger Hauptbefund.",
         "maturity": {
           "level0": "Keine Netzwerksegmentierung — flache Netzwerkarchitektur ohne Zonenkonzept, kein Firewall-Management",
@@ -4131,8 +4131,8 @@
       },
       "komQ2": {
         "title": "Werden Netzwerkdienste und -verbindungen sicher konfiguriert und überwacht?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.21 — Netzwerkdienste müssen identifiziert, sicher konfiguriert und überwacht werden. Dazu gehören DNS, DHCP, VPN-Zugänge, Remote-Access-Lösungen und drahtlose Netzwerke.",
-        "help": "TISAX verlangt eine vollständige Übersicht über alle Netzwerkdienste und -verbindungen. VPN-Zugänge für Fernwartung und Homeoffice müssen mit starker Authentifizierung (MFA) gesichert sein. WLAN-Netzwerke erfordern WPA3 oder WPA2-Enterprise, Gäste-WLAN muss vom Unternehmensnetzwerk getrennt sein. Fernwartungszugänge von OEMs und Dienstleistern müssen besonders kontrolliert werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.2.7: „Inwieweit wird das Netzwerk der Organisation verwaltet?“ Control 5.3.2: „Inwieweit sind Anforderungen an Netzwerkdienste definiert?“",
+        "help": "Sie brauchen eine vollständige Übersicht über alle Netzwerkdienste und -verbindungen. VPN-Zugänge für Fernwartung und Homeoffice müssen mit starker Authentifizierung (MFA) gesichert sein. WLAN-Netzwerke erfordern WPA3 oder WPA2-Enterprise, Gäste-WLAN muss vom Unternehmensnetzwerk getrennt sein. Fernwartungszugänge von OEMs und Dienstleistern müssen besonders kontrolliert werden.",
         "maturity": {
           "level0": "Keine systematische Übersicht oder Kontrolle der Netzwerkdienste — VPN ohne MFA, offene WLAN-Netzwerke, unkontrollierte Fernwartungszugänge",
           "level1": "Grundlegende VPN-Lösung und WLAN-Verschlüsselung vorhanden, aber keine MFA — Netzwerkdienste nicht vollständig dokumentiert, Fernwartungszugänge nicht einheitlich gesichert",
@@ -4142,7 +4142,7 @@
       },
       "komQ3": {
         "title": "Werden Datenübertragungen mit Fahrzeugherstellern (OEMs) und Geschäftspartnern über sichere Kanäle abgewickelt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.14 — Der Austausch vertraulicher Informationen mit externen Partnern muss über verschlüsselte und authentifizierte Kommunikationskanäle erfolgen. Besondere Anforderungen gelten für den OEM-Datenaustausch.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.1.2: „Inwieweit werden Informationen während der Übertragung geschützt?“",
         "help": "Der Datenaustausch mit OEMs ist ein zentrales Thema bei TISAX-Assessments. Konstruktionsdaten, Prototypen-Informationen und Qualitätsdaten müssen über sichere Kanäle übertragen werden — z.B. über OEM-spezifische Plattformen (Teamcenter, ENOVIA), verschlüsselte Datentransferlösungen oder SFTP. Unverschlüsselte E-Mail-Anhänge für vertrauliche OEM-Daten sind ein typischer Befund.",
         "maturity": {
           "level0": "Keine gesicherten Datenaustauschkanäle — vertrauliche Daten werden per unverschlüsselter E-Mail oder offenen Filesharing-Diensten ausgetauscht",
@@ -4153,8 +4153,8 @@
       },
       "kryQ1": {
         "title": "Existiert eine Kryptografie-Richtlinie mit Vorgaben für die Verwendung von Verschlüsselung und Schlüsselverwaltung?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Eine Kryptografie-Richtlinie muss definieren, wann und wie kryptografische Verfahren eingesetzt werden. Dies umfasst Verschlüsselungsstandards, Schlüssellängen und die Verwaltung kryptografischer Schlüssel.",
-        "help": "TISAX verlangt eine dokumentierte Kryptografie-Richtlinie, die festlegt, welche Verschlüsselungsverfahren und Schlüssellängen eingesetzt werden. Die Richtlinie muss Vorgaben für Datenverschlüsselung (at rest und in transit), E-Mail-Verschlüsselung, Festplattenverschlüsselung mobiler Geräte und VPN-Verbindungen umfassen. Veraltete Algorithmen (z.B. MD5, SHA-1, DES) dürfen nicht mehr eingesetzt werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“",
+        "help": "Sie brauchen eine dokumentierte Kryptografie-Richtlinie, die festlegt, welche Verschlüsselungsverfahren und Schlüssellängen eingesetzt werden. Die Richtlinie muss Vorgaben für Datenverschlüsselung (at rest und in transit), E-Mail-Verschlüsselung, Festplattenverschlüsselung mobiler Geräte und VPN-Verbindungen umfassen. Veraltete Algorithmen (z.B. MD5, SHA-1, DES) dürfen nicht mehr eingesetzt werden.",
         "maturity": {
           "level0": "Keine Kryptografie-Richtlinie vorhanden — Verschlüsselung wird sporadisch und ohne Standards eingesetzt",
           "level1": "Einzelne Verschlüsselungsmaßnahmen implementiert (z.B. VPN), aber keine übergreifende Richtlinie — Algorithmen und Schlüssellängen nicht standardisiert",
@@ -4164,8 +4164,8 @@
       },
       "kryQ2": {
         "title": "Werden vertrauliche Daten bei Speicherung und Übertragung durchgehend verschlüsselt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Vertrauliche Informationen müssen sowohl bei der Speicherung (at rest) als auch bei der Übertragung (in transit) durch angemessene Verschlüsselung geschützt werden.",
-        "help": "Für Automobilzulieferer ist dies besonders relevant: OEM-Konstruktionsdaten, Prototypen-Informationen und Testergebnisse müssen verschlüsselt gespeichert und übertragen werden. TISAX verlangt Festplattenverschlüsselung für mobile Geräte, Verschlüsselung von Datenbanken mit Schutzbedarf und die Nutzung sicherer Übertragungsprotokolle (TLS 1.2+, SFTP, verschlüsselte E-Mail) für den Datenaustausch mit OEMs.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“ Control 5.1.2: „Inwieweit werden Informationen während der Übertragung geschützt?“",
+        "help": "Für Automobilzulieferer ist dies besonders relevant: OEM-Konstruktionsdaten, Prototypen-Informationen und Testergebnisse müssen verschlüsselt gespeichert und übertragen werden. Sie brauchen Festplattenverschlüsselung für mobile Geräte, Verschlüsselung von Datenbanken mit Schutzbedarf und die Nutzung sicherer Übertragungsprotokolle (TLS 1.2+, SFTP, verschlüsselte E-Mail) für den Datenaustausch mit OEMs.",
         "maturity": {
           "level0": "Keine systematische Verschlüsselung — vertrauliche Daten werden unverschlüsselt gespeichert und per E-Mail oder FTP übertragen",
           "level1": "Teilweise Verschlüsselung vorhanden (z.B. HTTPS für Webanwendungen), aber keine durchgängige Umsetzung — Festplatten mobiler Geräte nicht verschlüsselt, interner E-Mail-Verkehr unverschlüsselt",
@@ -4175,8 +4175,8 @@
       },
       "kryQ3": {
         "title": "Werden kryptografische Schlüssel sicher erzeugt, gespeichert, verteilt und bei Kompromittierung widerrufen?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.24 — Die Verwaltung kryptografischer Schlüssel muss den gesamten Lebenszyklus abdecken: Erzeugung, Verteilung, Speicherung, Rotation, Archivierung und Widerruf/Vernichtung.",
-        "help": "Selbst die stärkste Verschlüsselung ist wertlos, wenn die Schlüssel unsicher verwaltet werden. TISAX verlangt ein dokumentiertes Schlüsselmanagement: Schlüssel müssen mit kryptografisch sicheren Zufallsgeneratoren erzeugt, in gesicherten Keystores gespeichert, regelmäßig rotiert und bei Verdacht auf Kompromittierung sofort widerrufen werden. Besonders wichtig bei Zertifikaten für den OEM-Datenaustausch.",
+        "tooltip": "VDA ISA 6.0.2, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“",
+        "help": "Selbst die stärkste Verschlüsselung ist wertlos, wenn die Schlüssel unsicher verwaltet werden. Sie brauchen ein dokumentiertes Schlüsselmanagement: Schlüssel müssen mit kryptografisch sicheren Zufallsgeneratoren erzeugt, in gesicherten Keystores gespeichert, regelmäßig rotiert und bei Verdacht auf Kompromittierung sofort widerrufen werden. Besonders wichtig bei Zertifikaten für den OEM-Datenaustausch.",
         "maturity": {
           "level0": "Kein Schlüsselmanagement — Schlüssel werden ad hoc erzeugt, in Konfigurationsdateien gespeichert, nicht rotiert oder widerrufen",
           "level1": "Grundlegendes Bewusstsein für Schlüsselschutz, aber kein dokumentierter Prozess — Schlüssel werden manuell verwaltet, Rotation erfolgt nicht regelmäßig",
@@ -4186,8 +4186,8 @@
       },
       "liefQ1": {
         "title": "Werden Informationssicherheitsanforderungen in Verträgen mit Lieferanten und Dienstleistern verankert?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.20 — Vertragliche Vereinbarungen mit Lieferanten und Dienstleistern müssen Anforderungen an die Informationssicherheit enthalten, insbesondere wenn diese Zugang zu vertraulichen OEM-Daten oder IT-Systemen erhalten.",
-        "help": "Als Automobilzulieferer müssen Sie die Sicherheitsanforderungen Ihrer OEMs an Ihre eigenen Lieferanten und Dienstleister weitergeben. TISAX verlangt, dass Verträge Klauseln zu Vertraulichkeit, Informationsschutz, Audit-Rechten, Incident-Meldepflichten und TISAX-Label-Anforderungen enthalten. Ohne vertragliche Absicherung haften Sie für Sicherheitsvorfälle bei Ihren Lieferanten.",
+        "tooltip": "VDA ISA 6.0.2, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
+        "help": "Als Automobilzulieferer müssen Sie die Sicherheitsanforderungen Ihrer OEMs an Ihre eigenen Lieferanten und Dienstleister weitergeben. Sorgen Sie dafür, dass Verträge Klauseln zu Vertraulichkeit, Informationsschutz, Audit-Rechten, Incident-Meldepflichten und TISAX-Label-Anforderungen enthalten. Ohne vertragliche Absicherung haften Sie für Sicherheitsvorfälle bei Ihren Lieferanten.",
         "maturity": {
           "level0": "Keine Informationssicherheitsanforderungen in Lieferantenverträgen — Dienstleister erhalten Zugang ohne vertragliche Sicherheitsverpflichtungen",
           "level1": "Allgemeine Vertraulichkeitsklauseln vorhanden, aber keine spezifischen IS-Anforderungen — keine Audit-Rechte, keine Meldepflichten vereinbart",
@@ -4197,8 +4197,8 @@
       },
       "liefQ2": {
         "title": "Werden Lieferanten und Dienstleister hinsichtlich ihrer Informationssicherheit regelmäßig bewertet?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.22 — Die Informationssicherheit von Lieferanten muss regelmäßig bewertet werden, insbesondere bei Zugang zu vertraulichen Informationen oder kritischen IT-Systemen.",
-        "help": "TISAX verlangt, dass Sie Ihre Lieferanten regelmäßig auf Einhaltung der Sicherheitsanforderungen prüfen. Dies kann durch Lieferanten-Fragebögen, Überprüfung des TISAX-Labels, ISO-27001-Zertifizierung, Vor-Ort-Audits oder technische Prüfungen (z.B. Schwachstellenscans bei Schnittstellen) erfolgen. Kritische Lieferanten mit Zugang zu OEM-Daten erfordern eine höhere Prüftiefe.",
+        "tooltip": "VDA ISA 6.0.2, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
+        "help": "Sorgen Sie dafür, dass Sie Ihre Lieferanten regelmäßig auf Einhaltung der Sicherheitsanforderungen prüfen. Dies kann durch Lieferanten-Fragebögen, Überprüfung des TISAX-Labels, ISO-27001-Zertifizierung, Vor-Ort-Audits oder technische Prüfungen (z.B. Schwachstellenscans bei Schnittstellen) erfolgen. Kritische Lieferanten mit Zugang zu OEM-Daten erfordern eine höhere Prüftiefe.",
         "maturity": {
           "level0": "Keine Bewertung der Informationssicherheit von Lieferanten — es existiert kein Überprüfungsprozess",
           "level1": "Gelegentliche Überprüfung einzelner Lieferanten auf Anfrage, aber kein systematischer Bewertungsprozess — keine risikobasierte Priorisierung",
@@ -4208,8 +4208,8 @@
       },
       "liefQ3": {
         "title": "Werden Änderungen in der Lieferkette hinsichtlich ihrer Auswirkungen auf die Informationssicherheit bewertet?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.21 — Änderungen in der Lieferkette (z.B. neue Unterlieferanten, Standortwechsel, Personalwechsel) müssen auf ihre Auswirkungen auf die Informationssicherheit bewertet werden.",
-        "help": "Lieferkettenänderungen können erhebliche Sicherheitsauswirkungen haben: Ein neuer Unterlieferant in einem Drittland, ein Standortwechsel ohne adäquate physische Sicherheit oder die Nutzung neuer Cloud-Dienste ändern das Risikoprofil. TISAX verlangt, dass solche Änderungen vor der Umsetzung auf ihre Sicherheitsauswirkungen geprüft und ggf. vom OEM genehmigt werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
+        "help": "Lieferkettenänderungen können erhebliche Sicherheitsauswirkungen haben: Ein neuer Unterlieferant in einem Drittland, ein Standortwechsel ohne adäquate physische Sicherheit oder die Nutzung neuer Cloud-Dienste ändern das Risikoprofil. Sorgen Sie dafür, dass solche Änderungen vor der Umsetzung auf ihre Sicherheitsauswirkungen geprüft und ggf. vom OEM genehmigt werden.",
         "maturity": {
           "level0": "Keine Bewertung von Lieferkettenänderungen — Unterlieferanten werden gewechselt oder hinzugefügt, ohne Sicherheitsaspekte zu prüfen",
           "level1": "Bewusstsein für Risiken bei Lieferkettenänderungen, aber keine formale Prüfung — Änderungen werden nicht systematisch erfasst oder bewertet",
@@ -4219,8 +4219,8 @@
       },
       "orgQ1": {
         "title": "Existiert eine dokumentierte Informationssicherheitsleitlinie, die von der Geschäftsleitung freigegeben und kommuniziert wurde?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.1 — Eine Informationssicherheitsleitlinie (IS-Leitlinie) ist die oberste Richtlinie für den Umgang mit Informationssicherheit im Unternehmen. Sie muss von der Geschäftsleitung verabschiedet und allen Mitarbeitern zugänglich gemacht werden.",
-        "help": "Die IS-Leitlinie definiert die strategische Ausrichtung Ihrer Informationssicherheit und zeigt das Commitment der Geschäftsleitung. Für TISAX ist sie ein Pflichtdokument, das bei jedem Assessment geprüft wird. Sie sollte Schutzziele, Geltungsbereich, Verantwortlichkeiten und den Bezug zu OEM-Anforderungen enthalten. Ohne freigegebene Leitlinie kann kein Assessment Level bestanden werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 1.1.1: „Inwieweit sind Richtlinien zur Informationssicherheit vorhanden?“",
+        "help": "Die IS-Leitlinie definiert die strategische Ausrichtung Ihrer Informationssicherheit und zeigt das Commitment der Geschäftsleitung. Der VDA ISA fragt in Control 1.1.1, inwieweit Richtlinien zur Informationssicherheit vorhanden sind. Sie sollte Schutzziele, Geltungsbereich, Verantwortlichkeiten und den Bezug zu OEM-Anforderungen enthalten. Ohne freigegebene Leitlinie kann kein Assessment Level bestanden werden.",
         "maturity": {
           "level0": "Keine Informationssicherheitsleitlinie vorhanden — kein dokumentiertes Bekenntnis der Geschäftsleitung zur Informationssicherheit",
           "level1": "Entwurf einer Leitlinie existiert, aber nicht formal von der Geschäftsleitung freigegeben oder den Mitarbeitern kommuniziert",
@@ -4230,8 +4230,8 @@
       },
       "orgQ2": {
         "title": "Sind Rollen und Verantwortlichkeiten für die Informationssicherheit klar zugewiesen und dokumentiert?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.2 — Es müssen eindeutige Rollen für die Informationssicherheit definiert sein, insbesondere ein Informationssicherheitsbeauftragter (ISB). Die Zuständigkeiten müssen dokumentiert und kommuniziert werden.",
-        "help": "TISAX verlangt, dass ein Informationssicherheitsbeauftragter (ISB) benannt ist, der direkt an die Geschäftsleitung berichtet. Darüber hinaus müssen Verantwortlichkeiten für Risikomanagement, Vorfallbehandlung, physische Sicherheit und Prototypenschutz klar zugewiesen sein. In der Automobilindustrie müssen diese Rollen auch gegenüber OEM-Partnern nachgewiesen werden können.",
+        "tooltip": "VDA ISA 6.0.2, Control 1.2.2: „Inwieweit sind die Verantwortlichkeiten für Informationssicherheit organisiert?“",
+        "help": "Sorgen Sie dafür, dass ein Informationssicherheitsbeauftragter (ISB) benannt ist, der direkt an die Geschäftsleitung berichtet. Darüber hinaus müssen Verantwortlichkeiten für Risikomanagement, Vorfallbehandlung, physische Sicherheit und Prototypenschutz klar zugewiesen sein. In der Automobilindustrie müssen diese Rollen auch gegenüber OEM-Partnern nachgewiesen werden können.",
         "maturity": {
           "level0": "Keine definierten Rollen für Informationssicherheit — niemand ist formal für IS-Themen zuständig",
           "level1": "Informationssicherheitsbeauftragter informell benannt, aber keine dokumentierte Rollenbeschreibung, keine klare Abgrenzung der Verantwortlichkeiten",
@@ -4241,7 +4241,7 @@
       },
       "orgQ3": {
         "title": "Werden Informationssicherheitsrisiken systematisch identifiziert, bewertet und behandelt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 Kap. 6.1.2 — Ein systematisches Risikomanagement ist Kernbestandteil des ISMS. Risiken müssen identifiziert, nach Eintrittswahrscheinlichkeit und Auswirkung bewertet und mit angemessenen Maßnahmen behandelt werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 1.4.1: „Inwieweit werden Informationssicherheitsrisiken gemanagt?“",
         "help": "Das Risikomanagement ist für TISAX zentral: Sie müssen eine methodische Risikoanalyse durchführen, die alle relevanten Assets (insbesondere OEM-Daten, Prototypen, IT-Systeme) umfasst. Die Risikobewertung bestimmt, welche Schutzmaßnahmen erforderlich sind. Der Assessor prüft, ob die Methodik nachvollziehbar und die Risikobehandlung angemessen ist.",
         "maturity": {
           "level0": "Kein systematisches Risikomanagement — Risiken werden nicht strukturiert erfasst oder bewertet",
@@ -4252,8 +4252,8 @@
       },
       "perQ1": {
         "title": "Werden Mitarbeiter vor der Einstellung hinsichtlich ihrer Zuverlässigkeit und Qualifikation überprüft?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.1 — Vor der Einstellung müssen Hintergrundprüfungen durchgeführt werden, die dem Schutzbedarf der künftigen Tätigkeit entsprechen. Dies umfasst Identitätsprüfung, Qualifikationsnachweise und ggf. Führungszeugnisse.",
-        "help": "In der Automobilindustrie haben Mitarbeiter häufig Zugang zu streng vertraulichen OEM-Daten und Prototypen. Vor der Einstellung sollten Sie Identität, Qualifikation und Zuverlässigkeit überprüfen. Bei Tätigkeiten mit Zugang zu hochvertraulichen Informationen kann ein polizeiliches Führungszeugnis erforderlich sein. TISAX-Assessoren prüfen, ob ein dokumentierter Prozess für Pre-Employment-Screening existiert.",
+        "tooltip": "VDA ISA 6.0.2, Control 2.1.1: „Inwieweit wird die Eignung von Mitarbeitern für sensible Tätigkeitsbereiche sichergestellt?“",
+        "help": "In der Automobilindustrie haben Mitarbeiter häufig Zugang zu streng vertraulichen OEM-Daten und Prototypen. Vor der Einstellung sollten Sie Identität, Qualifikation und Zuverlässigkeit überprüfen. Bei Tätigkeiten mit Zugang zu hochvertraulichen Informationen kann ein polizeiliches Führungszeugnis erforderlich sein. Klären Sie, ob ein dokumentierter Prozess für Pre-Employment-Screening existiert.",
         "maturity": {
           "level0": "Keine Hintergrundprüfung vor der Einstellung — weder Identität noch Qualifikation werden verifiziert",
           "level1": "Grundlegende Identitätsprüfung und Lebenslauf-Check, aber kein formalisierter Prozess — Prüfungsumfang nicht nach Schutzbedarf differenziert",
@@ -4263,8 +4263,8 @@
       },
       "perQ2": {
         "title": "Gibt es ein strukturiertes Programm für Informationssicherheits-Awareness und -Schulungen?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.3 — Alle Mitarbeiter müssen regelmäßig zu Informationssicherheitsthemen geschult und sensibilisiert werden. Schulungen müssen rollenspezifisch und nachweisbar sein.",
-        "help": "TISAX verlangt, dass alle Mitarbeiter — einschließlich temporärem Personal und Leiharbeitern — regelmäßig zu Informationssicherheit geschult werden. Die Schulungen müssen den Umgang mit vertraulichen OEM-Daten, Prototypenschutz, Social-Engineering-Erkennung und Meldepflichten bei Sicherheitsvorfällen abdecken. Schulungsnachweise müssen dokumentiert und beim Assessment vorgelegt werden können.",
+        "tooltip": "VDA ISA 6.0.2, Control 2.1.3: „Inwieweit werden Mitarbeiter hinsichtlich der Risiken beim Umgang mit Informationen geschult und sensibilisiert?“",
+        "help": "Sorgen Sie dafür, dass alle Mitarbeiter — einschließlich temporärem Personal und Leiharbeitern — regelmäßig zu Informationssicherheit geschult werden. Die Schulungen müssen den Umgang mit vertraulichen OEM-Daten, Prototypenschutz, Social-Engineering-Erkennung und Meldepflichten bei Sicherheitsvorfällen abdecken. Schulungsnachweise müssen dokumentiert und beim Assessment vorgelegt werden können.",
         "maturity": {
           "level0": "Keine Informationssicherheitsschulungen — Mitarbeiter werden nicht systematisch sensibilisiert",
           "level1": "Gelegentliche Schulungen bei Bedarf, aber kein jährliches Programm — keine Erfolgskontrolle, keine Abdeckung aller Mitarbeiter",
@@ -4274,8 +4274,8 @@
       },
       "perQ3": {
         "title": "Sind Regelungen für Vertraulichkeit und Geheimhaltung mit Mitarbeitern und externen Partnern vereinbart?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.6.6 — Vertraulichkeitsvereinbarungen (NDA) müssen mit allen Personen geschlossen werden, die Zugang zu schutzwürdigen Informationen haben. Dies umfasst Mitarbeiter, Leiharbeitnehmer, Berater und Dienstleister.",
-        "help": "In der Automobilindustrie ist die vertragliche Absicherung der Vertraulichkeit besonders wichtig, da OEM-Partner häufig strenge Geheimhaltungsanforderungen stellen. TISAX verlangt nachweisbare NDAs für alle Personen mit Zugang zu vertraulichen Informationen. Die Vereinbarungen müssen den Umfang der Geheimhaltung, die Dauer, Sanktionen bei Verstoßen und die Pflichten bei Beendigung des Verhältnisses regeln.",
+        "tooltip": "VDA ISA 6.0.2, Control 2.1.2: „Inwieweit werden alle Mitarbeiter vertraglich zur Einhaltung der Informationssicherheitsrichtlinien verpflichtet?“ Control 6.1.2: „Inwieweit ist Geheimhaltung beim Austausch von Informationen vertraglich vereinbart?“",
+        "help": "In der Automobilindustrie ist die vertragliche Absicherung der Vertraulichkeit besonders wichtig, da OEM-Partner häufig strenge Geheimhaltungsanforderungen stellen. Sie brauchen nachweisbare NDAs für alle Personen mit Zugang zu vertraulichen Informationen. Die Vereinbarungen müssen den Umfang der Geheimhaltung, die Dauer, Sanktionen bei Verstoßen und die Pflichten bei Beendigung des Verhältnisses regeln.",
         "maturity": {
           "level0": "Keine Vertraulichkeitsvereinbarungen vorhanden — weder mit Mitarbeitern noch mit externen Partnern",
           "level1": "Vertraulichkeitsklauseln im Arbeitsvertrag vorhanden, aber keine separaten NDAs mit Externen — Inhalte nicht auf IS-Anforderungen abgestimmt",
@@ -4285,8 +4285,8 @@
       },
       "phyQ1": {
         "title": "Sind physische Sicherheitsbereiche definiert und mit angemessenen Zutrittskontrollen ausgestattet?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.1 — Sicherheitsbereiche müssen definiert und durch physische Barrieren und Zutrittskontrollen geschützt werden. Die Schutzstärke muss dem Schutzbedarf der verarbeiteten Informationen entsprechen.",
-        "help": "TISAX verlangt eine klare Zonierung Ihrer Räumlichkeiten: Öffentlicher Bereich, allgemeiner Unternehmensbereich, sicherheitsrelevanter Bereich und Hochsicherheitsbereich (z.B. Prototypenwerkstatt). Jede Zone erfordert angemessene Zutrittskontrollen — von der einfachen Ausweispflicht bis zur biometrischen Zutrittskontrolle mit Vereinzelungsanlage. Der Assessor prüft die Wirksamkeit der Zonierung vor Ort.",
+        "tooltip": "VDA ISA 6.0.2, Control 3.1.1: „Inwieweit werden Sicherheitszonen für den Schutz von Informationswerten gemanagt?“",
+        "help": "Sie brauchen eine klare Zonierung Ihrer Räumlichkeiten: Öffentlicher Bereich, allgemeiner Unternehmensbereich, sicherheitsrelevanter Bereich und Hochsicherheitsbereich (z.B. Prototypenwerkstatt). Jede Zone erfordert angemessene Zutrittskontrollen — von der einfachen Ausweispflicht bis zur biometrischen Zutrittskontrolle mit Vereinzelungsanlage. Der Assessor prüft die Wirksamkeit der Zonierung vor Ort.",
         "maturity": {
           "level0": "Keine Sicherheitsbereiche definiert — keine differenzierte Zutrittskontrolle, freier Zugang zu allen Räumlichkeiten",
           "level1": "Grundlegende Zutrittskontrolle am Eingang (z.B. Rezeption), aber keine Zonierung sicherheitsrelevanter Bereiche — Serverräume nicht separat gesichert",
@@ -4296,8 +4296,8 @@
       },
       "phyQ2": {
         "title": "Sind IT-Systeme und Datenträger gegen Diebstahl, Manipulation und unbefugten Zugriff physisch geschützt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.8 — IT-Equipment, Datenträger und Dokumentation müssen gegen Entwendung, Beschädigung und unbefugte Einsichtnahme geschützt werden. Besondere Anforderungen gelten für mobile Geräte und Wechseldatenträger.",
-        "help": "In der Automobilindustrie werden häufig vertrauliche OEM-Konstruktionsdaten, Messergebnisse und Prototypenbilder auf lokalen Systemen verarbeitet. TISAX verlangt, dass diese physisch gesichert sind: Laptops mit Kensington-Schloss oder in verschlossenen Schränken, Clean-Desk-Policy, gesicherte Entsorgung von Datenträgern und Druckerzeugnissen. Mobile Geräte müssen verschlüsselt sein.",
+        "tooltip": "VDA ISA 6.0.2, Control 3.1.3: „Inwieweit ist der Umgang mit Informationsträgern gemanagt?“ Control 3.1.4: „Inwieweit ist der Umgang mit mobilen IT-Geräten und mobilen Datenträgern gemanagt?“",
+        "help": "In der Automobilindustrie werden häufig vertrauliche OEM-Konstruktionsdaten, Messergebnisse und Prototypenbilder auf lokalen Systemen verarbeitet. Sorgen Sie dafür, dass diese physisch gesichert sind: Laptops mit Kensington-Schloss oder in verschlossenen Schränken, Clean-Desk-Policy, gesicherte Entsorgung von Datenträgern und Druckerzeugnissen. Mobile Geräte müssen verschlüsselt sein.",
         "maturity": {
           "level0": "Kein physischer Schutz für IT-Geräte und Datenträger — Laptops und USB-Sticks werden ungesichert zurückgelassen, keine Clean-Desk-Regelung",
           "level1": "Grundlegende Maßnahmen wie abschließbare Büros, aber keine spezifischen Vorgaben für Geräte und Datenträger — kein kontrollierter Umgang mit Wechselmedien",
@@ -4307,8 +4307,8 @@
       },
       "phyQ3": {
         "title": "Existieren Maßnahmen zum Schutz vor Umweltbedrohungen wie Brand, Wasser und Stromausfall für sicherheitsrelevante Bereiche?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.5 — Sicherheitsrelevante Bereiche müssen gegen Umweltbedrohungen geschützt sein. Dies umfasst Brandschutz, Wasserschutz, Klimatisierung und unterbrechungsfreie Stromversorgung.",
-        "help": "Serverräume, Archivbereiche und Prototypenwerkstätten benötigen angemessenen Schutz gegen physische Bedrohungen. TISAX-Assessoren prüfen, ob Brandmeldeanlage, Löschsystem (Gas oder Wasser), USV-Anlage, Klimaüberwachung und Wassersensoren vorhanden sind. Der Schutzumfang muss dem Schutzbedarf der im Bereich verarbeiteten Informationen entsprechen.",
+        "tooltip": "VDA ISA 6.0.2, Control 1.6.3: „In welchem Maße ist die Organisation vorbereitet, mit Krisensituationen umzugehen?“ Control 5.2.8: „Inwieweit ist eine Kontinuitätsplanung für IT-Dienste vorhanden?“ Ein eigenes Control zum Schutz vor Umweltbedrohungen enthält der VDA ISA 6.0.2 nicht; das frühere Control 3.1.2 ist dort als „Ersetzt durch 1.6.3, 5.2.8 und 5.2.9“ geführt.",
+        "help": "Serverräume, Archivbereiche und Prototypenwerkstätten benötigen angemessenen Schutz gegen physische Bedrohungen. Klären Sie, ob Brandmeldeanlage, Löschsystem (Gas oder Wasser), USV-Anlage, Klimaüberwachung und Wassersensoren vorhanden sind. Der Schutzumfang muss dem Schutzbedarf der im Bereich verarbeiteten Informationen entsprechen.",
         "maturity": {
           "level0": "Kein spezifischer Schutz gegen Umweltbedrohungen für IT-Bereiche — kein Brandschutz, keine USV, keine Klimatisierung im Serverraum",
           "level1": "Grundlegender Brandschutz (Feuerlöscher, Rauchmelder) vorhanden, aber keine USV-Anlage oder dedizierte Klimatisierung für den Serverraum",
@@ -4318,7 +4318,7 @@
       },
       "protoQ1": {
         "title": "Existiert ein dediziertes Schutzkonzept für Prototypenfahrzeuge, -bauteile und -komponenten?",
-        "tooltip": "VDA ISA 6 (Modul Prototypenschutz) — Der Prototypenschutz ist ein TISAX-spezifisches Anforderungsgebiet. Es muss ein dokumentiertes Konzept zum Schutz physischer Prototypen vor unbefugter Einsichtnahme, Fotografieren und Weitergabe bestehen.",
+        "tooltip": "VDA ISA 6.0.2, Control 8.1.1: „Inwieweit ist ein Sicherheitskonzept vorhanden, das Mindestanforderungen zur physischen und umgebungsbezogenen Sicherheit für den Prototypenschutz beschreibt?“",
         "help": "Der Prototypenschutz ist eines der zentralen Differenzierungsmerkmale von TISAX gegenüber ISO 27001. OEMs verlangen, dass Zulieferer Prototypen — ob Fahrzeuge, Bauteile oder Designstudien — durch physische und organisatorische Maßnahmen schützen. Das Schutzkonzept muss Tarnungsmaßnahmen, Zugangsrestriktionen, Foto-/Filmverbote und Transportregelungen umfassen.",
         "maturity": {
           "level0": "Kein Prototypenschutzkonzept vorhanden — Prototypen werden nicht gesondert geschützt, keine speziellen Zugangsregelungen",
@@ -4329,8 +4329,8 @@
       },
       "protoQ2": {
         "title": "Ist die Handhabung und Weitergabe von Prototypen-Informationen (Bilder, CAD-Daten, Spezifikationen) geregelt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.10 — Digitale Prototypen-Informationen wie CAD-Daten, Fotos, Designskizzen und technische Spezifikationen erfordern besondere Schutz- und Handhabungsvorschriften. Die Weitergabe muss streng kontrolliert werden.",
-        "help": "Neben physischen Prototypen müssen auch digitale Prototypen-Informationen geschützt werden. CAD-Daten, Rendering-Bilder, Simulationsergebnisse und Spezifikationen sind häufig das primäre Ziel von Industriespionage. TISAX verlangt klare Regeln für Speicherung (verschlüsselt, zugangsgeschützt), Übermittlung (sichere Kanäle) und Löschung (nach Projektende). Der Need-to-Know-Grundsatz muss streng angewandt werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 8.2.4: „Inwieweit sind die Sicherheitseinstufungen des Projekts und die daraus resultierenden Maßnahmen zur Absicherung bekannt?“ Control 8.2.6: „Inwieweit sind Regelungen zur Bildaufzeichnung und zum Umgang mit erstelltem Bildmaterial vorhanden?“",
+        "help": "Neben physischen Prototypen müssen auch digitale Prototypen-Informationen geschützt werden. CAD-Daten, Rendering-Bilder, Simulationsergebnisse und Spezifikationen sind häufig das primäre Ziel von Industriespionage. Sie brauchen klare Regeln für Speicherung (verschlüsselt, zugangsgeschützt), Übermittlung (sichere Kanäle) und Löschung (nach Projektende). Der Need-to-Know-Grundsatz muss streng angewandt werden.",
         "maturity": {
           "level0": "Keine Regelungen für den Umgang mit digitalen Prototypen-Informationen — CAD-Daten und Bilder werden ungeschützt gespeichert und per E-Mail versandt",
           "level1": "Grundlegende Awareness vorhanden, aber keine formalen Handhabungsvorschriften — Verteilung von Prototypen-Informationen wird nicht nachverfolgt",
@@ -4340,7 +4340,7 @@
       },
       "protoQ3": {
         "title": "Werden Anforderungen an den Prototypenschutz in der Lieferkette vertraglich sichergestellt und überwacht?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.20 — Wenn Prototypen oder Prototypen-Informationen an Unterlieferanten weitergegeben werden, müssen die Prototypenschutzanforderungen vertraglich vereinbart und deren Einhaltung überwacht werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 8.2.1: „Inwieweit liegen vertragsrechtlich gültige Geheimhaltungsvereinbarungen/ -verpflichtungen vor?“ Control 8.2.2: „Inwieweit sind Vorgaben für die Beauftragung von Unterauftragnehmern bekannt und erfüllt?“",
         "help": "OEMs fordern, dass ihre Prototypenschutzanforderungen entlang der gesamten Lieferkette eingehalten werden. Wenn Sie als Tier-1 oder Tier-2-Lieferant Prototypenteile oder -informationen an Ihre Unterlieferanten weitergeben, müssen Sie die Schutzanforderungen vertraglich weitergeben und deren Einhaltung überprüfen. TISAX-Assessoren fragen gezielt nach Nachweisen der Lieferantenüberwachung.",
         "maturity": {
           "level0": "Keine vertraglichen Prototypenschutzanforderungen an Unterlieferanten — Weitergabe von Prototypen ohne Sicherheitsauflagen",
@@ -4351,8 +4351,8 @@
       },
       "techQ1": {
         "title": "Ist ein systematisches Management der IT-Assets einschließlich Klassifizierung und Inventarisierung etabliert?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.9 — Alle informationsverarbeitenden Assets müssen identifiziert, inventarisiert und nach Schutzbedarf klassifiziert werden. Ohne vollständiges Asset-Inventar ist kein wirksames Sicherheitsmanagement möglich.",
-        "help": "TISAX verlangt ein vollständiges Inventar aller IT-Assets: Server, Clients, Netzwerkkomponenten, Software, Datenbanken und Cloud-Dienste. Jedes Asset muss einem Verantwortlichen zugeordnet und nach dem Schutzbedarf der darauf verarbeiteten Informationen klassifiziert sein. Besonders OEM-bezogene Systeme erfordern häufig eine erhöhte Klassifizierung.",
+        "tooltip": "VDA ISA 6.0.2, Control 1.3.1: „Inwieweit werden Informationswerte (Assets) identifiziert und erfasst?“ Control 1.3.2: „Inwieweit werden Informationswerte hinsichtlich ihres Schutzbedarfs klassifiziert und gemanagt?“",
+        "help": "Sie brauchen ein vollständiges Inventar aller IT-Assets: Server, Clients, Netzwerkkomponenten, Software, Datenbanken und Cloud-Dienste. Jedes Asset muss einem Verantwortlichen zugeordnet und nach dem Schutzbedarf der darauf verarbeiteten Informationen klassifiziert sein. Besonders OEM-bezogene Systeme erfordern häufig eine erhöhte Klassifizierung.",
         "maturity": {
           "level0": "Kein IT-Asset-Inventar vorhanden — es gibt keine Übersicht über eingesetzte Systeme, Software und Datenbestände",
           "level1": "Teilweise Übersicht über IT-Assets, aber nicht vollständig oder aktuell — keine Schutzbedarfszuordnung, keine definierten Asset-Eigentümer",
@@ -4362,7 +4362,7 @@
       },
       "techQ2": {
         "title": "Werden Informationen und Dokumente nach einem definierten Klassifizierungsschema gekennzeichnet und behandelt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.12 — Ein Klassifizierungsschema für Informationen muss definiert sein. Informationen müssen entsprechend ihrer Vertraulichkeit gekennzeichnet und nach definierten Regeln behandelt, gespeichert und übermittelt werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 1.3.2: „Inwieweit werden Informationswerte hinsichtlich ihres Schutzbedarfs klassifiziert und gemanagt?“",
         "help": "Die Informationsklassifizierung ist ein Kernthema bei TISAX-Assessments. Sie müssen ein Klassifizierungsschema definieren (z.B. öffentlich, intern, vertraulich, streng vertraulich), das kompatibel mit den OEM-Klassifizierungen ist. Jedes Dokument und jede Information muss entsprechend gekennzeichnet werden. Die Handhabungsvorschriften bestimmen, wie klassifizierte Informationen gespeichert, übermittelt und vernichtet werden dürfen.",
         "maturity": {
           "level0": "Kein Klassifizierungsschema vorhanden — Informationen werden nicht nach Vertraulichkeit differenziert behandelt",
@@ -4373,8 +4373,8 @@
       },
       "techQ3": {
         "title": "Werden Wechseldatenträger und Speichermedien kontrolliert eingesetzt und sicher entsorgt?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.7.10 — Der Einsatz von Wechseldatenträgern (USB-Sticks, externe Festplatten, optische Medien) muss kontrolliert werden. Nicht mehr benötigte Speichermedien müssen sicher gelöscht oder physisch vernichtet werden.",
-        "help": "Wechseldatenträger stellen ein erhebliches Sicherheitsrisiko dar: Datenverlust durch Verlieren, unkontrollierter Datenabfluss und Malware-Einschleusung. TISAX verlangt klare Regelungen für die Nutzung von USB-Geräten, die Verschlüsselung mobiler Datenträger und die sichere Entsorgung. Viele OEMs fordern ein vollständiges USB-Verbot oder eine Whitelist-basierte Kontrolle.",
+        "tooltip": "VDA ISA 6.0.2, Control 3.1.3: „Inwieweit ist der Umgang mit Informationsträgern gemanagt?“ Control 3.1.4: „Inwieweit ist der Umgang mit mobilen IT-Geräten und mobilen Datenträgern gemanagt?“",
+        "help": "Wechseldatenträger stellen ein erhebliches Sicherheitsrisiko dar: Datenverlust durch Verlieren, unkontrollierter Datenabfluss und Malware-Einschleusung. Sie brauchen klare Regelungen für die Nutzung von USB-Geräten, die Verschlüsselung mobiler Datenträger und die sichere Entsorgung. Viele OEMs fordern ein vollständiges USB-Verbot oder eine Whitelist-basierte Kontrolle.",
         "maturity": {
           "level0": "Keine Kontrolle über Wechseldatenträger — USB-Ports frei nutzbar, keine Entsorgungsregelung für Altmedien",
           "level1": "Richtlinie zur Nutzung von Wechseldatenträgern vorhanden, aber nicht technisch durchgesetzt — Entsorgung nicht systematisch geregelt",
@@ -4384,8 +4384,8 @@
       },
       "zkQ1": {
         "title": "Existiert eine Zugangssteuerungsrichtlinie nach dem Need-to-Know- und Least-Privilege-Prinzip?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.15 — Zugriffsrechte auf Informationen und informationsverarbeitende Systeme müssen auf Basis geschäftlicher Erfordernisse und nach dem Prinzip der geringsten Berechtigung vergeben werden.",
-        "help": "TISAX verlangt, dass der Zugang zu IT-Systemen und Informationen nur auf Basis eines dokumentierten Bedarfs gewährt wird. Das Need-to-Know-Prinzip bedeutet: Jeder Mitarbeiter erhält nur Zugriff auf die Informationen, die er für seine Tätigkeit benötigt. Das Least-Privilege-Prinzip bedeutet: Jeder Benutzer erhält nur die minimalen Rechte, die für seine Aufgaben erforderlich sind.",
+        "tooltip": "VDA ISA 6.0.2, Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
+        "help": "Sorgen Sie dafür, dass der Zugang zu IT-Systemen und Informationen nur auf Basis eines dokumentierten Bedarfs gewährt wird. Das Need-to-Know-Prinzip bedeutet: Jeder Mitarbeiter erhält nur Zugriff auf die Informationen, die er für seine Tätigkeit benötigt. Das Least-Privilege-Prinzip bedeutet: Jeder Benutzer erhält nur die minimalen Rechte, die für seine Aufgaben erforderlich sind.",
         "maturity": {
           "level0": "Keine Zugangssteuerungsrichtlinie — Zugriffsrechte werden ohne Bedarfsprüfung vergeben, breite Zugriffsrechte für alle Mitarbeiter",
           "level1": "Informelle Regelungen zur Rechtevergabe, aber kein dokumentiertes Berechtigungskonzept — keine systematische Bedarfsprüfung",
@@ -4395,8 +4395,8 @@
       },
       "zkQ2": {
         "title": "Werden Benutzerkonten und Zugriffsberechtigungen über den gesamten Lebenszyklus verwaltet?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.16 — Die Verwaltung von Identitäten und Zugriffsrechten muss den gesamten Lebenszyklus abdecken: Einrichtung, Änderung und Deaktivierung von Konten bei Eintritt, Versetzung und Austritt von Mitarbeitern.",
-        "help": "Ein häufiger Befund bei TISAX-Assessments sind verwaiste Konten: Mitarbeiter sind längst ausgeschieden, aber ihre Zugänge bestehen noch. TISAX verlangt einen definierten Identity-Lifecycle-Prozess, der Konten bei Eintritt anlegt, bei Rollenwechsel anpasst und bei Austritt zeitnah deaktiviert. Besonders kritisch ist dies für Konten mit Zugriff auf OEM-Systeme oder Prototypen-Daten.",
+        "tooltip": "VDA ISA 6.0.2, Control 4.1.3: „Inwieweit werden Benutzerkonten und Anmeldeinformationen sicher verwaltet und angewendet?“ Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
+        "help": "Ein häufiger Befund bei TISAX-Assessments sind verwaiste Konten: Mitarbeiter sind längst ausgeschieden, aber ihre Zugänge bestehen noch. Sie brauchen einen definierten Identity-Lifecycle-Prozess, der Konten bei Eintritt anlegt, bei Rollenwechsel anpasst und bei Austritt zeitnah deaktiviert. Besonders kritisch ist dies für Konten mit Zugriff auf OEM-Systeme oder Prototypen-Daten.",
         "maturity": {
           "level0": "Keine systematische Verwaltung von Benutzerkonten — Konten werden angelegt, aber nicht systematisch deaktiviert oder überprüft",
           "level1": "Grundlegender Prozess für Kontoerstellung, aber keine zeitnahe Deaktivierung bei Austritt — verwaiste Konten werden nicht systematisch bereinigt",
@@ -4406,8 +4406,8 @@
       },
       "zkQ3": {
         "title": "Werden privilegierte Zugriffsrechte (Administratorkonten) besonders geschützt und überwacht?",
-        "tooltip": "VDA ISA 6 / ISO 27001:2022 A.8.2 — Privilegierte Zugriffe (z.B. Administrator-, Root- und Service-Konten) stellen ein erhöhtes Risiko dar und müssen gesondert verwaltet, eingeschränkt und überwacht werden.",
-        "help": "Administratorkonten haben weitreichende Rechte und sind daher bevorzugte Angriffsziele. TISAX verlangt, dass privilegierte Konten besonders geschützt werden: separate Admin-Konten (nicht für den Tagesgebrauch), starke Authentifizierung (MFA), Protokollierung aller administrativen Aktivitäten und regelmäßige Überprüfung der Notwendigkeit. Shared-Admin-Konten müssen vermieden werden.",
+        "tooltip": "VDA ISA 6.0.2, Control 4.1.2: „Inwieweit wird der Zugang von Benutzern zu IT-Diensten und IT-Systemen gesichert?“ Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
+        "help": "Administratorkonten haben weitreichende Rechte und sind daher bevorzugte Angriffsziele. Sorgen Sie dafür, dass privilegierte Konten besonders geschützt werden: separate Admin-Konten (nicht für den Tagesgebrauch), starke Authentifizierung (MFA), Protokollierung aller administrativen Aktivitäten und regelmäßige Überprüfung der Notwendigkeit. Shared-Admin-Konten müssen vermieden werden.",
         "maturity": {
           "level0": "Keine gesonderte Verwaltung privilegierter Konten — Administratoren nutzen Standardkonten mit erhöhten Rechten für alle Tätigkeiten",
           "level1": "Separate Administratorkonten vorhanden, aber keine besondere Absicherung — kein MFA für Admin-Zugriffe, keine Protokollierung administrativer Aktionen",
