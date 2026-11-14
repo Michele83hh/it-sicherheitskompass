@@ -1,32 +1,32 @@
 // src/lib/regulations/owasp-asvs/types.ts
 
 /**
- * OWASP ASVS 4.0 Domain Types
+ * OWASP ASVS 5.0 Domain Types
  *
- * Legal basis: OWASP Application Security Verification Standard 4.0.3
+ * Legal basis: OWASP Application Security Verification Standard 5.0.0
  * These types model OWASP ASVS-specific structures for application security
  * assessment, verification requirements, scoring, and recommendations.
  *
- * OWASP ASVS 4.0 is organized into 14 verification chapters (V1-V14):
- * - V1: Architecture, Design and Threat Modeling
- * - V2: Authentication
- * - V3: Session Management
- * - V4: Access Control
- * - V5: Validation, Sanitization and Encoding
- * - V6: Stored Cryptography
- * - V7: Error Handling and Logging
- * - V8: Data Protection
- * - V9: Communication
- * - V10: Malicious Code
- * - V11: Business Logic
- * - V12: Files and Resources
- * - V13: API and Web Service
- * - V14: Configuration
+ * OWASP ASVS 5.0 is organized into 17 verification chapters (V1-V17):
+ * - V1: Encoding and Sanitization
+ * - V2: Validation and Business Logic
+ * - V3: Web Frontend Security
+ * - V4: API and Web Service
+ * - V5: File Handling
+ * - V6: Authentication
+ * - V7: Session Management
+ * - V8: Authorization
+ * - V9: Self-contained Tokens
+ * - V10: OAuth and OIDC
+ * - V11: Cryptography
+ * - V12: Secure Communication
+ * - V13: Configuration
+ * - V14: Data Protection
+ * - V15: Secure Coding and Architecture
+ * - V16: Security Logging and Error Handling
+ * - V17: WebRTC
  *
- * Three verification levels:
- * - Level 1: Low assurance (penetration testable)
- * - Level 2: Standard (most applications)
- * - Level 3: High assurance (critical applications)
+ * Three verification levels: L1, L2, L3.
  */
 
 // Re-export shared base types from regulations framework

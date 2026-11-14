@@ -57,7 +57,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     descriptionKey: 'recommendations.ih1.description',
     firstStepKey: 'recommendations.ih1.firstStep',
     legalReference: 'Art. 21 Abs. 2 lit. b NIS2-RL, §30 Abs. 2 Nr. 2 BSIG',
-    bsiReference: 'DER.2.1, BSI-Standard 100-4',
+    bsiReference: 'DER.2.1, BSI-Standard 200-4',
   },
   {
     id: 'rec-ih-2',

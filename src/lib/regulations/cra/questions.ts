@@ -22,8 +22,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.sbdQ1.tooltip',
     helpKey: 'cra.questions.sbdQ1.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 1 CRA',
-      bsigParagraph: 'CRA Anhang I',
+      euArticle: 'Art. 13 Abs. 1 CRA',
+      bsigParagraph: 'Anhang I Teil I Nr. 1 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbdQ1.maturity.level0',
@@ -40,8 +40,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.sbdQ2.tooltip',
     helpKey: 'cra.questions.sbdQ2.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 2 CRA',
-      bsigParagraph: 'CRA Anhang I',
+      euArticle: 'Art. 13 Abs. 1 CRA',
+      bsigParagraph: 'Anhang I Teil I Nr. 2 lit. a, b und j CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbdQ2.maturity.level0',
@@ -58,8 +58,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.sbdQ3.tooltip',
     helpKey: 'cra.questions.sbdQ3.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 3 CRA',
-      bsigParagraph: 'CRA Anhang I',
+      euArticle: 'Art. 13 Abs. 1 CRA',
+      bsigParagraph: 'Anhang I Teil I Nr. 2 lit. d CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbdQ3.maturity.level0',
@@ -80,8 +80,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.swmQ1.tooltip',
     helpKey: 'cra.questions.swmQ1.help',
     legalReference: {
-      euArticle: 'Art. 11 Abs. 1 CRA',
-      bsigParagraph: 'ISO/IEC 30111',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 1-2 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.swmQ1.maturity.level0',
@@ -98,8 +98,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.swmQ2.tooltip',
     helpKey: 'cra.questions.swmQ2.help',
     legalReference: {
-      euArticle: 'Art. 11 Abs. 2 CRA',
-      bsigParagraph: 'ISO/IEC 29147',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 5-6 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.swmQ2.maturity.level0',
@@ -116,8 +116,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.swmQ3.tooltip',
     helpKey: 'cra.questions.swmQ3.help',
     legalReference: {
-      euArticle: 'Art. 11 Abs. 3 CRA',
-      bsigParagraph: 'CRA Anhang I',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 8 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.swmQ3.maturity.level0',
@@ -138,8 +138,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.sbomQ1.tooltip',
     helpKey: 'cra.questions.sbomQ1.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 6 CRA',
-      bsigParagraph: 'NTIA SBOM Minimum Elements',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 1 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbomQ1.maturity.level0',
@@ -156,8 +156,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.sbomQ2.tooltip',
     helpKey: 'cra.questions.sbomQ2.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 6 CRA',
-      bsigParagraph: 'CycloneDX/SPDX Standards',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 1 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbomQ2.maturity.level0',
@@ -174,8 +174,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.sbomQ3.tooltip',
     helpKey: 'cra.questions.sbomQ3.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 6 CRA',
-      bsigParagraph: 'NTIA SBOM Minimum Elements',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 1 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.sbomQ3.maturity.level0',
@@ -196,8 +196,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.umQ1.tooltip',
     helpKey: 'cra.questions.umQ1.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 12 CRA',
-      bsigParagraph: 'ETSI EN 303 645 Abschnitt 5.3',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 7, Teil I Nr. 2 lit. c CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.umQ1.maturity.level0',
@@ -214,8 +214,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.umQ2.tooltip',
     helpKey: 'cra.questions.umQ2.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 12 CRA',
-      bsigParagraph: 'CRA Anhang I',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 2 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.umQ2.maturity.level0',
@@ -232,8 +232,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.umQ3.tooltip',
     helpKey: 'cra.questions.umQ3.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 12 CRA',
-      bsigParagraph: 'ETSI EN 303 645 Abschnitt 5.3',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 4 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.umQ3.maturity.level0',
@@ -254,8 +254,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.dokQ1.tooltip',
     helpKey: 'cra.questions.dokQ1.help',
     legalReference: {
-      euArticle: 'Art. 31 CRA',
-      bsigParagraph: 'EN ISO/IEC 17050-1',
+      euArticle: 'Art. 31 Abs. 1 CRA',
+      bsigParagraph: 'Anhang VII CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.dokQ1.maturity.level0',
@@ -272,8 +272,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.dokQ2.tooltip',
     helpKey: 'cra.questions.dokQ2.help',
     legalReference: {
-      euArticle: 'Art. 31 CRA',
-      bsigParagraph: 'Anhang VII CRA',
+      euArticle: 'Art. 13 Abs. 2-3 CRA',
+      bsigParagraph: 'Anhang VII Nr. 3 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.dokQ2.maturity.level0',
@@ -290,8 +290,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.dokQ3.tooltip',
     helpKey: 'cra.questions.dokQ3.help',
     legalReference: {
-      euArticle: 'Art. 31 CRA',
-      bsigParagraph: 'Anhang VII CRA',
+      euArticle: 'Art. 13 Abs. 18 CRA',
+      bsigParagraph: 'Anhang II CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.dokQ3.maturity.level0',
@@ -313,7 +313,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.vmQ1.help',
     legalReference: {
       euArticle: 'Art. 14 Abs. 1 CRA',
-      bsigParagraph: 'ENISA Reporting Guidelines',
+      bsigParagraph: 'Einheitliche Meldeplattform (Art. 16 CRA)',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.vmQ1.maturity.level0',
@@ -331,7 +331,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'cra.questions.vmQ2.help',
     legalReference: {
       euArticle: 'Art. 14 Abs. 2 CRA',
-      bsigParagraph: 'ENISA Reporting Guidelines',
+      bsigParagraph: 'Frühwarnung, Meldung, Abschlussbericht',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.vmQ2.maturity.level0',
@@ -348,8 +348,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.vmQ3.tooltip',
     helpKey: 'cra.questions.vmQ3.help',
     legalReference: {
-      euArticle: 'Art. 14 Abs. 3 CRA',
-      bsigParagraph: 'ENISA Reporting Guidelines',
+      euArticle: 'Art. 14 Abs. 8 CRA',
+      bsigParagraph: 'Information der Nutzer',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.vmQ3.maturity.level0',
@@ -370,8 +370,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.konfQ1.tooltip',
     helpKey: 'cra.questions.konfQ1.help',
     legalReference: {
-      euArticle: 'Art. 24 CRA',
-      bsigParagraph: 'EN ISO/IEC 17065',
+      euArticle: 'Art. 32 CRA',
+      bsigParagraph: 'Anhang VIII CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.konfQ1.maturity.level0',
@@ -388,8 +388,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.konfQ2.tooltip',
     helpKey: 'cra.questions.konfQ2.help',
     legalReference: {
-      euArticle: 'Art. 25-28 CRA',
-      bsigParagraph: 'Anhang VIII CRA',
+      euArticle: 'Art. 27 Abs. 1 CRA',
+      bsigParagraph: 'Konformitätsvermutung',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.konfQ2.maturity.level0',
@@ -406,8 +406,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.konfQ3.tooltip',
     helpKey: 'cra.questions.konfQ3.help',
     legalReference: {
-      euArticle: 'Art. 30 CRA',
-      bsigParagraph: 'Art. 30 CRA CE-Kennzeichnung',
+      euArticle: 'Art. 13 Abs. 12, Art. 28, Art. 30 CRA',
+      bsigParagraph: 'EU-Konformitätserklärung und CE-Kennzeichnung',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.konfQ3.maturity.level0',
@@ -428,8 +428,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.slQ1.tooltip',
     helpKey: 'cra.questions.slQ1.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 12 CRA',
-      bsigParagraph: 'IEC 62443-4-1',
+      euArticle: 'Art. 13 Abs. 8 CRA',
+      bsigParagraph: 'Anhang II Nr. 7 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.slQ1.maturity.level0',
@@ -446,8 +446,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.slQ2.tooltip',
     helpKey: 'cra.questions.slQ2.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 12 CRA',
-      bsigParagraph: 'CRA Anhang I',
+      euArticle: 'Art. 13 Abs. 8-9 CRA',
+      bsigParagraph: 'Anhang I Teil II Nr. 2 CRA',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.slQ2.maturity.level0',
@@ -464,8 +464,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'cra.questions.slQ3.tooltip',
     helpKey: 'cra.questions.slQ3.help',
     legalReference: {
-      euArticle: 'Art. 10 Abs. 12 CRA',
-      bsigParagraph: 'IEC 62443-4-1, ETSI EN 303 645',
+      euArticle: 'Art. 13 Abs. 5-6 CRA',
+      bsigParagraph: 'Sorgfalt bei Komponenten Dritter',
     },
     maturityDescriptions: {
       level0Key: 'cra.questions.slQ3.maturity.level0',

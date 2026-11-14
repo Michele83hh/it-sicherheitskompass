@@ -66,33 +66,12 @@ export const DIN_SPEC_AREAS: DinSpecArea[] = [
  * NIS2 areas NOT covered by DIN SPEC 27076
  */
 export const NIS2_BEYOND_DIN_SPEC = [
-  'dinSpec.beyond.incidentReporting',
-  'dinSpec.beyond.supplyChain',
-  'dinSpec.beyond.managementLiability',
-  'dinSpec.beyond.bsiRegistration',
-  'dinSpec.beyond.critisRequirements',
-  'dinSpec.beyond.formalRiskAnalysis',
-  'dinSpec.beyond.incidentResponsePlan',
-  'dinSpec.beyond.crisisManagement',
+  'dinSpec.beyond.items.incidentReporting',
+  'dinSpec.beyond.items.supplyChain',
+  'dinSpec.beyond.items.managementLiability',
+  'dinSpec.beyond.items.bsiRegistration',
+  'dinSpec.beyond.items.critisRequirements',
+  'dinSpec.beyond.items.formalRiskAnalysis',
+  'dinSpec.beyond.items.incidentResponsePlan',
+  'dinSpec.beyond.items.crisisManagement',
 ];
-
-/**
- * Key comparison facts
- */
-export const DIN_SPEC_COMPARISON = {
-  dinSpec: {
-    targetGroupKey: 'dinSpec.comparison.dinSpec.targetGroup',
-    scopeKey: 'dinSpec.comparison.dinSpec.scope',
-    requirementsCount: 27,
-    areasCount: 6,
-    subsidyKey: 'dinSpec.comparison.dinSpec.subsidy',
-    urlBsi: 'https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/KMU/CyberRisikoCheck/CyberRisikoCheck_node.html',
-  },
-  nis2: {
-    targetGroupKey: 'dinSpec.comparison.nis2.targetGroup',
-    scopeKey: 'dinSpec.comparison.nis2.scope',
-    requirementsCount: 10, // Art. 21(2) categories
-    areasCount: 10,
-    mandatoryKey: 'dinSpec.comparison.nis2.mandatory',
-  },
-};

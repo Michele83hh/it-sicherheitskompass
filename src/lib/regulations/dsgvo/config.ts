@@ -36,6 +36,7 @@ const dsgvoConfig: RegulationConfig = {
     id: q.id,
     categoryId: q.categoryId,
     tier: q.tier,
+    notApplicableAllowed: q.notApplicableAllowed,
     titleKey: q.titleKey,
     tooltipKey: q.tooltipKey,
     helpKey: q.helpKey,
@@ -65,7 +66,7 @@ const dsgvoConfig: RegulationConfig = {
   features: {
     hasClassification: false,
     hasQuickCheck: true,
-    hasTieredAssessment: false,
+    hasTieredAssessment: true,
     hasCostEstimation: true,
     hasRoadmap: true,
   },

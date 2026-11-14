@@ -5,7 +5,7 @@
  * legal references, and BSI IT-Grundschutz building block references.
  * 24 recommendations total (8 categories x 3 recommendations).
  *
- * Legal basis: §8a, §8b BSI-Gesetz; BSI-KritisV
+ * Legal basis: §§ 30–33, 39 BSI-Gesetz; BSI-KritisV
  * BSI references: IT-Grundschutz-Kompendium Edition 2023
  */
 
@@ -21,7 +21,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.bsi1.title',
     descriptionKey: 'kritis.recommendations.bsi1.description',
     firstStepKey: 'kritis.recommendations.bsi1.firstStep',
-    legalReference: '§8b Abs. 3 BSI-Gesetz',
+    legalReference: '§33 BSI-Gesetz',
     bsiReference: 'ORP.1',
   },
   {
@@ -32,7 +32,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.bsi2.title',
     descriptionKey: 'kritis.recommendations.bsi2.description',
     firstStepKey: 'kritis.recommendations.bsi2.firstStep',
-    legalReference: '§8b Abs. 3 BSI-Gesetz',
+    legalReference: '§33 BSI-Gesetz',
     bsiReference: 'ORP.1, DER.2.1',
   },
   {
@@ -43,7 +43,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.bsi3.title',
     descriptionKey: 'kritis.recommendations.bsi3.description',
     firstStepKey: 'kritis.recommendations.bsi3.firstStep',
-    legalReference: '§8b Abs. 3 BSI-Gesetz',
+    legalReference: '§33 BSI-Gesetz',
     bsiReference: 'ORP.1',
     checklistKey: 'kritis.recommendations.bsi3.checklist',
   },
@@ -57,7 +57,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.rm1.title',
     descriptionKey: 'kritis.recommendations.rm1.description',
     firstStepKey: 'kritis.recommendations.rm1.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'BSI-Standard 200-3, ISMS.1',
   },
   {
@@ -68,7 +68,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.rm2.title',
     descriptionKey: 'kritis.recommendations.rm2.description',
     firstStepKey: 'kritis.recommendations.rm2.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'ISMS.1, ORP.1',
   },
   {
@@ -79,7 +79,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.rm3.title',
     descriptionKey: 'kritis.recommendations.rm3.description',
     firstStepKey: 'kritis.recommendations.rm3.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'BSI-Standard 200-2, ISMS.1',
     checklistKey: 'kritis.recommendations.rm3.checklist',
   },
@@ -93,8 +93,8 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.vm1.title',
     descriptionKey: 'kritis.recommendations.vm1.description',
     firstStepKey: 'kritis.recommendations.vm1.firstStep',
-    legalReference: '§8b Abs. 4 BSI-Gesetz',
-    bsiReference: 'DER.2.1, BSI-Standard 100-4',
+    legalReference: '§32 BSI-Gesetz',
+    bsiReference: 'DER.2.1, BSI-Standard 200-4',
   },
   {
     id: 'rec-vm-2',
@@ -104,7 +104,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.vm2.title',
     descriptionKey: 'kritis.recommendations.vm2.description',
     firstStepKey: 'kritis.recommendations.vm2.firstStep',
-    legalReference: '§8b Abs. 4 BSI-Gesetz',
+    legalReference: '§32 BSI-Gesetz',
     bsiReference: 'DER.2.1, DER.2.2',
   },
   {
@@ -115,7 +115,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.vm3.title',
     descriptionKey: 'kritis.recommendations.vm3.description',
     firstStepKey: 'kritis.recommendations.vm3.firstStep',
-    legalReference: '§8b Abs. 4 BSI-Gesetz',
+    legalReference: '§32 BSI-Gesetz',
     bsiReference: 'DER.2.1, DER.2.3',
     checklistKey: 'kritis.recommendations.vm3.checklist',
   },
@@ -129,7 +129,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.bcm1.title',
     descriptionKey: 'kritis.recommendations.bcm1.description',
     firstStepKey: 'kritis.recommendations.bcm1.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'CON.3, BSI-Standard 200-4',
   },
   {
@@ -140,7 +140,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.bcm2.title',
     descriptionKey: 'kritis.recommendations.bcm2.description',
     firstStepKey: 'kritis.recommendations.bcm2.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'DER.4, BSI-Standard 200-4',
   },
   {
@@ -151,7 +151,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.bcm3.title',
     descriptionKey: 'kritis.recommendations.bcm3.description',
     firstStepKey: 'kritis.recommendations.bcm3.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'BSI-Standard 200-4, CON.3',
     checklistKey: 'kritis.recommendations.bcm3.checklist',
   },
@@ -165,7 +165,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.lk1.title',
     descriptionKey: 'kritis.recommendations.lk1.description',
     firstStepKey: 'kritis.recommendations.lk1.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'ORP.1',
   },
   {
@@ -176,7 +176,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.lk2.title',
     descriptionKey: 'kritis.recommendations.lk2.description',
     firstStepKey: 'kritis.recommendations.lk2.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'ORP.1, OPS.1.1.3',
   },
   {
@@ -187,7 +187,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.lk3.title',
     descriptionKey: 'kritis.recommendations.lk3.description',
     firstStepKey: 'kritis.recommendations.lk3.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'ORP.1, OPS.1.1.3',
     checklistKey: 'kritis.recommendations.lk3.checklist',
   },
@@ -201,7 +201,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.au1.title',
     descriptionKey: 'kritis.recommendations.au1.description',
     firstStepKey: 'kritis.recommendations.au1.firstStep',
-    legalReference: '§8a Abs. 3 BSI-Gesetz',
+    legalReference: '§39 Abs. 1 BSI-Gesetz',
     bsiReference: 'ISMS.1, ORP.5',
   },
   {
@@ -212,7 +212,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.au2.title',
     descriptionKey: 'kritis.recommendations.au2.description',
     firstStepKey: 'kritis.recommendations.au2.firstStep',
-    legalReference: '§8a Abs. 3 BSI-Gesetz',
+    legalReference: '§39 Abs. 1 BSI-Gesetz',
     bsiReference: 'ISMS.1',
   },
   {
@@ -223,7 +223,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.au3.title',
     descriptionKey: 'kritis.recommendations.au3.description',
     firstStepKey: 'kritis.recommendations.au3.firstStep',
-    legalReference: '§8a Abs. 3 BSI-Gesetz',
+    legalReference: '§39 Abs. 1 BSI-Gesetz',
     bsiReference: 'ISMS.1, ORP.5',
     checklistKey: 'kritis.recommendations.au3.checklist',
   },
@@ -237,7 +237,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.ps1.title',
     descriptionKey: 'kritis.recommendations.ps1.description',
     firstStepKey: 'kritis.recommendations.ps1.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'INF.1, INF.2',
   },
   {
@@ -248,7 +248,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.ps2.title',
     descriptionKey: 'kritis.recommendations.ps2.description',
     firstStepKey: 'kritis.recommendations.ps2.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'INF.1, INF.5',
   },
   {
@@ -259,7 +259,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.ps3.title',
     descriptionKey: 'kritis.recommendations.ps3.description',
     firstStepKey: 'kritis.recommendations.ps3.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'INF.1, INF.2, INF.5',
     checklistKey: 'kritis.recommendations.ps3.checklist',
   },
@@ -273,7 +273,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.sh1.title',
     descriptionKey: 'kritis.recommendations.sh1.description',
     firstStepKey: 'kritis.recommendations.sh1.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'SYS.1.1, OPS.1.1.3',
   },
   {
@@ -284,7 +284,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.sh2.title',
     descriptionKey: 'kritis.recommendations.sh2.description',
     firstStepKey: 'kritis.recommendations.sh2.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'NET.1.1, NET.1.2',
   },
   {
@@ -295,7 +295,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'kritis.recommendations.sh3.title',
     descriptionKey: 'kritis.recommendations.sh3.description',
     firstStepKey: 'kritis.recommendations.sh3.firstStep',
-    legalReference: '§8a Abs. 1 BSI-Gesetz',
+    legalReference: '§30 Abs. 1 BSI-Gesetz',
     bsiReference: 'SYS.1.1, NET.1.1, OPS.1.1.3',
     checklistKey: 'kritis.recommendations.sh3.checklist',
   },

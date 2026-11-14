@@ -24,27 +24,40 @@ export interface QuestionEquivalence {
 }
 
 /**
- * Core topic equivalences across all 15 regulations.
+ * Themen, zu denen mehrere Regelwerke inhaltlich dieselbe Frage stellen.
  *
- * ~10 topics, ~100 question equivalences total.
+ * Jede Zuordnung ist anhand der Fragetexte geprüft (Stand 13.11.2026). Eine Frage gehört
+ * nur dann in ein Thema, wenn die Antwort sinnvoll übertragbar ist — dasselbe Kapitel im
+ * Regelwerk genügt nicht. 'exact' = gleiche Maßnahme, 'high' = gleiche Maßnahme mit anderem
+ * Geltungsbereich, 'approximate' = verwandt, Antwort nur als Anhaltspunkt.
  */
 export const QUESTION_EQUIVALENCES: QuestionEquivalence[] = [
-  // ─── 1. Risk Management / Risikomanagement ───
   {
-    topic: 'risk_inventory',
-    topicKey: 'dedup.topics.riskInventory',
+    topic: 'asset_inventory',
+    topicKey: 'dedup.topics.assetInventory',
     confidence: 'high',
     questions: {
-      'nis2': ['ra-q1', 'ra-q4'],      // IT-Risikoinventar, Asset-Inventar
-      'kritis': ['rm-q1', 'rm-q2'],     // Risikomanagement
-      'dora': ['irm-q1', 'irm-q2'],     // ICT Risk Management
-      'iso27001': ['iso-pr-q1', 'iso-pr-q2'], // Planning/Risk
-      'bsi-grundschutz': ['isms-q1', 'isms-q2'], // ISMS
-      'soc2': ['gov-q1', 'gov-q2'],     // Risk Management/Governance
-      'tisax': ['org-q1', 'org-q2'],     // Organisation
-      'nist-csf': ['nist-id-q1', 'nist-id-q2'], // Identify
-      'c5': ['c5-org-q1', 'c5-org-q2'], // Organisation
-      'dsgvo': ['dsfa-q1'],             // DSFA
+      'nis2': ['ra-q4'],
+      'dora': ['irm-q2'],
+      'tisax': ['tech-q1'],
+      'c5': ['c5-am-q1'],
+      'nist-csf': ['nist-id-q1'],
+      'cis-controls': ['cis-ic-q1', 'cis-ic-q2'],
+    },
+  },
+  {
+    topic: 'risk_assessment',
+    topicKey: 'dedup.topics.riskAssessment',
+    confidence: 'high',
+    questions: {
+      'nis2': ['ra-q1'],
+      'kritis': ['rm-q1'],
+      'dora': ['irm-q1'],
+      'iso27001': ['iso-pr-q1'],
+      'bsi-grundschutz': ['isms-q3'],
+      'tisax': ['org-q3'],
+      'soc2': ['gov-q3'],
+      'nist-csf': ['nist-id-q2'],
     },
   },
   {
@@ -52,14 +65,30 @@ export const QUESTION_EQUIVALENCES: QuestionEquivalence[] = [
     topicKey: 'dedup.topics.riskTreatment',
     confidence: 'high',
     questions: {
-      'nis2': ['ra-q5'],               // Risikobehandlungsmaßnahmen
-      'kritis': ['rm-q3', 'rm-q4'],    // Risikomanagement
-      'dora': ['irm-q3', 'irm-q4'],    // ICT Risk Management
-      'iso27001': ['iso-pr-q3', 'iso-pr-q4'], // Planning/Risk
-      'bsi-grundschutz': ['isms-q3'],   // ISMS
-      'soc2': ['gov-q3', 'gov-q4'],    // Risk Management
-      'nist-csf': ['nist-id-q3'],       // Identify
-      'c5': ['c5-org-q3', 'c5-org-q4'], // Organisation
+      'nis2': ['ra-q5'],
+      'kritis': ['rm-q4'],
+      'iso27001': ['iso-pr-q2'],
+    },
+  },
+  {
+    topic: 'isms_established',
+    topicKey: 'dedup.topics.ismsEstablished',
+    confidence: 'high',
+    questions: {
+      'kritis': ['rm-q2'],
+      'bsi-grundschutz': ['isms-q1'],
+    },
+  },
+  {
+    topic: 'security_policy',
+    topicKey: 'dedup.topics.securityPolicy',
+    confidence: 'high',
+    questions: {
+      'iso27001': ['iso-cl-q2'],
+      'bsi-grundschutz': ['isms-q2'],
+      'tisax': ['org-q1'],
+      'pci-dss': ['sp-q1'],
+      'c5': ['c5-org-q1'],
     },
   },
   {
@@ -67,78 +96,84 @@ export const QUESTION_EQUIVALENCES: QuestionEquivalence[] = [
     topicKey: 'dedup.topics.securityResponsibilities',
     confidence: 'high',
     questions: {
-      'nis2': ['ra-q3'],               // Verantwortlichkeiten festgelegt
-      'dora': ['gov-q1', 'gov-q2'],    // Governance
-      'iso27001': ['iso-cl-q1', 'iso-cl-q2'], // Context/Leadership
-      'bsi-grundschutz': ['orp-q1'],    // Organisation/Personal
-      'tisax': ['org-q3'],             // Organisation
-      'soc2': ['gov-q1'],             // Governance
-      'nist-csf': ['nist-gv-q1', 'nist-gv-q2'], // Govern
-      'c5': ['c5-org-q1'],            // Organisation
+      'nis2': ['ra-q3'],
+      'iso27001': ['iso-cl-q3'],
+      'tisax': ['org-q2'],
+      'nist-csf': ['nist-gv-q2'],
     },
   },
-
-  // ─── 2. Incident Response / Vorfallbehandlung ───
   {
     topic: 'incident_response_plan',
     topicKey: 'dedup.topics.incidentResponsePlan',
     confidence: 'high',
     questions: {
-      'nis2': ['ih-q1'],              // Verfahren bei Cyberangriff
-      'kritis': ['vm-q1'],            // Vorfallmanagement
-      'dora': ['vm-q1'],              // Vorfallmanagement
-      'iso27001': ['iso-ic-q1'],       // Incident/Continuity
-      'bsi-grundschutz': ['der-q1'],   // Detektion/Reaktion
-      'soc2': ['sec-q3'],             // Security
-      'c5': ['c5-sim-q1'],            // Security Incident Management
-      'nist-csf': ['nist-rs-q1'],      // Respond
+      'nis2': ['ih-q1'],
+      'kritis': ['vm-q1'],
+      'dora': ['vm-q1'],
+      'iso27001': ['iso-ic-q1'],
+      'bsi-grundschutz': ['der-q2'],
+      'c5': ['c5-sim-q1'],
+      'nist-csf': ['nist-rs-q1'],
+      'cis-controls': ['cis-so-q3'],
+      'pci-dss': ['sp-q3'],
+      'soc2': ['mon-q2'],
     },
   },
   {
-    topic: 'incident_logging',
-    topicKey: 'dedup.topics.incidentLogging',
+    topic: 'incident_lessons_learned',
+    topicKey: 'dedup.topics.incidentLessonsLearned',
     confidence: 'high',
     questions: {
-      'nis2': ['ih-q3'],              // Vorfälle protokolliert
-      'kritis': ['vm-q2', 'vm-q3'],   // Vorfallmanagement
-      'dora': ['vm-q2', 'vm-q3'],     // Vorfallmanagement
-      'iso27001': ['iso-ic-q2'],       // Incident
-      'bsi-grundschutz': ['der-q2'],   // Detektion
-      'soc2': ['mon-q1'],             // Monitoring
-      'c5': ['c5-sim-q2'],            // SIM
-      'nist-csf': ['nist-rs-q2'],      // Respond
-      'owasp-asvs': ['owasp-el-q1'],  // Error/Logging
+      'nis2': ['ih-q3'],
+      'kritis': ['vm-q3'],
+      'c5': ['c5-sim-q3'],
+      'nist-csf': ['nist-rs-q3'],
     },
   },
   {
     topic: 'incident_reporting',
     topicKey: 'dedup.topics.incidentReporting',
-    confidence: 'high',
+    confidence: 'approximate',
     questions: {
-      'nis2': ['ih-q4'],              // Meldepflicht-Kriterien
-      'kritis': ['bsi-q1', 'bsi-q2'], // BSI-Kontaktstelle/Meldung
-      'dora': ['vm-q4', 'vm-q5'],     // Vorfallmanagement (Meldung)
-      'dsgvo': ['br-q1', 'br-q2'],    // Breach Notification 72h
-      'iso27001': ['iso-ic-q3'],       // Incident
-      'bsi-grundschutz': ['der-q3'],   // Detektion/Reaktion
-      'c5': ['c5-sim-q3'],            // SIM
-      'nist-csf': ['nist-rs-q3'],      // Respond
+      'nis2': ['ih-q4'],
+      'kritis': ['vm-q2'],
+      'dora': ['vm-q3'],
     },
   },
-
-  // ─── 3. Business Continuity / BCM ───
+  {
+    topic: 'security_monitoring',
+    topicKey: 'dedup.topics.securityMonitoring',
+    confidence: 'high',
+    questions: {
+      'bsi-grundschutz': ['der-q1'],
+      'soc2': ['mon-q1'],
+      'c5': ['c5-ops-q2'],
+      'nist-csf': ['nist-de-q1'],
+      'cis-controls': ['cis-vm-q2'],
+      'pci-dss': ['mt-q1'],
+      'owasp-asvs': ['owasp-el-q2'],
+    },
+  },
+  {
+    topic: 'anomaly_detection',
+    topicKey: 'dedup.topics.anomalyDetection',
+    confidence: 'high',
+    questions: {
+      'kritis': ['rm-q3'],
+      'dora': ['irm-q4'],
+      'nist-csf': ['nist-de-q2'],
+    },
+  },
   {
     topic: 'backup_strategy',
     topicKey: 'dedup.topics.backupStrategy',
-    confidence: 'exact',
+    confidence: 'high',
     questions: {
-      'nis2': ['bc-q1'],              // Regelmäßige Backups
-      'kritis': ['bcm-q1'],           // BCM
-      'iso27001': ['iso-op-q1'],       // Operations
-      'soc2': ['avl-q1'],             // Availability
-      'nist-csf': ['nist-rc-q1'],      // Recover
-      'iso22301': ['bcm-br-q1'],       // Business Recovery
-      'bsi-grundschutz': ['con-q1'],   // CON (Continuity)
+      'nis2': ['bc-q1'],
+      'dora': ['irm-q5'],
+      'bsi-grundschutz': ['con-q2'],
+      'soc2': ['avl-q2'],
+      'cis-controls': ['cis-rn-q1'],
     },
   },
   {
@@ -146,89 +181,136 @@ export const QUESTION_EQUIVALENCES: QuestionEquivalence[] = [
     topicKey: 'dedup.topics.businessContinuityPlan',
     confidence: 'high',
     questions: {
-      'nis2': ['bc-q3'],              // Notfallplan
-      'kritis': ['bcm-q2', 'bcm-q3'], // BCM
-      'dora': ['da-q1', 'da-q2'],     // Digital Resilience (Drittanbieter -> actually continuity)
-      'iso27001': ['iso-op-q2', 'iso-op-q3'], // Operations
-      'soc2': ['avl-q2', 'avl-q3'],   // Availability
-      'nist-csf': ['nist-rc-q2', 'nist-rc-q3'], // Recover
-      'iso22301': ['bcm-pl-q1', 'bcm-pl-q2', 'bcm-pl-q3'], // BCM Planning
-      'bsi-grundschutz': ['con-q2', 'con-q3'], // CON
+      'nis2': ['bc-q3'],
+      'iso27001': ['iso-ic-q2'],
+      'c5': ['c5-sim-q2'],
+      'iso22301': ['bcm-sp-q1'],
+      'soc2': ['avl-q3'],
+      'nist-csf': ['nist-rc-q1'],
+    },
+  },
+  {
+    topic: 'bc_exercises',
+    topicKey: 'dedup.topics.bcExercises',
+    confidence: 'high',
+    questions: {
+      'kritis': ['bcm-q3'],
+      'iso22301': ['bcm-sp-q2'],
+      'nist-csf': ['nist-rc-q2'],
+      'bsi-grundschutz': ['der-q3'],
     },
   },
   {
     topic: 'business_impact_analysis',
     topicKey: 'dedup.topics.businessImpactAnalysis',
-    confidence: 'high',
+    confidence: 'exact',
     questions: {
-      'nis2': ['bc-q4'],              // BIA
-      'kritis': ['bcm-q4'],           // BCM (BIA)
-      'iso22301': ['bcm-cl-q1', 'bcm-cl-q2'], // Context/Leadership
-      'dora': ['irm-q5'],             // ICT Risk Management (impact)
-      'soc2': ['avl-q4'],             // Availability
+      'nis2': ['bc-q4'],
+      'iso22301': ['bcm-br-q1'],
     },
   },
-
-  // ─── 4. Access Control / Zugriffskontrolle ───
+  {
+    topic: 'rto_rpo',
+    topicKey: 'dedup.topics.rtoRpo',
+    confidence: 'exact',
+    questions: {
+      'kritis': ['bcm-q2'],
+      'iso22301': ['bcm-br-q2'],
+    },
+  },
+  {
+    topic: 'crisis_communication',
+    topicKey: 'dedup.topics.crisisCommunication',
+    confidence: 'high',
+    questions: {
+      'nis2': ['bc-q5'],
+      'iso22301': ['bcm-sp-q3'],
+    },
+  },
   {
     topic: 'access_control',
     topicKey: 'dedup.topics.accessControl',
     confidence: 'high',
     questions: {
-      'nis2': ['ac-q1', 'ac-q2'],     // Autorisierte Personen, Rechte prüfen
-      'dora': ['ia-q1', 'ia-q2'],     // Informationsaustausch/Access
-      'iso27001': ['iso-ac-q1', 'iso-ac-q2'], // Access Control
-      'pci-dss': ['ac-q1', 'ac-q2'],  // Access Control
-      'tisax': ['zk-q1', 'zk-q2'],    // Zugriffskontrolle
-      'c5': ['c5-idm-q1', 'c5-idm-q2'], // Identity Management
-      'owasp-asvs': ['owasp-ac-q1', 'owasp-ac-q2'], // Access Control
-      'bsi-grundschutz': ['sys-q1', 'sys-q2'], // Systeme
-      'soc2': ['conf-q1', 'conf-q2'], // Confidentiality
+      'nis2': ['ac-q1'],
+      'iso27001': ['iso-ac-q1'],
+      'pci-dss': ['ac-q1'],
+      'tisax': ['zk-q1'],
+      'c5': ['c5-idm-q2'],
+      'owasp-asvs': ['owasp-ac-q1'],
+      'nist-csf': ['nist-pr-q1'],
+      'soc2': ['sec-q1'],
+    },
+  },
+  {
+    topic: 'access_review',
+    topicKey: 'dedup.topics.accessReview',
+    confidence: 'high',
+    questions: {
+      'nis2': ['ac-q2', 'ac-q5'],
+      'iso27001': ['iso-ac-q4'],
+      'pci-dss': ['ac-q3'],
+      'tisax': ['zk-q2'],
+      'c5': ['c5-idm-q1'],
+      'soc2': ['sec-q2'],
+      'cis-controls': ['cis-sc-q2'],
     },
   },
   {
     topic: 'privileged_access',
     topicKey: 'dedup.topics.privilegedAccess',
-    confidence: 'high',
+    confidence: 'exact',
     questions: {
-      'nis2': ['ac-q4'],              // Admin-Accounts
-      'iso27001': ['iso-ac-q3', 'iso-ac-q4'], // Access Control (PAM)
-      'pci-dss': ['ac-q3'],           // Access Control
-      'tisax': ['zk-q3'],             // Zugriffskontrolle
-      'c5': ['c5-idm-q3'],            // Identity Management
-      'owasp-asvs': ['owasp-ac-q3'],  // Access Control
+      'nis2': ['ac-q4'],
+      'iso27001': ['iso-ac-q3'],
+      'tisax': ['zk-q3'],
     },
   },
-
-  // ─── 5. MFA / Multi-Faktor-Authentifizierung ───
   {
     topic: 'mfa',
     topicKey: 'dedup.topics.mfa',
-    confidence: 'exact',
+    confidence: 'high',
     questions: {
-      'nis2': ['mc-q1'],              // MFA für kritische Systeme
-      'owasp-asvs': ['owasp-auth-q1'], // Authentication
-      'iso27001': ['iso-ac-q4'],       // Access Control (strong auth)
-      'pci-dss': ['ac-q2'],           // MFA in PCI context
-      'tisax': ['zk-q2'],             // Zugriffskontrolle (auth)
-      'dora': ['ia-q3'],              // Access/Identity
-      'cis-controls': ['cis-ic-q3'],   // Inventory/Control
+      'nis2': ['mc-q1'],
+      'pci-dss': ['au-q3'],
+      'cis-controls': ['cis-sc-q3'],
+      'owasp-asvs': ['owasp-auth-q2'],
+      'c5': ['c5-idm-q3'],
     },
   },
-
-  // ─── 6. Encryption / Verschlüsselung ───
+  {
+    topic: 'password_policy',
+    topicKey: 'dedup.topics.passwordPolicy',
+    confidence: 'high',
+    questions: {
+      'pci-dss': ['au-q2'],
+      'owasp-asvs': ['owasp-auth-q1'],
+    },
+  },
   {
     topic: 'encryption',
     topicKey: 'dedup.topics.encryption',
     confidence: 'high',
     questions: {
-      'nis2': ['cr-q1', 'cr-q2'],     // Verschlüsselung + Konzept
-      'dsgvo': ['tom-q1'],            // TOM (Verschlüsselung)
-      'tisax': ['kry-q1', 'kry-q2'],  // Kryptografie
-      'owasp-asvs': ['owasp-crypto-q1', 'owasp-crypto-q2'], // Cryptography
-      'c5': ['c5-kry-q1', 'c5-kry-q2'], // Kryptografie
-      'iso27001': ['iso-cn-q1', 'iso-cn-q2'], // Cryptography/Network
-      'pci-dss': ['dp-q1', 'dp-q2'],  // Data Protection
+      'nis2': ['cr-q1'],
+      'tisax': ['kry-q2'],
+      'soc2': ['sec-q3'],
+      'c5': ['c5-kry-q3'],
+      'cis-controls': ['cis-dp-q2'],
+      'iso27001': ['iso-cn-q1'],
+      'dsgvo': ['tom-q1'],
+      'owasp-asvs': ['owasp-crypto-q1'],
+    },
+  },
+  {
+    topic: 'crypto_policy',
+    topicKey: 'dedup.topics.cryptoPolicy',
+    confidence: 'high',
+    questions: {
+      'nis2': ['cr-q2'],
+      'tisax': ['kry-q1'],
+      'c5': ['c5-kry-q1'],
+      'bsi-grundschutz': ['con-q1'],
     },
   },
   {
@@ -236,61 +318,59 @@ export const QUESTION_EQUIVALENCES: QuestionEquivalence[] = [
     topicKey: 'dedup.topics.keyManagement',
     confidence: 'high',
     questions: {
-      'nis2': ['cr-q3', 'cr-q4'],     // Schlüsselverwaltung, Zertifikate
-      'tisax': ['kry-q3'],            // Kryptografie
-      'owasp-asvs': ['owasp-crypto-q3'], // Cryptography
-      'c5': ['c5-kry-q3'],            // Kryptografie
-      'iso27001': ['iso-cn-q3', 'iso-cn-q4'], // Crypto/Network
-      'pci-dss': ['dp-q3', 'dp-q4'],  // Data Protection
-    },
-  },
-
-  // ─── 7. Supply Chain / Lieferkette ───
-  {
-    topic: 'supply_chain_security',
-    topicKey: 'dedup.topics.supplyChainSecurity',
-    confidence: 'high',
-    questions: {
-      'nis2': ['sc-q1', 'sc-q2'],     // Lieferanten prüfen, Verträge
-      'kritis': ['lk-q1', 'lk-q2'],   // Lieferkette
-      'dora': ['da-q1', 'da-q2'],     // Drittanbieter
-      'iso27001': ['iso-ps-q1', 'iso-ps-q2'], // Partner/Supplier
-      'tisax': ['lief-q1', 'lief-q2'], // Lieferkette
-      'pci-dss': ['sp-q1', 'sp-q2'],  // Service Provider
-      'cis-controls': ['cis-sc-q1', 'cis-sc-q2'], // Service/Supply Chain
-      'dsgvo': ['av-q1', 'av-q2'],    // Auftragsverarbeitung
+      'nis2': ['cr-q3'],
+      'tisax': ['kry-q3'],
+      'c5': ['c5-kry-q2'],
+      'owasp-asvs': ['owasp-crypto-q3'],
     },
   },
   {
-    topic: 'supply_chain_assessment',
-    topicKey: 'dedup.topics.supplyChainAssessment',
+    topic: 'supplier_contracts',
+    topicKey: 'dedup.topics.supplierContracts',
     confidence: 'high',
     questions: {
-      'nis2': ['sc-q4', 'sc-q5'],     // Unterauftragnehmer, Neubewertung
-      'kritis': ['lk-q3', 'lk-q4'],   // Lieferkette
-      'dora': ['da-q3', 'da-q4', 'da-q5'], // Drittanbieter
-      'iso27001': ['iso-ps-q3'],       // Partner/Supplier
-      'tisax': ['lief-q3'],           // Lieferkette
-      'pci-dss': ['sp-q3'],           // Service Provider
-      'cis-controls': ['cis-sc-q3'],   // Supply Chain
-      'dsgvo': ['av-q3', 'av-q4'],    // Auftragsverarbeitung
+      'nis2': ['sc-q2'],
+      'kritis': ['lk-q1'],
+      'tisax': ['lief-q1'],
+      'dora': ['da-q2'],
     },
   },
-
-  // ─── 8. Security Training / Schulung ───
+  {
+    topic: 'supplier_assessment',
+    topicKey: 'dedup.topics.supplierAssessment',
+    confidence: 'high',
+    questions: {
+      'nis2': ['sc-q1'],
+      'kritis': ['lk-q2'],
+      'tisax': ['lief-q2'],
+      'cis-controls': ['cis-so-q2'],
+      'iso27001': ['iso-op-q3'],
+      'nist-csf': ['nist-id-q3'],
+      'dora': ['da-q1'],
+    },
+  },
+  {
+    topic: 'supplier_reassessment',
+    topicKey: 'dedup.topics.supplierReassessment',
+    confidence: 'high',
+    questions: {
+      'nis2': ['sc-q5'],
+      'kritis': ['lk-q4'],
+    },
+  },
   {
     topic: 'security_awareness',
     topicKey: 'dedup.topics.securityAwareness',
     confidence: 'high',
     questions: {
-      'nis2': ['ea-q1', 'ea-q2'],     // Mitarbeiter geschult, Richtlinien
-      'bsi-grundschutz': ['orp-q1', 'orp-q2'], // Organisation/Personal
-      'iso27001': ['iso-sa-q1', 'iso-sa-q2'], // Support/Awareness
-      'tisax': ['per-q1', 'per-q2'],   // Personal
-      'cis-controls': ['cis-so-q1', 'cis-so-q2'], // Security Organization
-      'soc2': ['sec-q1', 'sec-q2'],   // Security
-      'nist-csf': ['nist-pr-q1', 'nist-pr-q2'], // Protect
-      'dora': ['gov-q3', 'gov-q4'],   // Governance (Training)
+      'nis2': ['ch-q1'],
+      'iso27001': ['iso-sa-q1'],
+      'tisax': ['per-q2'],
+      'bsi-grundschutz': ['orp-q3'],
+      'pci-dss': ['sp-q2'],
+      'nist-csf': ['nist-pr-q2'],
+      'cis-controls': ['cis-so-q1'],
+      'c5': ['c5-org-q3'],
     },
   },
   {
@@ -298,26 +378,29 @@ export const QUESTION_EQUIVALENCES: QuestionEquivalence[] = [
     topicKey: 'dedup.topics.managementTraining',
     confidence: 'high',
     questions: {
-      'nis2': ['ea-q5'],              // Geschäftsleitungs-Schulung
-      'dora': ['gov-q5'],             // Governance
-      'iso27001': ['iso-cl-q3', 'iso-cl-q4'], // Context/Leadership
-      'nist-csf': ['nist-gv-q3'],      // Govern
-      'bsi-grundschutz': ['orp-q3'],   // Organisation/Personal
+      'nis2': ['ch-q5'],
+      'dora': ['gov-q2'],
     },
   },
-
-  // ─── 9. Vulnerability Management / Schwachstellenmanagement ───
+  {
+    topic: 'management_reporting',
+    topicKey: 'dedup.topics.managementReporting',
+    confidence: 'high',
+    questions: {
+      'nis2': ['ea-q4'],
+      'nist-csf': ['nist-gv-q3'],
+      'dora': ['gov-q3'],
+    },
+  },
   {
     topic: 'patch_management',
     topicKey: 'dedup.topics.patchManagement',
-    confidence: 'exact',
+    confidence: 'high',
     questions: {
-      'nis2': ['ad-q1'],              // Sicherheitsupdates zeitnah
-      'cra': ['swm-q1', 'swm-q2'],   // Software Maintenance
-      'pci-dss': ['vm-q1', 'vm-q2'],  // Vulnerability Management
-      'cis-controls': ['cis-vm-q1', 'cis-vm-q2'], // Vulnerability Management
-      'bsi-grundschutz': ['ops-q1', 'ops-q2'], // Betrieb (Patching)
-      'kritis': ['sh-q1'],            // Systemhärtung
+      'nis2': ['ad-q1'],
+      'kritis': ['sh-q3'],
+      'bsi-grundschutz': ['ops-q1'],
+      'pci-dss': ['vm-q3'],
     },
   },
   {
@@ -325,44 +408,183 @@ export const QUESTION_EQUIVALENCES: QuestionEquivalence[] = [
     topicKey: 'dedup.topics.vulnerabilityScanning',
     confidence: 'high',
     questions: {
-      'nis2': ['ch-q2'],              // Penetrationstests/Schwachstellenscans
-      'dora': ['rt-q1', 'rt-q2'],     // Resilience Testing
-      'pci-dss': ['mt-q1', 'mt-q2'],  // Maintenance/Testing
-      'cis-controls': ['cis-vm-q3'],   // Vulnerability Management
-      'cra': ['vm-q1', 'vm-q2'],      // Vulnerability Management
-      'kritis': ['au-q1'],            // Audit
-      'owasp-asvs': ['owasp-iv-q1', 'owasp-iv-q2'], // Input Validation
-    },
-  },
-
-  // ─── 10. Monitoring / Überwachung ───
-  {
-    topic: 'security_monitoring',
-    topicKey: 'dedup.topics.securityMonitoring',
-    confidence: 'high',
-    questions: {
-      'nis2': ['ch-q1'],              // Sicherheitsmaßnahmen prüfen
-      'soc2': ['mon-q1', 'mon-q2'],   // Monitoring
-      'bsi-grundschutz': ['ops-q3'],   // Betrieb
-      'nist-csf': ['nist-de-q1', 'nist-de-q2'], // Detect
-      'owasp-asvs': ['owasp-el-q1', 'owasp-el-q2'], // Error/Logging
-      'kritis': ['au-q2', 'au-q3'],   // Audit
-      'iso27001': ['iso-op-q3', 'iso-op-q4'], // Operations
-      'c5': ['c5-ops-q1', 'c5-ops-q2'], // Operations
-      'cis-controls': ['cis-rn-q1', 'cis-rn-q2'], // Resilience/Monitoring
+      'nis2': ['ad-q3'],
+      'tisax': ['bs-q3'],
+      'cis-controls': ['cis-vm-q1'],
+      'pci-dss': ['mt-q2'],
     },
   },
   {
-    topic: 'security_kpis',
-    topicKey: 'dedup.topics.securityKpis',
+    topic: 'penetration_testing',
+    topicKey: 'dedup.topics.penetrationTesting',
     confidence: 'high',
     questions: {
-      'nis2': ['ch-q5'],              // KPIs
-      'soc2': ['mon-q3'],             // Monitoring
-      'nist-csf': ['nist-de-q3'],      // Detect
-      'iso27001': ['iso-cl-q4'],       // Context/Leadership (performance)
-      'c5': ['c5-ops-q3'],            // Operations
-      'cis-controls': ['cis-rn-q3'],   // Resilience
+      'nis2': ['ea-q2'],
+      'pci-dss': ['mt-q3'],
+      'dora': ['rt-q2'],
+      'c5': ['c5-dev-q3'],
+    },
+  },
+  {
+    topic: 'internal_audit',
+    topicKey: 'dedup.topics.internalAudit',
+    confidence: 'high',
+    questions: {
+      'nis2': ['ea-q1'],
+      'kritis': ['au-q3'],
+      'iso27001': ['iso-ic-q3'],
+      'tisax': ['comp-q2'],
+      'c5': ['c5-org-q4'],
+    },
+  },
+  {
+    topic: 'audit_followup',
+    topicKey: 'dedup.topics.auditFollowup',
+    confidence: 'high',
+    questions: {
+      'nis2': ['ea-q3'],
+      'kritis': ['au-q4'],
+      'tisax': ['comp-q3'],
+    },
+  },
+  {
+    topic: 'malware_protection',
+    topicKey: 'dedup.topics.malwareProtection',
+    confidence: 'high',
+    questions: {
+      'bsi-grundschutz': ['ops-q2'],
+      'tisax': ['bs-q2'],
+      'pci-dss': ['vm-q1'],
+      'cis-controls': ['cis-vm-q3'],
+    },
+  },
+  {
+    topic: 'system_hardening',
+    topicKey: 'dedup.topics.systemHardening',
+    confidence: 'high',
+    questions: {
+      'kritis': ['sh-q1'],
+      'tisax': ['bs-q1'],
+      'bsi-grundschutz': ['sys-q1'],
+      'cis-controls': ['cis-sc-q1'],
+      'pci-dss': ['ns-q3'],
+    },
+  },
+  {
+    topic: 'network_segmentation',
+    topicKey: 'dedup.topics.networkSegmentation',
+    confidence: 'high',
+    questions: {
+      'kritis': ['sh-q2'],
+      'tisax': ['kom-q1'],
+      'bsi-grundschutz': ['net-q1'],
+      'iso27001': ['iso-cn-q2'],
+      'cis-controls': ['cis-rn-q2'],
+      'pci-dss': ['ns-q2'],
+    },
+  },
+  {
+    topic: 'physical_access',
+    topicKey: 'dedup.topics.physicalAccess',
+    confidence: 'high',
+    questions: {
+      'nis2': ['ac-q3'],
+      'kritis': ['ps-q1'],
+      'tisax': ['phy-q1'],
+      'iso27001': ['iso-ps-q1'],
+      'pci-dss': ['ps-q1'],
+      'c5': ['c5-ps-q1'],
+      'bsi-grundschutz': ['inf-q1'],
+      'soc2': ['sec-q4'],
+    },
+  },
+  {
+    topic: 'environmental_protection',
+    topicKey: 'dedup.topics.environmentalProtection',
+    confidence: 'high',
+    questions: {
+      'kritis': ['ps-q2'],
+      'tisax': ['phy-q3'],
+      'iso27001': ['iso-ps-q3'],
+      'c5': ['c5-ps-q2'],
+    },
+  },
+  {
+    topic: 'data_classification',
+    topicKey: 'dedup.topics.dataClassification',
+    confidence: 'high',
+    questions: {
+      'tisax': ['tech-q2'],
+      'c5': ['c5-am-q2'],
+      'cis-controls': ['cis-dp-q1'],
+      'soc2': ['conf-q1'],
+    },
+  },
+  {
+    topic: 'secure_deletion',
+    topicKey: 'dedup.topics.secureDeletion',
+    confidence: 'high',
+    questions: {
+      'bsi-grundschutz': ['con-q3'],
+      'tisax': ['tech-q3'],
+      'cis-controls': ['cis-dp-q3'],
+    },
+  },
+  {
+    topic: 'secure_development',
+    topicKey: 'dedup.topics.secureDevelopment',
+    confidence: 'high',
+    questions: {
+      'nis2': ['ad-q4'],
+      'c5': ['c5-dev-q1'],
+      'pci-dss': ['vm-q2'],
+      'cra': ['sbd-q1'],
+    },
+  },
+  {
+    topic: 'web_application_security',
+    topicKey: 'dedup.topics.webApplicationSecurity',
+    confidence: 'high',
+    questions: {
+      'iso27001': ['iso-cn-q3'],
+      'bsi-grundschutz': ['app-q3'],
+      'pci-dss': ['vm-q4'],
+    },
+  },
+  {
+    topic: 'change_management',
+    topicKey: 'dedup.topics.changeManagement',
+    confidence: 'high',
+    questions: {
+      'iso27001': ['iso-op-q4'],
+      'soc2': ['gov-q4'],
+    },
+  },
+  {
+    topic: 'privacy_breach_notification',
+    topicKey: 'dedup.topics.privacyBreachNotification',
+    confidence: 'high',
+    questions: {
+      'dsgvo': ['dv-q1'],
+      'tisax': ['ds-q3'],
+    },
+  },
+  {
+    topic: 'processor_contracts',
+    topicKey: 'dedup.topics.processorContracts',
+    confidence: 'exact',
+    questions: {
+      'dsgvo': ['av-q2'],
+      'tisax': ['ds-q2'],
+    },
+  },
+  {
+    topic: 'data_subject_rights',
+    topicKey: 'dedup.topics.dataSubjectRights',
+    confidence: 'high',
+    questions: {
+      'dsgvo': ['br-q1'],
+      'soc2': ['priv-q3'],
     },
   },
 ];

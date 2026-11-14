@@ -550,3 +550,47 @@ describe('calculateOverallScore', () => {
     expect(getScore('mfa-communication')?.trafficLight).toBe('red');
   });
 });
+
+// ============================================================
+// „Trifft nicht zu“
+// ============================================================
+
+describe('Antwort „trifft nicht zu“', () => {
+  const na = (questionId: string, categoryId: string): Answer => ({ questionId, categoryId, level: 'na' });
+
+  it('fällt aus dem Mittelwert des Bereichs, zählt aber als beantwortet', () => {
+    const score = calculateCategoryScore(
+      [createAnswer('a1', 'a', 3), createAnswer('a2', 'a', 3), na('a3', 'a')],
+      'a',
+      3
+    );
+    expect(score.percentage).toBe(100);
+    expect(score.answeredQuestions).toBe(3);
+    expect(score.notApplicable).toBeUndefined();
+  });
+
+  it('nimmt einen ganz unzutreffenden Bereich aus der Gesamtwertung', () => {
+    const result = calculateOverallScore(
+      [createAnswer('a1', 'a', 2), na('b1', 'b'), na('b2', 'b')],
+      [
+        { categoryId: 'a', totalQuestions: 1 },
+        { categoryId: 'b', totalQuestions: 2 },
+      ]
+    );
+    expect(result.percentage).toBe(66.7);
+    expect(result.categoryScores.map((cs) => cs.categoryId)).toEqual(['a']);
+    expect(result.completionRate).toBe(100);
+  });
+
+  it('ein unbeantworteter Bereich zählt weiter mit 0 %', () => {
+    const result = calculateOverallScore(
+      [createAnswer('a1', 'a', 3)],
+      [
+        { categoryId: 'a', totalQuestions: 1 },
+        { categoryId: 'b', totalQuestions: 2 },
+      ]
+    );
+    expect(result.percentage).toBe(50);
+    expect(result.categoryScores).toHaveLength(2);
+  });
+});

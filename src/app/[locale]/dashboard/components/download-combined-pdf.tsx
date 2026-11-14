@@ -290,7 +290,6 @@ export function DownloadCombinedPdf({ data }: DownloadCombinedPdfProps) {
                 onCheckedChange={() => toggleReg(reg.id)}
               />
               <label htmlFor={`multi-reg-${reg.id}`} className="flex items-center gap-2 text-sm cursor-pointer flex-1">
-                <span>{reg.icon}</span>
                 <span className="font-medium">{reg.name}</span>
                 <span className="text-xs text-muted-foreground ml-auto">
                   {Math.round(reg.score)}%

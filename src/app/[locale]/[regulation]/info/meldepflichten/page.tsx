@@ -5,7 +5,6 @@ import { Clock, AlertTriangle, FileText, Phone, Mail, ExternalLink, Globe } from
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
-import { REPORTING_STAGES, INCIDENT_CRITERIA, REPORTING_CONTACTS } from '@/lib/regulations/nis2/meldepflichten';
 
 export default function MeldepflichtenPage() {
   const t = useTranslations('meldepflichten');

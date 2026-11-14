@@ -112,7 +112,8 @@ export default function GapAnalysisPage() {
 
   // Dynamic counts for translations
   const categoryCount = categories.length;
-  const questionCount = fullTotal;
+  // Mit Kern und Vertiefung umfasst der erste Durchlauf nur die Kernfragen.
+  const questionCount = hasTieredAssessment ? coreTotal : fullTotal;
   const recCount = config.recommendations.length;
   const estimatedMinutes = Math.max(5, Math.round(questionCount / 3));
 
@@ -312,7 +313,8 @@ export default function GapAnalysisPage() {
   const isLastCategory = currentCategoryIndex === populatedCategories.length - 1;
 
   // Show milestone screen after core phase completion (only for tiered assessments)
-  if (showMilestone && hasTieredAssessment) {
+  // Nur in der Kernphase: "Ergebnisse verfeinern" schaltet auf 'advanced' und muss den Meilenstein verlassen.
+  if (showMilestone && hasTieredAssessment && assessmentPhase === 'core') {
     return (
       <div className="mx-auto max-w-4xl px-4 py-8 sm:py-12">
         <MilestoneScreen regulation={regulation} config={config} />

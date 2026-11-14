@@ -3,7 +3,7 @@
 /**
  * BSI C5 (Cloud Computing Compliance Criteria Catalogue) Domain Types
  *
- * Legal basis: BSI C5:2020 (Cloud Computing Compliance Criteria Catalogue)
+ * Legal basis: BSI C5:2026 (Cloud Computing Compliance Criteria Catalogue)
  * The C5 catalogue defines 17 requirement domains with 121 criteria
  * for secure cloud computing. These types model C5-specific structures
  * for gap analysis questions, scoring, and recommendations.
@@ -27,29 +27,12 @@ export type {
 // ============================================================
 
 export interface C5Reference {
-  euArticle: string; // e.g., "C5:2020 OIS-01"
-  bsigParagraph: string; // e.g., "BSI C5:2020 Kap. 4.1"
+  euArticle: string; // e.g., "C5:2026 OIS-01"
+  bsigParagraph: string; // e.g., "BSI C5:2026"
 }
 
 /**
- * C5:2020 requirement domains (17 total):
- * OIS - Organisation der Informationssicherheit
- * SP  - Sicherheitsrichtlinien
- * HR  - Personal
- * AM  - Asset-Management
- * PS  - Physische Sicherheit
- * OPS - Regelungen des IT-Betriebs
- * IDM - Identitaets- und Berechtigungsmanagement
- * COS - Kommunikationssicherheit
- * KRY - Kryptografie und Schluesselmanagement
- * SIM - Sicherheitsvorfallmanagement
- * BCM - Business Continuity Management
- * COM - Compliance
- * INQ - Beschaffung und Lieferantenmanagement
- * DEV - Entwicklung
- * SSO - Mandantentrennung / Secure Separation
- * PI  - Pruefung und Informationsaustausch
- * MOB - Mobile Device Management
+ * C5:2026 area codes with criteria in the BSI evaluation guide: OIS, SP, HR, AM, PS, OPS, IAM, CRY, COS, PI, DEV, SSO, SIM, BCM, COM, INQ, PSS.
  */
 export type C5Domain =
   | 'OIS'
@@ -58,9 +41,9 @@ export type C5Domain =
   | 'AM'
   | 'PS'
   | 'OPS'
-  | 'IDM'
+  | 'IAM'
   | 'COS'
-  | 'KRY'
+  | 'CRY'
   | 'SIM'
   | 'BCM'
   | 'COM'
@@ -68,7 +51,7 @@ export type C5Domain =
   | 'DEV'
   | 'SSO'
   | 'PI'
-  | 'MOB';
+  | 'PSS';
 
 export interface Question {
   id: string;

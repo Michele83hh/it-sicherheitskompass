@@ -438,6 +438,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'iso-cn-q3',
+    notApplicableAllowed: true,
     categoryId: 'cryptography-network',
     tier: 'core',
     titleKey: 'iso27001.questions.cnQ3.title',
@@ -456,6 +457,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'iso-cn-q4',
+    notApplicableAllowed: true,
     categoryId: 'cryptography-network',
     tier: 'advanced',
     titleKey: 'iso27001.questions.cnQ4.title',

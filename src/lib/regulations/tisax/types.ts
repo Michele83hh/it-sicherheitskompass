@@ -77,6 +77,7 @@ export interface TisaxQuestion {
   id: string;
   categoryId: string;
   tier: 'core';
+  notApplicableAllowed?: boolean;
   titleKey: string;
   tooltipKey: string;
   helpKey: string;

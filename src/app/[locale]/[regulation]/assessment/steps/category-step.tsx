@@ -19,7 +19,7 @@ import {
 import { WizardNavigation } from '@/app/[locale]/[regulation]/check/components/navigation';
 import { getSuggestionsForCategory, type SuggestedAnswer } from '@/lib/regulations/dedup-service';
 import { getRegulation } from '@/lib/regulations/registry';
-import type { Answer, MaturityLevel, RegulationConfig } from '@/lib/regulations/types';
+import type { Answer, AnswerLevel, RegulationConfig } from '@/lib/regulations/types';
 
 interface CategoryStepProps {
   categoryId: string;
@@ -81,10 +81,15 @@ export function CategoryStep({
     return getSuggestionsForCategory(regulation, questionIds);
   }, [regulation, questions]);
 
-  // Zod schema - all fields REQUIRED
-  const schemaShape = Object.fromEntries(
-    questions.map((q) => [q.id, z.coerce.number().min(0).max(3)])
-  ) as Record<string, z.ZodNumber>;
+  // Zod schema - all fields REQUIRED; „trifft nicht zu“ ('na') nur bei gekennzeichneten Fragen
+  const levelSchema = z.coerce.number().min(0).max(3);
+  const schemaShape: Record<string, z.ZodTypeAny> = Object.fromEntries(
+    questions.map((q) => [
+      q.id,
+      q.notApplicableAllowed ? z.union([z.literal('na'), levelSchema]) : levelSchema,
+    ])
+  );
+  const toLevel = (v: unknown): AnswerLevel => (v === 'na' ? 'na' : (Number(v) as AnswerLevel));
 
   const schema = z.object(schemaShape);
 
@@ -94,7 +99,7 @@ export function CategoryStep({
   const defaultValues = questions.reduce((acc, q) => {
     const existing = existingAnswers.find((a) => a.questionId === q.id);
     return existing ? { ...acc, [q.id]: existing.level } : acc;
-  }, {} as Record<string, number>);
+  }, {} as Record<string, AnswerLevel>);
 
   const {
     control,
@@ -112,7 +117,7 @@ export function CategoryStep({
       ([questionId, level]) => ({
         questionId,
         categoryId,
-        level: Number(level) as MaturityLevel,
+        level: toLevel(level),
       })
     );
 
@@ -142,7 +147,7 @@ export function CategoryStep({
       .map(([questionId, level]) => ({
         questionId,
         categoryId,
-        level: Number(level) as MaturityLevel,
+        level: toLevel(level),
       }));
 
     if (partialAnswers.length > 0) {
@@ -174,6 +179,8 @@ export function CategoryStep({
   const empoweringIntroKey = category
     ? category.nameKey.replace('.name', '.empoweringIntro')
     : `${categoryTranslationPrefix}.empoweringIntro`;
+  // Nicht jedes Regelwerk hat einen Einleitungstext je Bereich — dann keine Box statt Rohschlüssel.
+  const hasIntro = tAll.has(empoweringIntroKey);
 
   const hasTieredAssessment = config.features.hasTieredAssessment;
 
@@ -209,20 +216,24 @@ export function CategoryStep({
 
       {/* Phase-dependent intro box */}
       {hasTieredAssessment && tier === 'core' ? (
-        <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
-          <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
-          <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
-        </div>
+        hasIntro && (
+          <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
+          </div>
+        )
       ) : hasTieredAssessment && tier === 'advanced' ? (
         <div className="mb-6 flex items-start gap-3 rounded-lg border border-purple-200 bg-purple-50 p-4">
           <Lightbulb className="size-5 text-purple-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
           <p className="text-sm text-purple-800">{tGap('phase.advancedIntro')}</p>
         </div>
       ) : (
-        <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
-          <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
-          <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
-        </div>
+        hasIntro && (
+          <div className="mb-6 flex items-start gap-3 rounded-lg border border-blue-200 bg-blue-50 p-4">
+            <Lightbulb className="size-5 text-blue-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-sm text-blue-800">{tAll(empoweringIntroKey)}</p>
+          </div>
+        )
       )}
 
       <div className="space-y-8">
@@ -272,6 +283,10 @@ export function CategoryStep({
               </p>
             )}
 
+            {question.beyondMinimum && (
+              <p className="mb-3 text-xs text-muted-foreground">{tGap('question.beyondMinimum')}</p>
+            )}
+
             {/* Maturity selection label */}
             <p className="mb-3 text-sm font-medium text-muted-foreground">
               {tGap('question.selectMaturity')}
@@ -308,7 +323,7 @@ export function CategoryStep({
                     )}
                     <RadioGroup
                       value={field.value !== undefined ? String(field.value) : ''}
-                      onValueChange={(v) => field.onChange(Number(v))}
+                      onValueChange={(v) => field.onChange(toLevel(v))}
                     >
                       {[0, 1, 2, 3].map((level) => {
                         const levelKey = `level${level}Key` as keyof typeof question.maturityDescriptions;
@@ -328,6 +343,17 @@ export function CategoryStep({
                           </label>
                         );
                       })}
+                      {question.notApplicableAllowed && (
+                        <label
+                          htmlFor={`${question.id}-na`}
+                          className="flex cursor-pointer items-start gap-3 rounded-lg border border-dashed p-3 sm:p-4 transition-colors hover:bg-gray-50"
+                        >
+                          <RadioGroupItem value="na" id={`${question.id}-na`} />
+                          <span className="flex-1 text-sm leading-relaxed text-muted-foreground">
+                            {tGap('question.notApplicable')}
+                          </span>
+                        </label>
+                      )}
                     </RadioGroup>
                   </>
                 );

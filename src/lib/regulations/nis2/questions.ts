@@ -136,8 +136,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'questions.ihQ2.tooltip',
     helpKey: 'questions.ihQ2.help',
     legalReference: {
-      euArticle: 'Art. 21 Abs. 2 lit. b NIS2-RL',
-      bsigParagraph: '§30 Abs. 2 Nr. 2 BSIG',
+      euArticle: 'Art. 23 Abs. 1 und 4 NIS2-RL',
+      bsigParagraph: '§32 Abs. 1 BSIG',
     },
     maturityDescriptions: {
       level0Key: 'questions.ihQ2.maturity.level0',
@@ -172,8 +172,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'questions.ihQ4.tooltip',
     helpKey: 'questions.ihQ4.help',
     legalReference: {
-      euArticle: 'Art. 21 Abs. 2 lit. b NIS2-RL',
-      bsigParagraph: '§30 Abs. 2 Nr. 2 BSIG',
+      euArticle: 'Art. 23 Abs. 3 und 4 NIS2-RL',
+      bsigParagraph: '§32 Abs. 1, §2 BSIG',
     },
     maturityDescriptions: {
       level0Key: 'questions.ihQ4.maturity.level0',
@@ -356,6 +356,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'sc-q4',
+    beyondMinimum: true,
     categoryId: 'supply-chain',
     tier: 'advanced',
     titleKey: 'questions.scQ4.title',
@@ -552,8 +553,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'questions.eaQ4.tooltip',
     helpKey: 'questions.eaQ4.help',
     legalReference: {
-      euArticle: 'Art. 21 Abs. 2 lit. f NIS2-RL',
-      bsigParagraph: '§30 Abs. 2 Nr. 6 BSIG',
+      euArticle: 'Art. 20 Abs. 1 NIS2-RL',
+      bsigParagraph: '§38 Abs. 1 BSIG',
     },
     maturityDescriptions: {
       level0Key: 'questions.eaQ4.maturity.level0',
@@ -564,6 +565,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'ea-q5',
+    beyondMinimum: true,
     categoryId: 'effectiveness-assessment',
     tier: 'advanced',
     titleKey: 'questions.eaQ5.title',
@@ -665,8 +667,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'questions.chQ5.tooltip',
     helpKey: 'questions.chQ5.help',
     legalReference: {
-      euArticle: 'Art. 21 Abs. 2 lit. g NIS2-RL',
-      bsigParagraph: '§30 Abs. 2 Nr. 7 BSIG',
+      euArticle: 'Art. 20 Abs. 2 NIS2-RL',
+      bsigParagraph: '§38 Abs. 3 BSIG',
     },
     maturityDescriptions: {
       level0Key: 'questions.chQ5.maturity.level0',
@@ -754,6 +756,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'cr-q5',
+    beyondMinimum: true,
     categoryId: 'cryptography',
     tier: 'advanced',
     titleKey: 'questions.crQ5.title',
@@ -926,6 +929,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'mc-q4',
+    beyondMinimum: true,
     categoryId: 'authentication-communication',
     tier: 'advanced',
     titleKey: 'questions.mcQ4.title',

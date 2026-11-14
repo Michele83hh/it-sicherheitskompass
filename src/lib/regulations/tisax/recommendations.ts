@@ -22,7 +22,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.org1.title',
     descriptionKey: 'tisax.recommendations.org1.description',
     firstStepKey: 'tisax.recommendations.org1.firstStep',
-    legalReference: 'VDA ISA 1.1.1, ISO 27001 A.5.1',
+    legalReference: 'VDA ISA 2027.1: 1.1.1, 1.2.1; ISO 27001:2022 A.5.1, 4, 9.3 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 1',
   },
   {
@@ -33,7 +33,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.org2.title',
     descriptionKey: 'tisax.recommendations.org2.description',
     firstStepKey: 'tisax.recommendations.org2.firstStep',
-    legalReference: 'VDA ISA 1.2.1, ISO 27001 A.5.2',
+    legalReference: 'VDA ISA 2027.1: 1.2.2; ISO 27001:2022 A.5.2, A.5.3 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 1',
   },
 
@@ -46,7 +46,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.per1.title',
     descriptionKey: 'tisax.recommendations.per1.description',
     firstStepKey: 'tisax.recommendations.per1.firstStep',
-    legalReference: 'VDA ISA 2.1.1, ISO 27001 A.6.1',
+    legalReference: 'VDA ISA 2027.1: 2.1.1; ISO 27001:2022 A.6.1 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 2',
   },
   {
@@ -57,7 +57,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.per2.title',
     descriptionKey: 'tisax.recommendations.per2.description',
     firstStepKey: 'tisax.recommendations.per2.firstStep',
-    legalReference: 'VDA ISA 2.1.2, ISO 27001 A.6.3',
+    legalReference: 'VDA ISA 2027.1: 2.1.3; ISO 27001:2022 7.2, 7.3, A.6.3 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 2',
   },
 
@@ -70,7 +70,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.phy1.title',
     descriptionKey: 'tisax.recommendations.phy1.description',
     firstStepKey: 'tisax.recommendations.phy1.firstStep',
-    legalReference: 'VDA ISA 3.1.1, ISO 27001 A.7.1',
+    legalReference: 'VDA ISA 2027.1: 3.1.1, 8.2.1, 8.2.2; ISO 27001:2022 A.7.1 - A.7.6 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 3',
   },
   {
@@ -81,7 +81,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.phy2.title',
     descriptionKey: 'tisax.recommendations.phy2.description',
     firstStepKey: 'tisax.recommendations.phy2.firstStep',
-    legalReference: 'VDA ISA 3.1.2, ISO 27001 A.7.2',
+    legalReference: 'VDA ISA 2027.1: 3.1.1, 8.2.6; ISO 27001:2022 A.7.1 - A.7.6 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 3',
   },
 
@@ -94,7 +94,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.tech1.title',
     descriptionKey: 'tisax.recommendations.tech1.description',
     firstStepKey: 'tisax.recommendations.tech1.firstStep',
-    legalReference: 'VDA ISA 4.1.1, ISO 27001 A.8.1',
+    legalReference: 'VDA ISA 2027.1: 1.3.1, 1.3.2; ISO 27001:2022 A.5.9, A.5.10, A.5.12, A.5.13, A.8.10 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 4',
   },
   {
@@ -105,7 +105,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.tech2.title',
     descriptionKey: 'tisax.recommendations.tech2.description',
     firstStepKey: 'tisax.recommendations.tech2.firstStep',
-    legalReference: 'VDA ISA 4.1.2, ISO 27001 A.8.2',
+    legalReference: 'VDA ISA 2027.1: 5.2.3, 3.1.4; ISO 27001:2022 A.8.1, A.6.7, A.7.10, A.8.1 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 4',
   },
 
@@ -118,7 +118,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.proto1.title',
     descriptionKey: 'tisax.recommendations.proto1.description',
     firstStepKey: 'tisax.recommendations.proto1.firstStep',
-    legalReference: 'VDA ISA 5.1.1, ISO 27001 A.7.1',
+    legalReference: 'VDA ISA 2027.1: 8.2.1, 8.2.2, 8.2.5',
     vdaIsaReference: 'VDA ISA Modul Prototypenschutz, Kap. 5',
   },
   {
@@ -129,7 +129,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.proto2.title',
     descriptionKey: 'tisax.recommendations.proto2.description',
     firstStepKey: 'tisax.recommendations.proto2.firstStep',
-    legalReference: 'VDA ISA 5.2.1, ISO 27001 A.5.12',
+    legalReference: 'VDA ISA 2027.1: 8.1.2, 8.1.10',
     vdaIsaReference: 'VDA ISA Modul Prototypenschutz, Kap. 5',
   },
 
@@ -142,7 +142,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.ds1.title',
     descriptionKey: 'tisax.recommendations.ds1.description',
     firstStepKey: 'tisax.recommendations.ds1.firstStep',
-    legalReference: 'VDA ISA 6.1.1, ISO 27001 A.5.34',
+    legalReference: 'VDA ISA 2027.1: 7.1.2, 9.1.1, 9.2.1; ISO 27001:2022 A.5.34 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Datenschutz, Kap. 6',
   },
   {
@@ -153,7 +153,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.ds2.title',
     descriptionKey: 'tisax.recommendations.ds2.description',
     firstStepKey: 'tisax.recommendations.ds2.firstStep',
-    legalReference: 'VDA ISA 6.1.2, ISO 27001 A.5.35',
+    legalReference: 'VDA ISA 2027.1: 9.1.1, 7.1.1; ISO 27001:2022 A.5.31, A.5.32, A.5.33 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Datenschutz, Kap. 6',
   },
 
@@ -166,7 +166,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.zk1.title',
     descriptionKey: 'tisax.recommendations.zk1.description',
     firstStepKey: 'tisax.recommendations.zk1.firstStep',
-    legalReference: 'VDA ISA 7.1.1, ISO 27001 A.5.15',
+    legalReference: 'VDA ISA 2027.1: 4.2.1; ISO 27001:2022 A.5.18 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 7',
   },
   {
@@ -177,7 +177,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.zk2.title',
     descriptionKey: 'tisax.recommendations.zk2.description',
     firstStepKey: 'tisax.recommendations.zk2.firstStep',
-    legalReference: 'VDA ISA 7.1.3, ISO 27001 A.8.5',
+    legalReference: 'VDA ISA 2027.1: 4.1.2, 4.2.1; ISO 27001:2022 A.5.15, A.8.5, A.5.18 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 7',
   },
 
@@ -190,7 +190,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.kry1.title',
     descriptionKey: 'tisax.recommendations.kry1.description',
     firstStepKey: 'tisax.recommendations.kry1.firstStep',
-    legalReference: 'VDA ISA 8.1.1, ISO 27001 A.8.24',
+    legalReference: 'VDA ISA 2027.1: 5.1.1; ISO 27001:2022 A.8.24 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 8',
   },
   {
@@ -201,7 +201,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.kry2.title',
     descriptionKey: 'tisax.recommendations.kry2.description',
     firstStepKey: 'tisax.recommendations.kry2.firstStep',
-    legalReference: 'VDA ISA 8.1.2, ISO 27001 A.8.25',
+    legalReference: 'VDA ISA 2027.1: 5.1.1, 5.1.2; ISO 27001:2022 A.8.24, A.5.14 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 8',
   },
 
@@ -214,7 +214,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.bs1.title',
     descriptionKey: 'tisax.recommendations.bs1.description',
     firstStepKey: 'tisax.recommendations.bs1.firstStep',
-    legalReference: 'VDA ISA 9.1.1, ISO 27001 A.8.6',
+    legalReference: 'VDA ISA 2027.1: 5.2.3; ISO 27001:2022 A.8.1 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 9',
   },
   {
@@ -225,7 +225,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.bs2.title',
     descriptionKey: 'tisax.recommendations.bs2.description',
     firstStepKey: 'tisax.recommendations.bs2.firstStep',
-    legalReference: 'VDA ISA 9.1.2, ISO 27001 A.8.7',
+    legalReference: 'VDA ISA 2027.1: 5.2.5; ISO 27001:2022 A.8.8, A.8.19 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 9',
   },
 
@@ -238,7 +238,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.kom1.title',
     descriptionKey: 'tisax.recommendations.kom1.description',
     firstStepKey: 'tisax.recommendations.kom1.firstStep',
-    legalReference: 'VDA ISA 10.1.1, ISO 27001 A.8.20',
+    legalReference: 'VDA ISA 2027.1: 5.2.7; ISO 27001:2022 A.8.20, A.8.22 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 10',
   },
   {
@@ -249,7 +249,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.kom2.title',
     descriptionKey: 'tisax.recommendations.kom2.description',
     firstStepKey: 'tisax.recommendations.kom2.firstStep',
-    legalReference: 'VDA ISA 10.1.2, ISO 27001 A.8.21',
+    legalReference: 'VDA ISA 2027.1: 5.1.2, 5.3.2; ISO 27001:2022 A.5.14, A.8.21 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 10',
   },
 
@@ -262,7 +262,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.lief1.title',
     descriptionKey: 'tisax.recommendations.lief1.description',
     firstStepKey: 'tisax.recommendations.lief1.firstStep',
-    legalReference: 'VDA ISA 11.1.1, ISO 27001 A.5.19',
+    legalReference: 'VDA ISA 2027.1: 6.1.1, 6.1.2; ISO 27001:2022 A.5.19 - A.5.22, A.5.14, A.6.6 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 11',
   },
   {
@@ -273,7 +273,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.lief2.title',
     descriptionKey: 'tisax.recommendations.lief2.description',
     firstStepKey: 'tisax.recommendations.lief2.firstStep',
-    legalReference: 'VDA ISA 11.1.2, ISO 27001 A.5.20',
+    legalReference: 'VDA ISA 2027.1: 6.1.1; ISO 27001:2022 A.5.19 - A.5.22 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 11',
   },
 
@@ -286,7 +286,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.comp1.title',
     descriptionKey: 'tisax.recommendations.comp1.description',
     firstStepKey: 'tisax.recommendations.comp1.firstStep',
-    legalReference: 'VDA ISA 12.1.1, ISO 27001 A.5.31',
+    legalReference: 'VDA ISA 2027.1: 7.1.1; ISO 27001:2022 A.5.31, A.5.32, A.5.33 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 12',
   },
   {
@@ -297,7 +297,7 @@ export const RECOMMENDATIONS: TisaxRecommendation[] = [
     titleKey: 'tisax.recommendations.comp2.title',
     descriptionKey: 'tisax.recommendations.comp2.description',
     firstStepKey: 'tisax.recommendations.comp2.firstStep',
-    legalReference: 'VDA ISA 12.1.2, ISO 27001 A.5.32',
+    legalReference: 'VDA ISA 2027.1: 1.5.1, 1.5.2; ISO 27001:2022 9.2, A.5.36, A.5.35 (laut VDA ISA)',
     vdaIsaReference: 'VDA ISA Modul Informationssicherheit, Kap. 12',
   },
 ];

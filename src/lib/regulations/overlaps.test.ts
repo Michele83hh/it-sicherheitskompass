@@ -30,6 +30,12 @@ describe('Regelwerk-Überschneidungen', () => {
     for (const k of new Set(REGULATION_OVERLAPS.flatMap((o) => o.sharedMeasureKeys))) {
       expect(typeof get(de, k), k).toBe('string');
       expect(typeof get(en, k), k).toBe('string');
+      // Erklärtexte für die Seitenleiste des Synergie-Graphen
+      for (const part of ['short', 'detail']) {
+        const info = `${k.replace('.measures.', '.measureInfo.')}.${part}`;
+        expect(typeof get(de, info), info).toBe('string');
+        expect(typeof get(en, info), info).toBe('string');
+      }
     }
   });
 

@@ -1,5 +1,5 @@
 /**
- * OWASP ASVS 4.0 Quick Check (Schnellcheck)
+ * OWASP ASVS 5.0 Quick Check (Schnellcheck)
  *
  * 8 simplified questions for a quick initial assessment of application
  * security posture according to OWASP ASVS. More questions than
@@ -9,7 +9,7 @@
  * Scoring: yes=100%, partial=50%, no=0%
  * Traffic light thresholds match the full assessment engine.
  *
- * Legal basis: OWASP Application Security Verification Standard 4.0.3
+ * Legal basis: OWASP Application Security Verification Standard 5.0.0
  */
 
 import type { TrafficLight, CategoryScore, OverallScore } from './types';

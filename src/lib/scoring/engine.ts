@@ -77,6 +77,8 @@ export function getTrafficLight(percentage: number): TrafficLight {
  * Edge cases:
  * - Empty answers or no answers for this category → 0% with red traffic light
  * - Partial completion → score based only on answered questions
+ * - „Trifft nicht zu“ ('na') zählt als beantwortet, geht aber nicht in den Mittelwert ein.
+ *   Lauten alle Antworten so, ist der Bereich `notApplicable`.
  *
  * @param answers - All user answers (will be filtered by categoryId)
  * @param categoryId - Target category ID to score
@@ -90,21 +92,26 @@ export function calculateCategoryScore(
 ): CategoryScore {
   const categoryAnswers = answers.filter((a) => a.categoryId === categoryId);
 
-  if (categoryAnswers.length === 0) {
+  const levels = categoryAnswers
+    .map((a) => a.level)
+    .filter((l): l is MaturityLevel => l !== 'na');
+
+  if (levels.length === 0) {
     return {
       categoryId,
       percentage: 0,
       trafficLight: 'red',
-      answeredQuestions: 0,
+      answeredQuestions: categoryAnswers.length,
       totalQuestions,
+      ...(categoryAnswers.length > 0 && { notApplicable: true }),
     };
   }
 
-  const percentageSum = categoryAnswers.reduce((sum, answer) => {
-    return sum + maturityLevelToPercentage(answer.level);
+  const percentageSum = levels.reduce<number>((sum, level) => {
+    return sum + maturityLevelToPercentage(level);
   }, 0);
 
-  const averagePercentage = percentageSum / categoryAnswers.length;
+  const averagePercentage = percentageSum / levels.length;
   const rounded = roundToOneDecimal(averagePercentage);
 
   return {
@@ -131,6 +138,8 @@ export function calculateCategoryScore(
  * Edge cases:
  * - No categories → 0% with red traffic light, 0% completion
  * - All categories scored → full calculation
+ * - Bereiche, die ganz „trifft nicht zu“ sind, fehlen in `categoryScores` und im
+ *   Mittelwert; ihre Fragen zählen aber als beantwortet.
  *
  * @param answers - All user answers across all categories
  * @param categories - Array of category IDs with their total question counts
@@ -151,23 +160,24 @@ export function calculateOverallScore(
     };
   }
 
-  const categoryScores = categories.map((cat) =>
+  const allScores = categories.map((cat) =>
     calculateCategoryScore(answers, cat.categoryId, cat.totalQuestions)
   );
+  const categoryScores = allScores.filter((cs) => !cs.notApplicable);
 
   const overallPercentageSum = categoryScores.reduce(
     (sum, cs) => sum + cs.percentage,
     0
   );
   const overallPercentage = roundToOneDecimal(
-    overallPercentageSum / categoryScores.length
+    categoryScores.length > 0 ? overallPercentageSum / categoryScores.length : 0
   );
 
-  const totalAnswered = categoryScores.reduce(
+  const totalAnswered = allScores.reduce(
     (sum, cs) => sum + cs.answeredQuestions,
     0
   );
-  const totalQuestions = categoryScores.reduce(
+  const totalQuestions = allScores.reduce(
     (sum, cs) => sum + cs.totalQuestions,
     0
   );

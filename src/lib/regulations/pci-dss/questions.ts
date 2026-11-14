@@ -415,6 +415,7 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: 'ps-q3',
+    notApplicableAllowed: true,
     categoryId: 'physical-security',
     tier: 'advanced',
     titleKey: 'pciDss.questions.psQ3.title',

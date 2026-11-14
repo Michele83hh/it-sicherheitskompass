@@ -26,7 +26,7 @@ export type {
 // ============================================================
 
 export interface LegalReference {
-  euArticle: string; // e.g., "§8a Abs. 1 BSI-Gesetz"
+  euArticle: string; // e.g., "§30 Abs. 1 BSI-Gesetz"
   bsigParagraph: string; // e.g., "BSI-KritisV"
 }
 

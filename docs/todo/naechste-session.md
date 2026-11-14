@@ -1,76 +1,40 @@
 # TODO nächste Session
 
-Stand: 13.11.2026. Reihenfolge = Vorschlag.
+Stand: 14.11.2026. Reihenfolge = Vorschlag. Was am 13./14.11. erledigt wurde, steht im Prüfprotokoll `docs/pruefprotokoll/2026-11-14-fragenpruefung.md`.
 
-## 1. Gefundene Fehler beheben (Fragenprüfung, Zwischenstand)
+## 1. Selbst gegenlesen (KI-erstellt)
 
-Gefunden beim automatischen Durchklicken der Gap-Analysen (ISO 22301, NIS2, DSGVO, KRITIS) und per Skript über alle Übersetzungsschlüssel in `src/lib/regulations`.
+Alles steht zum Abhaken in `docs/pruefprotokoll/2026-11-14-gegenlese-unterlage.md` (aus dem Code erzeugt):
 
-- [ ] **ISO 22301: 6 Fragen zeigen Rohschlüssel statt Text.** Die Bereiche „BIA & Risiko“ und „BCM-Strategie“ sind betroffen. `questions.ts` nutzt `brQ1–3` und `spQ1–3`, in `de.json`/`en.json` heißen sie `biQ1–3` und `bsQ1–3`. Das betrifft Titel, Hilfe und alle vier Reifegrade.
-- [ ] **ISO 22301: `categories.<id>.empoweringIntro` fehlt für alle 6 Bereiche.** Auf jeder Seite der Analyse steht der Rohschlüssel.
-- [ ] **ISO 22301: Empfehlungen.** 22 Schlüssel fehlen, z. B. `pl2`, `sr2`, `br1`, `sp1` und `ei2.checklist`. Auf der Ergebnisseite sichtbar sind `recommendations.br1.title` und `sp1.title`.
-- [ ] **OWASP ASVS: 9 Fragen zeigen Rohschlüssel.** Betroffen sind Authentifizierung, Sitzungen und Kryptografie. `questions.ts` nutzt `authQ`, `sessQ` und `cryptoQ`, die JSON-Dateien `auQ`, `smQ` und `crQ`.
-- [ ] **OWASP ASVS: Empfehlungen.** 22 Schlüssel fehlen, z. B. `auth1` (JSON: `au1`).
-- [ ] **CIS Controls und NIST CSF:** Je 4 `checklist`-Schlüssel in `recommendations.ts` fehlen.
-- [ ] **NIS2-Hilfsdateien prüfen, ob die Schlüssel tot sind oder sichtbar werden.** Sie verweisen auf nicht vorhandene Schlüssel. Betroffen sind `din-spec.ts`, `dsgvo-overlap.ts`, `geschaeftsleitung.ts`, `nis2/iso27001.ts`, `nis2/kritis.ts`, `meldepflichten.ts`, `registrierung.ts` und `roadmap.ts`. `dinspec-section.tsx` nutzt z. B. eigene Schlüssel. Tote Konstanten löschen.
-- [ ] **Ergebnisseiten aller Regelwerke zeigen NIS2-Inhalte**, z. B. bei ISO 22301, DSGVO und KRITIS:
-  - FAQ „Bin ich mit einem grünen Score automatisch NIS2-konform?“
-  - „BSI IT-Grundschutz-Kompendium und NIS2-Informationsportal nutzen“
-  - „Alle Säulen im Detail“
-  - FAQ und Texte je Regelwerk machen.
-- [ ] **KRITIS-Empfehlungen** verweisen auf §30, §33 und §39 BSIG. Prüfen, ob das für KRITIS-Betreiber jeweils passt.
-- [ ] **ISO 22301:** Der Normbezug unter den Fragen steht auf Englisch in der deutschen Oberfläche, z. B. „BCMS scope definition, interested parties“. Gilt vermutlich auch für andere Normen.
-- [ ] **ISO 22301:** Die Antwortoptionen wirken generisch („kein BCM implementiert“) statt fragespezifisch. Prüfen, ob die Reifegrad-Texte je Frage überhaupt angezeigt werden.
-- [ ] **NIS2 MFA-Hinweis:** Die Quelle zu „verhindert über 99 % aller Kontoübernahmen“ prüfen (Microsoft-Studie, genaue Zahl und Jahr).
-- [ ] **Dauerhafter Test:** Alle Übersetzungsschlüssel in `src/lib/regulations/**` müssen in DE und EN existieren. Das hätte alle Punkte oben verhindert. Vorlage ist das Prüfskript im Abschnitt „Testwerkzeug“.
+- [ ] Abschnitt 1: Zuordnung gleicher Fragen (49 Themen).
+- [ ] Abschnitt 2: Normbezüge bei ISO 22301, OWASP ASVS und KRITIS.
+- [ ] Abschnitt 3: ISO-27001-Abschnitt der NIS2-Ergebnisseite (Stufen, Controls, Zusatzanforderungen). Die PDF-Ausgabe ist geprüft.
+- [ ] Abschnitt 4: Erklärtexte zu den 13 Schlagwörtern im Synergie-Graphen.
+- [ ] Abschnitt 5: Einleitungstexte der 55 Bereiche.
+- [ ] Abschnitt 6: Reifegrad-Texte der 72 Fragen.
 
-## 2. Fragenprüfung zu Ende führen
+## 2. Fragen: Vorschläge entscheiden
 
-Bestand: 431 Fragen in der Gap-Analyse (335 Kern, 96 Vertiefung) und 134 im Schnellcheck, über 15 Regelwerke.
+Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`. Umgesetzt sind Tippfehler, die Antwort „trifft nicht zu“ die NIS2-Fragen aus Abschnitt 3.4 die Doppelungen (Abschnitt 4a) die „Wie“-Fragen (Abschnitt 3.3) und Kern und Vertiefung bei DSGVO (Abschnitt 3.1). Zu entscheiden, in dieser Reihenfolge:
 
-- [ ] **Durchlauf im Browser für die restlichen Regelwerke:** DORA, CRA, TISAX, PCI DSS, SOC 2, C5, ISO 27001, BSI, NIST CSF, CIS und OWASP, außerdem die NIS2-Ergebnisseite. Jeweils mit Vertiefung, mit Schnellcheck und auf Englisch.
-- [ ] **Mehrere Regelwerke: Wie oft beantwortet man dieselbe Frage?**
-  - Es gibt `question-equivalences.ts` (22 Themen) und `dedup-service.ts`. Die Analyse schlägt Antworten aus anderen Regelwerken vor (`category-step.tsx`).
-  - Anteil der Fragen pro Regelwerk, die in einem Äquivalenz-Thema stehen:
+- [x] Antwort „trifft nicht zu“ eingeführt (Abschnitt 3.2), bei 21 Fragen.
+- [ ] Selbst prüfen: Ist die Auswahl der 21 Fragen richtig? Sie ist KI-erstellt. Liste in Abschnitt 3.2 der Vorschläge.
+- [x] NIS2-Fragen, die über die Richtlinie hinausgehen (Abschnitt 3.4): Frist aus `bc-q2` entfernt, drei Fragen gekennzeichnet. Am deutschen Wortlaut von Art. 21 Abs. 2 geprüft, Einordnung bestätigt.
+- [ ] Entscheiden: Sollen die drei gekennzeichneten NIS2-Fragen weiter in den Wert eingehen? Derzeit ja.
+- [ ] Gleiche Stellen außerhalb von NIS2: DSGVO `tom-q3` (Stufe 2 nennt „24-48 Stunden“), CIS `cis-rn-q1` (3-2-1-Regel).
+- [x] Doppelungen je Regelwerk: abgegrenzt statt gestrichen, 42 Texte je Sprache (Abschnitt 4a).
+- [ ] Selbst gegenlesen: die Tabelle in Abschnitt 4a, vor allem die neu gefassten Fragen DORA `rt-q4` und DSGVO `dv-q2`.
+- [x] Normbezüge DORA: `da-q2` und die Zusatzzeilen sind am 14.11. am Amtstext geklärt (Wortlautprüfung).
+- [ ] Normbezug klären: PCI DSS `ac-q2` (Req. 7.2 oder 7.3). Der Normtext lag nicht vor.
+- [x] Übrige Punkte aus Abschnitt 4: Einzelbefunde, Abkürzungen, lange Titel (Abschnitt 4b).
+- [ ] Entscheiden: `cis-vm-q3` und `nist-pr-q3` teilen? (Abschnitt 3.6, Begründung in 4b)
+- [ ] Selbst gegenlesen: die gekürzten DSGVO-Titel (23 Stück) gegen den Wortlaut der Artikel.
+- [x] „Wie“-Fragen bei SOC 2 und ISO 27001 umformuliert, 29 Titel je Sprache (Abschnitt 3.3).
+- [ ] Selbst gegenlesen: die 29 neuen Titel in der Gap-Analyse von SOC 2 und ISO 27001.
+- [x] Kern und Vertiefung bei DSGVO eingeschaltet (Abschnitt 3.1).
+- [ ] Gemeinsamer Fragenkern: Weg A oder B (Abschnitt 5). Erst nach dem Gegenlesen der 49 Themen.
 
-    | Regelwerk | im Thema / Fragen |
-    |---|---|
-    | NIS2 | 29/50 |
-    | DSGVO | 8/50 |
-    | KRITIS | 21/30 |
-    | DORA | 25/30 |
-    | CRA | 4/24 |
-    | TISAX | 14/36 |
-    | PCI DSS | 14/29 |
-    | SOC 2 | 16/25 |
-    | C5 | 16/25 |
-    | ISO 27001 | 28/30 |
-    | BSI | 17/30 |
-    | NIST CSF | 17/18 |
-    | ISO 22301 | 6/18 |
-    | CIS | 12/18 |
-    | OWASP | 11/18 |
-
-  - Messen: Wie viele Fragen werden bei typischen Kombinationen vorbefüllt? Beispiele sind NIS2 + ISO 27001 + DSGVO, TISAX + ISO 27001 und ISO 27001 + BSI.
-  - Prüfen: Wird der Vorschlag nur angezeigt oder übernommen? Funktioniert das auch im Schnellcheck?
-  - Fehlende Äquivalenzen finden. Ein Textvergleich der Fragentitel über die Regelwerke hinweg liefert Kandidaten.
-  - Idee: ein gemeinsamer Fragenkern, also einmal antworten und auf alle gewählten Regelwerke abbilden.
-- [ ] **Inhaltlich je Regelwerk prüfen:**
-  - Braucht es die Frage?
-  - Gibt es Doppelungen innerhalb eines Regelwerks?
-  - Stimmt der Norm- oder Rechtsbezug?
-  - Ist die Frage für KMU verständlich?
-  - Passen die Reifegrad-Stufen?
-  - Stimmt das Verhältnis Kern zu Vertiefung?
-- [ ] Die Befunde ins Prüfprotokoll (`docs/pruefprotokoll/`) übernehmen.
-
-## 3. Regelwerk-Synergien: Seitenleiste verbessern (Wunsch Nutzer)
-
-- [ ] Die Seitenleiste ist schlecht lesbar. Schrift und Kontrast erhöhen.
-- [ ] Erklären, warum es drei Arten von Quelle gibt: Link = offizielle Zuordnungstabelle, nur Text = Gesetzes- oder Normstelle, „Eigene Einschätzung“ = keine Quelle.
-- [ ] Die Schlagwörter (Risikomanagement, Vorfallmeldung …) sind nur beim Darüberfahren und sehr klein sichtbar. Sie sollen lesbar sein, beim Darüberfahren eine Erklärung zeigen und per Klick eine Detailerklärung öffnen.
-
-## 4. Ausrichtung besprechen: Umsetzung für ISO-27001-Audits (Wunsch Nutzer)
+## 3. Ausrichtung besprechen: Umsetzung für ISO-27001-Audits (Wunsch Nutzer)
 
 Die Idee: die gemeinsamen Maßnahmenthemen beschreiben und die Seite teilweise auf die Umsetzung für Audits ausrichten, nach ISO 27001 und nach ISO 27001 auf Basis von IT-Grundschutz. Das passt zum Berufsziel (Grundschutz-Praktiker, danach ISO-27001-Auditor).
 
@@ -79,7 +43,7 @@ Die Idee: die gemeinsamen Maßnahmenthemen beschreiben und die Seite teilweise a
   - Die Kompass-Inhalte sind KI-generiert. Sie nicht als eigene Expertise darstellen, solange sie nicht selbst geprüft sind.
   - Unabhängigkeit als Auditor (ISO/IEC 17021-1): Beratung und Audit beim selben Kunden schließen sich aus.
 
-## 5. Sonstiges Offenes
+## 4. Sonstiges Offenes
 
 - [ ] Design: Entscheidung zu Ansatz A, B oder C steht aus.
   - A: nur Startseite
@@ -87,19 +51,29 @@ Die Idee: die gemeinsamen Maßnahmenthemen beschreiben und die Seite teilweise a
   - C: Seite für Seite
 - [ ] Danach Design-Dokument und Plan erstellen.
 - [ ] Die Prototypen `public/prototyp/hell.html` und `dunkel.html` liegen nur lokal und werden nicht committet.
-- [ ] Aufräumen: die `node_modules`-Junction im Worktree (`cmd //c "rmdir node_modules"`) und den Brainstorm-Server (`.superpowers/`).
+- [ ] Aufräumen: die `node_modules`-Junction im Worktree entfernen, sobald dort nicht mehr gearbeitet wird (`cmd //c "rmdir node_modules"`).
 - [ ] Den GitHub-Token rotieren, falls noch nicht geschehen. Er war in einer früheren Sitzung versehentlich sichtbar.
+
+
+## 5. Aus der Wortlautprüfung vom 14.11.2026 (KI-erstellt)
+
+Einzelheiten in `docs/pruefprotokoll/2026-11-14-wortlautpruefung.md`.
+
+- [ ] Selbst gegenlesen: das Protokoll der Wortlautprüfung, vor allem die Tabellen „Bezüge geändert“ je Regelwerk.
+- [x] OWASP ASVS: am 14.11. auf 5.0.0 umgestellt (jüngste stabile Fassung, 30.5.2025).
+- [ ] Selbst gegenlesen: die Zuordnungstabelle 4.0.3 → 5.0.0 im Nachtrag des Protokolls.
+- [x] BSI C5: am 14.11. auf C5:2026 umgestellt (BSI empfiehlt ihn für Prüfzeiträume mit Ende ab 1.6.2027).
+- [ ] Selbst gegenlesen: die Zuordnungstabelle C5:2020 → C5:2026 im Nachtrag des Protokolls. Falls die Zielgruppe überwiegend früher endende Prüfzeiträume hat, wäre C5:2020 die passendere Fassung.
+- [x] BSI-KritisV: gilt am 14.11.2026 weiter (zuletzt geändert 15.5.2026). Nach ihrem § 12 tritt sie außer Kraft, sobald die Rechtsverordnung nach § 4 Abs. 3 und § 5 Abs. 1 KRITIS-Dachgesetz in Kraft tritt.
+- [ ] Beobachten: Sobald diese Verordnung in Kraft ist, die Zusatzzeile „BSI-KritisV“ bei 26 KRITIS-Fragen ersetzen.
+- [x] VDA ISA: am 14.11. auf 2027.1 umgestellt (Grundlage für ab 1.1.2027 beauftragte Assessments; 30 von 36 verwendeten Controls unverändert).
+- [ ] Selbst gegenlesen: die drei neu zugeordneten Prototypenschutz-Fragen im Nachtrag des Protokolls.
+- [ ] Nicht geprüft, weil kein Normtext vorlag: ISO 27001, ISO 22301, PCI DSS, CIS Controls, SOC 2 (120 Fragen). Mit den Normtexten nachholen.
+- [ ] Empfehlungen (`recommendations.ts` aller Regelwerke) sind nicht am Wortlaut geprüft. Bei OWASP ASVS und C5 sind die Kennungen der Empfehlungen am 14.11. mit umgestellt, die Texte nicht geprüft. Die 24 TISAX-Empfehlungen sind am 14.11. auf Controls des VDA ISA 2027.1 umgestellt, die Texte nicht geprüft.
+- [ ] Hilfetexte bei TISAX enthalten noch Erfahrungsaussagen über Assessments ohne Quelle („zentrales Thema“, „häufiger Befund“).
 
 ## Testwerkzeug
 
-Prüfskript für Übersetzungsschlüssel, im Projektordner ausführen:
-
-```bash
-node -e "
-const fs=require('fs'),path=require('path');
-const de=require('./src/messages/de.json'),en=require('./src/messages/en.json');
-const g=(o,k)=>k.split('.').reduce((a,x)=>a?.[x],o);const roots=new Set(Object.keys(de));
-(function walk(d){for(const f of fs.readdirSync(d)){const p=path.join(d,f);if(fs.statSync(p).isDirectory())walk(p);else if(/\.ts$/.test(f)&&!/test/.test(f)){for(const m of fs.readFileSync(p,'utf8').matchAll(/'([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9_-]+){2,})'/g)){const k=m[1];if(roots.has(k.split('.')[0])&&(g(de,k)===undefined||g(en,k)===undefined))console.log(p,k)}}}})('src/lib/regulations');"
-```
+Die Übersetzungsschlüssel prüft jetzt `npm test` (`translation-keys.test.ts`).
 
 Der Browser-Durchlauf läuft so: Gap-Analyse starten, je Frage eine zufällige Stufe wählen, „Weiter“ bzw. „… abschließen“ klicken (Groß- und Kleinschreibung beachten). Auf der Ergebnisseite alle Reiter öffnen und Texte sammeln, die wie `name.name.name` aussehen (Rohschlüssel).

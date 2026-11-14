@@ -1,18 +1,17 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { FileCheck } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
-import { ISO27001_MAPPINGS, calculateOverallAlignment } from '@/lib/regulations/nis2/iso27001';
+import { ISO27001_MAPPINGS, ISO27001_SOURCE } from '@/lib/regulations/nis2/iso27001';
+import { levelLabel } from '@/lib/regulations/overlaps';
 import { CATEGORIES } from '@/lib/regulations/nis2/categories';
 
 export function Iso27001Section() {
-  const t = useTranslations('iso27001');
+  const t = useTranslations('iso27001Mapping');
   const tCat = useTranslations('categories');
 
-  const overallAlignment = calculateOverallAlignment();
+  const locale = useLocale();
 
   return (
     <section className="mb-12">
@@ -20,18 +19,13 @@ export function Iso27001Section() {
         <FileCheck className="size-6 text-primary" />
         <h2 className="text-2xl font-bold">{t('title')}</h2>
       </div>
-      <p className="mb-6 text-sm text-muted-foreground">{t('subtitle')}</p>
-
-      {/* Overall alignment */}
-      <Card className="mb-8">
-        <CardContent className="pt-6">
-          <div className="mb-2 flex items-center justify-between">
-            <span className="text-sm font-medium">{t('overallAlignment')}</span>
-            <span className="text-2xl font-bold">~{overallAlignment}%</span>
-          </div>
-          <Progress value={overallAlignment} className="[&>div]:bg-green-500" />
-        </CardContent>
-      </Card>
+      <p className="mb-2 text-sm text-muted-foreground">{t('subtitle')}</p>
+      <p className="mb-6 text-sm text-muted-foreground">
+        {t('sourceNote')}{' '}
+        <a href={ISO27001_SOURCE.url} target="_blank" rel="noopener noreferrer" className="underline">
+          {ISO27001_SOURCE.label}
+        </a>
+      </p>
 
       {/* Mapping table */}
       <div className="overflow-x-auto">
@@ -48,7 +42,7 @@ export function Iso27001Section() {
             {ISO27001_MAPPINGS.map((mapping) => {
               const category = CATEGORIES.find((c) => c.id === mapping.nis2CategoryId);
               const catName = category ? tCat(category.shortNameKey.replace('categories.', '')) : mapping.nis2CategoryId;
-              const gapKey = mapping.gapNoteKey.replace('iso27001.gaps.', '');
+              const gapKey = mapping.gapNoteKey.replace('iso27001Mapping.gaps.', '');
 
               return (
                 <tr key={mapping.nis2CategoryId} className="border-b">
@@ -61,10 +55,9 @@ export function Iso27001Section() {
                     </div>
                   </td>
                   <td className="p-3 text-center">
-                    <div className="mx-auto w-20">
-                      <Progress value={mapping.alignmentPercentage} className="[&>div]:bg-green-500" />
-                    </div>
-                    <span className="text-xs">{mapping.alignmentPercentage}%</span>
+                    <Badge variant={mapping.level === 'high' ? 'default' : 'secondary'}>
+                      {levelLabel(mapping.level, locale)}
+                    </Badge>
                   </td>
                   <td className="p-3 text-xs text-muted-foreground">{t(`gaps.${gapKey}`)}</td>
                 </tr>

@@ -104,11 +104,11 @@ export interface PDFDsgvoOverlap {
 export interface PDFIso27001Mapping {
   nis2Category: string;
   isoControls: string[];
-  alignmentPercentage: number;
+  /** Stufe als fertiger Text (stark/mittel/gering) */
+  level: string;
 }
 
 export interface PDFIso27001 {
-  overallAlignment: number;
   mappings: PDFIso27001Mapping[];
 }
 

@@ -37,6 +37,8 @@ const doraConfig: RegulationConfig = {
     id: q.id,
     categoryId: q.categoryId,
     tier: q.tier,
+    notApplicableAllowed: q.notApplicableAllowed,
+    beyondMinimum: q.beyondMinimum,
     titleKey: q.titleKey,
     tooltipKey: q.tooltipKey,
     helpKey: q.helpKey,
