@@ -65,7 +65,7 @@ Der Vorschlag wird als Schaltfläche an der Frage angezeigt und erst per Klick �
 ## 4. Offen
 
 - Reifegrad-Texte bei CIS, ISO 22301, NIST CSF und OWASP: am 14.11. durch eigene Texte je Frage ersetzt (72 Fragen, vier Stufen, DE und EN). KI-erstellt, noch nicht gegengelesen. Ein Test verhindert gleiche Texte bei mehreren Fragen.
-- Einleitungstexte je Bereich fehlen bei ISO 27001, SOC 2, PCI DSS, C5, CIS, ISO 22301, NIST CSF und OWASP.
+- Einleitungstexte je Bereich: am 14.11. für die 55 fehlenden Bereiche ergänzt (DE und EN). KI-erstellt, noch nicht gegengelesen. Der Schlüsseltest verlangt den Text jetzt für jeden Bereich.
 - Wiederhergestellter ISO-27001-Abschnitt nennt Prozentwerte je Kategorie ohne Quelle (Durchschnitt 68 % berechnet, Einleitung nennt „ca. 72 %“).
 - PCI DSS zeigt „Goal 1“ usw., SOC 2 die englischen Kriteriennamen unter den Fragen.
 - Inhaltliche Prüfung je Regelwerk (Notwendigkeit, Doppelungen, KMU-Verständlichkeit, Verhältnis Kern zu Vertiefung) steht aus.

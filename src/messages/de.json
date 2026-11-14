@@ -6648,42 +6648,50 @@
       "contextLeadership": {
         "name": "Kontext & Führung",
         "shortName": "Kontext & Führung",
-        "description": "Bestimmung des Organisationskontexts, Anforderungen interessierter Parteien und Führungsverpflichtung für das ISMS (Clause 4 & 5)."
+        "description": "Bestimmung des Organisationskontexts, Anforderungen interessierter Parteien und Führungsverpflichtung für das ISMS (Clause 4 & 5).",
+        "empoweringIntro": "Das Fundament des ISMS: Wenn klar ist, was geschützt werden soll und die Geschäftsleitung dahintersteht, bekommen alle weiteren Maßnahmen Richtung und Rückhalt."
       },
       "planningRisk": {
         "name": "Planung & Risikobewertung",
         "shortName": "Planung & Risiko",
-        "description": "Risikobewertung, Risikobehandlung und Festlegung von Informationssicherheitszielen (Clause 6)."
+        "description": "Risikobewertung, Risikobehandlung und Festlegung von Informationssicherheitszielen (Clause 6).",
+        "empoweringIntro": "Risiken kennen statt raten: Eine nachvollziehbare Risikobewertung zeigt, welche Maßnahmen Sie wirklich brauchen, und begründet Ihre Auswahl gegenüber dem Auditor."
       },
       "supportAwareness": {
         "name": "Unterstützung & Bewusstsein",
         "shortName": "Unterstützung",
-        "description": "Ressourcen, Kompetenz, Bewusstsein, Kommunikation und dokumentierte Information für das ISMS (Clause 7)."
+        "description": "Ressourcen, Kompetenz, Bewusstsein, Kommunikation und dokumentierte Information für das ISMS (Clause 7).",
+        "empoweringIntro": "Ein ISMS lebt von Menschen: Mit ausreichend Zeit, Wissen und gepflegten Dokumenten wird aus Vorgaben gelebte Praxis."
       },
       "operations": {
         "name": "Betrieb & Änderungsmanagement",
         "shortName": "Betrieb",
-        "description": "Operative Planung und Steuerung, Risikobewertungsdurchführung sowie Management von Lieferanten und Änderungen (Clause 8)."
+        "description": "Operative Planung und Steuerung, Risikobewertungsdurchführung sowie Management von Lieferanten und Änderungen (Clause 8).",
+        "empoweringIntro": "Vom Plan in den Alltag: Geregelte Abläufe für Änderungen und Lieferanten sorgen dafür, dass die geplanten Maßnahmen im Betrieb tatsächlich greifen."
       },
       "accessControl": {
         "name": "Zugriffskontrolle",
         "shortName": "Zugriffskontrolle",
-        "description": "Zugriffskontrollrichtlinien, Identitätsmanagement, Authentifizierung und Berechtigungsverwaltung (Annex A.5.15-5.18, A.8.2-8.5)."
+        "description": "Zugriffskontrollrichtlinien, Identitätsmanagement, Authentifizierung und Berechtigungsverwaltung (Annex A.5.15-5.18, A.8.2-8.5).",
+        "empoweringIntro": "Zugriff nur für Berechtigte: Klare Regeln für Konten, Rechte und Anmeldung begrenzen den Schaden, wenn ein Zugang in falsche Hände gerät."
       },
       "cryptographyNetwork": {
         "name": "Kryptografie & Netzwerksicherheit",
         "shortName": "Krypto & Netzwerk",
-        "description": "Einsatz kryptografischer Maßnahmen, Netzwerksicherheit, Netzsegmentierung und Web-Filterung (Annex A.8.20-8.26)."
+        "description": "Einsatz kryptografischer Maßnahmen, Netzwerksicherheit, Netzsegmentierung und Web-Filterung (Annex A.8.20-8.26).",
+        "empoweringIntro": "Daten und Netze absichern: Verschlüsselung und getrennte Netzbereiche schützen Informationen auch dann, wenn ein Angreifer bereits einen Fuß in der Tür hat."
       },
       "physicalSecurity": {
         "name": "Physische Sicherheit",
         "shortName": "Physische Sicherheit",
-        "description": "Sicherheitszonen, physischer Zugangsschutz, Gerätesicherheit und Schutz vor Umweltbedrohungen (Annex A.7)."
+        "description": "Sicherheitszonen, physischer Zugangsschutz, Gerätesicherheit und Schutz vor Umweltbedrohungen (Annex A.7).",
+        "empoweringIntro": "Schutz beginnt an der Tür: Gesicherte Räume und Geräte verhindern, dass technische Maßnahmen einfach umgangen werden."
       },
       "incidentContinuity": {
         "name": "Vorfallmanagement & Kontinuität",
         "shortName": "Vorfälle & BCM",
-        "description": "Sicherheitsvorfälle erkennen, melden und behandeln, Geschäftskontinuität sicherstellen sowie Wirksamkeit des ISMS bewerten (Clause 9, 10, Annex A.5.24-5.30)."
+        "description": "Sicherheitsvorfälle erkennen, melden und behandeln, Geschäftskontinuität sicherstellen sowie Wirksamkeit des ISMS bewerten (Clause 9, 10, Annex A.5.24-5.30).",
+        "empoweringIntro": "Vorbereitet auf den Ernstfall: Eingeübte Abläufe für Vorfälle und Ausfälle verkürzen Unterbrechungen und liefern Erkenntnisse, mit denen das ISMS besser wird."
       }
     },
     "questions": {
@@ -8187,37 +8195,44 @@
       "security": {
         "name": "Sicherheit (Common Criteria)",
         "shortName": "Sicherheit",
-        "description": "Schutz von Informationen und Systemen vor unbefugtem Zugriff durch logische und physische Zugangskontrollen (CC1–CC9)."
+        "description": "Schutz von Informationen und Systemen vor unbefugtem Zugriff durch logische und physische Zugangskontrollen (CC1–CC9).",
+        "empoweringIntro": "Die Grundlage jedes SOC-2-Berichts: Die Common Criteria gelten immer. Wer hier gut aufgestellt ist, hat den größten Teil der Prüfung abgedeckt."
       },
       "availability": {
         "name": "Verfügbarkeit",
         "shortName": "Verfügbarkeit",
-        "description": "Sicherstellung, dass Systeme und Dienste gemäß den vereinbarten Service-Levels verfügbar und betriebsbereit sind (A1.1–A1.3)."
+        "description": "Sicherstellung, dass Systeme und Dienste gemäß den vereinbarten Service-Levels verfügbar und betriebsbereit sind (A1.1–A1.3).",
+        "empoweringIntro": "Zusagen einhalten: Mit Kapazitätsplanung, Datensicherung und getesteter Wiederherstellung belegen Sie, dass Ihr Dienst die vereinbarten Service-Level erreicht."
       },
       "processingIntegrity": {
         "name": "Verarbeitungsintegrität",
         "shortName": "Integrität",
-        "description": "Gewährleistung, dass Systemverarbeitungen vollständig, korrekt, zeitnah und autorisiert durchgeführt werden (PI1.1–PI1.5)."
+        "description": "Gewährleistung, dass Systemverarbeitungen vollständig, korrekt, zeitnah und autorisiert durchgeführt werden (PI1.1–PI1.5).",
+        "empoweringIntro": "Richtige Ergebnisse liefern: Kontrollen für Eingabe, Verarbeitung und Ausgabe zeigen Ihren Kunden, dass Daten vollständig und korrekt verarbeitet werden."
       },
       "confidentiality": {
         "name": "Vertraulichkeit",
         "shortName": "Vertraulichkeit",
-        "description": "Schutz vertraulicher Informationen gemäß den Verpflichtungen und Geschäftsanforderungen der Organisation (C1.1–C1.2)."
+        "description": "Schutz vertraulicher Informationen gemäß den Verpflichtungen und Geschäftsanforderungen der Organisation (C1.1–C1.2).",
+        "empoweringIntro": "Vertrauliches bleibt vertraulich: Wenn Sie wissen, welche Informationen vertraulich sind und wie lange Sie sie brauchen, können Sie sie gezielt schützen und rechtzeitig löschen."
       },
       "privacy": {
         "name": "Datenschutz",
         "shortName": "Datenschutz",
-        "description": "Erhebung, Verwendung, Aufbewahrung, Offenlegung und Entsorgung personenbezogener Daten gemäß den Datenschutzgrundsätzen (P1–P8)."
+        "description": "Erhebung, Verwendung, Aufbewahrung, Offenlegung und Entsorgung personenbezogener Daten gemäß den Datenschutzgrundsätzen (P1–P8).",
+        "empoweringIntro": "Personenbezogene Daten im Griff: Klare Regeln von der Erhebung bis zur Löschung schaffen Vertrauen bei Kunden und erleichtern zugleich die Erfüllung der DSGVO."
       },
       "monitoring": {
         "name": "Überwachung & Protokollierung",
         "shortName": "Monitoring",
-        "description": "Kontinuierliche Überwachung, Erkennung und Analyse sicherheitsrelevanter Ereignisse und Vorfälle (CC7–CC8)."
+        "description": "Kontinuierliche Überwachung, Erkennung und Analyse sicherheitsrelevanter Ereignisse und Vorfälle (CC7–CC8).",
+        "empoweringIntro": "Sehen, was passiert: Laufende Überwachung und ausgewertete Protokolle sind der Nachweis, dass Ihre Kontrollen über den ganzen Prüfzeitraum wirksam waren."
       },
       "riskManagement": {
         "name": "Risikomanagement & Governance",
         "shortName": "Governance",
-        "description": "Organisatorische Steuerung, Risikoidentifikation, -bewertung und -behandlung als Grundlage aller Kontrollmaßnahmen (CC1–CC3)."
+        "description": "Organisatorische Steuerung, Risikoidentifikation, -bewertung und -behandlung als Grundlage aller Kontrollmaßnahmen (CC1–CC3).",
+        "empoweringIntro": "Steuerung von oben: Eine geregelte Risikobewertung und klare Verantwortlichkeiten begründen, warum Sie genau diese Kontrollen eingerichtet haben."
       }
     },
     "questions": {
@@ -8648,42 +8663,50 @@
       "networkSecurity": {
         "name": "Netzwerksicherheit",
         "shortName": "Netzwerk",
-        "description": "Aufbau und Pflege sicherer Netzwerke und Systeme zum Schutz von Karteninhaberdaten (Req. 1-2)"
+        "description": "Aufbau und Pflege sicherer Netzwerke und Systeme zum Schutz von Karteninhaberdaten (Req. 1-2)",
+        "empoweringIntro": "Die erste Verteidigungslinie: Sauber getrennte Netze und sichere Grundeinstellungen verkleinern den Bereich, in dem Kartendaten überhaupt erreichbar sind."
       },
       "dataProtection": {
         "name": "Schutz von Kontodaten",
         "shortName": "Kontodaten",
-        "description": "Schutz gespeicherter Karteninhaberdaten und sichere Übertragung über offene Netzwerke (Req. 3-4)"
+        "description": "Schutz gespeicherter Karteninhaberdaten und sichere Übertragung über offene Netzwerke (Req. 3-4)",
+        "empoweringIntro": "Was nicht gespeichert ist, kann nicht gestohlen werden: Speichern Sie Kartendaten nur, wenn es nötig ist, und verschlüsseln Sie sie bei Speicherung und Übertragung."
       },
       "vulnerabilityMgmt": {
         "name": "Schwachstellenmanagement",
         "shortName": "Schwachstellen",
-        "description": "Schutz vor Malware und sichere Entwicklung und Wartung von Systemen und Software (Req. 5-6)"
+        "description": "Schutz vor Malware und sichere Entwicklung und Wartung von Systemen und Software (Req. 5-6)",
+        "empoweringIntro": "Lücken schließen, bevor sie ausgenutzt werden: Aktueller Schutz vor Schadsoftware, zeitnahe Updates und sichere Entwicklung halten Ihre Systeme widerstandsfähig."
       },
       "accessControl": {
         "name": "Zugriffskontrolle",
         "shortName": "Zugriff",
-        "description": "Beschränkung des Zugriffs auf Karteninhaberdaten nach dem Need-to-know-Prinzip (Req. 7)"
+        "description": "Beschränkung des Zugriffs auf Karteninhaberdaten nach dem Need-to-know-Prinzip (Req. 7)",
+        "empoweringIntro": "Nur wer muss, darf: Je weniger Personen auf Kartendaten zugreifen können, desto kleiner sind Risiko und Prüfaufwand."
       },
       "authentication": {
         "name": "Authentifizierung",
         "shortName": "Authentifizierung",
-        "description": "Identifizierung von Benutzern und Authentifizierung des Zugriffs auf Systemkomponenten (Req. 8)"
+        "description": "Identifizierung von Benutzern und Authentifizierung des Zugriffs auf Systemkomponenten (Req. 8)",
+        "empoweringIntro": "Jeder Zugriff hat einen Namen: Persönliche Konten und Multi-Faktor-Authentifizierung machen Zugriffe nachvollziehbar und gestohlene Passwörter weitgehend wertlos."
       },
       "physicalSecurity": {
         "name": "Physische Sicherheit",
         "shortName": "Physisch",
-        "description": "Beschränkung und Überwachung des physischen Zugangs zu Karteninhaberdaten (Req. 9)"
+        "description": "Beschränkung und Überwachung des physischen Zugangs zu Karteninhaberdaten (Req. 9)",
+        "empoweringIntro": "Auch Geräte und Papier zählen: Gesicherte Räume, kontrollierte Datenträger und geprüfte Kartenterminals schützen vor Diebstahl und Manipulation vor Ort."
       },
       "monitoringTesting": {
         "name": "Überwachung & Tests",
         "shortName": "Monitoring",
-        "description": "Protokollierung und Überwachung aller Zugriffe auf Netzwerkressourcen und Karteninhaberdaten sowie regelmäßige Sicherheitstests (Req. 10-11)"
+        "description": "Protokollierung und Überwachung aller Zugriffe auf Netzwerkressourcen und Karteninhaberdaten sowie regelmäßige Sicherheitstests (Req. 10-11)",
+        "empoweringIntro": "Vertrauen ist gut, Prüfen ist Pflicht: Ausgewertete Protokolle und regelmäßige Scans und Tests zeigen, ob Ihre Schutzmaßnahmen tatsächlich wirken."
       },
       "securityPolicy": {
         "name": "Sicherheitsrichtlinien",
         "shortName": "Richtlinien",
-        "description": "Pflege einer Informationssicherheitsrichtlinie für alle Mitarbeiter und Auftragnehmer (Req. 12)"
+        "description": "Pflege einer Informationssicherheitsrichtlinie für alle Mitarbeiter und Auftragnehmer (Req. 12)",
+        "empoweringIntro": "Der Rahmen für alles andere: Eine gelebte Sicherheitsrichtlinie regelt Zuständigkeiten, Schulungen, Dienstleister und das Vorgehen im Ernstfall."
       }
     },
     "questions": {
@@ -9168,42 +9191,50 @@
       "organisation": {
         "name": "Organisation & Compliance",
         "shortName": "Organisation",
-        "description": "Informationssicherheitsorganisation, Sicherheitsrichtlinien und Personalmanagement (OIS, SP, HR)"
+        "description": "Informationssicherheitsorganisation, Sicherheitsrichtlinien und Personalmanagement (OIS, SP, HR)",
+        "empoweringIntro": "Sicherheit braucht Zuständigkeit: Klare Rollen, verbindliche Richtlinien und geschultes Personal sind die Grundlage, auf der alle weiteren C5-Kriterien aufbauen."
       },
       "assetManagement": {
         "name": "Asset-Management & Klassifizierung",
         "shortName": "Assets",
-        "description": "Inventarisierung, Klassifizierung und Handhabung von Cloud-Assets und Kundendaten (AM)"
+        "description": "Inventarisierung, Klassifizierung und Handhabung von Cloud-Assets und Kundendaten (AM)",
+        "empoweringIntro": "Nur was bekannt ist, lässt sich schützen: Ein gepflegtes Verzeichnis Ihrer Systeme und Kundendaten zeigt, wo welcher Schutz nötig ist."
       },
       "physicalSecurity": {
         "name": "Physische Sicherheit",
         "shortName": "Physisch",
-        "description": "Schutz von Rechenzentren, Sicherheitszonen und Infrastrukturkomponenten (PS)"
+        "description": "Schutz von Rechenzentren, Sicherheitszonen und Infrastrukturkomponenten (PS)",
+        "empoweringIntro": "Die Cloud steht in einem Gebäude: Zutrittsschutz und abgesicherte Versorgung der Rechenzentren halten Ihren Dienst verfügbar und die Daten Ihrer Kunden sicher."
       },
       "identityAccess": {
         "name": "Identitäts- & Zugriffsmanagement",
         "shortName": "Zugriff",
-        "description": "Benutzerregistrierung, Authentifizierung, Autorisierung und Zugriffskontrolle (IDM)"
+        "description": "Benutzerregistrierung, Authentifizierung, Autorisierung und Zugriffskontrolle (IDM)",
+        "empoweringIntro": "Wer darf was: Sauber verwaltete Konten und Rechte verhindern, dass Mitarbeiter oder Kunden auf fremde Daten zugreifen können."
       },
       "operations": {
         "name": "Betrieb & Kommunikation",
         "shortName": "Betrieb",
-        "description": "Betriebsprozesse, Änderungsmanagement, Netzwerksicherheit und Kommunikationsschutz (OPS, COS)"
+        "description": "Betriebsprozesse, Änderungsmanagement, Netzwerksicherheit und Kommunikationsschutz (OPS, COS)",
+        "empoweringIntro": "Stabiler Betrieb ist kein Zufall: Geregelte Änderungen, Überwachung und getrennte Netze sorgen dafür, dass Ihr Cloud-Dienst sicher und vorhersehbar läuft."
       },
       "cryptography": {
         "name": "Kryptografie & Schlüsselmanagement",
         "shortName": "Kryptografie",
-        "description": "Verschlüsselungsrichtlinien, Schlüssellebenszyklus und kryptografische Verfahren (KRY)"
+        "description": "Verschlüsselungsrichtlinien, Schlüssellebenszyklus und kryptografische Verfahren (KRY)",
+        "empoweringIntro": "Verschlüsselung trennt Kunden wirksam: Starke Verfahren und ein geregelter Umgang mit Schlüsseln schützen Daten bei Übertragung und Speicherung."
       },
       "incidentBcm": {
         "name": "Vorfallmanagement & BCM",
         "shortName": "Vorfälle/BCM",
-        "description": "Sicherheitsvorfallbehandlung, Business-Continuity-Management und Notfallplanung (SIM, BCM)"
+        "description": "Sicherheitsvorfallbehandlung, Business-Continuity-Management und Notfallplanung (SIM, BCM)",
+        "empoweringIntro": "Wenn etwas schiefgeht: Eingeübte Abläufe für Vorfälle und Ausfälle begrenzen den Schaden und stellen sicher, dass Ihre Kunden rechtzeitig informiert werden."
       },
       "developmentAudit": {
         "name": "Entwicklung & Prüfung",
         "shortName": "Entwicklung",
-        "description": "Sichere Softwareentwicklung, Compliance-Nachweise und unabhängige Prüfungen (DEV, SSO, PI)"
+        "description": "Sichere Softwareentwicklung, Compliance-Nachweise und unabhängige Prüfungen (DEV, SSO, PI)",
+        "empoweringIntro": "Sicher bauen und nachweisen: Sichere Entwicklung, gesteuerte Unterauftragnehmer und unabhängige Prüfungen belegen, dass Ihre Zusagen eingehalten werden."
       }
     },
     "questions": {
@@ -13603,32 +13634,38 @@
       "inventoryControl": {
         "name": "Inventar & Bestandsmanagement",
         "shortName": "Inventar",
-        "description": "Hardware- und Software-Inventar als Grundlage aller Sicherheitsmaßnahmen"
+        "description": "Hardware- und Software-Inventar als Grundlage aller Sicherheitsmaßnahmen",
+        "empoweringIntro": "Der erste Schritt: Nur Geräte und Programme, die Sie kennen, können Sie aktualisieren und absichern. Das Inventar ist die Grundlage aller weiteren Controls."
       },
       "dataProtection": {
         "name": "Datenschutz & Datenmanagement",
         "shortName": "Datenschutz",
-        "description": "Schutz sensibler Daten durch Klassifizierung, Verschlüsselung und Zugriffskontrolle"
+        "description": "Schutz sensibler Daten durch Klassifizierung, Verschlüsselung und Zugriffskontrolle",
+        "empoweringIntro": "Wissen, wo die wichtigen Daten liegen: Wer seine sensiblen Daten kennt, kann sie gezielt verschlüsseln und rechtzeitig löschen."
       },
       "secureConfig": {
         "name": "Sichere Konfiguration & Zugangskontrolle",
         "shortName": "Konfiguration",
-        "description": "Sichere Basiskonfiguration aller Systeme und kontrollierter Zugang"
+        "description": "Sichere Basiskonfiguration aller Systeme und kontrollierter Zugang",
+        "empoweringIntro": "Werkseinstellungen sind selten sicher: Gehärtete Systeme, geregelte Konten und ein zweiter Faktor für Administratoren nehmen Angreifern die einfachsten Wege."
       },
       "vulnerabilityMgmt": {
         "name": "Schwachstellen- & Malware-Management",
         "shortName": "Schwachstellen",
-        "description": "Kontinuierliches Schwachstellenmanagement, Audit-Logs und Malware-Abwehr"
+        "description": "Kontinuierliches Schwachstellenmanagement, Audit-Logs und Malware-Abwehr",
+        "empoweringIntro": "Lücken finden, bevor es andere tun: Regelmäßige Scans, ausgewertete Protokolle und Schutz vor Schadsoftware zeigen Angriffe früh und schließen bekannte Einfallstore."
       },
       "recoveryNetwork": {
         "name": "Datenwiederherstellung & Netzwerk",
         "shortName": "Recovery",
-        "description": "Backup-Strategien, Netzwerkinfrastruktur und Monitoring"
+        "description": "Backup-Strategien, Netzwerkinfrastruktur und Monitoring",
+        "empoweringIntro": "Für den Tag, an dem es doch passiert: Getestete Datensicherungen und ein aufgeteiltes Netz entscheiden, ob ein Vorfall ein Ärgernis bleibt oder den Betrieb stilllegt."
       },
       "securityOperations": {
         "name": "Sicherheitsbetrieb & Tests",
         "shortName": "Operations",
-        "description": "Awareness, Dienstleister-Management, AppSec, Incident Response und Penetrationstests"
+        "description": "Awareness, Dienstleister-Management, AppSec, Incident Response und Penetrationstests",
+        "empoweringIntro": "Menschen und Abläufe: Geschulte Mitarbeiter, geprüfte Dienstleister und ein eingeübter Notfallplan machen aus Technik einen funktionierenden Schutz."
       }
     },
     "questions": {
@@ -13939,32 +13976,38 @@
       "contextLeadership": {
         "name": "Kontext & Führung",
         "shortName": "Kontext",
-        "description": "Organisatorischer Kontext und Führungsverantwortung für BCM"
+        "description": "Organisatorischer Kontext und Führungsverantwortung für BCM",
+        "empoweringIntro": "Ohne Rückhalt kein BCM: Ein klarer Geltungsbereich und die sichtbare Unterstützung der Geschäftsleitung geben der Notfallvorsorge Auftrag und Mittel."
       },
       "planning": {
         "name": "BCM-Planung",
         "shortName": "Planung",
-        "description": "Risikobasierte Planung des Business Continuity Management Systems"
+        "description": "Risikobasierte Planung des Business Continuity Management Systems",
+        "empoweringIntro": "Ziele statt guter Vorsätze: Messbare Ziele und ein Plan mit Terminen sorgen dafür, dass die Notfallvorsorge vorankommt und nicht im Tagesgeschäft untergeht."
       },
       "supportResources": {
         "name": "Ressourcen & Unterstützung",
         "shortName": "Ressourcen",
-        "description": "Kompetenzen, Kommunikation und dokumentierte Informationen"
+        "description": "Kompetenzen, Kommunikation und dokumentierte Informationen",
+        "empoweringIntro": "Im Notfall zählt, wer Bescheid weiß: Geschulte Mitarbeiter und aktuelle, erreichbare Dokumente sind die Voraussetzung dafür, dass Pläne im Ernstfall funktionieren."
       },
       "biaRisk": {
         "name": "Business Impact Analyse",
         "shortName": "BIA",
-        "description": "Analyse der Geschäftsauswirkungen und Risikobewertung"
+        "description": "Analyse der Geschäftsauswirkungen und Risikobewertung",
+        "empoweringIntro": "Wissen, was zuerst wieder laufen muss: Die Business Impact Analyse zeigt, welche Prozesse kritisch sind und wie lange ein Ausfall verkraftbar ist."
       },
       "bcmStrategy": {
         "name": "BCM-Strategie & Übungen",
         "shortName": "Strategie",
-        "description": "BC-Strategien, -Pläne und regelmäßige Übungen"
+        "description": "BC-Strategien, -Pläne und regelmäßige Übungen",
+        "empoweringIntro": "Ein Plan ist nur so gut wie seine letzte Übung: Dokumentierte Notfallpläne und regelmäßige Tests zeigen, ob die Wiederherstellung in der vorgesehenen Zeit gelingt."
       },
       "evaluationImprovement": {
         "name": "Bewertung & Verbesserung",
         "shortName": "Bewertung",
-        "description": "Leistungsbewertung, Audits und kontinuierliche Verbesserung"
+        "description": "Leistungsbewertung, Audits und kontinuierliche Verbesserung",
+        "empoweringIntro": "Besser werden mit jeder Übung: Kennzahlen, Audits und ausgewertete Vorfälle zeigen, wo das BCM trägt und wo nachgebessert werden muss."
       }
     },
     "questions": {
@@ -14281,32 +14324,38 @@
       "govern": {
         "name": "Govern (Steuern)",
         "shortName": "Govern",
-        "description": "Cybersicherheits-Governance, Risikomanagement und Strategie"
+        "description": "Cybersicherheits-Governance, Risikomanagement und Strategie",
+        "empoweringIntro": "Cybersicherheit ist Chefsache: Strategie, klare Zuständigkeiten und regelmäßige Berichte sorgen dafür, dass Risiken auf der richtigen Ebene entschieden werden."
       },
       "identify": {
         "name": "Identify (Identifizieren)",
         "shortName": "Identify",
-        "description": "Asset-Management, Risikobewertung und Lieferketten-Risiken"
+        "description": "Asset-Management, Risikobewertung und Lieferketten-Risiken",
+        "empoweringIntro": "Erst verstehen, dann schützen: Wer seine Systeme, Daten und Risiken kennt, setzt Zeit und Geld dort ein, wo sie am meisten bewirken."
       },
       "protect": {
         "name": "Protect (Schützen)",
         "shortName": "Protect",
-        "description": "Zugangskontrolle, Schulung, Datensicherheit und Schutzmaßnahmen"
+        "description": "Zugangskontrolle, Schulung, Datensicherheit und Schutzmaßnahmen",
+        "empoweringIntro": "Angriffe erschweren: Begrenzte Rechte, geschulte Mitarbeiter und technische Schutzmaßnahmen verhindern die meisten Vorfälle, bevor sie entstehen."
       },
       "detect": {
         "name": "Detect (Erkennen)",
         "shortName": "Detect",
-        "description": "Anomalie-Erkennung, kontinuierliches Monitoring und Erkennungsprozesse"
+        "description": "Anomalie-Erkennung, kontinuierliches Monitoring und Erkennungsprozesse",
+        "empoweringIntro": "Früh erkennen, was durchkommt: Kein Schutz ist lückenlos. Überwachung und Alarme entscheiden, ob ein Angriff nach Minuten oder erst nach Monaten auffällt."
       },
       "respond": {
         "name": "Respond (Reagieren)",
         "shortName": "Respond",
-        "description": "Reaktionsplanung, Kommunikation und Analyse von Vorfällen"
+        "description": "Reaktionsplanung, Kommunikation und Analyse von Vorfällen",
+        "empoweringIntro": "Geordnet handeln statt improvisieren: Ein eingeübter Plan mit klaren Meldewegen begrenzt den Schaden und hilft, gesetzliche Meldefristen einzuhalten."
       },
       "recover": {
         "name": "Recover (Wiederherstellen)",
         "shortName": "Recover",
-        "description": "Wiederherstellungsplanung, Verbesserungen und Kommunikation"
+        "description": "Wiederherstellungsplanung, Verbesserungen und Kommunikation",
+        "empoweringIntro": "Schnell zurück zum Normalbetrieb: Getestete Wiederherstellungspläne und vorbereitete Kommunikation verkürzen den Ausfall und erhalten das Vertrauen Ihrer Kunden."
       }
     },
     "questions": {
@@ -14617,32 +14666,38 @@
       "authentication": {
         "name": "Authentifizierung",
         "shortName": "Auth",
-        "description": "Passwort-Richtlinien, MFA, sichere Anmeldung"
+        "description": "Passwort-Richtlinien, MFA, sichere Anmeldung",
+        "empoweringIntro": "Die Eingangstür der Anwendung: Starke Passwortregeln, ein zweiter Faktor und Schutz vor massenhaften Anmeldeversuchen halten fremde Personen aus den Konten Ihrer Benutzer heraus."
       },
       "sessionMgmt": {
         "name": "Session-Management",
         "shortName": "Sessions",
-        "description": "Sichere Session-Verwaltung, Token-Handling, Timeout"
+        "description": "Sichere Session-Verwaltung, Token-Handling, Timeout",
+        "empoweringIntro": "Angemeldet bleiben, aber sicher: Geschützte Session-Tokens und sinnvolle Ablaufzeiten verhindern, dass jemand eine laufende Sitzung übernimmt."
       },
       "accessControl": {
         "name": "Zugriffskontrolle",
         "shortName": "Zugriff",
-        "description": "Rollenbasierte Zugriffskontrolle, Least Privilege, RBAC"
+        "description": "Rollenbasierte Zugriffskontrolle, Least Privilege, RBAC",
+        "empoweringIntro": "Jeder sieht nur seine Daten: Berechtigungsprüfungen auf dem Server sind der Schutz vor einer der häufigsten Schwachstellen in Webanwendungen."
       },
       "inputValidation": {
         "name": "Eingabevalidierung",
         "shortName": "Validierung",
-        "description": "Input-Sanitization, Output-Encoding, Injection-Prävention"
+        "description": "Input-Sanitization, Output-Encoding, Injection-Prävention",
+        "empoweringIntro": "Keiner Eingabe vertrauen: Geprüfte Eingaben, kodierte Ausgaben und parametrisierte Datenbankabfragen schließen Injection-Angriffe und Cross-Site-Scripting aus."
       },
       "cryptography": {
         "name": "Kryptographie",
         "shortName": "Krypto",
-        "description": "Verschlüsselung, Hashing, Schlüsselmanagement"
+        "description": "Verschlüsselung, Hashing, Schlüsselmanagement",
+        "empoweringIntro": "Wenn doch Daten abfließen: Starke Verschlüsselung, sicheres Passwort-Hashing und gut verwahrte Schlüssel sorgen dafür, dass gestohlene Daten für Angreifer wertlos sind."
       },
       "errorLogging": {
         "name": "Fehlerbehandlung & Logging",
         "shortName": "Logging",
-        "description": "Sichere Fehlerbehandlung, Security Logging, API-Sicherheit"
+        "description": "Sichere Fehlerbehandlung, Security Logging, API-Sicherheit",
+        "empoweringIntro": "Nichts verraten, alles nachvollziehen: Allgemeine Fehlermeldungen geben Angreifern keine Hinweise, und gute Protokolle zeigen Ihnen, was tatsächlich passiert ist."
       }
     },
     "questions": {

@@ -8,10 +8,10 @@ Stand: 14.11.2026. Reihenfolge = Vorschlag. Was am 13./14.11. erledigt wurde, st
 - [ ] Geänderte Normbezüge bei ISO 22301, OWASP ASVS und KRITIS (Tabelle im Prüfprotokoll, Nr. 2, 6, 12).
 - [ ] Erklärtexte zu den 13 Schlagwörtern im Synergie-Graphen (`platform.overlaps.measureInfo` in `de.json`).
 - [ ] Reifegrad-Texte der 72 Fragen von CIS, ISO 22301, NIST CSF und OWASP ASVS (je vier Stufen, DE und EN).
+- [ ] Einleitungstexte der 55 Bereiche von ISO 27001, SOC 2, PCI DSS, C5, CIS, ISO 22301, NIST CSF und OWASP ASVS (DE und EN).
 
 ## 2. Fragen: offene Inhalte
 
-- [ ] **Einleitungstexte je Bereich** fehlen bei 8 Regelwerken (55 Bereiche). Die Box ist dort ausgeblendet.
 - [ ] **ISO-27001-Abschnitt der NIS2-Ergebnisseite:** Prozentwerte je Kategorie haben keine Quelle; Einleitung nennt „ca. 72 %“, berechnet werden 68 %. Auf Stufen mit Quelle umstellen wie bei den Synergien.
 - [ ] PCI DSS zeigt „Goal 1“, SOC 2 englische Kriteriennamen unter den Fragen.
 - [ ] Vertiefungsfragen und kompletter englischer Durchlauf im Browser.

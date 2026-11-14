@@ -25,7 +25,13 @@ describe('Übersetzungsschlüssel der Regelwerke', () => {
         r.shortNameKey,
         r.descriptionKey,
         r.fullNameKey,
-        ...r.categories.flatMap((c) => [c.nameKey, c.shortNameKey, c.descriptionKey]),
+        ...r.categories.flatMap((c) => [
+          c.nameKey,
+          c.shortNameKey,
+          c.descriptionKey,
+          // Einleitungstext je Bereich, so gebildet wie in category-step.tsx
+          c.nameKey.replace('.name', '.empoweringIntro'),
+        ]),
         ...r.questions.flatMap((q) => [
           q.titleKey,
           q.tooltipKey,

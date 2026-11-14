@@ -6648,42 +6648,50 @@
       "contextLeadership": {
         "name": "Context & Leadership",
         "shortName": "Context & Leadership",
-        "description": "Determining the organizational context, requirements of interested parties, and leadership commitment for the ISMS (Clause 4 & 5)."
+        "description": "Determining the organizational context, requirements of interested parties, and leadership commitment for the ISMS (Clause 4 & 5).",
+        "empoweringIntro": "The foundation of the ISMS: once it is clear what needs protecting and management stands behind it, every further measure has direction and backing."
       },
       "planningRisk": {
         "name": "Planning & Risk Assessment",
         "shortName": "Planning & Risk",
-        "description": "Risk assessment, risk treatment, and establishing information security objectives (Clause 6)."
+        "description": "Risk assessment, risk treatment, and establishing information security objectives (Clause 6).",
+        "empoweringIntro": "Know your risks instead of guessing: a traceable risk assessment shows which measures you really need and justifies your selection to the auditor."
       },
       "supportAwareness": {
         "name": "Support & Awareness",
         "shortName": "Support",
-        "description": "Resources, competence, awareness, communication, and documented information for the ISMS (Clause 7)."
+        "description": "Resources, competence, awareness, communication, and documented information for the ISMS (Clause 7).",
+        "empoweringIntro": "An ISMS depends on people: with enough time, knowledge and well-kept documents, rules turn into daily practice."
       },
       "operations": {
         "name": "Operations & Change Management",
         "shortName": "Operations",
-        "description": "Operational planning and control, risk assessment execution, and management of suppliers and changes (Clause 8)."
+        "description": "Operational planning and control, risk assessment execution, and management of suppliers and changes (Clause 8).",
+        "empoweringIntro": "From plan to daily work: defined processes for changes and suppliers make sure the planned measures actually take effect in operations."
       },
       "accessControl": {
         "name": "Access Control",
         "shortName": "Access Control",
-        "description": "Access control policies, identity management, authentication, and authorization management (Annex A.5.15-5.18, A.8.2-8.5)."
+        "description": "Access control policies, identity management, authentication, and authorization management (Annex A.5.15-5.18, A.8.2-8.5).",
+        "empoweringIntro": "Access for authorised people only: clear rules for accounts, rights and login limit the damage if a credential falls into the wrong hands."
       },
       "cryptographyNetwork": {
         "name": "Cryptography & Network Security",
         "shortName": "Crypto & Network",
-        "description": "Use of cryptographic measures, network security, network segmentation, and web filtering (Annex A.8.20-8.26)."
+        "description": "Use of cryptographic measures, network security, network segmentation, and web filtering (Annex A.8.20-8.26).",
+        "empoweringIntro": "Secure data and networks: encryption and separated network zones protect information even when an attacker already has a foot in the door."
       },
       "physicalSecurity": {
         "name": "Physical Security",
         "shortName": "Physical Security",
-        "description": "Security perimeters, physical access controls, equipment security, and protection against environmental threats (Annex A.7)."
+        "description": "Security perimeters, physical access controls, equipment security, and protection against environmental threats (Annex A.7).",
+        "empoweringIntro": "Protection starts at the door: secured rooms and devices prevent technical measures from simply being bypassed."
       },
       "incidentContinuity": {
         "name": "Incident Management & Continuity",
         "shortName": "Incidents & BCM",
-        "description": "Detecting, reporting, and handling security incidents, ensuring business continuity, and evaluating ISMS effectiveness (Clause 9, 10, Annex A.5.24-5.30)."
+        "description": "Detecting, reporting, and handling security incidents, ensuring business continuity, and evaluating ISMS effectiveness (Clause 9, 10, Annex A.5.24-5.30).",
+        "empoweringIntro": "Prepared for the worst case: practised procedures for incidents and outages shorten interruptions and provide lessons that improve the ISMS."
       }
     },
     "questions": {
@@ -8187,37 +8195,44 @@
       "security": {
         "name": "Security (Common Criteria)",
         "shortName": "Security",
-        "description": "Protection of information and systems against unauthorized access through logical and physical access controls (CC1–CC9)."
+        "description": "Protection of information and systems against unauthorized access through logical and physical access controls (CC1–CC9).",
+        "empoweringIntro": "The basis of every SOC 2 report: the Common Criteria always apply. If you are well prepared here, you have covered most of the examination."
       },
       "availability": {
         "name": "Availability",
         "shortName": "Availability",
-        "description": "Ensuring that systems and services are available and operational as committed in service-level agreements (A1.1–A1.3)."
+        "description": "Ensuring that systems and services are available and operational as committed in service-level agreements (A1.1–A1.3).",
+        "empoweringIntro": "Keep your commitments: capacity planning, backups and tested recovery show that your service meets the agreed service levels."
       },
       "processingIntegrity": {
         "name": "Processing Integrity",
         "shortName": "Integrity",
-        "description": "Ensuring that system processing is complete, accurate, timely, and authorized (PI1.1–PI1.5)."
+        "description": "Ensuring that system processing is complete, accurate, timely, and authorized (PI1.1–PI1.5).",
+        "empoweringIntro": "Deliver correct results: controls over input, processing and output show your customers that data is processed completely and accurately."
       },
       "confidentiality": {
         "name": "Confidentiality",
         "shortName": "Confidentiality",
-        "description": "Protection of confidential information in accordance with the organization's commitments and business requirements (C1.1–C1.2)."
+        "description": "Protection of confidential information in accordance with the organization's commitments and business requirements (C1.1–C1.2).",
+        "empoweringIntro": "Confidential stays confidential: once you know which information is confidential and how long you need it, you can protect it specifically and delete it in time."
       },
       "privacy": {
         "name": "Privacy",
         "shortName": "Privacy",
-        "description": "Collection, use, retention, disclosure, and disposal of personal information in conformity with privacy principles (P1–P8)."
+        "description": "Collection, use, retention, disclosure, and disposal of personal information in conformity with privacy principles (P1–P8).",
+        "empoweringIntro": "Personal data under control: clear rules from collection to deletion build customer trust and make GDPR compliance easier at the same time."
       },
       "monitoring": {
         "name": "Monitoring & Logging",
         "shortName": "Monitoring",
-        "description": "Continuous monitoring, detection, and analysis of security-relevant events and incidents (CC7–CC8)."
+        "description": "Continuous monitoring, detection, and analysis of security-relevant events and incidents (CC7–CC8).",
+        "empoweringIntro": "See what is happening: continuous monitoring and reviewed logs are the evidence that your controls worked throughout the whole audit period."
       },
       "riskManagement": {
         "name": "Risk Management & Governance",
         "shortName": "Governance",
-        "description": "Organizational governance, risk identification, assessment, and treatment as the foundation for all control activities (CC1–CC3)."
+        "description": "Organizational governance, risk identification, assessment, and treatment as the foundation for all control activities (CC1–CC3).",
+        "empoweringIntro": "Steering from the top: a defined risk assessment and clear responsibilities explain why you have set up exactly these controls."
       }
     },
     "questions": {
@@ -8648,42 +8663,50 @@
       "networkSecurity": {
         "name": "Network Security",
         "shortName": "Network",
-        "description": "Build and maintain secure networks and systems to protect cardholder data (Req. 1-2)"
+        "description": "Build and maintain secure networks and systems to protect cardholder data (Req. 1-2)",
+        "empoweringIntro": "The first line of defence: cleanly separated networks and secure default settings shrink the area where card data can be reached at all."
       },
       "dataProtection": {
         "name": "Account Data Protection",
         "shortName": "Account Data",
-        "description": "Protect stored cardholder data and secure transmission over open, public networks (Req. 3-4)"
+        "description": "Protect stored cardholder data and secure transmission over open, public networks (Req. 3-4)",
+        "empoweringIntro": "What is not stored cannot be stolen: store card data only when necessary and encrypt it at rest and in transit."
       },
       "vulnerabilityMgmt": {
         "name": "Vulnerability Management",
         "shortName": "Vulnerabilities",
-        "description": "Protect against malware and securely develop and maintain systems and software (Req. 5-6)"
+        "description": "Protect against malware and securely develop and maintain systems and software (Req. 5-6)",
+        "empoweringIntro": "Close gaps before they are exploited: up-to-date malware protection, timely updates and secure development keep your systems resilient."
       },
       "accessControl": {
         "name": "Access Control",
         "shortName": "Access",
-        "description": "Restrict access to cardholder data based on need-to-know principle (Req. 7)"
+        "description": "Restrict access to cardholder data based on need-to-know principle (Req. 7)",
+        "empoweringIntro": "Only those who need to may: the fewer people can access card data, the smaller the risk and the audit effort."
       },
       "authentication": {
         "name": "Authentication",
         "shortName": "Authentication",
-        "description": "Identify users and authenticate access to system components (Req. 8)"
+        "description": "Identify users and authenticate access to system components (Req. 8)",
+        "empoweringIntro": "Every access has a name: personal accounts and multi-factor authentication make access traceable and stolen passwords largely worthless."
       },
       "physicalSecurity": {
         "name": "Physical Security",
         "shortName": "Physical",
-        "description": "Restrict and monitor physical access to cardholder data (Req. 9)"
+        "description": "Restrict and monitor physical access to cardholder data (Req. 9)",
+        "empoweringIntro": "Devices and paper count too: secured rooms, controlled media and inspected card terminals protect against theft and tampering on site."
       },
       "monitoringTesting": {
         "name": "Monitoring & Testing",
         "shortName": "Monitoring",
-        "description": "Log and monitor all access to network resources and cardholder data, and regularly test security systems (Req. 10-11)"
+        "description": "Log and monitor all access to network resources and cardholder data, and regularly test security systems (Req. 10-11)",
+        "empoweringIntro": "Trust is good, testing is mandatory: reviewed logs and regular scans and tests show whether your safeguards actually work."
       },
       "securityPolicy": {
         "name": "Security Policies",
         "shortName": "Policies",
-        "description": "Maintain an information security policy for all personnel and contractors (Req. 12)"
+        "description": "Maintain an information security policy for all personnel and contractors (Req. 12)",
+        "empoweringIntro": "The frame for everything else: a security policy that is actually followed governs responsibilities, training, service providers and what to do in an emergency."
       }
     },
     "questions": {
@@ -9168,42 +9191,50 @@
       "organisation": {
         "name": "Organisation & Compliance",
         "shortName": "Organisation",
-        "description": "Information security organisation, security policies and personnel management (OIS, SP, HR)"
+        "description": "Information security organisation, security policies and personnel management (OIS, SP, HR)",
+        "empoweringIntro": "Security needs ownership: clear roles, binding policies and trained staff are the basis on which all other C5 criteria build."
       },
       "assetManagement": {
         "name": "Asset Management & Classification",
         "shortName": "Assets",
-        "description": "Inventory, classification and handling of cloud assets and customer data (AM)"
+        "description": "Inventory, classification and handling of cloud assets and customer data (AM)",
+        "empoweringIntro": "You can only protect what you know: a maintained inventory of your systems and customer data shows where which protection is needed."
       },
       "physicalSecurity": {
         "name": "Physical Security",
         "shortName": "Physical",
-        "description": "Protection of data centres, security zones and infrastructure components (PS)"
+        "description": "Protection of data centres, security zones and infrastructure components (PS)",
+        "empoweringIntro": "The cloud sits in a building: access protection and secured utilities in the data centres keep your service available and your customers' data safe."
       },
       "identityAccess": {
         "name": "Identity & Access Management",
         "shortName": "Access",
-        "description": "User registration, authentication, authorisation and access control (IDM)"
+        "description": "User registration, authentication, authorisation and access control (IDM)",
+        "empoweringIntro": "Who may do what: well-managed accounts and rights prevent employees or customers from accessing data that is not theirs."
       },
       "operations": {
         "name": "Operations & Communication",
         "shortName": "Operations",
-        "description": "Operational processes, change management, network security and communication protection (OPS, COS)"
+        "description": "Operational processes, change management, network security and communication protection (OPS, COS)",
+        "empoweringIntro": "Stable operations are no accident: controlled changes, monitoring and separated networks make your cloud service run securely and predictably."
       },
       "cryptography": {
         "name": "Cryptography & Key Management",
         "shortName": "Cryptography",
-        "description": "Encryption policies, key lifecycle and cryptographic procedures (KRY)"
+        "description": "Encryption policies, key lifecycle and cryptographic procedures (KRY)",
+        "empoweringIntro": "Encryption separates customers effectively: strong methods and controlled key handling protect data in transit and at rest."
       },
       "incidentBcm": {
         "name": "Incident Management & BCM",
         "shortName": "Incidents/BCM",
-        "description": "Security incident handling, business continuity management and emergency planning (SIM, BCM)"
+        "description": "Security incident handling, business continuity management and emergency planning (SIM, BCM)",
+        "empoweringIntro": "When something goes wrong: practised procedures for incidents and outages limit the damage and ensure your customers are informed in time."
       },
       "developmentAudit": {
         "name": "Development & Audit",
         "shortName": "Development",
-        "description": "Secure software development, compliance evidence and independent audits (DEV, SSO, PI)"
+        "description": "Secure software development, compliance evidence and independent audits (DEV, SSO, PI)",
+        "empoweringIntro": "Build securely and prove it: secure development, managed subcontractors and independent audits show that your commitments are kept."
       }
     },
     "questions": {
@@ -13603,32 +13634,38 @@
       "inventoryControl": {
         "name": "Inventory & Asset Management",
         "shortName": "Inventory",
-        "description": "Hardware and software inventory as the foundation of all security measures"
+        "description": "Hardware and software inventory as the foundation of all security measures",
+        "empoweringIntro": "The first step: you can only update and secure devices and programs you know about. The inventory is the basis of all further controls."
       },
       "dataProtection": {
         "name": "Data Protection & Data Management",
         "shortName": "Data Protection",
-        "description": "Protection of sensitive data through classification, encryption, and access control"
+        "description": "Protection of sensitive data through classification, encryption, and access control",
+        "empoweringIntro": "Know where the important data is: if you know your sensitive data, you can encrypt it specifically and delete it in time."
       },
       "secureConfig": {
         "name": "Secure Configuration & Access Control",
         "shortName": "Configuration",
-        "description": "Secure baseline configuration of all systems and controlled access"
+        "description": "Secure baseline configuration of all systems and controlled access",
+        "empoweringIntro": "Factory settings are rarely secure: hardened systems, managed accounts and a second factor for administrators take away attackers' easiest routes."
       },
       "vulnerabilityMgmt": {
         "name": "Vulnerability & Malware Management",
         "shortName": "Vulnerabilities",
-        "description": "Continuous vulnerability management, audit logs, and malware defense"
+        "description": "Continuous vulnerability management, audit logs, and malware defense",
+        "empoweringIntro": "Find gaps before others do: regular scans, reviewed logs and malware protection reveal attacks early and close known entry points."
       },
       "recoveryNetwork": {
         "name": "Data Recovery & Network",
         "shortName": "Recovery",
-        "description": "Backup strategies, network infrastructure, and monitoring"
+        "description": "Backup strategies, network infrastructure, and monitoring",
+        "empoweringIntro": "For the day it happens anyway: tested backups and a segmented network decide whether an incident stays a nuisance or shuts down operations."
       },
       "securityOperations": {
         "name": "Security Operations & Testing",
         "shortName": "Operations",
-        "description": "Awareness, service provider management, AppSec, incident response, and penetration testing"
+        "description": "Awareness, service provider management, AppSec, incident response, and penetration testing",
+        "empoweringIntro": "People and processes: trained employees, vetted service providers and a practised incident plan turn technology into protection that works."
       }
     },
     "questions": {
@@ -13939,32 +13976,38 @@
       "contextLeadership": {
         "name": "Context & Leadership",
         "shortName": "Context",
-        "description": "Organizational context and leadership responsibility for BCM"
+        "description": "Organizational context and leadership responsibility for BCM",
+        "empoweringIntro": "No BCM without backing: a clear scope and visible support from management give continuity planning its mandate and its means."
       },
       "planning": {
         "name": "BCM Planning",
         "shortName": "Planning",
-        "description": "Risk-based planning of the business continuity management system"
+        "description": "Risk-based planning of the business continuity management system",
+        "empoweringIntro": "Objectives instead of good intentions: measurable objectives and a plan with deadlines keep continuity planning moving instead of getting lost in day-to-day business."
       },
       "supportResources": {
         "name": "Resources & Support",
         "shortName": "Resources",
-        "description": "Competencies, communication, and documented information"
+        "description": "Competencies, communication, and documented information",
+        "empoweringIntro": "In an emergency, knowing what to do counts: trained employees and current, accessible documents are what make plans work when it matters."
       },
       "biaRisk": {
         "name": "Business Impact Analysis",
         "shortName": "BIA",
-        "description": "Business impact analysis and risk assessment"
+        "description": "Business impact analysis and risk assessment",
+        "empoweringIntro": "Know what has to run again first: the business impact analysis shows which processes are critical and how long an outage can be tolerated."
       },
       "bcmStrategy": {
         "name": "BCM Strategy & Exercises",
         "shortName": "Strategy",
-        "description": "BC strategies, plans, and regular exercises"
+        "description": "BC strategies, plans, and regular exercises",
+        "empoweringIntro": "A plan is only as good as its last exercise: documented continuity plans and regular tests show whether recovery succeeds within the intended time."
       },
       "evaluationImprovement": {
         "name": "Evaluation & Improvement",
         "shortName": "Evaluation",
-        "description": "Performance evaluation, audits, and continual improvement"
+        "description": "Performance evaluation, audits, and continual improvement",
+        "empoweringIntro": "Get better with every exercise: metrics, audits and reviewed incidents show where BCM holds up and where it needs improving."
       }
     },
     "questions": {
@@ -14281,32 +14324,38 @@
       "govern": {
         "name": "Govern",
         "shortName": "Govern",
-        "description": "Cybersecurity governance, risk management, and strategy"
+        "description": "Cybersecurity governance, risk management, and strategy",
+        "empoweringIntro": "Cybersecurity is a leadership matter: strategy, clear responsibilities and regular reporting make sure risks are decided at the right level."
       },
       "identify": {
         "name": "Identify",
         "shortName": "Identify",
-        "description": "Asset management, risk assessment, and supply chain risks"
+        "description": "Asset management, risk assessment, and supply chain risks",
+        "empoweringIntro": "Understand first, then protect: if you know your systems, data and risks, you spend time and money where they achieve the most."
       },
       "protect": {
         "name": "Protect",
         "shortName": "Protect",
-        "description": "Access control, training, data security, and safeguards"
+        "description": "Access control, training, data security, and safeguards",
+        "empoweringIntro": "Make attacks harder: limited rights, trained employees and technical safeguards prevent most incidents before they arise."
       },
       "detect": {
         "name": "Detect",
         "shortName": "Detect",
-        "description": "Anomaly detection, continuous monitoring, and detection processes"
+        "description": "Anomaly detection, continuous monitoring, and detection processes",
+        "empoweringIntro": "Spot early what gets through: no protection is complete. Monitoring and alerts decide whether an attack is noticed after minutes or only after months."
       },
       "respond": {
         "name": "Respond",
         "shortName": "Respond",
-        "description": "Response planning, communication, and incident analysis"
+        "description": "Response planning, communication, and incident analysis",
+        "empoweringIntro": "Act in an orderly way instead of improvising: a practised plan with clear reporting lines limits the damage and helps you meet legal reporting deadlines."
       },
       "recover": {
         "name": "Recover",
         "shortName": "Recover",
-        "description": "Recovery planning, improvements, and communication"
+        "description": "Recovery planning, improvements, and communication",
+        "empoweringIntro": "Back to normal quickly: tested recovery plans and prepared communication shorten the outage and preserve your customers' trust."
       }
     },
     "questions": {
@@ -14617,32 +14666,38 @@
       "authentication": {
         "name": "Authentication",
         "shortName": "Auth",
-        "description": "Password policies, MFA, secure login"
+        "description": "Password policies, MFA, secure login",
+        "empoweringIntro": "The front door of the application: strong password rules, a second factor and protection against mass login attempts keep strangers out of your users' accounts."
       },
       "sessionMgmt": {
         "name": "Session Management",
         "shortName": "Sessions",
-        "description": "Secure session handling, token management, timeout"
+        "description": "Secure session handling, token management, timeout",
+        "empoweringIntro": "Stay logged in, but safely: protected session tokens and sensible timeouts prevent someone from taking over a running session."
       },
       "accessControl": {
         "name": "Access Control",
         "shortName": "Access",
-        "description": "Role-based access control, least privilege, RBAC"
+        "description": "Role-based access control, least privilege, RBAC",
+        "empoweringIntro": "Everyone sees only their own data: permission checks on the server protect against one of the most common weaknesses in web applications."
       },
       "inputValidation": {
         "name": "Input Validation",
         "shortName": "Validation",
-        "description": "Input sanitization, output encoding, injection prevention"
+        "description": "Input sanitization, output encoding, injection prevention",
+        "empoweringIntro": "Trust no input: validated input, encoded output and parameterised database queries rule out injection attacks and cross-site scripting."
       },
       "cryptography": {
         "name": "Cryptography",
         "shortName": "Crypto",
-        "description": "Encryption, hashing, key management"
+        "description": "Encryption, hashing, key management",
+        "empoweringIntro": "If data leaks anyway: strong encryption, secure password hashing and well-kept keys make stolen data worthless to attackers."
       },
       "errorLogging": {
         "name": "Error Handling & Logging",
         "shortName": "Logging",
-        "description": "Secure error handling, security logging, API security"
+        "description": "Secure error handling, security logging, API security",
+        "empoweringIntro": "Reveal nothing, trace everything: generic error messages give attackers no clues, and good logs show you what actually happened."
       }
     },
     "questions": {
