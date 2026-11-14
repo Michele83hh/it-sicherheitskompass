@@ -2023,7 +2023,7 @@
           "level3": "Complete overview of all sub-processors; change notifications actively monitored; documented authorisation procedure with assessment criteria"
         },
         "title": "Do you have an overview of all sub-processors used by your processors and of their authorisation procedures?",
-        "tooltip": "Art. 28(2) GDPR requires that the processor not engage another processor (sub-processor) without prior written authorisation from the controller. Under a general written authorisation, the processor must inform the controller of any changes and give the controller the opportunity to object."
+        "tooltip": "Art. 28(2) GDPR: the processor does not engage another processor without prior specific or general written authorisation of the controller. In the case of general written authorisation, the processor informs the controller of any intended changes concerning the addition or replacement of other processors, giving the controller the opportunity to object."
       },
       "avQ4": {
         "help": "If your processor engages sub-processors, they must comply with the same data protection obligations as your direct provider. This must be ensured contractually — a 'pass-through' of the data protection obligations along the entire chain. Check: does the DPA with your provider contain a clause that sub-processors assume the same obligations? Who is liable in case of violations?",
@@ -2045,7 +2045,7 @@
           "level3": "Written confidentiality obligation for all employees with data access; instruction-boundness contractually anchored with all processors; regular training and reviews"
         },
         "title": "Is it ensured that persons with access to personal data process it only on instructions?",
-        "tooltip": "Art. 29 GDPR stipulates that the processor and any person acting under the authority of the controller or processor who has access to personal data may process that data only on instructions from the controller — unless required to do so by Union or Member State law. This also covers your own employees, who must be bound to confidentiality."
+        "tooltip": "Art. 29 GDPR: the processor and any person acting under the authority of the controller or of the processor who has access to personal data may process that data only when instructed to do so by the controller, unless required to do so by Union or Member State law. Under Art. 32(4) GDPR controller and processor take steps to ensure this for the persons acting under their authority."
       },
       "brQ1": {
         "help": "Everyone has the right to know whether and which data you have stored about them. If a customer or employee makes such a request, you must respond within one month — free of charge and completely. You must state: which data, where it came from, to whom it was passed on, how long it is stored. Without a fixed process you will miss the deadline and risk complaints to the supervisory authority.",
@@ -2056,7 +2056,7 @@
           "level3": "Documented process with acknowledgement of receipt, deadline monitoring, response templates and quality control; the one-month deadline is reliably met"
         },
         "title": "Do you answer access requests from data subjects within one month?",
-        "tooltip": "Art. 15 GDPR gives every data subject the right of access to the personal data concerning them. Art. 12(3) GDPR sets a deadline of one month for responding. Section 34 BDSG contains exemptions from the duty to provide access, e.g. where data is stored solely due to statutory retention requirements."
+        "tooltip": "Art. 15 GDPR gives the data subject the right of access to the personal data concerning them. Under Art. 12(3) GDPR the controller provides the information without undue delay and in any event within one month of receipt of the request; the period may be extended by two further months where necessary, taking into account the complexity and number of the requests. Section 34 BDSG contains exceptions, e.g. where data is stored only because of statutory retention rules and providing access would require disproportionate effort."
       },
       "brQ2": {
         "help": "If someone demands that you rectify or erase their data, you must do so in ALL systems — not only in the CRM, but also in Excel lists, email archives, backup systems and with service providers to whom you passed the data on. This requires knowing where personal data is stored. Exceptions apply, e.g. for statutory retention obligations.",
@@ -2067,7 +2067,7 @@
           "level3": "Complete overview of all storage locations; documented process for cross-system rectification and erasure including backups and notification of recipients"
         },
         "title": "Can you reliably implement rectification and erasure requests from data subjects across all relevant systems?",
-        "tooltip": "Art. 16 GDPR grants the right to rectification of inaccurate data. Art. 17 GDPR establishes the right to erasure (‘right to be forgotten’). Implementation must cover all systems in which the data is stored, including backups and recipients (Art. 17(2) GDPR). Section 35 BDSG contains exemptions from the erasure obligation."
+        "tooltip": "Art. 16 GDPR grants the right to rectification of inaccurate data, Art. 17 GDPR the right to erasure (\"right to be forgotten\"). Under Art. 19 GDPR the controller communicates any rectification or erasure to each recipient to whom the data has been disclosed, unless this proves impossible or involves disproportionate effort. Where the controller has made the data public, it takes reasonable steps under Art. 17(2) GDPR to inform other controllers of the erasure request. Section 35 BDSG contains exceptions to the obligation to erase."
       },
       "brQ3": {
         "help": "The right to data portability means: if a customer switches to a competitor, they can demand that you hand over their data in a common format (e.g. CSV, JSON, XML) so they can import it with the new provider. This covers e.g. order history, profile details or usage data. You must be technically able to export this data.",
@@ -2078,7 +2078,7 @@
           "level3": "Automated export of all relevant personal data in structured, machine-readable formats; process is documented and tested"
         },
         "title": "Can you provide data subjects with their data in a machine-readable format (data portability)?",
-        "tooltip": "Art. 20 GDPR grants data subjects the right to receive their data in a structured, commonly used and machine-readable format and to transmit it to another controller. This applies only to data based on consent or contract performance and processed by automated means. Section 36 BDSG restricts the right for public bodies."
+        "tooltip": "Art. 20(1) GDPR gives the data subject the right to receive the data they have provided to a controller in a structured, commonly used and machine-readable format and to transmit it to another controller. The right applies where the processing is based on consent or on a contract and is carried out by automated means."
       },
       "brQ4": {
         "help": "Anyone can object to the processing of their data. The rules are particularly strict for direct marketing: if someone objects, you must remove them from all marketing lists immediately — no ifs and buts, no assessment. For other objections (e.g. against profiling for credit checks), you must weigh whether your grounds override the interests of the data subject. You need a clear process for who handles the objection and how.",
@@ -2089,7 +2089,7 @@
           "level3": "Documented process for all types of objection; immediate implementation for direct marketing; documented balancing of interests for other objections; technical suppression lists implemented"
         },
         "title": "Do you have a process for handling objections to data processing, in particular objections to direct marketing?",
-        "tooltip": "Art. 21 GDPR grants data subjects a right to object to processing based on Art. 6(1)(e) or (f) GDPR. Upon objection to direct marketing (Art. 21(2) GDPR), the data must be removed from marketing use immediately without further assessment. For other objections, a balancing of interests is required."
+        "tooltip": "Art. 21(1) GDPR grants a right to object to processing based on Art. 6(1)(e) or (f) GDPR. The controller then no longer processes the data unless it demonstrates compelling legitimate grounds which override the interests, rights and freedoms of the data subject, or the processing serves the establishment, exercise or defence of legal claims. Where the data subject objects to direct marketing, the data shall no longer be processed for such purposes (Art. 21(2) and (3) GDPR). Section 36 BDSG restricts the right to object vis-à-vis public bodies."
       },
       "brQ5": {
         "help": "Automated individual decisions include e.g. the automatic rejection of a loan application by an algorithm, automated scoring of job applications or automated cancellation of subscriptions. If software makes such decisions without human involvement and they significantly affect a person, that person must be able to challenge them and has the right to human review.",
@@ -2100,10 +2100,10 @@
           "level3": "Complete overview of all automated decisions; human review is an integral part of the process; data subjects are informed and can contest decisions"
         },
         "title": "Do your automated individual decisions meet the requirements of Art. 22 GDPR?",
-        "tooltip": "Art. 22 GDPR gives data subjects the right not to be subject to a decision based solely on automated processing which produces legal effects concerning them or similarly significantly affects them. Exceptions apply for contract performance, legal authorisation or explicit consent. Section 37 BDSG contains supplementary national rules and provides safeguards."
+        "tooltip": "Art. 22(1) GDPR gives the data subject the right not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning them or similarly significantly affects them. Under paragraph 2 this does not apply if the decision is necessary for entering into or performing a contract, is authorised by law, or is based on explicit consent. Section 37 BDSG contains a further exception for decisions made in the course of providing benefits under an insurance contract."
       },
       "dsbQ1": {
-        "help": "In Germany, almost every company with 20 or more employees working with personal data (e.g. writing emails, maintaining customer data, keeping personnel files) must designate a data protection officer. The obligation can also apply with fewer employees, e.g. if you must carry out a data protection impact assessment. The DPO can be internal or external.",
+        "help": "In Germany a company must designate a data protection officer if, as a rule, at least 20 persons are constantly engaged in the automated processing of personal data (Section 38(1) BDSG). The obligation can also exist with fewer persons, e.g. where processing is subject to a data protection impact assessment. The DPO may be a staff member or fulfil the tasks on the basis of a service contract (Art. 37(6) GDPR).",
         "maturity": {
           "level0": "No assessment of the designation obligation carried out; no DPO designated",
           "level1": "Assessment carried out informally but not documented; outcome unclear",
@@ -2111,7 +2111,7 @@
           "level3": "Documented assessment of the designation obligation; DPO designated and notified to the supervisory authority (Art. 37(7) GDPR); contact details published and known to all employees"
         },
         "title": "Have you assessed whether your company must designate a data protection officer (DPO) and implemented this where required?",
-        "tooltip": "Art. 37(1) GDPR requires designation of a DPO for: (a) public authorities, (b) large-scale regular monitoring, (c) large-scale processing of special categories of data. Section 38(1) BDSG extends this considerably: in Germany, a DPO must be designated where as a rule at least 20 persons are permanently engaged in automated processing of personal data. Irrespective of headcount, the duty applies to processing subject to a DPIA or commercial processing for the purpose of transfer or market research."
+        "tooltip": "Under Art. 37(1) GDPR a data protection officer must be designated where (a) the processing is carried out by a public authority or body, (b) the core activities require regular and systematic monitoring of data subjects on a large scale, or (c) the core activities consist of processing on a large scale of special categories of data or of data relating to criminal convictions. In addition, Section 38(1) BDSG requires designation where, as a rule, at least 20 persons are constantly engaged in the automated processing of personal data. Irrespective of the number of persons, the obligation applies to processing subject to a DPIA and to commercial processing for the purpose of transfer, anonymised transfer, or market or opinion research."
       },
       "dsbQ2": {
         "help": "The DPO must not exist only on paper. They must be involved BEFORE new systems are introduced, contracts with service providers are concluded or new business areas involving data processing are launched — not only afterwards. They also need sufficient time and resources for the role. Check: is your DPO invited to project meetings? Do they have access to relevant information?",
@@ -2122,7 +2122,7 @@
           "level3": "A standardised process ensures the DPO is involved early in all data protection matters; sufficient resources and regular exchange with management"
         },
         "title": "Is your data protection officer involved properly and in a timely manner in all data protection matters?",
-        "tooltip": "Art. 38(1) GDPR obliges the controller to ensure the DPO is involved, properly and in a timely manner, in all issues relating to the protection of personal data. Art. 38(2) GDPR requires that the DPO receive the resources necessary to carry out their tasks. Section 38(2) BDSG specifies protection where more than 20 persons are permanently engaged in processing."
+        "tooltip": "Art. 38(1) GDPR: controller and processor ensure that the data protection officer is involved, properly and in a timely manner, in all issues which relate to the protection of personal data. Under Art. 38(2) GDPR they support the DPO by providing the necessary resources, access to personal data and processing operations, and the resources needed to maintain expert knowledge."
       },
       "dsbQ3": {
         "help": "Your DPO has clearly defined tasks: they advise you and your employees on data protection, monitor compliance with the rules, train employees, support data protection impact assessments and act as the contact for the supervisory authority. Check: does your DPO run regular training sessions? Do they produce reports? Do they review your data protection documentation?",
@@ -2133,10 +2133,10 @@
           "level3": "DPO actively performs all tasks under Art. 39 GDPR: regular training, documented audits, annual activity report, proactive advice on new processing operations"
         },
         "title": "Does your data protection officer fulfil their tasks (advice, monitoring, cooperation with the authority)?",
-        "tooltip": "Art. 39(1) GDPR defines the DPO’s minimum tasks: (a) informing and advising the controller and employees, (b) monitoring compliance with the GDPR and the BDSG including awareness-raising and training, (c) advising on the DPIA and monitoring its performance, (d) cooperating with the supervisory authority, (e) acting as contact point for the supervisory authority."
+        "tooltip": "Under Art. 39(1) GDPR the data protection officer has at least the following tasks: (a) informing and advising the controller and the employees who carry out processing, (b) monitoring compliance with the GDPR and other Union or Member State data protection provisions, including awareness-raising and training, (c) providing advice where requested as regards the DPIA and monitoring its performance, (d) cooperating with the supervisory authority, (e) acting as the contact point for the supervisory authority."
       },
       "dsbQ4": {
-        "help": "Two obligations are often overlooked: first, you must notify your DPO to the competent data protection authority — usually online via its website. Second, the DPO's contact details must be publicly accessible, typically in your privacy policy on the website. Both are mandatory, not optional. A missing notification can itself constitute a violation.",
+        "help": "Two obligations: first, you communicate the contact details of your DPO to the competent supervisory authority. Second, you publish the contact details, e.g. in the privacy notice on your website. Both are mandatory (Art. 37(7) GDPR).",
         "maturity": {
           "level0": "DPO is neither notified to the supervisory authority nor are contact details published",
           "level1": "Contact details are published on the website, but the notification to the supervisory authority is missing, or vice versa",
@@ -2144,7 +2144,7 @@
           "level3": "DPO is notified to the supervisory authority; contact details are current in the privacy policy and known internally to all employees; promptly updated when the DPO changes"
         },
         "title": "Have you notified the supervisory authority of your data protection officer and published their contact details?",
-        "tooltip": "Art. 37(7) GDPR requires the controller to publish the DPO’s contact details and communicate them to the supervisory authority. Publication typically takes place on the website (privacy policy) and in the legal notice. Notification to the authority is made online via the portal of the competent state authority."
+        "tooltip": "Art. 37(7) GDPR: the controller or the processor shall publish the contact details of the data protection officer and communicate them to the supervisory authority."
       },
       "dsbQ5": {
         "help": "Your DPO must be able to work independently. They may not receive instructions on how to perform their data protection tasks, and they may not be penalised for their work (e.g. worse appraisals, dismissal). They also may not hold a position that leads to conflicts of interest — e.g. the IT manager cannot simultaneously be the DPO, because they would have to supervise their own work.",
@@ -2154,8 +2154,8 @@
           "level2": "Conflicts of interest assessed and ruled out; DPO reports to management, but dismissal protection is not formalised",
           "level3": "Documented conflict-of-interest assessment; DPO reports directly to the highest management level; dismissal protection and non-penalisation contractually anchored"
         },
-        "title": "Is the independence of your data protection officer ensured (no conflict of interest, no disadvantage)?",
-        "tooltip": "Art. 38(3) GDPR protects the DPO: they may not be dismissed or penalised for performing their tasks. They report directly to the highest management level. No conflicts of interest may exist (Art. 38(6) GDPR). Typical conflicts: the DPO simultaneously acting as IT manager, managing director, HR manager or marketing manager. Section 38(2) BDSG specifies the dismissal protection."
+        "title": "Is the independence of your data protection officer ensured (no instructions, no conflict of interests)?",
+        "tooltip": "Art. 38(3) GDPR: the data protection officer does not receive any instructions regarding the exercise of the tasks, may not be dismissed or penalised for performing them, and reports directly to the highest management level. Under Art. 38(6) GDPR other tasks and duties of the DPO must not result in a conflict of interests. Where designation is mandatory, dismissal is permitted under Section 38(2) in conjunction with Section 6(4) BDSG only by applying Section 626 of the German Civil Code accordingly."
       },
       "dsfaQ1": {
         "help": "A DPIA is a structured assessment of whether a planned data processing operation is particularly risky for the persons affected. Example: you want to introduce video surveillance in the office or use a new CRM system with extensive customer profiles. You must then assess in advance what risks this poses to data subjects and how to minimise them. Without a DPIA you risk fines and potentially unlawful processing.",
@@ -2169,7 +2169,7 @@
         "tooltip": "Art. 35(1) GDPR obliges the controller to carry out a data protection impact assessment before introducing processing operations likely to result in a high risk to the rights and freedoms of natural persons. This applies in particular to the use of new technologies."
       },
       "dsfaQ2": {
-        "help": "The supervisory authorities have published lists of processing operations that always require a DPIA — e.g. scoring, video surveillance of public areas or large-scale processing of health data. Check the list of your state authority and compare whether your processing operations are on it. If so, you must carry out a DPIA — regardless of your own risk assessment.",
+        "help": "The supervisory authority publishes a list of processing operations that require a DPIA. Check the list of your competent authority and compare whether your processing operations are on it. If so, a DPIA must be carried out.",
         "maturity": {
           "level0": "The supervisory authority's mandatory list is unknown; no comparison with own processing activities has taken place",
           "level1": "The mandatory list is known, but a systematic comparison with own processing activities has not taken place",
@@ -2177,7 +2177,7 @@
           "level3": "Complete, documented comparison of all processing activities with the current mandatory list; results are updated when changes occur"
         },
         "title": "Have you used the supervisory authority's mandatory list to check which processing operations need a DPIA?",
-        "tooltip": "Art. 35(3) GDPR lists standard cases of processing requiring a DPIA (profiling, large-scale processing of special categories, systematic monitoring). In addition, supervisory authorities publish lists of processing operations that require a DPIA (mandatory lists) pursuant to Art. 35(4) GDPR. In Germany, the list of the DSK (Conference of Data Protection Authorities) is authoritative."
+        "tooltip": "Art. 35(3) GDPR names three cases in which a DPIA is required in particular: a systematic and extensive evaluation of personal aspects based on automated processing, including profiling; processing on a large scale of special categories of data; and systematic monitoring of a publicly accessible area on a large scale. Under Art. 35(4) GDPR the supervisory authority additionally establishes and publishes a list of the processing operations that require a DPIA (mandatory list)."
       },
       "dsfaQ3": {
         "help": "A DPIA is more than 'we thought about it.' It must contain four things: 1) What exactly is processed, how and why? 2) Is the processing really necessary, or could it be done with less data? 3) What specific risks exist for data subjects (e.g. identity theft, discrimination)? 4) What specific protective measures do you deploy against them? Only when all four points are documented does the DPIA meet the legal requirements.",
@@ -2185,35 +2185,35 @@
           "level0": "No structured DPIA documentation available",
           "level1": "DPIA documentation exists, but essential minimum content is missing (e.g. no risk assessment or no measures)",
           "level2": "DPIA contains all four minimum components, but with varying depth and quality",
-          "level3": "Complete DPIA with all minimum content under Art. 35(7) GDPR, including a comprehensible risk assessment and concrete mitigation measures"
+          "level3": "Complete DPIA with all minimum content under Art. 35(7) GDPR, including a comprehensible risk assessment and concrete measures to address the risks"
         },
         "title": "Does your DPIA contain the minimum content (description, necessity, risk assessment, mitigating measures)?",
-        "tooltip": "Art. 35(7) GDPR prescribes four minimum components of a DPIA: (a) a systematic description of the processing operations and purposes, (b) an assessment of necessity and proportionality, (c) an assessment of the risks to data subjects, (d) the measures envisaged to address the risks. Without these elements the DPIA is incomplete."
+        "tooltip": "Under Art. 35(7) GDPR the assessment contains at least: (a) a systematic description of the envisaged processing operations and the purposes, (b) an assessment of necessity and proportionality, (c) an assessment of the risks to the rights and freedoms of data subjects, (d) the measures envisaged to address the risks."
       },
       "dsfaQ4": {
-        "help": "If your DPIA shows that a high risk to data subjects remains despite all planned safeguards, you may not simply start the processing. You must first consult the competent data protection authority. It will examine your case and may issue recommendations or conditions. Do you have a process for who in your company would trigger this consultation and how it works?",
+        "help": "If your DPIA indicates that the processing would result in a high risk in the absence of measures to mitigate it, you may not simply start the processing. You must first consult the competent supervisory authority. It examines your case and may provide written advice. Have you defined who in your company would trigger this consultation and how it works?",
         "maturity": {
           "level0": "No awareness of the consultation obligation in case of a high residual risk",
           "level1": "The consultation obligation is known, but no defined process exists for triggering it",
           "level2": "Basic process defined, but thresholds for 'high residual risk' are unclear or undocumented",
           "level3": "Documented escalation process with clear criteria for when the supervisory authority is consulted, including responsibilities and deadlines"
         },
-        "title": "Is it defined when and how you consult the supervisory authority if a DPIA shows a high residual risk?",
-        "tooltip": "Art. 36(1) GDPR obliges the controller to consult the supervisory authority prior to processing where the DPIA indicates that the processing would result in a high risk despite the planned safeguards. The authority then has up to 8 weeks to provide written advice (Art. 36(2) GDPR)."
+        "title": "Is it defined when and how you consult the supervisory authority prior to processing if a DPIA indicates a high risk?",
+        "tooltip": "Art. 36(1) GDPR: the controller consults the supervisory authority prior to processing where a DPIA indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk. Under Art. 36(2) GDPR the supervisory authority provides written advice within a period of up to eight weeks; the period may be extended by six weeks."
       },
       "dsfaQ5": {
-        "help": "A DPIA is not a one-off document to file away and forget. When something changes — e.g. you add an AI feature, use a new cloud provider or the threat landscape shifts — you must review the DPIA again and update it if necessary. Schedule regular reviews, e.g. annually or upon significant changes.",
+        "help": "A DPIA is not a one-off document to file away and forget. When something changes — e.g. you add an AI feature, use a new cloud provider or the threat landscape shifts — you must review whether the processing still matches the DPIA and update the DPIA if necessary. Schedule regular reviews, e.g. annually or upon significant changes.",
         "maturity": {
           "level0": "Existing DPIAs are never touched again after creation",
           "level1": "Event-driven review in case of obvious changes, but no fixed cycle",
           "level2": "Regular review planned, but not carried out consistently",
           "level3": "Documented review cycle for all DPIAs (at least annually) with trigger criteria for event-driven reassessment"
         },
-        "title": "Do you review existing DPIAs regularly, especially when the risk of the processing changes?",
-        "tooltip": "Art. 35(11) GDPR requires the controller to review a DPIA already carried out when there is a change in the risk represented by the processing. This applies, for example, when new technologies are introduced, the purpose of processing changes or new threat scenarios emerge."
+        "title": "Do you review whether processing is performed in accordance with the DPIA, at least when the risk changes?",
+        "tooltip": "Art. 35(11) GDPR: where necessary, the controller carries out a review to assess whether processing is performed in accordance with the data protection impact assessment, at least when there is a change of the risk represented by processing operations."
       },
       "dtQ1": {
-        "help": "Third-country transfer means: data leaves the EEA (EU plus Iceland, Liechtenstein, Norway). This happens more often than you think — e.g. when you use US cloud services (Microsoft 365, Google Workspace, AWS), US tools (Mailchimp, Salesforce, Zoom) or engage service providers in India or Ukraine. Create a list of all services and check where the data is actually processed.",
+        "help": "Third-country transfer means: data leaves the EU or the European Economic Area (EEA). This happens more often than you think — e.g. when you use US cloud services (Microsoft 365, Google Workspace, AWS), US tools (Mailchimp, Salesforce, Zoom) or engage service providers in India or Ukraine. Create a list of all services and check where the data is actually processed.",
         "maturity": {
           "level0": "No overview of third-country transfers; it has not been checked whether data leaves the EEA",
           "level1": "Individual obvious third-country transfers are known (e.g. US cloud), but no systematic survey",
@@ -2221,7 +2221,7 @@
           "level3": "Complete, current overview of all third-country transfers stating the recipient country, the data transferred and the legal basis for each transfer"
         },
         "title": "Do you have an overview of whether and to which third countries you transfer personal data?",
-        "tooltip": "Art. 44 GDPR stipulates that any transfer of personal data to a third country is permitted only if the conditions of Art. 44-49 GDPR are met. Third countries are all countries outside the EEA (EU plus Iceland, Liechtenstein, Norway)."
+        "tooltip": "Art. 44 GDPR: any transfer of personal data to a third country or an international organisation may take place only if the conditions of Chapter V (Art. 44-50 GDPR) and the other provisions of the Regulation are complied with; this also applies to onward transfers. The GDPR was incorporated into the EEA Agreement by Decision No 154/2018 of the EEA Joint Committee."
       },
       "dtQ2": {
         "help": "If you transfer data to a country without an adequacy decision (e.g. India, or the USA without a Privacy Framework certification), you need Standard Contractual Clauses. These are contract texts prescribed by the EU that you conclude with the data recipient. Since the end of 2022 you must use the EU's new SCCs. Old clauses are no longer valid.",
@@ -2232,7 +2232,7 @@
           "level3": "Current SCCs concluded with all third-country recipients; Transfer Impact Assessments carried out; additional technical measures implemented where necessary"
         },
         "title": "Do you use appropriate safeguards for third-country transfers, in particular EU Standard Contractual Clauses (SCC)?",
-        "tooltip": "Art. 46(2)(c) GDPR permits third-country transfers on the basis of Standard Contractual Clauses (SCC) adopted by the EU Commission. Since 27.12.2022, only the Commission’s new SCCs (Implementing Decision 2021/914) may be used. Additional measures may be required following the CJEU’s Schrems II judgment."
+        "tooltip": "Art. 46(2)(c) GDPR names standard data protection clauses adopted by the Commission as an appropriate safeguard. The Commission adopted them as \"standard contractual clauses\" in Implementing Decision (EU) 2021/914. Contracts based on the earlier clauses (Decision 2001/497/EC, Decision 2010/87/EU) were deemed to provide appropriate safeguards only until 27 December 2022 under Art. 4(4) of that Decision. The Decision refers to the judgment of the Court of Justice of 16 July 2020 in Case C-311/18 (\"Schrems II\")."
       },
       "dtQ3": {
         "help": "An adequacy decision is the simplest solution for third-country transfers: the EU Commission has determined that the recipient country has an adequate level of data protection. Then you need no additional safeguards. For the USA, the EU-U.S. Data Privacy Framework has applied since July 2023 — but only for certified US companies. Always check whether a decision exists before laboriously concluding SCCs.",
@@ -2243,7 +2243,7 @@
           "level3": "Systematic check of all third-country transfers for an adequacy decision; DPF certification verified for US providers; monitoring for changes to or revocation of decisions"
         },
         "title": "For third-country transfers, do you check whether an EU Commission adequacy decision exists for the recipient country?",
-        "tooltip": "Art. 45 GDPR permits data transfers to third countries for which the EU Commission has determined an adequate level of data protection by decision. Current adequacy decisions exist for, among others: Andorra, Argentina, Brazil (since January 2026), Canada (partially), the Faroe Islands, Guernsey, Israel, the Isle of Man, Japan, Jersey, New Zealand, South Korea, Switzerland, the UK and the USA (EU-U.S. Data Privacy Framework since 10.07.2023). These decisions can be revoked."
+        "tooltip": "Art. 45(1) GDPR permits a transfer where the Commission has decided that the third country, a territory, a sector or the international organisation ensures an adequate level of protection. According to the European Commission's list (retrieved on 14 November 2026), adequacy decisions exist for: Andorra, Argentina, Brazil, Canada (commercial organisations), Faroe Islands, Guernsey, Israel, Isle of Man, Japan, Jersey, New Zealand, Republic of Korea, Switzerland, the United Kingdom, the United States (commercial organisations participating in the EU-US Data Privacy Framework), Uruguay and the European Patent Organisation. The Commission may repeal, amend or suspend decisions (Art. 45(5) GDPR)."
       },
       "dtQ4": {
         "help": "A Transfer Impact Assessment (TIA) is a risk assessment you must carry out when transferring data to a country without an adequacy decision while relying on SCCs. You examine: does that country have laws allowing authorities to access the data? Are the SCCs enforceable there? Are the SCCs sufficient on their own, or do you need additional technical measures such as encryption?",
@@ -2254,21 +2254,21 @@
           "level3": "TIAs carried out and documented for all relevant third-country transfers; supplementary technical and organisational measures implemented; regular updates when the law changes"
         },
         "title": "Do you carry out Transfer Impact Assessments (TIAs) to evaluate the effectiveness of the safeguards in the recipient country?",
-        "tooltip": "Art. 46(1)-(2) GDPR requires appropriate safeguards for third-country transfers. Following the CJEU’s Schrems II judgment (C-311/18), controllers must assess whether the SCCs can ensure an adequate level of protection in the specific case — taking into account the legal situation in the recipient country (in particular government access powers). EDPB Recommendations 01/2020 describe the procedure in detail."
+        "tooltip": "Art. 46(1) GDPR permits a transfer without an adequacy decision only if appropriate safeguards are provided and enforceable data subject rights and effective legal remedies are available. According to the judgment of the Court of Justice of 16 July 2020 in Case C-311/18 (\"Schrems II\"), the assessment must take into account the contractual clauses and, as regards any access by the public authorities of the third country, the relevant aspects of that country's legal system. The European Data Protection Board has published Recommendations 01/2020 on supplementary measures (final version of 18 June 2021)."
       },
       "dtQ5": {
         "help": "Art. 49 GDPR provides derogations for specific individual cases — e.g. a customer books a hotel in a third country (contract performance), or you must transfer data for litigation abroad. However, these derogations must NOT be misused as a permanent solution for regular data transfers. If you constantly send customer data to a service provider in a third country, you need SCCs or an adequacy decision — Art. 49 is not sufficient for that.",
         "maturity": {
-          "level0": "Art. 49 GDPR is invoked as the legal basis for regular transfers, although this is not permissible",
+          "level0": "Art. 49 GDPR is invoked as the legal basis for regular transfers without checking the conditions",
           "level1": "Awareness exists that Art. 49 GDPR applies only to exceptions; its use is however not documented or reviewed",
           "level2": "Art. 49 GDPR is invoked only in individual cases; documentation of the conditions exists but is not always complete",
           "level3": "Clear policy that Art. 49 GDPR is applied only in narrowly defined exceptional cases; every use is documented with reasons; regular transfers run exclusively via adequacy decisions or SCCs"
         },
         "title": "Do you use derogations under Art. 49 GDPR for third-country transfers only in the narrowly defined statutory cases?",
-        "tooltip": "Art. 49 GDPR permits third-country transfers in exceptional cases without an adequacy decision or appropriate safeguards, e.g. with explicit consent (para. 1(a)), for contract performance ((b)-(c)), for important reasons of public interest ((d)), for legal claims ((e)) or vital interests ((f)). These derogations are to be interpreted narrowly and are not suitable for regular, large-scale transfers."
+        "tooltip": "Art. 49(1) GDPR permits transfers without an adequacy decision and without appropriate safeguards only under specific conditions, e.g. explicit consent after being informed of the risks (point a), where the transfer is necessary for a contract (points b-c), for important reasons of public interest (point d), for the establishment of legal claims (point e) or to protect vital interests (point f). The article is headed \"Derogations for specific situations\"."
       },
       "dvQ1": {
-        "help": "If personal data is lost, disclosed without authorisation or altered — e.g. through a hacking attack, a lost USB stick or an email accidentally sent to the wrong recipient — you have at most 72 hours to notify the supervisory authority. This requires a clear procedure: who determines that an incident has occurred? Who decides whether it is notifiable? Who submits the notification?",
+        "help": "If personal data is lost, disclosed without authorisation or altered — e.g. through a hacking attack, a lost USB stick or an email accidentally sent to the wrong recipient — you must notify the supervisory authority without undue delay and, where feasible, not later than 72 hours after having become aware of it. This requires a clear procedure: who determines that an incident has occurred? Who decides whether it is notifiable? Who submits the notification?",
         "maturity": {
           "level0": "No notification process for personal data breaches in place",
           "level1": "Awareness of the 72-hour deadline exists, but no defined procedure and no responsibilities",
@@ -2287,7 +2287,7 @@
           "level3": "Notification template with all mandatory information; it is also defined how missing information is provided later"
         },
         "title": "Do your breach notifications to the authority contain all mandatory details (nature, data subjects, consequences, measures)?",
-        "tooltip": "Art. 33(3) GDPR requires the notification to the supervisory authority to contain at least: (a) the nature of the breach including categories and number of data subjects affected, (b) the name and contact details of the DPO, (c) the likely consequences of the breach, (d) the measures taken and proposed. Art. 33(5) GDPR additionally requires internal documentation of all breaches."
+        "tooltip": "Under Art. 33(3) GDPR the notification contains at least: (a) a description of the nature of the breach including, where possible, the categories and approximate number of data subjects and data records concerned, (b) the name and contact details of the data protection officer or of another point of contact, (c) a description of the likely consequences, (d) a description of the measures taken or proposed. Where the information cannot be provided at the same time, it may be provided in phases (Art. 33(4) GDPR)."
       },
       "dvQ3": {
         "help": "If, for example, customer data including bank details is stolen, you must inform the affected persons directly — not just the supervisory authority, but the people themselves. You must state clearly: what happened? Which data is affected? What can those affected do (e.g. change passwords, inform their bank)? Prepare text templates so no valuable time is lost in an emergency.",
@@ -2309,7 +2309,7 @@
           "level3": "Complete record of all personal data breaches with assessment, measures and the reasons for the notification decision; regular analysis for prevention"
         },
         "title": "Do you keep a complete record of all personal data breaches — including those that were not notifiable?",
-        "tooltip": "Art. 33(5) GDPR obliges the controller to document all personal data breaches, including the related facts, effects and remedial measures taken. This documentation must enable the supervisory authority to verify compliance — which means it must also cover incidents not subject to notification."
+        "tooltip": "Art. 33(5) GDPR: the controller documents any personal data breaches, comprising the facts relating to the breach, its effects and the remedial action taken. The documentation must enable the supervisory authority to verify compliance with Art. 33. The paragraph is not limited to breaches that have to be notified."
       },
       "dvQ5": {
         "help": "You can avoid the obligation to notify data subjects if you have taken good protective measures in advance. The most important example: encryption. If an encrypted laptop is stolen, the data cannot be read — hence no high risk and no notification obligation. The same applies to pseudonymisation. Invest in preventive measures and spare yourself the reputational damage in an emergency.",
@@ -2331,7 +2331,7 @@
           "level3": "The legal basis for every processing activity is clearly documented, regularly reviewed and updated when changes occur"
         },
         "title": "Have you identified and documented a valid legal basis under Art. 6(1) GDPR for every processing activity?",
-        "tooltip": "Art. 6(1) GDPR lists six possible legal bases: consent ((a)), contract performance ((b)), legal obligation ((c)), vital interests ((d)), public interest ((e)) and legitimate interest ((f)). Every processing operation requires at least one of these bases. Section 26 BDSG contains special rules for employee data."
+        "tooltip": "Under Art. 6(1) GDPR processing is lawful only if at least one of six conditions applies: consent (point a), performance of a contract or pre-contractual steps (point b), legal obligation (point c), vital interests (point d), task carried out in the public interest or in the exercise of official authority (point e), legitimate interests (point f). Section 26 BDSG governs data processing for employment-related purposes."
       },
       "ewQ2": {
         "help": "If you rely on consent as the legal basis — e.g. for newsletters or marketing cookies — you must be able to prove that the person actually consented. This includes: when was consent given? How were they informed? What exactly was permitted? Double opt-in for newsletters is a good example: the person signs up, receives a confirmation email and clicks the link — all of which is logged.",
@@ -2342,7 +2342,7 @@
           "level3": "Complete, audit-proof documentation of all consents with timestamp, exact wording, consent channel and central management"
         },
         "title": "Can you demonstrate that the data subject has given valid consent?",
-        "tooltip": "Art. 7(1) GDPR places the burden of proof on the controller: they must be able to demonstrate that the data subject has consented to the processing. Consent must be freely given, specific, informed and unambiguous (Art. 4(11) GDPR). Section 26(2) BDSG generally requires written form for employee consent."
+        "tooltip": "Art. 7(1) GDPR: where processing is based on consent, the controller must be able to demonstrate that the data subject has consented. Under Art. 4(11) GDPR consent is a freely given, specific, informed and unambiguous indication of the data subject's wishes. Under Section 26(2) BDSG employee consent must be given in writing or electronically, unless a different form is appropriate because of special circumstances."
       },
       "ewQ3": {
         "help": "If someone signs up for your newsletter with a click, they must be able to unsubscribe just as easily — e.g. via an unsubscribe link in every email. It is not sufficient if data subjects have to write a letter or call. You must also ensure that no more emails are actually sent after withdrawal. Test this regularly.",
@@ -2356,15 +2356,15 @@
         "tooltip": "Art. 7(3) GDPR guarantees the right to withdraw consent at any time. Withdrawal must be as easy as giving consent. Before giving consent, the data subject must be informed of the right to withdraw. The lawfulness of processing carried out before withdrawal remains unaffected."
       },
       "ewQ4": {
-        "help": "If your online service, app or web shop can also be used by people under 16, you need special precautions: you must verify age and, for under-16s, obtain and verify parental consent. This affects e.g. registrations, newsletter sign-ups or in-app purchases. If you run a purely B2B service, this topic is usually not relevant.",
+        "help": "If your online service, app or web shop is offered directly to children and you rely on consent, you need special arrangements: for children under 16, consent must be given or authorised by the holders of parental responsibility, and you must make reasonable efforts to verify this. This concerns e.g. registrations or newsletter sign-ups. If you run a pure B2B service, choose \"not applicable\".",
         "maturity": {
           "level0": "No age verification or special safeguards for minors implemented",
           "level1": "Age query in place, but no verification and no process for parental consent",
           "level2": "Age check and basic process for parental consent in place, but verification is patchy",
           "level3": "Robust age verification with demonstrable collection and verification of parental consent; regular review of the mechanism"
         },
-        "title": "Have you implemented special safeguards for the consent of minors in relation to information society services?",
-        "tooltip": "Art. 8 GDPR governs children’s consent for information society services (e.g. online services, apps). In Germany the age limit is 16 years (Art. 8(1) GDPR; Germany has not set a different age limit). For children under 16, consent or authorisation by the holder of parental responsibility is required. The controller must make reasonable efforts to verify this."
+        "title": "Have you made arrangements for the consent of children under 16 in relation to information society services?",
+        "tooltip": "Art. 8(1) GDPR: where information society services are offered directly to a child, consent-based processing is lawful where the child is at least 16 years old. Below the age of 16 years it is lawful only if and to the extent that consent is given or authorised by the holder of parental responsibility. Member States may provide for a lower age, which may not be below 13; the BDSG contains no such provision. Under Art. 8(2) GDPR the controller makes reasonable efforts to verify, taking into consideration available technology, that consent has been given in this way."
       },
       "ewQ5": {
         "help": "Special categories of data include e.g. health data (sick notes, occupational reintegration), religious affiliation (church tax), trade union membership or biometric data (fingerprint scanners). This data may only be processed under strict conditions. Where no statutory permission applies, you need explicit consent — particularly clear and prominent, not hidden in terms and conditions.",
@@ -2372,10 +2372,10 @@
           "level0": "No check whether special categories of data are processed; no specific consents obtained",
           "level1": "Awareness of special categories of data exists, but no systematic check or separate consents",
           "level2": "Special categories of data are identified; explicit consent is obtained, but not consistently in all cases",
-          "level3": "Complete overview of special categories of data; explicit, separately documented consents with additional safeguards under Section 22 BDSG"
+          "level3": "Complete overview of special categories of data; explicit, separately documented consents with additional safeguards"
         },
         "title": "Do you obtain explicit consent for special categories of personal data where no other exemption applies?",
-        "tooltip": "Art. 9(1) GDPR prohibits in principle the processing of special categories of data (health, religion, ethnic origin, political opinions, trade union membership, genetics, biometrics, sex life). Art. 9(2)(a) GDPR permits processing with explicit consent. Section 22 BDSG contains additional conditions and safeguards."
+        "tooltip": "Art. 9(1) GDPR provides that processing of special categories of personal data shall be prohibited: data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs or trade union membership, genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health, and data concerning sex life or sexual orientation. Art. 9(2)(a) GDPR exempts processing with explicit consent for one or more specified purposes. Section 22 BDSG permits processing in further cases and requires appropriate and specific measures to safeguard the interests of the data subject."
       },
       "pbdQ1": {
         "help": "Privacy by design means: data protection is considered from the very beginning, not bolted on afterwards. For example, when planning a new customer database, consider already in the planning phase: which data do we really need? How long do we keep it? How do we protect it? Who has access? This is more efficient and safer than laboriously retrofitting later.",
@@ -2411,26 +2411,26 @@
         "tooltip": "Art. 5(1)(c) GDPR establishes the principle of data minimisation: personal data must be adequate, relevant and limited to what is necessary for the purposes of processing. This principle is a core element of privacy by design and affects the design of forms, databases, processes and interfaces."
       },
       "pbdQ4": {
-        "help": "Certifications such as ISO 27701 (privacy information management system) or industry-specific codes of conduct can help you demonstrate compliance with privacy by design. This is particularly useful towards the supervisory authority, in tenders or towards customers. A certification does not protect against fines, but can serve as evidence of your efforts and reduce the fine risk.",
+        "help": "A certification mechanism approved under Art. 42 GDPR can help you demonstrate compliance with privacy by design, e.g. towards the supervisory authority or customers. Responsibility for complying with the GDPR remains with you. When deciding on a fine, adherence to approved certification mechanisms is taken into account (Art. 83(2)(j) GDPR).",
         "maturity": {
-          "level0": "No certifications or codes of conduct in the data protection area; no evidence of compliance efforts",
+          "level0": "No certification in the data protection area; no evidence of compliance efforts",
           "level1": "Interest in certification exists, but no concrete steps taken",
           "level2": "Individual measures follow recognised standards (e.g. ISO 27001/27701), but no formal certification",
-          "level3": "Formal data protection certification (e.g. ISO 27701) or participation in approved codes of conduct; regular re-certification; the certificate is actively used as compliance documentation"
+          "level3": "Certification under a mechanism approved pursuant to Art. 42 GDPR; regular re-certification; the certificate is actively used as compliance documentation"
         },
-        "title": "Do you use certifications or approved codes of conduct to demonstrate compliance with privacy by design?",
-        "tooltip": "Art. 25(3) GDPR provides that approved certification mechanisms pursuant to Art. 42 GDPR may be used as an element to demonstrate compliance with privacy by design and privacy by default requirements. Likewise, approved codes of conduct pursuant to Art. 40 GDPR may be taken into account in the assessment."
+        "title": "Do you use an approved certification mechanism to demonstrate compliance with privacy by design?",
+        "tooltip": "Art. 25(3) GDPR: an approved certification mechanism pursuant to Art. 42 GDPR may be used as an element by which to demonstrate compliance with the requirements of Art. 25(1) and (2). Under Art. 42(4) GDPR a certification does not reduce the responsibility of the controller for compliance with the Regulation."
       },
       "pbdQ5": {
-        "help": "Data you no longer need must be deleted — not only when someone asks, but automatically once the defined retention period expires. Example: automatically delete applicant data 6 months after rejection, cookie data after the defined period, inactive customer accounts after 3 years. Manual deletion is error-prone — build in automatic mechanisms.",
+        "help": "Data you no longer need must be erased — not only when someone asks, but once the retention period you have defined expires. Define a period for each type of data, e.g. for applicant data, cookie data and inactive customer accounts. Manual deletion is error-prone; automatic mechanisms help.",
         "maturity": {
           "level0": "No defined retention periods; data is kept indefinitely; no deletion mechanisms",
           "level1": "Retention periods are partly defined, but deletion happens only manually and irregularly",
           "level2": "Retention periods defined for the main data categories; individual automated deletion mechanisms exist, but not across the board",
           "level3": "Deletion concept for all data categories with defined periods; automated deletion mechanisms in all relevant systems; regular review of implementation and logging"
         },
-        "title": "Is personal data deleted automatically once the purpose or retention period has expired?",
-        "tooltip": "Art. 5(1)(e) GDPR establishes the principle of storage limitation: personal data may be stored only for as long as necessary for the purposes. Privacy by design requires that deletion mechanisms be built into the system architecture from the outset, not retrofitted."
+        "title": "Is personal data erased as soon as it is no longer necessary for the purpose?",
+        "tooltip": "Art. 5(1)(e) GDPR (storage limitation): personal data must be kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the data is processed. Under Art. 25(2) GDPR the obligation of data protection by default also applies to the period of storage."
       },
       "tomQ1": {
         "help": "Encryption means: data is transformed so that only authorised persons can read it. This covers e.g. email encryption, HTTPS on your website, encrypted hard drives and encrypted database connections. Pseudonymisation means: the direct personal reference is removed and replaced by a code. Both measures considerably reduce the risk in the event of data breaches.",
@@ -2459,7 +2459,7 @@
         "maturity": {
           "level0": "No backup or recovery strategy in place",
           "level1": "Backups are created but not tested; recovery time and procedure are unclear",
-          "level2": "Regular backups with occasional recovery tests; recovery time is around 24-48 hours",
+          "level2": "Regular backups with occasional recovery tests; recovery time is not defined",
           "level3": "Automated backups with regularly tested recovery within defined time targets; separate storage; documented contingency plan"
         },
         "title": "Can you rapidly restore the availability of personal data after a physical or technical incident?",
@@ -2474,7 +2474,7 @@
           "level3": "Regular audit cycle with internal and external reviews; penetration tests; documented results with a binding action plan and follow-up"
         },
         "title": "Do you regularly check whether your technical and organisational measures are effective?",
-        "tooltip": "Art. 32(1)(d) GDPR explicitly requires a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures. This includes internal audits, penetration tests, vulnerability analyses and the evaluation of security incidents."
+        "tooltip": "Art. 32(1)(d) GDPR names a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing. Examples of such processes are internal audits, penetration tests and vulnerability analyses."
       },
       "tomQ5": {
         "help": "The GDPR does not expect measures at any price, but proportionate measures. A small craft business that only stores customer addresses needs different measures than a hospital with patient data. When selecting, consider: what is technically feasible today (state of the art)? What does implementation cost? How sensitive is the data? How likely and severe would a data loss be? Document this weighing.",
@@ -2485,7 +2485,7 @@
           "level3": "Documented, risk-based selection of all protective measures considering the state of the art, costs, processing purpose and risk assessment; annual update"
         },
         "title": "Do you take into account the state of the art, costs and the nature of the processing when selecting security measures?",
-        "tooltip": "Art. 32(1) GDPR requires that the selection of protective measures take into account the state of the art, implementation costs, the nature, scope, context and purposes of processing, and the likelihood and severity of the risk. Art. 32(2) GDPR requires the assessment to consider in particular risks from destruction, loss, alteration or unauthorised access."
+        "tooltip": "Under Art. 32(1) GDPR the choice of measures takes into account the state of the art, the costs of implementation, the nature, scope, context and purposes of the processing and the likelihood and severity of the risk. Under Art. 32(2) GDPR, assessing the appropriate level of security takes account in particular of the risks from destruction, loss, alteration, unauthorised disclosure of, or access to personal data."
       },
       "vvQ1": {
         "help": "The record of processing activities is your company's central data protection document. It lists every activity in which personal data is processed — e.g. payroll, customer database, newsletter dispatch, applicant management. Certain details must be documented for each activity. The supervisory authority can request this record at any time.",
@@ -2507,10 +2507,10 @@
           "level3": "All processing operations with current, correct entries on purposes, categories of data subjects and data categories; a change process is established"
         },
         "title": "Are purposes, categories of data subjects and categories of data documented and up to date in the record?",
-        "tooltip": "Art. 30(1)(b)-(d) GDPR requires documentation of the purposes of processing, the categories of data subjects (e.g. customers, employees, applicants) and the categories of personal data (e.g. contact details, bank details, health data). These entries must reflect the actual processing operations."
+        "tooltip": "Art. 30(1)(b) and (c) GDPR require the record to contain the purposes of the processing and a description of the categories of data subjects (e.g. customers, employees, applicants) and of the categories of personal data (e.g. contact details, bank details, health data)."
       },
       "vvQ3": {
-        "help": "For every data processing operation you must define when the data will be deleted — e.g. applicant data 6 months after rejection, invoices and accounting vouchers after 8 years (German statutory retention under Section 147 AO, Section 257 HGB, since 2025). In addition, you describe how the data is protected — e.g. encryption, access restriction, pseudonymisation. These entries belong in your record of processing activities.",
+        "help": "For each processing activity you define when the data is erased — e.g. applicant data after a period you have set following the rejection, accounting vouchers after 8 years (retention period under Section 147(3) of the German Fiscal Code and Section 257(4) of the German Commercial Code). In addition, you describe in general terms how you protect the data: e.g. access controls, encryption, backups.",
         "maturity": {
           "level0": "Neither erasure deadlines nor protective measures are documented in the record",
           "level1": "Blanket reference to 'statutory periods'; no specific deadlines per processing operation; protective measures missing or only generic",
@@ -2518,7 +2518,7 @@
           "level3": "Specific erasure deadlines for each data category with legal basis; protective measures documented per processing operation and reviewed regularly"
         },
         "title": "Are erasure periods and a general description of the security measures documented in the record?",
-        "tooltip": "Art. 30(1)(f)-(g) GDPR requires stating the envisaged time limits for erasure of the different categories of data and a general description of the technical and organisational security measures pursuant to Art. 32(1) GDPR. ‘Where possible’ is not an exemption here but the supervisory authorities’ expectation."
+        "tooltip": "Art. 30(1)(f) and (g) GDPR require the record to contain the envisaged time limits for erasure of the different categories of data and a general description of the technical and organisational security measures referred to in Art. 32(1) GDPR. In the text of the Regulation both items are qualified by \"where possible\"."
       },
       "vvQ4": {
         "help": "If your company processes data for other companies — e.g. as an IT service provider, payroll office, hosting provider or marketing agency — you are a processor and must keep your own record. It lists which data you process for which clients. Even if you are mainly a controller, there may be areas in which you act as a processor.",
@@ -2532,15 +2532,15 @@
         "tooltip": "Art. 30(2) GDPR also obliges the processor to maintain a record. It contains: name and contact details of the processor and of each controller, categories of processing, transfers to third countries where applicable, and a general description of the protective measures. This is a separate record, independent of the controller’s record of processing activities."
       },
       "vvQ5": {
-        "help": "The supervisory authority can request your record of processing activities at any time — e.g. during an audit or after a complaint. You must then be able to present it promptly. This means: it must be up to date, not compiled only upon request. The exemption for small companies under 250 employees almost never applies in practice, because almost every company processes personal data regularly.",
+        "help": "The supervisory authority can request your record of processing activities — e.g. during an audit or after a complaint. You then make it available (Art. 30(4) GDPR). For that it should be up to date and not only compiled when the request arrives. The exemption for enterprises with fewer than 250 persons does not apply if the processing is not occasional (Art. 30(5) GDPR).",
         "maturity": {
           "level0": "No presentable record exists",
           "level1": "A record exists, but it is outdated or incomplete and cannot be presented at short notice",
           "level2": "The record is presentable, but is updated only when prompted and not maintained regularly",
           "level3": "The record is reviewed and updated at least quarterly; the supervisory authority can receive a current version at any time"
         },
-        "title": "Can your record of processing activities be presented to the supervisory authority at any time, and is it updated regularly?",
-        "tooltip": "Art. 30(4) GDPR requires that the record be made available to the supervisory authority on request. Art. 30(5) GDPR contains an exemption for organisations with fewer than 250 employees, which however only applies if the processing is not regular, does not involve special categories of data and poses no risk — in practice this exemption rarely applies."
+        "title": "Can you make your record of processing activities available to the supervisory authority on request, and is it kept up to date?",
+        "tooltip": "Art. 30(4) GDPR: the controller or the processor makes the record available to the supervisory authority on request. Art. 30(5) GDPR exempts enterprises employing fewer than 250 persons from the obligation to keep a record. The exemption does not apply if the processing is likely to result in a risk to the rights and freedoms of data subjects, is not occasional, or includes special categories of data under Art. 9(1) or data relating to criminal convictions and offences under Art. 10."
       }
     },
     "quickCheck": {

@@ -42,7 +42,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.dsfaQ2.tooltip',
     helpKey: 'dsgvo.questions.dsfaQ2.help',
     legalReference: {
-      euArticle: 'Art. 35 Abs. 3 DSGVO',
+      euArticle: 'Art. 35 Abs. 3-4 DSGVO',
       bsigParagraph: 'Art. 35-36 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
@@ -137,7 +137,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.vvQ2.tooltip',
     helpKey: 'dsgvo.questions.vvQ2.help',
     legalReference: {
-      euArticle: 'Art. 30 Abs. 1 lit. b-d DSGVO',
+      euArticle: 'Art. 30 Abs. 1 lit. b-c DSGVO',
       bsigParagraph: 'Art. 30 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
@@ -192,7 +192,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.vvQ5.tooltip',
     helpKey: 'dsgvo.questions.vvQ5.help',
     legalReference: {
-      euArticle: 'Art. 30 Abs. 5 DSGVO',
+      euArticle: 'Art. 30 Abs. 4-5 DSGVO',
       bsigParagraph: 'Art. 30 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
@@ -252,7 +252,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.ewQ3.help',
     legalReference: {
       euArticle: 'Art. 7 Abs. 3 DSGVO',
-      bsigParagraph: '§26 BDSG',
+      bsigParagraph: '§26 Abs. 2 BDSG',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.ewQ3.maturity.level0',
@@ -271,7 +271,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.ewQ4.help',
     legalReference: {
       euArticle: 'Art. 8 DSGVO',
-      bsigParagraph: '§26 BDSG',
+      bsigParagraph: 'Art. 8 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.ewQ4.maturity.level0',
@@ -311,7 +311,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.brQ1.tooltip',
     helpKey: 'dsgvo.questions.brQ1.help',
     legalReference: {
-      euArticle: 'Art. 15 DSGVO',
+      euArticle: 'Art. 15, Art. 12 Abs. 3 DSGVO',
       bsigParagraph: '§34 BDSG',
     },
     maturityDescriptions: {
@@ -329,7 +329,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.brQ2.tooltip',
     helpKey: 'dsgvo.questions.brQ2.help',
     legalReference: {
-      euArticle: 'Art. 16-17 DSGVO',
+      euArticle: 'Art. 16, 17, 19 DSGVO',
       bsigParagraph: '§35 BDSG',
     },
     maturityDescriptions: {
@@ -348,7 +348,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.brQ3.help',
     legalReference: {
       euArticle: 'Art. 20 DSGVO',
-      bsigParagraph: '§36 BDSG',
+      bsigParagraph: 'Art. 20 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.brQ3.maturity.level0',
@@ -521,7 +521,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dsbQ2.help',
     legalReference: {
       euArticle: 'Art. 38 Abs. 1-2 DSGVO',
-      bsigParagraph: '§38 Abs. 2 BDSG',
+      bsigParagraph: 'Art. 38 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dsbQ2.maturity.level0',
@@ -557,7 +557,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'dsgvo.questions.dsbQ4.help',
     legalReference: {
       euArticle: 'Art. 37 Abs. 7 DSGVO',
-      bsigParagraph: '§38 Abs. 1 BDSG',
+      bsigParagraph: 'Art. 37 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
       level0Key: 'dsgvo.questions.dsbQ4.maturity.level0',
@@ -574,7 +574,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.dsbQ5.tooltip',
     helpKey: 'dsgvo.questions.dsbQ5.help',
     legalReference: {
-      euArticle: 'Art. 38 Abs. 3 DSGVO',
+      euArticle: 'Art. 38 Abs. 3 und 6 DSGVO',
       bsigParagraph: '§38 Abs. 2 BDSG',
     },
     maturityDescriptions: {
@@ -654,7 +654,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.dtQ4.tooltip',
     helpKey: 'dsgvo.questions.dtQ4.help',
     legalReference: {
-      euArticle: 'Art. 46 Abs. 2 DSGVO',
+      euArticle: 'Art. 46 Abs. 1 DSGVO',
       bsigParagraph: 'Art. 44-49 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
@@ -732,7 +732,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.tomQ3.tooltip',
     helpKey: 'dsgvo.questions.tomQ3.help',
     legalReference: {
-      euArticle: 'Art. 32 Abs. 1 lit. c-d DSGVO',
+      euArticle: 'Art. 32 Abs. 1 lit. c DSGVO',
       bsigParagraph: 'Art. 32 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
@@ -768,7 +768,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.tomQ5.tooltip',
     helpKey: 'dsgvo.questions.tomQ5.help',
     legalReference: {
-      euArticle: 'Art. 32 Abs. 2 DSGVO',
+      euArticle: 'Art. 32 Abs. 1-2 DSGVO',
       bsigParagraph: 'Art. 32 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {
@@ -863,7 +863,7 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'dsgvo.questions.pbdQ5.tooltip',
     helpKey: 'dsgvo.questions.pbdQ5.help',
     legalReference: {
-      euArticle: 'Art. 5 Abs. 1 lit. e DSGVO',
+      euArticle: 'Art. 5 Abs. 1 lit. e, Art. 25 Abs. 2 DSGVO',
       bsigParagraph: 'Art. 25 DSGVO gilt unmittelbar',
     },
     maturityDescriptions: {

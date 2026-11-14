@@ -2016,7 +2016,7 @@
       },
       "avQ3": {
         "title": "Haben Sie einen Überblick über alle Unterauftragsverarbeiter Ihrer Auftragsverarbeiter und deren Genehmigungsverfahren?",
-        "tooltip": "Art. 28 Abs. 2 DSGVO verlangt, dass der Auftragsverarbeiter keinen weiteren Auftragsverarbeiter (Unterauftragsverarbeiter) ohne vorherige schriftliche Genehmigung des Verantwortlichen hinzuzieht. Bei allgemeiner schriftlicher Genehmigung muss der Auftragsverarbeiter den Verantwortlichen über Änderungen informieren und diesem die Möglichkeit zum Widerspruch geben.",
+        "tooltip": "Art. 28 Abs. 2 DSGVO: Der Auftragsverarbeiter nimmt keinen weiteren Auftragsverarbeiter ohne vorherige gesonderte oder allgemeine schriftliche Genehmigung des Verantwortlichen in Anspruch. Bei einer allgemeinen schriftlichen Genehmigung informiert er den Verantwortlichen über jede beabsichtigte Änderung in Bezug auf die Hinzuziehung oder Ersetzung anderer Auftragsverarbeiter, sodass der Verantwortliche Einspruch erheben kann.",
         "help": "Ihr Auftragsverarbeiter darf die Daten nicht einfach an weitere Dienstleister weitergeben, ohne Sie zu fragen. Beispiel: Ihr Cloud-Hosting-Anbieter nutzt ein Rechenzentrum eines anderen Unternehmens -- das ist ein Unterauftragsverarbeiter. Sie müssen entweder jeden einzeln genehmigen oder eine allgemeine Genehmigung erteilen mit Widerspruchsrecht bei Änderungen. Prüfen Sie die Unterauftragnehmer-Listen Ihrer Dienstleister.",
         "maturity": {
           "level0": "Kein Überblick über Unterauftragsverarbeiter; keine Genehmigungsverfahren etabliert",
@@ -2038,7 +2038,7 @@
       },
       "avQ5": {
         "title": "Ist sichergestellt, dass Personen mit Zugang zu personenbezogenen Daten diese nur auf Weisung verarbeiten?",
-        "tooltip": "Art. 29 DSGVO legt fest, dass der Auftragsverarbeiter und jede dem Verantwortlichen oder dem Auftragsverarbeiter unterstellte Person, die Zugang zu personenbezogenen Daten hat, diese Daten ausschließlich auf Weisung des Verantwortlichen verarbeiten darf -- es sei denn, es besteht eine unionsrechtliche oder mitgliedstaatliche Rechtspflicht. Dies betrifft auch eigene Mitarbeiter, die zur Vertraulichkeit verpflichtet werden müssen.",
+        "tooltip": "Art. 29 DSGVO: Der Auftragsverarbeiter und jede dem Verantwortlichen oder dem Auftragsverarbeiter unterstellte Person, die Zugang zu personenbezogenen Daten hat, dürfen diese Daten ausschließlich auf Weisung des Verantwortlichen verarbeiten, es sei denn, sie sind nach dem Unionsrecht oder dem Recht der Mitgliedstaaten zur Verarbeitung verpflichtet. Nach Art. 32 Abs. 4 DSGVO unternehmen Verantwortlicher und Auftragsverarbeiter Schritte, um das bei den ihnen unterstellten Personen sicherzustellen.",
         "help": "Mitarbeiter und Dienstleister dürfen personenbezogene Daten nur so verarbeiten, wie Sie es als Verantwortlicher angewiesen haben -- nicht für eigene Zwecke oder nach eigenem Gutdünken. Konkret bedeutet das: Alle Mitarbeiter mit Datenzugang müssen auf die Vertraulichkeit verpflichtet werden (Verpflichtungserklärung). Auftragsverarbeiter dürfen die Daten nur im Rahmen des AVV nutzen. Prüfen Sie, ob alle Mitarbeiter eine Vertraulichkeitserklärung unterschrieben haben.",
         "maturity": {
           "level0": "Keine Verpflichtung auf Vertraulichkeit oder Weisungsgebundenheit; Mitarbeiter und Dienstleister handeln ohne klare Vorgaben",
@@ -2049,7 +2049,7 @@
       },
       "brQ1": {
         "title": "Beantworten Sie Auskunftsersuchen betroffener Personen innerhalb eines Monats?",
-        "tooltip": "Art. 15 DSGVO gibt jeder betroffenen Person das Recht auf Auskunft über die sie betreffenden personenbezogenen Daten. Art. 12 Abs. 3 DSGVO setzt eine Frist von einem Monat für die Beantwortung. §34 BDSG enthält Ausnahmen von der Auskunftspflicht, z.B. wenn Daten nur aufgrund gesetzlicher Aufbewahrungsvorschriften gespeichert sind.",
+        "tooltip": "Art. 15 DSGVO gibt der betroffenen Person das Recht auf Auskunft über die sie betreffenden personenbezogenen Daten. Nach Art. 12 Abs. 3 DSGVO stellt der Verantwortliche die Informationen unverzüglich, in jedem Fall aber innerhalb eines Monats nach Eingang des Antrags zur Verfügung; die Frist kann um weitere zwei Monate verlängert werden, wenn dies unter Berücksichtigung der Komplexität und der Anzahl von Anträgen erforderlich ist. §34 BDSG enthält Ausnahmen, z.B. wenn Daten nur wegen gesetzlicher oder satzungsmäßiger Aufbewahrungsvorschriften gespeichert sind und die Auskunft einen unverhältnismäßigen Aufwand erfordern würde.",
         "help": "Jeder Mensch hat das Recht zu erfahren, ob und welche Daten Sie über ihn gespeichert haben. Wenn ein Kunde oder Mitarbeiter eine solche Anfrage stellt, müssen Sie innerhalb eines Monats antworten -- kostenlos und vollständig. Sie müssen angeben: Welche Daten, woher, an wen weitergegeben, wie lange gespeichert. Ohne einen festen Prozess dafür verpassen Sie die Frist und riskieren Beschwerden bei der Aufsichtsbehörde.",
         "maturity": {
           "level0": "Kein Prozess für Auskunftsersuchen; Anfragen werden ad-hoc oder gar nicht beantwortet",
@@ -2060,7 +2060,7 @@
       },
       "brQ2": {
         "title": "Können Sie Berichtigungs- und Löschungsanfragen betroffener Personen zuverlässig in allen relevanten Systemen umsetzen?",
-        "tooltip": "Art. 16 DSGVO gewährt das Recht auf Berichtigung unrichtiger Daten. Art. 17 DSGVO normiert das Recht auf Löschung ('Recht auf Vergessenwerden'). Die Umsetzung muss in allen Systemen erfolgen, in denen die Daten gespeichert sind, einschließlich Backups und bei Empfängern (Art. 17 Abs. 2 DSGVO). §35 BDSG enthält Ausnahmen von der Löschpflicht.",
+        "tooltip": "Art. 16 DSGVO gewährt das Recht auf Berichtigung unrichtiger Daten, Art. 17 DSGVO das Recht auf Löschung („Recht auf Vergessenwerden“). Nach Art. 19 DSGVO teilt der Verantwortliche jede Berichtigung oder Löschung allen Empfängern mit, denen die Daten offengelegt wurden, es sei denn, dies erweist sich als unmöglich oder ist mit einem unverhältnismäßigen Aufwand verbunden. Hat er die Daten öffentlich gemacht, trifft er nach Art. 17 Abs. 2 DSGVO angemessene Maßnahmen, um andere Verantwortliche über das Löschverlangen zu informieren. §35 BDSG enthält Ausnahmen von der Löschpflicht.",
         "help": "Wenn jemand verlangt, dass Sie seine Daten berichtigen oder löschen, müssen Sie das in ALLEN Systemen tun -- nicht nur im CRM, sondern auch in Excel-Listen, E-Mail-Archiven, Backup-Systemen und bei Dienstleistern, an die Sie die Daten weitergegeben haben. Das erfordert, dass Sie wissen, wo überall personenbezogene Daten gespeichert sind. Ausnahmen gelten z.B. für gesetzliche Aufbewahrungspflichten.",
         "maturity": {
           "level0": "Keine Fähigkeit, Daten systemübergreifend zu berichtigen oder zu löschen",
@@ -2071,7 +2071,7 @@
       },
       "brQ3": {
         "title": "Können Sie betroffenen Personen ihre Daten in einem maschinenlesbaren Format bereitstellen (Datenübertragbarkeit)?",
-        "tooltip": "Art. 20 DSGVO gewährt betroffenen Personen das Recht, ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und an einen anderen Verantwortlichen zu übermitteln. Dies gilt nur für Daten, die auf Einwilligung oder Vertragserfüllung basieren und automatisiert verarbeitet werden. §36 BDSG schränkt das Recht bei öffentlichen Stellen ein.",
+        "tooltip": "Art. 20 Abs. 1 DSGVO gibt der betroffenen Person das Recht, die Daten, die sie einem Verantwortlichen bereitgestellt hat, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und einem anderen Verantwortlichen zu übermitteln. Das Recht besteht, sofern die Verarbeitung auf einer Einwilligung oder auf einem Vertrag beruht und mithilfe automatisierter Verfahren erfolgt.",
         "help": "Das Recht auf Datenübertragbarkeit bedeutet: Wenn ein Kunde zu einem Wettbewerber wechselt, kann er verlangen, dass Sie ihm seine Daten in einem gängigen Format (z.B. CSV, JSON, XML) aushändigen, damit er sie beim neuen Anbieter einlesen kann. Das betrifft z.B. Bestellhistorie, Profilangaben oder Nutzungsdaten. Sie müssen technisch in der Lage sein, diese Daten zu exportieren.",
         "maturity": {
           "level0": "Kein Datenexport in maschinenlesbarem Format möglich",
@@ -2082,7 +2082,7 @@
       },
       "brQ4": {
         "title": "Haben Sie einen Prozess für den Umgang mit Widersprüchen gegen die Datenverarbeitung, insbesondere gegen Direktwerbung?",
-        "tooltip": "Art. 21 DSGVO gewährt betroffenen Personen ein Widerspruchsrecht gegen Verarbeitungen auf Basis von Art. 6 Abs. 1 lit. e oder f DSGVO. Bei Widerspruch gegen Direktwerbung (Art. 21 Abs. 2 DSGVO) müssen die Daten ohne weitere Prüfung sofort aus der Werbenutzung genommen werden. Bei sonstigem Widerspruch ist eine Interessenabwägung erforderlich.",
+        "tooltip": "Art. 21 Abs. 1 DSGVO gewährt ein Widerspruchsrecht gegen Verarbeitungen auf Grundlage von Art. 6 Abs. 1 lit. e oder f DSGVO. Der Verantwortliche verarbeitet die Daten dann nicht mehr, es sei denn, er kann zwingende schutzwürdige Gründe nachweisen, die die Interessen, Rechte und Freiheiten der betroffenen Person überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen. Bei Widerspruch gegen Direktwerbung werden die Daten nicht mehr für diese Zwecke verarbeitet (Art. 21 Abs. 2 und 3 DSGVO). §36 BDSG schränkt das Widerspruchsrecht gegenüber öffentlichen Stellen ein.",
         "help": "Jede Person kann der Verarbeitung ihrer Daten widersprechen. Besonders streng ist das bei Direktwerbung: Widerspricht jemand, müssen Sie ihn sofort aus allen Werbelisten entfernen -- ohne Wenn und Aber, ohne Prüfung. Bei anderem Widerspruch (z.B. gegen Profiling für Bonitätsprüfen) müssen Sie prüfen, ob Ihre Gründe die Interessen des Betroffenen überwiegen. Sie brauchen einen klaren Prozess, wer den Widerspruch bearbeitet und wie.",
         "maturity": {
           "level0": "Kein Prozess für Widersprüche; Direktwerbung wird trotz Widerspruch fortgesetzt",
@@ -2093,7 +2093,7 @@
       },
       "brQ5": {
         "title": "Erfüllen automatisierte Einzelentscheidungen bei Ihnen die Anforderungen des Art. 22 DSGVO?",
-        "tooltip": "Art. 22 DSGVO gibt betroffenen Personen das Recht, nicht einer ausschließlich auf automatisierter Verarbeitung beruhenden Entscheidung unterworfen zu werden, die ihnen gegenüber rechtliche Wirkung entfaltet oder sie erheblich beeinträchtigt. Ausnahmen bestehen bei Vertragserfüllung, gesetzlicher Erlaubnis oder ausdrücklicher Einwilligung. §37 BDSG enthält ergänzende nationale Regelungen und sieht Schutzrechte vor.",
+        "tooltip": "Art. 22 Abs. 1 DSGVO gibt der betroffenen Person das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung -- einschließlich Profiling -- beruhenden Entscheidung unterworfen zu werden, die ihr gegenüber rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt. Das gilt nach Abs. 2 nicht, wenn die Entscheidung für Abschluss oder Erfüllung eines Vertrags erforderlich ist, aufgrund von Rechtsvorschriften zulässig ist oder mit ausdrücklicher Einwilligung erfolgt. §37 BDSG enthält eine weitere Ausnahme für Entscheidungen im Rahmen der Leistungserbringung nach einem Versicherungsvertrag.",
         "help": "Automatisierte Einzelentscheidungen betreffen z.B. die automatische Ablehnung eines Kreditantrags durch einen Algorithmus, automatisches Scoring bei Bewerbungen oder automatisierte Kündigung von Abonnements. Wenn eine Software solche Entscheidungen ohne menschliche Beteiligung trifft und diese erhebliche Auswirkungen auf eine Person hat, muss die Person dagegen vorgehen können und hat das Recht auf menschliche Überprüfung.",
         "maturity": {
           "level0": "Keine Prüfung, ob automatisierte Einzelentscheidungen getroffen werden; kein Bewusstsein für Art. 22 DSGVO",
@@ -2104,8 +2104,8 @@
       },
       "dsbQ1": {
         "title": "Haben Sie geprüft, ob Ihr Unternehmen einen Datenschutzbeauftragten (DSB) bestellen muss, und dies ggf. umgesetzt?",
-        "tooltip": "Art. 37 Abs. 1 DSGVO verpflichtet zur Bestellung eines DSB bei: (a) Behörden, (b) umfangreicher regelmäßiger Überwachung, (c) umfangreicher Verarbeitung besonderer Datenkategorien. §38 Abs. 1 BDSG erweitert dies erheblich: In Deutschland ist ein DSB zu bestellen, wenn in der Regel mindestens 20 Personen ständig mit automatisierter Verarbeitung personenbezogener Daten beschäftigt sind. Unabhängig von der Mitarbeiterzahl besteht die Pflicht bei DSFA-pflichtigen Verarbeitungen oder geschäftsmäßiger Verarbeitung zum Zweck der Übermittlung/Marktforschung.",
-        "help": "In Deutschland muss fast jedes Unternehmen ab 20 Mitarbeitern, die mit personenbezogenen Daten arbeiten (also z.B. E-Mails schreiben, Kundendaten pflegen, Personalakten führen), einen Datenschutzbeauftragten bestellen. Auch bei weniger Mitarbeitern kann die Pflicht bestehen, z.B. wenn Sie eine Datenschutz-Folgenabschätzung durchführen müssen. Der DSB kann intern oder extern sein.",
+        "tooltip": "Nach Art. 37 Abs. 1 DSGVO ist ein Datenschutzbeauftragter zu benennen, wenn (a) eine Behörde oder öffentliche Stelle verarbeitet, (b) die Kerntätigkeit eine umfangreiche regelmäßige und systematische Überwachung von betroffenen Personen erforderlich macht oder (c) die Kerntätigkeit in der umfangreichen Verarbeitung besonderer Kategorien von Daten oder von Daten über strafrechtliche Verurteilungen besteht. Ergänzend verlangt §38 Abs. 1 BDSG die Benennung, soweit in der Regel mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigt sind. Unabhängig von der Personenzahl gilt die Pflicht bei Verarbeitungen, die einer DSFA unterliegen, und bei geschäftsmäßiger Verarbeitung zum Zweck der Übermittlung, der anonymisierten Übermittlung oder für Zwecke der Markt- oder Meinungsforschung.",
+        "help": "In Deutschland muss ein Unternehmen einen Datenschutzbeauftragten benennen, wenn es in der Regel mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten beschäftigt (§38 Abs. 1 BDSG). Auch bei weniger Personen kann die Pflicht bestehen, z.B. wenn Verarbeitungen einer Datenschutz-Folgenabschätzung unterliegen. Der DSB kann Beschäftigter sein oder seine Aufgaben auf Grundlage eines Dienstleistungsvertrags erfüllen (Art. 37 Abs. 6 DSGVO).",
         "maturity": {
           "level0": "Keine Prüfung der Bestellpflicht durchgeführt; kein DSB bestellt",
           "level1": "Prüfung wurde informell durchgeführt, aber nicht dokumentiert; Ergebnis unklar",
@@ -2115,7 +2115,7 @@
       },
       "dsbQ2": {
         "title": "Wird Ihr Datenschutzbeauftragter ordnungsgemäß und frühzeitig in alle datenschutzrelevanten Fragen einbezogen?",
-        "tooltip": "Art. 38 Abs. 1 DSGVO verpflichtet den Verantwortlichen, sicherzustellen, dass der DSB ordnungsgemäß und frühzeitig in alle mit dem Schutz personenbezogener Daten zusammenhängenden Fragen einbunden wird. Art. 38 Abs. 2 DSGVO verlangt, dass der DSB die zur Erfüllung seiner Aufgaben erforderlichen Ressourcen erhält. §38 Abs. 2 BDSG spezifiziert die Freistellung bei mehr als 20 ständig beschäftigten Personen.",
+        "tooltip": "Art. 38 Abs. 1 DSGVO: Verantwortlicher und Auftragsverarbeiter stellen sicher, dass der Datenschutzbeauftragte ordnungsgemäß und frühzeitig in alle mit dem Schutz personenbezogener Daten zusammenhängenden Fragen eingebunden wird. Nach Art. 38 Abs. 2 DSGVO unterstützen sie ihn, indem sie die erforderlichen Ressourcen, den Zugang zu personenbezogenen Daten und Verarbeitungsvorgängen sowie die zur Erhaltung seines Fachwissens erforderlichen Ressourcen zur Verfügung stellen.",
         "help": "Der DSB darf nicht nur auf dem Papier existieren. Er muss einbezogen werden, BEVOR neue Systeme eingeführt, Verträge mit Dienstleistern geschlossen oder neue Geschäftsfelder mit Datenverarbeitung gestartet werden -- nicht erst hinterher. Außerdem braucht er genügend Zeit und Ressourcen für seine Aufgabe. Prüfen Sie: Wird Ihr DSB zu Projektmeetings eingeladen? Hat er Zugang zu relevanten Informationen?",
         "maturity": {
           "level0": "DSB wird nicht oder nur pro forma einbezogen; keine Ressourcen für Datenschutz bereitgestellt",
@@ -2126,7 +2126,7 @@
       },
       "dsbQ3": {
         "title": "Erfüllt Ihr Datenschutzbeauftragter seine Aufgaben (Beratung, Überwachung, Zusammenarbeit mit der Aufsicht)?",
-        "tooltip": "Art. 39 Abs. 1 DSGVO definiert die Mindestaufgaben des DSB: (a) Unterrichtung und Beratung des Verantwortlichen und der Beschäftigten, (b) Überwachung der Einhaltung der DSGVO und des BDSG einschließlich Sensibilisierung und Schulung, (c) Beratung bei der DSFA und Überwachung ihrer Durchführung, (d) Zusammenarbeit mit der Aufsichtsbehörde, (e) Anlaufstelle für die Aufsichtsbehörde.",
+        "tooltip": "Nach Art. 39 Abs. 1 DSGVO obliegen dem Datenschutzbeauftragten zumindest: (a) Unterrichtung und Beratung des Verantwortlichen und der Beschäftigten, die Verarbeitungen durchführen, (b) Überwachung der Einhaltung der DSGVO und anderer Datenschutzvorschriften der Union bzw. der Mitgliedstaaten einschließlich Sensibilisierung und Schulung, (c) Beratung auf Anfrage im Zusammenhang mit der DSFA und Überwachung ihrer Durchführung, (d) Zusammenarbeit mit der Aufsichtsbehörde, (e) Tätigkeit als Anlaufstelle für die Aufsichtsbehörde.",
         "help": "Ihr DSB hat klar definierte Aufgaben: Er beraat Sie und Ihre Mitarbeiter zum Datenschutz, überwacht die Einhaltung der Regeln, schult Mitarbeiter, unterstützt bei Datenschutz-Folgenabschätzungen und ist Ansprechpartner für die Aufsichtsbehörde. Prüfen Sie: Führt Ihr DSB regelmäßig Schulungen durch? Erstellt er Berichte? Prüft er Ihre Datenschutz-Dokumentation?",
         "maturity": {
           "level0": "DSB-Aufgaben werden nicht wahrgenommen; DSB ist nur formal bestellt",
@@ -2137,8 +2137,8 @@
       },
       "dsbQ4": {
         "title": "Haben Sie Ihren Datenschutzbeauftragten der Aufsichtsbehörde gemeldet und seine Kontaktdaten veröffentlicht?",
-        "tooltip": "Art. 37 Abs. 7 DSGVO verlangt, dass der Verantwortliche die Kontaktdaten des DSB der Aufsichtsbehörde mitteilt und veröffentlicht. Die Veröffentlichung erfolgt typischerweise auf der Website (Datenschutzerklärung) und im Impressum. Die Meldung an die Behörde erfolgt online über das Portal der zuständigen Landesbehörde.",
-        "help": "Zwei Pflichten werden oft übersehen: Erstens müssen Sie Ihren DSB bei der zuständigen Datenschutzbehörde melden -- in der Regel online über deren Website. Zweitens müssen die Kontaktdaten des DSB öffentlich zugänglich sein, typischerweise in Ihrer Datenschutzerklärung auf der Website. Beides ist keine Kür, sondern Pflicht. Fehlt die Meldung, kann bereits das einen Verstoß darstellen.",
+        "tooltip": "Art. 37 Abs. 7 DSGVO: Der Verantwortliche oder der Auftragsverarbeiter veröffentlicht die Kontaktdaten des Datenschutzbeauftragten und teilt diese Daten der Aufsichtsbehörde mit.",
+        "help": "Zwei Pflichten: Erstens teilen Sie die Kontaktdaten Ihres DSB der zuständigen Aufsichtsbehörde mit. Zweitens veröffentlichen Sie die Kontaktdaten, z.B. in der Datenschutzerklärung auf Ihrer Website. Beides ist Pflicht (Art. 37 Abs. 7 DSGVO).",
         "maturity": {
           "level0": "DSB ist weder bei der Aufsichtsbehörde gemeldet noch sind Kontaktdaten veröffentlicht",
           "level1": "Kontaktdaten sind auf der Website veröffentlicht, aber Meldung an die Aufsichtsbehörde fehlt oder umgekehrt",
@@ -2147,8 +2147,8 @@
         }
       },
       "dsbQ5": {
-        "title": "Ist die Unabhängigkeit Ihres Datenschutzbeauftragten sichergestellt (kein Interessenkonflikt, keine Benachteiligung)?",
-        "tooltip": "Art. 38 Abs. 3 DSGVO schützt den DSB: Er darf wegen der Erfüllung seiner Aufgaben nicht abberufen oder benachteiligt werden. Er berichtet unmittelbar der höchsten Managementebene. Es dürfen keine Interessenkonflikte bestehen (Art. 38 Abs. 6 DSGVO). Typische Interessenkonflikte: DSB ist gleichzeitig IT-Leiter, Geschäftsführer, HR-Leiter oder Marketingleiter. §38 Abs. 2 BDSG spezifiziert den Abberufungsschutz.",
+        "title": "Ist die Unabhängigkeit Ihres Datenschutzbeauftragten sichergestellt (keine Weisungen, kein Interessenkonflikt)?",
+        "tooltip": "Art. 38 Abs. 3 DSGVO: Der Datenschutzbeauftragte erhält bei der Erfüllung seiner Aufgaben keine Anweisungen, darf wegen der Erfüllung seiner Aufgaben nicht abberufen oder benachteiligt werden und berichtet unmittelbar der höchsten Managementebene. Nach Art. 38 Abs. 6 DSGVO dürfen andere Aufgaben und Pflichten des Datenschutzbeauftragten nicht zu einem Interessenkonflikt führen. Ist die Benennung verpflichtend, ist die Abberufung nach §38 Abs. 2 in Verbindung mit §6 Abs. 4 BDSG nur in entsprechender Anwendung des §626 BGB zulässig.",
         "help": "Ihr DSB muss unabhängig arbeiten können. Er darf keine Weisungen erhalten, wie er seine Datenschutzaufgaben ausführt, und er darf wegen seiner Tätigkeit nicht benachteiligt werden (z.B. schlechtere Bewertung, Kündigung). Außerdem darf er keine Position haben, die zu Interessenkonflikten führt -- z.B. kann der IT-Leiter nicht gleichzeitig DSB sein, weil er dann seine eigene Arbeit kontrollieren müsste.",
         "maturity": {
           "level0": "Unabhängigkeit nicht gewährleistet; DSB hat eine Position mit offensichtlichem Interessenkonflikt (z.B. IT-Leiter, Geschäftsführung)",
@@ -2170,8 +2170,8 @@
       },
       "dsfaQ2": {
         "title": "Haben Sie anhand der Muss-Liste der Aufsichtsbehörde geprüft, welche Verarbeitungen eine DSFA brauchen?",
-        "tooltip": "Art. 35 Abs. 3 DSGVO benennt Regelbeispiele für DSFA-pflichtige Verarbeitungen (Profiling, umfangreiche Verarbeitung besonderer Kategorien, systematische Überwachung). Zusätzlich veröffentlichen die Aufsichtsbehörden Listen der DSFA-pflichtigen Verarbeitungen (Muss-Listen) gemäß Art. 35 Abs. 4 DSGVO. In Deutschland ist die Liste der DSK (Datenschutzkonferenz) maßgeblich.",
-        "help": "Die Aufsichtsbehörden haben Listen veröffentlicht, welche Verarbeitungen immer eine DSFA erfordern -- z.B. Scoring, Video-Überwachung öffentlicher Bereiche oder umfangreiche Verarbeitung von Gesundheitsdaten. Prüfen Sie die Liste Ihrer Landesbehörde und gleichen Sie ab, ob Ihre Verarbeitungen darauf stehen. Wenn ja, müssen Sie eine DSFA durchführen -- unabhängig von Ihrer eigenen Risikoeinschätzung.",
+        "tooltip": "Art. 35 Abs. 3 DSGVO nennt drei Fälle, in denen eine DSFA insbesondere erforderlich ist: die systematische und umfassende Bewertung persönlicher Aspekte auf Grundlage automatisierter Verarbeitung einschließlich Profiling, die umfangreiche Verarbeitung besonderer Kategorien von Daten und die systematische umfangreiche Überwachung öffentlich zugänglicher Bereiche. Nach Art. 35 Abs. 4 DSGVO erstellt und veröffentlicht die Aufsichtsbehörde zusätzlich eine Liste der Verarbeitungsvorgänge, für die eine DSFA durchzuführen ist (Muss-Liste).",
+        "help": "Die Aufsichtsbehörde veröffentlicht eine Liste der Verarbeitungen, für die eine DSFA durchzuführen ist. Prüfen Sie die Liste Ihrer zuständigen Behörde und gleichen Sie ab, ob Ihre Verarbeitungen darauf stehen. Wenn ja, ist eine DSFA durchzuführen.",
         "maturity": {
           "level0": "Die Muss-Liste der Aufsichtsbehörde ist nicht bekannt; kein Abgleich mit eigenen Verarbeitungen erfolgt",
           "level1": "Die Muss-Liste ist bekannt, aber ein systematischer Abgleich mit den eigenen Verarbeitungstätigkeiten hat nicht stattgefunden",
@@ -2181,19 +2181,19 @@
       },
       "dsfaQ3": {
         "title": "Enthält Ihre DSFA die Mindestinhalte (Beschreibung, Notwendigkeit, Risikobewertung, Abhilfemaßnahmen)?",
-        "tooltip": "Art. 35 Abs. 7 DSGVO schreibt vier Mindestbestandteile einer DSFA vor: (a) systematische Beschreibung der Verarbeitungsvorgänge und Zwecke, (b) Bewertung der Notwendigkeit und Verhältnismäßigkeit, (c) Bewertung der Risiken für Betroffene, (d) geplante Abmilderungsmaßnahmen. Ohne diese Elemente ist die DSFA unvollständig.",
+        "tooltip": "Nach Art. 35 Abs. 7 DSGVO enthält die Folgenabschätzung zumindest: (a) eine systematische Beschreibung der geplanten Verarbeitungsvorgänge und der Zwecke, (b) eine Bewertung der Notwendigkeit und Verhältnismäßigkeit, (c) eine Bewertung der Risiken für die Rechte und Freiheiten der betroffenen Personen, (d) die zur Bewältigung der Risiken geplanten Abhilfemaßnahmen.",
         "help": "Eine DSFA ist mehr als nur 'Wir haben darüber nachgedacht.' Sie muss vier Dinge enthalten: 1) Was genau wird wie verarbeitet und warum? 2) Ist die Verarbeitung wirklich notwendig oder geht es auch mit weniger Daten? 3) Welche konkreten Risiken bestehen für die Betroffenen (z.B. Identitätsdiebstahl, Diskriminierung)? 4) Welche konkreten Schutzmaßnahmen setzen Sie dagegen ein? Nur wenn alle vier Punkte dokumentiert sind, erfüllt die DSFA die gesetzlichen Anforderungen.",
         "maturity": {
           "level0": "Keine strukturierte DSFA-Dokumentation vorhanden",
           "level1": "DSFA-Dokumentation vorhanden, aber wesentliche Mindestinhalte fehlen (z.B. keine Risikobewertung oder keine Maßnahmen)",
           "level2": "DSFA enthält alle vier Mindestbestandteile, jedoch in unterschiedlicher Tiefe und Qualität",
-          "level3": "Vollständige DSFA mit allen Mindestinhalten nach Art. 35 Abs. 7 DSGVO, einschließlich nachvollziehbarer Risikobewertung und konkreter Abmilderungsmaßnahmen"
+          "level3": "Vollständige DSFA mit allen Mindestinhalten nach Art. 35 Abs. 7 DSGVO, einschließlich nachvollziehbarer Risikobewertung und konkreter Abhilfemaßnahmen"
         }
       },
       "dsfaQ4": {
-        "title": "Ist geregelt, wann und wie Sie die Aufsichtsbehörde konsultieren, wenn eine DSFA ein hohes Restrisiko ergibt?",
-        "tooltip": "Art. 36 Abs. 1 DSGVO verpflichtet den Verantwortlichen, die Aufsichtsbehörde vor der Verarbeitung zu konsultieren, wenn die DSFA ergibt, dass die Verarbeitung trotz vorgesehener Schutzmaßnahmen ein hohes Risiko zur Folge hätte. Die Behörde hat dann bis zu 8 Wochen Zeit für eine Stellungnahme (Art. 36 Abs. 2 DSGVO).",
-        "help": "Wenn Ihre DSFA ergibt, dass trotz aller geplanten Schutzmaßnahmen ein hohes Risiko für die Betroffenen bleibt, dürfen Sie die Verarbeitung nicht einfach starten. Sie müssen zuerst die zuständige Datenschutzbehörde fragen. Diese prüft dann Ihren Fall und kann Empfehlungen oder Auflagen außprechen. Haben Sie einen Prozess, wer in Ihrem Unternehmen diese Konsultation anstossen würde und wie der Ablauf ist?",
+        "title": "Ist geregelt, wann und wie Sie vor der Verarbeitung die Aufsichtsbehörde konsultieren, wenn eine DSFA ein hohes Risiko ergibt?",
+        "tooltip": "Art. 36 Abs. 1 DSGVO: Der Verantwortliche konsultiert vor der Verarbeitung die Aufsichtsbehörde, wenn aus einer DSFA hervorgeht, dass die Verarbeitung ein hohes Risiko zur Folge hätte, sofern der Verantwortliche keine Maßnahmen zur Eindämmung des Risikos trifft. Nach Art. 36 Abs. 2 DSGVO unterbreitet die Aufsichtsbehörde innerhalb von bis zu acht Wochen schriftliche Empfehlungen; die Frist kann um sechs Wochen verlängert werden.",
+        "help": "Wenn aus Ihrer DSFA hervorgeht, dass die Verarbeitung ein hohes Risiko zur Folge hätte, sofern Sie keine Maßnahmen zur Eindämmung treffen, dürfen Sie die Verarbeitung nicht einfach starten. Sie müssen zuerst die zuständige Aufsichtsbehörde konsultieren. Diese prüft Ihren Fall und kann schriftliche Empfehlungen aussprechen. Haben Sie festgelegt, wer in Ihrem Unternehmen diese Konsultation anstoßen würde und wie der Ablauf ist?",
         "maturity": {
           "level0": "Keine Kenntnis der Konsultationspflicht bei hohem Restrisiko",
           "level1": "Konsultationspflicht ist bekannt, aber kein definierter Prozess zur Auslösung vorhanden",
@@ -2202,9 +2202,9 @@
         }
       },
       "dsfaQ5": {
-        "title": "Überprüfen Sie bestehende DSFAs regelmäßig, insbesondere wenn sich das Risiko der Verarbeitung ändert?",
-        "tooltip": "Art. 35 Abs. 11 DSGVO verlangt, dass der Verantwortliche eine bereits durchgeführte DSFA überprüfen muss, wenn sich das mit der Verarbeitung verbundene Risiko ändert. Dies gilt z.B. bei Einführung neuer Technologien, Änderung des Verarbeitungszwecks oder neuen Bedrohungsszenarien.",
-        "help": "Eine DSFA ist kein einmaliges Dokument, das Sie abheften und vergessen. Wenn sich etwas ändert -- z.B. Sie fügen eine KI-Funktion hinzu, nutzen einen neuen Cloud-Anbieter oder die Bedrohungslage ändert sich -- müssen Sie die DSFA erneut prüfen und ggf. aktualisieren. Planen Sie regelmäßige Reviews ein, z.B. jährlich oder bei wesentlichen Änderungen.",
+        "title": "Überprüfen Sie, ob die Verarbeitung gemäß der DSFA durchgeführt wird, zumindest wenn sich das Risiko ändert?",
+        "tooltip": "Art. 35 Abs. 11 DSGVO: Erforderlichenfalls führt der Verantwortliche eine Überprüfung durch, um zu bewerten, ob die Verarbeitung gemäß der Datenschutz-Folgenabschätzung durchgeführt wird; dies gilt zumindest, wenn hinsichtlich des mit den Verarbeitungsvorgängen verbundenen Risikos Änderungen eingetreten sind.",
+        "help": "Eine DSFA ist kein einmaliges Dokument, das Sie abheften und vergessen. Wenn sich etwas ändert -- z.B. Sie fügen eine KI-Funktion hinzu, nutzen einen neuen Cloud-Anbieter oder die Bedrohungslage ändert sich -- müssen Sie überprüfen, ob die Verarbeitung noch der DSFA entspricht, und die DSFA ggf. aktualisieren. Planen Sie regelmäßige Reviews ein, z.B. jährlich oder bei wesentlichen Änderungen.",
         "maturity": {
           "level0": "Bestehende DSFAs werden nach Erstellung nicht mehr angefasst",
           "level1": "Anlassbezogene Überprüfung bei offensichtlichen Änderungen, aber kein fester Rhythmus",
@@ -2214,8 +2214,8 @@
       },
       "dtQ1": {
         "title": "Haben Sie einen Überblick darüber, ob und an welche Drittländer Sie personenbezogene Daten übermitteln?",
-        "tooltip": "Art. 44 DSGVO legt fest, dass jede Übermittlung personenbezogener Daten an ein Drittland nur zulässig ist, wenn die Bedingungen der Art. 44-49 DSGVO eingehalten werden. Drittländer sind alle Länder außerhalb des EWR (EU + Island, Liechtenstein, Norwegen).",
-        "help": "Drittlandtransfer bedeutet: Daten verlassen den EWR (EU plus Island, Liechtenstein, Norwegen). Das passiert öfter als Sie denken -- z.B. wenn Sie US-Cloud-Dienste nutzen (Microsoft 365, Google Workspace, AWS), US-Tools einsetzen (Mailchimp, Salesforce, Zoom) oder Dienstleister in Indien oder der Ukraine beauftragen. Erstellen Sie eine Liste aller Dienste und prüfen Sie, wo die Daten tatsächlich verarbeitet werden.",
+        "tooltip": "Art. 44 DSGVO: Jede Übermittlung personenbezogener Daten an ein Drittland oder eine internationale Organisation ist nur zulässig, wenn die Bedingungen des Kapitels V (Art. 44-50 DSGVO) und die sonstigen Bestimmungen der Verordnung eingehalten werden; das gilt auch für die Weiterübermittlung. Die DSGVO ist durch den Beschluss Nr. 154/2018 des Gemeinsamen EWR-Ausschusses in das EWR-Abkommen aufgenommen.",
+        "help": "Drittlandtransfer bedeutet: Daten verlassen die EU bzw. den Europäischen Wirtschaftsraum (EWR). Das passiert öfter als Sie denken -- z.B. wenn Sie US-Cloud-Dienste nutzen (Microsoft 365, Google Workspace, AWS), US-Tools einsetzen (Mailchimp, Salesforce, Zoom) oder Dienstleister in Indien oder der Ukraine beauftragen. Erstellen Sie eine Liste aller Dienste und prüfen Sie, wo die Daten tatsächlich verarbeitet werden.",
         "maturity": {
           "level0": "Kein Überblick über Drittlandtransfers; es wurde nicht geprüft, ob Daten den EWR verlassen",
           "level1": "Einzelne offensichtliche Drittlandtransfers sind bekannt (z.B. US-Cloud), aber keine systematische Erhebung",
@@ -2225,7 +2225,7 @@
       },
       "dtQ2": {
         "title": "Setzen Sie für Drittlandtransfers geeignete Garantien ein, insbesondere EU-Standardvertragsklauseln (SVK)?",
-        "tooltip": "Art. 46 Abs. 2 lit. c DSGVO erlaubt Drittlandtransfers auf Grundlage von Standardvertragsklauseln (Standard Contractual Clauses, SCC), die von der EU-Kommission erlassen wurden. Seit dem 27.12.2022 dürfen nur noch die neuen SVK der Kommission (Durchführungsbeschluss 2021/914) verwendet werden. Zusätzliche Maßnahmen können nach dem Schrems-II-Urteil des EuGH erforderlich sein.",
+        "tooltip": "Art. 46 Abs. 2 lit. c DSGVO nennt als geeignete Garantie Standarddatenschutzklauseln, die von der Kommission erlassen werden. Die Kommission hat sie mit dem Durchführungsbeschluss (EU) 2021/914 als „Standardvertragsklauseln“ erlassen. Verträge auf Grundlage der früheren Klauseln (Entscheidung 2001/497/EG, Beschluss 2010/87/EU) galten nach Art. 4 Abs. 4 dieses Beschlusses nur bis zum 27. Dezember 2022 als geeignete Garantie. Der Beschluss verweist auf das Urteil des EuGH vom 16. Juli 2020 in der Rechtssache C-311/18 („Schrems II“).",
         "help": "Wenn Sie Daten in ein Land ohne Angemessenheitsbeschluss übermitteln (z.B. Indien oder in die USA ohne Privacy-Framework-Zertifizierung), brauchen Sie sogenannte Standardvertragsklauseln. Das sind EU-vorgegebene Vertragstexte, die Sie mit dem Datenempfänger abschließen. Seit Ende 2022 müssen Sie die neuen SVK der EU verwenden. Alte Klauseln sind nicht mehr gültig.",
         "maturity": {
           "level0": "Keine geeigneten Garantien für Drittlandtransfers vorhanden; Daten werden ohne Rechtsgrundlage übermittelt",
@@ -2236,7 +2236,7 @@
       },
       "dtQ3": {
         "title": "Prüfen Sie bei Drittlandtransfers, ob für das Empfängerland ein Angemessenheitsbeschluss der EU-Kommission vorliegt?",
-        "tooltip": "Art. 45 DSGVO erlaubt Datenübermittlungen in Drittländer, für die die EU-Kommission per Beschluss ein angemessenes Datenschutzniveau festgestellt hat. Aktuelle Angemessenheitsbeschlüsse bestehen u.a. für: Andorra, Argentinien, Brasilien (seit Januar 2026), Kanada (teilweise), Färöer, Guernsey, Israel, Isle of Man, Japan, Jersey, Neuseeland, Südkorea, Schweiz, UK und USA (EU-U.S. Data Privacy Framework seit 10.07.2023). Diese Beschlüsse können widerrufen werden.",
+        "tooltip": "Art. 45 Abs. 1 DSGVO erlaubt die Übermittlung, wenn die Kommission beschlossen hat, dass das Drittland, ein Gebiet, ein Sektor oder die internationale Organisation ein angemessenes Schutzniveau bietet. Nach der Liste der EU-Kommission (abgerufen am 14.11.2026) bestehen Angemessenheitsbeschlüsse für: Andorra, Argentinien, Brasilien, Kanada (kommerzielle Organisationen), Färöer, Guernsey, Israel, Isle of Man, Japan, Jersey, Neuseeland, Republik Korea, Schweiz, Vereinigtes Königreich, USA (kommerzielle Organisationen, die am EU-US Data Privacy Framework teilnehmen), Uruguay und die Europäische Patentorganisation. Die Kommission kann Beschlüsse widerrufen, ändern oder aussetzen (Art. 45 Abs. 5 DSGVO).",
         "help": "Ein Angemessenheitsbeschluss ist die einfachste Lösung für Drittlandtransfers: Die EU-Kommission hat festgestellt, dass das Empfängerland ein ausreichendes Datenschutzniveau hat. Dann brauchen Sie keine zusätzlichen Garantien. Für die USA gilt seit Juli 2023 das EU-U.S. Data Privacy Framework -- aber nur für zertifizierte US-Unternehmen. Prüfen Sie immer, ob ein Beschluss existiert, bevor Sie aufwendig SVK abschließen.",
         "maturity": {
           "level0": "Keine Prüfung auf Angemessenheitsbeschlüsse; Drittlandtransfers werden ohne Rechtsgrundlage durchgeführt",
@@ -2247,7 +2247,7 @@
       },
       "dtQ4": {
         "title": "Führen Sie Transfer Impact Assessments (TIAs) durch, um die Wirksamkeit der Garantien im Empfängerland zu bewerten?",
-        "tooltip": "Art. 46 Abs. 1-2 DSGVO verlangt geeignete Garantien für Drittlandtransfers. Nach dem Schrems-II-Urteil des EuGH (C-311/18) müssen Verantwortliche prüfen, ob die SVK im konkreten Fall ein angemessenes Schutzniveau gewährleisten können -- unter Berücksichtigung der Rechtslage im Empfängerland (insbesondere Zugriffsbefugnisse von Behörden). Die Empfehlungen 01/2020 des EDSA beschreiben das Vorgehen detailliert.",
+        "tooltip": "Art. 46 Abs. 1 DSGVO erlaubt die Übermittlung ohne Angemessenheitsbeschluss nur, sofern geeignete Garantien vorgesehen sind und den betroffenen Personen durchsetzbare Rechte und wirksame Rechtsbehelfe zur Verfügung stehen. Nach dem Urteil des EuGH vom 16. Juli 2020 in der Rechtssache C-311/18 („Schrems II“) sind bei der Beurteilung die vertraglichen Regelungen und, was einen etwaigen Zugriff der Behörden des Drittlands betrifft, die maßgeblichen Elemente der Rechtsordnung dieses Landes zu berücksichtigen. Der Europäische Datenschutzausschuss hat dazu die Empfehlungen 01/2020 zu ergänzenden Maßnahmen veröffentlicht (endgültige Fassung vom 18. Juni 2021).",
         "help": "Ein Transfer Impact Assessment (TIA) ist eine Risikobewertung, die Sie durchführen müssen, wenn Sie Daten in ein Land ohne Angemessenheitsbeschluss übermitteln und sich auf SVK stützen. Sie prüfen dabei: Gibt es in dem Land Gesetze, die Behörden den Zugriff auf die Daten ermöglichen? Sind die SVK dort durchsetzbar? Reichen die SVK allein oder brauchen Sie zusätzliche technische Maßnahmen wie Verschlüsselung?",
         "maturity": {
           "level0": "Kein Bewusstsein für die Notwendigkeit von TIAs; keine Bewertung der Rechtslage im Empfängerland",
@@ -2258,10 +2258,10 @@
       },
       "dtQ5": {
         "title": "Nutzen Sie Ausnahmen nach Art. 49 DSGVO für Drittlandtransfers nur in den eng begrenzten gesetzlichen Fällen?",
-        "tooltip": "Art. 49 DSGVO erlaubt Drittlandtransfers in Ausnahmefällen ohne Angemessenheitsbeschluss oder geeignete Garantien, z.B. bei: ausdrücklicher Einwilligung (Abs. 1 lit. a), Vertragserfüllung (lit. b-c), wichtigen Gründen des öffentlichen Interesses (lit. d), Rechtsansprüchen (lit. e) oder lebenswichtigen Interessen (lit. f). Diese Ausnahmen sind eng auszulegen und nicht für regelmäßige, umfangreiche Transfers geeignet.",
+        "tooltip": "Art. 49 Abs. 1 DSGVO lässt Übermittlungen ohne Angemessenheitsbeschluss und ohne geeignete Garantien nur unter bestimmten Bedingungen zu, z.B. bei ausdrücklicher Einwilligung nach Unterrichtung über die Risiken (lit. a), wenn die Übermittlung für einen Vertrag erforderlich ist (lit. b-c), aus wichtigen Gründen des öffentlichen Interesses (lit. d), zur Geltendmachung von Rechtsansprüchen (lit. e) oder zum Schutz lebenswichtiger Interessen (lit. f). Der Artikel ist mit „Ausnahmen für bestimmte Fälle“ überschrieben.",
         "help": "Art. 49 DSGVO bietet Ausnahmen für bestimmte Einzelfälle -- z.B. ein Kunde bucht ein Hotel in einem Drittland (Vertragserfüllung) oder Sie müssen Daten für einen Rechtsstreit im Ausland übermitteln. Diese Ausnahmen dürfen aber NICHT als Dauerlösung für regelmäßige Datentransfers missbraucht werden. Wenn Sie z.B. ständig Kundendaten an einen Dienstleister in einem Drittland senden, brauchen Sie SVK oder einen Angemessenheitsbeschluss -- Art. 49 reicht dafür nicht.",
         "maturity": {
-          "level0": "Art. 49 DSGVO wird für regelmäßige Transfers als Rechtsgrundlage angeführt, obwohl dies nicht zulässig ist",
+          "level0": "Art. 49 DSGVO wird für regelmäßige Transfers als Rechtsgrundlage angeführt, ohne dass die Voraussetzungen geprüft werden",
           "level1": "Bewusstsein vorhanden, dass Art. 49 DSGVO nur für Ausnahmen gilt; Anwendung wird aber nicht dokumentiert oder geprüft",
           "level2": "Art. 49 DSGVO wird nur in Einzelfällen herangezogen; Dokumentation der Voraussetzungen ist vorhanden, aber nicht immer vollständig",
           "level3": "Klare Richtlinie, dass Art. 49 DSGVO nur in eng begrenzten Ausnahmefällen angewendet wird; jede Anwendung wird mit Begründung dokumentiert; regelmäßige Transfers laufen ausschließlich über Angemessenheitsbeschluss oder SVK"
@@ -2270,7 +2270,7 @@
       "dvQ1": {
         "title": "Haben Sie einen Prozess, um Datenschutzverletzungen innerhalb von 72 Stunden an die Aufsichtsbehörde zu melden?",
         "tooltip": "Art. 33 Abs. 1 DSGVO verpflichtet den Verantwortlichen, eine Verletzung des Schutzes personenbezogener Daten unverzüglich und möglichst binnen 72 Stunden der zuständigen Aufsichtsbehörde zu melden -- es sei denn, die Verletzung führt voraussichtlich nicht zu einem Risiko. Bei verspäteter Meldung muss die Verzögerung begründet werden.",
-        "help": "Wenn personenbezogene Daten abhandenkommen, unbefugt offengelegt oder verändert werden -- z.B. durch einen Hackerangriff, einen verlorenen USB-Stick oder eine versehentliche E-Mail an den falschen Empfänger -- haben Sie maximal 72 Stunden Zeit, dies der Aufsichtsbehörde zu melden. Dafür brauchen Sie einen klaren Ablauf: Wer stellt fest, dass ein Vorfall vorliegt? Wer entscheidet über die Meldepflicht? Wer führt die Meldung durch?",
+        "help": "Wenn personenbezogene Daten abhandenkommen, unbefugt offengelegt oder verändert werden -- z.B. durch einen Hackerangriff, einen verlorenen USB-Stick oder eine versehentliche E-Mail an den falschen Empfänger -- müssen Sie dies unverzüglich und möglichst binnen 72 Stunden, nachdem Ihnen die Verletzung bekannt wurde, der Aufsichtsbehörde melden. Dafür brauchen Sie einen klaren Ablauf: Wer stellt fest, dass ein Vorfall vorliegt? Wer entscheidet über die Meldepflicht? Wer führt die Meldung durch?",
         "maturity": {
           "level0": "Kein Meldeprozess für Datenschutzverletzungen vorhanden",
           "level1": "Bewusstsein für die 72-Stunden-Frist vorhanden, aber kein definierter Ablauf und keine Zuständigkeiten",
@@ -2280,7 +2280,7 @@
       },
       "dvQ2": {
         "title": "Enthalten Ihre Meldungen an die Aufsichtsbehörde alle Pflichtangaben (Art der Verletzung, Betroffene, Folgen, Maßnahmen)?",
-        "tooltip": "Art. 33 Abs. 3 DSGVO verlangt, dass die Meldung an die Aufsichtsbehörde mindestens folgende Angaben enthält: (a) Art der Verletzung mit Kategorien und Anzahl der Betroffenen, (b) Name und Kontaktdaten des DSB, (c) wahrscheinliche Folgen der Verletzung, (d) ergriffene und vorgeschlagene Maßnahmen. Art. 33 Abs. 5 DSGVO verlangt zudem die interne Dokumentation aller Verletzungen.",
+        "tooltip": "Nach Art. 33 Abs. 3 DSGVO enthält die Meldung zumindest: (a) eine Beschreibung der Art der Verletzung, soweit möglich mit den Kategorien und der ungefähren Zahl der betroffenen Personen und Datensätze, (b) Name und Kontaktdaten des Datenschutzbeauftragten oder einer sonstigen Anlaufstelle, (c) eine Beschreibung der wahrscheinlichen Folgen, (d) eine Beschreibung der ergriffenen oder vorgeschlagenen Maßnahmen. Können die Informationen nicht zur gleichen Zeit bereitgestellt werden, dürfen sie schrittweise nachgereicht werden (Art. 33 Abs. 4 DSGVO).",
         "help": "Die Meldung an die Aufsichtsbehörde muss bestimmte Angaben enthalten: Was ist passiert? Wie viele Personen und Datensätze sind betroffen? Wer ist Ansprechpartner? Welche Folgen sind wahrscheinlich? Was haben Sie unternommen? Liegen noch nicht alle Angaben vor, dürfen Sie sie schrittweise nachreichen (Art. 33 Abs. 4 DSGVO). Eine Vorlage hilft, nichts zu vergessen.",
         "maturity": {
           "level0": "Nicht festgelegt, was eine Meldung enthalten muss",
@@ -2302,7 +2302,7 @@
       },
       "dvQ4": {
         "title": "Führen Sie ein vollständiges Verzeichnis aller Datenschutzverletzungen -- auch solcher, die nicht meldepflichtig waren?",
-        "tooltip": "Art. 33 Abs. 5 DSGVO verpflichtet den Verantwortlichen, alle Verletzungen des Schutzes personenbezogener Daten einschließlich der damit zusammenhängenden Fakten, Auswirkungen und ergriffenen Abmilderungsmaßnahmen zu dokumentieren. Diese Dokumentation muss der Aufsichtsbehörde die Überprüfung der Einhaltung ermöglichen -- also auch nicht meldepflichtige Vorfälle umfassen.",
+        "tooltip": "Art. 33 Abs. 5 DSGVO: Der Verantwortliche dokumentiert Verletzungen des Schutzes personenbezogener Daten einschließlich aller damit zusammenhängenden Fakten, ihrer Auswirkungen und der ergriffenen Abhilfemaßnahmen. Die Dokumentation muss der Aufsichtsbehörde die Überprüfung der Einhaltung des Art. 33 ermöglichen. Eine Beschränkung auf meldepflichtige Verletzungen enthält der Absatz nicht.",
         "help": "Auch wenn ein Datenschutzvorfall kein nennenswertes Risiko darstellt und daher nicht meldepflichtig ist, müssen Sie ihn trotzdem intern dokumentieren. Beispiel: Ein Mitarbeiter schickt eine E-Mail mit Kundendaten an den falschen Empfänger, der die Mail sofort löscht. Nicht meldepflichtig, aber dokumentationspflichtig. Die Aufsichtsbehörde kann dieses Verzeichnis anfordern, um zu prüfen, ob Sie Ihre Pflichten ernst nehmen.",
         "maturity": {
           "level0": "Keine Dokumentation von Datenschutzverletzungen",
@@ -2324,7 +2324,7 @@
       },
       "ewQ1": {
         "title": "Haben Sie für jede Verarbeitungstätigkeit eine gültige Rechtsgrundlage nach Art. 6 Abs. 1 DSGVO identifiziert und dokumentiert?",
-        "tooltip": "Art. 6 Abs. 1 DSGVO listet sechs mögliche Rechtsgrundlagen auf: Einwilligung (lit. a), Vertragserfüllung (lit. b), rechtliche Verpflichtung (lit. c), lebenswichtige Interessen (lit. d), öffentliches Interesse (lit. e) und berechtigtes Interesse (lit. f). Jede Verarbeitung benötigt mindestens eine dieser Grundlagen. §26 BDSG enthält spezielle Regelungen für Beschäftigungsdaten.",
+        "tooltip": "Nach Art. 6 Abs. 1 DSGVO ist die Verarbeitung nur rechtmäßig, wenn mindestens eine von sechs Bedingungen erfüllt ist: Einwilligung (lit. a), Erfüllung eines Vertrags oder vorvertragliche Maßnahmen (lit. b), rechtliche Verpflichtung (lit. c), lebenswichtige Interessen (lit. d), Aufgabe im öffentlichen Interesse oder in Ausübung öffentlicher Gewalt (lit. e), berechtigte Interessen (lit. f). §26 BDSG regelt die Datenverarbeitung für Zwecke des Beschäftigungsverhältnisses.",
         "help": "Bevor Sie personenbezogene Daten verarbeiten, brauchen Sie eine rechtliche Erlaubnis dafür. Am häufigsten sind: Vertragserfüllung (z.B. Lieferadresse für Bestellungen), gesetzliche Pflicht (z.B. Lohnsteueranmeldung) oder Einwilligung (z.B. Newsletter). Für jede Verarbeitung in Ihrem Verzeichnis sollte die Rechtsgrundlage dokumentiert sein. Fehlt sie, ist die Verarbeitung rechtswidrig.",
         "maturity": {
           "level0": "Rechtsgrundlagen sind für keine Verarbeitung identifiziert oder dokumentiert",
@@ -2335,7 +2335,7 @@
       },
       "ewQ2": {
         "title": "Können Sie nachweisen, dass die betroffene Person wirksam eingewilligt hat?",
-        "tooltip": "Art. 7 Abs. 1 DSGVO legt dem Verantwortlichen die Nachweispflicht auf: Er muss belegen können, dass die betroffene Person in die Verarbeitung eingewilligt hat. Die Einwilligung muss freiwillig, für den bestimmten Fall, informiert und eindeutig sein (Art. 4 Nr. 11 DSGVO). §26 Abs. 2 BDSG verlangt für Beschäftigteneinwilligungen grundsätzlich Schriftform.",
+        "tooltip": "Art. 7 Abs. 1 DSGVO: Beruht die Verarbeitung auf einer Einwilligung, muss der Verantwortliche nachweisen können, dass die betroffene Person eingewilligt hat. Nach Art. 4 Nr. 11 DSGVO ist die Einwilligung eine freiwillig, für den bestimmten Fall, in informierter Weise und unmissverständlich abgegebene Willensbekundung. Nach §26 Abs. 2 BDSG hat die Einwilligung von Beschäftigten schriftlich oder elektronisch zu erfolgen, soweit nicht wegen besonderer Umstände eine andere Form angemessen ist.",
         "help": "Wenn Sie sich auf Einwilligung als Rechtsgrundlage berufen -- z.B. für den Newsletter-Versand oder Marketing-Cookies -- müssen Sie beweisen können, dass die Person tatsächlich eingewilligt hat. Dazu gehören: Wann wurde eingewilligt? Wie wurde informiert? Was genau wurde erlaubt? Ein Double-Opt-In beim Newsletter ist ein gutes Beispiel: Die Person trägt sich ein, bekommt eine Bestätigungsmail und klickt den Link -- das alles wird protokolliert.",
         "maturity": {
           "level0": "Keine Nachweise über erteilte Einwilligungen vorhanden",
@@ -2356,9 +2356,9 @@
         }
       },
       "ewQ4": {
-        "title": "Haben Sie besondere Schutzmaßnahmen für die Einwilligung Minderjähriger bei Diensten der Informationsgesellschaft implementiert?",
-        "tooltip": "Art. 8 DSGVO regelt die Einwilligung von Kindern bei Diensten der Informationsgesellschaft (z.B. Online-Dienste, Apps). In Deutschland liegt die Altersgrenze bei 16 Jahren (Art. 8 Abs. 1 DSGVO; Deutschland hat keine abweichende Altersgrenze festgelegt). Bei Kindern unter 16 Jahren ist die Einwilligung oder Genehmigung des Trägers der elterlichen Verantwortung erforderlich. Der Verantwortliche muss angemessene Anstrengungen unternehmen, um dies zu überprüfen.",
-        "help": "Wenn Ihr Online-Dienst, Ihre App oder Ihr Webshop auch von Personen unter 16 Jahren genutzt werden kann, brauchen Sie besondere Vorkehrungen: Sie müssen das Alter prüfen, und bei unter 16-Jährigen die Zustimmung der Eltern einholen und verifizieren. Das betrifft z.B. Registrierungen, Newsletter-Anmeldungen oder In-App-Käufe. Betreiben Sie einen reinen B2B-Dienst, ist dieses Thema in der Regel nicht relevant.",
+        "title": "Haben Sie Vorkehrungen für die Einwilligung von Kindern unter 16 Jahren bei Diensten der Informationsgesellschaft getroffen?",
+        "tooltip": "Art. 8 Abs. 1 DSGVO: Bei einem Angebot von Diensten der Informationsgesellschaft, das einem Kind direkt gemacht wird, ist die auf Einwilligung gestützte Verarbeitung rechtmäßig, wenn das Kind das sechzehnte Lebensjahr vollendet hat. Davor ist sie nur rechtmäßig, sofern und soweit die Einwilligung durch den Träger der elterlichen Verantwortung oder mit dessen Zustimmung erteilt wird. Die Mitgliedstaaten können eine niedrigere Altersgrenze vorsehen, die nicht unter dem vollendeten dreizehnten Lebensjahr liegen darf; das BDSG enthält keine solche Regelung. Nach Art. 8 Abs. 2 DSGVO unternimmt der Verantwortliche unter Berücksichtigung der verfügbaren Technik angemessene Anstrengungen, um sich zu vergewissern, dass die Einwilligung so erteilt wurde.",
+        "help": "Wenn sich Ihr Online-Dienst, Ihre App oder Ihr Webshop direkt an Kinder richtet und Sie sich auf eine Einwilligung stützen, brauchen Sie besondere Vorkehrungen: Bei unter 16-Jährigen muss die Einwilligung durch die Träger der elterlichen Verantwortung oder mit deren Zustimmung erteilt werden, und Sie müssen angemessene Anstrengungen unternehmen, um sich dessen zu vergewissern. Das betrifft z.B. Registrierungen oder Newsletter-Anmeldungen. Betreiben Sie einen reinen B2B-Dienst, wählen Sie „trifft nicht zu“.",
         "maturity": {
           "level0": "Keine Altersprüfung oder besonderen Schutzmaßnahmen für Minderjährige implementiert",
           "level1": "Altersabfrage vorhanden, aber keine Verifizierung und kein Prozess für elterliche Zustimmung",
@@ -2368,13 +2368,13 @@
       },
       "ewQ5": {
         "title": "Holen Sie für besondere Kategorien personenbezogener Daten eine ausdrückliche Einwilligung ein, wenn keine andere Ausnahme greift?",
-        "tooltip": "Art. 9 Abs. 1 DSGVO verbietet grundsätzlich die Verarbeitung besonderer Datenkategorien (Gesundheit, Religion, ethnische Herkunft, politische Meinungen, Gewerkschaftszugehörigkeit, Genetik, Biometrie, Sexualleben). Art. 9 Abs. 2 lit. a DSGVO erlaubt die Verarbeitung bei ausdrücklicher Einwilligung. §22 BDSG enthält zusätzliche Bedingungen und Schutzvorkehrungen.",
+        "tooltip": "Art. 9 Abs. 1 DSGVO untersagt die Verarbeitung besonderer Kategorien personenbezogener Daten: Daten, aus denen die rassische und ethnische Herkunft, politische Meinungen, religiöse oder weltanschauliche Überzeugungen oder die Gewerkschaftszugehörigkeit hervorgehen, genetische Daten, biometrische Daten zur eindeutigen Identifizierung einer natürlichen Person, Gesundheitsdaten sowie Daten zum Sexualleben oder der sexuellen Orientierung. Art. 9 Abs. 2 lit. a DSGVO nimmt die Verarbeitung mit ausdrücklicher Einwilligung für einen oder mehrere festgelegte Zwecke davon aus. §22 BDSG lässt die Verarbeitung in weiteren Fällen zu und verlangt dafür angemessene und spezifische Maßnahmen zur Wahrung der Interessen der betroffenen Person.",
         "help": "Besondere Datenkategorien sind z.B. Gesundheitsdaten (Krankmeldungen, BEM-Verfahren), Religionszugehörigkeit (Kirchensteuer), Gewerkschaftsmitgliedschaft oder biometrische Daten (Fingerabdruck-Scanner). Diese Daten dürfen nur unter strengen Voraussetzungen verarbeitet werden. Wenn keine gesetzliche Erlaubnis greift, brauchen Sie eine ausdrückliche Einwilligung -- also besonders klar und hervorgehoben, nicht versteckt in AGB.",
         "maturity": {
           "level0": "Keine Prüfung, ob besondere Datenkategorien verarbeitet werden; keine spezifischen Einwilligungen eingeholt",
           "level1": "Bewusstsein für besondere Datenkategorien vorhanden, aber keine systematische Prüfung oder separate Einwilligungen",
           "level2": "Besondere Datenkategorien sind identifiziert; ausdrückliche Einwilligungen werden eingeholt, aber nicht in allen Fällen konsequent",
-          "level3": "Vollständige Übersicht über besondere Datenkategorien; ausdrückliche, separat dokumentierte Einwilligungen mit zusätzlichen Schutzmaßnahmen nach §22 BDSG"
+          "level3": "Vollständige Übersicht über besondere Datenkategorien; ausdrückliche, separat dokumentierte Einwilligungen mit zusätzlichen Schutzmaßnahmen"
         }
       },
       "pbdQ1": {
@@ -2411,20 +2411,20 @@
         }
       },
       "pbdQ4": {
-        "title": "Nutzen Sie Zertifizierungen oder genehmigte Verhaltensregeln, um die Einhaltung von Privacy by Design nachzuweisen?",
-        "tooltip": "Art. 25 Abs. 3 DSGVO sieht vor, dass genehmigte Zertifizierungsverfahren nach Art. 42 DSGVO als Nachweis für die Erfüllung der Anforderungen an Privacy by Design und Privacy by Default herangezogen werden können. Ebenso können genehmigte Verhaltensregeln nach Art. 40 DSGVO als Faktor bei der Bewertung herangezogen werden.",
-        "help": "Zertifizierungen wie ISO 27701 (Datenschutz-Managementsystem) oder branchenspezifische Verhaltensregeln können Ihnen helfen, die Einhaltung von Privacy by Design nachzuweisen. Das ist besonders nützlich gegenüber der Aufsichtsbehörde, bei Ausschreibungen oder gegenüber Kunden. Eine Zertifizierung schützt nicht vor Bußgeldern, kann aber als Nachweis der Bemühungen dienen und das Bußgeldrisko mindern.",
+        "title": "Nutzen Sie ein genehmigtes Zertifizierungsverfahren, um die Einhaltung von Privacy by Design nachzuweisen?",
+        "tooltip": "Art. 25 Abs. 3 DSGVO: Ein genehmigtes Zertifizierungsverfahren gemäß Art. 42 DSGVO kann als Faktor herangezogen werden, um die Erfüllung der Anforderungen aus Art. 25 Abs. 1 und 2 nachzuweisen. Nach Art. 42 Abs. 4 DSGVO mindert eine Zertifizierung nicht die Verantwortung des Verantwortlichen für die Einhaltung der Verordnung.",
+        "help": "Ein nach Art. 42 DSGVO genehmigtes Zertifizierungsverfahren kann Ihnen helfen, die Einhaltung von Privacy by Design nachzuweisen, z.B. gegenüber der Aufsichtsbehörde oder gegenüber Kunden. Die Verantwortung für die Einhaltung der DSGVO bleibt bei Ihnen. Bei der Entscheidung über eine Geldbuße wird die Einhaltung genehmigter Zertifizierungsverfahren berücksichtigt (Art. 83 Abs. 2 lit. j DSGVO).",
         "maturity": {
-          "level0": "Keine Zertifizierungen oder Verhaltensregeln im Datenschutzbereich; kein Nachweis der Compliance-Bemühungen",
+          "level0": "Keine Zertifizierung im Datenschutzbereich; kein Nachweis der Compliance-Bemühungen",
           "level1": "Interesse an Zertifizierung vorhanden, aber keine konkreten Schritte unternommen",
           "level2": "Einzelne Maßnahmen orientieren sich an anerkannten Standards (z.B. ISO 27001/27701), aber keine formale Zertifizierung",
-          "level3": "Formale Datenschutz-Zertifizierung (z.B. ISO 27701) oder Teilnahme an genehmigten Verhaltensregeln; regelmäßige Re-Zertifizierung; Nachweis wird aktiv zur Compliance-Dokumentation genutzt"
+          "level3": "Zertifizierung nach einem gemäß Art. 42 DSGVO genehmigten Verfahren; regelmäßige Re-Zertifizierung; Nachweis wird aktiv zur Compliance-Dokumentation genutzt"
         }
       },
       "pbdQ5": {
-        "title": "Werden personenbezogene Daten nach Ablauf von Zweck oder Speicherfrist automatisch gelöscht?",
-        "tooltip": "Art. 5 Abs. 1 lit. e DSGVO normiert den Grundsatz der Speicherbegrenzung: Personenbezogene Daten dürfen nur so lange gespeichert werden, wie es für die Zwecke erforderlich ist. Privacy by Design erfordert, dass Löschmechanismen bereits in die Systemarchitektur eingebaut werden, nicht nachträglich.",
-        "help": "Daten, die Sie nicht mehr brauchen, müssen gelöscht werden -- nicht erst wenn jemand danach fragt, sondern automatisch nach Ablauf der definierten Speicherfrist. Beispiel: Bewerberdaten 6 Monate nach Absage automatisch löschen, Cookie-Daten nach der definierten Frist, inaktive Kundenkonten nach 3 Jahren. Manuelle Löschung ist fehleranfällig -- bauen Sie automatische Mechanismen ein.",
+        "title": "Werden personenbezogene Daten gelöscht, sobald sie für den Zweck nicht mehr erforderlich sind?",
+        "tooltip": "Art. 5 Abs. 1 lit. e DSGVO (Speicherbegrenzung): Personenbezogene Daten müssen in einer Form gespeichert werden, die die Identifizierung der betroffenen Personen nur so lange ermöglicht, wie es für die Zwecke, für die sie verarbeitet werden, erforderlich ist. Nach Art. 25 Abs. 2 DSGVO gilt die Pflicht zu datenschutzfreundlichen Voreinstellungen auch für die Speicherfrist.",
+        "help": "Daten, die Sie nicht mehr brauchen, müssen gelöscht werden -- nicht erst wenn jemand danach fragt, sondern nach Ablauf der von Ihnen festgelegten Speicherfrist. Legen Sie je Datenart eine Frist fest, z.B. für Bewerberdaten, Cookie-Daten und inaktive Kundenkonten. Manuelle Löschung ist fehleranfällig; automatische Mechanismen helfen.",
         "maturity": {
           "level0": "Keine definierten Speicherfristen; Daten werden unbegrenzt aufbewahrt; keine Löschmechanismen",
           "level1": "Speicherfristen sind teilweise definiert, aber Löschung erfolgt nur manuell und unregelmäßig",
@@ -2461,13 +2461,13 @@
         "maturity": {
           "level0": "Keine Backup- oder Wiederherstellungsstrategie vorhanden",
           "level1": "Backups werden erstellt, aber nicht getestet; Wiederherstellungszeit und -ablauf sind unklar",
-          "level2": "Regelmäßige Backups mit gelegentlichen Wiederherstellungstests; Wiederherstellungszeit liegt bei 24-48 Stunden",
+          "level2": "Regelmäßige Backups mit gelegentlichen Wiederherstellungstests; Wiederherstellungszeit ist nicht festgelegt",
           "level3": "Automatisierte Backups mit regelmäßig getesteter Wiederherstellung innerhalb definierter Zeitvorgaben; separate Aufbewahrung; dokumentierter Notfallplan"
         }
       },
       "tomQ4": {
         "title": "Überprüfen Sie regelmäßig, ob Ihre technischen und organisatorischen Maßnahmen wirken?",
-        "tooltip": "Art. 32 Abs. 1 lit. d DSGVO fordert ausdrücklich ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der technisch-organisatorischen Maßnahmen. Dies umfasst interne Audits, Penetrationstests, Schwachstellenanalysen und die Bewertung von Sicherheitsvorfällen.",
+        "tooltip": "Art. 32 Abs. 1 lit. d DSGVO nennt ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der technischen und organisatorischen Maßnahmen zur Gewährleistung der Sicherheit der Verarbeitung. Beispiele für solche Verfahren sind interne Audits, Penetrationstests und Schwachstellenanalysen.",
         "help": "Es reicht nicht, einmal Schutzmaßnahmen einzuführen und dann nie wieder zu prüfen. Sie müssen regelmäßig testen, ob Ihre Maßnahmen noch wirksam sind. Das kann eine jährliche Überprüfung durch Ihren DSB oder einen externen Dienstleister sein, ein Penetrationstest Ihrer Systeme oder die Auswertung von Sicherheitsvorfällen. Dokumentieren Sie die Ergebnisse und leiten Sie Verbesserungsmaßnahmen ab.",
         "maturity": {
           "level0": "Keine Überprüfung der Wirksamkeit von Schutzmaßnahmen",
@@ -2478,7 +2478,7 @@
       },
       "tomQ5": {
         "title": "Berücksichtigen Sie bei der Auswahl der Schutzmaßnahmen Stand der Technik, Kosten und Art der Verarbeitung?",
-        "tooltip": "Art. 32 Abs. 1 DSGVO verlangt, dass bei der Auswahl der Schutzmaßnahmen der Stand der Technik, die Implementierungskosten, die Art, der Umfang, die Umstände und die Zwecke der Verarbeitung sowie die Eintrittswahrscheinlichkeit und Schwere des Risikos berücksichtigt werden. Art. 32 Abs. 2 DSGVO fordert bei der Beurteilung insbesondere die Berücksichtigung von Risiken durch Vernichtung, Verlust, Veränderung oder unbefugten Zugang.",
+        "tooltip": "Nach Art. 32 Abs. 1 DSGVO sind bei der Auswahl der Maßnahmen der Stand der Technik, die Implementierungskosten, die Art, der Umfang, die Umstände und die Zwecke der Verarbeitung sowie die Eintrittswahrscheinlichkeit und Schwere des Risikos zu berücksichtigen. Nach Art. 32 Abs. 2 DSGVO sind bei der Beurteilung des angemessenen Schutzniveaus insbesondere die Risiken durch Vernichtung, Verlust, Veränderung, unbefugte Offenlegung von oder unbefugten Zugang zu personenbezogenen Daten zu berücksichtigen.",
         "help": "Die DSGVO erwartet keine Maßnahmen um jeden Preis, sondern verhältnismäßige Maßnahmen. Ein kleines Handwerksunternehmen, das nur Kundenadressen speichert, braucht andere Maßnahmen als ein Krankenhaus mit Patientendaten. Bei der Auswahl berücksichtigen Sie: Was ist technisch aktuell möglich (Stand der Technik)? Was kostet die Umsetzung? Wie sensibel sind die Daten? Wie wahrscheinlich und schwerwiegend ist ein Datenverlust? Dokumentieren Sie diese Abwägung.",
         "maturity": {
           "level0": "Keine dokumentierte Abwägung bei der Auswahl von Schutzmaßnahmen; Maßnahmen sind zufällig oder historisch gewachsen",
@@ -2500,7 +2500,7 @@
       },
       "vvQ2": {
         "title": "Sind im Verzeichnis Zwecke, Kategorien betroffener Personen und Datenkategorien aktuell dokumentiert?",
-        "tooltip": "Art. 30 Abs. 1 lit. b-d DSGVO verlangt die Dokumentation der Verarbeitungszwecke, der Kategorien betroffener Personen (z.B. Kunden, Mitarbeiter, Bewerber) und der Kategorien personenbezogener Daten (z.B. Kontaktdaten, Bankdaten, Gesundheitsdaten). Diese Angaben müssen den tatsächlichen Verarbeitungen entsprechen.",
+        "tooltip": "Art. 30 Abs. 1 lit. b und c DSGVO verlangen im Verzeichnis die Zwecke der Verarbeitung sowie eine Beschreibung der Kategorien betroffener Personen (z.B. Kunden, Mitarbeiter, Bewerber) und der Kategorien personenbezogener Daten (z.B. Kontaktdaten, Bankdaten, Gesundheitsdaten).",
         "help": "Für jede Verarbeitung in Ihrem Verzeichnis müssen Sie angeben: WARUM verarbeiten Sie die Daten (z.B. Vertragserfüllung, gesetzliche Pflicht)? WESSEN Daten sind betroffen (Kunden, Mitarbeiter, Lieferanten)? WELCHE Daten sind es genau (Name, Adresse, Bankverbindung, Gesundheitsdaten)? Diese Angaben müssen aktuell sein -- wenn Sie z.B. einen neuen Online-Shop starten, muss das zeitnah ergänzt werden.",
         "maturity": {
           "level0": "Zwecke, Betroffenenkategorien und Datenkategorien sind nicht dokumentiert",
@@ -2511,8 +2511,8 @@
       },
       "vvQ3": {
         "title": "Sind im Verzeichnis Löschfristen und eine allgemeine Beschreibung der Schutzmaßnahmen dokumentiert?",
-        "tooltip": "Art. 30 Abs. 1 lit. f-g DSGVO verlangt die Angabe der vorgesehenen Fristen für die Löschung der verschiedenen Datenkategorien sowie eine allgemeine Beschreibung der technischen und organisatorischen Sicherheitsmaßnahmen nach Art. 32 Abs. 1 DSGVO. 'Wenn möglich' ist dabei keine Ausnahme, sondern die Erwartung der Aufsichtsbehörden.",
-        "help": "Für jede Datenverarbeitung müssen Sie festlegen, wann die Daten gelöscht werden -- z.B. Bewerberdaten 6 Monate nach Absage, Rechnungen und Buchungsbelege nach 8 Jahren (gesetzliche Aufbewahrungspflicht nach § 147 AO, § 257 HGB, seit 2025). Zusätzlich beschreiben Sie, wie die Daten geschützt werden -- z.B. Verschlüsselung, Zugangsbeschränkung, Pseudonymisierung. Diese Angaben gehören in Ihr Verarbeitungsverzeichnis.",
+        "tooltip": "Art. 30 Abs. 1 lit. f und g DSGVO verlangen im Verzeichnis die vorgesehenen Fristen für die Löschung der verschiedenen Datenkategorien sowie eine allgemeine Beschreibung der technischen und organisatorischen Maßnahmen gemäß Art. 32 Abs. 1 DSGVO. Beide Angaben stehen im Verordnungstext unter dem Vorbehalt „wenn möglich“.",
+        "help": "Für jede Datenverarbeitung legen Sie fest, wann die Daten gelöscht werden -- z.B. Bewerberdaten nach einer von Ihnen festgelegten Frist nach der Absage, Buchungsbelege nach 8 Jahren (Aufbewahrungsfrist nach § 147 Abs. 3 AO und § 257 Abs. 4 HGB). Zusätzlich beschreiben Sie allgemein, wie Sie die Daten schützen: z.B. Zugangskontrollen, Verschlüsselung, Backups.",
         "maturity": {
           "level0": "Weder Löschfristen noch Schutzmaßnahmen sind im Verzeichnis dokumentiert",
           "level1": "Pauschal 'gesetzliche Fristen' angegeben, keine spezifischen Fristen pro Verarbeitung; Schutzmaßnahmen fehlen oder sind nur generisch",
@@ -2532,9 +2532,9 @@
         }
       },
       "vvQ5": {
-        "title": "Ist Ihr Verarbeitungsverzeichnis jederzeit auf Anfrage der Aufsichtsbehörde vorlagefähig und wird es regelmäßig aktualisiert?",
-        "tooltip": "Art. 30 Abs. 4 DSGVO verlangt, dass das Verzeichnis der Aufsichtsbehörde auf Anfrage zur Verfügung gestellt wird. Art. 30 Abs. 5 DSGVO enthält eine Ausnahme für Unternehmen mit weniger als 250 Beschäftigten, die jedoch nur greift, wenn die Verarbeitung nicht regelmäßig erfolgt, keine besonderen Datenkategorien betrifft und kein Risiko birgt -- in der Praxis trifft diese Ausnahme selten zu.",
-        "help": "Die Aufsichtsbehörde kann Ihr Verarbeitungsverzeichnis jederzeit anfordern -- z.B. bei einer Prüfung oder nach einer Beschwerde. Sie müssen es dann zeitnah vorlegen können. Das bedeutet: Es muss aktuell sein, nicht erst bei Anfrage zusammengestellt werden. Die Ausnahme für kleine Unternehmen unter 250 Mitarbeiter greift in der Praxis fast nie, weil fast jedes Unternehmen regelmäßig personenbezogene Daten verarbeitet.",
+        "title": "Können Sie Ihr Verarbeitungsverzeichnis der Aufsichtsbehörde auf Anfrage zur Verfügung stellen, und halten Sie es aktuell?",
+        "tooltip": "Art. 30 Abs. 4 DSGVO: Der Verantwortliche oder der Auftragsverarbeiter stellt der Aufsichtsbehörde das Verzeichnis auf Anfrage zur Verfügung. Art. 30 Abs. 5 DSGVO nimmt Unternehmen mit weniger als 250 Mitarbeitern von der Verzeichnispflicht aus. Die Ausnahme gilt nicht, wenn die Verarbeitung ein Risiko für die Rechte und Freiheiten der betroffenen Personen birgt, nicht nur gelegentlich erfolgt oder besondere Datenkategorien nach Art. 9 Abs. 1 oder Daten über strafrechtliche Verurteilungen und Straftaten nach Art. 10 betrifft.",
+        "help": "Die Aufsichtsbehörde kann Ihr Verarbeitungsverzeichnis anfordern -- z.B. bei einer Prüfung oder nach einer Beschwerde. Sie stellen es ihr dann zur Verfügung (Art. 30 Abs. 4 DSGVO). Dafür sollte es aktuell sein und nicht erst bei der Anfrage zusammengestellt werden. Die Ausnahme für Unternehmen mit weniger als 250 Mitarbeitern gilt nicht, wenn die Verarbeitung nicht nur gelegentlich erfolgt (Art. 30 Abs. 5 DSGVO).",
         "maturity": {
           "level0": "Kein vorlagefähiges Verzeichnis vorhanden",
           "level1": "Verzeichnis existiert, ist aber veraltet oder unvollständig und nicht kurzfristig vorlagefähig",
