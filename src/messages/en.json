@@ -4028,7 +4028,7 @@
           "level3": "Automated configuration management with hardening templates, continuous patch management with SLA-based prioritisation (critical: 48h), regular vulnerability scans and penetration tests, compliance monitoring of the hardening standards"
         },
         "title": "Are IT systems systematically hardened and protected against known vulnerabilities?",
-        "tooltip": "VDA ISA 6.0.2, control 5.2.5: “To what extent are vulnerabilities identified and addressed?” The German VDA ISA 6.0.2 does not use the term “hardening” in its controls."
+        "tooltip": "VDA ISA 2027.1, control 5.2.5: “To what extent are vulnerabilities identified and addressed?” The German VDA ISA 2027.1 does not use the term “hardening” in its controls."
       },
       "bsQ2": {
         "help": "Malware protection is a basic requirement in TISAX assessments. All workstations, servers and gateways must be equipped with up-to-date protection software. Check whether signatures are updated automatically, whether real-time scanning is active and whether incidents are centrally logged and evaluated. Special requirements apply to production networks.",
@@ -4039,7 +4039,7 @@
           "level3": "Comprehensive endpoint protection platform (EPP/EDR) with behavioural analysis, machine-learning-based detection, central SIEM integration, automated quarantine and regular effectiveness verification through controlled malware tests"
         },
         "title": "Are protective measures against malware deployed on all endpoints and servers?",
-        "tooltip": "VDA ISA 6.0.2, control 5.2.3: “To what extent are IT systems protected against malware?”"
+        "tooltip": "VDA ISA 2027.1, control 5.2.3: “To what extent are IT systems protected against malware?”"
       },
       "bsQ3": {
         "help": "Systematic vulnerability management is essential for TISAX compliance. You must carry out regular vulnerability scans (internal and external), prioritise the results by severity (CVSS) and apply patches within defined deadlines. Vulnerabilities in systems with OEM connections or access to prototype data are particularly critical.",
@@ -4050,7 +4050,7 @@
           "level3": "Continuous vulnerability management with automated scans, integration into risk management, SLA-based remediation (critical: 48h, high: 7 days), annual penetration tests and linkage to the patch management process"
         },
         "title": "Does systematic vulnerability management with regular detection and remediation exist?",
-        "tooltip": "VDA ISA 6.0.2, control 5.2.5: “To what extent are vulnerabilities identified and addressed?”"
+        "tooltip": "VDA ISA 2027.1, control 5.2.5: “To what extent are vulnerabilities identified and addressed?”"
       },
       "compQ1": {
         "help": "Beyond TISAX and ISO 27001, numerous other requirements can be relevant for automotive suppliers: GDPR, NIS2, the KRITIS regulation, the Trade Secrets Act, OEM-specific requirements and industry-specific standards. Check whether you maintain an overview of all relevant requirements and systematically ensure compliance with them.",
@@ -4061,7 +4061,7 @@
           "level3": "Comprehensive compliance management with automated monitoring of regulatory changes, linkage to ISMS measures, regular compliance audits and reporting to management"
         },
         "title": "Are legal and regulatory information security requirements identified and complied with?",
-        "tooltip": "VDA ISA 6.0.2, control 7.1.1: “To what extent is compliance with regulatory and contractual provisions ensured?”"
+        "tooltip": "VDA ISA 2027.1, control 7.1.1: “To what extent is compliance with regulatory and contractual provisions ensured?”"
       },
       "compQ2": {
         "help": "You need a working PDCA cycle: plan, do, check, act. Internal audits are the central verification mechanism. They should cover all VDA ISA chapters, the results must be documented and presented to management as part of a management review. Findings must be tracked and measures checked for effectiveness.",
@@ -4072,7 +4072,7 @@
           "level3": "Systematic internal audit programme with qualified auditors, risk-based prioritisation, documented follow-up of measures with effectiveness checks, semi-annual management review and KPI-based ISMS reporting"
         },
         "title": "Are regular internal audits and management reviews of the ISMS carried out?",
-        "tooltip": "VDA ISA 6.0.2, control 1.5.1: “To what extent is compliance with information security ensured in procedures and processes?” control 1.5.2: “To what extent is the ISMS reviewed by an independent authority?”"
+        "tooltip": "VDA ISA 2027.1, control 1.5.1: “To what extent is compliance with information security ensured in procedures and processes?” control 1.5.2: “To what extent is the ISMS reviewed by an independent authority?”"
       },
       "compQ3": {
         "help": "TISAX is not a one-off project but a continuous process. After every assessment, audit or security incident, the findings must be analysed and turned into concrete improvement measures. Before follow-up assessments, check whether earlier findings have been addressed and whether a demonstrable improvement trend is visible.",
@@ -4083,7 +4083,7 @@
           "level3": "Full PDCA cycle with systematic root cause analysis, an action management tool, effectiveness checks, trend analysis across assessment cycles and demonstrable continuous improvement of the ISMS maturity"
         },
         "title": "Are the results of TISAX assessments and audits fed into a continuous improvement process?",
-        "tooltip": "VDA ISA 6.0.2, control 1.5.1: “To what extent is compliance with information security ensured in procedures and processes?” control 1.5.2: “To what extent is the ISMS reviewed by an independent authority?”"
+        "tooltip": "VDA ISA 2027.1, control 1.5.1: “To what extent is compliance with information security ensured in procedures and processes?” control 1.5.2: “To what extent is the ISMS reviewed by an independent authority?”"
       },
       "dsQ1": {
         "help": "TISAX also covers data protection requirements that go beyond pure information security. As an automotive supplier you process personal data of employees, customers and contacts. Check whether a data protection officer is designated, whether a record of processing activities is maintained and whether the GDPR principles (lawfulness, purpose limitation, data minimisation) are observed.",
@@ -4094,7 +4094,7 @@
           "level3": "Integrated data protection and information security management system with a privacy-by-design approach, regular data protection audits, an automated deletion concept and demonstrated GDPR compliance in all OEM-relevant processing operations"
         },
         "title": "Is compliance with data protection requirements (GDPR) ensured as part of your information security?",
-        "tooltip": "VDA ISA 6.0.2, control 7.1.2: “To what extent is the protection of personally identifiable data considered when implementing information security?” control 9.1.1: “To what extent do data protection policies exist?”"
+        "tooltip": "VDA ISA 2027.1, control 7.1.2: “To what extent is the protection of personal data considered when implementing information security?” control 9.1.1: “To what extent do data protection policies exist?”"
       },
       "dsQ2": {
         "help": "As an automotive supplier, you frequently pass personal data on to IT service providers, cloud providers, staffing agencies or disposal companies. For each of these processing operations you need a legally compliant DPA under Art. 28 GDPR. Check whether DPAs exist, are complete and current — particularly for cloud services and remote maintenance access.",
@@ -4105,7 +4105,7 @@
           "level3": "Complete DPA management with a central overview, regular review of the TOM documentation, audit rights and systematic checks when subcontractors are engaged"
         },
         "title": "Are data processing agreements concluded and maintained with all relevant service providers?",
-        "tooltip": "VDA ISA 6.0.2, control 9.5.2: “To what extent are contractual obligations passed through to and enforced at subcontractors and cooperation partners?”"
+        "tooltip": "VDA ISA 2027.1, control 9.5.2: “To what extent are contractual obligations passed through to and enforced at subcontractors and cooperation partners?”"
       },
       "dsQ3": {
         "help": "A personal data breach occurs when personal data is disclosed, altered, deleted or otherwise compromised without authorisation. Check whether you have a documented process ensuring detection, assessment (risk evaluation for those affected), internal escalation, notification of the supervisory authority (72h) and, where necessary, notification of the data subjects.",
@@ -4116,7 +4116,7 @@
           "level3": "Practised data breach process with regular exercises, automated detection through SIEM integration, templates for supervisory authority notification and data subject notification, complete documentation of all incidents"
         },
         "title": "Is a process for detecting and reporting personal data breaches implemented?",
-        "tooltip": "VDA ISA 6.0.2, control 9.6.2: “To what extent are data protection incidents processed?”"
+        "tooltip": "VDA ISA 2027.1, control 9.6.2: “To what extent are data protection incidents processed?”"
       },
       "komQ1": {
         "help": "Network segmentation is a central TISAX requirement: OEM data, prototype information and production systems must run in separate network segments divided by firewalls. TISAX assessors review the network architecture, firewall rule sets and the monitoring of network transitions. A flat network architecture without segmentation is a common major finding.",
@@ -4127,7 +4127,7 @@
           "level3": "Multi-layer network architecture with DMZ, dedicated OEM zones, micro-segmentation for critical systems, IDS/IPS at zone transitions, regular firewall audits and network access control (NAC)"
         },
         "title": "Are networks segmented and protected by suitable security components?",
-        "tooltip": "VDA ISA 6.0.2, control 5.2.7: “To what extent is the network of the organization managed?”"
+        "tooltip": "VDA ISA 2027.1, control 5.2.7: “​To what extent is the network of the organization managed?”"
       },
       "komQ2": {
         "help": "You need a complete overview of all network services and connections. VPN access for remote maintenance and home office must be secured with strong authentication (MFA). Wi-Fi networks require WPA3 or WPA2-Enterprise; guest Wi-Fi must be separated from the corporate network. Remote maintenance access by OEMs and service providers must be controlled particularly closely.",
@@ -4138,7 +4138,7 @@
           "level3": "Centrally managed network services with automated monitoring, VPN with MFA and device checks, RADIUS-based Wi-Fi authentication, session recording for remote maintenance and continuous network monitoring with anomaly detection"
         },
         "title": "Are network services and connections securely configured and monitored?",
-        "tooltip": "VDA ISA 6.0.2, control 5.2.7: “To what extent is the network of the organization managed?” control 5.3.2: “To what extent are requirements for network services defined?”"
+        "tooltip": "VDA ISA 2027.1, control 5.2.7: “​To what extent is the network of the organization managed?” control 5.3.2: “To what extent are requirements for network services defined?”"
       },
       "komQ3": {
         "help": "Data exchange with OEMs is a central topic in TISAX assessments. Design data, prototype information and quality data must be transferred via secure channels — e.g. OEM-specific platforms (Teamcenter, ENOVIA), encrypted data transfer solutions or SFTP. Unencrypted email attachments for confidential OEM data are a typical finding.",
@@ -4149,7 +4149,7 @@
           "level3": "End-to-end secure data exchange solution with automated encryption, integrity checks, access logging, retention periods and integration into information classification — compliance with OEM-specific transfer requirements demonstrated"
         },
         "title": "Are data transfers with vehicle manufacturers (OEMs) and business partners handled via secure channels?",
-        "tooltip": "VDA ISA 6.0.2, control 5.1.2: “To what extent is information protected during transfer?”"
+        "tooltip": "VDA ISA 2027.1, control 5.1.2: “To what extent is information protected during transfer?”"
       },
       "kryQ1": {
         "help": "You need a documented cryptography policy defining which encryption mechanisms and key lengths are used. The policy must cover data encryption (at rest and in transit), email encryption, disk encryption of mobile devices and VPN connections. Outdated algorithms (e.g. MD5, SHA-1, DES) may no longer be used.",
@@ -4160,7 +4160,7 @@
           "level3": "Comprehensive cryptography governance with automated enforcement of the standards, central key management (KMS), regular crypto audits, certificate expiry monitoring and a migration plan for post-quantum cryptography"
         },
         "title": "Does a cryptography policy exist with requirements for the use of encryption and key management?",
-        "tooltip": "VDA ISA 6.0.2, control 5.1.1: “To what extent is the use of cryptographic procedures managed?”"
+        "tooltip": "VDA ISA 2027.1, control 5.1.1: “To what extent is the use of cryptographic procedures managed?”"
       },
       "kryQ2": {
         "help": "This is particularly relevant for automotive suppliers: OEM design data, prototype information and test results must be stored and transferred encrypted. You need disk encryption for mobile devices, encryption of databases with protection needs and the use of secure transfer protocols (TLS 1.2+, SFTP, encrypted email) for data exchange with OEMs.",
@@ -4171,7 +4171,7 @@
           "level3": "End-to-end encryption for all confidential data, automated enforcement via endpoint management, DLP integration to prevent unencrypted transfers, database encryption and regular crypto audits"
         },
         "title": "Is confidential data consistently encrypted at rest and in transit?",
-        "tooltip": "VDA ISA 6.0.2, control 5.1.1: “To what extent is the use of cryptographic procedures managed?” control 5.1.2: “To what extent is information protected during transfer?”"
+        "tooltip": "VDA ISA 2027.1, control 5.1.1: “To what extent is the use of cryptographic procedures managed?” control 5.1.2: “To what extent is information protected during transfer?”"
       },
       "kryQ3": {
         "help": "Even the strongest encryption is worthless if the keys are managed insecurely. You need documented key management: keys must be generated with cryptographically secure random generators, stored in secured keystores, rotated regularly and revoked immediately upon suspected compromise. Particularly important for certificates used in OEM data exchange.",
@@ -4182,7 +4182,7 @@
           "level3": "Central key management system (KMS) with automated key rotation, HSM-backed storage for highly confidential keys, an audit trail of all key operations and automated certificate renewal"
         },
         "title": "Are cryptographic keys generated, stored and distributed securely, and revoked when compromised?",
-        "tooltip": "VDA ISA 6.0.2, control 5.1.1: “To what extent is the use of cryptographic procedures managed?”"
+        "tooltip": "VDA ISA 2027.1, control 5.1.1: “To what extent is the use of cryptographic procedures managed?”"
       },
       "liefQ1": {
         "help": "As an automotive supplier, you must pass your OEMs' security requirements on to your own suppliers and service providers. Contracts should contain clauses on confidentiality, information protection, audit rights, incident reporting duties and TISAX label requirements. Without contractual safeguards, you are liable for security incidents at your suppliers.",
@@ -4193,7 +4193,7 @@
           "level3": "Comprehensive supplier security policy with contractual enforcement, TISAX label requirement for critical suppliers, regular contract review and escalation procedures for non-compliance"
         },
         "title": "Are information security requirements anchored in contracts with suppliers and service providers?",
-        "tooltip": "VDA ISA 6.0.2, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
+        "tooltip": "VDA ISA 2027.1, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
       },
       "liefQ2": {
         "help": "Regularly review your suppliers' compliance with the security requirements. This can be done through supplier questionnaires, verification of the TISAX label, ISO 27001 certification, on-site audits or technical checks (e.g. vulnerability scans of interfaces). Critical suppliers with access to OEM data require greater review depth.",
@@ -4204,7 +4204,7 @@
           "level3": "Systematic supplier risk management with automated monitoring, regular audits of high-risk suppliers, TISAX label tracking, assessment history and action management for deficiencies"
         },
         "title": "Are suppliers and service providers regularly assessed with regard to their information security?",
-        "tooltip": "VDA ISA 6.0.2, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
+        "tooltip": "VDA ISA 2027.1, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
       },
       "liefQ3": {
         "help": "Supply chain changes can have significant security implications: a new sub-supplier in a third country, a site relocation without adequate physical security or the use of new cloud services changes the risk profile. Such changes should be assessed for their security impact before implementation and, where necessary, approved by the OEM.",
@@ -4215,7 +4215,7 @@
           "level3": "Integrated supply chain change management with automated risk assessment, an OEM coordination process, monitoring of geopolitical risks and a documented decision history for all security-relevant changes"
         },
         "title": "Are changes in the supply chain assessed for their impact on information security?",
-        "tooltip": "VDA ISA 6.0.2, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
+        "tooltip": "VDA ISA 2027.1, control 6.1.1: “To what extent is information security ensured among contractors and cooperation partners?”"
       },
       "orgQ1": {
         "help": "The information security policy defines the strategic direction of your information security and demonstrates management commitment. VDA ISA control 1.1.1 asks to what extent information security policies are available. It should contain protection goals, scope, responsibilities and the link to OEM requirements. Without an approved policy, no assessment level can be passed.",
@@ -4226,7 +4226,7 @@
           "level3": "The information security policy is part of a living ISMS, is reviewed annually by management, is known to all employees and relevant externals, and is integrated with OEM-specific requirements"
         },
         "title": "Does a documented information security policy exist that has been approved and communicated by management?",
-        "tooltip": "VDA ISA 6.0.2, control 1.1.1: “To what extent are information security policies available?”"
+        "tooltip": "VDA ISA 2027.1, control 1.1.1: “To what extent are information security policies available?”"
       },
       "orgQ2": {
         "help": "An information security officer (ISO) should be designated who reports directly to management. In addition, responsibilities for risk management, incident handling, physical security and prototype protection must be clearly assigned. In the automotive industry, these roles must also be demonstrable towards OEM partners.",
@@ -4237,7 +4237,7 @@
           "level3": "Complete information security organisation with ISO, risk owners, subject-matter owners and deputies — reporting line to management established, roles reviewed regularly and updated upon organisational changes"
         },
         "title": "Are roles and responsibilities for information security clearly assigned and documented?",
-        "tooltip": "VDA ISA 6.0.2, control 1.2.2: “To what extent are information security responsibilities organized?”"
+        "tooltip": "VDA ISA 2027.1, control 1.2.2: “To what extent are information security responsibilities organized?”"
       },
       "orgQ3": {
         "help": "Risk management is central to TISAX: you must carry out a methodical risk analysis covering all relevant assets (especially OEM data, prototypes, IT systems). The risk assessment determines which protective measures are required. The assessor checks whether the methodology is traceable and the risk treatment appropriate.",
@@ -4248,7 +4248,7 @@
           "level3": "Integrated risk management with regular reassessment, linkage to VDA ISA controls, residual risk acceptance by management and KPI-based reporting"
         },
         "title": "Are information security risks systematically identified, assessed and treated?",
-        "tooltip": "VDA ISA 6.0.2, control 1.4.1: “To what extent are information security risks managed?”"
+        "tooltip": "VDA ISA 2027.1, control 1.4.1: “To what extent are information security risks managed?”"
       },
       "perQ1": {
         "help": "In the automotive industry, employees frequently have access to strictly confidential OEM data and prototypes. Before hiring, you should verify identity, qualifications and reliability. For roles with access to highly confidential information, a police clearance certificate may be required. Check whether a documented pre-employment screening process exists.",
@@ -4259,7 +4259,7 @@
           "level3": "Comprehensive, protection-need-graded screening process for all employees and temporary workers, regular re-screening for high-security roles, documented rejection criteria and archiving of evidence"
         },
         "title": "Are employees screened for reliability and qualifications before hiring?",
-        "tooltip": "VDA ISA 6.0.2, control 2.1.1: “To what extent is the qualification of employees for sensitive work fields ensured?”"
+        "tooltip": "VDA ISA 2027.1, control 2.1.1: “To what extent is the qualification of employees for sensitive work fields ensured?”"
       },
       "perQ2": {
         "help": "All employees — including temporary staff and agency workers — should receive regular information security training. The training must cover handling confidential OEM data, prototype protection, recognising social engineering and reporting duties for security incidents. Training records must be documented and presentable at the assessment.",
@@ -4270,7 +4270,7 @@
           "level3": "Comprehensive, continuous awareness programme with e-learning, phishing simulations, role-specific deep dives, effectiveness measurement through tests and documented training records for all employees"
         },
         "title": "Is there a structured programme for information security awareness and training?",
-        "tooltip": "VDA ISA 6.0.2, control 2.1.3: “To what extent is staff made aware of and trained with respect to the risks arising from the handling of information?”"
+        "tooltip": "VDA ISA 2027.1, control 2.1.3: “To what extent is staff made aware of and trained with respect to the risks arising from the handling of information?”"
       },
       "perQ3": {
         "help": "In the automotive industry, contractual confidentiality safeguards are particularly important, as OEM partners often impose strict secrecy requirements. You need demonstrable NDAs for all persons with access to confidential information. The agreements must govern the scope of secrecy, its duration, sanctions for violations and the obligations upon termination of the relationship.",
@@ -4281,7 +4281,7 @@
           "level3": "Comprehensive NDA management with protection-need-graded agreements, regular updates when requirements change, exit procedures with return obligations and complete documentation of all signed agreements"
         },
         "title": "Are confidentiality and secrecy arrangements agreed with employees and external partners?",
-        "tooltip": "VDA ISA 6.0.2, control 2.1.2: “To what extent is all staff contractually bound to comply with information security policies?” control 6.1.2: “To what extent is non-disclosure regarding the exchange of information contractually agreed?”"
+        "tooltip": "VDA ISA 2027.1, control 2.1.2: “​To what extent is all staff contractually bound to comply with information security policies?” control 6.1.2: “To what extent is non-disclosure regarding the exchange of information contractually agreed?”"
       },
       "phyQ1": {
         "help": "You need clear zoning of your premises: public area, general company area, security-relevant area and high-security area (e.g. prototype workshop). Each zone requires appropriate access controls — from a simple badge requirement to biometric access control with a mantrap. The assessor checks the effectiveness of the zoning on site.",
@@ -4292,7 +4292,7 @@
           "level3": "Multi-level zone concept with access control graded by protection needs, mantrap systems for high-security areas, complete entry logging, regular walkthroughs and revision of the zone concepts"
         },
         "title": "Are physical security areas defined and equipped with appropriate access controls?",
-        "tooltip": "VDA ISA 6.0.2, control 3.1.1: “To what extent are security zones managed to protect information assets?”"
+        "tooltip": "VDA ISA 2027.1, control 3.1.1: “To what extent are security zones managed to protect information assets?”"
       },
       "phyQ2": {
         "help": "In the automotive industry, confidential OEM design data, measurement results and prototype images are often processed on local systems. These should be physically secured: laptops with Kensington locks or in locked cabinets, a clean desk policy, secure disposal of storage media and printed materials. Mobile devices must be encrypted.",
@@ -4303,7 +4303,7 @@
           "level3": "Comprehensive equipment protection concept with asset tracking, automatic disk encryption, controlled USB use via endpoint management, a documented disposal process and regular compliance checks"
         },
         "title": "Are IT systems and storage media physically protected against theft, manipulation and unauthorised access?",
-        "tooltip": "VDA ISA 6.0.2, control 3.1.3: “To what extent is the handling of supporting assets managed?” control 3.1.4: “To what extent is the handling of mobile IT devices and mobile data storage devices managed?”"
+        "tooltip": "VDA ISA 2027.1, control 3.1.3: “​To what extent is the handling of supporting assets managed?” control 3.1.4: “To what extent is the handling of mobile IT devices and mobile data storage devices managed?”"
       },
       "phyQ3": {
         "help": "Server rooms, archive areas and prototype workshops need appropriate protection against physical threats. Check whether a fire alarm system, extinguishing system (gas or water), UPS, climate monitoring and water sensors are in place. The scope of protection must match the protection needs of the information processed in the area.",
@@ -4314,7 +4314,7 @@
           "level3": "Comprehensive protection with redundant UPS and emergency power, automatic fire suppression, climate monitoring with alerting, water sensors and regular function tests of all protection systems"
         },
         "title": "Are measures in place to protect security-relevant areas against environmental threats such as fire, water and power failure?",
-        "tooltip": "VDA ISA 6.0.2, control 1.6.3: “To what extent is the organization prepared to handle crisis situations?” control 5.2.8: “To what extent is continuity planning for IT services in place?” VDA ISA 6.0.2 has no separate control on environmental threats; the former control 3.1.2 is listed there as superseded by 1.6.3, 5.2.8 and 5.2.9."
+        "tooltip": "VDA ISA 2027.1, control 1.6.3: “To what extent is the organization prepared to handle crisis situations?” control 5.2.8: “To what extent is continuity planning for IT services in place?” VDA ISA 2027.1 has no separate control on environmental threats; the former control 3.1.2 is listed there as superseded by 1.6.3, 5.2.8 and 5.2.9."
       },
       "protoQ1": {
         "help": "Prototype protection is one of the central differentiators of TISAX compared with ISO 27001. OEMs require suppliers to protect prototypes — whether vehicles, parts or design studies — through physical and organisational measures. The protection concept must cover camouflage measures, access restrictions, photo/film bans and transport rules.",
@@ -4325,7 +4325,7 @@
           "level3": "Comprehensive prototype protection programme with a multi-level zone concept, complete access control, camera surveillance, dedicated camouflage vehicles and regular audits of prototype protection compliance by the OEM"
         },
         "title": "Does a dedicated protection concept exist for prototype vehicles, parts and components?",
-        "tooltip": "VDA ISA 6.0.2, control 8.1.1: “To what extent is a security concept available describing minimum requirements regarding the physical and environmental security for prototype protection?”"
+        "tooltip": "VDA ISA 2027.1, control 8.1.1: “To what extent are regulations for prototype protection defined within the organization and responsibilities established?” control 8.2.1: “To what extent is a security concept available describing minimum requirements regarding the physical and environmental security for prototype protection?”"
       },
       "protoQ2": {
         "help": "Besides physical prototypes, digital prototype information must also be protected. CAD data, rendering images, simulation results and specifications are often the primary target of industrial espionage. You need clear rules for storage (encrypted, access-protected), transfer (secure channels) and deletion (after project end). The need-to-know principle must be applied strictly.",
@@ -4336,7 +4336,7 @@
           "level3": "Technically enforced protection rules with DRM/rights management for prototype data, traceable access logging, automated deletion after project end and regular review of access authorisations"
         },
         "title": "Is the handling and disclosure of prototype information (images, CAD data, specifications) regulated?",
-        "tooltip": "VDA ISA 6.0.2, control 8.2.4: “To what extent are security classifications of the project and the resulting security measures known?” control 8.2.6: “To what extent are regulations for image recording and handling of created image material existent?”"
+        "tooltip": "VDA ISA 2027.1, control 8.1.2: “To what extent are order-specific requirements and specifications for handling prototypes regulated?” control 8.1.10: “To what extent are regulations for image recording and handling of created image material existent?”"
       },
       "protoQ3": {
         "help": "OEMs require their prototype protection requirements to be observed along the entire supply chain. If you, as a tier 1 or tier 2 supplier, pass prototype parts or information on to your sub-suppliers, you must pass on the protection requirements contractually and verify compliance. TISAX assessors specifically ask for evidence of supplier monitoring.",
@@ -4347,7 +4347,7 @@
           "level3": "Comprehensive supply chain prototype security with contractual OEM-compliant requirements, regular on-site audits at sub-suppliers, a TISAX label requirement for critical suppliers and documented evidence keeping"
         },
         "title": "Are prototype protection requirements contractually ensured and monitored in the supply chain?",
-        "tooltip": "VDA ISA 6.0.2, control 8.2.1: “To what extent are non-disclosure agreements/obligations existent according to the valid contractual law?” control 8.2.2: “To what extent are requirements for commissioning subcontractors known and fulfilled?”"
+        "tooltip": "VDA ISA 2027.1, control 8.1.5: “To what extent are non-disclosure agreements/obligations existent according to the valid contractual law?” control 8.1.6: “To what extent are requirements for commissioning subcontractors known and fulfilled?”"
       },
       "techQ1": {
         "help": "You need a complete inventory of all IT assets: servers, clients, network components, software, databases and cloud services. Every asset must be assigned to an owner and classified according to the protection needs of the information processed on it. OEM-related systems in particular often require a higher classification.",
@@ -4358,7 +4358,7 @@
           "level3": "Automated asset management with discovery tools, continuous updates, linkage to the risk assessment and protection-needs classification in line with the VDA ISA protection-need categories"
         },
         "title": "Is systematic management of IT assets established, including classification and inventory?",
-        "tooltip": "VDA ISA 6.0.2, control 1.3.1: “To what extent are information assets identified and recorded?” control 1.3.2: “To what extent are information assets classified and managed in terms of their protection needs?”"
+        "tooltip": "VDA ISA 2027.1, control 1.3.1: “To what extent are information assets identified and recorded?” control 1.3.2: “To what extent are information assets classified and managed in terms of their protection needs?”"
       },
       "techQ2": {
         "help": "Information classification is a core topic in TISAX assessments. You must define a classification scheme (e.g. public, internal, confidential, strictly confidential) that is compatible with the OEM classifications. Every document and piece of information must be labelled accordingly. The handling rules determine how classified information may be stored, transferred and destroyed.",
@@ -4369,7 +4369,7 @@
           "level3": "Fully implemented classification scheme with technical enforcement (e.g. DLP, rights management), automatic labelling, regular review of the classification and integration into OEM-specific information exchange procedures"
         },
         "title": "Are information and documents labelled and handled according to a defined classification scheme?",
-        "tooltip": "VDA ISA 6.0.2, control 1.3.2: “To what extent are information assets classified and managed in terms of their protection needs?”"
+        "tooltip": "VDA ISA 2027.1, control 1.3.2: “To what extent are information assets classified and managed in terms of their protection needs?”"
       },
       "techQ3": {
         "help": "Removable media pose a considerable security risk: data loss through misplacement, uncontrolled data leakage and malware introduction. You need clear rules for using USB devices, encryption of mobile storage media and secure disposal. Many OEMs demand a complete USB ban or whitelist-based control.",
@@ -4380,7 +4380,7 @@
           "level3": "Centrally managed device control policy with a whitelist, automatic encryption, logging of all access, certified media destruction and regular review of authorisations"
         },
         "title": "Are removable media and storage devices used in a controlled manner and disposed of securely?",
-        "tooltip": "VDA ISA 6.0.2, control 3.1.3: “To what extent is the handling of supporting assets managed?” control 3.1.4: “To what extent is the handling of mobile IT devices and mobile data storage devices managed?”"
+        "tooltip": "VDA ISA 2027.1, control 3.1.3: “​To what extent is the handling of supporting assets managed?” control 3.1.4: “To what extent is the handling of mobile IT devices and mobile data storage devices managed?”"
       },
       "zkQ1": {
         "help": "Access to IT systems and information should be granted only on the basis of a documented need. The need-to-know principle means: every employee only gets access to the information required for their work. The least-privilege principle means: every user only gets the minimum rights required for their tasks.",
@@ -4391,7 +4391,7 @@
           "level3": "Role-based authorisation concept (RBAC) with documented role models, an automated request process, regular recertification and segregation of duties (SoD) for critical authorisations"
         },
         "title": "Does an access control policy based on the need-to-know and least-privilege principles exist?",
-        "tooltip": "VDA ISA 6.0.2, control 4.2.1: “To what extent are access rights assigned and managed?”"
+        "tooltip": "VDA ISA 2027.1, control 4.2.1: “To what extent are access rights assigned and managed?”"
       },
       "zkQ2": {
         "help": "A common finding in TISAX assessments is orphaned accounts: employees left long ago, but their access still exists. You need a defined identity lifecycle process that creates accounts on joining, adjusts them on role changes and deactivates them promptly on departure. This is especially critical for accounts with access to OEM systems or prototype data.",
@@ -4402,7 +4402,7 @@
           "level3": "Automated identity lifecycle with HR system integration, immediate account lockout upon departure, automatic recertification of all authorisations, monitoring of inactive accounts and regular reporting to management"
         },
         "title": "Are user accounts and access rights managed across their entire lifecycle?",
-        "tooltip": "VDA ISA 6.0.2, control 4.1.3: “To what extent are user accounts and login information securely managed and applied?” control 4.2.1: “To what extent are access rights assigned and managed?”"
+        "tooltip": "VDA ISA 2027.1, control 4.1.3: “To what extent are user accounts and login information securely managed and applied?” control 4.2.1: “To what extent are access rights assigned and managed?”"
       },
       "zkQ3": {
         "help": "Administrator accounts have far-reaching rights and are therefore preferred attack targets. Privileged accounts should be specially protected: separate admin accounts (not for daily use), strong authentication (MFA), logging of all administrative activities and regular review of necessity. Shared admin accounts must be avoided.",
@@ -4413,171 +4413,171 @@
           "level3": "Privileged access management (PAM) with just-in-time access, session recording, automated password rotation, break-glass procedures for emergency access and real-time alerting on anomalous administrator behaviour"
         },
         "title": "Are privileged access rights (administrator accounts) specially protected and monitored?",
-        "tooltip": "VDA ISA 6.0.2, control 4.1.2: “To what extent is the user access to IT services and IT systems secured?” control 4.2.1: “To what extent are access rights assigned and managed?”"
+        "tooltip": "VDA ISA 2027.1, control 4.1.2: “To what extent is the user access to IT services and IT systems secured?” control 4.2.1: “To what extent are access rights assigned and managed?”"
       }
     },
     "quickCheck": {
       "questions": {
         "q1": {
-          "description": "VDA ISA 6: an information security policy approved by management with defined roles, responsibilities and regular review forms the foundation for TISAX.",
+          "description": "VDA ISA: an information security policy approved by management with defined roles, responsibilities and regular review forms the foundation for TISAX.",
           "title": "Is there a documented information security policy with clear responsibilities?"
         },
         "q10": {
-          "description": "VDA ISA 6: internal audit programme, management reviews and demonstrable corrective measures for identified deviations.",
+          "description": "VDA ISA: internal audit programme, management reviews and demonstrable corrective measures for identified deviations.",
           "title": "Are TISAX requirements reviewed regularly and deviations systematically followed up?"
         },
         "q2": {
-          "description": "VDA ISA 6: all staff — including externals — must be trained regularly on information security risks and rules.",
+          "description": "VDA ISA: all staff — including externals — must be trained regularly on information security risks and rules.",
           "title": "Are employees regularly trained and sensitised on information security?"
         },
         "q3": {
-          "description": "VDA ISA 6: physical access control with zoning, visitor management and protection against unauthorised entry to areas containing confidential data.",
+          "description": "VDA ISA: physical access control with zoning, visitor management and protection against unauthorised entry to areas containing confidential data.",
           "title": "Are security zones defined and access to sensitive areas controlled?"
         },
         "q4": {
-          "description": "VDA ISA 6: endpoint protection, network security, patch management and monitoring — in line with the current state of the art.",
+          "description": "VDA ISA: endpoint protection, network security, patch management and monitoring — in line with the current state of the art.",
           "title": "Are your IT systems secured against cyberattacks by up-to-date protective measures?"
         },
         "q5": {
-          "description": "VDA ISA 6: special protective measures for prototypes, camouflage, test vehicles and confidential OEM development data.",
+          "description": "VDA ISA: special protective measures for prototypes, camouflage, test vehicles and confidential OEM development data.",
           "title": "Are prototypes and confidential development data protected physically and digitally?"
         },
         "q6": {
-          "description": "VDA ISA 6: TISAX assessment level 2/3 checks compliance with GDPR data protection requirements in the automotive context.",
+          "description": "VDA ISA: TISAX assessment level 2/3 checks compliance with GDPR data protection requirements in the automotive context.",
           "title": "Is personal data processed in accordance with data protection requirements?"
         },
         "q7": {
-          "description": "VDA ISA 6: need-to-know principle, individual user accounts, regular recertification and prompt deactivation upon departure.",
+          "description": "VDA ISA: need-to-know principle, individual user accounts, regular recertification and prompt deactivation upon departure.",
           "title": "Is there a role-based authorisation concept with regular reviews?"
         },
         "q8": {
-          "description": "VDA ISA 6: current encryption standards for data in transit and at rest — especially for OEM-confidential information.",
+          "description": "VDA ISA: current encryption standards for data in transit and at rest — especially for OEM-confidential information.",
           "title": "Are encryption methods used for transmitting and storing sensitive data?"
         },
         "q9": {
-          "description": "VDA ISA 6: contractual clauses for information security, regular review and the duty to pass requirements on to subcontractors.",
+          "description": "VDA ISA: contractual clauses for information security, regular review and the duty to pass requirements on to subcontractors.",
           "title": "Are information security requirements passed on to suppliers contractually?"
         }
       }
     },
     "recommendations": {
       "bs1": {
-        "description": "Implement comprehensive malware protection for all automotive development and production systems per VDA ISA 6 and ISO 27001 A.8.7. Take special requirements for OT environments into account.",
+        "description": "Implement comprehensive malware protection for all automotive development and production systems per VDA ISA and ISO 27001 A.8.7. Take special requirements for OT environments into account.",
         "firstStep": "Deploy anti-malware solutions on all workstations and servers handling automotive data (development, PLM, MES).",
         "title": "Malware protection for automotive development environments"
       },
       "bs2": {
-        "description": "Establish vulnerability management for all automotive IT and OT systems per VDA ISA 6 and ISO 27001 A.8.8. Prioritize patching for production-adjacent and prototype systems.",
+        "description": "Establish vulnerability management for all automotive IT and OT systems per VDA ISA and ISO 27001 A.8.8. Prioritize patching for production-adjacent and prototype systems.",
         "firstStep": "Implement automated vulnerability scanning for all automotive systems (at least monthly for development environments).",
         "title": "Vulnerability management for automotive systems"
       },
       "comp1": {
-        "description": "Implement a comprehensive compliance framework to meet all VDA ISA/TISAX requirements per VDA ISA 6 and ISO 27001 A.5.31. Prepare for a TISAX assessment.",
+        "description": "Implement a comprehensive compliance framework to meet all VDA ISA/TISAX requirements per VDA ISA and ISO 27001 A.5.31. Prepare for a TISAX assessment.",
         "firstStep": "Conduct a TISAX gap assessment to identify deviations between the current state and VDA ISA requirements.",
         "title": "Implement a TISAX compliance framework"
       },
       "comp2": {
-        "description": "Conduct regular reviews to ensure compliance with all TISAX and automotive security requirements per VDA ISA 6 and ISO 27001 A.5.36. Document evidence for audits.",
+        "description": "Conduct regular reviews to ensure compliance with all TISAX and automotive security requirements per VDA ISA and ISO 27001 A.5.36. Document evidence for audits.",
         "firstStep": "Schedule quarterly TISAX compliance reviews with defined checkpoints (VDA ISA controls, measure status).",
         "title": "Conduct regular compliance reviews"
       },
       "ds1": {
-        "description": "Implement a data protection management system for automotive-specific personal data (e.g., vehicle data, test drivers) per VDA ISA 6 (Data Protection module) and GDPR.",
+        "description": "Implement a data protection management system for automotive-specific personal data (e.g., vehicle data, test drivers) per VDA ISA (Data Protection module) and GDPR.",
         "firstStep": "Identify all processing activities involving automotive personal data and maintain a record of processing activities per Art. 30 GDPR.",
         "title": "Establish data protection management for automotive data"
       },
       "ds2": {
-        "description": "Conduct regular data protection audits and reviews, especially for automotive data processing activities (connected car, test data) per VDA ISA 6 (Data Protection module).",
+        "description": "Conduct regular data protection audits and reviews, especially for automotive data processing activities (connected car, test data) per VDA ISA (Data Protection module).",
         "firstStep": "Schedule an annual data protection audit focusing on automotive-specific data processing (e.g., telematics, test drives).",
         "title": "Conduct data protection audits and reviews"
       },
       "kom1": {
-        "description": "Implement comprehensive network security measures for automotive development networks (segmentation, firewalls, IDS/IPS) per VDA ISA 6 and ISO 27001 A.8.20.",
+        "description": "Implement comprehensive network security measures for automotive development networks (segmentation, firewalls, IDS/IPS) per VDA ISA and ISO 27001 A.8.20.",
         "firstStep": "Segment the network by sensitivity level (e.g., prototype zone, development, production, office) with strict firewall controls.",
         "title": "Network security for automotive development networks"
       },
       "kom2": {
-        "description": "Implement encrypted transmission channels for all automotive-sensitive data (internal and external to suppliers/OEMs) per VDA ISA 6 and ISO 27001 A.5.14.",
+        "description": "Implement encrypted transmission channels for all automotive-sensitive data (internal and external to suppliers/OEMs) per VDA ISA and ISO 27001 A.5.14.",
         "firstStep": "Define secure transmission methods for prototype data (e.g., SFTP, HTTPS, VPN) and prohibit unencrypted channels.",
         "title": "Secure data transmission for automotive information"
       },
       "kry1": {
-        "description": "Develop an enterprise-wide cryptography concept for automotive data at rest and in transit per VDA ISA 6 and ISO 27001 A.8.24. Define encryption standards for prototype information.",
+        "description": "Develop an enterprise-wide cryptography concept for automotive data at rest and in transit per VDA ISA and ISO 27001 A.8.24. Define encryption standards for prototype information.",
         "firstStep": "Create a cryptography concept with defined algorithms, key lengths, and use cases (e.g., AES-256 for prototype data).",
         "title": "Develop a cryptography concept for automotive data"
       },
       "kry2": {
-        "description": "Implement secure key management for all cryptographic keys in automotive applications per VDA ISA 6 and ISO 27001 A.8.24. Use HSMs for highly sensitive keys.",
+        "description": "Implement secure key management for all cryptographic keys in automotive applications per VDA ISA and ISO 27001 A.8.24. Use HSMs for highly sensitive keys.",
         "firstStep": "Define processes for key generation, storage, distribution, rotation, and destruction for automotive encryption.",
         "title": "Key management for automotive encryption"
       },
       "lief1": {
-        "description": "Define binding information security requirements for all automotive suppliers per VDA ISA 6 and ISO 27001 A.5.19. Require a TISAX label for suppliers handling sensitive data.",
+        "description": "Define binding information security requirements for all automotive suppliers per VDA ISA and ISO 27001 A.5.19. Require a TISAX label for suppliers handling sensitive data.",
         "firstStep": "Create a supplier requirements checklist for information security including TISAX requirements for critical suppliers.",
         "title": "Information security requirements for automotive suppliers"
       },
       "lief2": {
-        "description": "Continuously monitor the information security of your automotive suppliers through regular audits and assessments per VDA ISA 6 and ISO 27001 A.5.22.",
+        "description": "Continuously monitor the information security of your automotive suppliers through regular audits and assessments per VDA ISA and ISO 27001 A.5.22.",
         "firstStep": "Schedule annual information security audits for all critical suppliers with access to prototypes or sensitive automotive data.",
         "title": "Conduct supplier monitoring and audits"
       },
       "org1": {
-        "description": "Develop an automotive-specific information security policy and implement an ISMS per VDA ISA 6 and ISO 27001 A.5.1. The policy must cover prototype protection and supply chain requirements.",
+        "description": "Develop an automotive-specific information security policy and implement an ISMS per VDA ISA and ISO 27001 A.5.1. The policy must cover prototype protection and supply chain requirements.",
         "firstStep": "Draft a written information security policy referencing VDA ISA requirements and have it approved by senior management.",
         "title": "Establish an information security policy and ISMS"
       },
       "org2": {
-        "description": "Define clear roles and responsibilities for information security per VDA ISA 6 and ISO 27001 A.5.2. Appoint an Information Security Officer (ISO) with direct access to senior management.",
+        "description": "Define clear roles and responsibilities for information security per VDA ISA and ISO 27001 A.5.2. Appoint an Information Security Officer (ISO) with direct access to senior management.",
         "firstStep": "Formally appoint an Information Security Officer (ISO) and document their tasks, authority, and reporting lines.",
         "title": "Define information security roles and responsibilities"
       },
       "per1": {
-        "description": "Implement pre-employment security screening processes, particularly for positions with access to prototypes or sensitive automotive data per VDA ISA 6 and ISO 27001 A.6.1.",
+        "description": "Implement pre-employment security screening processes, particularly for positions with access to prototypes or sensitive automotive data per VDA ISA and ISO 27001 A.6.1.",
         "firstStep": "Define security screening criteria based on the sensitivity of the position (e.g., prototype access, development data).",
         "title": "Conduct employee security screening"
       },
       "per2": {
-        "description": "Conduct regular automotive-specific security awareness training per VDA ISA 6 and ISO 27001 A.6.3. Topics: prototype protection, supply chain risks, social engineering.",
+        "description": "Conduct regular automotive-specific security awareness training per VDA ISA and ISO 27001 A.6.3. Topics: prototype protection, supply chain risks, social engineering.",
         "firstStep": "Develop a training program with automotive focus areas (prototypes, suppliers, NDA handling) for all employees.",
         "title": "Conduct security awareness training for the automotive context"
       },
       "phy1": {
-        "description": "Establish physical security perimeters to protect critical areas (e.g., prototype workshops, development labs) per VDA ISA 6 and ISO 27001 A.7.1. Implement access controls and visitor management.",
+        "description": "Establish physical security perimeters to protect critical areas (e.g., prototype workshops, development labs) per VDA ISA and ISO 27001 A.7.1. Implement access controls and visitor management.",
         "firstStep": "Identify all areas containing prototypes or highly sensitive automotive data and define security zones.",
         "title": "Set up physical security perimeters for prototypes"
       },
       "phy2": {
-        "description": "Install surveillance systems for critical areas (prototype zones, test grounds) per VDA ISA 6 and ISO 27001 A.7.4. Observe data protection requirements (GDPR).",
+        "description": "Install surveillance systems for critical areas (prototype zones, test grounds) per VDA ISA and ISO 27001 A.7.4. Observe data protection requirements (GDPR).",
         "firstStep": "Conduct a risk analysis for critical areas and identify zones requiring surveillance (prototypes, test grounds).",
         "title": "Implement video surveillance and physical monitoring"
       },
       "proto1": {
-        "description": "Implement specific physical protection measures for prototype vehicles and components per VDA ISA 6 (Prototype Protection module) This includes secure storage, transportation, labeling, and disposal.",
+        "description": "Implement specific physical protection measures for prototype vehicles and components per VDA ISA (Prototype Protection module) This includes secure storage, transportation, labeling, and disposal.",
         "firstStep": "Create a prototype protection policy with clear guidelines for storage, labeling, transportation, and destruction.",
         "title": "Implement physical prototype protection"
       },
       "proto2": {
-        "description": "Classify all prototype-related information (CAD, test data, specifications) by sensitivity per VDA ISA 6 (Prototype Protection module) and implement appropriate protective measures (encryption, DRM).",
+        "description": "Classify all prototype-related information (CAD, test data, specifications) by sensitivity per VDA ISA (Prototype Protection module) and implement appropriate protective measures (encryption, DRM).",
         "firstStep": "Conduct a data classification for all prototype information (public, internal, confidential, strictly confidential).",
         "title": "Classify and protect prototype information"
       },
       "tech1": {
-        "description": "Implement comprehensive asset management for all automotive-relevant assets (hardware, software, data, prototypes) with classification per VDA ISA 6 and ISO 27001 A.5.9.",
+        "description": "Implement comprehensive asset management for all automotive-relevant assets (hardware, software, data, prototypes) with classification per VDA ISA and ISO 27001 A.5.9.",
         "firstStep": "Create a complete inventory of all automotive-related assets and classify them by protection level (e.g., prototype level).",
         "title": "Asset management and classification for automotive data"
       },
       "tech2": {
-        "description": "Implement comprehensive endpoint security measures for developer workstations and mobile devices with access to automotive data per VDA ISA 6 and ISO 27001 A.8.1.",
+        "description": "Implement comprehensive endpoint security measures for developer workstations and mobile devices with access to automotive data per VDA ISA and ISO 27001 A.8.1.",
         "firstStep": "Deploy endpoint protection solutions (anti-malware, EDR) on all devices with access to development data or prototypes.",
         "title": "Endpoint security for development environments"
       },
       "zk1": {
-        "description": "Implement a comprehensive access control policy for all automotive systems (development, production, prototypes) per VDA ISA 6 and ISO 27001 A.5.15. Apply least-privilege and need-to-know principles.",
+        "description": "Implement a comprehensive access control policy for all automotive systems (development, production, prototypes) per VDA ISA and ISO 27001 A.5.15. Apply least-privilege and need-to-know principles.",
         "firstStep": "Document an access control policy with rules for automotive-specific systems (CAD, PLM, test databases).",
         "title": "Access control policy for automotive environments"
       },
       "zk2": {
-        "description": "Implement Privileged Access Management (PAM) for critical automotive systems (development environments, prototype networks) per VDA ISA 6 and ISO 27001 A.8.2.",
+        "description": "Implement Privileged Access Management (PAM) for critical automotive systems (development environments, prototype networks) per VDA ISA and ISO 27001 A.8.2.",
         "firstStep": "Identify all privileged accounts in automotive-critical systems and implement a PAM solution with session recording.",
         "title": "Privileged Access Management (PAM) for critical systems"
       }
@@ -5920,17 +5920,17 @@
         "dsgvo": "Effective since May 25, 2018",
         "kritis": "Critical installations: BSIG since Dec 6, 2025 (previously IT Security Act 2.0)",
         "dora": "Effective since Jan 17, 2025",
-        "tisax": "Ongoing — OEM requirement. Questions based on VDA ISA 6; assessments ordered from Jan 1, 2027 use ISA2027",
+        "tisax": "Ongoing — OEM requirement. Questions based on VDA ISA 2027.1 (basis for assessments ordered from Jan 1, 2027); according to ENX, assessments ordered earlier can still use ISA 6",
         "cra": "Reporting duties since Sep 11, 2026 (ENISA Single Reporting Platform); full application Dec 11, 2027 (EU 2024/2847)",
         "bsi-grundschutz": "Framework — no legal deadline. Questions based on the Compendium (2023 edition); successor Grundschutz++ (BSI Standard 300-1) is gradually replacing it",
         "iso27001": "Framework — no legal deadline",
         "soc2": "Framework — no legal deadline",
         "pci-dss": "PCI DSS v4.0.1 since Dec 31, 2024 (compliance date for new requirements: Mar 31, 2025)",
-        "c5": "Framework — no legal deadline. Questions based on C5:2020; successor C5:2026 recommended for audit periods ending on or after Jun 1, 2027",
+        "c5": "Framework — no legal deadline. Questions based on C5:2026; BSI recommends it for audit periods ending on or after Jun 1, 2027, and C5:2020 before that",
         "cis-controls": "Since June 2024 (v8.1)",
         "iso22301": "Since 2019 (2nd Edition)",
         "nist-csf": "Since 2024 (v2.0)",
-        "owasp-asvs": "Questions based on v4.0.3 — current release: v5.0 (May 2025)"
+        "owasp-asvs": "Questions based on v5.0.0 (May 2025)"
       },
       "reasons": {
         "nis2SectorSize": "Your organization falls within a NIS2 sector and meets the size threshold.",
@@ -7701,7 +7701,7 @@
     },
     "tisax": {
       "title": "Prepare TISAX Assessment",
-      "subtitle": "Are you ready for information security in the automotive industry?\nCheck your status against VDA ISA 6.\nAssessments ordered from Jan 1, 2027 use the successor catalogue ISA2027.",
+      "subtitle": "Are you ready for information security in the automotive industry?\nCheck your status against VDA ISA 2027.1.\nThe catalogue is the basis for assessments ordered from Jan 1, 2027; according to ENX, assessments ordered earlier can still use ISA 6.",
       "cta": "Start TISAX Check"
     },
     "cra": {
@@ -7731,7 +7731,7 @@
     },
     "c5": {
       "title": "BSI C5 Compliance Check",
-      "subtitle": "Does your cloud service meet BSI C5:2020 requirements?\nCheck your cloud security measures against the BSI criteria catalogue.\nThe successor C5:2026 has been published — BSI recommends it for audit periods ending on or after Jun 1, 2027.",
+      "subtitle": "Does your cloud service meet BSI C5:2026 requirements?\nCheck your cloud security measures against the BSI criteria catalogue.\nBSI recommends C5:2026 for audit periods ending on or after Jun 1, 2027; for earlier audit periods the recommendation is C5:2020, whose identifiers differ.",
       "cta": "Start C5 Check"
     },
     "cis-controls": {
@@ -7747,7 +7747,7 @@
       "subtitle": "The world's leading cybersecurity framework.\nWith 6 functions: Govern, Identify, Protect, Detect, Respond, Recover."
     },
     "owasp-asvs": {
-      "title": "OWASP ASVS 4.0.3",
+      "title": "OWASP ASVS 5.0.0",
       "subtitle": "Security standard for web applications and APIs.\nVerification levels L1 to L3 for developers and security teams. The questions assume developer knowledge."
     }
   },
@@ -9187,7 +9187,7 @@
   "c5": {
     "name": "BSI C5",
     "shortName": "C5",
-    "fullName": "Cloud Computing Compliance Criteria Catalogue (C5:2020)",
+    "fullName": "Cloud Computing Compliance Criteria Catalogue (C5:2026)",
     "description": "BSI criteria catalogue for secure cloud computing",
     "categories": {
       "organisation": {
@@ -9242,7 +9242,7 @@
     "questions": {
       "orgQ1": {
         "title": "Does your organisation have a documented information security policy for cloud operations?",
-        "tooltip": "Based on C5:2020 criteria OIS-01 and OIS-02 (official German titles: “Informationssicherheitsmanagementsystem (ISMS)”, “Leitlinie zur Informationssicherheit”).",
+        "tooltip": "Based on C5:2026 criteria OIS-01 and OIS-02 (official German titles: “Informationssicherheitsmanagementsystem (ISMS)”, “Informationssicherheitsrichtlinie”).",
         "help": "An information security policy forms the foundation of your C5 compliance framework. It must be approved by management, communicated to all relevant employees and reviewed regularly. The policy should define the scope of the cloud service, responsibilities, risk acceptance criteria and overarching protection objectives.",
         "maturity": {
           "level0": "No documented information security policy; cloud security is not systematically addressed",
@@ -9253,7 +9253,7 @@
       },
       "orgQ2": {
         "title": "Are subordinate security policies for the cloud service defined and implemented?",
-        "tooltip": "Based on C5:2020 criteria SP-01 and SP-02 (official German titles: “Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Anweisungen”, “Überprüfung und Freigabe von Richtlinien und Anweisungen”).",
+        "tooltip": "Based on C5:2026 criteria SP-01 and SP-02 (official German titles: “Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Verfahren”, “Überprüfung und Freigabe von Richtlinien und Verfahren”).",
         "help": "Beyond the overarching policy, you need topic-specific security policies that define concrete requirements for individual areas. Typical topics include: access management, cryptography, data backup, network security, incident handling and physical security. Each policy must have a designated owner and be regularly updated.",
         "maturity": {
           "level0": "No topic-specific security policies; individual areas are handled on an ad-hoc basis",
@@ -9264,7 +9264,7 @@
       },
       "orgQ3": {
         "title": "Are employees in cloud operations screened and trained on information security?",
-        "tooltip": "Based on C5:2020 criteria HR-01 and HR-03 (official German titles: “Überprüfung der Qualifikation und Vertrauenswürdigkeit”, “Programm zur Sicherheitsausbildung und Sensibilisierung”).",
+        "tooltip": "Based on C5:2026 criteria HR-01 and HR-03 (official German titles: “Überprüfung der Qualifikation und Vertrauenswürdigkeit”, “Programm zur Sicherheitsausbildung und Sensibilisierung”).",
         "help": "Make sure that all employees with access to cloud systems and customer data are screened before hiring (identity verification, qualification proof, criminal record check where applicable). Additionally, regular information security training must be provided, tailored to the specific tasks and risks of each role. Training attendance must be documented.",
         "maturity": {
           "level0": "No systematic background checks or security training for cloud personnel",
@@ -9275,7 +9275,7 @@
       },
       "orgQ4": {
         "title": "Is compliance with information security policies regularly checked through independent audits?",
-        "tooltip": "Based on C5:2020 criteria COM-02 and COM-03 (official German titles: “Richtlinie für die Planung und Durchführung von Audits”, “Interne Audits des Informationssicherheitsmanagementsystems”).",
+        "tooltip": "Based on C5:2026 criteria COM-02 and COM-03 (official German titles: “Richtlinie für die Planung und Durchführung von Audits”, “Interne Audits des Informationssicherheitsmanagementsystems”).",
         "help": "Make sure that the effectiveness of your information security measures and compliance with your policies are regularly validated through independent audits — internal or external. Audit results must be reported to management. Identified deviations require corrective actions with defined deadlines and responsibilities.",
         "maturity": {
           "level0": "No independent audits of information security; compliance is not systematically monitored",
@@ -9286,7 +9286,7 @@
       },
       "amQ1": {
         "title": "Do you maintain a current inventory of all cloud assets including customer data?",
-        "tooltip": "Based on C5:2020 criterion AM-01 (official German title: “Inventarisierung der Assets”).",
+        "tooltip": "Based on C5:2026 criterion AM-02 (official German title: “Asset-Inventar”).",
         "help": "A complete asset inventory is a prerequisite for effective security management. Make sure all cloud-relevant assets are recorded: servers, storage media, network components, software licences, databases and especially customer data. Each asset must have a designated owner responsible for its protection.",
         "maturity": {
           "level0": "No asset inventory; no overview of deployed hardware, software or stored customer data",
@@ -9297,7 +9297,7 @@
       },
       "amQ2": {
         "title": "Are cloud assets and customer data classified by protection requirements and handled accordingly?",
-        "tooltip": "Based on C5:2020 criterion AM-06 (official German title: “Klassifizierung und Kennzeichnung von Assets”).",
+        "tooltip": "Based on C5:2026 criterion AM-09 (official German title: “Klassifizierung und Kennzeichnung von Assets”).",
         "help": "You need a classification scheme applied to all cloud assets. Concrete handling rules must be derived from the classification — e.g. what encryption is required at each level, who may access data and how data is to be deleted. Correct classification of customer data is particularly important.",
         "maturity": {
           "level0": "No classification of assets or data by protection requirements",
@@ -9308,7 +9308,7 @@
       },
       "amQ3": {
         "title": "Is secure return and deletion of customer data at contract end ensured?",
-        "tooltip": "Based on C5:2020 criteria PI-02 and PI-03 (official German titles: “Vertragliche Vereinbarungen zur Bereitstellung von Daten”, “Sichere Datenlöschung”).",
+        "tooltip": "Based on C5:2026 criteria PI-02 and PI-03 (official German titles: “Vertragliche Vereinbarungen zur Bereitstellung von Cloud-Kundendaten”, “Sichere Datenlöschung”).",
         "help": "At contract end or termination, the cloud provider must be able to return all customer data in an agreed, usable format. After successful return, the data — including all copies and backups — must be securely and demonstrably deleted. Deletion must comply with recognised standards (e.g. BSI recommendations for secure data deletion). Deadlines for return and deletion should be contractually agreed.",
         "maturity": {
           "level0": "No processes for data return or secure deletion at contract end",
@@ -9319,7 +9319,7 @@
       },
       "psQ1": {
         "title": "Are data centre locations protected by appropriate physical security measures?",
-        "tooltip": "Based on C5:2020 criteria PS-01, PS-03 and PS-04 (official German titles: “Sicherheitsanforderungen für Räumlichkeiten und Gebäude”, “Perimeterschutz”, “Zutrittskontrolle”).",
+        "tooltip": "Based on C5:2026 criteria PS-01, PS-03 and PS-04 (official German titles: “Sicherheitsanforderungen für Gebäude und Räumlichkeiten”, “Perimeterschutz”, “Physische Zutrittskontrolle”).",
         "help": "You need a multi-layered physical security concept for data centres: outer perimeter protection (fencing, lighting), building access (airlock, badge control), server rooms (biometric access control, surveillance cameras). Each zone must have defined access authorisations. Visitors must be registered and escorted.",
         "maturity": {
           "level0": "No defined security zones; uncontrolled access to server rooms possible",
@@ -9330,7 +9330,7 @@
       },
       "psQ2": {
         "title": "Is the data centre protected against environmental risks (fire, water, power)?",
-        "tooltip": "Based on C5:2020 criteria PS-05 and PS-06 (official German titles: “Schutz vor Feuer und Rauch”, “Schutz vor Ausfall der Versorgungseinrichtungen”).",
+        "tooltip": "Based on C5:2026 criteria PS-05 and PS-06 (official German titles: “Schutz vor Bedrohungen von Außen und aus der Umgebung”, “Schutz vor Unterbrechungen durch Stromausfälle und ähnliche Risiken für Versorgungseinrichtungen”).",
         "help": "You need comprehensive protection of data centre infrastructure against environmental risks: fire detection and suppression system (preferably gas suppression), water detection (leak sensors under raised floor), uninterruptible power supply (UPS) with standby generator, redundant air conditioning with temperature and humidity monitoring. All systems must be regularly maintained and tested.",
         "maturity": {
           "level0": "No or minimal protective measures against environmental risks; no redundancy for power or cooling",
@@ -9341,7 +9341,7 @@
       },
       "psQ3": {
         "title": "Are maintenance and disposal processes for IT equipment carried out securely?",
-        "tooltip": "Based on C5:2020 criteria AM-04 and PS-06 (official German titles: “Außerbetriebnahme von Hardware”, “Schutz vor Ausfall der Versorgungseinrichtungen”).",
+        "tooltip": "Based on C5:2026 criteria AM-07 and PS-06 (official German titles: “Außerbetriebnahme von Hardware”, “Schutz vor Unterbrechungen durch Stromausfälle und ähnliche Risiken für Versorgungseinrichtungen”).",
         "help": "You need documented processes for secure maintenance and disposal of IT equipment. During maintenance by external service providers, it must be ensured that no unauthorised access to customer data is possible. When disposing of or reusing equipment, all storage media must be securely erased (per recognised standards) or physically destroyed. Destruction must be documented and verifiable.",
         "maturity": {
           "level0": "No defined processes for secure maintenance or disposal; storage media disposed of without erasure",
@@ -9352,7 +9352,7 @@
       },
       "idmQ1": {
         "title": "Is there a formal process for user registration and deregistration in the cloud service?",
-        "tooltip": "Based on C5:2020 criteria IDM-02 and IDM-04 (official German titles: “Vergabe und Änderung von Zugangs- und Zugriffsberechtigungen”, “Entzug oder Anpassung von Zugriffsberechtigungen bei Veränderungen des Aufgabengebiets”).",
+        "tooltip": "Based on C5:2026 criteria IAM-02 and IAM-04 (official German titles: “Vergabe und Änderung von Identitäten und Zugriffsberechtigungen”, “Entzug oder Anpassung von Zugriffsberechtigungen bei Veränderungen des Aufgabengebiets”).",
         "help": "You need a documented process for the entire user account lifecycle: creation with unique identification, approval by the responsible person, assignment of role-based rights and timely deactivation on departure. Importantly, shared accounts must be minimised and technically privileged accounts managed separately. The process must be audit-trail documented.",
         "maturity": {
           "level0": "No formal process; user accounts created without approval and not deactivated on departure",
@@ -9363,8 +9363,8 @@
       },
       "idmQ2": {
         "title": "Are access rights granted on a least-privilege basis and regularly reviewed?",
-        "tooltip": "Based on C5:2020 criteria IDM-01, IDM-05 and IDM-06 (official German titles: “Richtlinie für Zugangs- und Zugriffsberechtigungen”, “Regelmäßige Überprüfung der Zugriffsberechtigungen”, “Privilegierte Zugriffsberechtigungen”).",
-        "help": "Make sure that each user only receives the access rights necessary for their current task. Privileged rights (administrator, root) must be particularly restrictively granted and separately monitored. All access rights must be reviewed regularly (access review); criterion IDM-05 states at least annually. During review, unnecessary rights must be revoked and deviations documented.",
+        "tooltip": "Based on C5:2026 criteria IAM-01, IAM-05 and IAM-06 (official German titles: “Richtlinie für Identitäten und Zugriffsberechtigungen”, “Regelmäßige Überprüfung von Zugriffsberechtigungen”, “Privilegierte Zugriffsberechtigungen”).",
+        "help": "Make sure that each user only receives the access rights necessary for their current task. Privileged rights (administrator, root) must be particularly restrictively granted and separately monitored. All access rights must be reviewed regularly (access review); criterion IAM-05 states at least annually. During review, unnecessary rights must be revoked and deviations documented.",
         "maturity": {
           "level0": "No systematic rights management; users frequently receive excessively broad rights",
           "level1": "Basic awareness of minimal rights but no formal process and no regular access reviews",
@@ -9374,7 +9374,7 @@
       },
       "idmQ3": {
         "title": "Do you use strong authentication mechanisms for access to cloud systems?",
-        "tooltip": "Based on C5:2020 criteria IDM-08 and IDM-09 (official German titles: “Vertraulichkeit von Authentisierungsinformationen”, “Authentisierungsmechanismen”).",
+        "tooltip": "Based on C5:2026 criteria IAM-08 and IAM-09 (official German titles: “Authentisierungsmechanismen”, “Vertraulichkeit von Authentisierungsinformationen”).",
         "help": "You need appropriate authentication mechanisms for all access to the cloud service. For privileged access and administrative interfaces, multi-factor authentication (MFA) is required. Passwords must meet defined complexity requirements (minimum length, complexity, change history). Session management must include timeouts and automatic lockout on inactivity.",
         "maturity": {
           "level0": "Only simple password authentication without complexity requirements; no MFA",
@@ -9385,7 +9385,7 @@
       },
       "opsQ1": {
         "title": "Are operational processes for the cloud service documented and is compliance monitored?",
-        "tooltip": "Based on C5:2020 criteria SP-01, OPS-01, DEV-03 and DEV-10 (official German titles: “Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Anweisungen”, “Kapazitätsmanagement – Planung”, “Richtlinien zur Änderung von Informationssystemen”, “Trennung der Umgebungen”). C5:2020 has no separate criterion for “documented operating processes”.",
+        "tooltip": "Based on C5:2026 criteria SP-01, OPS-01, DEV-03 and DEV-12 (official German titles: “Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Verfahren”, “Kapazitätsmanagement – Planung”, “Richtlinien für Änderungen an Systemkomponenten”, “Trennung der Umgebungen”). C5:2026 has no separate criterion for “documented operating processes”.",
         "help": "You need documented standard operating procedures for all essential aspects of cloud operations: change management, capacity planning, environment separation (dev/test/prod), patch management and system hardening. These procedures must be known to employees and their compliance must be monitored.",
         "maturity": {
           "level0": "No documented operational processes; cloud operations run without standardised procedures",
@@ -9396,7 +9396,7 @@
       },
       "opsQ2": {
         "title": "Are security events and system activities centrally logged and monitored?",
-        "tooltip": "Based on C5:2020 criteria OPS-10 to OPS-17, all of which carry the official German title “Protokollierung und Überwachung” (logging and monitoring).",
+        "tooltip": "Based on C5:2026 criteria OPS-10 to OPS-17, all of which carry the official German title “Protokollierung und Überwachung” (logging and monitoring).",
         "help": "You need comprehensive logging of all security-relevant events: login attempts, access attempts, system configuration changes, privileged actions and security events. Logs must be centrally collected, protected against unauthorised access and tampering, and analysed in a timely manner. Retention periods must be defined and comply with regulatory requirements.",
         "maturity": {
           "level0": "No systematic logging or monitoring; security events are not captured",
@@ -9407,7 +9407,7 @@
       },
       "opsQ3": {
         "title": "Are networks and communication links of the cloud service adequately secured?",
-        "tooltip": "Based on C5:2020 criteria COS-01 and COS-05 (official German titles: “Technische Schutzmaßnahmen”, “Netze zur Administration”).",
+        "tooltip": "Based on C5:2026 criteria COS-01 and COS-05 (official German titles: “Technische Schutzmaßnahmen”, “Netze für die Administration”).",
         "help": "You need comprehensive network security: segmentation of the cloud network to ensure tenant isolation, encryption of data in transit (TLS/IPsec), firewalls and intrusion detection/prevention systems (IDS/IPS), monitoring of network traffic for anomalies. The network architecture must be documented and regularly tested for vulnerabilities.",
         "maturity": {
           "level0": "No network segmentation or encryption of data traffic; no monitoring",
@@ -9418,7 +9418,7 @@
       },
       "kryQ1": {
         "title": "Is there a documented cryptography policy with current encryption standards?",
-        "tooltip": "Based on C5:2020 criterion CRY-01 (official German title: “Richtlinie zur Nutzung von Verschlüsselungsverfahren und Schlüsselverwaltung”).",
+        "tooltip": "Based on C5:2026 criterion CRY-01 (official German title: “Richtlinie für die Verwendung kryptographischer Mechanismen”).",
         "help": "You need a documented cryptography policy that specifies which cryptographic algorithms, key lengths and protocols may be used. The policy must align with current recommendations (e.g. BSI TR-02102 or NIST SP 800-131A). Outdated or insecure algorithms (e.g. MD5, SHA-1, DES, RC4) must be explicitly excluded. The policy must be regularly updated.",
         "maturity": {
           "level0": "No cryptography policy; encryption is used ad hoc without uniform standards",
@@ -9429,7 +9429,7 @@
       },
       "kryQ2": {
         "title": "Are cryptographic keys securely managed throughout their entire lifecycle?",
-        "tooltip": "Based on C5:2020 criterion CRY-04 (official German title: “Sichere Schlüsselverwaltung”).",
+        "tooltip": "Based on C5:2026 criterion CRY-17 (official German title: “Management des Lebenszyklus kryptographischer Schlüssel”).",
         "help": "You need documented key management for all cryptographic keys used. The process must cover all phases: secure generation (e.g. with hardware security modules), protected storage, controlled distribution, regular rotation, secure archiving and demonstrable destruction. Key compromise must trigger immediate action.",
         "maturity": {
           "level0": "No defined key management; keys stored insecurely or never rotated",
@@ -9440,7 +9440,7 @@
       },
       "kryQ3": {
         "title": "Is customer data encrypted both in transit and at rest?",
-        "tooltip": "Based on C5:2020 criteria CRY-02 and CRY-03 (official German titles: “Verschlüsselung von Daten bei der Übertragung (Transportverschlüsselung)”, “Verschlüsselung von sensiblen Daten bei der Speicherung”).",
+        "tooltip": "Based on C5:2026 criteria CRY-04 and CRY-05 (official German titles: “Schutz von Daten bei der Übertragung”, “Verschlüsselung von sensiblen Daten bei der Speicherung”).",
         "help": "Make sure that customer data is consistently encrypted: in transit through current TLS versions and at rest through strong encryption (e.g. AES-256). Encryption of backups, database entries and temporary files is particularly important. Customers should be informed about the methods used and ideally have the option to use their own keys (BYOK/HYOK).",
         "maturity": {
           "level0": "Customer data is encrypted neither in transit nor at rest",
@@ -9451,7 +9451,7 @@
       },
       "simQ1": {
         "title": "Is there a defined process for detecting, reporting and handling security incidents?",
-        "tooltip": "Based on C5:2020 criteria SIM-01 and SIM-02 (official German titles: “Richtlinie für den Umgang mit Sicherheitsvorfällen”, “Bearbeitung von Sicherheitsvorfällen”).",
+        "tooltip": "Based on C5:2026 criteria SIM-01, SIM-02 and SIM-03 (official German titles: “Richtlinie für den Umgang mit Sicherheitsvorfällen”, “Pläne zur Reaktion auf Sicherheitsvorfälle”, “Bearbeitung von Sicherheitsvorfällen”).",
         "help": "You need a complete incident response process: from detection through initial response and analysis to follow-up and lessons learned. The process must define clear escalation paths, assign roles (incident manager, analysis team) and ensure affected customers are informed promptly. The process must be regularly tested — e.g. through tabletop exercises.",
         "maturity": {
           "level0": "No defined incident response process; incidents are handled on an ad-hoc basis",
@@ -9462,7 +9462,7 @@
       },
       "simQ2": {
         "title": "Do you have documented business continuity plans for the cloud service?",
-        "tooltip": "Based on C5:2020 criterion BCM-03 (official German title: “Planung der Betriebskontinuität”).",
+        "tooltip": "Based on C5:2026 criterion BCM-03 (official German title: “Pläne zur betrieblichen Kontinuität”).",
         "help": "You need documented business continuity plans specifying how the cloud service is maintained or recovered during various disruption scenarios. Plans must define RTO (maximum recovery time) and RPO (maximum data loss) for different scenarios, describe redundant infrastructure and failover mechanisms, and be regularly validated through tests (e.g. failover tests, disaster recovery exercises).",
         "maturity": {
           "level0": "No business continuity plans for the cloud service; no defined RTO/RPO",
@@ -9473,7 +9473,7 @@
       },
       "simQ3": {
         "title": "Are security incidents systematically analysed and do findings feed into improvements?",
-        "tooltip": "Based on C5:2020 criterion SIM-05 (official German title: “Auswertung und Lernprozess”).",
+        "tooltip": "Based on C5:2026 criterion SIM-06 (official German title: “Auswertung und Lernprozess”).",
         "help": "Make sure that every security incident is systematically analysed after immediate measures are completed: What was the root cause? Could the incident have been detected earlier? What measures prevent recurrence? The results must feed into a continuous improvement process. Incidents must be classified (by severity, type, affected area) and trends analysed over time.",
         "maturity": {
           "level0": "No systematic incident analysis; same incident types occur repeatedly",
@@ -9484,7 +9484,7 @@
       },
       "devQ1": {
         "title": "Are cloud applications developed following a secure software development lifecycle (SDLC)?",
-        "tooltip": "Based on C5:2020 criterion DEV-01 (official German title: “Richtlinien zur Entwicklung/Beschaffung von Informationssystemen”).",
+        "tooltip": "Based on C5:2026 criterion DEV-01 (official German title: “Richtlinien für die Entwicklung/Beschaffung von Systemkomponenten”).",
         "help": "You need a documented Secure Development Lifecycle (SDLC) integrating security into all phases of software development: security requirements in the design phase (Security by Design), secure coding guidelines, code reviews (ideally automated), static and dynamic security testing (SAST/DAST), strict separation of development, test and production environments and controlled release processes.",
         "maturity": {
           "level0": "No defined secure development process; security only considered after development (if at all)",
@@ -9495,7 +9495,7 @@
       },
       "devQ2": {
         "title": "Is procurement and deployment of cloud service components governed by security criteria?",
-        "tooltip": "Based on C5:2020 criteria SSO-01 and SSO-02 (official German titles: “Richtlinien und Anweisungen zur Steuerung und Überwachung Dritter”, “Risikobeurteilung der Dienstleister und Lieferanten”).",
+        "tooltip": "Based on C5:2026 criteria DEV-14, SSO-01 and SSO-02 (official German titles: “Sichere Nutzung von Hardware und Software Dritter”, “Richtlinien und Verfahren zur Steuerung und Überwachung von Service-Organisationen”, “Risikobeurteilung von Service-Organisationen”).",
         "help": "Make sure that all components used for the cloud service — whether software libraries, operating systems or hardware — are assessed for security properties before deployment. For third-party components, vulnerability notifications must be monitored and patches applied promptly (vulnerability management). Supply chain security must be considered.",
         "maturity": {
           "level0": "No security assessment for component procurement; no vulnerability monitoring for third-party components",
@@ -9506,8 +9506,8 @@
       },
       "devQ3": {
         "title": "Are independent audits (audits/penetration tests) of the cloud service regularly conducted?",
-        "tooltip": "Based on C5:2020 criteria COM-02, COM-03 and OPS-19 (official German titles: “Richtlinie für die Planung und Durchführung von Audits”, “Interne Audits des Informationssicherheitsmanagementsystems”, “Umgang mit Schwachstellen, Störungen und Fehlern – Penetrationstests”).",
-        "help": "The BSI evaluation guide for C5:2020 assumes reporting under C5:2020 by an auditor. In addition, criterion OPS-19 provides for penetration tests at least annually by qualified internal personnel or external service providers, and criterion COM-03 for internal audits of the information security management system at least annually. Document the results and remediate identified vulnerabilities promptly.",
+        "tooltip": "Based on C5:2026 criteria COM-02, COM-03 and OPS-22 (official German titles: “Richtlinie für die Planung und Durchführung von Audits”, “Interne Audits des Informationssicherheitsmanagementsystems”, “Umgang mit Schwachstellen, Vorfällen und Abstürzen - Penetrationstests”).",
+        "help": "The BSI evaluation guide for C5:2026 assumes reporting under C5:2026 by an auditor. In addition, criterion OPS-22 provides for penetration tests at least annually and upon significant changes to the cloud service, by qualified internal personnel or external penetration testers; criterion COM-03 provides for internal audits of the information security management system at least annually. Document the results and remediate identified vulnerabilities promptly.",
         "maturity": {
           "level0": "No independent audits or penetration tests; no statement on the security status of the cloud service possible",
           "level1": "Occasional internal security reviews but no independent audits or professional penetration tests",
@@ -9620,43 +9620,43 @@
       "questions": {
         "q1": {
           "title": "Do you have a documented information security policy for your cloud service?",
-          "description": "A management-approved policy defining protection objectives, responsibilities and the scope of the cloud service (C5 OIS-01/02)."
+          "description": "A management-approved policy defining protection objectives, responsibilities and the scope of the cloud service (C5:2026 OIS-01, OIS-02)."
         },
         "q2": {
           "title": "Do you maintain a complete inventory of all cloud assets and customer data?",
-          "description": "A current register of all hardware, software, data and network components with assigned owners (C5 AM-01/02)."
+          "description": "A current register of all hardware, software, data and network components with assigned owners (C5:2026 AM-02)."
         },
         "q3": {
           "title": "Are your data centres protected by multi-layered physical security measures?",
-          "description": "Security zones with access control, video surveillance, environmental protection (fire, water, power) and visitor management (C5 PS-01/05)."
+          "description": "Security zones with access control, video surveillance, environmental protection (fire, water, power) and visitor management (C5:2026 PS-01, PS-05)."
         },
         "q4": {
           "title": "Is there a formal process for user registration and rights revocation?",
-          "description": "Documented lifecycle process with approval, role-based rights assignment and timely deactivation on departure (C5 IDM-01/02)."
+          "description": "Documented lifecycle process with approval, role-based rights assignment and timely deactivation on departure (C5:2026 IAM-02, IAM-04)."
         },
         "q5": {
           "title": "Is multi-factor authentication enabled for privileged access?",
-          "description": "MFA for all administrative and privileged cloud access plus a defined password policy (C5 IDM-07/08)."
+          "description": "MFA for all administrative and privileged cloud access plus a defined password policy (C5:2026 IAM-08)."
         },
         "q6": {
           "title": "Are security events centrally logged and monitored?",
-          "description": "Central logging of all security-relevant events with tamper-proof storage and timely analysis (C5 OPS, from OPS-10)."
+          "description": "Central logging of all security-relevant events with tamper-proof storage and timely analysis (C5:2026 OPS-10 to OPS-17)."
         },
         "q7": {
           "title": "Do you use current encryption standards for customer data (transit + at rest)?",
-          "description": "Encryption of all customer data in transit and at rest using current algorithms per BSI recommendations (C5:2020 CRY-01 to CRY-04)."
+          "description": "Encryption of all customer data in transit and at rest using current algorithms per BSI recommendations (C5:2026 CRY-04, CRY-05)."
         },
         "q8": {
           "title": "Is there a documented incident response process with escalation paths?",
-          "description": "Defined process for detecting, reporting, analysing and responding to security incidents with clear responsibilities (C5 SIM-01/02)."
+          "description": "Defined process for detecting, reporting, analysing and responding to security incidents with clear responsibilities (C5:2026 SIM-01, SIM-02)."
         },
         "q9": {
           "title": "Do you have business continuity plans with defined RTO/RPO?",
-          "description": "Documented plans for maintaining/recovering the cloud service with tested failover mechanisms (C5 BCM-01/03)."
+          "description": "Documented plans for maintaining/recovering the cloud service with tested failover mechanisms (C5:2026 BCM-01, BCM-03)."
         },
         "q10": {
           "title": "Are independent security audits or penetration tests regularly conducted?",
-          "description": "Regular external audits, penetration tests and vulnerability scans with documented tracking of results (C5 COM)."
+          "description": "Regular external audits, penetration tests and vulnerability scans with documented tracking of results (C5:2026 COM-02, COM-03, OPS-22, OPS-25)."
         }
       }
     }
@@ -14705,7 +14705,7 @@
     "questions": {
       "auQ1": {
         "title": "Are secure password policies (minimum length, check against leaked passwords) enforced?",
-        "tooltip": "OWASP ASVS 4.0.3, V2.1 Password Security.",
+        "tooltip": "OWASP ASVS 5.0.0, V6.2 Password Security.",
         "help": "Modern policies favor length over complexity and check against known credential leaks.",
         "maturity": {
           "level0": "There are no rules for passwords.",
@@ -14716,7 +14716,7 @@
       },
       "auQ2": {
         "title": "Is multi-factor authentication available and enabled for all user accounts?",
-        "tooltip": "OWASP ASVS 4.0.3, V2.2 General Authenticator Security, V4.3 Other Access Control Considerations. ASVS 4.0.3 expressly requires MFA for administrative interfaces (V4.3.1), not for all user accounts.",
+        "tooltip": "OWASP ASVS 5.0.0, V6.3 General Authentication Security.",
         "help": "MFA provides protection even when passwords are compromised.",
         "maturity": {
           "level0": "The application offers no multi-factor authentication.",
@@ -14727,7 +14727,7 @@
       },
       "auQ3": {
         "title": "Are credential stuffing and brute-force attacks actively detected and blocked?",
-        "tooltip": "OWASP ASVS 4.0.3, V2.2 General Authenticator Security.",
+        "tooltip": "OWASP ASVS 5.0.0, V6.3 General Authentication Security.",
         "help": "Rate limiting and account lockout protect against automated attacks.",
         "maturity": {
           "level0": "Login attempts are unlimited.",
@@ -14738,7 +14738,7 @@
       },
       "smQ1": {
         "title": "Are session tokens securely generated, transmitted, and stored?",
-        "tooltip": "OWASP ASVS 4.0.3, V3.2 Session Binding.",
+        "tooltip": "OWASP ASVS 5.0.0, V7.2 Fundamental Session Management Security, V3.3 Cookie Setup.",
         "help": "Secure session tokens prevent session hijacking.",
         "maturity": {
           "level0": "Session tokens are predictable or appear in the URL.",
@@ -14749,7 +14749,7 @@
       },
       "smQ2": {
         "title": "Are appropriate session timeouts and idle timeouts configured?",
-        "tooltip": "OWASP ASVS 4.0.3, V3.3 Session Termination.",
+        "tooltip": "OWASP ASVS 5.0.0, V7.3 Session Timeout.",
         "help": "Timeouts limit the window of opportunity for attackers.",
         "maturity": {
           "level0": "Sessions never expire.",
@@ -14760,7 +14760,7 @@
       },
       "smQ3": {
         "title": "Are sessions terminated on the server at logout and after a password change?",
-        "tooltip": "OWASP ASVS 4.0.3, V3.3 Session Termination.",
+        "tooltip": "OWASP ASVS 5.0.0, V7.4 Session Termination.",
         "help": "Proper session termination prevents persistent unauthorized access.",
         "maturity": {
           "level0": "The session stays valid on the server after logout.",
@@ -14771,7 +14771,7 @@
       },
       "acQ1": {
         "title": "Is the principle of least privilege consistently applied?",
-        "tooltip": "OWASP ASVS 4.0.3, V4.1 General Access Control Design.",
+        "tooltip": "OWASP ASVS 5.0.0, V8.2 General Authorization Design.",
         "help": "Users should only have the permissions required for their specific role.",
         "maturity": {
           "level0": "All logged-in users can do practically everything.",
@@ -14782,7 +14782,7 @@
       },
       "acQ2": {
         "title": "Are access controls enforced server-side rather than only client-side?",
-        "tooltip": "OWASP ASVS 4.0.3, V4.1 General Access Control Design.",
+        "tooltip": "OWASP ASVS 5.0.0, V8.3 Operation Level Authorization.",
         "help": "Client-side controls can be easily bypassed.",
         "maturity": {
           "level0": "Permissions are checked only in the user interface, for example by hiding buttons.",
@@ -14793,7 +14793,7 @@
       },
       "acQ3": {
         "title": "Is protection against IDOR (Insecure Direct Object References) implemented?",
-        "tooltip": "OWASP ASVS 4.0.3, V4.2 Operation Level Access Control.",
+        "tooltip": "OWASP ASVS 5.0.0, V8.2 General Authorization Design.",
         "help": "IDOR allows unauthorized access to other users' data through reference manipulation.",
         "maturity": {
           "level0": "Other users' records can be retrieved by changing the ID in the request.",
@@ -14804,7 +14804,7 @@
       },
       "ivQ1": {
         "title": "Are all user inputs validated and sanitized server-side?",
-        "tooltip": "OWASP ASVS 4.0.3, V5.1 Input Validation.",
+        "tooltip": "OWASP ASVS 5.0.0, V2.2 Input Validation.",
         "help": "Server-side validation prevents injection attacks.",
         "maturity": {
           "level0": "Input is processed unchecked.",
@@ -14815,7 +14815,7 @@
       },
       "ivQ2": {
         "title": "Is output encoding applied context-sensitively (HTML, JavaScript, URL)?",
-        "tooltip": "OWASP ASVS 4.0.3, V5.3 Output Encoding and Injection Prevention.",
+        "tooltip": "OWASP ASVS 5.0.0, V1.2 Injection Prevention.",
         "help": "Proper output encoding prevents XSS and other injection attacks.",
         "maturity": {
           "level0": "Output is inserted without encoding.",
@@ -14826,7 +14826,7 @@
       },
       "ivQ3": {
         "title": "Are parameterized queries or ORMs used to protect against SQL injection?",
-        "tooltip": "OWASP ASVS 4.0.3, V5.3 Output Encoding and Injection Prevention.",
+        "tooltip": "OWASP ASVS 5.0.0, V1.2 Injection Prevention.",
         "help": "Parameterized queries are the most effective defense against SQL injection.",
         "maturity": {
           "level0": "Database queries are built from user input.",
@@ -14837,7 +14837,7 @@
       },
       "crQ1": {
         "title": "Is all sensitive data encrypted at rest using current algorithms?",
-        "tooltip": "OWASP ASVS 4.0.3, V6.1 Data Classification.",
+        "tooltip": "OWASP ASVS 5.0.0, V14.2 General Data Protection, V11.2 Secure Cryptography Implementation. ASVS 5.0.0 has no separate requirement on encrypting data at rest.",
         "help": "AES-256 for data at rest, current TLS versions for data in transit.",
         "maturity": {
           "level0": "Sensitive data sits unencrypted in the database and files.",
@@ -14848,7 +14848,7 @@
       },
       "crQ2": {
         "title": "Are passwords stored using secure hashing algorithms (bcrypt, Argon2)?",
-        "tooltip": "OWASP ASVS 4.0.3, V2.4 Credential Storage.",
+        "tooltip": "OWASP ASVS 5.0.0, V11.4 Hashing and Hash-based Functions.",
         "help": "Modern hashing algorithms with salt and stretching protect stored passwords.",
         "maturity": {
           "level0": "Passwords are stored in plain text or reversibly.",
@@ -14859,7 +14859,7 @@
       },
       "crQ3": {
         "title": "Is secure key management implemented for cryptographic keys?",
-        "tooltip": "OWASP ASVS 4.0.3, V6.4 Secret Management.",
+        "tooltip": "OWASP ASVS 5.0.0, V11.1 Cryptographic Inventory and Documentation, V13.3 Secret Management.",
         "help": "Keys should be securely generated, stored, and rotated.",
         "maturity": {
           "level0": "Keys are in the source code or in version control.",
@@ -14870,7 +14870,7 @@
       },
       "elQ1": {
         "title": "Are error messages displayed without exposing sensitive information?",
-        "tooltip": "OWASP ASVS 4.0.3, V7.4 Error Handling.",
+        "tooltip": "OWASP ASVS 5.0.0, V16.5 Error Handling.",
         "help": "Stack traces and system information in error messages assist attackers.",
         "maturity": {
           "level0": "Error messages show technical details such as stack traces or database errors.",
@@ -14881,7 +14881,7 @@
       },
       "elQ2": {
         "title": "Are all security-relevant events logged and monitored?",
-        "tooltip": "OWASP ASVS 4.0.3, V7.1 Log Content, V7.2 Log Processing.",
+        "tooltip": "OWASP ASVS 5.0.0, V16.3 Security Events.",
         "help": "Logging enables detection and investigation of attacks.",
         "maturity": {
           "level0": "Security-relevant events are not logged.",
@@ -14892,7 +14892,7 @@
       },
       "elQ3": {
         "title": "Are APIs secured with authentication, rate limiting, and input validation?",
-        "tooltip": "OWASP ASVS 4.0.3, V13.1 Generic Web Service Security, V13.2 RESTful Web Service, V11.1 Business Logic Security.",
+        "tooltip": "OWASP ASVS 5.0.0, V4.1 Generic Web Service Security, V2.4 Anti-automation, V2.2 Input Validation.",
         "help": "APIs are increasingly targeted and require dedicated security measures.",
         "maturity": {
           "level0": "APIs are reachable without authentication.",
@@ -14968,35 +14968,35 @@
       "questions": {
         "q1": {
           "title": "Are secure password policies and MFA in place?",
-          "description": "OWASP ASVS V2: Authentication Security"
+          "description": "OWASP ASVS V6: Authentication Security"
         },
         "q2": {
           "title": "Is session management securely configured?",
-          "description": "OWASP ASVS V3: Secure Sessions"
+          "description": "OWASP ASVS V7: Secure Sessions"
         },
         "q3": {
           "title": "Is access control enforced server-side?",
-          "description": "OWASP ASVS V4: Authorization"
+          "description": "OWASP ASVS V8: Authorization"
         },
         "q4": {
           "title": "Are all inputs validated server-side?",
-          "description": "OWASP ASVS V5: Injection Prevention"
+          "description": "OWASP ASVS V1: Injection Prevention"
         },
         "q5": {
           "title": "Are parameterized queries used?",
-          "description": "OWASP ASVS V5: SQL Injection Prevention"
+          "description": "OWASP ASVS V1: SQL Injection Prevention"
         },
         "q6": {
           "title": "Are current encryption standards in use?",
-          "description": "OWASP ASVS V6: Cryptography"
+          "description": "OWASP ASVS V11: Cryptography"
         },
         "q7": {
           "title": "Are error messages secure and information-lean?",
-          "description": "OWASP ASVS V7: Error Handling"
+          "description": "OWASP ASVS V16: Error Handling"
         },
         "q8": {
           "title": "Are APIs protected with rate limiting and authentication?",
-          "description": "OWASP ASVS V13: API Security"
+          "description": "OWASP ASVS V4: API Security"
         }
       }
     }
@@ -15029,7 +15029,7 @@
     "name": "OWASP ASVS",
     "shortName": "OWASP",
     "description": "OWASP Application Security Verification Standard",
-    "fullName": "OWASP ASVS 4.0.3",
+    "fullName": "OWASP ASVS 5.0.0",
     "regLanding": {
       "title": "OWASP ASVS",
       "subtitle": "Security standard for web applications and APIs",

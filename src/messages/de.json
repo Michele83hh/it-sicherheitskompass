@@ -4021,7 +4021,7 @@
     "questions": {
       "bsQ1": {
         "title": "Werden IT-Systeme systematisch gehärtet und gegen bekannte Schwachstellen geschützt?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.2.5: „Inwieweit werden Schwachstellen erkannt und behandelt?“ Den Begriff „Härtung“ verwendet der VDA ISA 6.0.2 in seinen Controls nicht.",
+        "tooltip": "VDA ISA 2027.1, Control 5.2.5: „Inwieweit werden Schwachstellen erkannt und behandelt?“ Den Begriff „Härtung“ verwendet der VDA ISA 2027.1 in seinen Controls nicht.",
         "help": "Systemhärtung bedeutet, die Angriffsfläche Ihrer IT-Systeme zu minimieren: Deaktivierung nicht benötigter Dienste, Schließung offener Ports, Änderung von Standardpasswörtern, Einschränkung von Benutzerrechten und zeitnahes Patchen. Sie brauchen dokumentierte Härtungsrichtlinien, idealerweise basierend auf CIS Benchmarks oder vergleichbaren Standards. Besonders OEM-angebundene Systeme müssen gehärtet sein.",
         "maturity": {
           "level0": "Keine systematische Härtung — Systeme werden mit Standardkonfigurationen betrieben, Patches werden nicht regelmäßig eingespielt",
@@ -4032,7 +4032,7 @@
       },
       "bsQ2": {
         "title": "Werden Schutzmaßnahmen gegen Schadsoftware (Malware) auf allen Endpunkten und Servern eingesetzt?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.2.3: „Inwieweit werden IT-Systeme vor Schadsoftware geschützt?“",
+        "tooltip": "VDA ISA 2027.1, Control 5.2.3: „Inwieweit werden IT-Systeme vor Schadsoftware geschützt?“",
         "help": "Malware-Schutz ist eine Grundanforderung bei TISAX-Assessments. Alle Arbeitsplätze, Server und Gateways müssen mit aktueller Schutzsoftware ausgestattet sein. Klären Sie, ob Signaturen automatisch aktualisiert werden, ob Echtzeit-Scanning aktiv ist und ob Vorfälle zentral protokolliert und ausgewertet werden. Für Produktionsnetzwerke gelten besondere Anforderungen.",
         "maturity": {
           "level0": "Kein systematischer Malware-Schutz — kein Antivirenprogramm auf allen Systemen, keine zentrale Verwaltung",
@@ -4043,7 +4043,7 @@
       },
       "bsQ3": {
         "title": "Existiert ein systematisches Schwachstellenmanagement mit regelmäßiger Erkennung und Behebung?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.2.5: „Inwieweit werden Schwachstellen erkannt und behandelt?“",
+        "tooltip": "VDA ISA 2027.1, Control 5.2.5: „Inwieweit werden Schwachstellen erkannt und behandelt?“",
         "help": "Ein systematisches Schwachstellenmanagement ist essentiell für TISAX-Compliance. Sie müssen regelmäßig Schwachstellenscans durchführen (intern und extern), die Ergebnisse nach Schweregrad (CVSS) priorisieren und Patches innerhalb definierter Fristen einspielen. Besonders kritisch sind Schwachstellen in Systemen mit OEM-Anbindung oder Zugang zu Prototypen-Daten.",
         "maturity": {
           "level0": "Kein Schwachstellenmanagement — keine regelmäßigen Scans, keine systematische Patch-Priorisierung",
@@ -4054,7 +4054,7 @@
       },
       "compQ1": {
         "title": "Werden gesetzliche und regulatorische Anforderungen an die Informationssicherheit ermittelt und eingehalten?",
-        "tooltip": "VDA ISA 6.0.2, Control 7.1.1: „Inwieweit wird die Einhaltung regulatorischer und vertraglicher Bestimmungen sichergestellt?“",
+        "tooltip": "VDA ISA 2027.1, Control 7.1.1: „Inwieweit wird die Einhaltung regulatorischer und vertraglicher Bestimmungen sichergestellt?“",
         "help": "Neben TISAX und ISO 27001 gibt es zahlreiche weitere Anforderungen, die für Automobilzulieferer relevant sein können: DSGVO, NIS2, KRITIS-VO, Geschäftsgeheimnisgesetz, OEM-spezifische Anforderungen und branchenspezifische Standards. Klären Sie, ob Sie eine Übersicht aller relevanten Anforderungen führen und deren Einhaltung systematisch sicherstellen.",
         "maturity": {
           "level0": "Keine systematische Erfassung relevanter IS-Anforderungen — gesetzliche und regulatorische Pflichten sind nicht bekannt oder dokumentiert",
@@ -4065,7 +4065,7 @@
       },
       "compQ2": {
         "title": "Werden regelmäßige interne Audits und Managementbewertungen des ISMS durchgeführt?",
-        "tooltip": "VDA ISA 6.0.2, Control 1.5.1: „Inwieweit wird die Einhaltung der Informationssicherheit in Verfahren und Prozessen sichergestellt?“ Control 1.5.2: „Inwieweit wird das ISMS von einer unabhängigen Stelle überprüft?“",
+        "tooltip": "VDA ISA 2027.1, Control 1.5.1: „Inwieweit wird die Einhaltung der Informationssicherheit in Verfahren und Prozessen sichergestellt?“ Control 1.5.2: „Inwieweit wird das ISMS von einer unabhängigen Stelle überprüft?“",
         "help": "Sie brauchen einen funktionierenden PDCA-Zyklus: Planen, Umsetzen, Überprüfen, Verbessern. Interne Audits sind der zentrale Überprüfungsmechanismus. Sie sollten alle VDA-ISA-Kapitel abdecken, die Ergebnisse dokumentieren und der Geschäftsleitung im Rahmen eines Management Reviews vorlegen. Befunde müssen nachverfolgt und Maßnahmen auf Wirksamkeit geprüft werden.",
         "maturity": {
           "level0": "Keine internen ISMS-Audits — keine systematische Überprüfung der Informationssicherheitsmaßnahmen",
@@ -4076,7 +4076,7 @@
       },
       "compQ3": {
         "title": "Werden die Ergebnisse von TISAX-Assessments und Audits in einen kontinuierlichen Verbesserungsprozess überführt?",
-        "tooltip": "VDA ISA 6.0.2, Control 1.5.1: „Inwieweit wird die Einhaltung der Informationssicherheit in Verfahren und Prozessen sichergestellt?“ Control 1.5.2: „Inwieweit wird das ISMS von einer unabhängigen Stelle überprüft?“",
+        "tooltip": "VDA ISA 2027.1, Control 1.5.1: „Inwieweit wird die Einhaltung der Informationssicherheit in Verfahren und Prozessen sichergestellt?“ Control 1.5.2: „Inwieweit wird das ISMS von einer unabhängigen Stelle überprüft?“",
         "help": "TISAX ist kein einmaliges Projekt, sondern ein kontinuierlicher Prozess. Nach jedem Assessment, Audit oder Sicherheitsvorfall müssen die Erkenntnisse analysiert und in konkrete Verbesserungsmaßnahmen überführt werden. Klären Sie vor Folge-Assessments, ob frühere Befunde adressiert wurden und ob ein nachweisbarer Verbesserungstrend erkennbar ist.",
         "maturity": {
           "level0": "Keine systematische Verbesserung — Befunde aus Assessments und Audits werden nicht nachverfolgt oder adressiert",
@@ -4087,7 +4087,7 @@
       },
       "dsQ1": {
         "title": "Ist die Einhaltung datenschutzrechtlicher Anforderungen (DSGVO) im Rahmen Ihrer Informationssicherheit sichergestellt?",
-        "tooltip": "VDA ISA 6.0.2, Control 7.1.2: „Inwieweit wird der Schutz von personenbezogenen Daten bei der Umsetzung der Informationssicherheit berücksichtigt?“ Control 9.1.1: „Inwieweit sind Richtlinien zum Datenschutz vorhanden?“",
+        "tooltip": "VDA ISA 2027.1, Control 7.1.2: „Inwieweit wird der Schutz von personenbezogenen Daten bei der Umsetzung der Informationssicherheit berücksichtigt?“ Control 9.1.1: „Inwieweit sind Richtlinien zum Datenschutz vorhanden?“",
         "help": "TISAX umfasst auch Datenschutzanforderungen, die über die reine Informationssicherheit hinausgehen. Als Automobilzulieferer verarbeiten Sie personenbezogene Daten von Mitarbeitern, Kunden und Ansprechpartnern. Klären Sie, ob ein Datenschutzbeauftragter benannt ist, ob ein Verarbeitungsverzeichnis geführt wird und ob die DSGVO-Grundsätze (Rechtmäßigkeit, Zweckbindung, Datenminimierung) eingehalten werden.",
         "maturity": {
           "level0": "Keine systematische Berücksichtigung datenschutzrechtlicher Anforderungen — kein Datenschutzbeauftragter benannt, kein Verarbeitungsverzeichnis",
@@ -4098,7 +4098,7 @@
       },
       "dsQ2": {
         "title": "Werden Auftragsverarbeitungsverträge mit allen relevanten Dienstleistern geschlossen und gepflegt?",
-        "tooltip": "VDA ISA 6.0.2, Control 9.5.2: „Inwieweit werden vertragliche Vereinbarungen an Auftragnehmer und Kooperationspartner weitergegeben und deren Einhaltung überprüft?“",
+        "tooltip": "VDA ISA 2027.1, Control 9.5.2: „Inwieweit werden vertragliche Vereinbarungen an Auftragnehmer und Kooperationspartner weitergegeben und deren Einhaltung überprüft?“",
         "help": "Als Automobilzulieferer geben Sie häufig personenbezogene Daten an IT-Dienstleister, Cloud-Anbieter, Personaldienstleister oder Entsorger weiter. Für jede dieser Verarbeitungen benötigen Sie einen rechtskonformen AVV nach Art. 28 DSGVO. Klären Sie, ob AVVs vorhanden, vollständig und aktuell sind — insbesondere bei Cloud-Diensten und Fernwartungszugriff.",
         "maturity": {
           "level0": "Keine Auftragsverarbeitungsverträge vorhanden — Datenverarbeitung durch Dritte erfolgt ohne vertragliche Grundlage",
@@ -4109,7 +4109,7 @@
       },
       "dsQ3": {
         "title": "Ist ein Prozess zur Erkennung und Meldung von Datenschutzverletzungen implementiert?",
-        "tooltip": "VDA ISA 6.0.2, Control 9.6.2: „Inwieweit werden Datenschutzvorfälle verarbeitet?“",
+        "tooltip": "VDA ISA 2027.1, Control 9.6.2: „Inwieweit werden Datenschutzvorfälle verarbeitet?“",
         "help": "Eine Datenschutzverletzung liegt vor, wenn personenbezogene Daten unbefugt offengelegt, geändert, gelöscht oder sonst kompromittiert werden. Klären Sie, ob Sie einen dokumentierten Prozess haben, der die Erkennung, Bewertung (Risikoeinschätzung für Betroffene), interne Eskalation, Meldung an die Aufsichtsbehörde (72h) und ggf. Benachrichtigung der Betroffenen sicherstellt.",
         "maturity": {
           "level0": "Kein Prozess zur Erkennung und Meldung von Datenschutzverletzungen — Vorfälle werden nicht als Datenschutzverletzung erkannt",
@@ -4120,7 +4120,7 @@
       },
       "komQ1": {
         "title": "Sind Netzwerke segmentiert und durch geeignete Sicherheitskomponenten geschützt?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.2.7: „Inwieweit wird das Netzwerk der Organisation verwaltet?“",
+        "tooltip": "VDA ISA 2027.1, Control 5.2.7: „Inwieweit wird das Netzwerk der Organisation verwaltet?“",
         "help": "Netzwerksegmentierung ist eine zentrale Anforderung bei TISAX: OEM-Daten, Prototypen-Informationen und Produktionssysteme müssen in separaten Netzwerksegmenten betrieben werden, die durch Firewalls voneinander getrennt sind. TISAX-Assessoren prüfen die Netzwerkarchitektur, Firewall-Regelwerke und die Überwachung der Netzwerkübergänge. Eine flache Netzwerkarchitektur ohne Segmentierung ist ein häufiger Hauptbefund.",
         "maturity": {
           "level0": "Keine Netzwerksegmentierung — flache Netzwerkarchitektur ohne Zonenkonzept, kein Firewall-Management",
@@ -4131,7 +4131,7 @@
       },
       "komQ2": {
         "title": "Werden Netzwerkdienste und -verbindungen sicher konfiguriert und überwacht?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.2.7: „Inwieweit wird das Netzwerk der Organisation verwaltet?“ Control 5.3.2: „Inwieweit sind Anforderungen an Netzwerkdienste definiert?“",
+        "tooltip": "VDA ISA 2027.1, Control 5.2.7: „Inwieweit wird das Netzwerk der Organisation verwaltet?“ Control 5.3.2: „Inwieweit sind Anforderungen an Netzwerkdienste definiert?“",
         "help": "Sie brauchen eine vollständige Übersicht über alle Netzwerkdienste und -verbindungen. VPN-Zugänge für Fernwartung und Homeoffice müssen mit starker Authentifizierung (MFA) gesichert sein. WLAN-Netzwerke erfordern WPA3 oder WPA2-Enterprise, Gäste-WLAN muss vom Unternehmensnetzwerk getrennt sein. Fernwartungszugänge von OEMs und Dienstleistern müssen besonders kontrolliert werden.",
         "maturity": {
           "level0": "Keine systematische Übersicht oder Kontrolle der Netzwerkdienste — VPN ohne MFA, offene WLAN-Netzwerke, unkontrollierte Fernwartungszugänge",
@@ -4142,7 +4142,7 @@
       },
       "komQ3": {
         "title": "Werden Datenübertragungen mit Fahrzeugherstellern (OEMs) und Geschäftspartnern über sichere Kanäle abgewickelt?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.1.2: „Inwieweit werden Informationen während der Übertragung geschützt?“",
+        "tooltip": "VDA ISA 2027.1, Control 5.1.2: „Inwieweit werden Informationen während der Übertragung geschützt?“",
         "help": "Der Datenaustausch mit OEMs ist ein zentrales Thema bei TISAX-Assessments. Konstruktionsdaten, Prototypen-Informationen und Qualitätsdaten müssen über sichere Kanäle übertragen werden — z.B. über OEM-spezifische Plattformen (Teamcenter, ENOVIA), verschlüsselte Datentransferlösungen oder SFTP. Unverschlüsselte E-Mail-Anhänge für vertrauliche OEM-Daten sind ein typischer Befund.",
         "maturity": {
           "level0": "Keine gesicherten Datenaustauschkanäle — vertrauliche Daten werden per unverschlüsselter E-Mail oder offenen Filesharing-Diensten ausgetauscht",
@@ -4153,7 +4153,7 @@
       },
       "kryQ1": {
         "title": "Existiert eine Kryptografie-Richtlinie mit Vorgaben für die Verwendung von Verschlüsselung und Schlüsselverwaltung?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“",
+        "tooltip": "VDA ISA 2027.1, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“",
         "help": "Sie brauchen eine dokumentierte Kryptografie-Richtlinie, die festlegt, welche Verschlüsselungsverfahren und Schlüssellängen eingesetzt werden. Die Richtlinie muss Vorgaben für Datenverschlüsselung (at rest und in transit), E-Mail-Verschlüsselung, Festplattenverschlüsselung mobiler Geräte und VPN-Verbindungen umfassen. Veraltete Algorithmen (z.B. MD5, SHA-1, DES) dürfen nicht mehr eingesetzt werden.",
         "maturity": {
           "level0": "Keine Kryptografie-Richtlinie vorhanden — Verschlüsselung wird sporadisch und ohne Standards eingesetzt",
@@ -4164,7 +4164,7 @@
       },
       "kryQ2": {
         "title": "Werden vertrauliche Daten bei Speicherung und Übertragung durchgehend verschlüsselt?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“ Control 5.1.2: „Inwieweit werden Informationen während der Übertragung geschützt?“",
+        "tooltip": "VDA ISA 2027.1, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“ Control 5.1.2: „Inwieweit werden Informationen während der Übertragung geschützt?“",
         "help": "Für Automobilzulieferer ist dies besonders relevant: OEM-Konstruktionsdaten, Prototypen-Informationen und Testergebnisse müssen verschlüsselt gespeichert und übertragen werden. Sie brauchen Festplattenverschlüsselung für mobile Geräte, Verschlüsselung von Datenbanken mit Schutzbedarf und die Nutzung sicherer Übertragungsprotokolle (TLS 1.2+, SFTP, verschlüsselte E-Mail) für den Datenaustausch mit OEMs.",
         "maturity": {
           "level0": "Keine systematische Verschlüsselung — vertrauliche Daten werden unverschlüsselt gespeichert und per E-Mail oder FTP übertragen",
@@ -4175,7 +4175,7 @@
       },
       "kryQ3": {
         "title": "Werden kryptografische Schlüssel sicher erzeugt, gespeichert, verteilt und bei Kompromittierung widerrufen?",
-        "tooltip": "VDA ISA 6.0.2, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“",
+        "tooltip": "VDA ISA 2027.1, Control 5.1.1: „Inwieweit wird die Nutzung kryptografischer Verfahren verwaltet?“",
         "help": "Selbst die stärkste Verschlüsselung ist wertlos, wenn die Schlüssel unsicher verwaltet werden. Sie brauchen ein dokumentiertes Schlüsselmanagement: Schlüssel müssen mit kryptografisch sicheren Zufallsgeneratoren erzeugt, in gesicherten Keystores gespeichert, regelmäßig rotiert und bei Verdacht auf Kompromittierung sofort widerrufen werden. Besonders wichtig bei Zertifikaten für den OEM-Datenaustausch.",
         "maturity": {
           "level0": "Kein Schlüsselmanagement — Schlüssel werden ad hoc erzeugt, in Konfigurationsdateien gespeichert, nicht rotiert oder widerrufen",
@@ -4186,7 +4186,7 @@
       },
       "liefQ1": {
         "title": "Werden Informationssicherheitsanforderungen in Verträgen mit Lieferanten und Dienstleistern verankert?",
-        "tooltip": "VDA ISA 6.0.2, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
+        "tooltip": "VDA ISA 2027.1, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
         "help": "Als Automobilzulieferer müssen Sie die Sicherheitsanforderungen Ihrer OEMs an Ihre eigenen Lieferanten und Dienstleister weitergeben. Sorgen Sie dafür, dass Verträge Klauseln zu Vertraulichkeit, Informationsschutz, Audit-Rechten, Incident-Meldepflichten und TISAX-Label-Anforderungen enthalten. Ohne vertragliche Absicherung haften Sie für Sicherheitsvorfälle bei Ihren Lieferanten.",
         "maturity": {
           "level0": "Keine Informationssicherheitsanforderungen in Lieferantenverträgen — Dienstleister erhalten Zugang ohne vertragliche Sicherheitsverpflichtungen",
@@ -4197,7 +4197,7 @@
       },
       "liefQ2": {
         "title": "Werden Lieferanten und Dienstleister hinsichtlich ihrer Informationssicherheit regelmäßig bewertet?",
-        "tooltip": "VDA ISA 6.0.2, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
+        "tooltip": "VDA ISA 2027.1, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
         "help": "Sorgen Sie dafür, dass Sie Ihre Lieferanten regelmäßig auf Einhaltung der Sicherheitsanforderungen prüfen. Dies kann durch Lieferanten-Fragebögen, Überprüfung des TISAX-Labels, ISO-27001-Zertifizierung, Vor-Ort-Audits oder technische Prüfungen (z.B. Schwachstellenscans bei Schnittstellen) erfolgen. Kritische Lieferanten mit Zugang zu OEM-Daten erfordern eine höhere Prüftiefe.",
         "maturity": {
           "level0": "Keine Bewertung der Informationssicherheit von Lieferanten — es existiert kein Überprüfungsprozess",
@@ -4208,7 +4208,7 @@
       },
       "liefQ3": {
         "title": "Werden Änderungen in der Lieferkette hinsichtlich ihrer Auswirkungen auf die Informationssicherheit bewertet?",
-        "tooltip": "VDA ISA 6.0.2, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
+        "tooltip": "VDA ISA 2027.1, Control 6.1.1: „Inwieweit wird die Informationssicherheit bei Auftragnehmern und Kooperationspartnern sichergestellt?“",
         "help": "Lieferkettenänderungen können erhebliche Sicherheitsauswirkungen haben: Ein neuer Unterlieferant in einem Drittland, ein Standortwechsel ohne adäquate physische Sicherheit oder die Nutzung neuer Cloud-Dienste ändern das Risikoprofil. Sorgen Sie dafür, dass solche Änderungen vor der Umsetzung auf ihre Sicherheitsauswirkungen geprüft und ggf. vom OEM genehmigt werden.",
         "maturity": {
           "level0": "Keine Bewertung von Lieferkettenänderungen — Unterlieferanten werden gewechselt oder hinzugefügt, ohne Sicherheitsaspekte zu prüfen",
@@ -4219,7 +4219,7 @@
       },
       "orgQ1": {
         "title": "Existiert eine dokumentierte Informationssicherheitsleitlinie, die von der Geschäftsleitung freigegeben und kommuniziert wurde?",
-        "tooltip": "VDA ISA 6.0.2, Control 1.1.1: „Inwieweit sind Richtlinien zur Informationssicherheit vorhanden?“",
+        "tooltip": "VDA ISA 2027.1, Control 1.1.1: „Inwieweit sind Richtlinien zur Informationssicherheit vorhanden?“",
         "help": "Die IS-Leitlinie definiert die strategische Ausrichtung Ihrer Informationssicherheit und zeigt das Commitment der Geschäftsleitung. Der VDA ISA fragt in Control 1.1.1, inwieweit Richtlinien zur Informationssicherheit vorhanden sind. Sie sollte Schutzziele, Geltungsbereich, Verantwortlichkeiten und den Bezug zu OEM-Anforderungen enthalten. Ohne freigegebene Leitlinie kann kein Assessment Level bestanden werden.",
         "maturity": {
           "level0": "Keine Informationssicherheitsleitlinie vorhanden — kein dokumentiertes Bekenntnis der Geschäftsleitung zur Informationssicherheit",
@@ -4230,7 +4230,7 @@
       },
       "orgQ2": {
         "title": "Sind Rollen und Verantwortlichkeiten für die Informationssicherheit klar zugewiesen und dokumentiert?",
-        "tooltip": "VDA ISA 6.0.2, Control 1.2.2: „Inwieweit sind die Verantwortlichkeiten für Informationssicherheit organisiert?“",
+        "tooltip": "VDA ISA 2027.1, Control 1.2.2: „Inwieweit sind die Verantwortlichkeiten für Informationssicherheit organisiert?“",
         "help": "Sorgen Sie dafür, dass ein Informationssicherheitsbeauftragter (ISB) benannt ist, der direkt an die Geschäftsleitung berichtet. Darüber hinaus müssen Verantwortlichkeiten für Risikomanagement, Vorfallbehandlung, physische Sicherheit und Prototypenschutz klar zugewiesen sein. In der Automobilindustrie müssen diese Rollen auch gegenüber OEM-Partnern nachgewiesen werden können.",
         "maturity": {
           "level0": "Keine definierten Rollen für Informationssicherheit — niemand ist formal für IS-Themen zuständig",
@@ -4241,7 +4241,7 @@
       },
       "orgQ3": {
         "title": "Werden Informationssicherheitsrisiken systematisch identifiziert, bewertet und behandelt?",
-        "tooltip": "VDA ISA 6.0.2, Control 1.4.1: „Inwieweit werden Informationssicherheitsrisiken gemanagt?“",
+        "tooltip": "VDA ISA 2027.1, Control 1.4.1: „Inwieweit werden Informationssicherheitsrisiken gemanagt?“",
         "help": "Das Risikomanagement ist für TISAX zentral: Sie müssen eine methodische Risikoanalyse durchführen, die alle relevanten Assets (insbesondere OEM-Daten, Prototypen, IT-Systeme) umfasst. Die Risikobewertung bestimmt, welche Schutzmaßnahmen erforderlich sind. Der Assessor prüft, ob die Methodik nachvollziehbar und die Risikobehandlung angemessen ist.",
         "maturity": {
           "level0": "Kein systematisches Risikomanagement — Risiken werden nicht strukturiert erfasst oder bewertet",
@@ -4252,7 +4252,7 @@
       },
       "perQ1": {
         "title": "Werden Mitarbeiter vor der Einstellung hinsichtlich ihrer Zuverlässigkeit und Qualifikation überprüft?",
-        "tooltip": "VDA ISA 6.0.2, Control 2.1.1: „Inwieweit wird die Eignung von Mitarbeitern für sensible Tätigkeitsbereiche sichergestellt?“",
+        "tooltip": "VDA ISA 2027.1, Control 2.1.1: „Inwieweit wird die Eignung von Mitarbeitern für sensible Tätigkeitsbereiche sichergestellt?“",
         "help": "In der Automobilindustrie haben Mitarbeiter häufig Zugang zu streng vertraulichen OEM-Daten und Prototypen. Vor der Einstellung sollten Sie Identität, Qualifikation und Zuverlässigkeit überprüfen. Bei Tätigkeiten mit Zugang zu hochvertraulichen Informationen kann ein polizeiliches Führungszeugnis erforderlich sein. Klären Sie, ob ein dokumentierter Prozess für Pre-Employment-Screening existiert.",
         "maturity": {
           "level0": "Keine Hintergrundprüfung vor der Einstellung — weder Identität noch Qualifikation werden verifiziert",
@@ -4263,7 +4263,7 @@
       },
       "perQ2": {
         "title": "Gibt es ein strukturiertes Programm für Informationssicherheits-Awareness und -Schulungen?",
-        "tooltip": "VDA ISA 6.0.2, Control 2.1.3: „Inwieweit werden Mitarbeiter hinsichtlich der Risiken beim Umgang mit Informationen geschult und sensibilisiert?“",
+        "tooltip": "VDA ISA 2027.1, Control 2.1.3: „Inwieweit werden Mitarbeiter hinsichtlich der Risiken beim Umgang mit Informationen geschult und sensibilisiert?“",
         "help": "Sorgen Sie dafür, dass alle Mitarbeiter — einschließlich temporärem Personal und Leiharbeitern — regelmäßig zu Informationssicherheit geschult werden. Die Schulungen müssen den Umgang mit vertraulichen OEM-Daten, Prototypenschutz, Social-Engineering-Erkennung und Meldepflichten bei Sicherheitsvorfällen abdecken. Schulungsnachweise müssen dokumentiert und beim Assessment vorgelegt werden können.",
         "maturity": {
           "level0": "Keine Informationssicherheitsschulungen — Mitarbeiter werden nicht systematisch sensibilisiert",
@@ -4274,7 +4274,7 @@
       },
       "perQ3": {
         "title": "Sind Regelungen für Vertraulichkeit und Geheimhaltung mit Mitarbeitern und externen Partnern vereinbart?",
-        "tooltip": "VDA ISA 6.0.2, Control 2.1.2: „Inwieweit werden alle Mitarbeiter vertraglich zur Einhaltung der Informationssicherheitsrichtlinien verpflichtet?“ Control 6.1.2: „Inwieweit ist Geheimhaltung beim Austausch von Informationen vertraglich vereinbart?“",
+        "tooltip": "VDA ISA 2027.1, Control 2.1.2: „Inwieweit werden alle Mitarbeiter vertraglich zur Einhaltung der Informationssicherheitsrichtlinien verpflichtet?“ Control 6.1.2: „Inwieweit ist Geheimhaltung beim Austausch von Informationen vertraglich vereinbart?“",
         "help": "In der Automobilindustrie ist die vertragliche Absicherung der Vertraulichkeit besonders wichtig, da OEM-Partner häufig strenge Geheimhaltungsanforderungen stellen. Sie brauchen nachweisbare NDAs für alle Personen mit Zugang zu vertraulichen Informationen. Die Vereinbarungen müssen den Umfang der Geheimhaltung, die Dauer, Sanktionen bei Verstoßen und die Pflichten bei Beendigung des Verhältnisses regeln.",
         "maturity": {
           "level0": "Keine Vertraulichkeitsvereinbarungen vorhanden — weder mit Mitarbeitern noch mit externen Partnern",
@@ -4285,7 +4285,7 @@
       },
       "phyQ1": {
         "title": "Sind physische Sicherheitsbereiche definiert und mit angemessenen Zutrittskontrollen ausgestattet?",
-        "tooltip": "VDA ISA 6.0.2, Control 3.1.1: „Inwieweit werden Sicherheitszonen für den Schutz von Informationswerten gemanagt?“",
+        "tooltip": "VDA ISA 2027.1, Control 3.1.1: „Inwieweit werden Sicherheitszonen für den Schutz von Informationswerten gemanagt?“",
         "help": "Sie brauchen eine klare Zonierung Ihrer Räumlichkeiten: Öffentlicher Bereich, allgemeiner Unternehmensbereich, sicherheitsrelevanter Bereich und Hochsicherheitsbereich (z.B. Prototypenwerkstatt). Jede Zone erfordert angemessene Zutrittskontrollen — von der einfachen Ausweispflicht bis zur biometrischen Zutrittskontrolle mit Vereinzelungsanlage. Der Assessor prüft die Wirksamkeit der Zonierung vor Ort.",
         "maturity": {
           "level0": "Keine Sicherheitsbereiche definiert — keine differenzierte Zutrittskontrolle, freier Zugang zu allen Räumlichkeiten",
@@ -4296,7 +4296,7 @@
       },
       "phyQ2": {
         "title": "Sind IT-Systeme und Datenträger gegen Diebstahl, Manipulation und unbefugten Zugriff physisch geschützt?",
-        "tooltip": "VDA ISA 6.0.2, Control 3.1.3: „Inwieweit ist der Umgang mit Informationsträgern gemanagt?“ Control 3.1.4: „Inwieweit ist der Umgang mit mobilen IT-Geräten und mobilen Datenträgern gemanagt?“",
+        "tooltip": "VDA ISA 2027.1, Control 3.1.3: „Inwieweit ist der Umgang mit unterstützenden Assets gemanagt?“ Control 3.1.4: „Inwieweit ist der Umgang mit mobilen IT-Geräten und mobilen Datenträgern gemanagt?“",
         "help": "In der Automobilindustrie werden häufig vertrauliche OEM-Konstruktionsdaten, Messergebnisse und Prototypenbilder auf lokalen Systemen verarbeitet. Sorgen Sie dafür, dass diese physisch gesichert sind: Laptops mit Kensington-Schloss oder in verschlossenen Schränken, Clean-Desk-Policy, gesicherte Entsorgung von Datenträgern und Druckerzeugnissen. Mobile Geräte müssen verschlüsselt sein.",
         "maturity": {
           "level0": "Kein physischer Schutz für IT-Geräte und Datenträger — Laptops und USB-Sticks werden ungesichert zurückgelassen, keine Clean-Desk-Regelung",
@@ -4307,7 +4307,7 @@
       },
       "phyQ3": {
         "title": "Existieren Maßnahmen zum Schutz vor Umweltbedrohungen wie Brand, Wasser und Stromausfall für sicherheitsrelevante Bereiche?",
-        "tooltip": "VDA ISA 6.0.2, Control 1.6.3: „In welchem Maße ist die Organisation vorbereitet, mit Krisensituationen umzugehen?“ Control 5.2.8: „Inwieweit ist eine Kontinuitätsplanung für IT-Dienste vorhanden?“ Ein eigenes Control zum Schutz vor Umweltbedrohungen enthält der VDA ISA 6.0.2 nicht; das frühere Control 3.1.2 ist dort als „Ersetzt durch 1.6.3, 5.2.8 und 5.2.9“ geführt.",
+        "tooltip": "VDA ISA 2027.1, Control 1.6.3: „In welchem Maße ist die Organisation vorbereitet, mit Krisensituationen umzugehen?“ Control 5.2.8: „Inwieweit ist eine Kontinuitätsplanung für IT-Dienste vorhanden?“ Ein eigenes Control zum Schutz vor Umweltbedrohungen enthält der VDA ISA 2027.1 nicht; das frühere Control 3.1.2 ist dort als ersetzt durch 1.6.3, 5.2.8 und 5.2.9 geführt.",
         "help": "Serverräume, Archivbereiche und Prototypenwerkstätten benötigen angemessenen Schutz gegen physische Bedrohungen. Klären Sie, ob Brandmeldeanlage, Löschsystem (Gas oder Wasser), USV-Anlage, Klimaüberwachung und Wassersensoren vorhanden sind. Der Schutzumfang muss dem Schutzbedarf der im Bereich verarbeiteten Informationen entsprechen.",
         "maturity": {
           "level0": "Kein spezifischer Schutz gegen Umweltbedrohungen für IT-Bereiche — kein Brandschutz, keine USV, keine Klimatisierung im Serverraum",
@@ -4318,7 +4318,7 @@
       },
       "protoQ1": {
         "title": "Existiert ein dediziertes Schutzkonzept für Prototypenfahrzeuge, -bauteile und -komponenten?",
-        "tooltip": "VDA ISA 6.0.2, Control 8.1.1: „Inwieweit ist ein Sicherheitskonzept vorhanden, das Mindestanforderungen zur physischen und umgebungsbezogenen Sicherheit für den Prototypenschutz beschreibt?“",
+        "tooltip": "VDA ISA 2027.1, Control 8.1.1: „Inwieweit sind innerhalb der Organisation Vorschriften zum Schutz von Prototypen festgelegt und Zuständigkeiten definiert?“ Control 8.2.1: „Inwieweit ist ein Sicherheitskonzept vorhanden, das Mindestanforderungen zur physischen und umgebungsbezogenen Sicherheit für den Prototypenschutz beschreibt?“",
         "help": "Der Prototypenschutz ist eines der zentralen Differenzierungsmerkmale von TISAX gegenüber ISO 27001. OEMs verlangen, dass Zulieferer Prototypen — ob Fahrzeuge, Bauteile oder Designstudien — durch physische und organisatorische Maßnahmen schützen. Das Schutzkonzept muss Tarnungsmaßnahmen, Zugangsrestriktionen, Foto-/Filmverbote und Transportregelungen umfassen.",
         "maturity": {
           "level0": "Kein Prototypenschutzkonzept vorhanden — Prototypen werden nicht gesondert geschützt, keine speziellen Zugangsregelungen",
@@ -4329,7 +4329,7 @@
       },
       "protoQ2": {
         "title": "Ist die Handhabung und Weitergabe von Prototypen-Informationen (Bilder, CAD-Daten, Spezifikationen) geregelt?",
-        "tooltip": "VDA ISA 6.0.2, Control 8.2.4: „Inwieweit sind die Sicherheitseinstufungen des Projekts und die daraus resultierenden Maßnahmen zur Absicherung bekannt?“ Control 8.2.6: „Inwieweit sind Regelungen zur Bildaufzeichnung und zum Umgang mit erstelltem Bildmaterial vorhanden?“",
+        "tooltip": "VDA ISA 2027.1, Control 8.1.2: „Inwieweit sind auftragsspezifische Anforderungen und Vorgaben für den Umgang mit Prototypen geregelt?“ Control 8.1.10: „Inwieweit sind Regelungen zur Bildaufzeichnung und zum Umgang mit erstelltem Bildmaterial vorhanden?“",
         "help": "Neben physischen Prototypen müssen auch digitale Prototypen-Informationen geschützt werden. CAD-Daten, Rendering-Bilder, Simulationsergebnisse und Spezifikationen sind häufig das primäre Ziel von Industriespionage. Sie brauchen klare Regeln für Speicherung (verschlüsselt, zugangsgeschützt), Übermittlung (sichere Kanäle) und Löschung (nach Projektende). Der Need-to-Know-Grundsatz muss streng angewandt werden.",
         "maturity": {
           "level0": "Keine Regelungen für den Umgang mit digitalen Prototypen-Informationen — CAD-Daten und Bilder werden ungeschützt gespeichert und per E-Mail versandt",
@@ -4340,7 +4340,7 @@
       },
       "protoQ3": {
         "title": "Werden Anforderungen an den Prototypenschutz in der Lieferkette vertraglich sichergestellt und überwacht?",
-        "tooltip": "VDA ISA 6.0.2, Control 8.2.1: „Inwieweit liegen vertragsrechtlich gültige Geheimhaltungsvereinbarungen/ -verpflichtungen vor?“ Control 8.2.2: „Inwieweit sind Vorgaben für die Beauftragung von Unterauftragnehmern bekannt und erfüllt?“",
+        "tooltip": "VDA ISA 2027.1, Control 8.1.5: „Inwieweit liegen vertragsrechtlich gültige Geheimhaltungsvereinbarungen/ -verpflichtungen vor?“ Control 8.1.6: „Inwieweit sind Vorgaben für die Beauftragung von Unterauftragnehmern bekannt und erfüllt?“",
         "help": "OEMs fordern, dass ihre Prototypenschutzanforderungen entlang der gesamten Lieferkette eingehalten werden. Wenn Sie als Tier-1 oder Tier-2-Lieferant Prototypenteile oder -informationen an Ihre Unterlieferanten weitergeben, müssen Sie die Schutzanforderungen vertraglich weitergeben und deren Einhaltung überprüfen. TISAX-Assessoren fragen gezielt nach Nachweisen der Lieferantenüberwachung.",
         "maturity": {
           "level0": "Keine vertraglichen Prototypenschutzanforderungen an Unterlieferanten — Weitergabe von Prototypen ohne Sicherheitsauflagen",
@@ -4351,7 +4351,7 @@
       },
       "techQ1": {
         "title": "Ist ein systematisches Management der IT-Assets einschließlich Klassifizierung und Inventarisierung etabliert?",
-        "tooltip": "VDA ISA 6.0.2, Control 1.3.1: „Inwieweit werden Informationswerte (Assets) identifiziert und erfasst?“ Control 1.3.2: „Inwieweit werden Informationswerte hinsichtlich ihres Schutzbedarfs klassifiziert und gemanagt?“",
+        "tooltip": "VDA ISA 2027.1, Control 1.3.1: „Inwieweit werden Informationswerte (Assets) identifiziert und erfasst?“ Control 1.3.2: „Inwieweit werden Informationswerte hinsichtlich ihres Schutzbedarfs klassifiziert und gemanagt?“",
         "help": "Sie brauchen ein vollständiges Inventar aller IT-Assets: Server, Clients, Netzwerkkomponenten, Software, Datenbanken und Cloud-Dienste. Jedes Asset muss einem Verantwortlichen zugeordnet und nach dem Schutzbedarf der darauf verarbeiteten Informationen klassifiziert sein. Besonders OEM-bezogene Systeme erfordern häufig eine erhöhte Klassifizierung.",
         "maturity": {
           "level0": "Kein IT-Asset-Inventar vorhanden — es gibt keine Übersicht über eingesetzte Systeme, Software und Datenbestände",
@@ -4362,7 +4362,7 @@
       },
       "techQ2": {
         "title": "Werden Informationen und Dokumente nach einem definierten Klassifizierungsschema gekennzeichnet und behandelt?",
-        "tooltip": "VDA ISA 6.0.2, Control 1.3.2: „Inwieweit werden Informationswerte hinsichtlich ihres Schutzbedarfs klassifiziert und gemanagt?“",
+        "tooltip": "VDA ISA 2027.1, Control 1.3.2: „Inwieweit werden Informationswerte hinsichtlich ihres Schutzbedarfs klassifiziert und gemanagt?“",
         "help": "Die Informationsklassifizierung ist ein Kernthema bei TISAX-Assessments. Sie müssen ein Klassifizierungsschema definieren (z.B. öffentlich, intern, vertraulich, streng vertraulich), das kompatibel mit den OEM-Klassifizierungen ist. Jedes Dokument und jede Information muss entsprechend gekennzeichnet werden. Die Handhabungsvorschriften bestimmen, wie klassifizierte Informationen gespeichert, übermittelt und vernichtet werden dürfen.",
         "maturity": {
           "level0": "Kein Klassifizierungsschema vorhanden — Informationen werden nicht nach Vertraulichkeit differenziert behandelt",
@@ -4373,7 +4373,7 @@
       },
       "techQ3": {
         "title": "Werden Wechseldatenträger und Speichermedien kontrolliert eingesetzt und sicher entsorgt?",
-        "tooltip": "VDA ISA 6.0.2, Control 3.1.3: „Inwieweit ist der Umgang mit Informationsträgern gemanagt?“ Control 3.1.4: „Inwieweit ist der Umgang mit mobilen IT-Geräten und mobilen Datenträgern gemanagt?“",
+        "tooltip": "VDA ISA 2027.1, Control 3.1.3: „Inwieweit ist der Umgang mit unterstützenden Assets gemanagt?“ Control 3.1.4: „Inwieweit ist der Umgang mit mobilen IT-Geräten und mobilen Datenträgern gemanagt?“",
         "help": "Wechseldatenträger stellen ein erhebliches Sicherheitsrisiko dar: Datenverlust durch Verlieren, unkontrollierter Datenabfluss und Malware-Einschleusung. Sie brauchen klare Regelungen für die Nutzung von USB-Geräten, die Verschlüsselung mobiler Datenträger und die sichere Entsorgung. Viele OEMs fordern ein vollständiges USB-Verbot oder eine Whitelist-basierte Kontrolle.",
         "maturity": {
           "level0": "Keine Kontrolle über Wechseldatenträger — USB-Ports frei nutzbar, keine Entsorgungsregelung für Altmedien",
@@ -4384,7 +4384,7 @@
       },
       "zkQ1": {
         "title": "Existiert eine Zugangssteuerungsrichtlinie nach dem Need-to-Know- und Least-Privilege-Prinzip?",
-        "tooltip": "VDA ISA 6.0.2, Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
+        "tooltip": "VDA ISA 2027.1, Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
         "help": "Sorgen Sie dafür, dass der Zugang zu IT-Systemen und Informationen nur auf Basis eines dokumentierten Bedarfs gewährt wird. Das Need-to-Know-Prinzip bedeutet: Jeder Mitarbeiter erhält nur Zugriff auf die Informationen, die er für seine Tätigkeit benötigt. Das Least-Privilege-Prinzip bedeutet: Jeder Benutzer erhält nur die minimalen Rechte, die für seine Aufgaben erforderlich sind.",
         "maturity": {
           "level0": "Keine Zugangssteuerungsrichtlinie — Zugriffsrechte werden ohne Bedarfsprüfung vergeben, breite Zugriffsrechte für alle Mitarbeiter",
@@ -4395,7 +4395,7 @@
       },
       "zkQ2": {
         "title": "Werden Benutzerkonten und Zugriffsberechtigungen über den gesamten Lebenszyklus verwaltet?",
-        "tooltip": "VDA ISA 6.0.2, Control 4.1.3: „Inwieweit werden Benutzerkonten und Anmeldeinformationen sicher verwaltet und angewendet?“ Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
+        "tooltip": "VDA ISA 2027.1, Control 4.1.3: „Inwieweit werden Benutzerkonten und Anmeldeinformationen sicher verwaltet und angewendet?“ Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
         "help": "Ein häufiger Befund bei TISAX-Assessments sind verwaiste Konten: Mitarbeiter sind längst ausgeschieden, aber ihre Zugänge bestehen noch. Sie brauchen einen definierten Identity-Lifecycle-Prozess, der Konten bei Eintritt anlegt, bei Rollenwechsel anpasst und bei Austritt zeitnah deaktiviert. Besonders kritisch ist dies für Konten mit Zugriff auf OEM-Systeme oder Prototypen-Daten.",
         "maturity": {
           "level0": "Keine systematische Verwaltung von Benutzerkonten — Konten werden angelegt, aber nicht systematisch deaktiviert oder überprüft",
@@ -4406,7 +4406,7 @@
       },
       "zkQ3": {
         "title": "Werden privilegierte Zugriffsrechte (Administratorkonten) besonders geschützt und überwacht?",
-        "tooltip": "VDA ISA 6.0.2, Control 4.1.2: „Inwieweit wird der Zugang von Benutzern zu IT-Diensten und IT-Systemen gesichert?“ Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
+        "tooltip": "VDA ISA 2027.1, Control 4.1.2: „Inwieweit wird der Zugang von Benutzern zu IT-Diensten und IT-Systemen gesichert?“ Control 4.2.1: „Inwieweit werden Zugriffsrechte vergeben und verwaltet?“",
         "help": "Administratorkonten haben weitreichende Rechte und sind daher bevorzugte Angriffsziele. Sorgen Sie dafür, dass privilegierte Konten besonders geschützt werden: separate Admin-Konten (nicht für den Tagesgebrauch), starke Authentifizierung (MFA), Protokollierung aller administrativen Aktivitäten und regelmäßige Überprüfung der Notwendigkeit. Shared-Admin-Konten müssen vermieden werden.",
         "maturity": {
           "level0": "Keine gesonderte Verwaltung privilegierter Konten — Administratoren nutzen Standardkonten mit erhöhten Rechten für alle Tätigkeiten",
@@ -4420,164 +4420,164 @@
       "questions": {
         "q1": {
           "title": "Gibt es eine dokumentierte Informationssicherheitsrichtlinie mit klaren Verantwortlichkeiten?",
-          "description": "VDA ISA 6: Eine vom Management verabschiedete IS-Richtlinie mit definierten Rollen, Zuständigkeiten und regelmäßiger Überprüfung bildet die Grundlage für TISAX."
+          "description": "VDA ISA: Eine vom Management verabschiedete IS-Richtlinie mit definierten Rollen, Zuständigkeiten und regelmäßiger Überprüfung bildet die Grundlage für TISAX."
         },
         "q2": {
           "title": "Werden Mitarbeitende regelmäßig zu Informationssicherheit geschult und sensibilisiert?",
-          "description": "VDA ISA 6: Alle Beschäftigten — auch externe — müssen regelmäßig zu Informationssicherheitsrisiken und -regeln geschult werden."
+          "description": "VDA ISA: Alle Beschäftigten — auch externe — müssen regelmäßig zu Informationssicherheitsrisiken und -regeln geschult werden."
         },
         "q3": {
           "title": "Sind Sicherheitszonen definiert und der Zugang zu sensiblen Bereichen kontrolliert?",
-          "description": "VDA ISA 6: Physische Zutrittskontrolle mit Zonierung, Besuchermanagement und Schutz gegen unbefugten Zutritt zu Bereichen mit vertraulichen Daten."
+          "description": "VDA ISA: Physische Zutrittskontrolle mit Zonierung, Besuchermanagement und Schutz gegen unbefugten Zutritt zu Bereichen mit vertraulichen Daten."
         },
         "q4": {
           "title": "Sind Ihre IT-Systeme durch aktuelle Schutzmaßnahmen gegen Cyberangriffe gesichert?",
-          "description": "VDA ISA 6: Endpointschutz, Netzwerksicherheit, Patch-Management und Monitoring — dem aktuellen Stand der Technik entsprechend."
+          "description": "VDA ISA: Endpointschutz, Netzwerksicherheit, Patch-Management und Monitoring — dem aktuellen Stand der Technik entsprechend."
         },
         "q5": {
           "title": "Sind Prototypen und vertrauliche Entwicklungsdaten physisch und digital geschützt?",
-          "description": "VDA ISA 6: Besondere Schutzmaßnahmen für Prototypen, Tarnungen, Testfahrzeuge und vertrauliche OEM-Entwicklungsdaten."
+          "description": "VDA ISA: Besondere Schutzmaßnahmen für Prototypen, Tarnungen, Testfahrzeuge und vertrauliche OEM-Entwicklungsdaten."
         },
         "q6": {
           "title": "Werden personenbezogene Daten gemäß den Datenschutzanforderungen verarbeitet?",
-          "description": "VDA ISA 6: TISAX-Assessment Level 2/3 prüft die Einhaltung datenschutzrechtlicher Anforderungen der DSGVO im Kontext der Automobilbranche."
+          "description": "VDA ISA: TISAX-Assessment Level 2/3 prüft die Einhaltung datenschutzrechtlicher Anforderungen der DSGVO im Kontext der Automobilbranche."
         },
         "q7": {
           "title": "Gibt es ein rollenbasiertes Berechtigungskonzept mit regelmäßigen Reviews?",
-          "description": "VDA ISA 6: Need-to-Know-Prinzip, individuelle Benutzerkonten, regelmäßige Rezertifizierung und zeitnahe Deaktivierung bei Austritt."
+          "description": "VDA ISA: Need-to-Know-Prinzip, individuelle Benutzerkonten, regelmäßige Rezertifizierung und zeitnahe Deaktivierung bei Austritt."
         },
         "q8": {
           "title": "Werden Verschlüsselungsverfahren für die Übertragung und Speicherung sensibler Daten eingesetzt?",
-          "description": "VDA ISA 6: Aktuelle Verschlüsselungsstandards für Daten in Transit und at Rest — insbesondere für OEM-vertrauliche Informationen."
+          "description": "VDA ISA: Aktuelle Verschlüsselungsstandards für Daten in Transit und at Rest — insbesondere für OEM-vertrauliche Informationen."
         },
         "q9": {
           "title": "Werden Informationssicherheitsanforderungen vertraglich an Lieferanten weitergegeben?",
-          "description": "VDA ISA 6: Vertragsklauseln für Informationssicherheit, regelmäßige Überprüfung und Pflicht zur Weiterreichung an Unterauftragnehmer."
+          "description": "VDA ISA: Vertragsklauseln für Informationssicherheit, regelmäßige Überprüfung und Pflicht zur Weiterreichung an Unterauftragnehmer."
         },
         "q10": {
           "title": "Werden TISAX-Anforderungen regelmäßig überprüft und Abweichungen systematisch nachverfolgt?",
-          "description": "VDA ISA 6: Internes Audit-Programm, Management-Reviews und nachweisbare Korrekturmaßnahmen bei identifizierten Abweichungen."
+          "description": "VDA ISA: Internes Audit-Programm, Management-Reviews und nachweisbare Korrekturmaßnahmen bei identifizierten Abweichungen."
         }
       }
     },
     "recommendations": {
       "bs1": {
-        "description": "Implementieren Sie umfassenden Malware-Schutz für alle Automotive-Entwicklungs- und Produktionssysteme gemäß VDA ISA 6 und ISO 27001 A.8.7. Beachten Sie spezielle Anforderungen für OT-Umgebungen.",
+        "description": "Implementieren Sie umfassenden Malware-Schutz für alle Automotive-Entwicklungs- und Produktionssysteme gemäß VDA ISA und ISO 27001 A.8.7. Beachten Sie spezielle Anforderungen für OT-Umgebungen.",
         "firstStep": "Deployen Sie Anti-Malware-Lösungen auf allen Workstations und Servern mit Automotive-Daten (Entwicklung, PLM, MES).",
         "title": "Malware-Schutz für Automotive-Entwicklungsumgebungen"
       },
       "bs2": {
-        "description": "Etablieren Sie ein Schwachstellen-Management für alle Automotive-IT- und OT-Systeme gemäß VDA ISA 6 und ISO 27001 A.8.8. Priorisieren Sie Patches für produktionsnahe und Prototypen-Systeme.",
+        "description": "Etablieren Sie ein Schwachstellen-Management für alle Automotive-IT- und OT-Systeme gemäß VDA ISA und ISO 27001 A.8.8. Priorisieren Sie Patches für produktionsnahe und Prototypen-Systeme.",
         "firstStep": "Implementieren Sie einen automatisierten Schwachstellen-Scan für alle Automotive-Systeme (mindestens monatlich für Entwicklungsumgebungen).",
         "title": "Schwachstellen-Management für Automotive-Systeme"
       },
       "comp1": {
-        "description": "Implementieren Sie ein umfassendes Compliance-Framework zur Erfüllung aller VDA ISA/TISAX-Anforderungen gemäß VDA ISA 6 und ISO 27001 A.5.31. Bereiten Sie ein TISAX-Assessment vor.",
+        "description": "Implementieren Sie ein umfassendes Compliance-Framework zur Erfüllung aller VDA ISA/TISAX-Anforderungen gemäß VDA ISA und ISO 27001 A.5.31. Bereiten Sie ein TISAX-Assessment vor.",
         "firstStep": "Führen Sie ein TISAX-Gap-Assessment durch, um Abweichungen zwischen IST-Zustand und VDA ISA-Anforderungen zu identifizieren.",
         "title": "TISAX-Compliance-Framework implementieren"
       },
       "comp2": {
-        "description": "Führen Sie regelmäßige Reviews zur Einhaltung aller TISAX- und Automotive-Sicherheitsanforderungen durch gemäß VDA ISA 6 und ISO 27001 A.5.36. Dokumentieren Sie Nachweise für Audits.",
+        "description": "Führen Sie regelmäßige Reviews zur Einhaltung aller TISAX- und Automotive-Sicherheitsanforderungen durch gemäß VDA ISA und ISO 27001 A.5.36. Dokumentieren Sie Nachweise für Audits.",
         "firstStep": "Planen Sie quartalsweise TISAX-Compliance-Reviews mit definierten Prüfpunkten (VDA ISA-Controls, Maßnahmenstatus).",
         "title": "Regelmäßige Compliance-Reviews durchführen"
       },
       "ds1": {
-        "description": "Implementieren Sie ein Datenschutz-Management-System für Automotive-spezifische personenbezogene Daten (z.B. Fahrzeugdaten, Testfahrer) gemäß VDA ISA 6 (Modul Datenschutz) und DSGVO.",
+        "description": "Implementieren Sie ein Datenschutz-Management-System für Automotive-spezifische personenbezogene Daten (z.B. Fahrzeugdaten, Testfahrer) gemäß VDA ISA (Modul Datenschutz) und DSGVO.",
         "firstStep": "Identifizieren Sie alle Verarbeitungstätigkeiten mit personenbezogenen Automotive-Daten und führen Sie ein Verzeichnis gemäß Art. 30 DSGVO.",
         "title": "Datenschutz-Management für Automotive-Daten etablieren"
       },
       "ds2": {
-        "description": "Führen Sie regelmäßige Datenschutz-Audits und Reviews durch, insbesondere für Automotive-Datenverarbeitungen (Connected Car, Testdaten) gemäß VDA ISA 6 (Modul Datenschutz).",
+        "description": "Führen Sie regelmäßige Datenschutz-Audits und Reviews durch, insbesondere für Automotive-Datenverarbeitungen (Connected Car, Testdaten) gemäß VDA ISA (Modul Datenschutz).",
         "firstStep": "Planen Sie einen jährlichen Datenschutz-Audit mit Fokus auf Automotive-spezifische Datenverarbeitungen (z.B. Telematik, Testfahrten).",
         "title": "Datenschutz-Audits und Reviews durchführen"
       },
       "kom1": {
-        "description": "Implementieren Sie umfassende Netzwerksicherheitsmaßnahmen für Automotive-Entwicklungsnetzwerke (Segmentierung, Firewalls, IDS/IPS) gemäß VDA ISA 6 und ISO 27001 A.8.20.",
+        "description": "Implementieren Sie umfassende Netzwerksicherheitsmaßnahmen für Automotive-Entwicklungsnetzwerke (Segmentierung, Firewalls, IDS/IPS) gemäß VDA ISA und ISO 27001 A.8.20.",
         "firstStep": "Segmentieren Sie das Netzwerk nach Sensibilität (z.B. Prototypen-Zone, Entwicklung, Produktion, Office) mit strikter Firewall-Kontrolle.",
         "title": "Netzwerksicherheit für Automotive-Entwicklungsnetzwerke"
       },
       "kom2": {
-        "description": "Implementieren Sie verschlüsselte Übertragungswege für alle Automotive-sensiblen Daten (intern und extern zu Lieferanten/OEMs) gemäß VDA ISA 6 und ISO 27001 A.5.14.",
+        "description": "Implementieren Sie verschlüsselte Übertragungswege für alle Automotive-sensiblen Daten (intern und extern zu Lieferanten/OEMs) gemäß VDA ISA und ISO 27001 A.5.14.",
         "firstStep": "Definieren Sie sichere Übertragungsmethoden für Prototypen-Daten (z.B. SFTP, HTTPS, VPN) und verbieten Sie unverschlüsselte Kanäle.",
         "title": "Sichere Datenübertragung für Automotive-Informationen"
       },
       "kry1": {
-        "description": "Entwickeln Sie ein unternehmensweites Kryptografie-Konzept für Automotive-Daten in Ruhe und Transit gemäß VDA ISA 6 und ISO 27001 A.8.24. Definieren Sie Verschlüsselungsstandards für Prototypen-Informationen.",
+        "description": "Entwickeln Sie ein unternehmensweites Kryptografie-Konzept für Automotive-Daten in Ruhe und Transit gemäß VDA ISA und ISO 27001 A.8.24. Definieren Sie Verschlüsselungsstandards für Prototypen-Informationen.",
         "firstStep": "Erstellen Sie ein Kryptografie-Konzept mit definierten Algorithmen, Schlüssellängen und Anwendungsfällen (z.B. AES-256 für Prototypen-Daten).",
         "title": "Kryptografie-Konzept für Automotive-Daten entwickeln"
       },
       "kry2": {
-        "description": "Implementieren Sie ein sicheres Schlüsselmanagement für alle kryptografischen Schlüssel in Automotive-Anwendungen gemäß VDA ISA 6 und ISO 27001 A.8.24. Nutzen Sie HSMs für hochsensible Keys.",
+        "description": "Implementieren Sie ein sicheres Schlüsselmanagement für alle kryptografischen Schlüssel in Automotive-Anwendungen gemäß VDA ISA und ISO 27001 A.8.24. Nutzen Sie HSMs für hochsensible Keys.",
         "firstStep": "Definieren Sie Prozesse für Schlüsselgenerierung, -speicherung, -verteilung, -rotation und -vernichtung für Automotive-Verschlüsselung.",
         "title": "Schlüsselmanagement für Automotive-Verschlüsselung"
       },
       "lief1": {
-        "description": "Definieren Sie verbindliche Informationssicherheitsanforderungen für alle Automotive-Lieferanten gemäß VDA ISA 6 und ISO 27001 A.5.19. Fordern Sie ein TISAX-Label bei sensiblen Zulieferern.",
+        "description": "Definieren Sie verbindliche Informationssicherheitsanforderungen für alle Automotive-Lieferanten gemäß VDA ISA und ISO 27001 A.5.19. Fordern Sie ein TISAX-Label bei sensiblen Zulieferern.",
         "firstStep": "Erstellen Sie eine Lieferantenanforderungs-Checkliste für Informationssicherheit mit TISAX-Anforderungen für kritische Zulieferer.",
         "title": "Informationssicherheitsanforderungen an Automotive-Lieferanten"
       },
       "lief2": {
-        "description": "Überwachen Sie kontinuierlich die Informationssicherheit Ihrer Automotive-Lieferanten durch regelmäßige Audits und Assessments gemäß VDA ISA 6 und ISO 27001 A.5.22.",
+        "description": "Überwachen Sie kontinuierlich die Informationssicherheit Ihrer Automotive-Lieferanten durch regelmäßige Audits und Assessments gemäß VDA ISA und ISO 27001 A.5.22.",
         "firstStep": "Planen Sie jährliche Informationssicherheits-Audits für alle kritischen Lieferanten mit Zugang zu Prototypen oder sensiblen Automotive-Daten.",
         "title": "Lieferanten-Monitoring und Audits durchführen"
       },
       "org1": {
-        "description": "Entwickeln Sie eine automotive-spezifische Informationssicherheitsleitlinie und implementieren Sie ein ISMS gemäß VDA ISA 6 und ISO 27001 A.5.1. Die Leitlinie muss Prototypenschutz und Lieferkettenanforderungen abdecken.",
+        "description": "Entwickeln Sie eine automotive-spezifische Informationssicherheitsleitlinie und implementieren Sie ein ISMS gemäß VDA ISA und ISO 27001 A.5.1. Die Leitlinie muss Prototypenschutz und Lieferkettenanforderungen abdecken.",
         "firstStep": "Erstellen Sie eine schriftliche Informationssicherheitsleitlinie mit Bezug zu VDA ISA-Anforderungen und lassen Sie diese durch die Geschäftsleitung genehmigen.",
         "title": "Informationssicherheitsleitlinie und ISMS etablieren"
       },
       "org2": {
-        "description": "Definieren Sie klare Rollen und Verantwortlichkeiten für Informationssicherheit gemäß VDA ISA 6 und ISO 27001 A.5.2. Benennen Sie einen Informationssicherheitsbeauftragten (ISB) mit direktem Zugang zur Geschäftsleitung.",
+        "description": "Definieren Sie klare Rollen und Verantwortlichkeiten für Informationssicherheit gemäß VDA ISA und ISO 27001 A.5.2. Benennen Sie einen Informationssicherheitsbeauftragten (ISB) mit direktem Zugang zur Geschäftsleitung.",
         "firstStep": "Benennen Sie formell einen Informationssicherheitsbeauftragten (ISB) und dokumentieren Sie dessen Aufgaben, Befugnisse und Berichtslinien.",
         "title": "Informationssicherheitsrollen und Verantwortlichkeiten definieren"
       },
       "per1": {
-        "description": "Implementieren Sie Prozesse zur Sicherheitsüberprüfung von Mitarbeitern vor Einstellung, insbesondere bei Zugang zu Prototypen oder sensiblen Automotive-Daten gemäß VDA ISA 6 und ISO 27001 A.6.1.",
+        "description": "Implementieren Sie Prozesse zur Sicherheitsüberprüfung von Mitarbeitern vor Einstellung, insbesondere bei Zugang zu Prototypen oder sensiblen Automotive-Daten gemäß VDA ISA und ISO 27001 A.6.1.",
         "firstStep": "Definieren Sie Sicherheitsüberprüfungskriterien abhängig von der Sensibilität der Position (z.B. Prototypen-Zugang, Entwicklungsdaten).",
         "title": "Sicherheitsüberprüfung von Mitarbeitern durchführen"
       },
       "per2": {
-        "description": "Führen Sie regelmäßige, automotive-spezifische Security-Awareness-Schulungen durch gemäß VDA ISA 6 und ISO 27001 A.6.3. Themen: Prototypenschutz, Lieferkettenrisiken, Social Engineering.",
+        "description": "Führen Sie regelmäßige, automotive-spezifische Security-Awareness-Schulungen durch gemäß VDA ISA und ISO 27001 A.6.3. Themen: Prototypenschutz, Lieferkettenrisiken, Social Engineering.",
         "firstStep": "Entwickeln Sie ein Schulungsprogramm mit Automotive-Schwerpunkten (Prototypen, Lieferanten, NDA-Handling) für alle Mitarbeiter.",
         "title": "Security-Awareness-Schulungen für Automotive-Kontext durchführen"
       },
       "phy1": {
-        "description": "Etablieren Sie physische Sicherheitsperimeter zum Schutz kritischer Bereiche (z.B. Prototypenwerkstätten, Entwicklungslabore) gemäß VDA ISA 6 und ISO 27001 A.7.1. Implementieren Sie Zugangskontrollen und Besuchermanagement.",
+        "description": "Etablieren Sie physische Sicherheitsperimeter zum Schutz kritischer Bereiche (z.B. Prototypenwerkstätten, Entwicklungslabore) gemäß VDA ISA und ISO 27001 A.7.1. Implementieren Sie Zugangskontrollen und Besuchermanagement.",
         "firstStep": "Identifizieren Sie alle Bereiche mit Prototypen oder hochsensiblen Automotive-Daten und definieren Sie Sicherheitszonen.",
         "title": "Physische Sicherheitsperimeter für Prototypen einrichten"
       },
       "phy2": {
-        "description": "Installieren Sie Überwachungssysteme für kritische Bereiche (Prototypenzonen, Testgelände) gemäß VDA ISA 6 und ISO 27001 A.7.4. Beachten Sie datenschutzrechtliche Anforderungen (DSGVO).",
+        "description": "Installieren Sie Überwachungssysteme für kritische Bereiche (Prototypenzonen, Testgelände) gemäß VDA ISA und ISO 27001 A.7.4. Beachten Sie datenschutzrechtliche Anforderungen (DSGVO).",
         "firstStep": "Führen Sie eine Risikoanalyse für kritische Bereiche durch und identifizieren Sie Bereiche mit Überwachungsbedarf (Prototypen, Testgelände).",
         "title": "Videoüberwachung und physisches Monitoring implementieren"
       },
       "proto1": {
-        "description": "Implementieren Sie spezifische physische Schutzmaßnahmen für Prototypen-Fahrzeuge und -Bauteile gemäß VDA ISA 6 (Modul Prototypenschutz) Dies umfasst sichere Lagerung, Transport, Kennzeichnung und Verschrottung.",
+        "description": "Implementieren Sie spezifische physische Schutzmaßnahmen für Prototypen-Fahrzeuge und -Bauteile gemäß VDA ISA (Modul Prototypenschutz) Dies umfasst sichere Lagerung, Transport, Kennzeichnung und Verschrottung.",
         "firstStep": "Erstellen Sie eine Prototypen-Schutzrichtlinie mit klaren Vorgaben zu Lagerung, Kennzeichnung, Transport und Vernichtung.",
         "title": "Physischen Prototypenschutz implementieren"
       },
       "proto2": {
-        "description": "Klassifizieren Sie alle Prototypen-bezogenen Informationen (CAD, Testdaten, Spezifikationen) nach Sensitivität gemäß VDA ISA 6 (Modul Prototypenschutz) und implementieren Sie entsprechende Schutzmaßnahmen (Verschlüsselung, DRM).",
+        "description": "Klassifizieren Sie alle Prototypen-bezogenen Informationen (CAD, Testdaten, Spezifikationen) nach Sensitivität gemäß VDA ISA (Modul Prototypenschutz) und implementieren Sie entsprechende Schutzmaßnahmen (Verschlüsselung, DRM).",
         "firstStep": "Führen Sie eine Datenklassifizierung für alle Prototypen-Informationen durch (öffentlich, intern, vertraulich, streng vertraulich).",
         "title": "Prototypen-Informationen klassifizieren und schützen"
       },
       "tech1": {
-        "description": "Implementieren Sie ein umfassendes Asset-Management für alle Automotive-relevanten Assets (Hardware, Software, Daten, Prototypen) mit Klassifizierung gemäß VDA ISA 6 und ISO 27001 A.5.9.",
+        "description": "Implementieren Sie ein umfassendes Asset-Management für alle Automotive-relevanten Assets (Hardware, Software, Daten, Prototypen) mit Klassifizierung gemäß VDA ISA und ISO 27001 A.5.9.",
         "firstStep": "Erstellen Sie ein vollständiges Inventar aller Assets mit Automotive-Bezug und klassifizieren Sie diese nach Schutzbedarf (z.B. Prototypen-Level).",
         "title": "Asset-Management und Klassifizierung für Automotive-Daten"
       },
       "tech2": {
-        "description": "Implementieren Sie umfassende Endpoint-Sicherheitsmaßnahmen für Entwickler-Workstations und mobile Geräte mit Zugriff auf Automotive-Daten gemäß VDA ISA 6 und ISO 27001 A.8.1.",
+        "description": "Implementieren Sie umfassende Endpoint-Sicherheitsmaßnahmen für Entwickler-Workstations und mobile Geräte mit Zugriff auf Automotive-Daten gemäß VDA ISA und ISO 27001 A.8.1.",
         "firstStep": "Deployen Sie Endpoint-Protection-Lösungen (Anti-Malware, EDR) auf allen Geräten mit Zugriff auf Entwicklungsdaten oder Prototypen.",
         "title": "Endpoint-Sicherheit für Entwicklungsumgebungen"
       },
       "zk1": {
-        "description": "Implementieren Sie eine umfassende Zugriffskontrollrichtlinie für alle Automotive-Systeme (Entwicklung, Produktion, Prototypen) gemäß VDA ISA 6 und ISO 27001 A.5.15. Nutzen Sie Least-Privilege- und Need-to-Know-Prinzipien.",
+        "description": "Implementieren Sie eine umfassende Zugriffskontrollrichtlinie für alle Automotive-Systeme (Entwicklung, Produktion, Prototypen) gemäß VDA ISA und ISO 27001 A.5.15. Nutzen Sie Least-Privilege- und Need-to-Know-Prinzipien.",
         "firstStep": "Dokumentieren Sie eine Zugriffskontrollrichtlinie mit Regeln für Automotive-spezifische Systeme (CAD, PLM, Testdatenbanken).",
         "title": "Zugriffskontrollrichtlinie für Automotive-Umgebungen"
       },
       "zk2": {
-        "description": "Implementieren Sie ein Privileged-Access-Management (PAM) für kritische Automotive-Systeme (Entwicklungsumgebungen, Prototypen-Netzwerke) gemäß VDA ISA 6 und ISO 27001 A.8.2.",
+        "description": "Implementieren Sie ein Privileged-Access-Management (PAM) für kritische Automotive-Systeme (Entwicklungsumgebungen, Prototypen-Netzwerke) gemäß VDA ISA und ISO 27001 A.8.2.",
         "firstStep": "Identifizieren Sie alle privilegierten Accounts in Automotive-kritischen Systemen und implementieren Sie eine PAM-Lösung mit Session-Recording.",
         "title": "Privileged-Access-Management (PAM) für kritische Systeme"
       }
@@ -5920,17 +5920,17 @@
         "dsgvo": "In Kraft seit 25.05.2018",
         "kritis": "Kritische Anlagen: BSIG seit 06.12.2025 (zuvor IT-SiG 2.0)",
         "dora": "In Kraft seit 17.01.2025",
-        "tisax": "Fortlaufend — OEM-Anforderung. Fragen nach VDA ISA 6; für ab 01.01.2027 beauftragte Assessments gilt ISA2027",
+        "tisax": "Fortlaufend — OEM-Anforderung. Fragen nach VDA ISA 2027.1 (Grundlage für ab 01.01.2027 beauftragte Assessments); früher beauftragte Assessments können laut ENX weiter nach ISA 6 laufen",
         "cra": "Meldepflichten seit 11.09.2026 (ENISA Single Reporting Platform), volle Anwendung ab 11.12.2027 (EU 2024/2847)",
         "bsi-grundschutz": "Rahmenwerk — keine gesetzliche Frist. Fragen nach dem Kompendium (Edition 2023); Nachfolger Grundschutz++ (BSI-Standard 300-1) löst es schrittweise ab",
         "iso27001": "Rahmenwerk — keine gesetzliche Frist",
         "soc2": "Rahmenwerk — keine gesetzliche Frist",
         "pci-dss": "PCI DSS v4.0.1 seit 31.12.2024 (Umsetzungsfrist neuer Anforderungen: 31.03.2025)",
-        "c5": "Rahmenwerk — keine gesetzliche Frist. Fragen nach C5:2020; Nachfolger C5:2026 empfohlen für Prüfzeiträume mit Ende ab 01.06.2027",
+        "c5": "Rahmenwerk — keine gesetzliche Frist. Fragen nach C5:2026; das BSI empfiehlt ihn für Prüfzeiträume mit Ende ab 01.06.2027, davor gilt die Empfehlung für C5:2020",
         "cis-controls": "Seit Juni 2024 (v8.1)",
         "iso22301": "Seit 2019 (2nd Edition)",
         "nist-csf": "Seit 2024 (v2.0)",
-        "owasp-asvs": "Fragen nach v4.0.3 — aktuelle Fassung: v5.0 (Mai 2025)"
+        "owasp-asvs": "Fragen nach v5.0.0 (Mai 2025)"
       },
       "reasons": {
         "nis2SectorSize": "Ihr Unternehmen fällt in einen NIS2-Sektor und erfüllt die Größenschwelle.",
@@ -7701,7 +7701,7 @@
     },
     "tisax": {
       "title": "TISAX-Assessment vorbereiten",
-      "subtitle": "Sind Sie bereit für die Informationssicherheit in der Automobilbranche?\nPrüfen Sie Ihren Stand gegen VDA ISA 6.\nFür ab 01.01.2027 beauftragte Assessments gilt der Nachfolgekatalog ISA2027.",
+      "subtitle": "Sind Sie bereit für die Informationssicherheit in der Automobilbranche?\nPrüfen Sie Ihren Stand gegen VDA ISA 2027.1.\nDer Katalog ist Grundlage für ab 01.01.2027 beauftragte Assessments; früher beauftragte können laut ENX weiter nach ISA 6 laufen.",
       "cta": "TISAX-Check starten"
     },
     "cra": {
@@ -7731,7 +7731,7 @@
     },
     "c5": {
       "title": "BSI C5-Compliance prüfen",
-      "subtitle": "Erfüllt Ihr Cloud-Dienst die Anforderungen des BSI C5:2020?\nPrüfen Sie Ihre Cloud-Sicherheitsmaßnahmen gegen den BSI-Kriterienkatalog.\nDer Nachfolger C5:2026 ist veröffentlicht — das BSI empfiehlt ihn für Prüfzeiträume mit Ende ab 01.06.2027.",
+      "subtitle": "Erfüllt Ihr Cloud-Dienst die Anforderungen des BSI C5:2026?\nPrüfen Sie Ihre Cloud-Sicherheitsmaßnahmen gegen den BSI-Kriterienkatalog.\nDas BSI empfiehlt den C5:2026 für Prüfzeiträume mit Ende ab 01.06.2027; für frühere Prüfzeiträume gilt die Empfehlung für den C5:2020, dessen Kennungen abweichen.",
       "cta": "C5-Check starten"
     },
     "cis-controls": {
@@ -7747,7 +7747,7 @@
       "subtitle": "Das weltweit führende Rahmenwerk für Cybersicherheit.\nMit den 6 Funktionen Govern, Identify, Protect, Detect, Respond, Recover."
     },
     "owasp-asvs": {
-      "title": "OWASP ASVS 4.0.3",
+      "title": "OWASP ASVS 5.0.0",
       "subtitle": "Sicherheitsstandard für Webanwendungen und APIs.\nVerifizierungslevel L1 bis L3 für Entwickler und Sicherheitsteams. Die Fragen setzen Entwicklerkenntnisse voraus."
     }
   },
@@ -9187,7 +9187,7 @@
   "c5": {
     "name": "BSI C5",
     "shortName": "C5",
-    "fullName": "Cloud Computing Compliance Criteria Catalogue (C5:2020)",
+    "fullName": "Cloud Computing Compliance Criteria Catalogue (C5:2026)",
     "description": "Kriterienkatalog des BSI für sicheres Cloud Computing",
     "categories": {
       "organisation": {
@@ -9242,7 +9242,7 @@
     "questions": {
       "orgQ1": {
         "title": "Verfügt Ihre Organisation über eine dokumentierte Informationssicherheitsrichtlinie für den Cloud-Betrieb?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien OIS-01 „Informationssicherheitsmanagementsystem (ISMS)“ und OIS-02 „Leitlinie zur Informationssicherheit“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien OIS-01 „Informationssicherheitsmanagementsystem (ISMS)“ und OIS-02 „Informationssicherheitsrichtlinie“.",
         "help": "Eine Informationssicherheitsrichtlinie bildet das Fundament Ihres C5-Compliance-Rahmens. Sie muss vom Management genehmigt sein, allen relevanten Mitarbeitern bekannt gemacht werden und regelmäßig überprüft werden. Die Richtlinie sollte den Geltungsbereich des Cloud-Dienstes, Verantwortlichkeiten, Risikoakzeptanzkriterien und die übergeordneten Schutzziele definieren.",
         "maturity": {
           "level0": "Keine dokumentierte Informationssicherheitsrichtlinie vorhanden; Cloud-Sicherheit wird nicht systematisch adressiert",
@@ -9253,7 +9253,7 @@
       },
       "orgQ2": {
         "title": "Sind Sicherheitsrichtlinien für den Cloud-Dienst auf nachgeordneter Ebene definiert und umgesetzt?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien SP-01 „Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Anweisungen“ und SP-02 „Überprüfung und Freigabe von Richtlinien und Anweisungen“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien SP-01 „Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Verfahren“ und SP-02 „Überprüfung und Freigabe von Richtlinien und Verfahren“.",
         "help": "Neben der übergeordneten Richtlinie brauchen Sie themenspezifische Sicherheitsrichtlinien (Policies), die konkrete Vorgaben für einzelne Bereiche definieren. Typische Themen sind: Zugriffsmanagement, Kryptografie, Datensicherung, Netzwerksicherheit, Vorfallbehandlung und physische Sicherheit. Jede Policy muss einen Verantwortlichen haben und regelmäßig aktualisiert werden.",
         "maturity": {
           "level0": "Keine themenspezifischen Sicherheitsrichtlinien vorhanden; einzelne Bereiche werden ad hoc behandelt",
@@ -9264,7 +9264,7 @@
       },
       "orgQ3": {
         "title": "Werden Mitarbeiter im Cloud-Betrieb hinsichtlich Informationssicherheit überprüft und geschult?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien HR-01 „Überprüfung der Qualifikation und Vertrauenswürdigkeit“ und HR-03 „Programm zur Sicherheitsausbildung und Sensibilisierung“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien HR-01 „Überprüfung der Qualifikation und Vertrauenswürdigkeit“ und HR-03 „Programm zur Sicherheitsausbildung und Sensibilisierung“.",
         "help": "Sorgen Sie dafür, dass alle Mitarbeiter mit Zugang zu Cloud-Systemen und Kundendaten vor der Einstellung überprüft werden (Identitätsprüfung, Qualifikationsnachweis, ggf. Führungszeugnis). Zusätzlich müssen regelmäßige Schulungen zur Informationssicherheit stattfinden, die auf die spezifischen Aufgaben und Risiken der jeweiligen Rolle zugeschnitten sind. Die Schulungsteilnahme ist zu dokumentieren.",
         "maturity": {
           "level0": "Keine systematischen Hintergrundüberprüfungen oder Sicherheitsschulungen für Cloud-Personal",
@@ -9275,7 +9275,7 @@
       },
       "orgQ4": {
         "title": "Wird die Einhaltung der Informationssicherheitsrichtlinien regelmäßig durch unabhängige Prüfungen kontrolliert?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien COM-02 „Richtlinie für die Planung und Durchführung von Audits“ und COM-03 „Interne Audits des Informationssicherheitsmanagementsystems“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien COM-02 „Richtlinie für die Planung und Durchführung von Audits“ und COM-03 „Interne Audits des Informationssicherheitsmanagementsystems“.",
         "help": "Sorgen Sie dafür, dass die Wirksamkeit Ihrer Informationssicherheitsmaßnahmen und die Einhaltung Ihrer Richtlinien durch unabhängige Prüfungen -- intern oder extern -- regelmäßig validiert werden. Die Prüfungsergebnisse müssen dem Management berichtet werden. Festgestellte Abweichungen erfordern Korrekturmaßnahmen mit definierten Fristen und Verantwortlichkeiten.",
         "maturity": {
           "level0": "Keine unabhängigen Prüfungen der Informationssicherheit; Compliance wird nicht systematisch kontrolliert",
@@ -9286,7 +9286,7 @@
       },
       "amQ1": {
         "title": "Führen Sie ein aktuelles Inventar aller Cloud-Assets einschließlich Kundendaten?",
-        "tooltip": "Zugrunde liegt das C5:2020-Kriterium AM-01 „Inventarisierung der Assets“.",
+        "tooltip": "Zugrunde liegt das C5:2026-Kriterium AM-02 „Asset-Inventar“.",
         "help": "Ein vollständiges Asset-Inventar ist die Voraussetzung für wirksames Sicherheitsmanagement. Sorgen Sie dafür, dass alle Cloud-relevanten Assets erfasst werden: Server, Speichermedien, Netzwerkkomponenten, Software-Lizenzen, Datenbanken und insbesondere Kundendaten. Jedes Asset muss einen definierten Eigentümer haben, der für dessen Schutz verantwortlich ist.",
         "maturity": {
           "level0": "Kein Asset-Inventar vorhanden; kein Überblick über eingesetzte Hardware, Software oder gespeicherte Kundendaten",
@@ -9297,7 +9297,7 @@
       },
       "amQ2": {
         "title": "Werden Cloud-Assets und Kundendaten nach Schutzbedarf klassifiziert und entsprechend behandelt?",
-        "tooltip": "Zugrunde liegt das C5:2020-Kriterium AM-06 „Klassifizierung und Kennzeichnung von Assets“.",
+        "tooltip": "Zugrunde liegt das C5:2026-Kriterium AM-09 „Klassifizierung und Kennzeichnung von Assets“.",
         "help": "Sie brauchen ein Klassifizierungsschema, das auf alle Cloud-Assets angewendet wird. Aus der Klassifizierung müssen konkrete Handhabungsregeln abgeleitet werden -- z. B. welche Verschlüsselung bei welcher Schutzstufe erforderlich ist, wer Zugriff erhält und wie Daten zu löschen sind. Besonders wichtig ist die korrekte Klassifizierung von Kundendaten.",
         "maturity": {
           "level0": "Keine Klassifizierung von Assets oder Daten nach Schutzbedarf",
@@ -9308,7 +9308,7 @@
       },
       "amQ3": {
         "title": "Ist die sichere Rückgabe und Löschung von Kundendaten bei Vertragsende gewährleistet?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien PI-02 „Vertragliche Vereinbarungen zur Bereitstellung von Daten“ und PI-03 „Sichere Datenlöschung“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien PI-02 „Vertragliche Vereinbarungen zur Bereitstellung von Cloud-Kundendaten“ und PI-03 „Sichere Datenlöschung“.",
         "help": "Bei Vertragsende oder Kündigung muss der Cloud-Anbieter alle Kundendaten in einem vereinbarten, verwendbaren Format zurückgeben können. Nach erfolgreicher Rückgabe müssen die Daten -- einschließlich aller Kopien und Backups -- sicher und nachweisbar gelöscht werden. Die Löschung muss den anerkannten Standards entsprechen (z. B. BSI-Empfehlungen zur sicheren Datenlöschung). Die Fristen für Rückgabe und Löschung sollten vertraglich vereinbart sein.",
         "maturity": {
           "level0": "Keine Prozesse für Datenrückgabe oder sichere Löschung bei Vertragsende",
@@ -9319,7 +9319,7 @@
       },
       "psQ1": {
         "title": "Sind die Rechenzentrumsstandorte durch angemessene physische Sicherheitsmaßnahmen geschützt?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien PS-01 „Sicherheitsanforderungen für Räumlichkeiten und Gebäude“, PS-03 „Perimeterschutz“ und PS-04 „Zutrittskontrolle“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien PS-01 „Sicherheitsanforderungen für Gebäude und Räumlichkeiten“, PS-03 „Perimeterschutz“ und PS-04 „Physische Zutrittskontrolle“.",
         "help": "Sie brauchen ein mehrstufiges physisches Sicherheitskonzept für Rechenzentren: äußerer Perimeterschutz (Zaun, Beleuchtung), Gebäudezugang (Schleuse, Ausweiskontrolle), Serverräume (biometrische Zutrittskontrolle, Überwachungskameras). Jede Zone muss definierte Zutrittsberechtigungen haben. Besucher müssen registriert und begleitet werden.",
         "maturity": {
           "level0": "Keine definierten Sicherheitszonen; unkontrollierter Zutritt zu Serverräumen möglich",
@@ -9330,7 +9330,7 @@
       },
       "psQ2": {
         "title": "Ist das Rechenzentrum gegen Umweltrisiken (Feuer, Wasser, Strom) geschützt?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien PS-05 „Schutz vor Feuer und Rauch“ und PS-06 „Schutz vor Ausfall der Versorgungseinrichtungen“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien PS-05 „Schutz vor Bedrohungen von Außen und aus der Umgebung“ und PS-06 „Schutz vor Unterbrechungen durch Stromausfälle und ähnliche Risiken für Versorgungseinrichtungen“.",
         "help": "Sie brauchen umfassenden Schutz der Rechenzentrumsinfrastruktur gegen Umweltrisiken: Brandmelde- und Löschanlage, Wasserdetektion (Leckagesensoren unter Doppelboden), unterbrechungsfreie Stromversorgung (USV) mit Netzersatzanlage (Diesel-Generator), redundante Klimaanlage mit Temperatur- und Feuchtigkeitsüberwachung. Alle Systeme müssen regelmäßig gewartet und getestet werden.",
         "maturity": {
           "level0": "Keine oder minimale Schutzmaßnahmen gegen Umweltrisiken; keine Redundanz bei Strom oder Kühlung",
@@ -9341,7 +9341,7 @@
       },
       "psQ3": {
         "title": "Werden Wartungs- und Entsorgungsprozesse für IT-Ausrüstung sicher durchgeführt?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien AM-04 „Außerbetriebnahme von Hardware“ und PS-06 „Schutz vor Ausfall der Versorgungseinrichtungen“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien AM-07 „Außerbetriebnahme von Hardware“ und PS-06 „Schutz vor Unterbrechungen durch Stromausfälle und ähnliche Risiken für Versorgungseinrichtungen“.",
         "help": "Sie brauchen dokumentierte Prozesse für die sichere Wartung und Entsorgung von IT-Ausrüstung. Bei Wartungsarbeiten durch externe Dienstleister muss sichergestellt sein, dass kein unbefugter Zugriff auf Kundendaten möglich ist. Bei der Entsorgung oder Wiederverwendung müssen alle Speichermedien sicher gelöscht (nach anerkannten Standards) oder physisch zerstört werden. Die Vernichtung muss dokumentiert und nachweisbar sein.",
         "maturity": {
           "level0": "Keine definierten Prozesse für sichere Wartung oder Entsorgung; Speichermedien werden ohne Löschung entsorgt",
@@ -9352,7 +9352,7 @@
       },
       "idmQ1": {
         "title": "Existiert ein formaler Prozess für die Registrierung und Deregistrierung von Benutzern im Cloud-Dienst?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien IDM-02 „Vergabe und Änderung von Zugangs- und Zugriffsberechtigungen“ und IDM-04 „Entzug oder Anpassung von Zugriffsberechtigungen bei Veränderungen des Aufgabengebiets“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien IAM-02 „Vergabe und Änderung von Identitäten und Zugriffsberechtigungen“ und IAM-04 „Entzug oder Anpassung von Zugriffsberechtigungen bei Veränderungen des Aufgabengebiets“.",
         "help": "Sie brauchen einen dokumentierten Prozess für den gesamten Lebenszyklus von Benutzerkonten: Anlage mit eindeutiger Identifizierung, Genehmigung durch den Verantwortlichen, Zuweisung rollenbasierter Rechte und zeitnahe Deaktivierung bei Ausscheiden. Besonders wichtig: Shared Accounts müssen minimiert und technisch privilegierte Konten separat verwaltet werden. Der Prozess muss Audit-fähig protokolliert werden.",
         "maturity": {
           "level0": "Kein formaler Prozess; Benutzerkonten werden ohne Genehmigung angelegt und bei Ausscheiden nicht deaktiviert",
@@ -9363,8 +9363,8 @@
       },
       "idmQ2": {
         "title": "Werden Zugriffsrechte nach dem Least-Privilege-Prinzip vergeben und regelmäßig überprüft?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien IDM-01 „Richtlinie für Zugangs- und Zugriffsberechtigungen“, IDM-05 „Regelmäßige Überprüfung der Zugriffsberechtigungen“ und IDM-06 „Privilegierte Zugriffsberechtigungen“.",
-        "help": "Sorgen Sie dafür, dass jeder Benutzer nur die Zugriffsrechte erhält, die für seine aktuelle Aufgabe erforderlich sind. Privilegierte Rechte (Administrator, Root) müssen besonders restriktiv vergeben und separat überwacht werden. Alle Zugriffsrechte müssen regelmäßig überprüft werden (Access Review); das Kriterium IDM-05 nennt mindestens jährlich. Bei der Überprüfung müssen unnötige Rechte entzogen und Abweichungen dokumentiert werden.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien IAM-01 „Richtlinie für Identitäten und Zugriffsberechtigungen“, IAM-05 „Regelmäßige Überprüfung von Zugriffsberechtigungen“ und IAM-06 „Privilegierte Zugriffsberechtigungen“.",
+        "help": "Sorgen Sie dafür, dass jeder Benutzer nur die Zugriffsrechte erhält, die für seine aktuelle Aufgabe erforderlich sind. Privilegierte Rechte (Administrator, Root) müssen besonders restriktiv vergeben und separat überwacht werden. Alle Zugriffsrechte müssen regelmäßig überprüft werden (Access Review); das Kriterium IAM-05 nennt mindestens jährlich. Bei der Überprüfung müssen unnötige Rechte entzogen und Abweichungen dokumentiert werden.",
         "maturity": {
           "level0": "Keine systematische Rechtesteuerung; Benutzer erhalten häufig übermäßig weitreichende Rechte",
           "level1": "Grundsätzliches Bewusstsein für minimale Rechte, aber kein formaler Prozess und keine regelmäßigen Access Reviews",
@@ -9374,7 +9374,7 @@
       },
       "idmQ3": {
         "title": "Setzen Sie starke Authentifizierungsmechanismen für den Zugriff auf Cloud-Systeme ein?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien IDM-08 „Vertraulichkeit von Authentisierungsinformationen“ und IDM-09 „Authentisierungsmechanismen“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien IAM-08 „Authentisierungsmechanismen“ und IAM-09 „Vertraulichkeit von Authentisierungsinformationen“.",
         "help": "Sie brauchen angemessene Authentifizierungsmechanismen für alle Zugriffe auf den Cloud-Dienst. Für privilegierte Zugriffe und administrative Schnittstellen ist Mehrfaktor-Authentifizierung (MFA) erforderlich. Passwörter müssen definierten Komplexitätsanforderungen genügen (Mindestlänge, Komplexität, Änderungshistorie). Session-Management muss Timeouts und automatische Sperrung bei Inaktivität umfassen.",
         "maturity": {
           "level0": "Nur einfache Passwort-Authentifizierung ohne Komplexitätsanforderungen; keine MFA",
@@ -9385,7 +9385,7 @@
       },
       "opsQ1": {
         "title": "Sind Betriebsprozesse für den Cloud-Dienst dokumentiert und wird die Einhaltung kontrolliert?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien SP-01 „Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Anweisungen“, OPS-01 „Kapazitätsmanagement – Planung“, DEV-03 „Richtlinien zur Änderung von Informationssystemen“ und DEV-10 „Trennung der Umgebungen“. Ein eigenes Kriterium „dokumentierte Betriebsprozesse“ enthält der C5:2020 nicht.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien SP-01 „Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Verfahren“, OPS-01 „Kapazitätsmanagement – Planung“, DEV-03 „Richtlinien für Änderungen an Systemkomponenten“ und DEV-12 „Trennung der Umgebungen“. Ein eigenes Kriterium „dokumentierte Betriebsprozesse“ enthält der C5:2026 nicht.",
         "help": "Sie brauchen dokumentierte Betriebsverfahren (Standard Operating Procedures) für alle wesentlichen Aspekte des Cloud-Betriebs: Änderungsmanagement (Change Management), Kapazitätsplanung, Trennung von Umgebungen (Dev/Test/Prod), Patch-Management und Systemhärtung. Diese Verfahren müssen den Mitarbeitern bekannt sein und ihre Einhaltung muss kontrolliert werden.",
         "maturity": {
           "level0": "Keine dokumentierten Betriebsprozesse; Cloud-Betrieb erfolgt ohne standardisierte Verfahren",
@@ -9396,7 +9396,7 @@
       },
       "opsQ2": {
         "title": "Werden Sicherheitsereignisse und Systemaktivitäten zentral protokolliert und überwacht?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien OPS-10 bis OPS-17, die alle den Titel „Protokollierung und Überwachung“ tragen (unter anderem Konzept, Erkennung von Ereignissen, Aufbewahrung der Protokollierungsdaten).",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien OPS-10 bis OPS-17, die alle den Titel „Protokollierung und Überwachung“ tragen (unter anderem Richtlinien und Verfahren, Aufbewahrung der Protokolldaten, Zurechenbarkeit).",
         "help": "Sie brauchen eine umfassende Protokollierung aller sicherheitsrelevanten Ereignisse: Anmeldevorgänge, Zugriffsversuche, Systemkonfigurationsänderungen, privilegierte Aktionen und Sicherheitsereignisse. Die Protokolle müssen zentral gesammelt, vor unberechtigtem Zugriff und Manipulation geschützt sowie zeitnah ausgewertet werden. Die Aufbewahrungsfristen müssen definiert sein und regulatorischen Anforderungen entsprechen.",
         "maturity": {
           "level0": "Keine systematische Protokollierung oder Überwachung; Sicherheitsereignisse werden nicht erfasst",
@@ -9407,7 +9407,7 @@
       },
       "opsQ3": {
         "title": "Sind Netzwerke und Kommunikationsverbindungen des Cloud-Dienstes angemessen gesichert?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien COS-01 „Technische Schutzmaßnahmen“ und COS-05 „Netze zur Administration“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien COS-01 „Technische Schutzmaßnahmen“ und COS-05 „Netze für die Administration“.",
         "help": "Sie brauchen umfassende Netzwerksicherheit: Segmentierung des Cloud-Netzwerks, um Mandantenisolation zu gewährleisten, Verschlüsselung des Datenverkehrs in Transit (TLS/IPsec), Firewalls und Intrusion-Detection-/Prevention-Systeme (IDS/IPS), Überwachung des Netzwerkverkehrs auf Anomalien. Die Netzwerkarchitektur muss dokumentiert sein und regelmäßig auf Schwachstellen geprüft werden.",
         "maturity": {
           "level0": "Keine Netzwerksegmentierung oder Verschlüsselung des Datenverkehrs; keine Überwachung",
@@ -9418,7 +9418,7 @@
       },
       "kryQ1": {
         "title": "Existiert eine dokumentierte Kryptografie-Richtlinie mit aktuellen Verschlüsselungsstandards?",
-        "tooltip": "Zugrunde liegt das C5:2020-Kriterium CRY-01 „Richtlinie zur Nutzung von Verschlüsselungsverfahren und Schlüsselverwaltung“.",
+        "tooltip": "Zugrunde liegt das C5:2026-Kriterium CRY-01 „Richtlinie für die Verwendung kryptographischer Mechanismen“.",
         "help": "Sie brauchen eine dokumentierte Kryptografie-Richtlinie, die festlegt, welche kryptografischen Algorithmen, Schlüssellängen und Protokolle eingesetzt werden dürfen. Die Richtlinie muss sich an aktuellen Empfehlungen orientieren (z. B. BSI TR-02102 oder NIST SP 800-131A). Veraltete oder als unsicher geltende Verfahren (z. B. MD5, SHA-1, DES, RC4) müssen explizit ausgeschlossen sein. Die Richtlinie muss regelmäßig aktualisiert werden.",
         "maturity": {
           "level0": "Keine Kryptografie-Richtlinie; Verschlüsselung wird ad hoc und ohne einheitliche Standards eingesetzt",
@@ -9429,7 +9429,7 @@
       },
       "kryQ2": {
         "title": "Werden kryptografische Schlüssel über ihren gesamten Lebenszyklus sicher verwaltet?",
-        "tooltip": "Zugrunde liegt das C5:2020-Kriterium CRY-04 „Sichere Schlüsselverwaltung“.",
+        "tooltip": "Zugrunde liegt das C5:2026-Kriterium CRY-17 „Management des Lebenszyklus kryptographischer Schlüssel“.",
         "help": "Sie brauchen ein dokumentiertes Schlüsselmanagement für alle eingesetzten kryptografischen Schlüssel. Der Prozess muss alle Phasen abdecken: sichere Erzeugung (z. B. mit Hardware Security Modules), geschützte Speicherung, kontrollierte Verteilung, regelmäßige Rotation, sichere Archivierung und nachweisbare Vernichtung. Schlüsselkompromittierung muss sofortige Maßnahmen auslösen.",
         "maturity": {
           "level0": "Kein definiertes Schlüsselmanagement; Schlüssel werden unsicher gespeichert oder gar nicht rotiert",
@@ -9440,7 +9440,7 @@
       },
       "kryQ3": {
         "title": "Werden Kundendaten sowohl bei der Übertragung als auch im Ruhezustand verschlüsselt?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien CRY-02 „Verschlüsselung von Daten bei der Übertragung (Transportverschlüsselung)“ und CRY-03 „Verschlüsselung von sensiblen Daten bei der Speicherung“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien CRY-04 „Schutz von Daten bei der Übertragung“ und CRY-05 „Verschlüsselung von sensiblen Daten bei der Speicherung“.",
         "help": "Sorgen Sie dafür, dass Kundendaten durchgängig verschlüsselt werden: bei der Übertragung (in Transit) durch aktuelle TLS-Versionen und bei der Speicherung (at Rest) durch starke Verschlüsselungsverfahren (z. B. AES-256). Besonders wichtig ist die Verschlüsselung von Backups, Datenbankeinträgen und temporären Dateien. Der Kunde sollte über die eingesetzten Verfahren informiert werden und idealerweise die Möglichkeit haben, eigene Schlüssel zu verwenden (BYOK/HYOK).",
         "maturity": {
           "level0": "Kundendaten werden weder bei Übertragung noch bei Speicherung verschlüsselt",
@@ -9451,7 +9451,7 @@
       },
       "simQ1": {
         "title": "Existiert ein definierter Prozess für die Erkennung, Meldung und Behandlung von Sicherheitsvorfällen?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien SIM-01 „Richtlinie für den Umgang mit Sicherheitsvorfällen“ und SIM-02 „Bearbeitung von Sicherheitsvorfällen“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien SIM-01 „Richtlinie für den Umgang mit Sicherheitsvorfällen“, SIM-02 „Pläne zur Reaktion auf Sicherheitsvorfälle“ und SIM-03 „Bearbeitung von Sicherheitsvorfällen“.",
         "help": "Sie brauchen einen vollständigen Incident-Response-Prozess: Von der Erkennung über die Erstreaktion und Analyse bis zur Nachbereitung und Lessons Learned. Der Prozess muss klare Eskalationswege definieren, Rollen zuweisen (Incident Manager, Analyseteam) und sicherstellen, dass betroffene Kunden zeitnah informiert werden. Der Prozess muss regelmäßig getestet werden -- z. B. durch Tabletop-Übungen.",
         "maturity": {
           "level0": "Kein definierter Incident-Response-Prozess; auf Vorfälle wird ad hoc reagiert",
@@ -9462,7 +9462,7 @@
       },
       "simQ2": {
         "title": "Verfügen Sie über dokumentierte Business-Continuity-Pläne für den Cloud-Dienst?",
-        "tooltip": "Zugrunde liegt das C5:2020-Kriterium BCM-03 „Planung der Betriebskontinuität“.",
+        "tooltip": "Zugrunde liegt das C5:2026-Kriterium BCM-03 „Pläne zur betrieblichen Kontinuität“.",
         "help": "Sie brauchen dokumentierte Business-Continuity-Pläne, die festlegen, wie der Cloud-Dienst bei verschiedenen Störungsszenarien aufrechterhalten oder wiederhergestellt wird. Die Pläne müssen RTO (maximale Wiederherstellungszeit) und RPO (maximaler Datenverlust) für verschiedene Szenarien definieren, redundante Infrastruktur und Failover-Mechanismen beschreiben und regelmäßig durch Tests (z. B. Failover-Tests, Disaster-Recovery-Übungen) validiert werden.",
         "maturity": {
           "level0": "Keine Business-Continuity-Pläne für den Cloud-Dienst; keine definierten RTO/RPO",
@@ -9473,7 +9473,7 @@
       },
       "simQ3": {
         "title": "Werden Sicherheitsvorfälle systematisch analysiert und fließen Erkenntnisse in Verbesserungsmaßnahmen ein?",
-        "tooltip": "Zugrunde liegt das C5:2020-Kriterium SIM-05 „Auswertung und Lernprozess“.",
+        "tooltip": "Zugrunde liegt das C5:2026-Kriterium SIM-06 „Auswertung und Lernprozess“.",
         "help": "Sorgen Sie dafür, dass jeder Sicherheitsvorfall nach Abschluss der Sofortmaßnahmen systematisch analysiert wird: Was war die Ursache? Hätte der Vorfall früher erkannt werden können? Welche Maßnahmen verhindern eine Wiederholung? Die Ergebnisse müssen in einen kontinuierlichen Verbesserungsprozess einfließen. Vorfälle müssen klassifiziert werden (nach Schwere, Typ, betroffenem Bereich) und Trends über die Zeit analysiert werden.",
         "maturity": {
           "level0": "Keine systematische Vorfallanalyse; gleiche Vorfalltypen treten wiederholt auf",
@@ -9484,7 +9484,7 @@
       },
       "devQ1": {
         "title": "Werden Cloud-Anwendungen nach einem sicheren Softwareentwicklungsprozess (SDLC) entwickelt?",
-        "tooltip": "Zugrunde liegt das C5:2020-Kriterium DEV-01 „Richtlinien zur Entwicklung/Beschaffung von Informationssystemen“.",
+        "tooltip": "Zugrunde liegt das C5:2026-Kriterium DEV-01 „Richtlinien für die Entwicklung/Beschaffung von Systemkomponenten“.",
         "help": "Sie brauchen einen dokumentierten Secure Development Lifecycle (SDLC), der Sicherheit in alle Phasen der Softwareentwicklung integriert: Sicherheitsanforderungen in der Entwurfsphase (Security by Design), sichere Coding-Richtlinien, Code-Reviews (idealerweise automatisiert), statische und dynamische Sicherheitstests (SAST/DAST), strikte Trennung von Entwicklungs-, Test- und Produktivumgebungen und kontrollierte Release-Prozesse.",
         "maturity": {
           "level0": "Kein definierter sicherer Entwicklungsprozess; Sicherheit wird erst nach der Entwicklung berücksichtigt (wenn überhaupt)",
@@ -9495,7 +9495,7 @@
       },
       "devQ2": {
         "title": "Werden Beschaffung und Einsatz von Cloud-Dienst-Komponenten nach Sicherheitskriterien gesteuert?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien SSO-01 „Richtlinien und Anweisungen zur Steuerung und Überwachung Dritter“ und SSO-02 „Risikobeurteilung der Dienstleister und Lieferanten“.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien DEV-14 „Sichere Nutzung von Hardware und Software Dritter“, SSO-01 „Richtlinien und Verfahren zur Steuerung und Überwachung von Service-Organisationen“ und SSO-02 „Risikobeurteilung von Service-Organisationen“.",
         "help": "Sorgen Sie dafür, dass alle für den Cloud-Dienst eingesetzten Komponenten -- ob Software-Bibliotheken, Betriebssysteme oder Hardware -- vor dem Einsatz auf Sicherheitseigenschaften bewertet werden. Für Drittkomponenten müssen Schwachstellenmeldungen überwacht und Patches zeitnah eingespielt werden (Vulnerability Management). Die Lieferkettensicherheit (Supply Chain Security) muss berücksichtigt werden.",
         "maturity": {
           "level0": "Keine Sicherheitsbewertung bei der Beschaffung von Komponenten; keine Schwachstellenüberwachung für Drittkomponenten",
@@ -9506,8 +9506,8 @@
       },
       "devQ3": {
         "title": "Werden unabhängige Prüfungen (Audits/Penetrationstests) des Cloud-Dienstes regelmäßig durchgeführt?",
-        "tooltip": "Zugrunde liegen die C5:2020-Kriterien COM-02 „Richtlinie für die Planung und Durchführung von Audits“, COM-03 „Interne Audits des Informationssicherheitsmanagementsystems“ und OPS-19 „Umgang mit Schwachstellen, Störungen und Fehlern – Penetrationstests“.",
-        "help": "Der Auswertungsleitfaden des BSI zum C5:2020 geht von einer Berichterstattung nach C5:2020 durch einen Wirtschaftsprüfer aus. Daneben sieht das Kriterium OPS-19 mindestens jährliche Penetrationstests durch qualifiziertes internes Personal oder externe Dienstleister vor, das Kriterium COM-03 mindestens jährliche interne Audits des Informationssicherheitsmanagementsystems. Dokumentieren Sie die Ergebnisse und beheben Sie festgestellte Schwachstellen zeitnah.",
+        "tooltip": "Zugrunde liegen die C5:2026-Kriterien COM-02 „Richtlinie für die Planung und Durchführung von Audits“, COM-03 „Interne Audits des Informationssicherheitsmanagementsystems“ und OPS-22 „Umgang mit Schwachstellen, Vorfällen und Abstürzen - Penetrationstests“.",
+        "help": "Der Auswertungsleitfaden des BSI zum C5:2026 geht von einer Berichterstattung nach C5:2026 durch einen Wirtschaftsprüfer aus. Daneben sieht das Kriterium OPS-22 Penetrationstests mindestens jährlich und bei wesentlichen Änderungen am Cloud-Dienst vor, durch qualifiziertes internes Personal oder externe Penetrationstester; das Kriterium COM-03 sieht mindestens jährliche interne Audits des Informationssicherheitsmanagementsystems vor. Dokumentieren Sie die Ergebnisse und beheben Sie festgestellte Schwachstellen zeitnah.",
         "maturity": {
           "level0": "Keine unabhängigen Prüfungen oder Penetrationstests; keine Aussage über den Sicherheitszustand des Cloud-Dienstes möglich",
           "level1": "Gelegentliche interne Sicherheitsprüfungen, aber keine unabhängigen Audits oder professionellen Penetrationstests",
@@ -9620,43 +9620,43 @@
       "questions": {
         "q1": {
           "title": "Haben Sie eine dokumentierte Informationssicherheitsrichtlinie für Ihren Cloud-Dienst?",
-          "description": "Eine vom Management genehmigte Richtlinie, die Schutzziele, Verantwortlichkeiten und den Geltungsbereich des Cloud-Dienstes definiert (C5 OIS-01/02)."
+          "description": "Eine vom Management genehmigte Richtlinie, die Schutzziele, Verantwortlichkeiten und den Geltungsbereich des Cloud-Dienstes definiert (C5:2026 OIS-01, OIS-02)."
         },
         "q2": {
           "title": "Führen Sie ein vollständiges Inventar aller Cloud-Assets und Kundendaten?",
-          "description": "Ein aktuelles Verzeichnis aller Hardware, Software, Daten und Netzwerkkomponenten mit zugewiesenen Eigentümern (C5 AM-01/02)."
+          "description": "Ein aktuelles Verzeichnis aller Hardware, Software, Daten und Netzwerkkomponenten mit zugewiesenen Eigentümern (C5:2026 AM-02)."
         },
         "q3": {
           "title": "Sind Ihre Rechenzentren durch mehrstufige physische Sicherheitsmaßnahmen geschützt?",
-          "description": "Sicherheitszonen mit Zutrittskontrolle, Videoüberwachung, Umweltschutz (Brand, Wasser, Strom) und Besuchermanagement (C5 PS-01/05)."
+          "description": "Sicherheitszonen mit Zutrittskontrolle, Videoüberwachung, Umweltschutz (Brand, Wasser, Strom) und Besuchermanagement (C5:2026 PS-01, PS-05)."
         },
         "q4": {
           "title": "Gibt es einen formalen Prozess für Benutzerregistrierung und Rechteentzug?",
-          "description": "Dokumentierter Lebenszyklusprozess mit Genehmigung, rollenbasierter Rechtezuweisung und zeitnaher Deaktivierung bei Ausscheiden (C5 IDM-01/02)."
+          "description": "Dokumentierter Lebenszyklusprozess mit Genehmigung, rollenbasierter Rechtezuweisung und zeitnaher Deaktivierung bei Ausscheiden (C5:2026 IAM-02, IAM-04)."
         },
         "q5": {
           "title": "Ist Mehrfaktor-Authentifizierung für privilegierte Zugriffe aktiviert?",
-          "description": "MFA für alle administrativen und privilegierten Cloud-Zugriffe sowie eine definierte Passwortrichtlinie (C5 IDM-07/08)."
+          "description": "MFA für alle administrativen und privilegierten Cloud-Zugriffe sowie eine definierte Passwortrichtlinie (C5:2026 IAM-08)."
         },
         "q6": {
           "title": "Werden Sicherheitsereignisse zentral protokolliert und überwacht?",
-          "description": "Zentrales Logging aller sicherheitsrelevanten Ereignisse mit manipulationsgeschützter Speicherung und zeitnaher Auswertung (C5 OPS, ab OPS-10)."
+          "description": "Zentrales Logging aller sicherheitsrelevanten Ereignisse mit manipulationsgeschützter Speicherung und zeitnaher Auswertung (C5:2026 OPS-10 bis OPS-17)."
         },
         "q7": {
           "title": "Setzen Sie aktuelle Verschlüsselungsstandards für Kundendaten ein (Transit + at Rest)?",
-          "description": "Verschlüsselung aller Kundendaten bei Übertragung und Speicherung mit aktuellen Algorithmen gemäß BSI-Empfehlungen (C5:2020 CRY-01 bis CRY-04)."
+          "description": "Verschlüsselung aller Kundendaten bei Übertragung und Speicherung mit aktuellen Algorithmen gemäß BSI-Empfehlungen (C5:2026 CRY-04, CRY-05)."
         },
         "q8": {
           "title": "Existiert ein dokumentierter Incident-Response-Prozess mit Eskalationswegen?",
-          "description": "Definierter Prozess für Erkennung, Meldung, Analyse und Reaktion auf Sicherheitsvorfälle mit klaren Verantwortlichkeiten (C5 SIM-01/02)."
+          "description": "Definierter Prozess für Erkennung, Meldung, Analyse und Reaktion auf Sicherheitsvorfälle mit klaren Verantwortlichkeiten (C5:2026 SIM-01, SIM-02)."
         },
         "q9": {
           "title": "Haben Sie Business-Continuity-Pläne mit definierten RTO/RPO?",
-          "description": "Dokumentierte Pläne für die Aufrechterhaltung/Wiederherstellung des Cloud-Dienstes mit getesteten Failover-Mechanismen (C5 BCM-01/03)."
+          "description": "Dokumentierte Pläne für die Aufrechterhaltung/Wiederherstellung des Cloud-Dienstes mit getesteten Failover-Mechanismen (C5:2026 BCM-01, BCM-03)."
         },
         "q10": {
           "title": "Werden regelmäßig unabhängige Sicherheitsprüfungen oder Penetrationstests durchgeführt?",
-          "description": "Regelmäßige externe Audits, Penetrationstests und Schwachstellenscans mit dokumentierter Nachverfolgung der Ergebnisse (C5 COM)."
+          "description": "Regelmäßige externe Audits, Penetrationstests und Schwachstellenscans mit dokumentierter Nachverfolgung der Ergebnisse (C5:2026 COM-02, COM-03, OPS-22, OPS-25)."
         }
       }
     }
@@ -14705,7 +14705,7 @@
     "questions": {
       "auQ1": {
         "title": "Werden sichere Passwort-Richtlinien (Mindestlänge, Abgleich mit geleakten Passwörtern) durchgesetzt?",
-        "tooltip": "OWASP ASVS 4.0.3, V2.1 Password Security.",
+        "tooltip": "OWASP ASVS 5.0.0, V6.2 Password Security.",
         "help": "Moderne Richtlinien bevorzugen Länge über Komplexität und prüfen gegen bekannte Leaks.",
         "maturity": {
           "level0": "Es gibt keine Vorgaben für Passwörter.",
@@ -14716,7 +14716,7 @@
       },
       "auQ2": {
         "title": "Ist Multi-Faktor-Authentifizierung für alle Benutzerkonten verfügbar und aktiviert?",
-        "tooltip": "OWASP ASVS 4.0.3, V2.2 General Authenticator Security, V4.3 Other Access Control Considerations. ASVS 4.0.3 verlangt MFA ausdrücklich für administrative Oberflächen (V4.3.1), nicht für alle Benutzerkonten.",
+        "tooltip": "OWASP ASVS 5.0.0, V6.3 General Authentication Security.",
         "help": "MFA schützt auch bei kompromittierten Passwörtern.",
         "maturity": {
           "level0": "Die Anwendung bietet keine Multi-Faktor-Authentifizierung.",
@@ -14727,7 +14727,7 @@
       },
       "auQ3": {
         "title": "Werden Credential-Stuffing und Brute-Force-Angriffe aktiv erkannt und blockiert?",
-        "tooltip": "OWASP ASVS 4.0.3, V2.2 General Authenticator Security.",
+        "tooltip": "OWASP ASVS 5.0.0, V6.3 General Authentication Security.",
         "help": "Rate Limiting und Account Lockout schützen vor automatisierten Angriffen.",
         "maturity": {
           "level0": "Anmeldeversuche sind unbegrenzt möglich.",
@@ -14738,7 +14738,7 @@
       },
       "smQ1": {
         "title": "Werden Session-Tokens sicher generiert, übertragen und gespeichert?",
-        "tooltip": "OWASP ASVS 4.0.3, V3.2 Session Binding.",
+        "tooltip": "OWASP ASVS 5.0.0, V7.2 Fundamental Session Management Security, V3.3 Cookie Setup.",
         "help": "Sichere Session-Tokens verhindern Session-Hijacking.",
         "maturity": {
           "level0": "Session-Tokens sind vorhersagbar oder stehen in der URL.",
@@ -14749,7 +14749,7 @@
       },
       "smQ2": {
         "title": "Gibt es angemessene Session-Timeouts und Idle-Timeouts?",
-        "tooltip": "OWASP ASVS 4.0.3, V3.3 Session Termination.",
+        "tooltip": "OWASP ASVS 5.0.0, V7.3 Session Timeout.",
         "help": "Timeouts begrenzen das Zeitfenster für Angreifer.",
         "maturity": {
           "level0": "Sessions laufen nie ab.",
@@ -14760,7 +14760,7 @@
       },
       "smQ3": {
         "title": "Werden Sessions bei Abmeldung und Passwortänderung serverseitig beendet?",
-        "tooltip": "OWASP ASVS 4.0.3, V3.3 Session Termination.",
+        "tooltip": "OWASP ASVS 5.0.0, V7.4 Session Termination.",
         "help": "Korrekte Session-Beendigung verhindert persistente Zugriffe.",
         "maturity": {
           "level0": "Beim Abmelden bleibt die Session auf dem Server gültig.",
@@ -14771,7 +14771,7 @@
       },
       "acQ1": {
         "title": "Wird das Prinzip der minimalen Rechte (Least Privilege) konsequent angewendet?",
-        "tooltip": "OWASP ASVS 4.0.3, V4.1 General Access Control Design.",
+        "tooltip": "OWASP ASVS 5.0.0, V8.2 General Authorization Design.",
         "help": "Benutzer sollten nur die Rechte haben, die sie für ihre Aufgabe benötigen.",
         "maturity": {
           "level0": "Alle angemeldeten Benutzer dürfen praktisch alles.",
@@ -14782,7 +14782,7 @@
       },
       "acQ2": {
         "title": "Werden Zugriffskontrollen serverseitig und nicht nur clientseitig durchgesetzt?",
-        "tooltip": "OWASP ASVS 4.0.3, V4.1 General Access Control Design.",
+        "tooltip": "OWASP ASVS 5.0.0, V8.3 Operation Level Authorization.",
         "help": "Clientseitige Kontrollen können leicht umgangen werden.",
         "maturity": {
           "level0": "Berechtigungen werden nur in der Oberfläche geprüft, etwa durch ausgeblendete Schaltflächen.",
@@ -14793,7 +14793,7 @@
       },
       "acQ3": {
         "title": "Ist IDOR-Schutz (Insecure Direct Object References) implementiert?",
-        "tooltip": "OWASP ASVS 4.0.3, V4.2 Operation Level Access Control.",
+        "tooltip": "OWASP ASVS 5.0.0, V8.2 General Authorization Design.",
         "help": "IDOR ermöglicht Zugriff auf fremde Daten durch Manipulation von Referenzen.",
         "maturity": {
           "level0": "Fremde Datensätze lassen sich durch Ändern der ID in der Anfrage abrufen.",
@@ -14804,7 +14804,7 @@
       },
       "ivQ1": {
         "title": "Werden alle Benutzereingaben serverseitig validiert und sanitisiert?",
-        "tooltip": "OWASP ASVS 4.0.3, V5.1 Input Validation.",
+        "tooltip": "OWASP ASVS 5.0.0, V2.2 Input Validation.",
         "help": "Serverseitige Validierung verhindert Injection-Angriffe.",
         "maturity": {
           "level0": "Eingaben werden ungeprüft verarbeitet.",
@@ -14815,7 +14815,7 @@
       },
       "ivQ2": {
         "title": "Wird Output-Encoding kontextabhängig angewendet (HTML, JavaScript, URL)?",
-        "tooltip": "OWASP ASVS 4.0.3, V5.3 Output Encoding and Injection Prevention.",
+        "tooltip": "OWASP ASVS 5.0.0, V1.2 Injection Prevention.",
         "help": "Korrektes Output-Encoding verhindert XSS und andere Injection-Angriffe.",
         "maturity": {
           "level0": "Ausgaben werden ohne Kodierung eingefügt.",
@@ -14826,7 +14826,7 @@
       },
       "ivQ3": {
         "title": "Werden parametrisierte Queries oder ORMs zum Schutz vor SQL-Injection verwendet?",
-        "tooltip": "OWASP ASVS 4.0.3, V5.3 Output Encoding and Injection Prevention.",
+        "tooltip": "OWASP ASVS 5.0.0, V1.2 Injection Prevention.",
         "help": "Parametrisierte Queries sind der effektivste Schutz gegen SQL-Injection.",
         "maturity": {
           "level0": "Datenbankabfragen werden aus Benutzereingaben zusammengesetzt.",
@@ -14837,7 +14837,7 @@
       },
       "crQ1": {
         "title": "Werden alle sensiblen Daten at-rest mit aktuellen Algorithmen verschlüsselt?",
-        "tooltip": "OWASP ASVS 4.0.3, V6.1 Data Classification.",
+        "tooltip": "OWASP ASVS 5.0.0, V14.2 General Data Protection, V11.2 Secure Cryptography Implementation. Eine eigene Anforderung zur Verschlüsselung gespeicherter Daten („at rest“) enthält ASVS 5.0.0 nicht.",
         "help": "AES-256 für at-rest, aktuelle TLS-Versionen für in-transit.",
         "maturity": {
           "level0": "Sensible Daten liegen unverschlüsselt in Datenbank und Dateien.",
@@ -14848,7 +14848,7 @@
       },
       "crQ2": {
         "title": "Werden Passwörter mit sicheren Hashing-Algorithmen (bcrypt, Argon2) gespeichert?",
-        "tooltip": "OWASP ASVS 4.0.3, V2.4 Credential Storage.",
+        "tooltip": "OWASP ASVS 5.0.0, V11.4 Hashing and Hash-based Functions.",
         "help": "Moderne Hashing-Algorithmen mit Salt und Stretching schützen Passwörter.",
         "maturity": {
           "level0": "Passwörter werden im Klartext oder umkehrbar gespeichert.",
@@ -14859,7 +14859,7 @@
       },
       "crQ3": {
         "title": "Ist ein sicheres Schlüsselmanagement für kryptographische Schlüssel implementiert?",
-        "tooltip": "OWASP ASVS 4.0.3, V6.4 Secret Management.",
+        "tooltip": "OWASP ASVS 5.0.0, V11.1 Cryptographic Inventory and Documentation, V13.3 Secret Management.",
         "help": "Schlüssel sollten sicher generiert, gespeichert und rotiert werden.",
         "maturity": {
           "level0": "Schlüssel stehen im Quellcode oder in der Versionsverwaltung.",
@@ -14870,7 +14870,7 @@
       },
       "elQ1": {
         "title": "Werden Fehlermeldungen ohne Preisgabe sensibler Informationen angezeigt?",
-        "tooltip": "OWASP ASVS 4.0.3, V7.4 Error Handling.",
+        "tooltip": "OWASP ASVS 5.0.0, V16.5 Error Handling.",
         "help": "Stack-Traces und Systeminformationen in Fehlermeldungen helfen Angreifern.",
         "maturity": {
           "level0": "Fehlermeldungen zeigen technische Details wie Stacktraces oder Datenbankfehler.",
@@ -14881,7 +14881,7 @@
       },
       "elQ2": {
         "title": "Werden alle sicherheitsrelevanten Ereignisse geloggt und überwacht?",
-        "tooltip": "OWASP ASVS 4.0.3, V7.1 Log Content, V7.2 Log Processing.",
+        "tooltip": "OWASP ASVS 5.0.0, V16.3 Security Events.",
         "help": "Logging ermöglicht die Erkennung und Nachverfolgung von Angriffen.",
         "maturity": {
           "level0": "Sicherheitsrelevante Ereignisse werden nicht protokolliert.",
@@ -14892,7 +14892,7 @@
       },
       "elQ3": {
         "title": "Sind APIs mit Authentifizierung, Rate Limiting und Input-Validierung geschützt?",
-        "tooltip": "OWASP ASVS 4.0.3, V13.1 Generic Web Service Security, V13.2 RESTful Web Service, V11.1 Business Logic Security.",
+        "tooltip": "OWASP ASVS 5.0.0, V4.1 Generic Web Service Security, V2.4 Anti-automation, V2.2 Input Validation.",
         "help": "APIs sind zunehmend Angriffsziel und brauchen spezifischen Schutz.",
         "maturity": {
           "level0": "APIs sind ohne Anmeldung erreichbar.",
@@ -14968,35 +14968,35 @@
       "questions": {
         "q1": {
           "title": "Werden sichere Passwort-Richtlinien und MFA eingesetzt?",
-          "description": "OWASP ASVS V2: Authentifizierungssicherheit"
+          "description": "OWASP ASVS V6: Authentifizierungssicherheit"
         },
         "q2": {
           "title": "Ist das Session-Management sicher konfiguriert?",
-          "description": "OWASP ASVS V3: Sichere Sessions"
+          "description": "OWASP ASVS V7: Sichere Sessions"
         },
         "q3": {
           "title": "Wird Zugriffskontrolle serverseitig durchgesetzt?",
-          "description": "OWASP ASVS V4: Autorisierung"
+          "description": "OWASP ASVS V8: Autorisierung"
         },
         "q4": {
           "title": "Werden alle Eingaben serverseitig validiert?",
-          "description": "OWASP ASVS V5: Schutz vor Injection"
+          "description": "OWASP ASVS V1: Schutz vor Injection"
         },
         "q5": {
           "title": "Werden parametrisierte Queries verwendet?",
-          "description": "OWASP ASVS V5: SQL-Injection-Prävention"
+          "description": "OWASP ASVS V1: SQL-Injection-Prävention"
         },
         "q6": {
           "title": "Werden aktuelle Verschlüsselungsstandards eingesetzt?",
-          "description": "OWASP ASVS V6: Kryptographie"
+          "description": "OWASP ASVS V11: Kryptographie"
         },
         "q7": {
           "title": "Sind Fehlermeldungen sicher und informationsarm?",
-          "description": "OWASP ASVS V7: Fehlerbehandlung"
+          "description": "OWASP ASVS V16: Fehlerbehandlung"
         },
         "q8": {
           "title": "Werden APIs mit Rate Limiting und Auth geschützt?",
-          "description": "OWASP ASVS V13: API-Sicherheit"
+          "description": "OWASP ASVS V4: API-Sicherheit"
         }
       }
     }
@@ -15029,7 +15029,7 @@
     "name": "OWASP ASVS",
     "shortName": "OWASP",
     "description": "OWASP Application Security Verification Standard",
-    "fullName": "OWASP ASVS 4.0.3",
+    "fullName": "OWASP ASVS 5.0.0",
     "regLanding": {
       "title": "OWASP ASVS",
       "subtitle": "Sicherheitsstandard für Webanwendungen und APIs",

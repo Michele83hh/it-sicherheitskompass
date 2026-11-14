@@ -60,12 +60,16 @@ Die Idee: die gemeinsamen Maßnahmenthemen beschreiben und die Seite teilweise a
 Einzelheiten in `docs/pruefprotokoll/2026-11-14-wortlautpruefung.md`.
 
 - [ ] Selbst gegenlesen: das Protokoll der Wortlautprüfung, vor allem die Tabellen „Bezüge geändert“ je Regelwerk.
-- [ ] Entscheiden: OWASP ASVS von 4.0.3 auf 5.0.0 umstellen? Die Nummerierung ist dort anders.
-- [ ] Entscheiden: BSI C5 von C5:2020 auf C5:2026 umstellen? Kennungen und Titel weichen ab (127 gegenüber 174 Kriterien).
-- [ ] Klären: Gilt die BSI-KritisV nach dem KRITIS-Dachgesetz weiter, oder tritt eine neue Verordnung an ihre Stelle? Die Zusatzzeile „BSI-KritisV“ steht bei 26 KRITIS-Fragen.
-- [ ] Klären: Gibt es eine neuere VDA-ISA-Fassung als 6.0.2?
+- [x] OWASP ASVS: am 14.11. auf 5.0.0 umgestellt (jüngste stabile Fassung, 30.5.2025).
+- [ ] Selbst gegenlesen: die Zuordnungstabelle 4.0.3 → 5.0.0 im Nachtrag des Protokolls.
+- [x] BSI C5: am 14.11. auf C5:2026 umgestellt (BSI empfiehlt ihn für Prüfzeiträume mit Ende ab 1.6.2027).
+- [ ] Selbst gegenlesen: die Zuordnungstabelle C5:2020 → C5:2026 im Nachtrag des Protokolls. Falls die Zielgruppe überwiegend früher endende Prüfzeiträume hat, wäre C5:2020 die passendere Fassung.
+- [x] BSI-KritisV: gilt am 14.11.2026 weiter (zuletzt geändert 15.5.2026). Nach ihrem § 12 tritt sie außer Kraft, sobald die Rechtsverordnung nach § 4 Abs. 3 und § 5 Abs. 1 KRITIS-Dachgesetz in Kraft tritt.
+- [ ] Beobachten: Sobald diese Verordnung in Kraft ist, die Zusatzzeile „BSI-KritisV“ bei 26 KRITIS-Fragen ersetzen.
+- [x] VDA ISA: am 14.11. auf 2027.1 umgestellt (Grundlage für ab 1.1.2027 beauftragte Assessments; 30 von 36 verwendeten Controls unverändert).
+- [ ] Selbst gegenlesen: die drei neu zugeordneten Prototypenschutz-Fragen im Nachtrag des Protokolls.
 - [ ] Nicht geprüft, weil kein Normtext vorlag: ISO 27001, ISO 22301, PCI DSS, CIS Controls, SOC 2 (120 Fragen). Mit den Normtexten nachholen.
-- [ ] Empfehlungen (`recommendations.ts` aller Regelwerke) sind nicht am Wortlaut geprüft. Bekannt: C5-Empfehlung `idm3` nennt `IDM-10`, das es im C5:2020 nicht gibt; die TISAX-Empfehlungen tragen an 24 Stellen noch die alten, durchgezählten Control-Nummern.
+- [ ] Empfehlungen (`recommendations.ts` aller Regelwerke) sind nicht am Wortlaut geprüft. Bei OWASP ASVS und C5 sind die Kennungen der Empfehlungen am 14.11. mit umgestellt, die Texte nicht geprüft. Die TISAX-Empfehlungen tragen an 24 Stellen noch die alten, durchgezählten Control-Nummern.
 - [ ] Hilfetexte bei TISAX enthalten noch Erfahrungsaussagen über Assessments ohne Quelle („zentrales Thema“, „häufiger Befund“).
 
 ## Testwerkzeug

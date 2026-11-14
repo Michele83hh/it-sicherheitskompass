@@ -400,3 +400,104 @@ Für diese fünf Regelwerke (120 Fragen: ISO 27001 30, ISO 22301 18, PCI DSS 29,
 Folge: Normbezüge, Titel und Erklärtexte dieser 120 Fragen sind **nicht** am Wortlaut geprüft und unverändert. Dazu gehört der offene Punkt PCI DSS `ac-q2` (Req. 7.2 oder 7.3). Wer die Normtexte besitzt, kann die Prüfung mit denselben Schritten nachholen: Kennung vorhanden, Titel passend, Inhaltsaussagen im Erklärtext belegt.
 
 Nach den Befunden bei NIST, OWASP, IT-Grundschutz, C5 und TISAX ist damit zu rechnen, dass auch hier Kennungen nicht zum Fragethema passen. Das ist eine Erwartung aus den Trefferquoten oben, kein Prüfergebnis.
+
+## Nachtrag vom 14.11.2026: vier offene Punkte geklärt und umgestellt
+
+Der Betreiber hat die vier offenen Entscheidungen übergeben („erledige du das“). Entschieden wurde jeweils nach dem, was die herausgebende Stelle am 14.11.2026 selbst angibt. Die Abschnitte oben zu OWASP ASVS, BSI C5 und TISAX beschreiben den Zwischenstand vor dieser Umstellung (ASVS 4.0.3, C5:2020, ISA 6.0.2).
+
+### OWASP ASVS: umgestellt auf 5.0.0
+
+**Beleg:** Veröffentlichungsliste des Repositorys OWASP/ASVS (GitHub-API, 14.11.2026): `v5.0.0_release` vom 30.5.2025 ist die jüngste stabile Fassung; daneben gibt es nur einen laufenden Entwicklungsstand („Bleeding Edge“). 4.0.3 stammt vom 28.10.2021.
+
+**Entscheidung:** Umstellung. Für alle 18 Fragen gibt es in 5.0.0 eine Anforderung, deren Wortlaut zum Fragethema passt (17 Kapitel, 345 Anforderungen: 70 in L1, 183 in L2, 92 in L3).
+
+| Frage | 4.0.3 | 5.0.0 |
+|---|---|---|
+| `owasp-auth-q1` | V2.1.1, V2.1.2, V2.1.7 | V6.2.1, V6.2.4, V6.2.12 |
+| `owasp-auth-q2` | V2.2.4, V4.3.1 | V6.3.3 |
+| `owasp-auth-q3` | V2.2.1 | V6.3.1 |
+| `owasp-sess-q1` | V3.2.1 bis V3.2.3 | V7.2.2, V7.2.3, V3.3.4 |
+| `owasp-sess-q2` | V3.3.2 | V7.3.1, V7.3.2 |
+| `owasp-sess-q3` | V3.3.1, V3.3.3 | V7.4.1, V7.4.3 |
+| `owasp-ac-q1` | V4.1.3 | V8.2.1 |
+| `owasp-ac-q2` | V4.1.1 | V8.3.1 |
+| `owasp-ac-q3` | V4.2.1 | V8.2.2 |
+| `owasp-iv-q1` | V5.1.3 | V2.2.1, V2.2.2 |
+| `owasp-iv-q2` | V5.3.1, V5.3.3 | V1.2.1, V1.2.2, V1.2.3 |
+| `owasp-iv-q3` | V5.3.4, V5.3.5 | V1.2.4 |
+| `owasp-crypto-q1` | V6.1.1 bis V6.1.3 | V14.2.4, V11.2.3 |
+| `owasp-crypto-q2` | V2.4.1 | V11.4.2 |
+| `owasp-crypto-q3` | V6.4.1, V6.4.2 | V11.1.1, V13.3.1 |
+| `owasp-el-q1` | V7.4.1 | V16.5.1 |
+| `owasp-el-q2` | V7.1.1, V7.2.1, V7.2.2 | V16.3.1, V16.3.2, V16.3.3 |
+| `owasp-el-q3` | V13.1.4, V13.2.2, V11.1.4 | V4.1.4, V2.4.1, V2.2.2 |
+
+Zu `owasp-crypto-q1`: Eine eigene Anforderung „Verschlüsselung gespeicherter Daten“ enthält 5.0.0 nicht (kein Treffer für „at rest“; Verschlüsselung läuft über die dokumentierten Schutzstufen in V14.1.2 und V14.2.4). Das steht im Erklärtext. Der frühere Hinweis bei `owasp-auth-q2` (MFA nur für Admin-Oberflächen) entfällt: V6.3.3 verlangt Mehr-Faktor-Authentisierung oder eine Kombination einzelner Faktoren für den Zugang zur Anwendung.
+
+**Mit umgestellt:** die 12 Bezüge der Empfehlungen, die Kapitelkürzel der sechs Bereiche, die acht Kurztexte des Schnellchecks, Anzeigename und Hinweiszeile („Fragen nach v5.0.0“), Kommentare im Code.
+
+**Nicht geprüft:** Hilfe- und Stufentexte Satz für Satz gegen 5.0.0; der Wortlaut der Empfehlungstexte.
+
+### BSI C5: umgestellt auf C5:2026
+
+**Beleg:** bsi.bund.de, Seiten zum Kriterienkatalog C5 (14.11.2026): Der C5:2026 liegt „seit Ende März 2026 als finale Version“ vor. „Für Prüfzeiträume, die am oder nach dem 1. Juni 2027 enden, empfiehlt das BSI, die Version C5:2026 aus dem Jahr 2026 anzuwenden“; für den C5:2020 lautet die Empfehlung „am oder nach dem 15. Februar 2021“.
+
+**Entscheidung:** Umstellung. Wer heute mit der Vorbereitung beginnt, hat bei einem Prüfzeitraum, der am oder nach dem 1.6.2027 endet, nach der Empfehlung des BSI den C5:2026 anzuwenden. Für früher endende Prüfzeiträume gilt weiter die Empfehlung für den C5:2020; darauf weisen Hinweiszeile und Untertitel der C5-Seite hin. Das ist eine Abwägung, kein Prüfergebnis.
+
+**Quelle der Kennungen:** Auswertungsleitfaden C5:2026 (XLSX): 168 Kriterien mit Titel und Text der Unterkriterien.
+
+| Frage | C5:2020 | C5:2026 |
+|---|---|---|
+| `c5-org-q1` bis `c5-org-q4` | OIS-01, OIS-02; SP-01, SP-02; HR-01, HR-03; COM-02, COM-03 | unverändert |
+| `c5-am-q1` | AM-01 | AM-02 „Asset-Inventar“ |
+| `c5-am-q2` | AM-06 | AM-09 „Klassifizierung und Kennzeichnung von Assets“ |
+| `c5-am-q3` | PI-02, PI-03 | PI-02, PI-03 |
+| `c5-ps-q1`, `c5-ps-q2` | PS-01, PS-03, PS-04; PS-05, PS-06 | unverändert (Titel leicht geändert) |
+| `c5-ps-q3` | AM-04, PS-06 | AM-07 „Außerbetriebnahme von Hardware“, PS-06 |
+| `c5-idm-q1` | IDM-02, IDM-04 | IAM-02, IAM-04 |
+| `c5-idm-q2` | IDM-01, IDM-05, IDM-06 | IAM-01, IAM-05, IAM-06 |
+| `c5-idm-q3` | IDM-08, IDM-09 | IAM-08, IAM-09 |
+| `c5-ops-q1` | SP-01, OPS-01, DEV-03, DEV-10 | SP-01, OPS-01, DEV-03, DEV-12 „Trennung der Umgebungen“ |
+| `c5-ops-q2`, `c5-ops-q3` | OPS-10 bis OPS-17; COS-01, COS-05 | unverändert |
+| `c5-kry-q1` | CRY-01 | CRY-01 |
+| `c5-kry-q2` | CRY-04 | CRY-17 „Management des Lebenszyklus kryptographischer Schlüssel“ |
+| `c5-kry-q3` | CRY-02, CRY-03 | CRY-04, CRY-05 |
+| `c5-sim-q1` | SIM-01, SIM-02 | SIM-01, SIM-02, SIM-03 |
+| `c5-sim-q2` | BCM-03 | BCM-03 |
+| `c5-sim-q3` | SIM-05 | SIM-06 „Auswertung und Lernprozess“ |
+| `c5-dev-q1` | DEV-01 | DEV-01 |
+| `c5-dev-q2` | SSO-01, SSO-02 | DEV-14 „Sichere Nutzung von Hardware und Software Dritter“, SSO-01, SSO-02 |
+| `c5-dev-q3` | COM-02, COM-03, OPS-19 | COM-02, COM-03, OPS-22 (Penetrationstests) |
+
+**Am Kriterientext 2026 belegt:** mindestens jährliche Überprüfung der Zugriffsberechtigungen (IAM-05); Penetrationstests mindestens jährlich und bei wesentlichen Änderungen (OPS-22); interne Audits mindestens jährlich (COM-03); Least-Privilege- und Need-to-Know-Prinzip (IAM-01); Löschung der Daten und Vernichtung der Datenträger (AM-07); Instandhaltung der Versorgungseinrichtungen (PS-06); Multi-Faktor-Authentisierung für Zugriffe auf die Produktionsumgebung (IAM-08).
+
+**Mit umgestellt:** die 18 Bezüge der Empfehlungen (darunter das nicht existente `IDM-10`), die Kriterienlisten der acht Bereiche (aus dem Katalog erzeugt; die alten Listen enthielten Kennungen wie SP-04, PS-09 und PI-04, die es nicht gibt), die zehn Kurztexte des Schnellchecks, Anzeigename, Hinweiszeile, Untertitel.
+
+**Nicht geprüft:** Hilfe- und Stufentexte Satz für Satz gegen den C5:2026; der Wortlaut der Empfehlungstexte; die Zusatzkriterien. Der Link „C5:2020 Referenztabellen“ in `overlaps.ts` zeigt weiter auf das Dokument von 2020.
+
+### KRITIS: BSI-KritisV gilt weiter
+
+**Beleg:** gesetze-im-internet.de, BSI-KritisV (14.11.2026): „zuletzt durch Artikel 3 Absatz 1 des Gesetzes vom 15. Mai 2026 (BGBl. 2026 I Nr. 148) geändert“. Die Überschrift lautet seit dem 6.12.2025 „Verordnung zur Bestimmung kritischer Anlagen nach dem BSI-Gesetz“. § 12: Die Verordnung „tritt mit Inkrafttreten der Rechtsverordnung nach § 4 Absatz 3 und § 5 Absatz 1 des KRITIS-Dachgesetzes außer Kraft. Das Bundesministerium des Innern gibt das Inkrafttreten im Bundesgesetzblatt bekannt.“
+
+**Ergebnis:** Die BSI-KritisV steht am 14.11.2026 als geltendes Recht im Verzeichnis; im Verzeichnis (Buchstaben B und K) ist keine Verordnung nach dem KRITIS-Dachgesetz aufgeführt. Die Zusatzzeile „BSI-KritisV“ bei 26 KRITIS-Fragen bleibt deshalb stehen. Sobald die neue Verordnung in Kraft tritt, ist die Zeile zu ersetzen (siehe TODO). Nicht geprüft: das Bundesgesetzblatt selbst auf eine bereits verkündete, noch nicht in das Verzeichnis aufgenommene Verordnung.
+
+### TISAX: umgestellt auf VDA ISA 2027.1
+
+**Beleg:** Download-Seite des ENX (enx.com, 14.11.2026): „ISA2027.1 (DE)“, eingestellt am 1.10.2026, ist die „kommende Version“ des Katalogs, die „als Grundlage für die im Jahr 2027 beauftragten TISAX-Bewertungen dienen wird“; „vor dem 01.01.2027 beauftragte Bewertungen [können] weiterhin mit ISA6 durchgeführt werden“. Deckblatt der Datei: Version 2027.1 vom 30.9.2026.
+
+**Messung:** Von den 80 Controls der Fassung 6.0.2 haben 53 in 2027.1 dieselbe Kontrollfrage, 19 eine geänderte, 8 entfallen, 6 sind neu (78 Controls). Von den 36 im Tool verwendeten Controls sind 30 unverändert. Die Abweichungen liegen fast alle im Modul Prototypenschutz, das neu gegliedert ist.
+
+**Entscheidung:** Umstellung. In gut sechs Wochen werden neue Assessments nach 2027.1 beauftragt; wer sich jetzt vorbereitet, wird überwiegend danach bewertet. Hinweiszeile und Untertitel sagen, dass früher beauftragte Assessments weiter nach ISA 6 laufen können.
+
+| Frage | ISA 6.0.2 | ISA 2027.1 |
+|---|---|---|
+| `proto-q1` | 8.1.1 | 8.1.1 „Vorschriften zum Schutz von Prototypen“, 8.2.1 „Sicherheitskonzept“ |
+| `proto-q2` | 8.2.4, 8.2.6 | 8.1.2 „auftragsspezifische Anforderungen“, 8.1.10 „Bildaufzeichnung und Bildmaterial“ |
+| `proto-q3` | 8.2.1, 8.2.2 | 8.1.5 „Geheimhaltungsvereinbarungen“, 8.1.6 „Unterauftragnehmer“ |
+| übrige 33 Fragen | | Control-Nummern unverändert |
+
+Die Kontrollfrage von 3.1.3 lautet jetzt „Inwieweit ist der Umgang mit unterstützenden Assets gemanagt?“ (`phy-q2`, `tech-q3`). Die ISO-Zeile folgt der Zuordnung in 2027.1; sie nennt dort auch Normabschnitte (zum Beispiel 1.4.1: „6.1, 6.2, 8.2, 8.3“) und für 2.1.3 und 4.2.1 jetzt eine Zuordnung (A.6.3 mit 7.2, 7.3; A.5.18). Die Auffälligkeit bei 4.1.2 ist im Katalog behoben („A.8.5“), die bei 5.2.3 („A.8.1“) steht weiter so im Katalog.
+
+**Mit umgestellt:** Versionsangabe in Hinweiszeile und Untertitel; die Kurztexte nennen nur noch „VDA ISA“ ohne Fassung.
+
+**Nicht geprüft:** die 24 Control-Nummern in den TISAX-Empfehlungen (weiter die alten, durchgezählten Nummern); Hilfe- und Stufentexte gegen 2027.1.

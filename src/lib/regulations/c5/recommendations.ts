@@ -9,7 +9,7 @@
  * Each recommendation has concrete first steps, C5 criteria references,
  * and BSI IT-Grundschutz building block cross-references.
  *
- * Legal basis: BSI C5:2020 (Cloud Computing Compliance Criteria Catalogue)
+ * Legal basis: BSI C5:2026 (Cloud Computing Compliance Criteria Catalogue)
  */
 
 import type { Recommendation } from './types';
@@ -26,7 +26,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.org1.title',
     descriptionKey: 'c5.recommendations.org1.description',
     firstStepKey: 'c5.recommendations.org1.firstStep',
-    legalReference: 'C5:2020 OIS-01, OIS-02',
+    legalReference: 'C5:2026 OIS-01, OIS-02',
     bsiReference: 'ISMS.1, ORP.1',
   },
   {
@@ -37,7 +37,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.org2.title',
     descriptionKey: 'c5.recommendations.org2.description',
     firstStepKey: 'c5.recommendations.org2.firstStep',
-    legalReference: 'C5:2020 SP-01, SP-03',
+    legalReference: 'C5:2026 SP-01, SP-02',
     bsiReference: 'ORP.1, ORP.2',
     checklistKey: 'c5.recommendations.org2.checklist',
   },
@@ -49,7 +49,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.org3.title',
     descriptionKey: 'c5.recommendations.org3.description',
     firstStepKey: 'c5.recommendations.org3.firstStep',
-    legalReference: 'C5:2020 HR-01, HR-05',
+    legalReference: 'C5:2026 HR-01, HR-03',
     bsiReference: 'ORP.2, ORP.3',
     checklistKey: 'c5.recommendations.org3.checklist',
   },
@@ -65,7 +65,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.am1.title',
     descriptionKey: 'c5.recommendations.am1.description',
     firstStepKey: 'c5.recommendations.am1.firstStep',
-    legalReference: 'C5:2020 AM-01, AM-02',
+    legalReference: 'C5:2026 AM-02',
     bsiReference: 'ORP.1, CON.1',
   },
   {
@@ -76,7 +76,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.am2.title',
     descriptionKey: 'c5.recommendations.am2.description',
     firstStepKey: 'c5.recommendations.am2.firstStep',
-    legalReference: 'C5:2020 AM-03, AM-05',
+    legalReference: 'C5:2026 AM-09',
     bsiReference: 'CON.1, ORP.1',
     checklistKey: 'c5.recommendations.am2.checklist',
   },
@@ -92,7 +92,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.ps1.title',
     descriptionKey: 'c5.recommendations.ps1.description',
     firstStepKey: 'c5.recommendations.ps1.firstStep',
-    legalReference: 'C5:2020 PS-01, PS-05',
+    legalReference: 'C5:2026 PS-01, PS-03, PS-04',
     bsiReference: 'INF.1, INF.2',
   },
   {
@@ -103,13 +103,13 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.ps2.title',
     descriptionKey: 'c5.recommendations.ps2.description',
     firstStepKey: 'c5.recommendations.ps2.firstStep',
-    legalReference: 'C5:2020 PS',
+    legalReference: 'C5:2026 PS-05, PS-06, AM-07',
     bsiReference: 'INF.2, INF.5',
     checklistKey: 'c5.recommendations.ps2.checklist',
   },
 
   // ============================================================
-  // Category 4: Identitaets- & Zugriffsmanagement (IDM)
+  // Category 4: Identitaets- & Zugriffsmanagement (IAM)
   // ============================================================
   {
     id: 'rec-c5-idm-1',
@@ -119,7 +119,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.idm1.title',
     descriptionKey: 'c5.recommendations.idm1.description',
     firstStepKey: 'c5.recommendations.idm1.firstStep',
-    legalReference: 'C5:2020 IDM-01, IDM-02',
+    legalReference: 'C5:2026 IAM-02, IAM-04',
     bsiReference: 'ORP.4, OPS.1.1.3',
   },
   {
@@ -130,7 +130,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.idm2.title',
     descriptionKey: 'c5.recommendations.idm2.description',
     firstStepKey: 'c5.recommendations.idm2.firstStep',
-    legalReference: 'C5:2020 IDM-06, IDM-08',
+    legalReference: 'C5:2026 IAM-01, IAM-05',
     bsiReference: 'ORP.4, OPS.1.1.3',
   },
   {
@@ -141,7 +141,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.idm3.title',
     descriptionKey: 'c5.recommendations.idm3.description',
     firstStepKey: 'c5.recommendations.idm3.firstStep',
-    legalReference: 'C5:2020 IDM-07, IDM-10',
+    legalReference: 'C5:2026 IAM-08, IAM-09',
     bsiReference: 'ORP.4, OPS.1.1.3',
     checklistKey: 'c5.recommendations.idm3.checklist',
   },
@@ -157,7 +157,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.ops1.title',
     descriptionKey: 'c5.recommendations.ops1.description',
     firstStepKey: 'c5.recommendations.ops1.firstStep',
-    legalReference: 'C5:2020 OPS-01, OPS-05',
+    legalReference: 'C5:2026 SP-01, OPS-10',
     bsiReference: 'OPS.1.1.3, CON.3',
   },
   {
@@ -168,12 +168,12 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.ops2.title',
     descriptionKey: 'c5.recommendations.ops2.description',
     firstStepKey: 'c5.recommendations.ops2.firstStep',
-    legalReference: 'C5:2020 COS-01, COS-05',
+    legalReference: 'C5:2026 COS-01, COS-06',
     bsiReference: 'NET.1.1, NET.1.2',
   },
 
   // ============================================================
-  // Category 6: Kryptografie & Schluesselmanagement (KRY)
+  // Category 6: Kryptografie & Schluesselmanagement (CRY)
   // ============================================================
   {
     id: 'rec-c5-kry-1',
@@ -183,7 +183,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.kry1.title',
     descriptionKey: 'c5.recommendations.kry1.description',
     firstStepKey: 'c5.recommendations.kry1.firstStep',
-    legalReference: 'C5:2020 CRY-01, CRY-02',
+    legalReference: 'C5:2026 CRY-01',
     bsiReference: 'CON.1, OPS.1.1.3',
   },
   {
@@ -194,7 +194,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.kry2.title',
     descriptionKey: 'c5.recommendations.kry2.description',
     firstStepKey: 'c5.recommendations.kry2.firstStep',
-    legalReference: 'C5:2020 CRY-02 bis CRY-04',
+    legalReference: 'C5:2026 CRY-17',
     bsiReference: 'CON.1',
     checklistKey: 'c5.recommendations.kry2.checklist',
   },
@@ -210,7 +210,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.sim1.title',
     descriptionKey: 'c5.recommendations.sim1.description',
     firstStepKey: 'c5.recommendations.sim1.firstStep',
-    legalReference: 'C5:2020 SIM-01, SIM-03',
+    legalReference: 'C5:2026 SIM-01, SIM-02',
     bsiReference: 'DER.2.1, DER.2.2',
   },
   {
@@ -221,7 +221,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.sim2.title',
     descriptionKey: 'c5.recommendations.sim2.description',
     firstStepKey: 'c5.recommendations.sim2.firstStep',
-    legalReference: 'C5:2020 BCM-01, BCM-04',
+    legalReference: 'C5:2026 BCM-01, BCM-03',
     bsiReference: 'CON.3, DER.4',
     checklistKey: 'c5.recommendations.sim2.checklist',
   },
@@ -237,7 +237,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.dev1.title',
     descriptionKey: 'c5.recommendations.dev1.description',
     firstStepKey: 'c5.recommendations.dev1.firstStep',
-    legalReference: 'C5:2020 DEV-01, SSO-01',
+    legalReference: 'C5:2026 DEV-01',
     bsiReference: 'CON.8, OPS.1.1.3',
   },
   {
@@ -248,7 +248,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.dev2.title',
     descriptionKey: 'c5.recommendations.dev2.description',
     firstStepKey: 'c5.recommendations.dev2.firstStep',
-    legalReference: 'C5:2020 COM',
+    legalReference: 'C5:2026 COM-02, COM-03',
     bsiReference: 'ORP.5, ISMS.1',
     checklistKey: 'c5.recommendations.dev2.checklist',
   },

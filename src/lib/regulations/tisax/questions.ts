@@ -26,7 +26,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.orgQ1.tooltip',
     helpKey: 'tisax.questions.orgQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 1.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 1.1.1',
       iso27001Reference: 'ISO 27001:2022 A.5.1 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -44,7 +44,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.orgQ2.tooltip',
     helpKey: 'tisax.questions.orgQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 1.2.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 1.2.2',
       iso27001Reference: 'ISO 27001:2022 A.5.2, A.5.3 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -62,8 +62,8 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.orgQ3.tooltip',
     helpKey: 'tisax.questions.orgQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 1.4.1',
-      iso27001Reference: 'ISO 27001:2022 A.5.3, A.5.5 (laut VDA ISA)',
+      vdaIsaControl: 'VDA ISA 2027.1: 1.4.1',
+      iso27001Reference: 'ISO 27001:2022 6.1, 6.2, 8.2, 8.3 (laut VDA ISA)',
     },
     maturityDescriptions: {
       level0Key: 'tisax.questions.orgQ3.maturity.level0',
@@ -85,7 +85,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.perQ1.tooltip',
     helpKey: 'tisax.questions.perQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 2.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 2.1.1',
       iso27001Reference: 'ISO 27001:2022 A.6.1 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -103,8 +103,8 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.perQ2.tooltip',
     helpKey: 'tisax.questions.perQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 2.1.3',
-      iso27001Reference: 'VDA ISA nennt keine Zuordnung zu ISO 27001:2022',
+      vdaIsaControl: 'VDA ISA 2027.1: 2.1.3',
+      iso27001Reference: 'ISO 27001:2022 7.2, 7.3, A.6.3 (laut VDA ISA)',
     },
     maturityDescriptions: {
       level0Key: 'tisax.questions.perQ2.maturity.level0',
@@ -121,7 +121,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.perQ3.tooltip',
     helpKey: 'tisax.questions.perQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 2.1.2, 6.1.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 2.1.2, 6.1.2',
       iso27001Reference: 'ISO 27001:2022 A.6.2, A.6.5, A.5.14, A.6.6 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -144,7 +144,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.phyQ1.tooltip',
     helpKey: 'tisax.questions.phyQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 3.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 3.1.1',
       iso27001Reference: 'ISO 27001:2022 A.7.1 - A.7.6 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -162,7 +162,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.phyQ2.tooltip',
     helpKey: 'tisax.questions.phyQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 3.1.3, 3.1.4',
+      vdaIsaControl: 'VDA ISA 2027.1: 3.1.3, 3.1.4',
       iso27001Reference: 'ISO 27001:2022 A.5.10, A.5.11, A.6.7, A.7.10, A.8.1 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -180,7 +180,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.phyQ3.tooltip',
     helpKey: 'tisax.questions.phyQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 1.6.3, 5.2.8',
+      vdaIsaControl: 'VDA ISA 2027.1: 1.6.3, 5.2.8',
       iso27001Reference: 'ISO 27001:2022 A.5.29, A.5.30 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -203,7 +203,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.techQ1.tooltip',
     helpKey: 'tisax.questions.techQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 1.3.1, 1.3.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 1.3.1, 1.3.2',
       iso27001Reference: 'ISO 27001:2022 A.5.9, A.5.10, A.5.12, A.5.13, A.8.10 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -221,7 +221,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.techQ2.tooltip',
     helpKey: 'tisax.questions.techQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 1.3.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 1.3.2',
       iso27001Reference: 'ISO 27001:2022 A.5.10, A.5.12, A.5.13, A.8.10 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -239,7 +239,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.techQ3.tooltip',
     helpKey: 'tisax.questions.techQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 3.1.3, 3.1.4',
+      vdaIsaControl: 'VDA ISA 2027.1: 3.1.3, 3.1.4',
       iso27001Reference: 'ISO 27001:2022 A.5.10, A.5.11, A.6.7, A.7.10, A.8.1 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -263,7 +263,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.protoQ1.tooltip',
     helpKey: 'tisax.questions.protoQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 8.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 8.1.1, 8.2.1',
       iso27001Reference: 'VDA ISA nennt keine Zuordnung zu ISO 27001:2022',
     },
     maturityDescriptions: {
@@ -282,7 +282,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.protoQ2.tooltip',
     helpKey: 'tisax.questions.protoQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 8.2.4, 8.2.6',
+      vdaIsaControl: 'VDA ISA 2027.1: 8.1.2, 8.1.10',
       iso27001Reference: 'VDA ISA nennt keine Zuordnung zu ISO 27001:2022',
     },
     maturityDescriptions: {
@@ -301,7 +301,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.protoQ3.tooltip',
     helpKey: 'tisax.questions.protoQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 8.2.1, 8.2.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 8.1.5, 8.1.6',
       iso27001Reference: 'VDA ISA nennt keine Zuordnung zu ISO 27001:2022',
     },
     maturityDescriptions: {
@@ -314,7 +314,7 @@ export const QUESTIONS: TisaxQuestion[] = [
 
   // ============================================================
   // Category 6: Datenschutz (VDA ISA)
-  // VDA ISA 6.x / ISO 27001 A.5.34-36
+  // VDA ISA 2027.1
   // ============================================================
   {
     id: 'ds-q1',
@@ -324,7 +324,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.dsQ1.tooltip',
     helpKey: 'tisax.questions.dsQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 7.1.2, 9.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 7.1.2, 9.1.1',
       iso27001Reference: 'ISO 27001:2022 A.5.34 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -342,7 +342,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.dsQ2.tooltip',
     helpKey: 'tisax.questions.dsQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 9.5.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 9.5.2',
       iso27001Reference: 'VDA ISA nennt keine Zuordnung zu ISO 27001:2022',
     },
     maturityDescriptions: {
@@ -360,7 +360,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.dsQ3.tooltip',
     helpKey: 'tisax.questions.dsQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 9.6.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 9.6.2',
       iso27001Reference: 'VDA ISA nennt keine Zuordnung zu ISO 27001:2022',
     },
     maturityDescriptions: {
@@ -383,8 +383,8 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.zkQ1.tooltip',
     helpKey: 'tisax.questions.zkQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 4.2.1',
-      iso27001Reference: 'VDA ISA nennt keine Zuordnung zu ISO 27001:2022',
+      vdaIsaControl: 'VDA ISA 2027.1: 4.2.1',
+      iso27001Reference: 'ISO 27001:2022 A.5.18 (laut VDA ISA)',
     },
     maturityDescriptions: {
       level0Key: 'tisax.questions.zkQ1.maturity.level0',
@@ -401,8 +401,8 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.zkQ2.tooltip',
     helpKey: 'tisax.questions.zkQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 4.1.3, 4.2.1',
-      iso27001Reference: 'ISO 27001:2022 A.5.16, A.5.17, A.5.18, A.8.9 (laut VDA ISA)',
+      vdaIsaControl: 'VDA ISA 2027.1: 4.1.3, 4.2.1',
+      iso27001Reference: 'ISO 27001:2022 A.5.16, A.5.17, A.5.18, A.8.9, A.5.18 (laut VDA ISA)',
     },
     maturityDescriptions: {
       level0Key: 'tisax.questions.zkQ2.maturity.level0',
@@ -419,8 +419,8 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.zkQ3.tooltip',
     helpKey: 'tisax.questions.zkQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 4.1.2, 4.2.1',
-      iso27001Reference: 'ISO 27001:2022 A.5.15, 8.5 (laut VDA ISA)',
+      vdaIsaControl: 'VDA ISA 2027.1: 4.1.2, 4.2.1',
+      iso27001Reference: 'ISO 27001:2022 A.5.15, A.8.5, A.5.18 (laut VDA ISA)',
     },
     maturityDescriptions: {
       level0Key: 'tisax.questions.zkQ3.maturity.level0',
@@ -442,7 +442,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.kryQ1.tooltip',
     helpKey: 'tisax.questions.kryQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.1.1',
       iso27001Reference: 'ISO 27001:2022 A.8.24 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -460,7 +460,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.kryQ2.tooltip',
     helpKey: 'tisax.questions.kryQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.1.1, 5.1.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.1.1, 5.1.2',
       iso27001Reference: 'ISO 27001:2022 A.8.24, A.5.14 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -478,7 +478,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.kryQ3.tooltip',
     helpKey: 'tisax.questions.kryQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.1.1',
       iso27001Reference: 'ISO 27001:2022 A.8.24 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -501,7 +501,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.bsQ1.tooltip',
     helpKey: 'tisax.questions.bsQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.2.5',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.2.5',
       iso27001Reference: 'ISO 27001:2022 A.8.8, A.8.19 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -519,7 +519,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.bsQ2.tooltip',
     helpKey: 'tisax.questions.bsQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.2.3',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.2.3',
       iso27001Reference: 'ISO 27001:2022 A.8.1 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -537,7 +537,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.bsQ3.tooltip',
     helpKey: 'tisax.questions.bsQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.2.5',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.2.5',
       iso27001Reference: 'ISO 27001:2022 A.8.8, A.8.19 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -560,7 +560,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.komQ1.tooltip',
     helpKey: 'tisax.questions.komQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.2.7',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.2.7',
       iso27001Reference: 'ISO 27001:2022 A.8.20, A.8.22 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -578,7 +578,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.komQ2.tooltip',
     helpKey: 'tisax.questions.komQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.2.7, 5.3.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.2.7, 5.3.2',
       iso27001Reference: 'ISO 27001:2022 A.8.20, A.8.22, A.8.21 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -596,7 +596,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.komQ3.tooltip',
     helpKey: 'tisax.questions.komQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 5.1.2',
+      vdaIsaControl: 'VDA ISA 2027.1: 5.1.2',
       iso27001Reference: 'ISO 27001:2022 A.5.14 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -619,7 +619,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.liefQ1.tooltip',
     helpKey: 'tisax.questions.liefQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 6.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 6.1.1',
       iso27001Reference: 'ISO 27001:2022 A.5.19 - A.5.22 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -637,7 +637,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.liefQ2.tooltip',
     helpKey: 'tisax.questions.liefQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 6.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 6.1.1',
       iso27001Reference: 'ISO 27001:2022 A.5.19 - A.5.22 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -655,7 +655,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.liefQ3.tooltip',
     helpKey: 'tisax.questions.liefQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 6.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 6.1.1',
       iso27001Reference: 'ISO 27001:2022 A.5.19 - A.5.22 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -678,7 +678,7 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.compQ1.tooltip',
     helpKey: 'tisax.questions.compQ1.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 7.1.1',
+      vdaIsaControl: 'VDA ISA 2027.1: 7.1.1',
       iso27001Reference: 'ISO 27001:2022 A.5.31, A.5.32, A.5.33 (laut VDA ISA)',
     },
     maturityDescriptions: {
@@ -696,8 +696,8 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.compQ2.tooltip',
     helpKey: 'tisax.questions.compQ2.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 1.5.1, 1.5.2',
-      iso27001Reference: 'ISO 27001:2022 A.5.36, A.8.8, A.5.35 (laut VDA ISA)',
+      vdaIsaControl: 'VDA ISA 2027.1: 1.5.1, 1.5.2',
+      iso27001Reference: 'ISO 27001:2022 9.2, A.5.36, A.5.35 (laut VDA ISA)',
     },
     maturityDescriptions: {
       level0Key: 'tisax.questions.compQ2.maturity.level0',
@@ -714,8 +714,8 @@ export const QUESTIONS: TisaxQuestion[] = [
     tooltipKey: 'tisax.questions.compQ3.tooltip',
     helpKey: 'tisax.questions.compQ3.help',
     legalReference: {
-      vdaIsaControl: 'VDA ISA 6.0.2: 1.5.1, 1.5.2',
-      iso27001Reference: 'ISO 27001:2022 A.5.36, A.8.8, A.5.35 (laut VDA ISA)',
+      vdaIsaControl: 'VDA ISA 2027.1: 1.5.1, 1.5.2',
+      iso27001Reference: 'ISO 27001:2022 9.2, A.5.36, A.5.35 (laut VDA ISA)',
     },
     maturityDescriptions: {
       level0Key: 'tisax.questions.compQ3.maturity.level0',

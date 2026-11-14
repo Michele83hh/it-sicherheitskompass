@@ -1,10 +1,10 @@
 /**
- * OWASP ASVS 4.0 Gap Analysis Categories
+ * OWASP ASVS 5.0 Gap Analysis Categories
  *
  * 6 categories covering the most critical ASVS verification chapters.
  * Grouped by security domain for practical assessment.
  *
- * Legal basis: OWASP Application Security Verification Standard 4.0.3
+ * Legal basis: OWASP Application Security Verification Standard 5.0.0
  */
 
 import type { Category } from './types';
@@ -15,7 +15,7 @@ export const CATEGORIES: Category[] = [
     nameKey: 'owasp-asvs.categories.authentication.name',
     shortNameKey: 'owasp-asvs.categories.authentication.shortName',
     descriptionKey: 'owasp-asvs.categories.authentication.description',
-    asvsChapter: 'V2',
+    asvsChapter: 'V6',
     icon: 'KeyRound',
     questions: [],
   },
@@ -24,7 +24,7 @@ export const CATEGORIES: Category[] = [
     nameKey: 'owasp-asvs.categories.sessionMgmt.name',
     shortNameKey: 'owasp-asvs.categories.sessionMgmt.shortName',
     descriptionKey: 'owasp-asvs.categories.sessionMgmt.description',
-    asvsChapter: 'V3',
+    asvsChapter: 'V7',
     icon: 'Timer',
     questions: [],
   },
@@ -33,7 +33,7 @@ export const CATEGORIES: Category[] = [
     nameKey: 'owasp-asvs.categories.accessControl.name',
     shortNameKey: 'owasp-asvs.categories.accessControl.shortName',
     descriptionKey: 'owasp-asvs.categories.accessControl.description',
-    asvsChapter: 'V4',
+    asvsChapter: 'V8',
     icon: 'Lock',
     questions: [],
   },
@@ -42,7 +42,7 @@ export const CATEGORIES: Category[] = [
     nameKey: 'owasp-asvs.categories.inputValidation.name',
     shortNameKey: 'owasp-asvs.categories.inputValidation.shortName',
     descriptionKey: 'owasp-asvs.categories.inputValidation.description',
-    asvsChapter: 'V5',
+    asvsChapter: 'V1-V2',
     icon: 'ShieldCheck',
     questions: [],
   },
@@ -51,7 +51,7 @@ export const CATEGORIES: Category[] = [
     nameKey: 'owasp-asvs.categories.cryptography.name',
     shortNameKey: 'owasp-asvs.categories.cryptography.shortName',
     descriptionKey: 'owasp-asvs.categories.cryptography.description',
-    asvsChapter: 'V6',
+    asvsChapter: 'V11',
     icon: 'FileKey',
     questions: [],
   },
@@ -60,7 +60,7 @@ export const CATEGORIES: Category[] = [
     nameKey: 'owasp-asvs.categories.errorLogging.name',
     shortNameKey: 'owasp-asvs.categories.errorLogging.shortName',
     descriptionKey: 'owasp-asvs.categories.errorLogging.description',
-    asvsChapter: 'V7-V14',
+    asvsChapter: 'V16, V4',
     icon: 'FileWarning',
     questions: [],
   },

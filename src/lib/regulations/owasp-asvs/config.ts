@@ -1,9 +1,9 @@
 // src/lib/regulations/owasp-asvs/config.ts
 
 /**
- * OWASP ASVS 4.0 Regulation Configuration for the Registry
+ * OWASP ASVS 5.0 Regulation Configuration for the Registry
  *
- * Legal basis: OWASP Application Security Verification Standard 4.0.3
+ * Legal basis: OWASP Application Security Verification Standard 5.0.0
  * Community-driven standard for verifying the security of web applications,
  * defining three verification levels (L1/L2/L3) across 14 chapters.
  */

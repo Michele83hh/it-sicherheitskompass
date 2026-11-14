@@ -9,7 +9,7 @@
  * Scoring: yes=100%, partial=50%, no=0%
  * Traffic light thresholds match the full assessment engine.
  *
- * Legal basis: BSI C5:2020 (Cloud Computing Compliance Criteria Catalogue)
+ * Legal basis: BSI C5:2026 (Cloud Computing Compliance Criteria Catalogue)
  */
 
 import type { TrafficLight, CategoryScore, OverallScore } from './types';

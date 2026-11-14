@@ -3,7 +3,7 @@
 /**
  * BSI C5 Regulation Configuration for the Registry
  *
- * Legal basis: BSI C5:2020 (Cloud Computing Compliance Criteria Catalogue)
+ * Legal basis: BSI C5:2026 (Cloud Computing Compliance Criteria Catalogue)
  * The C5 is a criteria catalogue from the German Federal Office for
  * Information Security (BSI) defining requirements for secure cloud computing.
  */

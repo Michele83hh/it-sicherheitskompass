@@ -1,5 +1,5 @@
 /**
- * OWASP ASVS 4.0 Gap Analysis Questions
+ * OWASP ASVS 5.0 Gap Analysis Questions
  *
  * 18 questions across 6 categories, 3 per category.
  * Questions target developer/team-lead level - clear, actionable wording.
@@ -11,7 +11,7 @@
  *   2 = Documented but not systematic
  *   3 = Systematic, regularly tested, standards-based
  *
- * Legal basis: OWASP Application Security Verification Standard 4.0.3
+ * Legal basis: OWASP Application Security Verification Standard 5.0.0
  */
 
 import type { Question } from './types';
@@ -28,8 +28,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.auQ1.tooltip',
     helpKey: 'owasp-asvs.questions.auQ1.help',
     legalReference: {
-      asvsChapter: 'ASVS V2: Authentication',
-      asvsRequirement: 'V2.1.1, V2.1.2, V2.1.7',
+      asvsChapter: 'ASVS V6: Authentication',
+      asvsRequirement: 'V6.2.1, V6.2.4, V6.2.12',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.auQ1.maturity.level0',
@@ -46,8 +46,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.auQ2.tooltip',
     helpKey: 'owasp-asvs.questions.auQ2.help',
     legalReference: {
-      asvsChapter: 'ASVS V2: Authentication, V4: Access Control',
-      asvsRequirement: 'V2.2.4, V4.3.1',
+      asvsChapter: 'ASVS V6: Authentication',
+      asvsRequirement: 'V6.3.3',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.auQ2.maturity.level0',
@@ -64,8 +64,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.auQ3.tooltip',
     helpKey: 'owasp-asvs.questions.auQ3.help',
     legalReference: {
-      asvsChapter: 'ASVS V2: Authentication',
-      asvsRequirement: 'V2.2.1',
+      asvsChapter: 'ASVS V6: Authentication',
+      asvsRequirement: 'V6.3.1',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.auQ3.maturity.level0',
@@ -86,8 +86,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.smQ1.tooltip',
     helpKey: 'owasp-asvs.questions.smQ1.help',
     legalReference: {
-      asvsChapter: 'ASVS V3: Session Management',
-      asvsRequirement: 'V3.2.1, V3.2.2, V3.2.3',
+      asvsChapter: 'ASVS V7: Session Management, V3: Web Frontend Security',
+      asvsRequirement: 'V7.2.2, V7.2.3, V3.3.4',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.smQ1.maturity.level0',
@@ -104,8 +104,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.smQ2.tooltip',
     helpKey: 'owasp-asvs.questions.smQ2.help',
     legalReference: {
-      asvsChapter: 'ASVS V3: Session Management',
-      asvsRequirement: 'V3.3.2',
+      asvsChapter: 'ASVS V7: Session Management',
+      asvsRequirement: 'V7.3.1, V7.3.2',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.smQ2.maturity.level0',
@@ -122,8 +122,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.smQ3.tooltip',
     helpKey: 'owasp-asvs.questions.smQ3.help',
     legalReference: {
-      asvsChapter: 'ASVS V3: Session Management',
-      asvsRequirement: 'V3.3.1, V3.3.3',
+      asvsChapter: 'ASVS V7: Session Management',
+      asvsRequirement: 'V7.4.1, V7.4.3',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.smQ3.maturity.level0',
@@ -144,8 +144,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.acQ1.tooltip',
     helpKey: 'owasp-asvs.questions.acQ1.help',
     legalReference: {
-      asvsChapter: 'ASVS V4: Access Control',
-      asvsRequirement: 'V4.1.3',
+      asvsChapter: 'ASVS V8: Authorization',
+      asvsRequirement: 'V8.2.1',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.acQ1.maturity.level0',
@@ -162,8 +162,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.acQ2.tooltip',
     helpKey: 'owasp-asvs.questions.acQ2.help',
     legalReference: {
-      asvsChapter: 'ASVS V4: Access Control',
-      asvsRequirement: 'V4.1.1',
+      asvsChapter: 'ASVS V8: Authorization',
+      asvsRequirement: 'V8.3.1',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.acQ2.maturity.level0',
@@ -180,8 +180,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.acQ3.tooltip',
     helpKey: 'owasp-asvs.questions.acQ3.help',
     legalReference: {
-      asvsChapter: 'ASVS V4: Access Control',
-      asvsRequirement: 'V4.2.1',
+      asvsChapter: 'ASVS V8: Authorization',
+      asvsRequirement: 'V8.2.2',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.acQ3.maturity.level0',
@@ -202,8 +202,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.ivQ1.tooltip',
     helpKey: 'owasp-asvs.questions.ivQ1.help',
     legalReference: {
-      asvsChapter: 'ASVS V5: Validation, Sanitization and Encoding',
-      asvsRequirement: 'V5.1.3',
+      asvsChapter: 'ASVS V2: Validation and Business Logic',
+      asvsRequirement: 'V2.2.1, V2.2.2',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.ivQ1.maturity.level0',
@@ -220,8 +220,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.ivQ2.tooltip',
     helpKey: 'owasp-asvs.questions.ivQ2.help',
     legalReference: {
-      asvsChapter: 'ASVS V5: Validation, Sanitization and Encoding',
-      asvsRequirement: 'V5.3.1, V5.3.3',
+      asvsChapter: 'ASVS V1: Encoding and Sanitization',
+      asvsRequirement: 'V1.2.1, V1.2.2, V1.2.3',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.ivQ2.maturity.level0',
@@ -238,8 +238,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.ivQ3.tooltip',
     helpKey: 'owasp-asvs.questions.ivQ3.help',
     legalReference: {
-      asvsChapter: 'ASVS V5: Validation, Sanitization and Encoding',
-      asvsRequirement: 'V5.3.4, V5.3.5',
+      asvsChapter: 'ASVS V1: Encoding and Sanitization',
+      asvsRequirement: 'V1.2.4',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.ivQ3.maturity.level0',
@@ -260,8 +260,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.crQ1.tooltip',
     helpKey: 'owasp-asvs.questions.crQ1.help',
     legalReference: {
-      asvsChapter: 'ASVS V6: Stored Cryptography',
-      asvsRequirement: 'V6.1.1, V6.1.2, V6.1.3',
+      asvsChapter: 'ASVS V14: Data Protection, V11: Cryptography',
+      asvsRequirement: 'V14.2.4, V11.2.3',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.crQ1.maturity.level0',
@@ -278,8 +278,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.crQ2.tooltip',
     helpKey: 'owasp-asvs.questions.crQ2.help',
     legalReference: {
-      asvsChapter: 'ASVS V2: Authentication',
-      asvsRequirement: 'V2.4.1',
+      asvsChapter: 'ASVS V11: Cryptography',
+      asvsRequirement: 'V11.4.2',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.crQ2.maturity.level0',
@@ -296,8 +296,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.crQ3.tooltip',
     helpKey: 'owasp-asvs.questions.crQ3.help',
     legalReference: {
-      asvsChapter: 'ASVS V6: Stored Cryptography',
-      asvsRequirement: 'V6.4.1, V6.4.2',
+      asvsChapter: 'ASVS V11: Cryptography, V13: Configuration',
+      asvsRequirement: 'V11.1.1, V13.3.1',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.crQ3.maturity.level0',
@@ -319,8 +319,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.elQ1.tooltip',
     helpKey: 'owasp-asvs.questions.elQ1.help',
     legalReference: {
-      asvsChapter: 'ASVS V7: Error Handling and Logging',
-      asvsRequirement: 'V7.4.1',
+      asvsChapter: 'ASVS V16: Security Logging and Error Handling',
+      asvsRequirement: 'V16.5.1',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.elQ1.maturity.level0',
@@ -337,8 +337,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.elQ2.tooltip',
     helpKey: 'owasp-asvs.questions.elQ2.help',
     legalReference: {
-      asvsChapter: 'ASVS V7: Error Handling and Logging',
-      asvsRequirement: 'V7.1.1, V7.2.1, V7.2.2',
+      asvsChapter: 'ASVS V16: Security Logging and Error Handling',
+      asvsRequirement: 'V16.3.1, V16.3.2, V16.3.3',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.elQ2.maturity.level0',
@@ -355,8 +355,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'owasp-asvs.questions.elQ3.tooltip',
     helpKey: 'owasp-asvs.questions.elQ3.help',
     legalReference: {
-      asvsChapter: 'ASVS V13: API and Web Service, V11: Business Logic',
-      asvsRequirement: 'V13.1.4, V13.2.2, V11.1.4',
+      asvsChapter: 'ASVS V4: API and Web Service, V2: Validation and Business Logic',
+      asvsRequirement: 'V4.1.4, V2.4.1, V2.2.2',
     },
     maturityDescriptions: {
       level0Key: 'owasp-asvs.questions.elQ3.maturity.level0',

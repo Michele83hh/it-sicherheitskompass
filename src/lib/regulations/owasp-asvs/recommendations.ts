@@ -1,5 +1,5 @@
 /**
- * OWASP ASVS 4.0 Recommendations per Category
+ * OWASP ASVS 5.0 Recommendations per Category
  *
  * 12 recommendations with a mix of effort levels:
  * - 4 quick wins (fast, high impact)
@@ -9,7 +9,7 @@
  * Each recommendation includes concrete first steps, ASVS chapter references,
  * and OWASP Top 10 / CWE cross-references for practical guidance.
  *
- * Legal basis: OWASP Application Security Verification Standard 4.0.3
+ * Legal basis: OWASP Application Security Verification Standard 5.0.0
  */
 
 import type { Recommendation } from './types';
@@ -26,7 +26,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.au1.title',
     descriptionKey: 'owasp-asvs.recommendations.au1.description',
     firstStepKey: 'owasp-asvs.recommendations.au1.firstStep',
-    legalReference: 'ASVS V2.1.1, V2.1.2, V2.1.7',
+    legalReference: 'ASVS 5.0.0 V6.2.1, V6.2.4, V6.2.12',
     owaspReference: 'OWASP Top 10 A07:2021, CWE-521',
   },
   {
@@ -37,7 +37,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.au2.title',
     descriptionKey: 'owasp-asvs.recommendations.au2.description',
     firstStepKey: 'owasp-asvs.recommendations.au2.firstStep',
-    legalReference: 'ASVS V2.8.1, V2.8.2, V2.8.3',
+    legalReference: 'ASVS 5.0.0 V6.3.3',
     owaspReference: 'OWASP Top 10 A07:2021, CWE-308',
   },
 
@@ -52,7 +52,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.sm1.title',
     descriptionKey: 'owasp-asvs.recommendations.sm1.description',
     firstStepKey: 'owasp-asvs.recommendations.sm1.firstStep',
-    legalReference: 'ASVS V3.3.2, V3.4.1, V3.4.2, V3.4.3',
+    legalReference: 'ASVS 5.0.0 V7.3.1, V7.3.2, V3.3.1, V3.3.2, V3.3.4',
     owaspReference: 'OWASP Top 10 A07:2021, CWE-384',
   },
 
@@ -67,7 +67,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.ac1.title',
     descriptionKey: 'owasp-asvs.recommendations.ac1.description',
     firstStepKey: 'owasp-asvs.recommendations.ac1.firstStep',
-    legalReference: 'ASVS V4.1.3',
+    legalReference: 'ASVS 5.0.0 V8.2.1',
     owaspReference: 'OWASP Top 10 A01:2021, CWE-285',
   },
   {
@@ -78,7 +78,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.ac2.title',
     descriptionKey: 'owasp-asvs.recommendations.ac2.description',
     firstStepKey: 'owasp-asvs.recommendations.ac2.firstStep',
-    legalReference: 'ASVS V4.1.1',
+    legalReference: 'ASVS 5.0.0 V8.3.1',
     owaspReference: 'OWASP Top 10 A01:2021, CWE-639',
   },
 
@@ -93,7 +93,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.iv1.title',
     descriptionKey: 'owasp-asvs.recommendations.iv1.description',
     firstStepKey: 'owasp-asvs.recommendations.iv1.firstStep',
-    legalReference: 'ASVS V5.1.3',
+    legalReference: 'ASVS 5.0.0 V2.2.1, V2.2.2',
     owaspReference: 'OWASP Top 10 A03:2021, CWE-89, CWE-79',
   },
   {
@@ -104,7 +104,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.iv2.title',
     descriptionKey: 'owasp-asvs.recommendations.iv2.description',
     firstStepKey: 'owasp-asvs.recommendations.iv2.firstStep',
-    legalReference: 'ASVS V5.3.4',
+    legalReference: 'ASVS 5.0.0 V1.2.4',
     owaspReference: 'OWASP Top 10 A03:2021, CWE-116',
   },
 
@@ -119,7 +119,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.cr1.title',
     descriptionKey: 'owasp-asvs.recommendations.cr1.description',
     firstStepKey: 'owasp-asvs.recommendations.cr1.firstStep',
-    legalReference: 'ASVS V6.1.1, V6.2.1',
+    legalReference: 'ASVS 5.0.0 V14.2.4, V11.2.3',
     owaspReference: 'OWASP Top 10 A02:2021, CWE-327',
   },
   {
@@ -130,7 +130,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.cr2.title',
     descriptionKey: 'owasp-asvs.recommendations.cr2.description',
     firstStepKey: 'owasp-asvs.recommendations.cr2.firstStep',
-    legalReference: 'ASVS V2.4.1',
+    legalReference: 'ASVS 5.0.0 V11.4.2',
     owaspReference: 'OWASP Top 10 A02:2021, CWE-320',
   },
 
@@ -145,7 +145,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.el1.title',
     descriptionKey: 'owasp-asvs.recommendations.el1.description',
     firstStepKey: 'owasp-asvs.recommendations.el1.firstStep',
-    legalReference: 'ASVS V7.4.1',
+    legalReference: 'ASVS 5.0.0 V16.5.1',
     owaspReference: 'OWASP Top 10 A09:2021, CWE-532',
   },
   {
@@ -156,7 +156,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.el2.title',
     descriptionKey: 'owasp-asvs.recommendations.el2.description',
     firstStepKey: 'owasp-asvs.recommendations.el2.firstStep',
-    legalReference: 'ASVS V7.1.1, V7.2.1, V7.2.2',
+    legalReference: 'ASVS 5.0.0 V16.3.1, V16.3.2, V16.3.3',
     owaspReference: 'OWASP Top 10 A09:2021, CWE-778',
   },
   {
@@ -167,7 +167,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'owasp-asvs.recommendations.el3.title',
     descriptionKey: 'owasp-asvs.recommendations.el3.description',
     firstStepKey: 'owasp-asvs.recommendations.el3.firstStep',
-    legalReference: 'ASVS V13.1.1, V13.2.1',
+    legalReference: 'ASVS 5.0.0 V4.1.4, V2.4.1, V2.2.2',
     owaspReference: 'OWASP API Security Top 10',
   },
 ];
