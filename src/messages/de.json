@@ -4138,7 +4138,7 @@
         }
       },
       "komQ3": {
-        "title": "Werden Datenüberträge mit OEMs und Geschäftspartnern über sichere Kanäle abgewickelt?",
+        "title": "Werden Datenübertragungen mit OEMs und Geschäftspartnern über sichere Kanäle abgewickelt?",
         "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.14 — Der Austausch vertraulicher Informationen mit externen Partnern muss über verschlüsselte und authentifizierte Kommunikationskanäle erfolgen. Besondere Anforderungen gelten für den OEM-Datenaustausch.",
         "help": "Der Datenaustausch mit OEMs ist ein zentrales Thema bei TISAX-Assessments. Konstruktionsdaten, Prototypen-Informationen und Qualitätsdaten müssen über sichere Kanäle übertragen werden — z.B. über OEM-spezifische Plattformen (Teamcenter, ENOVIA), verschlüsselte Datentransferlösungen oder SFTP. Unverschlüsselte E-Mail-Anhänge für vertrauliche OEM-Daten sind ein typischer Befund.",
         "maturity": {
@@ -6975,18 +6975,18 @@
         "help": "Laptops, mobile Geräte und Speichermedien müssen gegen Diebstahl, Verlust und Umwelteinwirkungen (Wasser, Feuer, Temperatur) geschützt werden.",
         "maturity": {
           "level0": "Kein Schutz von Geräten und Speichermedien. Keine Inventarisierung.",
-          "level1": "Grundlegende Inventarisierung, aber keine spezifischen Schutzmaassnahmen für mobile Geräte oder Speichermedien.",
+          "level1": "Grundlegende Inventarisierung, aber keine spezifischen Schutzmaßnahmen für mobile Geräte oder Speichermedien.",
           "level2": "Geräteinventarisierung, Verschlüsselung mobiler Geräte, sichere Entsorgung von Speichermedien dokumentiert.",
           "level3": "Umfassendes Asset-Management mit MDM, automatischer Inventarisierung, Remote-Wipe-Fähigkeit und zertifizierter Datenträgervernichtung."
         }
       },
       "psQ3": {
-        "title": "Gibt es Schutzmaassnahmen gegen Umwelt- und Infrastrukturbedrohungen für Ihre IT?",
+        "title": "Gibt es Schutzmaßnahmen gegen Umwelt- und Infrastrukturbedrohungen für Ihre IT?",
         "tooltip": "Controls A.7.5, A.7.11-A.7.13 fordern Schutz vor physischen und umweltbedingten Bedrohungen sowie die Sicherung der Versorgungsinfrastruktur.",
         "help": "Dazu gehören USV-Anlagen, Klimatisierung, Brandschutz, Wassermelder und redundante Stromversorgung für kritische IT-Systeme.",
         "maturity": {
-          "level0": "Keine Schutzmaassnahmen gegen Umweltbedrohungen oder Infrastrukturausfälle.",
-          "level1": "Grundlegende USV für Server, aber keine systematischen Schutzmaassnahmen.",
+          "level0": "Keine Schutzmaßnahmen gegen Umweltbedrohungen oder Infrastrukturausfälle.",
+          "level1": "Grundlegende USV für Server, aber keine systematischen Schutzmaßnahmen.",
           "level2": "USV, Klimaanlage, Brandmelder und Wassermelder für Serverräume. Redundante Internetanbindung.",
           "level3": "Umfassende Infrastrukturresilienz mit redundanter Stromversorgung, Löschanlagen, Umgebungsmonitoring und regelmäßigen Tests."
         }
@@ -14701,7 +14701,7 @@
     },
     "questions": {
       "auQ1": {
-        "title": "Werden sichere Passwort-Richtlinien (Länge, Komplexität, Leak-Check) durchgesetzt?",
+        "title": "Werden sichere Passwort-Richtlinien (Mindestlänge, Abgleich mit geleakten Passwörtern) durchgesetzt?",
         "tooltip": "OWASP ASVS V2.1: Passwort-Sicherheit",
         "help": "Moderne Richtlinien bevorzugen Länge über Komplexität und prüfen gegen bekannte Leaks.",
         "maturity": {

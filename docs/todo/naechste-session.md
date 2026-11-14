@@ -4,17 +4,25 @@ Stand: 14.11.2026. Reihenfolge = Vorschlag. Was am 13./14.11. erledigt wurde, st
 
 ## 1. Selbst gegenlesen (KI-erstellt)
 
-- [ ] Neue Zuordnung gleicher Fragen in `src/lib/regulations/question-equivalences.ts` (49 Themen).
-- [ ] Geänderte Normbezüge bei ISO 22301, OWASP ASVS und KRITIS (Tabelle im Prüfprotokoll, Nr. 2, 6, 12).
-- [ ] Erklärtexte zu den 13 Schlagwörtern im Synergie-Graphen (`platform.overlaps.measureInfo` in `de.json`).
-- [ ] Reifegrad-Texte der 72 Fragen von CIS, ISO 22301, NIST CSF und OWASP ASVS (je vier Stufen, DE und EN).
-- [ ] Einleitungstexte der 55 Bereiche von ISO 27001, SOC 2, PCI DSS, C5, CIS, ISO 22301, NIST CSF und OWASP ASVS (DE und EN).
-- [ ] ISO-27001-Abschnitt der NIS2-Ergebnisseite: Stufen je Bereich (stark/mittel), Auswahl der Controls und die zehn Texte „Was NIS2 zusätzlich verlangt“ gegen Art. 20, 21, 23 NIS2-RL und die ENISA-Zuordnung prüfen. Den Abschnitt im PDF-Report einmal ansehen.
+Alles steht zum Abhaken in `docs/pruefprotokoll/2026-11-14-gegenlese-unterlage.md` (aus dem Code erzeugt):
 
-## 2. Fragen: offene Inhalte
+- [ ] Abschnitt 1: Zuordnung gleicher Fragen (49 Themen).
+- [ ] Abschnitt 2: Normbezüge bei ISO 22301, OWASP ASVS und KRITIS.
+- [ ] Abschnitt 3: ISO-27001-Abschnitt der NIS2-Ergebnisseite (Stufen, Controls, Zusatzanforderungen). Die PDF-Ausgabe ist geprüft.
+- [ ] Abschnitt 4: Erklärtexte zu den 13 Schlagwörtern im Synergie-Graphen.
+- [ ] Abschnitt 5: Einleitungstexte der 55 Bereiche.
+- [ ] Abschnitt 6: Reifegrad-Texte der 72 Fragen.
 
-- [ ] Inhaltlich je Regelwerk prüfen: Braucht es die Frage? Doppelungen? KMU-verständlich? Verhältnis Kern zu Vertiefung?
-- [ ] Idee: gemeinsamer Fragenkern, also einmal antworten und auf alle gewählten Regelwerke abbilden. Die 49 Themen sind die Vorarbeit. Vorschläge gibt es bisher nur in der Gap-Analyse, nicht im Schnellcheck.
+## 2. Fragen: Vorschläge entscheiden
+
+Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`. Umgesetzt sind nur Tippfehler. Zu entscheiden, in dieser Reihenfolge:
+
+- [ ] Antwort „trifft nicht zu“ einführen (Abschnitt 3.2). Größte Wirkung auf die Aussagekraft.
+- [ ] NIS2-Fragen, die über die Richtlinie hinausgehen (Abschnitt 3.4), vor allem die Frist „24-48 Stunden“.
+- [ ] Doppelungen je Regelwerk streichen oder zusammenlegen (Abschnitt 4).
+- [ ] „Wie“-Fragen bei SOC 2 und ISO 27001 umformulieren (Abschnitt 3.3).
+- [ ] Kern und Vertiefung: bei DSGVO einschalten? (Abschnitt 3.1)
+- [ ] Gemeinsamer Fragenkern: Weg A oder B (Abschnitt 5). Erst nach dem Gegenlesen der 49 Themen.
 
 ## 3. Ausrichtung besprechen: Umsetzung für ISO-27001-Audits (Wunsch Nutzer)
 

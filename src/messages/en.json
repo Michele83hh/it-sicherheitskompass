@@ -14701,7 +14701,7 @@
     },
     "questions": {
       "auQ1": {
-        "title": "Are secure password policies (length, complexity, leak checks) enforced?",
+        "title": "Are secure password policies (minimum length, check against leaked passwords) enforced?",
         "tooltip": "OWASP ASVS V2.1: Password Security",
         "help": "Modern policies favor length over complexity and check against known credential leaks.",
         "maturity": {
