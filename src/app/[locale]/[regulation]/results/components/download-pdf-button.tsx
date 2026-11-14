@@ -27,7 +27,8 @@ import { calculatePenalty } from '@/lib/regulations/nis2/bussgeld';
 import { generateRoadmap } from '@/lib/regulations/nis2/roadmap';
 import { getAdjustedCostEstimate, getSizeFactor, type CompanyProfile } from '@/lib/regulations/nis2/cost-estimation';
 import { NIS2_DSGVO_OVERLAPS, calculateOverallOverlap } from '@/lib/regulations/nis2/dsgvo-overlap';
-import { ISO27001_MAPPINGS, calculateOverallAlignment } from '@/lib/regulations/nis2/iso27001';
+import { ISO27001_MAPPINGS, ISO27001_SOURCE } from '@/lib/regulations/nis2/iso27001';
+import { levelLabel } from '@/lib/regulations/overlaps';
 import { DIN_SPEC_AREAS } from '@/lib/regulations/nis2/din-spec';
 import { EVIDENCE_ITEMS } from '@/lib/regulations/nis2/evidence';
 import { getSectorGuidance, hasSectorGuidance } from '@/lib/regulations/nis2/sector-guidance';
@@ -382,11 +383,10 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
       messages['pdf.dsgvo.overlap'] = locale === 'de' ? 'Überlappung' : 'Overlap';
       messages['pdf.dsgvo.note'] = locale === 'de' ? 'Die Überlappung zeigt, wie viel bestehende DSGVO-Compliance für NIS2-Anforderungen genutzt werden kann.' : 'Overlap indicates how much existing DSGVO compliance can be leveraged for NIS2 requirements.';
       messages['pdf.iso.title'] = locale === 'de' ? 'ISO 27001:2022 Crosswalk' : 'ISO 27001:2022 Crosswalk';
-      messages['pdf.iso.overallAlignment'] = locale === 'de' ? 'ISO 27001 Abdeckung gesamt' : 'Overall ISO 27001 Alignment';
       messages['pdf.iso.nis2Category'] = locale === 'de' ? 'NIS2-Kategorie' : 'NIS2 Category';
       messages['pdf.iso.isoControls'] = locale === 'de' ? 'ISO 27001 Controls' : 'ISO 27001 Controls';
-      messages['pdf.iso.alignment'] = locale === 'de' ? 'Abdeckung' : 'Alignment';
-      messages['pdf.iso.note'] = locale === 'de' ? 'Zeigt die Zuordnung zwischen NIS2 Art. 21(2) Anforderungen und ISO/IEC 27001:2022 Annex A Controls.' : 'Shows mapping between NIS2 Art. 21(2) requirements and ISO/IEC 27001:2022 Annex A controls.';
+      messages['pdf.iso.alignment'] = locale === 'de' ? 'Überschneidung' : 'Overlap';
+      messages['pdf.iso.note'] = `${tAll('iso27001Mapping.sourceNote')} ${ISO27001_SOURCE.label}`;
       messages['pdf.kritis.title'] = locale === 'de' ? 'KRITIS-Einstufung' : 'KRITIS Classification';
       messages['pdf.kritis.note'] = locale === 'de'
         ? 'Diese Organisation kann als Betreiber kritischer Infrastruktur (KRITIS) gemäß BSI-KritisV eingestuft sein. KRITIS-Betreiber unterliegen über NIS2 hinausgehenden Pflichten, darunter Registrierung beim BSI, verschärfte Meldepflichten und regelmäßige Sicherheitsaudits (§31, §39 BSIG). Bitte konsultieren Sie die BSI KRITIS-Seite und holen Sie fachkundigen Rechtsrat ein.'
@@ -656,14 +656,13 @@ export default function DownloadPdfButton({ overallScore }: DownloadPdfButtonPro
       let iso27001Data: PDFPayload['iso27001'] = undefined;
       if (includeIso) {
         iso27001Data = {
-          overallAlignment: calculateOverallAlignment(),
           mappings: ISO27001_MAPPINGS.map((m) => {
             const cat = CATEGORIES.find((c) => c.id === m.nis2CategoryId);
             const catName = cat ? tCategories(cat.shortNameKey.replace('categories.', '')) : m.nis2CategoryId;
             return {
               nis2Category: catName,
               isoControls: m.isoControls,
-              alignmentPercentage: m.alignmentPercentage,
+              level: levelLabel(m.level, locale),
             };
           }),
         };

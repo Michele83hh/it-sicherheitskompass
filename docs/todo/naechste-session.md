@@ -9,10 +9,10 @@ Stand: 14.11.2026. Reihenfolge = Vorschlag. Was am 13./14.11. erledigt wurde, st
 - [ ] Erklärtexte zu den 13 Schlagwörtern im Synergie-Graphen (`platform.overlaps.measureInfo` in `de.json`).
 - [ ] Reifegrad-Texte der 72 Fragen von CIS, ISO 22301, NIST CSF und OWASP ASVS (je vier Stufen, DE und EN).
 - [ ] Einleitungstexte der 55 Bereiche von ISO 27001, SOC 2, PCI DSS, C5, CIS, ISO 22301, NIST CSF und OWASP ASVS (DE und EN).
+- [ ] ISO-27001-Abschnitt der NIS2-Ergebnisseite: Stufen je Bereich (stark/mittel), Auswahl der Controls und die zehn Texte „Was NIS2 zusätzlich verlangt“ gegen Art. 20, 21, 23 NIS2-RL und die ENISA-Zuordnung prüfen. Den Abschnitt im PDF-Report einmal ansehen.
 
 ## 2. Fragen: offene Inhalte
 
-- [ ] **ISO-27001-Abschnitt der NIS2-Ergebnisseite:** Prozentwerte je Kategorie haben keine Quelle; Einleitung nennt „ca. 72 %“, berechnet werden 68 %. Auf Stufen mit Quelle umstellen wie bei den Synergien.
 - [ ] PCI DSS zeigt „Goal 1“, SOC 2 englische Kriteriennamen unter den Fragen.
 - [ ] Vertiefungsfragen und kompletter englischer Durchlauf im Browser.
 - [ ] Inhaltlich je Regelwerk prüfen: Braucht es die Frage? Doppelungen? KMU-verständlich? Verhältnis Kern zu Vertiefung?
