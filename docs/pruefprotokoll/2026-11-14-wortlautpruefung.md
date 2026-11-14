@@ -179,4 +179,40 @@ Quellen (Abruf 14.11.2026): Richtlinie (EU) 2022/2555 deutsch und englisch (Publ
 
 **Bausteinverweise:** Alle 17 genannten Bausteine stehen mit dieser Nummer in der Edition 2023. Zwei Namen angeglichen: INF.1 „Allgemeines Gebäude“, INF.2 „Rechenzentrum sowie Serverraum“.
 
-**Nicht geprüft:** Inhalt der BSI-Standards 200-2, 200-3, 200-4 und der Bausteine (nur Nummer und Titel). Die 23 Erklärtexte ohne Normaussage (z. B. „Regelmäßige Neubewertung stellt sicher …“) sind Praxishinweise und enthalten keine prüfbare Rechtsaussage.
+**Nicht geprüft:** Inhalt der BSI-Standards 200-2, 200-3, 200-4 und der Bausteine (nur Nummer und Titel). Die 23 unveränderten Erklärtexte sind entweder am Wortlaut belegt (`bc-q1`, `ad-q1`, `ad-q3`, `ad-q5`, `mc-q2`, jeweils Art. 21 Abs. 2 und § 30 Abs. 2 BSIG) oder Praxishinweise ohne Rechtsaussage (z. B. „Regelmäßige Neubewertung stellt sicher …“).
+
+## CRA: Befunde und Änderungen
+
+Quelle (Publikationsamt der EU, Abruf 14.11.2026): Verordnung (EU) 2024/2847 deutsch und englisch, Art. 13, 14, 27, 28, 30, 31, 32, Anhänge I, II, V (nur Verweis), VII.
+
+24 Fragen geprüft. Geändert: 38 ganze Texte und 5 Teiltexte je Sprache, 46 Normbezüge und Zusatzzeilen.
+
+**Durchgehender Fehler bei den Normbezügen:** Alle Bezüge auf „Art. 10 Abs. …“ und „Art. 11 Abs. …“ folgten der Zählung des Kommissionsentwurfs. In der verkündeten Verordnung stehen die Herstellerpflichten in Art. 13 und die Meldepflichten in Art. 14. Die Erklärtexte nannten bereits Art. 13, die Zusatzzeile widersprach ihnen. Alle 15 betroffenen Bezüge sind umgestellt und auf die Nummer in Anhang I verfeinert.
+
+| Frage | Vorher | Jetzt | Grund |
+|---|---|---|---|
+| `konf-q1` | Art. 24 | Art. 32 | Konformitätsbewertungsverfahren. |
+| `konf-q2` | Art. 25-28 | Art. 27 Abs. 1 | Konformitätsvermutung. |
+| `vm-q3` | Art. 14 Abs. 3 | Art. 14 Abs. 8 | Abs. 3 ist die Meldung schwerwiegender Sicherheitsvorfälle; die Information der Nutzer steht in Abs. 8. |
+| `dok-q2` | Art. 31 | Art. 13 Abs. 2-3 | Pflicht zur Risikobewertung. |
+| `dok-q3` | Art. 31, Anhang VII | Art. 13 Abs. 18, Anhang II | Nutzerinformationen. |
+| `sl-q3` | Art. 10 Abs. 12 | Art. 13 Abs. 5-6 | Sorgfalt bei Komponenten Dritter. |
+
+**Aussagen, die dem Wortlaut widersprachen**
+
+| Frage | Vorher | Wortlaut |
+|---|---|---|
+| `sl-q1` | Mindestens 5 Jahre „oder die erwartete Produktlebensdauer — je nachdem, welcher Zeitraum kürzer ist“ | Art. 13 Abs. 8: mindestens fünf Jahre; nur wenn das Produkt voraussichtlich weniger als fünf Jahre betrieben wird, entspricht der Zeitraum der voraussichtlichen Nutzungsdauer |
+| `um-q2` | Trennung der Updates stehe in „Anhang I Teil II Nr. 8“ | Nr. 2, und nur „soweit technisch machbar“ |
+| `swm-q2` | „Richtlinie“ zur koordinierten Offenlegung | Nr. 5: „Strategie … aufstellen und umsetzen“; Kontaktadresse in Nr. 6 |
+| `swm-q3` | Updates „kostenlos“ ohne Einschränkung | Nr. 8: Ausnahme für maßgeschneiderte Produkte bei gewerblichen Nutzern |
+| `sbom-q3` | CRA „impliziert“ laufende Pflege | Keine eigene Vorschrift; jetzt so benannt |
+| `vm-q1` | Meldung „an die ENISA“, „zentrale Meldeplattform“, CSIRT „(in Deutschland das BSI)“ | Art. 14 Abs. 1: gleichzeitig dem als Koordinator benannten CSIRT und der ENISA über die „einheitliche Meldeplattform“. Welche Stelle in Deutschland benannt ist, wurde nicht nachgeschlagen. |
+| `konf-q1` | „Modul B+C oder H für wichtige/kritische Produkte“ | Art. 32 Abs. 2 bis 4 unterscheiden Klasse I, Klasse II und kritische Produkte |
+| `sbd-q1` | „Security-by-Design-Prinzipien gemäß Anhang I“ | Der Begriff steht nicht in der Verordnung; Art. 13 Abs. 1: „konzipiert, entwickelt und hergestellt“ |
+| `dok-q1` | „Sicherheitsarchitektur“ | Anhang VII Nr. 2 lit. a: „Systemarchitektur“ |
+| `um-q1` (Hilfe) | Updates „müssen verifiziert werden“, automatische Updates „müssen … konfigurierbar sein“ | Anhang I Teil I Nr. 2 lit. c: Standardeinstellung mit Opt-out, Information und vorübergehendem Verschieben |
+
+**Verweise auf fremde Normen, entfernt, weil deren Inhalt nicht geprüft wurde:** ISO/IEC 30111, ISO/IEC 29147, NTIA SBOM Minimum Elements, ETSI EN 303 645 Abschnitt 5.3, IEC 62443-4-1, EN ISO/IEC 17050-1, EN ISO/IEC 17065, „ENISA Reporting Guidelines“ (aus Zusatzzeilen, Erklärtexten und Stufe 3). Ebenso entfernt: „CycloneDX (OWASP)“, „SPDX (Linux Foundation)“, Normungsauftrag M/606 und die Aussage zur EN-18031-Reihe in `konf-q2`.
+
+**Nicht geprüft:** `konf-q2`, Hilfe und Stufe 2 nennen ETSI EN 303 645 und IEC 62443-4-1 weiter als Orientierung bis zum Erscheinen harmonisierter Normen. Ob es inzwischen harmonisierte Normen zum CRA im Amtsblatt gibt, wurde nicht nachgeschlagen. Anhänge III und IV (Produktlisten) und Anhang VIII (Module) wurden nicht gelesen.

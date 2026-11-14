@@ -4664,8 +4664,8 @@
     },
     "questions": {
       "sbdQ1": {
-        "title": "Werden Ihre Produkte nach Security-by-Design-Prinzipien gemäß Anhang I CRA entwickelt?",
-        "tooltip": "Art. 13 Abs. 1 CRA (EU 2024/2847) verlangt, dass Produkte mit digitalen Elementen unter Berücksichtigung der Cybersicherheit entworfen und entwickelt werden. Anhang I Teil I listet die wesentlichen Sicherheitsanforderungen auf.",
+        "title": "Werden Ihre Produkte so konzipiert, entwickelt und hergestellt, dass sie die Anforderungen aus Anhang I Teil I CRA erfüllen?",
+        "tooltip": "Art. 13 Abs. 1 CRA (EU 2024/2847): Hersteller gewährleisten beim Inverkehrbringen, dass das Produkt mit digitalen Elementen gemäß den grundlegenden Cybersicherheitsanforderungen in Anhang I Teil I konzipiert, entwickelt und hergestellt worden ist. Nach Anhang I Teil I Nr. 1 müssen Produkte angesichts der Risiken ein angemessenes Cybersicherheitsniveau gewährleisten.",
         "help": "Security by Design bedeutet, dass Sicherheitsaspekte bereits in der Entwurfsphase Ihres Produkts berücksichtigt werden — nicht erst nachträglich. Dazu gehören Bedrohungsmodellierung, sichere Architekturentscheidungen und die Minimierung der Angriffsfläche. Der CRA macht dies zur Pflicht für alle Produkte mit digitalen Elementen.",
         "maturity": {
           "level0": "Keine Security-by-Design-Prinzipien vorhanden — Sicherheit wird nicht systematisch in der Produktentwicklung berücksichtigt",
@@ -4676,7 +4676,7 @@
       },
       "sbdQ2": {
         "title": "Werden Ihre Produkte mit sicheren Standardkonfigurationen ausgeliefert (Secure by Default)?",
-        "tooltip": "Art. 13 Abs. 1 i.V.m. Anhang I Teil I CRA (EU 2024/2847) fordert, dass Produkte ohne bekannte ausnutzbare Schwachstellen auf den Markt gebracht werden. Anhang I Nr. 1 verlangt eine angemessene Angriffsfläche und sichere Standardeinstellungen.",
+        "tooltip": "Nach Anhang I Teil I Nr. 2 CRA (EU 2024/2847) müssen Produkte, soweit zutreffend, ohne bekannte ausnutzbare Schwachstellen (lit. a) und mit einer sicheren Standardkonfiguration bereitgestellt werden und die Möglichkeit bieten, das Produkt in seinen ursprünglichen Zustand zurückzusetzen (lit. b). Nach lit. j sollen sie möglichst geringe Angriffsflächen bieten.",
         "help": "Sichere Standardkonfigurationen bedeuten, dass Ihr Produkt ab Werk in einem sicheren Zustand ausgeliefert wird. Keine offenen Ports ohne Notwendigkeit, keine Standardpasswörter, keine unnötigen Dienste aktiv. Der Nutzer muss Sicherheit nicht erst aktivieren — sie ist der Ausgangszustand.",
         "maturity": {
           "level0": "Produkte werden mit unsicheren Standardeinstellungen ausgeliefert — Standardpasswörter, offene Ports, alle Dienste aktiviert",
@@ -4687,7 +4687,7 @@
       },
       "sbdQ3": {
         "title": "Implementieren Ihre Produkte angemessene Zugangsschutz- und Authentifizierungsmechanismen?",
-        "tooltip": "Anhang I Teil I CRA (EU 2024/2847) fordert den Schutz vor unbefugtem Zugriff durch geeignete Kontrollmechanismen, einschließlich Authentifizierungs-, Identitäts- und Zugangsverwaltungssystemen.",
+        "tooltip": "Anhang I Teil I Nr. 2 lit. d CRA (EU 2024/2847): Produkte müssen durch geeignete Kontrollmechanismen Schutz vor unbefugtem Zugriff bieten, darunter zumindest Authentifizierungs-, Identitäts- oder Zugangsverwaltungssysteme, und einen möglicherweise unbefugten Zugriff melden.",
         "help": "Der CRA verlangt, dass Produkte über wirksame Zugangsschutzmechanismen verfügen. Das umfasst starke Authentifizierung, Identitätsmanagement und das Prinzip der geringsten Berechtigung. Für vernetzte Produkte ist dies besonders kritisch, da sie potenzielle Einfallstore in Unternehmensnetzwerke darstellen.",
         "maturity": {
           "level0": "Kein nennenswerter Zugangsschutz — keine oder nur triviale Authentifizierung (z.B. fest kodierte Zugangsdaten)",
@@ -4698,30 +4698,30 @@
       },
       "swmQ1": {
         "title": "Verfügen Sie über einen dokumentierten Prozess zur Identifikation und Behebung von Schwachstellen in Ihren Produkten?",
-        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II CRA (EU 2024/2847) verpflichtet Hersteller, Schwachstellen wirksam zu behandeln. Dies umfasst die Identifikation, Dokumentation und unverzügliche Behebung durch Sicherheitsupdates.",
+        "tooltip": "Nach Art. 13 Abs. 8 CRA (EU 2024/2847) stellen Hersteller sicher, dass Schwachstellen des Produkts einschließlich seiner Komponenten wirksam und im Einklang mit Anhang I Teil II behandelt werden. Nach Anhang I Teil II Nr. 1 und 2 sind Schwachstellen und Komponenten zu ermitteln und zu dokumentieren und Schwachstellen unverzüglich zu behandeln und zu beheben, unter anderem durch Sicherheitsaktualisierungen.",
         "help": "Der CRA fordert ein systematisches Schwachstellenmanagement über den gesamten Supportzeitraum. Sie müssen Schwachstellen in Ihren Produkten identifizieren, dokumentieren, bewerten und zeitnah beheben können. Ein Ad-hoc-Ansatz reicht nicht aus — es muss ein wiederholbarer Prozess mit klaren Verantwortlichkeiten sein.",
         "maturity": {
           "level0": "Kein Schwachstellenmanagement — Schwachstellen werden nicht systematisch erkannt oder bearbeitet",
           "level1": "Reaktives Vorgehen — Schwachstellen werden nur bei externen Meldungen oder Vorfällen behandelt, kein definierter Prozess",
           "level2": "Dokumentierter Prozess für Schwachstellenidentifikation und -behebung — regelmäßige Scans, Priorisierung nach Schweregrad, definierte Reaktionszeiten",
-          "level3": "Proaktives Schwachstellenmanagement mit automatisierten Scans, CVE-Monitoring, SLA-basierter Behebung und Integration in den Entwicklungsprozess gemäß ISO/IEC 30111"
+          "level3": "Proaktives Schwachstellenmanagement mit automatisierten Scans, CVE-Monitoring, SLA-basierter Behebung und Integration in den Entwicklungsprozess"
         }
       },
       "swmQ2": {
         "title": "Haben Sie einen Prozess für die koordinierte Offenlegung von Schwachstellen (Coordinated Vulnerability Disclosure) eingerichtet?",
-        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 5 CRA (EU 2024/2847) verlangt, dass Hersteller eine Richtlinie zur koordinierten Offenlegung von Schwachstellen aufstellen und einen Kontaktpunkt für die Meldung von Schwachstellen bereitstellen.",
-        "help": "Sicherheitsforscher und Nutzer müssen die Möglichkeit haben, Schwachstellen vertraulich an Sie zu melden. Der CRA verlangt eine öffentlich zugängliche Kontaktadresse (z.B. security@firma.de), klare Regeln für den Umgang mit Meldungen und eine zeitnahe Rückmeldung. Ohne CVD-Prozess riskieren Sie, dass Schwachstellen öffentlich werden, bevor ein Patch bereitsteht.",
+        "tooltip": "Nach Anhang I Teil II Nr. 5 CRA (EU 2024/2847) müssen Hersteller eine Strategie für die koordinierte Offenlegung von Schwachstellen aufstellen und umsetzen. Nach Nr. 6 geben sie eine Kontaktadresse für die Meldung von Schwachstellen an, die in dem Produkt entdeckt wurden.",
+        "help": "Sicherheitsforscher und Nutzer brauchen einen Weg, Schwachstellen an Sie zu melden. Der CRA verlangt eine Strategie für die koordinierte Offenlegung von Schwachstellen und eine Kontaktadresse für Meldungen (Anhang I Teil II Nr. 5 und 6), z. B. security@firma.de. Klare Regeln für den Umgang mit Meldungen und eine zügige Rückmeldung sind gute Praxis.",
         "maturity": {
           "level0": "Kein CVD-Prozess — keine Kontaktadresse für Schwachstellenmeldungen, keine Richtlinie veröffentlicht",
           "level1": "Allgemeine Kontaktadresse vorhanden — jedoch kein dedizierter Prozess, unklare Zuständigkeiten und Reaktionszeiten",
           "level2": "Dedizierte security.txt und CVD-Richtlinie veröffentlicht — definierter Prozess mit Eingangsbestätigung, Bewertung und Rückmeldung an Melder",
-          "level3": "Ausgereifter CVD-Prozess mit Bug-Bounty-Programm, PGP-verschlüsselter Kommunikation, SLA für Reaktionszeiten und Abstimmung mit CERT/CSIRT gemäß ISO/IEC 29147"
+          "level3": "Ausgereifter CVD-Prozess mit Bug-Bounty-Programm, PGP-verschlüsselter Kommunikation, SLA für Reaktionszeiten und Abstimmung mit CERT/CSIRT"
         }
       },
       "swmQ3": {
         "title": "Werden Sicherheitsupdates für behobene Schwachstellen unverzüglich und kostenlos bereitgestellt?",
-        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II CRA (EU 2024/2847) verpflichtet Hersteller, nach Bekanntwerden einer Schwachstelle unverzüglich ein Sicherheitsupdate bereitzustellen und die Nutzer darüber zu informieren.",
-        "help": "Wenn eine Schwachstelle in Ihrem Produkt identifiziert wird, müssen Sie ohne unnötigen Aufschub einen Patch oder ein Sicherheitsupdate bereitstellen. Der CRA verlangt zudem, dass Nutzer aktiv über die Schwachstelle und das verfügbare Update informiert werden. Updates müssen kostenlos und einfach installierbar sein.",
+        "tooltip": "Nach Anhang I Teil II Nr. 8 CRA (EU 2024/2847) sorgen Hersteller dafür, dass verfügbare Sicherheitsaktualisierungen unverzüglich und kostenlos verbreitet werden, zusammen mit Hinweisen und einschlägigen Informationen. „Kostenlos“ gilt nicht, wenn mit einem gewerblichen Nutzer für ein maßgeschneidertes Produkt etwas anderes vereinbart wurde.",
+        "help": "Wird eine Schwachstelle in Ihrem Produkt festgestellt, müssen Sie sie unverzüglich behandeln und beheben, unter anderem durch eine Sicherheitsaktualisierung (Anhang I Teil II Nr. 2 CRA). Die Aktualisierung ist unverzüglich und kostenlos zu verbreiten, zusammen mit Hinweisen für die Nutzer (Nr. 8); „kostenlos“ gilt nicht bei abweichender Vereinbarung mit gewerblichen Nutzern über maßgeschneiderte Produkte.",
         "maturity": {
           "level0": "Keine strukturierte Patch-Bereitstellung — Schwachstellen bleiben offen oder werden nur sporadisch behoben",
           "level1": "Patches werden erstellt, aber ohne feste Zeitvorgaben — Nutzer werden nicht systematisch informiert",
@@ -4731,7 +4731,7 @@
       },
       "sbomQ1": {
         "title": "Erstellen und pflegen Sie eine Software-Stückliste (SBOM) für Ihre Produkte?",
-        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA (EU 2024/2847) verpflichtet Hersteller, eine Software-Stückliste (SBOM) zu erstellen, die mindestens die Top-Level-Abhängigkeiten des Produkts dokumentiert.",
+        "tooltip": "Nach Anhang I Teil II Nr. 1 CRA (EU 2024/2847) müssen Hersteller Schwachstellen und Komponenten ihrer Produkte ermitteln und dokumentieren, unter anderem durch Erstellung einer Software-Stückliste in einem gängigen maschinenlesbaren Format, aus der zumindest die obersten Abhängigkeiten der Produkte hervorgehen.",
         "help": "Eine SBOM listet alle Software-Komponenten auf, die in Ihrem Produkt enthalten sind — eigene und fremde. Der CRA verlangt mindestens die Dokumentation der Top-Level-Abhängigkeiten im maschinenlesbaren Format. Die SBOM ist die Grundlage für Schwachstellenmanagement, da Sie nur schützen können, was Sie kennen.",
         "maturity": {
           "level0": "Keine SBOM vorhanden — es gibt keine Übersicht der eingesetzten Software-Komponenten und -Abhängigkeiten",
@@ -4741,20 +4741,20 @@
         }
       },
       "sbomQ2": {
-        "title": "Nutzen Sie standardisierte Formate (CycloneDX oder SPDX) für Ihre Software-Stücklisten?",
-        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA (EU 2024/2847) verweist auf maschinenlesbare Formate. Die gängigen Standards sind CycloneDX (OWASP) und SPDX (Linux Foundation), die von NTIA Minimum Elements abgedeckt werden.",
+        "title": "Nutzen Sie für Ihre Software-Stücklisten ein gängiges maschinenlesbares Format (z. B. CycloneDX oder SPDX)?",
+        "tooltip": "Anhang I Teil II Nr. 1 CRA (EU 2024/2847) verlangt die Software-Stückliste „in einem gängigen maschinenlesbaren Format“. Ein bestimmtes Format nennt die Verordnung nicht; CycloneDX und SPDX sind verbreitete Beispiele.",
         "help": "Maschinenlesbare SBOM-Formate ermöglichen die automatisierte Auswertung: Schwachstellen-Abgleich gegen CVE-Datenbanken, Lizenzklärung und Compliance-Prüfung. CycloneDX und SPDX sind die etablierten Standards. Ohne standardisiertes Format ist Ihre SBOM nur ein Dokument — mit Standardformat wird sie zum Sicherheitswerkzeug.",
         "maturity": {
           "level0": "Kein standardisiertes Format — SBOM existiert höchstens als informelle Textdatei oder Tabellendokument",
           "level1": "Einzelne Projekte nutzen standardisierte Formate — jedoch keine einheitliche Vorgabe über alle Produkte hinweg",
-          "level2": "Einheitliche Nutzung von CycloneDX oder SPDX für alle Produkte — Format-Validierung im Build-Prozess, NTIA Minimum Elements eingehalten",
+          "level2": "Einheitliche Nutzung von CycloneDX oder SPDX für alle Produkte — Format-Validierung im Build-Prozess",
           "level3": "Vollständig automatisierte SBOM-Generierung im Standardformat mit Versionierung, Signierung und automatischem CVE-Abgleich gegen NVD/OSV-Datenbanken"
         }
       },
       "sbomQ3": {
         "title": "Werden Ihre SBOMs bei Änderungen an den Produktkomponenten aktuell gehalten?",
-        "tooltip": "Art. 13 Abs. 8 i.V.m. Anhang I Teil II Nr. 1 CRA (EU 2024/2847) impliziert eine laufende Pflege der SBOM, da der Hersteller Schwachstellen in eingesetzten Komponenten überwachen muss. Die NTIA Minimum Elements fordern Zeitstempel und Versionierung.",
-        "help": "Eine SBOM ist nur so wertvoll wie ihre Aktualität. Bei jedem Release, jedem Dependency-Update und jedem Patch muss die SBOM aktualisiert werden. Nur so können Sie bei Bekanntwerden einer neuen CVE prüfen, ob Ihre Produkte betroffen sind. Veraltete SBOMs sind ein Compliance-Risiko.",
+        "tooltip": "Nach Art. 13 Abs. 8 CRA (EU 2024/2847) sind Schwachstellen des Produkts einschließlich seiner Komponenten während des Unterstützungszeitraums wirksam zu behandeln; Anhang I Teil II Nr. 1 verlangt, die Komponenten zu ermitteln und zu dokumentieren. Eine eigene Vorschrift zur Aktualisierung der Stückliste enthält die Verordnung nicht; ohne aktuelle Stückliste lassen sich Schwachstellen in Komponenten aber nicht zuordnen.",
+        "help": "Eine Software-Stückliste ist nur so gut wie ihr Stand. Aktualisieren Sie sie bei jedem Release, jedem Dependency-Update und jedem Patch, am besten automatisch im Build-Prozess. Der CRA nennt dafür keinen Turnus; ohne aktuelle Stückliste können Sie Schwachstellen in Komponenten aber nicht zuordnen.",
         "maturity": {
           "level0": "SBOM wird nicht aktualisiert — einmalig oder gar nicht erstellt, keine Nachpflege bei Änderungen",
           "level1": "SBOM wird manuell und unregelmäßig aktualisiert — größere Releases werden erfasst, kleinere Patches nicht",
@@ -4764,19 +4764,19 @@
       },
       "umQ1": {
         "title": "Verfügen Ihre Produkte über einen sicheren Mechanismus für automatische Sicherheitsupdates?",
-        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verpflichtet Hersteller, Sicherheitsupdates über einen sicheren Update-Mechanismus bereitzustellen. ETSI EN 303 645 Abschnitt 5.3 konkretisiert die Anforderungen an sichere Update-Verfahren.",
-        "help": "Der CRA verlangt, dass Produkte über einen sicheren Mechanismus aktualisiert werden können. Der Update-Kanal muss gegen Manipulation geschützt sein (z.B. durch signierte Firmware), Updates müssen verifiziert werden und der Nutzer muss über verfügbare Updates informiert werden. Automatische Updates sind bevorzugt, müssen aber vom Nutzer konfigurierbar sein.",
+        "tooltip": "Nach Anhang I Teil II Nr. 7 CRA (EU 2024/2847) stellen Hersteller Mechanismen für die sichere Verbreitung von Aktualisierungen bereit, damit Schwachstellen rechtzeitig und bei Sicherheitsaktualisierungen gegebenenfalls automatisch behoben oder eingedämmt werden. Nach Anhang I Teil I Nr. 2 lit. c werden automatische Sicherheitsaktualisierungen, wo zutreffend, als Standardeinstellung installiert, mit einem klaren und benutzerfreundlichen Opt-out-Mechanismus.",
+        "help": "Der CRA verlangt Mechanismen für die sichere Verbreitung von Aktualisierungen (Anhang I Teil II Nr. 7). Automatische Sicherheitsaktualisierungen sollen, wo zutreffend, Standardeinstellung sein; Nutzer müssen sie über einen klaren Opt-out-Mechanismus abschalten können, werden über verfügbare Aktualisierungen informiert und können sie vorübergehend verschieben (Anhang I Teil I Nr. 2 lit. c). Signierte Updates und eine Integritätsprüfung sind übliche technische Mittel dafür.",
         "maturity": {
           "level0": "Kein Update-Mechanismus vorhanden — Produkte können nicht oder nur manuell per physischem Zugriff aktualisiert werden",
           "level1": "Einfacher Update-Mechanismus ohne Integritätsprüfung — Updates müssen manuell heruntergeladen und installiert werden",
           "level2": "Sicherer OTA-Update-Mechanismus mit kryptographischer Signaturprüfung — automatische Benachrichtigung über neue Updates, Rollback-Fähigkeit",
-          "level3": "Vollautomatischer, signierter Update-Mechanismus mit Delta-Updates, A/B-Partitionierung, Integritätsprüfung und Nutzer-Benachrichtigung gemäß ETSI EN 303 645"
+          "level3": "Vollautomatischer, signierter Update-Mechanismus mit Delta-Updates, A/B-Partitionierung, Integritätsprüfung und Nutzer-Benachrichtigung"
         }
       },
       "umQ2": {
         "title": "Werden Sicherheitsupdates getrennt von Funktionsupdates bereitgestellt?",
-        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) betont die separate Bereitstellung von Sicherheitsupdates. Nach Anhang I Teil II Nr. 8 sind Sicherheitsupdates nach Möglichkeit getrennt von Funktionsupdates bereitzustellen.",
-        "help": "Nutzer zögern häufig, größere Funktionsupdates zu installieren, weil sie Kompatibilitätsprobleme befürchten. Wenn Sicherheitspatches nur als Teil großer Updates verfügbar sind, bleiben kritische Lücken offen. Der CRA fordert daher, dass reine Sicherheitsupdates separat und zeitnah bereitgestellt werden.",
+        "tooltip": "Anhang I Teil II Nr. 2 CRA (EU 2024/2847): Soweit technisch machbar, müssen neue Sicherheitsaktualisierungen getrennt von den Funktionsaktualisierungen bereitgestellt werden.",
+        "help": "Wer Sicherheitsupdates mit neuen Funktionen bündelt, zwingt Nutzer, beides zusammen zu nehmen — viele warten dann ab. Der CRA verlangt deshalb, neue Sicherheitsaktualisierungen getrennt von Funktionsaktualisierungen bereitzustellen, soweit das technisch machbar ist (Anhang I Teil II Nr. 2).",
         "maturity": {
           "level0": "Keine Trennung — Sicherheitspatches werden nur zusammen mit Funktionsupdates ausgeliefert oder gar nicht bereitgestellt",
           "level1": "Sicherheitsupdates werden gelegentlich separat bereitgestellt — kein definierter Prozess, abhängig vom Einzelfall",
@@ -4786,8 +4786,8 @@
       },
       "umQ3": {
         "title": "Dokumentieren Sie Änderungen aus Sicherheitsupdates transparent für die Nutzer?",
-        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verlangt, dass Nutzer über behobene Schwachstellen und die Auswirkungen von Sicherheitsupdates informiert werden. ETSI EN 303 645 Abschnitt 5.3 fordert verständliche Sicherheitsinformationen.",
-        "help": "Nutzer müssen verstehen, warum ein Update wichtig ist und welche Schwachstellen es behebt. Der CRA verlangt transparente Kommunikation über Sicherheitsupdates — einschließlich CVE-Referenzen, Schweregrad und betroffener Funktionen. Nur so können Nutzer fundierte Entscheidungen über die Installation treffen.",
+        "tooltip": "Nach Anhang I Teil II Nr. 4 CRA (EU 2024/2847) teilen und veröffentlichen Hersteller, sobald eine Sicherheitsaktualisierung bereitgestellt ist, Informationen über beseitigte Schwachstellen: eine Beschreibung der Schwachstellen, Angaben zum betroffenen Produkt, zu Auswirkungen und Schwere sowie eindeutige und verständliche Informationen, die den Nutzern helfen, die Schwachstellen zu beheben. In hinreichend begründeten Fällen darf die Veröffentlichung aufgeschoben werden.",
+        "help": "Nutzer sollen verstehen, warum ein Update wichtig ist und welche Schwachstellen es behebt. Nach Anhang I Teil II Nr. 4 CRA veröffentlichen Sie zu beseitigten Schwachstellen eine Beschreibung mit Angaben zum betroffenen Produkt, zu Auswirkungen und Schwere sowie verständliche Hinweise zur Behebung. CVE-Kennungen sind dafür üblich; die Verordnung nennt sie an dieser Stelle nicht.",
         "maturity": {
           "level0": "Keine Dokumentation — Updates werden ohne Beschreibung der Änderungen bereitgestellt",
           "level1": "Generische Release Notes ohne Sicherheitsdetails — keine CVE-Referenzen, kein Schweregrad angegeben",
@@ -4797,7 +4797,7 @@
       },
       "dokQ1": {
         "title": "Verfügen Sie über eine vollständige technische Dokumentation Ihrer Produkte gemäß Anhang VII CRA?",
-        "tooltip": "Art. 31 CRA (EU 2024/2847) i.V.m. Anhang VII listet die erforderlichen Elemente der technischen Dokumentation auf, darunter Produktbeschreibung, Risikoanalyse, Sicherheitsarchitektur und Testberichte.",
+        "tooltip": "Nach Art. 31 Abs. 1 CRA (EU 2024/2847) enthält die technische Dokumentation zumindest die in Anhang VII genannten Angaben, darunter eine allgemeine Beschreibung des Produkts, eine Beschreibung von Konzeption, Entwicklung und Herstellung sowie der Verfahren zur Behandlung von Schwachstellen, die Bewertung der Cybersicherheitsrisiken und Berichte über die durchgeführten Tests und Prüfungen.",
         "help": "Die technische Dokumentation ist die zentrale Grundlage für die Konformitätsbewertung. Anhang VII CRA listet alle erforderlichen Elemente auf: Allgemeine Produktbeschreibung, Entwurfs- und Entwicklungsinformationen, Cybersicherheits-Risikobewertung, angewandte harmonisierte Normen und Prüfergebnisse. Ohne vollständige Dokumentation ist keine CE-Kennzeichnung möglich.",
         "maturity": {
           "level0": "Keine technische Dokumentation nach CRA-Anforderungen vorhanden",
@@ -4808,7 +4808,7 @@
       },
       "dokQ2": {
         "title": "Führen Sie eine dokumentierte Cybersicherheits-Risikobewertung für Ihre Produkte durch?",
-        "tooltip": "Anhang VII CRA (EU 2024/2847) verlangt eine Beschreibung der Cybersicherheits-Risikobewertung. Die Risikobewertung muss während der Entwurfs- und Entwicklungsphase durchgeführt und während des Supportzeitraums aktualisiert werden.",
+        "tooltip": "Nach Art. 13 Abs. 2 CRA (EU 2024/2847) führen Hersteller eine Bewertung der Cybersicherheitsrisiken durch und berücksichtigen das Ergebnis in der Planungs-, Konzeptions-, Entwicklungs-, Herstellungs-, Liefer- und Wartungsphase. Nach Abs. 3 wird die Bewertung während des Unterstützungszeitraums dokumentiert und gegebenenfalls aktualisiert. Sie gehört nach Anhang VII Nr. 3 zur technischen Dokumentation.",
         "help": "Die Cybersicherheits-Risikobewertung ist ein Kernbestandteil der CRA-Dokumentation. Sie müssen systematisch identifizieren, welche Bedrohungen auf Ihr Produkt einwirken können, wie wahrscheinlich ein Angriff ist und welche Auswirkungen er hätte. Diese Bewertung bestimmt, welche Sicherheitsmaßnahmen aus Anhang I anzuwenden sind.",
         "maturity": {
           "level0": "Keine Cybersicherheits-Risikobewertung durchgeführt",
@@ -4819,7 +4819,7 @@
       },
       "dokQ3": {
         "title": "Stellen Sie den Nutzern Ihrer Produkte verständliche Sicherheitsinformationen bereit?",
-        "tooltip": "Anhang II CRA (EU 2024/2847) fordert Informationen und Anleitungen für den Nutzer zur sicheren Installation, Konfiguration und Nutzung des Produkts.",
+        "tooltip": "Nach Art. 13 Abs. 18 CRA (EU 2024/2847) sind den Produkten die in Anhang II genannten Informationen und Anleitungen für den Nutzer in Papierform oder elektronischer Form beizufügen. Sie müssen klar, verständlich, deutlich und lesbar sein und die sichere Installation, den sicheren Betrieb und die sichere Verwendung ermöglichen.",
         "help": "Neben der technischen Dokumentation für Behörden verlangt der CRA auch nutzergerichtete Sicherheitsinformationen. Dazu gehören Anleitungen zur sicheren Erstkonfiguration, Informationen über bekannte Risiken, Hinweise zum sicheren Betrieb und Kontaktdaten für Schwachstellenmeldungen. Diese Informationen müssen verständlich und leicht zugänglich sein.",
         "maturity": {
           "level0": "Keine nutzergerichteten Sicherheitsinformationen — weder Anleitung zur sicheren Konfiguration noch Hinweise zu bekannten Risiken",
@@ -4829,19 +4829,19 @@
         }
       },
       "vmQ1": {
-        "title": "Haben Sie einen Prozess zur Meldung aktiv ausgenutzter Schwachstellen an die ENISA eingerichtet?",
-        "tooltip": "Art. 14 Abs. 1 CRA (EU 2024/2847) verpflichtet Hersteller, aktiv ausgenutzte Schwachstellen innerhalb von 24 Stunden über die zentrale Meldeplattform zu melden – gleichzeitig an das zuständige CSIRT (in Deutschland das BSI) und die ENISA. Die Frühwarnung muss grundlegende Informationen zur Schwachstelle enthalten.",
-        "help": "Der CRA führt strenge Meldepflichten ein: Wenn eine Schwachstelle in Ihrem Produkt aktiv ausgenutzt wird, müssen Sie innerhalb von 24 Stunden eine Frühwarnung über die zentrale Meldeplattform an CSIRT (BSI) und ENISA senden. Innerhalb von 72 Stunden folgt eine detaillierte Meldung, und spätestens 14 Tage nach Bereitstellung einer Abhilfemaßnahme ein Abschlussbericht.",
+        "title": "Haben Sie einen Prozess zur Meldung aktiv ausgenutzter Schwachstellen an das CSIRT und die ENISA eingerichtet?",
+        "tooltip": "Nach Art. 14 Abs. 1 CRA (EU 2024/2847) meldet ein Hersteller jede aktiv ausgenutzte Schwachstelle, von der er Kenntnis erlangt, gleichzeitig dem als Koordinator benannten CSIRT und der ENISA, und zwar über die einheitliche Meldeplattform nach Art. 16. Die Frühwarnung ist unverzüglich, in jedem Fall innerhalb von 24 Stunden nach Kenntniserlangung vorzulegen (Abs. 2 lit. a).",
+        "help": "Wird eine Schwachstelle in Ihrem Produkt aktiv ausgenutzt, melden Sie das über die einheitliche Meldeplattform gleichzeitig dem als Koordinator benannten CSIRT und der ENISA: unverzüglich, in jedem Fall innerhalb von 24 Stunden nach Kenntniserlangung, eine Frühwarnung; innerhalb von 72 Stunden die Meldung der Schwachstelle; spätestens 14 Tage, nachdem eine Korrektur- oder Risikominderungsmaßnahme zur Verfügung steht, den Abschlussbericht (Art. 14 Abs. 1 und 2 CRA).",
         "maturity": {
           "level0": "Kein Meldeprozess vorhanden — keine Kenntnis der Meldepflichten nach Art. 14 CRA",
           "level1": "Bewusstsein für Meldepflichten vorhanden — jedoch kein definierter Prozess, keine Verantwortlichkeiten festgelegt",
           "level2": "Dokumentierter Meldeprozess mit Verantwortlichkeiten, Eskalationskette und Vorlagen für die 24h-Frühwarnung und 72h-Detailmeldung an die ENISA",
-          "level3": "Eingeübter Meldeprozess mit regelmäßigen Übungen, automatisierter Erkennung aktiv ausgenutzter Schwachstellen und direkter Anbindung an die ENISA-Meldeplattform"
+          "level3": "Eingeübter Meldeprozess mit regelmäßigen Übungen, automatisierter Erkennung aktiv ausgenutzter Schwachstellen und direkter Anbindung an die einheitliche Meldeplattform"
         }
       },
       "vmQ2": {
         "title": "Können Sie die vorgeschriebenen Meldefristen (24h Frühwarnung, 72h Detailmeldung) einhalten?",
-        "tooltip": "Art. 14 Abs. 2 CRA (EU 2024/2847) definiert die gestaffelten Meldefristen: 24 Stunden für die Frühwarnung, 72 Stunden für die detaillierte Meldung und 14 Tage für den Abschlussbericht nach Bereitstellung einer Abhilfemaßnahme.",
+        "tooltip": "Art. 14 Abs. 2 CRA (EU 2024/2847) staffelt die Meldungen: Frühwarnung unverzüglich, in jedem Fall innerhalb von 24 Stunden nach Kenntniserlangung; Meldung der Schwachstelle innerhalb von 72 Stunden nach Kenntniserlangung; Abschlussbericht spätestens 14 Tage, nachdem eine Korrektur- oder Risikominderungsmaßnahme zur Verfügung steht.",
         "help": "Die Meldefristen des CRA sind anspruchsvoll: Innerhalb von 24 Stunden müssen Sie grundlegende Informationen übermitteln, innerhalb von 72 Stunden eine detaillierte Bewertung. Dies erfordert klare interne Eskalationswege, Bereitschaftspersonal und vorbereitete Meldevorlagen. Ohne Vorbereitung sind diese Fristen kaum einzuhalten.",
         "maturity": {
           "level0": "Keine Fähigkeit zur fristgerechten Meldung — weder Bereitschaftspersonal noch vorbereitete Prozesse",
@@ -4852,8 +4852,8 @@
       },
       "vmQ3": {
         "title": "Informieren Sie betroffene Nutzer zeitnah über schwerwiegende Sicherheitsvorfälle und erforderliche Maßnahmen?",
-        "tooltip": "Art. 14 Abs. 3 CRA (EU 2024/2847) verlangt, dass Hersteller betroffene Nutzer über aktiv ausgenutzte Schwachstellen und empfohlene Abhilfemaßnahmen informieren — insbesondere wenn noch kein Patch verfügbar ist.",
-        "help": "Neben der Meldung an die ENISA müssen Sie auch Ihre Nutzer informieren. Der CRA verlangt, dass Sie betroffene Nutzer über aktiv ausgenutzte Schwachstellen und mögliche Workarounds unterrichten. Diese Benachrichtigung muss zeitnah, verständlich und handlungsorientiert sein.",
+        "tooltip": "Nach Art. 14 Abs. 8 CRA (EU 2024/2847) informiert der Hersteller, nachdem er Kenntnis von einer aktiv ausgenutzten Schwachstelle oder einem schwerwiegenden Sicherheitsvorfall erlangt hat, die betroffenen Nutzer und gegebenenfalls alle Nutzer darüber und erforderlichenfalls über Risikominderungs- und Korrekturmaßnahmen, die sie ergreifen können.",
+        "help": "Neben der Meldung an CSIRT und ENISA informieren Sie auch Ihre Nutzer: über die aktiv ausgenutzte Schwachstelle oder den schwerwiegenden Sicherheitsvorfall und, wo nötig, über Maßnahmen, die sie selbst ergreifen können (Art. 14 Abs. 8 CRA). Informieren Sie nicht rechtzeitig, kann das CSIRT die Nutzer selbst unterrichten. Die Benachrichtigung sollte verständlich und handlungsorientiert sein.",
         "maturity": {
           "level0": "Keine Nutzerbenachrichtigung — Nutzer erfahren nicht von Sicherheitsvorfällen, die ihre Produkte betreffen",
           "level1": "Gelegentliche Information über allgemeine Kanäle — keine gezielte Benachrichtigung betroffener Nutzer, keine Handlungsempfehlungen",
@@ -4863,8 +4863,8 @@
       },
       "konfQ1": {
         "title": "Haben Sie das für Ihr Produkt zutreffende Konformitätsbewertungsverfahren nach Art. 32 CRA bestimmt?",
-        "tooltip": "Art. 32 CRA (EU 2024/2847) definiert die Konformitätsbewertungsverfahren je nach Produktkategorie: Modul A (Selbstbewertung) für Standardprodukte, Modul B+C oder H für wichtige/kritische Produkte (Anhang III/IV).",
-        "help": "Welches Konformitätsbewertungsverfahren Sie durchlaufen müssen, hängt von der Einstufung Ihres Produkts ab: Standardprodukte können eine interne Fertigungskontrolle (Modul A) durchführen. Wichtige Produkte der Klasse I können Modul A nutzen, wenn harmonisierte Normen angewendet werden. Klasse II und kritische Produkte benötigen eine Drittanbieterbewertung.",
+        "tooltip": "Art. 32 CRA (EU 2024/2847) nennt die Verfahren: internes Kontrollverfahren (Modul A), EU-Baumusterprüfung mit anschließender interner Fertigungskontrolle (Module B und C), umfassende Qualitätssicherung (Modul H) oder ein europäisches Schema für die Cybersicherheitszertifizierung. Für wichtige Produkte der Klasse II (Anhang III) scheidet Modul A aus (Abs. 3); für Klasse I nur dann nicht, wenn harmonisierte Normen, gemeinsame Spezifikationen oder Zertifizierungsschemata angewandt werden (Abs. 2). Für kritische Produkte (Anhang IV) gilt Abs. 4.",
+        "help": "Welches Konformitätsbewertungsverfahren gilt, hängt von der Einstufung Ihres Produkts ab (Art. 32 CRA). Grundsätzlich stehen das interne Kontrollverfahren (Modul A), die EU-Baumusterprüfung mit interner Fertigungskontrolle (Module B und C), die umfassende Qualitätssicherung (Modul H) und europäische Zertifizierungsschemata zur Wahl. Wichtige Produkte der Klasse I können Modul A nur nutzen, soweit sie harmonisierte Normen, gemeinsame Spezifikationen oder Zertifizierungsschemata anwenden. Für Klasse II scheidet Modul A aus. Für kritische Produkte gilt ein Zertifizierungsschema nach Art. 8 Abs. 1 oder, wenn dessen Bedingungen nicht erfüllt sind, eines der Verfahren für Klasse II.",
         "maturity": {
           "level0": "Keine Kenntnis des zutreffenden Verfahrens — Produktklassifizierung nach CRA Anhang III/IV nicht durchgeführt",
           "level1": "Produktklassifizierung erfolgt — das zutreffende Modul ist grundsätzlich bekannt, aber die konkreten Anforderungen sind nicht im Detail analysiert",
@@ -4874,7 +4874,7 @@
       },
       "konfQ2": {
         "title": "Wenden Sie die einschlägigen harmonisierten europäischen Normen (hEN) für Ihr Konformitätsverfahren an?",
-        "tooltip": "Art. 27 CRA (EU 2024/2847): Die Anwendung harmonisierter Normen, deren Fundstellen im Amtsblatt veröffentlicht sind, begründet eine Konformitätsvermutung. Die CRA-Normen entstehen aus dem Normungsauftrag M/606 bei CEN, CENELEC und ETSI. Die EN-18031-Reihe gehört zur Funkanlagenrichtlinie (RED), nicht zum CRA.",
+        "tooltip": "Art. 27 Abs. 1 CRA (EU 2024/2847): Bei Produkten und vom Hersteller festgelegten Verfahren, die mit harmonisierten Normen oder Teilen davon übereinstimmen, deren Fundstellen im Amtsblatt der Europäischen Union veröffentlicht worden sind, wird die Konformität mit den von diesen Normen abgedeckten grundlegenden Cybersicherheitsanforderungen vermutet.",
         "help": "Harmonisierte europäische Normen (hEN) konkretisieren die Anforderungen des CRA. Sobald ihre Fundstellen im Amtsblatt veröffentlicht sind, greift bei ihrer Anwendung die Konformitätsvermutung. Für wichtige Produkte der Klasse I ist das besonders relevant, weil die Selbstbewertung dann möglich ist. Bis dahin helfen etablierte Normen wie ETSI EN 303 645 oder IEC 62443-4-1 bei der Orientierung.",
         "maturity": {
           "level0": "Keine harmonisierten Normen bekannt oder angewendet",
@@ -4885,8 +4885,8 @@
       },
       "konfQ3": {
         "title": "Haben Sie die EU-Konformitätserklärung ausgestellt und die CE-Kennzeichnung angebracht?",
-        "tooltip": "Nach erfolgreichem Abschluss des Konformitätsbewertungsverfahrens müssen Hersteller die EU-Konformitätserklärung ausstellen (Art. 13 Abs. 12, Art. 28 CRA) und die CE-Kennzeichnung anbringen (Art. 30 CRA).",
-        "help": "Die CE-Kennzeichnung ist das sichtbare Zeichen der CRA-Konformität. Vor dem Anbringen müssen Sie das jeweilige Konformitätsbewertungsverfahren erfolgreich durchlaufen und eine EU-Konformitätserklärung nach dem Muster in Anhang V erstellen. Die Erklärung muss stets aktuell gehalten und der Marktüberwachungsbehörde auf Verlangen vorgelegt werden können.",
+        "tooltip": "Nach Art. 13 Abs. 12 CRA (EU 2024/2847) stellen Hersteller, wenn das Konformitätsbewertungsverfahren die Erfüllung der Anforderungen nachgewiesen hat, die EU-Konformitätserklärung gemäß Art. 28 aus und bringen die CE-Kennzeichnung gemäß Art. 30 an. Die CE-Kennzeichnung ist gut sichtbar, leserlich und dauerhaft anzubringen (Art. 30 Abs. 1).",
+        "help": "Die CE-Kennzeichnung ist das sichtbare Zeichen der CRA-Konformität. Vor dem Anbringen müssen Sie das jeweilige Konformitätsbewertungsverfahren erfolgreich durchlaufen und eine EU-Konformitätserklärung nach dem Muster in Anhang V erstellen. Die Erklärung wird nach Bedarf aktualisiert (Art. 28 Abs. 2 CRA). Technische Dokumentation und Erklärung bewahren Sie mindestens zehn Jahre nach dem Inverkehrbringen oder für die Dauer des Unterstützungszeitraums für die Marktüberwachungsbehörden auf, je nachdem, welcher Zeitraum länger ist (Art. 13 Abs. 13 CRA).",
         "maturity": {
           "level0": "Keine CE-Kennzeichnung und keine Konformitätserklärung für CRA vorhanden",
           "level1": "CE-Kennzeichnung und/oder Konformitätserklärung in Vorbereitung — Verfahren läuft, aber noch nicht abgeschlossen",
@@ -4896,8 +4896,8 @@
       },
       "slQ1": {
         "title": "Haben Sie den Supportzeitraum für Sicherheitsupdates Ihrer Produkte definiert und kommuniziert?",
-        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verpflichtet Hersteller, den Supportzeitraum festzulegen und zu kommunizieren. Der Mindestzeitraum beträgt 5 Jahre oder die erwartete Produktlebensdauer — je nachdem, welcher Zeitraum kürzer ist.",
-        "help": "Der CRA verlangt, dass Sie für jedes Produkt den Zeitraum festlegen, in dem Sie Sicherheitsupdates bereitstellen. Dieser Supportzeitraum muss mindestens 5 Jahre betragen oder der erwarteten Produktlebensdauer entsprechen. Der Zeitraum muss klar kommuniziert und auf der Verpackung/Website angegeben werden.",
+        "tooltip": "Nach Art. 13 Abs. 8 CRA (EU 2024/2847) legen Hersteller den Unterstützungszeitraum so fest, dass er die Dauer der voraussichtlichen Nutzung des Produkts widerspiegelt. Er beträgt mindestens fünf Jahre; wird das Produkt voraussichtlich weniger als fünf Jahre betrieben, muss er der voraussichtlichen Nutzungsdauer entsprechen. Das Enddatum des Unterstützungszeitraums gehört zu den Nutzerinformationen nach Anhang II.",
+        "help": "Der CRA verlangt, dass Sie für jedes Produkt den Unterstützungszeitraum festlegen. Er beträgt mindestens fünf Jahre; wird das Produkt voraussichtlich kürzer betrieben, entspricht er der voraussichtlichen Nutzungsdauer (Art. 13 Abs. 8). Das Enddatum ist zum Zeitpunkt des Kaufs leicht zugänglich anzugeben — sofern zutreffend auf dem Produkt, seiner Verpackung oder mit digitalen Mitteln — und nennt mindestens Monat und Jahr (Art. 13 Abs. 19).",
         "maturity": {
           "level0": "Kein Supportzeitraum definiert — Nutzer wissen nicht, wie lange sie mit Sicherheitsupdates rechnen können",
           "level1": "Informeller Supportzeitraum — intern grob geschätzt, aber nicht öffentlich kommuniziert oder dokumentiert",
@@ -4907,7 +4907,7 @@
       },
       "slQ2": {
         "title": "Gewährleisten Sie die Bereitstellung von Sicherheitsupdates über den gesamten Supportzeitraum?",
-        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) verpflichtet Hersteller, während des gesamten Supportzeitraums Sicherheitsupdates bereitzustellen.",
+        "tooltip": "Nach Art. 13 Abs. 8 CRA (EU 2024/2847) sind Schwachstellen während des Unterstützungszeitraums wirksam zu behandeln, unter anderem durch Sicherheitsaktualisierungen (Anhang I Teil II Nr. 2). Nach Abs. 9 bleibt jede bereitgestellte Sicherheitsaktualisierung mindestens zehn Jahre oder für die verbleibende Dauer des Unterstützungszeitraums verfügbar, je nachdem, welcher Zeitraum länger ist.",
         "help": "Die Verpflichtung zur Update-Bereitstellung endet nicht nach dem ersten Produktjahr. Über den gesamten Supportzeitraum müssen Sie in der Lage sein, Schwachstellen zu beheben und Updates zu verteilen. Dies erfordert langfristige Planung: Infrastruktur, Build-Systeme und Testumgebungen müssen auch Jahre nach dem Erstrelease verfügbar sein.",
         "maturity": {
           "level0": "Keine langfristige Update-Fähigkeit — nach initialem Release keine Ressourcen für Sicherheitspatches eingeplant",
@@ -4918,7 +4918,7 @@
       },
       "slQ3": {
         "title": "Berücksichtigen Sie Cybersicherheitsanforderungen an Drittkomponenten und Lieferketten in Ihrem Produktlebenszyklus?",
-        "tooltip": "Art. 13 Abs. 8 CRA (EU 2024/2847) erstreckt sich auch auf Drittkomponenten. IEC 62443-4-1 und ETSI EN 303 645 enthalten Anforderungen an das Supply-Chain-Sicherheitsmanagement für Produkte mit digitalen Elementen.",
+        "tooltip": "Nach Art. 13 Abs. 5 CRA (EU 2024/2847) lassen Hersteller die gebotene Sorgfalt walten, wenn sie von Dritten bezogene Komponenten integrieren, sodass diese die Cybersicherheit des Produkts nicht beeinträchtigen; das gilt auch für freie und quelloffene Software. Nach Abs. 6 melden sie eine in einer Komponente festgestellte Schwachstelle der Person oder Einrichtung, die die Komponente herstellt oder wartet.",
         "help": "Ihr Produkt ist nur so sicher wie seine schwächste Komponente. Der CRA verlangt, dass Sie auch die Sicherheit von Drittkomponenten (öffentliche Bibliotheken, zugekaufte Module, Firmware von Zulieferern) überwachen und bei Schwachstellen reagieren. Dies erfordert vertragliche Vereinbarungen mit Zulieferern und kontinuierliches Monitoring.",
         "maturity": {
           "level0": "Keine Berücksichtigung von Drittkomponenten — Sicherheit der Lieferkette wird nicht betrachtet",
