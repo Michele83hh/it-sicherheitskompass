@@ -28,8 +28,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'nist-csf.questions.gvQ1.tooltip',
     helpKey: 'nist-csf.questions.gvQ1.help',
     legalReference: {
-      nistFunction: 'NIST CSF 2.0 GV.OC',
-      nistCategory: 'GV.OC-01, GV.OC-02',
+      nistFunction: 'NIST CSF 2.0 GV.RM',
+      nistCategory: 'GV.RM-01, GV.RM-02',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.gvQ1.maturity.level0',
@@ -46,8 +46,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'nist-csf.questions.gvQ2.tooltip',
     helpKey: 'nist-csf.questions.gvQ2.help',
     legalReference: {
-      nistFunction: 'NIST CSF 2.0 GV.RM',
-      nistCategory: 'GV.RM-01, GV.RM-02, GV.RM-03',
+      nistFunction: 'NIST CSF 2.0 GV.RR',
+      nistCategory: 'GV.RR-02',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.gvQ2.maturity.level0',
@@ -64,8 +64,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'nist-csf.questions.gvQ3.tooltip',
     helpKey: 'nist-csf.questions.gvQ3.help',
     legalReference: {
-      nistFunction: 'NIST CSF 2.0 GV.RR',
-      nistCategory: 'GV.RR-01, GV.RR-02, GV.RR-03',
+      nistFunction: 'NIST CSF 2.0 GV.OV',
+      nistCategory: 'GV.OV-01, GV.OV-03',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.gvQ3.maturity.level0',
@@ -105,7 +105,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'nist-csf.questions.idQ2.help',
     legalReference: {
       nistFunction: 'NIST CSF 2.0 ID.RA',
-      nistCategory: 'ID.RA-01, ID.RA-02, ID.RA-03',
+      nistCategory: 'ID.RA-01, ID.RA-03, ID.RA-04, ID.RA-05',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.idQ2.maturity.level0',
@@ -122,8 +122,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'nist-csf.questions.idQ3.tooltip',
     helpKey: 'nist-csf.questions.idQ3.help',
     legalReference: {
-      nistFunction: 'NIST CSF 2.0 ID.IM',
-      nistCategory: 'ID.IM-01, ID.IM-02, ID.IM-03',
+      nistFunction: 'NIST CSF 2.0 GV.SC',
+      nistCategory: 'GV.SC-03, GV.SC-04, GV.SC-07',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.idQ3.maturity.level0',
@@ -145,7 +145,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'nist-csf.questions.prQ1.help',
     legalReference: {
       nistFunction: 'NIST CSF 2.0 PR.AA',
-      nistCategory: 'PR.AA-01, PR.AA-02, PR.AA-03',
+      nistCategory: 'PR.AA-01, PR.AA-03, PR.AA-05',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.prQ1.maturity.level0',
@@ -238,8 +238,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'nist-csf.questions.deQ3.tooltip',
     helpKey: 'nist-csf.questions.deQ3.help',
     legalReference: {
-      nistFunction: 'NIST CSF 2.0 DE.CM',
-      nistCategory: 'DE.CM-06, DE.CM-09',
+      nistFunction: 'NIST CSF 2.0 ID.IM',
+      nistCategory: 'ID.IM-01, ID.IM-02, ID.IM-03',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.deQ3.maturity.level0',
@@ -261,7 +261,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'nist-csf.questions.rsQ1.help',
     legalReference: {
       nistFunction: 'NIST CSF 2.0 RS.MA',
-      nistCategory: 'RS.MA-01, RS.MA-02, RS.MA-03',
+      nistCategory: 'RS.MA-01, ID.IM-02, ID.IM-04',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.rsQ1.maturity.level0',
@@ -297,7 +297,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'nist-csf.questions.rsQ3.help',
     legalReference: {
       nistFunction: 'NIST CSF 2.0 RS.AN',
-      nistCategory: 'RS.AN-03, RS.AN-06, RS.AN-07',
+      nistCategory: 'RS.AN-03, RS.AN-06, ID.IM-03',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.rsQ3.maturity.level0',
@@ -336,8 +336,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'nist-csf.questions.rcQ2.tooltip',
     helpKey: 'nist-csf.questions.rcQ2.help',
     legalReference: {
-      nistFunction: 'NIST CSF 2.0 RC.RP',
-      nistCategory: 'RC.RP-04, RC.RP-05, RC.RP-06',
+      nistFunction: 'NIST CSF 2.0 ID.IM',
+      nistCategory: 'ID.IM-02, ID.IM-04',
     },
     maturityDescriptions: {
       level0Key: 'nist-csf.questions.rcQ2.maturity.level0',

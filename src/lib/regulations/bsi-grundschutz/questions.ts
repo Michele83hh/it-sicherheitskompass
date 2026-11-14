@@ -24,8 +24,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.ismsQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.ismsQ1.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-1 Kap. 7',
-      bsigParagraph: 'ISMS.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'ISMS.1.A1 Übernahme der Gesamtverantwortung für Informationssicherheit',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.ismsQ1.maturity.level0',
@@ -42,8 +42,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.ismsQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.ismsQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-1 Kap. 7.3',
-      bsigParagraph: 'ISMS.1.A3',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'ISMS.1.A3 Erstellung einer Leitlinie zur Informationssicherheit',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.ismsQ2.maturity.level0',
@@ -60,8 +60,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.ismsQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.ismsQ3.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-3 Kap. 4',
-      bsigParagraph: 'ISMS.1.A7',
+      euArticle: 'BSI-Standard 200-3 (Risikomanagement)',
+      bsigParagraph: 'ISMS.1 Sicherheitsmanagement',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.ismsQ3.maturity.level0',
@@ -82,8 +82,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.orpQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.orpQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'ORP.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'ORP.1 Organisation',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.orpQ1.maturity.level0',
@@ -100,8 +100,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.orpQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.orpQ2.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'ORP.2.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'ORP.2 Personal',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.orpQ2.maturity.level0',
@@ -118,8 +118,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.orpQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.orpQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'ORP.3.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'ORP.3 Sensibilisierung und Schulung zur Informationssicherheit',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.orpQ3.maturity.level0',
@@ -140,8 +140,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.conQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.conQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'CON.3.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'CON.1 Kryptokonzept',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.conQ1.maturity.level0',
@@ -158,8 +158,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.conQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.conQ2.help',
     legalReference: {
-      euArticle: 'BSI-Standard 200-4',
-      bsigParagraph: 'BSI-Standard 200-4',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'CON.3 Datensicherungskonzept',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.conQ2.maturity.level0',
@@ -176,8 +176,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.conQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.conQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'CON.6.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'CON.6 Löschen und Vernichten',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.conQ3.maturity.level0',
@@ -198,8 +198,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.opsQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.opsQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'OPS.1.1.3.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'OPS.1.1.3 Patch- und Änderungsmanagement',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.opsQ1.maturity.level0',
@@ -216,8 +216,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.opsQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.opsQ2.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'OPS.1.1.4.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'OPS.1.1.4 Schutz vor Schadprogrammen',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.opsQ2.maturity.level0',
@@ -234,8 +234,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.opsQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.opsQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'OPS.1.2.5.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'OPS.1.2.5 Fernwartung, OPS.2.3 Nutzung von Outsourcing',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.opsQ3.maturity.level0',
@@ -256,8 +256,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.derQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.derQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'DER.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'DER.1 Detektion von sicherheitsrelevanten Ereignissen',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.derQ1.maturity.level0',
@@ -274,8 +274,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.derQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.derQ2.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'DER.2.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'DER.2.1 Behandlung von Sicherheitsvorfällen',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.derQ2.maturity.level0',
@@ -292,8 +292,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.derQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.derQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'DER.2.2.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'DER.4 Notfallmanagement',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.derQ3.maturity.level0',
@@ -314,8 +314,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.appQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.appQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'APP.1.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'APP.1.1 Office-Produkte',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.appQ1.maturity.level0',
@@ -332,8 +332,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.appQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.appQ2.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'APP.1.2.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'APP.1.2 Webbrowser',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.appQ2.maturity.level0',
@@ -351,8 +351,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.appQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.appQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'APP.3.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'APP.3.1 Webanwendungen und Webservices',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.appQ3.maturity.level0',
@@ -373,8 +373,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.sysQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.sysQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'SYS.1.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'SYS.1.1 Allgemeiner Server',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.sysQ1.maturity.level0',
@@ -391,8 +391,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.sysQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.sysQ2.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'SYS.2.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'SYS.2.1 Allgemeiner Client',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.sysQ2.maturity.level0',
@@ -409,8 +409,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.sysQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.sysQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'SYS.3.2.2.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'SYS.3.1 Laptops, SYS.3.2.2 Mobile Device Management (MDM)',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.sysQ3.maturity.level0',
@@ -431,8 +431,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.netQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.netQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'NET.1.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'NET.1.1 Netzarchitektur und -design',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.netQ1.maturity.level0',
@@ -449,8 +449,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.netQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.netQ2.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'NET.3.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'NET.3.1 Router und Switches, NET.3.2 Firewall',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.netQ2.maturity.level0',
@@ -467,8 +467,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.netQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.netQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'NET.4.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'NET.4.1 TK-Anlagen, NET.4.2 VoIP',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.netQ3.maturity.level0',
@@ -489,8 +489,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.infQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.infQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'INF.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'INF.1 Allgemeines Gebäude',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.infQ1.maturity.level0',
@@ -507,8 +507,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.infQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.infQ2.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'INF.2.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'INF.2 Rechenzentrum sowie Serverraum',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.infQ2.maturity.level0',
@@ -525,8 +525,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.infQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.infQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'INF.5.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'INF.5 Raum sowie Schrank für technische Infrastruktur',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.infQ3.maturity.level0',
@@ -548,8 +548,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.indQ1.tooltip',
     helpKey: 'bsiGrundschutz.questions.indQ1.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'IND.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'IND.1 Prozessleit- und Automatisierungstechnik',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.indQ1.maturity.level0',
@@ -567,8 +567,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.indQ2.tooltip',
     helpKey: 'bsiGrundschutz.questions.indQ2.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'IND.2.1.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'IND.2.1 Allgemeine ICS-Komponente',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.indQ2.maturity.level0',
@@ -586,8 +586,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'bsiGrundschutz.questions.indQ3.tooltip',
     helpKey: 'bsiGrundschutz.questions.indQ3.help',
     legalReference: {
-      euArticle: 'IT-Grundschutz-Kompendium',
-      bsigParagraph: 'IND.2.7.A1',
+      euArticle: 'IT-Grundschutz-Kompendium, Edition 2023',
+      bsigParagraph: 'IND.2.7 Safety Instrumented Systems',
     },
     maturityDescriptions: {
       level0Key: 'bsiGrundschutz.questions.indQ3.maturity.level0',

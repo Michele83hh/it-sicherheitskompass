@@ -5193,7 +5193,7 @@
           "level3": "Hardened office configuration via group policy (GPO), macros only for signed and approved sources, application whitelisting, automated patch management and regular review of the settings"
         },
         "title": "Are office products and standard applications configured securely and operated with current security updates?",
-        "tooltip": "IT-Grundschutz module APP.1.1 (Compendium, Edition 2023) requires secure configuration of office products. Macros, ActiveX and other active content must be restricted and security updates applied promptly."
+        "tooltip": "IT-Grundschutz module APP.1.1 (Compendium, Edition 2023) covers the secure configuration of office products. One focus is on macros and other active content, which should be restricted."
       },
       "appQ2": {
         "help": "Web browsers are the most-used program in most companies — and thus a preferred attack target. Hardening includes: ensuring regular updates, disabling unneeded plugins and extensions, enabling certificate validation, blocking insecure content and maintaining a whitelist for browser extensions. Ideally, configuration is done centrally via management systems.",
@@ -5204,7 +5204,7 @@
           "level3": "Fully hardened browser configuration by policy with content security restrictions, an extension whitelist, site isolation, DNS-over-HTTPS and regular configuration reviews"
         },
         "title": "Are web browsers centrally managed and hardened against typical web-based attacks?",
-        "tooltip": "IT-Grundschutz module APP.1.2 (Compendium, Edition 2023) requires secure configuration of web browsers. Browsers are a primary attack target and must be controlled with regard to extensions, privacy and security settings."
+        "tooltip": "IT-Grundschutz module APP.1.2 (Compendium, Edition 2023) covers secure configuration of web browsers. Browsers are a primary attack target and should be controlled with regard to extensions, privacy and security settings."
       },
       "appQ3": {
         "help": "Web applications (e.g. customer portals, web shops, internal tools) are reachable from the internet and therefore particularly exposed. They must be protected against common attacks: SQL injection, cross-site scripting (XSS), broken authentication and insufficient access control (OWASP Top 10). Regular security testing (penetration tests, automated scans) is essential.",
@@ -5215,7 +5215,7 @@
           "level3": "Secure development per OWASP ASVS/SAMM, automated SAST/DAST tests in the CI/CD pipeline, regular penetration tests by external testers, hardened operation with WAF, CSP headers and monitoring"
         },
         "title": "Are self-operated web applications and web services developed and operated according to recognised security standards?",
-        "tooltip": "IT-Grundschutz module APP.3.1 (Compendium, Edition 2023) requires secure configuration and operation of web applications. This includes input validation, authentication, session management and protection against the OWASP Top 10 vulnerabilities."
+        "tooltip": "IT-Grundschutz module APP.3.1 (Compendium, Edition 2023) covers secure configuration and operation of web applications. This includes input validation, authentication, session management and protection against the OWASP Top 10 vulnerabilities."
       },
       "conQ1": {
         "help": "A cryptography concept defines which encryption mechanisms and algorithms are used in your company, which data must be encrypted (e.g. personal data, trade secrets), and how keys are generated, distributed, stored and rotated when needed. Without a cryptography concept, encryption is often used unsystematically or with outdated mechanisms.",
@@ -5226,7 +5226,7 @@
           "level3": "Comprehensive cryptography concept per BSI TR-02102 with regular review of the mechanisms in use, central key management, a documented key lifecycle and crypto agility for algorithm changes"
         },
         "title": "Does a cryptography concept exist that governs the use of encryption in your company?",
-        "tooltip": "IT-Grundschutz module CON.1 (Compendium, Edition 2023) requires a cryptography concept as the basis for consistent and secure use of cryptographic mechanisms. It must define which data is encrypted how, and how keys are managed."
+        "tooltip": "IT-Grundschutz module CON.1 (Compendium, Edition 2023) covers a cryptography concept as the basis for consistent and secure use of cryptographic mechanisms. It should define which data is encrypted how, and how keys are managed."
       },
       "conQ2": {
         "help": "A data backup concept defines which data and systems are backed up, how often backups are created (daily, weekly), which backup type is used (full, incremental, differential) and where the backups are stored. Especially important: backups must be tested regularly for recoverability. An untested backup is not a backup.",
@@ -5237,7 +5237,7 @@
           "level3": "Complete data backup concept per CON.3 with automated backups, the 3-2-1 rule (3 copies, 2 media, 1 offsite), regular documented restore tests, ransomware-resistant backups (e.g. immutable storage)"
         },
         "title": "Has a data backup concept been created, and are backups performed and tested regularly?",
-        "tooltip": "IT-Grundschutz module CON.3 (Compendium, Edition 2023) requires a data backup concept. It must define which data is backed up how often, where backups are stored and how restoration is tested."
+        "tooltip": "IT-Grundschutz module CON.3 (Compendium, Edition 2023) covers a data backup concept. It should define which data is backed up how often, where backups are stored and how restoration is tested."
       },
       "conQ3": {
         "help": "Simple deletion or formatting is not enough — data can be recovered with specialist tools. Hard drives, USB sticks, printers with internal storage, smartphones and copiers must be securely erased or physically destroyed before disposal or transfer. Depending on the protection class, the BSI recommends different methods (overwriting, degaussing, shredding per DIN 66399).",
@@ -5248,7 +5248,7 @@
           "level3": "Complete deletion and destruction concept per DIN 66399 with protection class mapping, a certified provider for physical destruction, complete documentation and evidence per storage medium"
         },
         "title": "Are there binding rules for securely deleting and destroying data and storage media?",
-        "tooltip": "IT-Grundschutz module CON.6 (Compendium, Edition 2023) requires rules for securely deleting and destroying data. Especially when decommissioning devices or passing on storage media, data must be removed irrecoverably."
+        "tooltip": "IT-Grundschutz module CON.6 (Compendium, Edition 2023) covers rules for securely deleting and destroying information and storage media."
       },
       "derQ1": {
         "help": "Without systematic logging and evaluation of log data, attacks often go undetected for weeks or months. Security-relevant events — failed logins, unusual network activity, configuration changes — must be recorded, collected centrally and analysed. A SIEM system (Security Information and Event Management) can help detect relevant patterns automatically.",
@@ -5259,7 +5259,7 @@
           "level3": "SIEM system with automated correlation of all relevant log sources, use-case-based detection, defined escalation processes and regular adaptation of the detection rules to current threats"
         },
         "title": "Are security-relevant events on your IT systems systematically recorded and evaluated?",
-        "tooltip": "IT-Grundschutz module DER.1 (Compendium, Edition 2023) requires creating and analysing system logs to detect security incidents. Logs must be collected centrally, correlated and evaluated promptly."
+        "tooltip": "IT-Grundschutz module DER.1 (Compendium, Edition 2023) covers creating and analysing system logs to detect security incidents. Logs should be collected centrally, correlated and evaluated promptly."
       },
       "derQ2": {
         "help": "When a security incident occurs — e.g. a ransomware infection or data theft — it must be immediately clear who does what. An incident response process defines: who reports incidents? Who coordinates the response? Which immediate measures are taken? When is management informed? When are authorities involved? Without this process, coordination costs valuable time in an emergency.",
@@ -5270,7 +5270,7 @@
           "level3": "Mature incident response process with a CSIRT/CERT function, prepared runbooks for common scenarios, regular exercises, forensic capability and a lessons-learned process after every incident"
         },
         "title": "Is there a documented process for handling security incidents (incident response)?",
-        "tooltip": "IT-Grundschutz module DER.2.1 (Compendium, Edition 2023) requires a documented process for handling security incidents. The process must define roles, escalation paths and communication rules."
+        "tooltip": "IT-Grundschutz module DER.2.1 (Compendium, Edition 2023) covers a documented process for handling security incidents. The process should define roles, escalation paths and communication rules."
       },
       "derQ3": {
         "help": "Contingency plans describe how IT operations are restored after a serious incident (e.g. ransomware, data centre failure). They include contact lists, restart sequences, communication rules and technical instructions. Regular exercising is decisive — only then does it become clear whether the plans work in practice and whether staff master the procedures.",
@@ -5281,7 +5281,7 @@
           "level3": "Comprehensive IT emergency management per BSI Standard 200-4 with an emergency preparedness concept, a business continuity plan, regular exercises of different scenarios and documented improvement measures"
         },
         "title": "Have contingency plans for IT outages and cyber crises been created, and are they practised regularly?",
-        "tooltip": "IT-Grundschutz module DER.4 (Compendium, Edition 2023) requires creating contingency plans and reviewing them regularly through exercises. The plans must define restart procedures and communication channels in a crisis."
+        "tooltip": "IT-Grundschutz module DER.4 (Compendium, Edition 2023) covers emergency management, including contingency planning, restart and exercises."
       },
       "indQ1": {
         "help": "Industrial control systems (ICS, SCADA, PLCs) control physical processes — production facilities, building technology, energy supply. Their compromise can cause physical damage. The traditional separation of IT and OT is increasingly dissolving. An overarching security concept must account for OT's special requirements: availability has top priority, patches cannot always be applied immediately, and lifecycles are much longer than in IT.",
@@ -5292,7 +5292,7 @@
           "level3": "Integrated IT/OT security concept per IEC 62443 and the BSI ICS security compendium, complete OT asset management, a defence-in-depth strategy, OT-specific monitoring and regular risk analyses of the production environment"
         },
         "title": "If you operate production facilities or control systems: is their IT security addressed in a concept?",
-        "tooltip": "IT-Grundschutz module IND.1 (Compendium, Edition 2023) requires basic security measures for process control and automation technology. The convergence of IT and OT requires a coordinated security concept covering both worlds."
+        "tooltip": "IT-Grundschutz module IND.1 (Compendium, Edition 2023) covers basic security measures for process control and automation technology. The convergence of IT and OT requires a coordinated security concept covering both worlds."
       },
       "indQ2": {
         "help": "Industrial components such as programmable logic controllers (PLCs), HMIs and engineering workstations often have their own security requirements. Many PLCs have no authentication, HMI panels run on outdated operating systems, and engineering workstations have direct access to the control level. Hardening measures must respect OT's special requirements — e.g. some components cannot simply be restarted.",
@@ -5303,7 +5303,7 @@
           "level3": "OT-specific hardening per IEC 62443 with a zone concept, application whitelisting on engineering workstations, integrity checks of the PLC programs, network monitoring at control protocol level and documented configuration management of all ICS components"
         },
         "title": "Are controllers, operator stations and engineering workstations hardened according to the requirements for production systems?",
-        "tooltip": "IT-Grundschutz module IND.2.1 (Compendium, Edition 2023) requires restricting access to ICS components. PLCs, HMI panels and engineering workstations must be protected against unauthorised access and manipulation."
+        "tooltip": "IT-Grundschutz module IND.2.1 (Compendium, Edition 2023) covers restricting access to ICS components. PLCs, HMI panels and engineering workstations should be protected against unauthorised access and manipulation."
       },
       "indQ3": {
         "help": "Safety instrumented systems (SIS) are emergency shutdown systems that protect people and the environment from dangerous conditions — e.g. overpressure shutdown, emergency stop, gas detection. A successful cyberattack on an SIS can disable the safety function and enable physical catastrophes (as in the TRITON/TRISIS attack of 2017). SIS must therefore be strictly separated from the process control and specially protected.",
@@ -5314,7 +5314,7 @@
           "level3": "SIS fully isolated per IEC 62443 and IEC 61511, a dedicated SIS network with no connection to the process control, cryptographically secured firmware updates, integrity monitoring of the SIS logic, regular independent security audits"
         },
         "title": "Are safety instrumented systems (SIS) protected against cyberattacks and unauthorised manipulation?",
-        "tooltip": "IT-Grundschutz module IND.2.7 (Compendium, Edition 2023) requires special protection of safety instrumented systems. SIS are safety-related systems whose compromise can lead to personal injury or environmental disasters."
+        "tooltip": "IT-Grundschutz module IND.2.7 (Compendium, Edition 2023) covers special protection of safety instrumented systems. SIS are safety-related systems whose compromise can lead to personal injury or environmental disasters."
       },
       "infQ1": {
         "help": "Physical security is the foundation of all IT security — if someone has physical access to your servers, all digital protective measures are ineffective. Basic measures include: locked entrances, access control (at minimum key management), an intrusion alarm system, a fire alarm system and clear visitor rules. The measures must be appropriate to the protection needs of the information processed there.",
@@ -5325,7 +5325,7 @@
           "level3": "Comprehensive physical security concept with electronic access control and logging, video surveillance, intrusion and fire alarm systems connected to a control centre, regular walkthroughs and documented key management"
         },
         "title": "Are your buildings and offices equipped with basic physical security measures?",
-        "tooltip": "IT-Grundschutz module INF.1 (Compendium, Edition 2023) requires protecting buildings against unauthorised entry, burglary and natural hazards. Basic measures such as access control, intrusion alarm systems and fire protection must be in place."
+        "tooltip": "IT-Grundschutz module INF.1 (Compendium, Edition 2023) covers protecting buildings against unauthorised entry, burglary and natural hazards. Basic measures such as access control, intrusion alarm systems and fire protection should be in place."
       },
       "infQ2": {
         "help": "The server room or data centre is the most sensitive area of your IT infrastructure. It must be specially protected: entry only for authorised staff, redundant power with UPS and ideally an emergency generator, air conditioning with monitoring of temperature and humidity, early fire detection and a suitable extinguishing system (not water!), plus water detectors under the raised floor.",
@@ -5347,7 +5347,7 @@
           "level3": "All technical rooms with electronic access control, temperature monitoring with alerting, complete and current network documentation (physical and logical), regular walkthroughs and tidiness checks"
         },
         "title": "Are technical rooms (distribution rooms, patch panels, telephone systems) adequately protected and documented?",
-        "tooltip": "IT-Grundschutz module INF.5 (Compendium, Edition 2023) requires protecting technical rooms. Network distribution points, patch panels and telecommunications systems must be secured against unauthorised access, overheating and manipulation."
+        "tooltip": "IT-Grundschutz module INF.5 (Compendium, Edition 2023) covers protecting technical rooms. Network distribution points, patch panels and telecommunications systems should be secured against unauthorised access, overheating and manipulation."
       },
       "ismsQ1": {
         "help": "An ISMS forms the organisational framework for your entire IT security. Management must formally assume responsibility for information security, appoint an ISO and provide sufficient staff, budget and time. Without this foundation, all technical measures remain piecemeal.",
@@ -5358,7 +5358,7 @@
           "level3": "Complete ISMS per BSI Standard 200-1 with documented overall responsibility of management, an ISO with defined powers, sufficient resources and a continuous improvement process (PDCA)"
         },
         "title": "Is an information security management system (ISMS) with clear responsibilities established in your company?",
-        "tooltip": "IT-Grundschutz module ISMS.1 (Compendium, Edition 2023) requires top management to assume overall responsibility for information security. This includes appointing an information security officer (ISO) and providing sufficient resources."
+        "tooltip": "IT-Grundschutz module ISMS.1 (Compendium, Edition 2023) covers top management to assume overall responsibility for information security. This includes appointing an information security officer (ISO) and providing sufficient resources."
       },
       "ismsQ2": {
         "help": "The security policy is the most important document of your ISMS. It defines which security goals your company pursues, what importance information security has and how the security organisation is structured. The policy must be signed by management and made known to all employees.",
@@ -5369,7 +5369,7 @@
           "level3": "Current policy approved by management with clear security goals, regular review (at least annually), demonstrable acknowledgement by all employees"
         },
         "title": "Does a current information security policy approved by management exist?",
-        "tooltip": "IT-Grundschutz module ISMS.1 (Compendium, Edition 2023) requires a security policy as the central governing document. It must define the security objectives, the scope and the organisational structure for information security."
+        "tooltip": "IT-Grundschutz module ISMS.1 (Compendium, Edition 2023) covers a security policy as the central governing document. It should define the security objectives, the scope and the organisational structure for information security."
       },
       "ismsQ3": {
         "help": "The risk analysis per BSI Standard 200-3 helps you systematically identify and assess threats to your IT systems and business processes. You determine where the standard IT-Grundschutz protection is not sufficient and additional measures are required. Without a risk analysis, you may invest in security in the wrong places.",
@@ -5380,7 +5380,7 @@
           "level3": "Complete risk analysis of all relevant information assets with regular updates, documented risk treatment, residual risk acceptance by management and integration into the ISMS PDCA cycle"
         },
         "title": "Is a systematic risk analysis carried out for your information assets and business processes?",
-        "tooltip": "BSI Standard 200-3 describes the risk analysis in IT-Grundschutz. It supplements the standard protection: it is required for target objects with high or very high protection needs, for target objects that cannot be modelled with modules, and for deployment scenarios not covered by the Compendium."
+        "tooltip": "BSI Standard 200-3 (risk management) describes risk analysis within IT-Grundschutz."
       },
       "netQ1": {
         "help": "A flat, unsegmented network means: a compromised system can directly access all others. Through network segmentation you divide your network into security zones — e.g. a server zone, client zone, DMZ for publicly reachable services, separate guest Wi-Fi. Traffic between the zones is controlled via firewalls. This considerably limits the spread of an attack.",
@@ -5391,7 +5391,7 @@
           "level3": "End-to-end micro-segmentation following the zero-trust principle, zone transitions controlled by next-generation firewalls with application awareness, network access control (802.1X), a documented network concept with regular review"
         },
         "title": "Is your corporate network divided into security zones following the principle of network segmentation?",
-        "tooltip": "IT-Grundschutz module NET.1.1 (Compendium, Edition 2023) requires a structured network architecture with segmentation. Different security zones (e.g. DMZ, internal network, guest Wi-Fi) must be separated from each other."
+        "tooltip": "IT-Grundschutz module NET.1.1 (Compendium, Edition 2023) covers a structured network architecture with segmentation. Different security zones (e.g. DMZ, internal network, guest Wi-Fi) should be separated from each other."
       },
       "netQ2": {
         "help": "Routers, switches and firewalls are the infrastructure of your network. If they are compromised, an attacker controls all traffic. Hardening includes: changing default passwords and communities, disabling unneeded services and protocols (e.g. Telnet, HTTP management), using encrypted management interfaces (SSH, HTTPS), applying firmware updates promptly and documenting configuration changes.",
@@ -5402,7 +5402,7 @@
           "level3": "Automated configuration management for all network components, regular compliance checks against the hardening standard, versioned configuration backups, a defined change process for network changes, anomaly detection in network traffic"
         },
         "title": "Are routers, switches and firewalls configured according to security standards and updated regularly?",
-        "tooltip": "IT-Grundschutz module NET.3.1 (Compendium, Edition 2023) requires secure configuration and operation of network components. Routers and switches must be hardened, default passwords changed and firmware kept up to date."
+        "tooltip": "IT-Grundschutz module NET.3.1 (Compendium, Edition 2023) covers the secure configuration and operation of routers and switches; module NET.3.2 covers firewalls."
       },
       "netQ3": {
         "help": "Telephone systems and VoIP are often forgotten in IT security. Yet they are vulnerable to toll fraud, eavesdropping and as an entry point into the network. Protective measures include: VoIP traffic in a separate VLAN, encryption of voice data (SRTP) and signalling (TLS), securing administration access, protection against toll fraud and regular updates of the telephone software.",
@@ -5413,7 +5413,7 @@
           "level3": "Fully encrypted communication (SRTP + TLS), the VoIP system in a hardened separate VLAN, toll fraud prevention, redundant telephone connectivity, regular security audits of the telephone infrastructure"
         },
         "title": "Are your telephone systems, VoIP systems and communication services protected against unauthorised access and eavesdropping?",
-        "tooltip": "IT-Grundschutz module NET.4.1 (Compendium, Edition 2023) requires secure operation of telecommunications systems. VoIP systems must be encrypted, secured against toll fraud and integrated into the network security architecture."
+        "tooltip": "IT-Grundschutz module NET.4.1 (Compendium, Edition 2023) covers the secure operation of telecommunications systems; module NET.4.2 covers VoIP."
       },
       "opsQ1": {
         "help": "Unpatched systems are one of the most common entry points for cyberattacks. A patch management process ensures that security updates for operating systems, applications and firmware are identified, tested and applied promptly. Equally important: changes to IT systems (e.g. configuration adjustments, new software) must be planned, approved and documented to avoid unintended outages.",
@@ -5424,7 +5424,7 @@
           "level3": "Automated patch management with CVSS-based prioritisation, defined SLAs for critical patches, a complete change management process (RFC, approval, testing, rollback plan) and central documentation"
         },
         "title": "Is there a structured patch and change management process for your IT systems?",
-        "tooltip": "IT-Grundschutz module OPS.1.1.3 (Compendium, Edition 2023) requires systematic patch and change management. Security updates must be applied promptly; changes must be planned and tested."
+        "tooltip": "IT-Grundschutz module OPS.1.1.3 (Compendium, Edition 2023) covers systematic patch and change management. Security updates should be applied promptly; changes should be planned and tested."
       },
       "opsQ2": {
         "help": "Protection against malware involves more than an antivirus solution on the desktop. All systems — servers, clients, mobile devices, email gateways and file servers — must be protected. Signatures must be updated automatically, and central policies should apply (e.g. real-time protection active, regular full scans, response procedures on detection). Modern solutions additionally use behaviour-based detection (EDR).",
@@ -5435,7 +5435,7 @@
           "level3": "Comprehensive endpoint protection platform (EPP/EDR) on all systems with behaviour-based detection, central monitoring, automated threat response and SIEM integration"
         },
         "title": "Is comprehensive protection against malware implemented on all IT systems?",
-        "tooltip": "IT-Grundschutz module OPS.1.1.4 (Compendium, Edition 2023) requires the use of protection programs against malware. Protection must cover all relevant IT systems and be kept up to date at all times."
+        "tooltip": "IT-Grundschutz module OPS.1.1.4 (Compendium, Edition 2023) covers the use of protection programs against malware. Protection should cover all relevant IT systems and be kept up to date at all times."
       },
       "opsQ3": {
         "help": "Remote maintenance access is a popular attack target — a compromised remote maintenance channel gives attackers direct access to your systems. Remote maintenance must therefore run over secure, encrypted connections, be secured with strong authentication and be logged. For outsourced IT tasks, the same security standards must apply as internally — contractually fixed and verifiable.",
@@ -5446,7 +5446,7 @@
           "level3": "Hardened remote maintenance infrastructure with time-limited access, the four-eyes principle for critical systems, complete session recording, provider management with regular audits and SLA monitoring"
         },
         "title": "Are IT operations tasks such as remote maintenance and outsourcing securely regulated?",
-        "tooltip": "IT-Grundschutz module OPS.1.2.5 (Compendium, Edition 2023) requires rules for remote maintenance of IT systems. With outsourcing and external service providers, security requirements must be safeguarded contractually and technically."
+        "tooltip": "IT-Grundschutz module OPS.1.2.5 (Compendium, Edition 2023) covers remote maintenance of IT systems; module OPS.2.3 covers the use of outsourcing, including contractual arrangements."
       },
       "orpQ1": {
         "help": "Information security must be embedded in your corporate organisation — not just as an IT topic, but as part of all business processes. That means: clear responsibilities for security tasks, documented approval procedures (e.g. for software installations or access authorisations) and consideration of security aspects in organisational changes.",
@@ -5457,7 +5457,7 @@
           "level3": "Fully documented security organisation with clear roles and responsibilities, standardised approval procedures and systematic consideration of security aspects in all business processes"
         },
         "title": "Are security requirements anchored in the organisational structure and processes?",
-        "tooltip": "IT-Grundschutz module ORP.1 (Compendium, Edition 2023) requires organisational security aspects to be regulated. This includes responsibilities, approval procedures and integrating security requirements into all business processes."
+        "tooltip": "IT-Grundschutz module ORP.1 (Compendium, Edition 2023) covers organisational security aspects to be regulated. This includes responsibilities, approval procedures and integrating security requirements into all business processes."
       },
       "orpQ2": {
         "help": "Personnel is one of the biggest risk factors for IT security. Qualifications should be checked before hiring, security policies must be conveyed during onboarding, and upon departure all access, keys and authorisations must be revoked. Without regulated processes, former employees with active VPN access, for example, remain a considerable security risk.",
@@ -5468,7 +5468,7 @@
           "level3": "Complete personnel lifecycle with security screening at hiring, structured security onboarding, regular review of authorisations and a documented offboarding process with evidence of complete access revocation"
         },
         "title": "Are security requirements considered throughout the entire personnel lifecycle — from hiring to departure?",
-        "tooltip": "IT-Grundschutz module ORP.2 (Compendium, Edition 2023) requires rules for dealing with personnel in security-relevant areas. This covers hiring, onboarding, ongoing employment and the orderly departure of employees."
+        "tooltip": "IT-Grundschutz module ORP.2 (Compendium, Edition 2023) covers rules for dealing with personnel in security-relevant areas. This covers hiring, onboarding, ongoing employment and the orderly departure of employees."
       },
       "orpQ3": {
         "help": "The best technical protective measures are ineffective if employees click on phishing emails, share passwords or plug in unchecked USB sticks. Regular training on topics such as phishing detection, secure password handling, social engineering and reporting channels for security incidents is indispensable. Training should be tailored to the employees' respective roles.",
@@ -5479,7 +5479,7 @@
           "level3": "Comprehensive awareness programme with regular training, simulated phishing tests, audience-specific content, effectiveness measurement and continuous adaptation to the current threat landscape"
         },
         "title": "Are all employees regularly trained and sensitised on information security?",
-        "tooltip": "IT-Grundschutz module ORP.3 (Compendium, Edition 2023) requires awareness and training on information security for all employees. The measures must be tailored to target groups and repeated regularly."
+        "tooltip": "IT-Grundschutz module ORP.3 (Compendium, Edition 2023) covers awareness and training on information security for all employees. The measures should be tailored to target groups and repeated regularly."
       },
       "sysQ1": {
         "help": "Servers form the backbone of your IT — outages or compromises usually have far-reaching consequences. Hardening includes: enabling only required services and ports, changing default passwords, securing administrative access (SSH keys instead of passwords, no root login), setting file system permissions correctly, enabling logging and applying security updates promptly. The BSI recommends using hardening guides (e.g. CIS Benchmarks).",
@@ -5490,7 +5490,7 @@
           "level3": "Automated server hardening via configuration management (e.g. Ansible, Puppet), regular compliance scans against the hardening standard, deviations detected and corrected automatically, a minimal attack surface through containerisation or micro-segmentation"
         },
         "title": "Are your servers securely configured and operated according to a defined hardening standard?",
-        "tooltip": "IT-Grundschutz module SYS.1.1 (Compendium, Edition 2023) requires secure server configuration. This includes disabling unneeded services, secure authentication, assignment of privileges and regular updates."
+        "tooltip": "IT-Grundschutz module SYS.1.1 (Compendium, Edition 2023) covers secure server configuration. This includes disabling unneeded services, secure authentication, assignment of privileges and regular updates."
       },
       "sysQ2": {
         "help": "Client systems are the devices your employees work on every day. They must be protected against unauthorised use: automatic screen lock, personal login with a strong password, no local administrator rights for standard users, disk encryption (BitLocker/LUKS) and central administration via an endpoint management system. Without central management you lose track of security posture and software status.",
@@ -5501,7 +5501,7 @@
           "level3": "Fully managed clients with central policy control, disk encryption, application whitelisting, automated patch management, an EDR agent and compliance monitoring with automatic remediation"
         },
         "title": "Are your client systems (workstations) centrally managed and protected against unauthorised use?",
-        "tooltip": "IT-Grundschutz module SYS.2.1 (Compendium, Edition 2023) requires secure client configuration. This includes screen lock, user authentication, restricted administrator rights and central management."
+        "tooltip": "IT-Grundschutz module SYS.2.1 (Compendium, Edition 2023) covers secure client configuration. This includes screen lock, user authentication, restricted administrator rights and central management."
       },
       "sysQ3": {
         "help": "Laptops and mobile devices regularly leave the protected corporate environment and are thus exposed to increased risks — loss, theft, insecure Wi-Fi connections. Protective measures include: full disk/device encryption, mandatory VPN for corporate connections, mobile device management (MDM) with remote wipe, device lock and clear rules for bring your own device (BYOD).",
@@ -5512,7 +5512,7 @@
           "level3": "Comprehensive mobile device management with a zero-trust approach, automatic compliance checks before network access, a container solution for BYOD, geofencing and regular review of device security"
         },
         "title": "Are mobile devices and laptops protected by mobile device management and encryption?",
-        "tooltip": "IT-Grundschutz module SYS.3.1 (Compendium, Edition 2023) requires special protective measures for portable IT systems. Laptops and mobile devices are particularly exposed to loss and theft and must be encrypted and remotely wipeable."
+        "tooltip": "IT-Grundschutz module SYS.3.1 (Compendium, Edition 2023) covers laptops, which are particularly exposed to loss and theft, including encryption. Mobile device management is covered by module SYS.3.2.2."
       }
     },
     "quickCheck": {
@@ -9242,277 +9242,277 @@
     "questions": {
       "orgQ1": {
         "title": "Does your organisation have a documented information security policy for cloud operations?",
-        "tooltip": "C5:2020 OIS-01 and OIS-02 require a comprehensive information security policy that is approved by management, published and regularly reviewed. The policy must explicitly cover cloud operations and clearly assign responsibilities.",
-        "help": "An information security policy forms the foundation of your C5 compliance framework. It must be approved by management, communicated to all relevant employees and reviewed regularly — at least annually. The policy should define the scope of the cloud service, responsibilities, risk acceptance criteria and overarching protection objectives.",
+        "tooltip": "Based on C5:2020 criteria OIS-01 and OIS-02 (official German titles: “Informationssicherheitsmanagementsystem (ISMS)”, “Leitlinie zur Informationssicherheit”).",
+        "help": "An information security policy forms the foundation of your C5 compliance framework. It must be approved by management, communicated to all relevant employees and reviewed regularly. The policy should define the scope of the cloud service, responsibilities, risk acceptance criteria and overarching protection objectives.",
         "maturity": {
           "level0": "No documented information security policy; cloud security is not systematically addressed",
           "level1": "General IT security policy exists but no specific reference to cloud operations; not regularly updated",
           "level2": "Documented information security policy with cloud references, approved and published by management, but review cycle not consistently maintained",
-          "level3": "Comprehensive management-approved information security policy per C5:2020 OIS-01/02 covering all cloud operations, regularly reviewed and communicated to all employees"
+          "level3": "Comprehensive management-approved information security policy covering all cloud operations, regularly reviewed and communicated to all employees"
         }
       },
       "orgQ2": {
         "title": "Are subordinate security policies for the cloud service defined and implemented?",
-        "tooltip": "C5:2020 SP-01 and SP-02 require topic-specific security policies that detail the overarching information security policy. These must cover areas such as access control, cryptography, physical security, operations and communications.",
-        "help": "Beyond the overarching policy, C5 requires topic-specific security policies that define concrete requirements for individual areas. Typical topics include: access management, cryptography, data backup, network security, incident handling and physical security. Each policy must have a designated owner and be regularly updated.",
+        "tooltip": "Based on C5:2020 criteria SP-01 and SP-02 (official German titles: “Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Anweisungen”, “Überprüfung und Freigabe von Richtlinien und Anweisungen”).",
+        "help": "Beyond the overarching policy, you need topic-specific security policies that define concrete requirements for individual areas. Typical topics include: access management, cryptography, data backup, network security, incident handling and physical security. Each policy must have a designated owner and be regularly updated.",
         "maturity": {
           "level0": "No topic-specific security policies; individual areas are handled on an ad-hoc basis",
           "level1": "Some security policies exist (e.g. password policy) but not all C5-relevant areas are covered",
           "level2": "Topic-specific security policies created for most C5 areas, owners designated, but implementation controls still incomplete",
-          "level3": "Complete set of topic-specific security policies per C5:2020 SP-01/02 with designated owners, regular review and demonstrable implementation across all relevant areas"
+          "level3": "Complete set of topic-specific security policies with designated owners, regular review and demonstrable implementation across all relevant areas"
         }
       },
       "orgQ3": {
         "title": "Are employees in cloud operations screened and trained on information security?",
-        "tooltip": "C5:2020 HR-01 and HR-03 require background checks for employees with access to cloud systems and regular information security training. The scope of screening must be proportionate to the risk of the respective role.",
-        "help": "C5 requires that all employees with access to cloud systems and customer data are screened before hiring (identity verification, qualification proof, criminal record check where applicable). Additionally, regular information security training must be provided, tailored to the specific tasks and risks of each role. Training attendance must be documented.",
+        "tooltip": "Based on C5:2020 criteria HR-01 and HR-03 (official German titles: “Überprüfung der Qualifikation und Vertrauenswürdigkeit”, “Programm zur Sicherheitsausbildung und Sensibilisierung”).",
+        "help": "Make sure that all employees with access to cloud systems and customer data are screened before hiring (identity verification, qualification proof, criminal record check where applicable). Additionally, regular information security training must be provided, tailored to the specific tasks and risks of each role. Training attendance must be documented.",
         "maturity": {
           "level0": "No systematic background checks or security training for cloud personnel",
           "level1": "Basic identity verification at hiring but no role-specific security training",
           "level2": "Background checks at hiring and regular general security training, but not tailored to specific cloud roles",
-          "level3": "Risk-proportionate background checks per C5:2020 HR-01, role-specific security training per HR-03, documented attendance and annual refresher courses"
+          "level3": "Risk-proportionate background checks, role-specific security training, documented attendance and annual refresher courses"
         }
       },
       "orgQ4": {
         "title": "Is compliance with information security policies regularly checked through independent audits?",
-        "tooltip": "C5:2020 OIS-05 and OIS-07 require regular independent review of the information security organisation and compliance with defined policies. Results must be documented and deviations tracked.",
-        "help": "C5 requires that the effectiveness of your information security measures and compliance with your policies are regularly validated through independent audits — internal or external. Audit results must be reported to management. Identified deviations require corrective actions with defined deadlines and responsibilities.",
+        "tooltip": "Based on C5:2020 criteria COM-02 and COM-03 (official German titles: “Richtlinie für die Planung und Durchführung von Audits”, “Interne Audits des Informationssicherheitsmanagementsystems”).",
+        "help": "Make sure that the effectiveness of your information security measures and compliance with your policies are regularly validated through independent audits — internal or external. Audit results must be reported to management. Identified deviations require corrective actions with defined deadlines and responsibilities.",
         "maturity": {
           "level0": "No independent audits of information security; compliance is not systematically monitored",
           "level1": "Occasional ad-hoc reviews by IT staff but no structured independent controls",
           "level2": "Regular internal information security audits with documented results but not fully covering all C5 areas",
-          "level3": "Structured independent audit programme per C5:2020 OIS-05/07 with full coverage, documented results, deviation tracking and management reporting"
+          "level3": "Structured independent audit programme with full coverage, documented results, deviation tracking and management reporting"
         }
       },
       "amQ1": {
         "title": "Do you maintain a current inventory of all cloud assets including customer data?",
-        "tooltip": "C5:2020 AM-01 and AM-02 require a complete inventory of all assets relevant to the cloud service delivery. This includes hardware, software, data and network components. Each asset must have a designated owner.",
-        "help": "A complete asset inventory is a prerequisite for effective security management. C5 requires all cloud-relevant assets to be recorded: servers, storage media, network components, software licences, databases and especially customer data. Each asset must have a designated owner responsible for its protection.",
+        "tooltip": "Based on C5:2020 criterion AM-01 (official German title: “Inventarisierung der Assets”).",
+        "help": "A complete asset inventory is a prerequisite for effective security management. Make sure all cloud-relevant assets are recorded: servers, storage media, network components, software licences, databases and especially customer data. Each asset must have a designated owner responsible for its protection.",
         "maturity": {
           "level0": "No asset inventory; no overview of deployed hardware, software or stored customer data",
           "level1": "Partial inventory (e.g. hardware only) but customer data and software not fully recorded; no designated owners",
           "level2": "Comprehensive asset inventory covering hardware, software and data, owners assigned, but updates not fully automated",
-          "level3": "Complete, current asset inventory per C5:2020 AM-01/02 with designated owners, automated discovery, regular updates and integration into risk management"
+          "level3": "Complete, current asset inventory with designated owners, automated discovery, regular updates and integration into risk management"
         }
       },
       "amQ2": {
         "title": "Are cloud assets and customer data classified by protection requirements and handled accordingly?",
-        "tooltip": "C5:2020 AM-03 and AM-04 require classification of all assets by protection requirements and derived handling rules. The classification must consider confidentiality, integrity and availability.",
-        "help": "C5 requires a classification scheme with at least three protection levels applied to all cloud assets. Concrete handling rules must be derived from the classification — e.g. what encryption is required at each level, who may access data and how data is to be deleted. Correct classification of customer data is particularly important.",
+        "tooltip": "Based on C5:2020 criterion AM-06 (official German title: “Klassifizierung und Kennzeichnung von Assets”).",
+        "help": "You need a classification scheme applied to all cloud assets. Concrete handling rules must be derived from the classification — e.g. what encryption is required at each level, who may access data and how data is to be deleted. Correct classification of customer data is particularly important.",
         "maturity": {
           "level0": "No classification of assets or data by protection requirements",
           "level1": "Informal understanding of different protection needs but no formal classification scheme",
           "level2": "Classification scheme defined and applied to most assets, handling rules created, but implementation not consistently monitored",
-          "level3": "Comprehensive classification scheme per C5:2020 AM-03/04 with defined protection levels, derived handling rules, consistent application to all assets and regular review"
+          "level3": "Comprehensive classification scheme with defined protection levels, derived handling rules, consistent application to all assets and regular review"
         }
       },
       "amQ3": {
         "title": "Is secure return and deletion of customer data at contract end ensured?",
-        "tooltip": "C5:2020 AM-05 and AM-06 regulate the return of customer data and secure deletion after contract end. The cloud provider must ensure customer data is returned completely in a usable format and subsequently demonstrably deleted.",
+        "tooltip": "Based on C5:2020 criteria PI-02 and PI-03 (official German titles: “Vertragliche Vereinbarungen zur Bereitstellung von Daten”, “Sichere Datenlöschung”).",
         "help": "At contract end or termination, the cloud provider must be able to return all customer data in an agreed, usable format. After successful return, the data — including all copies and backups — must be securely and demonstrably deleted. Deletion must comply with recognised standards (e.g. BSI recommendations for secure data deletion). Deadlines for return and deletion should be contractually agreed.",
         "maturity": {
           "level0": "No processes for data return or secure deletion at contract end",
           "level1": "Basic willingness to return data but no defined process; deletion not demonstrable",
           "level2": "Documented process for data return and deletion, but evidence and completeness of deletion not fully assured",
-          "level3": "Fully documented process per C5:2020 AM-05/06 with contractual deadlines, return in agreed format, demonstrably secure deletion of all copies and independent verification"
+          "level3": "Fully documented process with contractual deadlines, return in agreed format, demonstrably secure deletion of all copies and independent verification"
         }
       },
       "psQ1": {
         "title": "Are data centre locations protected by appropriate physical security measures?",
-        "tooltip": "C5:2020 PS-01 and PS-02 require defined security zones with graduated physical protection. Data centres must be secured by perimeter protection, access control systems and surveillance.",
-        "help": "C5 requires a multi-layered physical security concept for data centres: outer perimeter protection (fencing, lighting), building access (airlock, badge control), server rooms (biometric access control, surveillance cameras). Each zone must have defined access authorisations. Visitors must be registered and escorted.",
+        "tooltip": "Based on C5:2020 criteria PS-01, PS-03 and PS-04 (official German titles: “Sicherheitsanforderungen für Räumlichkeiten und Gebäude”, “Perimeterschutz”, “Zutrittskontrolle”).",
+        "help": "You need a multi-layered physical security concept for data centres: outer perimeter protection (fencing, lighting), building access (airlock, badge control), server rooms (biometric access control, surveillance cameras). Each zone must have defined access authorisations. Visitors must be registered and escorted.",
         "maturity": {
           "level0": "No defined security zones; uncontrolled access to server rooms possible",
           "level1": "Basic building protection (locked rooms) but no multi-layered zone concept and no systematic access control",
           "level2": "Defined security zones with electronic access control and surveillance, visitor registration, but gaps in perimeter protection or zone transitions",
-          "level3": "Complete multi-layered physical security concept per C5:2020 PS-01/02 with perimeter protection, graduated security zones, biometric access control, video surveillance, visitor management and regular vulnerability assessments"
+          "level3": "Complete multi-layered physical security concept with perimeter protection, graduated security zones, biometric access control, video surveillance, visitor management and regular vulnerability assessments"
         }
       },
       "psQ2": {
         "title": "Is the data centre protected against environmental risks (fire, water, power)?",
-        "tooltip": "C5:2020 PS-05 and PS-06 require protective measures against environmental risks such as fire, water damage, power failure and air conditioning failure. Redundant systems and early warning systems must be installed.",
-        "help": "C5 requires comprehensive protection of data centre infrastructure against environmental risks: fire detection and suppression system (preferably gas suppression), water detection (leak sensors under raised floor), uninterruptible power supply (UPS) with standby generator, redundant air conditioning with temperature and humidity monitoring. All systems must be regularly maintained and tested.",
+        "tooltip": "Based on C5:2020 criteria PS-05 and PS-06 (official German titles: “Schutz vor Feuer und Rauch”, “Schutz vor Ausfall der Versorgungseinrichtungen”).",
+        "help": "You need comprehensive protection of data centre infrastructure against environmental risks: fire detection and suppression system (preferably gas suppression), water detection (leak sensors under raised floor), uninterruptible power supply (UPS) with standby generator, redundant air conditioning with temperature and humidity monitoring. All systems must be regularly maintained and tested.",
         "maturity": {
           "level0": "No or minimal protective measures against environmental risks; no redundancy for power or cooling",
           "level1": "Basic measures in place (smoke detectors, UPS) but no redundancy and no early warning systems",
           "level2": "Fire detection and suppression, UPS with standby generator, air conditioning with monitoring, but redundancy not comprehensive or tests not regular",
-          "level3": "Complete environmental protection per C5:2020 PS-05/06 with redundant power supply (UPS + generator), gas suppression and fire detection, water detection, redundant air conditioning, regular testing and documented maintenance"
+          "level3": "Complete environmental protection with redundant power supply (UPS + generator), gas suppression and fire detection, water detection, redundant air conditioning, regular testing and documented maintenance"
         }
       },
       "psQ3": {
         "title": "Are maintenance and disposal processes for IT equipment carried out securely?",
-        "tooltip": "C5:2020 (areas PS and AM) requires secure maintenance processes and demonstrably secure disposal or reuse of IT equipment. Storage media must be securely erased or physically destroyed before disposal.",
-        "help": "C5 requires documented processes for secure maintenance and disposal of IT equipment. During maintenance by external service providers, it must be ensured that no unauthorised access to customer data is possible. When disposing of or reusing equipment, all storage media must be securely erased (per recognised standards) or physically destroyed. Destruction must be documented and verifiable.",
+        "tooltip": "Based on C5:2020 criteria AM-04 and PS-06 (official German titles: “Außerbetriebnahme von Hardware”, “Schutz vor Ausfall der Versorgungseinrichtungen”).",
+        "help": "You need documented processes for secure maintenance and disposal of IT equipment. During maintenance by external service providers, it must be ensured that no unauthorised access to customer data is possible. When disposing of or reusing equipment, all storage media must be securely erased (per recognised standards) or physically destroyed. Destruction must be documented and verifiable.",
         "maturity": {
           "level0": "No defined processes for secure maintenance or disposal; storage media disposed of without erasure",
           "level1": "Basic awareness but no documented processes; erasure of storage media not standardised",
           "level2": "Documented maintenance and disposal processes with secure data erasure, but evidence and external maintenance oversight still incomplete",
-          "level3": "Fully documented processes per C5:2020 (PS, AM) with secure data erasure to BSI standards, physical destruction where required, documented evidence and controlled external maintenance"
+          "level3": "Fully documented processes with secure data erasure to BSI standards, physical destruction where required, documented evidence and controlled external maintenance"
         }
       },
       "idmQ1": {
         "title": "Is there a formal process for user registration and deregistration in the cloud service?",
-        "tooltip": "C5:2020 IDM-01 and IDM-02 require a formal process for user account registration and deregistration. Each user must be uniquely identifiable. On departure or role change, access rights must be promptly revoked or adjusted.",
-        "help": "C5 requires a documented process for the entire user account lifecycle: creation with unique identification, approval by the responsible person, assignment of role-based rights and timely deactivation on departure. Importantly, shared accounts must be minimised and technically privileged accounts managed separately. The process must be audit-trail documented.",
+        "tooltip": "Based on C5:2020 criteria IDM-02 and IDM-04 (official German titles: “Vergabe und Änderung von Zugangs- und Zugriffsberechtigungen”, “Entzug oder Anpassung von Zugriffsberechtigungen bei Veränderungen des Aufgabengebiets”).",
+        "help": "You need a documented process for the entire user account lifecycle: creation with unique identification, approval by the responsible person, assignment of role-based rights and timely deactivation on departure. Importantly, shared accounts must be minimised and technically privileged accounts managed separately. The process must be audit-trail documented.",
         "maturity": {
           "level0": "No formal process; user accounts created without approval and not deactivated on departure",
           "level1": "Informal processes in place but no consistent approval and no timely deactivation on departure",
           "level2": "Formal registration process with approval and role-based rights assignment, deregistration documented, but delays in role changes",
-          "level3": "Fully automated lifecycle process per C5:2020 IDM-01/02 with unique identification, approval workflow, role-based rights assignment, automatic deactivation and complete audit trail"
+          "level3": "Fully automated lifecycle process with unique identification, approval workflow, role-based rights assignment, automatic deactivation and complete audit trail"
         }
       },
       "idmQ2": {
         "title": "Are access rights granted on a least-privilege basis and regularly reviewed?",
-        "tooltip": "C5:2020 IDM-03 and IDM-06 require access rights to be granted on a least-privilege basis and regularly reviewed (access review). Privileged access rights must be particularly restrictively granted.",
-        "help": "C5 requires that each user only receives the access rights necessary for their current task. Privileged rights (administrator, root) must be particularly restrictively granted and separately monitored. All access rights must be reviewed regularly — at least semi-annually (access review). During review, unnecessary rights must be revoked and deviations documented.",
+        "tooltip": "Based on C5:2020 criteria IDM-01, IDM-05 and IDM-06 (official German titles: “Richtlinie für Zugangs- und Zugriffsberechtigungen”, “Regelmäßige Überprüfung der Zugriffsberechtigungen”, “Privilegierte Zugriffsberechtigungen”).",
+        "help": "Make sure that each user only receives the access rights necessary for their current task. Privileged rights (administrator, root) must be particularly restrictively granted and separately monitored. All access rights must be reviewed regularly (access review); criterion IDM-05 states at least annually. During review, unnecessary rights must be revoked and deviations documented.",
         "maturity": {
           "level0": "No systematic rights management; users frequently receive excessively broad rights",
           "level1": "Basic awareness of minimal rights but no formal process and no regular access reviews",
           "level2": "Role-based access control implemented, access reviews performed but not regularly or without consistent follow-up",
-          "level3": "Consistent implementation of least-privilege per C5:2020 IDM-03/06 with role-based access control, regular access reviews, documented follow-up and separate management of privileged accounts"
+          "level3": "Consistent implementation of least-privilege with role-based access control, regular access reviews, documented follow-up and separate management of privileged accounts"
         }
       },
       "idmQ3": {
         "title": "Do you use strong authentication mechanisms for access to cloud systems?",
-        "tooltip": "C5:2020 IDM-07 and IDM-08 require the use of appropriate authentication mechanisms, particularly multi-factor authentication (MFA) for privileged access and administrative interfaces. Passwords must meet defined complexity requirements.",
-        "help": "C5 requires appropriate authentication mechanisms for all access to the cloud service. For privileged access and administrative interfaces, multi-factor authentication (MFA) is required. Passwords must meet defined complexity requirements (minimum length, complexity, change history). Session management must include timeouts and automatic lockout on inactivity.",
+        "tooltip": "Based on C5:2020 criteria IDM-08 and IDM-09 (official German titles: “Vertraulichkeit von Authentisierungsinformationen”, “Authentisierungsmechanismen”).",
+        "help": "You need appropriate authentication mechanisms for all access to the cloud service. For privileged access and administrative interfaces, multi-factor authentication (MFA) is required. Passwords must meet defined complexity requirements (minimum length, complexity, change history). Session management must include timeouts and automatic lockout on inactivity.",
         "maturity": {
           "level0": "Only simple password authentication without complexity requirements; no MFA",
           "level1": "Password policy with minimum requirements in place but no MFA, even for privileged access",
           "level2": "MFA for privileged access and administrative interfaces implemented, password policy defined, but not enforced for all access types",
-          "level3": "Comprehensive authentication strategy per C5:2020 IDM-07/08 with MFA for all privileged and administrative access, strong password policy, automatic session management and logging of all authentication attempts"
+          "level3": "Comprehensive authentication strategy with MFA for all privileged and administrative access, strong password policy, automatic session management and logging of all authentication attempts"
         }
       },
       "opsQ1": {
         "title": "Are operational processes for the cloud service documented and is compliance monitored?",
-        "tooltip": "C5:2020 OPS-01 and OPS-03 require documented operational processes for the cloud service, including change management, capacity management and separation of development, test and production environments.",
-        "help": "C5 requires documented standard operating procedures for all essential aspects of cloud operations: change management, capacity planning, environment separation (dev/test/prod), patch management and system hardening. These procedures must be known to employees and their compliance must be monitored.",
+        "tooltip": "Based on C5:2020 criteria SP-01, OPS-01, DEV-03 and DEV-10 (official German titles: “Dokumentation, Kommunikation und Bereitstellung von Richtlinien und Anweisungen”, “Kapazitätsmanagement – Planung”, “Richtlinien zur Änderung von Informationssystemen”, “Trennung der Umgebungen”). C5:2020 has no separate criterion for “documented operating processes”.",
+        "help": "You need documented standard operating procedures for all essential aspects of cloud operations: change management, capacity planning, environment separation (dev/test/prod), patch management and system hardening. These procedures must be known to employees and their compliance must be monitored.",
         "maturity": {
           "level0": "No documented operational processes; cloud operations run without standardised procedures",
           "level1": "Some operational processes informally defined but not comprehensively documented or monitored",
           "level2": "Documented operational processes for key areas (change management, patch management) but gaps in capacity planning or environment separation",
-          "level3": "Fully documented operational processes per C5:2020 OPS-01/03 for all relevant areas, regular review, demonstrable compliance and automated controls where possible"
+          "level3": "Fully documented operational processes for all relevant areas, regular review, demonstrable compliance and automated controls where possible"
         }
       },
       "opsQ2": {
         "title": "Are security events and system activities centrally logged and monitored?",
-        "tooltip": "C5:2020 (area OPS, logging and monitoring criteria from OPS-10) requires logging of security-relevant events and timely analysis. Log data must be protected against tampering and retained for defined periods.",
-        "help": "C5 requires comprehensive logging of all security-relevant events: login attempts, access attempts, system configuration changes, privileged actions and security events. Logs must be centrally collected, protected against unauthorised access and tampering, and analysed in a timely manner. Retention periods must be defined and comply with regulatory requirements.",
+        "tooltip": "Based on C5:2020 criteria OPS-10 to OPS-17, all of which carry the official German title “Protokollierung und Überwachung” (logging and monitoring).",
+        "help": "You need comprehensive logging of all security-relevant events: login attempts, access attempts, system configuration changes, privileged actions and security events. Logs must be centrally collected, protected against unauthorised access and tampering, and analysed in a timely manner. Retention periods must be defined and comply with regulatory requirements.",
         "maturity": {
           "level0": "No systematic logging or monitoring; security events are not captured",
           "level1": "Basic system logging in place but not centrally collected and not regularly analysed",
           "level2": "Central logging (SIEM) implemented, key security events captured and alerts responded to, but coverage not complete",
-          "level3": "Comprehensive logging and monitoring per C5:2020 (OPS, from OPS-10) with central SIEM, tamper-proof storage, automated alerting, defined retention periods and regular review of logging policies"
+          "level3": "Comprehensive logging and monitoring with central SIEM, tamper-proof storage, automated alerting, defined retention periods and regular review of logging policies"
         }
       },
       "opsQ3": {
         "title": "Are networks and communication links of the cloud service adequately secured?",
-        "tooltip": "C5:2020 COS-01 and COS-05 require the protection of networks and communication links through segmentation, encryption and monitoring. Data traffic between cloud service and customers must be encrypted.",
-        "help": "C5 requires comprehensive network security: segmentation of the cloud network to ensure tenant isolation, encryption of data in transit (TLS/IPsec), firewalls and intrusion detection/prevention systems (IDS/IPS), monitoring of network traffic for anomalies. The network architecture must be documented and regularly tested for vulnerabilities.",
+        "tooltip": "Based on C5:2020 criteria COS-01 and COS-05 (official German titles: “Technische Schutzmaßnahmen”, “Netze zur Administration”).",
+        "help": "You need comprehensive network security: segmentation of the cloud network to ensure tenant isolation, encryption of data in transit (TLS/IPsec), firewalls and intrusion detection/prevention systems (IDS/IPS), monitoring of network traffic for anomalies. The network architecture must be documented and regularly tested for vulnerabilities.",
         "maturity": {
           "level0": "No network segmentation or encryption of data traffic; no monitoring",
           "level1": "Basic firewall rules and TLS for external connections but no network segmentation or monitoring of internal communication",
           "level2": "Network segmentation implemented, TLS for all external connections, IDS/IPS deployed, but internal communication not consistently encrypted",
-          "level3": "Complete network security per C5:2020 COS-01/05 with segmentation, tenant isolation, end-to-end encryption, IDS/IPS, anomaly detection and regular vulnerability scans"
+          "level3": "Complete network security with segmentation, tenant isolation, end-to-end encryption, IDS/IPS, anomaly detection and regular vulnerability scans"
         }
       },
       "kryQ1": {
         "title": "Is there a documented cryptography policy with current encryption standards?",
-        "tooltip": "C5:2020 KRY-01 and KRY-02 require a cryptography policy governing the use of cryptographic algorithms and key lengths. Only recognised, current algorithms (e.g. per BSI TR-02102) may be used.",
-        "help": "C5 requires a documented cryptography policy that specifies which cryptographic algorithms, key lengths and protocols may be used. The policy must align with current recommendations (e.g. BSI TR-02102 or NIST SP 800-131A). Outdated or insecure algorithms (e.g. MD5, SHA-1, DES, RC4) must be explicitly excluded. The policy must be regularly updated.",
+        "tooltip": "Based on C5:2020 criterion CRY-01 (official German title: “Richtlinie zur Nutzung von Verschlüsselungsverfahren und Schlüsselverwaltung”).",
+        "help": "You need a documented cryptography policy that specifies which cryptographic algorithms, key lengths and protocols may be used. The policy must align with current recommendations (e.g. BSI TR-02102 or NIST SP 800-131A). Outdated or insecure algorithms (e.g. MD5, SHA-1, DES, RC4) must be explicitly excluded. The policy must be regularly updated.",
         "maturity": {
           "level0": "No cryptography policy; encryption is used ad hoc without uniform standards",
           "level1": "Basic awareness of encryption but no documented policy and no uniform standards",
           "level2": "Documented cryptography policy with defined algorithms and key lengths, but not all systems comply with the policy",
-          "level3": "Comprehensive cryptography policy per C5:2020 KRY-01/02 aligned with BSI TR-02102, with defined algorithms, key lengths and protocols, consistently implemented and regularly updated"
+          "level3": "Comprehensive cryptography policy aligned with BSI TR-02102, with defined algorithms, key lengths and protocols, consistently implemented and regularly updated"
         }
       },
       "kryQ2": {
         "title": "Are cryptographic keys securely managed throughout their entire lifecycle?",
-        "tooltip": "C5:2020 KRY-04 requires key management covering the entire lifecycle of cryptographic keys: generation, distribution, storage, rotation, archiving and destruction.",
-        "help": "C5 requires documented key management for all cryptographic keys used. The process must cover all phases: secure generation (e.g. with hardware security modules), protected storage, controlled distribution, regular rotation (e.g. annually for symmetric keys), secure archiving and demonstrable destruction. Key compromise must trigger immediate action.",
+        "tooltip": "Based on C5:2020 criterion CRY-04 (official German title: “Sichere Schlüsselverwaltung”).",
+        "help": "You need documented key management for all cryptographic keys used. The process must cover all phases: secure generation (e.g. with hardware security modules), protected storage, controlled distribution, regular rotation, secure archiving and demonstrable destruction. Key compromise must trigger immediate action.",
         "maturity": {
           "level0": "No defined key management; keys stored insecurely or never rotated",
           "level1": "Basic key management in place but no formal processes for rotation, archiving or destruction",
           "level2": "Documented key management with defined processes for generation, storage and rotation, but no HSM use and gaps in destruction",
-          "level3": "Comprehensive key management per C5:2020 KRY-04 with HSM-backed generation and storage, automated rotation, secure archiving, demonstrable destruction and defined emergency procedures for key compromise"
+          "level3": "Comprehensive key management with HSM-backed generation and storage, automated rotation, secure archiving, demonstrable destruction and defined emergency procedures for key compromise"
         }
       },
       "kryQ3": {
         "title": "Is customer data encrypted both in transit and at rest?",
-        "tooltip": "C5:2020 KRY-02 and KRY-03 require encryption of customer data in transit and at rest. The methods used must comply with the cryptography policy and meet the current state of the art.",
-        "help": "C5 requires that customer data is consistently encrypted: in transit through current TLS versions and at rest through strong encryption (e.g. AES-256). Encryption of backups, database entries and temporary files is particularly important. Customers should be informed about the methods used and ideally have the option to use their own keys (BYOK/HYOK).",
+        "tooltip": "Based on C5:2020 criteria CRY-02 and CRY-03 (official German titles: “Verschlüsselung von Daten bei der Übertragung (Transportverschlüsselung)”, “Verschlüsselung von sensiblen Daten bei der Speicherung”).",
+        "help": "Make sure that customer data is consistently encrypted: in transit through current TLS versions and at rest through strong encryption (e.g. AES-256). Encryption of backups, database entries and temporary files is particularly important. Customers should be informed about the methods used and ideally have the option to use their own keys (BYOK/HYOK).",
         "maturity": {
           "level0": "Customer data is encrypted neither in transit nor at rest",
           "level1": "TLS for external connections but no encryption at rest and no consistent encryption of internal communication",
           "level2": "Encryption in transit and at rest for most customer data, but gaps in backups, temporary files or internal transfers",
-          "level3": "End-to-end encryption per C5:2020 KRY-02/KRY-03 for all customer data in transit and at rest, including backups and temporary files, using current methods, customer information and optional BYOK capability"
+          "level3": "End-to-end encryption for all customer data in transit and at rest, including backups and temporary files, using current methods, customer information and optional BYOK capability"
         }
       },
       "simQ1": {
         "title": "Is there a defined process for detecting, reporting and handling security incidents?",
-        "tooltip": "C5:2020 SIM-01 and SIM-02 require a documented security incident management process covering detection, reporting, analysis, response and follow-up. Responsibilities and escalation paths must be clearly defined.",
-        "help": "C5 requires a complete incident response process: from detection through initial response and analysis to follow-up and lessons learned. The process must define clear escalation paths, assign roles (incident manager, analysis team) and ensure affected customers are informed promptly. The process must be regularly tested — e.g. through tabletop exercises.",
+        "tooltip": "Based on C5:2020 criteria SIM-01 and SIM-02 (official German titles: “Richtlinie für den Umgang mit Sicherheitsvorfällen”, “Bearbeitung von Sicherheitsvorfällen”).",
+        "help": "You need a complete incident response process: from detection through initial response and analysis to follow-up and lessons learned. The process must define clear escalation paths, assign roles (incident manager, analysis team) and ensure affected customers are informed promptly. The process must be regularly tested — e.g. through tabletop exercises.",
         "maturity": {
           "level0": "No defined incident response process; incidents are handled on an ad-hoc basis",
           "level1": "Basic responsibilities known but no documented process and no defined escalation paths",
           "level2": "Documented incident response process with roles, escalation paths and customer notification, but not regularly tested",
-          "level3": "Comprehensive incident response process per C5:2020 SIM-01/02 with defined roles, escalation paths, automated detection, timely customer notification, follow-up and regular exercises"
+          "level3": "Comprehensive incident response process with defined roles, escalation paths, automated detection, timely customer notification, follow-up and regular exercises"
         }
       },
       "simQ2": {
         "title": "Do you have documented business continuity plans for the cloud service?",
-        "tooltip": "C5:2020 BCM-01 and BCM-03 require business continuity plans (BCP) ensuring the maintenance or recovery of the cloud service during disruptions. Plans must define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).",
-        "help": "C5 requires documented business continuity plans specifying how the cloud service is maintained or recovered during various disruption scenarios. Plans must define RTO (maximum recovery time) and RPO (maximum data loss) for different scenarios, describe redundant infrastructure and failover mechanisms, and be regularly validated through tests (e.g. failover tests, disaster recovery exercises).",
+        "tooltip": "Based on C5:2020 criterion BCM-03 (official German title: “Planung der Betriebskontinuität”).",
+        "help": "You need documented business continuity plans specifying how the cloud service is maintained or recovered during various disruption scenarios. Plans must define RTO (maximum recovery time) and RPO (maximum data loss) for different scenarios, describe redundant infrastructure and failover mechanisms, and be regularly validated through tests (e.g. failover tests, disaster recovery exercises).",
         "maturity": {
           "level0": "No business continuity plans for the cloud service; no defined RTO/RPO",
           "level1": "Basic backup strategy in place but no comprehensive BCP and no defined RTO/RPO",
           "level2": "Documented BCP with defined RTO/RPO and redundant infrastructure, but tests not regular or scenarios not fully covered",
-          "level3": "Comprehensive business continuity plans per C5:2020 BCM-01/03 with defined RTO/RPO, redundant infrastructure, documented failover mechanisms, regular testing and demonstrable updates after changes"
+          "level3": "Comprehensive business continuity plans with defined RTO/RPO, redundant infrastructure, documented failover mechanisms, regular testing and demonstrable updates after changes"
         }
       },
       "simQ3": {
         "title": "Are security incidents systematically analysed and do findings feed into improvements?",
-        "tooltip": "C5:2020 SIM-04 and SIM-05 require systematic analysis of security incidents and derivation of improvement measures (lessons learned). Incidents must be classified, documented and trends analysed.",
-        "help": "C5 requires that every security incident is systematically analysed after immediate measures are completed: What was the root cause? Could the incident have been detected earlier? What measures prevent recurrence? The results must feed into a continuous improvement process. Incidents must be classified (by severity, type, affected area) and trends analysed over time.",
+        "tooltip": "Based on C5:2020 criterion SIM-05 (official German title: “Auswertung und Lernprozess”).",
+        "help": "Make sure that every security incident is systematically analysed after immediate measures are completed: What was the root cause? Could the incident have been detected earlier? What measures prevent recurrence? The results must feed into a continuous improvement process. Incidents must be classified (by severity, type, affected area) and trends analysed over time.",
         "maturity": {
           "level0": "No systematic incident analysis; same incident types occur repeatedly",
           "level1": "Occasional debriefs after severe incidents but no structured lessons-learned analysis",
           "level2": "Systematic post-incident analysis with documented findings and improvement measures, but no overarching trend analysis",
-          "level3": "Comprehensive lessons-learned process per C5:2020 SIM-04/05 with structured incident analysis, classification, trend analysis, documented improvement measures and demonstrable implementation"
+          "level3": "Comprehensive lessons-learned process with structured incident analysis, classification, trend analysis, documented improvement measures and demonstrable implementation"
         }
       },
       "devQ1": {
         "title": "Are cloud applications developed following a secure software development lifecycle (SDLC)?",
-        "tooltip": "C5:2020 DEV-01 and DEV-02 require a secure software development process incorporating security requirements, code reviews, security testing and separation of development, test and production environments.",
-        "help": "C5 requires a documented Secure Development Lifecycle (SDLC) integrating security into all phases of software development: security requirements in the design phase (Security by Design), secure coding guidelines, code reviews (ideally automated), static and dynamic security testing (SAST/DAST), strict separation of development, test and production environments and controlled release processes.",
+        "tooltip": "Based on C5:2020 criterion DEV-01 (official German title: “Richtlinien zur Entwicklung/Beschaffung von Informationssystemen”).",
+        "help": "You need a documented Secure Development Lifecycle (SDLC) integrating security into all phases of software development: security requirements in the design phase (Security by Design), secure coding guidelines, code reviews (ideally automated), static and dynamic security testing (SAST/DAST), strict separation of development, test and production environments and controlled release processes.",
         "maturity": {
           "level0": "No defined secure development process; security only considered after development (if at all)",
           "level1": "Basic coding guidelines in place but no systematic security testing or code reviews",
           "level2": "Documented SDLC with security requirements, code reviews and security testing, but not consistently applied across all projects or environment separation incomplete",
-          "level3": "Complete Secure SDLC per C5:2020 DEV-01/02 with Security by Design, automated code reviews, SAST/DAST, strict environment separation and controlled release management"
+          "level3": "Complete Secure SDLC with Security by Design, automated code reviews, SAST/DAST, strict environment separation and controlled release management"
         }
       },
       "devQ2": {
         "title": "Is procurement and deployment of cloud service components governed by security criteria?",
-        "tooltip": "C5:2020 SSO-01 and SSO-03 require security requirements for procurement and deployment of IT components for the cloud service. Security properties of third-party components must be assessed and their vulnerabilities monitored.",
-        "help": "C5 requires that all components used for the cloud service — whether software libraries, operating systems or hardware — are assessed for security properties before deployment. For third-party components, vulnerability notifications must be monitored and patches applied promptly (vulnerability management). Supply chain security must be considered.",
+        "tooltip": "Based on C5:2020 criteria SSO-01 and SSO-02 (official German titles: “Richtlinien und Anweisungen zur Steuerung und Überwachung Dritter”, “Risikobeurteilung der Dienstleister und Lieferanten”).",
+        "help": "Make sure that all components used for the cloud service — whether software libraries, operating systems or hardware — are assessed for security properties before deployment. For third-party components, vulnerability notifications must be monitored and patches applied promptly (vulnerability management). Supply chain security must be considered.",
         "maturity": {
           "level0": "No security assessment for component procurement; no vulnerability monitoring for third-party components",
           "level1": "Basic security consideration for major procurements but no systematic process and no vulnerability monitoring",
           "level2": "Defined security criteria for procurement, vulnerability monitoring for critical components, but gaps in supply chain security",
-          "level3": "Comprehensive procurement and component management process per C5:2020 SSO-01/03 with defined security criteria, systematic vulnerability monitoring, patch management and supply chain security"
+          "level3": "Comprehensive procurement and component management process with defined security criteria, systematic vulnerability monitoring, patch management and supply chain security"
         }
       },
       "devQ3": {
         "title": "Are independent audits (audits/penetration tests) of the cloud service regularly conducted?",
-        "tooltip": "C5:2020 (area COM – compliance) requires regular independent reviews of the cloud service's information security. This includes both compliance audits and technical reviews such as penetration tests.",
-        "help": "C5 is an attestation-based standard: compliance with the criteria must be attested by independent auditors (similar to SOC 2). In addition to formal C5 audits, C5 requires regular technical security reviews (penetration tests, vulnerability scans). Results must be documented and identified vulnerabilities remediated promptly.",
+        "tooltip": "Based on C5:2020 criteria COM-02, COM-03 and OPS-19 (official German titles: “Richtlinie für die Planung und Durchführung von Audits”, “Interne Audits des Informationssicherheitsmanagementsystems”, “Umgang mit Schwachstellen, Störungen und Fehlern – Penetrationstests”).",
+        "help": "The BSI evaluation guide for C5:2020 assumes reporting under C5:2020 by an auditor. In addition, criterion OPS-19 provides for penetration tests at least annually by qualified internal personnel or external service providers, and criterion COM-03 for internal audits of the information security management system at least annually. Document the results and remediate identified vulnerabilities promptly.",
         "maturity": {
           "level0": "No independent audits or penetration tests; no statement on the security status of the cloud service possible",
           "level1": "Occasional internal security reviews but no independent audits or professional penetration tests",
           "level2": "Regular penetration tests by external providers and vulnerability scans, but no formal C5 audit",
-          "level3": "Comprehensive audit programme per C5:2020 (COM) with formal C5 attestation by independent auditor, regular penetration tests, vulnerability scans and documented tracking of all findings"
+          "level3": "Comprehensive audit programme with formal C5 attestation by independent auditor, regular penetration tests, vulnerability scans and documented tracking of all findings"
         }
       }
     },
@@ -9644,7 +9644,7 @@
         },
         "q7": {
           "title": "Do you use current encryption standards for customer data (transit + at rest)?",
-          "description": "Encryption of all customer data in transit and at rest using current algorithms per BSI recommendations (C5 KRY-01/04)."
+          "description": "Encryption of all customer data in transit and at rest using current algorithms per BSI recommendations (C5:2020 CRY-01 to CRY-04)."
         },
         "q8": {
           "title": "Is there a documented incident response process with escalation paths?",
@@ -14363,7 +14363,7 @@
     "questions": {
       "gvQ1": {
         "title": "Is there a documented cybersecurity strategy with clear objectives?",
-        "tooltip": "NIST CSF GV.OC: Organizational Context",
+        "tooltip": "NIST CSF 2.0 GV.RM: Risk Management Strategy",
         "help": "The strategy defines the framework for all cybersecurity activities.",
         "maturity": {
           "level0": "There is no cybersecurity strategy.",
@@ -14374,7 +14374,7 @@
       },
       "gvQ2": {
         "title": "Are cybersecurity roles and responsibilities defined across the organization?",
-        "tooltip": "NIST CSF GV.RR: Roles and Responsibilities",
+        "tooltip": "NIST CSF 2.0 GV.RR: Roles, Responsibilities, and Authorities",
         "help": "Clear accountability prevents gaps in security management.",
         "maturity": {
           "level0": "Nobody is explicitly responsible for cybersecurity.",
@@ -14385,7 +14385,7 @@
       },
       "gvQ3": {
         "title": "Is cybersecurity risk regularly reported to executive management?",
-        "tooltip": "NIST CSF GV.RM: Risk Management",
+        "tooltip": "NIST CSF 2.0 GV.OV: Oversight",
         "help": "Risk transparency enables informed business decisions.",
         "maturity": {
           "level0": "Management receives no information on cyber risk.",
@@ -14396,7 +14396,7 @@
       },
       "idQ1": {
         "title": "Is a comprehensive asset inventory (hardware, software, data) maintained?",
-        "tooltip": "NIST CSF ID.AM: Asset Management",
+        "tooltip": "NIST CSF 2.0 ID.AM: Asset Management",
         "help": "You can only protect what you know about.",
         "maturity": {
           "level0": "There is no inventory of devices, software and data.",
@@ -14407,7 +14407,7 @@
       },
       "idQ2": {
         "title": "Are cybersecurity risks systematically identified and assessed?",
-        "tooltip": "NIST CSF ID.RA: Risk Assessment",
+        "tooltip": "NIST CSF 2.0 ID.RA: Risk Assessment",
         "help": "Risk-based prioritization focuses resources on the greatest threats.",
         "maturity": {
           "level0": "Cyber risks are not considered.",
@@ -14429,7 +14429,7 @@
       },
       "prQ1": {
         "title": "Is access to systems and data managed based on the principle of least privilege?",
-        "tooltip": "NIST CSF PR.AA: Access Control",
+        "tooltip": "NIST CSF 2.0 PR.AA: Identity Management, Authentication, and Access Control",
         "help": "Least privilege significantly reduces the attack surface.",
         "maturity": {
           "level0": "Most users have broad or administrator rights.",
@@ -14440,7 +14440,7 @@
       },
       "prQ2": {
         "title": "Do all employees receive regular cybersecurity training?",
-        "tooltip": "NIST CSF PR.AT: Awareness and Training",
+        "tooltip": "NIST CSF 2.0 PR.AT: Awareness and Training",
         "help": "Trained employees are the most important line of defense.",
         "maturity": {
           "level0": "There is no cybersecurity training.",
@@ -14451,7 +14451,7 @@
       },
       "prQ3": {
         "title": "Are technical safeguards such as encryption and endpoint protection in place?",
-        "tooltip": "NIST CSF PR.DS: Data Security",
+        "tooltip": "NIST CSF 2.0 PR.DS: Data Security",
         "help": "Technical controls complement organizational measures.",
         "maturity": {
           "level0": "There is neither encryption nor endpoint protection.",
@@ -14462,7 +14462,7 @@
       },
       "deQ1": {
         "title": "Is continuous monitoring in place for all critical systems?",
-        "tooltip": "NIST CSF DE.CM: Continuous Monitoring",
+        "tooltip": "NIST CSF 2.0 DE.CM: Continuous Monitoring",
         "help": "Real-time monitoring detects attacks in their early stages.",
         "maturity": {
           "level0": "Critical systems are not monitored.",
@@ -14473,7 +14473,7 @@
       },
       "deQ2": {
         "title": "Are anomalies and suspicious activities detected automatically?",
-        "tooltip": "NIST CSF DE.AE: Anomaly Detection",
+        "tooltip": "NIST CSF 2.0 DE.AE: Adverse Event Analysis",
         "help": "Automated detection shortens the time to response.",
         "maturity": {
           "level0": "Anomalies are not detected.",
@@ -14484,7 +14484,7 @@
       },
       "deQ3": {
         "title": "Are detection processes defined, tested, and continuously improved?",
-        "tooltip": "NIST CSF 2.0 DE.AE: Adverse Event Analysis",
+        "tooltip": "NIST CSF 2.0 ID.IM: Improvement",
         "help": "Defined processes ensure consistent detection capabilities.",
         "maturity": {
           "level0": "There are no defined detection processes.",
@@ -14495,7 +14495,7 @@
       },
       "rsQ1": {
         "title": "Is there a documented and tested incident response plan?",
-        "tooltip": "NIST CSF RS.MA: Incident Management",
+        "tooltip": "NIST CSF 2.0 RS.MA: Incident Management",
         "help": "A tested plan significantly reduces response time.",
         "maturity": {
           "level0": "There is no plan for security incidents.",
@@ -14506,7 +14506,7 @@
       },
       "rsQ2": {
         "title": "Are communication channels for security incidents defined (internal and external)?",
-        "tooltip": "NIST CSF RS.CO: Communication",
+        "tooltip": "NIST CSF 2.0 RS.CO: Incident Response Reporting and Communication",
         "help": "Clear communication prevents information chaos during an incident.",
         "maturity": {
           "level0": "It is not defined who informs whom in an incident.",
@@ -14517,7 +14517,7 @@
       },
       "rsQ3": {
         "title": "Are security incidents analyzed and lessons learned documented?",
-        "tooltip": "NIST CSF RS.AN: Analysis",
+        "tooltip": "NIST CSF 2.0 RS.AN: Incident Analysis",
         "help": "Incident analysis prevents repeated attacks using the same methods.",
         "maturity": {
           "level0": "Incidents are fixed but not investigated.",
@@ -14528,7 +14528,7 @@
       },
       "rcQ1": {
         "title": "Are recovery plans in place for all critical systems and data?",
-        "tooltip": "NIST CSF RC.RP: Recovery Planning",
+        "tooltip": "NIST CSF 2.0 RC.RP: Incident Recovery Plan Execution",
         "help": "Recovery plans define the sequence for restoring systems.",
         "maturity": {
           "level0": "There are no recovery plans.",
@@ -14550,7 +14550,7 @@
       },
       "rcQ3": {
         "title": "Is communication during the recovery phase planned?",
-        "tooltip": "NIST CSF RC.CO: Communication",
+        "tooltip": "NIST CSF 2.0 RC.CO: Incident Recovery Communication",
         "help": "Stakeholders must be kept informed during recovery.",
         "maturity": {
           "level0": "Communication during recovery is not planned.",
@@ -14705,7 +14705,7 @@
     "questions": {
       "auQ1": {
         "title": "Are secure password policies (minimum length, check against leaked passwords) enforced?",
-        "tooltip": "OWASP ASVS V2.1: Password Security",
+        "tooltip": "OWASP ASVS 4.0.3, V2.1 Password Security.",
         "help": "Modern policies favor length over complexity and check against known credential leaks.",
         "maturity": {
           "level0": "There are no rules for passwords.",
@@ -14716,7 +14716,7 @@
       },
       "auQ2": {
         "title": "Is multi-factor authentication available and enabled for all user accounts?",
-        "tooltip": "OWASP ASVS V2.8: MFA",
+        "tooltip": "OWASP ASVS 4.0.3, V2.2 General Authenticator Security, V4.3 Other Access Control Considerations. ASVS 4.0.3 expressly requires MFA for administrative interfaces (V4.3.1), not for all user accounts.",
         "help": "MFA provides protection even when passwords are compromised.",
         "maturity": {
           "level0": "The application offers no multi-factor authentication.",
@@ -14727,7 +14727,7 @@
       },
       "auQ3": {
         "title": "Are credential stuffing and brute-force attacks actively detected and blocked?",
-        "tooltip": "OWASP ASVS V2.2: General Authentication",
+        "tooltip": "OWASP ASVS 4.0.3, V2.2 General Authenticator Security.",
         "help": "Rate limiting and account lockout protect against automated attacks.",
         "maturity": {
           "level0": "Login attempts are unlimited.",
@@ -14738,7 +14738,7 @@
       },
       "smQ1": {
         "title": "Are session tokens securely generated, transmitted, and stored?",
-        "tooltip": "OWASP ASVS V3.1-3.3: Session Management",
+        "tooltip": "OWASP ASVS 4.0.3, V3.2 Session Binding.",
         "help": "Secure session tokens prevent session hijacking.",
         "maturity": {
           "level0": "Session tokens are predictable or appear in the URL.",
@@ -14749,7 +14749,7 @@
       },
       "smQ2": {
         "title": "Are appropriate session timeouts and idle timeouts configured?",
-        "tooltip": "OWASP ASVS V3.3: Session Timeout",
+        "tooltip": "OWASP ASVS 4.0.3, V3.3 Session Termination.",
         "help": "Timeouts limit the window of opportunity for attackers.",
         "maturity": {
           "level0": "Sessions never expire.",
@@ -14760,7 +14760,7 @@
       },
       "smQ3": {
         "title": "Are sessions terminated on the server at logout and after a password change?",
-        "tooltip": "OWASP ASVS V3.3: Session Termination",
+        "tooltip": "OWASP ASVS 4.0.3, V3.3 Session Termination.",
         "help": "Proper session termination prevents persistent unauthorized access.",
         "maturity": {
           "level0": "The session stays valid on the server after logout.",
@@ -14771,7 +14771,7 @@
       },
       "acQ1": {
         "title": "Is the principle of least privilege consistently applied?",
-        "tooltip": "OWASP ASVS V4.1: Access Control",
+        "tooltip": "OWASP ASVS 4.0.3, V4.1 General Access Control Design.",
         "help": "Users should only have the permissions required for their specific role.",
         "maturity": {
           "level0": "All logged-in users can do practically everything.",
@@ -14782,7 +14782,7 @@
       },
       "acQ2": {
         "title": "Are access controls enforced server-side rather than only client-side?",
-        "tooltip": "OWASP ASVS V4.1: Server-Side Enforcement",
+        "tooltip": "OWASP ASVS 4.0.3, V4.1 General Access Control Design.",
         "help": "Client-side controls can be easily bypassed.",
         "maturity": {
           "level0": "Permissions are checked only in the user interface, for example by hiding buttons.",
@@ -14793,7 +14793,7 @@
       },
       "acQ3": {
         "title": "Is protection against IDOR (Insecure Direct Object References) implemented?",
-        "tooltip": "OWASP ASVS V4.2: IDOR Prevention",
+        "tooltip": "OWASP ASVS 4.0.3, V4.2 Operation Level Access Control.",
         "help": "IDOR allows unauthorized access to other users' data through reference manipulation.",
         "maturity": {
           "level0": "Other users' records can be retrieved by changing the ID in the request.",
@@ -14804,7 +14804,7 @@
       },
       "ivQ1": {
         "title": "Are all user inputs validated and sanitized server-side?",
-        "tooltip": "OWASP ASVS V5.1: Input Validation",
+        "tooltip": "OWASP ASVS 4.0.3, V5.1 Input Validation.",
         "help": "Server-side validation prevents injection attacks.",
         "maturity": {
           "level0": "Input is processed unchecked.",
@@ -14815,7 +14815,7 @@
       },
       "ivQ2": {
         "title": "Is output encoding applied context-sensitively (HTML, JavaScript, URL)?",
-        "tooltip": "OWASP ASVS V5.3: Output Encoding",
+        "tooltip": "OWASP ASVS 4.0.3, V5.3 Output Encoding and Injection Prevention.",
         "help": "Proper output encoding prevents XSS and other injection attacks.",
         "maturity": {
           "level0": "Output is inserted without encoding.",
@@ -14826,7 +14826,7 @@
       },
       "ivQ3": {
         "title": "Are parameterized queries or ORMs used to protect against SQL injection?",
-        "tooltip": "OWASP ASVS V5.3: SQL Injection",
+        "tooltip": "OWASP ASVS 4.0.3, V5.3 Output Encoding and Injection Prevention.",
         "help": "Parameterized queries are the most effective defense against SQL injection.",
         "maturity": {
           "level0": "Database queries are built from user input.",
@@ -14837,7 +14837,7 @@
       },
       "crQ1": {
         "title": "Is all sensitive data encrypted at rest using current algorithms?",
-        "tooltip": "OWASP ASVS V6.1: Data Encryption",
+        "tooltip": "OWASP ASVS 4.0.3, V6.1 Data Classification.",
         "help": "AES-256 for data at rest, current TLS versions for data in transit.",
         "maturity": {
           "level0": "Sensitive data sits unencrypted in the database and files.",
@@ -14848,7 +14848,7 @@
       },
       "crQ2": {
         "title": "Are passwords stored using secure hashing algorithms (bcrypt, Argon2)?",
-        "tooltip": "OWASP ASVS V2.4: Password Hashing",
+        "tooltip": "OWASP ASVS 4.0.3, V2.4 Credential Storage.",
         "help": "Modern hashing algorithms with salt and stretching protect stored passwords.",
         "maturity": {
           "level0": "Passwords are stored in plain text or reversibly.",
@@ -14859,7 +14859,7 @@
       },
       "crQ3": {
         "title": "Is secure key management implemented for cryptographic keys?",
-        "tooltip": "OWASP ASVS V6.4: Key Management",
+        "tooltip": "OWASP ASVS 4.0.3, V6.4 Secret Management.",
         "help": "Keys should be securely generated, stored, and rotated.",
         "maturity": {
           "level0": "Keys are in the source code or in version control.",
@@ -14870,7 +14870,7 @@
       },
       "elQ1": {
         "title": "Are error messages displayed without exposing sensitive information?",
-        "tooltip": "OWASP ASVS V7.4: Error Handling",
+        "tooltip": "OWASP ASVS 4.0.3, V7.4 Error Handling.",
         "help": "Stack traces and system information in error messages assist attackers.",
         "maturity": {
           "level0": "Error messages show technical details such as stack traces or database errors.",
@@ -14881,7 +14881,7 @@
       },
       "elQ2": {
         "title": "Are all security-relevant events logged and monitored?",
-        "tooltip": "OWASP ASVS V7.1: Security Logging",
+        "tooltip": "OWASP ASVS 4.0.3, V7.1 Log Content, V7.2 Log Processing.",
         "help": "Logging enables detection and investigation of attacks.",
         "maturity": {
           "level0": "Security-relevant events are not logged.",
@@ -14892,7 +14892,7 @@
       },
       "elQ3": {
         "title": "Are APIs secured with authentication, rate limiting, and input validation?",
-        "tooltip": "OWASP ASVS V13: API Security",
+        "tooltip": "OWASP ASVS 4.0.3, V13.1 Generic Web Service Security, V13.2 RESTful Web Service, V11.1 Business Logic Security.",
         "help": "APIs are increasingly targeted and require dedicated security measures.",
         "maturity": {
           "level0": "APIs are reachable without authentication.",

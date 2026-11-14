@@ -223,7 +223,7 @@ Quellen (gesetze-im-internet.de, Abruf 14.11.2026): BSIG (`bsig_2025`) §§ 2, 2
 
 30 Fragen geprüft. Geändert: 36 ganze Texte und 3 Teiltexte je Sprache, 34 Normbezüge.
 
-**Durchgehender Befund:** 18 Fragen verwiesen pauschal auf „§30 Abs. 1 BSI-Gesetz“ mit der Formel „angemessene organisatorische und technische Vorkehrungen nach dem Stand der Technik“. Das ist der Wortlaut des früheren § 8a BSIG. Der geltende § 30 Abs. 1 lautet „geeignete, verhältnismäßige und wirksame technische und organisatorische Maßnahmen“; der Stand der Technik steht in Abs. 2 Satz 1 („sollen … einhalten“). Die Bezüge zeigen jetzt auf die einschlägige Nummer in § 30 Abs. 2 oder auf § 31.
+**Durchgehender Befund:** 18 Fragen verwiesen pauschal auf „§30 Abs. 1 BSI-Gesetz“ mit der Formel „angemessene organisatorische und technische Vorkehrungen nach dem Stand der Technik“. Der geltende § 30 Abs. 1 lautet „geeignete, verhältnismäßige und wirksame technische und organisatorische Maßnahmen“; der Stand der Technik steht in Abs. 2 Satz 1 („sollen … einhalten“). Die Bezüge zeigen jetzt auf die einschlägige Nummer in § 30 Abs. 2 oder auf § 31.
 
 **Falsche Normbezüge**
 
@@ -255,3 +255,107 @@ Quellen (gesetze-im-internet.de, Abruf 14.11.2026): BSIG (`bsig_2025`) §§ 2, 2
 **Bausteinverweise:** Aussagen darüber, was ein Baustein „fordert“ oder „empfiehlt“ (ISMS.1, DER.2.1, DER.4, INF.1, INF.2, NET.1.1, OPS.2.3), sind auf den Verweis mit Nummer und Titel zurückgeführt. Die Titel stimmen mit der Edition 2023 überein.
 
 **Nicht geprüft:** Inhalt der Bausteine und der BSI-Standards; Inhalt der BSI-KritisV (Schwellenwerte); die Zusatzzeile „BSI-KritisV“ steht weiter bei 26 Fragen als Hinweis, wer Betreiber ist. Ob die BSI-KritisV nach Inkrafttreten des KRITIS-Dachgesetzes (§ 5 Abs. 1: eigene Rechtsverordnung) weiter die maßgebliche Verordnung ist, wurde nicht geklärt. Englische Texte: Das BSIG hat keine amtliche englische Fassung; die englischen Erklärtexte sind Übersetzungen.
+
+## NIST CSF 2.0: Befunde und Änderungen
+
+**Quelle:** NIST Cybersecurity Framework 2.0, Tabellenexport aus dem NIST-Referenzwerkzeug CPRT (XLSX, 219 Einträge: Funktionen, Kategorien, Unterkategorien), abgerufen am 14.11.2026. Geprüft wurde maschinell: Gibt es die zitierte Kennung, und passt ihr amtlicher Text zum Fragethema?
+
+**Bezüge geändert (10 von 18 Fragen)**
+
+| Frage | Jetzt |
+|---|---|
+| `gv-q1` | GV.RM-01, GV.RM-02 |
+| `gv-q2` | GV.RR-02 |
+| `gv-q3` | GV.OV-01, GV.OV-03 |
+| `id-q2` | ID.RA-01, ID.RA-03, ID.RA-04, ID.RA-05 |
+| `id-q3` | GV.SC-03, GV.SC-04, GV.SC-07 |
+| `pr-q1` | PR.AA-01, PR.AA-03, PR.AA-05 |
+| `de-q3` | ID.IM-01, ID.IM-02, ID.IM-03 |
+| `rs-q1` | RS.MA-01, ID.IM-02, ID.IM-04 |
+| `rs-q3` | RS.AN-03, RS.AN-06, ID.IM-03 |
+| `rc-q2` | ID.IM-02, ID.IM-04 |
+
+**Erklärtexte:** Alle 18 nennen jetzt nur noch Kennung und amtlichen englischen Namen der Kategorie mit deutscher Übersetzung in Klammern. Inhaltsaussagen („NIST fordert …“) sind entfernt.
+
+**Nicht geprüft:** Die deutsche Übersetzung der Kategorienamen stammt nicht von NIST. Hilfe- und Stufentexte beschreiben Umsetzungsstände und sind nicht Satz für Satz geprüft.
+
+## OWASP ASVS: Befunde und Änderungen
+
+**Quelle:** OWASP Application Security Verification Standard 4.0.3, maschinenlesbare Fassung (JSON) aus dem amtlichen Repository OWASP/ASVS, Tag `v4.0.3`, abgerufen am 14.11.2026. Zusätzlich die Fassung 5.0.0 aus demselben Repository zum Abgleich.
+
+**Wichtigster Befund:** Es gibt inzwischen ASVS 5.0.0 mit anderer Kapitel- und Anforderungsnummerierung. Das Tool zitiert weiter 4.0.3 und sagt das jetzt in jedem Erklärtext. Die Umstellung auf 5.0.0 ist eine Entscheidung des Betreibers (siehe TODO).
+
+**Bezüge geändert (7 Fragen)**
+
+| Frage | Jetzt | Hinweis |
+|---|---|---|
+| `owasp-auth-q2` | V2.2.4, V4.3.1 | V4.3.1 verlangt Mehr-Faktor-Authentisierung nur für administrative Oberflächen; steht so im Erklärtext |
+| `owasp-auth-q3` | V2.2.1 | vorher zusätzlich V2.5.1, V2.5.4 |
+| `owasp-ac-q1` | V4.1.3 | vorher zusätzlich V4.1.1, V4.1.2 |
+| `owasp-iv-q1` | V5.1.3 | vorher zusätzlich V5.1.1, V5.1.2 |
+| `owasp-crypto-q2` | Kapitel V2 (V2.4.1) | vorher Kapitel V6 genannt, die zitierte Anforderung liegt in V2 |
+| `owasp-el-q2` | Kapitel V7 | vorher V9 und V14 |
+| `owasp-el-q3` | V13.1.4, V13.2.2, V11.1.4 | vorher V13.1.1, V13.2.1 |
+
+**Erklärtexte:** nennen Fassung, Abschnittsnummer und amtlichen englischen Abschnittstitel.
+
+**Nicht geprüft:** Hilfe- und Stufentexte Satz für Satz.
+
+## BSI IT-Grundschutz: Befunde und Änderungen
+
+**Quellen:** Bausteinliste des IT-Grundschutz-Kompendiums, Edition 2023, von bsi.bund.de (110 Bausteine mit Nummer und Titel) und 31 Baustein-PDFs der Edition 2023, abgerufen am 14.11.2026.
+
+**Wichtigster Befund:** Alle 30 Fragen verwiesen auf eine Anforderung „.A1“ des jeweiligen Bausteins, unabhängig vom Thema der Frage. Mindestens eine davon gibt es nicht mehr: APP.1.1.A1 ist in der Edition 2023 als „ENTFALLEN“ geführt. Die Bezüge nennen jetzt den Baustein mit Nummer und amtlichem Titel. Nur bei `isms-q1` (ISMS.1.A1) und `isms-q2` (ISMS.1.A3) passt die einzelne Anforderung laut PDF zum Fragethema und bleibt stehen.
+
+**Bausteine neu zugeordnet**
+
+| Frage | Jetzt |
+|---|---|
+| `con-q1` | CON.1 Kryptokonzept |
+| `con-q2` | CON.3 Datensicherungskonzept |
+| `der-q3` | DER.4 Notfallmanagement |
+| `ops-q3` | OPS.1.2.5 Fernwartung, OPS.2.3 Nutzung von Outsourcing |
+| `sys-q3` | SYS.3.1 Laptops, SYS.3.2.2 Mobile Device Management (MDM) |
+| `net-q2` | NET.3.1 Router und Switches, NET.3.2 Firewall |
+| `net-q3` | NET.4.1 TK-Anlagen, NET.4.2 VoIP |
+| `isms-q3` | BSI-Standard 200-3 (Risikomanagement), ISMS.1 Sicherheitsmanagement |
+
+**Erklärtexte:** „Der Baustein fordert … müssen“ ist durchgehend zu „behandelt … sollten“ geändert, weil die Verbindlichkeit (MUSS oder SOLLTE) je Anforderung nicht geprüft wurde. Einzelaussagen ohne Beleg im PDF sind entfernt: ActiveX und Updates (`app-q1`), Firmware (`net-q2`), Fernlöschung (`sys-q3`).
+
+**Nicht geprüft:** Verbindlichkeit jeder einzelnen Anforderung; Inhalt des BSI-Standards 200-3 (kein Volltext abgerufen, der Erklärtext nennt deshalb nur Titel und Gegenstand); Kapitelangaben der BSI-Standards.
+
+## BSI C5: Befunde und Änderungen
+
+**Quellen:** Auswertungsleitfäden des BSI zum C5:2020 und zum C5:2026 (XLSX, bsi.bund.de), abgerufen am 14.11.2026. Ausgelesen wurden je Kriterium Kennung, Titel und Text des Basiskriteriums: 127 Kriterien im C5:2020, 174 im C5:2026.
+
+**Wichtigster Befund:** Das BSI führt inzwischen den C5:2026. Kennungen und Titel weichen vom C5:2020 ab (Beispiele: AM-02 heißt 2020 „Richtlinie für den zulässigen Gebrauch und sicheren Umgang mit Assets“, 2026 „Asset-Inventar“; die IDM-Kennungen des C5:2020 gibt es 2026 nicht mehr). Das Tool bleibt beim C5:2020 und sagt das in jedem Bezug. Die Umstellung ist eine Entscheidung des Betreibers (siehe TODO).
+
+**Bezüge:** Bei 19 von 25 Fragen passten die zitierten Kriterien nicht oder nur teilweise zum Fragethema oder existierten nicht. Die Zusatzzeile „Kap. 4.x“ ließ sich an der Quelle nicht belegen und ist durch „BSI C5:2020“ ersetzt.
+
+| Frage | Vorher | Jetzt | Begründung aus den amtlichen Titeln (C5:2020) |
+|---|---|---|---|
+| `c5-org-q4` | OIS-05, OIS-07 | COM-02, COM-03 | OIS-05 ist „Kontakt zu relevanten Behörden und Interessenverbänden“; Audits stehen in COM-02 und COM-03 |
+| `c5-am-q1` | AM-01, AM-02 | AM-01 | Inventarisierung der Assets |
+| `c5-am-q2` | AM-03, AM-04 | AM-06 | Klassifizierung und Kennzeichnung von Assets; AM-03 und AM-04 betreffen Hardware |
+| `c5-am-q3` | AM-05, AM-06 | PI-02, PI-03 | Vertragliche Vereinbarungen zur Bereitstellung von Daten; Sichere Datenlöschung |
+| `c5-ps-q1` | PS-01, PS-02 | PS-01, PS-03, PS-04 | PS-02 ist „Redundanzmodell“; Perimeterschutz und Zutrittskontrolle sind PS-03 und PS-04 |
+| `c5-ps-q3` | „PS, AM“ | AM-04, PS-06 | Außerbetriebnahme von Hardware (Löschung der Daten oder Vernichtung der Datenträger); Instandhaltung der Versorgungseinrichtungen |
+| `c5-idm-q1` | IDM-01, IDM-02 | IDM-02, IDM-04 | Vergabe und Änderung; Entzug oder Anpassung bei Veränderungen |
+| `c5-idm-q2` | IDM-03, IDM-06 | IDM-01, IDM-05, IDM-06 | Das Least-Privilege-Prinzip steht in IDM-01, die regelmäßige Überprüfung in IDM-05 |
+| `c5-idm-q3` | IDM-07, IDM-08 | IDM-08, IDM-09 | IDM-07 ist „Zugriff auf Daten der Cloud-Kunden“; Authentisierungsmechanismen sind IDM-09 |
+| `c5-ops-q1` | OPS-01, OPS-03 | SP-01, OPS-01, DEV-03, DEV-10 | Ein Kriterium „dokumentierte Betriebsprozesse“ gibt es nicht; steht so im Erklärtext |
+| `c5-ops-q2` | „OPS-10 ff.“ | OPS-10 bis OPS-17 | alle „Protokollierung und Überwachung“ |
+| `c5-kry-q1` bis `c5-kry-q3` | KRY-01 bis KRY-04 | CRY-01; CRY-04; CRY-02, CRY-03 | Der Bereich heißt CRY; „KRY“ gibt es nicht |
+| `c5-sim-q2` | BCM-01, BCM-03 | BCM-03 | Planung der Betriebskontinuität |
+| `c5-sim-q3` | SIM-04, SIM-05 | SIM-05 | Auswertung und Lernprozess |
+| `c5-dev-q1` | DEV-01, DEV-02 | DEV-01 | DEV-02 ist „Auslagerung der Entwicklung“ |
+| `c5-dev-q2` | SSO-01, SSO-03 | SSO-01, SSO-02 | Steuerung und Überwachung Dritter; Risikobeurteilung der Dienstleister und Lieferanten |
+| `c5-dev-q3` | „COM“ | COM-02, COM-03, OPS-19 | Audits; Penetrationstests |
+
+**Erklärtexte:** Alle 25 nennen jetzt nur Kennung und amtlichen Titel der Kriterien. Die früheren Inhaltsaussagen waren überwiegend nicht belegt. Beispiele ohne Treffer im Kriterientext: BSI TR-02102, Lebenszyklusphasen der Schlüssel in CRY-04, Manipulationsschutz in OPS-12, „Verantwortlicher je Asset“ in AM-01.
+
+**Hilfe- und Stufentexte:** Die Zuschreibung „C5 verlangt/fordert …“ (23 Stellen im deutschen Text) ist entfernt; die Sätze stehen jetzt als Empfehlung („Sie brauchen …“, „Sorgen Sie dafür, dass …“). „gemäß C5:2020 <Kennung>“ ist aus den Stufentexten gestrichen. Zahlen ohne Beleg sind entfernt: „mindestens drei Schutzstufen“, „mindestens halbjährlich“ (IDM-05 nennt mindestens jährlich; steht jetzt so da), „jährlich für symmetrische Schlüssel“, „vorzugsweise Gaslösch“, „mindestens jährlich“ für die Leitlinie (OIS-02 nennt keinen Turnus). Der Hilfetext zu `c5-dev-q3` ist neu gefasst: belegt sind die Berichterstattung nach C5:2020 durch einen Wirtschaftsprüfer (Auswertungsleitfaden), mindestens jährliche Penetrationstests (OPS-19) und mindestens jährliche interne Audits (COM-03).
+
+**Außerhalb der Fragen:** In `c5/recommendations.ts`, `c5/categories.ts` und einer Empfehlungsbeschreibung ist „KRY“ zu „CRY“ korrigiert. Die übrigen Kennungen der Empfehlungen sind nicht geprüft; `IDM-10` (Empfehlung `idm3`) gibt es im C5:2020 nicht (siehe TODO).
+
+**Nicht geprüft:** Die englischen Erklärtexte nennen die deutschen Titel, weil keine englische Fassung abgerufen wurde. Beispiele in den Hilfetexten (BSI TR-02102, NIST SP 800-131A, AES-256) sind als Beispiele stehen geblieben und nicht nachgeschlagen. Die Zusatzkriterien des C5 sind nicht ausgewertet. Die übrigen Sätze der Hilfe- und Stufentexte sind Empfehlungen des Tools, keine Wiedergabe des C5.

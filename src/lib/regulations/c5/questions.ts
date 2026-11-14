@@ -29,7 +29,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'c5.questions.orgQ1.help',
     legalReference: {
       euArticle: 'C5:2020 OIS-01, OIS-02',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.1',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.orgQ1.maturity.level0',
@@ -47,7 +47,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'c5.questions.orgQ2.help',
     legalReference: {
       euArticle: 'C5:2020 SP-01, SP-02',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.2',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.orgQ2.maturity.level0',
@@ -65,7 +65,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'c5.questions.orgQ3.help',
     legalReference: {
       euArticle: 'C5:2020 HR-01, HR-03',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.3',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.orgQ3.maturity.level0',
@@ -82,8 +82,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.orgQ4.tooltip',
     helpKey: 'c5.questions.orgQ4.help',
     legalReference: {
-      euArticle: 'C5:2020 OIS-05, OIS-07',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.1',
+      euArticle: 'C5:2020 COM-02, COM-03',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.orgQ4.maturity.level0',
@@ -104,8 +104,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.amQ1.tooltip',
     helpKey: 'c5.questions.amQ1.help',
     legalReference: {
-      euArticle: 'C5:2020 AM-01, AM-02',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.4',
+      euArticle: 'C5:2020 AM-01',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.amQ1.maturity.level0',
@@ -122,8 +122,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.amQ2.tooltip',
     helpKey: 'c5.questions.amQ2.help',
     legalReference: {
-      euArticle: 'C5:2020 AM-03, AM-04',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.4',
+      euArticle: 'C5:2020 AM-06',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.amQ2.maturity.level0',
@@ -140,8 +140,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.amQ3.tooltip',
     helpKey: 'c5.questions.amQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 AM-05, AM-06',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.4',
+      euArticle: 'C5:2020 PI-02, PI-03',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.amQ3.maturity.level0',
@@ -162,8 +162,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.psQ1.tooltip',
     helpKey: 'c5.questions.psQ1.help',
     legalReference: {
-      euArticle: 'C5:2020 PS-01, PS-02',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.5',
+      euArticle: 'C5:2020 PS-01, PS-03, PS-04',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.psQ1.maturity.level0',
@@ -181,7 +181,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'c5.questions.psQ2.help',
     legalReference: {
       euArticle: 'C5:2020 PS-05, PS-06',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.5',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.psQ2.maturity.level0',
@@ -198,8 +198,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.psQ3.tooltip',
     helpKey: 'c5.questions.psQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 PS, AM',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.5',
+      euArticle: 'C5:2020 AM-04, PS-06',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.psQ3.maturity.level0',
@@ -220,8 +220,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.idmQ1.tooltip',
     helpKey: 'c5.questions.idmQ1.help',
     legalReference: {
-      euArticle: 'C5:2020 IDM-01, IDM-02',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.7',
+      euArticle: 'C5:2020 IDM-02, IDM-04',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.idmQ1.maturity.level0',
@@ -238,8 +238,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.idmQ2.tooltip',
     helpKey: 'c5.questions.idmQ2.help',
     legalReference: {
-      euArticle: 'C5:2020 IDM-03, IDM-06',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.7',
+      euArticle: 'C5:2020 IDM-01, IDM-05, IDM-06',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.idmQ2.maturity.level0',
@@ -256,8 +256,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.idmQ3.tooltip',
     helpKey: 'c5.questions.idmQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 IDM-07, IDM-08',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.7',
+      euArticle: 'C5:2020 IDM-08, IDM-09',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.idmQ3.maturity.level0',
@@ -278,8 +278,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.opsQ1.tooltip',
     helpKey: 'c5.questions.opsQ1.help',
     legalReference: {
-      euArticle: 'C5:2020 OPS-01, OPS-03',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.6',
+      euArticle: 'C5:2020 SP-01, OPS-01, DEV-03, DEV-10',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.opsQ1.maturity.level0',
@@ -296,8 +296,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.opsQ2.tooltip',
     helpKey: 'c5.questions.opsQ2.help',
     legalReference: {
-      euArticle: 'C5:2020 OPS-10 ff.',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.6',
+      euArticle: 'C5:2020 OPS-10 bis OPS-17',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.opsQ2.maturity.level0',
@@ -315,7 +315,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'c5.questions.opsQ3.help',
     legalReference: {
       euArticle: 'C5:2020 COS-01, COS-05',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.8',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.opsQ3.maturity.level0',
@@ -336,8 +336,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.kryQ1.tooltip',
     helpKey: 'c5.questions.kryQ1.help',
     legalReference: {
-      euArticle: 'C5:2020 KRY-01, KRY-02',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.9',
+      euArticle: 'C5:2020 CRY-01',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.kryQ1.maturity.level0',
@@ -354,8 +354,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.kryQ2.tooltip',
     helpKey: 'c5.questions.kryQ2.help',
     legalReference: {
-      euArticle: 'C5:2020 KRY-04',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.9',
+      euArticle: 'C5:2020 CRY-04',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.kryQ2.maturity.level0',
@@ -372,8 +372,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.kryQ3.tooltip',
     helpKey: 'c5.questions.kryQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 KRY-02, KRY-03',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.9',
+      euArticle: 'C5:2020 CRY-02, CRY-03',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.kryQ3.maturity.level0',
@@ -395,7 +395,7 @@ export const QUESTIONS: Question[] = [
     helpKey: 'c5.questions.simQ1.help',
     legalReference: {
       euArticle: 'C5:2020 SIM-01, SIM-02',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.10',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.simQ1.maturity.level0',
@@ -412,8 +412,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.simQ2.tooltip',
     helpKey: 'c5.questions.simQ2.help',
     legalReference: {
-      euArticle: 'C5:2020 BCM-01, BCM-03',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.11',
+      euArticle: 'C5:2020 BCM-03',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.simQ2.maturity.level0',
@@ -430,8 +430,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.simQ3.tooltip',
     helpKey: 'c5.questions.simQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 SIM-04, SIM-05',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.10',
+      euArticle: 'C5:2020 SIM-05',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.simQ3.maturity.level0',
@@ -452,8 +452,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.devQ1.tooltip',
     helpKey: 'c5.questions.devQ1.help',
     legalReference: {
-      euArticle: 'C5:2020 DEV-01, DEV-02',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.14',
+      euArticle: 'C5:2020 DEV-01',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.devQ1.maturity.level0',
@@ -470,8 +470,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.devQ2.tooltip',
     helpKey: 'c5.questions.devQ2.help',
     legalReference: {
-      euArticle: 'C5:2020 SSO-01, SSO-03',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.15',
+      euArticle: 'C5:2020 SSO-01, SSO-02',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.devQ2.maturity.level0',
@@ -488,8 +488,8 @@ export const QUESTIONS: Question[] = [
     tooltipKey: 'c5.questions.devQ3.tooltip',
     helpKey: 'c5.questions.devQ3.help',
     legalReference: {
-      euArticle: 'C5:2020 COM',
-      bsigParagraph: 'BSI C5:2020 Kap. 4.16',
+      euArticle: 'C5:2020 COM-02, COM-03, OPS-19',
+      bsigParagraph: 'BSI C5:2020',
     },
     maturityDescriptions: {
       level0Key: 'c5.questions.devQ3.maturity.level0',

@@ -183,7 +183,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.kry1.title',
     descriptionKey: 'c5.recommendations.kry1.description',
     firstStepKey: 'c5.recommendations.kry1.firstStep',
-    legalReference: 'C5:2020 KRY-01, KRY-02',
+    legalReference: 'C5:2020 CRY-01, CRY-02',
     bsiReference: 'CON.1, OPS.1.1.3',
   },
   {
@@ -194,7 +194,7 @@ export const RECOMMENDATIONS: Recommendation[] = [
     titleKey: 'c5.recommendations.kry2.title',
     descriptionKey: 'c5.recommendations.kry2.description',
     firstStepKey: 'c5.recommendations.kry2.firstStep',
-    legalReference: 'C5:2020 KRY-02 bis KRY-04',
+    legalReference: 'C5:2020 CRY-02 bis CRY-04',
     bsiReference: 'CON.1',
     checklistKey: 'c5.recommendations.kry2.checklist',
   },

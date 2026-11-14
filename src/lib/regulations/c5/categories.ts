@@ -66,7 +66,7 @@ export const CATEGORIES: Category[] = [
     shortNameKey: 'c5.categories.cryptography.shortName',
     descriptionKey: 'c5.categories.cryptography.description',
     c5Domains: ['KRY'],
-    c5Criteria: ['KRY-01', 'KRY-02', 'KRY-03', 'KRY-04'],
+    c5Criteria: ['CRY-01', 'CRY-02', 'CRY-03', 'CRY-04'],
     icon: 'Lock',
     questions: [],
   },
