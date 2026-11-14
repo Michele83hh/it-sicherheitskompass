@@ -133,6 +133,8 @@ Weitere Stellen dieser Art, nicht geändert: CIS `cis-rn-q1` nennt die 3-2-1-Reg
 
 Vorschlag: bei der ersten Nennung je Bereich ausschreiben. OWASP ASVS richtet sich an Entwickler; dort reicht ein Hinweis auf der Startseite des Regelwerks, dass die Fragen technische Kenntnisse voraussetzen.
 
+**Umgesetzt am 14.11.**, siehe Abschnitt 4b.
+
 ### 3.6 Zwei Dinge in einer Frage
 
 Wenn eine Frage zwei Maßnahmen verbindet, ist die Stufe schwer zu wählen, sobald nur eine davon umgesetzt ist. Die deutlichsten Fälle:
@@ -146,6 +148,8 @@ Wenn eine Frage zwei Maßnahmen verbindet, ist die Stufe schwer zu wählen, soba
 | NIS2 `ac-q2` | regelmäßige Überprüfung und Entzug bei Austritt |
 
 Vorschlag: `cis-vm-q3` und `nist-pr-q3` teilen. Die anderen belassen; dort führen die Stufentexte durch beide Teile.
+
+**Nicht umgesetzt**, Begründung in Abschnitt 4b.
 
 ## 4. Vorschläge je Regelwerk
 
@@ -295,6 +299,29 @@ Geändert sind 42 Texte je Sprache, fast nur Titel. Alle Änderungen sind KI-ers
 - DORA `da-q2` steht unter Art. 28 Abs. 4-8, fragt aber nach Mindestinhalten der Verträge. Die stehen in Art. 30 Abs. 2.
 - PCI DSS `ac-q2` steht unter Req. 7.2. Zugriffskontrollsystem und Deny-All gehören nach meiner Kenntnis zu Req. 7.3. Nicht am Standard nachgeschlagen, deshalb nicht geändert.
 - Die Zusatzzeilen unter den DORA-Fragen („RTS Art. 26 DORA …“) nennen keine nachvollziehbare Fundstelle.
+## 4b. Übrige Punkte: umgesetzt am 14.11.
+
+KI-erstellt, noch nicht gegengelesen. Geändert wurden nur Texte (DE und EN), keine Fragen-IDs, keine Zählung.
+
+**Einzelbefunde**
+
+| Frage | Änderung |
+|---|---|
+| CRA `konf-q3` | Titel nennt jetzt beide Schritte in der Reihenfolge des Verfahrens: Konformitätserklärung ausstellen, CE-Kennzeichnung anbringen. |
+| DORA `vm-q2` | Titel gekürzt auf „Werden IKT-bezogene Vorfälle nach den DORA-Kriterien klassifiziert?“. |
+| DSGVO `dsfa-q2` | „Blacklist“ in Titel, Erklärtext und allen vier Stufen durch „Muss-Liste“ ersetzt (EN: „mandatory list“). |
+| DSGVO `dsb-q5` | Titel auf die Unabhängigkeit gekürzt, zwei Beispiele in Klammern. |
+| OWASP `owasp-iv-q2` | Titel: „Wird Output-Encoding kontextabhängig angewendet (HTML, JavaScript, URL)?“. |
+| CIS `cis-rn-q1` | Titel fragt nach Sicherung und getesteter Wiederherstellung; Stufe 3 ohne feste Regel („mehrere Kopien an getrennten Orten, eine vor Veränderung geschützt“). |
+| CIS Control 16 und 18 | Die Bereichsbeschreibung nannte „AppSec“ und „Penetrationstests“, ohne dass eine Frage dazu existiert. Beschreibung bereinigt; der Einleitungstext sagt jetzt, dass beides nicht abgefragt wird. Keine neuen Fragen angelegt. |
+| OWASP ASVS | Startseite des Regelwerks: „Die Fragen setzen Entwicklerkenntnisse voraus.“ |
+
+**Abkürzungen (3.5):** 17 Titel. ISO 22301 (acht Titel: BCM, BCMS, RTO, RPO, BC-Pläne), KRITIS `bcm-q2`, PCI DSS `au-q3` und `ps-q1` (CDE), DORA `ia-q4` (IoC, TTP), TISAX `kom-q3` und `comp-q1`, BSI `net-q3`, `inf-q3`, `ind-q2`. Maßstab: erste Nennung je Bereich ausgeschrieben. Nicht angefasst: „IT“, „IKT“ (Begriff der Verordnung), „ISMS“, Namen von Regelwerken und Behörden, die Fachbegriffe bei OWASP ASVS. KRITIS `rm-q3`, `vm-q4`, `bcm-q1` und CRA „hEN“ waren schon ausgeschrieben.
+
+**Lange Titel:** Vorher 31 deutsche Titel über 130 Zeichen, jetzt keiner (auch EN). Betroffen: DSGVO 23, PCI DSS 3, NIS2 3, DORA 1, TISAX 1. Insgesamt 51 geänderte Titel je Sprache. Ein Test hält die Grenze von 130 Zeichen fest.
+
+**Nicht umgesetzt: Fragen teilen (3.6).** `cis-vm-q3` und `nist-pr-q3` bleiben je eine Frage. Teilen hieße: zwei neue Fragen mit je vier Stufentexten in zwei Sprachen, neue Empfehlungen, geänderte Zuordnung in `question-equivalences.ts` (dort hängt `cis-vm-q3`), und bei CIS verschiebt sich die Fragenzahl je Bereich. Das ist eine inhaltliche Entscheidung und gehört zum Gegenlesen.
+
 ## 5. Gemeinsamer Fragenkern: Skizze
 
 **Ausgangslage, gemessen:** 49 Themen decken 214 von 431 Fragen ab. 17 Themen kommen in fünf oder mehr Regelwerken vor, das häufigste in zehn. Die Abdeckung schwankt stark: CIS 16 von 18, NIS2 32 von 50, DSGVO 4 von 50, CRA 1 von 24.

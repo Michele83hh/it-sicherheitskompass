@@ -473,7 +473,7 @@
       }
     },
     "raQ5": {
-      "title": "Do you have documented risk treatment measures for identified risks (avoid, reduce, transfer, accept)?",
+      "title": "Have you documented measures for treating identified risks (avoid, reduce, transfer, accept)?",
       "tooltip": "Risk treatment plans document how each identified risk is handled. This is a core component of risk management per BSI Standard 200-3.",
       "help": "For each identified risk, you should determine how to handle it: Avoid (e.g., shut down insecure software), Reduce (e.g., set up a firewall), Transfer (e.g., take out cyber insurance), or consciously Accept (e.g., for very low risks). These decisions should be documented so it's traceable why you did what.",
       "maturity": {
@@ -572,7 +572,7 @@
       }
     },
     "bcQ4": {
-      "title": "Have you conducted a Business Impact Analysis (BIA) identifying critical business processes and their maximum tolerable downtime?",
+      "title": "Have you identified critical business processes and their maximum tolerable downtime in a business impact analysis (BIA)?",
       "tooltip": "A BIA identifies critical business processes and their IT dependencies. It defines RTO (maximum downtime) and RPO (acceptable data loss). See BSI Standard 200-4.",
       "help": "A Business Impact Analysis (BIA) answers the question: Which business processes are so important that an outage would existentially threaten your company? For a logistics company, this might be route planning; for an online shop, the webshop. For each critical process, you define how long it may be down at most.",
       "maturity": {
@@ -935,7 +935,7 @@
       }
     },
     "mcQ2": {
-      "title": "Are voice, video and text communications with confidential content secured (e.g. encrypted email, secure video conferencing and messaging)?",
+      "title": "Are voice, video and text communications with confidential content secured (e.g. encrypted email and video conferencing)?",
       "tooltip": "Secured communication protects against eavesdropping and manipulation. NIS2 requires secured voice, video and text communication (§30 Para. 2 No. 10 BSIG).",
       "help": "Encrypted communication means that emails and video conferences cannot be read by third parties. For emails, there is e.g. S/MIME or TLS transport encryption. For video conferences, services like Microsoft Teams or Zoom offer end-to-end encryption.",
       "maturity": {
@@ -2000,7 +2000,7 @@
           "level2": "Key processors reviewed based on security concepts or certifications, but not across the board",
           "level3": "Documented suitability review of all processors before engagement based on defined criteria; regular re-assessment; results are archived"
         },
-        "title": "Do you only engage processors that provide sufficient guarantees of appropriate technical and organisational measures?",
+        "title": "Do you only use processors that provide sufficient guarantees of appropriate safeguards?",
         "tooltip": "Art. 28(1) GDPR requires the controller to work only with processors providing sufficient guarantees that appropriate technical and organisational measures are implemented so that processing complies with the GDPR and protects the rights of data subjects."
       },
       "avQ2": {
@@ -2044,7 +2044,7 @@
           "level2": "Written confidentiality obligation for employees in place; instruction-boundness regulated in the DPA but not reviewed regularly",
           "level3": "Written confidentiality obligation for all employees with data access; instruction-boundness contractually anchored with all processors; regular training and reviews"
         },
-        "title": "Do you ensure that persons with access to personal data process it only on instructions from the controller?",
+        "title": "Is it ensured that persons with access to personal data process it only on instructions?",
         "tooltip": "Art. 29 GDPR stipulates that the processor and any person acting under the authority of the controller or processor who has access to personal data may process that data only on instructions from the controller — unless required to do so by Union or Member State law. This also covers your own employees, who must be bound to confidentiality."
       },
       "brQ1": {
@@ -2055,7 +2055,7 @@
           "level2": "Basic process in place with assigned responsibility, but deadlines are not always met; no templates",
           "level3": "Documented process with acknowledgement of receipt, deadline monitoring, response templates and quality control; the one-month deadline is reliably met"
         },
-        "title": "Have you established a process to answer data subject access requests within the statutory one-month deadline?",
+        "title": "Do you answer access requests from data subjects within one month?",
         "tooltip": "Art. 15 GDPR gives every data subject the right of access to the personal data concerning them. Art. 12(3) GDPR sets a deadline of one month for responding. Section 34 BDSG contains exemptions from the duty to provide access, e.g. where data is stored solely due to statutory retention requirements."
       },
       "brQ2": {
@@ -2077,7 +2077,7 @@
           "level2": "Export in a common format (e.g. CSV) possible for the main records, but not for all relevant data",
           "level3": "Automated export of all relevant personal data in structured, machine-readable formats; process is documented and tested"
         },
-        "title": "Can you provide data subjects with their data in a structured, machine-readable format (right to data portability)?",
+        "title": "Can you provide data subjects with their data in a machine-readable format (data portability)?",
         "tooltip": "Art. 20 GDPR grants data subjects the right to receive their data in a structured, commonly used and machine-readable format and to transmit it to another controller. This applies only to data based on consent or contract performance and processed by automated means. Section 36 BDSG restricts the right for public bodies."
       },
       "brQ4": {
@@ -2099,7 +2099,7 @@
           "level2": "Automated decision processes are identified; human review is possible in principle but not systematically ensured",
           "level3": "Complete overview of all automated decisions; human review is an integral part of the process; data subjects are informed and can contest decisions"
         },
-        "title": "Have you implemented procedures ensuring that automated individual decisions meet the requirements of Art. 22 GDPR?",
+        "title": "Do your automated individual decisions meet the requirements of Art. 22 GDPR?",
         "tooltip": "Art. 22 GDPR gives data subjects the right not to be subject to a decision based solely on automated processing which produces legal effects concerning them or similarly significantly affects them. Exceptions apply for contract performance, legal authorisation or explicit consent. Section 37 BDSG contains supplementary national rules and provides safeguards."
       },
       "dsbQ1": {
@@ -2132,7 +2132,7 @@
           "level2": "DPO performs basic tasks (advice, occasional training), but systematic monitoring and reporting are missing",
           "level3": "DPO actively performs all tasks under Art. 39 GDPR: regular training, documented audits, annual activity report, proactive advice on new processing operations"
         },
-        "title": "Does your data protection officer fulfil the tasks defined in Art. 39 GDPR (advising, monitoring, cooperating with the supervisory authority)?",
+        "title": "Does your data protection officer fulfil their tasks (advice, monitoring, cooperation with the authority)?",
         "tooltip": "Art. 39(1) GDPR defines the DPO’s minimum tasks: (a) informing and advising the controller and employees, (b) monitoring compliance with the GDPR and the BDSG including awareness-raising and training, (c) advising on the DPIA and monitoring its performance, (d) cooperating with the supervisory authority, (e) acting as contact point for the supervisory authority."
       },
       "dsbQ4": {
@@ -2143,7 +2143,7 @@
           "level2": "Both notification and publication have been carried out, but contact details are not up to date or hard to find",
           "level3": "DPO is notified to the supervisory authority; contact details are current in the privacy policy and known internally to all employees; promptly updated when the DPO changes"
         },
-        "title": "Have you notified your data protection officer to the supervisory authority pursuant to Art. 37(7) GDPR and published their contact details?",
+        "title": "Have you notified the supervisory authority of your data protection officer and published their contact details?",
         "tooltip": "Art. 37(7) GDPR requires the controller to publish the DPO’s contact details and communicate them to the supervisory authority. Publication typically takes place on the website (privacy policy) and in the legal notice. Notification to the authority is made online via the portal of the competent state authority."
       },
       "dsbQ5": {
@@ -2154,7 +2154,7 @@
           "level2": "Conflicts of interest assessed and ruled out; DPO reports to management, but dismissal protection is not formalised",
           "level3": "Documented conflict-of-interest assessment; DPO reports directly to the highest management level; dismissal protection and non-penalisation contractually anchored"
         },
-        "title": "Is the independence of your data protection officer ensured pursuant to Art. 38(3) GDPR (no conflict of interest, no penalisation)?",
+        "title": "Is the independence of your data protection officer ensured (no conflict of interest, no disadvantage)?",
         "tooltip": "Art. 38(3) GDPR protects the DPO: they may not be dismissed or penalised for performing their tasks. They report directly to the highest management level. No conflicts of interest may exist (Art. 38(6) GDPR). Typical conflicts: the DPO simultaneously acting as IT manager, managing director, HR manager or marketing manager. Section 38(2) BDSG specifies the dismissal protection."
       },
       "dsfaQ1": {
@@ -2165,19 +2165,19 @@
           "level2": "DPIA is carried out for recognisably high-risk processing, but without a standardised procedure or uniform template",
           "level3": "Standardised DPIA process with templates, threshold analysis and DPO involvement before every high-risk processing operation"
         },
-        "title": "Do you carry out a systematic data protection impact assessment (DPIA) before deploying new processing operations with a high risk to data subjects?",
+        "title": "Do you carry out a data protection impact assessment (DPIA) before starting high-risk processing?",
         "tooltip": "Art. 35(1) GDPR obliges the controller to carry out a data protection impact assessment before introducing processing operations likely to result in a high risk to the rights and freedoms of natural persons. This applies in particular to the use of new technologies."
       },
       "dsfaQ2": {
         "help": "The supervisory authorities have published lists of processing operations that always require a DPIA — e.g. scoring, video surveillance of public areas or large-scale processing of health data. Check the list of your state authority and compare whether your processing operations are on it. If so, you must carry out a DPIA — regardless of your own risk assessment.",
         "maturity": {
-          "level0": "The supervisory authority's blacklist is unknown; no comparison with own processing activities has taken place",
-          "level1": "The blacklist is known, but a systematic comparison with own processing activities has not taken place",
-          "level2": "The main processing activities were checked against the blacklist, but not completely or without documentation",
-          "level3": "Complete, documented comparison of all processing activities with the current blacklist; results are updated when changes occur"
+          "level0": "The supervisory authority's mandatory list is unknown; no comparison with own processing activities has taken place",
+          "level1": "The mandatory list is known, but a systematic comparison with own processing activities has not taken place",
+          "level2": "The main processing activities were checked against the mandatory list, but not completely or without documentation",
+          "level3": "Complete, documented comparison of all processing activities with the current mandatory list; results are updated when changes occur"
         },
-        "title": "Have you checked which of your processing activities are subject to a mandatory DPIA under the blacklist of the competent supervisory authority?",
-        "tooltip": "Art. 35(3) GDPR lists standard cases of processing requiring a DPIA (profiling, large-scale processing of special categories, systematic monitoring). In addition, supervisory authorities publish mandatory lists (blacklists) pursuant to Art. 35(4) GDPR. In Germany, the list of the DSK (Conference of Data Protection Authorities) is authoritative."
+        "title": "Have you used the supervisory authority's mandatory list to check which processing operations need a DPIA?",
+        "tooltip": "Art. 35(3) GDPR lists standard cases of processing requiring a DPIA (profiling, large-scale processing of special categories, systematic monitoring). In addition, supervisory authorities publish lists of processing operations that require a DPIA (mandatory lists) pursuant to Art. 35(4) GDPR. In Germany, the list of the DSK (Conference of Data Protection Authorities) is authoritative."
       },
       "dsfaQ3": {
         "help": "A DPIA is more than 'we thought about it.' It must contain four things: 1) What exactly is processed, how and why? 2) Is the processing really necessary, or could it be done with less data? 3) What specific risks exist for data subjects (e.g. identity theft, discrimination)? 4) What specific protective measures do you deploy against them? Only when all four points are documented does the DPIA meet the legal requirements.",
@@ -2187,7 +2187,7 @@
           "level2": "DPIA contains all four minimum components, but with varying depth and quality",
           "level3": "Complete DPIA with all minimum content under Art. 35(7) GDPR, including a comprehensible risk assessment and concrete mitigation measures"
         },
-        "title": "Does your DPIA contain the minimum content required by Art. 35(7) GDPR (description, assessment of necessity, risk assessment and mitigation measures)?",
+        "title": "Does your DPIA contain the minimum content (description, necessity, risk assessment, mitigating measures)?",
         "tooltip": "Art. 35(7) GDPR prescribes four minimum components of a DPIA: (a) a systematic description of the processing operations and purposes, (b) an assessment of necessity and proportionality, (c) an assessment of the risks to data subjects, (d) the measures envisaged to address the risks. Without these elements the DPIA is incomplete."
       },
       "dsfaQ4": {
@@ -2198,7 +2198,7 @@
           "level2": "Basic process defined, but thresholds for 'high residual risk' are unclear or undocumented",
           "level3": "Documented escalation process with clear criteria for when the supervisory authority is consulted, including responsibilities and deadlines"
         },
-        "title": "Do you have a procedure for prior consultation of the supervisory authority when a DPIA indicates a high residual risk?",
+        "title": "Is it defined when and how you consult the supervisory authority if a DPIA shows a high residual risk?",
         "tooltip": "Art. 36(1) GDPR obliges the controller to consult the supervisory authority prior to processing where the DPIA indicates that the processing would result in a high risk despite the planned safeguards. The authority then has up to 8 weeks to provide written advice (Art. 36(2) GDPR)."
       },
       "dsfaQ5": {
@@ -2286,7 +2286,7 @@
           "level2": "Notification template exists but does not cover all mandatory information under Art. 33(3) GDPR",
           "level3": "Notification template with all mandatory information; it is also defined how missing information is provided later"
         },
-        "title": "Do your notifications to the supervisory authority contain all mandatory information (nature of the breach, data subjects, consequences, measures)?",
+        "title": "Do your breach notifications to the authority contain all mandatory details (nature, data subjects, consequences, measures)?",
         "tooltip": "Art. 33(3) GDPR requires the notification to the supervisory authority to contain at least: (a) the nature of the breach including categories and number of data subjects affected, (b) the name and contact details of the DPO, (c) the likely consequences of the breach, (d) the measures taken and proposed. Art. 33(5) GDPR additionally requires internal documentation of all breaches."
       },
       "dvQ3": {
@@ -2319,7 +2319,7 @@
           "level2": "Key data stores are encrypted; pseudonymisation is used for individual processing operations",
           "level3": "Comprehensive encryption of all mobile devices and data transfers; pseudonymisation wherever possible; documented mapping of protective measures per processing activity"
         },
-        "title": "Have you implemented technical and organisational measures that can render notification of data subjects unnecessary under Art. 34(3) GDPR?",
+        "title": "Have you taken measures that can make notifying data subjects unnecessary (e.g. encryption)?",
         "tooltip": "Art. 34(3) GDPR provides that notification of data subjects is not required if: (a) appropriate protective measures such as encryption were applied, (b) subsequent measures have eliminated the high risk, or (c) notification would involve disproportionate effort (in which case a public communication is required)."
       },
       "ewQ1": {
@@ -2341,7 +2341,7 @@
           "level2": "Consents are documented with timestamp and wording, but not centrally managed or regularly reviewed",
           "level3": "Complete, audit-proof documentation of all consents with timestamp, exact wording, consent channel and central management"
         },
-        "title": "For processing based on consent, can you demonstrate that the data subject has validly consented?",
+        "title": "Can you demonstrate that the data subject has given valid consent?",
         "tooltip": "Art. 7(1) GDPR places the burden of proof on the controller: they must be able to demonstrate that the data subject has consented to the processing. Consent must be freely given, specific, informed and unambiguous (Art. 4(11) GDPR). Section 26(2) BDSG generally requires written form for employee consent."
       },
       "ewQ3": {
@@ -2374,7 +2374,7 @@
           "level2": "Special categories of data are identified; explicit consent is obtained, but not consistently in all cases",
           "level3": "Complete overview of special categories of data; explicit, separately documented consents with additional safeguards under Section 22 BDSG"
         },
-        "title": "Do you obtain explicit consent for processing special categories of personal data where no other exception under Art. 9(2) GDPR applies?",
+        "title": "Do you obtain explicit consent for special categories of personal data where no other exemption applies?",
         "tooltip": "Art. 9(1) GDPR prohibits in principle the processing of special categories of data (health, religion, ethnic origin, political opinions, trade union membership, genetics, biometrics, sex life). Art. 9(2)(a) GDPR permits processing with explicit consent. Section 22 BDSG contains additional conditions and safeguards."
       },
       "pbdQ1": {
@@ -2385,7 +2385,7 @@
           "level2": "Checklist or guideline for data protection in new projects available; DPO is involved in larger projects",
           "level3": "Standardised process: every new system, product or procedure undergoes a data protection review in the planning phase with documented sign-off by the DPO"
         },
-        "title": "Do you take data protection requirements into account from the planning and development stage of new systems, products and processes (privacy by design)?",
+        "title": "Do you consider data protection as early as the planning and development of new systems and processes (privacy by design)?",
         "tooltip": "Art. 25(1) GDPR requires the controller, both at the time of determining the means for processing and at the time of processing itself, to implement appropriate technical and organisational measures designed to implement data protection principles effectively. The state of the art, implementation costs and risks must be taken into account."
       },
       "pbdQ2": {
@@ -2407,7 +2407,7 @@
           "level2": "Key forms and processes reviewed for necessity; individual data fields removed, but no comprehensive implementation",
           "level3": "Systematic necessity review of all data collection; documented justification for every data field collected; regular review of existing data holdings"
         },
-        "title": "Do you apply the principle of data minimisation — collecting and storing only the data actually necessary for the specific purpose?",
+        "title": "Do you collect and store only the data required for the respective purpose (data minimisation)?",
         "tooltip": "Art. 5(1)(c) GDPR establishes the principle of data minimisation: personal data must be adequate, relevant and limited to what is necessary for the purposes of processing. This principle is a core element of privacy by design and affects the design of forms, databases, processes and interfaces."
       },
       "pbdQ4": {
@@ -2429,7 +2429,7 @@
           "level2": "Retention periods defined for the main data categories; individual automated deletion mechanisms exist, but not across the board",
           "level3": "Deletion concept for all data categories with defined periods; automated deletion mechanisms in all relevant systems; regular review of implementation and logging"
         },
-        "title": "Have you implemented automated deletion mechanisms that automatically erase personal data once the processing purpose or retention period has expired?",
+        "title": "Is personal data deleted automatically once the purpose or retention period has expired?",
         "tooltip": "Art. 5(1)(e) GDPR establishes the principle of storage limitation: personal data may be stored only for as long as necessary for the purposes. Privacy by design requires that deletion mechanisms be built into the system architecture from the outset, not retrofitted."
       },
       "tomQ1": {
@@ -2451,7 +2451,7 @@
           "level2": "Authorisation concept implemented; backups in place; integrity checks for important systems, but not across the board",
           "level3": "Documented authorisation concept following the need-to-know principle; automated integrity checks; highly available systems with tested recovery procedures"
         },
-        "title": "Do you ensure the confidentiality, integrity and availability of your systems and services that process personal data?",
+        "title": "Are confidentiality, integrity and availability ensured for the systems that process personal data?",
         "tooltip": "Art. 32(1)(b) GDPR requires the ability to ensure the ongoing confidentiality, integrity, availability and resilience of systems and services. Confidentiality: only authorised persons have access. Integrity: data is not altered without authorisation. Availability: systems function when needed."
       },
       "tomQ3": {
@@ -2473,7 +2473,7 @@
           "level2": "Annual review of the main measures; results are documented, but improvements are not implemented systematically",
           "level3": "Regular audit cycle with internal and external reviews; penetration tests; documented results with a binding action plan and follow-up"
         },
-        "title": "Do you have a procedure for regularly testing, assessing and evaluating the effectiveness of your technical and organisational measures?",
+        "title": "Do you regularly check whether your technical and organisational measures are effective?",
         "tooltip": "Art. 32(1)(d) GDPR explicitly requires a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures. This includes internal audits, penetration tests, vulnerability analyses and the evaluation of security incidents."
       },
       "tomQ5": {
@@ -2484,7 +2484,7 @@
           "level2": "Risk-based selection of protective measures for the main processing operations; the state of the art is considered but not updated regularly",
           "level3": "Documented, risk-based selection of all protective measures considering the state of the art, costs, processing purpose and risk assessment; annual update"
         },
-        "title": "When selecting your protective measures, do you take into account the state of the art, implementation costs and the nature, scope and purposes of the processing?",
+        "title": "Do you take into account the state of the art, costs and the nature of the processing when selecting security measures?",
         "tooltip": "Art. 32(1) GDPR requires that the selection of protective measures take into account the state of the art, implementation costs, the nature, scope, context and purposes of processing, and the likelihood and severity of the risk. Art. 32(2) GDPR requires the assessment to consider in particular risks from destruction, loss, alteration or unauthorised access."
       },
       "vvQ1": {
@@ -2506,7 +2506,7 @@
           "level2": "Mostly documented correctly, but updates after changes are not made promptly",
           "level3": "All processing operations with current, correct entries on purposes, categories of data subjects and data categories; a change process is established"
         },
-        "title": "Are the purposes of processing, the categories of data subjects and the data categories documented correctly and kept up to date in your record of processing activities?",
+        "title": "Are purposes, categories of data subjects and categories of data documented and up to date in the record?",
         "tooltip": "Art. 30(1)(b)-(d) GDPR requires documentation of the purposes of processing, the categories of data subjects (e.g. customers, employees, applicants) and the categories of personal data (e.g. contact details, bank details, health data). These entries must reflect the actual processing operations."
       },
       "vvQ3": {
@@ -2517,7 +2517,7 @@
           "level2": "Erasure deadlines defined for most processing operations; protective measures described in general terms but not per processing operation",
           "level3": "Specific erasure deadlines for each data category with legal basis; protective measures documented per processing operation and reviewed regularly"
         },
-        "title": "Have you documented the envisaged erasure deadlines and a general description of the technical and organisational protective measures in your record of processing activities?",
+        "title": "Are erasure periods and a general description of the security measures documented in the record?",
         "tooltip": "Art. 30(1)(f)-(g) GDPR requires stating the envisaged time limits for erasure of the different categories of data and a general description of the technical and organisational security measures pursuant to Art. 32(1) GDPR. ‘Where possible’ is not an exemption here but the supervisory authorities’ expectation."
       },
       "vvQ4": {
@@ -2539,7 +2539,7 @@
           "level2": "The record is presentable, but is updated only when prompted and not maintained regularly",
           "level3": "The record is reviewed and updated at least quarterly; the supervisory authority can receive a current version at any time"
         },
-        "title": "Can your record of processing activities be presented to the supervisory authority on request at any time, and is it updated regularly?",
+        "title": "Can your record of processing activities be presented to the supervisory authority at any time, and is it updated regularly?",
         "tooltip": "Art. 30(4) GDPR requires that the record be made available to the supervisory authority on request. Art. 30(5) GDPR contains an exemption for organisations with fewer than 250 employees, which however only applies if the processing is not regular, does not involve special categories of data and poses no risk — in practice this exemption rarely applies."
       }
     },
@@ -2932,7 +2932,7 @@
           "level2": "BIA carried out with documented RTO/RPO values for important systems",
           "level3": "Comprehensive BIA with validated RTO/RPO values, updated regularly and integrated into restart plans"
         },
-        "title": "Have the maximum tolerable downtimes (RTO/RPO) been defined for your critical service?",
+        "title": "Are the maximum downtime (RTO) and maximum data loss (RPO) defined for your critical service?",
         "tooltip": "The business impact analysis (BIA) is a core component of a BCMS under BSI Standard 200-4. It determines recovery time objectives (RTO) and tolerable data loss (RPO) for the critical service."
       },
       "bcmQ3": {
@@ -3512,7 +3512,7 @@
           "level2": "Stricter contractual provisions under Art. 30 DORA implemented in most contracts for critical functions, but audit rights and exit strategies still patchy",
           "level3": "Full implementation of all Art. 30 DORA requirements in every contract for critical and important functions, including unrestricted audit rights, documented exit strategies, incident support and TLPT cooperation"
         },
-        "title": "Do contracts for ICT services supporting critical or important functions contain the additional provisions under Art. 30(3) DORA?",
+        "title": "Do contracts concerning critical or important functions contain the additional provisions under Art. 30(3) DORA?",
         "tooltip": "Art. 30(1)-(5) DORA defines stricter contractual requirements for ICT services supporting critical or important functions. These include, among others: complete service level descriptions, guaranteed availability targets, provider obligations in incidents, security measures, data protection guarantees, unrestricted audit and access rights, termination rights and exit strategies."
       },
       "daQ5": {
@@ -3622,7 +3622,7 @@
           "level2": "IoCs are regularly fed into SIEM and firewall rules, but TTPs are not systematically converted into detection rules; no automated process",
           "level3": "Fully automated processing of IoCs and TTPs via a threat intelligence platform (STIX/TAXII-compatible) with integration into SIEM, firewall, endpoint detection and detection rules, regular updates and effectiveness measurement"
         },
-        "title": "Are threat indicators (IoCs) and tactics (TTPs) systematically processed and integrated into your own defences?",
+        "title": "Are threat indicators and known attack patterns systematically evaluated and fed into your own defences?",
         "tooltip": "Art. 45(1) DORA names as the subject of the information exchange in particular indicators of compromise (IoCs), tactics, techniques and procedures (TTPs), security alerts and configuration tools. Integrating this information into your own ICT security infrastructure is decisive for its operational value."
       },
       "iaQ5": {
@@ -3765,7 +3765,7 @@
           "level2": "Classification procedure based on the DORA criteria implemented, but the RTS thresholds not yet fully adopted",
           "level3": "Systematic classification of all ICT incidents under Art. 18 DORA and Delegated Regulation (EU) 2024/1772 with documented thresholds, automated pre-screening and regular calibration of the classification criteria"
         },
-        "title": "Are ICT-related incidents classified as major according to the DORA classification criteria?",
+        "title": "Are ICT-related incidents classified according to the DORA criteria?",
         "tooltip": "Art. 18(1)-(2) DORA stipulates that financial entities classify ICT-related incidents based on defined criteria. The classification criteria include, among others: number of clients affected, duration of the incident, geographical spread, data losses, criticality of the services affected and economic impact. Delegated Regulation (EU) 2024/1772 defines the thresholds for major incidents."
       },
       "vmQ3": {
@@ -4060,7 +4060,7 @@
           "level2": "Documented legal register with all relevant information security requirements — responsibilities for compliance defined, regular review for changes",
           "level3": "Comprehensive compliance management with automated monitoring of regulatory changes, linkage to ISMS measures, regular compliance audits and reporting to management"
         },
-        "title": "Are all legal and regulatory information security requirements relevant to your company systematically identified and complied with?",
+        "title": "Are legal and regulatory information security requirements identified and complied with?",
         "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.31 — All relevant legal, regulatory and contractual information security requirements must be identified and documented, and compliance with them ensured."
       },
       "compQ2": {
@@ -4148,7 +4148,7 @@
           "level2": "Defined secure exchange channels for all OEM and partner connections — mandatory encryption for confidential data transfers, use of OEM platforms and SFTP documented",
           "level3": "End-to-end secure data exchange solution with automated encryption, integrity checks, access logging, retention periods and integration into information classification — compliance with OEM-specific transfer requirements demonstrated"
         },
-        "title": "Are data transfers with OEMs and business partners handled via secure channels?",
+        "title": "Are data transfers with vehicle manufacturers (OEMs) and business partners handled via secure channels?",
         "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.14 — Confidential information must be exchanged with external partners via encrypted and authenticated communication channels. Special requirements apply to OEM data exchange."
       },
       "kryQ1": {
@@ -4726,7 +4726,7 @@
           "level2": "EU declaration of conformity per Annex V drawn up, CE marking affixed to products — documentation held ready for market surveillance",
           "level3": "Complete conformity management with a versioned declaration, automatic updates upon product changes and an integrated audit trail for all conformity evidence"
         },
-        "title": "Do you know which CE marking your product needs, and have you affixed it?",
+        "title": "Have you drawn up the EU declaration of conformity and affixed the CE marking?",
         "tooltip": "After successful completion of the conformity assessment procedure, manufacturers must draw up the EU declaration of conformity (Art. 13(12), Art. 28 CRA) and affix the CE marking (Art. 30 CRA)."
       },
       "sbdQ1": {
@@ -5302,7 +5302,7 @@
           "level2": "Documented hardening guidelines for ICS components, access to PLCs and HMIs restricted, engineering workstations in a separate segment, remote access secured",
           "level3": "OT-specific hardening per IEC 62443 with a zone concept, application whitelisting on engineering workstations, integrity checks of the PLC programs, network monitoring at control protocol level and documented configuration management of all ICS components"
         },
-        "title": "Are your industrial components (PLCs, HMIs, engineering workstations) hardened according to OT-specific security requirements?",
+        "title": "Are controllers, operator stations and engineering workstations hardened according to the requirements for production systems?",
         "tooltip": "IT-Grundschutz module IND.2.1 (Compendium, Edition 2023) requires restricting access to ICS components. PLCs, HMI panels and engineering workstations must be protected against unauthorised access and manipulation."
       },
       "indQ3": {
@@ -5346,7 +5346,7 @@
           "level2": "Technical rooms with controlled access, sufficient ventilation/air conditioning, current documentation of the patch panels and cabling",
           "level3": "All technical rooms with electronic access control, temperature monitoring with alerting, complete and current network documentation (physical and logical), regular walkthroughs and tidiness checks"
         },
-        "title": "Are technical rooms (distribution rooms, patch panels, telecommunications systems) adequately protected and documented?",
+        "title": "Are technical rooms (distribution rooms, patch panels, telephone systems) adequately protected and documented?",
         "tooltip": "IT-Grundschutz module INF.5 (Compendium, Edition 2023) requires protecting technical rooms. Network distribution points, patch panels and telecommunications systems must be secured against unauthorised access, overheating and manipulation."
       },
       "ismsQ1": {
@@ -5412,7 +5412,7 @@
           "level2": "VoIP system in a separate VLAN, signalling encryption (TLS), administration access secured, toll monitoring in place",
           "level3": "Fully encrypted communication (SRTP + TLS), the VoIP system in a hardened separate VLAN, toll fraud prevention, redundant telephone connectivity, regular security audits of the telephone infrastructure"
         },
-        "title": "Are your telecommunications systems, VoIP systems and communication services protected against unauthorised access and eavesdropping?",
+        "title": "Are your telephone systems, VoIP systems and communication services protected against unauthorised access and eavesdropping?",
         "tooltip": "IT-Grundschutz module NET.4.1 (Compendium, Edition 2023) requires secure operation of telecommunications systems. VoIP systems must be encrypted, secured against toll fraud and integrated into the network security architecture."
       },
       "opsQ1": {
@@ -7748,7 +7748,7 @@
     },
     "owasp-asvs": {
       "title": "OWASP ASVS 4.0.3",
-      "subtitle": "Security standard for web applications and APIs.\nVerification levels L1 to L3 for developers and security teams."
+      "subtitle": "Security standard for web applications and APIs.\nVerification levels L1 to L3 for developers and security teams. The questions assume developer knowledge."
     }
   },
   "pillars": {
@@ -8878,7 +8878,7 @@
         }
       },
       "auQ1": {
-        "title": "Are all users identified with a unique ID before access to system components or cardholder data is granted?",
+        "title": "Does every user have a unique ID before accessing system components or cardholder data?",
         "tooltip": "PCI DSS v4.0.1 Req. 8.2-8.3 requires that each user is assigned a unique ID and their identity is verified before access to system components is granted. Generic, shared, or group accounts may only be used in exceptional cases with documented justification.",
         "help": "Unique user IDs are the foundation for accountability and traceability. Every action in your CDE must be attributable to an individual user. Eliminate shared accounts and generic IDs (e.g., 'admin', 'user1'). For exceptions (e.g., emergency accounts), documented justification and enhanced monitoring must be in place.",
         "maturity": {
@@ -8900,7 +8900,7 @@
         }
       },
       "auQ3": {
-        "title": "Is multi-factor authentication (MFA) implemented for all access to the CDE?",
+        "title": "Is multi-factor authentication (MFA) implemented for all access into the cardholder data environment (CDE)?",
         "tooltip": "PCI DSS v4.0.1 Req. 8.4 requires MFA for all non-console administrative access into the CDE (8.4.1), since 31 March 2025 for all access into the CDE (8.4.2), and for all remote network access originating from outside the entity’s network (8.4.3).",
         "help": "MFA means that at least two of the following authentication factors are required: knowledge (password, PIN), possession (token, smartphone), and inherence (biometrics). PCI DSS v4.0.1 requires MFA for: (1) all non-console administrative access to the CDE, and (2) all remote access from outside the network. The MFA implementation must be tamper-resistant and must not be bypassable.",
         "maturity": {
@@ -8922,7 +8922,7 @@
         }
       },
       "psQ1": {
-        "title": "Are appropriate physical access controls implemented to restrict access to systems in the CDE?",
+        "title": "Do physical access controls restrict entry to systems in the cardholder data environment (CDE)?",
         "tooltip": "PCI DSS v4.0.1 Req. 9.1-9.2 requires physical access controls to restrict access to systems in the CDE to authorized personnel. This includes access control systems, surveillance cameras, visitor management, and visitor identification.",
         "help": "Physical security complements technical controls. Your CDE areas (e.g., server rooms, data centers) must be protected by access control systems. Use access cards, biometric systems, or similar mechanisms. All access must be logged. Visitors must be escorted and visibly identified as visitors. Surveillance cameras should be installed at all entry and exit points.",
         "maturity": {
@@ -8933,7 +8933,7 @@
         }
       },
       "psQ2": {
-        "title": "Is physical access to wireless access points, gateways, network/communication lines, and portable devices within the CDE restricted?",
+        "title": "Is physical access to wireless access points, network cabling and portable devices within the CDE restricted?",
         "tooltip": "PCI DSS v4.0.1 Req. 9.4 requires that physical access to wireless access points, gateways, network devices, and portable media within the facility is restricted. Portable media with cardholder data must be physically secured.",
         "help": "Network devices and wireless access points within your CDE must be physically secured — in locked rooms, cabinets, or enclosures. Portable media (USB drives, hard drives, tapes) with cardholder data must be stored in secure areas. Maintain an inventory of all portable media and implement a process for secure destruction of media no longer needed.",
         "maturity": {
@@ -9021,7 +9021,7 @@
         }
       },
       "spQ3": {
-        "title": "Is an incident response plan implemented that can be immediately activated upon a suspected or confirmed security incident?",
+        "title": "Is there an incident response plan that can be activated immediately in the event of a security incident?",
         "tooltip": "PCI DSS v4.0.1 Req. 12.10 requires an incident response plan that is immediately activated upon suspicion of a security incident. The plan must define roles and responsibilities, communication channels, notification requirements (e.g., to card brands), and evidence preservation procedures.",
         "help": "A security incident involving cardholder data can cause significant financial and reputational damage. Your incident response plan must clearly define: Who is responsible? Who is notified (internal, card brands, acquirer, authorities)? How is evidence preserved? How is the incident contained? The plan must be tested at least annually and personnel must be trained.",
         "maturity": {
@@ -13666,8 +13666,8 @@
       "securityOperations": {
         "name": "Security Operations & Testing",
         "shortName": "Operations",
-        "description": "Awareness, service provider management, AppSec, incident response, and penetration testing",
-        "empoweringIntro": "People and processes: trained employees, vetted service providers and a practised incident plan turn technology into protection that works."
+        "description": "Awareness, service provider management and incident response",
+        "empoweringIntro": "People and processes: trained employees, vetted service providers and a practised incident plan turn technology into protection that works. This check does not cover application security (Control 16) or penetration testing (Control 18)."
       }
     },
     "questions": {
@@ -13804,14 +13804,14 @@
         }
       },
       "rnQ1": {
-        "title": "Do you have a 3-2-1 backup strategy with regular recovery tests?",
+        "title": "Do you back up your data regularly and test the restore?",
         "tooltip": "CIS Control 11: Data Recovery",
         "help": "Backups are only as good as the last successful recovery test.",
         "maturity": {
           "level0": "There are no regular backups.",
           "level1": "Backups run irregularly or to a single medium; recovery has never been tested.",
           "level2": "Backups run on schedule with several copies, one off-site; tests take place occasionally.",
-          "level3": "The 3-2-1 rule is implemented, one copy is protected against modification and recovery is tested regularly."
+          "level3": "Several copies are kept in separate locations, one of them protected against modification; the restore is tested regularly."
         }
       },
       "rnQ2": {
@@ -14014,7 +14014,7 @@
     },
     "questions": {
       "clQ1": {
-        "title": "Is the scope of your BCM clearly defined and approved by top management?",
+        "title": "Is the scope of your business continuity management (BCM) clearly defined and approved by top management?",
         "tooltip": "ISO 22301 Clause 4-5: Context and leadership",
         "help": "The BCMS scope defines which products and services are protected.",
         "maturity": {
@@ -14047,7 +14047,7 @@
         }
       },
       "plQ1": {
-        "title": "Have risks and opportunities for the BCMS been systematically identified?",
+        "title": "Have risks and opportunities for the business continuity management system (BCMS) been systematically identified?",
         "tooltip": "ISO 22301 Clause 6.1: Risks and opportunities",
         "help": "A risk analysis identifies threats to business continuity.",
         "maturity": {
@@ -14080,7 +14080,7 @@
         }
       },
       "srQ1": {
-        "title": "Are sufficient resources and competencies available for BCM?",
+        "title": "Are sufficient resources and competencies available for business continuity management (BCM)?",
         "tooltip": "ISO 22301 Clause 7.1-7.2: Resources",
         "help": "BCM requires dedicated resources and trained personnel.",
         "maturity": {
@@ -14124,7 +14124,7 @@
         }
       },
       "biQ2": {
-        "title": "Are RTO and RPO defined for all critical processes?",
+        "title": "Are the recovery time (RTO) and the maximum tolerable data loss (RPO) defined for all critical processes?",
         "tooltip": "ISO 22301 Clause 8.2.2: RTO/RPO",
         "help": "Recovery Time Objective and Recovery Point Objective are core BCM metrics.",
         "maturity": {
@@ -14146,7 +14146,7 @@
         }
       },
       "bsQ1": {
-        "title": "Are there documented BC plans for all critical business processes?",
+        "title": "Are there documented emergency plans (business continuity plans) for all critical business processes?",
         "tooltip": "ISO 22301 Clause 8.4: BC plans",
         "help": "BC plans describe in concrete terms how to respond to an outage.",
         "maturity": {
@@ -14157,7 +14157,7 @@
         }
       },
       "bsQ2": {
-        "title": "Are BC plans regularly validated through exercises and tests?",
+        "title": "Are the emergency plans regularly validated through exercises and tests?",
         "tooltip": "ISO 22301 Clause 8.5: Exercises",
         "help": "Untested plans are worthless in a real emergency.",
         "maturity": {
@@ -14179,7 +14179,7 @@
         }
       },
       "eiQ1": {
-        "title": "Are performance indicators for BCM measured regularly?",
+        "title": "Are performance indicators for business continuity management (BCM) measured regularly?",
         "tooltip": "ISO 22301 Clause 9.1: Monitoring",
         "help": "KPIs show whether BCM is working effectively.",
         "maturity": {
@@ -14190,7 +14190,7 @@
         }
       },
       "eiQ2": {
-        "title": "Are regular internal audits of the BCMS conducted?",
+        "title": "Are regular internal audits of the BCM system carried out?",
         "tooltip": "ISO 22301 Clause 9.2: Internal audit",
         "help": "Audits identify opportunities for improvement in BCM.",
         "maturity": {
@@ -14662,7 +14662,7 @@
   "owasp-asvs": {
     "name": "OWASP ASVS",
     "shortName": "OWASP",
-    "description": "OWASP Application Security Verification Standard — security standard for web applications",
+    "description": "OWASP Application Security Verification Standard — security standard for web applications. The questions assume developer knowledge.",
     "fullName": "OWASP Application Security Verification Standard 4.0",
     "categories": {
       "authentication": {
@@ -14814,7 +14814,7 @@
         }
       },
       "ivQ2": {
-        "title": "Is context-aware output encoding applied (HTML, JS, SQL, LDAP)?",
+        "title": "Is output encoding applied context-sensitively (HTML, JavaScript, URL)?",
         "tooltip": "OWASP ASVS V5.3: Output Encoding",
         "help": "Proper output encoding prevents XSS and other injection attacks.",
         "maturity": {

@@ -473,7 +473,7 @@
       }
     },
     "raQ5": {
-      "title": "Haben Sie dokumentierte Maßnahmen zur Risikobehandlung für identifizierte Risiken (Vermeiden, Reduzieren, Übertragen, Akzeptieren)?",
+      "title": "Haben Sie Maßnahmen zur Behandlung der erkannten Risiken dokumentiert (Vermeiden, Reduzieren, Übertragen, Akzeptieren)?",
       "tooltip": "Risikobehandlungspläne dokumentieren, wie mit jedem identifizierten Risiko umgegangen wird. Dies ist ein zentraler Bestandteil des Risikomanagements nach BSI-Standard 200-3.",
       "help": "Für jedes erkannte Risiko sollten Sie festlegen, wie Sie damit umgehen: Vermeiden (z. B. unsichere Software abschalten), Reduzieren (z. B. Firewall einrichten), Übertragen (z. B. Cyberversicherung abschließen) oder bewusst Akzeptieren (z. B. bei sehr geringem Risiko). Diese Entscheidungen sollten dokumentiert sein, damit nachvollziehbar ist, warum Sie was getan haben.",
       "maturity": {
@@ -572,7 +572,7 @@
       }
     },
     "bcQ4": {
-      "title": "Haben Sie eine Business-Impact-Analyse (BIA) durchgeführt, die kritische Geschäftsprozesse und deren maximale Ausfalltoleranz identifiziert?",
+      "title": "Haben Sie in einer Business-Impact-Analyse (BIA) kritische Geschäftsprozesse und deren maximale Ausfallzeit ermittelt?",
       "tooltip": "Eine BIA identifiziert kritische Geschäftsprozesse und deren IT-Abhängigkeiten. Sie definiert RTO (maximale Ausfallzeit) und RPO (akzeptabler Datenverlust). Siehe BSI-Standard 200-4.",
       "help": "Eine Business-Impact-Analyse (BIA) beantwortet die Frage: Welche Geschäftsprozesse sind so wichtig, dass ein Ausfall Ihr Unternehmen existenziell gefährden würde? Für ein Logistikunternehmen wäre das z. B. die Tourenplanung, für einen Onlineshop der Webshop. Für jeden kritischen Prozess legen Sie fest, wie lange er maximal ausfallen darf.",
       "maturity": {
@@ -935,7 +935,7 @@
       }
     },
     "mcQ2": {
-      "title": "Sind Sprach-, Video- und Textkommunikation mit vertraulichen Inhalten gesichert (z.B. verschlüsselte E-Mails, sichere Videokonferenzen und Messenger)?",
+      "title": "Sind Sprach-, Video- und Textkommunikation mit vertraulichen Inhalten gesichert (z.B. verschlüsselte E-Mails, Videokonferenzen)?",
       "tooltip": "Gesicherte Kommunikation schützt vor Abhören und Manipulation. NIS2 fordert gesicherte Sprach-, Video- und Textkommunikation (§30 Abs. 2 Nr. 10 BSIG).",
       "help": "Verschlüsselte Kommunikation bedeutet, dass E-Mails und Videokonferenzen nicht von Dritten mitgelesen werden können. Für E-Mails gibt es z. B. S/MIME oder die Transportverschlüsselung TLS. Für Videokonferenzen bieten Dienste wie Microsoft Teams oder Zoom Ende-zu-Ende-Verschlüsselung an.",
       "maturity": {
@@ -1993,7 +1993,7 @@
     },
     "questions": {
       "avQ1": {
-        "title": "Setzen Sie Auftragsverarbeiter nur ein, wenn diese hinreichende Garantien für geeignete technische und organisatorische Maßnahmen bieten?",
+        "title": "Setzen Sie nur Auftragsverarbeiter ein, die hinreichende Garantien für geeignete Schutzmaßnahmen bieten?",
         "tooltip": "Art. 28 Abs. 1 DSGVO verlangt, dass der Verantwortliche nur mit Auftragsverarbeitern zusammenarbeitet, die hinreichende Garantien dafür bieten, dass geeignete technische und organisatorische Maßnahmen so durchgeführt werden, dass die Verarbeitung im Einklang mit der DSGVO erfolgt und den Schutz der Rechte der betroffenen Personen gewährleistet.",
         "help": "Auftragsverarbeiter sind externe Dienstleister, die in Ihrem Auftrag personenbezogene Daten verarbeiten -- z.B. Ihr Cloud-Anbieter, Lohnbüro, Hosting-Provider, E-Mail-Marketing-Dienst oder externer IT-Support. Bevor Sie einen solchen Dienstleister einsetzen, müssen Sie prüfen: Kann er Datenschutz? Hat er Sicherheitsmaßnahmen? Gibt es Zertifizierungen? Diese Prüfung sollte dokumentiert sein.",
         "maturity": {
@@ -2037,7 +2037,7 @@
         }
       },
       "avQ5": {
-        "title": "Stellen Sie sicher, dass Personen, die Zugang zu personenbezogenen Daten haben, diese nur auf Weisung des Verantwortlichen verarbeiten?",
+        "title": "Ist sichergestellt, dass Personen mit Zugang zu personenbezogenen Daten diese nur auf Weisung verarbeiten?",
         "tooltip": "Art. 29 DSGVO legt fest, dass der Auftragsverarbeiter und jede dem Verantwortlichen oder dem Auftragsverarbeiter unterstellte Person, die Zugang zu personenbezogenen Daten hat, diese Daten ausschließlich auf Weisung des Verantwortlichen verarbeiten darf -- es sei denn, es besteht eine unionsrechtliche oder mitgliedstaatliche Rechtspflicht. Dies betrifft auch eigene Mitarbeiter, die zur Vertraulichkeit verpflichtet werden müssen.",
         "help": "Mitarbeiter und Dienstleister dürfen personenbezogene Daten nur so verarbeiten, wie Sie es als Verantwortlicher angewiesen haben -- nicht für eigene Zwecke oder nach eigenem Gutdünken. Konkret bedeutet das: Alle Mitarbeiter mit Datenzugang müssen auf die Vertraulichkeit verpflichtet werden (Verpflichtungserklärung). Auftragsverarbeiter dürfen die Daten nur im Rahmen des AVV nutzen. Prüfen Sie, ob alle Mitarbeiter eine Vertraulichkeitserklärung unterschrieben haben.",
         "maturity": {
@@ -2048,7 +2048,7 @@
         }
       },
       "brQ1": {
-        "title": "Haben Sie einen Prozess etabliert, um Auskunftsersuchen betroffener Personen innerhalb der gesetzlichen Frist von einem Monat zu beantworten?",
+        "title": "Beantworten Sie Auskunftsersuchen betroffener Personen innerhalb eines Monats?",
         "tooltip": "Art. 15 DSGVO gibt jeder betroffenen Person das Recht auf Auskunft über die sie betreffenden personenbezogenen Daten. Art. 12 Abs. 3 DSGVO setzt eine Frist von einem Monat für die Beantwortung. §34 BDSG enthält Ausnahmen von der Auskunftspflicht, z.B. wenn Daten nur aufgrund gesetzlicher Aufbewahrungsvorschriften gespeichert sind.",
         "help": "Jeder Mensch hat das Recht zu erfahren, ob und welche Daten Sie über ihn gespeichert haben. Wenn ein Kunde oder Mitarbeiter eine solche Anfrage stellt, müssen Sie innerhalb eines Monats antworten -- kostenlos und vollständig. Sie müssen angeben: Welche Daten, woher, an wen weitergegeben, wie lange gespeichert. Ohne einen festen Prozess dafür verpassen Sie die Frist und riskieren Beschwerden bei der Aufsichtsbehörde.",
         "maturity": {
@@ -2070,7 +2070,7 @@
         }
       },
       "brQ3": {
-        "title": "Können Sie betroffenen Personen ihre Daten in einem strukturierten, maschinenlesbaren Format zur Verfügung stellen (Recht auf Datenübertragbarkeit)?",
+        "title": "Können Sie betroffenen Personen ihre Daten in einem maschinenlesbaren Format bereitstellen (Datenübertragbarkeit)?",
         "tooltip": "Art. 20 DSGVO gewährt betroffenen Personen das Recht, ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und an einen anderen Verantwortlichen zu übermitteln. Dies gilt nur für Daten, die auf Einwilligung oder Vertragserfüllung basieren und automatisiert verarbeitet werden. §36 BDSG schränkt das Recht bei öffentlichen Stellen ein.",
         "help": "Das Recht auf Datenübertragbarkeit bedeutet: Wenn ein Kunde zu einem Wettbewerber wechselt, kann er verlangen, dass Sie ihm seine Daten in einem gängigen Format (z.B. CSV, JSON, XML) aushändigen, damit er sie beim neuen Anbieter einlesen kann. Das betrifft z.B. Bestellhistorie, Profilangaben oder Nutzungsdaten. Sie müssen technisch in der Lage sein, diese Daten zu exportieren.",
         "maturity": {
@@ -2092,7 +2092,7 @@
         }
       },
       "brQ5": {
-        "title": "Haben Sie Verfahren implementiert, die sicherstellen, dass automatisierte Einzelentscheidungen die Anforderungen des Art. 22 DSGVO erfüllen?",
+        "title": "Erfüllen automatisierte Einzelentscheidungen bei Ihnen die Anforderungen des Art. 22 DSGVO?",
         "tooltip": "Art. 22 DSGVO gibt betroffenen Personen das Recht, nicht einer ausschließlich auf automatisierter Verarbeitung beruhenden Entscheidung unterworfen zu werden, die ihnen gegenüber rechtliche Wirkung entfaltet oder sie erheblich beeinträchtigt. Ausnahmen bestehen bei Vertragserfüllung, gesetzlicher Erlaubnis oder ausdrücklicher Einwilligung. §37 BDSG enthält ergänzende nationale Regelungen und sieht Schutzrechte vor.",
         "help": "Automatisierte Einzelentscheidungen betreffen z.B. die automatische Ablehnung eines Kreditantrags durch einen Algorithmus, automatisches Scoring bei Bewerbungen oder automatisierte Kündigung von Abonnements. Wenn eine Software solche Entscheidungen ohne menschliche Beteiligung trifft und diese erhebliche Auswirkungen auf eine Person hat, muss die Person dagegen vorgehen können und hat das Recht auf menschliche Überprüfung.",
         "maturity": {
@@ -2125,7 +2125,7 @@
         }
       },
       "dsbQ3": {
-        "title": "Erfüllt Ihr Datenschutzbeauftragter die in Art. 39 DSGVO definierten Aufgaben (Beratung, Überwachung, Zusammenarbeit mit der Aufsicht)?",
+        "title": "Erfüllt Ihr Datenschutzbeauftragter seine Aufgaben (Beratung, Überwachung, Zusammenarbeit mit der Aufsicht)?",
         "tooltip": "Art. 39 Abs. 1 DSGVO definiert die Mindestaufgaben des DSB: (a) Unterrichtung und Beratung des Verantwortlichen und der Beschäftigten, (b) Überwachung der Einhaltung der DSGVO und des BDSG einschließlich Sensibilisierung und Schulung, (c) Beratung bei der DSFA und Überwachung ihrer Durchführung, (d) Zusammenarbeit mit der Aufsichtsbehörde, (e) Anlaufstelle für die Aufsichtsbehörde.",
         "help": "Ihr DSB hat klar definierte Aufgaben: Er beraat Sie und Ihre Mitarbeiter zum Datenschutz, überwacht die Einhaltung der Regeln, schult Mitarbeiter, unterstützt bei Datenschutz-Folgenabschätzungen und ist Ansprechpartner für die Aufsichtsbehörde. Prüfen Sie: Führt Ihr DSB regelmäßig Schulungen durch? Erstellt er Berichte? Prüft er Ihre Datenschutz-Dokumentation?",
         "maturity": {
@@ -2136,7 +2136,7 @@
         }
       },
       "dsbQ4": {
-        "title": "Haben Sie Ihren Datenschutzbeauftragten gemäß Art. 37 Abs. 7 DSGVO der Aufsichtsbehörde gemeldet und seine Kontaktdaten veröffentlicht?",
+        "title": "Haben Sie Ihren Datenschutzbeauftragten der Aufsichtsbehörde gemeldet und seine Kontaktdaten veröffentlicht?",
         "tooltip": "Art. 37 Abs. 7 DSGVO verlangt, dass der Verantwortliche die Kontaktdaten des DSB der Aufsichtsbehörde mitteilt und veröffentlicht. Die Veröffentlichung erfolgt typischerweise auf der Website (Datenschutzerklärung) und im Impressum. Die Meldung an die Behörde erfolgt online über das Portal der zuständigen Landesbehörde.",
         "help": "Zwei Pflichten werden oft übersehen: Erstens müssen Sie Ihren DSB bei der zuständigen Datenschutzbehörde melden -- in der Regel online über deren Website. Zweitens müssen die Kontaktdaten des DSB öffentlich zugänglich sein, typischerweise in Ihrer Datenschutzerklärung auf der Website. Beides ist keine Kür, sondern Pflicht. Fehlt die Meldung, kann bereits das einen Verstoß darstellen.",
         "maturity": {
@@ -2147,7 +2147,7 @@
         }
       },
       "dsbQ5": {
-        "title": "Ist die Unabhängigkeit Ihres Datenschutzbeauftragten gemäß Art. 38 Abs. 3 DSGVO sichergestellt (kein Interessenkonflikt, kein Benachteiligungsverbot)?",
+        "title": "Ist die Unabhängigkeit Ihres Datenschutzbeauftragten sichergestellt (kein Interessenkonflikt, keine Benachteiligung)?",
         "tooltip": "Art. 38 Abs. 3 DSGVO schützt den DSB: Er darf wegen der Erfüllung seiner Aufgaben nicht abberufen oder benachteiligt werden. Er berichtet unmittelbar der höchsten Managementebene. Es dürfen keine Interessenkonflikte bestehen (Art. 38 Abs. 6 DSGVO). Typische Interessenkonflikte: DSB ist gleichzeitig IT-Leiter, Geschäftsführer, HR-Leiter oder Marketingleiter. §38 Abs. 2 BDSG spezifiziert den Abberufungsschutz.",
         "help": "Ihr DSB muss unabhängig arbeiten können. Er darf keine Weisungen erhalten, wie er seine Datenschutzaufgaben ausführt, und er darf wegen seiner Tätigkeit nicht benachteiligt werden (z.B. schlechtere Bewertung, Kündigung). Außerdem darf er keine Position haben, die zu Interessenkonflikten führt -- z.B. kann der IT-Leiter nicht gleichzeitig DSB sein, weil er dann seine eigene Arbeit kontrollieren müsste.",
         "maturity": {
@@ -2158,7 +2158,7 @@
         }
       },
       "dsfaQ1": {
-        "title": "Führen Sie eine systematische Datenschutz-Folgenabschätzung (DSFA) durch, bevor Sie neue Verarbeitungsverfahren mit hohem Risiko für Betroffene einsetzen?",
+        "title": "Führen Sie eine Datenschutz-Folgenabschätzung (DSFA) durch, bevor Sie Verarbeitungen mit hohem Risiko beginnen?",
         "tooltip": "Art. 35 Abs. 1 DSGVO verpflichtet den Verantwortlichen, vor Einführung von Verarbeitungsvorgängen, die voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen zur Folge haben, eine Datenschutz-Folgenabschätzung durchzuführen. Dies betrifft insbesondere den Einsatz neuer Technologien.",
         "help": "Eine DSFA ist eine strukturierte Prüfung, ob eine geplante Datenverarbeitung besonders riskant für die betroffenen Personen ist. Beispiel: Sie wollen eine Videoüberwachung im Büro einführen oder ein neues CRM-System mit umfangreichen Kundenprofilen nutzen. Dann müssen Sie vorher prüfen, welche Risiken das für die Betroffenen hat und wie Sie diese minimieren können. Ohne DSFA riskieren Sie Bußgelder und schaffen eventuell rechtswidrige Verarbeitungen.",
         "maturity": {
@@ -2169,18 +2169,18 @@
         }
       },
       "dsfaQ2": {
-        "title": "Haben Sie geprüft, welche Ihrer Verarbeitungstätigkeiten gemäß der Blacklist der zuständigen Aufsichtsbehörde einer DSFA-Pflicht unterliegen?",
-        "tooltip": "Art. 35 Abs. 3 DSGVO benennt Regelbeispiele für DSFA-pflichtige Verarbeitungen (Profiling, umfangreiche Verarbeitung besonderer Kategorien, systematische Überwachung). Zusätzlich veröffentlichen die Aufsichtsbehörden Positivlisten (Blacklists) gemäß Art. 35 Abs. 4 DSGVO. In Deutschland ist die Liste der DSK (Datenschutzkonferenz) maßgeblich.",
+        "title": "Haben Sie anhand der Muss-Liste der Aufsichtsbehörde geprüft, welche Verarbeitungen eine DSFA brauchen?",
+        "tooltip": "Art. 35 Abs. 3 DSGVO benennt Regelbeispiele für DSFA-pflichtige Verarbeitungen (Profiling, umfangreiche Verarbeitung besonderer Kategorien, systematische Überwachung). Zusätzlich veröffentlichen die Aufsichtsbehörden Listen der DSFA-pflichtigen Verarbeitungen (Muss-Listen) gemäß Art. 35 Abs. 4 DSGVO. In Deutschland ist die Liste der DSK (Datenschutzkonferenz) maßgeblich.",
         "help": "Die Aufsichtsbehörden haben Listen veröffentlicht, welche Verarbeitungen immer eine DSFA erfordern -- z.B. Scoring, Video-Überwachung öffentlicher Bereiche oder umfangreiche Verarbeitung von Gesundheitsdaten. Prüfen Sie die Liste Ihrer Landesbehörde und gleichen Sie ab, ob Ihre Verarbeitungen darauf stehen. Wenn ja, müssen Sie eine DSFA durchführen -- unabhängig von Ihrer eigenen Risikoeinschätzung.",
         "maturity": {
-          "level0": "Die Blacklist der Aufsichtsbehörde ist nicht bekannt; kein Abgleich mit eigenen Verarbeitungen erfolgt",
-          "level1": "Die Blacklist ist bekannt, aber ein systematischer Abgleich mit den eigenen Verarbeitungstätigkeiten hat nicht stattgefunden",
-          "level2": "Die wichtigsten Verarbeitungen wurden gegen die Blacklist geprüft, jedoch nicht vollständig oder dokumentiert",
-          "level3": "Vollständiger, dokumentierter Abgleich aller Verarbeitungstätigkeiten mit der aktuellen Blacklist; Ergebnisse werden bei Änderungen aktualisiert"
+          "level0": "Die Muss-Liste der Aufsichtsbehörde ist nicht bekannt; kein Abgleich mit eigenen Verarbeitungen erfolgt",
+          "level1": "Die Muss-Liste ist bekannt, aber ein systematischer Abgleich mit den eigenen Verarbeitungstätigkeiten hat nicht stattgefunden",
+          "level2": "Die wichtigsten Verarbeitungen wurden gegen die Muss-Liste geprüft, jedoch nicht vollständig oder dokumentiert",
+          "level3": "Vollständiger, dokumentierter Abgleich aller Verarbeitungstätigkeiten mit der aktuellen Muss-Liste; Ergebnisse werden bei Änderungen aktualisiert"
         }
       },
       "dsfaQ3": {
-        "title": "Enthält Ihre DSFA die nach Art. 35 Abs. 7 DSGVO vorgeschriebenen Mindestinhalte (Beschreibung, Bewertung der Notwendigkeit, Risikobewertung und Abmilderungsmaßnahmen)?",
+        "title": "Enthält Ihre DSFA die Mindestinhalte (Beschreibung, Notwendigkeit, Risikobewertung, Abhilfemaßnahmen)?",
         "tooltip": "Art. 35 Abs. 7 DSGVO schreibt vier Mindestbestandteile einer DSFA vor: (a) systematische Beschreibung der Verarbeitungsvorgänge und Zwecke, (b) Bewertung der Notwendigkeit und Verhältnismäßigkeit, (c) Bewertung der Risiken für Betroffene, (d) geplante Abmilderungsmaßnahmen. Ohne diese Elemente ist die DSFA unvollständig.",
         "help": "Eine DSFA ist mehr als nur 'Wir haben darüber nachgedacht.' Sie muss vier Dinge enthalten: 1) Was genau wird wie verarbeitet und warum? 2) Ist die Verarbeitung wirklich notwendig oder geht es auch mit weniger Daten? 3) Welche konkreten Risiken bestehen für die Betroffenen (z.B. Identitätsdiebstahl, Diskriminierung)? 4) Welche konkreten Schutzmaßnahmen setzen Sie dagegen ein? Nur wenn alle vier Punkte dokumentiert sind, erfüllt die DSFA die gesetzlichen Anforderungen.",
         "maturity": {
@@ -2191,7 +2191,7 @@
         }
       },
       "dsfaQ4": {
-        "title": "Haben Sie ein Verfahren für die vorherige Konsultation der Aufsichtsbehörde, wenn eine DSFA ergibt, dass ein hohes Restrisiko besteht?",
+        "title": "Ist geregelt, wann und wie Sie die Aufsichtsbehörde konsultieren, wenn eine DSFA ein hohes Restrisiko ergibt?",
         "tooltip": "Art. 36 Abs. 1 DSGVO verpflichtet den Verantwortlichen, die Aufsichtsbehörde vor der Verarbeitung zu konsultieren, wenn die DSFA ergibt, dass die Verarbeitung trotz vorgesehener Schutzmaßnahmen ein hohes Risiko zur Folge hätte. Die Behörde hat dann bis zu 8 Wochen Zeit für eine Stellungnahme (Art. 36 Abs. 2 DSGVO).",
         "help": "Wenn Ihre DSFA ergibt, dass trotz aller geplanten Schutzmaßnahmen ein hohes Risiko für die Betroffenen bleibt, dürfen Sie die Verarbeitung nicht einfach starten. Sie müssen zuerst die zuständige Datenschutzbehörde fragen. Diese prüft dann Ihren Fall und kann Empfehlungen oder Auflagen außprechen. Haben Sie einen Prozess, wer in Ihrem Unternehmen diese Konsultation anstossen würde und wie der Ablauf ist?",
         "maturity": {
@@ -2312,7 +2312,7 @@
         }
       },
       "dvQ5": {
-        "title": "Haben Sie technische und organisatorische Maßnahmen getroffen, die eine Benachrichtigung Betroffener nach Art. 34 Abs. 3 DSGVO entbehrlich machen können?",
+        "title": "Haben Sie Maßnahmen getroffen, die eine Benachrichtigung der Betroffenen entbehrlich machen können (z.B. Verschlüsselung)?",
         "tooltip": "Art. 34 Abs. 3 DSGVO sieht vor, dass die Benachrichtigung betroffener Personen nicht erforderlich ist, wenn: (a) geeignete Schutzmaßnahmen wie Verschlüsselung angewandt wurden, (b) nachträgliche Maßnahmen das hohe Risiko beseitigt haben, oder (c) die Benachrichtigung unverhältnismäßigen Aufwand erfordern würde (dann öffentliche Bekanntmachung).",
         "help": "Sie können die Pflicht zur Benachrichtigung Betroffener vermeiden, wenn Sie im Vorfeld gute Schutzmaßnahmen getroffen haben. Wichtigstes Beispiel: Verschlüsselung. Wenn ein verschlüsselter Laptop gestohlen wird, können die Daten nicht gelesen werden -- daher kein hohes Risiko und keine Benachrichtigungspflicht. Ähnlich bei Pseudonymisierung. Investieren Sie in präventive Maßnahmen, sparen Sie sich im Ernstfall den Reputationsschaden.",
         "maturity": {
@@ -2334,7 +2334,7 @@
         }
       },
       "ewQ2": {
-        "title": "Können Sie für Verarbeitungen, die auf Einwilligung basieren, den Nachweis erbringen, dass die betroffene Person wirksam eingewilligt hat?",
+        "title": "Können Sie nachweisen, dass die betroffene Person wirksam eingewilligt hat?",
         "tooltip": "Art. 7 Abs. 1 DSGVO legt dem Verantwortlichen die Nachweispflicht auf: Er muss belegen können, dass die betroffene Person in die Verarbeitung eingewilligt hat. Die Einwilligung muss freiwillig, für den bestimmten Fall, informiert und eindeutig sein (Art. 4 Nr. 11 DSGVO). §26 Abs. 2 BDSG verlangt für Beschäftigteneinwilligungen grundsätzlich Schriftform.",
         "help": "Wenn Sie sich auf Einwilligung als Rechtsgrundlage berufen -- z.B. für den Newsletter-Versand oder Marketing-Cookies -- müssen Sie beweisen können, dass die Person tatsächlich eingewilligt hat. Dazu gehören: Wann wurde eingewilligt? Wie wurde informiert? Was genau wurde erlaubt? Ein Double-Opt-In beim Newsletter ist ein gutes Beispiel: Die Person trägt sich ein, bekommt eine Bestätigungsmail und klickt den Link -- das alles wird protokolliert.",
         "maturity": {
@@ -2367,7 +2367,7 @@
         }
       },
       "ewQ5": {
-        "title": "Holen Sie für die Verarbeitung besonderer Kategorien personenbezogener Daten eine ausdrückliche Einwilligung ein, wenn keine andere Ausnahme nach Art. 9 Abs. 2 DSGVO greift?",
+        "title": "Holen Sie für besondere Kategorien personenbezogener Daten eine ausdrückliche Einwilligung ein, wenn keine andere Ausnahme greift?",
         "tooltip": "Art. 9 Abs. 1 DSGVO verbietet grundsätzlich die Verarbeitung besonderer Datenkategorien (Gesundheit, Religion, ethnische Herkunft, politische Meinungen, Gewerkschaftszugehörigkeit, Genetik, Biometrie, Sexualleben). Art. 9 Abs. 2 lit. a DSGVO erlaubt die Verarbeitung bei ausdrücklicher Einwilligung. §22 BDSG enthält zusätzliche Bedingungen und Schutzvorkehrungen.",
         "help": "Besondere Datenkategorien sind z.B. Gesundheitsdaten (Krankmeldungen, BEM-Verfahren), Religionszugehörigkeit (Kirchensteuer), Gewerkschaftsmitgliedschaft oder biometrische Daten (Fingerabdruck-Scanner). Diese Daten dürfen nur unter strengen Voraussetzungen verarbeitet werden. Wenn keine gesetzliche Erlaubnis greift, brauchen Sie eine ausdrückliche Einwilligung -- also besonders klar und hervorgehoben, nicht versteckt in AGB.",
         "maturity": {
@@ -2378,7 +2378,7 @@
         }
       },
       "pbdQ1": {
-        "title": "Berücksichtigen Sie Datenschutzanforderungen bereits bei der Planung und Entwicklung neuer Systeme, Produkte und Prozesse (Privacy by Design)?",
+        "title": "Berücksichtigen Sie den Datenschutz schon bei Planung und Entwicklung neuer Systeme und Prozesse (Privacy by Design)?",
         "tooltip": "Art. 25 Abs. 1 DSGVO verlangt, dass der Verantwortliche sowohl zum Zeitpunkt der Festlegung der Mittel für die Verarbeitung als auch zum Zeitpunkt der Verarbeitung selbst geeignete technische und organisatorische Maßnahmen trifft, die darauf ausgelegt sind, Datenschutzgrundsätze wirksam umzusetzen. Dabei sind der Stand der Technik, die Implementierungskosten und die Risiken zu berücksichtigen.",
         "help": "Privacy by Design bedeutet: Datenschutz wird von Anfang an mitgedacht, nicht erst nachträglich aufgesetzt. Wenn Sie z.B. eine neue Kundendatenbank planen, überlegen Sie bereits in der Planungsphase: Welche Daten brauchen wir wirklich? Wie lange behalten wir sie? Wie schützen wir sie? Wer hat Zugriff? Das ist effizienter und sicherer, als später mühsam nachzubessern.",
         "maturity": {
@@ -2400,7 +2400,7 @@
         }
       },
       "pbdQ3": {
-        "title": "Wenden Sie den Grundsatz der Datenminimierung an -- erheben und speichern Sie nur die Daten, die für den jeweiligen Zweck tatsächlich erforderlich sind?",
+        "title": "Erheben und speichern Sie nur die Daten, die für den jeweiligen Zweck erforderlich sind (Datenminimierung)?",
         "tooltip": "Art. 5 Abs. 1 lit. c DSGVO normiert den Grundsatz der Datenminimierung: Personenbezogene Daten müssen dem Zweck angemessen und erheblich sowie auf das für die Zwecke der Verarbeitung notwendige Maß beschränkt sein. Dieser Grundsatz ist ein Kernelement von Privacy by Design und wirkt sich auf die Gestaltung von Formularen, Datenbanken, Prozessen und Schnittstellen aus.",
         "help": "Datenminimierung heißt: Sammeln Sie nur das, was Sie wirklich brauchen. Brauchen Sie für einen Newsletter wirklich Geburtsdatum, Geschlecht und Telefonnummer -- oder reicht die E-Mail-Adresse? Brauchen Sie für die Lieferung wirklich die Firmengröße des Kunden? Prüfen Sie jedes Formularfeld, jede Datenbankspalte: Ist das wirklich nötig, oder sammeln wir das 'für alle Fälle'?",
         "maturity": {
@@ -2422,7 +2422,7 @@
         }
       },
       "pbdQ5": {
-        "title": "Haben Sie automatisierte Löschmechanismen implementiert, die personenbezogene Daten nach Ablauf des Verarbeitungszwecks oder der Speicherfrist automatisch löschen?",
+        "title": "Werden personenbezogene Daten nach Ablauf von Zweck oder Speicherfrist automatisch gelöscht?",
         "tooltip": "Art. 5 Abs. 1 lit. e DSGVO normiert den Grundsatz der Speicherbegrenzung: Personenbezogene Daten dürfen nur so lange gespeichert werden, wie es für die Zwecke erforderlich ist. Privacy by Design erfordert, dass Löschmechanismen bereits in die Systemarchitektur eingebaut werden, nicht nachträglich.",
         "help": "Daten, die Sie nicht mehr brauchen, müssen gelöscht werden -- nicht erst wenn jemand danach fragt, sondern automatisch nach Ablauf der definierten Speicherfrist. Beispiel: Bewerberdaten 6 Monate nach Absage automatisch löschen, Cookie-Daten nach der definierten Frist, inaktive Kundenkonten nach 3 Jahren. Manuelle Löschung ist fehleranfällig -- bauen Sie automatische Mechanismen ein.",
         "maturity": {
@@ -2444,7 +2444,7 @@
         }
       },
       "tomQ2": {
-        "title": "Gewährleisten Sie die Vertraulichkeit, Integrität und Verfügbarkeit Ihrer Systeme und Dienste, die personenbezogene Daten verarbeiten?",
+        "title": "Sind Vertraulichkeit, Integrität und Verfügbarkeit der Systeme gewährleistet, die personenbezogene Daten verarbeiten?",
         "tooltip": "Art. 32 Abs. 1 lit. b DSGVO fordert die Fähigkeit, die Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der Systeme und Dienste dauerhaft sicherzustellen. Vertraulichkeit: Nur Berechtigte haben Zugriff. Integrität: Daten werden nicht unbefugt verändert. Verfügbarkeit: Systeme sind bei Bedarf funktionsfähig.",
         "help": "Drei Schutzziele müssen Sie gewährleisten: Vertraulichkeit (nur wer darf, sieht die Daten -- z.B. durch Berechtigungskonzept und Passwörter), Integrität (Daten werden nicht unbefugt verändert -- z.B. durch Prüf-Hashwerte und Änderungsprotokolle), Verfügbarkeit (Systeme funktionieren wenn nötig -- z.B. durch Backups und redundante Systeme). Dokumentieren Sie, welche konkreten Maßnahmen Sie für jedes Schutzziel umgesetzt haben.",
         "maturity": {
@@ -2466,7 +2466,7 @@
         }
       },
       "tomQ4": {
-        "title": "Haben Sie ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit Ihrer technischen und organisatorischen Maßnahmen?",
+        "title": "Überprüfen Sie regelmäßig, ob Ihre technischen und organisatorischen Maßnahmen wirken?",
         "tooltip": "Art. 32 Abs. 1 lit. d DSGVO fordert ausdrücklich ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der technisch-organisatorischen Maßnahmen. Dies umfasst interne Audits, Penetrationstests, Schwachstellenanalysen und die Bewertung von Sicherheitsvorfällen.",
         "help": "Es reicht nicht, einmal Schutzmaßnahmen einzuführen und dann nie wieder zu prüfen. Sie müssen regelmäßig testen, ob Ihre Maßnahmen noch wirksam sind. Das kann eine jährliche Überprüfung durch Ihren DSB oder einen externen Dienstleister sein, ein Penetrationstest Ihrer Systeme oder die Auswertung von Sicherheitsvorfällen. Dokumentieren Sie die Ergebnisse und leiten Sie Verbesserungsmaßnahmen ab.",
         "maturity": {
@@ -2477,7 +2477,7 @@
         }
       },
       "tomQ5": {
-        "title": "Berücksichtigen Sie bei der Auswahl Ihrer Schutzmaßnahmen den Stand der Technik, die Implementierungskosten und die Art, den Umfang und die Zwecke der Verarbeitung?",
+        "title": "Berücksichtigen Sie bei der Auswahl der Schutzmaßnahmen Stand der Technik, Kosten und Art der Verarbeitung?",
         "tooltip": "Art. 32 Abs. 1 DSGVO verlangt, dass bei der Auswahl der Schutzmaßnahmen der Stand der Technik, die Implementierungskosten, die Art, der Umfang, die Umstände und die Zwecke der Verarbeitung sowie die Eintrittswahrscheinlichkeit und Schwere des Risikos berücksichtigt werden. Art. 32 Abs. 2 DSGVO fordert bei der Beurteilung insbesondere die Berücksichtigung von Risiken durch Vernichtung, Verlust, Veränderung oder unbefugten Zugang.",
         "help": "Die DSGVO erwartet keine Maßnahmen um jeden Preis, sondern verhältnismäßige Maßnahmen. Ein kleines Handwerksunternehmen, das nur Kundenadressen speichert, braucht andere Maßnahmen als ein Krankenhaus mit Patientendaten. Bei der Auswahl berücksichtigen Sie: Was ist technisch aktuell möglich (Stand der Technik)? Was kostet die Umsetzung? Wie sensibel sind die Daten? Wie wahrscheinlich und schwerwiegend ist ein Datenverlust? Dokumentieren Sie diese Abwägung.",
         "maturity": {
@@ -2499,7 +2499,7 @@
         }
       },
       "vvQ2": {
-        "title": "Sind in Ihrem Verarbeitungsverzeichnis die Zwecke der Verarbeitung, die Kategorien betroffener Personen und die Datenkategorien korrekt und aktuell dokumentiert?",
+        "title": "Sind im Verzeichnis Zwecke, Kategorien betroffener Personen und Datenkategorien aktuell dokumentiert?",
         "tooltip": "Art. 30 Abs. 1 lit. b-d DSGVO verlangt die Dokumentation der Verarbeitungszwecke, der Kategorien betroffener Personen (z.B. Kunden, Mitarbeiter, Bewerber) und der Kategorien personenbezogener Daten (z.B. Kontaktdaten, Bankdaten, Gesundheitsdaten). Diese Angaben müssen den tatsächlichen Verarbeitungen entsprechen.",
         "help": "Für jede Verarbeitung in Ihrem Verzeichnis müssen Sie angeben: WARUM verarbeiten Sie die Daten (z.B. Vertragserfüllung, gesetzliche Pflicht)? WESSEN Daten sind betroffen (Kunden, Mitarbeiter, Lieferanten)? WELCHE Daten sind es genau (Name, Adresse, Bankverbindung, Gesundheitsdaten)? Diese Angaben müssen aktuell sein -- wenn Sie z.B. einen neuen Online-Shop starten, muss das zeitnah ergänzt werden.",
         "maturity": {
@@ -2510,7 +2510,7 @@
         }
       },
       "vvQ3": {
-        "title": "Haben Sie die vorgesehenen Löschfristen und eine allgemeine Beschreibung der technisch-organisatorischen Schutzmaßnahmen in Ihrem Verarbeitungsverzeichnis dokumentiert?",
+        "title": "Sind im Verzeichnis Löschfristen und eine allgemeine Beschreibung der Schutzmaßnahmen dokumentiert?",
         "tooltip": "Art. 30 Abs. 1 lit. f-g DSGVO verlangt die Angabe der vorgesehenen Fristen für die Löschung der verschiedenen Datenkategorien sowie eine allgemeine Beschreibung der technischen und organisatorischen Sicherheitsmaßnahmen nach Art. 32 Abs. 1 DSGVO. 'Wenn möglich' ist dabei keine Ausnahme, sondern die Erwartung der Aufsichtsbehörden.",
         "help": "Für jede Datenverarbeitung müssen Sie festlegen, wann die Daten gelöscht werden -- z.B. Bewerberdaten 6 Monate nach Absage, Rechnungen und Buchungsbelege nach 8 Jahren (gesetzliche Aufbewahrungspflicht nach § 147 AO, § 257 HGB, seit 2025). Zusätzlich beschreiben Sie, wie die Daten geschützt werden -- z.B. Verschlüsselung, Zugangsbeschränkung, Pseudonymisierung. Diese Angaben gehören in Ihr Verarbeitungsverzeichnis.",
         "maturity": {
@@ -2925,7 +2925,7 @@
         }
       },
       "bcmQ2": {
-        "title": "Wurden die maximal tolerierbaren Ausfallzeiten (RTO/RPO) für Ihre kritische Dienstleistung definiert?",
+        "title": "Sind maximale Ausfallzeit (RTO) und maximaler Datenverlust (RPO) für Ihre kritische Dienstleistung festgelegt?",
         "tooltip": "Die Business-Impact-Analyse (BIA) ist Kernbestandteil des BCMS nach BSI-Standard 200-4. Sie ermittelt Wiederanlaufzeiten (RTO) und tolerierbare Datenverluste (RPO) für die kritische Dienstleistung.",
         "help": "RTO (Recovery Time Objective) definiert die maximale Ausfallzeit, RPO (Recovery Point Objective) den maximalen Datenverlust. Für KRITIS-Betreiber bedeutet das: Wie lange darf Ihre kritische Dienstleistung (z. B. Wasserversorgung, Stromerzeugung, Krankenhausbetrieb) maximal ausfallen, ohne dass die Versorgungssicherheit gefährdet ist? Diese Werte bestimmen Ihre gesamte Notfallstrategie.",
         "maturity": {
@@ -3505,7 +3505,7 @@
         }
       },
       "daQ4": {
-        "title": "Enthalten Verträge für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, die zusätzlichen Bestimmungen nach Art. 30 Abs. 3 DORA?",
+        "title": "Enthalten Verträge zu kritischen oder wichtigen Funktionen die zusätzlichen Bestimmungen nach Art. 30 Abs. 3 DORA?",
         "tooltip": "Art. 30 Abs. 1-5 DORA definiert verschärfte vertragliche Anforderungen für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen. Diese umfassen unter anderem: vollständige Service-Level-Beschreibungen, garantierte Verfügbarkeitsziele, Verpflichtungen des Anbieters bei Vorfällen, Sicherheitsmaßnahmen, Datenschutzgarantien, uneingeschränkte Audit- und Zugangsrechte, Kündigungsrechte und Ausstiegsstrategien.",
         "help": "Für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, gelten nach Art. 30 DORA verschärfte Vertragsanforderungen gegenüber den allgemeinen Anforderungen aus Art. 28. Besonders wichtig sind: das uneingeschränkte Recht auf Audits und Inspektionen (auch durch die Aufsichtsbehörde), garantierte Unterstützung bei IKT-Vorfällen, die Verpflichtung zur Mitwirkung bei TLPT, klare Ausstiegsstrategien mit angemessenen Übergangsfristen und das Recht auf Kündigung bei wesentlichen Vertragsverletzungen.",
         "maturity": {
@@ -3615,7 +3615,7 @@
         }
       },
       "iaQ4": {
-        "title": "Werden Bedrohungsindikatoren (IoCs) und Taktiken (TTPs) systematisch verarbeitet und in die eigene Abwehr integriert?",
+        "title": "Werden Bedrohungsindikatoren und bekannte Angriffsmuster systematisch ausgewertet und in die eigene Abwehr übernommen?",
         "tooltip": "Art. 45 Abs. 1 DORA nennt als Gegenstand des Informationsaustauschs insbesondere Indikatoren für Beeinträchtigungen (Indicators of Compromise, IoCs), Taktiken, Techniken und Verfahren (TTPs), Sicherheitswarnungen und Konfigurationswerkzeuge. Die Integration dieser Informationen in die eigene IKT-Sicherheitsinfrastruktur ist entscheidend für den operativen Nutzen.",
         "help": "Der reine Empfang von Bedrohungsinformationen schafft noch keinen Mehrwert -- erst die Integration in Ihre Sicherheitssysteme macht den Austausch wirksam. IoCs (z. B. bösartige IP-Adressen, Datei-Hashes, Domains) sollten automatisiert in Ihre SIEM-, Firewall- und Endpoint-Detection-Systeme eingespeist werden. TTPs sollten in Ihre Detektionsregeln einfließen. Dafür benötigen Sie Werkzeuge wie STIX/TAXII-kompatible Threat-Intelligence-Plattformen und definierte Prozesse zur Operationalisierung.",
         "maturity": {
@@ -3758,7 +3758,7 @@
         }
       },
       "vmQ2": {
-        "title": "Werden IKT-bezogene Vorfälle nach den DORA-Klassifizierungskriterien als schwerwiegend eingestuft?",
+        "title": "Werden IKT-bezogene Vorfälle nach den DORA-Kriterien klassifiziert?",
         "tooltip": "Art. 18 Abs. 1-2 DORA legt fest, dass Finanzunternehmen IKT-bezogene Vorfälle anhand bestimmter Kriterien klassifizieren müssen. Die Klassifizierungskriterien umfassen unter anderem: Anzahl betroffener Kunden, Dauer des Vorfalls, geografische Ausbreitung, Datenverluste, Kritikalität betroffener Dienste und wirtschaftliche Auswirkungen. Die Delegierte Verordnung (EU) 2024/1772 definiert die Schwellenwerte für schwerwiegende Vorfälle.",
         "help": "DORA unterscheidet zwischen IKT-bezogenen Vorfällen und schwerwiegenden IKT-bezogenen Vorfällen. Nur schwerwiegende Vorfälle sind meldepflichtig. Die Klassifizierung erfolgt anhand von sieben Kriterien: Anzahl betroffener Kunden/Gegenparteien, Dauer des Vorfalls, geografische Ausbreitung, Datenverluste, Auswirkungen auf kritische Dienste, wirtschaftliche Auswirkungen und Kritikalität der betroffenen Dienste. Sie benötigen ein Verfahren, das diese Kriterien systematisch prüft und dokumentiert.",
         "maturity": {
@@ -4053,7 +4053,7 @@
         }
       },
       "compQ1": {
-        "title": "Werden alle für Ihr Unternehmen relevanten gesetzlichen und regulatorischen IS-Anforderungen systematisch identifiziert und eingehalten?",
+        "title": "Werden gesetzliche und regulatorische Anforderungen an die Informationssicherheit ermittelt und eingehalten?",
         "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.31 — Alle relevanten gesetzlichen, regulatorischen und vertraglichen Anforderungen an die Informationssicherheit müssen identifiziert, dokumentiert und deren Einhaltung sichergestellt werden.",
         "help": "Neben TISAX und ISO 27001 gibt es zahlreiche weitere Anforderungen, die für Automobilzulieferer relevant sein können: DSGVO, NIS2, KRITIS-VO, Geschäftsgeheimnisgesetz, OEM-spezifische Anforderungen und branchenspezifische Standards. TISAX-Assessoren prüfen, ob Sie eine Übersicht aller relevanten Anforderungen führen und deren Einhaltung systematisch sicherstellen.",
         "maturity": {
@@ -4141,7 +4141,7 @@
         }
       },
       "komQ3": {
-        "title": "Werden Datenübertragungen mit OEMs und Geschäftspartnern über sichere Kanäle abgewickelt?",
+        "title": "Werden Datenübertragungen mit Fahrzeugherstellern (OEMs) und Geschäftspartnern über sichere Kanäle abgewickelt?",
         "tooltip": "VDA ISA 6 / ISO 27001:2022 A.5.14 — Der Austausch vertraulicher Informationen mit externen Partnern muss über verschlüsselte und authentifizierte Kommunikationskanäle erfolgen. Besondere Anforderungen gelten für den OEM-Datenaustausch.",
         "help": "Der Datenaustausch mit OEMs ist ein zentrales Thema bei TISAX-Assessments. Konstruktionsdaten, Prototypen-Informationen und Qualitätsdaten müssen über sichere Kanäle übertragen werden — z.B. über OEM-spezifische Plattformen (Teamcenter, ENOVIA), verschlüsselte Datentransferlösungen oder SFTP. Unverschlüsselte E-Mail-Anhänge für vertrauliche OEM-Daten sind ein typischer Befund.",
         "maturity": {
@@ -4884,7 +4884,7 @@
         }
       },
       "konfQ3": {
-        "title": "Wissen Sie, welche CE-Kennzeichnung Ihr Produkt braucht, und haben Sie diese angebracht?",
+        "title": "Haben Sie die EU-Konformitätserklärung ausgestellt und die CE-Kennzeichnung angebracht?",
         "tooltip": "Nach erfolgreichem Abschluss des Konformitätsbewertungsverfahrens müssen Hersteller die EU-Konformitätserklärung ausstellen (Art. 13 Abs. 12, Art. 28 CRA) und die CE-Kennzeichnung anbringen (Art. 30 CRA).",
         "help": "Die CE-Kennzeichnung ist das sichtbare Zeichen der CRA-Konformität. Vor dem Anbringen müssen Sie das jeweilige Konformitätsbewertungsverfahren erfolgreich durchlaufen und eine EU-Konformitätserklärung nach dem Muster in Anhang V erstellen. Die Erklärung muss stets aktuell gehalten und der Marktüberwachungsbehörde auf Verlangen vorgelegt werden können.",
         "maturity": {
@@ -5295,7 +5295,7 @@
         }
       },
       "indQ2": {
-        "title": "Werden Ihre industriellen Komponenten (SPS, HMI, Engineering-Workstations) nach OT-spezifischen Sicherheitsanforderungen gehärtet?",
+        "title": "Werden Steuerungen, Bedienstationen und Engineering-Workstations nach den Anforderungen für Produktionsanlagen gehärtet?",
         "tooltip": "Der IT-Grundschutz-Baustein IND.2.1 (Kompendium, Edition 2023) fordert die Einschränkung des Zugriffs auf ICS-Komponenten. SPS, HMI-Panels und Engineering-Workstations müssen gegen unbefugten Zugriff und Manipulation geschützt werden.",
         "help": "Industrielle Komponenten wie speicherprogrammierbare Steuerungen (SPS), Bedien- und Beobachtungssysteme (HMI) und Engineering-Workstations haben oft eigene Sicherheitsanforderungen. Viele SPS haben keine Authentifizierung, HMI-Panels laufen auf veralteten Betriebssystemen, und Engineering-Workstations haben direkten Zugriff auf die Steuerungsebene. Härtungsmaßnahmen müssen die besonderen Anforderungen der OT berücksichtigen — z.B. können manche Komponenten nicht einfach neugestartet werden.",
         "maturity": {
@@ -5339,7 +5339,7 @@
         }
       },
       "infQ3": {
-        "title": "Sind Technikräume (Verteilerräume, Patchfelder, TK-Anlagen) angemessen geschützt und dokumentiert?",
+        "title": "Sind Technikräume (Verteilerräume, Patchfelder, Telefonanlagen) angemessen geschützt und dokumentiert?",
         "tooltip": "Der IT-Grundschutz-Baustein INF.5 (Kompendium, Edition 2023) fordert den Schutz von Technikräumen. Netzwerkverteiler, Patchfelder und TK-Anlagen müssen gegen unbefugten Zugriff, Überhitzung und Manipulation gesichert sein.",
         "help": "Technikräume beherbergen Netzwerkverteiler, Patchfelder, Switches und TK-Anlagen. Obwohl sie oft weniger Aufmerksamkeit erhalten als der Serverraum, ist ihr Schutz ebenso wichtig — ein manipulierter Switch kann den gesamten Netzwerkverkehr umleiten. Die Räume müssen verschlossen sein, eine ausreichende Belüftung haben und ihre Belegung muss dokumentiert sein (Patch-Dokumentation).",
         "maturity": {
@@ -5405,7 +5405,7 @@
         }
       },
       "netQ3": {
-        "title": "Sind Ihre TK-Anlagen, VoIP-Systeme und Kommunikationsdienste gegen unbefugten Zugriff und Abhören geschützt?",
+        "title": "Sind Ihre Telefonanlagen, VoIP-Systeme und Kommunikationsdienste gegen unbefugten Zugriff und Abhören geschützt?",
         "tooltip": "Der IT-Grundschutz-Baustein NET.4.1 (Kompendium, Edition 2023) fordert den sicheren Betrieb von TK-Anlagen. VoIP-Systeme müssen verschlüsselt, gegen Gebührenmissbrauch gesichert und in die Netzwerksicherheitsarchitektur eingebunden sein.",
         "help": "Telefonanlagen und VoIP-Systeme werden oft bei der IT-Sicherheit vergessen. Sie sind jedoch anfällig für Gebührenmissbrauch (Toll Fraud), Abhören und als Einstiegspunkt ins Netzwerk. Schutzmaßnahmen umfassen: VoIP-Verkehr in separatem VLAN, Verschlüsselung der Sprachdaten (SRTP) und Signalisierung (TLS), Absicherung der Administrationszugänge, Schutz vor Gebührenmissbrauch und regelmäßige Updates der TK-Software.",
         "maturity": {
@@ -7748,7 +7748,7 @@
     },
     "owasp-asvs": {
       "title": "OWASP ASVS 4.0.3",
-      "subtitle": "Sicherheitsstandard für Webanwendungen und APIs.\nVerifizierungslevel L1 bis L3 für Entwickler und Sicherheitsteams."
+      "subtitle": "Sicherheitsstandard für Webanwendungen und APIs.\nVerifizierungslevel L1 bis L3 für Entwickler und Sicherheitsteams. Die Fragen setzen Entwicklerkenntnisse voraus."
     }
   },
   "pillars": {
@@ -8878,7 +8878,7 @@
         }
       },
       "auQ1": {
-        "title": "Werden alle Benutzer mit einer eindeutigen ID identifiziert, bevor der Zugriff auf Systemkomponenten oder Karteninhaberdaten gewährt wird?",
+        "title": "Hat jeder Benutzer eine eindeutige Kennung, bevor er auf Systemkomponenten oder Karteninhaberdaten zugreift?",
         "tooltip": "PCI DSS v4.0.1 Req. 8.2-8.3 verlangt, dass jedem Benutzer eine eindeutige ID zugewiesen wird und die Identität vor dem Zugriff auf Systemkomponenten verifiziert wird. Generische, gemeinsam genutzte oder gruppenbezogene Konten dürfen nur in Ausnahmefällen mit dokumentierter Begründung verwendet werden.",
         "help": "Eindeutige Benutzer-IDs sind die Grundlage für Zurechenbarkeit und Nachverfolgbarkeit. Jede Aktion in Ihrer CDE muss einem individuellen Benutzer zugeordnet werden können. Eliminieren Sie gemeinsam genutzte Konten und generische IDs (z. B. 'admin', 'user1'). Für Ausnahmen (z. B. Notfallkonten) muss eine dokumentierte Begründung und erhöhte Überwachung vorhanden sein.",
         "maturity": {
@@ -8900,7 +8900,7 @@
         }
       },
       "auQ3": {
-        "title": "Ist Multi-Faktor-Authentifizierung (MFA) für alle Zugriffe auf die CDE implementiert?",
+        "title": "Ist Multi-Faktor-Authentifizierung (MFA) für alle Zugriffe auf die Karteninhaberdatenumgebung (CDE) implementiert?",
         "tooltip": "PCI DSS v4.0.1 Req. 8.4 fordert MFA für alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE (8.4.1), seit 31.03.2025 für jeden Zugriff in die CDE (8.4.2) und für alle Fernzugriffe aus Netzen außerhalb der Organisation (8.4.3).",
         "help": "MFA bedeutet, dass mindestens zwei der folgenden Authentifizierungsfaktoren erforderlich sind: Wissen (Passwort, PIN), Besitz (Token, Smartphone) und Eigenschaft (Biometrie). PCI DSS v4.0.1 verlangt MFA für: (1) alle nicht-konsolenbasierten administrativen Zugriffe auf die CDE, und (2) alle Remote-Zugriffe von außerhalb des Netzwerks. Die MFA-Implementierung muss manipulationssicher sein und darf nicht umgangen werden können.",
         "maturity": {
@@ -8922,7 +8922,7 @@
         }
       },
       "psQ1": {
-        "title": "Sind geeignete physische Zugangskontrollen implementiert, um den Zugang zu Systemen in der CDE einzuschränken?",
+        "title": "Beschränken physische Zugangskontrollen den Zutritt zu Systemen in der Karteninhaberdatenumgebung (CDE)?",
         "tooltip": "PCI DSS v4.0.1 Req. 9.1-9.2 fordert physische Zugangskontrollen, um den Zugang zu Systemen in der CDE auf autorisiertes Personal zu beschränken. Dazu gehören Zutrittskontrollsysteme, Überwachungskameras, Besuchermanagement und die Kennzeichnung von Besuchern.",
         "help": "Physische Sicherheit ergänzt die technischen Kontrollen. Ihre CDE-Räume (z. B. Serverräume, Rechenzentren) müssen durch Zutrittskontrollsysteme geschützt sein. Nutzen Sie Zutrittskarten, biometrische Systeme oder ähnliche Mechanismen. Alle Zutritte müssen protokolliert werden. Besucher müssen begleitet werden und sichtbar als Besucher gekennzeichnet sein. Überwachungskameras sollten an allen Ein- und Ausgängen installiert sein.",
         "maturity": {
@@ -8933,7 +8933,7 @@
         }
       },
       "psQ2": {
-        "title": "Ist der physische Zugang zu WLAN-Zugangspunkten, Gateways, Netzwerk-/Kommunikationsleitungen und tragbaren Geräten innerhalb der CDE eingeschränkt?",
+        "title": "Ist der physische Zugang zu WLAN-Zugangspunkten, Netzwerkleitungen und tragbaren Geräten in der CDE eingeschränkt?",
         "tooltip": "PCI DSS v4.0.1 Req. 9.4 fordert, dass der physische Zugang zu WLAN-Zugangspunkten, Gateways, Netzwerkgeräten und tragbaren Medien innerhalb der Einrichtung eingeschränkt ist. Tragbare Medien mit Karteninhaberdaten müssen physisch gesichert sein.",
         "help": "Netzwerkgeräte und WLAN-Zugangspunkte innerhalb Ihrer CDE müssen physisch gesichert sein — in verschlossenen Räumen, Schränken oder Gehäuse. Tragbare Medien (USB-Sticks, Festplatten, Bänder) mit Karteninhaberdaten müssen in sicheren Bereichen aufbewahrt werden. Führen Sie ein Inventar aller tragbaren Medien und implementieren Sie einen Prozess für die sichere Vernichtung nicht mehr benötigter Medien.",
         "maturity": {
@@ -9021,7 +9021,7 @@
         }
       },
       "spQ3": {
-        "title": "Ist ein Incident-Response-Plan implementiert, der bei einem vermuteten oder bestätigten Sicherheitsvorfall sofort aktiviert werden kann?",
+        "title": "Gibt es einen Incident-Response-Plan, der bei einem Sicherheitsvorfall sofort aktiviert werden kann?",
         "tooltip": "PCI DSS v4.0.1 Req. 12.10 fordert einen Incident-Response-Plan, der bei Verdacht auf einen Sicherheitsvorfall sofort aktiviert wird. Der Plan muss Rollen und Verantwortlichkeiten, Kommunikationswege, Benachrichtigungspflichten (z. B. an Kartenmarken) und Verfahren zur Beweissicherung definieren.",
         "help": "Ein Sicherheitsvorfall mit Karteninhaberdaten kann erhebliche finanzielle und reputative Schäden verursachen. Ihr Incident-Response-Plan muss klar definieren: Wer ist verantwortlich? Wer wird benachrichtigt (intern, Kartenmarken, Acquirer, Behörden)? Wie werden Beweise gesichert? Wie wird der Vorfall eingedämmt? Der Plan muss mindestens jährlich getestet werden und das Personal muss geschult sein.",
         "maturity": {
@@ -13666,8 +13666,8 @@
       "securityOperations": {
         "name": "Sicherheitsbetrieb & Tests",
         "shortName": "Operations",
-        "description": "Awareness, Dienstleister-Management, AppSec, Incident Response und Penetrationstests",
-        "empoweringIntro": "Menschen und Abläufe: Geschulte Mitarbeiter, geprüfte Dienstleister und ein eingeübter Notfallplan machen aus Technik einen funktionierenden Schutz."
+        "description": "Awareness, Dienstleister-Management und Incident Response",
+        "empoweringIntro": "Menschen und Abläufe: Geschulte Mitarbeiter, geprüfte Dienstleister und ein eingeübter Notfallplan machen aus Technik einen funktionierenden Schutz. Anwendungssicherheit (Control 16) und Penetrationstests (Control 18) fragt dieser Check nicht ab."
       }
     },
     "questions": {
@@ -13804,14 +13804,14 @@
         }
       },
       "rnQ1": {
-        "title": "Haben Sie eine 3-2-1-Backup-Strategie mit regelmäßigen Wiederherstellungstests?",
+        "title": "Sichern Sie Ihre Daten regelmäßig und testen Sie die Wiederherstellung?",
         "tooltip": "CIS Control 11: Datenwiederherstellung",
         "help": "Backups sind nur so gut wie der letzte erfolgreiche Wiederherstellungstest.",
         "maturity": {
           "level0": "Es gibt keine regelmäßigen Datensicherungen.",
           "level1": "Sicherungen laufen unregelmäßig oder nur auf einem Datenträger; die Wiederherstellung wurde nie getestet.",
           "level2": "Sicherungen laufen nach Plan mit mehreren Kopien, eine davon außer Haus; Tests finden gelegentlich statt.",
-          "level3": "Die 3-2-1-Regel ist umgesetzt, eine Kopie ist vor Veränderung geschützt und die Wiederherstellung wird regelmäßig getestet."
+          "level3": "Mehrere Kopien liegen an getrennten Orten, eine davon ist vor Veränderung geschützt; die Wiederherstellung wird regelmäßig getestet."
         }
       },
       "rnQ2": {
@@ -14014,7 +14014,7 @@
     },
     "questions": {
       "clQ1": {
-        "title": "Ist der Geltungsbereich Ihres BCM klar definiert und von der Geschäftsleitung genehmigt?",
+        "title": "Ist der Geltungsbereich Ihres Business-Continuity-Managements (BCM) klar definiert und von der Geschäftsleitung genehmigt?",
         "tooltip": "ISO 22301 Clause 4-5: Kontext und Führung",
         "help": "Der BCMS-Scope definiert, welche Produkte und Dienstleistungen geschützt werden.",
         "maturity": {
@@ -14047,7 +14047,7 @@
         }
       },
       "plQ1": {
-        "title": "Wurden Risiken und Chancen für das BCMS systematisch identifiziert?",
+        "title": "Wurden Risiken und Chancen für das Business-Continuity-Managementsystem (BCMS) systematisch identifiziert?",
         "tooltip": "ISO 22301 Clause 6.1: Risiken und Chancen",
         "help": "Eine Risikoanalyse identifiziert Bedrohungen für die Geschäftskontinuität.",
         "maturity": {
@@ -14080,7 +14080,7 @@
         }
       },
       "srQ1": {
-        "title": "Sind ausreichend Ressourcen und Kompetenzen für das BCM vorhanden?",
+        "title": "Sind ausreichend Ressourcen und Kompetenzen für das Business-Continuity-Management (BCM) vorhanden?",
         "tooltip": "ISO 22301 Clause 7.1-7.2: Ressourcen",
         "help": "BCM erfordert dedizierte Ressourcen und geschultes Personal.",
         "maturity": {
@@ -14124,7 +14124,7 @@
         }
       },
       "biQ2": {
-        "title": "Sind RTO und RPO für alle kritischen Prozesse definiert?",
+        "title": "Sind Wiederanlaufzeit (RTO) und maximal tolerierbarer Datenverlust (RPO) für alle kritischen Prozesse definiert?",
         "tooltip": "ISO 22301 Clause 8.2.2: RTO/RPO",
         "help": "Recovery Time Objective und Recovery Point Objective sind Kernmetriken des BCM.",
         "maturity": {
@@ -14146,7 +14146,7 @@
         }
       },
       "bsQ1": {
-        "title": "Gibt es dokumentierte BC-Pläne für alle kritischen Geschäftsprozesse?",
+        "title": "Gibt es dokumentierte Notfallpläne (Business-Continuity-Pläne) für alle kritischen Geschäftsprozesse?",
         "tooltip": "ISO 22301 Clause 8.4: BC-Pläne",
         "help": "BC-Pläne beschreiben konkret, wie bei einem Ausfall reagiert wird.",
         "maturity": {
@@ -14157,7 +14157,7 @@
         }
       },
       "bsQ2": {
-        "title": "Werden BC-Pläne regelmäßig durch Übungen und Tests validiert?",
+        "title": "Werden die Notfallpläne regelmäßig durch Übungen und Tests validiert?",
         "tooltip": "ISO 22301 Clause 8.5: Übungen",
         "help": "Ungetestete Pläne sind im Ernstfall wertlos.",
         "maturity": {
@@ -14179,7 +14179,7 @@
         }
       },
       "eiQ1": {
-        "title": "Werden Leistungsindikatoren für das BCM regelmäßig gemessen?",
+        "title": "Werden Leistungsindikatoren für das Business-Continuity-Management (BCM) regelmäßig gemessen?",
         "tooltip": "ISO 22301 Clause 9.1: Überwachung",
         "help": "KPIs zeigen, ob das BCM wirksam funktioniert.",
         "maturity": {
@@ -14190,7 +14190,7 @@
         }
       },
       "eiQ2": {
-        "title": "Werden regelmäßige interne Audits des BCMS durchgeführt?",
+        "title": "Werden regelmäßige interne Audits des BCM-Systems durchgeführt?",
         "tooltip": "ISO 22301 Clause 9.2: Internes Audit",
         "help": "Audits identifizieren Verbesserungspotenziale im BCM.",
         "maturity": {
@@ -14662,7 +14662,7 @@
   "owasp-asvs": {
     "name": "OWASP ASVS",
     "shortName": "OWASP",
-    "description": "OWASP Application Security Verification Standard — Sicherheitsstandard für Webanwendungen",
+    "description": "OWASP Application Security Verification Standard — Sicherheitsstandard für Webanwendungen. Die Fragen setzen Entwicklerkenntnisse voraus.",
     "fullName": "OWASP Application Security Verification Standard 4.0",
     "categories": {
       "authentication": {
@@ -14814,7 +14814,7 @@
         }
       },
       "ivQ2": {
-        "title": "Wird Output-Encoding kontextabhängig angewendet (HTML, JS, SQL, LDAP)?",
+        "title": "Wird Output-Encoding kontextabhängig angewendet (HTML, JavaScript, URL)?",
         "tooltip": "OWASP ASVS V5.3: Output Encoding",
         "help": "Korrektes Output-Encoding verhindert XSS und andere Injection-Angriffe.",
         "maturity": {

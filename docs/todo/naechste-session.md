@@ -25,7 +25,9 @@ Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`
 - [x] Doppelungen je Regelwerk: abgegrenzt statt gestrichen, 42 Texte je Sprache (Abschnitt 4a).
 - [ ] Selbst gegenlesen: die Tabelle in Abschnitt 4a, vor allem die neu gefassten Fragen DORA `rt-q4` und DSGVO `dv-q2`.
 - [ ] Normbezüge klären: DORA `da-q2` (Art. 28 oder Art. 30 Abs. 2), PCI DSS `ac-q2` (Req. 7.2 oder 7.3), Zusatzzeilen der DORA-Fragen.
-- [ ] Übrige Punkte aus Abschnitt 4, die keine Doppelungen sind (Abkürzungen, lange Titel, CRA `konf-q3`, DORA `vm-q2`, DSGVO `dsfa-q2` und `dsb-q5`, OWASP `owasp-iv-q2`).
+- [x] Übrige Punkte aus Abschnitt 4: Einzelbefunde, Abkürzungen, lange Titel (Abschnitt 4b).
+- [ ] Entscheiden: `cis-vm-q3` und `nist-pr-q3` teilen? (Abschnitt 3.6, Begründung in 4b)
+- [ ] Selbst gegenlesen: die gekürzten DSGVO-Titel (23 Stück) gegen den Wortlaut der Artikel.
 - [x] „Wie“-Fragen bei SOC 2 und ISO 27001 umformuliert, 29 Titel je Sprache (Abschnitt 3.3).
 - [ ] Selbst gegenlesen: die 29 neuen Titel in der Gap-Analyse von SOC 2 und ISO 27001.
 - [x] Kern und Vertiefung bei DSGVO eingeschaltet (Abschnitt 3.1).

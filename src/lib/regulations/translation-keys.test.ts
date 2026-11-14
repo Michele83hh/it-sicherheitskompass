@@ -43,6 +43,15 @@ describe('Übersetzungsschlüssel der Regelwerke', () => {
     expect(open).toEqual([]);
   });
 
+  it('kein Fragetitel ist länger als 130 Zeichen', () => {
+    const long = getAllRegulations().flatMap((r) =>
+      r.questions.flatMap((q) =>
+        [de, en].filter((m) => (get(m, q.titleKey) as string).length > 130).map(() => q.id),
+      ),
+    );
+    expect(long).toEqual([]);
+  });
+
   it('der Hinweis „nicht ausdrücklich verlangt“ kommt bei 3 NIS2-Fragen an', () => {
     const flagged = getAllRegulations().flatMap((r) => r.questions.filter((q) => q.beyondMinimum));
     expect(flagged.map((q) => q.id)).toEqual(['ea-q5', 'cr-q5', 'mc-q4']);
