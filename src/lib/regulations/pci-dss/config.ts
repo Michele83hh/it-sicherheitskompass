@@ -41,7 +41,7 @@ const pciDssConfig: RegulationConfig = {
     helpKey: q.helpKey,
     legalReference: {
       primary: q.legalReference.pciRequirement,
-      national: q.legalReference.pciGoal,
+      national: '', // "Goal 1" usw. sagt in der Oberfläche nichts aus
     },
     maturityDescriptions: q.maturityDescriptions,
   })),

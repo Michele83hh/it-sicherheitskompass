@@ -41,7 +41,7 @@ const soc2Config: RegulationConfig = {
     helpKey: q.helpKey,
     legalReference: {
       primary: q.tscReference.tscCriteria,
-      national: q.tscReference.tscCategory,
+      national: '', // englischer Kriterienname; der Bereich steht schon in der Überschrift
     },
     maturityDescriptions: q.maturityDescriptions,
   })),
