@@ -19,7 +19,7 @@ Die Vorschläge stehen in `docs/pruefprotokoll/2026-11-14-fragen-vorschlaege.md`
 
 - [x] Antwort „trifft nicht zu“ eingeführt (Abschnitt 3.2), bei 21 Fragen.
 - [ ] Selbst prüfen: Ist die Auswahl der 21 Fragen richtig? Sie ist KI-erstellt. Liste in Abschnitt 3.2 der Vorschläge.
-- [x] NIS2-Fragen, die über die Richtlinie hinausgehen (Abschnitt 3.4): Frist aus `bc-q2` entfernt, drei Fragen gekennzeichnet.
+- [x] NIS2-Fragen, die über die Richtlinie hinausgehen (Abschnitt 3.4): Frist aus `bc-q2` entfernt, drei Fragen gekennzeichnet. Am deutschen Wortlaut von Art. 21 Abs. 2 geprüft, Einordnung bestätigt.
 - [ ] Entscheiden: Sollen die drei gekennzeichneten NIS2-Fragen weiter in den Wert eingehen? Derzeit ja.
 - [ ] Gleiche Stellen außerhalb von NIS2: DSGVO `tom-q3` (Stufe 2 nennt „24-48 Stunden“), CIS `cis-rn-q1` (3-2-1-Regel).
 - [ ] Doppelungen je Regelwerk streichen oder zusammenlegen (Abschnitt 4).

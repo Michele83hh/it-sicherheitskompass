@@ -92,7 +92,18 @@ Vorschlag: `bc-q2` ohne Zahl formulieren („innerhalb der von Ihnen festgelegte
 - `ea-q5`, `cr-q5` und `mc-q4` tragen an der Frage den Hinweis „Im Regelwerk nicht ausdrücklich verlangt – gute Praxis.“ (`beyondMinimum: true` in `questions.ts`).
 - Die drei Fragen gehen weiter in den Wert ein. Ob das so bleiben soll, ist offen.
 
-Maßstab war der Wortlaut von Art. 21 Abs. 2 lit. c, f, h und j NIS2-RL, aus dem Gedächtnis des Modells, nicht am Amtsblatt nachgeschlagen. Zu `mc-q4`: lit. j nennt „kontinuierliche Authentifizierung“; das ist verwandt, aber nicht dasselbe wie standort- oder geräteabhängige Zugriffsregeln. Selbst gegenlesen.
+**Am Wortlaut geprüft (14.11.):** deutsche Fassung der Richtlinie (EU) 2022/2555, abgerufen beim Amt für Veröffentlichungen der EU (`http://publications.europa.eu/resource/celex/32022L2555`, Sprache Deutsch). Das ist die Fassung des Amtsblatts von 2022; Berichtigungen wurden nicht geprüft. EUR-Lex selbst lieferte beim Abruf nur eine Startseite.
+
+| Frage | Wortlaut Art. 21 Abs. 2 | Ergebnis |
+|---|---|---|
+| `bc-q2` | lit. c: „Aufrechterhaltung des Betriebs, wie Backup-Management und Wiederherstellung nach einem Notfall, und Krisenmanagement“ | Keine Frist. Einordnung bestätigt. |
+| `ea-q5` | lit. f: „Konzepte und Verfahren zur Bewertung der Wirksamkeit von Risikomanagementmaßnahmen im Bereich der Cybersicherheit“ | Verlangt ein Verfahren zur Bewertung, keine Kennzahlen. Bestätigt. |
+| `cr-q5` | lit. h: „Konzepte und Verfahren für den Einsatz von Kryptografie und gegebenenfalls Verschlüsselung“ | Kein Wort zum Wechsel von Verfahren. Bestätigt. |
+| `mc-q4` | lit. j: „Verwendung von Lösungen zur Multi-Faktor-Authentifizierung oder kontinuierlichen Authentifizierung, …“ | Bestätigt, siehe unten. |
+
+Zu `mc-q4`: Lit. j nennt die kontinuierliche Authentifizierung als Alternative zur Multi-Faktor-Authentifizierung („oder“). Regeln nach Standort, Gerät oder Uhrzeit sind Zugriffsregeln, keine Authentifizierung; sie fallen eher unter lit. i („Konzepte für die Zugriffskontrolle“), der sie ebenfalls nicht nennt. Erwägungsgrund 89 führt Zero-Trust-Grundsätze als Beispiel für Cyberhygiene an, als Soll-Aussage ohne Pflicht. Der Hinweis „nicht ausdrücklich verlangt“ trifft also zu.
+
+Grenze der Aussage: Art. 21 Abs. 2 ist eine Mindestliste („zumindest“). Abs. 1 verlangt daneben „geeignete und verhältnismäßige“ Maßnahmen nach dem „Stand der Technik“. Für einzelne Einrichtungen kann eine der drei Maßnahmen deshalb trotzdem geboten sein. Der Hinweis sagt nur, dass der Text sie nicht nennt.
 
 Weitere Stellen dieser Art, nicht geändert: CIS `cis-rn-q1` nennt die 3-2-1-Regel, die Control 11 nicht vorschreibt. DSGVO `tom-q3` nennt in Stufe 2 „24-48 Stunden“.
 
