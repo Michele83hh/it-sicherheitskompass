@@ -123,7 +123,7 @@ Zusatzzeilen: „RTS Art. 15 DORA“, „RTS Art. 20 DORA“, „RTS Art. 26 DOR
 | `da-q5` | Einstufung „durch die Aufsichtsbehörde“ | Art. 31 Abs. 1: die Europäischen Aufsichtsbehörden über den Gemeinsamen Ausschuss; „federführende Überwachungsbehörde“ |
 | `ia-q1` | klang nach Pflicht | Art. 45 Abs. 1: „können“ |
 | `ia-q2` | „DORA verlangt“ Qualitätsprüfung | Steht nicht in Art. 45 |
-| `gov-q2` | Schulung „regelmäßig“ als eigene Pflicht | Art. 5 Abs. 4: Kenntnisse „aktiv auf dem neuesten Stand“ halten, „unter anderem indem sie regelmäßig spezielle Schulungen absolvieren“ |
+| `gov-q2` | „Dazu müssen ihnen spezifische Schulungen angeboten werden“ | Art. 5 Abs. 4: Kenntnisse „aktiv auf dem neuesten Stand“ halten, „unter anderem indem sie regelmäßig spezielle Schulungen absolvieren“ |
 | `gov-q5` | „CISO“ im Titel, „muss direkt an das Leitungsorgan berichten können“ | Art. 6 Abs. 4 nennt keine Bezeichnung und keinen Berichtsweg; gilt nicht für Kleinstunternehmen |
 
 **Aussagen ohne Beleg, entfernt oder ersetzt**
@@ -141,3 +141,42 @@ Zusatzzeilen: „RTS Art. 15 DORA“, „RTS Art. 20 DORA“, „RTS Art. 26 DOR
 **Geprüft, ohne Änderung am Erklärtext:** `vm-q1`, `vm-q2`, `rt-q4`.
 
 **Nicht geprüft:** Inhalt der Delegierten Verordnungen über die genannten Stellen hinaus (2024/1774 nur Titel und Asset-Management, 2024/1772 nur Gegenstand, 2025/1190 nur Titel). Traffic Light Protocol, STIX/TAXII, MaRisk: kommen in DORA nicht vor und stehen in den Texten nur noch als Praxisbeispiele.
+
+## NIS2: Befunde und Änderungen
+
+Quellen (Abruf 14.11.2026): Richtlinie (EU) 2022/2555 deutsch und englisch (Publikationsamt der EU), Art. 20, 21 und 23; BSIG in der Fassung auf gesetze-im-internet.de (`bsig_2025`), §§ 2, 30, 32, 35, 38; Liste der Bausteine des IT-Grundschutz-Kompendiums, Edition 2023, und Liste der BSI-Standards 200-1 bis 200-4 (bsi.bund.de).
+
+50 Fragen geprüft. Geändert: 27 ganze Texte je Sprache, 8 Normbezüge. Die Zuordnung von Art. 21 Abs. 2 lit. a bis j zu § 30 Abs. 2 Nr. 1 bis 10 BSIG stimmt bei allen zehn Bereichen.
+
+**Falsche Normbezüge**
+
+| Frage | Vorher | Jetzt | Grund |
+|---|---|---|---|
+| `ih-q2`, `ih-q4` | Art. 21 Abs. 2 lit. b, § 30 Abs. 2 Nr. 2 | Art. 23, § 32 Abs. 1 (und § 2) BSIG | Die Fragen betreffen die Meldepflicht, nicht die Bewältigung. |
+| `ea-q4` | Art. 21 Abs. 2 lit. f, § 30 Abs. 2 Nr. 6 | Art. 20 Abs. 1, § 38 Abs. 1 BSIG | Überwachung durch die Geschäftsleitung. |
+| `ch-q5` | Art. 21 Abs. 2 lit. g, § 30 Abs. 2 Nr. 7 | Art. 20 Abs. 2, § 38 Abs. 3 BSIG | Schulungspflicht der Geschäftsleitung. |
+
+**Aussagen, die dem Wortlaut widersprachen**
+
+| Frage | Vorher | Wortlaut |
+|---|---|---|
+| `ih-q4` | „innerhalb von 24 Stunden an das BSI“ | § 32 Abs. 1 BSIG: „unverzüglich, spätestens jedoch innerhalb von 24 Stunden nach Kenntniserlangung“ eine frühe Erstmeldung an die gemeinsame Meldestelle von BSI und BBK; nach 72 Stunden die Meldung, einen Monat danach die Abschlussmeldung |
+| `ad-q2`, `ad-q4` | „NIS2 fordert Security-by-Design“, „explizit in Art. 21 Abs. 2 lit. e“ | lit. e: „Sicherheitsmaßnahmen bei Erwerb, Entwicklung und Wartung …, einschließlich Management und Offenlegung von Schwachstellen“. Der Begriff kommt nicht vor. |
+| `sc-q4` | „NIS2 fordert die Berücksichtigung der gesamten Lieferkette, nicht nur direkter Lieferanten“ | lit. d nennt ausdrücklich nur die „unmittelbaren Anbieter oder Diensteanbieter“. Frage als gute Praxis gekennzeichnet. |
+| `ac-q1` | „Zugriffskontrolle nach dem Prinzip der minimalen Berechtigung“ | lit. i: „Konzepte für die Zugriffskontrolle“ |
+| `mc-q1` | „NIS2 verlangt gegebenenfalls MFA“ | Deutsche Fassung und § 30 Abs. 2 Nr. 10 BSIG: „gegebenenfalls“ steht nur vor den Notfallkommunikationssystemen. Englische Fassung: „where appropriate“ am Satzende. Der englische Erklärtext folgt der englischen Fassung. |
+| `ch-q5` | Pflicht sei „nicht delegierbar“; Schulung „muss die NIS2-Pflichten, die persönliche Haftung …“ abdecken | § 38 Abs. 3 BSIG nennt nur das Ziel der Schulung. Beides entfernt. Die Pflicht trifft die Geschäftsleitung, nicht weitere Führungskräfte. |
+| `ea-q4` | Geschäftsleitung „persönlich verantwortlich für die IT-Sicherheit“ | § 38 Abs. 1 BSIG: verpflichtet, die Maßnahmen „umzusetzen und ihre Umsetzung zu überwachen“ |
+| `ea-q1`, `ra-q1` | „regelmäßige“ Wirksamkeitsprüfung bzw. Risikoanalysen | lit. f und lit. a verlangen „Konzepte“ und „Verfahren“, keinen Turnus |
+| `bc-q5` | Empfänger „können … unterrichtet werden müssen“ | § 35 Abs. 1 BSIG: Das Bundesamt „kann … anordnen“ |
+
+**Aussagen ohne Beleg, entfernt**
+
+- `mc-q1`: „Laut einer Microsoft-Studie (2023) verhindert MFA über 99 % der Kontoübernahmen“; „besonders wichtig für privilegierte Zugänge“.
+- `ea-q2`: „bezahlbare Angebote ab wenigen tausend Euro pro Jahr“.
+- `ra-q1`: „Das BSI empfiehlt die Methodik aus BSI-Standard 200-3“ (jetzt: der Standard „beschreibt eine Methodik“).
+- `bc-q2`: „Wiederherstellungsfähigkeit ist ein Kernziel von NIS2“.
+
+**Bausteinverweise:** Alle 17 genannten Bausteine stehen mit dieser Nummer in der Edition 2023. Zwei Namen angeglichen: INF.1 „Allgemeines Gebäude“, INF.2 „Rechenzentrum sowie Serverraum“.
+
+**Nicht geprüft:** Inhalt der BSI-Standards 200-2, 200-3, 200-4 und der Bausteine (nur Nummer und Titel). Die 23 Erklärtexte ohne Normaussage (z. B. „Regelmäßige Neubewertung stellt sicher …“) sind Praxishinweise und enthalten keine prüfbare Rechtsaussage.

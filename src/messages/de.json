@@ -430,7 +430,7 @@
   "questions": {
     "raQ1": {
       "title": "Haben Sie eine aktuelle Übersicht über Ihre IT-Risiken (z.B. welche Systeme kritisch sind, wo Schwachstellen liegen)?",
-      "tooltip": "NIS2 fordert regelmäßige Risikoanalysen (Art. 21 Abs. 2 lit. a NIS2-RL, §30 Abs. 2 Nr. 1 BSIG). Das BSI empfiehlt die Methodik aus BSI-Standard 200-3.",
+      "tooltip": "Art. 21 Abs. 2 lit. a NIS2-RL und §30 Abs. 2 Nr. 1 BSIG verlangen Konzepte in Bezug auf die Risikoanalyse und auf die Sicherheit in der Informationstechnik. BSI-Standard 200-3 (Risikomanagement) beschreibt eine Methodik dafür.",
       "help": "Eine IT-Risikoübersicht listet auf, welche Systeme für Ihr Geschäft besonders wichtig sind und wo Schwachstellen bestehen. Das kann eine einfache Excel-Tabelle sein, z. B.: 'Unser ERP-Server läuft noch auf Windows Server 2012 — kein Herstellersupport mehr, hohes Risiko.' Ohne diese Übersicht wissen Sie nicht, wo Sie zuerst handeln müssen.",
       "maturity": {
         "level0": "Keine Risikoanalyse vorhanden",
@@ -441,7 +441,7 @@
     },
     "raQ2": {
       "title": "Sind Ihre IT-Sicherheitsmaßnahmen schriftlich dokumentiert und werden regelmäßig aktualisiert?",
-      "tooltip": "Dokumentierte Sicherheitskonzepte sind Grundlage für nachweisbare Compliance (§30 Abs. 1 BSIG). Siehe BSI-Baustein ISMS.1.",
+      "tooltip": "Nach §30 Abs. 1 Satz 3 BSIG ist die Einhaltung der Pflicht zu Risikomanagementmaßnahmen durch die Einrichtung zu dokumentieren. Siehe BSI-Baustein ISMS.1 (Sicherheitsmanagement).",
       "help": "Dokumentierte Sicherheitsmaßnahmen bedeuten: Sie haben aufgeschrieben, WAS Sie zum Schutz Ihrer IT tun, z. B. 'Alle Passwörter müssen mindestens 12 Zeichen haben' oder 'Backups werden täglich um 22 Uhr erstellt.' Ohne schriftliche Dokumentation gehen diese Regeln verloren, wenn ein Mitarbeiter das Unternehmen verlässt.",
       "maturity": {
         "level0": "Keine schriftliche Dokumentation",
@@ -452,7 +452,7 @@
     },
     "raQ3": {
       "title": "Haben Sie klare Verantwortlichkeiten für IT-Sicherheit festgelegt (z.B. benannte Ansprechperson)?",
-      "tooltip": "NIS2 fordert Geschäftsleitungsverantwortung (§38 BSIG). Klare Zuständigkeiten sind Grundlage für wirksames Sicherheitsmanagement.",
+      "tooltip": "Nach §38 Abs. 1 BSIG sind Geschäftsleitungen verpflichtet, die Risikomanagementmaßnahmen nach §30 umzusetzen und ihre Umsetzung zu überwachen. Benannte Zuständigkeiten sind dafür die praktische Grundlage; das Gesetz schreibt keine bestimmte Rolle vor.",
       "help": "Es muss klar sein, WER für IT-Sicherheit zuständig ist — auch in kleinen Unternehmen. Das kann der Geschäftsführer selbst sein, ein IT-Leiter oder ein externer Dienstleister. Wichtig ist: Jeder im Unternehmen weiß, an wen er sich bei IT-Sicherheitsfragen wendet.",
       "maturity": {
         "level0": "Keine festgelegten Verantwortlichkeiten",
@@ -485,7 +485,7 @@
     },
     "ihQ1": {
       "title": "Gibt es ein festgelegtes Verfahren, wie Ihr Unternehmen auf Cyberangriffe oder IT-Störungen reagiert?",
-      "tooltip": "NIS2 verlangt dokumentierte Prozesse für die Reaktion auf Sicherheitsvorfälle (Art. 21 Abs. 2 lit. b NIS2-RL, §30 Abs. 2 Nr. 2 BSIG). Siehe BSI-Baustein DER.2.1.",
+      "tooltip": "Art. 21 Abs. 2 lit. b NIS2-RL und §30 Abs. 2 Nr. 2 BSIG nennen die Bewältigung von Sicherheitsvorfällen als Mindestmaßnahme. Siehe BSI-Baustein DER.2.1 (Behandlung von Sicherheitsvorfällen).",
       "help": "Ein Verfahren für Cyberangriffe bedeutet: Wer macht was, wenn es passiert? Zum Beispiel: 'Schritt 1: Betroffenes System vom Netz trennen. Schritt 2: IT-Dienstleister anrufen. Schritt 3: Geschäftsführung informieren.' Ohne einen solchen Plan reagieren Mitarbeiter im Ernstfall panisch oder gar nicht.",
       "maturity": {
         "level0": "Kein Verfahren vorhanden",
@@ -495,8 +495,8 @@
       }
     },
     "ihQ2": {
-      "title": "Haben Sie Kontaktdaten für den Notfall (z.B. BSI-Meldestelle, IT-Dienstleister) griffbereit?",
-      "tooltip": "NIS2 schreibt Meldepflichten vor (§32 BSIG). Schnelle Reaktion erfordert vorbereitete Kontaktlisten und Meldewege.",
+      "title": "Haben Sie Kontaktdaten für den Notfall (z.B. Meldestelle nach §32 BSIG, IT-Dienstleister) griffbereit?",
+      "tooltip": "Nach §32 Abs. 1 BSIG melden Einrichtungen erhebliche Sicherheitsvorfälle an eine vom BSI und dem Bundesamt für Bevölkerungsschutz und Katastrophenhilfe eingerichtete gemeinsame Meldestelle. Vorbereitete Kontaktlisten und Meldewege helfen, die Fristen einzuhalten.",
       "help": "Im Notfall zählt jede Minute. Wenn Ihr E-Mail-Server gehackt wird, müssen Sie sofort wissen, wen Sie anrufen können — Ihren IT-Dienstleister, Ihren Internetanbieter und das BSI (Bundesamt für Sicherheit in der Informationstechnik). Diese Nummern sollten ausgedruckt und griffbereit sein, nicht nur digital.",
       "maturity": {
         "level0": "Keine Notfallkontakte vorbereitet",
@@ -518,8 +518,8 @@
     },
     "ihQ4": {
       "title": "Haben Sie klare Kriterien, wann ein IT-Vorfall als 'erheblicher Sicherheitsvorfall' meldepflichtig ist?",
-      "tooltip": "Nach §32 BSIG müssen erhebliche Sicherheitsvorfälle innerhalb von 24 Stunden an das BSI gemeldet werden. Klare Kriterien ermöglichen schnelle Entscheidungen im Ernstfall.",
-      "help": "Nach NIS2 müssen bestimmte Vorfälle innerhalb von 24 Stunden an das BSI gemeldet werden. Meldepflichtig ist z. B. ein Ransomware-Angriff, der Ihre Systeme lahmlegt, oder ein Datenleck mit Kundendaten. Sie brauchen klare Kriterien, damit im Ernstfall nicht erst diskutiert wird, ob gemeldet werden muss.",
+      "tooltip": "Nach §32 Abs. 1 BSIG ist ein erheblicher Sicherheitsvorfall unverzüglich, spätestens innerhalb von 24 Stunden nach Kenntniserlangung, mit einer frühen Erstmeldung zu melden; spätestens nach 72 Stunden folgt eine Meldung mit erster Bewertung, spätestens einen Monat danach die Abschlussmeldung. Erheblich ist nach §2 BSIG ein Vorfall, der schwerwiegende Betriebsstörungen der Dienste oder finanzielle Verluste verursacht hat oder verursachen kann oder andere Personen durch erhebliche Schäden beeinträchtigt hat oder beeinträchtigen kann.",
+      "help": "Erhebliche Sicherheitsvorfälle sind unverzüglich, spätestens innerhalb von 24 Stunden nach Kenntniserlangung, zu melden (§32 Abs. 1 BSIG). Erheblich kann z. B. ein Ransomware-Angriff sein, der Ihre Systeme lahmlegt. Sie brauchen klare Kriterien, damit im Ernstfall nicht erst diskutiert wird, ob gemeldet werden muss.",
       "maturity": {
         "level0": "Keine Kriterien für die Einstufung von Vorfällen",
         "level1": "Grobe Vorstellung, aber keine dokumentierten Kriterien",
@@ -551,7 +551,7 @@
     },
     "bcQ2": {
       "title": "Können Sie nach einem schweren IT-Ausfall Ihren Betrieb innerhalb der von Ihnen festgelegten Zeit wieder aufnehmen?",
-      "tooltip": "Wiederherstellungsfähigkeit ist ein Kernziel von NIS2. BSI-Standard 200-4 beschreibt Business Continuity Management (BCM).",
+      "tooltip": "Art. 21 Abs. 2 lit. c NIS2-RL nennt die Aufrechterhaltung des Betriebs, wie Backup-Management und Wiederherstellung nach einem Notfall. Eine feste Wiederanlaufzeit gibt die Richtlinie nicht vor. BSI-Standard 200-4 behandelt Business Continuity Management.",
       "help": "Stellen Sie sich vor, Ihre gesamte IT fällt aus — kein E-Mail, kein ERP, keine Buchhaltung. Wie lange können Sie so arbeiten? NIS2 schreibt keine feste Wiederanlaufzeit vor. Maßgeblich ist die Zeit, die Sie selbst festgelegt haben (RTO aus der Business-Impact-Analyse). Haben Sie noch keine festgelegt, ist das der erste Schritt. Dafür brauchen Sie einen Plan, wer was in welcher Reihenfolge wieder ans Laufen bringt.",
       "maturity": {
         "level0": "Keine Wiederherstellungsplanung vorhanden",
@@ -562,7 +562,7 @@
     },
     "bcQ3": {
       "title": "Haben Sie einen schriftlichen Notfallplan, der regelt, wie Ihr Betrieb bei einem Systemausfall weiterläuft?",
-      "tooltip": "Krisenmanagement erfordert vorbereitete Notfallpläne (§30 Abs. 2 Nr. 3 BSIG). Siehe BSI-Baustein DER.4 (Notfallmanagement).",
+      "tooltip": "§30 Abs. 2 Nr. 3 BSIG nennt die Aufrechterhaltung des Betriebs, wie Backup-Management und Wiederherstellung nach einem Notfall, und Krisenmanagement. Siehe BSI-Baustein DER.4 (Notfallmanagement).",
       "help": "Ein Notfallplan beschreibt Schritt für Schritt, was bei einem IT-Ausfall oder Cyberangriff zu tun ist: Wer wird informiert? Welche Systeme werden zuerst wiederhergestellt? Wie kommunizieren Sie mit Kunden? Dieser Plan sollte ausgedruckt vorliegen — denn wenn die IT ausgefallen ist, können Sie ihn digital nicht abrufen.",
       "maturity": {
         "level0": "Kein Notfallplan vorhanden",
@@ -584,7 +584,7 @@
     },
     "bcQ5": {
       "title": "Gibt es einen Krisenkommunikationsplan für den Fall eines schweren IT-Sicherheitsvorfalls?",
-      "tooltip": "Krisenkommunikation regelt, wer intern und extern informiert wird (Mitarbeiter, Kunden, Behörden, Medien). Nach §35 BSIG können auch Empfänger Ihrer Dienste unterrichtet werden müssen.",
+      "tooltip": "Krisenkommunikation regelt, wer intern und extern informiert wird (Mitarbeiter, Kunden, Behörden, Medien). Nach §35 Abs. 1 BSIG kann das BSI bei einem erheblichen Sicherheitsvorfall anordnen, dass Sie die Empfänger Ihrer Dienste unverzüglich unterrichten.",
       "help": "Ein Krisenkommunikationsplan regelt, wer im Ernstfall wen informiert: Mitarbeiter, Kunden, Lieferanten, Behörden, ggf. Medien. Ohne Plan entstehen Gerüchte und Vertrauensverlust. Der Plan sollte Textvorlagen, Ansprechpartner und Kommunikationswege enthalten — z. B. 'Kunden werden per E-Mail über den Vorfall informiert durch Frau Müller.'",
       "maturity": {
         "level0": "Kein Krisenkommunikationsplan vorhanden",
@@ -595,7 +595,7 @@
     },
     "scQ1": {
       "title": "Prüfen Sie die IT-Sicherheit wichtiger Lieferanten und Dienstleister bei der Auswahl?",
-      "tooltip": "NIS2 verlangt Prüfung der Sicherheit direkter Lieferanten und Dienstleister (Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG). Besonders wichtig bei Cloud-Diensten und IT-Outsourcing.",
+      "tooltip": "Art. 21 Abs. 2 lit. d NIS2-RL und §30 Abs. 2 Nr. 4 BSIG verlangen die Sicherheit der Lieferkette einschließlich sicherheitsbezogener Aspekte der Beziehungen zu unmittelbaren Anbietern oder Diensteanbietern. Nach Art. 21 Abs. 3 NIS2-RL sind dabei die spezifischen Schwachstellen der einzelnen unmittelbaren Anbieter und die Gesamtqualität ihrer Produkte und ihrer Cybersicherheitspraxis zu berücksichtigen.",
       "help": "Ihre IT-Sicherheit ist nur so stark wie das schwächste Glied in der Kette. Wenn Ihr Cloud-Anbieter gehackt wird, sind Ihre Daten betroffen. Fragen Sie daher Ihre wichtigsten IT-Dienstleister: Haben Sie ein Sicherheitskonzept? Sind Ihre Daten verschlüsselt? Gibt es regelmäßige Sicherheitsprüfungen?",
       "maturity": {
         "level0": "Keine Prüfung der Lieferanten-Sicherheit",
@@ -606,7 +606,7 @@
     },
     "scQ2": {
       "title": "Haben Sie vertragliche Vereinbarungen zur IT-Sicherheit mit Ihren IT-Dienstleistern?",
-      "tooltip": "Vertragliche Sicherheitsanforderungen an Dienstleister sind ein wesentlicher Bestandteil der Lieferkettensicherheit nach NIS2.",
+      "tooltip": "Art. 21 Abs. 2 lit. d NIS2-RL nennt die sicherheitsbezogenen Aspekte der Beziehungen zu unmittelbaren Anbietern oder Diensteanbietern. Verträge sind der übliche Ort, diese Aspekte zu regeln; die Richtlinie schreibt keine bestimmten Klauseln vor.",
       "help": "Vertragliche Sicherheitsvereinbarungen bedeuten: In Ihren Verträgen mit IT-Dienstleistern steht z. B., dass Daten verschlüsselt werden müssen, dass Sicherheitsupdates zeitnah eingespielt werden und dass Sie im Falle eines Vorfalls informiert werden. Ohne solche Klauseln haben Sie im Ernstfall keine Handhabe.",
       "maturity": {
         "level0": "Keine vertraglichen Sicherheitsvereinbarungen",
@@ -628,7 +628,7 @@
     },
     "scQ4": {
       "title": "Berücksichtigen Sie bei der Bewertung Ihrer Lieferanten auch deren Unterauftragnehmer und Abhängigkeiten?",
-      "tooltip": "NIS2 fordert die Berücksichtigung der gesamten Lieferkette, nicht nur direkter Lieferanten. Schwachstellen bei Unterauftragnehmern können Ihr Unternehmen gefährden.",
+      "tooltip": "Art. 21 Abs. 2 lit. d NIS2-RL nennt die Sicherheit der Lieferkette und ausdrücklich die Beziehungen zu den unmittelbaren Anbietern oder Diensteanbietern. Unterauftragnehmer nennt die Vorschrift nicht eigens. Schwachstellen dort können Ihr Unternehmen dennoch treffen.",
       "help": "Ihr IT-Dienstleister beauftragt möglicherweise selbst Unterauftragnehmer — z. B. ein Rechenzentrum in einem anderen Land. Wenn dort ein Sicherheitsproblem auftritt, sind auch Ihre Daten betroffen. Fragen Sie Ihre Dienstleister, ob und welche Unterauftragnehmer sie einsetzen.",
       "maturity": {
         "level0": "Keine Berücksichtigung von Unterauftragnehmern",
@@ -661,7 +661,7 @@
     },
     "adQ2": {
       "title": "Berücksichtigen Sie IT-Sicherheitsaspekte beim Kauf oder bei der Entwicklung neuer Software?",
-      "tooltip": "NIS2 fordert Security-by-Design (Art. 21 Abs. 2 lit. e NIS2-RL, §30 Abs. 2 Nr. 5 BSIG). Sicherheit muss von Anfang an mitgedacht werden. Siehe BSI-Baustein CON.8.",
+      "tooltip": "Art. 21 Abs. 2 lit. e NIS2-RL und §30 Abs. 2 Nr. 5 BSIG verlangen Sicherheitsmaßnahmen bei Erwerb, Entwicklung und Wartung von informationstechnischen Systemen. Siehe BSI-Baustein CON.8 (Software-Entwicklung).",
       "help": "Wenn Sie neue Software kaufen oder entwickeln lassen, sollten Sie vorher fragen: Ist sie sicher? Gibt es regelmäßige Updates? Werden Daten verschlüsselt? Beispiel: Bevor Sie eine neue Buchhaltungssoftware anschaffen, prüfen Sie, ob der Anbieter Sicherheitsstandards einhält und wie Ihre Daten geschützt werden.",
       "maturity": {
         "level0": "Sicherheit wird beim Einkauf/Entwicklung nicht berücksichtigt",
@@ -683,7 +683,7 @@
     },
     "adQ4": {
       "title": "Ist IT-Sicherheit systematisch in Ihre Softwareentwicklungs- oder Beschaffungsprozesse integriert (Security by Design)?",
-      "tooltip": "Security by Design bedeutet, Sicherheit von Anfang an mitzudenken — nicht erst nachträglich. NIS2 fordert dies explizit in Art. 21 Abs. 2 lit. e. Siehe BSI-Baustein CON.8.",
+      "tooltip": "Security by Design bedeutet, Sicherheit von Anfang an mitzudenken — nicht erst nachträglich. Art. 21 Abs. 2 lit. e NIS2-RL verlangt Sicherheitsmaßnahmen bei Erwerb, Entwicklung und Wartung; den Begriff „Security by Design“ verwendet die Vorschrift nicht. Siehe BSI-Baustein CON.8 (Software-Entwicklung).",
       "help": "Security by Design bedeutet, dass IT-Sicherheit von Anfang an bei der Beschaffung oder Entwicklung berücksichtigt wird — nicht erst als nachträglicher Gedanke. Beispiel: Wenn Sie eine neue Kunden-App entwickeln lassen, sollte von Beginn an klar sein, wie Kundendaten geschützt werden, statt das nachher als Extra-Feature hinzuzufügen.",
       "maturity": {
         "level0": "Sicherheit wird erst nach Fertigstellung oder Kauf berücksichtigt",
@@ -705,7 +705,7 @@
     },
     "eaQ1": {
       "title": "Überprüfen Sie regelmäßig, ob Ihre Sicherheitsmaßnahmen tatsächlich wirken (z.B. durch Audits)?",
-      "tooltip": "NIS2 verlangt regelmäßige Wirksamkeitsprüfung (Art. 21 Abs. 2 lit. f NIS2-RL, §30 Abs. 2 Nr. 6 BSIG). Siehe BSI-Baustein ISMS.1.",
+      "tooltip": "Art. 21 Abs. 2 lit. f NIS2-RL und §30 Abs. 2 Nr. 6 BSIG verlangen Konzepte und Verfahren zur Bewertung der Wirksamkeit von Risikomanagementmaßnahmen. Einen festen Turnus nennen die Vorschriften nicht. Siehe BSI-Baustein ISMS.1 (Sicherheitsmanagement).",
       "help": "Sicherheitsmaßnahmen müssen regelmäßig überprüft werden, ob sie wirklich wirken. Ein Virenscanner, der seit Monaten nicht aktualisiert wurde, schützt nicht mehr. Ein Audit (systematische Prüfung) kann intern durch einen IT-Verantwortlichen oder extern durch einen Dienstleister durchgeführt werden.",
       "maturity": {
         "level0": "Keine Überprüfung der Wirksamkeit",
@@ -717,7 +717,7 @@
     "eaQ2": {
       "title": "Führen Sie Sicherheitstests durch (z.B. Penetrationstests oder Schwachstellenscans)?",
       "tooltip": "Technische Tests sind ein wichtiger Teil der Wirksamkeitsprüfung. Sie decken Schwachstellen auf, die in der Theorie nicht sichtbar sind.",
-      "help": "Ein Penetrationstest (kurz: Pentest) simuliert einen echten Angriff auf Ihre IT, um Schwachstellen zu finden, bevor es Kriminelle tun. Ein Schwachstellenscan prüft automatisiert, ob bekannte Sicherheitslücken existieren. Für KMU gibt es bezahlbare Angebote ab wenigen tausend Euro pro Jahr.",
+      "help": "Ein Penetrationstest (kurz: Pentest) simuliert einen echten Angriff auf Ihre IT, um Schwachstellen zu finden, bevor es Kriminelle tun. Ein Schwachstellenscan prüft automatisiert, ob bekannte Sicherheitslücken existieren.",
       "maturity": {
         "level0": "Keine Sicherheitstests",
         "level1": "Gelegentliche Tests bei konkretem Anlass",
@@ -739,7 +739,7 @@
     "eaQ4": {
       "title": "Werden die Ergebnisse von Sicherheitsüberprüfungen regelmäßig der Geschäftsleitung berichtet?",
       "tooltip": "Nach §38 BSIG muss die Geschäftsleitung die Umsetzung von Risikomanagementmaßnahmen überwachen. Regelmäßige Berichte sind dafür Voraussetzung.",
-      "help": "Die Geschäftsleitung ist nach NIS2 persönlich verantwortlich für die IT-Sicherheit (§38 BSIG). Deshalb muss sie regelmäßig erfahren, wie es um die Sicherheit steht. Ein einfacher Bericht, z. B. vierteljährlich, mit dem aktuellen Status und den größten Risiken reicht aus.",
+      "help": "Die Geschäftsleitung ist nach §38 Abs. 1 BSIG verpflichtet, die Risikomanagementmaßnahmen umzusetzen und ihre Umsetzung zu überwachen. Dafür muss sie regelmäßig erfahren, wie es um die Sicherheit steht. Ein einfacher Bericht, z. B. vierteljährlich, mit dem aktuellen Status und den größten Risiken ist ein praktikabler Weg; einen Turnus schreibt das Gesetz nicht vor.",
       "maturity": {
         "level0": "Keine Berichterstattung an die Geschäftsleitung",
         "level1": "Nur bei schwerwiegenden Vorfällen",
@@ -760,7 +760,7 @@
     },
     "chQ1": {
       "title": "Werden Ihre Mitarbeiter regelmäßig zu IT-Sicherheitsthemen geschult (z.B. Phishing erkennen)?",
-      "tooltip": "NIS2 fordert grundlegende Schulungen (Art. 21 Abs. 2 lit. g NIS2-RL, §30 Abs. 2 Nr. 7 BSIG). Siehe BSI-Baustein ORP.3.",
+      "tooltip": "Art. 21 Abs. 2 lit. g NIS2-RL verlangt grundlegende Verfahren im Bereich der Cyberhygiene und Schulungen im Bereich der Cybersicherheit; §30 Abs. 2 Nr. 7 BSIG nennt grundlegende Schulungen und Sensibilisierungsmaßnahmen. Siehe BSI-Baustein ORP.3 (Sensibilisierung und Schulung zur Informationssicherheit).",
       "help": "Die meisten erfolgreichen Cyberangriffe nutzen menschliche Fehler aus — z. B. ein Mitarbeiter klickt auf einen Link in einer gefälschten E-Mail (Phishing). Regelmäßige Schulungen (mindestens jährlich) helfen, solche Angriffe zu erkennen. Das kann ein einstündiges Online-Training sein, kein aufwändiges Seminar.",
       "maturity": {
         "level0": "Keine Schulungen zu IT-Sicherheit",
@@ -804,8 +804,8 @@
     },
     "chQ5": {
       "title": "Werden Ihre Geschäftsleitung und Führungskräfte regelmäßig zu NIS2-Pflichten und Cybersicherheit geschult?",
-      "tooltip": "§38 BSIG verpflichtet die Geschäftsleitung persönlich zur Überwachung der Risikomanagementmaßnahmen und zur regelmäßigen Teilnahme an Schulungen. Diese Pflicht ist nicht delegierbar.",
-      "help": "Nach §38 BSIG müssen Geschäftsführer persönlich an Cybersicherheitsschulungen teilnehmen — diese Pflicht ist nicht delegierbar. Die Schulung muss die NIS2-Pflichten, die persönliche Haftung der Geschäftsleitung und grundlegende Cybersicherheitsthemen abdecken. Dies dient auch dazu, dass die Führungsebene fundierte Entscheidungen über Sicherheitsinvestitionen treffen kann.",
+      "tooltip": "Nach §38 Abs. 3 BSIG müssen Geschäftsleitungen regelmäßig an Schulungen teilnehmen, um ausreichende Kenntnisse und Fähigkeiten zur Erkennung und Bewertung von Risiken und von Risikomanagementpraktiken zu erlangen (ebenso Art. 20 Abs. 2 NIS2-RL). Für weitere Führungskräfte gilt die Pflicht nicht; nach Art. 20 Abs. 2 NIS2-RL sollen Einrichtungen allen Mitarbeitern regelmäßig entsprechende Schulungen anbieten.",
+      "help": "Nach §38 Abs. 3 BSIG müssen Geschäftsleitungen regelmäßig an Schulungen teilnehmen. Ziel ist, Risiken und Risikomanagementpraktiken erkennen und bewerten sowie deren Auswirkungen auf die erbrachten Dienste beurteilen zu können. Das hilft der Führungsebene auch, fundierte Entscheidungen über Sicherheitsinvestitionen zu treffen. Bewahren Sie Teilnahmenachweise auf.",
       "maturity": {
         "level0": "Keine spezifische Schulung der Geschäftsleitung",
         "level1": "Einmalige Information über NIS2-Anforderungen",
@@ -815,7 +815,7 @@
     },
     "crQ1": {
       "title": "Werden vertrauliche Daten verschlüsselt gespeichert und übertragen (z.B. Festplattenverschlüsselung, HTTPS)?",
-      "tooltip": "NIS2 verlangt den Einsatz kryptographischer Verfahren (Art. 21 Abs. 2 lit. h NIS2-RL, §30 Abs. 2 Nr. 8 BSIG). Siehe BSI-Baustein CON.1.",
+      "tooltip": "Art. 21 Abs. 2 lit. h NIS2-RL verlangt Konzepte und Verfahren für den Einsatz von Kryptografie und gegebenenfalls Verschlüsselung; §30 Abs. 2 Nr. 8 BSIG nennt Konzepte und Prozesse für den Einsatz von kryptographischen Verfahren. Siehe BSI-Baustein CON.1 (Kryptokonzept).",
       "help": "Verschlüsselung macht Daten für Unbefugte unlesbar. HTTPS (das Schloss-Symbol im Browser) verschlüsselt Daten bei der Übertragung im Internet. VPN verschlüsselt die Verbindung zu Ihrem Firmennetzwerk. Auch gespeicherte Daten (z. B. auf Laptops) sollten verschlüsselt sein, damit sie bei Diebstahl nicht ausgelesen werden können.",
       "maturity": {
         "level0": "Keine Verschlüsselung im Einsatz",
@@ -870,7 +870,7 @@
     },
     "acQ1": {
       "title": "Haben nur autorisierte Personen Zugriff auf kritische IT-Systeme und Daten?",
-      "tooltip": "NIS2 fordert Zugriffskontrolle nach dem Prinzip der minimalen Berechtigung (Art. 21 Abs. 2 lit. i NIS2-RL, §30 Abs. 2 Nr. 9 BSIG). Siehe BSI-Baustein ORP.4.",
+      "tooltip": "Art. 21 Abs. 2 lit. i NIS2-RL verlangt Sicherheit des Personals, Konzepte für die Zugriffskontrolle und Management von Anlagen (ebenso §30 Abs. 2 Nr. 9 BSIG). Das Prinzip der minimalen Berechtigung nennen die Vorschriften nicht; es ist gängige Praxis. Siehe BSI-Baustein ORP.4 (Identitäts- und Berechtigungsmanagement).",
       "help": "Zugriffskontrolle bedeutet: Jeder Mitarbeiter kann nur auf die Daten und Systeme zugreifen, die er für seine Arbeit braucht. Der Azubi in der Buchhaltung braucht keinen Zugriff auf die Personalakten. Das Prinzip heißt 'Least Privilege' (minimale Berechtigung) und ist eine der grundlegendsten Schutzmaßnahmen.",
       "maturity": {
         "level0": "Keine systematische Zugriffskontrolle",
@@ -892,7 +892,7 @@
     },
     "acQ3": {
       "title": "Sind physische Zugangskontrollen zu kritischen IT-Bereichen (z.B. Serverraum) vorhanden?",
-      "tooltip": "Physischer Schutz kritischer IT-Infrastruktur ist Teil der Zugriffskontrolle. Siehe BSI-Bausteine INF.1 (Gebäude) und INF.2 (Rechenzentrum).",
+      "tooltip": "Physischer Schutz kritischer IT-Infrastruktur ist Teil der Zugriffskontrolle. Siehe BSI-Bausteine INF.1 (Allgemeines Gebäude) und INF.2 (Rechenzentrum sowie Serverraum).",
       "help": "Physische Zugangskontrollen schützen Ihre IT-Hardware vor unbefugtem Zugriff. Das Minimum: Der Serverraum ist abgeschlossen und nur befugte Personen haben einen Schlüssel. Besser: Elektronische Zutrittskontrolle mit Protokollierung, wer wann den Raum betreten hat.",
       "maturity": {
         "level0": "Kein besonderer physischer Schutz",
@@ -925,8 +925,8 @@
     },
     "mcQ1": {
       "title": "Nutzen Sie Multi-Faktor-Authentifizierung (z.B. Authenticator-App, Hardware-Token) für kritische Systeme?",
-      "tooltip": "NIS2 verlangt gegebenenfalls MFA oder kontinuierliche Authentifizierung – besonders wichtig für privilegierte Zugänge (Art. 21 Abs. 2 lit. j NIS2-RL, §30 Abs. 2 Nr. 10 BSIG). MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
-      "help": "Multi-Faktor-Authentifizierung (MFA) bedeutet: Zum Einloggen brauchen Sie nicht nur ein Passwort, sondern zusätzlich einen zweiten Faktor — z. B. einen Code aus einer App auf Ihrem Smartphone. Selbst wenn jemand Ihr Passwort stiehlt, kann er sich ohne den zweiten Faktor nicht einloggen. Laut einer Microsoft-Studie (2023) verhindert MFA über 99 % der Kontoübernahmen.",
+      "tooltip": "Art. 21 Abs. 2 lit. j NIS2-RL und §30 Abs. 2 Nr. 10 BSIG verlangen die Verwendung von Lösungen zur Multi-Faktor-Authentifizierung oder kontinuierlichen Authentifizierung. MFA schützt vor Passwortdiebstahl und unbefugtem Zugriff.",
+      "help": "Multi-Faktor-Authentifizierung (MFA) bedeutet: Zum Einloggen brauchen Sie nicht nur ein Passwort, sondern zusätzlich einen zweiten Faktor — z. B. einen Code aus einer App auf Ihrem Smartphone. Selbst wenn jemand Ihr Passwort stiehlt, kann er sich ohne den zweiten Faktor nicht einloggen.",
       "maturity": {
         "level0": "Kein MFA im Einsatz",
         "level1": "MFA für einzelne Systeme (z.B. nur Cloud-E-Mail)",
@@ -947,7 +947,7 @@
     },
     "mcQ3": {
       "title": "Haben Sie sichere Kommunikationsmittel für Notfälle (z.B. alternative Kanäle bei IT-Ausfall)?",
-      "tooltip": "Gesicherte Notfallkommunikation stellt sicher, dass Ihr Krisenstab auch bei IT-Ausfall erreichbar bleibt (§30 Abs. 2 Nr. 10 BSIG).",
+      "tooltip": "Art. 21 Abs. 2 lit. j NIS2-RL und §30 Abs. 2 Nr. 10 BSIG nennen gegebenenfalls gesicherte Notfallkommunikationssysteme innerhalb der Einrichtung. Sie stellen sicher, dass Ihr Krisenstab auch bei IT-Ausfall erreichbar bleibt.",
       "help": "Wenn Ihre gesamte IT ausfällt, funktionieren auch E-Mail und Teams nicht mehr. Für diesen Fall brauchen Sie einen Notfallkanal — z. B. eine Telefonliste auf Papier, eine Messenger-Gruppe auf privaten Handys oder einen separaten Dienst. Dieser Kanal muss vorher festgelegt und getestet sein.",
       "maturity": {
         "level0": "Keine Notfallkommunikation vorbereitet",

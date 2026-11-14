@@ -430,7 +430,7 @@
   "questions": {
     "raQ1": {
       "title": "Do you have a current overview of your IT risks (e.g., which systems are critical, where vulnerabilities exist)?",
-      "tooltip": "NIS2 requires regular risk analyses (Art. 21 Abs. 2 lit. a NIS2-RL, §30 Para. 2 No. 1 BSIG). BSI recommends the methodology from BSI Standard 200-3.",
+      "tooltip": "Art. 21(2)(a) NIS2 Directive and §30(2) no. 1 BSIG require policies on risk analysis and information system security. BSI Standard 200-3 (risk management) describes a methodology for this.",
       "help": "An IT risk overview lists which systems are critical for your business and where vulnerabilities exist. This can be a simple spreadsheet, e.g.: 'Our ERP server runs on Windows Server 2012 — no more vendor support, high risk.' Without this overview, you don't know where to act first.",
       "maturity": {
         "level0": "No risk analysis available",
@@ -441,7 +441,7 @@
     },
     "raQ2": {
       "title": "Are your IT security measures documented in writing and regularly updated?",
-      "tooltip": "Documented security concepts are the foundation for demonstrable compliance (§30 Para. 1 BSIG). See BSI building block ISMS.1.",
+      "tooltip": "Under §30(1) sentence 3 BSIG the entity must document its compliance with the obligation to take risk-management measures. See BSI building block ISMS.1 (security management).",
       "help": "Documented security measures mean: you have written down WHAT you do to protect your IT, e.g. 'All passwords must be at least 12 characters' or 'Backups are created daily at 10 PM.' Without written documentation, these rules are lost when an employee leaves the company.",
       "maturity": {
         "level0": "No written documentation",
@@ -452,7 +452,7 @@
     },
     "raQ3": {
       "title": "Have you established clear responsibilities for IT security (e.g., designated contact person)?",
-      "tooltip": "NIS2 requires management accountability (§38 BSIG). Clear responsibilities are the foundation for effective security management.",
+      "tooltip": "Under §38(1) BSIG management must implement the risk-management measures under §30 and oversee their implementation. Named responsibilities are the practical basis for this; the law does not prescribe a specific role.",
       "help": "It must be clear WHO is responsible for IT security — even in small companies. This can be the managing director, an IT manager, or an external service provider. The key point: everyone in the company knows whom to contact for IT security questions.",
       "maturity": {
         "level0": "No defined responsibilities",
@@ -485,7 +485,7 @@
     },
     "ihQ1": {
       "title": "Is there an established procedure for how your company responds to cyberattacks or IT disruptions?",
-      "tooltip": "NIS2 requires documented incident response processes (Art. 21 Abs. 2 lit. b NIS2-RL, §30 Para. 2 No. 2 BSIG). See BSI building block DER.2.1.",
+      "tooltip": "Art. 21(2)(b) NIS2 Directive and §30(2) no. 2 BSIG name incident handling as a minimum measure. See BSI building block DER.2.1 (handling of security incidents).",
       "help": "A procedure for cyberattacks means: Who does what when it happens? For example: 'Step 1: Disconnect affected system from the network. Step 2: Call IT service provider. Step 3: Inform management.' Without such a plan, employees react with panic or not at all in an emergency.",
       "maturity": {
         "level0": "No procedure in place",
@@ -495,8 +495,8 @@
       }
     },
     "ihQ2": {
-      "title": "Do you have emergency contact details (e.g., BSI reporting office, IT service providers) readily available?",
-      "tooltip": "NIS2 prescribes reporting obligations (§32 BSIG). Quick response requires prepared contact lists and reporting channels.",
+      "title": "Do you have emergency contact details (e.g., reporting office under §32 BSIG, IT service providers) readily available?",
+      "tooltip": "Under §32(1) BSIG entities report significant incidents to a joint reporting office set up by the BSI and the Federal Office of Civil Protection and Disaster Assistance. Prepared contact lists and reporting channels help to meet the deadlines.",
       "help": "In an emergency, every minute counts. If your email server gets hacked, you need to immediately know whom to call — your IT service provider, your internet provider, and the BSI (Federal Office for Information Security). These numbers should be printed out and readily available, not just stored digitally.",
       "maturity": {
         "level0": "No emergency contacts prepared",
@@ -518,8 +518,8 @@
     },
     "ihQ4": {
       "title": "Do you have clear criteria for when an IT incident qualifies as a 'significant security incident' requiring reporting?",
-      "tooltip": "Under Section 32 BSIG, significant security incidents must be reported to BSI within 24 hours. Clear criteria enable quick decisions in an emergency.",
-      "help": "Under NIS2, certain incidents must be reported to the BSI within 24 hours. Reportable incidents include, e.g., a ransomware attack that paralyzes your systems or a data breach involving customer data. You need clear criteria so there's no debating in an emergency whether to report.",
+      "tooltip": "Under §32(1) BSIG a significant incident must be reported without undue delay and no later than 24 hours after becoming aware of it by way of an early warning; a notification with an initial assessment follows within 72 hours, and the final report no later than one month after that. Under §2 BSIG an incident is significant if it has caused or is capable of causing severe operational disruption of the services or financial loss, or has affected or is capable of affecting other persons by causing considerable damage.",
+      "help": "Significant incidents must be reported without undue delay and no later than 24 hours after becoming aware of them (§32(1) BSIG). A ransomware attack that paralyzes your systems, for example, can be significant. You need clear criteria so there's no debating in an emergency whether to report.",
       "maturity": {
         "level0": "No criteria for classifying incidents",
         "level1": "Rough understanding, but no documented criteria",
@@ -551,7 +551,7 @@
     },
     "bcQ2": {
       "title": "Can you resume operations within the time you have defined after a severe IT outage?",
-      "tooltip": "Recovery capability is a core NIS2 objective. BSI Standard 200-4 describes Business Continuity Management (BCM).",
+      "tooltip": "Art. 21(2)(c) NIS2 Directive names business continuity, such as backup management and disaster recovery. The Directive does not set a fixed recovery time. BSI Standard 200-4 covers business continuity management.",
       "help": "Imagine your entire IT fails — no email, no ERP, no accounting. How long can you work like that? NIS2 does not prescribe a fixed recovery time. What counts is the time you have defined yourself (RTO from the business impact analysis). If you have not defined one yet, that is the first step. For this, you need a plan of who restores what in which order.",
       "maturity": {
         "level0": "No recovery planning in place",
@@ -562,7 +562,7 @@
     },
     "bcQ3": {
       "title": "Do you have a written emergency plan that sets out how your business keeps running during a system outage?",
-      "tooltip": "Crisis management requires prepared emergency plans (§30 Para. 2 No. 3 BSIG). See BSI building block DER.4 (Emergency Management).",
+      "tooltip": "§30(2) no. 3 BSIG names business continuity, such as backup management and disaster recovery, and crisis management. See BSI building block DER.4 (emergency management).",
       "help": "An emergency plan describes step by step what to do during an IT outage or cyberattack: Who gets informed? Which systems are restored first? How do you communicate with customers? This plan should be available in print — because when IT is down, you can't access it digitally.",
       "maturity": {
         "level0": "No emergency plan available",
@@ -584,7 +584,7 @@
     },
     "bcQ5": {
       "title": "Do you have a crisis communication plan for severe IT security incidents?",
-      "tooltip": "Crisis communication governs who is informed internally and externally (employees, customers, authorities, media). Under Section 35 BSIG, service recipients may also need to be notified.",
+      "tooltip": "Crisis communication governs who is informed internally and externally (employees, customers, authorities, media). Under §35(1) BSIG the BSI may, in the event of a significant incident, order you to inform the recipients of your services without undue delay.",
       "help": "A crisis communication plan regulates who informs whom in an emergency: employees, customers, suppliers, authorities, and potentially media. Without a plan, rumors and loss of trust arise. The plan should contain text templates, contact persons, and communication channels.",
       "maturity": {
         "level0": "No crisis communication plan exists",
@@ -595,7 +595,7 @@
     },
     "scQ1": {
       "title": "Do you check the IT security of important suppliers and service providers when selecting them?",
-      "tooltip": "NIS2 requires assessment of direct suppliers' and service providers' security (Art. 21 Abs. 2 lit. d NIS2-RL, §30 Para. 2 No. 4 BSIG). Particularly important for cloud services and IT outsourcing.",
+      "tooltip": "Art. 21(2)(d) NIS2 Directive and §30(2) no. 4 BSIG require supply chain security, including security-related aspects concerning the relationships with direct suppliers or service providers. Under Art. 21(3) NIS2 Directive entities take into account the vulnerabilities specific to each direct supplier and the overall quality of their products and cybersecurity practices.",
       "help": "Your IT security is only as strong as the weakest link in the chain. If your cloud provider gets hacked, your data is affected. Therefore, ask your key IT service providers: Do you have a security concept? Is our data encrypted? Are there regular security audits?",
       "maturity": {
         "level0": "No assessment of supplier security",
@@ -606,7 +606,7 @@
     },
     "scQ2": {
       "title": "Do you have contractual IT security agreements with your IT service providers?",
-      "tooltip": "Contractual security requirements for service providers are an essential part of NIS2 supply chain security.",
+      "tooltip": "Art. 21(2)(d) NIS2 Directive names the security-related aspects concerning the relationships with direct suppliers or service providers. Contracts are the usual place to govern these aspects; the Directive does not prescribe specific clauses.",
       "help": "Contractual security agreements mean: Your contracts with IT service providers state, e.g., that data must be encrypted, that security updates must be applied promptly, and that you must be notified in case of an incident. Without such clauses, you have no leverage in an emergency.",
       "maturity": {
         "level0": "No contractual security agreements",
@@ -628,7 +628,7 @@
     },
     "scQ4": {
       "title": "Do you consider your suppliers' subcontractors and dependencies when assessing their security?",
-      "tooltip": "NIS2 requires consideration of the entire supply chain, not just direct suppliers. Vulnerabilities at subcontractors can compromise your organization.",
+      "tooltip": "Art. 21(2)(d) NIS2 Directive names supply chain security and expressly the relationships with direct suppliers or service providers. The provision does not mention subcontractors separately. Vulnerabilities there can nevertheless affect your organisation.",
       "help": "Your IT service provider may itself use subcontractors — e.g., a data center in another country. If a security problem occurs there, your data is also affected. Ask your service providers whether and which subcontractors they use.",
       "maturity": {
         "level0": "No consideration of subcontractors",
@@ -661,7 +661,7 @@
     },
     "adQ2": {
       "title": "Do you consider IT security aspects when purchasing or developing new software?",
-      "tooltip": "NIS2 requires security-by-design (Art. 21 Abs. 2 lit. e NIS2-RL, §30 Para. 2 No. 5 BSIG). Security must be considered from the start. See BSI building block CON.8.",
+      "tooltip": "Art. 21(2)(e) NIS2 Directive and §30(2) no. 5 BSIG require security in the acquisition, development and maintenance of network and information systems. See BSI building block CON.8 (software development).",
       "help": "When you buy or commission new software, you should ask beforehand: Is it secure? Are there regular updates? Is data encrypted? Example: Before purchasing new accounting software, check whether the vendor meets security standards and how your data is protected.",
       "maturity": {
         "level0": "Security not considered in procurement/development",
@@ -683,7 +683,7 @@
     },
     "adQ4": {
       "title": "Is IT security systematically integrated into your software development or procurement processes (Security by Design)?",
-      "tooltip": "Security by Design means considering security from the start — not as an afterthought. NIS2 explicitly requires this in Art. 21(2)(e). See BSI building block CON.8.",
+      "tooltip": "Security by design means considering security from the start — not as an afterthought. Art. 21(2)(e) NIS2 Directive requires security in acquisition, development and maintenance; the provision does not use the term \"security by design\". See BSI building block CON.8 (software development).",
       "help": "Security by Design means that IT security is considered from the beginning during procurement or development — not as an afterthought. Example: When you commission a new customer app, it should be clear from the start how customer data will be protected, rather than adding that as an extra feature later.",
       "maturity": {
         "level0": "Security is only considered after completion or purchase",
@@ -705,7 +705,7 @@
     },
     "eaQ1": {
       "title": "Do you regularly verify whether your security measures actually work (e.g., through audits)?",
-      "tooltip": "NIS2 requires regular effectiveness assessment (Art. 21 Abs. 2 lit. f NIS2-RL, §30 Para. 2 No. 6 BSIG). See BSI building block ISMS.1.",
+      "tooltip": "Art. 21(2)(f) NIS2 Directive and §30(2) no. 6 BSIG require policies and procedures to assess the effectiveness of risk-management measures. The provisions do not set a fixed interval. See BSI building block ISMS.1 (security management).",
       "help": "Security measures must be regularly checked to see if they actually work. An antivirus scanner that hasn't been updated for months no longer protects. An audit (systematic review) can be conducted internally by an IT manager or externally by a service provider.",
       "maturity": {
         "level0": "No effectiveness verification",
@@ -717,7 +717,7 @@
     "eaQ2": {
       "title": "Do you conduct security tests (e.g., penetration tests or vulnerability scans)?",
       "tooltip": "Technical tests are an important part of effectiveness assessment. They reveal vulnerabilities not visible in theory.",
-      "help": "A penetration test (pentest for short) simulates a real attack on your IT to find vulnerabilities before criminals do. A vulnerability scan automatically checks for known security gaps. For SMEs, affordable options are available starting at a few thousand euros per year.",
+      "help": "A penetration test (pentest for short) simulates a real attack on your IT to find vulnerabilities before criminals do. A vulnerability scan automatically checks for known security gaps.",
       "maturity": {
         "level0": "No security tests",
         "level1": "Occasional tests when specific need arises",
@@ -739,7 +739,7 @@
     "eaQ4": {
       "title": "Are the results of security reviews regularly reported to management?",
       "tooltip": "Under Section 38 BSIG, management must oversee the implementation of risk management measures. Regular reporting is a prerequisite for this.",
-      "help": "Management is personally responsible for IT security under NIS2 (§38 BSIG). Therefore, they must regularly learn about the security status. A simple report, e.g., quarterly, with the current status and the biggest risks is sufficient.",
+      "help": "Under §38(1) BSIG management must implement the risk-management measures and oversee their implementation. To do so, it needs to learn regularly about the security status. A simple report, e.g., quarterly, with the current status and the biggest risks is a practicable way; the law does not prescribe an interval.",
       "maturity": {
         "level0": "No reporting to management",
         "level1": "Only for serious incidents",
@@ -760,7 +760,7 @@
     },
     "chQ1": {
       "title": "Are your employees regularly trained on IT security topics (e.g., recognizing phishing)?",
-      "tooltip": "NIS2 requires basic training (Art. 21 Abs. 2 lit. g NIS2-RL, §30 Para. 2 No. 7 BSIG). See BSI building block ORP.3.",
+      "tooltip": "Art. 21(2)(g) NIS2 Directive requires basic cyber hygiene practices and cybersecurity training; §30(2) no. 7 BSIG names basic training and awareness-raising measures. See BSI building block ORP.3 (awareness and training in information security).",
       "help": "Most successful cyberattacks exploit human errors — e.g., an employee clicks a link in a forged email (phishing). Regular training (at least annually) helps recognize such attacks. This can be a one-hour online course, not an elaborate seminar.",
       "maturity": {
         "level0": "No IT security training",
@@ -804,8 +804,8 @@
     },
     "chQ5": {
       "title": "Are your management and executives regularly trained on NIS2 obligations and cybersecurity?",
-      "tooltip": "Section 38 BSIG personally obligates management to oversee risk management measures and participate in regular training. This duty cannot be delegated.",
-      "help": "Under §38 BSIG, managing directors must personally participate in cybersecurity training — this obligation cannot be delegated. The training must cover NIS2 obligations, personal liability of management, and basic cybersecurity topics. This also helps leadership make informed decisions about security investments.",
+      "tooltip": "Under §38(3) BSIG management must regularly follow training in order to gain sufficient knowledge and skills to identify and assess risks and risk-management practices (likewise Art. 20(2) NIS2 Directive). The obligation does not extend to other managers; under Art. 20(2) NIS2 Directive entities are encouraged to offer similar training to their employees on a regular basis.",
+      "help": "Under §38(3) BSIG management must regularly follow training. The aim is to be able to identify and assess risks and risk-management practices and to assess their impact on the services provided. This also helps leadership make informed decisions about security investments. Keep records of attendance.",
       "maturity": {
         "level0": "No specific training for management",
         "level1": "One-time information about NIS2 requirements",
@@ -815,7 +815,7 @@
     },
     "crQ1": {
       "title": "Is confidential data encrypted at rest and in transit (e.g. disk encryption, HTTPS)?",
-      "tooltip": "NIS2 requires the use of cryptographic measures (Art. 21 Abs. 2 lit. h NIS2-RL, §30 Para. 2 No. 8 BSIG). See BSI building block CON.1.",
+      "tooltip": "Art. 21(2)(h) NIS2 Directive requires policies and procedures regarding the use of cryptography and, where appropriate, encryption; §30(2) no. 8 BSIG names policies and processes for the use of cryptographic procedures. See BSI building block CON.1 (crypto concept).",
       "help": "Encryption makes data unreadable to unauthorized persons. HTTPS (the lock symbol in the browser) encrypts data during internet transmission. VPN encrypts the connection to your company network. Stored data (e.g., on laptops) should also be encrypted so it cannot be read if stolen.",
       "maturity": {
         "level0": "No encryption in use",
@@ -870,7 +870,7 @@
     },
     "acQ1": {
       "title": "Do only authorized persons have access to critical IT systems and data?",
-      "tooltip": "NIS2 requires access control following the principle of least privilege (Art. 21 Abs. 2 lit. i NIS2-RL, §30 Para. 2 No. 9 BSIG). See BSI building block ORP.4.",
+      "tooltip": "Art. 21(2)(i) NIS2 Directive requires human resources security, access control policies and asset management (likewise §30(2) no. 9 BSIG). The provisions do not mention the principle of least privilege; it is common practice. See BSI building block ORP.4 (identity and access management).",
       "help": "Access control means: Each employee can only access the data and systems they need for their work. The apprentice in accounting doesn't need access to personnel files. The principle is called 'Least Privilege' (minimum authorization) and is one of the most basic security measures.",
       "maturity": {
         "level0": "No systematic access control",
@@ -892,7 +892,7 @@
     },
     "acQ3": {
       "title": "Are physical access controls in place for critical IT areas (e.g., server room)?",
-      "tooltip": "Physical protection of critical IT infrastructure is part of access control. See BSI building blocks INF.1 (Building) and INF.2 (Data Center).",
+      "tooltip": "Physical protection of critical IT infrastructure is part of access control. See BSI building blocks INF.1 (general building) and INF.2 (data centre and server room).",
       "help": "Physical access controls protect your IT hardware from unauthorized access. The minimum: The server room is locked and only authorized persons have a key. Better: Electronic access control with logging of who entered the room and when.",
       "maturity": {
         "level0": "No special physical protection",
@@ -925,8 +925,8 @@
     },
     "mcQ1": {
       "title": "Do you use multi-factor authentication (e.g., authenticator app, hardware token) for critical systems?",
-      "tooltip": "NIS2 requires MFA or continuous authentication where appropriate – especially important for privileged access (Art. 21 Abs. 2 lit. j NIS2-RL, §30 Para. 2 No. 10 BSIG). MFA protects against password theft and unauthorized access.",
-      "help": "Multi-factor authentication (MFA) means: To log in, you need not only a password but also a second factor — e.g., a code from an app on your smartphone. Even if someone steals your password, they cannot log in without the second factor. According to a Microsoft study (2023), MFA prevents over 99% of account takeovers.",
+      "tooltip": "Art. 21(2)(j) NIS2 Directive and §30(2) no. 10 BSIG require the use of multi-factor authentication or continuous authentication solutions, where appropriate. MFA protects against password theft and unauthorised access.",
+      "help": "Multi-factor authentication (MFA) means: To log in, you need not only a password but also a second factor — e.g., a code from an app on your smartphone. Even if someone steals your password, they cannot log in without the second factor.",
       "maturity": {
         "level0": "No MFA in use",
         "level1": "MFA for individual systems (e.g., cloud email only)",
@@ -947,7 +947,7 @@
     },
     "mcQ3": {
       "title": "Do you have secure communication channels for emergencies (e.g., alternative channels during IT outage)?",
-      "tooltip": "Secured emergency communication ensures your crisis team remains reachable even during IT outages (§30 Para. 2 No. 10 BSIG).",
+      "tooltip": "Art. 21(2)(j) NIS2 Directive and §30(2) no. 10 BSIG name secured emergency communication systems within the entity, where appropriate. They ensure that your crisis team remains reachable even during an IT outage.",
       "help": "If your entire IT fails, email and Teams won't work either. For this case, you need an emergency channel — e.g., a phone list on paper, a messenger group on personal phones, or a separate service. This channel must be established and tested beforehand.",
       "maturity": {
         "level0": "No emergency communication prepared",

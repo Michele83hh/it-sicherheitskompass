@@ -52,9 +52,9 @@ describe('Übersetzungsschlüssel der Regelwerke', () => {
     expect(long).toEqual([]);
   });
 
-  it('der Hinweis „nicht ausdrücklich verlangt“ kommt bei 3 NIS2- und 3 DORA-Fragen an', () => {
+  it('der Hinweis „nicht ausdrücklich verlangt“ kommt bei 4 NIS2- und 3 DORA-Fragen an', () => {
     const flagged = getAllRegulations().flatMap((r) => r.questions.filter((q) => q.beyondMinimum));
-    expect(flagged.map((q) => q.id).sort()).toEqual(['cr-q5', 'ea-q5', 'ia-q1', 'ia-q2', 'ia-q4', 'mc-q4']);
+    expect(flagged.map((q) => q.id).sort()).toEqual(['cr-q5', 'ea-q5', 'ia-q1', 'ia-q2', 'ia-q4', 'mc-q4', 'sc-q4']);
   });
 
   it.each(getAllRegulations().map((r) => [r.id, r] as const))(
