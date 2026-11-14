@@ -101,6 +101,7 @@ export interface DoraQuestion {
   categoryId: string;
   tier: 'core' | 'advanced';
   notApplicableAllowed?: boolean;
+  beyondMinimum?: boolean;
   titleKey: string;
   tooltipKey: string;
   helpKey: string;

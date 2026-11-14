@@ -3417,9 +3417,9 @@
     "categories": {
       "drittanbieter": {
         "description": "Management von Risiken durch IKT-Drittdienstleister nach Art. 28-30 DORA (Art. 31-44: Überwachung kritischer Anbieter)",
-        "empoweringIntro": "IKT-Drittanbieter sind ein zentraler Bestandteil der digitalen Wertschöpfungskette im Finanzsektor. DORA verpflichtet Finanzunternehmen, sämtliche Risiken aus der Nutzung von IKT-Drittdienstleistungen systematisch zu identifizieren, zu bewerten und vertraglich abzusichern. Die folgenden Fragen prüfen, ob Ihr Unternehmen die Anforderungen der Art. 28-30 DORA an das IKT-Drittparteienrisikomanagement erfüllt.",
-        "name": "IKT-Drittanbieter-Risikomanagement",
-        "shortName": "Drittanbieter"
+        "empoweringIntro": "IKT-Drittdienstleister sind ein zentraler Bestandteil der digitalen Wertschöpfungskette im Finanzsektor. DORA verpflichtet Finanzunternehmen, sämtliche Risiken aus der Nutzung von IKT-Drittdienstleistungen systematisch zu identifizieren, zu bewerten und vertraglich abzusichern. Die folgenden Fragen prüfen, ob Ihr Unternehmen die Anforderungen der Art. 28-30 DORA an das IKT-Drittparteienrisikomanagement erfüllt.",
+        "name": "IKT-Drittdienstleister-Risikomanagement",
+        "shortName": "Drittdienstleister"
       },
       "governance": {
         "description": "Leitungsverantwortung und proportionale DORA-Umsetzung (Art. 4-6 DORA)",
@@ -3472,31 +3472,31 @@
     },
     "questions": {
       "daQ1": {
-        "title": "Verwalten Sie das IKT-Drittanbieterrisiko als integralen Bestandteil Ihres IKT-Risikomanagementrahmens?",
-        "tooltip": "Art. 28 Abs. 1-3 DORA verpflichtet Finanzunternehmen, das IKT-Drittanbieterrisiko als integralen Bestandteil des IKT-Risikomanagementrahmens zu verwalten. Dazu gehört die Erstellung und regelmäßige Aktualisierung eines Informationsregisters aller vertraglichen Vereinbarungen über die Nutzung von IKT-Dienstleistungen. Die RTS nach Art. 28 Abs. 9 DORA konkretisieren die Anforderungen.",
-        "help": "DORA verlangt, dass Sie ein vollständiges Register aller IKT-Drittanbieter-Verträge führen und pflegen. Dieses Register muss der Aufsichtsbehörde auf Anfrage zur Verfügung gestellt werden. Sie müssen bei Auslagerungen an IKT-Drittanbieter sicherstellen, dass die Gesamtverantwortung für die Einhaltung der DORA-Anforderungen bei Ihrem Finanzunternehmen verbleibt. Jede neue IKT-Auslagerung muss einer Risikoanalyse unterzogen werden, bevor der Vertrag geschlossen wird.",
+        "title": "Managen Sie das IKT-Drittparteienrisiko als integralen Bestandteil Ihres IKT-Risikomanagementrahmens?",
+        "tooltip": "Art. 28 Abs. 1 DORA: Finanzunternehmen managen das IKT-Drittparteienrisiko als integralen Bestandteil des IKT-Risikos innerhalb ihres IKT-Risikomanagementrahmens. Nach Abs. 3 führen und aktualisieren sie ein Informationsregister zu allen vertraglichen Vereinbarungen über die Nutzung von IKT-Dienstleistungen, die IKT-Drittdienstleister bereitstellen. Die Standardvorlagen für das Register werden nach Abs. 9 durch technische Durchführungsstandards festgelegt.",
+        "help": "DORA verlangt, dass Sie ein vollständiges Register aller IKT-Drittdienstleister-Verträge führen und pflegen. Dieses Register muss der Aufsichtsbehörde auf Anfrage zur Verfügung gestellt werden. Sie müssen bei Auslagerungen an IKT-Drittdienstleister sicherstellen, dass die Gesamtverantwortung für die Einhaltung der DORA-Anforderungen bei Ihrem Finanzunternehmen verbleibt. Jede neue IKT-Auslagerung muss einer Risikoanalyse unterzogen werden, bevor der Vertrag geschlossen wird.",
         "maturity": {
-          "level0": "Kein Überblick über IKT-Drittanbieter; kein Register vertraglicher Vereinbarungen",
-          "level1": "Teilweise Übersicht über IKT-Drittanbieter vorhanden, aber kein vollständiges Register und keine systematische Risikobetrachtung",
-          "level2": "Informationsregister der IKT-Drittanbieter-Verträge aufgebaut, Risikoanalyse vor neuen Auslagerungen, aber Register nicht vollständig aktuell",
-          "level3": "Vollständiges, regelmäßig aktualisiertes Informationsregister aller IKT-Drittanbieter-Verträge gemäß Art. 28 DORA, integriert in den IKT-Risikomanagementrahmen, mit dokumentierter Risikoanalyse vor jeder neuen Auslagerung und regelmäßiger Berichterstattung an das Leitungsorgan"
+          "level0": "Kein Überblick über IKT-Drittdienstleister; kein Register vertraglicher Vereinbarungen",
+          "level1": "Teilweise Übersicht über IKT-Drittdienstleister vorhanden, aber kein vollständiges Register und keine systematische Risikobetrachtung",
+          "level2": "Informationsregister der IKT-Drittdienstleister-Verträge aufgebaut, Risikoanalyse vor neuen Auslagerungen, aber Register nicht vollständig aktuell",
+          "level3": "Vollständiges, regelmäßig aktualisiertes Informationsregister aller IKT-Drittdienstleister-Verträge gemäß Art. 28 DORA, integriert in den IKT-Risikomanagementrahmen, mit dokumentierter Risikoanalyse vor jeder neuen Auslagerung und regelmäßiger Berichterstattung an das Leitungsorgan"
         }
       },
       "daQ2": {
-        "title": "Enthalten Ihre Verträge mit IKT-Drittanbietern alle von DORA geforderten Mindestinhalte?",
-        "tooltip": "Art. 28 Abs. 4-8 DORA legt umfangreiche Mindestanforderungen an vertragliche Vereinbarungen mit IKT-Drittanbietern fest. Dazu gehören unter anderem: vollständige Leistungsbeschreibung, Verfügbarkeitsziele, Datenverarbeitungsstandorte, Bestimmungen zur Datensicherheit, Unterstützungspflichten bei IKT-Vorfällen, Kündigungsrechte, Audit- und Zugangsrechte sowie Mitwirkungspflichten bei TLPT.",
-        "help": "DORA stellt erheblich höhere Anforderungen an IKT-Verträge als bisherige Auslagerungsregelungen (z. B. MaRisk, EBA-Leitlinien). Jeder Vertrag mit einem IKT-Drittanbieter muss konkrete Bestimmungen enthalten zu: Service-Level-Vereinbarungen mit messbaren Zielen, Pflicht zur Unterstützung bei IKT-Vorfällen und TLPT, Audit- und Zugangsrechte für Ihr Unternehmen und die Aufsichtsbehörde, Exit-Strategien und Kündigungsrechte. Prüfen Sie bestehende Verträge auf Lücken.",
+        "title": "Enthalten Ihre Verträge mit IKT-Drittdienstleistern die Mindestelemente nach Art. 30 Abs. 2 DORA?",
+        "tooltip": "Nach Art. 30 Abs. 2 DORA umfassen vertragliche Vereinbarungen über die Nutzung von IKT-Dienstleistungen mindestens: eine klare und vollständige Beschreibung aller Funktionen und IKT-Dienstleistungen, die Standorte der Leistungserbringung und Datenverarbeitung, Bestimmungen über Verfügbarkeit, Authentizität, Integrität und Vertraulichkeit, den Zugang zu den Daten im Fall einer Insolvenz oder Beendigung, Beschreibungen der Dienstleistungsgüte, die Unterstützung bei einem IKT-Vorfall, die Zusammenarbeit mit den zuständigen Behörden, Kündigungsrechte mit Mindestkündigungsfristen und die Teilnahme an Programmen zur Sensibilisierung für IKT-Sicherheit. Art. 28 DORA regelt dagegen die Prüfung vor Vertragsschluss, Kündigungsgründe und Ausstiegsstrategien.",
+        "help": "Art. 30 DORA legt fest, was in jedem Vertrag über IKT-Dienstleistungen stehen muss. Abs. 2 nennt die Mindestelemente, darunter Leistungsbeschreibung, Standorte, Bestimmungen zu Verfügbarkeit, Authentizität, Integrität und Vertraulichkeit, Dienstleistungsgüte, Unterstützung bei IKT-Vorfällen, Zusammenarbeit mit den Behörden und Kündigungsrechte. Prüfen Sie bestehende Verträge auf Lücken.",
         "maturity": {
           "level0": "IKT-Verträge enthalten keine oder nur allgemeine Sicherheitsklauseln; DORA-Anforderungen nicht berücksichtigt",
           "level1": "Einzelne DORA-Anforderungen in neueren Verträgen berücksichtigt, aber Altverträge nicht angepasst und Audit-Rechte nicht durchgängig vereinbart",
-          "level2": "Standardvertragsklauseln gemäß Art. 28 DORA entwickelt und in den meisten Verträgen umgesetzt, aber Anpassung bestehender Verträge noch nicht abgeschlossen",
-          "level3": "Alle IKT-Verträge enthalten sämtliche DORA-Mindestinhalte gemäß Art. 28 Abs. 4-8, einschließlich SLA, Audit-Rechte, Vorfallunterstützung, TLPT-Mitwirkung, Exit-Strategien und Datenstandortregelungen; regelmäßige Vertragsprüfung etabliert"
+          "level2": "Standardvertragsklauseln gemäß Art. 30 Abs. 2 DORA entwickelt und in den meisten Verträgen umgesetzt, aber Anpassung bestehender Verträge noch nicht abgeschlossen",
+          "level3": "Alle IKT-Verträge enthalten sämtliche Mindestelemente nach Art. 30 Abs. 2 DORA, einschließlich Leistungsbeschreibung, Standorten, Dienstleistungsgüte, Vorfallunterstützung und Kündigungsrechten; regelmäßige Vertragsprüfung etabliert"
         }
       },
       "daQ3": {
-        "title": "Werden IKT-Konzentrationsrisiken bei der Vergabe von Dienstleistungen an Drittanbieter analysiert und gesteuert?",
-        "tooltip": "Art. 29 Abs. 1-2 DORA verpflichtet Finanzunternehmen, IKT-Konzentrationsrisiken zu bewerten. Dazu gehört die Analyse, ob zu viele kritische oder wichtige Funktionen bei einem oder wenigen IKT-Drittanbietern konzentriert sind und ob Substitutionsmöglichkeiten bestehen. Die RTS nach Art. 28 Abs. 9 DORA enthalten Anforderungen an die Bewertung von Konzentrationsrisiken.",
-        "help": "IKT-Konzentrationsrisiko entsteht, wenn Ihr Finanzunternehmen für mehrere kritische Funktionen von einem einzigen IKT-Anbieter abhängt -- etwa wenn derselbe Cloud-Provider das Kernbanksystem, die Zahlungsabwicklung und das Wertpapierhandelsystem hostet. Fällt dieser Anbieter aus, sind alle Funktionen gleichzeitig betroffen. DORA verlangt, dass Sie diese Risiken bewerten und Gegenmaßnahmen ergreifen, z. B. durch Multi-Cloud-Strategien oder Notfallpläne für den Anbieterwechsel.",
+        "title": "Werden IKT-Konzentrationsrisiken bei der Vergabe von Dienstleistungen an Drittdienstleister analysiert und gesteuert?",
+        "tooltip": "Nach Art. 29 Abs. 1 DORA berücksichtigen Finanzunternehmen vor einem Vertragsschluss zu IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, ob dieser (a) zu einem Vertrag mit einem IKT-Drittdienstleister führen würde, der nicht ohne Weiteres ersetzbar ist, oder (b) zu mehrfachen Vereinbarungen mit demselben oder mit eng verbundenen IKT-Drittdienstleistern. Nach Abs. 2 wägen sie bei einer möglichen Unterauftragsvergabe die Vorteile und Risiken ab.",
+        "help": "IKT-Konzentrationsrisiko entsteht, wenn Ihr Finanzunternehmen für mehrere kritische Funktionen von einem einzigen IKT-Dienstleister abhängt -- etwa wenn derselbe Cloud-Anbieter mehrere Kernsysteme betreibt. Fällt dieser Dienstleister aus, sind alle Funktionen gleichzeitig betroffen. Art. 29 Abs. 1 DORA verlangt, dass Sie vor Vertragsschluss berücksichtigen, ob der Dienstleister nicht ohne Weiteres ersetzbar ist oder ob mehrfache Vereinbarungen mit demselben oder eng verbundenen Dienstleistern entstehen.",
         "maturity": {
           "level0": "Keine Analyse von IKT-Konzentrationsrisiken; keine Übersicht über Abhängigkeiten von einzelnen Anbietern",
           "level1": "Grundsätzliche Kenntnis der wichtigsten IKT-Anbieter, aber keine systematische Analyse der Konzentrationsrisiken",
@@ -3506,8 +3506,8 @@
       },
       "daQ4": {
         "title": "Enthalten Verträge zu kritischen oder wichtigen Funktionen die zusätzlichen Bestimmungen nach Art. 30 Abs. 3 DORA?",
-        "tooltip": "Art. 30 Abs. 1-5 DORA definiert verschärfte vertragliche Anforderungen für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen. Diese umfassen unter anderem: vollständige Service-Level-Beschreibungen, garantierte Verfügbarkeitsziele, Verpflichtungen des Anbieters bei Vorfällen, Sicherheitsmaßnahmen, Datenschutzgarantien, uneingeschränkte Audit- und Zugangsrechte, Kündigungsrechte und Ausstiegsstrategien.",
-        "help": "Für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, gelten nach Art. 30 DORA verschärfte Vertragsanforderungen gegenüber den allgemeinen Anforderungen aus Art. 28. Besonders wichtig sind: das uneingeschränkte Recht auf Audits und Inspektionen (auch durch die Aufsichtsbehörde), garantierte Unterstützung bei IKT-Vorfällen, die Verpflichtung zur Mitwirkung bei TLPT, klare Ausstiegsstrategien mit angemessenen Übergangsfristen und das Recht auf Kündigung bei wesentlichen Vertragsverletzungen.",
+        "tooltip": "Nach Art. 30 Abs. 3 DORA umfassen Verträge über IKT-Dienstleistungen zur Unterstützung kritischer oder wichtiger Funktionen zusätzlich zu den Elementen des Abs. 2 mindestens: vollständige Beschreibungen der Dienstleistungsgüte mit präzisen quantitativen und qualitativen Leistungszielen, Kündigungsfristen und Berichtspflichten des Dienstleisters, Anforderungen an Notfallpläne und IKT-Sicherheit des Dienstleisters, die Pflicht zur Mitwirkung an TLPT, das Recht zur fortlaufenden Überwachung einschließlich uneingeschränkter Zugangs-, Inspektions- und Auditrechte sowie Ausstiegsstrategien mit einem verbindlichen angemessenen Übergangszeitraum.",
+        "help": "Für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, verlangt Art. 30 Abs. 3 DORA zusätzliche Vertragsbestimmungen. Dazu gehören: präzise Leistungsziele, Kündigungsfristen und Berichtspflichten des Dienstleisters, getestete Notfallpläne des Dienstleisters, die Mitwirkung an TLPT, uneingeschränkte Zugangs-, Inspektions- und Auditrechte (auch für die zuständige Behörde) und Ausstiegsstrategien mit einem angemessenen Übergangszeitraum.",
         "maturity": {
           "level0": "Keine Differenzierung zwischen kritischen und unkritischen IKT-Auslagerungen; Art. 30 DORA-Anforderungen nicht berücksichtigt",
           "level1": "Kritische und wichtige IKT-Funktionen identifiziert, aber vertragliche Anforderungen nach Art. 30 DORA noch nicht in die Verträge aufgenommen",
@@ -3516,9 +3516,9 @@
         }
       },
       "daQ5": {
-        "title": "Haben Sie einen Prozess für den Umgang mit der Einstufung Ihrer IKT-Drittanbieter als kritisch durch die Aufsichtsbehörde?",
-        "tooltip": "Art. 31 Abs. 1-12 DORA regelt den Überwachungsrahmen für kritische IKT-Drittdienstleister. Die ESAs können IKT-Drittanbieter als kritisch einstufen und einen federführenden Überwacher benennen. Dieser hat weitreichende Befugnisse: Informationsanforderungen, Inspektionen, Empfehlungen und ggf. Nutzungsbeschränkungen. Finanzunternehmen müssen die daraus resultierenden Anforderungen umsetzen.",
-        "help": "Wenn einer Ihrer IKT-Drittanbieter als kritisch eingestuft wird, hat das direkte Auswirkungen auf Ihr Finanzunternehmen: Der federführende Überwacher kann dem Anbieter Empfehlungen erteilen, die sich auf die Dienstleistungserbringung auswirken können. Im Extremfall kann die Aufsichtsbehörde Ihrem Finanzunternehmen die Nutzung des kritischen Anbieters einschränken. Sie müssen daher wissen, ob Ihre Anbieter als kritisch eingestuft wurden, und Notfallpläne für den Fall einer Nutzungseinschränkung haben.",
+        "title": "Haben Sie einen Prozess für den Fall, dass einer Ihrer IKT-Drittdienstleister als kritisch eingestuft wird?",
+        "tooltip": "Nach Art. 31 Abs. 1 DORA stufen die Europäischen Aufsichtsbehörden über den Gemeinsamen Ausschuss die IKT-Drittdienstleister ein, die für Finanzunternehmen kritisch sind, und ernennen für jeden kritischen IKT-Drittdienstleister eine federführende Überwachungsbehörde.",
+        "help": "Wird einer Ihrer IKT-Drittdienstleister als kritisch eingestuft, kann das Ihr Finanzunternehmen betreffen: Die federführende Überwachungsbehörde kann dem Dienstleister Empfehlungen geben (Art. 35 Abs. 1 lit. d DORA). Als letztes Mittel können die zuständigen Behörden von Finanzunternehmen verlangen, die Nutzung einer Dienstleistung des kritischen IKT-Drittdienstleisters vorübergehend teilweise oder vollständig auszusetzen (Art. 42 Abs. 6 DORA). Sie sollten daher wissen, ob Ihre Dienstleister als kritisch eingestuft wurden, und für diesen Fall vorbereitet sein.",
         "maturity": {
           "level0": "Keine Kenntnis des Überwachungsrahmens nach Art. 31 DORA; kein Monitoring der Einstufungen",
           "level1": "Grundlegende Kenntnis des Art. 31 DORA, aber kein aktives Monitoring, ob eigene IKT-Anbieter als kritisch eingestuft wurden",
@@ -3528,8 +3528,8 @@
       },
       "govQ1": {
         "title": "Übernimmt das Leitungsorgan die Gesamtverantwortung für das IKT-Risikomanagement und die digitale operationale Resilienz?",
-        "tooltip": "Art. 5 Abs. 1-2 DORA weist dem Leitungsorgan die Letztverantwortung für das Management der IKT-Risiken des Finanzunternehmens zu. Das Leitungsorgan muss den IKT-Risikomanagementrahmen festlegen, genehmigen, überwachen und verantworten. Es muss außerdem angemessene Haushaltsmittel bereitstellen und sicherstellen, dass die IKT-Strategie mit der Geschäftsstrategie im Einklang steht.",
-        "help": "DORA stellt klar: Das Leitungsorgan (Vorstand, Geschäftsführung) kann die Verantwortung für IKT-Risiken nicht vollständig delegieren. Es muss den IKT-Risikomanagementrahmen aktiv genehmigen und dessen Umsetzung überwachen. Dazu gehört auch, ausreichende finanzielle und personelle Ressourcen bereitzustellen. Die persönliche Haftung des Leitungsorgans ist ein zentrales Element der DORA-Governance. Dokumentieren Sie, wie Ihr Leitungsorgan diese Verantwortung wahrnimmt.",
+        "tooltip": "Nach Art. 5 Abs. 2 DORA definiert, genehmigt, überwacht und verantwortet das Leitungsorgan die Umsetzung aller Vorkehrungen im Zusammenhang mit dem IKT-Risikomanagementrahmen. Es trägt die letztendliche Verantwortung für das Management der IKT-Risiken, trägt die Gesamtverantwortung für die Strategie für die digitale operationale Resilienz und weist angemessene Budgetmittel zu, die es regelmäßig überprüft.",
+        "help": "Das Leitungsorgan (Vorstand, Geschäftsführung) trägt nach Art. 5 Abs. 2 lit. a DORA die letztendliche Verantwortung für das Management der IKT-Risiken. Es definiert und genehmigt die Vorkehrungen zum IKT-Risikomanagementrahmen, überwacht deren Umsetzung und weist angemessene Budgetmittel zu. Dokumentieren Sie, wie Ihr Leitungsorgan diese Verantwortung wahrnimmt.",
         "maturity": {
           "level0": "Das Leitungsorgan ist nicht in das IKT-Risikomanagement eingebunden; keine formale Verantwortungsübernahme",
           "level1": "Das Leitungsorgan ist informiert, aber IKT-Risikomanagement ist faktisch an die IT-Abteilung delegiert ohne aktive Steuerung",
@@ -3539,8 +3539,8 @@
       },
       "govQ2": {
         "title": "Absolvieren die Mitglieder des Leitungsorgans regelmäßige Schulungen zu IKT-Risiken und digitaler operationaler Resilienz?",
-        "tooltip": "Art. 5 Abs. 4 DORA verpflichtet die Mitglieder des Leitungsorgans, ihre Kenntnisse und Fähigkeiten regelmäßig zu aktualisieren, um IKT-Risiken und deren Auswirkungen auf das Finanzunternehmen verstehen und bewerten zu können. Dazu müssen ihnen spezifische Schulungen angeboten werden, die der Komplexität der IKT-Risiken angemessen sind.",
-        "help": "DORA verlangt, dass Mitglieder des Leitungsorgans nicht nur formale Verantwortung tragen, sondern auch fachlich in der Lage sind, IKT-Risiken zu verstehen und zu bewerten. Die Schulungen sollten Themen wie aktuelle Bedrohungslandschaft, IKT-Risikomanagement-Methoden, regulatorische Anforderungen (DORA, RTS, ITS), Vorfallmeldepflichten und IKT-Drittanbieterrisiken abdecken. Die Schulungsteilnahme muss dokumentiert werden.",
+        "tooltip": "Art. 5 Abs. 4 DORA: Die Mitglieder des Leitungsorgans halten ausreichende Kenntnisse und Fähigkeiten aktiv auf dem neuesten Stand -- unter anderem indem sie regelmäßig spezielle Schulungen absolvieren --, um die IKT-Risiken und deren Auswirkungen auf die Geschäftstätigkeit des Finanzunternehmens verstehen und bewerten zu können.",
+        "help": "DORA verlangt, dass Mitglieder des Leitungsorgans nicht nur formale Verantwortung tragen, sondern auch fachlich in der Lage sind, IKT-Risiken zu verstehen und zu bewerten. Die Schulungen sollten Themen wie aktuelle Bedrohungslandschaft, IKT-Risikomanagement-Methoden, regulatorische Anforderungen (DORA, RTS, ITS), Vorfallmeldepflichten und IKT-Drittparteienrisiken abdecken. Die Schulungsteilnahme muss dokumentiert werden.",
         "maturity": {
           "level0": "Keine Schulungen zu IKT-Risiken für das Leitungsorgan; kein Bewusstsein für die Schulungspflicht nach DORA",
           "level1": "Vereinzelte Informationsveranstaltungen zu IT-Sicherheit, aber keine regelmäßigen, strukturierten Schulungen für das Leitungsorgan",
@@ -3550,8 +3550,8 @@
       },
       "govQ3": {
         "title": "Wird der IKT-Risikomanagementrahmen regelmäßig überprüft und dem Leitungsorgan berichtet?",
-        "tooltip": "Art. 6 Abs. 5-8 DORA fordert, dass der IKT-Risikomanagementrahmen mindestens einmal jährlich sowie nach schwerwiegenden IKT-bezogenen Vorfällen überprüft wird. Das Leitungsorgan muss formale Berichte über die IKT-Risikolage und wesentliche Erkenntnisse erhalten. Der Rahmen muss auf Basis von Testergebnissen, Vorfällen und aufsichtlichen Anordnungen aktualisiert werden.",
-        "help": "DORA verlangt einen kontinuierlichen Verbesserungszyklus für Ihren IKT-Risikomanagementrahmen. Die jährliche Überprüfung muss unter anderem folgende Aspekte abdecken: Aktualität der IKT-Risikoanalyse, Wirksamkeit der Schutzmaßnahmen, Erkenntnisse aus Vorfällen und Tests, Veränderungen der Bedrohungslage und aufsichtliche Anforderungen. Die Ergebnisse der Überprüfung müssen dem Leitungsorgan als formaler Bericht vorgelegt und dokumentiert werden.",
+        "tooltip": "Nach Art. 6 Abs. 5 DORA wird der IKT-Risikomanagementrahmen mindestens einmal jährlich -- bei Kleinstunternehmen regelmäßig -- sowie bei Auftreten schwerwiegender IKT-bezogener Vorfälle und nach aufsichtsrechtlichen Anweisungen oder Feststellungen aus Tests oder Auditverfahren dokumentiert und überprüft. Der zuständigen Behörde wird auf Anfrage ein Bericht über die Überprüfung vorgelegt. Nach Art. 13 Abs. 5 DORA erstatten leitende IKT-Mitarbeiter dem Leitungsorgan mindestens einmal jährlich Bericht und geben Empfehlungen ab.",
+        "help": "Nach Art. 6 Abs. 5 DORA wird der IKT-Risikomanagementrahmen mindestens einmal jährlich dokumentiert und überprüft und auf Grundlage der bei Umsetzung und Überwachung gewonnenen Erkenntnisse kontinuierlich verbessert. Anlässe für eine Überprüfung sind außerdem schwerwiegende IKT-bezogene Vorfälle, aufsichtsrechtliche Anweisungen und Feststellungen aus Tests oder Audits. Halten Sie die Ergebnisse so fest, dass Sie der Behörde auf Anfrage einen Bericht vorlegen können.",
         "maturity": {
           "level0": "Keine regelmäßige Überprüfung des IKT-Risikomanagementrahmens; kein formales Berichtswesen an das Leitungsorgan",
           "level1": "Gelegentliche Berichte an das Leitungsorgan, aber keine strukturierte jährliche Überprüfung des Rahmens",
@@ -3561,8 +3561,8 @@
       },
       "govQ4": {
         "title": "Wird der Proportionalitätsgrundsatz bei der Umsetzung der DORA-Anforderungen angemessen berücksichtigt?",
-        "tooltip": "Art. 4 Abs. 1-2 DORA legt fest, dass Finanzunternehmen den IKT-Risikomanagementrahmen unter Berücksichtigung ihrer Größe, ihres Risikoprofils sowie der Art, des Umfangs und der Komplexität ihrer Dienstleistungen und Tätigkeiten umsetzen müssen. Für bestimmte kleine und nicht-komplexe Finanzunternehmen gelten vereinfachte Anforderungen nach Art. 16 DORA.",
-        "help": "DORA verfolgt einen risikobasierten Ansatz: Nicht jedes Finanzunternehmen muss alle Anforderungen im gleichen Umfang umsetzen. Kleinere Institute mit weniger komplexen IKT-Systemen können einen vereinfachten Rahmen nutzen. Größere, systemrelevante Unternehmen müssen dagegen umfassendere Maßnahmen ergreifen. Sie sollten dokumentieren, wie Sie den Proportionalitätsgrundsatz anwenden -- welche Anforderungen Sie in welchem Umfang umsetzen und warum. Dies muss gegenüber der Aufsichtsbehörde nachvollziehbar sein.",
+        "tooltip": "Art. 4 Abs. 1 DORA: Finanzunternehmen wenden die Vorschriften des Kapitels II im Einklang mit dem Grundsatz der Verhältnismäßigkeit an, wobei ihrer Größe und ihrem Gesamtrisikoprofil sowie der Art, dem Umfang und der Komplexität ihrer Dienstleistungen, Tätigkeiten und Geschäfte Rechnung zu tragen ist. Für die in Art. 16 Abs. 1 DORA genannten Finanzunternehmen gilt ein vereinfachter IKT-Risikomanagementrahmen.",
+        "help": "Nach Art. 4 DORA wenden Finanzunternehmen die Anforderungen im Einklang mit dem Grundsatz der Verhältnismäßigkeit an: Maßgeblich sind Größe und Gesamtrisikoprofil sowie Art, Umfang und Komplexität der Dienstleistungen, Tätigkeiten und Geschäfte. Für die in Art. 16 Abs. 1 DORA genannten Finanzunternehmen gilt ein vereinfachter IKT-Risikomanagementrahmen. Sie sollten dokumentieren, wie Sie den Grundsatz anwenden -- welche Anforderungen Sie in welchem Umfang umsetzen und warum --, damit dies für die Aufsichtsbehörde nachvollziehbar ist.",
         "maturity": {
           "level0": "Keine Auseinandersetzung mit dem Proportionalitätsgrundsatz; DORA-Anforderungen weder priorisiert noch an die Unternehmensgröße angepasst",
           "level1": "Grundsätzliche Kenntnis des Proportionalitätsgrundsatzes, aber keine dokumentierte Bewertung der eigenen Einstufung",
@@ -3571,9 +3571,9 @@
         }
       },
       "govQ5": {
-        "title": "Ist eine unabhängige Kontrollfunktion für das IKT-Risikomanagement eingerichtet (z. B. CISO, IKT-Risikomanager)?",
-        "tooltip": "Art. 6 Abs. 1-4 DORA und die Delegierte Verordnung (EU) 2024/1774 (RTS zum IKT-Risikomanagement) fordern eine angemessene Aufbauorganisation für das IKT-Risikomanagement mit klarer Trennung von IKT-Betrieb und IKT-Kontroll- und Überwachungsfunktionen. Die Kontrollfunktion muss über ausreichende Unabhängigkeit, Befugnisse und Ressourcen verfügen, um wirksam arbeiten zu können.",
-        "help": "DORA verlangt eine unabhängige IKT-Kontrollfunktion, die getrennt vom operativen IKT-Betrieb arbeitet. Diese Funktion -- typischerweise ein CISO (Chief Information Security Officer) oder IKT-Risikomanager -- muss direkt an das Leitungsorgan berichten können. Sie ist verantwortlich für die Überwachung der IKT-Risiken, die Prüfung der Wirksamkeit von Schutzmaßnahmen und die Berichterstattung. Wichtig ist die organisatorische Unabhängigkeit: Der CISO sollte nicht gleichzeitig für den IT-Betrieb verantwortlich sein.",
+        "title": "Ist die Zuständigkeit für das Management und die Überwachung des IKT-Risikos einer unabhängigen Kontrollfunktion übertragen?",
+        "tooltip": "Art. 6 Abs. 4 DORA: Finanzunternehmen, die keine Kleinstunternehmen sind, übertragen die Zuständigkeit für das Management und die Überwachung des IKT-Risikos an eine Kontrollfunktion und stellen ein angemessenes Maß an Unabhängigkeit dieser Kontrollfunktion sicher, um Interessenkonflikte zu vermeiden. Sie sorgen für eine angemessene Trennung und Unabhängigkeit von IKT-Risikomanagementfunktionen, Kontrollfunktionen und internen Revisionsfunktionen gemäß dem Modell der drei Verteidigungslinien oder einem internen Modell für Risikomanagement und Kontrolle.",
+        "help": "Art. 6 Abs. 4 DORA verlangt, dass die Zuständigkeit für das Management und die Überwachung des IKT-Risikos einer Kontrollfunktion mit einem angemessenen Maß an Unabhängigkeit übertragen wird, um Interessenkonflikte zu vermeiden. IKT-Risikomanagementfunktionen, Kontrollfunktionen und interne Revisionsfunktionen sind angemessen zu trennen (Modell der drei Verteidigungslinien oder internes Modell). Die Pflicht gilt nicht für Kleinstunternehmen. In der Praxis übernimmt die Funktion oft ein Informationssicherheitsbeauftragter oder IKT-Risikomanager; DORA schreibt keine Bezeichnung vor.",
         "maturity": {
           "level0": "Keine unabhängige IKT-Kontrollfunktion vorhanden; IKT-Risikomanagement wird vom IT-Betrieb mitverwaltet",
           "level1": "IKT-Risikomanagement ist einer Person zugeordnet, aber keine organisatorische Unabhängigkeit vom IT-Betrieb; kein direkter Zugang zum Leitungsorgan",
@@ -3583,7 +3583,7 @@
       },
       "iaQ1": {
         "title": "Nimmt Ihr Finanzunternehmen an Vereinbarungen zum Austausch von Informationen über Cyberbedrohungen teil?",
-        "tooltip": "Art. 45 Abs. 1-2 DORA gestattet Finanzunternehmen, untereinander Informationen und Erkenntnisse über Cyberbedrohungen auszutauschen. Dieser Austausch soll die digitale operationale Resilienz des Finanzsektors insgesamt stärken und umfasst Indikatoren für Beeinträchtigungen (IoCs), Taktiken, Techniken und Verfahren (TTPs) sowie Sicherheitswarnungen.",
+        "tooltip": "Nach Art. 45 Abs. 1 DORA können Finanzunternehmen Informationen und Erkenntnisse über Cyberbedrohungen untereinander austauschen, einschließlich Indikatoren für Beeinträchtigungen, Taktiken, Techniken und Verfahren, Cybersicherheitswarnungen und Konfigurationstools. Der Austausch zielt darauf ab, die digitale operationale Resilienz von Finanzunternehmen zu stärken. Die Teilnahme ist freiwillig.",
         "help": "DORA fördert ausdrücklich den Informationsaustausch über Cyberbedrohungen zwischen Finanzunternehmen. Dies kann über Branchenverbände, sektorale ISACs (Information Sharing and Analysis Centers), CERT-Gruppen oder bilaterale Vereinbarungen erfolgen. Der Austausch hilft, neue Bedrohungen frühzeitig zu erkennen und die eigene Abwehr zu verbessern. Die Teilnahme ist freiwillig, wird aber von Aufsichtsbehörden positiv bewertet.",
         "maturity": {
           "level0": "Keine Teilnahme an Informationsaustausch über Cyberbedrohungen; kein Kontakt zu ISACs oder Branchengruppen",
@@ -3594,29 +3594,29 @@
       },
       "iaQ2": {
         "title": "Werden die Qualität und Relevanz der ausgetauschten Bedrohungsinformationen sichergestellt?",
-        "tooltip": "Art. 45 Abs. 1 lit. b und Abs. 2 DORA fordern, dass der Informationsaustausch innerhalb vertrauenswürdiger Gemeinschaften stattfindet, die die potenziell sensible Natur der geteilten Informationen schützen. Es müssen Verhaltensregeln gelten, die den Schutz personenbezogener Daten, den Schutz von Geschäftsgeheimnissen und die Wettbewerbspolitik wahren.",
-        "help": "Nicht jede Bedrohungsinformation ist gleich wertvoll. DORA verlangt, dass der Austausch innerhalb vertrauenswürdiger Gemeinschaften stattfindet und die Qualität der geteilten Informationen sichergestellt wird. Dazu gehört: Informationen müssen aktuell, verifiziert und handlungsrelevant sein. Es muss klar sein, wie zuverlässig eine Quelle ist und welche Maßnahmen empfohlen werden. Ein Qualitätssicherungsprozess hilft, Fehlalarme zu reduzieren und den operativen Nutzen zu maximieren.",
+        "tooltip": "Nach Art. 45 Abs. 1 DORA zielt der Austausch darauf ab, die digitale operationale Resilienz zu stärken (lit. a), und erfolgt innerhalb vertrauenswürdiger Gemeinschaften von Finanzunternehmen (lit. b). Eine Qualitätsprüfung der ausgetauschten Informationen schreibt der Artikel nicht ausdrücklich vor.",
+        "help": "Nicht jede Bedrohungsinformation ist gleich wertvoll. DORA verlangt, dass der Austausch innerhalb vertrauenswürdiger Gemeinschaften stattfindet; eine Qualitätsprüfung schreibt die Verordnung nicht ausdrücklich vor. Sie ist gute Praxis: Informationen sollten aktuell, geprüft und handlungsrelevant sein, und es sollte klar sein, wie zuverlässig eine Quelle ist. Das reduziert Fehlalarme.",
         "maturity": {
           "level0": "Kein Bewusstsein für die Qualitätsanforderungen beim Informationsaustausch",
           "level1": "Bedrohungsinformationen werden empfangen, aber nicht systematisch auf Relevanz und Qualität geprüft",
           "level2": "Bewertungsprozess für eingehende Bedrohungsinformationen vorhanden, Informationen werden auf Relevanz geprüft, aber keine formale Qualitätssicherung",
-          "level3": "Strukturierter Qualitätssicherungsprozess für Bedrohungsinformationen gemäß Art. 45 Abs. 3 DORA mit Bewertung von Quelle, Aktualität, Relevanz und Handlungsrelevanz, Integration in Threat-Intelligence-Plattform und Feedback-Schleife an die Community"
+          "level3": "Strukturierter Qualitätssicherungsprozess für Bedrohungsinformationen mit Bewertung von Quelle, Aktualität, Relevanz und Handlungsrelevanz, Integration in Threat-Intelligence-Plattform und Feedback-Schleife an die Community"
         }
       },
       "iaQ3": {
         "title": "Sind Vertraulichkeitsvereinbarungen und Datenschutzmaßnahmen für den Informationsaustausch etabliert?",
-        "tooltip": "Art. 45 Abs. 2 DORA fordert, dass der Informationsaustausch unter Einhaltung der Vorschriften zum Schutz personenbezogener Daten (insbesondere DSGVO) sowie der Vorschriften über den Schutz von Geschäftsgeheimnissen erfolgt. Vertraulichkeitsvereinbarungen und Geheimhaltungspflichten müssen den Umgang mit den geteilten Informationen regeln.",
-        "help": "Beim Austausch von Bedrohungsinformationen können sensible Daten betroffen sein -- etwa wenn IoCs personenbezogene Daten enthalten (z. B. E-Mail-Adressen von Phishing-Kampagnen) oder Rückschlüsse auf die eigene Sicherheitsarchitektur ermöglichen. DORA verlangt daher: Vertraulichkeitsvereinbarungen (NDAs) mit allen Austauschpartnern, DSGVO-konforme Verarbeitung personenbezogener Daten, Schutz von Geschäftsgeheimnissen und klare Regeln zur Weitergabe an Dritte. Das Traffic Light Protocol (TLP) bietet hierfür einen bewährten Rahmen.",
+        "tooltip": "Nach Art. 45 Abs. 1 lit. c DORA wird der Austausch durch Vereinbarungen umgesetzt, die den potenziell sensiblen Charakter der ausgetauschten Informationen schützen und Verhaltensregeln unterliegen, in deren Rahmen die Wahrung des Geschäftsgeheimnisses, der Schutz personenbezogener Daten im Einklang mit der DSGVO und Leitlinien für die Wettbewerbspolitik vollumfänglich befolgt werden.",
+        "help": "Beim Austausch von Bedrohungsinformationen können sensible Daten betroffen sein -- etwa wenn Indikatoren personenbezogene Daten enthalten (z. B. E-Mail-Adressen aus Phishing-Kampagnen) oder Rückschlüsse auf die eigene Sicherheitsarchitektur ermöglichen. Art. 45 Abs. 1 lit. c DORA verlangt daher Vereinbarungen, die den sensiblen Charakter der Informationen schützen, sowie Verhaltensregeln zu Geschäftsgeheimnis, Datenschutz und Wettbewerbspolitik. Ein Klassifizierungsschema wie das Traffic Light Protocol (TLP) kann dabei helfen; DORA nennt es nicht.",
         "maturity": {
           "level0": "Keine Vertraulichkeitsvereinbarungen oder Datenschutzmaßnahmen für den Informationsaustausch vorhanden",
           "level1": "Grundsätzliches Bewusstsein für Vertraulichkeitsanforderungen, aber keine formalen Vereinbarungen mit Austauschpartnern",
           "level2": "Vertraulichkeitsvereinbarungen mit den wichtigsten Austauschpartnern geschlossen, DSGVO-Konformität geprüft, aber TLP oder vergleichbares Klassifizierungssystem nicht durchgängig eingesetzt",
-          "level3": "Umfassende Vertraulichkeitsvereinbarungen gemäß Art. 45 Abs. 4 DORA mit allen Austauschpartnern, DSGVO-konforme Verarbeitung, durchgängige Nutzung des TLP zur Informationsklassifizierung und regelmäßige Überprüfung der Vereinbarungen"
+          "level3": "Umfassende Vertraulichkeitsvereinbarungen gemäß Art. 45 Abs. 1 lit. c DORA mit allen Austauschpartnern, DSGVO-konforme Verarbeitung, durchgängige Nutzung des TLP zur Informationsklassifizierung und regelmäßige Überprüfung der Vereinbarungen"
         }
       },
       "iaQ4": {
         "title": "Werden Bedrohungsindikatoren und bekannte Angriffsmuster systematisch ausgewertet und in die eigene Abwehr übernommen?",
-        "tooltip": "Art. 45 Abs. 1 DORA nennt als Gegenstand des Informationsaustauschs insbesondere Indikatoren für Beeinträchtigungen (Indicators of Compromise, IoCs), Taktiken, Techniken und Verfahren (TTPs), Sicherheitswarnungen und Konfigurationswerkzeuge. Die Integration dieser Informationen in die eigene IKT-Sicherheitsinfrastruktur ist entscheidend für den operativen Nutzen.",
+        "tooltip": "Art. 45 Abs. 1 DORA nennt als Gegenstand des Austauschs Indikatoren für Beeinträchtigungen, Taktiken, Techniken und Verfahren, Cybersicherheitswarnungen und Konfigurationstools. Die Auswertung und Übernahme in die eigene Abwehr schreibt der Artikel nicht vor; sie dient dem in lit. a genannten Ziel, die Verteidigungsfähigkeiten und die Erkennung von Bedrohungen zu unterstützen.",
         "help": "Der reine Empfang von Bedrohungsinformationen schafft noch keinen Mehrwert -- erst die Integration in Ihre Sicherheitssysteme macht den Austausch wirksam. IoCs (z. B. bösartige IP-Adressen, Datei-Hashes, Domains) sollten automatisiert in Ihre SIEM-, Firewall- und Endpoint-Detection-Systeme eingespeist werden. TTPs sollten in Ihre Detektionsregeln einfließen. Dafür benötigen Sie Werkzeuge wie STIX/TAXII-kompatible Threat-Intelligence-Plattformen und definierte Prozesse zur Operationalisierung.",
         "maturity": {
           "level0": "Keine systematische Verarbeitung von Bedrohungsindikatoren; kein Einsatz von Threat-Intelligence-Werkzeugen",
@@ -3627,19 +3627,19 @@
       },
       "iaQ5": {
         "title": "Werden die Aufsichtsbehörden über die Teilnahme an Informationsaustauschvereinbarungen informiert?",
-        "tooltip": "Art. 45 Abs. 3 DORA sieht vor, dass Finanzunternehmen die zuständige Behörde über ihre Teilnahme an Informationsaustauschvereinbarungen unterrichten. Die Aufsichtsbehörde soll Kenntnis über die Teilnahme haben und kann Hinweise zur Gestaltung des Austauschs geben.",
-        "help": "DORA verlangt Transparenz gegenüber der Aufsichtsbehörde bezüglich Ihrer Teilnahme an Informationsaustauschvereinbarungen. Sie müssen Ihre zuständige Behörde (z. B. BaFin) informieren, an welchen Austauschvereinbarungen Sie teilnehmen. Dies dient der Aufsicht und ermöglicht es der Behörde, bei Bedarf die Einhaltung der Vertraulichkeits- und Datenschutzanforderungen zu überprüfen. Die Meldung sollte Art und Zweck der Vereinbarung, die beteiligten Partner und den Umfang des Austauschs umfassen.",
+        "tooltip": "Art. 45 Abs. 3 DORA: Finanzunternehmen teilen den zuständigen Behörden ihre Einbindung in Vereinbarungen über den Austausch von Informationen mit, sobald ihre Mitwirkung bestätigt wurde bzw. endet.",
+        "help": "Nehmen Sie an Vereinbarungen über den Austausch von Informationen teil, teilen Sie dies Ihrer zuständigen Behörde mit -- und zwar sobald Ihre Mitwirkung bestätigt wurde und ebenso, sobald sie endet (Art. 45 Abs. 3 DORA). Legen Sie fest, wer die Mitteilung abgibt, und bewahren Sie einen Nachweis auf.",
         "maturity": {
           "level0": "Keine Meldung an die Aufsichtsbehörde über Informationsaustauschvereinbarungen; keine Kenntnis der Meldepflicht",
-          "level1": "Kenntnis der Informationspflicht nach Art. 45 Abs. 2 DORA, aber noch keine Meldung an die Aufsichtsbehörde erfolgt",
+          "level1": "Kenntnis der Informationspflicht nach Art. 45 Abs. 3 DORA, aber noch keine Meldung an die Aufsichtsbehörde erfolgt",
           "level2": "Aufsichtsbehörde über bestehende Teilnahme an Austauschvereinbarungen informiert, aber kein laufender Aktualisierungsprozess",
-          "level3": "Vollständige und aktuelle Meldung aller Informationsaustauschvereinbarungen an die zuständige Aufsichtsbehörde gemäß Art. 45 Abs. 2 DORA mit regelmäßiger Aktualisierung bei Änderungen und dokumentiertem Meldeprozess"
+          "level3": "Vollständige und aktuelle Meldung aller Informationsaustauschvereinbarungen an die zuständige Aufsichtsbehörde gemäß Art. 45 Abs. 3 DORA mit regelmäßiger Aktualisierung bei Änderungen und dokumentiertem Meldeprozess"
         }
       },
       "irmQ1": {
         "title": "Verfügt Ihr Finanzunternehmen über einen dokumentierten IKT-Risikomanagementrahmen gemäß DORA?",
-        "tooltip": "Art. 6 Abs. 1-2 DORA (EU 2022/2554) verpflichtet Finanzunternehmen, einen soliden, umfassenden und gut dokumentierten IKT-Risikomanagementrahmen einzurichten. Dieser muss Strategien, Leitlinien, Verfahren sowie IKT-Protokolle und -Werkzeuge umfassen, die zum Schutz aller IKT-Assets erforderlich sind. Die Delegierte Verordnung (EU) 2024/1774 (RTS zum IKT-Risikomanagement) konkretisiert die Anforderungen an den Rahmen.",
-        "help": "Der IKT-Risikomanagementrahmen ist das zentrale Steuerungsinstrument für Ihre digitale operationale Resilienz. Er muss mindestens eine IKT-Sicherheitsstrategie, Richtlinien zum Schutz der Verfügbarkeit, Authentizität, Integrität und Vertraulichkeit von Daten sowie einen klaren Verantwortungsrahmen enthalten. Das Leitungsorgan muss den Rahmen genehmigen und dessen Umsetzung aktiv überwachen. Für kleinere Finanzunternehmen gelten vereinfachte Anforderungen nach Art. 16 DORA.",
+        "tooltip": "Art. 6 Abs. 1-2 DORA (EU 2022/2554) verpflichtet Finanzunternehmen, einen soliden, umfassenden und gut dokumentierten IKT-Risikomanagementrahmen einzurichten. Dieser muss Strategien, Leit- und Richtlinien, Verfahren sowie IKT-Protokolle und -Tools umfassen, die zum Schutz aller IKT-Assets erforderlich sind. Die Delegierte Verordnung (EU) 2024/1774 (RTS zum IKT-Risikomanagement) konkretisiert die Anforderungen an den Rahmen.",
+        "help": "Der IKT-Risikomanagementrahmen ist das zentrale Steuerungsinstrument für Ihre digitale operationale Resilienz. Er umfasst mindestens Strategien, Leit- und Richtlinien, Verfahren sowie IKT-Protokolle und -Tools zum Schutz aller Informations- und IKT-Assets (Art. 6 Abs. 2 DORA). Das Leitungsorgan definiert, genehmigt, überwacht und verantwortet die Umsetzung (Art. 5 Abs. 2 DORA). Für die in Art. 16 Abs. 1 DORA genannten Finanzunternehmen gilt ein vereinfachter IKT-Risikomanagementrahmen.",
         "maturity": {
           "level0": "Kein dokumentierter IKT-Risikomanagementrahmen vorhanden",
           "level1": "Einzelne IKT-Richtlinien existieren, aber kein kohärenter Rahmen; keine formale Genehmigung durch das Leitungsorgan",
@@ -3649,8 +3649,8 @@
       },
       "irmQ2": {
         "title": "Führen Sie ein vollständiges Inventar aller IKT-Assets und deren Abhängigkeiten?",
-        "tooltip": "Art. 8 Abs. 1-4 DORA verpflichtet Finanzunternehmen, alle IKT-gestützten Geschäftsfunktionen, Informationsassets und IKT-Assets zu identifizieren, zu klassifizieren und zu dokumentieren. Die Delegierte Verordnung (EU) 2024/1774 konkretisiert die Anforderungen an die Asset-Identifizierung und die Zuordnung zu kritischen oder wichtigen Funktionen.",
-        "help": "Sie müssen ein aktuelles Verzeichnis aller IKT-Assets führen -- dazu gehören Hardware, Software, Netzwerkkomponenten, Datenbanken und Cloud-Dienste. Besonders wichtig ist die Zuordnung zu geschäftskritischen Funktionen: Welche IKT-Assets unterstützen welche Geschäftsprozesse? Wo bestehen Abhängigkeiten zu IKT-Drittanbietern? Das Inventar muss regelmäßig aktualisiert werden, insbesondere nach wesentlichen Änderungen der IKT-Infrastruktur.",
+        "tooltip": "Art. 8 Abs. 1 DORA: Finanzunternehmen ermitteln und klassifizieren alle IKT-gestützten Unternehmensfunktionen sowie die Informations- und IKT-Assets, die diese Funktionen unterstützen, und dokumentieren sie. Nach Abs. 4 ermitteln sie alle Informations- und IKT-Assets und erfassen deren Konfiguration, Verbindungen und Interdependenzen. Nach Abs. 6 führen sie dafür Inventare, die sie regelmäßig und bei jeder wesentlichen Änderung aktualisieren. Die Delegierte Verordnung (EU) 2024/1774 enthält Vorgaben für das Management von IKT-Assets.",
+        "help": "Sie müssen ein aktuelles Verzeichnis aller IKT-Assets führen -- dazu gehören Hardware, Software, Netzwerkkomponenten, Datenbanken und Cloud-Dienste. Besonders wichtig ist die Zuordnung zu geschäftskritischen Funktionen: Welche IKT-Assets unterstützen welche Geschäftsprozesse? Wo bestehen Abhängigkeiten zu IKT-Drittdienstleistern? Das Inventar muss regelmäßig aktualisiert werden, insbesondere nach wesentlichen Änderungen der IKT-Infrastruktur.",
         "maturity": {
           "level0": "Kein IKT-Asset-Inventar vorhanden; keine Übersicht über IKT-gestützte Geschäftsfunktionen",
           "level1": "Teilweises Inventar vorhanden, aber unvollständig; Abhängigkeiten und Zuordnung zu Geschäftsfunktionen nicht systematisch erfasst",
@@ -3660,7 +3660,7 @@
       },
       "irmQ3": {
         "title": "Sind angemessene IKT-Sicherheitsmaßnahmen zum Schutz und zur Prävention gemäß DORA implementiert?",
-        "tooltip": "Art. 9 Abs. 1-4 DORA fordert Finanzunternehmen auf, IKT-Systeme und -Werkzeuge dauerhaft zu überwachen und zu kontrollieren, um deren Sicherheit und Funktionsfähigkeit zu gewährleisten. Dies umfasst Maßnahmen zur Minimierung der Auswirkungen von IKT-Risiken durch den Einsatz geeigneter Strategien, Leitlinien, Verfahren und Werkzeuge.",
+        "tooltip": "Nach Art. 9 Abs. 1 DORA überwachen und kontrollieren Finanzunternehmen kontinuierlich die Sicherheit und das Funktionieren der IKT-Systeme und -Tools und minimieren durch angemessene IKT-Sicherheitstools, -Richtlinien und -Verfahren die Auswirkungen von IKT-Risiken. Nach Abs. 4 gehören dazu unter anderem eine Informationssicherheitsleitlinie, ein solides Netzwerk- und Infrastrukturmanagement, Richtlinien zur Beschränkung des physischen oder logischen Zugangs, starke Authentifizierungsmechanismen, ein IKT-Änderungsmanagement sowie dokumentierte Richtlinien für Patches und Updates.",
         "help": "Schutz- und Präventionsmaßnahmen nach DORA umfassen unter anderem: Zugriffsmanagement mit dem Least-Privilege-Prinzip, Verschlüsselung von Daten in Ruhe und während der Übertragung, Netzwerksegmentierung, regelmäßiges Patch-Management sowie Maßnahmen zur physischen Sicherheit der IKT-Infrastruktur. Diese Maßnahmen müssen risikobasiert auf Basis der IKT-Risikoanalyse dimensioniert sein.",
         "maturity": {
           "level0": "Keine systematischen IKT-Schutz- und Präventionsmaßnahmen implementiert",
@@ -3671,7 +3671,7 @@
       },
       "irmQ4": {
         "title": "Verfügen Sie über Mechanismen zur Erkennung anomaler Aktivitäten in Ihren IKT-Systemen?",
-        "tooltip": "Art. 10 Abs. 1-2 DORA verpflichtet Finanzunternehmen, Mechanismen einzurichten, um anomale Aktivitäten, einschließlich IKT-bezogener Vorfälle und Leistungsprobleme, unverzüglich zu erkennen. Dazu gehören automatisierte Überwachungswerkzeuge, die Alarm auslösen, wenn vordefinierte Schwellenwerte überschritten werden.",
+        "tooltip": "Art. 10 Abs. 1 DORA: Finanzunternehmen verfügen über Mechanismen, um anomale Aktivitäten, darunter Probleme bei der Leistung von IKT-Netzwerken und IKT-bezogene Vorfälle, umgehend zu erkennen. Nach Abs. 2 ermöglichen die Erkennungsmechanismen mehrere Kontrollebenen und legen Alarmschwellen und -kriterien fest, einschließlich automatischer Warnmechanismen für die zuständigen Mitarbeiter.",
         "help": "Die Erkennung anomaler Aktivitäten erfordert technische Werkzeuge wie SIEM-Systeme (Security Information and Event Management), Intrusion-Detection-Systeme (IDS), Netzwerk-Anomalieerkennung und User-Behaviour-Analytics. DORA verlangt, dass diese Mechanismen ausreichend getestet werden und mehrere Kontrollschichten (Defence-in-Depth) umfassen. Für kritische oder wichtige Funktionen müssen Erkennungsfähigkeiten rund um die Uhr gewährleistet sein.",
         "maturity": {
           "level0": "Keine Mechanismen zur Erkennung anomaler Aktivitäten in IKT-Systemen vorhanden",
@@ -3682,8 +3682,8 @@
       },
       "irmQ5": {
         "title": "Sind Backup-Richtlinien und Wiederherstellungsverfahren für kritische IKT-Systeme etabliert und getestet?",
-        "tooltip": "Art. 12 Abs. 1-2 DORA fordert Finanzunternehmen, IKT-Geschäftsfortführungsleitlinien und -pläne sowie Wiederherstellungspläne festzulegen, die regelmäßig getestet werden müssen. Die Backup-Richtlinien müssen den Umfang, die Häufigkeit und die Aufbewahrungsdauer der Datensicherungen sowie Verfahren zur sicheren Wiederherstellung festlegen.",
-        "help": "Ihre Backup- und Wiederherstellungsverfahren müssen sicherstellen, dass Sie kritische IKT-Systeme und Daten innerhalb definierter Zeitrahmen wiederherstellen können (Recovery Time Objective / Recovery Point Objective). DORA verlangt, dass Backups physisch und logisch von der Produktionsumgebung getrennt aufbewahrt werden, die Wiederherstellung regelmäßig getestet wird und die Ergebnisse dokumentiert werden. Besonderes Augenmerk liegt auf der Fähigkeit, nach einem Cyberangriff auf saubere Datenbestände zurückgreifen zu können.",
+        "tooltip": "Art. 12 Abs. 1 DORA: Finanzunternehmen entwickeln und dokumentieren Richtlinien und Verfahren für die Datensicherung, die den Umfang der zu sichernden Daten und die Mindesthäufigkeit der Sicherung festlegen, sowie Wiedergewinnungs- und Wiederherstellungsverfahren und -methoden. Nach Abs. 2 sind die Datensicherungsverfahren sowie die Wiedergewinnungs- und Wiederherstellungsverfahren und -methoden regelmäßig zu testen.",
+        "help": "Ihre Verfahren für Datensicherung und Wiederherstellung sollen sicherstellen, dass Sie IKT-Systeme und Daten nach einem Ausfall wiederherstellen können. Bei der Wiedergewinnung gesicherter Daten mithilfe eigener Systeme verlangt Art. 12 Abs. 3 DORA IKT-Systeme, die vom Quellsystem physisch und logisch getrennt sind. Die Verfahren sind regelmäßig zu testen (Art. 12 Abs. 2 DORA); halten Sie die Ergebnisse fest.",
         "maturity": {
           "level0": "Keine dokumentierten Backup-Richtlinien; Wiederherstellung wurde nie getestet",
           "level1": "Backups werden erstellt, aber ohne dokumentierte Richtlinie; Wiederherstellungstests finden nicht statt oder nur ad hoc",
@@ -3693,7 +3693,7 @@
       },
       "rtQ1": {
         "title": "Verfügt Ihr Finanzunternehmen über ein Programm für Tests der digitalen operationalen Resilienz?",
-        "tooltip": "Art. 24 Abs. 1-2 DORA verpflichtet Finanzunternehmen, ein umfassendes Programm für Tests der digitalen operationalen Resilienz als integralen Bestandteil des IKT-Risikomanagementrahmens einzurichten. Das Programm muss verschiedene Tests umfassen und risikobasiert unter Berücksichtigung der sich wandelnden IKT-Risikolandschaft ausgestaltet sein.",
+        "tooltip": "Art. 24 Abs. 1 DORA: Finanzunternehmen, die keine Kleinstunternehmen sind, erstellen, pflegen und überprüfen ein solides und umfassendes Programm für das Testen der digitalen operationalen Resilienz als integralen Bestandteil des IKT-Risikomanagementrahmens. Nach Abs. 2 umfasst das Programm eine Reihe von Bewertungen, Tests, Methoden, Verfahren und Tools; nach Abs. 3 ist ein risikobasierter Ansatz anzuwenden.",
         "help": "Ein Testprogramm für digitale operationale Resilienz geht über klassische IT-Sicherheitstests hinaus. Es umfasst Schwachstellenscans, Open-Source-Analysen, Netzwerksicherheitsbewertungen, Gap-Analysen, physische Sicherheitsüberprüfungen, Quellcode-Reviews, szenariobasierte Tests, Kompatibilitätstests, Leistungstests und End-to-End-Tests. Das Programm muss risikobasiert priorisiert und jährlich aktualisiert werden.",
         "maturity": {
           "level0": "Kein Programm für Tests der digitalen operationalen Resilienz vorhanden",
@@ -3704,8 +3704,8 @@
       },
       "rtQ2": {
         "title": "Werden alle kritischen IKT-Systeme und -Anwendungen mindestens jährlich angemessenen Sicherheitstests unterzogen?",
-        "tooltip": "Art. 25 Abs. 1-3 DORA listet die geforderten Testarten auf: Schwachstellenbewertungen und -scans, Open-Source-Analysen, Netzwerksicherheitsbewertungen, Gap-Analysen, physische Sicherheitsüberprüfungen, Fragebögen und Scans von Softwarelösungen, Quellcode-Reviews, szenariobasierte Tests, Kompatibilitätstests, Leistungstests, End-to-End-Tests und Penetrationstests.",
-        "help": "DORA fordert verschiedene Arten von Tests, die über reine Penetrationstests hinausgehen. Jedes Jahr müssen kritische und wichtige IKT-Systeme durch unabhängige, fachkundige Prüfer getestet werden -- entweder intern (wenn keine Interessenkonflikte bestehen) oder extern. Die Testergebnisse müssen dokumentiert, Schwachstellen priorisiert und zeitnah behoben werden. Wichtig: Alle Testmethoden aus Art. 25 DORA sollten im Testprogramm berücksichtigt werden.",
+        "tooltip": "Nach Art. 24 Abs. 6 DORA stellen Finanzunternehmen, die keine Kleinstunternehmen sind, sicher, dass bei allen IKT-Systemen und -Anwendungen, die kritische oder wichtige Funktionen unterstützen, mindestens einmal jährlich angemessene Tests durchgeführt werden. Art. 25 Abs. 1 DORA nennt als angemessene Tests etwa: Schwachstellenbewertungen und -scans, Open-Source-Analysen, Netzwerksicherheitsbewertungen, Lückenanalysen, Überprüfungen der physischen Sicherheit, Fragebögen und Scans von Softwarelösungen, Quellcodeprüfungen soweit durchführbar, szenariobasierte Tests, Kompatibilitätstests, Leistungstests, End-to-End-Tests und Penetrationstests.",
+        "help": "DORA fordert verschiedene Arten von Tests, die über reine Penetrationstests hinausgehen. Jedes Jahr müssen kritische und wichtige IKT-Systeme durch unabhängige, fachkundige Prüfer getestet werden -- entweder intern (wenn keine Interessenkonflikte bestehen) oder extern. Die Testergebnisse müssen dokumentiert, Schwachstellen priorisiert und zeitnah behoben werden. Art. 25 Abs. 1 DORA nennt die Testarten als Beispiele („wie etwa“).",
         "maturity": {
           "level0": "Keine regelmäßigen Sicherheitstests der IKT-Systeme",
           "level1": "Gelegentliche Schwachstellenscans, aber keine systematische jährliche Testdurchführung für kritische Systeme",
@@ -3715,13 +3715,13 @@
       },
       "rtQ3": {
         "title": "Wurde geprüft, ob Ihr Finanzunternehmen bedrohungsgesteuerte Penetrationstests (TLPT) durchführen muss?",
-        "tooltip": "Art. 26 Abs. 1-8 DORA verpflichtet bestimmte Finanzunternehmen, mindestens alle drei Jahre bedrohungsgesteuerte Penetrationstests (Threat-Led Penetration Testing, TLPT) durchzuführen. Die zuständige Behörde identifiziert die betroffenen Finanzunternehmen unter Berücksichtigung von Systemrelevanz, IKT-Risikoprofil und IKT-Reifegrad. Die RTS JC 2024 53 konkretisieren die TLPT-Anforderungen.",
+        "tooltip": "Nach Art. 26 Abs. 1 DORA führen die von der zuständigen Behörde ermittelten Finanzunternehmen mindestens alle drei Jahre erweiterte Tests anhand von bedrohungsorientierten Penetrationstests (TLPT) durch; Kleinstunternehmen und die in Art. 16 Abs. 1 genannten Unternehmen sind ausgenommen. Nach Abs. 8 ermittelt die Behörde die Unternehmen anhand wirkungsbezogener Faktoren, etwaiger Bedenken hinsichtlich der Finanzstabilität sowie des IKT-Risikoprofils und des IKT-Reifegrads. Die Kriterien und Anforderungen präzisiert die Delegierte Verordnung (EU) 2025/1190.",
         "help": "TLPT unterscheidet sich grundlegend von herkömmlichen Penetrationstests: Es handelt sich um simulierte Cyberangriffe, die auf realen Bedrohungsinformationen basieren und kritische Geschäftsfunktionen in der Produktionsumgebung testen. Nicht jedes Finanzunternehmen muss TLPT durchführen -- die Aufsichtsbehörde bestimmt die betroffenen Unternehmen. Falls Sie betroffen sind, müssen Sie einen qualifizierten externen Tester beauftragen und den TIBER-EU-Rahmen als Referenz heranziehen.",
         "maturity": {
           "level0": "Keine Auseinandersetzung mit der TLPT-Pflicht; unbekannt, ob das Unternehmen betroffen ist",
           "level1": "TLPT-Anforderungen nach Art. 26 DORA sind bekannt, aber keine Klärung mit der Aufsichtsbehörde erfolgt",
           "level2": "Klärung mit Aufsichtsbehörde erfolgt; bei TLPT-Pflicht: Planung begonnen, aber noch kein TLPT durchgeführt",
-          "level3": "TLPT-Status mit Aufsichtsbehörde geklärt; bei TLPT-Pflicht: mindestens ein TLPT gemäß Art. 26 DORA und RTS JC 2024 53 erfolgreich durchgeführt, Ergebnisse nachverfolgt und Verbesserungen umgesetzt"
+          "level3": "TLPT-Status mit Aufsichtsbehörde geklärt; bei TLPT-Pflicht: mindestens ein TLPT gemäß Art. 26 DORA und Delegierter Verordnung (EU) 2025/1190 erfolgreich durchgeführt, Ergebnisse nachverfolgt und Verbesserungen umgesetzt"
         }
       },
       "rtQ4": {
@@ -3736,14 +3736,14 @@
         }
       },
       "rtQ5": {
-        "title": "Erfüllen die eingesetzten TLPT-Tester die Anforderungen an Eignung, Zertifizierung, Unabhängigkeit und Versicherungsschutz?",
-        "tooltip": "Art. 27 Abs. 1-3 DORA definiert spezifische Anforderungen an TLPT-Tester: Eignung und Ansehen, technische und organisatorische Fähigkeiten im Bereich Threat Intelligence, Penetrationstests und Red Teaming, Zertifizierung durch eine Akkreditierungsstelle, Berufshaftpflichtversicherung, formale Verhaltenskodizes und Management von Interessenkonflikten.",
+        "title": "Erfüllen die eingesetzten TLPT-Tester die Anforderungen des Art. 27 DORA an Eignung, Fachwissen und Versicherungsschutz?",
+        "tooltip": "Nach Art. 27 Abs. 1 DORA ziehen Finanzunternehmen für TLPT nur Tester heran, die (a) von höchster Eignung und Ansehen sind, (b) Fachwissen in den Bereichen Bedrohungsanalyse, Penetrationstests und Red-Team-Tests nachweisen, (c) von einer Akkreditierungsstelle in einem Mitgliedstaat zertifiziert wurden oder formale Verhaltenskodizes oder ethische Rahmenregelungen einhalten, (d) eine unabhängige Gewähr oder einen Auditbericht zum Management der mit TLPT verbundenen Risiken vorlegen und (e) durch einschlägige Berufshaftpflichtversicherungen abgesichert sind. Für interne Tester gelten nach Abs. 2 zusätzliche Bedingungen.",
         "help": "Die Anforderungen an TLPT-Tester sind bewusst hoch angesetzt, da TLPT direkt in der Produktionsumgebung stattfinden und reale Geschäftsprozesse betreffen. Der Tester muss nachweisen, dass er über Erfahrung mit TIBER-EU oder vergleichbaren Rahmenwerken verfügt. Die Aufsichtsbehörde prüft die Eignung des Testers und kann Einwände erheben. Nach Abschluss des TLPT muss der Tester einen umfassenden Bericht vorlegen, der die Testergebnisse und Empfehlungen zur Behebung dokumentiert.",
         "maturity": {
           "level0": "Keine Anforderungen an TLPT-Tester definiert; kein Überblick über Art. 27 DORA-Anforderungen",
           "level1": "Anforderungen nach Art. 27 DORA sind bekannt, aber noch nicht in einen Auswahlprozess oder Vertrag überführt",
           "level2": "Anforderungskatalog für TLPT-Tester erstellt mit Prüfung von Akkreditierung, Versicherung und Unabhängigkeit, aber noch kein TLPT mit qualifiziertem Tester durchgeführt",
-          "level3": "Vollständige Einhaltung der Art. 27 DORA-Anforderungen: TLPT durch akkreditierten, unabhängigen Tester mit Berufshaftpflicht durchgeführt, Ergebnisse von der Aufsichtsbehörde anerkannt, Verbesserungsmaßnahmen nachverfolgt"
+          "level3": "Vollständige Einhaltung der Art. 27 DORA-Anforderungen: Tester nachweislich geeignet, zertifiziert oder an einen formalen Verhaltenskodex gebunden, mit Berufshaftpflicht; Nachweise liegen vor, Verbesserungsmaßnahmen werden nachverfolgt"
         }
       },
       "vmQ1": {
@@ -3760,7 +3760,7 @@
       "vmQ2": {
         "title": "Werden IKT-bezogene Vorfälle nach den DORA-Kriterien klassifiziert?",
         "tooltip": "Art. 18 Abs. 1-2 DORA legt fest, dass Finanzunternehmen IKT-bezogene Vorfälle anhand bestimmter Kriterien klassifizieren müssen. Die Klassifizierungskriterien umfassen unter anderem: Anzahl betroffener Kunden, Dauer des Vorfalls, geografische Ausbreitung, Datenverluste, Kritikalität betroffener Dienste und wirtschaftliche Auswirkungen. Die Delegierte Verordnung (EU) 2024/1772 definiert die Schwellenwerte für schwerwiegende Vorfälle.",
-        "help": "DORA unterscheidet zwischen IKT-bezogenen Vorfällen und schwerwiegenden IKT-bezogenen Vorfällen. Nur schwerwiegende Vorfälle sind meldepflichtig. Die Klassifizierung erfolgt anhand von sieben Kriterien: Anzahl betroffener Kunden/Gegenparteien, Dauer des Vorfalls, geografische Ausbreitung, Datenverluste, Auswirkungen auf kritische Dienste, wirtschaftliche Auswirkungen und Kritikalität der betroffenen Dienste. Sie benötigen ein Verfahren, das diese Kriterien systematisch prüft und dokumentiert.",
+        "help": "DORA unterscheidet zwischen IKT-bezogenen Vorfällen und schwerwiegenden IKT-bezogenen Vorfällen. Meldepflichtig sind die schwerwiegenden Vorfälle (Art. 19 Abs. 1 DORA). Die Klassifizierung erfolgt anhand der sechs Kriterien des Art. 18 Abs. 1 lit. a-f DORA: betroffene Kunden, Gegenparteien und Transaktionen, Dauer des Vorfalls, geografische Ausbreitung, Datenverluste, Kritikalität der betroffenen Dienste und wirtschaftliche Auswirkungen. Die Wesentlichkeitsschwellen stehen in der Delegierten Verordnung (EU) 2024/1772. Sie benötigen ein Verfahren, das diese Kriterien systematisch prüft und dokumentiert.",
         "maturity": {
           "level0": "Keine Klassifizierung von IKT-Vorfällen nach Schweregrad",
           "level1": "Vorfälle werden ad hoc bewertet, aber nicht anhand der DORA-Klassifizierungskriterien",
@@ -3770,8 +3770,8 @@
       },
       "vmQ3": {
         "title": "Können Sie die DORA-Meldefristen für schwerwiegende IKT-bezogene Vorfälle an die Aufsichtsbehörde einhalten?",
-        "tooltip": "Art. 19 Abs. 1-4 DORA legt ein dreistufiges Meldeverfahren fest: Erstmeldung (innerhalb von 4 Stunden nach Klassifizierung als schwerwiegend, spätestens 24 Stunden nach Erkennung), Zwischenmeldung (innerhalb von 72 Stunden nach der Erstmeldung) und Abschlussbericht (innerhalb eines Monats nach der letzten Zwischenmeldung). Die Fristen sind in der Delegierten Verordnung (EU) 2025/301 festgelegt; die ITS nach Art. 20 DORA definieren die Standardformulare.",
-        "help": "Das Meldeverfahren nach DORA ist zeitkritisch: Sobald ein IKT-Vorfall als schwerwiegend klassifiziert wird, läuft die Uhr. Sie haben maximal 4 Stunden für die Erstmeldung und müssen Zwischen- sowie Abschlussberichte fristgerecht nachreichen. Dafür benötigen Sie vorbereitete Meldeformulare, klare interne Kommunikationswege und benannte Verantwortliche, die auch außerhalb der Geschäftszeiten verfügbar sind. Testen Sie den Meldeprozess regelmäßig, um die Fristen im Ernstfall einhalten zu können.",
+        "tooltip": "Nach Art. 19 Abs. 4 DORA legen Finanzunternehmen der zuständigen Behörde eine Erstmeldung, eine Zwischenmeldung und eine Abschlussmeldung vor. Die Fristen stehen in Art. 5 der Delegierten Verordnung (EU) 2025/301: Erstmeldung innerhalb von vier Stunden nach Einstufung als schwerwiegend und spätestens 24 Stunden, nachdem das Finanzunternehmen Kenntnis von dem Vorfall erlangt hat; Zwischenmeldung spätestens 72 Stunden nach der Erstmeldung; Abschlussmeldung spätestens einen Monat nach der Zwischenmeldung oder der letzten aktualisierten Zwischenmeldung. Die Durchführungsverordnung (EU) 2025/302 legt die Standardformulare fest.",
+        "help": "Das Meldeverfahren nach DORA ist zeitkritisch: Sobald ein IKT-Vorfall als schwerwiegend klassifiziert wird, läuft die Uhr. Sie haben ab der Einstufung vier Stunden für die Erstmeldung (spätestens 24 Stunden nach Kenntnis des Vorfalls) und müssen Zwischen- sowie Abschlussberichte fristgerecht nachreichen. Dafür benötigen Sie vorbereitete Meldeformulare, klare interne Kommunikationswege und benannte Verantwortliche, die auch außerhalb der Geschäftszeiten verfügbar sind. Testen Sie den Meldeprozess regelmäßig, um die Fristen im Ernstfall einhalten zu können.",
         "maturity": {
           "level0": "Kein Meldeverfahren für IKT-Vorfälle an Aufsichtsbehörden etabliert",
           "level1": "Grundsätzliche Kenntnis der Meldepflicht, aber kein vorbereiteter Prozess zur Einhaltung der Fristen",
@@ -3781,7 +3781,7 @@
       },
       "vmQ4": {
         "title": "Werden Standardformulare und -vorlagen für die Vorfallmeldung an die Aufsichtsbehörde verwendet?",
-        "tooltip": "Art. 20 Abs. 1 DORA ermächtigt die ESAs, ITS-Entwürfe zu erarbeiten, die Standardformulare, -vorlagen und -verfahren für die Meldung schwerwiegender IKT-bezogener Vorfälle festlegen. Die Durchführungsverordnung (EU) 2025/302 enthält die konkreten Meldeformulare mit den erforderlichen Datenfeldern für Erst-, Zwischen- und Abschlussmeldungen.",
+        "tooltip": "Nach Art. 20 lit. b DORA erarbeiten die Europäischen Aufsichtsbehörden technische Durchführungsstandards mit Standardformularen, Vorlagen und Verfahren für die Meldung eines schwerwiegenden IKT-bezogenen Vorfalls oder einer erheblichen Cyberbedrohung. Sie sind als Durchführungsverordnung (EU) 2025/302 erlassen. Nach Art. 19 Abs. 1 DORA erstellen Finanzunternehmen die Meldungen unter Verwendung dieser Vorlage.",
         "help": "Die Verwendung der offiziellen Standardformulare ist nicht optional, sondern Pflicht. Die Formulare enthalten spezifische Datenfelder zu Vorfallbeschreibung, betroffenen Diensten, Auswirkungen auf Kunden, ergriffenen Maßnahmen und Root-Cause-Analyse. Sie sollten die Formulare bereits vor einem Vorfall in Ihre Meldeprozesse integrieren, damit im Ernstfall keine Zeit mit der Suche nach den richtigen Vorlagen verloren geht. Automatisierungen -- etwa durch Verknüpfung mit Ihrem SIEM-System -- beschleunigen die Befüllung.",
         "maturity": {
           "level0": "Keine Kenntnis der DORA-Standardformulare; keine Meldevorlagen vorhanden",
@@ -3792,7 +3792,7 @@
       },
       "vmQ5": {
         "title": "Werden erhebliche Cyberbedrohungen neben Vorfällen ebenfalls identifiziert und bei Bedarf an die Aufsichtsbehörde gemeldet?",
-        "tooltip": "Art. 19 Abs. 2 DORA sieht vor, dass Finanzunternehmen erhebliche Cyberbedrohungen freiwillig an die zuständige Behörde melden können, wenn sie diese als relevant für das Finanzsystem, die Dienstleistungsnutzer oder die Kunden erachten.",
+        "tooltip": "Nach Art. 17 Abs. 2 DORA erfassen Finanzunternehmen alle IKT-bezogenen Vorfälle und erheblichen Cyberbedrohungen. Nach Art. 19 Abs. 2 DORA können sie der zuständigen Behörde erhebliche Cyberbedrohungen auf freiwilliger Basis melden, wenn sie der Auffassung sind, dass die Bedrohung für das Finanzsystem, die Dienstnutzer oder die Kunden relevant ist.",
         "help": "Neben der Pflichtmeldung schwerwiegender Vorfälle sieht DORA die freiwillige Meldung erheblicher Cyberbedrohungen vor. Dies dient dem Schutz des gesamten Finanzsektors: Wenn Ihr Unternehmen eine neuartige Angriffsmethode erkennt, die auch andere Finanzunternehmen treffen könnte, sollte diese Information geteilt werden. Dafür benötigen Sie einen Prozess, der Cyberbedrohungen systematisch bewertet und bei Relevanz für den Sektor eine Meldung an die Aufsichtsbehörde auslöst.",
         "maturity": {
           "level0": "Keine systematische Bewertung von Cyberbedrohungen; keine Kenntnis der freiwilligen Meldemöglichkeit",
@@ -3817,8 +3817,8 @@
           "description": "Art. 24-27 DORA: Jährliche Basistests und für von der Aufsicht bestimmte Finanzunternehmen alle 3 Jahre bedrohungsgeleitete Penetrationstests (TLPT) sind Pflicht."
         },
         "q4": {
-          "title": "Führen Sie ein Register aller IKT-Drittanbieter und überwachen deren Risiken?",
-          "description": "Art. 28-30 DORA: Ein vollständiges IKT-Drittanbieterregister, vertragliche Mindestanforderungen und Exit-Strategien für kritische Dienste sind vorgeschrieben."
+          "title": "Führen Sie ein Register aller IKT-Drittdienstleister und überwachen deren Risiken?",
+          "description": "Art. 28-30 DORA: Ein vollständiges IKT-Drittdienstleisterregister, vertragliche Mindestanforderungen und Exit-Strategien für kritische Dienste sind vorgeschrieben."
         },
         "q5": {
           "title": "Nehmen Sie an einem Informationsaustausch über Cyberbedrohungen teil?",
@@ -3832,19 +3832,19 @@
     },
     "recommendations": {
       "da1": {
-        "description": "Führen Sie ein aktuelles Register aller IKT-Drittanbieter mit detaillierten Informationen zu erbrachten Dienstleistungen, Kritikalität und vertraglichen Vereinbarungen gemäß Art. 28 DORA. Das Register muss jederzeit aufsichtsrechtlich verfügbar sein.",
-        "firstStep": "Erfassen Sie alle bestehenden IKT-Drittanbieter systematisch und klassifizieren Sie diese nach Kritikalität (kritisch/wichtig/nicht-kritisch).",
-        "title": "Register für IKT-Drittanbieter führen"
+        "description": "Führen Sie ein aktuelles Register aller IKT-Drittdienstleister mit detaillierten Informationen zu erbrachten Dienstleistungen, Kritikalität und vertraglichen Vereinbarungen gemäß Art. 28 DORA. Das Register muss jederzeit aufsichtsrechtlich verfügbar sein.",
+        "firstStep": "Erfassen Sie alle bestehenden IKT-Drittdienstleister systematisch und klassifizieren Sie diese nach Kritikalität (kritisch/wichtig/nicht-kritisch).",
+        "title": "Register für IKT-Drittdienstleister führen"
       },
       "da2": {
-        "checklist": "IKT-Drittanbieterregister aufbauen (Art. 28 DORA)\nVertragliche Anforderungen prüfen und anpassen\nExit-Strategien für kritische IKT-Dienste entwickeln",
-        "description": "Stellen Sie sicher, dass alle Verträge mit IKT-Drittanbietern die zwingenden Klauseln gemäß Art. 30 DORA enthalten, insbesondere zu Prüfrechten, Ausstiegsregelungen, Subunternehmer-Management und Datenschutz.",
+        "checklist": "IKT-Drittdienstleisterregister aufbauen (Art. 28 DORA)\nVertragliche Anforderungen prüfen und anpassen\nExit-Strategien für kritische IKT-Dienste entwickeln",
+        "description": "Stellen Sie sicher, dass alle Verträge mit IKT-Drittdienstleistern die zwingenden Klauseln gemäß Art. 30 DORA enthalten, insbesondere zu Prüfrechten, Ausstiegsregelungen, Subunternehmer-Management und Datenschutz.",
         "firstStep": "Erstellen Sie eine Checkliste aller verpflichtenden Vertragsklauseln gemäß Art. 30 DORA und prüfen Sie bestehende Verträge.",
-        "title": "Vertragsklauseln für IKT-Drittanbieter implementieren"
+        "title": "Vertragsklauseln für IKT-Drittdienstleister implementieren"
       },
       "da3": {
-        "description": "Identifizieren Sie Konzentrationsrisiken durch kritische IKT-Drittanbieter und entwickeln Sie Ausstiegsstrategien sowie alternative Szenarien gemäß Art. 29 DORA. Vermeiden Sie Single-Points-of-Failure.",
-        "firstStep": "Analysieren Sie Abhängigkeiten von einzelnen Drittanbietern und identifizieren Sie kritische Konzentrationsrisiken (z.B. Cloud-Provider).",
+        "description": "Identifizieren Sie Konzentrationsrisiken durch kritische IKT-Drittdienstleister und entwickeln Sie Ausstiegsstrategien sowie alternative Szenarien gemäß Art. 29 DORA. Vermeiden Sie Single-Points-of-Failure.",
+        "firstStep": "Analysieren Sie Abhängigkeiten von einzelnen Drittdienstleistern und identifizieren Sie kritische Konzentrationsrisiken (z.B. Cloud-Provider).",
         "title": "Konzentrationsrisiken und Ausstiegsstrategien managen"
       },
       "gov1": {
@@ -3859,8 +3859,8 @@
       },
       "gov3": {
         "checklist": "IKT-Governance-Struktur etablieren\nVerantwortung der Geschäftsleitung für digitale Resilienz sicherstellen\nRegelmäßige Berichterstattung an Leitungsorgan etablieren",
-        "description": "Implementieren Sie ein risikobasiertes, proportionales IKT-Risikomanagement gemäß Art. 4, 6 DORA. Etablieren Sie strukturiertes internes Reporting zu IKT-Risiken, Vorfällen und Drittanbietern ans Leitungsorgan.",
-        "firstStep": "Definieren Sie Management-Dashboards mit KPIs für IKT-Risiken (z.B. Vorfallzahlen, Schwachstellen, Drittanbieterrisiken).",
+        "description": "Implementieren Sie ein risikobasiertes, proportionales IKT-Risikomanagement gemäß Art. 4, 6 DORA. Etablieren Sie strukturiertes internes Reporting zu IKT-Risiken, Vorfällen und Drittdienstleistern ans Leitungsorgan.",
+        "firstStep": "Definieren Sie Management-Dashboards mit KPIs für IKT-Risiken (z.B. Vorfallzahlen, Schwachstellen, Drittparteienrisiken).",
         "title": "Proportionalität und internes Reporting sicherstellen"
       },
       "ia1": {

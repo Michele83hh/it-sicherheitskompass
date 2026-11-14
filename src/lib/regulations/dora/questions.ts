@@ -31,7 +31,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.irmQ1.help',
     legalReference: {
       euArticle: 'Art. 6 Abs. 1-2 DORA',
-      bsigParagraph: 'RTS Art. 15 DORA (IKT-Risikomanagementrahmen)',
+      bsigParagraph: 'Delegierte Verordnung (EU) 2024/1774',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.irmQ1.maturity.level0',
@@ -48,8 +48,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.irmQ2.tooltip',
     helpKey: 'dora.questions.irmQ2.help',
     legalReference: {
-      euArticle: 'Art. 8 Abs. 1-4 DORA',
-      bsigParagraph: 'RTS Art. 15 DORA (Identifizierung von IKT-Assets)',
+      euArticle: 'Art. 8 Abs. 1, 4 und 6 DORA',
+      bsigParagraph: 'Delegierte Verordnung (EU) 2024/1774',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.irmQ2.maturity.level0',
@@ -67,7 +67,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.irmQ3.help',
     legalReference: {
       euArticle: 'Art. 9 Abs. 1-4 DORA',
-      bsigParagraph: 'RTS Art. 15 DORA (Schutz und Praevention)',
+      bsigParagraph: 'Delegierte Verordnung (EU) 2024/1774',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.irmQ3.maturity.level0',
@@ -85,7 +85,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.irmQ4.help',
     legalReference: {
       euArticle: 'Art. 10 Abs. 1-2 DORA',
-      bsigParagraph: 'RTS Art. 15 DORA (Erkennung anomaler Aktivitaeten)',
+      bsigParagraph: 'Delegierte Verordnung (EU) 2024/1774',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.irmQ4.maturity.level0',
@@ -103,7 +103,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.irmQ5.help',
     legalReference: {
       euArticle: 'Art. 12 Abs. 1-2 DORA',
-      bsigParagraph: 'RTS Art. 15 DORA (Backup- und Wiederherstellungspolitik)',
+      bsigParagraph: 'Delegierte Verordnung (EU) 2024/1774',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.irmQ5.maturity.level0',
@@ -125,7 +125,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.vmQ1.help',
     legalReference: {
       euArticle: 'Art. 17 Abs. 1-3 DORA',
-      bsigParagraph: 'RTS Art. 20 DORA (Klassifizierung von Vorfaellen)',
+      bsigParagraph: 'Delegierte Verordnung (EU) 2024/1772',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.vmQ1.maturity.level0',
@@ -143,7 +143,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.vmQ2.help',
     legalReference: {
       euArticle: 'Art. 18 Abs. 1-2 DORA',
-      bsigParagraph: 'RTS Art. 20 DORA (Kriterien fuer schwerwiegende Vorfaelle)',
+      bsigParagraph: 'Delegierte Verordnung (EU) 2024/1772',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.vmQ2.maturity.level0',
@@ -160,8 +160,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.vmQ3.tooltip',
     helpKey: 'dora.questions.vmQ3.help',
     legalReference: {
-      euArticle: 'Art. 19 Abs. 1-4 DORA',
-      bsigParagraph: 'RTS Art. 20 DORA (Meldung schwerwiegender IKT-Vorfaelle)',
+      euArticle: 'Art. 19 Abs. 1 und 4 DORA',
+      bsigParagraph: 'Art. 5 Delegierte Verordnung (EU) 2025/301',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.vmQ3.maturity.level0',
@@ -178,8 +178,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.vmQ4.tooltip',
     helpKey: 'dora.questions.vmQ4.help',
     legalReference: {
-      euArticle: 'Art. 20 Abs. 1 DORA',
-      bsigParagraph: 'ITS Art. 20 DORA (Standardformulare fuer Meldungen)',
+      euArticle: 'Art. 20 lit. b DORA',
+      bsigParagraph: 'Durchführungsverordnung (EU) 2025/302',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.vmQ4.maturity.level0',
@@ -196,8 +196,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.vmQ5.tooltip',
     helpKey: 'dora.questions.vmQ5.help',
     legalReference: {
-      euArticle: 'Art. 23 Abs. 1-4 DORA',
-      bsigParagraph: 'Art. 23 DORA (Cyberbedrohungsbenachrichtigung)',
+      euArticle: 'Art. 17 Abs. 2, Art. 19 Abs. 2 DORA',
+      bsigParagraph: 'Freiwillige Meldung erheblicher Cyberbedrohungen',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.vmQ5.maturity.level0',
@@ -218,8 +218,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.rtQ1.tooltip',
     helpKey: 'dora.questions.rtQ1.help',
     legalReference: {
-      euArticle: 'Art. 24 Abs. 1-2 DORA',
-      bsigParagraph: 'RTS Art. 26 DORA (Allgemeine Testanforderungen)',
+      euArticle: 'Art. 24 Abs. 1-3 DORA',
+      bsigParagraph: 'Allgemeine Anforderungen für das Testen',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.rtQ1.maturity.level0',
@@ -236,8 +236,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.rtQ2.tooltip',
     helpKey: 'dora.questions.rtQ2.help',
     legalReference: {
-      euArticle: 'Art. 25 Abs. 1-3 DORA',
-      bsigParagraph: 'RTS Art. 26 DORA (Testen von IKT-Werkzeugen und -Systemen)',
+      euArticle: 'Art. 24 Abs. 6, Art. 25 Abs. 1 DORA',
+      bsigParagraph: 'Testen von IKT-Tools und -Systemen',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.rtQ2.maturity.level0',
@@ -255,8 +255,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.rtQ3.tooltip',
     helpKey: 'dora.questions.rtQ3.help',
     legalReference: {
-      euArticle: 'Art. 26 Abs. 1-8 DORA',
-      bsigParagraph: 'RTS Art. 26 DORA (TLPT-Anforderungen)',
+      euArticle: 'Art. 26 Abs. 1 und 8 DORA',
+      bsigParagraph: 'Delegierte Verordnung (EU) 2025/1190',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.rtQ3.maturity.level0',
@@ -274,7 +274,7 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.rtQ4.tooltip',
     helpKey: 'dora.questions.rtQ4.help',
     legalReference: {
-      euArticle: 'Art. 26 Abs. 2-4 DORA',
+      euArticle: 'Art. 26 Abs. 2-3 DORA',
       bsigParagraph: 'Umfang und Durchführung von TLPT',
     },
     maturityDescriptions: {
@@ -293,7 +293,7 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.rtQ5.tooltip',
     helpKey: 'dora.questions.rtQ5.help',
     legalReference: {
-      euArticle: 'Art. 27 Abs. 1-3 DORA',
+      euArticle: 'Art. 27 Abs. 1-2 DORA',
       bsigParagraph: 'Art. 27 DORA (Anforderungen an TLPT-Tester)',
     },
     maturityDescriptions: {
@@ -315,8 +315,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.daQ1.tooltip',
     helpKey: 'dora.questions.daQ1.help',
     legalReference: {
-      euArticle: 'Art. 28 Abs. 1-3 DORA',
-      bsigParagraph: 'RTS Art. 28 Abs. 9 DORA (IKT-Drittanbieterrisiko)',
+      euArticle: 'Art. 28 Abs. 1 und 3 DORA',
+      bsigParagraph: 'Informationsregister (Art. 28 Abs. 3 und 9 DORA)',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.daQ1.maturity.level0',
@@ -333,8 +333,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.daQ2.tooltip',
     helpKey: 'dora.questions.daQ2.help',
     legalReference: {
-      euArticle: 'Art. 28 Abs. 4-8 DORA',
-      bsigParagraph: 'RTS Art. 28 Abs. 9 DORA (Vertragliche Anforderungen)',
+      euArticle: 'Art. 30 Abs. 1-2 DORA',
+      bsigParagraph: 'Wesentliche Vertragsbestimmungen',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.daQ2.maturity.level0',
@@ -352,7 +352,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.daQ3.help',
     legalReference: {
       euArticle: 'Art. 29 Abs. 1-2 DORA',
-      bsigParagraph: 'RTS Art. 28 Abs. 9 DORA (Konzentrationsrisiko)',
+      bsigParagraph: 'Vorläufige Bewertung des IKT-Konzentrationsrisikos',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.daQ3.maturity.level0',
@@ -369,8 +369,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.daQ4.tooltip',
     helpKey: 'dora.questions.daQ4.help',
     legalReference: {
-      euArticle: 'Art. 30 Abs. 1-5 DORA',
-      bsigParagraph: 'Art. 30 DORA (Wesentliche Vertragsbestimmungen)',
+      euArticle: 'Art. 30 Abs. 3 DORA',
+      bsigParagraph: 'Verträge zu kritischen oder wichtigen Funktionen',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.daQ4.maturity.level0',
@@ -388,8 +388,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.daQ5.tooltip',
     helpKey: 'dora.questions.daQ5.help',
     legalReference: {
-      euArticle: 'Art. 31 Abs. 1-12 DORA',
-      bsigParagraph: 'Art. 31 DORA (Ueberwachungsrahmen kritischer IKT-Drittdienstleister)',
+      euArticle: 'Art. 31 Abs. 1 DORA',
+      bsigParagraph: 'Einstufung kritischer IKT-Drittdienstleister',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.daQ5.maturity.level0',
@@ -404,14 +404,15 @@ export const QUESTIONS: DoraQuestion[] = [
   // ============================================================
   {
     id: 'ia-q1',
+    beyondMinimum: true,
     categoryId: 'informationsaustausch',
     tier: 'core',
     titleKey: 'dora.questions.iaQ1.title',
     tooltipKey: 'dora.questions.iaQ1.tooltip',
     helpKey: 'dora.questions.iaQ1.help',
     legalReference: {
-      euArticle: 'Art. 45 Abs. 1-2 DORA',
-      bsigParagraph: 'Leitlinien Art. 45 DORA (Teilnahme am Informationsaustausch)',
+      euArticle: 'Art. 45 Abs. 1 DORA',
+      bsigParagraph: 'Austausch von Informationen zu Cyberbedrohungen (freiwillig)',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.iaQ1.maturity.level0',
@@ -422,14 +423,15 @@ export const QUESTIONS: DoraQuestion[] = [
   },
   {
     id: 'ia-q2',
+    beyondMinimum: true,
     categoryId: 'informationsaustausch',
     tier: 'core',
     titleKey: 'dora.questions.iaQ2.title',
     tooltipKey: 'dora.questions.iaQ2.tooltip',
     helpKey: 'dora.questions.iaQ2.help',
     legalReference: {
-      euArticle: 'Art. 45 Abs. 3 DORA',
-      bsigParagraph: 'Leitlinien Art. 45 DORA (Qualitaet der Informationen)',
+      euArticle: 'Art. 45 Abs. 1 lit. a-b DORA',
+      bsigParagraph: 'Vertrauenswürdige Gemeinschaften',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.iaQ2.maturity.level0',
@@ -446,8 +448,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.iaQ3.tooltip',
     helpKey: 'dora.questions.iaQ3.help',
     legalReference: {
-      euArticle: 'Art. 45 Abs. 4 DORA',
-      bsigParagraph: 'Leitlinien Art. 45 DORA (Vertraulichkeitsvereinbarungen)',
+      euArticle: 'Art. 45 Abs. 1 lit. c DORA',
+      bsigParagraph: 'Vereinbarungen und Verhaltensregeln',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.iaQ3.maturity.level0',
@@ -458,6 +460,7 @@ export const QUESTIONS: DoraQuestion[] = [
   },
   {
     id: 'ia-q4',
+    beyondMinimum: true,
     categoryId: 'informationsaustausch',
     tier: 'advanced',
     titleKey: 'dora.questions.iaQ4.title',
@@ -465,7 +468,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.iaQ4.help',
     legalReference: {
       euArticle: 'Art. 45 Abs. 1 DORA',
-      bsigParagraph: 'Leitlinien Art. 45 DORA (Bedrohungsindikatoren und TLP)',
+      bsigParagraph: 'Gegenstand des Austauschs',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.iaQ4.maturity.level0',
@@ -482,8 +485,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.iaQ5.tooltip',
     helpKey: 'dora.questions.iaQ5.help',
     legalReference: {
-      euArticle: 'Art. 45 Abs. 2 DORA',
-      bsigParagraph: 'Leitlinien Art. 45 DORA (Meldung an Aufsichtsbehoerden)',
+      euArticle: 'Art. 45 Abs. 3 DORA',
+      bsigParagraph: 'Mitteilung an die zuständige Behörde',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.iaQ5.maturity.level0',
@@ -504,7 +507,7 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.govQ1.tooltip',
     helpKey: 'dora.questions.govQ1.help',
     legalReference: {
-      euArticle: 'Art. 5 Abs. 1-2 DORA',
+      euArticle: 'Art. 5 Abs. 2 DORA',
       bsigParagraph: 'Art. 5 DORA (Verantwortung des Leitungsorgans)',
     },
     maturityDescriptions: {
@@ -540,8 +543,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.govQ3.tooltip',
     helpKey: 'dora.questions.govQ3.help',
     legalReference: {
-      euArticle: 'Art. 6 Abs. 5-8 DORA',
-      bsigParagraph: 'Art. 6 DORA (IKT-Risikomanagementrahmen - Ueberpruefen und Berichten)',
+      euArticle: 'Art. 6 Abs. 5, Art. 13 Abs. 5 DORA',
+      bsigParagraph: 'Überprüfung des IKT-Risikomanagementrahmens',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.govQ3.maturity.level0',
@@ -558,8 +561,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.govQ4.tooltip',
     helpKey: 'dora.questions.govQ4.help',
     legalReference: {
-      euArticle: 'Art. 4 Abs. 1-2 DORA',
-      bsigParagraph: 'Art. 4 DORA (Proportionalitaetsgrundsatz)',
+      euArticle: 'Art. 4 Abs. 1 DORA',
+      bsigParagraph: 'Grundsatz der Verhältnismäßigkeit',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.govQ4.maturity.level0',
@@ -576,8 +579,8 @@ export const QUESTIONS: DoraQuestion[] = [
     tooltipKey: 'dora.questions.govQ5.tooltip',
     helpKey: 'dora.questions.govQ5.help',
     legalReference: {
-      euArticle: 'Art. 6 Abs. 1-4 DORA',
-      bsigParagraph: 'RTS Art. 15 DORA (Unabhaengige Kontrollfunktion)',
+      euArticle: 'Art. 6 Abs. 4 DORA',
+      bsigParagraph: 'Kontrollfunktion und drei Verteidigungslinien',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.govQ5.maturity.level0',

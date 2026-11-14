@@ -82,3 +82,62 @@ Je Frage: Normbezug (Zusatzzeile), Titel und Erklärtext Satz für Satz neben de
 
 - Inhalt der EDSA-Empfehlungen 01/2020 (PDF nicht gelesen). Der Begriff „Transfer Impact Assessment“ in `dt-q4` ist deshalb nicht belegt.
 - Englische Texte: Fachbegriffe am englischen Amtstext abgeglichen (33 Formulierungen), die Sätze selbst sind Übersetzungen der deutschen Fassung.
+
+## DORA: Befunde und Änderungen
+
+Quellen (Publikationsamt der EU, Abruf 14.11.2026): Verordnung (EU) 2022/2554 deutsch und englisch; Delegierte Verordnungen (EU) 2024/1774 (IKT-Risikomanagement), 2024/1772 (Klassifizierung von Vorfällen), 2025/301 (Meldefristen und Inhalt), 2025/1190 (TLPT); Durchführungsverordnung (EU) 2025/302 (Standardformulare).
+
+30 Fragen geprüft. Geändert: 46 ganze Texte und 10 Teiltexte je Sprache, 47 Normbezüge und Zusatzzeilen. Durchgehend „IKT-Drittdienstleister“ statt „IKT-Drittanbieter“ (Begriff des Amtstexts; englisch „ICT third-party service provider“).
+
+**Falsche Normbezüge**
+
+| Frage | Vorher | Jetzt | Grund |
+|---|---|---|---|
+| `da-q2` | Art. 28 Abs. 4-8 | Art. 30 Abs. 1-2 | Die Mindestvertragsinhalte stehen in Art. 30 Abs. 2. Art. 28 Abs. 4-8 regelt Prüfung vor Vertragsschluss, Kündigung und Ausstieg. Damit ist der offene TODO-Punkt geklärt. |
+| `da-q4` | Art. 30 Abs. 1-5 | Art. 30 Abs. 3 | Zusatzanforderungen für kritische oder wichtige Funktionen. |
+| `vm-q5` | Art. 23 Abs. 1-4 | Art. 17 Abs. 2, Art. 19 Abs. 2 | Art. 23 betrifft zahlungsbezogene Vorfälle. Die freiwillige Meldung erheblicher Cyberbedrohungen steht in Art. 19 Abs. 2. |
+| `vm-q4` | Art. 20 Abs. 1 | Art. 20 lit. b | Art. 20 hat keine Absätze. |
+| `ia-q2` | Art. 45 Abs. 3 | Art. 45 Abs. 1 lit. a-b | Abs. 3 ist die Mitteilung an die Behörde. |
+| `ia-q3` | Art. 45 Abs. 4 | Art. 45 Abs. 1 lit. c | Art. 45 hat nur drei Absätze. |
+| `ia-q5` | Art. 45 Abs. 2 | Art. 45 Abs. 3 | Die Mitteilungspflicht steht in Abs. 3. |
+| `rt-q2` | Art. 25 Abs. 1-3 | Art. 24 Abs. 6, Art. 25 Abs. 1 | „Mindestens einmal jährlich“ steht in Art. 24 Abs. 6. |
+| `gov-q3` | Art. 6 Abs. 5-8 | Art. 6 Abs. 5, Art. 13 Abs. 5 | Jährlicher Bericht an das Leitungsorgan: Art. 13 Abs. 5. |
+| `gov-q5` | Art. 6 Abs. 1-4 | Art. 6 Abs. 4 | Kontrollfunktion. |
+| `irm-q2` | Art. 8 Abs. 1-4 | Art. 8 Abs. 1, 4 und 6 | Die Inventare stehen in Abs. 6. |
+
+Zusatzzeilen: „RTS Art. 15 DORA“, „RTS Art. 20 DORA“, „RTS Art. 26 DORA“ und „ITS Art. 20 DORA“ sind durch die erlassenen Verordnungen ersetzt. „Leitlinien Art. 45 DORA“ und „RTS Art. 28 Abs. 9 DORA (Vertragliche Anforderungen/Konzentrationsrisiko)“ ließen sich nicht belegen und sind entfernt. Umlaute korrigiert.
+
+**Aussagen, die dem Wortlaut widersprachen**
+
+| Frage | Vorher | Wortlaut |
+|---|---|---|
+| `irm-q1` | Rahmen umfasse „mindestens IKT-Sicherheitsstrategie, Richtlinien …, Verantwortungsrahmen“ | Art. 6 Abs. 2: „mindestens Strategien, Leit- und Richtlinien, Verfahren sowie IKT-Protokolle und -Tools“ |
+| `irm-q4` | „unverzüglich“ | Art. 10 Abs. 1: „umgehend“ |
+| `irm-q5` | Erklärtext beschrieb Art. 11 (Reaktion und Wiederherstellung) | Art. 12: Richtlinien für die Datensicherung, Umfang und Mindesthäufigkeit, Wiedergewinnung; „physisch und logisch getrennt“ gilt für die Systeme der Wiedergewinnung (Abs. 3), nicht für die Aufbewahrung der Backups |
+| `vm-q2` | „sieben Kriterien“ | Art. 18 Abs. 1 lit. a-f: sechs |
+| `vm-q3` | Erstmeldung „4 Stunden nach Erkennung“, „maximal 4 Stunden“ | Art. 5 DelVO 2025/301: vier Stunden nach Einstufung als schwerwiegend, spätestens 24 Stunden nach Kenntnis; Zwischenmeldung 72 Stunden nach der Erstmeldung; Abschlussmeldung einen Monat nach der letzten Zwischenmeldung |
+| `rt-q3` | „RTS JC 2024 53“ | Delegierte Verordnung (EU) 2025/1190 |
+| `rt-q5` | Tester müssten „akkreditiert“ und „unabhängig“ sein | Art. 27 Abs. 1 lit. c: zertifiziert „oder“ an formale Verhaltenskodizes oder ethische Rahmenregelungen gebunden; interne Tester sind unter Bedingungen zulässig (Abs. 2) |
+| `da-q1` | Art. 28 Abs. 9 als „RTS“ | Technische Durchführungsstandards (Standardvorlagen für das Informationsregister) |
+| `da-q4` | Hilfe nannte Vorfallunterstützung und Kündigung bei Vertragsverletzung als Zusatzanforderung | Diese stehen in Art. 30 Abs. 2 und Art. 28 Abs. 7. Abs. 3 nennt Leistungsziele, Berichtspflichten, Notfallpläne, TLPT-Mitwirkung, Zugangs-, Inspektions- und Auditrechte, Ausstiegsstrategien |
+| `da-q5` | Einstufung „durch die Aufsichtsbehörde“ | Art. 31 Abs. 1: die Europäischen Aufsichtsbehörden über den Gemeinsamen Ausschuss; „federführende Überwachungsbehörde“ |
+| `ia-q1` | klang nach Pflicht | Art. 45 Abs. 1: „können“ |
+| `ia-q2` | „DORA verlangt“ Qualitätsprüfung | Steht nicht in Art. 45 |
+| `gov-q2` | Schulung „regelmäßig“ als eigene Pflicht | Art. 5 Abs. 4: Kenntnisse „aktiv auf dem neuesten Stand“ halten, „unter anderem indem sie regelmäßig spezielle Schulungen absolvieren“ |
+| `gov-q5` | „CISO“ im Titel, „muss direkt an das Leitungsorgan berichten können“ | Art. 6 Abs. 4 nennt keine Bezeichnung und keinen Berichtsweg; gilt nicht für Kleinstunternehmen |
+
+**Aussagen ohne Beleg, entfernt oder ersetzt**
+
+- `gov-q1`: „Die persönliche Haftung des Leitungsorgans ist ein zentrales Element“; „IKT-Strategie im Einklang mit der Geschäftsstrategie“.
+- `gov-q4`: „Kleinere Institute“, „größere, systemrelevante Unternehmen“. Ersetzt durch den Verweis auf Art. 16 Abs. 1.
+- `gov-q3`: Liste der Aspekte, die die jährliche Überprüfung abdecken „muss“.
+- `da-q2`: „erheblich höhere Anforderungen … als MaRisk, EBA-Leitlinien“.
+- `da-q5`: Befugnisse der Überwachungsbehörde; ersetzt durch Art. 35 Abs. 1 lit. d (Empfehlungen) und Art. 42 Abs. 6 (Aussetzung als letztes Mittel).
+- `ia-q5`: Inhalt der Mitteilung („Art und Zweck, beteiligte Partner, Umfang“).
+- `irm-q5`: „Aufbewahrungsdauer“.
+
+**Als gute Praxis gekennzeichnet** (Hinweis „Im Regelwerk nicht ausdrücklich verlangt“): `ia-q1`, `ia-q2`, `ia-q4`. Der Informationsaustausch nach Art. 45 ist freiwillig.
+
+**Geprüft, ohne Änderung am Erklärtext:** `vm-q1`, `vm-q2`, `rt-q4`.
+
+**Nicht geprüft:** Inhalt der Delegierten Verordnungen über die genannten Stellen hinaus (2024/1774 nur Titel und Asset-Management, 2024/1772 nur Gegenstand, 2025/1190 nur Titel). Traffic Light Protocol, STIX/TAXII, MaRisk: kommen in DORA nicht vor und stehen in den Texten nur noch als Praxisbeispiele.
