@@ -237,6 +237,51 @@ Angegeben sind nur Regelwerke mit konkretem Befund. „Doppelung“ heißt: Zwei
 
 TISAX, BSI-Grundschutz und C5: außer den Punkten in Abschnitt 3 nichts gefunden.
 
+## 4a. Doppelungen: umgesetzt am 14.11.
+
+**Entscheidung: abgrenzen, nicht streichen.** Keine Frage wurde gelöscht. Gründe nach dem Lesen aller Texte:
+
+- Von 18 Gruppen brauchten nur zwei eine neue Frage (DORA `rt-q4`, DSGVO `dv-q2`). Bei den übrigen überschneiden sich vor allem die Titel; die Stufentexte beschreiben schon Verschiedenes (z. B. `cr-q4` nur Zertifikate, `ac-q5` nur Freigabe).
+- Die Fragen stehen meist unter verschiedenen Normstellen (PCI DSS Req. 1.2, 1.3, 1.4; DORA Art. 26 und 27). Streichen würde Normstellen ohne Frage lassen.
+- Streichen ändert Fragenzahlen, gespeicherte Antworten und die Aufteilung in Kern und Vertiefung.
+
+Geändert sind 42 Texte je Sprache, fast nur Titel. Alle Änderungen sind KI-erstellt und noch nicht gegengelesen.
+
+| Regelwerk | Frage | Neuer Zuschnitt |
+|---|---|---|
+| NIS2 | `ac-q5` | Dokumentation und Freigabe der Rechteprüfung. `ac-q2` bleibt: Prüfung und Entzug. |
+| NIS2 | `cr-q1` | Beispiel „VPN“ durch „Festplattenverschlüsselung“ ersetzt. |
+| NIS2 | `mc-q2` | Sprach-, Video- und Textkommunikation (Wortlaut lit. j). |
+| NIS2 | `mc-q5` | Netzverbindungen zwischen Standorten, Homeoffice und Außendienst. Bleibt nahe an `cr-q1`. |
+| NIS2 | `cr-q4` | Nur Zertifikate und ihr Ablauf. `cr-q3` bleibt: Schlüssel. |
+| NIS2 | `sc-q1`, `sc-q5` | `sc-q1` Prüfung bei der Auswahl, `sc-q5` Neubewertung bestehender Dienstleister. |
+| NIS2 | `bc-q3` | Weiterbetrieb bei Systemausfall. `ih-q1` bleibt: Reaktion auf den Vorfall; `bc-q2`: Wiederanlauf. |
+| DSGVO | `vv-q1` | Erfasst das Verzeichnis alle Verarbeitungen? Die Pflichtangaben fragen `vv-q2` und `vv-q3` ab. Stufen 2 und 3 angepasst. |
+| DSGVO | `dv-q2` | Inhalt der Meldung an die Aufsichtsbehörde. Das ist der Gegenstand von Art. 33 Abs. 3, unter dem die Frage steht. Hilfetext und alle Stufen neu. `dv-q4` bleibt: internes Verzeichnis (Abs. 5). |
+| DSGVO | `pbd-q2` | Voreinstellungen von Systemen und Formularen. `pbd-q3` bleibt: Datenminimierung. |
+| DSGVO | `av-q3`, `av-q4` | Nicht geändert. Überblick und Genehmigung (Art. 28 Abs. 2) und Weitergabe der Pflichten (Abs. 4) sind verschiedene Dinge. |
+| KRITIS | `lk-q2`, `lk-q4` | `lk-q2` Einstufung und Bewertung, `lk-q4` Einhaltung der vertraglich vereinbarten Anforderungen. |
+| DORA | `rt-q4` | Neu gefasst: Umfang des TLPT (kritische oder wichtige Funktionen, Produktivsysteme, Einbindung der Dienstleister). Titel, Tooltip, Hilfetext und Stufen neu. |
+| DORA | `rt-q5` | Anforderungen an alle eingesetzten Tester. |
+| DORA | `da-q4` | Zusätzliche Bestimmungen nach Art. 30 Abs. 3 für kritische oder wichtige Funktionen. |
+| ISO 27001 | `iso-pr-q1`, `iso-op-q2` | `iso-pr-q1` festgelegtes Verfahren (6.1.2), `iso-op-q2` Wiederholung (8.2). |
+| ISO 27001 | `iso-ps-q2` | Diebstahl, Verlust, unbefugter Zugriff. Umwelteinwirkungen stehen nur noch in `iso-ps-q3`. |
+| SOC 2 | `sec-q1`, `sec-q2` | `sec-q1` Anmeldung und Rechtevergabe, `sec-q2` Eintritt, Wechsel, Austritt. |
+| PCI DSS | `ns-q1`, `ns-q2`, `ns-q4` | Regeln dokumentiert und genehmigt (1.2); Verkehr in die und aus der CDE (1.3); Verbindungen zu nicht vertrauenswürdigen Netzen (1.4). |
+| PCI DSS | `ac-q1`, `ac-q2` | `ac-q1` Festlegung, wer zugreifen darf; `ac-q2` technische Durchsetzung mit Deny-All. |
+| OWASP ASVS | `owasp-sess-q3` | Abmeldung und Passwortänderung. Inaktivität steht nur noch in `owasp-sess-q2`. |
+
+**Am Amtstext geprüft** (deutsche Fassung der Verordnung (EU) 2022/2554, `http://publications.europa.eu/resource/celex/32022R2554`):
+
+- `rt-q4` stand unter Art. 26 Abs. 2-4, fragte aber nach der Auswahl der Tester. Das regelt Art. 27. Art. 26 Abs. 2 verlangt, dass ein TLPT „mehrere oder alle kritischen oder wichtigen Funktionen“ einschließt und „an Live-Produktionssystemen durchgeführt“ wird. Die Frage passt jetzt zum Artikel.
+- Der alte Hilfetext von `rt-q4` sagte, interne Tester seien „nur für maximal die Hälfte der Tests“ erlaubt. Das steht so nicht in Art. 27. Der Satz ist mit der Neufassung entfallen.
+- `da-q4`: Art. 30 Abs. 3 nennt die Bestimmungen, die bei kritischen oder wichtigen Funktionen „zusätzlich zu den in Absatz 2 genannten Elementen“ gelten.
+
+**Aufgefallen, nicht geändert:**
+
+- DORA `da-q2` steht unter Art. 28 Abs. 4-8, fragt aber nach Mindestinhalten der Verträge. Die stehen in Art. 30 Abs. 2.
+- PCI DSS `ac-q2` steht unter Req. 7.2. Zugriffskontrollsystem und Deny-All gehören nach meiner Kenntnis zu Req. 7.3. Nicht am Standard nachgeschlagen, deshalb nicht geändert.
+- Die Zusatzzeilen unter den DORA-Fragen („RTS Art. 26 DORA …“) nennen keine nachvollziehbare Fundstelle.
 ## 5. Gemeinsamer Fragenkern: Skizze
 
 **Ausgangslage, gemessen:** 49 Themen decken 214 von 431 Fragen ab. 17 Themen kommen in fünf oder mehr Regelwerken vor, das häufigste in zehn. Die Abdeckung schwankt stark: CIS 16 von 18, NIS2 32 von 50, DSGVO 4 von 50, CRA 1 von 24.

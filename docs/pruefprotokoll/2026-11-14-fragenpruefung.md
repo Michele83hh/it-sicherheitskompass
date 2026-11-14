@@ -70,4 +70,5 @@ Der Vorschlag wird als Schaltfläche an der Frage angezeigt und erst per Klick �
 - PCI DSS („Goal 1“) und SOC 2 (englische Kriteriennamen): Zusatzzeile unter den Fragen am 14.11. ausgeblendet.
 - Antwort „trifft nicht zu“: am 14.11. für 21 Fragen in sechs Regelwerken eingeführt. Einzelheiten in `2026-11-14-fragen-vorschlaege.md`, Abschnitt 3.2. Die Auswahl der Fragen ist KI-erstellt, noch nicht gegengelesen.
 - NIS2-Fragen über die Richtlinie hinaus: am 14.11. Frist aus `bc-q2` entfernt, `ea-q5`, `cr-q5`, `mc-q4` mit Hinweis versehen. Einzelheiten in `2026-11-14-fragen-vorschlaege.md`, Abschnitt 3.4.
+- Doppelungen je Regelwerk: am 14.11. abgegrenzt statt gestrichen, 42 Texte je Sprache. Einzelheiten in `2026-11-14-fragen-vorschlaege.md`, Abschnitt 4a. KI-erstellt, noch nicht gegengelesen.
 - Inhaltliche Prüfung je Regelwerk (Notwendigkeit, Doppelungen, KMU-Verständlichkeit, Verhältnis Kern zu Vertiefung) steht aus.

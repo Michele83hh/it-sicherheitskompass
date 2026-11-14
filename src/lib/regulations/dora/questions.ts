@@ -275,7 +275,7 @@ export const QUESTIONS: DoraQuestion[] = [
     helpKey: 'dora.questions.rtQ4.help',
     legalReference: {
       euArticle: 'Art. 26 Abs. 2-4 DORA',
-      bsigParagraph: 'RTS Art. 26 DORA (Qualifikation von TLPT-Testern)',
+      bsigParagraph: 'Umfang und Durchführung von TLPT',
     },
     maturityDescriptions: {
       level0Key: 'dora.questions.rtQ4.maturity.level0',

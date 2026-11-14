@@ -561,7 +561,7 @@
       }
     },
     "bcQ3": {
-      "title": "Do you have a written emergency plan for cyberattacks or system failures?",
+      "title": "Do you have a written emergency plan that sets out how your business keeps running during a system outage?",
       "tooltip": "Crisis management requires prepared emergency plans (§30 Para. 2 No. 3 BSIG). See BSI building block DER.4 (Emergency Management).",
       "help": "An emergency plan describes step by step what to do during an IT outage or cyberattack: Who gets informed? Which systems are restored first? How do you communicate with customers? This plan should be available in print — because when IT is down, you can't access it digitally.",
       "maturity": {
@@ -594,7 +594,7 @@
       }
     },
     "scQ1": {
-      "title": "Do you assess the IT security of your most important suppliers and service providers?",
+      "title": "Do you check the IT security of important suppliers and service providers when selecting them?",
       "tooltip": "NIS2 requires assessment of direct suppliers' and service providers' security (Art. 21 Abs. 2 lit. d NIS2-RL, §30 Para. 2 No. 4 BSIG). Particularly important for cloud services and IT outsourcing.",
       "help": "Your IT security is only as strong as the weakest link in the chain. If your cloud provider gets hacked, your data is affected. Therefore, ask your key IT service providers: Do you have a security concept? Is our data encrypted? Are there regular security audits?",
       "maturity": {
@@ -638,7 +638,7 @@
       }
     },
     "scQ5": {
-      "title": "Do you have a process for regularly reassessing the IT security of your service providers?",
+      "title": "Do you regularly reassess the IT security of your existing service providers?",
       "tooltip": "Service providers' security posture can change over time. Regular reassessment ensures your requirements are continuously met.",
       "help": "The IT security posture of your service providers can change — e.g., through staff turnover, new threats, or changed business models. Therefore, you should check at least annually whether your requirements are still being met, e.g., through a short questionnaire or a conversation.",
       "maturity": {
@@ -814,7 +814,7 @@
       }
     },
     "crQ1": {
-      "title": "Are confidential data encrypted during storage and transmission (e.g., via HTTPS, VPN)?",
+      "title": "Is confidential data encrypted at rest and in transit (e.g. disk encryption, HTTPS)?",
       "tooltip": "NIS2 requires the use of cryptographic measures (Art. 21 Abs. 2 lit. h NIS2-RL, §30 Para. 2 No. 8 BSIG). See BSI building block CON.1.",
       "help": "Encryption makes data unreadable to unauthorized persons. HTTPS (the lock symbol in the browser) encrypts data during internet transmission. VPN encrypts the connection to your company network. Stored data (e.g., on laptops) should also be encrypted so it cannot be read if stolen.",
       "maturity": {
@@ -847,7 +847,7 @@
       }
     },
     "crQ4": {
-      "title": "Are your SSL/TLS certificates and cryptographic keys centrally managed and monitored?",
+      "title": "Are your SSL/TLS certificates managed centrally and their expiry monitored?",
       "tooltip": "Expired or compromised certificates can cause outages and security vulnerabilities. Central monitoring prevents unnoticed expiration dates.",
       "help": "SSL/TLS certificates secure, e.g., your website (HTTPS) or email server. If a certificate expires unnoticed, your website suddenly stops working or shows security warnings. A central overview with expiration dates prevents such outages.",
       "maturity": {
@@ -913,7 +913,7 @@
       }
     },
     "acQ5": {
-      "title": "Are access rights regularly recertified (i.e., systematically checked whether existing rights are still needed)?",
+      "title": "Is the review of access rights documented and signed off by those responsible (recertification)?",
       "tooltip": "Recertification ensures access rights follow the least-privilege principle. Without regular review, unnecessary rights accumulate (Privilege Creep).",
       "help": "Recertification means: At regular intervals (e.g., annually), it is systematically checked whether each employee still needs the access rights they have. Over time, unnecessary rights often accumulate (e.g., through department changes). This 'privilege creep' is a common security risk.",
       "maturity": {
@@ -935,7 +935,7 @@
       }
     },
     "mcQ2": {
-      "title": "Is confidential communication encrypted (e.g., encrypted emails, secure video conferences)?",
+      "title": "Are voice, video and text communications with confidential content secured (e.g. encrypted email, secure video conferencing and messaging)?",
       "tooltip": "Secured communication protects against eavesdropping and manipulation. NIS2 requires secured voice, video and text communication (§30 Para. 2 No. 10 BSIG).",
       "help": "Encrypted communication means that emails and video conferences cannot be read by third parties. For emails, there is e.g. S/MIME or TLS transport encryption. For video conferences, services like Microsoft Teams or Zoom offer end-to-end encryption.",
       "maturity": {
@@ -968,7 +968,7 @@
       }
     },
     "mcQ5": {
-      "title": "Is communication between your locations and field workers consistently encrypted?",
+      "title": "Are the network connections between your sites, home offices and field staff encrypted throughout (e.g. via VPN)?",
       "tooltip": "Cross-location communication over public networks must be encrypted. Site-to-site VPN and always-on VPN for mobile devices are proven measures.",
       "help": "When your employees communicate between locations or from home offices, data travels over the public internet. Without a VPN (Virtual Private Network), this data could theoretically be intercepted. A VPN connection encrypts all data traffic — like a private tunnel through the internet.",
       "maturity": {
@@ -2279,14 +2279,14 @@
         "tooltip": "Art. 33(1) GDPR obliges the controller to notify a personal data breach to the competent supervisory authority without undue delay and, where feasible, within 72 hours — unless the breach is unlikely to result in a risk. Where notification is delayed, reasons for the delay must be given."
       },
       "dvQ2": {
-        "help": "For every personal data breach you must document internally: what happened? How many people are affected? Which data is affected (e.g. names, bank details)? What are the possible consequences? What have you done about it? You need this documentation both for the notification to the authority and as evidence towards the supervisory authority. Use a form or template for this.",
+        "help": "The notification to the supervisory authority must contain certain information: What happened? How many people and records are affected? Who is the contact point? What are the likely consequences? What have you done about it? If not all information is available yet, you may provide it in phases (Art. 33(4) GDPR). A template helps you not to forget anything.",
         "maturity": {
-          "level0": "Personal data breaches are not documented",
-          "level1": "Incidents are documented only informally or incompletely",
-          "level2": "Documentation template exists, but not all mandatory details under Art. 33(3) GDPR are recorded systematically",
-          "level3": "Standardised documentation of every breach with all mandatory details, timestamps, measures taken and the outcome of the risk assessment"
+          "level0": "Not defined what a notification must contain",
+          "level1": "Mandatory information is known but gathered ad hoc in each case",
+          "level2": "Notification template exists but does not cover all mandatory information under Art. 33(3) GDPR",
+          "level3": "Notification template with all mandatory information; it is also defined how missing information is provided later"
         },
-        "title": "Are personal data breaches documented internally with all the details required by Art. 33(3) GDPR?",
+        "title": "Do your notifications to the supervisory authority contain all mandatory information (nature of the breach, data subjects, consequences, measures)?",
         "tooltip": "Art. 33(3) GDPR requires the notification to the supervisory authority to contain at least: (a) the nature of the breach including categories and number of data subjects affected, (b) the name and contact details of the DPO, (c) the likely consequences of the breach, (d) the measures taken and proposed. Art. 33(5) GDPR additionally requires internal documentation of all breaches."
       },
       "dvQ3": {
@@ -2396,7 +2396,7 @@
           "level2": "Privacy by default is considered for most new systems; existing systems have been partly adapted",
           "level3": "All systems are configured by default for minimal data processing and minimal accessibility; regular review of the default settings"
         },
-        "title": "Do you ensure that your systems process, by default, only the personal data necessary for the specific purpose (privacy by default)?",
+        "title": "Are the default settings of your systems and forms privacy-friendly (privacy by default)?",
         "tooltip": "Art. 25(2) GDPR requires that, by default, only personal data necessary for each specific purpose of processing is processed. This applies to the amount collected, the extent of processing, the storage period and accessibility. By default, personal data must not be made accessible to an indefinite number of persons without the data subject’s intervention."
       },
       "pbdQ3": {
@@ -2492,10 +2492,10 @@
         "maturity": {
           "level0": "No record of processing activities exists",
           "level1": "Individual processing activities are known, but not systematically documented",
-          "level2": "A record of processing activities exists, but does not contain all mandatory details or all processing operations",
-          "level3": "Complete record of processing activities with all mandatory details under Art. 30(1) GDPR for every processing activity"
+          "level2": "Record of processing activities exists but does not cover all processing",
+          "level3": "Record covers all processing activities and is extended whenever new processing starts"
         },
-        "title": "Do you maintain a complete record of all processing activities with the mandatory details required by Art. 30(1) GDPR?",
+        "title": "Do you keep a record that covers all processing activities of your company?",
         "tooltip": "Art. 30(1) GDPR obliges every controller to maintain a record of all processing activities. Mandatory entries include: name and contact details of the controller, purposes of processing, categories of data subjects and personal data, categories of recipients, transfers to third countries, erasure deadlines and technical and organisational measures."
       },
       "vvQ2": {
@@ -3020,7 +3020,7 @@
           "level2": "Regular assessment of the most important suppliers based on defined criteria",
           "level3": "Systematic supplier risk management with classification, regular assessment, an audit programme and follow-up of measures"
         },
-        "title": "Are critical suppliers and service providers assessed with regard to their IT security?",
+        "title": "Are critical suppliers and service providers classified by risk and assessed with regard to their IT security?",
         "tooltip": "Assessing supply chain security is part of the risk analysis under Section 30(1) BSIG. BSI module OPS.2.3 describes requirements for outsourcing management."
       },
       "lkQ3": {
@@ -3042,7 +3042,7 @@
           "level2": "Regular review of the most important suppliers based on defined audit criteria",
           "level3": "Systematic audit programme for all critical suppliers with documented results, follow-up of measures and an escalation process"
         },
-        "title": "Is supplier compliance with the security requirements reviewed regularly?",
+        "title": "Is it checked regularly whether suppliers comply with the contractually agreed security requirements?",
         "tooltip": "Ongoing monitoring of supply chain security is part of the evidence obligation under Section 39(1) BSIG. The BSI can also review the adequacy of measures with regard to the supply chain."
       },
       "psQ1": {
@@ -3512,7 +3512,7 @@
           "level2": "Stricter contractual provisions under Art. 30 DORA implemented in most contracts for critical functions, but audit rights and exit strategies still patchy",
           "level3": "Full implementation of all Art. 30 DORA requirements in every contract for critical and important functions, including unrestricted audit rights, documented exit strategies, incident support and TLPT cooperation"
         },
-        "title": "Are the key contractual provisions for ICT services supporting critical or important functions fully implemented?",
+        "title": "Do contracts for ICT services supporting critical or important functions contain the additional provisions under Art. 30(3) DORA?",
         "tooltip": "Art. 30(1)-(5) DORA defines stricter contractual requirements for ICT services supporting critical or important functions. These include, among others: complete service level descriptions, guaranteed availability targets, provider obligations in incidents, security measures, data protection guarantees, unrestricted audit and access rights, termination rights and exit strategies."
       },
       "daQ5": {
@@ -3725,15 +3725,15 @@
         "tooltip": "Art. 26(1)-(8) DORA obliges certain financial entities to carry out threat-led penetration testing (TLPT) at least every three years. The competent authority identifies the financial entities concerned, taking into account systemic relevance, ICT risk profile and ICT maturity. The RTS JC 2024 53 specify the TLPT requirements."
       },
       "rtQ4": {
-        "help": "DORA generally only permits external TLPT testers. Internal testers may only be used under strict conditions and for at most half of the tests — in any case, an external threat intelligence provider must be involved. When selecting external testers you must verify their qualifications, experience with the financial sector, certifications, liability insurance and freedom from conflicts of interest. The supervisory authority can reject the choice of tester.",
+        "help": "Before a TLPT you define which critical or important functions are tested and which systems, processes and technologies support them, including outsourced ones. Testing takes place on production systems, not in a test environment. The supervisory authority validates the scope. If service providers are affected, you must ensure their participation.",
         "maturity": {
-          "level0": "No criteria defined for selecting TLPT testers",
-          "level1": "Basic knowledge of the qualification requirements, but no selection process established",
-          "level2": "Selection process for TLPT testers defined with checks of qualification and independence, but no practical application yet",
-          "level3": "Documented selection process for TLPT testers under Art. 26 DORA with verification of all qualification requirements, successful execution and a positive assessment by the supervisory authority"
+          "level0": "Scope of a TLPT not defined; critical or important functions not identified",
+          "level1": "Critical or important functions identified, but the underlying systems and service providers not mapped",
+          "level2": "Test scope with functions, systems and involved service providers defined, but not yet validated by the authority",
+          "level3": "Test scope validated by the authority, TLPT performed on production systems, involved service providers took part"
         },
-        "title": "Are TLPT testers selected and deployed according to the qualification requirements of DORA?",
-        "tooltip": "Art. 27(1)-(2) DORA imposes strict requirements on TLPT testers: they must be of the highest suitability and repute, possess technical and organisational capabilities, and be certified by an accreditation body or adhere to formal codes of conduct. Additional requirements on independence and insurance cover apply to external testers."
+        "title": "Do your TLPTs cover the critical or important functions and are they run on live production systems?",
+        "tooltip": "Art. 26(2) DORA: each TLPT covers several or all critical or important functions and is performed on live production systems. The scope is validated by the competent authority. Under para. 3, ICT third-party service providers within the scope must be involved."
       },
       "rtQ5": {
         "help": "The requirements for TLPT testers are deliberately set high, as TLPT takes place directly in the production environment and affects real business processes. The tester must demonstrate experience with TIBER-EU or comparable frameworks. The supervisory authority reviews the tester's suitability and can raise objections. After completing the TLPT, the tester must submit a comprehensive report documenting the test results and remediation recommendations.",
@@ -3743,7 +3743,7 @@
           "level2": "Requirements catalogue for TLPT testers created with checks of accreditation, insurance and independence, but no TLPT with a qualified tester carried out yet",
           "level3": "Full compliance with the Art. 27 DORA requirements: TLPT carried out by an accredited, independent tester with professional indemnity insurance, results recognised by the supervisory authority, improvement measures followed up"
         },
-        "title": "Are the requirements for external TLPT testers regarding independence, accreditation and insurance cover met?",
+        "title": "Do the TLPT testers you use meet the requirements for suitability, certification, independence and insurance cover?",
         "tooltip": "Art. 27(1)-(3) DORA defines specific requirements for TLPT testers: suitability and repute, technical and organisational capabilities in threat intelligence, penetration testing and red teaming, certification by an accreditation body, professional indemnity insurance, formal codes of conduct and management of conflicts of interest."
       },
       "vmQ1": {
@@ -6742,7 +6742,7 @@
         }
       },
       "prQ1": {
-        "title": "Do you conduct a systematic information security risk assessment?",
+        "title": "Do you have a defined process for information security risk assessment (criteria, method, responsibilities)?",
         "tooltip": "Clause 6.1.2 requires a documented risk assessment process with defined criteria for acceptance, evaluation, and prioritization.",
         "help": "The risk assessment must consider confidentiality, integrity, and availability, designate risk owners, and produce reproducible results.",
         "maturity": {
@@ -6841,7 +6841,7 @@
         }
       },
       "opQ2": {
-        "title": "Do you conduct information security risk assessments at planned intervals?",
+        "title": "Do you repeat the risk assessment at planned intervals and when significant changes occur?",
         "tooltip": "Clauses 8.2 and 8.3 require conducting risk assessments at planned intervals and implementing the risk treatment plan.",
         "help": "Risk assessment must not only be initial but recurring — especially when there are significant changes to systems, processes, or threat landscape.",
         "maturity": {
@@ -6973,9 +6973,9 @@
         }
       },
       "psQ2": {
-        "title": "How do you protect IT equipment and storage media from theft and environmental damage?",
+        "title": "How do you protect IT equipment and storage media against theft, loss and unauthorised access?",
         "tooltip": "Controls A.7.8, A.7.9, and A.7.10 require the protection of equipment and storage media inside and outside the organization.",
-        "help": "Laptops, mobile devices, and storage media must be protected against theft, loss, and environmental impacts (water, fire, temperature).",
+        "help": "Laptops, mobile devices and storage media must be protected against theft and loss and disposed of securely at the end of their use.",
         "maturity": {
           "level0": "No protection of equipment and storage media. No inventory.",
           "level1": "Basic inventory but no specific protection measures for mobile devices or storage media.",
@@ -8239,7 +8239,7 @@
     },
     "questions": {
       "secQ1": {
-        "title": "How is logical access control to your systems and data implemented?",
+        "title": "How are sign-in and the granting of access rights to your systems and data controlled?",
         "tooltip": "Relates to CC6.1: Logical access controls to restrict access to authorized users.",
         "help": "Assess whether your organization has implemented authentication and authorization mechanisms that restrict access to systems, applications, and data to authorized individuals.",
         "maturity": {
@@ -8250,7 +8250,7 @@
         }
       },
       "secQ2": {
-        "title": "How do you manage user registration, authorization, and deprovisioning?",
+        "title": "How do you manage user accounts when people join, change roles and leave?",
         "tooltip": "Relates to CC6.2, CC6.3: Registration and authorization of new users and removal of access.",
         "help": "Assess the lifecycle of user accounts — from creation through modifications to deactivation upon departure.",
         "maturity": {
@@ -8713,7 +8713,7 @@
     },
     "questions": {
       "nsQ1": {
-        "title": "Are network security controls (NSCs) installed and configured to control access to the cardholder data environment (CDE)?",
+        "title": "Are network security controls (e.g. firewalls) in place, with their rules documented and approved?",
         "tooltip": "PCI DSS v4.0.1 Req. 1.2 requires network security controls (e.g., firewalls, segmentation solutions) to be installed and configured to control traffic between trusted and untrusted networks. All inbound and outbound connections must be documented and authorized.",
         "help": "Network security controls are the first line of defense protecting your cardholder data environment. You must deploy firewalls or equivalent technologies to restrict access to the CDE. Every rule must be documented with a business justification. Ensure that only necessary traffic is allowed and all other connections are blocked by default.",
         "maturity": {
@@ -8724,7 +8724,7 @@
         }
       },
       "nsQ2": {
-        "title": "Is network access between the CDE and all other networks restricted?",
+        "title": "Is network traffic into and out of the cardholder data environment (CDE) restricted to what is necessary?",
         "tooltip": "PCI DSS v4.0.1 Req. 1.3 requires that network access between the CDE and all other networks — including internal networks and the internet — is restricted. Segmentation must prevent systems outside the CDE from directly accessing cardholder data.",
         "help": "Network segmentation is a core principle of PCI DSS. Your CDE must be isolated from all other networks. This means only systems that process or transmit cardholder data should reside within the CDE. All other systems must connect through controlled access points. Document all network flows and regularly verify that segmentation is effective.",
         "maturity": {
@@ -8746,7 +8746,7 @@
         }
       },
       "nsQ4": {
-        "title": "Are network security controls implemented for connections between trusted and untrusted networks?",
+        "title": "Are connections to untrusted networks (internet, guest network, Wi-Fi) secured?",
         "tooltip": "PCI DSS v4.0.1 Req. 1.4 requires that network traffic between trusted and untrusted networks is controlled. This includes both inbound and outbound traffic, with particular focus on securing wireless networks connected to the CDE.",
         "help": "Untrusted networks include the internet, guest networks, and uncontrolled wireless networks. Every connection between such networks and your CDE must be protected by NSCs. Wireless networks pose a particular risk — ensure that WPA3 or at minimum WPA2 with strong passwords is used and wireless networks do not reach directly into the CDE.",
         "maturity": {
@@ -8845,7 +8845,7 @@
         }
       },
       "acQ1": {
-        "title": "Is access to system components and cardholder data restricted to individuals with a business need?",
+        "title": "Is it defined who may access system components and cardholder data for business reasons (need to know)?",
         "tooltip": "PCI DSS v4.0.1 Req. 7.1-7.2 requires that access to system components and cardholder data is restricted to those individuals whose jobs require such access. An access control system must be in place based on the need-to-know and least-privilege principles.",
         "help": "The need-to-know principle means: each user receives only the access rights required for their specific role. Implement a role-based access control system (RBAC) where roles are defined and mapped to business requirements. Every access grant must be documented and approved by an authorized person.",
         "maturity": {
@@ -8856,7 +8856,7 @@
         }
       },
       "acQ2": {
-        "title": "Is an access control system configured for system components that restricts access based on a user's need-to-know?",
+        "title": "Does an access control system enforce this technically and deny all access by default (deny all)?",
         "tooltip": "PCI DSS v4.0.1 Req. 7.2 requires that access control systems are configured to restrict access based on roles and responsibilities. The default must be 'deny all' unless access is explicitly permitted.",
         "help": "Your access control system must be configured on a deny-all basis — meaning all access is denied by default and only explicitly approved access is allowed. Ensure that every access rule is documented, regularly reviewed, and promptly adjusted when employees change roles or leave the organization.",
         "maturity": {
@@ -14759,13 +14759,13 @@
         }
       },
       "smQ3": {
-        "title": "Are sessions properly terminated on logout, password change, and after inactivity?",
+        "title": "Are sessions terminated on the server at logout and after a password change?",
         "tooltip": "OWASP ASVS V3.3: Session Termination",
         "help": "Proper session termination prevents persistent unauthorized access.",
         "maturity": {
           "level0": "The session stays valid on the server after logout.",
           "level1": "The session ends on logout, but not on a password change.",
-          "level2": "Sessions are terminated server-side on logout, password change and timeout; this has been tested.",
+          "level2": "Sessions are terminated on the server at logout and after a password change; this is tested.",
           "level3": "Users can view and end all their own sessions; automated tests verify termination."
         }
       },

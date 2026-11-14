@@ -561,7 +561,7 @@
       }
     },
     "bcQ3": {
-      "title": "Haben Sie einen schriftlichen Notfallplan für den Fall eines Cyberangriffs oder Systemausfalls?",
+      "title": "Haben Sie einen schriftlichen Notfallplan, der regelt, wie Ihr Betrieb bei einem Systemausfall weiterläuft?",
       "tooltip": "Krisenmanagement erfordert vorbereitete Notfallpläne (§30 Abs. 2 Nr. 3 BSIG). Siehe BSI-Baustein DER.4 (Notfallmanagement).",
       "help": "Ein Notfallplan beschreibt Schritt für Schritt, was bei einem IT-Ausfall oder Cyberangriff zu tun ist: Wer wird informiert? Welche Systeme werden zuerst wiederhergestellt? Wie kommunizieren Sie mit Kunden? Dieser Plan sollte ausgedruckt vorliegen — denn wenn die IT ausgefallen ist, können Sie ihn digital nicht abrufen.",
       "maturity": {
@@ -594,7 +594,7 @@
       }
     },
     "scQ1": {
-      "title": "Prüfen Sie die IT-Sicherheit Ihrer wichtigsten Lieferanten und Dienstleister?",
+      "title": "Prüfen Sie die IT-Sicherheit wichtiger Lieferanten und Dienstleister bei der Auswahl?",
       "tooltip": "NIS2 verlangt Prüfung der Sicherheit direkter Lieferanten und Dienstleister (Art. 21 Abs. 2 lit. d NIS2-RL, §30 Abs. 2 Nr. 4 BSIG). Besonders wichtig bei Cloud-Diensten und IT-Outsourcing.",
       "help": "Ihre IT-Sicherheit ist nur so stark wie das schwächste Glied in der Kette. Wenn Ihr Cloud-Anbieter gehackt wird, sind Ihre Daten betroffen. Fragen Sie daher Ihre wichtigsten IT-Dienstleister: Haben Sie ein Sicherheitskonzept? Sind Ihre Daten verschlüsselt? Gibt es regelmäßige Sicherheitsprüfungen?",
       "maturity": {
@@ -638,7 +638,7 @@
       }
     },
     "scQ5": {
-      "title": "Haben Sie ein Verfahren zur regelmäßigen Neubewertung der IT-Sicherheit Ihrer Dienstleister?",
+      "title": "Bewerten Sie die IT-Sicherheit Ihrer bestehenden Dienstleister regelmäßig neu?",
       "tooltip": "Die Sicherheitslage von Dienstleistern kann sich ändern. Regelmäßige Neubewertung stellt sicher, dass Ihre Anforderungen dauerhaft erfüllt werden.",
       "help": "Die IT-Sicherheitslage Ihrer Dienstleister kann sich ändern — z. B. durch Personalwechsel, neue Bedrohungen oder veränderte Geschäftsmodelle. Deshalb sollten Sie mindestens jährlich prüfen, ob Ihre Anforderungen noch erfüllt werden, z. B. durch einen kurzen Fragebogen oder ein Gespräch.",
       "maturity": {
@@ -814,7 +814,7 @@
       }
     },
     "crQ1": {
-      "title": "Werden vertrauliche Daten verschlüsselt gespeichert und übertragen (z.B. via HTTPS, VPN)?",
+      "title": "Werden vertrauliche Daten verschlüsselt gespeichert und übertragen (z.B. Festplattenverschlüsselung, HTTPS)?",
       "tooltip": "NIS2 verlangt den Einsatz kryptographischer Verfahren (Art. 21 Abs. 2 lit. h NIS2-RL, §30 Abs. 2 Nr. 8 BSIG). Siehe BSI-Baustein CON.1.",
       "help": "Verschlüsselung macht Daten für Unbefugte unlesbar. HTTPS (das Schloss-Symbol im Browser) verschlüsselt Daten bei der Übertragung im Internet. VPN verschlüsselt die Verbindung zu Ihrem Firmennetzwerk. Auch gespeicherte Daten (z. B. auf Laptops) sollten verschlüsselt sein, damit sie bei Diebstahl nicht ausgelesen werden können.",
       "maturity": {
@@ -847,7 +847,7 @@
       }
     },
     "crQ4": {
-      "title": "Werden Ihre SSL/TLS-Zertifikate und kryptographischen Schlüssel zentral verwaltet und überwacht?",
+      "title": "Werden Ihre SSL/TLS-Zertifikate zentral verwaltet und ihr Ablauf überwacht?",
       "tooltip": "Abgelaufene oder kompromittierte Zertifikate können zu Ausfällen und Sicherheitslücken führen. Zentrales Monitoring verhindert unbemerkte Ablauftermine.",
       "help": "SSL/TLS-Zertifikate sichern z. B. Ihre Website (HTTPS) oder E-Mail-Server ab. Wenn ein Zertifikat unbemerkt abläuft, funktioniert Ihre Website plötzlich nicht mehr oder zeigt Sicherheitswarnungen. Eine zentrale Übersicht mit Ablaufdaten verhindert solche Ausfälle.",
       "maturity": {
@@ -913,7 +913,7 @@
       }
     },
     "acQ5": {
-      "title": "Werden Zugriffsrechte regelmäßig rezertifiziert (d.h. systematisch geprüft, ob bestehende Rechte noch benötigt werden)?",
+      "title": "Wird die Überprüfung der Zugriffsrechte dokumentiert und von den Verantwortlichen freigegeben (Rezertifizierung)?",
       "tooltip": "Rezertifizierung stellt sicher, dass Zugriffsrechte dem Least-Privilege-Prinzip entsprechen. Ohne regelmäßige Prüfung sammeln sich unnötige Rechte an (Privilege Creep).",
       "help": "Rezertifizierung bedeutet: In regelmäßigen Abständen (z. B. jährlich) wird systematisch geprüft, ob jeder Mitarbeiter noch die Zugriffsrechte braucht, die er hat. Im Laufe der Zeit sammeln sich oft unnötige Rechte an (z. B. durch Abteilungswechsel). Diese 'Rechte-Anhäufung' ist ein häufiges Sicherheitsrisiko.",
       "maturity": {
@@ -935,7 +935,7 @@
       }
     },
     "mcQ2": {
-      "title": "Wird vertrauliche Kommunikation verschlüsselt (z.B. verschlüsselte E-Mails, sichere Videokonferenzen)?",
+      "title": "Sind Sprach-, Video- und Textkommunikation mit vertraulichen Inhalten gesichert (z.B. verschlüsselte E-Mails, sichere Videokonferenzen und Messenger)?",
       "tooltip": "Gesicherte Kommunikation schützt vor Abhören und Manipulation. NIS2 fordert gesicherte Sprach-, Video- und Textkommunikation (§30 Abs. 2 Nr. 10 BSIG).",
       "help": "Verschlüsselte Kommunikation bedeutet, dass E-Mails und Videokonferenzen nicht von Dritten mitgelesen werden können. Für E-Mails gibt es z. B. S/MIME oder die Transportverschlüsselung TLS. Für Videokonferenzen bieten Dienste wie Microsoft Teams oder Zoom Ende-zu-Ende-Verschlüsselung an.",
       "maturity": {
@@ -968,7 +968,7 @@
       }
     },
     "mcQ5": {
-      "title": "Ist die Kommunikation zwischen Ihren Standorten und Außendienstmitarbeitern durchgängig verschlüsselt?",
+      "title": "Sind die Netzverbindungen zwischen Ihren Standorten, dem Homeoffice und dem Außendienst durchgängig verschlüsselt (z.B. per VPN)?",
       "tooltip": "Standortübergreifende Kommunikation über öffentliche Netze muss verschlüsselt sein. Site-to-Site-VPN und Always-on-VPN für mobile Geräte sind bewährte Maßnahmen.",
       "help": "Wenn Ihre Mitarbeiter zwischen Standorten oder aus dem Homeoffice kommunizieren, laufen die Daten über das öffentliche Internet. Ohne VPN (Virtual Private Network) können diese Daten theoretisch abgefangen werden. Eine VPN-Verbindung verschlüsselt den gesamten Datenverkehr — wie ein privater Tunnel durch das Internet.",
       "maturity": {
@@ -2279,14 +2279,14 @@
         }
       },
       "dvQ2": {
-        "title": "Werden Datenschutzverletzungen intern mit allen nach Art. 33 Abs. 3 DSGVO erforderlichen Angaben dokumentiert?",
+        "title": "Enthalten Ihre Meldungen an die Aufsichtsbehörde alle Pflichtangaben (Art der Verletzung, Betroffene, Folgen, Maßnahmen)?",
         "tooltip": "Art. 33 Abs. 3 DSGVO verlangt, dass die Meldung an die Aufsichtsbehörde mindestens folgende Angaben enthält: (a) Art der Verletzung mit Kategorien und Anzahl der Betroffenen, (b) Name und Kontaktdaten des DSB, (c) wahrscheinliche Folgen der Verletzung, (d) ergriffene und vorgeschlagene Maßnahmen. Art. 33 Abs. 5 DSGVO verlangt zudem die interne Dokumentation aller Verletzungen.",
-        "help": "Für jede Datenschutzverletzung müssen Sie intern dokumentieren: Was ist passiert? Wie viele Personen sind betroffen? Welche Daten sind betroffen (z.B. Namen, Bankdaten)? Was sind die möglichen Folgen? Was haben Sie dagegen unternommen? Diese Dokumentation brauchen Sie sowohl für die Meldung an die Behörde als auch als Nachweis gegenüber der Aufsicht. Nutzen Sie dafür ein Formular oder eine Vorlage.",
+        "help": "Die Meldung an die Aufsichtsbehörde muss bestimmte Angaben enthalten: Was ist passiert? Wie viele Personen und Datensätze sind betroffen? Wer ist Ansprechpartner? Welche Folgen sind wahrscheinlich? Was haben Sie unternommen? Liegen noch nicht alle Angaben vor, dürfen Sie sie schrittweise nachreichen (Art. 33 Abs. 4 DSGVO). Eine Vorlage hilft, nichts zu vergessen.",
         "maturity": {
-          "level0": "Datenschutzverletzungen werden nicht dokumentiert",
-          "level1": "Vorfälle werden nur informell oder unvollständig dokumentiert",
-          "level2": "Dokumentationsvorlage vorhanden, aber nicht alle Pflichtangaben nach Art. 33 Abs. 3 DSGVO werden systematisch erfasst",
-          "level3": "Standardisierte Dokumentation jeder Verletzung mit allen Pflichtangaben, Zeitstempel, ergriffenen Maßnahmen und Ergebnis der Risikobewertung"
+          "level0": "Nicht festgelegt, was eine Meldung enthalten muss",
+          "level1": "Pflichtangaben sind bekannt, werden aber im Einzelfall zusammengesucht",
+          "level2": "Meldevorlage vorhanden, deckt aber nicht alle Pflichtangaben nach Art. 33 Abs. 3 DSGVO ab",
+          "level3": "Meldevorlage mit allen Pflichtangaben; geregelt ist auch, wie fehlende Angaben nachgereicht werden"
         }
       },
       "dvQ3": {
@@ -2389,7 +2389,7 @@
         }
       },
       "pbdQ2": {
-        "title": "Stellen Sie sicher, dass Ihre Systeme standardmäßig nur die für den jeweiligen Zweck erforderlichen personenbezogenen Daten verarbeiten (Privacy by Default)?",
+        "title": "Sind die Voreinstellungen Ihrer Systeme und Formulare datenschutzfreundlich (Privacy by Default)?",
         "tooltip": "Art. 25 Abs. 2 DSGVO verlangt, dass standardmäßig nur personenbezogene Daten verarbeitet werden, deren Verarbeitung für den jeweiligen bestimmten Verarbeitungszweck erforderlich ist. Dies gilt für Menge, Umfang, Speicherfrist und Zugänglichkeit. Personenbezogene Daten dürfen ohne Eingreifen der betroffenen Person standardmäßig nicht einer unbestimmten Zahl von Personen zugänglich gemacht werden.",
         "help": "Privacy by Default bedeutet: Die datenschutzfreundlichste Einstellung ist die Standardeinstellung. Beispiel: Wenn Sie ein Online-Formular erstellen, sind nur die Pflichtfelder vorausgefüllt -- nicht optionale Newsletter-Anmeldungen oder Marketing-Einwilligungen. In einem Social-Media-Profil ist die Sichtbarkeit standardmäßig auf 'privat' gestellt. In Ihrem CRM sehen Mitarbeiter nur die Daten, die sie für ihre Aufgabe brauchen.",
         "maturity": {
@@ -2488,14 +2488,14 @@
         }
       },
       "vvQ1": {
-        "title": "Führen Sie ein vollständiges Verzeichnis aller Verarbeitungstätigkeiten mit den nach Art. 30 Abs. 1 DSGVO vorgeschriebenen Pflichtangaben?",
+        "title": "Führen Sie ein Verzeichnis, das alle Verarbeitungstätigkeiten Ihres Unternehmens erfasst?",
         "tooltip": "Art. 30 Abs. 1 DSGVO verpflichtet jeden Verantwortlichen, ein Verzeichnis aller Verarbeitungstätigkeiten zu führen. Pflichtangaben sind u.a.: Name und Kontaktdaten des Verantwortlichen, Zwecke der Verarbeitung, Kategorien betroffener Personen und personenbezogener Daten, Empfängerkategorien, Übermittlungen in Drittländer, Löschfristen und technisch-organisatorische Maßnahmen.",
         "help": "Das Verarbeitungsverzeichnis (VVT) ist das zentrale Datenschutz-Dokument Ihres Unternehmens. Es listet jede Tätigkeit auf, bei der personenbezogene Daten verarbeitet werden -- z.B. Lohnabrechnung, Kundendatenbank, Newsletter-Versand, Bewerbermanagement. Für jede Tätigkeit müssen bestimmte Angaben dokumentiert sein. Die Aufsichtsbehörde kann dieses Verzeichnis jederzeit anfordern.",
         "maturity": {
           "level0": "Kein Verarbeitungsverzeichnis vorhanden",
           "level1": "Einzelne Verarbeitungstätigkeiten sind bekannt, aber nicht systematisch dokumentiert",
-          "level2": "Verarbeitungsverzeichnis existiert, enthält aber nicht alle Pflichtangaben oder nicht alle Verarbeitungen",
-          "level3": "Vollständiges Verarbeitungsverzeichnis mit allen Pflichtangaben nach Art. 30 Abs. 1 DSGVO für sämtliche Verarbeitungstätigkeiten"
+          "level2": "Verarbeitungsverzeichnis existiert, erfasst aber nicht alle Verarbeitungen",
+          "level3": "Verarbeitungsverzeichnis erfasst sämtliche Verarbeitungstätigkeiten und wird bei neuen Verarbeitungen ergänzt"
         }
       },
       "vvQ2": {
@@ -3013,7 +3013,7 @@
         }
       },
       "lkQ2": {
-        "title": "Werden kritische Zulieferer und Dienstleister hinsichtlich ihrer IT-Sicherheit bewertet?",
+        "title": "Werden kritische Zulieferer und Dienstleister nach ihrem Risiko eingestuft und hinsichtlich ihrer IT-Sicherheit bewertet?",
         "tooltip": "Die Bewertung der Lieferkettensicherheit ist Bestandteil der Risikoanalyse nach §30 Abs. 1 BSIG. BSI-Baustein OPS.2.3 beschreibt Anforderungen an das Outsourcing-Management.",
         "help": "Sie sollten eine Übersicht haben, welche Zulieferer und Dienstleister Zugang zu Ihren kritischen Systemen haben oder für deren Betrieb relevant sind. Diese sollten regelmäßig hinsichtlich ihrer IT-Sicherheit bewertet werden -- z. B. durch Fragebögen, Zertifizierungsnachweise (ISO 27001), Audit-Berichte oder Vor-Ort-Prüfungen.",
         "maturity": {
@@ -3035,7 +3035,7 @@
         }
       },
       "lkQ4": {
-        "title": "Wird die Einhaltung der Sicherheitsanforderungen durch Zulieferer regelmäßig überprüft?",
+        "title": "Wird regelmäßig überprüft, ob Zulieferer die vertraglich vereinbarten Sicherheitsanforderungen einhalten?",
         "tooltip": "Die laufende Überwachung der Lieferkettensicherheit ist Teil der Nachweispflicht nach §39 Abs. 1 BSIG. Das BSI kann die Angemessenheit der Maßnahmen auch bezüglich der Lieferkette prüfen.",
         "help": "Vertraglich vereinbarte Sicherheitsanforderungen sind nur dann wirksam, wenn deren Einhaltung auch überprüft wird. Das kann durch regelmäßige Audits, Einholung aktueller Zertifizierungen, Sicherheitsberichte der Dienstleister oder technische Prüfungen (z. B. Schwachstellenscans bei Schnittstellen) erfolgen. Insbesondere bei Anbietern mit Fernzugriff auf kritische Systeme ist eine engmaschige Kontrolle notwendig.",
         "maturity": {
@@ -3505,7 +3505,7 @@
         }
       },
       "daQ4": {
-        "title": "Sind die wesentlichen Vertragsbestimmungen für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, vollständig umgesetzt?",
+        "title": "Enthalten Verträge für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, die zusätzlichen Bestimmungen nach Art. 30 Abs. 3 DORA?",
         "tooltip": "Art. 30 Abs. 1-5 DORA definiert verschärfte vertragliche Anforderungen für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen. Diese umfassen unter anderem: vollständige Service-Level-Beschreibungen, garantierte Verfügbarkeitsziele, Verpflichtungen des Anbieters bei Vorfällen, Sicherheitsmaßnahmen, Datenschutzgarantien, uneingeschränkte Audit- und Zugangsrechte, Kündigungsrechte und Ausstiegsstrategien.",
         "help": "Für IKT-Dienstleistungen, die kritische oder wichtige Funktionen unterstützen, gelten nach Art. 30 DORA verschärfte Vertragsanforderungen gegenüber den allgemeinen Anforderungen aus Art. 28. Besonders wichtig sind: das uneingeschränkte Recht auf Audits und Inspektionen (auch durch die Aufsichtsbehörde), garantierte Unterstützung bei IKT-Vorfällen, die Verpflichtung zur Mitwirkung bei TLPT, klare Ausstiegsstrategien mit angemessenen Übergangsfristen und das Recht auf Kündigung bei wesentlichen Vertragsverletzungen.",
         "maturity": {
@@ -3725,18 +3725,18 @@
         }
       },
       "rtQ4": {
-        "title": "Werden TLPT-Tester nach den Qualifikationsanforderungen der DORA ausgewählt und eingesetzt?",
-        "tooltip": "Art. 27 Abs. 1-2 DORA stellt strenge Anforderungen an TLPT-Tester: Sie müssen über höchste Eignung und Ansehen verfügen, technische und organisatorische Fähigkeiten besitzen und von einer Akkreditierungsstelle zertifiziert sein oder formalen Verhaltenskodizes folgen. Bei externen Testern gelten zusätzliche Anforderungen an Unabhängigkeit und Versicherungsschutz.",
-        "help": "DORA erlaubt grundsätzlich nur externe TLPT-Tester. Interne Tester dürfen nur unter strengen Voraussetzungen eingesetzt werden und nur für maximal die Hälfte der Tests -- in jedem Fall muss ein externer Threat-Intelligence-Anbieter beteiligt sein. Bei der Auswahl externer Tester müssen Sie deren Qualifikation, Erfahrung mit dem Finanzsektor, Zertifizierungen, Haftpflichtversicherung und Interessenfreiheit prüfen. Die Aufsichtsbehörde kann die Auswahl des Testers ablehnen.",
+        "title": "Decken Ihre TLPT die kritischen oder wichtigen Funktionen ab und laufen sie auf den Produktivsystemen?",
+        "tooltip": "Art. 26 Abs. 2 DORA: Jeder TLPT schließt mehrere oder alle kritischen oder wichtigen Funktionen ein und wird an Live-Produktionssystemen durchgeführt. Den Umfang validiert die zuständige Behörde. Nach Abs. 3 müssen einbezogene IKT-Drittdienstleister eingebunden werden.",
+        "help": "Vor einem TLPT legen Sie fest, welche kritischen oder wichtigen Funktionen getestet werden und welche Systeme, Prozesse und Technologien dahinterstehen, auch die ausgelagerten. Getestet wird an den Produktivsystemen, nicht an einer Testumgebung. Die Aufsichtsbehörde bestätigt den Umfang. Sind Dienstleister betroffen, müssen Sie deren Mitwirkung sicherstellen.",
         "maturity": {
-          "level0": "Keine Kriterien für die Auswahl von TLPT-Testern definiert",
-          "level1": "Grundsätzliche Kenntnis der Qualifikationsanforderungen, aber kein Auswahlprozess etabliert",
-          "level2": "Auswahlprozess für TLPT-Tester definiert mit Prüfung der Qualifikation und Unabhängigkeit, aber noch keine praktische Anwendung",
-          "level3": "Dokumentierter Auswahlprozess für TLPT-Tester gemäß Art. 26 DORA mit Prüfung aller Qualifikationsanforderungen, erfolgreicher Durchführung und positiver Bewertung durch die Aufsichtsbehörde"
+          "level0": "Umfang eines TLPT nicht festgelegt; kritische oder wichtige Funktionen nicht ermittelt",
+          "level1": "Kritische oder wichtige Funktionen ermittelt, aber die dahinterliegenden Systeme und Dienstleister nicht zugeordnet",
+          "level2": "Testumfang mit Funktionen, Systemen und einbezogenen Dienstleistern festgelegt, aber noch nicht von der Behörde bestätigt",
+          "level3": "Testumfang von der Behörde bestätigt, TLPT an Produktivsystemen durchgeführt, einbezogene Dienstleister haben mitgewirkt"
         }
       },
       "rtQ5": {
-        "title": "Werden die Anforderungen an externe TLPT-Tester hinsichtlich Unabhängigkeit, Akkreditierung und Versicherungsschutz eingehalten?",
+        "title": "Erfüllen die eingesetzten TLPT-Tester die Anforderungen an Eignung, Zertifizierung, Unabhängigkeit und Versicherungsschutz?",
         "tooltip": "Art. 27 Abs. 1-3 DORA definiert spezifische Anforderungen an TLPT-Tester: Eignung und Ansehen, technische und organisatorische Fähigkeiten im Bereich Threat Intelligence, Penetrationstests und Red Teaming, Zertifizierung durch eine Akkreditierungsstelle, Berufshaftpflichtversicherung, formale Verhaltenskodizes und Management von Interessenkonflikten.",
         "help": "Die Anforderungen an TLPT-Tester sind bewusst hoch angesetzt, da TLPT direkt in der Produktionsumgebung stattfinden und reale Geschäftsprozesse betreffen. Der Tester muss nachweisen, dass er über Erfahrung mit TIBER-EU oder vergleichbaren Rahmenwerken verfügt. Die Aufsichtsbehörde prüft die Eignung des Testers und kann Einwände erheben. Nach Abschluss des TLPT muss der Tester einen umfassenden Bericht vorlegen, der die Testergebnisse und Empfehlungen zur Behebung dokumentiert.",
         "maturity": {
@@ -6742,7 +6742,7 @@
         }
       },
       "prQ1": {
-        "title": "Führen Sie eine systematische Informationssicherheits-Risikobewertung durch?",
+        "title": "Haben Sie ein festgelegtes Verfahren für die Informationssicherheits-Risikobewertung (Kriterien, Methode, Verantwortliche)?",
         "tooltip": "Clause 6.1.2 verlangt einen dokumentierten Risikobewertungsprozess mit definierten Kriterien für Akzeptanz, Bewertung und Priorisierung.",
         "help": "Die Risikobewertung muss Vertraulichkeit, Integrität und Verfügbarkeit berücksichtigen, Risiko-Eigentümer benennen und reproduzierbare Ergebnisse liefern.",
         "maturity": {
@@ -6841,7 +6841,7 @@
         }
       },
       "opQ2": {
-        "title": "Führen Sie die Informationssicherheits-Risikobewertung in geplanten Abständen durch?",
+        "title": "Wiederholen Sie die Risikobewertung in geplanten Abständen und bei wesentlichen Änderungen?",
         "tooltip": "Clause 8.2 und 8.3 fordern die Durchführung der Risikobewertung in geplanten Abständen und die Umsetzung des Risikobehandlungsplans.",
         "help": "Die Risikobewertung muss nicht nur initial, sondern wiederkehrend erfolgen — insbesondere bei wesentlichen Änderungen an Systemen, Prozessen oder Bedrohungslage.",
         "maturity": {
@@ -6973,9 +6973,9 @@
         }
       },
       "psQ2": {
-        "title": "Wie schützen Sie IT-Geräte und Speichermedien vor Diebstahl und Umwelteinwirkungen?",
+        "title": "Wie schützen Sie IT-Geräte und Speichermedien vor Diebstahl, Verlust und unbefugtem Zugriff?",
         "tooltip": "Controls A.7.8, A.7.9 und A.7.10 fordern den Schutz von Equipment und Speichermedien innerhalb und außerhalb des Unternehmens.",
-        "help": "Laptops, mobile Geräte und Speichermedien müssen gegen Diebstahl, Verlust und Umwelteinwirkungen (Wasser, Feuer, Temperatur) geschützt werden.",
+        "help": "Laptops, mobile Geräte und Speichermedien müssen gegen Diebstahl und Verlust geschützt und am Ende ihrer Nutzung sicher entsorgt werden.",
         "maturity": {
           "level0": "Kein Schutz von Geräten und Speichermedien. Keine Inventarisierung.",
           "level1": "Grundlegende Inventarisierung, aber keine spezifischen Schutzmaßnahmen für mobile Geräte oder Speichermedien.",
@@ -8239,7 +8239,7 @@
     },
     "questions": {
       "secQ1": {
-        "title": "Wie ist die logische Zugangskontrolle zu Ihren Systemen und Daten umgesetzt?",
+        "title": "Wie sind Anmeldung und Rechtevergabe für Ihre Systeme und Daten geregelt?",
         "tooltip": "Bezieht sich auf CC6.1: Logische Zugangskontrollen zur Beschränkung des Zugriffs auf autorisierte Benutzer.",
         "help": "Bewerten Sie, ob Ihre Organisation Authentifizierungs- und Autorisierungsmechanismen implementiert hat, die den Zugriff auf Systeme, Anwendungen und Daten auf befugte Personen beschränken.",
         "maturity": {
@@ -8250,7 +8250,7 @@
         }
       },
       "secQ2": {
-        "title": "Wie verwalten Sie Benutzerregistrierung, Autorisierung und Deprovisioning?",
+        "title": "Wie verwalten Sie Benutzerkonten bei Eintritt, Wechsel und Austritt?",
         "tooltip": "Bezieht sich auf CC6.2, CC6.3: Registrierung und Autorisierung neuer Benutzer sowie Entfernung des Zugangs.",
         "help": "Bewerten Sie den Lebenszyklus von Benutzerkonten — von der Einrichtung über Änderungen bis zur Deaktivierung bei Ausscheiden.",
         "maturity": {
@@ -8713,7 +8713,7 @@
     },
     "questions": {
       "nsQ1": {
-        "title": "Sind Netzwerksicherheitskontrollen (NSCs) installiert und konfiguriert, um den Zugang zur Karteninhaberdatenumgebung (CDE) zu kontrollieren?",
+        "title": "Sind Netzwerksicherheitskontrollen (z.B. Firewalls) eingerichtet und ihre Regeln dokumentiert und genehmigt?",
         "tooltip": "PCI DSS v4.0.1 Req. 1.2 verlangt, dass Netzwerksicherheitskontrollen (z. B. Firewalls, Segmentierungslösungen) installiert und konfiguriert sind, um den Datenverkehr zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken zu kontrollieren. Alle eingehenden und ausgehenden Verbindungen müssen dokumentiert und genehmigt sein.",
         "help": "Netzwerksicherheitskontrollen sind die erste Verteidigungslinie zum Schutz Ihrer Karteninhaberdatenumgebung. Sie müssen Firewalls oder gleichwertige Technologien einsetzen, um den Zugang zur CDE zu beschränken. Jede Regel muss dokumentiert und mit einer geschäftlichen Begründung versehen sein. Stellen Sie sicher, dass nur notwendiger Datenverkehr erlaubt ist und alle anderen Verbindungen standardmäßig blockiert werden.",
         "maturity": {
@@ -8724,7 +8724,7 @@
         }
       },
       "nsQ2": {
-        "title": "Ist der Netzwerkzugang zwischen der CDE und allen anderen Netzwerken eingeschränkt?",
+        "title": "Ist der Netzwerkverkehr in die Karteninhaberdatenumgebung (CDE) hinein und aus ihr heraus auf das Notwendige beschränkt?",
         "tooltip": "PCI DSS v4.0.1 Req. 1.3 fordert, dass der Netzwerkzugang zwischen der CDE und allen anderen Netzwerken — einschließlich interner Netzwerke und dem Internet — eingeschränkt ist. Die Segmentierung muss verhindern, dass Systeme außerhalb der CDE direkt auf Karteninhaberdaten zugreifen können.",
         "help": "Netzwerksegmentierung ist ein Kernprinzip von PCI DSS. Ihre CDE muss von allen anderen Netzwerken isoliert sein. Das bedeutet: Nur Systeme, die Karteninhaberdaten verarbeiten oder übertragen, dürfen sich innerhalb der CDE befinden. Alle anderen Systeme müssen über kontrollierte Zugangspunkte verbunden sein. Dokumentieren Sie alle Netzwerkflüsse und prüfen Sie regelmäßig, ob die Segmentierung wirksam ist.",
         "maturity": {
@@ -8746,7 +8746,7 @@
         }
       },
       "nsQ4": {
-        "title": "Sind Netzwerksicherheitskontrollen für Verbindungen zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken implementiert?",
+        "title": "Sind Verbindungen zu nicht vertrauenswürdigen Netzen (Internet, Gastnetz, WLAN) abgesichert?",
         "tooltip": "PCI DSS v4.0.1 Req. 1.4 fordert, dass der Netzwerkverkehr zwischen vertrauenswürdigen und nicht vertrauenswürdigen Netzwerken kontrolliert wird. Dies umfasst sowohl eingehenden als auch ausgehenden Verkehr, mit besonderem Fokus auf die Absicherung drahtloser Netzwerke, die mit der CDE verbunden sind.",
         "help": "Nicht vertrauenswürdige Netzwerke umfassen das Internet, Gastnetzwerke und unkontrollierte drahtlose Netzwerke. Jede Verbindung zwischen solchen Netzwerken und Ihrer CDE muss durch NSCs geschützt sein. Drahtlose Netzwerke stellen ein besonderes Risiko dar — stellen Sie sicher, dass WPA3 oder mindestens WPA2 mit starken Passwörtern verwendet wird und drahtlose Netzwerke nicht direkt in die CDE reichen.",
         "maturity": {
@@ -8845,7 +8845,7 @@
         }
       },
       "acQ1": {
-        "title": "Ist der Zugriff auf Systemkomponenten und Karteninhaberdaten auf Personen beschränkt, die diesen Zugriff geschäftlich benötigen?",
+        "title": "Ist festgelegt, wer aus geschäftlichen Gründen auf Systemkomponenten und Karteninhaberdaten zugreifen darf (Need-to-know)?",
         "tooltip": "PCI DSS v4.0.1 Req. 7.1-7.2 verlangt, dass der Zugriff auf Systemkomponenten und Karteninhaberdaten auf diejenigen Personen beschränkt ist, deren Aufgaben diesen Zugriff erfordern. Ein Zugriffskontrollsystem muss eingerichtet sein, das auf dem Need-to-know-Prinzip und dem Least-Privilege-Prinzip basiert.",
         "help": "Das Need-to-know-Prinzip bedeutet: Jeder Benutzer erhält nur die Zugriffsrechte, die für seine konkrete Aufgabe erforderlich sind. Implementieren Sie ein rollenbasiertes Zugriffskontrollsystem (RBAC), in dem Rollen definiert und den geschäftlichen Anforderungen zugeordnet werden. Jede Zugriffserteilung muss dokumentiert und von einer autorisierten Person genehmigt werden.",
         "maturity": {
@@ -8856,7 +8856,7 @@
         }
       },
       "acQ2": {
-        "title": "Ist ein Zugriffskontrollsystem für Systemkomponenten konfiguriert, das den Zugriff basierend auf dem Need-to-know des Benutzers einschränkt?",
+        "title": "Setzt ein Zugriffskontrollsystem diese Festlegung technisch durch und verweigert standardmäßig jeden Zugriff (Deny-All)?",
         "tooltip": "PCI DSS v4.0.1 Req. 7.2 fordert, dass Zugriffskontrollsysteme konfiguriert sind, um Zugriff basierend auf Rollen und Aufgaben einzuschränken. Standardmäßig muss 'alle verweigern' gelten, es sei denn, der Zugriff ist ausdrücklich erlaubt.",
         "help": "Ihr Zugriffskontrollsystem muss nach dem Deny-All-Prinzip konfiguriert sein — also standardmäßig alle Zugriffe verweigern und nur explizit genehmigte Zugriffe erlauben. Stellen Sie sicher, dass jede Zugriffsregel dokumentiert ist, regelmäßig überprüft wird und bei Rollenwechseln oder Ausscheiden eines Mitarbeiters umgehend angepasst wird.",
         "maturity": {
@@ -14759,13 +14759,13 @@
         }
       },
       "smQ3": {
-        "title": "Werden Sessions bei Logout, Passwortänderung und nach Inaktivität korrekt beendet?",
+        "title": "Werden Sessions bei Abmeldung und Passwortänderung serverseitig beendet?",
         "tooltip": "OWASP ASVS V3.3: Session-Terminierung",
         "help": "Korrekte Session-Beendigung verhindert persistente Zugriffe.",
         "maturity": {
           "level0": "Beim Abmelden bleibt die Session auf dem Server gültig.",
           "level1": "Beim Abmelden wird die Session beendet, bei einer Passwortänderung nicht.",
-          "level2": "Sessions werden bei Abmeldung, Passwortänderung und Zeitablauf serverseitig beendet; das ist getestet.",
+          "level2": "Sessions werden bei Abmeldung und Passwortänderung serverseitig beendet; das ist getestet.",
           "level3": "Benutzer können alle eigenen Sessions einsehen und beenden; automatisierte Tests prüfen die Beendigung."
         }
       },
